@@ -37,6 +37,31 @@
   "apps": [
     {
       "beta": false,
+      "name": "Facebook Glow++",
+      "bundleIdentifier": "com.facebook.facebook",
+      "developerName": "IPAOMTK.com",
+      "subtitle": "Facebook No ADS",
+      "localizedDescription": "Ứng dụng Facebook No ADS, bản mod không có quảng cáo, chặn đã xem tin...",
+      "iconURL": "https://images.icon-icons.com/555/PNG/512/facebook_icon-icons.com_53612.png",
+      "tintColor": "000000",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "531.0.0",
+          "date": "2025-09-30T17:16:00Z",
+          "size": 161739546,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.531/Facebook-Glow-531.0.0.ipa",
+          "localizedDescription": "Phiên bản 531.0."
+        }
+      ],
+      "version": "531.0.0",
+      "versionDate": "2025-09-30T17:16:00Z",
+      "versionDescription": "Phiên bản 531.0.",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.531/Facebook-Glow-531.0.0.ipa",
+      "size": 161739546
+    },
+    {
+      "beta": false,
       "name": "Zalo2",
       "bundleIdentifier": "com.zalo.app",
       "developerName": "VNG",
