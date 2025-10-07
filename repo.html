@@ -40,6 +40,7 @@
         /* Danh sách */
         .news-item, .app-item, .version-item { background: #ecf0f1; padding: 15px; margin-bottom: 10px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 5px solid #3498db; }
         .news-item strong, .app-item strong { color: #2c3e50; }
+	.item-actions {display:flex;}
         .item-actions button { margin-left: 8px; margin-top: 0; padding: 8px 12px; font-size: 14px; }
         .form-group { display: flex; flex-wrap: wrap; gap: 20px; }
         .form-group > div { flex: 1 1 30%; min-width: 200px; }
@@ -486,7 +487,7 @@
                         <span class="text-sm text-gray-500">(${versionCount} versions)</span>
                     </span>
                     <div class="item-actions">
-                        <button class="btn-edit" onclick="editApp(${index})">Sửa chi tiết</button>
+                        <button class="btn-edit" onclick="editApp(${index})">Sửa</button>
                         <button class="btn-delete" onclick="deleteApp(${index})">Xóa</button>
                     </div>
                 `;
