@@ -12,6 +12,17 @@
   },
   "news": [
     {
+      "title": "Cập nhật - Zalo 2",
+      "identifier": "cp-nht---zalo-2-available-now",
+      "caption": "Đã có phiên bản zalo2 ver 25.02.02",
+      "tintColor": "3498DB",
+      "imageURL": "https://chat.zalo.me/apple-icon-144x144.png",
+      "appID": "com.example.app",
+      "date": "2025-10-07",
+      "notify": false,
+      "url": ""
+    },
+    {
       "title": "Ra mắt dự án kho IPA mod",
       "identifier": "ra-mt-d-n-kho-ipa-mod-available-now",
       "caption": "Dự án mã nguồn mở, chia sẻ thư viện (kho) ứng dụng IPA mod được cập nhật thường xuyên và liên lục.",
@@ -36,6 +47,13 @@
       "screenshotURLs": [],
       "versions": [
         {
+          "version": "25.02.02",
+          "date": "2025-07-03T15:41:00Z",
+          "size": 149297453,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250202/Zalo2-v250202.ipa",
+          "localizedDescription": "Phiên bản zalo2 mod từ phiên bản zalo ngày 25.02.02"
+        },
+        {
           "version": "20.07.02",
           "date": "2025-04-01T15:34:00Z",
           "size": 167645264,
@@ -43,11 +61,11 @@
           "localizedDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé."
         }
       ],
-      "version": "20.07.02",
-      "versionDate": "2025-04-01T15:34:00Z",
-      "versionDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé.",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo/Zalo2_200702_LeTi.ipa",
-      "size": 167645264
+      "version": "25.02.02",
+      "versionDate": "2025-07-03T15:41:00Z",
+      "versionDescription": "Phiên bản zalo2 mod từ phiên bản zalo ngày 25.02.02",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250202/Zalo2-v250202.ipa",
+      "size": 149297453
     },
     {
       "beta": false,
@@ -64,14 +82,14 @@
           "version": "5.0.2",
           "date": "2024-01-28T15:13:00Z",
           "size": 7206362,
-          "downloadURL": "https://pan.yyyue.xyz/d/esign/esign_5.0.2_unsigned.ipa",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa",
           "localizedDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới."
         }
       ],
       "version": "5.0.2",
       "versionDate": "2024-01-28T15:13:00Z",
       "versionDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới.",
-      "downloadURL": "https://pan.yyyue.xyz/d/esign/esign_5.0.2_unsigned.ipa",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa",
       "size": 7206362
     }
   ]
