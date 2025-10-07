@@ -193,8 +193,8 @@
 
         <!-- OUTPUT AND ACTIONS -->
         <label for="output" class="mt-6">📦 Mã JSON xuất ra</label>
-        <textarea id="output"></textarea>
-        <a href="../KhoIPA/test.html" target=_blank>Xem thư viện mẫu ở đây</a>
+        <textarea id="output" placeholder="Mã json sẽ hiển thị ở đây!"></textarea>
+        <a href="../KhoIPA/index.html" target=_blank>Tới kho IPA</a>
         <div class="flex justify-between items-center mt-4">
             <input type="file" id="jsonFileInput" accept=".json" style="display: none;" onchange="handleFileSelect(event)">
             <button onclick="document.getElementById('jsonFileInput').click()" class="btn-import">
@@ -217,22 +217,7 @@
         let appEditIndex = -1;
         let versionEditIndex = -1;
 
-        let baseData = { // Khai báo là 'let' để có thể gán lại khi import
-            name: "Kho IPA mod",
-            identifier: "org.khoIPA.repo",
-            sourceURL: "https://github.com/drphe/KhoIPA",
-            iconURL: "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png",
-            website: "https://github.com/drphe/KhoIPA",
-            ipawebsite: "https://github.com/drphe/KhoIPA/releases",
-            subtitle: "Kho ứng dụng IPA mod cho Sideloading, Feather, Esign...",
-            META: {
-                repoName: "Kho IPA mod",
-                repoIcon: "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
-            },
-            news: newsArray, // Liên kết tham chiếu
-            apps: appsArray  // Liên kết tham chiếu
-        };
-
+        let baseData ='';
         // Khởi tạo ngày mặc định
         document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
         
@@ -733,11 +718,6 @@
             baseData.apps = appsArray;
             document.getElementById('output').value = JSON.stringify(baseData, null, 2);
         }
-
-        // Khởi tạo
-        renderNewsList();
-        renderAppList();
-        updateOutput();
     </script>
 </body>
 </html>
