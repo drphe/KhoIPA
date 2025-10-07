@@ -1,0 +1,66 @@
+{
+  "name": "Kho IPA mod",
+  "identifier": "org.khoIPA.repo",
+  "sourceURL": "https://github.com/drphe/KhoIPA",
+  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png",
+  "website": "https://github.com/drphe/KhoIPA",
+  "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
+  "subtitle": "Kho ứng dụng IPA mod cho Sideloading, Feather, Esign...",
+  "META": {
+    "repoName": "Kho IPA mod",
+    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
+  },
+  "news": [],
+  "apps": [
+    {
+      "beta": false,
+      "name": "YAZIO",
+      "bundleIdentifier": "com.yazio.ios.YAZIO",
+      "developerName": "kfadfad",
+      "subtitle": "yazio haha",
+      "localizedDescription": "",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.pn",
+      "tintColor": "000000",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "0.2.2",
+          "date": "2025-10-10T14:42:00Z",
+          "size": 50000000,
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2025/YAZIO_12.53.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+          "localizedDescription": "test 2"
+        }
+      ],
+      "version": "0.2.2",
+      "versionDate": "2025-10-10T14:42:00Z",
+      "versionDescription": "test 2",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2025/YAZIO_12.53.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+      "size": 50000000
+    },
+    {
+      "beta": false,
+      "name": "StressWatch",
+      "bundleIdentifier": "com.ideation.Stress",
+      "developerName": "Không biết",
+      "subtitle": "Injected with Subscription Unlocked",
+      "localizedDescription": "Injected with Subscription Unlocked",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ideation.Stress.png",
+      "tintColor": "000000",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "0.1.1",
+          "date": "2025-10-07T14:40:00Z",
+          "size": 5000,
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2025/Vids_1.121.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+          "localizedDescription": "haha adfadf"
+        }
+      ],
+      "version": "0.1.1",
+      "versionDate": "2025-10-07T14:40:00Z",
+      "versionDescription": "haha adfadf",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2025/Vids_1.121.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+      "size": 5000
+    }
+  ]
+}

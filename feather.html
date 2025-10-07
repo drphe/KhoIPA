@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trình quản lý tin tức JSON</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    input[type="color"] {
+      padding: 0;
+      height: 40px;
+    }
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .news-list {
+      margin-top: 30px;
+    }
+    .news-item {
+      background: #ecf0f1;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .news-item span {
+      flex: 1;
+    }
+    .news-item button {
+      margin-left: 10px;
+      background: #e74c3c;
+    }
+    .news-item button.edit {
+      background: #2ecc71;
+    }
+    .news-item button.cancel {
+      background: #f39c12;
+    }
+    #output {
+      margin-top: 30px;
+      height: 300px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>📰 Trình quản lý tin tức JSON</h1>
+  <div class="container">
+    <label for="title">Tiêu đề (title)</label>
+    <input type="text" id="title">
+
+    <label for="caption">Caption</label>
+    <input type="text" id="caption">
+
+    <label for="imageURL">Ảnh bìa (imageURL)</label>
+    <input type="text" id="imageURL">
+
+    <label for="tintColor">Mã màu (tintColor)</label>
+    <input type="color" id="tintColor">
+
+    <label for="appID">App ID</label>
+    <input type="text" id="appID" value="com.example.app">
+
+    <label for="date">Ngày (date)</label>
+    <input type="text" id="date" readonly>
+
+    <label><input type="checkbox" id="notify"> Notify</label>
+
+    <button onclick="addOrUpdateNews()">Thêm / Cập nhật tin</button>
+    <button onclick="cancelEdit()" id="cancelBtn" style="display:none;">Thoát chỉnh sửa</button>
+
+    <div class="news-list" id="newsList"></div>
+
+    <label for="output">📦 Mã JSON xuất ra</label>
+    <textarea id="output" readonly></textarea>
+  </div>
+
+  <script>
+    let newsArray = [];
+    let editIndex = -1;
+
+    document.getElementById('date').value = new Date().toISOString().split('T')[0];
+
+    function addOrUpdateNews() {
+      const title = document.getElementById('title').value.trim();
+      const caption = document.getElementById('caption').value.trim();
+      const imageURL = document.getElementById('imageURL').value.trim();
+      const tintColor = document.getElementById('tintColor').value.replace('#', '').toUpperCase();
+      const appID = document.getElementById('appID').value.trim();
+      const date = document.getElementById('date').value;
+      const notify = document.getElementById('notify').checked;
+
+      if (!title || !caption || !imageURL || !appID) {
+        alert("Vui lòng điền đầy đủ thông tin.");
+        return;
+      }
+
+      const identifier = title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]/g, '') + "-available-now";
+
+      const newsItem = { title, identifier, caption, tintColor, imageURL, appID, date, notify };
+
+      if (editIndex >= 0) {
+        newsArray[editIndex] = newsItem;
+        editIndex = -1;
+        document.getElementById('cancelBtn').style.display = 'none';
+      } else {
+        newsArray.push(newsItem);
+      }
+
+      clearForm();
+      renderNewsList();
+      updateOutput();
+    }
+
+    function clearForm() {
+      document.getElementById('title').value = '';
+      document.getElementById('caption').value = '';
+      document.getElementById('imageURL').value = '';
+      document.getElementById('tintColor').value = '#228B22';
+      document.getElementById('appID').value = 'com.example.app';
+      document.getElementById('date').value = new Date().toISOString().split('T')[0];
+      document.getElementById('notify').checked = false;
+    }
+
+    function renderNewsList() {
+      const list = document.getElementById('newsList');
+      list.innerHTML = '';
+      newsArray.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = 'news-item';
+        div.innerHTML = `
+          <span><strong>${item.title}</strong> - ${item.caption}</span>
+          <button class="edit" onclick="editNews(${index})">Sửa</button>
+          <button onclick="deleteNews(${index})">Xóa</button>
+        `;
+        list.appendChild(div);
+      });
+    }
+
+    function editNews(index) {
+      const item = newsArray[index];
+      document.getElementById('title').value = item.title;
+      document.getElementById('caption').value = item.caption;
+      document.getElementById('imageURL').value = item.imageURL;
+      document.getElementById('tintColor').value = '#' + item.tintColor;
+      document.getElementById('appID').value = item.appID;
+      document.getElementById('date').value = item.date;
+      document.getElementById('notify').checked = item.notify;
+      editIndex = index;
+      document.getElementById('cancelBtn').style.display = 'inline-block';
+    }
+
+    function deleteNews(index) {
+      if (confirm("Bạn có chắc muốn xóa tin này?")) {
+        newsArray.splice(index, 1);
+        renderNewsList();
+        updateOutput();
+      }
+    }
+
+    function cancelEdit() {
+      editIndex = -1;
+      clearForm();
+      document.getElementById('cancelBtn').style.display = 'none';
+    }
+
+    function updateOutput() {
+      document.getElementById('output').value = JSON.stringify({ news: newsArray }, null, 2);
+    }
+  </script>
+</body>
+</html>
