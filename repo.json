@@ -6,6 +6,7 @@
   "website": "https://github.com/drphe/KhoIPA",
   "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
   "subtitle": "Kho ứng dụng IPA mod cho Sideloading, Feather, Esign...",
+"tintColor": "#343a40",
   "META": {
     "repoName": "Kho IPA mod",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
