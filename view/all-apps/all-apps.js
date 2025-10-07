@@ -7,29 +7,52 @@ insertNavigationBar("All Apps");
 main((json) => {
     document.title = `Apps - ${json.name}`;
 
-    const apps = json.apps.filter(app => !app.beta); // Bỏ qua beta apps
-    const appsPerPage = 10;// số app trên 1 trang
+    const apps = json.apps.filter(app => !app.beta);
+    const appsPerPage = 10;
     const totalPages = Math.ceil(apps.length / appsPerPage);
     const appsContainer = document.getElementById("apps");
 
-    // Tạo thanh phân trang
-    const pagination = document.createElement("div");
-    pagination.id = "pagination";
-    pagination.style.textAlign = "center";
-    pagination.style.marginBottom = "20px";
+    // Tạo thanh phân trang bằng <a>
+    const pagination = document.createElement("nav");
+    pagination.className = "pagination justify-content-center mb-4";
+
+    const ul = document.createElement("ul");
+    ul.className = "pagination";
 
     for (let i = 1; i <= totalPages; i++) {
-        const btn = document.createElement("button");
-        btn.textContent = i;
-        btn.style.margin = "0 5px";
-        btn.onclick = () => renderPage(i);
-        pagination.appendChild(btn);
+        const li = document.createElement("li");
+        li.className = "page-item";
+
+        const a = document.createElement("a");
+        a.className = "page-link";
+        a.href = "#";
+        a.textContent = i;
+        a.onclick = (e) => {
+            e.preventDefault();
+            renderPage(i);
+            highlightActivePage(i);
+        };
+
+        li.appendChild(a);
+        ul.appendChild(li);
     }
 
+    pagination.appendChild(ul);
     appsContainer.before(pagination);
 
+    function highlightActivePage(activePage) {
+        const links = ul.querySelectorAll(".page-link");
+        links.forEach((link, index) => {
+            if (index + 1 === activePage) {
+                link.classList.add("active", "bg-primary", "text-white");
+            } else {
+                link.classList.remove("active", "bg-primary", "text-white");
+            }
+        });
+    }
+
     function renderPage(pageNumber) {
-        appsContainer.innerHTML = ""; // Xóa nội dung cũ
+        appsContainer.innerHTML = "";
         const startIndex = (pageNumber - 1) * appsPerPage;
         const endIndex = startIndex + appsPerPage;
         const pageApps = apps.slice(startIndex, endIndex);
@@ -62,5 +85,6 @@ main((json) => {
         });
     }
 
-    renderPage(1); // Hiển thị trang đầu tiên khi load
+    renderPage(1);
+    highlightActivePage(1);
 });
