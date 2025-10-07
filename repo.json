@@ -13,14 +13,14 @@
   "news": [
     {
       "title": "Cập nhật - Zalo 2",
-      "identifier": "cp-nht---zalo-2-available-now",
-      "caption": "Đã có phiên bản zalo2 ver 25.02.02",
+      "identifier": "cp-nht-zalo-2-available-now",
+      "caption": "Đã có phiên bản zalo2 ver 25.02.02\n Tải trực tiếp theo đường link phía dưới.",
       "tintColor": "3498DB",
       "imageURL": "https://chat.zalo.me/apple-icon-144x144.png",
       "appID": "com.example.app",
       "date": "2025-10-07",
       "notify": false,
-      "url": ""
+      "url": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250202/Zalo2-v250202.ipa"
     },
     {
       "title": "Ra mắt dự án kho IPA mod",
