@@ -17,6 +17,11 @@ const sources = await json("./common/assets/json/sources.json");
     for (const source of fetchedSources) {
         await insertSource(source);
     }
+    // If source provided
+    if (urlSearchParams.has('source')) {
+        let sourceURL = urlSearchParams.get("source");
+	open(`./view/?source=${sourceURL}`);
+    }
 
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
