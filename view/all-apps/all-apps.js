@@ -49,10 +49,12 @@ main((json) => {
                 link.style.backgroundColor = "#007bff";
                 link.style.color = "#fff";
                 link.style.fontWeight = "bold";
+                link.style.margin = "4px";
             } else {
                 link.style.backgroundColor = "";
                 link.style.color = "#007bff";
                 link.style.fontWeight = "normal";
+                link.style.margin = "4px";
             }
         });
     }
