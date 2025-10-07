@@ -37,6 +37,31 @@
   "apps": [
     {
       "beta": false,
+      "name": "Youtube Premium",
+      "bundleIdentifier": "com.youtube.youtube",
+      "developerName": "apptesters.org",
+      "subtitle": "Youtube Premium (full chức năng)",
+      "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.",
+      "iconURL": "https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-1024.png",
+      "tintColor": "000000",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "20.39.6",
+          "date": "2025-10-01T17:31:00Z",
+          "size": 129712392,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/youtube.premium.20.39.6/YouTube_20.39.6_Premium.ipa",
+          "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium."
+        }
+      ],
+      "version": "20.39.6",
+      "versionDate": "2025-10-01T17:31:00Z",
+      "versionDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/youtube.premium.20.39.6/YouTube_20.39.6_Premium.ipa",
+      "size": 129712392
+    },
+    {
+      "beta": false,
       "name": "Facebook Glow++",
       "bundleIdentifier": "com.facebook.facebook",
       "developerName": "IPAOMTK.com",
