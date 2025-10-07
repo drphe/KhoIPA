@@ -1,0 +1,67 @@
+<!-- 
+    view/index.html
+    altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
+
+    Copyright (c) 2023 Foxster.
+    MIT License.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../common/style.css">
+</head>
+<body class="loading">
+  <div id="loading">
+    <img src="../common/assets/img/loading.gif" alt="loading">
+    <p>Loading</p>
+  </div>
+  <!-- Add to AltStore banner -->
+  <div id="top">
+    <div id="nav-bar" class="hide-border">
+      <a href="../" class="hidden">
+        <i class="bi bi-search" style="font-size: 1.25rem;"></i>
+      </a>
+      <div id="title" class="hidden">
+          <p>AltSource Viewer</p>
+      </div>
+      <div class="nav-bar-buttons">
+        <a id="edit" href="../" href="https://github.com/therealFoxster/altsource-viewer">
+          <i class="bi bi-search" style="font-size: 1.25rem;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="main">
+    <p>AltSource Viewer</p>
+    <div class="header">
+      <h1 id="title">altsource-v2</h1>
+      <!-- <a id="add" style="font-size: 1em">
+        <i class="bi bi-plus-circle-fill" style="font-size: 1.35rem;"></i>
+      </a> -->
+    </div>
+    <div id="news" class="section">
+      <div class="header">
+        <h2>News</h2>
+        <a href="../">View All</a>
+      </div>
+      <div id="news-items"></div>
+    </div>
+    <div id="apps" class="section">
+      <div class="header">
+        <h2>Featured Apps</h2>
+        <a href="../">View All Apps</a>
+      </div>
+    </div>
+    <div id="about" class="section">
+      <div class="header">
+        <h2>About</h2>
+      </div>
+    </div>
+  </div>
+  <script src="view.js" type="module"></script>
+</body>
+</html>

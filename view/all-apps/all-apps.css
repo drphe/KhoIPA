@@ -1,0 +1,42 @@
+/* 
+    all-apps.css
+    altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
+
+    Copyright (c) 2023 Foxster.
+    MIT License.
+*/
+
+#main {
+  /* padding-top: 5rem; */
+  padding-top: 7rem;
+}
+
+.app-header-container {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+#apps .app-container {
+  margin: 1em 1rem 3.25em 1rem;
+}
+
+#apps .app-container:last-of-type {
+  margin-bottom: 1em;
+}
+
+.screenshots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.screenshots:last-of-type {
+  margin-bottom: 1em;
+}
+
+.screenshot {
+  max-width: 48%;
+  border-radius: 4px;
+  border: 0.75px solid rgba(0, 0, 0, 0.2);
+}
