@@ -1,0 +1,191 @@
+/* 
+    uialert.css
+    uialert.js (https://github.com/therealFoxster/uialert.js)
+
+    Copyright (c) 2024 therealFoxster.
+    MIT License.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  --uialert-background-color: rgb(236, 236, 236);
+  --uialert-container-background-color: rgba(0, 0, 0, 0.25);
+  --uialert-text-color: black;
+  --uialert-separator-color: rgba(0, 0, 0, 0.125);
+  --uialert-button-hover-background-color: rgba(0, 0, 0, 0.125);
+  --uialert-button-default-text-color: #007AFF;
+  --uialert-button-destructive-text-color: #FF3B30;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    --uialert-background-color: rgb(45, 45, 45);
+    --uialert-container-background-color: rgba(0, 0, 0, 0.5);
+    --uialert-text-color: white;
+    --uialert-separator-color: rgba(255, 255, 255, 0.125);
+    --uialert-button-hover-background-color: rgba(255, 255, 255, 0.125);
+    --uialert-button-default-text-color: #0A84FF;
+    --uialert-button-destructive-text-color: #FF453A;
+  }
+}
+
+#uialert {
+  font-family: 'Helvetica Neue', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  letter-spacing: 0.001em;
+}
+
+#uialert-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--uialert-container-background-color);
+  z-index: 999;
+}
+
+#uialert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 70%;
+  max-width: 275px;
+  border: 0;
+  border-radius: 0.75em;
+  overflow: hidden;
+  background-color: var(--uialert-background-color);
+  color: var(--uialert-text-color);
+  margin: 0 auto;
+}
+
+#uialert p {
+  margin: 0;
+}
+
+#uialert>#text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.15rem 1rem;
+  text-align: center;
+}
+
+#uialert>#text>#title {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+#uialert>#text>#message {
+  font-size: 0.85em;
+  margin-top: 0.25em;
+}
+
+#uialert>#buttons {
+  display: flex;
+  width: 100%;
+}
+
+#uialert>#buttons button {
+  flex: 1;
+  padding: 0.7rem;
+  border: 0;
+  border-top: 1px solid var(--uialert-separator-color);
+  font-size: 1.05em;
+  background-color: transparent;
+  color: var(--uialert-button-default-text-color);
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  #uialert>#buttons button:hover {
+    background-color: var(--uialert-button-hover-background-color);
+  }
+}
+
+#uialert>#buttons button:active {
+  opacity: 0.75;
+}
+
+#uialert>#buttons button.destructive {
+  color: var(--uialert-button-destructive-text-color);
+}
+
+#uialert>#buttons button.cancel,
+#uialert>#buttons:not(:has(button:nth-child(2)))>button {
+  font-weight: 600;
+}
+
+#uialert>#buttons:has(button:nth-child(2)):not(:has(button:nth-child(3)))>button:first-child {
+  border-right: 0.5px solid var(--uialert-separator-color);
+}
+
+#uialert>#buttons:has(button:nth-child(2)):not(:has(button:nth-child(3)))>button:last-child {
+  border-left: 0.5px solid var(--uialert-separator-color);
+}
+
+#uialert>#buttons:has(button:nth-child(3)) {
+  flex-direction: column;
+}
+
+@keyframes uialert-container-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#uialert-container {
+  animation: uialert-container-in 0.35s ease;
+}
+
+@keyframes uialert-container-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#uialert-container.hiding {
+  animation: uialert-container-out 0.25s ease-in-out forwards;
+}
+
+@keyframes uialert-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#uialert {
+  animation: uialert-in 0.25s ease-in-out;
+}
+
+@keyframes uialert-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#uialert.hiding {
+  animation: uialert-out 0.25s ease-in-out forwards;
+}
