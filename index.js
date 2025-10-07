@@ -19,8 +19,8 @@ const sources = await json("./common/assets/json/sources.json");
     }
     // If source provided
     if (urlSearchParams.has('source')) {
-        let sourceURL = urlSearchParams.get("source");
-	open(`./view/?source=${sourceURL}`);
+      //  let sourceURL = urlSearchParams.get("source");
+	//open(`./view/?source=${sourceURL}`);
     }
 
     document.body.classList.remove("loading");
