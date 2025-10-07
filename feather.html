@@ -67,6 +67,9 @@
             <label for="news_title">Tiêu đề (*):</label>
             <input type="text" id="news_title" placeholder="Tiêu đề tin tức">
 
+            <label for="news_identifier">Id tin tức (*):</label>
+            <input type="text" id="news_identifier" placeholder="Id của tin tức">
+
             <label for="news_caption">Caption (*):</label>
             <input type="text" id="news_caption" placeholder="Mô tả ngắn">
 
@@ -187,7 +190,7 @@
         <!-- OUTPUT AND ACTIONS -->
         <label for="output" class="mt-6">📦 Mã JSON xuất ra</label>
         <textarea id="output" readonly></textarea>
-        
+        <a href="https://view.drifty.win/view/?source=https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json">Xem thư viện mẫu ở đây</a>
         <div class="flex justify-between items-center mt-4">
             <input type="file" id="jsonFileInput" accept=".json" style="display: none;" onchange="handleFileSelect(event)">
             <button onclick="document.getElementById('jsonFileInput').click()" class="btn-import">
@@ -202,7 +205,6 @@
     <!-- Custom Alert and Confirm Modals -->
     <div id="customAlertModal" style="display:none;"></div>
     <div id="customConfirmModal" style="display:none;"></div>
-
     <script>
         // --- Dữ liệu và Biến trạng thái ---
         let newsArray = [];
@@ -307,6 +309,7 @@
         // --- Chức năng Quản lý NEWS ---
         function addOrUpdateNews() {
             const title = document.getElementById('news_title').value.trim();
+	    const identifier = document.getElementById('news_identifier').value.trim();
             const caption = document.getElementById('news_caption').value.trim();
             const imageURL = document.getElementById('news_imageURL').value.trim();
             const url = document.getElementById('news_url').value.trim();
@@ -315,15 +318,15 @@
             const date = document.getElementById('news_date').value;
             const notify = document.getElementById('news_notify').checked;
 
-            if (!title || !caption || !imageURL || !appID) {
+            if (!title || !caption || !imageURL || !appID || !identifier) {
                 showCustomAlert("Vui lòng điền đầy đủ thông tin tin tức.");
                 return;
             }
 
-            const identifier = title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]/g, '') + "-available-now";
-
             const newsItem = { title, identifier, caption, tintColor, imageURL, appID, date, notify, url };
-
+		if (newsItem.url === "") {
+  			delete newsItem.url;
+		}
             if (newsEditIndex >= 0) {
                 newsArray[newsEditIndex] = newsItem;
                 newsEditIndex = -1;
@@ -339,6 +342,7 @@
 
         function clearNewsForm() {
             document.getElementById('news_title').value = '';
+            document.getElementById('news_identifier').value = '';
             document.getElementById('news_caption').value = '';
             document.getElementById('news_imageURL').value = '';
             document.getElementById('news_tintColor').value = '#3498db';
@@ -372,6 +376,7 @@
         function editNews(index) {
             const item = newsArray[index];
             document.getElementById('news_title').value = item.title;
+            document.getElementById('news_identifier').value = item.identifier;
             document.getElementById('news_caption').value = item.caption;
             document.getElementById('news_imageURL').value = item.imageURL;
             document.getElementById('news_url').value = item.url;
