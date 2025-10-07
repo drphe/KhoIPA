@@ -10,57 +10,44 @@
     "repoName": "Kho IPA mod",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
   },
-  "news": [],
+  "news": [
+    {
+      "title": "Ra mắt dự án kho IPA mod",
+      "identifier": "ra-mt-d-n-kho-ipa-mod-available-now",
+      "caption": "Dự án mã nguồn mở, chia sẻ thư viện (kho) ứng dụng IPA mod được cập nhật thường xuyên và liên lục.",
+      "tintColor": "3498DB",
+      "imageURL": "https://esign.yyyue.xyz/ESignLogo200.png",
+      "appID": "com.khoipa.app",
+      "date": "2025-10-07",
+      "notify": true,
+      "url": "https://github.com/drphe/khoIPA/releases"
+    }
+  ],
   "apps": [
     {
       "beta": false,
-      "name": "YAZIO",
-      "bundleIdentifier": "com.yazio.ios.YAZIO",
-      "developerName": "kfadfad",
-      "subtitle": "yazio haha",
-      "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.pn",
+      "name": "轻松签-ESign",
+      "bundleIdentifier": "p3.xyz.yyyue.esign",
+      "developerName": "yyy",
+      "subtitle": "Ứng dụng ký",
+      "localizedDescription": "轻松签是一款免越狱可给ipa签名的工具，具有注入库，去库等功能。",
+      "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
       "tintColor": "000000",
       "screenshotURLs": [],
       "versions": [
         {
-          "version": "0.2.2",
-          "date": "2025-10-10T14:42:00Z",
-          "size": 50000000,
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2025/YAZIO_12.53.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "localizedDescription": "test 2"
+          "version": "5.0.2",
+          "date": "2024-01-28T15:13:00Z",
+          "size": 7206362,
+          "downloadURL": "https://pan.yyyue.xyz/d/esign/esign_5.0.2_unsigned.ipa",
+          "localizedDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới."
         }
       ],
-      "version": "0.2.2",
-      "versionDate": "2025-10-10T14:42:00Z",
-      "versionDescription": "test 2",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2025/YAZIO_12.53.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-      "size": 50000000
-    },
-    {
-      "beta": false,
-      "name": "StressWatch",
-      "bundleIdentifier": "com.ideation.Stress",
-      "developerName": "Không biết",
-      "subtitle": "Injected with Subscription Unlocked",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ideation.Stress.png",
-      "tintColor": "000000",
-      "screenshotURLs": [],
-      "versions": [
-        {
-          "version": "0.1.1",
-          "date": "2025-10-07T14:40:00Z",
-          "size": 5000,
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2025/Vids_1.121.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-          "localizedDescription": "haha adfadf"
-        }
-      ],
-      "version": "0.1.1",
-      "versionDate": "2025-10-07T14:40:00Z",
-      "versionDescription": "haha adfadf",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-10-2025/Vids_1.121.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-      "size": 5000
+      "version": "5.0.2",
+      "versionDate": "2024-01-28T15:13:00Z",
+      "versionDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới.",
+      "downloadURL": "https://pan.yyyue.xyz/d/esign/esign_5.0.2_unsigned.ipa",
+      "size": 7206362
     }
   ]
 }
