@@ -12,41 +12,47 @@ main((json) => {
     const totalPages = Math.ceil(apps.length / appsPerPage);
     const appsContainer = document.getElementById("apps");
 
-    // Tạo thanh phân trang bằng <a>
-    const pagination = document.createElement("nav");
-    pagination.className = "pagination justify-content-center mb-4";
+    // Tạo thanh phân trang đơn giản bằng <a>
+    function createPagination() {
+        const pagination = document.createElement("div");
+        pagination.className = "pagination-bar";
+        pagination.style.textAlign = "center";
+        pagination.style.margin = "20px 0";
 
-    const ul = document.createElement("ul");
-    ul.className = "pagination";
+        for (let i = 1; i <= totalPages; i++) {
+            const link = document.createElement("a");
+            link.href = "#";
+            link.textContent = i;
+            link.className = "mx-1 px-2 py-1 border rounded text-decoration-none";
+            link.style.color = "#007bff";
+            link.onclick = (e) => {
+                e.preventDefault();
+                renderPage(i);
+                highlightActivePage(i);
+            };
+            pagination.appendChild(link);
+        }
 
-    for (let i = 1; i <= totalPages; i++) {
-        const li = document.createElement("li");
-        li.className = "page-item";
-
-        const a = document.createElement("a");
-        a.className = "page-link";
-        a.href = "#";
-        a.textContent = i;
-        a.onclick = (e) => {
-            e.preventDefault();
-            renderPage(i);
-            highlightActivePage(i);
-        };
-
-        li.appendChild(a);
-        ul.appendChild(li);
+        return pagination;
     }
 
-    pagination.appendChild(ul);
-    appsContainer.before(pagination);
+    const paginationTop = createPagination();
+    const paginationBottom = createPagination();
+
+    appsContainer.before(paginationTop);
+    appsContainer.after(paginationBottom);
 
     function highlightActivePage(activePage) {
-        const links = ul.querySelectorAll(".page-link");
-        links.forEach((link, index) => {
-            if (index + 1 === activePage) {
-                link.classList.add("active", "bg-primary", "text-white");
+        const allLinks = document.querySelectorAll(".pagination-bar a");
+        allLinks.forEach((link, index) => {
+            if (parseInt(link.textContent) === activePage) {
+                link.style.backgroundColor = "#007bff";
+                link.style.color = "#fff";
+                link.style.fontWeight = "bold";
             } else {
-                link.classList.remove("active", "bg-primary", "text-white");
+                link.style.backgroundColor = "";
+                link.style.color = "#007bff";
+                link.style.fontWeight = "normal";
             }
         });
     }
