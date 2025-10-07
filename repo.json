@@ -26,6 +26,31 @@
   "apps": [
     {
       "beta": false,
+      "name": "Zalo2",
+      "bundleIdentifier": "com.zalo.app",
+      "developerName": "VNG",
+      "subtitle": "Nhân bản Zalo",
+      "localizedDescription": "Ứng dụng zalo2 giúp nhân bản 2 zalo trên điện thoại.",
+      "iconURL": "https://chat.zalo.me/apple-icon-144x144.png",
+      "tintColor": "000000",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "20.07.02",
+          "date": "2025-04-01T15:34:00Z",
+          "size": 167645264,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo/Zalo2_200702_LeTi.ipa",
+          "localizedDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé."
+        }
+      ],
+      "version": "20.07.02",
+      "versionDate": "2025-04-01T15:34:00Z",
+      "versionDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé.",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo/Zalo2_200702_LeTi.ipa",
+      "size": 167645264
+    },
+    {
+      "beta": false,
       "name": "轻松签-ESign",
       "bundleIdentifier": "p3.xyz.yyyue.esign",
       "developerName": "yyy",
