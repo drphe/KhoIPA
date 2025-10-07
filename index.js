@@ -1,3 +1,5 @@
+import { urlSearchParams, sourceURL } from "./common/modules/constants.js";
+import { isValidHTTPURL, open, formatVersionDate, json } from "./common/modules/utilities.js";
 const sources = await json("./common/assets/json/sources.json");
 
 (async function main() {
