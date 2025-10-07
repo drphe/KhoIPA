@@ -1,11 +1,3 @@
-//
-//  AppHeader.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 import { sourceURL } from "../modules/constants.js";
 
 export const AppHeader = (app, x = ".") => app ? `
@@ -18,7 +10,7 @@ export const AppHeader = (app, x = ".") => app ? `
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name}</p>
-                        <p class="subtitle">${app.developerName}</p>
+                        <p class="subtitle">${version} - ${app.developerName}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
                     </div>

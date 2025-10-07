@@ -74,6 +74,13 @@
       "screenshotURLs": [],
       "versions": [
         {
+          "version": "534.0.0",
+          "date": "2025-10-04T23:50:00Z",
+          "size": 161653658,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.534/Facebook_534.0.0_Premium.ipa",
+          "localizedDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo"
+        },
+        {
           "version": "531.0.0",
           "date": "2025-09-30T17:16:00Z",
           "size": 161739546,
@@ -81,11 +88,11 @@
           "localizedDescription": "Phiên bản 531.0."
         }
       ],
-      "version": "531.0.0",
-      "versionDate": "2025-09-30T17:16:00Z",
-      "versionDescription": "Phiên bản 531.0.",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.531/Facebook-Glow-531.0.0.ipa",
-      "size": 161739546
+      "version": "534.0.0",
+      "versionDate": "2025-10-04T23:50:00Z",
+      "versionDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.534/Facebook_534.0.0_Premium.ipa",
+      "size": 161653658
     },
     {
       "beta": false,
