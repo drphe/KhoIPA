@@ -78,14 +78,14 @@
           "date": "2025-10-04T23:50:00Z",
           "size": 161653658,
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.534/Facebook_534.0.0_Premium.ipa",
-          "localizedDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo"
+          "localizedDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo, nguồn apptesters.org"
         },
         {
           "version": "531.0.0",
           "date": "2025-09-30T17:16:00Z",
           "size": 161739546,
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.531/Facebook-Glow-531.0.0.ipa",
-          "localizedDescription": "Phiên bản 531.0."
+          "localizedDescription": "Phiên bản 531.0. Nguồn IPAOMTK.com"
         }
       ],
       "version": "534.0.0",
