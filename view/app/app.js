@@ -183,7 +183,7 @@ main((json) => {
         i++;
         appSize = parseFloat(appSize / 1024).toFixed(1);
     }
-     versionSizeElement.textContent = appSize ? `${appSize} ${units[i]} "`: "";
+     versionSizeElement.textContent = appSize ? `${appSize} ${units[i]}`: "";
 
     // Version description
     versionDescriptionElement.innerHTML = app.versionDescription || formatString(app.versionDescription);
