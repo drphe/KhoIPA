@@ -14,6 +14,39 @@
   },
   "news": [
     {
+      "title": "Hướng dẫn tiêm dylib/deb vào IPA",
+      "identifier": "hdsd-tiem-dylib",
+      "caption": "Công cụ inject (tiêm) dylib/deb vào iPA online từ codevn.vn\\n 👇🏻👇🏻👇🏻 WEB LẤY IPA TRẮNG \\n Web 1: https://decrypt.day/ \\nWeb 2: https://armconverter.com/decryptedappstore/us",
+      "tintColor": "3498DB",
+      "imageURL": "https://codevn.net/wp-content/uploads/2023/01/1673432536-96d6f2e7e1f705a.png",
+      "appID": "com.example.app",
+      "date": "2025-10-08",
+      "notify": true,
+      "url": "https://ipatool.codevn.net/inject-dylib/"
+    },
+    {
+      "title": "Hướng dẫn cài Feather cho IOS",
+      "identifier": "hdsd-feather-pc",
+      "caption": "Để cài đặt bản Feather mới nhất, hãy upload chứng chỉ lên https://sign.codevn.net và tick vào Feather để ký và cài đặt.",
+      "tintColor": "3498DB",
+      "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
+      "appID": "com.example.app",
+      "date": "2025-10-08",
+      "notify": true,
+      "url": "https://sign.codevn.net"
+    },
+    {
+      "title": "Hướng dẫn sử dụng Feather cài IPA",
+      "identifier": "hdsd-feather",
+      "caption": "Bài hướng dẫn chi tiết cách sử dụng ứng dụng Feather để ký và cài đặt ứng dụng ngoài Apple store (file .IPA)",
+      "tintColor": "3498DB",
+      "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
+      "appID": "com.feather.app",
+      "date": "2025-10-08",
+      "notify": false,
+      "url": "https://thuthuatjb.com/huong-dan-su-dung-feather-de-cai-ipa-tren-cac-thiet-bi-ios-ipados/amp/"
+    },
+    {
       "title": "Cập nhật - Zalo 2",
       "identifier": "update-zalo",
       "caption": "Đã có phiên bản zalo2 ver 25.02.02 Tải trực tiếp theo đường link phía dưới.",
@@ -37,6 +70,34 @@
     }
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "Feather",
+      "bundleIdentifier": "com.feather.app",
+      "developerName": "Khcrysalis",
+      "subtitle": "Ký và cài đặt IPA cho IOS",
+      "localizedDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
+      "tintColor": "6156B8",
+      "screenshotURLs": [
+        "https://ios.codevn.net/wp-content/uploads/2025/02/Repos-710x1536.png",
+        "https://ios.codevn.net/wp-content/uploads/2025/02/Store-710x1536.png"
+      ],
+      "versions": [
+        {
+          "version": "2.4",
+          "date": "2025-10-01T04:41:00Z",
+          "size": 12711617,
+          "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa",
+          "localizedDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!"
+        }
+      ],
+      "version": "2.4",
+      "versionDate": "2025-10-01T04:41:00Z",
+      "versionDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!",
+      "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa",
+      "size": 12711617
+    },
     {
       "beta": false,
       "name": "Youtube Premium",
