@@ -70,7 +70,7 @@ https://github.com/drphe/khoIPA/
 
 > ⚠️ Một số link không load được bằng AltStore Viewer do lỗi CORS. Vui lòng sử dụng Feather hoặc ESign để xem.
 
-```plaintext
+
 https://drphe.github.io/KhoIPA/repo.json
 https://alt.getutm.app
 https://flyinghead.github.io/flycast-builds/altstore.json
@@ -95,6 +95,3 @@ https://aio.zxcvbn.fyi/r/repo.feather.json
 Nếu bạn có ứng dụng muốn chia sẻ hoặc đóng góp cho kho, hãy tạo Pull Request hoặc liên hệ qua GitHub Issues.
 
 ---
-
-
-Bạn có thể copy nội dung này vào file `README.md` trong repo của bạn. Nếu muốn mình giúp tạo thêm phần hướng dẫn kỹ thuật, changelog, hoặc banner cho repo, cứ nói nhé!
