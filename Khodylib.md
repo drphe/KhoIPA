@@ -1,40 +1,90 @@
-Chia sẻ các file .dylib, .deb, .plist tự build hoặc sưu tầm được:
+\## 🧩 Tiện ích `.dylib`, `.deb`, `.plist` tự build hoặc sưu tầm
 
-1. Glow - Gói tiện ích tiêm Facebook
-https://github.com/drphe/KhoIPA/releases/download/glow.facebook/Glow_facebook.zip
--Chặn quảng cáo
--Tải Video/Story (Bấm giữ video)
--Và nhiều tính năng hơn nữa…
-⚠️ Mở Menu bằng cách bấm giữ nút Tab Menu, Trang chủ,...
 
- Dayanch96/Glow (https://github.com/dayanch96/Glow)
-❗️ Ai tải deb vào Github tác giả nhé
 
-2. Flow - Gói tiện ích tiêm Messenger 
-https://github.com/drphe/KhoIPA/releases/download/flow.messenger/Flow_messenger.zip
+\### 🌟 Glow – Tiện ích tiêm Facebook  
 
-- Chặn quảng cáo
-- Tải Story (Nút 3 chấm)
-- Chặn “đã xem” ở tin nhắn và Story; Ẩn “đang gõ” tin nhắn
-- Và nhiều tính năng hơn nữa…
-⚠️ Mở Mục Cài Đặt > Góc phải bên trên là Menu Flow
+📦 \[Tải về](https://github.com/drphe/KhoIPA/releases/download/glow.facebook/Glow\_facebook.zip)  
 
- Dayanch96/Flow (https://github.com/dayanch96/Flow)
-❗️ Ai tải deb vào Github tác giả nhé
+🔧 Tính năng:
 
-3. 💳 iFaker - Dylib fake thông tin thiết bị dễ dàng cho ứng dụng
-https://github.com/drphe/KhoIPA/releases/download/ifaker/iFaker.dylib
+\- Chặn quảng cáo
 
-⚙️ Fake phiên bản iOS
-⚙️ Fake Mã bản dựng iOS
-⚙️ Fake phiên bản ứng dụng hiện tại.
-⚙️ Fake Mẫu máy
+\- Tải Video/Story (bấm giữ video)
 
-⚠️ Gọi Menu bằng cách giữ 4 ngón tay trên màn hình
+\- Menu: bấm giữ nút Tab Menu, Trang chủ,...
 
-4. Dilyb chặn network
 
-https://github.com/drphe/KhoIPA/releases/download/disablenetwork/DisableNetwork.dylib
-Chức năng❗️
-- Chặn network app
-⚠️ Sử dụng với game offline
+
+🔗 \[Dayanch96/Glow](https://github.com/dayanch96/Glow)  
+
+❗️ Nếu cần `.deb`, tải từ repo gốc của tác giả
+
+
+
+---
+
+
+
+\### 💬 Flow – Tiện ích tiêm Messenger  
+
+📦 \[Tải về](https://github.com/drphe/KhoIPA/releases/download/flow.messenger/Flow\_messenger.zip)  
+
+🔧 Tính năng:
+
+\- Chặn quảng cáo
+
+\- Tải Story (nút 3 chấm)
+
+\- Chặn “đã xem” và “đang gõ”
+
+\- Menu: Cài Đặt → góc phải là Menu Flow
+
+
+
+🔗 \[Dayanch96/Flow](https://github.com/dayanch96/Flow)  
+
+❗️ Nếu cần `.deb`, tải từ repo gốc của tác giả
+
+
+
+---
+
+
+
+\### 💳 iFaker – Dylib giả thông tin thiết bị  
+
+📦 \[Tải về](https://github.com/drphe/KhoIPA/releases/download/ifaker/iFaker.dylib)  
+
+🔧 Tính năng:
+
+\- Fake phiên bản iOS
+
+\- Fake mã bản dựng
+
+\- Fake phiên bản ứng dụng
+
+\- Fake mẫu máy  
+
+⚠️ Gọi menu bằng cách giữ 4 ngón tay trên màn hình
+
+
+
+---
+
+
+
+\### 🚫 DisableNetwork – Dylib chặn kết nối mạng  
+
+📦 \[Tải về](https://github.com/drphe/KhoIPA/releases/download/disablenetwork/DisableNetwork.dylib)  
+
+🔧 Chức năng:
+
+\- Chặn network app  
+
+⚠️ Dùng với game offline
+
+
+
+---
+
