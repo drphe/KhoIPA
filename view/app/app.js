@@ -1,11 +1,3 @@
-//
-//  app.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 import { urlSearchParams, sourceURL } from "../../common/modules/constants.js";
 import { formatString, insertSpaceInCamelString, insertSpaceInSnakeString, formatVersionDate, open, setTintColor, isValidHTTPURL, showAddToAltStoreAlert, json } from "../../common/modules/utilities.js";
 import { main } from "../../common/modules/main.js";
@@ -191,10 +183,10 @@ main((json) => {
         i++;
         appSize = parseFloat(appSize / 1024).toFixed(1);
     }
-    // versionSizeElement.textContent = `${appSize} ${units[i]}`;
+     versionSizeElement.textContent = appSize ? `${appSize} ${units[i]} "`: "";
 
     // Version description
-    versionDescriptionElement.innerHTML = formatString(app.versionDescription);
+    versionDescriptionElement.innerHTML = app.versionDescription || formatString(app.versionDescription);
     if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight)
         versionDescriptionElement.insertAdjacentHTML("beforeend", more);
 
