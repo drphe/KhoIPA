@@ -51,25 +51,19 @@ Tổng hợp link IPA mod
 
 
 
-https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json
-
-https://repository.apptesters.org
-
-https://ipa.cypwn.xyz/cypwn.json
-
-https://ipa.cypwn.xyz/cypwn\_ts.json
-
-https://raw.githubusercontent.com/vizunchik/AltStoreRus/master/apps.json
-
-https://randomblock1.com/altstore/apps.json
-
-https://community-apps.sidestore.io/sidecommunity.json
-
-https://wuxu1.github.io/wuxu-complete.json
-
-https://bit.ly/wuxuslibraryplus
-
-https://driftywinds.github.io/AltStore/apps.json
-
-https://aio.zxcvbn.fyi/r/repo.feather.json
-
+[   "https://drphe.github.io/KhoIPA/repo.json",
+    "https://alt.getutm.app",
+    "https://flyinghead.github.io/flycast-builds/altstore.json",
+    "https://quarksources.github.io/dist/quantumsource.min.json",
+    "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
+  "https://repository.apptesters.org",
+  "https://ipa.cypwn.xyz/cypwn.json",
+  "https://ipa.cypwn.xyz/cypwn_ts.json",
+  "https://raw.githubusercontent.com/vizunchik/AltStoreRus/master/apps.json",
+  "https://randomblock1.com/altstore/apps.json",
+  "https://community-apps.sidestore.io/sidecommunity.json",
+  "https://wuxu1.github.io/wuxu-complete.json",
+  "https://bit.ly/wuxuslibraryplus",
+  "https://driftywinds.github.io/AltStore/apps.json",
+  "https://aio.zxcvbn.fyi/r/repo.feather.json"
+]
