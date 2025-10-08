@@ -5,7 +5,7 @@
 <key>ConsentText</key>
 <dict>
 <key>default</key>
-<string>Tạo ứng dụng từ địa chỉ website.</string>
+<string>Kho ứng dụng IPA mod dành cho anh em IOS.</string>
 </dict>
  <key>PayloadContent</key>
  <array>
@@ -467,13 +467,13 @@ KAP/2Q==</data>
      <key>Label</key>
      <string>Kho IPA mod</string>
      <key>PayloadDescription</key>
-     <string>Tạo ứng dụng từ địa chỉ website</string>
+     <string>Tổng hợp các repository từ nhiều nguồn, các file IPA tự build và sưu tầm... </string>
      <key>PayloadDisplayName</key>
      <string>Web Clip (Kho IPA mod)</string>
      <key>PayloadIdentifier</key>
      <string>Kho IPA mod</string>
      <key>toPayloadOrganization</key>
-     <string>Phê tít</string>
+     <string>drphe</string>
      <key>PayloadType</key>
      <string>com.apple.webClip.managed</string>
      <key>PayloadUUID</key>
@@ -487,13 +487,13 @@ KAP/2Q==</data>
    </dict>
  </array>
  <key>PayloadDescription</key>
- <string>Ứng dụng được tạo từ địa chỉ website, sử dụng trình duyệt safari để chạy ứng dụng.</string>
+ <string>Kho ứng dụng IPA đã mod.</string>
  <key>PayloadDisplayName</key>
  <string>Kho IPA mod</string>
  <key>PayloadIdentifier</key>
  <string>Kho IPA mod</string>
  <key>PayloadOrganization</key>
- <string>Phê tít</string>
+ <string>github.com/drphe</string>
  <key>PayloadRemovalDisallowed</key>
  <false/>
  <key>PayloadType</key>
