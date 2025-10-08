@@ -1,4 +1,4 @@
-KhoIPA mod là dự án miễn phí, cung cấp các phiên bản IPA đã mod cho ae dùng Esign, Feather, sideloading
+#KhoIPA mod là dự án miễn phí, cung cấp các phiên bản IPA đã mod cho ae dùng Esign, Feather, sideloading
 
 
 
@@ -24,7 +24,7 @@ Mở ESign và truy cập tab Appstore -> nhấn nút Nguồn ở trên c
 
 
 
-Quy trình thêm ứng dụng mới/ tin tức mới/ phiên bản mới
+#Quy trình thêm ứng dụng mới/ tin tức mới/ phiên bản mới
 
 
 
@@ -47,7 +47,7 @@ Lấy mô tả và link từ bên trang release
 
 
 
-Tổng hợp link IPA mod
+#Tổng hợp link IPA mod
 
 Một số link không load đc bằng Altstore viewer do lỗi CORS, cần xem trên Feather hoặc Esign
 
