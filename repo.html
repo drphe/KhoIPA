@@ -719,7 +719,8 @@
             baseData.apps = appsArray;
             document.getElementById('output').value = JSON.stringify(baseData, null, 2);
         }
-
+// khởi tạo
+fetchRepoData();
 async function fetchRepoData() {
   try {
     const response = await fetch('repo.json');
