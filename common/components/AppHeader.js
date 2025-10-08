@@ -11,7 +11,7 @@ export const AppHeader = (app, x = ".") => app ? `
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name}</p>
-                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${formatVersionDate(app.versionDate)}</p>
+                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
                     </div>
