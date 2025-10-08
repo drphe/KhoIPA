@@ -56,17 +56,6 @@
       "date": "2025-10-07",
       "notify": false,
       "url": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250202/Zalo2-v250202.ipa"
-    },
-    {
-      "title": "Ra mắt dự án kho IPA mod",
-      "identifier": "khai-truong",
-      "caption": "Dự án mã nguồn mở, chia sẻ thư viện (kho) ứng dụng IPA mod được cập nhật thường xuyên và liên lục.",
-      "tintColor": "3498DB",
-      "imageURL": "https://esign.yyyue.xyz/ESignLogo200.png",
-      "appID": "com.khoipa.app",
-      "date": "2025-10-07",
-      "notify": false,
-      "url": "https://github.com/drphe/khoIPA/releases"
     }
   ],
   "apps": [
