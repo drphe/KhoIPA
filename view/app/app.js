@@ -186,7 +186,7 @@ main((json) => {
      versionSizeElement.textContent = appSize ? `${appSize} ${units[i]}`: "";
 
     // Version description
-    versionDescriptionElement.innerHTML = app.versionDescription || formatString(app.versionDescription);
+    versionDescriptionElement.innerHTML = app.versionDescription ?  formatString(app.versionDescription) : "";
     if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight)
         versionDescriptionElement.insertAdjacentHTML("beforeend", more);
 
