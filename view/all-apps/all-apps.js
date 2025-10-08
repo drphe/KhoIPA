@@ -7,68 +7,40 @@ insertNavigationBar("All Apps");
 main((json) => {
     document.title = `Apps - ${json.name}`;
 
-    const apps = json.apps.filter(app => !app.beta);
-    const appsPerPage = 10;
-    const totalPages = Math.ceil(apps.length / appsPerPage);
+    const allApps = json.apps.filter(app => !app.beta);
+    let filteredApps = [...allApps];
+    let currentIndex = 0;
+    const appsPerLoad = 20;
     const appsContainer = document.getElementById("apps");
 
-    // Tạo thanh phân trang đơn giản bằng <a>
-    function createPagination() {
-        const pagination = document.createElement("div");
-        pagination.className = "pagination-bar";
-        pagination.style.textAlign = "center";
-        pagination.style.margin = "20px 0";
+    // Tạo ô tìm kiếm
+    const searchBox = document.createElement("input");
+    searchBox.type = "text";
+    searchBox.placeholder = "Tìm theo tiêu đề...";
+    searchBox.className = "form-control mb-3";
+    searchBox.style.maxWidth = "400px";
+    searchBox.style.margin = "20px auto";
+    searchBox.style.display = "block";
 
-        for (let i = 1; i <= totalPages; i++) {
-            const link = document.createElement("a");
-            link.href = "#";
-            link.textContent = i;
-            link.className = "mx-1 px-2 py-1 border rounded text-decoration-none";
-            link.style.color = "#007bff";
-            link.onclick = (e) => {
-                e.preventDefault();
-                renderPage(i);
-                highlightActivePage(i);
-            };
-            pagination.appendChild(link);
-        }
+    appsContainer.before(searchBox);
 
-        return pagination;
-    }
-
-    const paginationTop = createPagination();
-    const paginationBottom = createPagination();
-
-    appsContainer.before(paginationTop);
-    appsContainer.after(paginationBottom);
-
-    function highlightActivePage(activePage) {
-        const allLinks = document.querySelectorAll(".pagination-bar a");
-        allLinks.forEach((link, index) => {
-            if (parseInt(link.textContent) === activePage) {
-                link.style.backgroundColor = "#007bff";
-                link.style.color = "#fff";
-                link.style.fontWeight = "bold";
-                link.style.margin = "4px";
-            } else {
-                link.style.backgroundColor = "";
-                link.style.color = "#007bff";
-                link.style.fontWeight = "normal";
-                link.style.margin = "4px";
-            }
-        });
-    }
-
-    function renderPage(pageNumber) {
+    searchBox.addEventListener("input", () => {
+        const keyword = searchBox.value.toLowerCase();
+        filteredApps = allApps.filter(app =>
+            app.title?.toLowerCase().includes(keyword)
+        );
+        currentIndex = 0;
         appsContainer.innerHTML = "";
-        const startIndex = (pageNumber - 1) * appsPerPage;
-        const endIndex = startIndex + appsPerPage;
-        const pageApps = apps.slice(startIndex, endIndex);
+        loadMoreApps();
+    });
 
-        pageApps.forEach(app => {
+    function loadMoreApps() {
+        const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
+        nextApps.forEach(app => {
             let html = `
             <div class="app-container">
                 ${AppHeader(app, "..")}
+                <p class="subtitle">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
                 <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
 
             if (app.screenshots) {
@@ -91,8 +63,16 @@ main((json) => {
             html += `</div>`;
             appsContainer.insertAdjacentHTML("beforeend", html);
         });
+
+        currentIndex += appsPerLoad;
     }
 
-    renderPage(1);
-    highlightActivePage(1);
+    // Tải thêm khi cuộn gần cuối
+    window.addEventListener("scroll", () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+            loadMoreApps();
+        }
+    });
+
+    loadMoreApps(); // Tải lần đầu
 });
