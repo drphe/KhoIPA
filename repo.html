@@ -728,7 +728,7 @@ async function fetchRepoData() {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
-    const data = await response.text(); // hoặc .json() nếu repo.json là JSON
+    const data = await response.json(); 
     baseData = data;
 
     // Gọi các hàm xử lý sau khi dữ liệu đã được gán
