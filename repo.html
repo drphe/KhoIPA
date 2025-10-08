@@ -334,6 +334,7 @@
             document.getElementById('news_identifier').value = '';
             document.getElementById('news_caption').value = '';
             document.getElementById('news_imageURL').value = '';
+            document.getElementById('news_url').value = '';
             document.getElementById('news_tintColor').value = '#3498db';
             document.getElementById('news_appID').value = 'com.example.app';
             document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
@@ -718,6 +719,25 @@
             baseData.apps = appsArray;
             document.getElementById('output').value = JSON.stringify(baseData, null, 2);
         }
+
+async function fetchRepoData() {
+  try {
+    const response = await fetch('repo.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.text(); // hoặc .json() nếu repo.json là JSON
+    baseData = data;
+
+    // Gọi các hàm xử lý sau khi dữ liệu đã được gán
+    renderNewsList();
+    updateOutput();
+  } catch (error) {
+    console.error('Lỗi khi tải repo.json:', error);
+  }
+}
+
     </script>
 </body>
 </html>
