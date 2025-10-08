@@ -1,59 +1,223 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="mask-icon" href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg" data-base-href="https://github.githubassets.com/favicons/favicon">
+    <link rel="mask-icon" href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" color="#000000">
+    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+    <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg" data-base-href="https://github.githubassets.com/favicons/favicon">
     <title>KhoIPA || Quản lý JSON Repo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Tùy chỉnh Tailwind CSS */
-        body { font-family: 'Inter', sans-serif; background: #f0f4f8; color: #333; padding: 20px; }
-        .container { max-width: 1000px; margin: auto; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
-        h1 { text-align: center; color: #2c3e50; font-weight: 700; margin-bottom: 20px;font-size:20px!important; }
-        label { display: block; margin-top: 15px; font-weight: bold; color: #333; }
-        input, textarea { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #dcdcdc; font-size: 16px; box-sizing: border-box; transition: border-color 0.3s; }
-        input:focus, textarea:focus { border-color: #3498db; outline: none; box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); }
-        input[type="color"],input[type="text"], input[type="date"] { padding: 0; height: 40px; }
-        input[type="checkbox"] { width: auto; margin-right: 10px; transform: scale(1.2); }
-        button { margin-top: 20px; padding: 12px 20px; border: none;  font-size: 16px; cursor: pointer; transition: background 0.3s, transform 0.1s; font-weight: 600; }
-        button:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 20px !important;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #dcdcdc;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+        input[type="color"],
+        input[type="text"],
+        input[type="date"] {
+            padding: 0;
+            height: 40px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.1s;
+            font-weight: 600;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         /* Màu nút */
-        .btn-primary { background: #3498db; color: white; padding:4px;}
-        .btn-primary:hover { background: #2980b9; }
-        .btn-edit { background: #2ecc71; color: white; }
-        .btn-edit:hover { background: #27ad60; }
-        .btn-delete { background: #e74c3c; color: white; }
-        .btn-delete:hover { background: #c0392b; }
-        .btn-cancel { background: #f39c12; color: white; }
-        .btn-cancel:hover { background: #e67e22; }
+        .btn-primary {
+            background: #3498db;
+            color: white;
+            padding: 4px;
+        }
+
+        .btn-primary:hover {
+            background: #2980b9;
+        }
+
+        .btn-edit {
+            background: #2ecc71;
+            color: white;
+        }
+
+        .btn-edit:hover {
+            background: #27ad60;
+        }
+
+        .btn-delete {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn-delete:hover {
+            background: #c0392b;
+        }
+
+        .btn-cancel {
+            background: #f39c12;
+            color: white;
+        }
+
+        .btn-cancel:hover {
+            background: #e67e22;
+        }
 
         /* Nút Import/Export */
-        .btn-import { background: #34495e; color: white; }
-        .btn-import:hover { background: #2c3e50; }
-        .btn-download { background: #27ae60; color: white; }
-        .btn-download:hover { background: #219d55; }
+        .btn-import {
+            background: #34495e;
+            color: white;
+        }
+
+        .btn-import:hover {
+            background: #2c3e50;
+        }
+
+        .btn-download {
+            background: #27ae60;
+            color: white;
+        }
+
+        .btn-download:hover {
+            background: #219d55;
+        }
 
         /* Danh sách */
-        .news-item, .app-item, .version-item { background: #ecf0f1; padding: 15px; margin-bottom: 10px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 5px solid #3498db; }
-        .news-item strong, .app-item strong { color: #2c3e50; }
-	.item-actions {display:flex;}
-        .item-actions button { margin-left: 8px; margin-top: 0; padding: 8px 12px; font-size: 14px; }
-        .form-group { display: flex; flex-wrap: wrap; gap: 20px; }
-        .form-group > div { flex: 1 1 30%; min-width: 200px; }
-        
+        .news-item,
+        .app-item,
+        .version-item {
+            background: #ecf0f1;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 5px solid #3498db;
+        }
+
+        .news-item strong,
+        .app-item strong {
+            color: #2c3e50;
+        }
+
+        .item-actions {
+            display: flex;
+        }
+
+        .item-actions button {
+            margin-left: 8px;
+            margin-top: 0;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-group>div {
+            flex: 1 1 30%;
+            min-width: 200px;
+        }
+
         /* Tabs */
-        .tab-buttons button { margin: 0 5px; padding: 12px 25px; font-size: 16px; background: #bdc3c7; color: #333; border-radius: 8px 8px 0 0; }
-        .tab-buttons button.active { background: #3498db; color: white; }
-        .tab-content { border: 1px solid #dcdcdc; border-top: none; padding: 20px; border-radius: 0 0 12px 12px; margin-bottom: 20px; }
+        .tab-buttons button {
+            margin: 0 5px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background: #bdc3c7;
+            color: #333;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .tab-buttons button.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .tab-content {
+            border: 1px solid #dcdcdc;
+            border-top: none;
+            padding: 20px;
+            border-radius: 0 0 12px 12px;
+            margin-bottom: 20px;
+        }
 
         /* Textarea Output */
-        #output { min-height: 250px; background: #f9f9f9; font-size: 13px; }
+        #output {
+            min-height: 250px;
+            background: #f9f9f9;
+            font-size: 13px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>🛠️ Quản lý JSON Repo (News & Apps)</h1>
@@ -67,7 +231,7 @@
         <!-- NEWS TAB CONTENT -->
         <div id="newsTab" class="tab-content">
             <h2 class="text-xl font-semibold mb-4">Quản lý Tin tức</h2>
-            
+
             <label for="news_title">Tiêu đề (*):</label>
             <input type="text" id="news_title" placeholder="Tiêu đề tin tức">
 
@@ -113,7 +277,7 @@
         <!-- APPS TAB CONTENT -->
         <div id="appsTab" class="tab-content" style="display:none;">
             <h2 class="text-xl font-semibold mb-4">Quản lý Ứng dụng</h2>
-            
+
             <div class="form-group">
                 <div>
                     <label for="app_name">Tên App (*):</label>
@@ -217,15 +381,15 @@
         let appEditIndex = -1;
         let versionEditIndex = -1;
 
-        let baseData ='';
+        let baseData = '';
         // Khởi tạo ngày mặc định
         document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
-        
+
         // --- Custom UI functions (Thay thế alert/confirm) ---
         function showCustomAlert(message) {
             let alertBox = document.getElementById('customAlertModal');
             if (alertBox) alertBox.remove();
-            
+
             alertBox = document.createElement('div');
             alertBox.id = 'customAlertModal';
             alertBox.className = 'fixed top-4 right-4 bg-red-600 text-white p-4 rounded-lg shadow-xl font-semibold opacity-0 transition-opacity duration-500 z-50';
@@ -236,14 +400,14 @@
                 alertBox.classList.remove('opacity-0');
                 alertBox.classList.add('opacity-100');
             }, 10); // Ngay lập tức
-            
+
             setTimeout(() => {
                 alertBox.classList.remove('opacity-100');
                 alertBox.classList.add('opacity-0');
                 setTimeout(() => alertBox.remove(), 500);
             }, 3000);
         }
-        
+
         function showCustomConfirm(message, callback) {
             const existingModal = document.getElementById('customConfirmModal');
             if (existingModal) existingModal.remove();
@@ -262,16 +426,22 @@
 
             const btnContainer = document.createElement('div');
             btnContainer.className = 'flex justify-center space-x-4';
-            
+
             const btnYes = document.createElement('button');
             btnYes.textContent = 'Đồng ý Xóa';
             btnYes.className = 'btn-delete !mt-0';
-            btnYes.onclick = () => { modal.remove(); callback(true); };
-            
+            btnYes.onclick = () => {
+                modal.remove();
+                callback(true);
+            };
+
             const btnNo = document.createElement('button');
             btnNo.textContent = 'Hủy';
             btnNo.className = 'btn-cancel !mt-0';
-            btnNo.onclick = () => { modal.remove(); callback(false); };
+            btnNo.onclick = () => {
+                modal.remove();
+                callback(false);
+            };
 
             btnContainer.appendChild(btnYes);
             btnContainer.appendChild(btnNo);
@@ -284,7 +454,7 @@
         function showTab(tabName, element) {
             document.getElementById('newsTab').style.display = tabName === 'news' ? 'block' : 'none';
             document.getElementById('appsTab').style.display = tabName === 'apps' ? 'block' : 'none';
-            
+
             // Cập nhật trạng thái nút
             document.querySelectorAll('.tab-buttons button').forEach(btn => {
                 btn.classList.remove('active');
@@ -298,7 +468,7 @@
         // --- Chức năng Quản lý NEWS ---
         function addOrUpdateNews() {
             const title = document.getElementById('news_title').value.trim();
-	    const identifier = document.getElementById('news_identifier').value.trim();
+            const identifier = document.getElementById('news_identifier').value.trim();
             const caption = document.getElementById('news_caption').value.trim();
             const imageURL = document.getElementById('news_imageURL').value.trim();
             const url = document.getElementById('news_url').value.trim();
@@ -312,10 +482,20 @@
                 return;
             }
 
-            const newsItem = { title, identifier, caption, tintColor, imageURL, appID, date, notify, url };
-		if (newsItem.url === "") {
-  			delete newsItem.url;
-		}
+            const newsItem = {
+                title,
+                identifier,
+                caption,
+                tintColor,
+                imageURL,
+                appID,
+                date,
+                notify,
+                url
+            };
+            if (newsItem.url === "") {
+                delete newsItem.url;
+            }
             if (newsEditIndex >= 0) {
                 newsArray[newsEditIndex] = newsItem;
                 newsEditIndex = -1;
@@ -412,25 +592,35 @@
             }
 
             const screenshotURLs = screenshotURLsInput ? screenshotURLsInput.split(',').map(url => url.trim()).filter(url => url) : [];
-            
-            let appItem = { 
-                beta, name, bundleIdentifier, developerName, subtitle, 
-                localizedDescription, iconURL, tintColor: tintColor.startsWith('#') ? tintColor.substring(1) : tintColor, screenshotURLs
+
+            let appItem = {
+                beta,
+                name,
+                bundleIdentifier,
+                developerName,
+                subtitle,
+                localizedDescription,
+                iconURL,
+                tintColor: tintColor.startsWith('#') ? tintColor.substring(1) : tintColor,
+                screenshotURLs
             };
-            
+
             let currentAppVersions = [];
 
             if (appEditIndex >= 0) {
                 const existingApp = appsArray[appEditIndex];
                 currentAppVersions = existingApp.versions || [];
-                
+
                 // Cập nhật các trường cố định
-                appItem = {...existingApp, ...appItem};
+                appItem = {
+                    ...existingApp,
+                    ...appItem
+                };
 
             } else {
                 appItem.versions = [];
             }
-            
+
             // Gán appItem vào mảng
             if (appEditIndex >= 0) {
                 appsArray[appEditIndex] = updateAppLatestVersion(appItem);
@@ -492,14 +682,14 @@
             document.getElementById('app_localizedDescription').value = item.localizedDescription;
             document.getElementById('app_screenshotURLs').value = (item.screenshotURLs || []).join(', ');
             document.getElementById('app_beta').checked = item.beta;
-            
+
             appEditIndex = index;
             document.getElementById('cancelAppBtn').style.display = 'inline-block';
             document.getElementById('versionSection').style.display = 'block';
-            
+
             // Render versions cho app đang chỉnh sửa
             renderVersionList(item.versions || []);
-            clearVersionForm(); 
+            clearVersionForm();
         }
 
         function deleteApp(index) {
@@ -538,7 +728,7 @@
         function renderVersionList(versions) {
             const list = document.getElementById('versionList');
             list.innerHTML = '<h4 class="font-bold text-md mt-6">Danh sách Versions</h4>';
-            
+
             // Sắp xếp versions theo ngày mới nhất
             const sortedVersions = [...versions].sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -546,7 +736,7 @@
                 const originalIndex = versions.indexOf(item); // Tìm index gốc
                 const datePart = item.date ? item.date.substring(0, 10) : 'N/A';
                 const sizeMB = item.size ? (item.size / 1024 / 1024).toFixed(2) + ' MB' : 'N/A';
-                
+
                 const div = document.createElement('div');
                 div.className = 'version-item';
                 div.innerHTML = `
@@ -578,12 +768,18 @@
                 showCustomAlert("Vui lòng điền đầy đủ thông tin Version bắt buộc (Version, Ngày, Kích thước > 0, Download URL).");
                 return;
             }
-            
+
             // Chuyển date/time local sang chuỗi ISO 8601
             const date = new Date(dateInput).toISOString().replace(/\.\d{3}Z$/, 'Z');
-            
-            const versionItem = { version, date, size, downloadURL, localizedDescription };
-            
+
+            const versionItem = {
+                version,
+                date,
+                size,
+                downloadURL,
+                localizedDescription
+            };
+
             let currentApp = appsArray[appEditIndex];
             currentApp.versions = currentApp.versions || [];
 
@@ -592,22 +788,22 @@
             } else {
                 currentApp.versions.push(versionItem);
             }
-            
+
             // Cập nhật thông tin app với version mới nhất
             appsArray[appEditIndex] = updateAppLatestVersion(currentApp);
 
             clearVersionForm();
             renderVersionList(appsArray[appEditIndex].versions);
-            renderAppList(); 
+            renderAppList();
             updateOutput();
         }
-        
+
         function updateAppLatestVersion(app) {
-             if ((app.versions || []).length > 0) {
+            if ((app.versions || []).length > 0) {
                 // Sắp xếp để tìm version mới nhất
                 app.versions.sort((a, b) => new Date(b.date) - new Date(a.date));
                 const latestVersion = app.versions[0];
-                
+
                 app.version = latestVersion.version;
                 app.versionDate = latestVersion.date;
                 app.versionDescription = latestVersion.localizedDescription;
@@ -624,11 +820,11 @@
 
             const item = versions[index];
             document.getElementById('version_number').value = item.version;
-            
+
             const dateObj = new Date(item.date);
             const localDate = new Date(dateObj.getTime() - (dateObj.getTimezoneOffset() * 60000)).toISOString().slice(0, 16);
             document.getElementById('version_date').value = localDate;
-            
+
             document.getElementById('version_size').value = item.size;
             document.getElementById('version_downloadURL').value = item.downloadURL;
             document.getElementById('version_localizedDescription').value = item.localizedDescription;
@@ -638,11 +834,11 @@
         }
 
         function deleteVersion(index) {
-             showCustomConfirm("Bạn có chắc muốn xóa version này?", (confirmed) => {
+            showCustomConfirm("Bạn có chắc muốn xóa version này?", (confirmed) => {
                 if (confirmed) {
                     let currentApp = appsArray[appEditIndex];
                     currentApp.versions.splice(index, 1);
-                    
+
                     appsArray[appEditIndex] = updateAppLatestVersion(currentApp);
 
                     renderVersionList(currentApp.versions);
@@ -652,7 +848,7 @@
                 }
             });
         }
-        
+
         function cancelVersionEdit() {
             clearVersionForm();
         }
@@ -662,7 +858,7 @@
         function handleFileSelect(event) {
             const file = event.target.files[0];
             if (!file) return;
-            
+
             const reader = new FileReader();
             reader.onload = (e) => {
                 try {
@@ -671,12 +867,12 @@
                         showCustomAlert("Lỗi Import: File JSON không hợp lệ hoặc thiếu mảng 'news'/'apps'.");
                         return;
                     }
-                    
+
                     // Cập nhật dữ liệu toàn cục
                     baseData = importedData;
-                    newsArray = baseData.news; 
-                    appsArray = baseData.apps; 
-                    
+                    newsArray = baseData.news;
+                    appsArray = baseData.apps;
+
                     // Gán lại references trong baseData
                     baseData.news = newsArray;
                     baseData.apps = appsArray;
@@ -687,7 +883,7 @@
                     updateOutput();
                     showCustomAlert("Import file gốc thành công! Dữ liệu đã sẵn sàng để chỉnh sửa.");
                     // Reset input để có thể chọn lại cùng một file
-                    event.target.value = ''; 
+                    event.target.value = '';
 
                 } catch (error) {
                     console.error("Lỗi phân tích cú pháp JSON:", error);
@@ -700,15 +896,17 @@
         function downloadJSON() {
             const jsonText = document.getElementById('output').value;
             const filename = 'repo.json';
-            const blob = new Blob([jsonText], { type: 'application/json' });
+            const blob = new Blob([jsonText], {
+                type: 'application/json'
+            });
             const url = URL.createObjectURL(blob);
-            
+
             const a = document.createElement('a');
             a.href = url;
             a.download = filename;
             document.body.appendChild(a);
             a.click();
-            
+
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         }
@@ -719,26 +917,33 @@
             baseData.apps = appsArray;
             document.getElementById('output').value = JSON.stringify(baseData, null, 2);
         }
-// khởi tạo
-fetchRepoData();
-async function fetchRepoData() {
-  try {
-    const response = await fetch('repo.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
+        // khởi tạo
+        fetchRepoData();
+        async function fetchRepoData() {
+            try {
+                const response = await fetch('repo.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                // Cập nhật dữ liệu toàn cục
+                baseData = await response.json();
+                newsArray = baseData.news;
+                appsArray = baseData.apps;
 
-    const data = await response.json(); 
-    baseData = data;
+                // Gán lại references trong baseData
+                baseData.news = newsArray;
+                baseData.apps = appsArray;
 
-    // Gọi các hàm xử lý sau khi dữ liệu đã được gán
-    renderNewsList();
-    updateOutput();
-  } catch (error) {
-    console.error('Lỗi khi tải repo.json:', error);
-  }
-}
+                // Cập nhật giao diện
+                renderNewsList();
+                renderAppList();
+                updateOutput();
+            } catch (error) {
+                showCustomAlert("Lỗi khi tải repo.json");
 
+            }
+        }
     </script>
 </body>
+
 </html>
