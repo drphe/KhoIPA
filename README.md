@@ -1,69 +1,98 @@
-#KhoIPA mod là dự án miễn phí, cung cấp các phiên bản IPA đã mod cho ae dùng Esign, Feather, sideloading
+# 📦 KhoIPA Mod
+![GitHub Repo stars](https://img.shields.io/github/stars/drphe/khoIPA?style=social)
+
+**KhoIPA Mod** là dự án miễn phí cung cấp các phiên bản IPA đã mod cho anh em sử dụng qua các công cụ như **Esign**, **Feather**, và **sideloading**.
+
+---
+
+## 🧭 Hướng dẫn thêm nguồn KhoIPA
+
+### ✅ Thêm KhoIPA vào Feather
+
+1. Mở ứng dụng **Feather**
+2. Vào tab **Nguồn**
+3. Nhấn dấu **(+)**
+4. Nhập đường dẫn sau và thêm nguồn:
 
 
 
-1. Nhập KhoIPA vào Feather
+https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json
+
+
+---
+
+### ✅ Thêm KhoIPA vào ESign
+
+1. Mở ứng dụng **ESign**
+2. Truy cập tab **Appstore**
+3. Nhấn nút **Nguồn** ở góc trên bên trái
+4. Nhấn dấu **(+)** và nhập đường dẫn sau:
 
 
 
-Mở Feather -> Nguồn - > Dấu (+) -> Thêm nguồn: https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json
-
--> nhập nguồn
+https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json
 
 
+5. Nhấn **Thêm vào** để hoàn tất
 
-2\. Nhập KhoIPA vào ESign
+---
 
+## 🔄 Quy trình cập nhật ứng dụng/tin tức/phiên bản mới
 
-
-Mở ESign và truy cập tab Appstore -> nhấn nút Nguồn ở trên cùng bên trái
-
-
-
- -> nhấn vào dấu cộng (+) -> nhập https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json rồi nhấn Thêm vào để thêm nguồn vào ESign.
+1. Sau khi mod, upload file lên:
 
 
-
-#Quy trình thêm ứng dụng mới/ tin tức mới/ phiên bản mới
-
+https://github.com/drphe/khoIPA/releases
 
 
-1. Sau mod sẽ up file lên địa chỉ https://github.com/drphe/khoIPA/releases
-2. Truy cập drphe.github.io/KhoIPA/
-
-Tải lên file repo.json cũ
-
-Chọn tab "ứng dụng" và thêm ứng dụng mới
-
-Lấy mô tả và link từ bên trang release
+2. Truy cập:
 
 
-
-3\. Tải file repo.json mới về
-
-4\. upload lên github folder https://github.com/drphe/khoIPA/
+https://drphe.github.io/KhoIPA/repo.html
 
 
+3. Tải lên file `repo.json` cũ
+
+4. Chọn tab **Ứng dụng** → Thêm ứng dụng mới
+
+5. Lấy mô tả và link từ trang release
+
+6. Tải file `repo.json` mới về
+
+7. Upload lên thư mục GitHub:
 
 
-
-#Tổng hợp link IPA mod
-
-Một số link không load đc bằng Altstore viewer do lỗi CORS, cần xem trên Feather hoặc Esign
+https://github.com/drphe/khoIPA/
 
 
-  "https://drphe.github.io/KhoIPA/repo.json",
-    "https://alt.getutm.app",
-    "https://flyinghead.github.io/flycast-builds/altstore.json",
-    "https://quarksources.github.io/dist/quantumsource.min.json",
-    "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-  "https://repository.apptesters.org",
-  "https://ipa.cypwn.xyz/cypwn.json",
-  "https://ipa.cypwn.xyz/cypwn_ts.json",
-  "https://raw.githubusercontent.com/vizunchik/AltStoreRus/master/apps.json",
-  "https://randomblock1.com/altstore/apps.json",
-  "https://community-apps.sidestore.io/sidecommunity.json",
-  "https://wuxu1.github.io/wuxu-complete.json",
-  "https://bit.ly/wuxuslibraryplus",
-  "https://driftywinds.github.io/AltStore/apps.json",
-  "https://aio.zxcvbn.fyi/r/repo.feather.json"
+---
+
+## 🔗 Tổng hợp các nguồn IPA mod
+
+> ⚠️ Một số link không load được bằng AltStore Viewer do lỗi CORS. Vui lòng sử dụng Feather hoặc ESign để xem.
+
+
+https://drphe.github.io/KhoIPA/repo.json
+https://alt.getutm.app
+https://flyinghead.github.io/flycast-builds/altstore.json
+https://quarksources.github.io/dist/quantumsource.min.json
+https://quarksources.github.io/dist/quantumsource%2B%2B.min.json
+https://repository.apptesters.org
+https://ipa.cypwn.xyz/cypwn.json
+https://ipa.cypwn.xyz/cypwn_ts.json
+https://raw.githubusercontent.com/vizunchik/AltStoreRus/master/apps.json
+https://randomblock1.com/altstore/apps.json
+https://community-apps.sidestore.io/sidecommunity.json
+https://wuxu1.github.io/wuxu-complete.json
+https://bit.ly/wuxuslibraryplus
+https://driftywinds.github.io/AltStore/apps.json
+https://aio.zxcvbn.fyi/r/repo.feather.json
+
+
+---
+
+💬 Liên hệ & đóng góp
+
+Nếu bạn có ứng dụng muốn chia sẻ hoặc đóng góp cho kho, hãy tạo Pull Request hoặc liên hệ qua GitHub Issues.
+
+---
