@@ -65,11 +65,41 @@
       "imageURL": "https://esign.yyyue.xyz/ESignLogo200.png",
       "appID": "com.khoipa.app",
       "date": "2025-10-07",
-      "notify": true,
+      "notify": false,
       "url": "https://github.com/drphe/khoIPA/releases"
     }
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "iTorrent",
+      "bundleIdentifier": "com.itorrent.app",
+      "developerName": "XITRIX",
+      "subtitle": "Torrent client for iOS",
+      "localizedDescription": "iTorrent officially in the AltStore!\n\nIt is an ordinary torrent client for iOS with Files app support and much more.\n\nWhat can this app do:\n\n• Download in the background\n• Live Activity and Dynamic Island progress bar\n• Downloading on external drives\n• Sequential download (use VLC to watch films while loading)\n• Add torrent files from Share menu (Safari and other apps)\n• Add magnet links directly from Safari\n• Store files in Files app\n• File sharing directly from app\n• Download torrent by url\n• Download torrent by magnet\n• Show progress in Dynamic Island\n• Send notification on torrent downloaded\n• Web/WebDav Server\n• Select files download priority\n• Change UI to dark theme\n• Color personalization\n• RSS Feed",
+      "iconURL": "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/icon.png",
+      "tintColor": "D73C3C",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/1.PNG",
+        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/2.PNG",
+        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/3.PNG",
+        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/4.PNG"
+      ],
+      "versions": [
+        {
+          "version": "2.0.15",
+          "date": "2025-09-22T05:36:00Z",
+          "size": 7090878,
+          "downloadURL": "https://release-assets.githubusercontent.com/github-production-release-asset/133687113/74379dc7-d404-4c67-9fb1-84dbefe0feaa?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-08T06%3A31%3A06Z&rscd=attachment%3B+filename%3DiTorrent.ipa&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-08T05%3A30%3A47Z&ske=2025-10-08T06%3A31%3A06Z&sks=b&skv=2018-11-09&sig=Lo34%2FywJZ0jFkTY4Hd3SD4lg7EqPygJ7Vb3kcBG3mx4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1OTkwMTk0MiwibmJmIjoxNzU5OTAxNjQyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.B7w3i3NWuAJm4WKkFYAAk6rfgfRc9pfhk9MMnyiRlLY&response-content-disposition=attachment%3B%20filename%3DiTorrent.ipa&response-content-type=application%2Foctet-stream",
+          "localizedDescription": "* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\n* LibTorrent updated to version 2.0.11\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\n* Added Spanish localization by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\n\n## New Contributors\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\n* @fraucs made their first contribution in https://github.com/XITRIX/iTorrent/pull/385\n* @yaptx made their first contribution in https://github.com/XITRIX/iTorrent/pull/391\n\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.0.14-1...v2.0.15-1"
+        }
+      ],
+      "version": "2.0.15",
+      "versionDate": "2025-09-22T05:36:00Z",
+      "versionDescription": "* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\n* LibTorrent updated to version 2.0.11\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\n* Added Spanish localization by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\n\n## New Contributors\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\n* @fraucs made their first contribution in https://github.com/XITRIX/iTorrent/pull/385\n* @yaptx made their first contribution in https://github.com/XITRIX/iTorrent/pull/391\n\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.0.14-1...v2.0.15-1",
+      "downloadURL": "https://release-assets.githubusercontent.com/github-production-release-asset/133687113/74379dc7-d404-4c67-9fb1-84dbefe0feaa?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-08T06%3A31%3A06Z&rscd=attachment%3B+filename%3DiTorrent.ipa&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-08T05%3A30%3A47Z&ske=2025-10-08T06%3A31%3A06Z&sks=b&skv=2018-11-09&sig=Lo34%2FywJZ0jFkTY4Hd3SD4lg7EqPygJ7Vb3kcBG3mx4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1OTkwMTk0MiwibmJmIjoxNzU5OTAxNjQyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.B7w3i3NWuAJm4WKkFYAAk6rfgfRc9pfhk9MMnyiRlLY&response-content-disposition=attachment%3B%20filename%3DiTorrent.ipa&response-content-type=application%2Foctet-stream",
+      "size": 7090878
+    },
     {
       "beta": false,
       "name": "Feather",
