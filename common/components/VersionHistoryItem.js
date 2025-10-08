@@ -1,11 +1,3 @@
-//
-//  VersionHistoryItem.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 import { showAddToAltStoreAlert } from "../modules/utilities.js";
 
 window.showAddToAltStoreAlert = showAddToAltStoreAlert;
@@ -32,5 +24,5 @@ export const VersionHistoryItem = (sourceName, number, date, description, url, i
             Download IPA
         </a>
     </div>
-    <p class="version-description" id="description${i}">${description}</p>
+    <p class="version-description" id="description${i}">${description || ''}</p>
 </div>`;
