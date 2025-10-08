@@ -47,7 +47,7 @@ https://github.com/drphe/khoIPA/releases
 2. Truy cập:
 
 
-https://drphe.github.io/KhoIPA/
+https://drphe.github.io/KhoIPA/repo.html
 
 
 3. Tải lên file `repo.json` cũ
