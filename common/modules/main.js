@@ -1,11 +1,3 @@
-//
-//  main.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 import { urlSearchParams, sourceURL } from "./constants.js";
 import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open } from "./utilities.js";
 

@@ -1,11 +1,3 @@
-//
-//  constants.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 export const urlSearchParams = new URLSearchParams(window.location.search);
 
 export const sourceURL = urlSearchParams.get('source')?.replaceAll("+", "%2B");

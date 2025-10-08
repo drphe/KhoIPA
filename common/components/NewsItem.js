@@ -1,11 +1,3 @@
-//
-//  NewsItem.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 import { AppHeader } from "./AppHeader.js";
 import { formatVersionDate } from "../modules/utilities.js";
 

@@ -1,11 +1,3 @@
-//
-//  MoreButton.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 export const MoreButton = tintColor => `
 <a id="more" onclick="revealTruncatedText(this);">
     <button style="color: ${tintColor};">more</button>

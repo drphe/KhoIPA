@@ -1,11 +1,3 @@
-//
-//  uialert.js
-//  uialert.js (https://github.com/therealFoxster/uialert.js)
-//
-//  Copyright (c) 2024 therealFoxster.
-//  MIT License.
-//
-
 class UIAlert {
     constructor({
         title,

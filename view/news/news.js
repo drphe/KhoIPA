@@ -1,11 +1,3 @@
-//
-//  news.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 import { insertNavigationBar } from "../../common/modules/utilities.js";
 import { NewsItem } from "../../common/components/NewsItem.js";
 import { main } from "../../common/modules/main.js";

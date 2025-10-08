@@ -1,11 +1,3 @@
-//
-//  AltStoreBanner.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 import { sourceURL } from "../modules/constants.js";
 
 export const AltStoreBanner = (sourceName) => `

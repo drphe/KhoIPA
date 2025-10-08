@@ -1,11 +1,3 @@
-//
-//  version-history.js
-//  altsource-viewer (https://github.com/therealFoxster/altsource-viewer)
-//
-//  Copyright (c) 2023 Foxster.
-//  MIT License.
-//
-
 import { urlSearchParams, sourceURL } from "../../../common/modules/constants.js";
 import { insertNavigationBar, formatVersionDate, formatString, open, setTintColor } from "../../../common/modules/utilities.js";
 import { main } from "../../../common/modules/main.js";
