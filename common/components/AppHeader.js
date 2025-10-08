@@ -10,7 +10,7 @@ export const AppHeader = (app, x = ".") => app ? `
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name}</p>
-                        <p class="subtitle">${app.version ? app.version + ' - ': ''}${app.developerName}</p>
+                        <p class="subtitle">${app.version ? app.version + ' - ': ''}${app.developerName || app.bundleID}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
                     </div>
