@@ -1,4 +1,5 @@
 import { sourceURL } from "../modules/constants.js";
+import { formatVersionDate } from "./common/modules/utilities.js";
 
 export const AppHeader = (app, x = ".") => app ? `
 <div class="app-header-container">
@@ -10,7 +11,7 @@ export const AppHeader = (app, x = ".") => app ? `
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name}</p>
-                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.developerName || app.bundleID}</p>
+                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${formatVersionDate(app.versionDate)}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
                     </div>
