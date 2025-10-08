@@ -104,10 +104,13 @@
       "bundleIdentifier": "com.youtube.youtube",
       "developerName": "apptesters.org",
       "subtitle": "Youtube Premium (full chức năng)",
-      "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.",
+      "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.\nTải ứng dụng YouTube chính thức dành cho iPhone và iPad.\nXem nội dung mọi người đang xem về âm nhạc, trò chơi, giải trí, tin tức và nhiều nội dung khác. Đăng ký kênh, chia sẻ với bạn bè, chỉnh sửa và tải video lên, xem trên thiết bị bất kỳ.\nBạn cũng có thể tạo danh sách phát, xem nội dung đang thịnh hành, thể hiện bản thân bằng nhận xét, chia sẻ video với bạn bè, truyền video đến TV và hơn thế nữa – tất cả đều từ bên trong ứng dụng.",
       "iconURL": "https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-1024.png",
-      "tintColor": "000000",
-      "screenshotURLs": [],
+      "tintColor": "F01414",
+      "screenshotURLs": [
+        "https://img.utdstc.com/screen/eb3/262/eb32628e7e6300bcda32f5ec788b1ab5038163732ff496ba4d7ce520eafc17ef:400",
+        "https://img.utdstc.com/screen/61b/6da/61b6daa8b3ae1a1edf0b989ac77a873e5aa02b22acfdbd42a40b34f20e5a8ac3:400"
+      ],
       "versions": [
         {
           "version": "20.39.6",
@@ -131,8 +134,10 @@
       "subtitle": "Facebook No ADS",
       "localizedDescription": "Ứng dụng Facebook No ADS, bản mod không có quảng cáo, chặn đã xem tin...",
       "iconURL": "https://images.icon-icons.com/555/PNG/512/facebook_icon-icons.com_53612.png",
-      "tintColor": "000000",
-      "screenshotURLs": [],
+      "tintColor": "5825D0",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/PQ-I5iK74sGn8nu6dGAY37ThWXeRElBnjMI7yltIX_NWrvBBiPMTH_c5TNana2U95aY=w1052-h592-rw"
+      ],
       "versions": [
         {
           "version": "534.0.0",
@@ -151,7 +156,7 @@
       ],
       "version": "534.0.0",
       "versionDate": "2025-10-04T23:50:00Z",
-      "versionDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo",
+      "versionDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo, nguồn apptesters.org",
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.534/Facebook_534.0.0_Premium.ipa",
       "size": 161653658
     },
@@ -163,8 +168,11 @@
       "subtitle": "Nhân bản Zalo",
       "localizedDescription": "Ứng dụng zalo2 giúp nhân bản 2 zalo trên điện thoại.",
       "iconURL": "https://chat.zalo.me/apple-icon-144x144.png",
-      "tintColor": "000000",
-      "screenshotURLs": [],
+      "tintColor": "8880F4",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/5hMCCsM7Q6uHr2s7sZ_9h-j6w5CspdhDNi1yhMjJgDW-mEWi2mQltAplG9uSvL2b9jY=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/XSpiYD7x-NUwzhWNbipRf1iGIEZytxRpS46SepNvG0UWB9qa6lUbLMOBaGqKMwJ-a2E=w1052-h592-rw"
+      ],
       "versions": [
         {
           "version": "25.02.02",
@@ -193,10 +201,12 @@
       "bundleIdentifier": "p3.xyz.yyyue.esign",
       "developerName": "yyy",
       "subtitle": "Ứng dụng ký",
-      "localizedDescription": "轻松签是一款免越狱可给ipa签名的工具，具有注入库，去库等功能。",
+      "localizedDescription": "轻松签是一款免越狱可给ipa签名的工具，具有注入库，去库等功能。\nhttps://github.com/iOS17/Esign",
       "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
-      "tintColor": "000000",
-      "screenshotURLs": [],
+      "tintColor": "B2BFE6",
+      "screenshotURLs": [
+        "https://private-user-images.githubusercontent.com/135683347/328411146-c2d21c1c-817b-497a-a5dd-a144b20207dc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk5MDA4MjksIm5iZiI6MTc1OTkwMDUyOSwicGF0aCI6Ii8xMzU2ODMzNDcvMzI4NDExMTQ2LWMyZDIxYzFjLTgxN2ItNDk3YS1hNWRkLWExNDRiMjAyMDdkYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwNTE1MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMTM4ZjY0ZGFiMThmODRhMDNlZjliNjc3YzY0Njg4ZmQ0NWUwODE4NDIzZGE4ZGEzYTJmMzc0ZTlkZTNkZmM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ENBDuPWwYnJzymI6zDz77mfCYZHoriht0H8UfY68v14"
+      ],
       "versions": [
         {
           "version": "5.0.2",
