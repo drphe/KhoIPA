@@ -14,9 +14,9 @@ export function formatVersionDate(arg) {
 
     let dateString = versionDate.valueOf() ? `${month} ${date}, ${versionDate.getFullYear()}` : arg.split("T")[0];
     if (msDifference <= msPerDay && today.getDate() == versionDate.getDate())
-        dateString = "Today";
+        dateString = "Hôm nay";
     else if (msDifference <= msPerDay * 2)
-        dateString = "Yesterday";
+        dateString = "Hôm qua";
 
     return dateString;
 }
