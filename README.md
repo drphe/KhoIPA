@@ -49,6 +49,7 @@ Lấy mô tả và link từ bên trang release
 
 Tổng hợp link IPA mod
 
+Một số link không load đc bằng Altstore viewer do lỗi CORS, cần xem trên Feather hoặc Esign
 
 
   "https://drphe.github.io/KhoIPA/repo.json",
