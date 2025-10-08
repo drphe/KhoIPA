@@ -16,7 +16,7 @@ main((json) => {
     // Tạo ô tìm kiếm
     const searchBox = document.createElement("input");
     searchBox.type = "text";
-    searchBox.placeholder = "Tìm theo tiêu đề...";
+    searchBox.placeholder = "Tìm theo tên app...";
     searchBox.className = "form-control mb-3";
     searchBox.style.maxWidth = "400px";
     searchBox.style.margin = "20px auto";
@@ -27,7 +27,7 @@ main((json) => {
     searchBox.addEventListener("input", () => {
         const keyword = searchBox.value.toLowerCase();
         filteredApps = allApps.filter(app =>
-            app.title?.toLowerCase().includes(keyword)
+            app.name?.toLowerCase().includes(keyword)
         );
         currentIndex = 0;
         appsContainer.innerHTML = "";
