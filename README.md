@@ -51,7 +51,7 @@ Tổng hợp link IPA mod
 
 
 
-[   "https://drphe.github.io/KhoIPA/repo.json",
+  "https://drphe.github.io/KhoIPA/repo.json",
     "https://alt.getutm.app",
     "https://flyinghead.github.io/flycast-builds/altstore.json",
     "https://quarksources.github.io/dist/quantumsource.min.json",
@@ -66,4 +66,3 @@ Tổng hợp link IPA mod
   "https://bit.ly/wuxuslibraryplus",
   "https://driftywinds.github.io/AltStore/apps.json",
   "https://aio.zxcvbn.fyi/r/repo.feather.json"
-]
