@@ -1,5 +1,5 @@
 import { sourceURL } from "../modules/constants.js";
-import { formatVersionDate } from "../../common/modules/utilities.js";
+import { formatVersionDate } from "../modules/utilities.js";
 
 export const AppHeader = (app, x = ".") => app ? `
 <div class="app-header-container">
