@@ -3,7 +3,6 @@ import { AppHeader } from "../../common/components/AppHeader.js";
 import { main } from "../../common/modules/main.js";
 
 insertNavigationBar("All Apps");
-
 main((json) => {
     document.title = `Apps - ${json.name}`;
     // sắp xếp app

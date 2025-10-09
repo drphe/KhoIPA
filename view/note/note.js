@@ -2,7 +2,6 @@ import { urlSearchParams, sourceURL, base64Convert } from "../../common/modules/
 import { insertNavigationBar, formatVersionDate, formatString, open, setTintColor } from "../../common/modules/utilities.js";
 import { main } from "../../common/modules/main.js";
 import { MoreButton } from "../../common/components/MoreButton.js";
-
 const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
 
 if (!urlSearchParams.has('link')) open(fallbackURL);
