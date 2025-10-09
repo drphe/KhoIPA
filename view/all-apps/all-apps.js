@@ -6,6 +6,12 @@ insertNavigationBar("All Apps");
 
 main((json) => {
     document.title = `Apps - ${json.name}`;
+    // sắp xếp app
+json.apps.sort((a, b) => {
+  const dateA = new Date(a.versionDate || a.versions?.[0]?.date || 0).valueOf();
+  const dateB = new Date(b.versionDate || b.versions?.[0]?.date || 0).valueOf();
+  return dateB - dateA;
+});
 
     const allApps = json.apps.filter(app => !app.beta);
     let filteredApps = [...allApps];
