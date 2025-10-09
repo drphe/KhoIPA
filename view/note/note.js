@@ -3,8 +3,8 @@ import { insertNavigationBar, formatVersionDate, formatString, open, setTintColo
 import { main } from "../../common/modules/main.js";
 import { MoreButton } from "../../common/components/MoreButton.js";
 
-const fallbackURL = `../view/?source=${base64Convert(sourceURL)}`;
-console.log(fallbackURL)
+const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
+
 if (!urlSearchParams.has('link')) open(fallbackURL);
 const bundleLink = urlSearchParams.get('link');
 
