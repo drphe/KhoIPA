@@ -17,10 +17,10 @@ main(json => {
   //      return;
   //  }
    const news = {
-		title: 'Nội dung',
+		title: 'Nội dung chi tiết',
 		url: bundleLink,
 		tintColor: '#000'
-		}
+	}
 
     fetch(news.url)
       .then(response => response.text())
