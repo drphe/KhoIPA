@@ -17,7 +17,7 @@ main(json => {
   //      return;
   //  }
    const news = {
-		title: 'Bản tin',
+		title: 'Nội dung',
 		url: bundleLink,
 		tintColor: '#000'
 		}
@@ -33,7 +33,7 @@ main(json => {
       });
 
     // Set tab title
-    document.title = `${news.name}`;
+    document.title = `${news.title}`;
 
     // Set tint color
     const tintColor = news.tintColor ? news.tintColor.replaceAll("#", "") : "var(--tint-color);";
