@@ -21,7 +21,9 @@ export const NewsItem = (news, minimal = false) => `
 
 export const urlnews = (url) => {
   if (!url.includes('http')) {
-    return `KhoIPA/view/note/?source=${base64Convert(sourceURL)}&link=${url}`;
+    const base = new URL(window.location.origin + "KhoIPA/view/");
+    const noteURL = new URL("note/?", base);
+    return `${noteURL}source=${base64Convert(sourceURL)}&link=${url}`;
   }
   return url;
 };
