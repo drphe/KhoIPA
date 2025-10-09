@@ -24,10 +24,10 @@ main(json => {
     fetch(news.url)
       .then(response => response.text())
       .then(markdown => {
-       const title = markdown.split('\n')[0];
+       const firstLine = markdown.split('\n')[0];
     
    // Set tab title
-    document.title = title;
+    document.title = firstLine.replace(/^\\?##\s*/, "").trim();
         document.getElementById("content").innerHTML = marked.parse(markdown);
       })
       .catch(error => {
