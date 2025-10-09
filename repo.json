@@ -7,7 +7,7 @@
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.\n ![Cài KhoIPA cho iphone] https://drphe.github.io/KhoIPA/setup.mobileconfig",
   "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
   "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
-  "tintColor": "#343a40",
+  "tintColor": "#6f9ece",
   "META": {
     "repoName": "Kho IPA mod",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
@@ -55,7 +55,7 @@
       "appID": "com.zalo.app",
       "date": "2025-10-09",
       "notify": true,
-      "url": "README.md"
+      "url": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa"
     }
   ],
   "apps": [
