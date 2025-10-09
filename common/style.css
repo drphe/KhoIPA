@@ -259,7 +259,7 @@ body {
   grid-auto-flow: column;
   overflow-x: scroll;
   padding: 1rem;
-  padding-bottom: 0;
+  padding-bottom: 0.3rem;
 }
 
 #news-items.one {
