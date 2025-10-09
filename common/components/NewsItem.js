@@ -4,7 +4,7 @@ import { sourceURL, base64Convert } from "../modules/constants.js";
 
 export const NewsItem = (news, minimal = false) => `
 <div class="news-item-wrapper"> ${news.url ?
-    "<a href='" + news.url + "'>" : ""}
+    "<a href='" + urlnews(news.url) + "'>" : ""}
     <div class="item" style="background-color: #${news.tintColor.replaceAll("#", "")};">
         <div class="text">
             <p>${formatVersionDate(news.date)}</p>
