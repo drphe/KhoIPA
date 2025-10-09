@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="mask-icon" href="./icon/logo.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="./icon/logo.svg">
+    <link rel="mask-icon" href="./icon/logo.svg" color="#000000">
+    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
+    <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="./icon/logo.svg">
     <title>KhoIPA || Quản lý JSON Repo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -15,12 +15,12 @@
             font-family: 'Inter', sans-serif;
             background: #f0f4f8;
             color: #333;
-            padding: 20px;
         }
 
         .container {
-            max-width: 1000px;
-            margin: auto;
+            max-width: 640px !important;
+            margin: 0px auto;
+            margin-top: 20px;
             background: #fff;
             padding: 25px;
             border-radius: 12px;
@@ -189,7 +189,7 @@
         /* Tabs */
         .tab-buttons button {
             margin: 0 5px;
-            padding: 12px 25px;
+            padding: 6px 25px;
             font-size: 16px;
             background: #bdc3c7;
             color: #333;
@@ -203,7 +203,6 @@
 
         .tab-content {
             border: 1px solid #dcdcdc;
-            border-top: none;
             padding: 20px;
             border-radius: 0 0 12px 12px;
             margin-bottom: 20px;
@@ -214,18 +213,55 @@
             min-height: 250px;
             background: #f9f9f9;
             font-size: 13px;
+            padding: 10px;
+        }
+
+        #nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.1px solid var(--color-separator);
+            background-color: var(--color-transparent);
+            -webkit-backdrop-filter: saturate(100%) blur(30px);
+            backdrop-filter: saturate(100%) blur(20px);
+            min-width: 0;
+            margin: 0 auto;
+            padding: 0.25em 16px 0.25em 16px;
+            z-index: 2;
+            min-height: 40px;
+        }
+
+        #top {
+            position: fixed;
+            z-index: 5;
+            left: 0;
+            right: 0;
+            top: 0;
+            max-width: 640px;
+            margin: auto;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>🛠️ Quản lý JSON Repo (News & Apps)</h1>
+        <div id="top">
+            <div id="nav-bar" class="">
+                <a href="../KhoIPA/" target="_blank" class="" title="Kho IPA Mod">🔙</a>
+                <div id="title" class="">
+                    <p>🛠️ Quản lý Json Repository</p>
+                </div>
+                <a href="https://github.com/drphe/KhoIPA" target=_blank id="source-code">
+                    <img src="https://komarev.com/ghpvc/?username=drphe&amp;repo=KhoIPA&amp;label=Views&amp;color=blue&amp;style=flat" alt="Repo Views">
+                </a>
+            </div>
+        </div>
 
         <!-- TAB NAVIGATION -->
-        <div class="tab-buttons">
-            <button class="active" onclick="showTab('news', this)">Tin tức (News)</button>
-            <button onclick="showTab('apps', this)">Ứng dụng (Apps)</button>
+        <div class="tab-buttons" style="display: flex;">
+            <button class="active" onclick="showTab('news', this)">Tin tức</button>
+            <button onclick="showTab('apps', this)">Ứng dụng</button>
         </div>
 
         <!-- NEWS TAB CONTENT -->
@@ -358,7 +394,6 @@
         <!-- OUTPUT AND ACTIONS -->
         <label for="output" class="mt-6">📦 Mã JSON xuất ra</label>
         <textarea id="output" placeholder="Mã json sẽ hiển thị ở đây!"></textarea>
-        <a href="../KhoIPA/index.html" target=_blank>Tới kho IPA</a>
         <div class="flex justify-between items-center mt-4">
             <input type="file" id="jsonFileInput" accept=".json" style="display: none;" onchange="handleFileSelect(event)">
             <button onclick="document.getElementById('jsonFileInput').click()" class="btn-import">

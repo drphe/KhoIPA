@@ -47,15 +47,15 @@
       "url": "https://thuthuatjb.com/huong-dan-su-dung-feather-de-cai-ipa-tren-cac-thiet-bi-ios-ipados/amp/"
     },
     {
-      "title": "Cập nhật - Zalo 2",
+      "title": "Zalo 2 - Cập nhật",
       "identifier": "update-zalo",
-      "caption": "Đã có phiên bản zalo2 ver 25.02.02 Tải trực tiếp theo đường link phía dưới.",
+      "caption": "Đã có phiên bản Zalo 2 ver 25.06.01, chống ban.",
       "tintColor": "3498DB",
       "imageURL": "https://chat.zalo.me/apple-icon-144x144.png",
       "appID": "com.zalo.app",
-      "date": "2025-10-07",
-      "notify": false,
-      "url": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250202/Zalo2-v250202.ipa"
+      "date": "2025-10-09",
+      "notify": true,
+      "url": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa"
     }
   ],
   "apps": [
@@ -185,7 +185,7 @@
       "bundleIdentifier": "com.zalo.app",
       "developerName": "VNG",
       "subtitle": "Nhân bản Zalo",
-      "localizedDescription": "Ứng dụng zalo2 giúp nhân bản 2 zalo trên điện thoại.",
+      "localizedDescription": "Ứng dụng zalo2 giúp nhân bản, dùng song song 2 Zalo trên điện thoại.",
       "iconURL": "https://chat.zalo.me/apple-icon-144x144.png",
       "tintColor": "8880F4",
       "screenshotURLs": [
@@ -193,6 +193,13 @@
         "https://play-lh.googleusercontent.com/XSpiYD7x-NUwzhWNbipRf1iGIEZytxRpS46SepNvG0UWB9qa6lUbLMOBaGqKMwJ-a2E=w1052-h592-rw"
       ],
       "versions": [
+        {
+          "version": "25.06.01",
+          "date": "2025-10-09T11:51:00Z",
+          "size": 111351384,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa",
+          "localizedDescription": "Bản Zalo 2 mod từ phiên bản 25.06.1 của IOSVIET.vn, bản này chống bị ban nick."
+        },
         {
           "version": "25.02.02",
           "date": "2025-07-03T15:41:00Z",
@@ -208,11 +215,11 @@
           "localizedDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé."
         }
       ],
-      "version": "25.02.02",
-      "versionDate": "2025-07-03T15:41:00Z",
-      "versionDescription": "Phiên bản zalo2 mod từ phiên bản zalo ngày 25.02.02",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250202/Zalo2-v250202.ipa",
-      "size": 149297453
+      "version": "25.06.01",
+      "versionDate": "2025-10-09T11:51:00Z",
+      "versionDescription": "Bản Zalo 2 mod từ phiên bản 25.06.1 của IOSVIET.vn, bản này chống bị ban nick.",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa",
+      "size": 111351384
     },
     {
       "beta": false,
