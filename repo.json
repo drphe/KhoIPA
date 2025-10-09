@@ -1,10 +1,10 @@
 {
-  "name": "Kho IPA mod",
+  "name": "Kho IPA Mod",
   "identifier": "org.khoIPA.repo",
   "sourceURL": "https://github.com/drphe/KhoIPA",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png",
   "website": "https://github.com/drphe/KhoIPA",
-  "description": "Kho ứng dụng IPA đã mod full cho anh em xài cert hay sideloading.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
+  "description": "Kho ứng dụng IPA đã mod full cho anh em xài cert hay sideloading.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.\n ![Cài KhoIPA cho iphone](https://drphe.github.io/KhoIPA/setup.mobileconfig)",
   "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
   "subtitle": "Kho ứng dụng IPA mod cho Sideloading, Feather, Esign...",
   "tintColor": "#343a40",
@@ -181,7 +181,7 @@
     },
     {
       "beta": false,
-      "name": "Zalo2",
+      "name": "Zalo 2",
       "bundleIdentifier": "com.zalo.app",
       "developerName": "VNG",
       "subtitle": "Nhân bản Zalo",
