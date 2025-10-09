@@ -3,6 +3,7 @@ import { NewsItem } from "../../common/components/NewsItem.js";
 import { main } from "../../common/modules/main.js";
 
 insertNavigationBar("All News");
+
 main(json => {
     // Set tab title
     document.title = `News - ${json.name}`;
