@@ -1,9 +1,9 @@
-import { sourceURL } from "../modules/constants.js";
+import { sourceURL,  } from "../modules/constants.js";
 import { formatVersionDate } from "../modules/utilities.js";
 
 export const AppHeader = (app, x = ".") => app ? `
 <div class="app-header-container">
-<a href="${x}/app/?source=${sourceURL}&id=${app.bundleIdentifier}" class="app-header-link">
+<a href="${x}/app/?source=${base64Convert(sourceURL)}&id=${app.bundleIdentifier}" class="app-header-link">
     <div class="app-header-inner-container">
         <div class="app-header">
             <div class="content">
