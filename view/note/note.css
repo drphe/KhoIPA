@@ -7,14 +7,11 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  /* gap: 1em; */
-}
-.content, a, p{
+  gap: 1em;
   font-family: system-ui;
   max-width: 400px;
-  word-wrap: break-word;       /* hoặc overflow-wrap: break-word; */
+  word-wrap: break-word;  
   white-space: normal;
-
 }
 
 @media (prefers-color-scheme: dark) {
