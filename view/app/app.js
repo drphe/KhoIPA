@@ -15,6 +15,7 @@ const knownEntitlements = await json("../../common/assets/json/entitlements.json
 const legacyPermissions = await json("../../common/assets/json/legacy-permissions.json");
 
 const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
+document.getElementById("back")?.addEventListener("click", () => open(fallbackURL));
 
 if (!urlSearchParams.has('id')) open(fallbackURL);
 const bundleId = urlSearchParams.get('id');
