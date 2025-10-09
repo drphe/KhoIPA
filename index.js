@@ -1,9 +1,13 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
 import { isValidHTTPURL, open, formatVersionDate, json } from "./common/modules/utilities.js";
 const sources = await json("./common/assets/json/sources.json");
+const editorsources = await json("./common/assets/json/editorsources.json");
 
 (async function main() {
+
+    const fetchedEditorSources = [];
     const fetchedSources = [];
+
 
     for (const url of sources) {
         const source = await fetchSource(url);
@@ -11,9 +15,20 @@ const sources = await json("./common/assets/json/sources.json");
         fetchedSources.push(source);
     }
 
+    for (const url of editorsources) {
+        const source = await fetchSource(url);
+        if (!source) continue;
+        fetchedEditorSources.push(source);
+    }
+
     // Sort sources by last updated
     fetchedSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
 
+    // chèn editor's choice
+    for (const source of fetchedEditorSources) {
+        await insertSource(source, "suggestions");
+    }
+    // chèn featured
     for (const source of fetchedSources) {
         await insertSource(source);
     }
@@ -47,8 +62,8 @@ const sources = await json("./common/assets/json/sources.json");
         return source;
     }
 
-    async function insertSource(source, position = "beforeend", flag = false) {
-        document.getElementById("suggestions").insertAdjacentHTML(position, `
+    async function insertSource(source, id = "main", position = "beforeend", flag = false) {
+        document.getElementById(id).insertAdjacentHTML(position, `
             <div class="source-container">
                 <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
                     <div class="source" style="
