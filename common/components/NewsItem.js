@@ -4,7 +4,7 @@ import { sourceURL, base64Convert } from "../modules/constants.js";
 
 export const NewsItem = (news, minimal = false) => `
 <div class="news-item-wrapper"> ${news.url ?
-    "<a href='" + urlnews(news.url) + "'>" : ""}
+    "<a href='" + news.url + "'>" : ""}
     <div class="item" style="background-color: #${news.tintColor.replaceAll("#", "")};">
         <div class="text">
             <p>${formatVersionDate(news.date)}</p>
@@ -19,11 +19,3 @@ export const NewsItem = (news, minimal = false) => `
         AppHeader(getAppWithBundleId(news.appID), "..") ?? "" : ""}
 </div>`;
 
-export const urlnews = (url) => {
-  if (!url.includes('http')) {
-    const base = new URL(window.location.origin + "/KhoIPA/view/");
-    const noteURL = new URL("note/?", base);
-    return `${noteURL}source=${base64Convert(sourceURL)}&link=${url}`;
-  }
-  return url;
-};
