@@ -18,7 +18,7 @@ main(json => {
   //  }
    const news = {
 		title: 'Bản tin',
-		url: `./README.md`,//bundleLink
+		url: bundleLink,
 		tintColor: '#000'
 		}
 
