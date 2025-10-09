@@ -55,5 +55,3 @@ Sau khi TrollStore đã được cài đặt, bạn có thể cài đặt ứng 
 ### Bước 4: Mở ứng dụng đã cài
 - Sau khi cài xong, ứng dụng sẽ hiển thị trong tab **Apps** của TrollStore.
 - Nhấn để mở và sử dụng như bình thường.
-
----
