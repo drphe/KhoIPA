@@ -1,9 +1,11 @@
 import { insertNavigationBar, isValidHTTPURL } from "../../common/modules/utilities.js";
 import { AppHeader } from "../../common/components/AppHeader.js";
 import { main } from "../../common/modules/main.js";
+import { urlSearchParams, sourceURL, base64Convert } from "../../common/modules/constants.js";
 
+const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
 insertNavigationBar("All Apps");
-
+document.getElementById("back").onclick = () => open(fallbackURL);
 main((json) => {
     document.title = `Apps - ${json.name}`;
     // sắp xếp app
