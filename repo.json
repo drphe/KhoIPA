@@ -4,9 +4,9 @@
   "sourceURL": "https://github.com/drphe/KhoIPA",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png",
   "website": "https://github.com/drphe/KhoIPA",
-  "description": "Kho ứng dụng IPA đã mod full cho anh em xài cert hay sideloading.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.\n ![Cài KhoIPA cho iphone](https://drphe.github.io/KhoIPA/setup.mobileconfig)",
+  "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.\n ![Cài KhoIPA cho iphone](https://drphe.github.io/KhoIPA/setup.mobileconfig)",
   "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
-  "subtitle": "Kho ứng dụng IPA mod cho Sideloading, Feather, Esign...",
+  "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
   "tintColor": "#343a40",
   "META": {
     "repoName": "Kho IPA mod",
