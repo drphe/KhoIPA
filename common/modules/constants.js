@@ -9,7 +9,13 @@ export function base64Convert(text, mode = 'encode') {
   if (mode === 'encode') {
     return btoa(encodeURIComponent(text));
   } else if (mode === 'decode') {
-    return decodeURIComponent(atob(text));
+    try {
+      const urlDecoded = decodeURIComponent(text); 
+      return decodeURIComponent(atob(urlDecoded));
+    } catch (e) {
+      console.error("Base64 decode failed:", e);
+      return null;
+    }
   } else {
     throw new Error("Accept only 'encode' or 'decode'.");
   }
