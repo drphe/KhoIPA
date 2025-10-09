@@ -4,7 +4,7 @@ import { main } from "../../common/modules/main.js";
 import { sourceURL, base64Convert } from "../../common/modules/constants.js";
 
 const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
-document.getElementById("back").onclick = () => open(fallbackURL);
+document.getElementById("back")?.addEventListener("click", () => open(fallbackURL));
 
 insertNavigationBar("All News");
 

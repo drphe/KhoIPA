@@ -3,7 +3,7 @@ import { insertNavigationBar, open, setTintColor } from "../../common/modules/ut
 import { main } from "../../common/modules/main.js";
 
 const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
-document.getElementById("back").onclick = () => open(fallbackURL);
+document.getElementById("back")?.addEventListener("click", () => open(fallbackURL));
 
 if (!urlSearchParams.has('link')) open(fallbackURL);
 const bundleLink = urlSearchParams.get('link');
