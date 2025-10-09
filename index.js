@@ -62,7 +62,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         return source;
     }
 
-    async function insertSource(source, id = "main", position = "beforeend", flag = false) {
+    async function insertSource(source, id = "repository", position = "beforeend", flag = false) {
         document.getElementById(id).insertAdjacentHTML(position, `
             <div class="source-container">
                 <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
