@@ -9,7 +9,6 @@ if (!urlSearchParams.has('link')) open(fallbackURL);
 const bundleLink = urlSearchParams.get('link');
 
 insertNavigationBar("Nội dung chi tiết");
-document.getElementById("back").onclick = () => open(fallbackURL);
 
 main(json => {
    // const app = getAppWithBundleId(bundleId);

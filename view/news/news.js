@@ -1,11 +1,9 @@
 import { insertNavigationBar } from "../../common/modules/utilities.js";
 import { NewsItem } from "../../common/components/NewsItem.js";
 import { main } from "../../common/modules/main.js";
-import { urlSearchParams, sourceURL, base64Convert } from "../../common/modules/constants.js";
 
-const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
 insertNavigationBar("All News");
-document.getElementById("back").onclick = () => open(fallbackURL);
+
 main(json => {
     // Set tab title
     document.title = `News - ${json.name}`;
