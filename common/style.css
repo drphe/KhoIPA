@@ -626,6 +626,8 @@ a>button {
 
 .uibanner {
   background: white;
+  margin:auto;
+  max-width:400px;
 }
 
 @keyframes fade {
