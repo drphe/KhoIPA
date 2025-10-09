@@ -17,7 +17,6 @@ main(json => {
   //      return;
   //  }
    const news = {
-		title: 'Nội dung chi tiết',
 		url: bundleLink,
 		tintColor: '#000'
 	}
@@ -25,6 +24,10 @@ main(json => {
     fetch(news.url)
       .then(response => response.text())
       .then(markdown => {
+       const title = markdown.split('\n')[0];
+    
+   // Set tab title
+    document.title = title;
         document.getElementById("content").innerHTML = marked.parse(markdown);
       })
       .catch(error => {
@@ -32,8 +35,7 @@ main(json => {
         console.error(error);
       });
 
-    // Set tab title
-    document.title = `${news.title}`;
+
 
     // Set tint color
     const tintColor = news.tintColor ? news.tintColor.replaceAll("#", "") : "var(--tint-color);";
