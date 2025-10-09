@@ -1,9 +1,9 @@
-import { urlSearchParams, sourceURL, base64Convert } from "../../../common/modules/constants.js";
-import { insertNavigationBar, formatVersionDate, formatString, open, setTintColor } from "../../../common/modules/utilities.js";
-import { main } from "../../../common/modules/main.js";
-import { MoreButton } from "../../../common/components/MoreButton.js";
+import { urlSearchParams, sourceURL, base64Convert } from "../../common/modules/constants.js";
+import { insertNavigationBar, formatVersionDate, formatString, open, setTintColor } from "../../common/modules/utilities.js";
+import { main } from "../../common/modules/main.js";
+import { MoreButton } from "../../common/components/MoreButton.js";
 
-const fallbackURL = `../../?source=${base64Convert(sourceURL)}`;
+const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
 
 if (!urlSearchParams.has('id')) open(fallbackURL);
 const bundleId = urlSearchParams.get('id');
