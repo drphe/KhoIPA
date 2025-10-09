@@ -13,7 +13,6 @@ main((json) => {
     const appsPerLoad = 20;
     const appsContainer = document.getElementById("apps");
 
-    // Tạo ô tìm kiếm
 // Tạo wrapper chứa input và icon
 const searchWrapper = document.createElement("div");
 searchWrapper.style.position = "relative";
@@ -28,7 +27,8 @@ searchBox.className = "form-control mb-3";
 searchBox.style.width = "100%";
 searchBox.style.paddingRight = "35px"; // chừa chỗ cho icon
 searchBox.style.boxSizing = "border-box";
-searchBox.style.borderRadius = "20px";
+searchBox.style.borderRadius = "20px"; // 👈 thêm bo góc
+
 
 // Tạo icon kính lúp
 const searchIcon = document.createElement("span");
