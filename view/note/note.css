@@ -12,6 +12,9 @@
   word-wrap: break-word;  
   white-space: normal;
 }
+a {
+  text-decoration: underline;
+}
 
 @media (prefers-color-scheme: dark) {
   .content{
