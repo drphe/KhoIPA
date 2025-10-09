@@ -14,15 +14,35 @@ main((json) => {
     const appsContainer = document.getElementById("apps");
 
     // Tạo ô tìm kiếm
-    const searchBox = document.createElement("input");
-    searchBox.type = "text";
-    searchBox.placeholder = "Tìm theo tên app...";
-    searchBox.className = "form-control mb-3";
-    searchBox.style.maxWidth = "400px";
-    searchBox.style.margin = "20px auto";
-    searchBox.style.display = "block";
+// Tạo wrapper chứa input và icon
+const searchWrapper = document.createElement("div");
+searchWrapper.style.position = "relative";
+searchWrapper.style.maxWidth = "400px";
+searchWrapper.style.margin = "10px 20px";
 
-    appsContainer.before(searchBox);
+// Tạo ô tìm kiếm
+const searchBox = document.createElement("input");
+searchBox.type = "text";
+searchBox.placeholder = "Tìm theo tên app...";
+searchBox.className = "form-control mb-3";
+searchBox.style.width = "100%";
+searchBox.style.paddingRight = "35px"; // chừa chỗ cho icon
+searchBox.style.boxSizing = "border-box";
+
+// Tạo icon kính lúp
+const searchIcon = document.createElement("span");
+searchIcon.textContent = "🔍"; // hoặc dùng Font Awesome: <i class="fas fa-search"></i>
+searchIcon.style.position = "absolute";
+searchIcon.style.right = "10px";
+searchIcon.style.top = "50%";
+searchIcon.style.transform = "translateY(-50%)";
+searchIcon.style.pointerEvents = "none";
+searchIcon.style.color = "#888";
+
+// Gắn các phần tử
+searchWrapper.appendChild(searchBox);
+searchWrapper.appendChild(searchIcon);
+appsContainer.before(searchWrapper);
 
     searchBox.addEventListener("input", () => {
         const keyword = searchBox.value.toLowerCase();
