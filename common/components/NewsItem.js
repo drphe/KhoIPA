@@ -21,7 +21,7 @@ export const NewsItem = (news, minimal = false) => `
 
 export const urlnews = (url) => {
   if (!url.includes('http')) {
-    return `./note/?source=${base64Convert(sourceURL)}&link=${url}`;
+    return `../note/?source=${base64Convert(sourceURL)}&link=${url}`;
   }
   return url;
 };
