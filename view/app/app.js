@@ -1,4 +1,4 @@
-import { urlSearchParams, sourceURL } from "../../common/modules/constants.js";
+import { urlSearchParams, sourceURL, base64Convert } from "../../common/modules/constants.js";
 import { formatString, insertSpaceInCamelString, insertSpaceInSnakeString, formatVersionDate, open, setTintColor, isValidHTTPURL, showAddToAltStoreAlert, json } from "../../common/modules/utilities.js";
 import { main } from "../../common/modules/main.js";
 import { AppPermissionItem } from "../../common/components/AppPermissionItem.js";
@@ -14,7 +14,7 @@ const knownPrivacyPermissions = await json("../../common/assets/json/privacy.jso
 const knownEntitlements = await json("../../common/assets/json/entitlements.json");
 const legacyPermissions = await json("../../common/assets/json/legacy-permissions.json");
 
-const fallbackURL = `../?source=${sourceURL}`;
+const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
 
 if (!urlSearchParams.has('id')) open(fallbackURL);
 const bundleId = urlSearchParams.get('id');
@@ -191,7 +191,7 @@ main((json) => {
         versionDescriptionElement.insertAdjacentHTML("beforeend", more);
 
     // Version history
-    document.getElementById("version-history").href = `./version-history/?source=${sourceURL}&id=${app.bundleIdentifier}`;
+    document.getElementById("version-history").href = `./version-history/?source=${base64Convert(sourceURL)}&id=${app.bundleIdentifier}`;
 
     // 
     // Permissions
@@ -350,11 +350,11 @@ main((json) => {
         appCount++;
     }
 
-    sourceA.href = `../../view/?source=${sourceURL}`;
+    sourceA.href = `../../view/?source=${base64Convert(sourceURL)}`;
     sourceContainer.style.backgroundColor = `#${(json.tintColor ?? altSourceTintColor).replaceAll("#", "")}`;
     sourceIcon.src = json.iconURL ?? altSourceIcon;
     sourceTitle.innerText = json.name;
-    sourceContainer.href = `../?source=${sourceURL}`;
+    sourceContainer.href = `../?source=${base64Convert(sourceURL)}`;
     sourceSubtitle.innerText = `Last updated: ${formatVersionDate(lastUpdated)}`;
     sourceAppCount.innerText = appCount + (appCount === 1 ? " app" : " apps");
 });

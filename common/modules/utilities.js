@@ -81,6 +81,7 @@ export function setUpBackButton() {
     document.getElementById("back")?.addEventListener("click", () => history.back());
 }
 
+
 export function open(url) {
     window.open(url, "_self");
 }

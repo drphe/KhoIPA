@@ -1,6 +1,16 @@
 export const urlSearchParams = new URLSearchParams(window.location.search);
 
-export const sourceURL = urlSearchParams.get('source')?.replaceAll("+", "%2B");
+export const sourceURL = base64Convert(urlSearchParams.get('source')?.replaceAll("+", "%2B"),'decode');
 
 // https://stackoverflow.com/a/8943487
 export const urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;()]*[-A-Z0-9+&@#\/%=~_|)])/ig;
+
+export function base64Convert(text, mode = 'encode') {
+  if (mode === 'encode') {
+    return btoa(encodeURIComponent(text));
+  } else if (mode === 'decode') {
+    return decodeURIComponent(atob(text));
+  } else {
+    throw new Error("Accept only 'encode' or 'decode'.");
+  }
+}

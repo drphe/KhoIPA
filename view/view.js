@@ -1,4 +1,4 @@
-import { sourceURL } from "../common/modules/constants.js";
+import { sourceURL, base64Convert } from "../common/modules/constants.js";
 import { formatString, open } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
@@ -7,7 +7,7 @@ import { main } from "../common/modules/main.js";
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
         e.preventDefault();
-        open(`../?source=${sourceURL}`);
+        open(`../?source=${base64Convert(sourceURL)}`);
     });
 
     document.getElementById("add")?.addEventListener("click", e => {
@@ -16,9 +16,9 @@ main(json => {
     });
 
     // Set "View All News" link
-    document.querySelector("#news a").href = `./news/?source=${sourceURL}`;
+    document.querySelector("#news a").href = `./news/?source=${base64Convert(sourceURL)}`;
     // Set "View All Apps" link
-    document.querySelector("#apps a").href = `./all-apps/?source=${sourceURL}`;
+    document.querySelector("#apps a").href = `./all-apps/?source=${base64Convert(sourceURL)}`;
 
     // Set tab title
     document.title = json.name;

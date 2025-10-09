@@ -1,4 +1,4 @@
-import { urlSearchParams, sourceURL } from "./common/modules/constants.js";
+import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
 import { isValidHTTPURL, open, formatVersionDate, json } from "./common/modules/utilities.js";
 const sources = await json("./common/assets/json/sources.json");
 
@@ -50,7 +50,7 @@ const sources = await json("./common/assets/json/sources.json");
     async function insertSource(source, position = "beforeend", flag = false) {
         document.getElementById("suggestions").insertAdjacentHTML(position, `
             <div class="source-container">
-                <a href="./view/?source=${source.url}" class="source-link">
+                <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
                     <div class="source" style="
                         background-color: #${source.tintColor.replaceAll("#", "")};
                         margin-bottom: ${flag ? "0.75rem" : "0"};
