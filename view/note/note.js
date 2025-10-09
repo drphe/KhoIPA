@@ -5,10 +5,10 @@ import { MoreButton } from "../../common/components/MoreButton.js";
 
 const fallbackURL = `./view/?source=${base64Convert(sourceURL)}`;
 
-if (!urlSearchParams.has('id')) open(fallbackURL);
-const bundleId = urlSearchParams.get('id');
+if (!urlSearchParams.has('link')) open(fallbackURL);
+const bundleLink = urlSearchParams.get('link');
 
-insertNavigationBar("Version History");
+insertNavigationBar("Nội dung chi tiết");
 
 main(json => {
    // const app = getAppWithBundleId(bundleId);
@@ -18,7 +18,7 @@ main(json => {
   //  }
    const news = {
 		title: 'Bản tin',
-		url: `./README.md`,
+		url: `./README.md`,//bundleLink
 		tintColor: '#000'
 		}
 
@@ -33,7 +33,7 @@ main(json => {
       });
 
     // Set tab title
-    document.title = `${app.name}`;
+    document.title = `${news.name}`;
 
     // Set tint color
     const tintColor = news.tintColor ? news.tintColor.replaceAll("#", "") : "var(--tint-color);";
