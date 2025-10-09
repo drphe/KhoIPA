@@ -14,6 +14,17 @@
   },
   "news": [
     {
+      "title": "Hướng dẫn cài IPA bằng TrollStore",
+      "identifier": "hd-cai-ipa",
+      "caption": "Hướng Dẫn Cài Ứng Dụng IPA Cho iPhone Bằng TrollStore",
+      "tintColor": "D4E3ED",
+      "imageURL": "https://thuthuatjb.com/wp-content/uploads/2022/09/Huong-dan-TrollStore-ios-ipados.jpg",
+      "appID": "com.trollstore.app",
+      "date": "2025-10-09",
+      "notify": true,
+      "url": "trollstore.md"
+    },
+    {
       "title": "Chia sẻ *.dylib, *.deb",
       "identifier": "share-dylib",
       "caption": "Chia sẻ kho .dylib, .deb được sưu tầm hoặc tự build để tiêm cho IPA.",

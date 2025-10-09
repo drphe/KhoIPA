@@ -26,6 +26,7 @@ Mở TrollStore, chuyển sang tab **Settings**. Nhấn nút **Install Idid** v�
 ### Bước 6: Respring thiết bị
 Nhấn nút **Respring** ở đầu giao diện. Sau khi mở khóa lại màn hình, quá trình cài đặt TrollStore đã hoàn tất. Bạn có thể gỡ ứng dụng **GTA Car Tracker** nếu muốn.
 
+    [Đọc thêm ở đây](https://ios.cfw.guide/installing-trollstore/)
 ---
 
 ## 2. Cài Đặt File IPA
