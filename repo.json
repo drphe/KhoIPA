@@ -14,6 +14,17 @@
   },
   "news": [
     {
+      "title": "Chia sẻ *.dylib, *.deb",
+      "identifier": "share-dylib",
+      "caption": "Chia sẻ kho .dylib, .deb được sưu tầm hoặc tự build để tiêm cho IPA.",
+      "tintColor": "33DB5D",
+      "imageURL": "https://cdn.filesuffix.com/images/icons/development/58/dylib-300.png",
+      "appID": "com.dylib.app",
+      "date": "2025-10-09",
+      "notify": true,
+      "url": "Khodylib.md"
+    },
+    {
       "title": "Hướng dẫn tiêm dylib/deb vào IPA",
       "identifier": "hdsd-tiem-dylib",
       "caption": "Công cụ inject (tiêm) dylib/deb vào iPA online từ codevn.vn",
