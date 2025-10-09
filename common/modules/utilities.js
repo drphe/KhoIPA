@@ -36,7 +36,7 @@ export function insertAltStoreBanner(sourceName) {
 
 export function insertNavigationBar(title) {
     document.getElementById("top")?.insertAdjacentHTML("beforeend", NavigationBar(title));
-    setUpBackButton();
+
 }
 
 // https://stackoverflow.com/a/43467144/19227228

@@ -2,6 +2,11 @@ import { insertNavigationBar, isValidHTTPURL } from "../../common/modules/utilit
 import { AppHeader } from "../../common/components/AppHeader.js";
 import { main } from "../../common/modules/main.js";
 
+import { sourceURL, base64Convert } from "../../common/modules/constants.js";
+
+const fallbackURL = `../?source=${base64Convert(sourceURL)}`;
+document.getElementById("back").onclick = () => open(fallbackURL);
+
 insertNavigationBar("All Apps");
 
 main((json) => {
