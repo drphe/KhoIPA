@@ -1,6 +1,9 @@
 export const urlSearchParams = new URLSearchParams(window.location.search);
 
-export const sourceURL = base64Convert(urlSearchParams.get('source')?.replaceAll("+", "%2B"),'decode');
+export const sourceURL = base64Convert(
+  decodeURIComponent(urlSearchParams.get('source')?.replaceAll("+", "%2B") ?? ''),
+  'decode'
+);
 
 // https://stackoverflow.com/a/8943487
 export const urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;()]*[-A-Z0-9+&@#\/%=~_|)])/ig;
