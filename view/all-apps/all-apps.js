@@ -16,7 +16,7 @@ json.apps.sort((a, b) => {
     const allApps = json.apps.filter(app => !app.beta);
     let filteredApps = [...allApps];
     let currentIndex = 0;
-    const appsPerLoad = 20;
+    const appsPerLoad = 5;
     const appsContainer = document.getElementById("apps");
 
 // Tạo wrapper chứa input và icon
