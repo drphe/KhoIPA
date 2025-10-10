@@ -1,7 +1,7 @@
 # 📦 KhoIPA Mod
 ![GitHub Repo stars](https://img.shields.io/github/stars/drphe/khoIPA?style=social)
 ![Views](https://komarev.com/ghpvc/?username=drphe&label=Views&color=blue&style=flat)
-
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/drphe/KhoIPA/total)](https://github.com/drphe/KhoIPA/releases)
 
 **KhoIPA Mod** là dự án miễn phí cung cấp các phiên bản IPA đã mod cho anh em sử dụng qua các công cụ như **Esign**, **Feather**, và **sideloading**.
 ## 📚 Thư viện *.Dylib
