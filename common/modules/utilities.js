@@ -139,11 +139,11 @@ export function consolidateApps (source) {
 
         // Tạo đối tượng phiên bản để gộp
         const versionInfo = {
-            version: app.version,
-            date: app.versionDate,
-            size: app.size,
-            downloadURL: app.downloadURL,
-            localizedDescription: app.localizedDescription
+            version: app.version ?? app.versions[0].version,
+            date: app.versionDate ?? app.versions[0].date,
+            size: app.size ?? app.versions[0].size,
+            downloadURL: app.downloadURL ??app.versions[0].downloadURL,
+            localizedDescription: app.localizedDescription ?? app.versions[0].localizedDescription
         };
 
         if (uniqueAppsMap.has(bundleID)) {
@@ -172,13 +172,14 @@ export function consolidateApps (source) {
 		subtitle: app.subtitle ?? "",
 	   	localizedDescription: app.localizedDescription ?? "",
 		versionDescription: app.versionDescription ?? "",
-                size: app.size ?? 0,
 	        tintColor: app.tintColor ?? "00adef",
                 iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
 		screenshotURLs: app.screenshotURLs ?? [],
-		version : app.version, 
-		versionDate: app.versionDate,
-		downloadURL: app.downloadURL
+                size: app.size ?? app.versions[0].size,
+		version : app.version ?? app.versions[0].version, 
+		versions : app.versions ?? [], 
+		versionDate: app.versionDate ?? app.versions[0].date,
+		downloadURL: app.downloadURL ?? app.versions[0].downloadURL
             };
 
             // Khởi tạo mảng 'versions' với phiên bản hiện tại
