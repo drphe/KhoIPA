@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- Tối ưu cho iPhone / iPad -->
+  <!-- Tối ưu hiển thị trên iPhone / iPad -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-  <!-- Chạy như ứng dụng độc lập (WebClip / PWA) -->
+  <!-- Cho phép chạy như ứng dụng độc lập (WebClip / PWA) -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Kho IPA">
 
-  <!-- Màu chủ đạo (trắng đồng nhất với tai thỏ) -->
+  <!-- Màu mặc định (sẽ bị thay đổi bằng JS theo theme) -->
   <meta name="theme-color" content="#ffffff">
   <meta name="background-color" content="#ffffff">
 
@@ -25,6 +25,49 @@
   <link rel="stylesheet" href="index.css">
 
   <title>Kho IPA MOD</title>
+
+  <!-- JS tự đổi màu theo Light / Dark Mode -->
+  <script>
+  (function() {
+    // Lấy hoặc tạo thẻ meta theme-color
+    let themeMeta = document.querySelector('meta[name="theme-color"]');
+    if (!themeMeta) {
+      themeMeta = document.createElement('meta');
+      themeMeta.setAttribute('name', 'theme-color');
+      document.head.appendChild(themeMeta);
+    }
+
+    // Lấy hoặc tạo thẻ meta background-color
+    let bgMeta = document.querySelector('meta[name="background-color"]');
+    if (!bgMeta) {
+      bgMeta = document.createElement('meta');
+      bgMeta.setAttribute('name', 'background-color');
+      document.head.appendChild(bgMeta);
+    }
+
+    // Hàm cập nhật màu theo theme
+    function applyThemeColor(isDark) {
+      if (isDark) {
+        themeMeta.setAttribute('content', '#000000');
+        bgMeta.setAttribute('content', '#000000');
+        document.documentElement.style.backgroundColor = '#000000';
+        document.body.style.backgroundColor = '#000000';
+        document.body.style.color = '#ffffff';
+      } else {
+        themeMeta.setAttribute('content', '#ffffff');
+        bgMeta.setAttribute('content', '#ffffff');
+        document.documentElement.style.backgroundColor = '#ffffff';
+        document.body.style.backgroundColor = '#ffffff';
+        document.body.style.color = '#000000';
+      }
+    }
+
+    // Theo dõi thay đổi chế độ hệ thống
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    applyThemeColor(darkModeQuery.matches);
+    darkModeQuery.addEventListener('change', e => applyThemeColor(e.matches));
+  })();
+  </script>
 </head>
 <body class="loading">
   <div id="loading">
