@@ -89,7 +89,7 @@ main((json) => {
         button.addEventListener("click", event => {
             event.preventDefault();
             //installAppAlert.present();
-            showAddToAltStoreAlert(app.name, "Download IPA", () => window.location.href = app.downloadURL)
+            showAddToAltStoreAlert(app.name, "Download IPA", () => open(app.downloadURL))
         });
     });
 
