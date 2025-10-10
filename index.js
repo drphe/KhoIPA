@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { isValidHTTPURL, open, formatVersionDate, json, consolidateApps } from "./common/modules/utilities.js";
+import { isValidHTTPURL, open, formatVersionDate, json } from "./common/modules/utilities.js";
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
 
@@ -12,7 +12,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     for (const url of sources) {
         const source = await fetchSource(url);
         if (!source) continue;
-        fetchedSources.push(consolidateApps(source));
+        fetchedSources.push(source);
     }
 
     for (const url of editorsources) {
