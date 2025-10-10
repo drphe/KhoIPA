@@ -117,6 +117,73 @@ export async function json(url) {
     return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", error));
 }
 
+export consolidateApps = (source) {
+    const uniqueAppsMap = new Map();
+
+    // 1. Duyệt qua từng ứng dụng để xây dựng Map duy nhất và gộp phiên bản
+    source.apps.forEach(app => {
+        const bundleID = app.bundleIdentifier;
+
+        // Tạo đối tượng phiên bản để gộp
+        const versionInfo = {
+            version: app.version,
+            date: app.versionDate,
+            size: app.size,
+            downloadURL: app.downloadURL,
+            localizedDescription: app.localizedDescription
+        };
+
+        if (uniqueAppsMap.has(bundleID)) {
+            // Trường hợp trùng lặp: Lấy đối tượng đã có và thêm phiên bản mới
+            const existingApp = uniqueAppsMap.get(bundleID);
+            if(app.date > existingApp.versionDate){
+            // Cập nhật thông tin ứng dụng chính (ví dụ: tên, icon) nếu cần, kiểm tra phiên bản
+            existingApp.versionDate = app.date; 
+            existingApp.version = app.version;
+            existingApp.downloadURL = app.downloadURL;
+            existingApp.size = app.size;
+	    existingApp.localizedDescription = app.localizedDescription ?? "";
+	    }
+            // Thêm thông tin phiên bản mới vào mảng versions
+            existingApp.versions.push(versionInfo);
+
+        } else {
+            // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
+            const newApp = { 
+                // Sao chép tất cả các trường không phải phiên bản
+		beta: app.beta ?? false,
+                name: app.name,
+                type: app.type ?? 1,
+                bundleIdentifier: app.bundleIdentifier,
+                developerName: app.developerName ?? "",
+		subtitle: app.subtitle ?? "",
+	   	localizedDescription: app.localizedDescription ?? "",
+		versionDescription: app.versionDescription ?? "",
+                size: app.size ?? 0,
+	        tintColor: app.tintColor ?? "00adef",
+                iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
+		screenshotURLs: app.screenshotURLs ?? [],
+		version : app.version, 
+		versionDate: app.versionDate,
+		downloadURL: app.downloadURL
+            };
+
+            // Khởi tạo mảng 'versions' với phiên bản hiện tại
+            newApp.versions = [versionInfo];
+            
+            uniqueAppsMap.set(bundleID, newApp);
+        }
+    });
+    
+    // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
+    const newSource = { 
+        ...source,
+        apps: Array.from(uniqueAppsMap.values())
+    };
+
+    return newSource;
+}
+
 const $ = selector => selector.startsWith("#") && !selector.includes(".") && !selector.includes(" ")
     ? document.getElementById(selector.substring(1))
     : document.querySelectorAll(selector);
