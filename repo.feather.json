@@ -1,8 +1,8 @@
 {
-  "name": "zx's aio repo v2",
+  "name": "AIO repo v2",
   "identifier": "fyi.zxcvbn.aio",
   "sourceURL": "https://github.com/drphe/KhoIPA/repo.feather.json",
-  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
+  "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
   "website": "https://github.com/drphe/KhoIPA",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.\n ![Cài KhoIPA cho iphone] https://drphe.github.io/KhoIPA/setup.mobileconfig",
   "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
