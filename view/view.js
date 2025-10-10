@@ -1,5 +1,5 @@
 import { sourceURL, base64Convert } from "../common/modules/constants.js";
-import { formatString, open, setUpBackButton } from "../common/modules/utilities.js";
+import { formatString, open, setUpBackButton  } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";

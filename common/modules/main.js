@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL } from "./constants.js";
-import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open } from "./utilities.js";
+import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
 
 export function main(callback, fallbackURL = "../../") {
     // If no source
@@ -24,7 +24,8 @@ export function main(callback, fallbackURL = "../../") {
 
     fetch(sourceURL)
         .then(response => response.json())
-        .then(json => {
+        .then(source => {
+	    const json = consolidateApps(source)
             // Set tint color
             const tintColor = json.tintColor?.replaceAll("#", "");
             if (tintColor) setTintColor(tintColor);
@@ -32,7 +33,6 @@ export function main(callback, fallbackURL = "../../") {
             insertAltStoreBanner(json.name);
 
             setApps(json.apps);
-            // main(json);
             callback(json);
             // loaded();
             waitForAllImagesToLoad();
