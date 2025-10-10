@@ -12,8 +12,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     for (const url of sources) {
         const source = await fetchSource(url);
         if (!source) continue;
-	const newSource = consolidateApps(source);
-        fetchedSources.push(newSource);
+        fetchedSources.push(source);
     }
 
     for (const url of editorsources) {
@@ -39,7 +38,8 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
 
     async function fetchSource(url) {
-        const source = await json(url);
+        const data = await json(url);
+	const source = consolidateApps(data);
         if (!source) return;
         source.lastUpdated = new Date("1970-01-01");
         source.appCount = 0;
