@@ -9,6 +9,7 @@
   <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
   <title>KhoIPA || Quản lý JSON Repo</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     /* Tùy chỉnh Tailwind CSS */
     body {
@@ -22,7 +23,21 @@
         background-color: #292a2d;
       }
     }
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 grey;
+    border-radius: 1px;
+}
 
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background: transparent;
+}
     .container {
       max-width: 640px !important;
       margin: 0px auto;
@@ -237,7 +252,10 @@
       z-index: 2;
       min-height: 40px;
     }
-
+    .app-list, .version-list {
+	max-height:500px;
+	overflow:auto;
+    }
     #top {
       position: fixed;
       z-index: 5;
@@ -955,7 +973,7 @@
       });
 // 2. LỌC: Sắp xếp và chỉ giữ lại tối đa 15 phiên bản mới nhất
   const consolidatedApps = Array.from(uniqueAppsMap.values());
-  const MAX_VERSIONS = 10;
+  const MAX_VERSIONS = 5;
 
   consolidatedApps.forEach(app => {
     // Sắp xếp mảng versions theo ngày (date) giảm dần (mới nhất lên đầu)
@@ -965,7 +983,7 @@
    //     return dateB - dateA; // Sắp xếp giảm dần
   //  });
 
-    // Chỉ giữ lại tối đa 15 phiên bản mới nhất
+    // Chỉ giữ lại tối đa 5 phiên bản mới nhất
     if (app.versions.length > MAX_VERSIONS) {
         app.versions = app.versions.slice(0, MAX_VERSIONS);
     }
