@@ -5,15 +5,28 @@ import { urlRegex, sourceURL } from "./constants.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
 export function formatVersionDate(arg) {
-    const versionDate = new Date(arg),
-        month = versionDate.toLocaleString("default", { month: "short" }),
-        date = versionDate.getDate();
+    let versionDate = new Date(arg);
+    if (isNaN(versionDate)) {
+        const match = arg.match(/^(\d{2})[\/\-](\d{2})[\/\-](\d{4})$/); // dd/MM/yyyy hoặc dd-MM-yyyy
+        if (match) {
+            const [_, day, month, year] = match;
+            versionDate = new Date(`${year}-${month}-${day}`);
+        }
+    }
+
+    if (isNaN(versionDate)) return arg;
+
     const today = new Date();
     const msPerDay = 60 * 60 * 24 * 1000;
-    const msDifference = today.valueOf() - versionDate.valueOf();
+    const msDifference = today - versionDate;
 
-    let dateString = versionDate.valueOf() ? `${month} ${date}, ${versionDate.getFullYear()}` : arg.split("T")[0];
-    if (msDifference <= msPerDay && today.getDate() == versionDate.getDate())
+    const month = versionDate.toLocaleString("default", { month: "short" });
+    const date = versionDate.getDate();
+    const year = versionDate.getFullYear();
+
+    let dateString = `${month} ${date}, ${year}`;
+
+    if (msDifference <= msPerDay && today.getDate() === versionDate.getDate())
         dateString = "Hôm nay";
     else if (msDifference <= msPerDay * 2)
         dateString = "Hôm qua";
@@ -117,8 +130,7 @@ export async function json(url) {
     return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", error));
 }
 
-
-export function consolidateApps(source) {
+export function consolidateApps (source) {
     const uniqueAppsMap = new Map();
 
     // 1. Duyệt qua từng ứng dụng để xây dựng Map duy nhất và gộp phiên bản
@@ -137,47 +149,47 @@ export function consolidateApps(source) {
         if (uniqueAppsMap.has(bundleID)) {
             // Trường hợp trùng lặp: Lấy đối tượng đã có và thêm phiên bản mới
             const existingApp = uniqueAppsMap.get(bundleID);
-            if (app.date > existingApp.versionDate) {
-                // Cập nhật thông tin ứng dụng chính (ví dụ: tên, icon) nếu cần, kiểm tra phiên bản
-                existingApp.versionDate = app.date;
-                existingApp.version = app.version;
-                existingApp.downloadURL = app.downloadURL;
-                existingApp.size = app.size;
-                existingApp.localizedDescription = app.localizedDescription ?? "";
-            }
+            if(app.date > existingApp.versionDate){
+            // Cập nhật thông tin ứng dụng chính (ví dụ: tên, icon) nếu cần, kiểm tra phiên bản
+            existingApp.versionDate = app.date; 
+            existingApp.version = app.version;
+            existingApp.downloadURL = app.downloadURL;
+            existingApp.size = app.size;
+	    existingApp.localizedDescription = app.localizedDescription ?? "";
+	    }
             // Thêm thông tin phiên bản mới vào mảng versions
             existingApp.versions.push(versionInfo);
 
         } else {
             // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
-            const newApp = {
+            const newApp = { 
                 // Sao chép tất cả các trường không phải phiên bản
-                beta: app.beta ?? false,
+		beta: app.beta ?? false,
                 name: app.name,
                 type: app.type ?? 1,
                 bundleIdentifier: app.bundleIdentifier,
                 developerName: app.developerName ?? "",
-                subtitle: app.subtitle ?? "",
-                localizedDescription: app.localizedDescription ?? "",
-                versionDescription: app.versionDescription ?? "",
+		subtitle: app.subtitle ?? "",
+	   	localizedDescription: app.localizedDescription ?? "",
+		versionDescription: app.versionDescription ?? "",
                 size: app.size ?? 0,
-                tintColor: app.tintColor ?? "00adef",
+	        tintColor: app.tintColor ?? "00adef",
                 iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
-                screenshotURLs: app.screenshotURLs ?? [],
-                version: app.version,
-                versionDate: app.versionDate,
-                downloadURL: app.downloadURL
+		screenshotURLs: app.screenshotURLs ?? [],
+		version : app.version, 
+		versionDate: app.versionDate,
+		downloadURL: app.downloadURL
             };
 
             // Khởi tạo mảng 'versions' với phiên bản hiện tại
             newApp.versions = [versionInfo];
-
+            
             uniqueAppsMap.set(bundleID, newApp);
         }
     });
-
+    
     // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
-    const newSource = {
+    const newSource = { 
         ...source,
         apps: Array.from(uniqueAppsMap.values())
     };
