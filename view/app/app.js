@@ -69,7 +69,7 @@ main((json) => {
 function downloadIpa(url) {
   const link = document.createElement('a');
   link.href = url;
-  link.target = '_self';
+  link.target = '_blank';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
