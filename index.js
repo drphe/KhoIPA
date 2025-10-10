@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { isValidHTTPURL, open, formatVersionDate, json } from "./common/modules/utilities.js";
+import { isValidHTTPURL, open, formatVersionDate, json, consolidateApps } from "./common/modules/utilities.js";
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
 
@@ -38,7 +38,8 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
 
     async function fetchSource(url) {
-        const source = await json(url);
+        const data = await json(url);
+	const source = consolidateApps(data)
         if (!source) return;
         source.lastUpdated = new Date("1970-01-01");
         source.appCount = 0;

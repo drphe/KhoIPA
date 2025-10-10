@@ -114,7 +114,7 @@ export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
 }
 
 export async function json(url) {
-    return await fetch(url).then(response => consolidateApps(response.json())).catch(error => console.error("An error occurred.", error));
+    return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", error));
 }
 
 
