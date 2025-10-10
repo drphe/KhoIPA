@@ -1,7 +1,7 @@
 @import url("./vendor/bootstrap-icons-1.11.2/bootstrap-icons.min.css");
 @import url("./vendor/uialert.js/uialert.css");
 body {
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: env(safe-area-inset-bottom);
   }
 :root {
   --altstore-tint-color: #018084;
