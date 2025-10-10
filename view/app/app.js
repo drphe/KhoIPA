@@ -88,11 +88,7 @@ main((json) => {
     document.querySelectorAll("a.install").forEach(button => {
         button.addEventListener("click", event => {
             event.preventDefault();
-            if (sourceURL?.includes("https://therealfoxster.github.io/altsource/apps.json")) {
-                showAddToAltStoreAlert(json.name, "Download IPA", () => window.location.href = app.downloadURL)
-            } else {
-                installAppAlert.present();
-            }
+            installAppAlert.present();
         });
     });
 
