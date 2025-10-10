@@ -177,13 +177,10 @@ export function consolidateApps (source) {
 		screenshotURLs: app.screenshotURLs ?? [],
                 size: app.size ?? app.versions[0].size,
 		version : app.version ?? app.versions[0].version, 
-		versions : app.versions ?? [], 
+		versions : app.versions ??  [versionInfo], 
 		versionDate: app.versionDate ?? app.versions[0].date,
 		downloadURL: app.downloadURL ?? app.versions[0].downloadURL
             };
-
-            // Khởi tạo mảng 'versions' với phiên bản hiện tại
-            newApp.versions = [versionInfo];
             
             uniqueAppsMap.set(bundleID, newApp);
         }
