@@ -77,7 +77,7 @@ export function main(callback, fallbackURL = "../../") {
     }
     setTimeout(() => {
     if (count < total) loaded();
-}, 5000); // sau 5 giây thì ép hoàn tất
+}, 3000); // sau 3 giây thì ép hoàn tất
 }
 
 function loaded() {
