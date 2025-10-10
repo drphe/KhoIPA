@@ -7,7 +7,7 @@ export const AppHeader = (app, x = ".") => app ? `
     <div class="app-header-inner-container">
         <div class="app-header">
             <div class="content">
-                <img id="app-icon" src="${app.iconURL}" alt="">
+                <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';" alt="">
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name}</p>
