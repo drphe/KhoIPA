@@ -130,69 +130,72 @@ export async function json(url) {
     return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", error));
 }
 
-export function consolidateApps (source) {
-    const uniqueAppsMap = new Map();
+export function consolidateApps(source) {
+  const uniqueAppsMap = new Map();
 
-    // 1. Duyệt qua từng ứng dụng để xây dựng Map duy nhất và gộp phiên bản
-    source.apps.forEach(app => {
-        const bundleID = app.bundleIdentifier;
+  // 1. Duyệt qua từng ứng dụng để xây dựng Map duy nhất và gộp phiên bản
+  source.apps.forEach(app => {
+    const bundleID = app.bundleIdentifier;
 
-        // Tạo đối tượng phiên bản để gộp
-        const versionInfo = {
-            version: app.version ?? app.versions[0].version,
-            date: app.versionDate ?? app.versions[0].date,
-            size: app.size ?? app.versions[0].size,
-            downloadURL: app.downloadURL ??app.versions[0].downloadURL,
-            localizedDescription: app.localizedDescription ?? app.versions[0].localizedDescription
-        };
+    // Tạo đối tượng phiên bản để gộp
+    const firstVersion = app.versions?.[0] ?? {};
 
-        if (uniqueAppsMap.has(bundleID)) {
-            // Trường hợp trùng lặp: Lấy đối tượng đã có và thêm phiên bản mới
-            const existingApp = uniqueAppsMap.get(bundleID);
-            if(app.date > existingApp.versionDate){
-            // Cập nhật thông tin ứng dụng chính (ví dụ: tên, icon) nếu cần, kiểm tra phiên bản
-            existingApp.versionDate = app.date; 
-            existingApp.version = app.version;
-            existingApp.downloadURL = app.downloadURL;
-            existingApp.size = app.size;
-	    existingApp.localizedDescription = app.localizedDescription ?? "";
-	    }
-            // Thêm thông tin phiên bản mới vào mảng versions
-            existingApp.versions.push(versionInfo);
-
-        } else {
-            // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
-            const newApp = { 
-                // Sao chép tất cả các trường không phải phiên bản
-		beta: app.beta ?? false,
-                name: app.name,
-                type: app.type ?? 1,
-                bundleIdentifier: app.bundleIdentifier,
-                developerName: app.developerName ?? "",
-		subtitle: app.subtitle ?? "",
-	   	localizedDescription: app.localizedDescription ?? "",
-		versionDescription: app.versionDescription ?? "",
-	        tintColor: app.tintColor ?? "00adef",
-                iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
-		screenshotURLs: app.screenshotURLs ?? [],
-                size: app.size ?? app.versions[0].size,
-		version : app.version ?? app.versions[0].version, 
-		versions : app.versions ??  [versionInfo], 
-		versionDate: app.versionDate ?? app.versions[0].date,
-		downloadURL: app.downloadURL ?? app.versions[0].downloadURL
-            };
-            
-            uniqueAppsMap.set(bundleID, newApp);
-        }
-    });
-    
-    // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
-    const newSource = { 
-        ...source,
-        apps: Array.from(uniqueAppsMap.values())
+    const versionInfo = {
+      version: app.version ?? firstVersion.version ?? "1.0.0",
+      date: app.versionDate ?? firstVersion.date ?? new Date(),
+      size: app.size ?? firstVersion.size ?? 0,
+      downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
+      localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
     };
 
-    return newSource;
+
+    if (uniqueAppsMap.has(bundleID)) {
+      // Trường hợp trùng lặp: Lấy đối tượng đã có và thêm phiên bản mới
+      const existingApp = uniqueAppsMap.get(bundleID);
+      if (app.date > existingApp.versionDate) {
+        // Cập nhật thông tin ứng dụng chính (ví dụ: tên, icon) nếu cần, kiểm tra phiên bản
+        existingApp.versionDate = app.date;
+        existingApp.version = app.version;
+        existingApp.downloadURL = app.downloadURL;
+        existingApp.size = app.size;
+        existingApp.localizedDescription = app.localizedDescription ?? "";
+      }
+      // Thêm thông tin phiên bản mới vào mảng versions
+      existingApp.versions.push(versionInfo);
+
+    } else {
+      // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
+      const newApp = {
+        // Sao chép tất cả các trường không phải phiên bản
+        beta: app.beta ?? false,
+        name: app.name,
+        type: app.type ?? 1,
+        bundleIdentifier: app.bundleIdentifier,
+        developerName: app.developerName ?? "",
+        subtitle: app.subtitle ?? "",
+        localizedDescription: app.localizedDescription ?? "",
+        versionDescription: app.versionDescription ?? "",
+        tintColor: app.tintColor ?? "00adef",
+        iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
+        screenshotURLs: app.screenshotURLs ?? [],
+        size: app.size ?? firstVersion.size ?? 0,
+        version: app.version ?? firstVersion.version ?? "1.0.0",
+        versions: app.versions ?? [versionInfo] ?? [],
+        versionDate: app.versionDate ?? firstVersion.date ?? new Date(),
+        downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
+      };
+
+      uniqueAppsMap.set(bundleID, newApp);
+    }
+  });
+
+  // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
+  const newSource = {
+    ...source,
+    apps: Array.from(uniqueAppsMap.values())
+  };
+
+  return newSource;
 }
 
 const $ = selector => selector.startsWith("#") && !selector.includes(".") && !selector.includes(" ")
