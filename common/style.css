@@ -1,6 +1,7 @@
 @import url("./vendor/bootstrap-icons-1.11.2/bootstrap-icons.min.css");
 @import url("./vendor/uialert.js/uialert.css");
-body {
+html,body {
+    -webkit-touch-callout: none;
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   }
