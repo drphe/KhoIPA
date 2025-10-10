@@ -83,6 +83,31 @@
   "apps": [
     {
       "beta": false,
+      "name": "X++",
+      "bundleIdentifier": "com.twitter.app",
+      "developerName": "atebits",
+      "subtitle": "X (Twitter) mod premium",
+      "localizedDescription": "Phiên bản X++ mod không quảng cáo",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+      "tintColor": "000000",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "11.29",
+          "date": "2025-10-10T00:19:00Z",
+          "size": 163220760,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.29/X_11.29_Premium.ipa",
+          "localizedDescription": "Phiên bản mod premium mới nhất 11.29 của X."
+        }
+      ],
+      "version": "11.29",
+      "versionDate": "2025-10-10T00:19:00Z",
+      "versionDescription": "Phiên bản mod premium mới nhất 11.29 của X.",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.29/X_11.29_Premium.ipa",
+      "size": 163220760
+    },
+    {
+      "beta": false,
       "name": "iTorrent",
       "bundleIdentifier": "com.itorrent.app",
       "developerName": "XITRIX",
