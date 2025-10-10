@@ -117,7 +117,7 @@ export async function json(url) {
     return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", error));
 }
 
-export consolidateApps = (source) {
+export function consolidateApps (source) {
     const uniqueAppsMap = new Map();
 
     // 1. Duyệt qua từng ứng dụng để xây dựng Map duy nhất và gộp phiên bản
