@@ -66,6 +66,14 @@ main((json) => {
     const tintColor = app.tintColor ? app.tintColor.replaceAll("#", "") : "var(--tint-color);";
     // Set tint color
     if (tintColor) setTintColor(tintColor);
+function downloadIpa(url) {
+  const link = document.createElement('a');
+  link.href = url;
+  link.target = '_self';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
     // Set up install buttons
     const installAppAlert = new UIAlert({
@@ -79,7 +87,7 @@ main((json) => {
     installAppAlert.addAction({
         title: "Download IPA",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => open(app.downloadURL))
+        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => downloadIpa(app.downloadURL))
     });
     installAppAlert.addAction({
         title: "Cancel",
