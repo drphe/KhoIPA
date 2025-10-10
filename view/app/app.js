@@ -74,12 +74,12 @@ main((json) => {
     installAppAlert.addAction({
         title: "Install with AltStore / SideStore",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Install App", () => window.location.href = `altstore://install?url=${app.downloadURL}`)
+        handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`altstore://install?url=${app.downloadURL}`))
     });
     installAppAlert.addAction({
         title: "Download IPA",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => window.location.href = app.downloadURL)
+        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => open(app.downloadURL))
     });
     installAppAlert.addAction({
         title: "Cancel",
