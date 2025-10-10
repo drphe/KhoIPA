@@ -43,33 +43,42 @@ export function main(callback, fallbackURL = "../../") {
         });
 
     function waitForAllImagesToLoad() {
-        const allImages = document.querySelectorAll("img");
-        var count = 0;
+    const allImages = document.querySelectorAll("img");
+    let count = 0;
+    const total = allImages.length;
 
-        allImages.forEach(image => {
-            // New img element that won't be rendered to the DOM
-            var newImage = document.createElement("img");
-            // Attach load listener
-            newImage.addEventListener("load", imageLoaded);
-            // Set src
-            newImage.src = image.src;
-
-            // Unable to load image
-            image.addEventListener("error", (event) => {
-                if (event.target.id == "app-icon") {
-                    event.target.src = `${fallbackURL}common/assets/img/generic_app.jpeg`;
-                } else event.target.remove()
-                imageLoaded();
-            });
-        });
-
-        function imageLoaded() {
-            if (++count == allImages.length) loaded();
-        }
+    if (total === 0) {
+        loaded();
+        return;
     }
 
-    function loaded() {
-        document.querySelector("body").classList.remove("loading");
-        document.getElementById("loading")?.remove();
+    allImages.forEach((image) => {
+        const newImage = new Image(); // same as document.createElement("img")
+
+        // Khi ảnh load xong hoặc lỗi, đều gọi imageLoaded()
+        newImage.onload = imageLoaded;
+        newImage.onerror = () => {
+            // Xử lý fallback cho ảnh lỗi
+            if (image.id === "app-icon") {
+                image.src = `${fallbackURL}common/assets/img/generic_app.jpeg`;
+            } else {
+                image.remove();
+            }
+            imageLoaded();
+        };
+
+        // Bắt đầu tải
+        newImage.src = image.src;
+    });
+
+    function imageLoaded() {
+        count++;
+        if (count === total) loaded();
     }
+}
+
+function loaded() {
+    document.body.classList.remove("loading");
+    document.getElementById("loading")?.remove();
+}
 }
