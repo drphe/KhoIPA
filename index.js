@@ -60,6 +60,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         if (!source.tintColor)
             source.tintColor = "var(--tint-color);";
         source.url = url;
+	console.log(source)
         return source;
     }
 
