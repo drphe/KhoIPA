@@ -88,7 +88,8 @@ main((json) => {
     document.querySelectorAll("a.install").forEach(button => {
         button.addEventListener("click", event => {
             event.preventDefault();
-            installAppAlert.present();
+            //installAppAlert.present();
+showAddToAltStoreAlert(json.name, "Download IPA", () => window.location.href = app.downloadURL)
         });
     });
 
