@@ -1,13 +1,16 @@
 import { sourceURL, base64Convert } from "../modules/constants.js";
 import { formatVersionDate } from "../modules/utilities.js";
 
+const baseHost = window.location.origin; 
+const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
+
 export const AppHeader = (app, x = ".") => app ? `
 <div class="app-header-container">
 <a href="${x}/app/?source=${base64Convert(sourceURL)}&id=${app.bundleIdentifier}" class="app-header-link">
     <div class="app-header-inner-container">
         <div class="app-header">
             <div class="content">
-                <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';" alt="">
+                <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" alt="">
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name}</p>
