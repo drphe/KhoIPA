@@ -4,7 +4,7 @@ import { AppBanner } from "./common/components/AppWeb.js";
 
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
-//setHeaderColor(); //đặt màu
+setHeaderColor(); //đặt màu
 
 (async function main() {
     

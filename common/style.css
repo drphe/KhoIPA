@@ -53,9 +53,7 @@ html,body {
 * {
   --color-primary: rgba(10, 132, 255, 1) !important;
 }
- :root {
-    --color-bg: var(--color-bg-dark);
-  }
+
   body,
   .uibanner,
   #loading,
