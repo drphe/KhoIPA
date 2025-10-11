@@ -1,10 +1,10 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { isValidHTTPURL, open, formatVersionDate, json,  consolidateApps} from "./common/modules/utilities.js";
+import { isValidHTTPURL, open, formatVersionDate, json,  consolidateApps,setTintColor } from "./common/modules/utilities.js";
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
 
 (async function main() {
-
+    
     const fetchedEditorSources = [];
     const fetchedSources = [];
 
