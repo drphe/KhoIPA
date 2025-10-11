@@ -9,12 +9,12 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     
     const fetchedEditorSources = [];
     const fetchedSources = [];
-    function isIOS() {
-  return /iPhone|iPad|iPod/i.test(navigator.userAgent);
-}
-    setHeaderColor(); //đặt màu
-    isIOS() && document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
 
+    setHeaderColor(); //đặt màu
+    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+    	document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
+	document.getElementById("nav-bar")?.classList.add("hidden");
+    }
     for (const url of sources) {
         const source = await fetchSource(url);
         if (!source) continue;
@@ -102,7 +102,8 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             navBar.classList.remove("hide-border","hidden");
             navBarTitle.classList.remove("hidden");
         } else {
-            navBar.classList.add("hide-border","hidden");
+            navBar.classList.add("hide-border");
+	    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) navBar.classList.add("hidden");
             navBarTitle.classList.add("hidden");
         }
     }
