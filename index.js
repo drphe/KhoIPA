@@ -21,7 +21,7 @@ setHeaderColor(); //đặt màu
     installAppAlert.addAction({
         title: "Download",
         style: 'default',
-        handler: () =>  open(`setup.mobileconfig`))
+        handler: () =>  open(`setup.mobileconfig`)
     });
     installAppAlert.addAction({
         title: "Cancel",
