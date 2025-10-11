@@ -1,20 +1,43 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
 import { isValidHTTPURL, open, formatVersionDate, json,  consolidateApps,setHeaderColor } from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
-setHeaderColor(); //đặt màu
+import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
+setHeaderColor(); //đặt màu
 
 (async function main() {
-    
-    const fetchedEditorSources = [];
-    const fetchedSources = [];
 
-    if(/iPhone|iPad|Macintosh/i.test(navigator.userAgent)){
+     if(/iPhone|iPad|Macintosh/i.test(navigator.userAgent)){
     	document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
 	document.getElementById("nav-bar")?.classList.add("hidden");
     }
+    // alert install
+    const installAppAlert = new UIAlert({
+        title: `How to Install?`,
+        message: "Bạn sẽ tải về 'hồ sơ cấu hình' bằng cách nhấn 'Cho phép'. Truy cập Cài đặt  -> Cài đặt chung -> Quản lý VPN & Thiết bị -> cài đặt hồ sơ 'Kho IPA Mod' -> Done."
+    });
+    installAppAlert.addAction({
+        title: "Download",
+        style: 'default',
+        handler: () =>  open(`setup.mobileconfig`))
+    });
+    installAppAlert.addAction({
+        title: "Cancel",
+        style: 'cancel',
+    });
+    document.querySelectorAll("a.install").forEach(button => {
+        button.addEventListener("click", event => {
+            event.preventDefault();
+            installAppAlert.present();
+        });
+    });
+
+
+    const fetchedEditorSources = [];
+    const fetchedSources = [];
+
     for (const url of sources) {
         const source = await fetchSource(url);
         if (!source) continue;
