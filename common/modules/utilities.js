@@ -107,8 +107,8 @@ export function setHeaderColor() {
     // Hàm cập nhật màu theo theme
     function applyThemeColor(isDark) {
       if (isDark) {
-        themeMeta.setAttribute('content', '#000000');
-        bgMeta.setAttribute('content', '#000000');
+        themeMeta.setAttribute('content', '#1A191B');
+        bgMeta.setAttribute('content', '#1A191B');
       } else {
         themeMeta.setAttribute('content', '#ffffff');
         bgMeta.setAttribute('content', '#ffffff');
