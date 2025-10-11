@@ -21,5 +21,4 @@ Thực hiện theo các bước sau:
 
 ⚙️Cài đặt => Riêng tư & bảo mật => chế độ nhà phát triển => Bật✅
 
-
 ![Đọc bài hướng dẫn gốc](https://iosgods.com/topic/161257-ios-16171826-developer-mode-what-is-it-how-to-enable/)
