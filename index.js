@@ -6,10 +6,12 @@ const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
 
 (async function main() {
-    setTintColor("#000000"); //đặt màu
+    
     const fetchedEditorSources = [];
     const fetchedSources = [];
-AppBanner()
+    
+    setHeaderColor(); //đặt màu
+    AppBanner();
 
     for (const url of sources) {
         const source = await fetchSource(url);
