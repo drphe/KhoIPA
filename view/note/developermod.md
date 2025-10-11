@@ -22,3 +22,5 @@ Thực hiện theo các bước sau:
 ⚙️Cài đặt => Riêng tư & bảo mật => chế độ nhà phát triển => Bật✅
 
 [Đọc bài hướng dẫn gốc](https://iosgods.com/topic/161257-ios-16171826-developer-mode-what-is-it-how-to-enable/)
+
+[Chế độ Developer Mode bị ẩn trên IOS 16](https://certapple.com/blog/ios-16-developer-mode-bi-an-cach-bat-developer-mode-bi-an-tren-iphone)
