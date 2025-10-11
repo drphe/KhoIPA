@@ -109,15 +109,9 @@ export function setHeaderColor() {
       if (isDark) {
         themeMeta.setAttribute('content', '#000000');
         bgMeta.setAttribute('content', '#000000');
-        document.documentElement.style.backgroundColor = '#000000';
-        document.body.style.backgroundColor = '#000000';
-        document.body.style.color = '#ffffff';
       } else {
         themeMeta.setAttribute('content', '#ffffff');
         bgMeta.setAttribute('content', '#ffffff');
-        document.documentElement.style.backgroundColor = '#ffffff';
-        document.body.style.backgroundColor = '#ffffff';
-        document.body.style.color = '#000000';
       }
     }
 
