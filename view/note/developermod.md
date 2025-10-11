@@ -17,7 +17,7 @@ Thực hiện theo các bước sau:
 
 ## 🎬 Video hướng dẫn
 
-[![Xem video hướng dẫn](../../common/assets/video/DEVELOPEMODE.png)](../../common/assets/video/DEVELOPEMODE.mp4)
+[![Xem video hướng dẫn](../../common/assets/video/DEVELOPEMODE.png)](https://youtu.be/E9ZXQF78lCo?si=zjluYBAcUPhWVLqw)
 
 ⚙️Cài đặt => Riêng tư & bảo mật => chế độ nhà phát triển => Bật✅
 
