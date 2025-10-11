@@ -1,6 +1,6 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
 import { isValidHTTPURL, open, formatVersionDate, json,  consolidateApps,setTintColor } from "./common/modules/utilities.js";
-import { AppToIos } from "./common/components/AppWeb.js";
+import { AppBanner } from "./common/components/AppWeb.js";
 
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
