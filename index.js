@@ -11,7 +11,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     const fetchedSources = [];
 
     setHeaderColor(); //đặt màu
-    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){ alert("iphone);
     	document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
 	document.getElementById("nav-bar")?.classList.add("hidden");
     }
