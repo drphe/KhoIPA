@@ -11,7 +11,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     const fetchedSources = [];
 
     setHeaderColor(); //đặt màu
-    if(/iPhone|iPad|Safari|AppleWebkit/i.test(navigator.userAgent)){
+    if(/iPhone|iPad|Macintosh/i.test(navigator.userAgent)){
     	document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
 	document.getElementById("nav-bar")?.classList.add("hidden");
     }
@@ -103,7 +103,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             navBarTitle.classList.remove("hidden");
         } else {
             navBar.classList.add("hide-border");
-   	    if(/iPhone|iPad|Safari|AppleWebkit/i.test(navigator.userAgent)) navBar.classList.add("hidden");
+   	    if(/iPhone|iPad|Macintosh/i.test(navigator.userAgent)) navBar.classList.add("hidden");
             navBarTitle.classList.add("hidden");
         }
     }
