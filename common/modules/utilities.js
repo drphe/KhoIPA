@@ -88,6 +88,8 @@ export function formatString(string) {
 
 export function setTintColor(color) {
     document.querySelector(":root")?.style.setProperty("--tint-color", `#${color}`);
+}
+export function setHeaderColor() {
     let themeMeta = document.querySelector('meta[name="theme-color"]');
     if (!themeMeta) {
       themeMeta = document.createElement('meta');
