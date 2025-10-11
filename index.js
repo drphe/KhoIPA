@@ -9,7 +9,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     setTintColor("#000000"); //đặt màu
     const fetchedEditorSources = [];
     const fetchedSources = [];
-
+AppBanner()
 
     for (const url of sources) {
         const source = await fetchSource(url);
