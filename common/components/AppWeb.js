@@ -9,13 +9,13 @@ export const AppBanner = (name) => `
             <div class="text-container">
                 <p class="title-text">KhoIPA <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Add "${name?? 'this source'}" to your Iphone.
+                    Add "${name?? 'this source'}" to your Home screen.
                 </p>
             </div>
             <div class="text-container">
                 <p class="title-text">KhoIPA <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Use "${name?? 'this source'}" as an application. 
+                    Save "${name?? 'this source'}" as a bookmark. 
                 </p>
             </div>
         </div>
