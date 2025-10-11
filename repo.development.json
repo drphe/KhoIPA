@@ -2,12 +2,12 @@
   "name": "Development apps",
   "identifier": "org.khoIPA.repo2",
   "sourceURL": "https://github.com/drphe/KhoIPA",
-  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
+  "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itimeteo.webssh.png",
   "website": "https://github.com/drphe/KhoIPA",
   "description": "Các ứng dụng IPA phục vụ mod, tiêm thuốc (.dylib) mà không cần Jailbreak máy....  được cập nhật phiên bản mới nhất cho ios.",
   "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
   "subtitle": "Ứng dụng IPA Nhà phát triển...",
-  "tintColor": "#6f9ece",
+  "tintColor": "#6f9edf",
   "META": {
     "repoName": "Development apps",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
