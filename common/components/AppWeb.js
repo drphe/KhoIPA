@@ -1,4 +1,4 @@
-export const AppBanner = () => `
+export const AppBanner = (name) => `
 <div class="uibanner">
     <div class="icons">
         <img src="https://therealfoxster.github.io/altsource-viewer/common/assets/img/sidestore.png" alt="sidestore-icon" class="icon">
@@ -8,7 +8,7 @@ export const AppBanner = () => `
             <div class="text-container">
                 <p class="title-text">SideStore <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Add ${sourceName ? "\"" + sourceName + "\"" : "this source"} to SideStore to receive app updates
+                    Add "${name?? 'this source'}" to your Iphone.
                 </p>
             </div>
         </div>
