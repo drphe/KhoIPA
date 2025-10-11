@@ -2,7 +2,7 @@ import { urlSearchParams, sourceURL } from "./constants.js";
 import { isValidHTTPURL, setTintColor, setHeaderColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
 
 export function main(callback, fallbackURL = "../../") {
-    //setHeaderColor();
+    setHeaderColor();
 
     // If no source
     if (!urlSearchParams.has('source')) {
