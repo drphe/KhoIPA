@@ -15,7 +15,7 @@ export function getTextColor(bgColor) {
 export const NewsItem = (news, minimal = false) => `
 <div class="news-item-wrapper"> ${news.url ?
     "<a href='" + news.url + "'>" : ""}
-    <div class="item" style="color:${getColor('#'+news.tintColor.replaceAll("#", ""))};background-color: #${news.tintColor.replaceAll("#", "")};">
+    <div class="item" style="color:${getTextColor('#'+news.tintColor.replaceAll("#", ""))};background-color: #${news.tintColor.replaceAll("#", "")};">
         <div class="text">
             <p>${formatVersionDate(news.date)}</p>
             <h3>${news.title}</h3>
