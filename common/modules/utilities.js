@@ -168,7 +168,6 @@ export async function json(url) {
 }
 
 export function consolidateApps(source) {
-  return source;
   const uniqueAppsMap = new Map();
 
   // 1. Duyệt qua từng ứng dụng để xây dựng Map duy nhất và gộp phiên bản
