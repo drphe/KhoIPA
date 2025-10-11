@@ -15,7 +15,7 @@ export const AppBanner = (name) => `
             <div class="text-container">
                 <p class="title-text">KhoIPA <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Use "${name?? 'this source'}" as an app.
+                    Use "${name?? 'this source'}" as an application.
                 </p>
             </div>
         </div>
