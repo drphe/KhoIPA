@@ -11,7 +11,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     const fetchedSources = [];
     
     setHeaderColor(); //đặt màu
-    document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA"));
+    document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
 
     for (const url of sources) {
         const source = await fetchSource(url);
