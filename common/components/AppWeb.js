@@ -2,7 +2,7 @@ export const AppBanner = (name) => `
 <div class="uibanner">
     <div class="icons">
         <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png" alt="sidestore-icon" class="icon">
-        <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png" alt="sidestore-icon" class="icon">
+        <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png" alt="sidestore-icon" class="icon">
     </div>
     <div class="content">
         <div>
@@ -19,7 +19,7 @@ export const AppBanner = (name) => `
                 </p>
             </div>
         </div>
-        <a href="mobile.config">
+        <a href="setup.mobileconfig">
             <button id="add-to-altstore">Add</button>
         </a>
     </div>
