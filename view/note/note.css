@@ -12,6 +12,7 @@
   word-wrap: break-word;  
   white-space: normal;
 }
+#content img {max-width: 400px;}
 a {
   text-decoration: underline;
 }
