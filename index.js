@@ -9,9 +9,11 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     
     const fetchedEditorSources = [];
     const fetchedSources = [];
-    
+    function isIOS() {
+  return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
     setHeaderColor(); //đặt màu
-    document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
+    isIOS() && document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
 
     for (const url of sources) {
         const source = await fetchSource(url);
