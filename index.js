@@ -9,9 +9,9 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     
     const fetchedEditorSources = [];
     const fetchedSources = [];
-alert(navigator.userAgent);
+
     setHeaderColor(); //đặt màu
-    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){ 
+    if(/iPhone|iPad|Safari|AppleWebkit/i.test(navigator.userAgent)){
     	document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
 	document.getElementById("nav-bar")?.classList.add("hidden");
     }
@@ -103,7 +103,7 @@ alert(navigator.userAgent);
             navBarTitle.classList.remove("hidden");
         } else {
             navBar.classList.add("hide-border");
-	    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) navBar.classList.add("hidden");
+   	    if(/iPhone|iPad|Safari|AppleWebkit/i.test(navigator.userAgent)) navBar.classList.add("hidden");
             navBarTitle.classList.add("hidden");
         }
     }
