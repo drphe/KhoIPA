@@ -11,7 +11,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     const fetchedSources = [];
     
     setHeaderColor(); //đặt màu
-    AppBanner();
+    document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner());
 
     for (const url of sources) {
         const source = await fetchSource(url);
