@@ -127,7 +127,8 @@ export function setUpBackButton() {
 
 
 export function open(url,target = "_self") {
-    window.open(url, target);
+    //window.open(url, target);
+    window.location.href =url
 }
 
 export function showUIAlert(title, message) {
