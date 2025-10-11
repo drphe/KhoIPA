@@ -58,4 +58,20 @@ Tổng hợp các tiện ích tiêm vào ứng dụng iOS, hỗ trợ tùy biế
 
 ---
 
-> 📌 **Lưu ý:** Các tiện ích này dành cho người dùng có kinh nghiệm với TrollStore hoặc môi trường jailbreak. Hãy cân nhắc trước khi sử dụng để tránh ảnh hưởng đến hệ thống hoặc tài khoản cá nhân.
+## 🔔Immortalizer - Chạy Nền Ứng Dụng
+
+📦 **Tải về:** [ImmortalizerJailed_arm.dylib](https://github.com/drphe/KhoIPA/releases/download/immortalizer/ImmortalizerJailed_arm.dylib)
+
+😀Hỗ trợ iOS 14 trở lên
+😀Có thể cài đặt trên bất kỳ IPA nào mà không cần jailbreak hay TrollStore!
+😀Phiên bản Troll: Tại đây (https://t.me/trollersteamvn/2688)
+
+😀Cài đặt
+1️⃣ Không cần jailbreak hay TrollStore, vì vậy tất cả những gì bạn phải làm là inject dylib vào IPA mà bạn muốn nó hoạt động. 
+2️⃣ Bạn có thể sử dụng bất kỳ công cụ nào như Sideloadly, E-Sign hoặc thậm chí TrollFools để inject dylib vào ứng dụng. 
+😀Giải Thích Chức Năng :
+- Giống như tinh chỉnh, nó có thể khiến ứng dụng luôn ở chế độ nền trước, tuy nhiên, bạn cần inject điều này vào ứng dụng mà bạn muốn luôn chạy nền. 
+- Sẽ có một nút di chuyển nổi mà bạn có thể nhấn để bật Immortalizer 
+- Giống như phiên bản TrollStore, không có cách nào để buộc hiển thị thông báo. Việc buộc hiển thị thông báo hơi khó khăn, đặc biệt là đối với các ứng dụng hiển thị giao diện người dùng thông báo riêng khi ứng dụng của chúng được mở (ví dụ: WhatsApp).
+
+🐱 ImmortalizerTS (https://github.com/sergealagon/ImmortalizerTS)

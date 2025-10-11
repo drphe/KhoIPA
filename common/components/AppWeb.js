@@ -19,7 +19,7 @@ export const AppBanner = (name) => `
                 </p>
             </div>
         </div>
-        <a href="setup.mobileconfig">
+        <a href="" class="install">
             <button id="add-to-altstore">Add</button>
         </a>
     </div>
