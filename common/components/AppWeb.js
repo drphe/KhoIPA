@@ -7,13 +7,13 @@ export const AppBanner = (name) => `
     <div class="content">
         <div>
             <div class="text-container">
-                <p class="title-text">KhoIPA Mod <span class="small beta badge"></span></p>
+                <p class="title-text">KhoIPA <span class="small beta badge"></span></p>
                 <p class="detail-text">
                     Add "${name?? 'this source'}" to your Iphone.
                 </p>
             </div>
             <div class="text-container">
-                <p class="title-text">KhoIPA Mod <span class="small beta badge"></span></p>
+                <p class="title-text">KhoIPA <span class="small beta badge"></span></p>
                 <p class="detail-text">
                     Use "${name?? 'this source'}" as an application on your Iphone.
                 </p>
