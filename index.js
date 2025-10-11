@@ -19,7 +19,7 @@ setHeaderColor(); //đặt màu
         message: "Bạn sẽ tải về 'hồ sơ cấu hình' bằng cách nhấn Cho phép. Truy cập Cài đặt -> Cài đặt chung -> Quản lý VPN & Thiết bị -> Cài đặt hồ sơ  -> Done."
     });
     installAppAlert.addAction({
-        title: "Download",
+        title: "Install",
         style: 'default',
         handler: () =>  open(`setup.mobileconfig`)
     });
