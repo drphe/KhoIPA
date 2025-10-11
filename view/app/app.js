@@ -79,7 +79,7 @@ main((json) => {
     installAppAlert.addAction({
         title: "Download IPA",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
+        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => window.open(app.downloadURL, "_self"))
     });
     installAppAlert.addAction({
         title: "Cancel",
