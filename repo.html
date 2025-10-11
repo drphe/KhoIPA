@@ -1014,7 +1014,7 @@
       });
 // 2. LỌC: Sắp xếp và chỉ giữ lại tối đa 15 phiên bản mới nhất
   const consolidatedApps = Array.from(uniqueAppsMap.values());
-  const MAX_VERSIONS = 5;
+  const MAX_VERSIONS = 20;
 
   consolidatedApps.forEach(app => {
     // Sắp xếp mảng versions theo ngày (date) giảm dần (mới nhất lên đầu)
