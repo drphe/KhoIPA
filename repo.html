@@ -15,13 +15,42 @@
   <link rel="mask-icon" href="./icon/logo.svg" color="#000000">
   <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
   <title>KhoIPA || Quản lý JSON Repo</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-<script type="module">
-  import { setHeaderColor } from "./common/modules/utilities.js";
 
-  // Gọi hàm sau khi import
-  setHeaderColor(); // ví dụ: đổi màu sang cam
+<script type="script">
+ // đặt màu nền
+    let themeMeta = document.querySelector('meta[name="theme-color"]');
+    if (!themeMeta) {
+      themeMeta = document.createElement('meta');
+      themeMeta.setAttribute('name', 'theme-color');
+      document.head.appendChild(themeMeta);
+    }
+
+    // Lấy hoặc tạo thẻ meta background-color
+    let bgMeta = document.querySelector('meta[name="background-color"]');
+    if (!bgMeta) {
+      bgMeta = document.createElement('meta');
+      bgMeta.setAttribute('name', 'background-color');
+      document.head.appendChild(bgMeta);
+    }
+
+    // Hàm cập nhật màu theo theme
+    function applyThemeColor(isDark) {
+      if (isDark) {
+        themeMeta.setAttribute('content', '#000000');
+        bgMeta.setAttribute('content', '#000000');
+      } else {
+        themeMeta.setAttribute('content', '#ffffff');
+        bgMeta.setAttribute('content', '#ffffff');
+      }
+    }
+
+    // Theo dõi thay đổi chế độ hệ thống
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    applyThemeColor(darkModeQuery.matches);
+    darkModeQuery.addEventListener('change', e => applyThemeColor(e.matches));
+
 </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Tùy chỉnh Tailwind CSS */
     body {

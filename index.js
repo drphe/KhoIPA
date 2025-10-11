@@ -4,13 +4,13 @@ import { AppBanner } from "./common/components/AppWeb.js";
 
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
+setHeaderColor(); //đặt màu
 
 (async function main() {
     
     const fetchedEditorSources = [];
     const fetchedSources = [];
 
-    setHeaderColor(); //đặt màu
     if(/iPhone|iPad|Macintosh/i.test(navigator.userAgent)){
     	document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
 	document.getElementById("nav-bar")?.classList.add("hidden");

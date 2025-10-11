@@ -2,6 +2,8 @@ import { urlSearchParams, sourceURL } from "./constants.js";
 import { isValidHTTPURL, setTintColor, setHeaderColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
 
 export function main(callback, fallbackURL = "../../") {
+    setHeaderColor();
+
     // If no source
     if (!urlSearchParams.has('source')) {
         open(fallbackURL);
@@ -19,7 +21,7 @@ export function main(callback, fallbackURL = "../../") {
         apps = array;
     window.getAppWithBundleId = bundleId =>
         apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
-    setHeaderColor();
+
     setUpBackButton();
 
     fetch(sourceURL)
