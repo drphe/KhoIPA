@@ -1,7 +1,8 @@
 export const AppBanner = (name) => `
 <div class="uibanner">
     <div class="icons">
-        <img src="https://therealfoxster.github.io/altsource-viewer/common/assets/img/sidestore.png" alt="sidestore-icon" class="icon">
+        <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png" alt="sidestore-icon" class="icon">
+        <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png" alt="sidestore-icon" class="icon">
     </div>
     <div class="content">
         <div>
