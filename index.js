@@ -98,7 +98,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         const navBar = document.getElementById("nav-bar");
         const navBarTitle = navBar.querySelector("#title");
 
-        if (title.getBoundingClientRect().y < 32) {
+        if (title.getBoundingClientRect().y < 36) {
             navBar.classList.remove("hide-border","hidden");
             navBarTitle.classList.remove("hidden");
         } else {
