@@ -14,6 +14,17 @@
   },
   "news": [
     {
+      "title": "Bật chế độ Nhà phát triển",
+      "identifier": "hdsd-developermode",
+      "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
+      "tintColor": "B3FF8A",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/logo/logocertapple.png",
+      "appID": "com.example.app",
+      "date": "2025-10-11",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmpzb24=&link=developermod.md"
+    },
+    {
       "title": "Hướng dẫn cài IPA bằng TrollStore",
       "identifier": "hd-cai-ipa",
       "caption": "Hướng Dẫn Cài Ứng Dụng IPA Cho iPhone Bằng TrollStore",

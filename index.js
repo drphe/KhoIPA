@@ -16,7 +16,7 @@ setHeaderColor(); //đặt màu
     // alert install
     const installAppAlert = new UIAlert({
         title: `How to Install?`,
-        message: "Bạn sẽ tải về 'hồ sơ cấu hình' bằng cách nhấn 'Cho phép'. Truy cập Cài đặt  -> Cài đặt chung -> Quản lý VPN & Thiết bị -> cài đặt hồ sơ 'Kho IPA Mod' -> Done."
+        message: "Bạn sẽ tải về 'hồ sơ cấu hình' bằng cách nhấn Cho phép. Truy cập Cài đặt -> Cài đặt chung -> Quản lý VPN & Thiết bị -> Cài đặt hồ sơ  -> Done."
     });
     installAppAlert.addAction({
         title: "Download",
