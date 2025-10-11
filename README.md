@@ -77,20 +77,36 @@ https://github.com/drphe/khoIPA/
 > ⚠️ Một số link không load được bằng AltStore Viewer do lỗi CORS. Vui lòng sử dụng Feather hoặc ESign để xem.
 
 
-https://drphe.github.io/KhoIPA/repo.json
+https://drphe.github.io/KhoIPA/repo.development.json
+
+https://drphe.github.io/KhoIPA/repo.favorite.json
+
 https://alt.getutm.app
+
 https://flyinghead.github.io/flycast-builds/altstore.json
+
 https://quarksources.github.io/dist/quantumsource.min.json
+
 https://quarksources.github.io/dist/quantumsource%2B%2B.min.json
+
 https://repository.apptesters.org
+
 https://ipa.cypwn.xyz/cypwn.json
+
 https://ipa.cypwn.xyz/cypwn_ts.json
+
 https://raw.githubusercontent.com/vizunchik/AltStoreRus/master/apps.json
+
 https://randomblock1.com/altstore/apps.json
+
 https://community-apps.sidestore.io/sidecommunity.json
+
 https://wuxu1.github.io/wuxu-complete.json
+
 https://bit.ly/wuxuslibraryplus
+
 https://driftywinds.github.io/AltStore/apps.json
+
 https://aio.zxcvbn.fyi/r/repo.feather.json
 
 
