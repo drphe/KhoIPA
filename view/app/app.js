@@ -338,7 +338,7 @@ main((json) => {
     let altSourceIcon = "../../common/assets/img/generic_app.jpeg";
     let altSourceTintColor = "var(--tint-color);";
     for (const app of json.apps) {
-        if (app.beta || app.patreon?.hidden) return;
+        if (app.beta || app.patreon?.hidden) continue;
         let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
         if (appVersionDate > lastUpdated) {
             lastUpdated = appVersionDate;
