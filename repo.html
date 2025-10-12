@@ -1115,7 +1115,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const lastPart = parts[parts.length - 1]; // "repo.favorite.json"
         return lastPart.replace('.json', ''); // "repo.favorite"
       }
-clearNewsForm();
+
       if (editorsources.length) {
         // alert install
         const installAppAlert = new window.UIAlert({
@@ -1158,6 +1158,7 @@ clearNewsForm();
         baseData.apps = appsArray;
 
         // Cập nhật giao diện
+clearNewsForm();
         renderNewsList();
         renderAppList();
         updateOutput();
