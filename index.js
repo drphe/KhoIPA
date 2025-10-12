@@ -110,7 +110,6 @@ function normalizeDateFormat(dateStr) {
 }
 
     async function insertSource(source, id = "repositories", position = "beforeend", flag = false) {
-        alert(source.lastUpdated)
         document.getElementById(id).insertAdjacentHTML(position, `
             <div class="source-container">
                 <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
