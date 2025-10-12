@@ -88,43 +88,10 @@ export function formatString(string) {
 export function setTintColor(color) {
     document.querySelector(":root")?.style.setProperty("--tint-color", `#${color}`);
 }
-export function setHeaderColor() {
-    let themeMeta = document.querySelector('meta[name="theme-color"]');
-    if (!themeMeta) {
-      themeMeta = document.createElement('meta');
-      themeMeta.setAttribute('name', 'theme-color');
-      document.head.appendChild(themeMeta);
-    }
-
-    // Lấy hoặc tạo thẻ meta background-color
-    let bgMeta = document.querySelector('meta[name="background-color"]');
-    if (!bgMeta) {
-      bgMeta = document.createElement('meta');
-      bgMeta.setAttribute('name', 'background-color');
-      document.head.appendChild(bgMeta);
-    }
-
-    // Hàm cập nhật màu theo theme
-    function applyThemeColor(isDark) {
-      if (isDark) {
-        themeMeta.setAttribute('content', '#1A191B');
-        bgMeta.setAttribute('content', '#1A191B');
-      } else {
-        themeMeta.setAttribute('content', '#ffffff');
-        bgMeta.setAttribute('content', '#ffffff');
-      }
-    }
-
-    // Theo dõi thay đổi chế độ hệ thống
-    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    applyThemeColor(darkModeQuery.matches);
-    darkModeQuery.addEventListener('change', e => applyThemeColor(e.matches));
-}
 
 export function setUpBackButton() {
     document.getElementById("back")?.addEventListener("click", () => history.back());
 }
-
 
 export function open(url) {
     window.open(url, "_self");
@@ -160,6 +127,7 @@ export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
 export async function json(url) {
     return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", error));
 }
+
 export function normalizeDateFormat(dateStr) {
     const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;  // dd-mm-yyyy
     const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;  // yyyy-mm-dd
@@ -182,16 +150,15 @@ export function normalizeDateFormat(dateStr) {
 export function consolidateApps(source) {
   const uniqueAppsMap = new Map();
 
-  // 1. Duyệt qua từng ứng dụng để xây dựng Map duy nhất và gộp phiên bản
   source.apps.forEach(app => {
     const bundleID = app.bundleIdentifier;
 
     // Tạo đối tượng phiên bản để gộp
     const firstVersion = app.versions?.[0] ?? {};
-
+    const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
     const versionInfo = {
       version: app.version ?? firstVersion.version ?? "1.0.0",
-      date: normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01"),
+      date: appDate,
       size: app.size ?? firstVersion.size ?? 0,
       downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
       localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
@@ -199,17 +166,15 @@ export function consolidateApps(source) {
 
 
     if (uniqueAppsMap.has(bundleID)) {
-      // Trường hợp trùng lặp: Lấy đối tượng đã có và thêm phiên bản mới
+
       const existingApp = uniqueAppsMap.get(bundleID);
-      if (app.date > existingApp.versionDate) {
-        // Cập nhật thông tin ứng dụng chính (ví dụ: tên, icon) nếu cần, kiểm tra phiên bản
-        existingApp.versionDate = app.date;
-        existingApp.version = app.version;
-        existingApp.downloadURL = app.downloadURL;
-        existingApp.size = app.size;
+      if (appDate > existingApp.versionDate) {
+        existingApp.versionDate = appDate;
+        existingApp.version = app.version ?? firstVersion.version ?? "1.0.0";
+        existingApp.downloadURL = app.downloadURL ?? firstVersion.downloadURL ?? "";
+        existingApp.size = app.size ?? firstVersion.size ?? 0;
         existingApp.localizedDescription = app.localizedDescription ?? "";
       }
-      // Thêm thông tin phiên bản mới vào mảng versions
       existingApp.versions.push(versionInfo);
 
     } else {
@@ -230,7 +195,7 @@ export function consolidateApps(source) {
         size: app.size ?? firstVersion.size ?? 0,
         version: app.version ?? firstVersion.version ?? "1.0.0",
         versions: app.versions ?? [versionInfo] ?? [],
-        versionDate: normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01"),
+        versionDate: appDate,
         downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
       };
 

@@ -8,19 +8,26 @@
   <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
   <title>KhoIPA || Quản lý JSON Repo</title>
   <script type="module">
-
-    import {base64Convert} from "./common/modules/constants.js";
+    import {
+      base64Convert
+    } from "./common/modules/constants.js";
     import UIAlert from "./common/vendor/uialert.js/uialert.js";
-    import { open,json} from "./common/modules/utilities.js";
+    import {
+      open,
+      json,
+      showUIAlert
+    } from "./common/modules/utilities.js";
 
     window.open = open;
     window.json = json;
     window.base64Convert = base64Convert;
     window.UIAlert = UIAlert;
+    window.showUIAlert = showUIAlert;
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-@import url("./common/vendor/uialert.js/uialert.css");
+    @import url("./common/vendor/uialert.js/uialert.css");
+
     /* Tùy chỉnh Tailwind CSS */
     body {
       font-family: 'Inter', sans-serif;
@@ -53,7 +60,7 @@
     .container {
       max-width: 640px !important;
       margin: 0px auto;
-      background: #fff!important;
+      background: #fff !important;
       padding: 25px;
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -162,7 +169,8 @@
     .btn-import {
       background: #34495e;
       color: white;
-      padding: 0px 6px;width:25%;
+      padding: 0px 6px;
+      width: 25%;
     }
 
     .btn-import:hover {
@@ -172,7 +180,8 @@
     .btn-download {
       background: #27ae60;
       color: white;
-      padding: 0px 6px;width:25%;
+      padding: 0px 6px;
+      width: 25%;
     }
 
     .btn-download:hover {
@@ -221,7 +230,10 @@
     }
 
     /* Tabs */
-    .tab-buttons {      margin-top: 20px;}
+    .tab-buttons {
+      margin-top: 20px;
+    }
+
     .tab-buttons button {
       margin: 0 5px;
       padding: 6px 25px;
@@ -1100,10 +1112,10 @@
       baseData.apps = appsArray;
       document.getElementById('output').value = JSON.stringify(baseData, null, 2);
     }
-window.addEventListener("DOMContentLoaded", () => {
-      
-    init();
-});
+    window.addEventListener("DOMContentLoaded", () => {
+
+      init();
+    });
 
 
 
@@ -1126,7 +1138,7 @@ window.addEventListener("DOMContentLoaded", () => {
           const name = await getNameRepo(url);
           if (!name) continue;
           installAppAlert.addAction({
-            title:  name,
+            title: name,
             style: 'default',
             handler: () => fetchRepoData(url)
           });
@@ -1158,7 +1170,7 @@ window.addEventListener("DOMContentLoaded", () => {
         baseData.apps = appsArray;
 
         // Cập nhật giao diện
-clearNewsForm();
+        clearNewsForm();
         renderNewsList();
         renderAppList();
         updateOutput();
