@@ -79,20 +79,13 @@ main((json) => {
     installAppAlert.addAction({
         title: "Download IPA",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => openInSafari(app.downloadURL))
+        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => open(app.downloadURL))
     });
     installAppAlert.addAction({
         title: "Cancel",
         style: 'cancel',
     });
-    function openInSafari(url) {
-  const a = document.createElement('a');
-  a.href = url;
-  a.target = '_blank';
-a.rel = "noopener noreferrer external";
-  a.rel = 'noopener';
-  a.click();
-}
+    
     document.querySelectorAll("a.install").forEach(button => {
         button.addEventListener("click", event => {
             event.preventDefault();
