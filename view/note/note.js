@@ -42,4 +42,4 @@ main(json => {
     if (tintColor) setTintColor(tintColor);
     document.getElementById("back").style.color = tintColor;
 
-}, "../../../");
+}, "../../");
