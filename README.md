@@ -81,6 +81,9 @@ https://drphe.github.io/KhoIPA/repo.development.json
 
 https://drphe.github.io/KhoIPA/repo.favorite.json
 
+https://ipa.thuthuatjb.com/repo
+https://ipa.io.vn/repo
+
 https://alt.getutm.app
 
 https://flyinghead.github.io/flycast-builds/altstore.json
