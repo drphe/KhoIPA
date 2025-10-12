@@ -1,7 +1,7 @@
 import { urlSearchParams, sourceURL } from "./constants.js";
 import { isValidHTTPURL, setTintColor, setHeaderColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
 
-export function main(callback, fallbackURL = "../") {
+export function main(callback, fallbackURL = "../../view/") {
     setHeaderColor();
 
     // If no source
