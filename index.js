@@ -65,25 +65,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
 
-function normalizeDateFormat(dateStr) {
-    const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;  // dd-mm-yyyy
-    const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;  // yyyy-mm-dd
-
-    if (dmyRegex.test(dateStr)) {
-        const [, day, month, year] = dateStr.match(dmyRegex);
-        const dd = day.padStart(2, '0');
-        const mm = month.padStart(2, '0');
-        return `${year}-${mm}-${dd}`;
-    } else if (ymdRegex.test(dateStr)) {
-        const [, year, month, day] = dateStr.match(ymdRegex);
-        const dd = day.padStart(2, '0');
-        const mm = month.padStart(2, '0');
-        return `${year}-${mm}-${dd}`;
-    } else {
-        return null; // không hợp lệ
-    }
-}
-
     async function fetchSource(url) {
         const data = await json(url);
 	const source = consolidateApps(data);
@@ -92,7 +73,7 @@ function normalizeDateFormat(dateStr) {
         source.appCount = 0;
         for (const app of source.apps) {
             if (app.beta || app.patreon?.hidden) return;
-            let appVersionDate = new Date(app.versions ? normalizeDateFormat(app.versions[0].date) : normalizeDateFormat(app.versionDate));
+            let appVersionDate = new Date(app.versions ? (app.versions[0].date) : (app.versionDate));
             if (appVersionDate > source.lastUpdated) {
                 source.lastUpdated = appVersionDate;
                 if (!source.iconURL)
