@@ -66,19 +66,21 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     document.getElementById("loading")?.remove();
 
 function normalizeDateFormat(dateStr) {
-    // Kiểm tra nếu là định dạng dd-mm-yyyy
-    const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;
-    const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;
+    const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;  // dd-mm-yyyy
+    const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;  // yyyy-mm-dd
 
     if (dmyRegex.test(dateStr)) {
         const [, day, month, year] = dateStr.match(dmyRegex);
-        return `${year}-${parseInt(month)}-${parseInt(day)}`;
+        const dd = day.padStart(2, '0');
+        const mm = month.padStart(2, '0');
+        return `${year}-${mm}-${dd}`;
     } else if (ymdRegex.test(dateStr)) {
-        // Đã đúng định dạng rồi → giữ nguyên
-        return dateStr;
+        const [, year, month, day] = dateStr.match(ymdRegex);
+        const dd = day.padStart(2, '0');
+        const mm = month.padStart(2, '0');
+        return `${year}-${mm}-${dd}`;
     } else {
-        // Không phải định dạng hợp lệ
-        return null;
+        return null; // không hợp lệ
     }
 }
 
