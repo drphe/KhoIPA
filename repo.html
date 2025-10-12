@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!-- Cho phép chạy như ứng dụng độc lập (WebClip / PWA) -->
+  <!-- Cho phép chạy như ứng dụng độc lập (WebClip / PWA) -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Kho IPA">
@@ -16,40 +16,17 @@
   <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
   <title>KhoIPA || Quản lý JSON Repo</title>
 
-<script type="script">
- // đặt màu nền
-    let themeMeta = document.querySelector('meta[name="theme-color"]');
-    if (!themeMeta) {
-      themeMeta = document.createElement('meta');
-      themeMeta.setAttribute('name', 'theme-color');
-      document.head.appendChild(themeMeta);
-    }
+  <script type="module">
+    import base64Convert from "./common/modules/constants.js";
+    import UIAlert from "./common/vendor/uialert.js/uialert.js";
+    import { open,json, setHeaderColor} from "./common/modules/utilities.js";
 
-    // Lấy hoặc tạo thẻ meta background-color
-    let bgMeta = document.querySelector('meta[name="background-color"]');
-    if (!bgMeta) {
-      bgMeta = document.createElement('meta');
-      bgMeta.setAttribute('name', 'background-color');
-      document.head.appendChild(bgMeta);
-    }
-
-    // Hàm cập nhật màu theo theme
-    function applyThemeColor(isDark) {
-      if (isDark) {
-        themeMeta.setAttribute('content', '#000000');
-        bgMeta.setAttribute('content', '#000000');
-      } else {
-        themeMeta.setAttribute('content', '#ffffff');
-        bgMeta.setAttribute('content', '#ffffff');
-      }
-    }
-
-    // Theo dõi thay đổi chế độ hệ thống
-    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    applyThemeColor(darkModeQuery.matches);
-    darkModeQuery.addEventListener('change', e => applyThemeColor(e.matches));
-
-</script>
+    setHeaderColor();
+    window.open = open;
+    window.json = json;
+    window.base64Convert = base64Convert;
+    window.UIAlert = UIAlert;
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Tùy chỉnh Tailwind CSS */
@@ -64,21 +41,23 @@
         background-color: #292a2d;
       }
     }
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0 grey;
-    border-radius: 1px;
-}
 
-::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px
-}
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0 grey;
+      border-radius: 1px;
+    }
 
-::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-    background: transparent;
-}
+    ::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px
+    }
+
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+      background: transparent;
+    }
+
     .container {
       max-width: 640px !important;
       margin: 0px auto;
@@ -192,6 +171,7 @@
     .btn-import {
       background: #34495e;
       color: white;
+      padding: 0px 6px;width:25%;
     }
 
     .btn-import:hover {
@@ -201,6 +181,7 @@
     .btn-download {
       background: #27ae60;
       color: white;
+      padding: 0px 6px;width:25%;
     }
 
     .btn-download:hover {
@@ -293,10 +274,13 @@
       z-index: 2;
       min-height: 40px;
     }
-    .app-list, .version-list {
-	max-height:500px;
-	overflow:auto;
+
+    .app-list,
+    .version-list {
+      max-height: 500px;
+      overflow: auto;
     }
+
     #top {
       position: fixed;
       z-index: 5;
@@ -346,7 +330,7 @@
       <input type="text" id="news_imageURL" placeholder="URL ảnh bìa">
 
       <label for="news_url">Link tin tức :</label>
-      <input type="text" id="news_url" placeholder="URL tin tức" value="https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmpzb24=&link=trollstore.md">
+      <input type="text" id="news_url" placeholder="URL tin tức" value="">
 
       <div class="form-group">
         <div>
@@ -461,11 +445,17 @@
     <textarea id="output" placeholder="Mã json sẽ hiển thị ở đây!"></textarea>
     <div class="flex justify-between items-center mt-4">
       <input type="file" id="jsonFileInput" accept=".json" style="display: none;" onchange="handleFileSelect(event)">
+      <button onclick="init()" class="btn-import">
+        ☑️ Select
+      </button>
       <button onclick="document.getElementById('jsonFileInput').click()" class="btn-import">
-        ⬆️ Import File Gốc (.json)
+        ⬆️ Import
+      </button>
+      <button onclick="copyOutput()" class="btn-download">
+        📄 Copy
       </button>
       <button onclick="downloadJSON()" class="btn-download">
-        ⬇️ Tải xuống repo.json
+        ⬇️ Export
       </button>
     </div>
   </div>
@@ -480,7 +470,7 @@
     let newsEditIndex = -1;
     let appEditIndex = -1;
     let versionEditIndex = -1;
-
+    let prefixUrl = '';
     let baseData = '';
     // Khởi tạo ngày mặc định
     document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
@@ -614,7 +604,7 @@
       document.getElementById('news_identifier').value = '';
       document.getElementById('news_caption').value = '';
       document.getElementById('news_imageURL').value = '';
-      document.getElementById('news_url').value = 'https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmpzb24=&link=trollstore.md';
+      document.getElementById('news_url').value = `https://drphe.github.io/KhoIPA/view/note/?source=${base64Convert(prefixUrl)}&link=trollstore.md`;
       document.getElementById('news_tintColor').value = '#3498db';
       document.getElementById('news_appID').value = 'com.example.app';
       document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
@@ -1012,23 +1002,23 @@
           uniqueAppsMap.set(bundleID, newApp);
         }
       });
-// 2. LỌC: Sắp xếp và chỉ giữ lại tối đa 15 phiên bản mới nhất
-  const consolidatedApps = Array.from(uniqueAppsMap.values());
-  const MAX_VERSIONS = 20;
+      // 2. LỌC: Sắp xếp và chỉ giữ lại tối đa 15 phiên bản mới nhất
+      const consolidatedApps = Array.from(uniqueAppsMap.values());
+      const MAX_VERSIONS = 20;
 
-  consolidatedApps.forEach(app => {
-    // Sắp xếp mảng versions theo ngày (date) giảm dần (mới nhất lên đầu)
-    //app.versions.sort((a, b) => {
-    //    const dateA = new Date(a.date);
-    //    const dateB = new Date(b.date);
-   //     return dateB - dateA; // Sắp xếp giảm dần
-  //  });
+      consolidatedApps.forEach(app => {
+        // Sắp xếp mảng versions theo ngày (date) giảm dần (mới nhất lên đầu)
+        //app.versions.sort((a, b) => {
+        //    const dateA = new Date(a.date);
+        //    const dateB = new Date(b.date);
+        //     return dateB - dateA; // Sắp xếp giảm dần
+        //  });
 
-    // Chỉ giữ lại tối đa 5 phiên bản mới nhất
-    if (app.versions.length > MAX_VERSIONS) {
-        app.versions = app.versions.slice(0, MAX_VERSIONS);
-    }
-  });
+        // Chỉ giữ lại tối đa 5 phiên bản mới nhất
+        if (app.versions.length > MAX_VERSIONS) {
+          app.versions = app.versions.slice(0, MAX_VERSIONS);
+        }
+      });
 
       // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
       const newSource = {
@@ -1077,6 +1067,23 @@
       reader.readAsText(file);
     }
 
+    function copyOutput() {
+      const textarea = document.getElementById("output");
+      textarea.select();
+      textarea.setSelectionRange(0, 99999); // Cho mobile
+
+      // Dùng Clipboard API nếu có
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(textarea.value)
+          .then(() => alert("Đã copy nội dung!"))
+          .catch(err => alert("Không thể copy: " + err));
+      } else {
+        // Fallback cho trình duyệt cũ
+        document.execCommand("copy");
+        alert("Đã copy nội dung!");
+      }
+    }
+
     function downloadJSON() {
       const jsonText = document.getElementById('output').value;
       const filename = 'repo.json';
@@ -1101,16 +1108,51 @@
       baseData.apps = appsArray;
       document.getElementById('output').value = JSON.stringify(baseData, null, 2);
     }
+    clearNewsForm();
+    init();
+    async function init() {
+      const editorsources = await window.json("./common/assets/json/editorsources.json");
+
+      const getNameRepo = (url) => {
+        const parts = url.split('/');
+        const lastPart = parts[parts.length - 1]; // "repo.favorite.json"
+        return lastPart.replace('.json', ''); // "repo.favorite"
+      }
+
+      if (editorsources.length) {
+        // alert install
+        const installAppAlert = new window.UIAlert({
+          title: `Which Repository?`,
+          message: "Lựa chọn nguồn dữ liệu để chỉnh sửa."
+        });
+        for (const url of editorsources) {
+          const name = await getNameRepo(url);
+          if (!name) continue;
+          installAppAlert.addAction({
+            title: "Open " + name,
+            style: 'default',
+            handler: () => fetchRepoData(url)
+          });
+        }
+
+        installAppAlert.addAction({
+          title: "Cancel",
+          style: 'cancel',
+        });
+        installAppAlert.present()
+      }
+    }
     // khởi tạo
-    fetchRepoData();
-    async function fetchRepoData() {
+
+    async function fetchRepoData(url) {
       try {
-        const response = await fetch('repo.favorite.json');
+        const response = await fetch(url);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         // Cập nhật dữ liệu toàn cục
         baseData = await response.json();
+        prefixUrl = url;
         newsArray = baseData.news;
         appsArray = baseData.apps;
 
@@ -1123,7 +1165,7 @@
         renderAppList();
         updateOutput();
       } catch (error) {
-        showCustomAlert("Lỗi khi tải repo.json");
+        showCustomAlert("Lỗi khi tải Repository!");
 
       }
     }
