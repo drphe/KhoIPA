@@ -572,7 +572,7 @@
       const notify = document.getElementById('news_notify').checked;
 
       if (!title || !caption || !imageURL || !appID || !identifier) {
-        showCustomAlert("Vui lòng điền đầy đủ thông tin tin tức.");
+        window.showUIAlert("Notification","Vui lòng điền đầy đủ thông tin tin tức.");
         return;
       }
 
@@ -681,7 +681,7 @@
       const beta = document.getElementById('app_beta').checked;
 
       if (!name || !bundleIdentifier || !developerName || !subtitle || !iconURL) {
-        showCustomAlert("Vui lòng điền đầy đủ thông tin App bắt buộc (Tên, Bundle ID, Developer, Subtitle, Icon URL).");
+        window.showUIAlert("Notification","Vui lòng điền đầy đủ thông tin App bắt buộc (Tên, Bundle ID, Developer, Subtitle, Icon URL).");
         return;
       }
 
@@ -848,7 +848,7 @@
 
     function addOrUpdateVersion() {
       if (appEditIndex < 0) {
-        showCustomAlert("Vui lòng chọn hoặc thêm App trước khi thêm Version.");
+        window.showUIAlert("Notification","Vui lòng chọn hoặc thêm App trước khi thêm Version.");
         return;
       }
 
@@ -859,7 +859,7 @@
       const localizedDescription = document.getElementById('version_localizedDescription').value.trim();
 
       if (!version || !dateInput || isNaN(size) || size <= 0 || !downloadURL) {
-        showCustomAlert("Vui lòng điền đầy đủ thông tin Version bắt buộc (Version, Ngày, Kích thước > 0, Download URL).");
+        window.showUIAlert("Notification","Vui lòng điền đầy đủ thông tin Version bắt buộc (Version, Ngày, Kích thước > 0, Download URL).");
         return;
       }
 
@@ -1042,7 +1042,7 @@
         try {
           const importedData = JSON.parse(e.target.result);
           if (!importedData || !Array.isArray(importedData.news) || !Array.isArray(importedData.apps)) {
-            showCustomAlert("Lỗi Import: File JSON không hợp lệ hoặc thiếu mảng 'news'/'apps'.");
+            window.showUIAlert("Error","Lỗi Import: File JSON không hợp lệ hoặc thiếu mảng 'news'/'apps'.");
             return;
           }
 
@@ -1059,13 +1059,13 @@
           renderNewsList();
           renderAppList();
           updateOutput();
-          showCustomAlert("Import file gốc thành công! Dữ liệu đã sẵn sàng để chỉnh sửa.");
+          window.showUIAlert("Success","Import file gốc thành công! Dữ liệu đã sẵn sàng để chỉnh sửa.");
           // Reset input để có thể chọn lại cùng một file
           event.target.value = '';
 
         } catch (error) {
           console.error("Lỗi phân tích cú pháp JSON:", error);
-          showCustomAlert("Lỗi Import: Không thể phân tích cú pháp file JSON. Vui lòng kiểm tra định dạng.");
+          window.showUIAlert("Error","Lỗi Import: Không thể phân tích cú pháp file JSON. Vui lòng kiểm tra định dạng.");
         }
       };
       reader.readAsText(file);
@@ -1175,7 +1175,7 @@
         renderAppList();
         updateOutput();
       } catch (error) {
-        showCustomAlert("Lỗi khi tải Repository!");
+        window.showUIAlert("Error","Lỗi khi tải Repository!");
 
       }
     }
