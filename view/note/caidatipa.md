@@ -19,7 +19,19 @@ Có nhiều cách cài file IPA lên iPhone mà không cần jailbreak, được
 •	Cert miễn phí (qua các ứng dụng cấp phép trực tiếp):
 •	AltStore trên iOS (yêu cầu PC chỉ lần đầu): Cài AltStore lần đầu bằng PC, sau đó gửi file IPA qua WiFi và cài trực tiếp bằng AltStore.
 •	TestFlight: Một số app chia sẻ link TestFlight beta, cài đặt trực tiếp từ Safari (không dùng IPA).
-
+2. TrollStore và TrollStore Lite
+•	Quy trình:
+•	TrollStore (và bản Lite) khai thác hệ thống để cài IPA vĩnh viễn mà không cần chứng chỉ của Apple, không bị thu hồi cert, an toàn gần như jailbreak nhưng không cần “root” máy.[thanhtrungmobile]
+•	Chỉ hỗ trợ iOS trong khoảng 14.0–15.4.1 (trollstore “gốc”) hoặc 15.5–16.6.1 (các bản exploit mới, ví dụ MDC, KFD), từng dòng thiết bị cần kiểm tra hỗ trợ cụ thể.[youtube +1]
+•	Bước cài: Tải TrollHelperOTA hoặc tool phù hợp trên Safari, làm theo hướng dẫn trên app, cấp quyền hệ thống, sau đó cài IPA trong chính TrollStore (có thể truy cập từ web, file manager) với tùy chọn “Install IPA”.
+•	Ưu điểm: Cài app ngoài vĩnh viễn, không thu hồi, không cần máy tính, đa số IPA không bị giới hạn chức năng, không cần Apple ID hay cert.[thanhtrungmobile]
+•	Nhược điểm: Giới hạn về phiên bản iOS và thiết bị “tương thích”; thao tác cài ban đầu hơi phức tạp với người dùng mới.
+3. TestFlight
+•	Quy trình:
+•	Được Apple cung cấp, cho phép các nhà phát triển phát hành bản beta cho người dùng sử dụng.
+•	Thường phải xin link mời từ nhà phát triển hoặc cộng đồng, tệp IPA được đóng gói thành bản beta và dùng TestFlight cài trực tiếp qua App Store.[24hstore +1]
+•	Ưu điểm: An toàn, ít gặp lỗi, ít bị thu hồi, vừa dùng thử được app mới vừa ký tự động bằng Apple cert.
+•	Nhược điểm: Chỉ áp dụng với các app có bản beta hoặc được chia sẻ link TestFlight; không tùy ý cài file IPA lạ một cách tự do.
 •	Cert có phí (dịch vụ cấp phép online):
 •	Dịch vụ ký IPA trực tuyến (Sign Service): Upload IPA lên trang web, trả phí, nhận lại link cài đặt trực tiếp qua Safari (nhận chứng chỉ doanh nghiệp/giả developer).
 •	Các dịch vụ này cung cấp cert riêng biệt (tính phí tuỳ theo thời gian/gói app), hạn sử dụng từ vài tháng tới 1 năm.
