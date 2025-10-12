@@ -1,11 +1,11 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { isValidHTTPURL, open, formatVersionDate, json,  consolidateApps,setHeaderColor } from "./common/modules/utilities.js";
+import { isValidHTTPURL, open, formatVersionDate, json,  consolidateApps } from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
-setHeaderColor(); //đặt màu
+
 
 (async function main() {
 
