@@ -110,6 +110,7 @@ function normalizeDateFormat(dateStr) {
 }
 
     async function insertSource(source, id = "repositories", position = "beforeend", flag = false) {
+        alert(source.lastUpdated)
         document.getElementById(id).insertAdjacentHTML(position, `
             <div class="source-container">
                 <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
@@ -121,7 +122,7 @@ function normalizeDateFormat(dateStr) {
                         <div class="right">
                             <div class="text">
                                 <p class="title">${source.name}</p>
-                                <p class="subtitle">Last updated: ${formatVersionDate(normalizeDateFormat(source.lastUpdated))}</p>
+                                <p class="subtitle">Last updated: ${formatVersionDate(source.lastUpdated)}</p>
                             </div>
                             <div class="app-count">
                                 ${source.appCount} app${source.appCount === 1 ? "" : "s"}
