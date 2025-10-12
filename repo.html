@@ -4,14 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- Cho phép chạy như ứng dụng độc lập (WebClip / PWA) -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Kho IPA">
-
-  <!-- Màu mặc định (sẽ bị thay đổi bằng JS theo theme) -->
-  <meta name="theme-color" content="#ffffff">
-  <meta name="background-color" content="#ffffff">
   <link rel="mask-icon" href="./icon/logo.svg" color="#000000">
   <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
   <title>KhoIPA || Quản lý JSON Repo</title>
@@ -19,9 +11,8 @@
 
     import {base64Convert} from "./common/modules/constants.js";
     import UIAlert from "./common/vendor/uialert.js/uialert.js";
-    import { open,json, setHeaderColor} from "./common/modules/utilities.js";
+    import { open,json} from "./common/modules/utilities.js";
 
-    setHeaderColor();
     window.open = open;
     window.json = json;
     window.base64Convert = base64Convert;
