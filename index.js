@@ -90,6 +90,24 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         source.url = url;
         return source;
     }
+function normalizeDateFormat(dateStr) {
+    const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;  // dd-mm-yyyy
+    const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;  // yyyy-mm-dd
+
+    if (dmyRegex.test(dateStr)) {
+        const [, day, month, year] = dateStr.match(dmyRegex);
+        const dd = day.padStart(2, '0');
+        const mm = month.padStart(2, '0');
+        return `${year}-${mm}-${dd}`;
+    } else if (ymdRegex.test(dateStr)) {
+        const [, year, month, day] = dateStr.match(ymdRegex);
+        const dd = day.padStart(2, '0');
+        const mm = month.padStart(2, '0');
+        return `${year}-${mm}-${dd}`;
+    } else {
+        return null; // không hợp lệ
+    }
+}
 
     async function insertSource(source, id = "repositories", position = "beforeend", flag = false) {
         document.getElementById(id).insertAdjacentHTML(position, `
@@ -103,7 +121,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
                         <div class="right">
                             <div class="text">
                                 <p class="title">${source.name}</p>
-                                <p class="subtitle">Last updated: ${formatVersionDate(source.lastUpdated)}</p>
+                                <p class="subtitle">Last updated: ${formatVersionDate(normalizeDateFormat(source.lastUpdated))}</p>
                             </div>
                             <div class="app-count">
                                 ${source.appCount} app${source.appCount === 1 ? "" : "s"}
