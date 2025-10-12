@@ -286,7 +286,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" style="background: #fff !important;">
     <div id="top">
       <div id="nav-bar" class="">
         <a href="../KhoIPA/" target="_blank" class="" title="Kho IPA Mod">🔙</a>
@@ -1126,7 +1126,7 @@ window.addEventListener("DOMContentLoaded", () => {
           const name = await getNameRepo(url);
           if (!name) continue;
           installAppAlert.addAction({
-            title: "Open " + name,
+            title:  name,
             style: 'default',
             handler: () => fetchRepoData(url)
           });
