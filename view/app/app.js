@@ -88,7 +88,7 @@ main((json) => {
     function openInSafari(url) {
   const a = document.createElement('a');
   a.href = url;
-  a.target = '_blank';
+  a.target = '_top';
   a.rel = 'noopener';
   a.click();
 }
