@@ -1101,7 +1101,7 @@
       document.getElementById('output').value = JSON.stringify(baseData, null, 2);
     }
 window.addEventListener("DOMContentLoaded", () => {
-      clearNewsForm();
+      
     init();
 });
 
@@ -1115,7 +1115,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const lastPart = parts[parts.length - 1]; // "repo.favorite.json"
         return lastPart.replace('.json', ''); // "repo.favorite"
       }
-
+clearNewsForm();
       if (editorsources.length) {
         // alert install
         const installAppAlert = new window.UIAlert({
