@@ -72,7 +72,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         source.lastUpdated = new Date("1970-01-01");
         source.appCount = 0;
         for (const app of source.apps) {
-            if (app.beta || app.patreon?.hidden) return;
+            if (app.beta || app.patreon?.hidden) continue;
             let appVersionDate = new Date(app.versions ? (app.versions[0].date) : (app.versionDate));
             if (appVersionDate > source.lastUpdated) {
                 source.lastUpdated = appVersionDate;
