@@ -160,6 +160,24 @@ export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
 export async function json(url) {
     return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", error));
 }
+export function normalizeDateFormat(dateStr) {
+    const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;  // dd-mm-yyyy
+    const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;  // yyyy-mm-dd
+
+    if (dmyRegex.test(dateStr)) {
+        const [, day, month, year] = dateStr.match(dmyRegex);
+        const dd = day.padStart(2, '0');
+        const mm = month.padStart(2, '0');
+        return `${year}-${mm}-${dd}`;
+    } else if (ymdRegex.test(dateStr)) {
+        const [, year, month, day] = dateStr.match(ymdRegex);
+        const dd = day.padStart(2, '0');
+        const mm = month.padStart(2, '0');
+        return `${year}-${mm}-${dd}`;
+    } else {
+        return null; // không hợp lệ
+    }
+}
 
 export function consolidateApps(source) {
   const uniqueAppsMap = new Map();
@@ -173,7 +191,7 @@ export function consolidateApps(source) {
 
     const versionInfo = {
       version: app.version ?? firstVersion.version ?? "1.0.0",
-      date: app.versionDate ?? firstVersion.date ?? new Date(),
+      date: normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01"),
       size: app.size ?? firstVersion.size ?? 0,
       downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
       localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
@@ -212,7 +230,7 @@ export function consolidateApps(source) {
         size: app.size ?? firstVersion.size ?? 0,
         version: app.version ?? firstVersion.version ?? "1.0.0",
         versions: app.versions ?? [versionInfo] ?? [],
-        versionDate: app.versionDate ?? firstVersion.date ?? new Date(),
+        versionDate: normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01"),
         downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
       };
 
