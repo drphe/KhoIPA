@@ -10,7 +10,7 @@
  <key>PayloadContent</key>
  <array>
    <dict>
-     <key>Fullscreen</key>
+     <key>FullScreen</key>
      <true/>
      <key>IgnoreManifestScope</key>
      <true/>
