@@ -4,31 +4,18 @@ import { urlRegex, sourceURL } from "./constants.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
 export function formatVersionDate(arg) {
-    let versionDate = new Date(arg);
-    if (isNaN(versionDate)) {
-        const match = arg.match(/^(\d{2})[\/\-](\d{2})[\/\-](\d{4})$/); // dd/MM/yyyy hoặc dd-MM-yyyy
-        if (match) {
-            const [_, day, month, year] = match;
-            versionDate = new Date(`${year}-${month}-${day}`);
-        }
-    }
-
-    if (isNaN(versionDate)) return arg;
-
+    const versionDate = new Date(arg),
+        month = versionDate.toLocaleString("default", { month: "short" }),
+        date = versionDate.getDate();
     const today = new Date();
     const msPerDay = 60 * 60 * 24 * 1000;
-    const msDifference = today - versionDate;
+    const msDifference = today.valueOf() - versionDate.valueOf();
 
-    const month = versionDate.toLocaleString("default", { month: "short" });
-    const date = versionDate.getDate();
-    const year = versionDate.getFullYear();
-
-    let dateString = `${month} ${date}, ${year}`;
-
-    if (msDifference <= msPerDay && today.getDate() === versionDate.getDate())
-        dateString = "Hôm nay";
+    let dateString = versionDate.valueOf() ? `${month} ${date}, ${versionDate.getFullYear()}` : arg.split("T")[0];
+    if (msDifference <= msPerDay && today.getDate() == versionDate.getDate())
+        dateString = "Today";
     else if (msDifference <= msPerDay * 2)
-        dateString = "Hôm qua";
+        dateString = "Yesterday";
 
     return dateString;
 }

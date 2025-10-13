@@ -42,11 +42,12 @@ main(json => {
 
     // Sort apps in descending order of version date
     // json.apps.sort((a, b) => (new Date(b.versionDate)).valueOf() - (new Date(a.versionDate)).valueOf());
-json.apps.sort((a, b) => {
-  const dateA = new Date(a.versionDate || a.versions?.[0]?.date || 0).valueOf();
-  const dateB = new Date(b.versionDate || b.versions?.[0]?.date || 0).valueOf();
-  return dateB - dateA;
-});
+
+    json.apps.sort((a, b) => {
+      const dateA = new Date(a.versionDate ?? a.versions?.[0]?.date ?? 0).valueOf();
+      const dateB = new Date(b.versionDate ?? b.versions?.[0]?.date ?? 0).valueOf();
+      return dateB - dateA;
+    });
 
     // 
     // Featured apps
