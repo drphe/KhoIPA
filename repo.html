@@ -23,6 +23,45 @@
     window.base64Convert = base64Convert;
     window.UIAlert = UIAlert;
     window.showUIAlert = showUIAlert;
+
+async function fetchScreenshotsForApps(apps) {
+  const tasks = apps.map(async (app) => {
+    const bundleId = app.bundleIdentifier;
+    const url = `https://ipa.thuthuatjb.com/view/lookimg.php?id=${bundleId}`;
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Lỗi khi tải ${url}`);
+
+      const json = await response.json();
+      app.screenshotURLs = json.screenshotUrls || [];
+    } catch (error) {
+      console.error(`Không thể lấy ảnh cho ${bundleId}:`, error);
+    }
+  });
+
+  await Promise.all(tasks); // Chờ tất cả các request hoàn tất
+}
+
+async function main() {
+  try {
+    const response = await fetch("https://drphe.github.io/KhoIPA/repo.thuthuatjb.json");
+    const data = await response.json();
+
+    if (!data.apps || !Array.isArray(data.apps)) {
+      throw new Error("Dữ liệu không hợp lệ hoặc thiếu 'apps'");
+    }
+
+    await fetchScreenshotsForApps(data.apps);
+
+    console.log(data);
+  } catch (error) {
+    console.error("Lỗi khi tải dữ liệu ban đầu:", error);
+  }
+}
+// hàm lấy ảnh thuthuatjb
+//main();
+
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
