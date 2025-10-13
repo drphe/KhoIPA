@@ -70,7 +70,8 @@ main(json => {
         });
     }
 
-    document.getElementById("source-code").href = `../KhoIPA/repo.html?source=${sourceURL}`;
+    const le = document.querySelector(".addnews");
+	if(le) {le.href = `../KhoIPA/repo.html?source=${sourceURL}`;}
     // 
     // About
     var description = formatString(json.description);
