@@ -1022,62 +1022,58 @@ async function main() {
     function consolidateApps(source) {
       const uniqueAppsMap = new Map();
 
-      // 1. Duyệt qua từng ứng dụng để xây dựng Map duy nhất và gộp phiên bản
-      source.apps.forEach(app => {
-        const bundleID = app.bundleIdentifier;
+  source.apps.forEach(app => {
+    const bundleID = app.bundleIdentifier;
 
-        // Tạo đối tượng phiên bản để gộp
-        const firstVersion = app.versions?.[0] ?? {};
+    // Tạo đối tượng phiên bản để gộp
+    const firstVersion = app.versions?.[0] ?? {};
+    const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
+    const versionInfo = {
+      version: app.version ?? firstVersion.version ?? "1.0.0",
+      date: appDate,
+      size: app.size ?? firstVersion.size ?? 0,
+      downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
+      localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
+    };
 
-        const versionInfo = {
-          version: app.version ?? firstVersion.version ?? "1.0.0",
-          date: app.versionDate ?? firstVersion.date ?? new Date(),
-          size: app.size ?? firstVersion.size ?? 0,
-          downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
-          localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
-        };
 
+    if (uniqueAppsMap.has(bundleID)) {
 
-        if (uniqueAppsMap.has(bundleID)) {
-          // Trường hợp trùng lặp: Lấy đối tượng đã có và thêm phiên bản mới
-          const existingApp = uniqueAppsMap.get(bundleID);
-          if (app.date > existingApp.versionDate) {
-            // Cập nhật thông tin ứng dụng chính (ví dụ: tên, icon) nếu cần, kiểm tra phiên bản
-            existingApp.versionDate = app.date;
-            existingApp.version = app.version;
-            existingApp.downloadURL = app.downloadURL;
-            existingApp.size = app.size;
-            existingApp.localizedDescription = app.localizedDescription ?? "";
-          }
-          // Thêm thông tin phiên bản mới vào mảng versions
-          existingApp.versions.push(versionInfo);
+      const existingApp = uniqueAppsMap.get(bundleID);
+      if (appDate > existingApp.versionDate) {
+        existingApp.versionDate = appDate;
+        existingApp.version = app.version ?? firstVersion.version ?? "1.0.0";
+        existingApp.downloadURL = app.downloadURL ?? firstVersion.downloadURL ?? "";
+        existingApp.size = app.size ?? firstVersion.size ?? 0;
+        existingApp.localizedDescription = app.localizedDescription ?? "";
+      }
+      existingApp.versions.push(versionInfo);
 
-        } else {
-          // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
-          const newApp = {
-            // Sao chép tất cả các trường không phải phiên bản
-            beta: app.beta ?? false,
-            name: app.name,
-            type: app.type ?? 1,
-            bundleIdentifier: app.bundleIdentifier,
-            developerName: app.developerName ?? "",
-            subtitle: app.subtitle ?? "",
-            localizedDescription: app.localizedDescription ?? "",
-            versionDescription: app.versionDescription ?? "",
-            tintColor: app.tintColor ?? "00adef",
-            iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
-            screenshotURLs: app.screenshotURLs ?? [],
-            size: app.size ?? firstVersion.size ?? 0,
-            version: app.version ?? firstVersion.version ?? "1.0.0",
-            versions: app.versions ?? [versionInfo] ?? [],
-            versionDate: app.versionDate ?? firstVersion.date ?? new Date(),
-            downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
-          };
+    } else {
+      // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
+      const newApp = {
+        // Sao chép tất cả các trường không phải phiên bản
+        beta: app.beta ?? false,
+        name: app.name,
+        type: app.type ?? 1,
+        bundleIdentifier: app.bundleIdentifier,
+        developerName: app.developerName ?? "",
+        subtitle: app.subtitle ?? "",
+        localizedDescription: app.localizedDescription ?? "",
+        versionDescription: app.versionDescription ?? "",
+        tintColor: app.tintColor ?? "00adef",
+        iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
+        screenshotURLs: app.screenshotURLs ?? [],
+        size: app.size ?? firstVersion.size ?? 0,
+        version: app.version ?? firstVersion.version ?? "1.0.0",
+        versions: app.versions ?? [versionInfo] ?? [],
+        versionDate: appDate,
+        downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
+      };
 
-          uniqueAppsMap.set(bundleID, newApp);
-        }
-      });
-      // 2. LỌC: Sắp xếp và chỉ giữ lại tối đa 15 phiên bản mới nhất
+      uniqueAppsMap.set(bundleID, newApp);
+    }
+  });
       const consolidatedApps = Array.from(uniqueAppsMap.values());
       const MAX_VERSIONS = 20;
 
@@ -1103,7 +1099,24 @@ async function main() {
 
       return newSource;
     }
+export function normalizeDateFormat(dateStr) {
+    const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;  // dd-mm-yyyy
+    const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;  // yyyy-mm-dd
 
+    if (dmyRegex.test(dateStr)) {
+        const [, day, month, year] = dateStr.match(dmyRegex);
+        const dd = day.padStart(2, '0');
+        const mm = month.padStart(2, '0');
+        return `${year}-${mm}-${dd}`;
+    } else if (ymdRegex.test(dateStr)) {
+        const [, year, month, day] = dateStr.match(ymdRegex);
+        const dd = day.padStart(2, '0');
+        const mm = month.padStart(2, '0');
+        return `${year}-${mm}-${dd}`;
+    } else {
+        return dateStr; // không hợp lệ
+    }
+}
     function handleFileSelect(event) {
       const file = event.target.files[0];
       if (!file) return;

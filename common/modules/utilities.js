@@ -130,24 +130,6 @@ export async function json(url) {
     return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", error));
 }
 
-export function normalizeDateFormat(dateStr) {
-    const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;  // dd-mm-yyyy
-    const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;  // yyyy-mm-dd
-
-    if (dmyRegex.test(dateStr)) {
-        const [, day, month, year] = dateStr.match(dmyRegex);
-        const dd = day.padStart(2, '0');
-        const mm = month.padStart(2, '0');
-        return `${year}-${mm}-${dd}`;
-    } else if (ymdRegex.test(dateStr)) {
-        const [, year, month, day] = dateStr.match(ymdRegex);
-        const dd = day.padStart(2, '0');
-        const mm = month.padStart(2, '0');
-        return `${year}-${mm}-${dd}`;
-    } else {
-        return dateStr; // không hợp lệ
-    }
-}
 
 export function consolidateApps(source) {
   const uniqueAppsMap = new Map();
@@ -205,7 +187,6 @@ export function consolidateApps(source) {
     }
   });
 
-  // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
   const newSource = {
     ...source,
     apps: Array.from(uniqueAppsMap.values())
