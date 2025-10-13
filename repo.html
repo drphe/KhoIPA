@@ -1246,16 +1246,14 @@
         document.getElementById("loading")?.remove();
     });
 
-
-    async function init() {
-      try {
-      const editorsources = await window.json("./common/assets/json/editorsources.json");
-
       const getNameRepo = (url) => {
         const parts = url.split('/');
         const lastPart = parts[parts.length - 1]; // "repo.favorite.json"
         return lastPart.replace('.json', ''); // "repo.favorite"
       }
+    async function init() {
+      try {
+      const editorsources = await window.json("./common/assets/json/editorsources.json");
 
       if (editorsources.length) {
         // alert install
@@ -1266,7 +1264,6 @@
         for (const url of editorsources) {
           const name = await getNameRepo(url);
           if (!name) continue;
-	   nameUrl = name;
           installAppAlert.addAction({
             title: name,
             style: 'default',
@@ -1294,6 +1291,7 @@
         // Cập nhật dữ liệu toàn cục
         baseData = await response.json();
         prefixUrl = url;
+        nameUrl = getNameRepo(url);
         newsArray = baseData.news;
         appsArray = baseData.apps;
 

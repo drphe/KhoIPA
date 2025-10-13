@@ -1,13 +1,13 @@
 {
   "name": "Favorite apps",
   "identifier": "org.khoIPA.repo",
-  "sourceURL": "https://github.com/drphe/KhoIPA",
+  "sourceURL": "https://github.com/drphe/KhoIPA/repo.favorite.json",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
-  "website": "https://github.com/drphe/KhoIPA",
+  "website": "https://github.com/drphe/KhoIPA/",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
   "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
   "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
-  "tintColor": "#5825D0",
+  "tintColor": "5825D0",
   "META": {
     "repoName": "Favorite apps",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
@@ -26,6 +26,47 @@
     }
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "Duolingo Premium",
+      "bundleIdentifier": "com.duolingo.app",
+      "developerName": "IPAOMTK.com",
+      "subtitle": "Duolingo Premium unlock, super duolingo.",
+      "localizedDescription": "Duolingo IPA MOD là phiên bản sửa đổi của ứng dụng Duolingo cung cấp cho người dùng các tính năng cao cấp miễn phí. Với MOD này, bạn có thể tận hưởng trái tim không giới hạn, bài học ngoại tuyến, học không có quảng cáo và các tính năng độc quyền khác mà không cần đăng ký.",
+      "iconURL": "https://ipa.playmod24.com/wp-content/uploads/2025/02/Duolingo-IPA-MOD-iOS-150x150.webp",
+      "tintColor": "8AA32E",
+      "screenshotURLs": [
+        "https://boxipa.com/wp-content/uploads/2025/09/1_PhN85XNlJX_K-jJ6EJ-VoA-768x549.jpg"
+      ],
+      "versions": [
+        {
+          "version": "7.90.1",
+          "date": "2025-10-13T15:37:00Z",
+          "size": 180501109,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.90.1/Duolingo.7.90.1.ipa",
+          "localizedDescription": "Duolingo premium ver 7.90.1"
+        },
+        {
+          "version": "7.65",
+          "date": "2025-09-04T15:31:00Z",
+          "size": 122190712,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.65/Doulingo_7.65.ipa",
+          "localizedDescription": "Duolingo premium ver 7.65"
+        },
+        {
+          "version": "7.60",
+          "date": "2025-07-18T15:27:00Z",
+          "size": 130310189,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.60/Duolingo.7.60.ipa",
+          "localizedDescription": "Phiên bản 7.60"
+        }
+      ],
+      "version": "7.90.1",
+      "versionDate": "2025-10-13T15:37:00Z",
+      "versionDescription": "Duolingo premium ver 7.90.1",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.90.1/Duolingo.7.90.1.ipa",
+      "size": 180501109
+    },
     {
       "beta": false,
       "name": "Phim 4K",
