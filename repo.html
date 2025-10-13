@@ -364,10 +364,44 @@ async function main() {
       max-width: 640px;
       margin: auto;
     }
+#loading {
+  overflow: hidden;
+  background-color: rgb(26 25 27 / 87%) !important;
+}
+
+#loading {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+#loading img {
+  width: 24px;
+  opacity: 0.5;
+}
+
+#loading p {
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.35;
+}
   </style>
 </head>
 
 <body>
+  <div id="loading">
+    <img src="./common/assets/img/loading.gif" alt="loading">
+    <p>Loading</p>
+  </div>
   <div class="container" style="background: #fff !important;">
     <div id="top">
       <div id="nav-bar" class="">
@@ -1198,6 +1232,7 @@ function normalizeDateFormat(dateStr) {
     }
 
     window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.remove("loading");
       init();
     });
 
@@ -1226,7 +1261,6 @@ function normalizeDateFormat(dateStr) {
             handler: () => fetchRepoData(url)
           });
         }
-
         installAppAlert.addAction({
           title: "Cancel",
           style: 'cancel',
