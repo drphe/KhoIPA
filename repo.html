@@ -1242,7 +1242,10 @@
     }
 
     window.addEventListener("DOMContentLoaded", () => {
-      init();
+  	const params = new URLSearchParams(window.location.search);
+  	const source = params.get("source");
+	if(source) fetchRepoData(source);
+        else init();
         document.getElementById("loading")?.remove();
     });
 

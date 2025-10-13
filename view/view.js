@@ -70,6 +70,8 @@ main(json => {
         });
     }
 
+    document.getElementById("source-code")?.href=`../KhoIPA/repo.html?source=${sourceURL}`;
+
     // 
     // About
     var description = formatString(json.description);
