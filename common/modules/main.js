@@ -23,6 +23,17 @@ export function main(callback, fallbackURL = "../../") {
 
     setUpBackButton();
 
+    fetch(sourceURL)
+        .then(response => response.json())
+        .then(source => {
+	    const json = consolidateApps(source)
+            // Set tint color
+            const tintColor = json.tintColor?.replaceAll("#", "");
+            if (tintColor) setTintColor(tintColor);
+
+            insertAltStoreBanner(json.name);
+	    AltStoreBannerUpdate(sourceURL);
+
 document.getElementById("add-to-altstore").addEventListener("click", e => {
   e.preventDefault();
   // Tìm container đang hiển thị (opacity = 1)
@@ -42,17 +53,6 @@ console.log(visibleContainer)
     open(`altstore://source?url=${sourceURL}`);
   }
 });
-
-    fetch(sourceURL)
-        .then(response => response.json())
-        .then(source => {
-	    const json = consolidateApps(source)
-            // Set tint color
-            const tintColor = json.tintColor?.replaceAll("#", "");
-            if (tintColor) setTintColor(tintColor);
-
-            insertAltStoreBanner(json.name);
-	    AltStoreBannerUpdate(sourceURL);
 
             setApps(json.apps);
             callback(json);
