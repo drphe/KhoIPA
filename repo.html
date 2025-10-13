@@ -1165,12 +1165,13 @@
     }
 
     window.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.remove("loading");
       init();
+        document.getElementById("loading")?.remove();
     });
 
 
     async function init() {
+      try {
       const editorsources = await window.json("./common/assets/json/editorsources.json");
 
       const getNameRepo = (url) => {
@@ -1200,6 +1201,9 @@
         });
         installAppAlert.present()
       }
+      } catch (error) {
+        window.showUIAlert("Error", "Lỗi khi tải nguồn Repository!");
+      }
     }
     // khởi tạo
 
@@ -1227,7 +1231,6 @@
         window.showUIAlert("Success", "Repository được tải thành công!");
       } catch (error) {
         window.showUIAlert("Error", "Lỗi khi tải Repository!");
-
       }
     }
   </script>
