@@ -86,7 +86,10 @@ Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm link cài đ
 Một số dịch vụ chính: Certapple.com, Unkeyapp.com, Thuthuatjb.com...
 
 
-
+Nếu bạn ưu tiên mở / minh bạch / ít rủi ro và muốn có tùy biến cao — thì Feather là lựa chọn đáng cân nhắc.
+	•	Nếu bạn cần ứng dụng đã được sử dụng rộng rãi, dễ tìm hướng dẫn & certificate — eSign vẫn là lựa chọn phổ biến.
+	•	Scarlet là lựa chọn “đầy đủ” nếu bạn muốn một installer + signer + repo tích hợp — nhưng bệnh của nó là một vài tính năng ít minh bạch và khả năng revoke vẫn còn là vấn đề.
+	•	GBox: mình khuyên bạn nên cẩn trọng, vì cộng đồng ít sử dụng, ít đánh giá, và có cảnh báo về rủi ro về dữ liệu.
 
 
 \*\*Chế độ Nhà phát triển (Developer Mode): \*\* Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.
