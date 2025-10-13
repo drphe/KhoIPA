@@ -32,7 +32,6 @@ export function main(callback, fallbackURL = "../../") {
             if (tintColor) setTintColor(tintColor);
 
             insertAltStoreBanner(json.name);
-	    AltStoreBannerUpdate(sourceURL);
 
 document.getElementById("add-to-altstore").addEventListener("click", e => {
   e.preventDefault();
