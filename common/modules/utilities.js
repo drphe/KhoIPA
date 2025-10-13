@@ -3,22 +3,27 @@ import { NavigationBar } from "../components/NavigationBar.js";
 import { urlRegex, sourceURL } from "./constants.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
-export function formatVersionDate(arg) {
-    const versionDate = new Date(arg),
-        month = versionDate.toLocaleString("default", { month: "short" }),
-        date = versionDate.getDate();
-    const today = new Date();
-    const msPerDay = 60 * 60 * 24 * 1000;
-    const msDifference = today.valueOf() - versionDate.valueOf();
+function formatVersionDate(arg) {
+  const safeDateStr = arg?.replace(/-/g, "/");
+  const versionDate = new Date(safeDateStr);
 
-    let dateString = versionDate.valueOf() ? `${month} ${date}, ${versionDate.getFullYear()}` : arg.split("T")[0];
-    if (msDifference <= msPerDay && today.getDate() == versionDate.getDate())
-        dateString = "Today";
-    else if (msDifference <= msPerDay * 2)
-        dateString = "Yesterday";
+  if (isNaN(versionDate)) return arg.split("T")[0]; // fallback nếu ngày không hợp lệ
 
-    return dateString;
+  const today = new Date();
+  const msPerDay = 60 * 60 * 24 * 1000;
+  const msDifference = today - versionDate;
+
+  let dateString = `${versionDate.toLocaleString("default", { month: "short" })} ${versionDate.getDate()}, ${versionDate.getFullYear()}`;
+
+  if (msDifference <= msPerDay && today.getDate() === versionDate.getDate()) {
+    dateString = "Today";
+  } else if (msDifference <= msPerDay * 2 && today.getDate() - versionDate.getDate() === 1) {
+    dateString = "Yesterday";
+  }
+
+  return dateString;
 }
+
 
 export function insertSpaceInSnakeString(string) {
     return string.split(".").slice(-1)[0].split("-").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
