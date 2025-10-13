@@ -61,3 +61,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Cách thức:** Cài đặt app signer qua Safari/TestFlight. Sau đó dùng app signer để nhập file IPA và cài đặt trực tiếp lên iPhone.
 * **Lưu ý:** Cần **nhập cấu hình chứng chỉ** (miễn phí hoặc thuê cert chất lượng cao hơn) và đôi khi cần lấy **UDID** máy để cấp phép.
 * **Nhược điểm:** Vẫn tồn tại rủi ro **bị thu hồi chứng chỉ**, đặc biệt với các cert miễn phí hoặc cert công khai.
+
+[Cài đặt Gbox](https://gbox.run/)
+
+[Cài đặt Scalert](https://usescarletapp.com)
