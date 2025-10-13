@@ -23,76 +23,6 @@
     window.base64Convert = base64Convert;
     window.UIAlert = UIAlert;
     window.showUIAlert = showUIAlert;
-
-
-async function fetchScreenshotsForApps(apps) {
-  const tasks = apps.map(async (app) => {
-    const bundleId = app.bundleIdentifier;
-    const url = `https://ipa.thuthuatjb.com/view/lookimg.php?id=${bundleId}`;
-
-    try {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error(`Lỗi khi tải ${url}: ${response.status}`);
-
-      const contentType = response.headers.get("content-type");
-      if (!contentType || !contentType.includes("application/json")) {
-         throw new Error(`Phản hồi không phải JSON từ ${url}`);
-      }
-      
-      const json = await response.json();
-      app.screenshotURLs = json.screenshotUrls || [];
-    } catch (error) {
-      console.error(`Không thể lấy ảnh cho ${bundleId}:`, error);
-      app.screenshotURLs = []; 
-    }
-  });
-
-  await Promise.all(tasks); // Chờ tất cả các request hoàn tất
-}
-
-function downloadJsonFile(data, filename = 'updated_repo.json') {
-    const jsonString = JSON.stringify(data, null, 2); 
-    const blob = new Blob([jsonString], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename; // Đặt tên file
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    console.log(`✅ Đã kích hoạt tải xuống file: ${filename}`);
-}
-
-async function main() {
-   let url = 'https://ipa.thuthuatjb.com/view/read.php';
-  try {
-    const response = await fetch(url);
-    
-    if (!response.ok) {
-        throw new Error(`Lỗi khi tải dữ liệu ban đầu: ${response.status} ${response.statusText}`);
-    }
-    
-    const data = await response.json();
-
-    if (!data.apps || !Array.isArray(data.apps)) {
-      throw new Error("Dữ liệu không hợp lệ hoặc thiếu 'apps'");
-    }
-    
-    console.log(`Bắt đầu lấy ảnh chụp màn hình cho ${data.apps.length} ứng dụng...`);
-
-    await fetchScreenshotsForApps(data.apps); 
-
-    const fileName = "repo.thuthuatjb_updated.json";
-    downloadJsonFile(data, fileName); 
-    
-  } catch (error) {
-    console.error("❌ Lỗi khi tải dữ liệu ban đầu hoặc xử lý:", error);
-  }
-}
-// Chạy chương trình
-//main();
-
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -364,36 +294,37 @@ async function main() {
       max-width: 640px;
       margin: auto;
     }
-#loading {
-  overflow: hidden;
-  background-color: rgb(26 25 27 / 87%) !important;
-}
 
-#loading {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  margin: 0 auto;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
+    #loading {
+      overflow: hidden;
+      background-color: rgb(26 25 27 / 87%) !important;
+    }
 
-#loading img {
-  width: 24px;
-  opacity: 0.5;
-}
+    #loading {
+      position: fixed;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      margin: 0 auto;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
 
-#loading p {
-  font-size: 0.75em;
-  font-weight: 500;
-  text-transform: uppercase;
-  opacity: 0.35;
-}
+    #loading img {
+      width: 24px;
+      opacity: 0.5;
+    }
+
+    #loading p {
+      font-size: 0.75em;
+      font-weight: 500;
+      text-transform: uppercase;
+      opacity: 0.35;
+    }
   </style>
 </head>
 
@@ -676,7 +607,7 @@ async function main() {
       const notify = document.getElementById('news_notify').checked;
 
       if (!title || !caption || !imageURL || !appID || !identifier) {
-        window.showUIAlert("Notification","Vui lòng điền đầy đủ thông tin tin tức.");
+        window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin tin tức.");
         return;
       }
 
@@ -705,7 +636,7 @@ async function main() {
       clearNewsForm();
       renderNewsList();
       updateOutput();
-      window.showUIAlert("Success","Cập nhật dữ liệu thành công.");
+      window.showUIAlert("Success", "Cập nhật dữ liệu thành công.");
     }
 
     function clearNewsForm() {
@@ -786,7 +717,7 @@ async function main() {
       const beta = document.getElementById('app_beta').checked;
 
       if (!name || !bundleIdentifier || !developerName || !subtitle || !iconURL) {
-        window.showUIAlert("Notification","Vui lòng điền đầy đủ thông tin App bắt buộc (Tên, Bundle ID, Developer, Subtitle, Icon URL).");
+        window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin App bắt buộc (Tên, Bundle ID, Developer, Subtitle, Icon URL).");
         return;
       }
 
@@ -953,7 +884,7 @@ async function main() {
 
     function addOrUpdateVersion() {
       if (appEditIndex < 0) {
-        window.showUIAlert("Notification","Vui lòng chọn hoặc thêm App trước khi thêm Version.");
+        window.showUIAlert("Notification", "Vui lòng chọn hoặc thêm App trước khi thêm Version.");
         return;
       }
 
@@ -964,7 +895,7 @@ async function main() {
       const localizedDescription = document.getElementById('version_localizedDescription').value.trim();
 
       if (!version || !dateInput || isNaN(size) || size <= 0 || !downloadURL) {
-        window.showUIAlert("Notification","Vui lòng điền đầy đủ thông tin Version bắt buộc (Version, Ngày, Kích thước > 0, Download URL).");
+        window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin Version bắt buộc (Version, Ngày, Kích thước > 0, Download URL).");
         return;
       }
 
@@ -1056,58 +987,58 @@ async function main() {
     function consolidateApps(source) {
       const uniqueAppsMap = new Map();
 
-  source.apps.forEach(app => {
-    const bundleID = app.bundleIdentifier;
+      source.apps.forEach(app => {
+        const bundleID = app.bundleIdentifier;
 
-    // Tạo đối tượng phiên bản để gộp
-    const firstVersion = app.versions?.[0] ?? {};
-    const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
-    const versionInfo = {
-      version: app.version ?? firstVersion.version ?? "1.0.0",
-      date: appDate,
-      size: app.size ?? firstVersion.size ?? 0,
-      downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
-      localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
-    };
+        // Tạo đối tượng phiên bản để gộp
+        const firstVersion = app.versions?.[0] ?? {};
+        const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
+        const versionInfo = {
+          version: app.version ?? firstVersion.version ?? "1.0.0",
+          date: appDate,
+          size: app.size ?? firstVersion.size ?? 0,
+          downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
+          localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
+        };
 
 
-    if (uniqueAppsMap.has(bundleID)) {
+        if (uniqueAppsMap.has(bundleID)) {
 
-      const existingApp = uniqueAppsMap.get(bundleID);
-      if (appDate > existingApp.versionDate) {
-        existingApp.versionDate = appDate;
-        existingApp.version = app.version ?? firstVersion.version ?? "1.0.0";
-        existingApp.downloadURL = app.downloadURL ?? firstVersion.downloadURL ?? "";
-        existingApp.size = app.size ?? firstVersion.size ?? 0;
-        existingApp.localizedDescription = app.localizedDescription ?? "";
-      }
-      existingApp.versions.push(versionInfo);
+          const existingApp = uniqueAppsMap.get(bundleID);
+          if (appDate > existingApp.versionDate) {
+            existingApp.versionDate = appDate;
+            existingApp.version = app.version ?? firstVersion.version ?? "1.0.0";
+            existingApp.downloadURL = app.downloadURL ?? firstVersion.downloadURL ?? "";
+            existingApp.size = app.size ?? firstVersion.size ?? 0;
+            existingApp.localizedDescription = app.localizedDescription ?? "";
+          }
+          existingApp.versions.push(versionInfo);
 
-    } else {
-      // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
-      const newApp = {
-        // Sao chép tất cả các trường không phải phiên bản
-        beta: app.beta ?? false,
-        name: app.name,
-        type: app.type ?? 1,
-        bundleIdentifier: app.bundleIdentifier,
-        developerName: app.developerName ?? "",
-        subtitle: app.subtitle ?? "",
-        localizedDescription: app.localizedDescription ?? "",
-        versionDescription: app.versionDescription ?? "",
-        tintColor: app.tintColor ?? "00adef",
-        iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
-        screenshotURLs: app.screenshotURLs ?? [],
-        size: app.size ?? firstVersion.size ?? 0,
-        version: app.version ?? firstVersion.version ?? "1.0.0",
-        versions: app.versions ?? [versionInfo] ?? [],
-        versionDate: appDate,
-        downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
-      };
+        } else {
+          // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
+          const newApp = {
+            // Sao chép tất cả các trường không phải phiên bản
+            beta: app.beta ?? false,
+            name: app.name,
+            type: app.type ?? 1,
+            bundleIdentifier: app.bundleIdentifier,
+            developerName: app.developerName ?? "",
+            subtitle: app.subtitle ?? "",
+            localizedDescription: app.localizedDescription ?? "",
+            versionDescription: app.versionDescription ?? "",
+            tintColor: app.tintColor ?? "00adef",
+            iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
+            screenshotURLs: app.screenshotURLs ?? [],
+            size: app.size ?? firstVersion.size ?? 0,
+            version: app.version ?? firstVersion.version ?? "1.0.0",
+            versions: app.versions ?? [versionInfo] ?? [],
+            versionDate: appDate,
+            downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
+          };
 
-      uniqueAppsMap.set(bundleID, newApp);
-    }
-  });
+          uniqueAppsMap.set(bundleID, newApp);
+        }
+      });
       const consolidatedApps = Array.from(uniqueAppsMap.values());
       const MAX_VERSIONS = 20;
 
@@ -1133,24 +1064,26 @@ async function main() {
 
       return newSource;
     }
-function normalizeDateFormat(dateStr) {
-    const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;  // dd-mm-yyyy
-    const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;  // yyyy-mm-dd
 
-    if (dmyRegex.test(dateStr)) {
+    function normalizeDateFormat(dateStr) {
+      const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/; // dd-mm-yyyy
+      const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/; // yyyy-mm-dd
+
+      if (dmyRegex.test(dateStr)) {
         const [, day, month, year] = dateStr.match(dmyRegex);
         const dd = day.padStart(2, '0');
         const mm = month.padStart(2, '0');
         return `${year}-${mm}-${dd}`;
-    } else if (ymdRegex.test(dateStr)) {
+      } else if (ymdRegex.test(dateStr)) {
         const [, year, month, day] = dateStr.match(ymdRegex);
         const dd = day.padStart(2, '0');
         const mm = month.padStart(2, '0');
         return `${year}-${mm}-${dd}`;
-    } else {
+      } else {
         return dateStr; // không hợp lệ
+      }
     }
-}
+
     function handleFileSelect(event) {
       const file = event.target.files[0];
       if (!file) return;
@@ -1160,7 +1093,7 @@ function normalizeDateFormat(dateStr) {
         try {
           const importedData = JSON.parse(e.target.result);
           if (!importedData || !Array.isArray(importedData.news) || !Array.isArray(importedData.apps)) {
-            window.showUIAlert("Error","Lỗi Import: File JSON không hợp lệ hoặc thiếu mảng 'news'/'apps'.");
+            window.showUIAlert("Error", "Lỗi Import: File JSON không hợp lệ hoặc thiếu mảng 'news'/'apps'.");
             return;
           }
 
@@ -1177,13 +1110,13 @@ function normalizeDateFormat(dateStr) {
           renderNewsList();
           renderAppList();
           updateOutput();
-          window.showUIAlert("Success","Import file gốc thành công! Dữ liệu đã sẵn sàng để chỉnh sửa.");
+          window.showUIAlert("Success", "Import file gốc thành công! Dữ liệu đã sẵn sàng để chỉnh sửa.");
           // Reset input để có thể chọn lại cùng một file
           event.target.value = '';
 
         } catch (error) {
           console.error("Lỗi phân tích cú pháp JSON:", error);
-          window.showUIAlert("Error","Lỗi Import: Không thể phân tích cú pháp file JSON. Vui lòng kiểm tra định dạng.");
+          window.showUIAlert("Error", "Lỗi Import: Không thể phân tích cú pháp file JSON. Vui lòng kiểm tra định dạng.");
         }
       };
       reader.readAsText(file);
@@ -1291,9 +1224,9 @@ function normalizeDateFormat(dateStr) {
         renderNewsList();
         renderAppList();
         updateOutput();
-        window.showUIAlert("Success","Repository được tải thành công!");
+        window.showUIAlert("Success", "Repository được tải thành công!");
       } catch (error) {
-        window.showUIAlert("Error","Lỗi khi tải Repository!");
+        window.showUIAlert("Error", "Lỗi khi tải Repository!");
 
       }
     }
