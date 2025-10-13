@@ -34,7 +34,6 @@ export function main(callback, fallbackURL = "../../") {
             insertAltStoreBanner(json.name);
 
 	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
-    		event.preventDefault();
 	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
     		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
     		if (isEsignVisible) {
