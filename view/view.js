@@ -7,7 +7,7 @@ import { main } from "../common/modules/main.js";
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
         e.preventDefault();
-        open(`../?source=${base64Convert(sourceURL)}`);
+        open(`../repo.html?source=${sourceURL}`);
     });
 
     document.getElementById("add")?.addEventListener("click", e => {
@@ -70,8 +70,6 @@ main(json => {
         });
     }
 
-    const le = document.querySelector(".addnews");
-	if(le) {le.href = `../KhoIPA/repo.html?source=${sourceURL}`;}
     // 
     // About
     var description = formatString(json.description);
