@@ -1,3 +1,26 @@
+// lấy json repo từ cypwn
+function downloadJSON(url, filename) {
+  fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      const jsonStr = JSON.stringify(data, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+    })
+    .catch(err => console.error(`Lỗi tải ${filename}:`, err));
+}
+
+// Tải cả hai file
+downloadJSON('https://ipa.cypwn.xyz/cypwn.json', 'cypwn.json');
+downloadJSON('https://ipa.cypwn.xyz/cypwn_ts.json', 'cypwn_ts.json');
+
+
 // Chạy chương trình bằng cách copy toàn bộ code ở đây, dán vào console của extension F2chart
 // công dụng: lấy repository từ thuthuatjb.com, lấy thêm url của screenshort
 main();

@@ -53,6 +53,27 @@ export function insertNavigationBar(title) {
 
 }
 
+export const AltStoreBannerUpdate = (sourceURL) => {
+  const link = document.querySelector('.uibanner a');
+  const titleTexts = document.querySelectorAll('.title-text');
+
+  function updateLink() {
+    titleTexts.forEach(el => {
+      const style = window.getComputedStyle(el.closest('.text-container'));
+      if (style.opacity === '1') {
+        const appName = el.textContent.trim();
+        if (appName.includes('ESign')) {
+          link.href = `esign://addsource?url=${encodeURIComponent(sourceURL)}`;
+        } else if (appName.includes('AltStore')) {
+          link.href = `altstore://source?url=${encodeURIComponent(sourceURL)}`;
+        }
+      }
+    });
+  }
+
+  setInterval(updateLink, 1000);
+  updateLink();
+};
 // https://stackoverflow.com/a/43467144/19227228
 export function isValidHTTPURL(string) {
     var url;

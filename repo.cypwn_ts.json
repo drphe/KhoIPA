@@ -1,0 +1,3234 @@
+{
+  "name": "CyPwn Trollstore Library",
+  "identifier": "xyz.cypwn.trollstorelibrary",
+  "subtitle": "CyPwn's Exclusive Trollstore Library",
+  "iconURL": "https://repo.cypwn.xyz/assets/images/cypwn_small.png",
+  "website": "https://ipa.cypwn.xyz",
+  "sourceURL": "https://ipa.cypwn.xyz/cypwn_ts.json",
+  "tintColor": "FFC300",
+  "featuredApps": [
+    "com.xina.jailbreak"
+  ],
+  "crypto": {
+    "btc": "bc1qy5xq4xdw4w83gpauxskassck4rwvpe7xdlvtws"
+  },
+  "apps": [
+    {
+      "name": "Battman",
+      "bundleIdentifier": "com.torrekie.Battman",
+      "developerName": "Battman x CyPwn",
+      "version": "1.0",
+      "versionDate": "2025-10-02",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Battman.ipa",
+      "localizedDescription": "Battman the Battery Manager",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Battman.png",
+      "tintColor": "FFC300",
+      "size": 410,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Battman/Battman-0.png"
+      ]
+    },
+    {
+      "name": "TrollVNC_2.4",
+      "bundleIdentifier": "com.82flex.TrollVNCApp",
+      "developerName": "TrollVNC_2.4 x CyPwn",
+      "version": "2.4",
+      "versionDate": "2025-09-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollVNC_2.4.ipa",
+      "localizedDescription": "placeholder",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_2.4.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "CopyLog_1.7",
+      "bundleIdentifier": "me.tomt000.ts.copylog",
+      "developerName": "CopyLog_1.7 x CyPwn",
+      "version": "1.7",
+      "versionDate": "2025-07-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CopyLog_1.7.ipa",
+      "localizedDescription": "Clipboard history manager for TS!",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CopyLog_1.7.png",
+      "tintColor": "FFC300",
+      "size": 6291456,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/CopyLog_1.7/CopyLog_1.7-0.png"
+      ]
+    },
+    {
+      "name": "AmethystTS_1.0",
+      "bundleIdentifier": "org.angelauramc.amethystTS",
+      "developerName": "AmethystTS_1.0 x CyPwn",
+      "version": "1.0",
+      "versionDate": "2025-07-14",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AmethystTS_1.0.ipa",
+      "localizedDescription": "TS version of Amethyst",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AmethystTS_1.0.png",
+      "tintColor": "FFC300",
+      "size": 29360128,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AmethystTS_1.0/AmethystTS_1.0-0.png"
+      ]
+    },
+    {
+      "name": "Animation_Speed_1.0.1",
+      "bundleIdentifier": "com.developlab.AnimationSpeed",
+      "developerName": "Animation_Speed_1.0.1 x CyPwn",
+      "version": "1.0.1",
+      "versionDate": "2025-07-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Animation_Speed_1.0.1.ipa",
+      "localizedDescription": "TS app to change animation speed",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Animation_Speed_1.0.1.png",
+      "tintColor": "FFC300",
+      "size": 155,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Animation_Speed_1.0.1/Animation_Speed_1.0.1-0.png"
+      ]
+    },
+    {
+      "name": "ImmortalizerTS.1.0b",
+      "bundleIdentifier": "com.sergy.immortalizerts",
+      "developerName": "ImmortalizerTS.1.0b x CyPwn",
+      "version": "1.0",
+      "versionDate": "2025-07-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ImmortalizerTS.1.0b.ipa",
+      "localizedDescription": "Immortalizer for TrollStore",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ImmortalizerTS.1.0b.png",
+      "tintColor": "FFC300",
+      "size": 84,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/ImmortalizerTS.1.0b/ImmortalizerTS.1.0b-0.png"
+      ]
+    },
+    {
+      "name": "SpeedGG_3.3_Eng",
+      "bundleIdentifier": "com.mumu.Speed",
+      "developerName": "SpeedGG_3.3_Eng x CyPwn",
+      "version": "3.3",
+      "versionDate": "2025-07-08",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SpeedGG_3.3_Eng.ipa",
+      "localizedDescription": "Live upload/download speed HUD",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/SpeedGG_3.3_Eng.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/SpeedGG_3.3_Eng/SpeedGG_3.3_Eng-0.png"
+      ]
+    },
+    {
+      "name": "ChargeLimiter_1.7",
+      "bundleIdentifier": "chaoge.ChargeLimiter",
+      "developerName": "ChargeLimiter_1.7 x CyPwn",
+      "version": "1.7",
+      "versionDate": "2025-06-15",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ChargeLimiter_1.7.ipa",
+      "localizedDescription": "Charge limiter for iOS",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ChargeLimiter_1.7.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/ChargeLimiter_1.7/ChargeLimiter_1.7-0.png"
+      ]
+    },
+    {
+      "name": "Apps_Manager_1.8.4_Cracked",
+      "bundleIdentifier": "com.tigisoftware.ADManager",
+      "developerName": "Apps_Manager_1.8.4_Cracked x CyPwn",
+      "version": "1.8",
+      "versionDate": "2025-06-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Apps_Manager_1.8.4_Cracked.ipa",
+      "localizedDescription": "AppsManager v1.8.4 Cracked",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Apps_Manager_1.8.4_Cracked.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Apps_Manager_1.8.4_Cracked/Apps_Manager_1.8.4_Cracked-0.png"
+      ]
+    },
+    {
+      "name": "TrollOpen_2.1_FreeVersion",
+      "bundleIdentifier": "com.charlieleung.TrollOpen",
+      "developerName": "TrollOpen_2.1_FreeVersion x CyPwn",
+      "version": "2.1",
+      "versionDate": "2025-06-06",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollOpen_2.1_FreeVersion.ipa",
+      "localizedDescription": "Quick convenient app launcher",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollOpen_2.1_FreeVersion.png",
+      "tintColor": "FFC300",
+      "size": 6291456,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollOpen_2.1_FreeVersion/TrollOpen_2.1_FreeVersion-0.png"
+      ]
+    },
+    {
+      "name": "Geranium_1.1.3",
+      "bundleIdentifier": "live.cclerc.geranium",
+      "developerName": "Geranium_1.1.3 x CyPwn",
+      "version": "1.1.3",
+      "versionDate": "2025-05-31",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Geranium_1.1.3.ipa",
+      "localizedDescription": "LocSim, Daemon Mngr, Cleaner & more",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Geranium_1.1.3.png",
+      "tintColor": "FFC300",
+      "size": 5242880,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Geranium_1.1.3/Geranium_1.1.3-0.png"
+      ]
+    },
+    {
+      "name": "TrollBackgrounder_1.5",
+      "bundleIdentifier": "cn.bswbw.TrollBackgrounder",
+      "developerName": "TrollBackgrounder_1.5 x CyPwn",
+      "version": "1.5",
+      "versionDate": "2025-05-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollBackgrounder_1.5.ipa",
+      "localizedDescription": "Background your apps!",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollBackgrounder_1.5.png",
+      "tintColor": "FFC300",
+      "size": 914,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollBackgrounder_1.5/TrollBackgrounder_1.5-0.png"
+      ]
+    },
+    {
+      "name": "Battery_Info_1.2.0",
+      "bundleIdentifier": "com.developlab.BatteryInfo",
+      "developerName": "Battery_Info_1.2.0 x CyPwn",
+      "version": "1.2.0",
+      "versionDate": "2025-05-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Battery_Info_1.2.0.ipa",
+      "localizedDescription": "TS app to check battery information",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Battery_Info_1.2.0.png",
+      "tintColor": "FFC300",
+      "size": 301,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Battery_Info_1.2.0/Battery_Info_1.2.0-0.png"
+      ]
+    },
+    {
+      "name": "AppsDump3_4.0.9",
+      "bundleIdentifier": "cn.gblw.AppsDump",
+      "developerName": "AppsDump3_4.0.9 x CyPwn",
+      "version": "4.0.9",
+      "versionDate": "2025-05-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppsDump3_4.0.9.ipa",
+      "localizedDescription": "AppsDump3_4.0.9",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppsDump3_4.0.9.png",
+      "tintColor": "FFC300",
+      "size": 4194304,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AppsDump3_4.0.9/AppsDump3_4.0.9-0.png"
+      ]
+    },
+    {
+      "name": "TheBall_2.7",
+      "bundleIdentifier": "com.mumu.iosshare",
+      "developerName": "TheBall_2.7 x CyPwn",
+      "version": "2.7",
+      "versionDate": "2025-04-28",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TheBall_2.7.ipa",
+      "localizedDescription": "TheBall_2.7",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TheBall_2.7.png",
+      "tintColor": "FFC300",
+      "size": 847,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TheBall_2.7/TheBall_2.7-0.png"
+      ]
+    },
+    {
+      "name": "TrollFools_3.7-42",
+      "bundleIdentifier": "wiki.qaq.TrollFools",
+      "developerName": "TrollFools_3.7-42 x CyPwn",
+      "version": "3.7",
+      "versionDate": "2025-04-24",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollFools_3.7-42.ipa",
+      "localizedDescription": "Inject tweaks into apps",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_3.7-42.png",
+      "tintColor": "FFC300",
+      "size": 5242880,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollFools_3.7-42/TrollFools_3.7-42-0.png"
+      ]
+    },
+    {
+      "name": "TheBall_2.5",
+      "bundleIdentifier": "com.mumu.iosshare",
+      "developerName": "TheBall_2.5 x CyPwn",
+      "version": "2.5",
+      "versionDate": "2025-04-23",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TheBall_2.5.ipa",
+      "localizedDescription": "Floating ball for quick app access.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TheBall_2.5.png",
+      "tintColor": "FFC300",
+      "size": 819,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TheBall_2.5/TheBall_2.5-0.png"
+      ]
+    },
+    {
+      "name": "AppsDump3_4.0.6",
+      "bundleIdentifier": "cn.gblw.AppsDump",
+      "developerName": "AppsDump3_4.0.6 x CyPwn",
+      "version": "4.0.6",
+      "versionDate": "2025-04-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppsDump3_4.0.6.ipa",
+      "localizedDescription": "AppsDump3 v4.0.6",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppsDump3_4.0.6.png",
+      "tintColor": "FFC300",
+      "size": 4194304,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AppsDump3_4.0.6/AppsDump3_4.0.6-0.png"
+      ]
+    },
+    {
+      "name": "AppsDump3_4.0.5",
+      "bundleIdentifier": "cn.gblw.AppsDump",
+      "developerName": "AppsDump3_4.0.5 x CyPwn",
+      "version": "4.0.5",
+      "versionDate": "2025-04-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppsDump3_4.0.5.ipa",
+      "localizedDescription": "AppsDump3 v4.0.5",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppsDump3_4.0.5.png",
+      "tintColor": "FFC300",
+      "size": 4194304,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AppsDump3_4.0.5/AppsDump3_4.0.5-0.png"
+      ]
+    },
+    {
+      "name": "Reveil_2_0_6",
+      "bundleIdentifier": "com.82flex.reveil",
+      "developerName": "Reveil_2_0_6 x CyPwn",
+      "version": "2.0",
+      "versionDate": "2025-03-11",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Reveil_2_0_6.ipa",
+      "localizedDescription": "Reveil",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Reveil_2_0_6.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Reveil_2_0_6/Reveil_2_0_6-0.png"
+      ]
+    },
+    {
+      "name": "BatteryInfo_1.1.8",
+      "bundleIdentifier": "com.developlab.BatteryInfo",
+      "developerName": "BatteryInfo_1.1.8 x CyPwn",
+      "version": "1.1.8",
+      "versionDate": "2025-03-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/BatteryInfo_1.1.8.ipa",
+      "localizedDescription": "TS app to check battery information",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/BatteryInfo_1.1.8.png",
+      "tintColor": "FFC300",
+      "size": 156,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/BatteryInfo_1.1.8/BatteryInfo_1.1.8-0.png"
+      ]
+    },
+    {
+      "name": "TrollFools_3.2-32",
+      "bundleIdentifier": "wiki.qaq.TrollFools",
+      "developerName": "TrollFools_3.2-32 x CyPwn",
+      "version": "3.2",
+      "versionDate": "2025-03-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollFools_3.2-32.ipa",
+      "localizedDescription": "Inject tweaks into apps",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_3.2-32.png",
+      "tintColor": "FFC300",
+      "size": 5242880,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollFools_3.2-32/TrollFools_3.2-32-0.png"
+      ]
+    },
+    {
+      "name": "BatteryInfo_1.1.6",
+      "bundleIdentifier": "com.developlab.BatteryInfo",
+      "developerName": "BatteryInfo_1.1.6 x CyPwn",
+      "version": "1.1.6",
+      "versionDate": "2025-02-23",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/BatteryInfo_1.1.6.ipa",
+      "localizedDescription": "TS app to check battery information",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/BatteryInfo_1.1.6.png",
+      "tintColor": "FFC300",
+      "size": 155,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/BatteryInfo_1.1.6/BatteryInfo_1.1.6-0.png"
+      ]
+    },
+    {
+      "name": "AnimationSpeed_1.0",
+      "bundleIdentifier": "com.developlab.AnimationSpeed",
+      "developerName": "AnimationSpeed_1.0 x CyPwn",
+      "version": "1.0",
+      "versionDate": "2025-02-16",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AnimationSpeed_1.0.ipa",
+      "localizedDescription": "TS app to change animation speed",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AnimationSpeed_1.0.png",
+      "tintColor": "FFC300",
+      "size": 94,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AnimationSpeed_1.0/AnimationSpeed_1.0-0.png"
+      ]
+    },
+    {
+      "name": "TrollFools_2.11-28_huamidev",
+      "bundleIdentifier": "com.huami.TrollFools",
+      "developerName": "TrollFools_2.11-28_huamidev x CyPwn",
+      "version": "2.11",
+      "versionDate": "2025-02-15",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollFools_2.11-28_huamidev.ipa",
+      "localizedDescription": "Inject tweaks into apps",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_2.11-28_huamidev.png",
+      "tintColor": "FFC300",
+      "size": 8388608,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollFools_2.11-28_huamidev/TrollFools_2.11-28_huamidev-0.png"
+      ]
+    },
+    {
+      "name": "SF_Symbols_51.2",
+      "bundleIdentifier": "com.82flex.SFSymbolsPreview",
+      "developerName": "SF_Symbols_51.2 x CyPwn",
+      "version": "51.2",
+      "versionDate": "2025-02-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SF_Symbols_51.2.ipa",
+      "localizedDescription": "View “SF Symbols” on your iDevice",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/SF_Symbols_51.2.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/SF_Symbols_51.2/SF_Symbols_51.2-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/SF_Symbols_51.2/SF_Symbols_51.2-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/SF_Symbols_51.2/SF_Symbols_51.2-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/SF_Symbols_51.2/SF_Symbols_51.2-3.png"
+      ]
+    },
+    {
+      "name": "ClearResidue_1.0",
+      "bundleIdentifier": "com.developlab.iDiskTidy.ClearResidue",
+      "developerName": "ClearResidue_1.0 x CyPwn",
+      "version": "1.0",
+      "versionDate": "2025-01-20",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ClearResidue_1.0.ipa",
+      "localizedDescription": "Tool to remove Filza residue files",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ClearResidue_1.0.png",
+      "tintColor": "FFC300",
+      "size": 71,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/ClearResidue_1.0/ClearResidue_1.0-0.png"
+      ]
+    },
+    {
+      "name": "DumpDecrypter_1.4-8",
+      "bundleIdentifier": "com.netskao.dumpdecrypter",
+      "developerName": "DumpDecrypter_1.4-8 x CyPwn",
+      "version": "1.4-8",
+      "versionDate": "2024-10-20",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DumpDecrypter_1.4-8.ipa",
+      "localizedDescription": "Decrypt iOS Apps and Plugins",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/DumpDecrypter_1.4-8.png",
+      "tintColor": "FFC300",
+      "size": 472,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/DumpDecrypter_1.4-8/DumpDecrypter_1.4-8-0.png"
+      ]
+    },
+    {
+      "name": "AppStore++_NewAPI",
+      "bundleIdentifier": "com.cokepokes.AppStorePlus",
+      "developerName": "AppStore++_NewAPI x CyPwn",
+      "version": "1.0.3",
+      "versionDate": "2024-10-14",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppStore++_NewAPI.ipa",
+      "localizedDescription": "AppStore++ with new API",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppStore++_NewAPI.png",
+      "tintColor": "FFC300",
+      "size": 15728640,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AppStore++_NewAPI/AppStore++_NewAPI-0.png"
+      ]
+    },
+    {
+      "name": "MuffinStore_1.1.2",
+      "bundleIdentifier": "dev.mineek.muffinstore",
+      "developerName": "MuffinStore_1.1.2 x CyPwn",
+      "version": "1.1.2",
+      "versionDate": "2024-10-08",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/MuffinStore_1.1.2.ipa",
+      "localizedDescription": "Experimental app downgrader.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/MuffinStore_1.1.2.png",
+      "tintColor": "FFC300",
+      "size": 214,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/MuffinStore_1.1.2/MuffinStore_1.1.2-0.png"
+      ]
+    },
+    {
+      "name": "Fortnite-31.00-Decrypted",
+      "bundleIdentifier": "com.epicgames.FortniteGame",
+      "developerName": "Fortnite-31.00-Decrypted x CyPwn",
+      "version": "31.00.1",
+      "versionDate": "2024-08-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Fortnite-31.00-Decrypted.ipa",
+      "localizedDescription": "TrollStore iOS 16 ONLY",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Fortnite-31.00-Decrypted.png",
+      "tintColor": "FFC300",
+      "size": 241172480,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Fortnite-31.00-Decrypted/Fortnite-31.00-Decrypted-0.png"
+      ]
+    },
+    {
+      "name": "SuperIcons_2.1.4_Huami",
+      "bundleIdentifier": "com.huami.SuperIcons",
+      "developerName": "SuperIcons_2.1.4_Huami x CyPwn",
+      "version": "2.1",
+      "versionDate": "2024-08-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SuperIcons_2.1.4_Huami.ipa",
+      "localizedDescription": "Change app icons with TrollStore!",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/SuperIcons_2.1.4_Huami.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/SuperIcons_2.1.4_Huami/SuperIcons_2.1.4_Huami-0.png"
+      ]
+    },
+    {
+      "name": "AddonsPro-3.8",
+      "bundleIdentifier": "com.qingbin.Addons",
+      "developerName": "AddonsPro-3.8 x CyPwn",
+      "version": "3.8",
+      "versionDate": "2024-07-11",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AddonsPro-3.8.ipa",
+      "localizedDescription": "Powerful Safari browser extension!",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AddonsPro-3.8.png",
+      "tintColor": "FFC300",
+      "size": 28311552,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AddonsPro-3.8/AddonsPro-3.8-0.png"
+      ]
+    },
+    {
+      "name": "DowngradeApp_1.1-9",
+      "bundleIdentifier": "com.netskao.downgradeapp",
+      "developerName": "DowngradeApp_1.1-9 x CyPwn",
+      "version": "1.1-9",
+      "versionDate": "2024-07-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DowngradeApp_1.1-9.ipa",
+      "localizedDescription": "Downgrade apps! TrollStore required",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/DowngradeApp_1.1-9.png",
+      "tintColor": "FFC300",
+      "size": 530,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/DowngradeApp_1.1-9/DowngradeApp_1.1-9-0.png"
+      ]
+    },
+    {
+      "name": "SimLoc_1.8.5",
+      "bundleIdentifier": "com.simloc.app",
+      "developerName": "SimLoc_1.8.5 x CyPwn",
+      "version": "1.8.5",
+      "versionDate": "2024-06-20",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SimLoc_1.8.5.ipa",
+      "localizedDescription": "Location Simulation App",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/SimLoc_1.8.5.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/SimLoc_1.8.5/SimLoc_1.8.5-0.png"
+      ]
+    },
+    {
+      "name": "ChargeLimiter_1.6",
+      "bundleIdentifier": "chaoge.ChargeLimiter",
+      "developerName": "ChargeLimiter_1.6 x CyPwn",
+      "version": "1.6",
+      "versionDate": "2024-05-02",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ChargeLimiter_1.6.ipa",
+      "localizedDescription": "Charge limiter for iOS!",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ChargeLimiter_1.6.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/ChargeLimiter_1.6/ChargeLimiter_1.6-0.png"
+      ]
+    },
+    {
+      "name": "Addons_3.2",
+      "bundleIdentifier": "com.qingbin.Addons",
+      "developerName": "Addons_3.2 x CyPwn",
+      "version": "3.2",
+      "versionDate": "2024-04-12",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Addons_3.2.ipa",
+      "localizedDescription": "Powerful Safari browser extension!",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Addons_3.2.png",
+      "tintColor": "FFC300",
+      "size": 28311552,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Addons_3.2/Addons_3.2-0.png"
+      ]
+    },
+    {
+      "name": "TrollDecrypt",
+      "bundleIdentifier": "com.fiore.trolldecrypt",
+      "developerName": "TrollDecrypt x CyPwn",
+      "version": "1.1",
+      "versionDate": "2024-04-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollDecrypt.ipa",
+      "localizedDescription": "iOS IPA Decrypter for TrollStore",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollDecrypt.png",
+      "tintColor": "FFC300",
+      "size": 675,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollDecrypt/TrollDecrypt-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollDecrypt/TrollDecrypt-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollDecrypt/TrollDecrypt-2.png"
+      ]
+    },
+    {
+      "name": "DolphiniOS_4.0.0b7",
+      "bundleIdentifier": "me.oatmealdome.DolphiniOS-ts-patreon-beta",
+      "developerName": "DolphiniOS_4.0.0b7 x CyPwn",
+      "version": "4.0.0b7",
+      "versionDate": "2024-03-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DolphiniOS_4.0.0b7.ipa",
+      "localizedDescription": "GameCube and Wii emulator for iOS",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/DolphiniOS_4.0.0b7.png",
+      "tintColor": "FFC300",
+      "size": 13631488,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/DolphiniOS_4.0.0b7/DolphiniOS_4.0.0b7-0.png"
+      ]
+    },
+    {
+      "name": "AudioRecorderTS",
+      "bundleIdentifier": "net.limneos.AudioRecorder",
+      "developerName": "AudioRecorderTS x CyPwn",
+      "version": "6.0.3",
+      "versionDate": "2024-02-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AudioRecorderTS.ipa",
+      "localizedDescription": "AudioRecorder for TS Cracked by CBZ",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AudioRecorderTS.png",
+      "tintColor": "FFC300",
+      "size": 4194304,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AudioRecorderTS/AudioRecorderTS-0.png"
+      ]
+    },
+    {
+      "name": "AudioRecorderTS-NoDropbox",
+      "bundleIdentifier": "net.limneos.AudioRecorder",
+      "developerName": "AudioRecorderTS-NoDropbox x CyPwn",
+      "version": "6.0.3",
+      "versionDate": "2024-02-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AudioRecorderTS-NoDropbox.ipa",
+      "localizedDescription": "AudioRecorder for TS Cracked by CBZ",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AudioRecorderTS-NoDropbox.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AudioRecorderTS-NoDropbox/AudioRecorderTS-NoDropbox-0.png"
+      ]
+    },
+    {
+      "name": "LocSim_1.4.1k_TS",
+      "bundleIdentifier": "com.mika.LocationSimulation",
+      "developerName": "LocSim_1.4.1k_TS x CyPwn",
+      "version": "1.4.1",
+      "versionDate": "2024-02-12",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/LocSim_1.4.1k_TS.ipa",
+      "localizedDescription": "Spoof GPS Location. Cracked by CBZ!",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/LocSim_1.4.1k_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/LocSim_1.4.1k_TS/LocSim_1.4.1k_TS-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/LocSim_1.4.1k_TS/LocSim_1.4.1k_TS-1.png"
+      ]
+    },
+    {
+      "name": "Dumpy2_2.0.7",
+      "bundleIdentifier": "xyz.cypwn.dumpy2",
+      "developerName": "Dumpy2_2.0.7 x CyPwn",
+      "version": "2.0.7",
+      "versionDate": "2024-02-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Dumpy2_2.0.7.ipa",
+      "localizedDescription": "IPA Dumper/Decrypter",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Dumpy2_2.0.7.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Dumpy2_2.0.7/Dumpy2_2.0.7-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Dumpy2_2.0.7/Dumpy2_2.0.7-1.png"
+      ]
+    },
+    {
+      "name": "Xina2_2.1.6~f1",
+      "bundleIdentifier": "com.xina.jailbreak",
+      "developerName": "Xina2_2.1.6~f1 x CyPwn",
+      "version": "2.1.6~f1",
+      "versionDate": "2024-01-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Xina2_2.1.6~f1.ipa",
+      "localizedDescription": "Xina2… but better",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Xina2_2.1.6~f1.png",
+      "tintColor": "FFC300",
+      "size": 59768832,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Xina2_2.1.6~f1/Xina2_2.1.6~f1-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Xina2_2.1.6~f1/Xina2_2.1.6~f1-1.png"
+      ]
+    },
+    {
+      "name": "ModMyIPA_TS",
+      "bundleIdentifier": "com.powen.ModMyIPA",
+      "developerName": "ModMyIPA_TS x CyPwn",
+      "version": "1.0.1",
+      "versionDate": "2023-07-22",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ModMyIPA_TS.ipa",
+      "localizedDescription": "Clone Apps with TrollStore",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ModMyIPA_TS.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/ModMyIPA_TS/ModMyIPA_TS-0.png"
+      ]
+    },
+    {
+      "name": "YahooMailNoAds_7.18.0_TS",
+      "bundleIdentifier": "com.yahoo.Aerogram",
+      "developerName": "YahooMailNoAds_7.18.0_TS x CyPwn",
+      "version": "7.18.0",
+      "versionDate": "2023-07-18",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/YahooMailNoAds_7.18.0_TS.ipa",
+      "localizedDescription": "Yahoo Mail app with Ads disabled",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/YahooMailNoAds_7.18.0_TS.png",
+      "tintColor": "FFC300",
+      "size": 97517568,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/YahooMailNoAds_7.18.0_TS/YahooMailNoAds_7.18.0_TS-0.png"
+      ]
+    },
+    {
+      "name": "Surge5",
+      "bundleIdentifier": "com.nssurge.kernel.surge-ios.enterprise",
+      "developerName": "Surge5 x CyPwn",
+      "version": "5.2.1",
+      "versionDate": "2023-07-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Surge_5.ipa",
+      "localizedDescription": "Surge 5 thing",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Surge5.png",
+      "tintColor": "FFC300",
+      "size": 39845888,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Surge5/Surge5-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Surge5/Surge5-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Surge5/Surge5-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Surge5/Surge5-3.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Surge5/Surge5-4.png"
+      ]
+    },
+    {
+      "name": "AI_Chat_1.0.2",
+      "bundleIdentifier": "com.enjoy.aichat.chatbot.openchat",
+      "developerName": "AI_Chat_1.0.2 x CyPwn",
+      "version": "1.0.2",
+      "versionDate": "2023-06-23",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AI_Chat_1.0.2.ipa",
+      "localizedDescription": "Cracked by Ravand",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AI_Chat_1.0.2.png",
+      "tintColor": "FFC300",
+      "size": 41943040,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AI_Chat_1.0.2/AI_Chat_1.0.2-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/AI_Chat_1.0.2/AI_Chat_1.0.2-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/AI_Chat_1.0.2/AI_Chat_1.0.2-2.png"
+      ]
+    },
+    {
+      "name": "Fugu15Max",
+      "bundleIdentifier": "cypwn.Fugu15Max.1.0~beta8",
+      "developerName": "Fugu15Max x CyPwn",
+      "version": "1.0~beta8",
+      "versionDate": "2023-04-19",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Fugu15Max.ipa",
+      "localizedDescription": "Fugu15 Max Beta 8 Keycap Fix includes:\r\n- Removed Zebra from bootstrap\r\n- Sileo 2.4.4 (Shitty-o can be installed by removing sileo version from essential dependencies)\r\n- UI Overhaul\r\n- Logs in main view\r\n- Custom bundleid\r\n- Modified version number\r\n- Everything from Opa's beta 8 + extra commits including:\r\n1. Deprecation fixes\r\n2. Fork reimplementation behavior fixes\r\n3. BaseBin forkfix fixup",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Fugu15Max.png",
+      "tintColor": "FFC300",
+      "size": 34603008,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Fugu15Max/Fugu15Max-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Fugu15Max/Fugu15Max-1.png"
+      ]
+    },
+    {
+      "name": "Opener_1.11.9_TS",
+      "bundleIdentifier": "cypwn.Opener_1.11.9_TS.1.11.9",
+      "developerName": "Opener_1.11.9_TS x CyPwn",
+      "version": "1.11.9",
+      "versionDate": "2023-02-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Opener_1.11.9_TS.ipa",
+      "localizedDescription": "Open links in apps",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Opener_1.11.9_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "AppsManagerCracked_1.8.1",
+      "bundleIdentifier": "cypwn.AppsManagerCracked_1.8.1.1.8.1",
+      "developerName": "AppsManagerCracked_1.8.1 x CyPwn",
+      "version": "1.8.1",
+      "versionDate": "2022-12-23",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppsManagerCracked_1.8.1.ipa",
+      "localizedDescription": "AppsManager v1.8.1 - App Data Manager by TigiSoftware. Activated crack by Paisseon.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppsManagerCracked_1.8.1.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "FilzaCracked_4.0.0_TS",
+      "bundleIdentifier": "cypwn.FilzaCracked_4.0.0_TS.4.0",
+      "developerName": "FilzaCracked_4.0.0_TS x CyPwn",
+      "version": "4.0",
+      "versionDate": "2022-12-23",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/FilzaCracked_4.0.0_TS.ipa",
+      "localizedDescription": "Filza File Manager cracked by paisseon, powerful File Manager for iPhone, iPad, iPod Touch",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/FilzaCracked_4.0.0_TS.png",
+      "tintColor": "FFC300",
+      "size": 13631488,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Appabetical-0.9_TS",
+      "bundleIdentifier": "cypwn.Appabetical-0.9_TS.0.9",
+      "developerName": "Appabetical-0.9_TS x CyPwn",
+      "version": "0.9",
+      "versionDate": "2022-12-16",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Appabetical-0.9_TS.ipa",
+      "localizedDescription": "Sort your apps A to Z or by color.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Appabetical-0.9_TS.png",
+      "tintColor": "FFC300",
+      "size": 409,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "NewTerm3_for_Xina_TS",
+      "bundleIdentifier": "cypwn.NewTerm3_for_Xina_TS.3.0b1",
+      "developerName": "NewTerm3_for_Xina_TS x CyPwn",
+      "version": "3.0b1",
+      "versionDate": "2022-12-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NewTerm3_for_Xina_TS.ipa",
+      "localizedDescription": "NewTerm3 Terminal. For XinaA15 jailbreaks only.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NewTerm3_for_Xina_TS.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "TweakSettings_for_Xina_TS",
+      "bundleIdentifier": "cypwn.TweakSettings_for_Xina_TS.1.0.6",
+      "developerName": "TweakSettings_for_Xina_TS x CyPwn",
+      "version": "1.0.6",
+      "versionDate": "2022-12-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TweakSettings_for_Xina_TS.ipa",
+      "localizedDescription": "TweakSettings app. For XinaA15 jailbreaks only. ",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TweakSettings_for_Xina_TS.png",
+      "tintColor": "FFC300",
+      "size": 3145728,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "TrollTools_TS",
+      "bundleIdentifier": "cypwn.TrollTools_TS.2.2",
+      "developerName": "TrollTools_TS x CyPwn",
+      "version": "2.2",
+      "versionDate": "2022-12-01",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollTools_TS.ipa",
+      "localizedDescription": "v2.2 beta 4 - iOS 15 only. Icon themes, Badge themes, Passcode themes.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollTools_TS.png",
+      "tintColor": "FFC300",
+      "size": 3145728,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Filza-NoURL_3.9.8_TS",
+      "bundleIdentifier": "cypwn.Filza-NoURL_3.9.8_TS.3.9",
+      "developerName": "Filza-NoURL_3.9.8_TS x CyPwn",
+      "version": "3.9",
+      "versionDate": "2022-11-30",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Filza-NoURL_3.9.8_TS.ipa",
+      "localizedDescription": "Filza File Manager (no URL scheme filza://) v3.9.8 - Fully Activated crack by Paisseon. Root level access to /var. Terminal supports Fish shell.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Filza-NoURL_3.9.8_TS.png",
+      "tintColor": "FFC300",
+      "size": 14680064,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "NovusPhone_36-b1_arm64e_TS",
+      "bundleIdentifier": "cypwn.NovusPhone_36-b1_arm64e_TS.36",
+      "developerName": "NovusPhone_36-b1_arm64e_TS x CyPwn",
+      "version": "36",
+      "versionDate": "2022-11-30",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NovusPhone_36-b1_arm64e_TS.ipa",
+      "localizedDescription": "Novus is a completely redesigned Phone app tweak, bringing a more unified design compared to the stock app. ARM64e ONLY (iPhone XS and up) on 14.X - 15.X TrollStore.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NovusPhone_36-b1_arm64e_TS.png",
+      "tintColor": "FFC300",
+      "size": 4194304,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "NovusPhone_36-b1_arm64_TS",
+      "bundleIdentifier": "cypwn.NovusPhone_36-b1_arm64_TS.36",
+      "developerName": "NovusPhone_36-b1_arm64_TS x CyPwn",
+      "version": "36",
+      "versionDate": "2022-11-30",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NovusPhone_36-b1_arm64_TS.ipa",
+      "localizedDescription": "Novus is a completely redesigned Phone app tweak, bringing a more unified design compared to the stock app. ARM64 ONLY (iPhone X and lower) on 14.X - 15.X TrollStore.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NovusPhone_36-b1_arm64_TS.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "AirTroller-1.1.1_TS",
+      "bundleIdentifier": "cypwn.AirTroller-1.1.1_TS.1.1.1",
+      "developerName": "AirTroller-1.1.1_TS x CyPwn",
+      "version": "1.1.1",
+      "versionDate": "2022-11-28",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AirTroller-1.1.1_TS.ipa",
+      "localizedDescription": "AirDrop spammer | flooder to troll friends.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AirTroller-1.1.1_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/AirTroller-1.1.1_TS/AirTroller-1.1.1_TS-0.png"
+      ]
+    },
+    {
+      "name": "BackupAZ4_Crack_TS",
+      "bundleIdentifier": "cypwn.BackupAZ4_Crack_TS.1.3.1",
+      "developerName": "BackupAZ4_Crack_TS x CyPwn",
+      "version": "1.3.1",
+      "versionDate": "2022-11-26",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/BackupAZ4_Crack_TS.ipa",
+      "localizedDescription": "BackupAZ4 - this may be useful for a select few with TS and jailbroken. Cracked by Anna",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/BackupAZ4_Crack_TS.png",
+      "tintColor": "FFC300",
+      "size": 12582912,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "FineReaderPDFPro_15.5.2_TS",
+      "bundleIdentifier": "cypwn.FineReaderPDFPro_15.5.2_TS.15.5.2",
+      "developerName": "FineReaderPDFPro_15.5.2_TS x CyPwn",
+      "version": "15.5.2",
+      "versionDate": "2022-11-22",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/FineReaderPDFPro_15.5.2_TS.ipa",
+      "localizedDescription": "FineReader PDF Pro",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/FineReaderPDFPro_15.5.2_TS.png",
+      "tintColor": "FFC300",
+      "size": 63963136,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "CarrotUltra_TS",
+      "bundleIdentifier": "cypwn.CarrotUltra_TS.5.8.1",
+      "developerName": "CarrotUltra_TS x CyPwn",
+      "version": "5.8.1",
+      "versionDate": "2022-11-19",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CarrotUltra_TS.ipa",
+      "localizedDescription": "Carrot Weather 5.8.1 with Ultra unlocked",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CarrotUltra_TS.png",
+      "tintColor": "FFC300",
+      "size": 38797312,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "PandolifeApp_TS",
+      "bundleIdentifier": "cypwn.PandolifeApp_TS.1.6",
+      "developerName": "PandolifeApp_TS x CyPwn",
+      "version": "1.6",
+      "versionDate": "2022-11-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/PandolifeApp_TS.ipa",
+      "localizedDescription": "Pandolife App v1.6 - This should only be installed if you have Pandora with Pandolife tweak injected. This add-on is a separate app to play and manage the downloaded music and other pandolife settings. By Julio Verne.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/PandolifeApp_TS.png",
+      "tintColor": "FFC300",
+      "size": 5242880,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Pandolife_TS",
+      "bundleIdentifier": "cypwn.Pandolife_TS.2211.1",
+      "developerName": "Pandolife_TS x CyPwn",
+      "version": "2211.1",
+      "versionDate": "2022-11-16",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Pandolife_TS.ipa",
+      "localizedDescription": "Pandora v2211.1 with Pandolife 1.1a tweak. For complete Pandolife experience, you should also install the PandolifeApp v1.6 standalone app. By Julio Verne.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Pandolife_TS.png",
+      "tintColor": "FFC300",
+      "size": 83886080,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Santander_TS",
+      "bundleIdentifier": "cypwn.Santander_TS.1.0",
+      "developerName": "Santander_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-14",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Santander_TS.ipa",
+      "localizedDescription": "v1.0 - Modern file manager.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Santander_TS.png",
+      "tintColor": "FFC300",
+      "size": 4194304,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "TrollNonce_TS",
+      "bundleIdentifier": "cypwn.TrollNonce_TS.1.1.2",
+      "developerName": "TrollNonce_TS x CyPwn",
+      "version": "1.1.2",
+      "versionDate": "2022-11-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollNonce_TS.ipa",
+      "localizedDescription": "v1.1.2 - Nonce Setter for 15.0 - 15.1.1 (A10-A15) and 15.2-15.5b4 (A12+, not all device / version combinations supported atm), only works when installed through TrollStore 1.0.9 or newer.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollNonce_TS.png",
+      "tintColor": "FFC300",
+      "size": 247,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Kodi_TS",
+      "bundleIdentifier": "cypwn.Kodi_TS.18.9",
+      "developerName": "Kodi_TS x CyPwn",
+      "version": "18.9",
+      "versionDate": "2022-11-11",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Kodi_TS.ipa",
+      "localizedDescription": "Kodi 18.9 - currently this is the latest version that works on TS due to a switch from python2 to python3 in 19.X ",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Kodi_TS.png",
+      "tintColor": "FFC300",
+      "size": 92274688,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Mugunghwa_TS",
+      "bundleIdentifier": "cypwn.Mugunghwa_TS.3.0.2",
+      "developerName": "Mugunghwa_TS x CyPwn",
+      "version": "3.0.2",
+      "versionDate": "2022-11-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Mugunghwa_TS.ipa",
+      "localizedDescription": "v3.0.2 - Badge Color Changer. Home Gesture. True icon theming (non webclip).",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Mugunghwa_TS.png",
+      "tintColor": "FFC300",
+      "size": 3145728,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Mugunghwa_TS/Mugunghwa_TS.ipa595.png"
+      ]
+    },
+    {
+      "name": "NetworkManager1.1-2_TS",
+      "bundleIdentifier": "cypwn.NetworkManager1.1-2_TS.1.1-2",
+      "developerName": "NetworkManager1.1-2_TS x CyPwn",
+      "version": "1.1-2",
+      "versionDate": "2022-11-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NetworkManager1.1-2_TS.ipa",
+      "localizedDescription": "Control Network access on an app-by-app basis.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NetworkManager1.1-2_TS.png",
+      "tintColor": "FFC300",
+      "size": 376,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "TrollSign_TS",
+      "bundleIdentifier": "cypwn.TrollSign_TS.1.0",
+      "developerName": "TrollSign_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-06",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollSign_TS.ipa",
+      "localizedDescription": "v1.0 - Modify app entitlements.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollSign_TS.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "LocSim1.3.7_TS",
+      "bundleIdentifier": "cypwn.LocSim1.3.7_TS.1.3.7",
+      "developerName": "LocSim1.3.7_TS x CyPwn",
+      "version": "1.3.7",
+      "versionDate": "2022-11-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/LocSim1.3.7_TS.ipa",
+      "localizedDescription": "LocationSimulation v1.3.7 - Spoof your GPS location. Also includes other useful tools. Cracked by Anna! Latest crack allows for offline use and disables forced updates. *updated 11/4/2022*",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/LocSim1.3.7_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Unc0verLauncher_TS",
+      "bundleIdentifier": "cypwn.Unc0verLauncher_TS.1.0.1",
+      "developerName": "Unc0verLauncher_TS x CyPwn",
+      "version": "1.0.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Unc0verLauncher_TS.ipa",
+      "localizedDescription": "u0Launcher v1.0.1 - Fixes u0 step 18-19 codesign error. Requires Unc0ver to also be installed through TrollStore. When jailbreaking, start this u0Launcher app instead of unc0ver, it will do the necessary fix and then jump to unc0ver. Then you can press the \"Jailbreak\" button in the unc0ver app and it will work.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Unc0verLauncher_TS.png",
+      "tintColor": "FFC300",
+      "size": 545,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "CamScannerGold_TS",
+      "bundleIdentifier": "cypwn.CamScannerGold_TS.6.27.0",
+      "developerName": "CamScannerGold_TS x CyPwn",
+      "version": "6.27.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CamScannerGold_TS.ipa",
+      "localizedDescription": "CamScanner v6.27.0 Gold membership cracked by Sopranox.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CamScannerGold_TS.png",
+      "tintColor": "FFC300",
+      "size": 81788928,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "SwiftKey_TS",
+      "bundleIdentifier": "cypwn.SwiftKey_TS.2.9.2",
+      "developerName": "SwiftKey_TS x CyPwn",
+      "version": "2.9.2",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SwiftKey_TS.ipa",
+      "localizedDescription": "Microsoft SwiftKey Keyboard v2.9.2 - Deprecated by Microsoft for iOS and removed from AppStore. This can still be used with TrollStore by switching it to a \"User\" app within TrollStore.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/SwiftKey_TS.png",
+      "tintColor": "FFC300",
+      "size": 79691776,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "DowngradeApp_TS",
+      "bundleIdentifier": "cypwn.DowngradeApp_TS.1.1-7",
+      "developerName": "DowngradeApp_TS x CyPwn",
+      "version": "1.1-7",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DowngradeApp_TS.ipa",
+      "localizedDescription": "v1.1-7 - Downgrade apps with ease, similar to AppStore++.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/DowngradeApp_TS.png",
+      "tintColor": "FFC300",
+      "size": 532,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "NiceBattery_TS",
+      "bundleIdentifier": "cypwn.NiceBattery_TS.1.0",
+      "developerName": "NiceBattery_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NiceBattery_TS.ipa",
+      "localizedDescription": "NiceBattery. The nicest.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NiceBattery_TS.png",
+      "tintColor": "FFC300",
+      "size": 460,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "WP-Maker_TS",
+      "bundleIdentifier": "cypwn.WP-Maker_TS.1.0",
+      "developerName": "WP-Maker_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WP-Maker_TS.ipa",
+      "localizedDescription": "Make Light & Dark wallpapers for WP-Loader.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/WP-Maker_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "WP-Loader_TS",
+      "bundleIdentifier": "cypwn.WP-Loader_TS.1.0",
+      "developerName": "WP-Loader_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WP-Loader_TS.ipa",
+      "localizedDescription": "Load wallpapers created from WP-Maker.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/WP-Loader_TS.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "ControlCenter++_TS",
+      "bundleIdentifier": "cypwn.ControlCenter++_TS.1.0",
+      "developerName": "ControlCenter++_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ControlCenter++_TS.ipa",
+      "localizedDescription": "Rearrange all Control Center modules.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ControlCenter++_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "BatteryLife_TS",
+      "bundleIdentifier": "cypwn.BatteryLife_TS.3.2.1",
+      "developerName": "BatteryLife_TS x CyPwn",
+      "version": "3.2.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/BatteryLife_TS.ipa",
+      "localizedDescription": "Advanced battery health, info, and statistics.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/BatteryLife_TS.png",
+      "tintColor": "FFC300",
+      "size": 39845888,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "AppInstalleriOS_TS",
+      "bundleIdentifier": "cypwn.AppInstalleriOS_TS.6.0.0",
+      "developerName": "AppInstalleriOS_TS x CyPwn",
+      "version": "6.0.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppInstalleriOS_TS.ipa",
+      "localizedDescription": "Random app installer with some cool features.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppInstalleriOS_TS.png",
+      "tintColor": "FFC300",
+      "size": 10485760,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Zebra_TS",
+      "bundleIdentifier": "cypwn.Zebra_TS.1.1.28",
+      "developerName": "Zebra_TS x CyPwn",
+      "version": "1.1.28",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Zebra_TS.ipa",
+      "localizedDescription": "Zebra package manager.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Zebra_TS.png",
+      "tintColor": "FFC300",
+      "size": 9437184,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "YouTuber_TS",
+      "bundleIdentifier": "cypwn.YouTuber_TS.3.6",
+      "developerName": "YouTuber_TS x CyPwn",
+      "version": "3.6",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/YouTuber_TS.ipa",
+      "localizedDescription": "YouTuber v3.6 - Download YouTube videos and Convert to Audio or Ringtone files.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/YouTuber_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "WiFiScanner_TS",
+      "bundleIdentifier": "cypwn.WiFiScanner_TS.1.0",
+      "developerName": "WiFiScanner_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WiFiScanner_TS.ipa",
+      "localizedDescription": "Wifi scanner. Scans WiFi.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/WiFiScanner_TS.png",
+      "tintColor": "FFC300",
+      "size": 348,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "WifiList_TS",
+      "bundleIdentifier": "cypwn.WifiList_TS.1.0",
+      "developerName": "WifiList_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WifiList_TS.ipa",
+      "localizedDescription": "View and share Wifi passwords.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/WifiList_TS.png",
+      "tintColor": "FFC300",
+      "size": 906,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "WiFiFoFumPro_TS",
+      "bundleIdentifier": "cypwn.WiFiFoFumPro_TS.1.1.1",
+      "developerName": "WiFiFoFumPro_TS x CyPwn",
+      "version": "1.1.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WiFiFoFumPro_TS.ipa",
+      "localizedDescription": "Wifi scanner. This Pro version includes advanced logging tools, with a live surveying map view that plots access points.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/WiFiFoFumPro_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "WallpaperSetter_TS",
+      "bundleIdentifier": "cypwn.WallpaperSetter_TS.1.0.1",
+      "developerName": "WallpaperSetter_TS x CyPwn",
+      "version": "1.0.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WallpaperSetter_TS.ipa",
+      "localizedDescription": "Set Light Mode & Dark Mode wallpapers.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/WallpaperSetter_TS.png",
+      "tintColor": "FFC300",
+      "size": 143,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Unc0ver_TS",
+      "bundleIdentifier": "cypwn.Unc0ver_TS.8.0.2",
+      "developerName": "Unc0ver_TS x CyPwn",
+      "version": "8.0.2",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Unc0ver_TS.ipa",
+      "localizedDescription": "unc0ver 8.0.2 for TrollStore. Use with u0Launcher to launch this patched version and jailbreak successfully.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Unc0ver_TS.png",
+      "tintColor": "FFC300",
+      "size": 53477376,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "TSstore_TS",
+      "bundleIdentifier": "cypwn.TSstore_TS.3.0.1",
+      "developerName": "TSstore_TS x CyPwn",
+      "version": "3.0.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TSstore_TS.ipa",
+      "localizedDescription": "App Store for downloading TrollStore compatible apps.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TSstore_TS.png",
+      "tintColor": "FFC300",
+      "size": 8388608,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "TotPocket_TS",
+      "bundleIdentifier": "cypwn.TotPocket_TS.1.2.1",
+      "developerName": "TotPocket_TS x CyPwn",
+      "version": "1.2.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TotPocket_TS.ipa",
+      "localizedDescription": "Your tiny text companion.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TotPocket_TS.png",
+      "tintColor": "FFC300",
+      "size": 3145728,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "TheosTips_TS",
+      "bundleIdentifier": "cypwn.TheosTips_TS.1.0",
+      "developerName": "TheosTips_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TheosTips_TS.ipa",
+      "localizedDescription": "Learn how to make tweaks with ease.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TheosTips_TS.png",
+      "tintColor": "FFC300",
+      "size": 8388608,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Textastic_TS",
+      "bundleIdentifier": "cypwn.Textastic_TS.9.8.7",
+      "developerName": "Textastic_TS x CyPwn",
+      "version": "9.8.7",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Textastic_TS.ipa",
+      "localizedDescription": "Text editor, Coding, SFTP Client, SSH.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Textastic_TS.png",
+      "tintColor": "FFC300",
+      "size": 20971520,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Supervise_TS",
+      "bundleIdentifier": "cypwn.Supervise_TS.1.0",
+      "developerName": "Supervise_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Supervise_TS.ipa",
+      "localizedDescription": "Supervise your device.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Supervise_TS.png",
+      "tintColor": "FFC300",
+      "size": 290,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Serial_TS",
+      "bundleIdentifier": "cypwn.Serial_TS.1.0.3",
+      "developerName": "Serial_TS x CyPwn",
+      "version": "1.0.3",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Serial_TS.ipa",
+      "localizedDescription": "Find information on most Apple devices by serial number.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Serial_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "ScreenshotX_TS",
+      "bundleIdentifier": "cypwn.ScreenshotX_TS.1.0",
+      "developerName": "ScreenshotX_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ScreenshotX_TS.ipa",
+      "localizedDescription": "Frame and mock-up iPhone screenshots.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ScreenshotX_TS.png",
+      "tintColor": "FFC300",
+      "size": 616,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Scarlet_TS",
+      "bundleIdentifier": "cypwn.Scarlet_TS.1.0",
+      "developerName": "Scarlet_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Scarlet_TS.ipa",
+      "localizedDescription": "3rd party app installer and true repo manager.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Scarlet_TS.png",
+      "tintColor": "FFC300",
+      "size": 12582912,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "RingTonesManager_TS",
+      "bundleIdentifier": "cypwn.RingTonesManager_TS.1.1-2",
+      "developerName": "RingTonesManager_TS x CyPwn",
+      "version": "1.1-2",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/RingTonesManager_TS.ipa",
+      "localizedDescription": "RingTonesManager v1.1-2 by Netskao. Import ringtones into stock Ringtones settings.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/RingTonesManager_TS.png",
+      "tintColor": "FFC300",
+      "size": 6291456,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "ResolutionSetter_TS",
+      "bundleIdentifier": "cypwn.ResolutionSetter_TS.1.0",
+      "developerName": "ResolutionSetter_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ResolutionSetter_TS.ipa",
+      "localizedDescription": "Change your display resolution. v1.0 by Haoict.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ResolutionSetter_TS.png",
+      "tintColor": "FFC300",
+      "size": 309,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "RedDot_TS",
+      "bundleIdentifier": "cypwn.RedDot_TS.0.1",
+      "developerName": "RedDot_TS x CyPwn",
+      "version": "0.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/RedDot_TS.ipa",
+      "localizedDescription": "Change notification badge colors.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/RedDot_TS.png",
+      "tintColor": "FFC300",
+      "size": 713,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "PostBox-Pocket_TS",
+      "bundleIdentifier": "cypwn.PostBox-Pocket_TS.0.8.1",
+      "developerName": "PostBox-Pocket_TS x CyPwn",
+      "version": "0.8.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/PostBox-Pocket_TS.ipa",
+      "localizedDescription": "v0.8.1-7. AppStore release! Search cydia repos and download deb files. Extract themes for jailed device theming. Not used for installing debs.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/PostBox-Pocket_TS.png",
+      "tintColor": "FFC300",
+      "size": 5242880,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "PostBox_TS",
+      "bundleIdentifier": "cypwn.PostBox_TS.0.8.1",
+      "developerName": "PostBox_TS x CyPwn",
+      "version": "0.8.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/PostBox_TS.ipa",
+      "localizedDescription": "v0.8.1-beta. Search cydia repos and download deb files. Not used for installing debs.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/PostBox_TS.png",
+      "tintColor": "FFC300",
+      "size": 8388608,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "NetflixChecker_TS",
+      "bundleIdentifier": "cypwn.NetflixChecker_TS.0.3",
+      "developerName": "NetflixChecker_TS x CyPwn",
+      "version": "0.3",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NetflixChecker_TS.ipa",
+      "localizedDescription": "Netflix account checker by Julio Verne.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NetflixChecker_TS.png",
+      "tintColor": "FFC300",
+      "size": 58,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "MyFitnessPal_TS",
+      "bundleIdentifier": "cypwn.MyFitnessPal_TS.22.20.0",
+      "developerName": "MyFitnessPal_TS x CyPwn",
+      "version": "22.20.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/MyFitnessPal_TS.ipa",
+      "localizedDescription": "v22.20.0 Premium Unlocked by Platinmods",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/MyFitnessPal_TS.png",
+      "tintColor": "FFC300",
+      "size": 66060288,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "MobileTSS_TS",
+      "bundleIdentifier": "cypwn.MobileTSS_TS.2.0.1",
+      "developerName": "MobileTSS_TS x CyPwn",
+      "version": "2.0.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/MobileTSS_TS.ipa",
+      "localizedDescription": "iOS app to check signing status of firmwares from Apple server and save SHSH blobs locally.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/MobileTSS_TS.png",
+      "tintColor": "FFC300",
+      "size": 809,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Jaility_TS",
+      "bundleIdentifier": "cypwn.Jaility_TS.3.1",
+      "developerName": "Jaility_TS x CyPwn",
+      "version": "3.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Jaility_TS.ipa",
+      "localizedDescription": "Jaility v3.1 - Respring, Supervise your device, Add CC modules, & Theme store with webclip icon theming. *Swift rewrite! Now supports all devices and both iOS 14 & 15*",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Jaility_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "ITheosMaker_TS",
+      "bundleIdentifier": "cypwn.ITheosMaker_TS.1.0",
+      "developerName": "ITheosMaker_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ITheosMaker_TS.ipa",
+      "localizedDescription": "App to help you to create manage and build Theos projects with more than 10+ features.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ITheosMaker_TS.png",
+      "tintColor": "FFC300",
+      "size": 1048576,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "IPSW_TS",
+      "bundleIdentifier": "cypwn.IPSW_TS.1.0",
+      "developerName": "IPSW_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/IPSW_TS.ipa",
+      "localizedDescription": "Check signed/unsigned iOS statuses.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/IPSW_TS.png",
+      "tintColor": "FFC300",
+      "size": 5242880,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "InstaSpring_TS",
+      "bundleIdentifier": "cypwn.InstaSpring_TS.1.0",
+      "developerName": "InstaSpring_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/InstaSpring_TS.ipa",
+      "localizedDescription": "InstaSpring 1.0 - Respring instantly by tapping the app icon.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/InstaSpring_TS.png",
+      "tintColor": "FFC300",
+      "size": 214,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "IMemScan_TS",
+      "bundleIdentifier": "cypwn.IMemScan_TS.1.2.6",
+      "developerName": "IMemScan_TS x CyPwn",
+      "version": "1.2.6",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/IMemScan_TS.ipa",
+      "localizedDescription": "Application memory editor.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/IMemScan_TS.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "IGameGod_TS",
+      "bundleIdentifier": "cypwn.IGameGod_TS.1.0",
+      "developerName": "IGameGod_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/IGameGod_TS.ipa",
+      "localizedDescription": "Be the god of your games. Not fully functioning yet.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/IGameGod_TS.png",
+      "tintColor": "FFC300",
+      "size": 69206016,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "HarpyReloaded_TS",
+      "bundleIdentifier": "cypwn.HarpyReloaded_TS.1.0.1",
+      "developerName": "HarpyReloaded_TS x CyPwn",
+      "version": "1.0.1",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/HarpyReloaded_TS.ipa",
+      "localizedDescription": "Application to manage your local network.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/HarpyReloaded_TS.png",
+      "tintColor": "FFC300",
+      "size": 4194304,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Fugu15_TS",
+      "bundleIdentifier": "cypwn.Fugu15_TS.1.0",
+      "developerName": "Fugu15_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Fugu15_TS.ipa",
+      "localizedDescription": "Fugu15 v0.0.1 by Linus Henze. https://github.com/pinauten/Fugu15",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Fugu15_TS.png",
+      "tintColor": "FFC300",
+      "size": 34603008,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "DynaWall_TS",
+      "bundleIdentifier": "cypwn.DynaWall_TS.4.0",
+      "developerName": "DynaWall_TS x CyPwn",
+      "version": "4.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DynaWall_TS.ipa",
+      "localizedDescription": "Dynamic and Live Wallpaper Generator.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/DynaWall_TS.png",
+      "tintColor": "FFC300",
+      "size": 5242880,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Delta_TS",
+      "bundleIdentifier": "cypwn.Delta_TS.1.3",
+      "developerName": "Delta_TS x CyPwn",
+      "version": "1.3",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Delta_TS.ipa",
+      "localizedDescription": "Nintendo DS emulator.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Delta_TS.png",
+      "tintColor": "FFC300",
+      "size": 18874368,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "DebToIPA_TS",
+      "bundleIdentifier": "cypwn.DebToIPA_TS.1.0.2",
+      "developerName": "DebToIPA_TS x CyPwn",
+      "version": "1.0.2",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DebToIPA_TS.ipa",
+      "localizedDescription": "v1.0.2 - Convert debs to ipas for TrollStore. Only for debs containing Applications.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/DebToIPA_TS.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "CocoaTop_TS",
+      "bundleIdentifier": "cypwn.CocoaTop_TS.1.0",
+      "developerName": "CocoaTop_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CocoaTop_TS.ipa",
+      "localizedDescription": "GUI Process Viewer.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CocoaTop_TS.png",
+      "tintColor": "FFC300",
+      "size": 325,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Clip_TS",
+      "bundleIdentifier": "cypwn.Clip_TS.1.0",
+      "developerName": "Clip_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Clip_TS.ipa",
+      "localizedDescription": "Clipboard Manager for iOS.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Clip_TS.png",
+      "tintColor": "FFC300",
+      "size": 412,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "ClassicPlayer_TS",
+      "bundleIdentifier": "cypwn.ClassicPlayer_TS.1.0.3",
+      "developerName": "ClassicPlayer_TS x CyPwn",
+      "version": "1.0.3",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ClassicPlayer_TS.ipa",
+      "localizedDescription": "ClassicPlayer v1.0.2 - The Nostalgic Click Wheel iPod Simulator for iOS.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ClassicPlayer_TS.png",
+      "tintColor": "FFC300",
+      "size": 57671680,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Cardio_TS",
+      "bundleIdentifier": "cypwn.Cardio_TS.1.0",
+      "developerName": "Cardio_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Cardio_TS.ipa",
+      "localizedDescription": "Cardio v1.1 - Customize Apple Pay cards in Wallet.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Cardio_TS.png",
+      "tintColor": "FFC300",
+      "size": 119,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Bundlr_TS",
+      "bundleIdentifier": "cypwn.Bundlr_TS.1.0",
+      "developerName": "Bundlr_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Bundlr_TS.ipa",
+      "localizedDescription": "Easily search App Bundle IDs and copy them to clipboard.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Bundlr_TS.png",
+      "tintColor": "FFC300",
+      "size": 221,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "BIDFetcher_TS",
+      "bundleIdentifier": "cypwn.BIDFetcher_TS.1.0",
+      "developerName": "BIDFetcher_TS x CyPwn",
+      "version": "1.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/BIDFetcher_TS.ipa",
+      "localizedDescription": "Download any app icons from AppStore by searching the bundle ID. Use with Bundlr to find the Bundle ID.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/BIDFetcher_TS.png",
+      "tintColor": "FFC300",
+      "size": 109,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "AuroraPWmanager_TS",
+      "bundleIdentifier": "cypwn.AuroraPWmanager_TS.0.9.2",
+      "developerName": "AuroraPWmanager_TS x CyPwn",
+      "version": "0.9.2",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AuroraPWmanager_TS.ipa",
+      "localizedDescription": "Aurora v0.9.2 - A vanilla password manager made in SwiftUI.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AuroraPWmanager_TS.png",
+      "tintColor": "FFC300",
+      "size": 764,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "AppStore++_TS",
+      "bundleIdentifier": "cypwn.AppStore++_TS.1.0.3",
+      "developerName": "AppStore++_TS x CyPwn",
+      "version": "1.0.3",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppStore++_TS.ipa",
+      "localizedDescription": "v1.0.3-2 - Downgrade apps with ease.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppStore++_TS.png",
+      "tintColor": "FFC300",
+      "size": 16777216,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "AppCake7_TS",
+      "bundleIdentifier": "cypwn.AppCake7_TS.7.2.2",
+      "developerName": "AppCake7_TS x CyPwn",
+      "version": "7.2.2",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppCake7_TS.ipa",
+      "localizedDescription": "IPA store. More modern UI than AppCake6 but less search results. No Ads.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppCake7_TS.png",
+      "tintColor": "FFC300",
+      "size": 16777216,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "AppCake6_TS",
+      "bundleIdentifier": "cypwn.AppCake6_TS.6.1.3",
+      "developerName": "AppCake6_TS x CyPwn",
+      "version": "6.1.3",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppCake6_TS.ipa",
+      "localizedDescription": "IPA store. More search results than AppCake7 but older UI.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppCake6_TS.png",
+      "tintColor": "FFC300",
+      "size": 19922944,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "Aphrodite_TS",
+      "bundleIdentifier": "cypwn.Aphrodite_TS.0.6.12",
+      "developerName": "Aphrodite_TS x CyPwn",
+      "version": "0.6.12",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Aphrodite_TS.ipa",
+      "localizedDescription": "Asset Catalog Editor.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Aphrodite_TS.png",
+      "tintColor": "FFC300",
+      "size": 2097152,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    },
+    {
+      "name": "AdGuardPro_TS",
+      "bundleIdentifier": "cypwn.AdGuardPro_TS.4.4.0",
+      "developerName": "AdGuardPro_TS x CyPwn",
+      "version": "4.4.0",
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AdGuardPro_TS.ipa",
+      "localizedDescription": "AdGuard Pro with all Pro features, except the DNS feature, unlocked.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/AdGuardPro_TS.png",
+      "tintColor": "FFC300",
+      "size": 29360128,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Battman, Ver: 1.0 now available!",
+      "identifier": "cypwn.Battman.1.0",
+      "caption": "Battman added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Battman.png",
+      "date": "2025-10-02",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollVNC_2.4, Ver: 2.4 now available!",
+      "identifier": "cypwn.TrollVNC_2.4.2.4",
+      "caption": "TrollVNC_2.4 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_2.4.png",
+      "date": "2025-09-13",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "CopyLog_1.7, Ver: 1.7 now available!",
+      "identifier": "cypwn.CopyLog_1.7.1.7",
+      "caption": "CopyLog_1.7 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CopyLog_1.7.png",
+      "date": "2025-07-17",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AmethystTS_1.0, Ver: 1.0 now available!",
+      "identifier": "cypwn.AmethystTS_1.0.1.0",
+      "caption": "AmethystTS_1.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AmethystTS_1.0.png",
+      "date": "2025-07-14",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Animation_Speed_1.0.1, Ver: 1.0.1 now available!",
+      "identifier": "cypwn.Animation_Speed_1.0.1.1.0.1",
+      "caption": "Animation_Speed_1.0.1 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Animation_Speed_1.0.1.png",
+      "date": "2025-07-13",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ImmortalizerTS.1.0b, Ver: 1.0 now available!",
+      "identifier": "cypwn.ImmortalizerTS.1.0b.1.0",
+      "caption": "ImmortalizerTS.1.0b added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ImmortalizerTS.1.0b.png",
+      "date": "2025-07-09",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "SpeedGG_3.3_Eng, Ver: 3.3 now available!",
+      "identifier": "cypwn.SpeedGG_3.3_Eng.3.3",
+      "caption": "SpeedGG_3.3_Eng added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/SpeedGG_3.3_Eng.png",
+      "date": "2025-07-08",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ChargeLimiter_1.7, Ver: 1.7 now available!",
+      "identifier": "cypwn.ChargeLimiter_1.7.1.7",
+      "caption": "ChargeLimiter_1.7 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ChargeLimiter_1.7.png",
+      "date": "2025-06-15",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Apps_Manager_1.8.4_Cracked, Ver: 1.8 now available!",
+      "identifier": "cypwn.Apps_Manager_1.8.4_Cracked.1.8",
+      "caption": "Apps_Manager_1.8.4_Cracked added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Apps_Manager_1.8.4_Cracked.png",
+      "date": "2025-06-07",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollOpen_2.1_FreeVersion, Ver: 2.1 now available!",
+      "identifier": "cypwn.TrollOpen_2.1_FreeVersion.2.1",
+      "caption": "TrollOpen_2.1_FreeVersion added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollOpen_2.1_FreeVersion.png",
+      "date": "2025-06-06",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Geranium_1.1.3, Ver: 1.1.3 now available!",
+      "identifier": "cypwn.Geranium_1.1.3.1.1.3",
+      "caption": "Geranium_1.1.3 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Geranium_1.1.3.png",
+      "date": "2025-05-31",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollBackgrounder_1.5, Ver: 1.5 now available!",
+      "identifier": "cypwn.TrollBackgrounder_1.5.1.5",
+      "caption": "TrollBackgrounder_1.5 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollBackgrounder_1.5.png",
+      "date": "2025-05-17",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Battery_Info_1.2.0, Ver: 1.2.0 now available!",
+      "identifier": "cypwn.Battery_Info_1.2.0.1.2.0",
+      "caption": "Battery_Info_1.2.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Battery_Info_1.2.0.png",
+      "date": "2025-05-17",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppsDump3_4.0.9, Ver: 4.0.9 now available!",
+      "identifier": "cypwn.AppsDump3_4.0.9.4.0.9",
+      "caption": "AppsDump3_4.0.9 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppsDump3_4.0.9.png",
+      "date": "2025-05-09",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TheBall_2.7, Ver: 2.7 now available!",
+      "identifier": "cypwn.TheBall_2.7.2.7",
+      "caption": "TheBall_2.7 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TheBall_2.7.png",
+      "date": "2025-04-28",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollFools_3.7-42, Ver: 3.7 now available!",
+      "identifier": "cypwn.TrollFools_3.7-42.3.7",
+      "caption": "TrollFools_3.7-42 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_3.7-42.png",
+      "date": "2025-04-24",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TheBall_2.5, Ver: 2.5 now available!",
+      "identifier": "cypwn.TheBall_2.5.2.5",
+      "caption": "TheBall_2.5 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TheBall_2.5.png",
+      "date": "2025-04-23",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppsDump3_4.0.6, Ver: 4.0.6 now available!",
+      "identifier": "cypwn.AppsDump3_4.0.6.4.0.6",
+      "caption": "AppsDump3_4.0.6 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppsDump3_4.0.6.png",
+      "date": "2025-04-13",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppsDump3_4.0.5, Ver: 4.0.5 now available!",
+      "identifier": "cypwn.AppsDump3_4.0.5.4.0.5",
+      "caption": "AppsDump3_4.0.5 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppsDump3_4.0.5.png",
+      "date": "2025-04-09",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Reveil_2_0_6, Ver: 2.0 now available!",
+      "identifier": "cypwn.Reveil_2_0_6.2.0",
+      "caption": "Reveil_2_0_6 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Reveil_2_0_6.png",
+      "date": "2025-03-11",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "BatteryInfo_1.1.8, Ver: 1.1.8 now available!",
+      "identifier": "cypwn.BatteryInfo_1.1.8.1.1.8",
+      "caption": "BatteryInfo_1.1.8 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/BatteryInfo_1.1.8.png",
+      "date": "2025-03-09",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollFools_3.2-32, Ver: 3.2 now available!",
+      "identifier": "cypwn.TrollFools_3.2-32.3.2",
+      "caption": "TrollFools_3.2-32 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_3.2-32.png",
+      "date": "2025-03-09",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "BatteryInfo_1.1.6, Ver: 1.1.6 now available!",
+      "identifier": "cypwn.BatteryInfo_1.1.6.1.1.6",
+      "caption": "BatteryInfo_1.1.6 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/BatteryInfo_1.1.6.png",
+      "date": "2025-02-23",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AnimationSpeed_1.0, Ver: 1.0 now available!",
+      "identifier": "cypwn.AnimationSpeed_1.0.1.0",
+      "caption": "AnimationSpeed_1.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AnimationSpeed_1.0.png",
+      "date": "2025-02-16",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollFools_2.11-28_huamidev, Ver: 2.11 now available!",
+      "identifier": "cypwn.TrollFools_2.11-28_huamidev.2.11",
+      "caption": "TrollFools_2.11-28_huamidev added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_2.11-28_huamidev.png",
+      "date": "2025-02-15",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "SF_Symbols_51.2, Ver: 51.2 now available!",
+      "identifier": "cypwn.SF_Symbols_51.2.51.2",
+      "caption": "SF_Symbols_51.2 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/SF_Symbols_51.2.png",
+      "date": "2025-02-10",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ClearResidue_1.0, Ver: 1.0 now available!",
+      "identifier": "cypwn.ClearResidue_1.0.1.0",
+      "caption": "ClearResidue_1.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ClearResidue_1.0.png",
+      "date": "2025-01-20",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "DumpDecrypter_1.4-8, Ver: 1.4-8 now available!",
+      "identifier": "cypwn.DumpDecrypter_1.4-8.1.4-8",
+      "caption": "DumpDecrypter_1.4-8 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/DumpDecrypter_1.4-8.png",
+      "date": "2024-10-20",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppStore++_NewAPI, Ver: 1.0.3 now available!",
+      "identifier": "cypwn.AppStore++_NewAPI.1.0.3",
+      "caption": "AppStore++_NewAPI added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppStore++_NewAPI.png",
+      "date": "2024-10-14",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "MuffinStore_1.1.2, Ver: 1.1.2 now available!",
+      "identifier": "cypwn.MuffinStore_1.1.2.1.1.2",
+      "caption": "MuffinStore_1.1.2 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/MuffinStore_1.1.2.png",
+      "date": "2024-10-08",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Fortnite-31.00-Decrypted, Ver: 31.00.1 now available!",
+      "identifier": "cypwn.Fortnite-31.00-Decrypted.31.00.1",
+      "caption": "Fortnite-31.00-Decrypted added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Fortnite-31.00-Decrypted.png",
+      "date": "2024-08-17",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "SuperIcons_2.1.4_Huami, Ver: 2.1 now available!",
+      "identifier": "cypwn.SuperIcons_2.1.4_Huami.2.1",
+      "caption": "SuperIcons_2.1.4_Huami added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/SuperIcons_2.1.4_Huami.png",
+      "date": "2024-08-05",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AddonsPro-3.8, Ver: 3.8 now available!",
+      "identifier": "cypwn.AddonsPro-3.8.3.8",
+      "caption": "AddonsPro-3.8 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AddonsPro-3.8.png",
+      "date": "2024-07-11",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "DowngradeApp_1.1-9, Ver: 1.1-9 now available!",
+      "identifier": "cypwn.DowngradeApp_1.1-9.1.1-9",
+      "caption": "DowngradeApp_1.1-9 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/DowngradeApp_1.1-9.png",
+      "date": "2024-07-09",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "SimLoc_1.8.5, Ver: 1.8.5 now available!",
+      "identifier": "cypwn.SimLoc_1.8.5.1.8.5",
+      "caption": "SimLoc_1.8.5 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/SimLoc_1.8.5.png",
+      "date": "2024-06-20",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ChargeLimiter_1.6, Ver: 1.6 now available!",
+      "identifier": "cypwn.ChargeLimiter_1.6.1.6",
+      "caption": "ChargeLimiter_1.6 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ChargeLimiter_1.6.png",
+      "date": "2024-05-02",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Addons_3.2, Ver: 3.2 now available!",
+      "identifier": "cypwn.Addons_3.2.3.2",
+      "caption": "Addons_3.2 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Addons_3.2.png",
+      "date": "2024-04-12",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollDecrypt, Ver: 1.1 now available!",
+      "identifier": "cypwn.TrollDecrypt.1.1",
+      "caption": "TrollDecrypt added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollDecrypt.png",
+      "date": "2024-04-09",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "DolphiniOS_4.0.0b7, Ver: 4.0.0b7 now available!",
+      "identifier": "cypwn.DolphiniOS_4.0.0b7.4.0.0b7",
+      "caption": "DolphiniOS_4.0.0b7 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/DolphiniOS_4.0.0b7.png",
+      "date": "2024-03-13",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AudioRecorderTS, Ver: 6.0.3 now available!",
+      "identifier": "cypwn.AudioRecorderTS.6.0.3",
+      "caption": "AudioRecorderTS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AudioRecorderTS.png",
+      "date": "2024-02-13",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AudioRecorderTS-NoDropbox, Ver: 6.0.3 now available!",
+      "identifier": "cypwn.AudioRecorderTS-NoDropbox.6.0.3",
+      "caption": "AudioRecorderTS-NoDropbox added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AudioRecorderTS-NoDropbox.png",
+      "date": "2024-02-13",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "LocSim_1.4.1k_TS, Ver: 1.4.1 now available!",
+      "identifier": "cypwn.LocSim_1.4.1k_TS.1.4.1",
+      "caption": "LocSim_1.4.1k_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/LocSim_1.4.1k_TS.png",
+      "date": "2024-02-12",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Dumpy2_2.0.7, Ver: 2.0.7 now available!",
+      "identifier": "cypwn.Dumpy2_2.0.7.2.0.7",
+      "caption": "Dumpy2_2.0.7 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Dumpy2_2.0.7.png",
+      "date": "2024-02-05",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Xina2_2.1.6~f1, Ver: 2.1.6~f1 now available!",
+      "identifier": "cypwn.Xina2_2.1.6~f1.2.1.6~f1",
+      "caption": "Xina2_2.1.6~f1 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Xina2_2.1.6~f1.png",
+      "date": "2024-01-05",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ModMyIPA_TS, Ver: 1.0.1 now available!",
+      "identifier": "cypwn.ModMyIPA_TS.1.0.1",
+      "caption": "ModMyIPA_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ModMyIPA_TS.png",
+      "date": "2023-07-22",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "YahooMailNoAds_7.18.0_TS, Ver: 7.18.0 now available!",
+      "identifier": "cypwn.YahooMailNoAds_7.18.0_TS.7.18.0",
+      "caption": "YahooMailNoAds_7.18.0_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/YahooMailNoAds_7.18.0_TS.png",
+      "date": "2023-07-18",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Surge5, Ver: 5.2.1 now available!",
+      "identifier": "cypwn.Surge5.5.2.1",
+      "caption": "Surge5 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Surge5.png",
+      "date": "2023-07-05",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AI_Chat_1.0.2, Ver: 1.0.2 now available!",
+      "identifier": "cypwn.AI_Chat_1.0.2.1.0.2",
+      "caption": "AI_Chat_1.0.2 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AI_Chat_1.0.2.png",
+      "date": "2023-06-23",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Fugu15Max, Ver: 1.0~beta8 now available!",
+      "identifier": "cypwn.Fugu15Max.1.0~beta8",
+      "caption": "Fugu15Max added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Fugu15Max.png",
+      "date": "2023-04-19",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Opener_1.11.9_TS, Ver: 1.11.9 now available!",
+      "identifier": "cypwn.Opener_1.11.9_TS.1.11.9",
+      "caption": "Opener_1.11.9_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Opener_1.11.9_TS.png",
+      "date": "2023-02-10",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppsManagerCracked_1.8.1, Ver: 1.8.1 now available!",
+      "identifier": "cypwn.AppsManagerCracked_1.8.1.1.8.1",
+      "caption": "AppsManagerCracked_1.8.1 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppsManagerCracked_1.8.1.png",
+      "date": "2022-12-23",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "FilzaCracked_4.0.0_TS, Ver: 4.0 now available!",
+      "identifier": "cypwn.FilzaCracked_4.0.0_TS.4.0",
+      "caption": "FilzaCracked_4.0.0_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/FilzaCracked_4.0.0_TS.png",
+      "date": "2022-12-23",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Appabetical-0.9_TS, Ver: 0.9 now available!",
+      "identifier": "cypwn.Appabetical-0.9_TS.0.9",
+      "caption": "Appabetical-0.9_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Appabetical-0.9_TS.png",
+      "date": "2022-12-16",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "NewTerm3_for_Xina_TS, Ver: 3.0b1 now available!",
+      "identifier": "cypwn.NewTerm3_for_Xina_TS.3.0b1",
+      "caption": "NewTerm3_for_Xina_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NewTerm3_for_Xina_TS.png",
+      "date": "2022-12-07",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TweakSettings_for_Xina_TS, Ver: 1.0.6 now available!",
+      "identifier": "cypwn.TweakSettings_for_Xina_TS.1.0.6",
+      "caption": "TweakSettings_for_Xina_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TweakSettings_for_Xina_TS.png",
+      "date": "2022-12-07",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollTools_TS, Ver: 2.2 now available!",
+      "identifier": "cypwn.TrollTools_TS.2.2",
+      "caption": "TrollTools_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollTools_TS.png",
+      "date": "2022-12-01",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Filza-NoURL_3.9.8_TS, Ver: 3.9 now available!",
+      "identifier": "cypwn.Filza-NoURL_3.9.8_TS.3.9",
+      "caption": "Filza-NoURL_3.9.8_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Filza-NoURL_3.9.8_TS.png",
+      "date": "2022-11-30",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "NovusPhone_36-b1_arm64e_TS, Ver: 36 now available!",
+      "identifier": "cypwn.NovusPhone_36-b1_arm64e_TS.36",
+      "caption": "NovusPhone_36-b1_arm64e_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NovusPhone_36-b1_arm64e_TS.png",
+      "date": "2022-11-30",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "NovusPhone_36-b1_arm64_TS, Ver: 36 now available!",
+      "identifier": "cypwn.NovusPhone_36-b1_arm64_TS.36",
+      "caption": "NovusPhone_36-b1_arm64_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NovusPhone_36-b1_arm64_TS.png",
+      "date": "2022-11-30",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AirTroller-1.1.1_TS, Ver: 1.1.1 now available!",
+      "identifier": "cypwn.AirTroller-1.1.1_TS.1.1.1",
+      "caption": "AirTroller-1.1.1_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AirTroller-1.1.1_TS.png",
+      "date": "2022-11-28",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "BackupAZ4_Crack_TS, Ver: 1.3.1 now available!",
+      "identifier": "cypwn.BackupAZ4_Crack_TS.1.3.1",
+      "caption": "BackupAZ4_Crack_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/BackupAZ4_Crack_TS.png",
+      "date": "2022-11-26",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "FineReaderPDFPro_15.5.2_TS, Ver: 15.5.2 now available!",
+      "identifier": "cypwn.FineReaderPDFPro_15.5.2_TS.15.5.2",
+      "caption": "FineReaderPDFPro_15.5.2_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/FineReaderPDFPro_15.5.2_TS.png",
+      "date": "2022-11-22",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "CarrotUltra_TS, Ver: 5.8.1 now available!",
+      "identifier": "cypwn.CarrotUltra_TS.5.8.1",
+      "caption": "CarrotUltra_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CarrotUltra_TS.png",
+      "date": "2022-11-19",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "PandolifeApp_TS, Ver: 1.6 now available!",
+      "identifier": "cypwn.PandolifeApp_TS.1.6",
+      "caption": "PandolifeApp_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/PandolifeApp_TS.png",
+      "date": "2022-11-17",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Pandolife_TS, Ver: 2211.1 now available!",
+      "identifier": "cypwn.Pandolife_TS.2211.1",
+      "caption": "Pandolife_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Pandolife_TS.png",
+      "date": "2022-11-16",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Santander_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.Santander_TS.1.0",
+      "caption": "Santander_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Santander_TS.png",
+      "date": "2022-11-14",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollNonce_TS, Ver: 1.1.2 now available!",
+      "identifier": "cypwn.TrollNonce_TS.1.1.2",
+      "caption": "TrollNonce_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollNonce_TS.png",
+      "date": "2022-11-13",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Kodi_TS, Ver: 18.9 now available!",
+      "identifier": "cypwn.Kodi_TS.18.9",
+      "caption": "Kodi_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Kodi_TS.png",
+      "date": "2022-11-11",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Mugunghwa_TS, Ver: 3.0.2 now available!",
+      "identifier": "cypwn.Mugunghwa_TS.3.0.2",
+      "caption": "Mugunghwa_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Mugunghwa_TS.png",
+      "date": "2022-11-10",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "NetworkManager1.1-2_TS, Ver: 1.1-2 now available!",
+      "identifier": "cypwn.NetworkManager1.1-2_TS.1.1-2",
+      "caption": "NetworkManager1.1-2_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NetworkManager1.1-2_TS.png",
+      "date": "2022-11-07",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollSign_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.TrollSign_TS.1.0",
+      "caption": "TrollSign_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollSign_TS.png",
+      "date": "2022-11-06",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "LocSim1.3.7_TS, Ver: 1.3.7 now available!",
+      "identifier": "cypwn.LocSim1.3.7_TS.1.3.7",
+      "caption": "LocSim1.3.7_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/LocSim1.3.7_TS.png",
+      "date": "2022-11-05",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Unc0verLauncher_TS, Ver: 1.0.1 now available!",
+      "identifier": "cypwn.Unc0verLauncher_TS.1.0.1",
+      "caption": "Unc0verLauncher_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Unc0verLauncher_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "CamScannerGold_TS, Ver: 6.27.0 now available!",
+      "identifier": "cypwn.CamScannerGold_TS.6.27.0",
+      "caption": "CamScannerGold_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CamScannerGold_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "SwiftKey_TS, Ver: 2.9.2 now available!",
+      "identifier": "cypwn.SwiftKey_TS.2.9.2",
+      "caption": "SwiftKey_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/SwiftKey_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "DowngradeApp_TS, Ver: 1.1-7 now available!",
+      "identifier": "cypwn.DowngradeApp_TS.1.1-7",
+      "caption": "DowngradeApp_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/DowngradeApp_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "NiceBattery_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.NiceBattery_TS.1.0",
+      "caption": "NiceBattery_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NiceBattery_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "WP-Maker_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.WP-Maker_TS.1.0",
+      "caption": "WP-Maker_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/WP-Maker_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "WP-Loader_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.WP-Loader_TS.1.0",
+      "caption": "WP-Loader_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/WP-Loader_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ControlCenter++_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.ControlCenter++_TS.1.0",
+      "caption": "ControlCenter++_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ControlCenter++_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "BatteryLife_TS, Ver: 3.2.1 now available!",
+      "identifier": "cypwn.BatteryLife_TS.3.2.1",
+      "caption": "BatteryLife_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/BatteryLife_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppInstalleriOS_TS, Ver: 6.0.0 now available!",
+      "identifier": "cypwn.AppInstalleriOS_TS.6.0.0",
+      "caption": "AppInstalleriOS_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppInstalleriOS_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Zebra_TS, Ver: 1.1.28 now available!",
+      "identifier": "cypwn.Zebra_TS.1.1.28",
+      "caption": "Zebra_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Zebra_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "YouTuber_TS, Ver: 3.6 now available!",
+      "identifier": "cypwn.YouTuber_TS.3.6",
+      "caption": "YouTuber_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/YouTuber_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "WiFiScanner_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.WiFiScanner_TS.1.0",
+      "caption": "WiFiScanner_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/WiFiScanner_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "WifiList_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.WifiList_TS.1.0",
+      "caption": "WifiList_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/WifiList_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "WiFiFoFumPro_TS, Ver: 1.1.1 now available!",
+      "identifier": "cypwn.WiFiFoFumPro_TS.1.1.1",
+      "caption": "WiFiFoFumPro_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/WiFiFoFumPro_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "WallpaperSetter_TS, Ver: 1.0.1 now available!",
+      "identifier": "cypwn.WallpaperSetter_TS.1.0.1",
+      "caption": "WallpaperSetter_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/WallpaperSetter_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Unc0ver_TS, Ver: 8.0.2 now available!",
+      "identifier": "cypwn.Unc0ver_TS.8.0.2",
+      "caption": "Unc0ver_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Unc0ver_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TSstore_TS, Ver: 3.0.1 now available!",
+      "identifier": "cypwn.TSstore_TS.3.0.1",
+      "caption": "TSstore_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TSstore_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TotPocket_TS, Ver: 1.2.1 now available!",
+      "identifier": "cypwn.TotPocket_TS.1.2.1",
+      "caption": "TotPocket_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TotPocket_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TheosTips_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.TheosTips_TS.1.0",
+      "caption": "TheosTips_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TheosTips_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Textastic_TS, Ver: 9.8.7 now available!",
+      "identifier": "cypwn.Textastic_TS.9.8.7",
+      "caption": "Textastic_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Textastic_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Supervise_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.Supervise_TS.1.0",
+      "caption": "Supervise_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Supervise_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Serial_TS, Ver: 1.0.3 now available!",
+      "identifier": "cypwn.Serial_TS.1.0.3",
+      "caption": "Serial_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Serial_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ScreenshotX_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.ScreenshotX_TS.1.0",
+      "caption": "ScreenshotX_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ScreenshotX_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Scarlet_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.Scarlet_TS.1.0",
+      "caption": "Scarlet_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Scarlet_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "RingTonesManager_TS, Ver: 1.1-2 now available!",
+      "identifier": "cypwn.RingTonesManager_TS.1.1-2",
+      "caption": "RingTonesManager_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/RingTonesManager_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ResolutionSetter_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.ResolutionSetter_TS.1.0",
+      "caption": "ResolutionSetter_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ResolutionSetter_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "RedDot_TS, Ver: 0.1 now available!",
+      "identifier": "cypwn.RedDot_TS.0.1",
+      "caption": "RedDot_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/RedDot_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "PostBox-Pocket_TS, Ver: 0.8.1 now available!",
+      "identifier": "cypwn.PostBox-Pocket_TS.0.8.1",
+      "caption": "PostBox-Pocket_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/PostBox-Pocket_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "PostBox_TS, Ver: 0.8.1 now available!",
+      "identifier": "cypwn.PostBox_TS.0.8.1",
+      "caption": "PostBox_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/PostBox_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "NetflixChecker_TS, Ver: 0.3 now available!",
+      "identifier": "cypwn.NetflixChecker_TS.0.3",
+      "caption": "NetflixChecker_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NetflixChecker_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "MyFitnessPal_TS, Ver: 22.20.0 now available!",
+      "identifier": "cypwn.MyFitnessPal_TS.22.20.0",
+      "caption": "MyFitnessPal_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/MyFitnessPal_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "MobileTSS_TS, Ver: 2.0.1 now available!",
+      "identifier": "cypwn.MobileTSS_TS.2.0.1",
+      "caption": "MobileTSS_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/MobileTSS_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Jaility_TS, Ver: 3.1 now available!",
+      "identifier": "cypwn.Jaility_TS.3.1",
+      "caption": "Jaility_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Jaility_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ITheosMaker_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.ITheosMaker_TS.1.0",
+      "caption": "ITheosMaker_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ITheosMaker_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "IPSW_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.IPSW_TS.1.0",
+      "caption": "IPSW_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/IPSW_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "InstaSpring_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.InstaSpring_TS.1.0",
+      "caption": "InstaSpring_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/InstaSpring_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "IMemScan_TS, Ver: 1.2.6 now available!",
+      "identifier": "cypwn.IMemScan_TS.1.2.6",
+      "caption": "IMemScan_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/IMemScan_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "IGameGod_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.IGameGod_TS.1.0",
+      "caption": "IGameGod_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/IGameGod_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "HarpyReloaded_TS, Ver: 1.0.1 now available!",
+      "identifier": "cypwn.HarpyReloaded_TS.1.0.1",
+      "caption": "HarpyReloaded_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/HarpyReloaded_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Fugu15_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.Fugu15_TS.1.0",
+      "caption": "Fugu15_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Fugu15_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "DynaWall_TS, Ver: 4.0 now available!",
+      "identifier": "cypwn.DynaWall_TS.4.0",
+      "caption": "DynaWall_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/DynaWall_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Delta_TS, Ver: 1.3 now available!",
+      "identifier": "cypwn.Delta_TS.1.3",
+      "caption": "Delta_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Delta_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "DebToIPA_TS, Ver: 1.0.2 now available!",
+      "identifier": "cypwn.DebToIPA_TS.1.0.2",
+      "caption": "DebToIPA_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/DebToIPA_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "CocoaTop_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.CocoaTop_TS.1.0",
+      "caption": "CocoaTop_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CocoaTop_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Clip_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.Clip_TS.1.0",
+      "caption": "Clip_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Clip_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ClassicPlayer_TS, Ver: 1.0.3 now available!",
+      "identifier": "cypwn.ClassicPlayer_TS.1.0.3",
+      "caption": "ClassicPlayer_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ClassicPlayer_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Cardio_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.Cardio_TS.1.0",
+      "caption": "Cardio_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Cardio_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Bundlr_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.Bundlr_TS.1.0",
+      "caption": "Bundlr_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Bundlr_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "BIDFetcher_TS, Ver: 1.0 now available!",
+      "identifier": "cypwn.BIDFetcher_TS.1.0",
+      "caption": "BIDFetcher_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/BIDFetcher_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AuroraPWmanager_TS, Ver: 0.9.2 now available!",
+      "identifier": "cypwn.AuroraPWmanager_TS.0.9.2",
+      "caption": "AuroraPWmanager_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AuroraPWmanager_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppStore++_TS, Ver: 1.0.3 now available!",
+      "identifier": "cypwn.AppStore++_TS.1.0.3",
+      "caption": "AppStore++_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppStore++_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppCake7_TS, Ver: 7.2.2 now available!",
+      "identifier": "cypwn.AppCake7_TS.7.2.2",
+      "caption": "AppCake7_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppCake7_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AppCake6_TS, Ver: 6.1.3 now available!",
+      "identifier": "cypwn.AppCake6_TS.6.1.3",
+      "caption": "AppCake6_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AppCake6_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Aphrodite_TS, Ver: 0.6.12 now available!",
+      "identifier": "cypwn.Aphrodite_TS.0.6.12",
+      "caption": "Aphrodite_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Aphrodite_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "AdGuardPro_TS, Ver: 4.4.0 now available!",
+      "identifier": "cypwn.AdGuardPro_TS.4.4.0",
+      "caption": "AdGuardPro_TS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/AdGuardPro_TS.png",
+      "date": "2022-11-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL } from "./constants.js";
-import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
+import { isValidHTTPURL, setTintColor, insertAltStoreBanner, AltStoreBannerUpdate, setUpBackButton, open, consolidateApps } from "./utilities.js";
 
 export function main(callback, fallbackURL = "../../") {
 
@@ -32,7 +32,7 @@ export function main(callback, fallbackURL = "../../") {
             if (tintColor) setTintColor(tintColor);
 
             insertAltStoreBanner(json.name);
-
+	    AltStoreBannerUpdate(sourceURL);
             setApps(json.apps);
             callback(json);
             // loaded();
