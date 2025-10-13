@@ -36,11 +36,9 @@ export function main(callback, fallbackURL = "../../") {
 	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
 	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
     		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
-    		if (isEsignVisible) {
-        		open(`esign://addsource?url=${sourceURL}`);
-    		} else {
-        		open(`altstore://source?url=${sourceURL}`);
-    	        }
+		const link = document.querySelector(".add");
+		      link.href = isEsignVisible ? `esign://addsource?url=${sourceURL}`:`altstore://source?url=${sourceURL}`;
+
 	    });
 
             setApps(json.apps);

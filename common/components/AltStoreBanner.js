@@ -21,7 +21,7 @@ export const AltStoreBanner = (sourceName) => `
                 </p>
             </div>
         </div>
-        <a href="">
+        <a href="#" class="add">
             <button id="add-to-altstore">Add</button>
         </a>
     </div>
