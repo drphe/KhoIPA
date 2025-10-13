@@ -351,12 +351,49 @@
 
     <!-- TAB NAVIGATION -->
     <div class="tab-buttons" style="display: flex;">
-      <button class="active" onclick="showTab('news', this)">Tin tức</button>
+      <button class="active" onclick="showTab('repo', this)">Repository</button>
+      <button onclick="showTab('news', this)">Tin tức</button>
       <button onclick="showTab('apps', this)">Ứng dụng</button>
+
     </div>
+    <!-- NEWS TAB CONTENT -->
+    <div id="repoTab" class="tab-content">
+      <h2 class="text-xl font-semibold mb-4">Thông tin chung</h2>
+
+      <label for="repo_name">Tên(*):</label>
+      <input type="text" id="repo_name" placeholder="Tên repository">
+
+      <label for="repo_identifier">Id repository (*):</label>
+      <input type="text" id="repo_identifier" placeholder="Id của repository">
+
+      <label for="repo_subtitle">Subtitle (*):</label>
+      <input type="text" id="repo_subtitle" placeholder="Mô tả ngắn">
+
+      <label for="repo_description">Description (*):</label>
+      <input type="text" id="repo_description" placeholder="Mô tả đầy đủ">
+
+      <label for="repo_iconURL">Link icon (*):</label>
+      <input type="text" id="repo_iconURL" placeholder="URL icon">
+
+      <label for="repo_sourceURL">Link repo :</label>
+      <input type="text" id="repo_sourceURL" placeholder="URL repo" value="">
+
+      <div class="form-group">
+        <div>
+          <label for="repo_tintColor">Mã màu:</label>
+          <input type="color" id="repo_tintColor" value="#3498db">
+        </div>
+        <div>
+          <label for="repo_website">Website (*):</label>
+          <input type="text" id="repo_website" value="https://github.com/drphe/KhoIPA" placeholder="Trang web repo">
+        </div>
+      </div>
+
+      <button onclick="editRepo()" class="btn-primary">Sửa thông tin repo</button>
+   </div>
 
     <!-- NEWS TAB CONTENT -->
-    <div id="newsTab" class="tab-content">
+    <div id="newsTab" class="tab-content" style="display:none;">
       <h2 class="text-xl font-semibold mb-4">Quản lý Tin tức</h2>
 
       <label for="news_title">Tiêu đề (*):</label>
@@ -587,6 +624,7 @@
     function showTab(tabName, element) {
       document.getElementById('newsTab').style.display = tabName === 'news' ? 'block' : 'none';
       document.getElementById('appsTab').style.display = tabName === 'apps' ? 'block' : 'none';
+      document.getElementById('repoTab').style.display = tabName === 'repo' ? 'block' : 'none';
 
       // Cập nhật trạng thái nút
       document.querySelectorAll('.tab-buttons button').forEach(btn => {
@@ -596,6 +634,48 @@
 
       // Ẩn phần version khi chuyển tab hoặc không edit app
       document.getElementById('versionSection').style.display = 'none';
+    }
+    // --- chức năng chỉnh sửa thông tin repo
+    function editRepo(){
+      const name = document.getElementById('repo_name').value.trim();
+      const identifier = document.getElementById('repo_identifier').value.trim();
+      const subtitle = document.getElementById('repo_subtitle').value.trim();
+      const iconURL = document.getElementById('repo_iconURL').value.trim();
+      const sourceURL = document.getElementById('repo_sourceURL').value.trim();
+      const tintColor = document.getElementById('repo_tintColor').value.replace('#', '').toUpperCase();
+      const website = document.getElementById('repo_website').value.trim();
+      const description = document.getElementById('repo_description').value;
+
+      if (!name || !identifier || !tintColor || !iconURL) {
+        window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin repository.");
+        return;
+      }
+
+      const repoItem = {
+        name,
+        identifier,
+        subtitle,
+        tintColor,
+        iconURL,
+        sourceURL,
+        website,
+        description
+      };
+
+      baseData = { ...baseData, ...repoItem };//Object.assign(baseData, repoItem);
+      updateOutput();
+      window.showUIAlert("Success", "Cập nhật dữ liệu thành công.");
+    }
+
+    function renderRepo() {
+      document.getElementById('repo_name').value = baseData.name;
+      document.getElementById('repo_identifier').value = baseData.identifier;
+      document.getElementById('repo_subtitle').value = baseData.subtitle??'';
+      document.getElementById('repo_iconURL').value = baseData.iconURL??'';
+      document.getElementById('repo_sourceURL').value = baseData.sourceURL??'';
+      document.getElementById('repo_tintColor').value = '#' + baseData.tintColor;
+      document.getElementById('repo_website').value = baseData.website??"";
+      document.getElementById('repo_description').value = baseData.description ??"";
     }
 
     // --- Chức năng Quản lý NEWS ---
@@ -1047,14 +1127,6 @@
       const MAX_VERSIONS = 20;
 
       consolidatedApps.forEach(app => {
-        // Sắp xếp mảng versions theo ngày (date) giảm dần (mới nhất lên đầu)
-        //app.versions.sort((a, b) => {
-        //    const dateA = new Date(a.date);
-        //    const dateB = new Date(b.date);
-        //     return dateB - dateA; // Sắp xếp giảm dần
-        //  });
-
-        // Chỉ giữ lại tối đa 5 phiên bản mới nhất
         if (app.versions.length > MAX_VERSIONS) {
           app.versions = app.versions.slice(0, MAX_VERSIONS);
         }
@@ -1111,6 +1183,7 @@
           baseData.apps = appsArray;
 
           // Cập nhật giao diện
+	  renderRepo();
           renderNewsList();
           renderAppList();
           updateOutput();
@@ -1229,6 +1302,7 @@
         baseData.apps = appsArray;
 
         // Cập nhật giao diện
+	renderRepo();
         clearNewsForm();
         renderNewsList();
         renderAppList();
