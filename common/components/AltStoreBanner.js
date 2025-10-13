@@ -21,7 +21,7 @@ export const AltStoreBanner = (sourceName) => `
                 </p>
             </div>
         </div>
-        <a href="altstore://source?url=${sourceURL}">
+        <a href="">
             <button id="add-to-altstore">Add</button>
         </a>
     </div>

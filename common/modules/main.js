@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL } from "./constants.js";
-import { isValidHTTPURL, setTintColor, insertAltStoreBanner, AltStoreBannerUpdate, setUpBackButton, open, consolidateApps } from "./utilities.js";
+import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
 
 export function main(callback, fallbackURL = "../../") {
 
@@ -23,6 +23,26 @@ export function main(callback, fallbackURL = "../../") {
 
     setUpBackButton();
 
+document.getElementById("add-to-altstore").addEventListener("click", e => {
+  e.preventDefault();
+  // Tìm container đang hiển thị (opacity = 1)
+  const visibleContainer = Array.from(document.querySelectorAll('.text-container'))
+    .find(container => window.getComputedStyle(container).opacity === '1');
+console.log(visibleContainer)
+  if (!visibleContainer) return;
+
+  const titleText = visibleContainer.querySelector('.title-text');
+  if (!titleText) return;
+
+  const appName = titleText.textContent.trim().toLowerCase();
+
+  if (appName.includes('esign')) {
+    open(`esign://addsource?url=${sourceURL}`);
+  } else if (appName.includes('altstore')) {
+    open(`altstore://source?url=${sourceURL}`);
+  }
+});
+
     fetch(sourceURL)
         .then(response => response.json())
         .then(source => {
@@ -33,6 +53,7 @@ export function main(callback, fallbackURL = "../../") {
 
             insertAltStoreBanner(json.name);
 	    AltStoreBannerUpdate(sourceURL);
+
             setApps(json.apps);
             callback(json);
             // loaded();
