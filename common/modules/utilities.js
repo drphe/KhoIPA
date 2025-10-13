@@ -3,7 +3,7 @@ import { NavigationBar } from "../components/NavigationBar.js";
 import { urlRegex, sourceURL } from "./constants.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
-function formatVersionDate(arg) {
+export function formatVersionDate(arg) {
   const safeDateStr = arg?.replace(/-/g, "/");
   const versionDate = new Date(safeDateStr);
 
