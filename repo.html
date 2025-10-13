@@ -24,42 +24,99 @@
     window.UIAlert = UIAlert;
     window.showUIAlert = showUIAlert;
 
+/**
+ * Lấy URL ảnh chụp màn hình cho một danh sách các ứng dụng.
+ * (Giữ nguyên hoặc cải tiến từ mã gốc)
+ */
 async function fetchScreenshotsForApps(apps) {
+  // Bỏ qua giới hạn song song và timeout để giữ mã gần với bản gốc của bạn
   const tasks = apps.map(async (app) => {
     const bundleId = app.bundleIdentifier;
     const url = `https://ipa.thuthuatjb.com/view/lookimg.php?id=${bundleId}`;
 
     try {
       const response = await fetch(url);
-      if (!response.ok) throw new Error(`Lỗi khi tải ${url}`);
+      if (!response.ok) throw new Error(`Lỗi khi tải ${url}: ${response.status}`);
 
+      // Kiểm tra xem phản hồi có phải là JSON không
+      const contentType = response.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+         throw new Error(`Phản hồi không phải JSON từ ${url}`);
+      }
+      
       const json = await response.json();
       app.screenshotURLs = json.screenshotUrls || [];
     } catch (error) {
       console.error(`Không thể lấy ảnh cho ${bundleId}:`, error);
+      // Đảm bảo thuộc tính vẫn tồn tại, ngay cả khi rỗng
+      app.screenshotURLs = []; 
     }
   });
 
   await Promise.all(tasks); // Chờ tất cả các request hoàn tất
 }
 
+/**
+ * Hàm tải xuống đối tượng JavaScript dưới dạng tệp JSON.
+ * @param {Object} data - Đối tượng JavaScript cần lưu.
+ * @param {string} filename - Tên tệp (ví dụ: "updated_repo.json").
+ */
+function downloadJsonFile(data, filename = 'updated_repo.json') {
+    // 1. Chuyển đối tượng JavaScript thành chuỗi JSON
+    const jsonString = JSON.stringify(data, null, 2); 
+    
+    // 2. Tạo Blob (Binary Large Object) từ chuỗi JSON
+    const blob = new Blob([jsonString], { type: 'application/json' });
+    
+    // 3. Tạo URL tạm thời cho Blob
+    const url = URL.createObjectURL(blob);
+    
+    // 4. Tạo một thẻ <a> ẩn để kích hoạt việc tải xuống
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename; // Đặt tên file
+    
+    // 5. Kích hoạt click và xóa thẻ <a>
+    document.body.appendChild(a);
+    a.click();
+    
+    // 6. Dọn dẹp
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    console.log(`✅ Đã kích hoạt tải xuống file: ${filename}`);
+}
+
+
 async function main() {
   try {
     const response = await fetch("https://drphe.github.io/KhoIPA/repo.thuthuatjb.json");
+    
+    if (!response.ok) {
+        throw new Error(`Lỗi khi tải dữ liệu ban đầu: ${response.status} ${response.statusText}`);
+    }
+    
     const data = await response.json();
 
     if (!data.apps || !Array.isArray(data.apps)) {
       throw new Error("Dữ liệu không hợp lệ hoặc thiếu 'apps'");
     }
+    
+    console.log(`Bắt đầu lấy ảnh chụp màn hình cho ${data.apps.length} ứng dụng...`);
 
-    await fetchScreenshotsForApps(data.apps);
+    // Chờ tất cả các request ảnh chụp màn hình hoàn tất và cập nhật 'data.apps'
+    await fetchScreenshotsForApps(data.apps); 
 
-    console.log(data);
+    // ⭐️ SỬA ĐỔI CHÍNH: Thay thế console.log bằng hàm tải xuống
+    const fileName = "repo.thuthuatjb_updated.json";
+    downloadJsonFile(data, fileName); 
+    
   } catch (error) {
-    console.error("Lỗi khi tải dữ liệu ban đầu:", error);
+    console.error("❌ Lỗi khi tải dữ liệu ban đầu hoặc xử lý:", error);
+    // Nếu có lỗi, chúng tôi sẽ không gọi downloadJsonFile
   }
 }
-// hàm lấy ảnh thuthuatjb
+
+// Chạy chương trình
 //main();
 
   </script>
