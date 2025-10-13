@@ -1112,11 +1112,10 @@
       baseData.apps = appsArray;
       document.getElementById('output').value = JSON.stringify(baseData, null, 2);
     }
-    window.addEventListener("DOMContentLoaded", () => {
 
+    window.addEventListener("DOMContentLoaded", () => {
       init();
     });
-
 
 
     async function init() {
@@ -1174,6 +1173,7 @@
         renderNewsList();
         renderAppList();
         updateOutput();
+        window.showUIAlert("Success","Repository được tải thành công!");
       } catch (error) {
         window.showUIAlert("Error","Lỗi khi tải Repository!");
 
