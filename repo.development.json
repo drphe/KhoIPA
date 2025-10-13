@@ -7,7 +7,7 @@
   "description": "Các ứng dụng IPA phục vụ mod, tiêm thuốc (.dylib) mà không cần Jailbreak máy....  được cập nhật phiên bản mới nhất cho ios.",
   "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
   "subtitle": "Ứng dụng IPA Nhà phát triển...",
-  "tintColor": "#6f9edf",
+  "tintColor": "#3A3636",
   "META": {
     "repoName": "Development apps",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
