@@ -88,7 +88,8 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             source.iconURL = "./common/assets/img/generic_app.jpeg";
         if (!source.tintColor)
             source.tintColor = "var(--tint-color);";
-        source.url = url;
+            source.url = url;
+	alert(source.lastUpdated);
         return source;
     }
 
