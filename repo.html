@@ -673,7 +673,7 @@
       document.getElementById('repo_subtitle').value = baseData.subtitle??'';
       document.getElementById('repo_iconURL').value = baseData.iconURL??'';
       document.getElementById('repo_sourceURL').value = baseData.sourceURL??'';
-      document.getElementById('repo_tintColor').value = '#' + baseData.tintColor;
+      document.getElementById('repo_tintColor').value = '#' + baseData.tintColor.replace('#', '');
       document.getElementById('repo_website').value = baseData.website??"";
       document.getElementById('repo_description').value = baseData.description ??"";
     }
