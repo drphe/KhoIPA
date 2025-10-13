@@ -28,6 +28,33 @@
   "apps": [
     {
       "beta": false,
+      "name": "Phim 4K",
+      "bundleIdentifier": "com.phim4k.app",
+      "developerName": "Phim4k.xyz",
+      "subtitle": "Phần mềm xem phim 4K",
+      "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện",
+      "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
+      "tintColor": "310202",
+      "screenshotURLs": [
+        "https://drphe.github.io/common/assets/img/phim4k.jpg"
+      ],
+      "versions": [
+        {
+          "version": "1.9.7",
+          "date": "2025-10-12T10:52:00Z",
+          "size": 38179467,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/phim4k/Phim.4K.v1.9.7.ipa",
+          "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện.\nVersion 1.9.7"
+        }
+      ],
+      "version": "1.9.7",
+      "versionDate": "2025-10-12T10:52:00Z",
+      "versionDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện.\nVersion 1.9.7",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/phim4k/Phim.4K.v1.9.7.ipa",
+      "size": 38179467
+    },
+    {
+      "beta": false,
       "name": "X++",
       "bundleIdentifier": "com.twitter.app",
       "developerName": "atebits",

@@ -511,6 +511,7 @@
     let versionEditIndex = -1;
     let prefixUrl = '';
     let baseData = '';
+    let nameUrl='';
     // Khởi tạo ngày mặc định
     document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
 
@@ -1141,7 +1142,7 @@
 
     function downloadJSON() {
       const jsonText = document.getElementById('output').value;
-      const filename = 'repo.json';
+      const filename = (nameUrl ?? 'repo') + '.json';
       const blob = new Blob([jsonText], {
         type: 'application/json'
       });
@@ -1189,6 +1190,7 @@
         for (const url of editorsources) {
           const name = await getNameRepo(url);
           if (!name) continue;
+	   nameUrl = name;
           installAppAlert.addAction({
             title: name,
             style: 'default',
