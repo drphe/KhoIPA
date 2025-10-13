@@ -68,7 +68,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     async function fetchSource(url) {
         const data = await json(url);
 	const source = consolidateApps(data);
-	console.log(source)
+
         if (!source) return;
         source.lastUpdated = new Date("1970-01-01");
         source.appCount = 0;

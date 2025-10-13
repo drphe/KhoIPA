@@ -143,7 +143,7 @@ export function normalizeDateFormat(dateStr) {
         const mm = month.padStart(2, '0');
         return `${year}-${mm}-${dd}`;
     } else {
-        return null; // không hợp lệ
+        return dateStr; // không hợp lệ
     }
 }
 
