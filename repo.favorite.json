@@ -1,7 +1,7 @@
 {
   "name": "Favorite apps",
   "identifier": "org.khoIPA.repo",
-  "sourceURL": "https://github.com/drphe/KhoIPA/repo.favorite.json",
+  "sourceURL": "https://drphe.github.io/KhoIPA/repo.favorite.json",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "website": "https://github.com/drphe/KhoIPA/",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
@@ -75,9 +75,9 @@
       "subtitle": "Phần mềm xem phim 4K",
       "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện",
       "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
-      "tintColor": "310202",
+      "tintColor": "271616",
       "screenshotURLs": [
-        "https://drphe.github.io/common/assets/img/phim4k.jpg"
+        "https://drphe.github.io/KhoIPA/common/assets/img/phim4k.jpg"
       ],
       "versions": [
         {
