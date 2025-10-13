@@ -33,25 +33,16 @@ export function main(callback, fallbackURL = "../../") {
 
             insertAltStoreBanner(json.name);
 
-document.getElementById("add-to-altstore").addEventListener("click", e => {
-  e.preventDefault();
-  // Tìm container đang hiển thị (opacity = 1)
-  const visibleContainer = Array.from(document.querySelectorAll('.text-container'))
-    .find(container => window.getComputedStyle(container).opacity === '1');
-console.log(visibleContainer)
-  if (!visibleContainer) return;
-
-  const titleText = visibleContainer.querySelector('.title-text');
-  if (!titleText) return;
-
-  const appName = titleText.textContent.trim().toLowerCase();
-
-  if (appName.includes('esign')) {
-    open(`esign://addsource?url=${sourceURL}`);
-  } else if (appName.includes('altstore')) {
-    open(`altstore://source?url=${sourceURL}`);
-  }
-});
+	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
+    		event.preventDefault();
+	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
+    		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
+    		if (isEsignVisible) {
+        		open(`esign://addsource?url=${sourceURL}`);
+    		} else {
+        		open(`altstore://source?url=${sourceURL}`);
+    	        }
+	    });
 
             setApps(json.apps);
             callback(json);
