@@ -1,6 +1,7 @@
 # 🧩 Bộ Sưu Tập Tiện Ích `.dylib`, `.deb`, `.plist` Tự Build hoặc Sưu Tầm
 
 Tổng hợp các tiện ích tiêm vào ứng dụng iOS, hỗ trợ tùy biến và nâng cao trải nghiệm người dùng. Các file có thể ở định dạng `.dylib`, `.deb`, hoặc `.plist`.
+Có thể sử dụng Esign, Feather... để tiêm dylib khi ký IPA hoặc [Công cụ inject (tiêm) dylib/deb vào iPA online](https://ipatool.codevn.net/inject-dylib/).
 
 ---
 

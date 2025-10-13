@@ -47,37 +47,15 @@
       "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmRldmVsb3BtZW50Lmpzb24=&link=Khodylib.md"
     },
     {
-      "title": "Hướng dẫn tiêm dylib/deb vào IPA",
-      "identifier": "hdsd-tiem-dylib",
-      "caption": "Công cụ inject (tiêm) dylib/deb vào iPA online từ codevn.vn",
-      "tintColor": "3498DB",
-      "imageURL": "https://codevn.net/wp-content/uploads/2023/01/1673432536-96d6f2e7e1f705a.png",
-      "appID": "com.example.app",
-      "date": "2025-10-08",
-      "notify": true,
-      "url": "https://ipatool.codevn.net/inject-dylib/"
-    },
-    {
-      "title": "Hướng dẫn cài Feather cho IOS",
-      "identifier": "hdsd-feather-pc",
-      "caption": "Để cài đặt bản Feather mới nhất, hãy upload chứng chỉ lên https://sign.codevn.net và tick vào Feather để ký và cài đặt.",
-      "tintColor": "3498DB",
-      "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
-      "appID": "com.example.app",
-      "date": "2025-10-08",
-      "notify": true,
-      "url": "https://sign.codevn.net"
-    },
-    {
-      "title": "Hướng dẫn sử dụng Feather cài IPA",
-      "identifier": "hdsd-feather",
-      "caption": "Bài hướng dẫn chi tiết cách sử dụng ứng dụng Feather để ký và cài đặt ứng dụng ngoài Apple store (file .IPA)",
-      "tintColor": "3498DB",
+      "title": "Cài File IPA lên iPhone (Không Cần Jailbreak)",
+      "identifier": "hdsd-caiipa",
+      "caption": "Bài hướng dẫn cài đặt ứng dụng ngoài Apple store (file .IPA) không cần Jailbreak.",
+      "tintColor": "0D6EC9",
       "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
       "appID": "com.feather.app",
-      "date": "2025-10-08",
+      "date": "2025-10-13",
       "notify": false,
-      "url": "https://thuthuatjb.com/huong-dan-su-dung-feather-de-cai-ipa-tren-cac-thiet-bi-ios-ipados/amp/"
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmRldmVsb3BtZW50Lmpzb24=&link=caidatipa.md"
     }
   ],
   "apps": [
