@@ -142,7 +142,7 @@ export function consolidateApps(source) {
 
     // Tạo đối tượng phiên bản để gộp
     const firstVersion = app.versions?.[0] ?? {};
-    const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
+    const appDate = app.versionDate ?? firstVersion.date ?? "2025-01-01";
     const versionInfo = {
       version: app.version ?? firstVersion.version ?? "1.0.0",
       date: appDate,
