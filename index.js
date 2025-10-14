@@ -93,16 +93,16 @@ document.getElementById('search').addEventListener("click", (e)=>{
 	const repositories = document.getElementById('repositories');
 	const apps = document.getElementById('apps');
 
-	if(e.innerText = "View All Apps") {
+	if(e.target.innerText = "View All Apps") {
 		suggestions.style.display = 'none';
 		repositories.style.display = 'none';
 		apps.style.display = 'block';
-		e.innerText = "Close";
+		e.target.innerText = "Close";
 	} else {
 		suggestions.style.display = 'block';
 		repositories.style.display = 'block';
 		apps.style.display = 'none';
-		e.innerText = "View All Apps";
+		e.target.innerText = "View All Apps";
 	}
 });
 // search box
