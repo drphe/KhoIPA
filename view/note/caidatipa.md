@@ -50,10 +50,10 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Ưu điểm:** App tồn tại **vĩnh viễn**, không cần PC (các bản ios cao hơn có thể cần PC để cài), không cần Apple ID hay cert.
 * **Nhược điểm:** **Giới hạn nghiêm ngặt** về phiên bản iOS và thiết bị tương thích.
 
-  [Hướng dẫn cài IPA bằng Trollstore](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmRldmVsb3BtZW50Lmpzb24=&link=trollstore.md)
+*  [Hướng dẫn cài IPA bằng Trollstore](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmRldmVsb3BtZW50Lmpzb24=&link=trollstore.md)
 
 * [Cài đặt IPA vĩnh viễn bằng TrollStore](https://thuthuatjb.com/huong-dan-su-dung-trollstore-de-cai-file-ipa-vinh-vien-tren-ios-ipados/)
-* 
+
 
 ### 2.2. TestFlight (Beta Testing)
 
@@ -72,6 +72,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * Bạn sử dụng dịch vụ bán chứng chỉ (Cert) như certapple.com, iosviet.vn, thuthuatjb.com... hoặc truy cập [t.me/AppleP12](https://t.me/AppleP12) để tải chứng chỉ miễn phí (rủi ro revok và blacklist). Sau khi nhận được tệp cert.zip thì upload chứng chỉ và file IPA cần cài lên một các trang sau để nhận link cài trực tiếp:
 
    [https://sign.codevn.net](https://sign.codevn.net)
+
    [https://sign.ipasign.cc/](https://sign.ipasign.cc/)
 
 
@@ -85,6 +86,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * Đối với Gbox, Scalert là dịch vụ có từ trước, hỗ trợ tốt và có thể cài trực tiếp từ website chính thức (sử dụng cert có phí hoặc miễn phí)
 
    [Cài đặt Gbox](https://gbox.run/)
+
    [Cài đặt Scalert](https://usescarletapp.com)
 
 
@@ -95,6 +97,7 @@ Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm link cài đ
 
 
 [Hướng dẫn cài IPA bằng Feather](https://thuthuatjb.com/huong-dan-su-dung-feather-de-cai-ipa-tren-cac-thiet-bi-ios-ipados/)
+
 [Hướng dẫn cài IPA bằng ESign](https://certapple.com/index.php/blog/huong-dan-su-dung-esign-de-cai-ipa-tren-cac-thiet-bi-iphoneipad)
 
 
