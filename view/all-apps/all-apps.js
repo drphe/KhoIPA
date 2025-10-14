@@ -11,50 +11,49 @@ insertNavigationBar("All Apps");
 
 main((json) => {
     document.title = `Apps - ${json.name}`;
-    // sắp xếp app
-json.apps.sort((a, b) => {
-  const dateA = new Date(a.versionDate || a.versions?.[0]?.date || 0).valueOf();
-  const dateB = new Date(b.versionDate || b.versions?.[0]?.date || 0).valueOf();
-  return dateB - dateA;
-});
+  // sắp xếp app
+  json.apps.sort((a, b) => {
+    const dateA = new Date(a.versionDate || a.versions?.[0]?.date || 0).valueOf();
+    const dateB = new Date(b.versionDate || b.versions?.[0]?.date || 0).valueOf();
+    return dateB - dateA;
+  });
+  const allApps = json.apps.filter(app => !app.beta);
+  let filteredApps = [...allApps];
+  let currentIndex = 0;
+  const appsPerLoad = 4;
+  const appsContainer = document.getElementById("apps");
 
-    const allApps = json.apps.filter(app => !app.beta);
-    let filteredApps = [...allApps];
-    let currentIndex = 0;
-    const appsPerLoad = 4;
-    const appsContainer = document.getElementById("apps");
+  // Tạo wrapper chứa input và icon
+  const searchWrapper = document.createElement("div");
+  searchWrapper.style.position = "relative";
+  searchWrapper.style.maxWidth = "400px";
+  searchWrapper.style.margin = "10px 20px";
 
-// Tạo wrapper chứa input và icon
-const searchWrapper = document.createElement("div");
-searchWrapper.style.position = "relative";
-searchWrapper.style.maxWidth = "400px";
-searchWrapper.style.margin = "10px 20px";
+  // Tạo ô tìm kiếm
+  const searchBox = document.createElement("input");
+  searchBox.type = "text";
+  searchBox.placeholder = "Tìm theo tên app...";
+  searchBox.className = "form-control mb-3";
+  searchBox.style.width = "100%";
+  searchBox.style.paddingRight = "35px"; // chừa chỗ cho icon
+  searchBox.style.boxSizing = "border-box";
+  searchBox.style.borderRadius = "20px"; // 
+  searchBox.autocomplete = "off";
 
-// Tạo ô tìm kiếm
-const searchBox = document.createElement("input");
-searchBox.type = "text";
-searchBox.placeholder = "Tìm theo tên app...";
-searchBox.className = "form-control mb-3";
-searchBox.style.width = "100%";
-searchBox.style.paddingRight = "35px"; // chừa chỗ cho icon
-searchBox.style.boxSizing = "border-box";
-searchBox.style.borderRadius = "20px"; // 👈 thêm bo góc
+  // Tạo icon kính lúp
+  const searchIcon = document.createElement("span");
+  searchIcon.textContent = ` <i class="bi bi-search"></i>`
+  searchIcon.style.position = "absolute";
+  searchIcon.style.right = "10px";
+  searchIcon.style.top = "50%";
+  searchIcon.style.transform = "translateY(-50%)";
+  searchIcon.style.pointerEvents = "none";
+  searchIcon.style.color = "#888";
 
-
-// Tạo icon kính lúp
-const searchIcon = document.createElement("span");
-searchIcon.textContent = "🔍"; // hoặc dùng Font Awesome: <i class="fas fa-search"></i>
-searchIcon.style.position = "absolute";
-searchIcon.style.right = "10px";
-searchIcon.style.top = "50%";
-searchIcon.style.transform = "translateY(-50%)";
-searchIcon.style.pointerEvents = "none";
-searchIcon.style.color = "#888";
-
-// Gắn các phần tử
-searchWrapper.appendChild(searchBox);
-searchWrapper.appendChild(searchIcon);
-appsContainer.before(searchWrapper);
+  // Gắn các phần tử
+  searchWrapper.appendChild(searchBox);
+  searchWrapper.appendChild(searchIcon);
+  appsContainer.before(searchWrapper);
 
     searchBox.addEventListener("input", () => {
         const keyword = searchBox.value.toLowerCase();
