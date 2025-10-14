@@ -133,7 +133,7 @@ const searchBox = document.getElementById("filterText");
     });
 
     loadMoreApps(); 
-async function insertAppHeader(app){
+function insertAppHeader(app){
 	return app ? `
 <div class="app-header-container">
 <a href="./view/app/?source=${base64Convert(app.sourceURL)}&id=${app.bundleIdentifier}" class="app-header-link">
