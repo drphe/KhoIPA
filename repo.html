@@ -375,8 +375,8 @@
       <label for="repo_iconURL">Link icon (*):</label>
       <input type="text" id="repo_iconURL" placeholder="URL icon">
 
-      <label for="repo_sourceURL">Link repo :</label>
-      <input type="text" id="repo_sourceURL" placeholder="URL repo" value="">
+      <label for="repo_apps">Feature App (Cách nhau bởi dấu phẩy):</label>
+      <textarea id="repo_apps" rows="2" placeholder="BundleId1, bundleId2, bundleId3..."></textarea>
 
       <div class="form-group">
         <div>
@@ -384,8 +384,8 @@
           <input type="color" id="repo_tintColor" value="#3498db">
         </div>
         <div>
-          <label for="repo_website">Website (*):</label>
-          <input type="text" id="repo_website" value="https://github.com/drphe/KhoIPA" placeholder="Trang web repo">
+          <label for="repo_sourceURL">Link repo:</label>
+          <input type="text" id="repo_sourceURL" value="" placeholder="Link tải repo">
         </div>
       </div>
 
@@ -478,6 +478,7 @@
       <label for="app_screenshotURLs">Screenshot URLs (Ngăn cách bằng dấu phẩy): </label>
       <textarea id="app_screenshotURLs" rows="2" placeholder="url1, url2, url3"></textarea>
 
+      <label class="flex items-center mt-4"><input type="checkbox" id="app_feature"> FeatureApps</label>
       <label class="flex items-center mt-4"><input type="checkbox" id="app_beta"> Beta</label>
 
       <button onclick="addOrUpdateApp()" class="btn-primary">Thêm / Cập nhật App</button>
@@ -643,8 +644,9 @@
       const iconURL = document.getElementById('repo_iconURL').value.trim();
       const sourceURL = document.getElementById('repo_sourceURL').value.trim();
       const tintColor = document.getElementById('repo_tintColor').value.replace('#', '').toUpperCase();
-      const website = document.getElementById('repo_website').value.trim();
+      const apps = document.getElementById('repo_apps').value.trim();
       const description = document.getElementById('repo_description').value;
+      const featuredApps = apps ? apps.split(',').map(url => url.trim()).filter(url => url) : [];
 
       if (!name || !identifier || !tintColor || !iconURL) {
         window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin repository.");
@@ -658,7 +660,7 @@
         tintColor,
         iconURL,
         sourceURL,
-        website,
+        featuredApps,
         description
       };
 
@@ -674,7 +676,7 @@
       document.getElementById('repo_iconURL').value = baseData.iconURL??'';
       document.getElementById('repo_sourceURL').value = baseData.sourceURL??'';
       document.getElementById('repo_tintColor').value = '#' + baseData.tintColor.replace('#', '');
-      document.getElementById('repo_website').value = baseData.website??"";
+      document.getElementById('repo_apps').value = (baseData.featuredApps || []).join(', ');
       document.getElementById('repo_description').value = baseData.description ??"";
     }
 
@@ -788,6 +790,18 @@
       document.getElementById('cancelNewsBtn').style.display = 'none';
     }
 
+function updateFeaturedApps(bundleId, shouldAdd) {
+	baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
+  if (shouldAdd) {
+    if (!baseData.featuredApps.includes(bundleId)) {
+      baseData.featuredApps.push(bundleId);
+    }
+  } else {
+    baseData.featuredApps = baseData.featuredApps.filter(app => app !== bundleId);
+  }
+renderRepo();
+}
+
     // --- Chức năng Quản lý APPS ---
     function addOrUpdateApp() {
       const name = document.getElementById('app_name').value.trim();
@@ -799,11 +813,13 @@
       const localizedDescription = document.getElementById('app_localizedDescription').value.trim();
       const screenshotURLsInput = document.getElementById('app_screenshotURLs').value.trim();
       const beta = document.getElementById('app_beta').checked;
+      const feature = document.getElementById('app_feature').checked;
 
       if (!name || !bundleIdentifier || !developerName || !subtitle || !iconURL) {
         window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin App bắt buộc (Tên, Bundle ID, Developer, Subtitle, Icon URL).");
         return;
       }
+      updateFeaturedApps(bundleIdentifier, feature);// thêm vào feature
 
       const screenshotURLs = screenshotURLsInput ? screenshotURLsInput.split(',').map(url => url.trim()).filter(url => url) : [];
 
@@ -860,6 +876,7 @@
       document.getElementById('app_localizedDescription').value = '';
       document.getElementById('app_screenshotURLs').value = '';
       document.getElementById('app_beta').checked = false;
+      document.getElementById('app_feature').checked = false;
     }
 
     function renderAppList() {
@@ -896,6 +913,7 @@
       document.getElementById('app_localizedDescription').value = item.localizedDescription;
       document.getElementById('app_screenshotURLs').value = (item.screenshotURLs || []).join(', ');
       document.getElementById('app_beta').checked = item.beta;
+      document.getElementById('app_feature').checked = baseData.featuredApps.includes(item.bundleIdentifier)
 
       appEditIndex = index;
       document.getElementById('cancelAppBtn').style.display = 'inline-block';
@@ -1179,6 +1197,7 @@
           appsArray = baseData.apps;
 
           // Gán lại references trong baseData
+	  baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
           baseData.news = newsArray;
           baseData.apps = appsArray;
 
@@ -1297,7 +1316,8 @@
         nameUrl = getNameRepo(url);
         newsArray = baseData.news;
         appsArray = baseData.apps;
-
+	
+	baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
         // Gán lại references trong baseData
         baseData.news = newsArray;
         baseData.apps = appsArray;

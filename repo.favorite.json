@@ -39,6 +39,33 @@
   "apps": [
     {
       "beta": false,
+      "name": "Rổ Phim Vip",
+      "bundleIdentifier": "co.roteam.roteamios",
+      "developerName": "Rophim.com",
+      "subtitle": "Xem phim cả rổ",
+      "localizedDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
+      "iconURL": "https://drphe.github.io/KhoIPA/icon/26.png",
+      "tintColor": "977272",
+      "screenshotURLs": [
+        "https://picul.de/view/Yh-"
+      ],
+      "versions": [
+        {
+          "version": "1.0.5",
+          "date": "2025-10-14T09:03:00Z",
+          "size": 35989896,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/26.1.0.5/26.v1.0.5.ipa",
+          "localizedDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục"
+        }
+      ],
+      "version": "1.0.5",
+      "versionDate": "2025-10-14T09:03:00Z",
+      "versionDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/26.1.0.5/26.v1.0.5.ipa",
+      "size": 35989896
+    },
+    {
+      "beta": false,
       "name": "Duolingo Premium",
       "bundleIdentifier": "com.duolingo.app",
       "developerName": "IPAOMTK.com",
@@ -50,13 +77,6 @@
         "https://boxipa.com/wp-content/uploads/2025/09/1_PhN85XNlJX_K-jJ6EJ-VoA-768x549.jpg"
       ],
       "versions": [
-        {
-          "version": "7.90.1",
-          "date": "2025-10-13T15:37:00Z",
-          "size": 180501109,
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.90.1/Duolingo.7.90.1.ipa",
-          "localizedDescription": "Duolingo premium ver 7.90.1"
-        },
         {
           "version": "7.65",
           "date": "2025-09-04T15:31:00Z",
@@ -72,11 +92,11 @@
           "localizedDescription": "Phiên bản 7.60"
         }
       ],
-      "version": "7.90.1",
-      "versionDate": "2025-10-13T15:37:00Z",
-      "versionDescription": "Duolingo premium ver 7.90.1",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.90.1/Duolingo.7.90.1.ipa",
-      "size": 180501109
+      "version": "7.65",
+      "versionDate": "2025-09-04T15:31:00Z",
+      "versionDescription": "Duolingo premium ver 7.65",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.65/Doulingo_7.65.ipa",
+      "size": 122190712
     },
     {
       "beta": false,
