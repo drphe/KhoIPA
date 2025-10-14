@@ -10,7 +10,7 @@ Các phương pháp này tận dụng máy tính (Windows/macOS) để ký và c
 * **Hiệu lực:** Mỗi app hiệu lực **7 ngày**, cần kết nối với AltServer (trên PC) hoặc nhấn **“Refresh”** trong AltStore (khi PC và iPhone cùng mạng) để gia hạn.
 * **Hạn chế:** Giới hạn **3 ứng dụng** ngoài cùng lúc.
 
-&nbsp;   [HD cài IPA bằng AltStore](https://ios.codevn.net/huong-dan-cai-ipa-bang-altstore-windows/)
+    [HD cài IPA bằng AltStore](https://ios.codevn.net/huong-dan-cai-ipa-bang-altstore-windows/)
 
 
 
@@ -22,7 +22,7 @@ Các phương pháp này tận dụng máy tính (Windows/macOS) để ký và c
   * **Cert Miễn Phí:** App tồn tại **7 ngày**, sau đó phải cài lại.
   * **Cert Có Phí:** Dùng tài khoản **Apple Developer Program** ($99/năm), app duy trì lâu dài, **không giới hạn** số lượng app.
 
-* [https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html](⦁	https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html)
+* \[https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html](⦁	https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html)
 * [https://thuthuatjb.com/huong-dan-su-dung-sideloadly-de-cai-ipa-vao-thiet-bi-ios-ipados/](https://thuthuatjb.com/huong-dan-su-dung-sideloadly-de-cai-ipa-vao-thiet-bi-ios-ipados/)
 
 ### 1.3. 3uTools (Chỉ Có Phí - Ít Phổ Biến Sau 2024)
@@ -68,9 +68,9 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Hướng dẫn:**
 * Bạn sử dụng dịch vụ bán chứng chỉ (Cert) như certapple.com, iosviet.vn, thuthuatjb.com... hoặc truy cập [https://t.me/AppleP12](t.me/AppleP12) để tải chứng chỉ miễn phí (rủi ro revok và blacklist). Sau khi nhận được tệp cert.zip thì upload chứng chỉ và file IPA cần cài lên một các trang sau để nhận link cài trực tiếp:
 
-&nbsp;  [https://sign.codevn.net](https://sign.codevn.net)
+   [https://sign.codevn.net](https://sign.codevn.net)
 
-&nbsp;  [https://sign.ipasign.cc/](https://sign.ipasign.cc/)
+   [https://sign.ipasign.cc/](https://sign.ipasign.cc/)
 
 
 
@@ -82,15 +82,20 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Nhược điểm:** Vẫn tồn tại rủi ro **bị thu hồi chứng chỉ**, đặc biệt với các cert miễn phí hoặc cert công khai.
 * Đối với Gbox, Scalert là dịch vụ có từ trước, hỗ trợ tốt và có thể cài trực tiếp từ website chính thức (sử dụng cert có phí hoặc miễn phí)
 
-&nbsp;  [Cài đặt Gbox](https://gbox.run/)
+   [Cài đặt Gbox](https://gbox.run/)
 
-&nbsp;  [Cài đặt Scalert](https://usescarletapp.com)
+   [Cài đặt Scalert](https://usescarletapp.com)
 
 
 
 Đối với **Feather, Esign** là những ứng dụng được cài đặt bằng các công cụ online như tại mục 2.3 hoặc cài đặt qua Trollstore
 
 Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm link cài đặt trực tiếp các ipa mod phổ biến như Facebook NoADS, Youtube Lite,... Một số dịch vụ chính: Certapple.com, Unkeyapp.com, Thuthuatjb.com...
+
+
+[Hướng dẫn cài IPA bằng Feather](https://thuthuatjb.com/huong-dan-su-dung-feather-de-cai-ipa-tren-cac-thiet-bi-ios-ipados/)
+
+[Hướng dẫn cài IPA bằng ESign](https://certapple.com/index.php/blog/huong-dan-su-dung-esign-de-cai-ipa-tren-cac-thiet-bi-iphoneipad)
 
 
 

@@ -14,6 +14,17 @@
   },
   "news": [
     {
+      "title": "Mẹo sử dụng Cert cài IPA qua Feather, Esign",
+      "identifier": "cert-apple",
+      "caption": "Mẹo cài đặt IPA bằng Feather, ESign với Cert có phí",
+      "tintColor": "3498DB",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
+      "appID": "com.example.app",
+      "date": "2025-10-14",
+      "notify": false,
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=cert.md"
+    },
+    {
       "title": "Zalo 2 - Cập nhật",
       "identifier": "update-zalo",
       "caption": "Đã có phiên bản Zalo 2 ver 25.06.01, chống ban.",
