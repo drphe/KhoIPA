@@ -35,20 +35,19 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     });
 
 
-    const fetchedEditorSources = [];
-    const fetchedSources = [];
+const fetchedSources = await Promise.all(
+  sources.map(async url => {
+    const source = await fetchSource(url);
+    return source || null;
+  })
+);
 
-    for (const url of sources) {
-        const source = await fetchSource(url);
-        if (!source) continue;
-        fetchedSources.push(source);
-    }
-
-    for (const url of editorsources) {
-        const source = await fetchSource(url);
-        if (!source) continue;
-        fetchedEditorSources.push(source);
-    }
+const fetchedEditorSources = await Promise.all(
+  editorsources.map(async url => {
+    const source = await fetchSource(url);
+    return source || null;
+  })
+);
 
     // Sort sources by last updated
     fetchedSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
@@ -62,13 +61,107 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         await insertSource(source);
     }
 
+const allSources = [...fetchedEditorSources, ...fetchedSources]; // Gộp mảng
+const allApps = [];
+
+for (const source of allSources) {
+    if (!source || !Array.isArray(source.apps)) continue;
+
+    for (const app of source.apps) {
+        app.sourceURL = source.sourceURL; 
+    }
+
+    const nonBetaApps = source.apps.filter(app => !app.beta);
+    allApps.push(...nonBetaApps); 
+}
+
+    loadMoreApps(); 
+
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
+
+let filteredApps = [...allApps];
+let currentIndex = 0;
+const appsPerLoad = 10;
+const appsContainer = document.getElementById("apps-list");
+
+// total of repositories
+document.getElementById('title2').innerText = `${allSources.length} Repositories`;
+document.getElementById('title3').innerText = `${filteredApps.length} Applications`;
+
+// click button
+document.getElementById('search').addEventListener("click", (e)=>{
+	const suggestions = document.getElementById('suggestions');
+	const repositories = document.getElementById('repositories');
+	const apps = document.getElementById('apps');
+
+	if(e.innerText = "View All Apps") {
+		suggestions.style.display = 'none';
+		repositories.style.display = 'none';
+		apps.style.display = 'block';
+		e.innerText = "Close";
+	} else {
+		suggestions.style.display = 'block';
+		repositories.style.display = 'block';
+		apps.style.display = 'none';
+		e.innerText = "View All Apps";
+	}
+});
+// search box
+const searchBox = document.getElementById("filterText");
+    searchBox.addEventListener("input", () => {
+        const keyword = searchBox.value.toLowerCase();
+        filteredApps = allApps.filter(app =>
+            app.name?.toLowerCase().includes(keyword)
+        );
+        currentIndex = 0;
+        appsContainer.innerHTML = "";
+        loadMoreApps();
+    });
+
+    function loadMoreApps() {
+        const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
+        nextApps.forEach(app => {
+            appsContainer.insertAdjacentHTML("beforeend", `<div class="app-container">${insertAppHeader(app)}</div>`);
+        });
+        currentIndex += appsPerLoad;
+    }
+
+    // Tải thêm khi cuộn gần cuối
+    window.addEventListener("scroll", () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+            loadMoreApps();
+        }
+    });
+
+
+async function insertAppHeader(app){
+	return app ? `
+<div class="app-header-container">
+<a href="./view/app/?source=${base64Convert(app.sourceURL)}&id=${app.bundleIdentifier}" class="app-header-link">
+    <div class="app-header-inner-container">
+        <div class="app-header">
+            <div class="content">
+                <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" alt="">
+                <div class="right">
+                    <div class="text">
+                        <p class="title">${app.name}</p>
+                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
+                    </div>
+                        <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
+                    </div>
+                </div>
+            <div class="background" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};"></div>
+        </div>
+    </div>
+</a>
+</div>` : undefined;
+}
 
     async function fetchSource(url) {
         const data = await json(url);
 	const source = consolidateApps(data);
-
+	source.sourceURL = url
         if (!source) return;
         source.lastUpdated = new Date("1970-01-01");
         source.appCount = 0;
