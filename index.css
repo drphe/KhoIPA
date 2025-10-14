@@ -13,8 +13,9 @@
   padding: 0.6rem 0.8rem;
   border: none;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: transparent;
   margin-top: 1rem;
+  border: 1px solid #ccc;
 }
 
 /* input:focus {
