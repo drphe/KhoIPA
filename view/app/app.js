@@ -72,7 +72,7 @@ main((json) => {
         title: `Get "${app.name}"`
     });
     installAppAlert.addAction({
-        title: "Install with AltStore / SideStore",
+        title: "Install with AltStore",
         style: 'default',
         handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`altstore://install?url=${app.downloadURL}`))
     });
