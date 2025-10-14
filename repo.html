@@ -551,7 +551,7 @@
     let appEditIndex = -1;
     let versionEditIndex = -1;
     let prefixUrl = '';
-    let baseData = '';
+    let baseData = {};
     let nameUrl='';
     // Khởi tạo ngày mặc định
     document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
@@ -675,7 +675,7 @@
       document.getElementById('repo_subtitle').value = baseData.subtitle??'';
       document.getElementById('repo_iconURL').value = baseData.iconURL??'';
       document.getElementById('repo_sourceURL').value = baseData.sourceURL??'';
-      document.getElementById('repo_tintColor').value = '#' + baseData.tintColor.replace('#', '');
+      document.getElementById('repo_tintColor').value = '#' + (baseData.tintColor?baseData.tintColor:'#C0C000').replace('#', '');
       document.getElementById('repo_apps').value = (baseData.featuredApps || []).join(', ');
       document.getElementById('repo_description').value = baseData.description ??"";
     }
@@ -1190,7 +1190,6 @@ renderRepo();
             window.showUIAlert("Error", "Lỗi Import: File JSON không hợp lệ hoặc thiếu mảng 'news'/'apps'.");
             return;
           }
-
           // Cập nhật dữ liệu toàn cục
           baseData = consolidateApps(importedData);
           newsArray = baseData.news;
@@ -1313,12 +1312,13 @@ renderRepo();
         // Cập nhật dữ liệu toàn cục
         baseData = await response.json();
         prefixUrl = url;
-	document.querySelector(".back-button").href = `./view/?source=${window.base64Convert(prefixUrl)}`;
+	let button = document.querySelector(".back-button");
+	button.href = `./view/?source=${window.base64Convert(prefixUrl)}`;
         nameUrl = getNameRepo(url);
         newsArray = baseData.news;
         appsArray = baseData.apps;
-	
 	baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
+
         // Gán lại references trong baseData
         baseData.news = newsArray;
         baseData.apps = appsArray;
