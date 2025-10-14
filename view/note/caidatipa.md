@@ -89,7 +89,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
    [Cài đặt Scalert](https://usescarletapp.com)
 
-
+   [Cài đặt Feather](https://jcionx.github.io/ios-sideloading/) Link này giúp cài Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
 
 Đối với **Feather, Esign** là những ứng dụng được cài đặt bằng các công cụ online như tại mục 2.3 hoặc cài đặt qua Trollstore
 
