@@ -5,7 +5,7 @@
   "iconURL": "https://repo.cypwn.xyz/assets/images/cypwn_small.png",
   "website": "https://ipa.cypwn.xyz",
   "sourceURL": "https://ipa.cypwn.xyz/cypwn.json",
-  "tintColor": "725D17",
+  "tintColor": "FFC300",
   "featuredApps": [
     "Ed0ardo.CyPwnStore"
   ],
@@ -5082,6 +5082,5 @@
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     }
-  ],
-  "description": ""
+  ]
 }

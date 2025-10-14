@@ -17,8 +17,8 @@ function downloadJSON(url, filename) {
 }
 
 // Tải cả hai file
-downloadJSON('https://ipa.cypwn.xyz/cypwn.json', 'cypwn.json');
-downloadJSON('https://ipa.cypwn.xyz/cypwn_ts.json', 'cypwn_ts.json');
+downloadJSON('https://ipa.cypwn.xyz/cypwn.json', 'repo.cypwn.json');
+downloadJSON('https://ipa.cypwn.xyz/cypwn_ts.json', 'repo.cypwn_ts.json');
 
 
 // Chạy chương trình bằng cách copy toàn bộ code ở đây, dán vào console của extension F2chart
