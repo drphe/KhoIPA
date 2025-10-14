@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://0.0.0.0/dns-query</string>
+				<key>SupplementalMatchDomains</key>
+				<array>
+					<string>ocsp.apple.com</string>
+					<string>ocsp2.apple.com</string>
+					<string>valid.apple.com</string>
+					<string>crl.apple.com</string>
+					<string>certs.apple.com</string>
+					<string>appattest.apple.com</string>
+					<string>vpp.itunes.apple.com</string>
+				</array>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>Use this section to configure DNS settings.</string>
+			<key>PayloadDisplayName</key>
+			<string>DNS Settings</string>
+			<key>PayloadIdentifier</key>
+			<string>com.github.ProfileCreator.8B7D81E2-DBE2-4A28-A049-B8771E43B456.com.apple.dnsSettings.managed.812767E0-4993-480A-9322-B2E48FB9FB68</string>
+			<key>PayloadOrganization</key>
+			<string></string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>812767E0-4993-480A-9322-B2E48FB9FB68</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>This DNS profile blocks the Apple endpoints that verify if a certificate is legitimate. With this DNS profile enabled, you will be able to use apps signed by certificates that have already been revocked.</string>
+	<key>PayloadDisplayName</key>
+	<string>Anti-revoke DNS</string>
+	<key>PayloadIdentifier</key>
+	<string>com.github.ProfileCreator.8B7D81E2-DBE2-4A28-A049-B8771E43B456</string>
+	<key>PayloadOrganization</key>
+	<string>Nobody</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>8B7D81E2-DBE2-4A28-A049-B8771E43B456</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

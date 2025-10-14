@@ -14,6 +14,17 @@
   },
   "news": [
     {
+      "title": "Chống thu hồi chứng chỉ bằng DNS",
+      "identifier": "hdsd-anti-revoke",
+      "caption": "Sử dụng cấu hình DNS ngăn chặn thu hồi chứng chỉ cài IPA ngoài.",
+      "tintColor": "DB7F33",
+      "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
+      "appID": "com.example.app",
+      "date": "2025-10-14",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=chongthuhoicc.md"
+    },
+    {
       "title": "Bật chế độ Nhà phát triển",
       "identifier": "hdsd-developermode",
       "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
@@ -81,6 +92,34 @@
     }
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "Douyin 抖音",
+      "bundleIdentifier": "com.tiktok.com",
+      "developerName": "TikTok Pte. Ltd",
+      "subtitle": "Douyin - TikTok Trung Quốc",
+      "localizedDescription": "Chắc chắn bạn không lạ gì với các tên mới thấy trên tiêu đề đúng không. Trở thành trào lưu trong khoảng thời gian gần đây. Thu hút hàng triệu người dùng trong thời gian ngắn. Không quá khi nói Douyin chính là “con gà đẻ trứng vàng” cho nhà phát triển TikTok Pte. Ltd. Luôn luôn là top 1 trong bảng xếp hạng giải trí trên Apple Store hay CH Play. Được nhiều người nổi tiếng sử dụng cũng như tạo nên xu hướng hay trend mới chỉ bằng một clip ngắn. Tuy nhiên TikTok Trung Quốc ipa – đất nước sản sinh ra mạng xã hội này mới là bản được nhiều người dùng đánh giá cao nhất.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ab/8e/e8/ab8ee8f2-8224-988d-3422-13d46f3e9ced/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-85-220.png/460x0w.png",
+      "tintColor": "201D1D",
+      "screenshotURLs": [
+        "https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/78/03/2f/78032f5c-b41b-403f-2739-91ab736e239a/pr_source.png/460x0w.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource123/v4/c0/70/7a/c0707ada-5c2b-8e2a-b971-ae5541d541d5/52872355-4264-4d8a-a128-39a6f0f421ec_iphonex.png/460x0w.png"
+      ],
+      "versions": [
+        {
+          "version": "35.4",
+          "date": "2025-08-20T14:16:00Z",
+          "size": 620890472,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/douyn.35.4/Douyin.35.4.ipa",
+          "localizedDescription": "Douyin  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ DYYY, cập nhật plugin mới nhất, nhấn giữ hai ngón tay trên trang chủ để mở menu\n✅Tiêm plugin chống thu hồi Yuki, chỉ cần bật trong cài đặt\n✅Trợ lý Douyin, nhấn giữ ba ngón tay để mở"
+        }
+      ],
+      "version": "35.4",
+      "versionDate": "2025-08-20T14:16:00Z",
+      "versionDescription": "Douyin  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ DYYY, cập nhật plugin mới nhất, nhấn giữ hai ngón tay trên trang chủ để mở menu\n✅Tiêm plugin chống thu hồi Yuki, chỉ cần bật trong cài đặt\n✅Trợ lý Douyin, nhấn giữ ba ngón tay để mở",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/douyn.35.4/Douyin.35.4.ipa",
+      "size": 620890472
+    },
     {
       "beta": false,
       "name": "Wink",
