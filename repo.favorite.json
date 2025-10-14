@@ -13,7 +13,7 @@
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
   },
   "news": [
-   {
+    {
       "title": "Bật chế độ Nhà phát triển",
       "identifier": "hdsd-developermode",
       "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
@@ -83,19 +83,50 @@
   "apps": [
     {
       "beta": false,
+      "name": "Wink",
+      "bundleIdentifier": "com.wink.app",
+      "developerName": "Xiamen Meitu Technology Co.",
+      "subtitle": "[Wink] Video Portrait Beautification Tool",
+      "localizedDescription": "Wink++ iPA mở khóa các tính năng VIP của ứng dụng Wink- Video Retouching Tool.\nLưu ý: một số tính năng VIP không thể sử dụng vì nó xử lý trên máy chủ (server-side) ví dụ AI hoạt hình.",
+      "iconURL": "https://ipa.playmod24.com/wp-content/uploads/2025/01/Wink-IPA-MOD-150x150.webp",
+      "tintColor": "292A2D",
+      "screenshotURLs": [
+        "https://winkmods-apk.com/wp-content/uploads/2024/11/file.png"
+      ],
+      "versions": [
+        {
+          "version": "2.15.",
+          "date": "2025-10-14T12:45:00Z",
+          "size": 106904021,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wink.2.15.1/Wink_2.15.1.ipa",
+          "localizedDescription": "Wink 🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Mở khóa vip\n✅Sửa lỗi chất lượng hình ảnh không thể khắc phục\n✅Loại bỏ quảng cáo toàn cục\n✅Công cụ làm đẹp, chỉnh sửa ảnh cũng có thể chỉnh sửa video"
+        }
+      ],
+      "version": "2.15.",
+      "versionDate": "2025-10-14T12:45:00Z",
+      "versionDescription": "Wink 🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Mở khóa vip\n✅Sửa lỗi chất lượng hình ảnh không thể khắc phục\n✅Loại bỏ quảng cáo toàn cục\n✅Công cụ làm đẹp, chỉnh sửa ảnh cũng có thể chỉnh sửa video",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wink.2.15.1/Wink_2.15.1.ipa",
+      "size": 106904021
+    },
+    {
+      "beta": false,
       "name": "Wechat 2",
+      "type": 1,
       "bundleIdentifier": "com.tencent.xin",
       "developerName": "DVC",
       "subtitle": "Nhân bản",
       "localizedDescription": "WeChat 2 – WeChat Clone – WeChat Song Song iPA giúp bạn sử dụng 2 ứng dụng WeChat trên cùng 1 thiết bị iPhone/iPad (bao gồm cả ứng dụng WeChat mà bạn đã tải từ App Store).",
-      "iconURL": "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-icon.jpeg?x-oss-process=image/resize,w_242/format,webp",
+      "versionDescription": "Wechat  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Cài Song Song",
       "tintColor": "E26060",
+      "iconURL": "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-icon.jpeg?x-oss-process=image/resize,w_242/format,webp",
       "screenshotURLs": [
         "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-screenshot1.png",
         "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-screenshot2.png",
         "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-screenshot3.png",
         "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-screenshot4.png"
       ],
+      "size": 312821828,
+      "version": "8.0.62",
       "versions": [
         {
           "version": "8.0.62",
@@ -105,27 +136,28 @@
           "localizedDescription": "Wechat  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Cài Song Song"
         }
       ],
-      "version": "8.0.62",
       "versionDate": "2025-08-22T10:53:00Z",
-      "versionDescription": "Wechat  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Cài Song Song",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wechat2/Wechat.v8.0.62.ipa",
-      "size": 312821828
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wechat2/Wechat.v8.0.62.ipa"
     },
     {
       "beta": false,
       "name": "Viber 2",
+      "type": 1,
       "bundleIdentifier": "com.viber.app",
       "developerName": "DVC",
       "subtitle": "Nhân bản Viber",
       "localizedDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
-      "iconURL": "https://ios.codevn.net/wp-content/uploads/2018/04/Viber-Messenger-%E2%80%93-Text-Call.jpg",
+      "versionDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
       "tintColor": "2330E1",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2018/04/Viber-Messenger-%E2%80%93-Text-Call.jpg",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/4a/e6/7b4ae601-4c5b-8efb-1e42-186730e06b83/c3414849-3e47-4923-85ca-4cd7af0437f1_Viber_AS_English_1284x2778_Screen1.jpg/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/21/25/86/2125863a-67a9-3707-d083-9b2d0ae2dc1b/630bc607-f372-4b1d-b7c0-a7c5f97b0856_Viber_AS_EN_1284x2778_Screen2.jpg/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/40/f0/ad40f0dc-ae94-a755-5131-aa3ce29b656c/1dd0e4bc-7c56-43e0-92b8-ee12c4d293db_Viber_AS_EN_1284x2778_Screen3.jpg/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/24/11/ed/2411ed23-a6ae-fb4e-cf2e-bc2717317294/391801ec-334a-4b55-9e3e-d940a64f3404_Viber_AS_EN_1284x2778_Screen4.jpg/300x0w.webp"
       ],
+      "size": 138918469,
+      "version": "26.3.4",
       "versions": [
         {
           "version": "26.3.4",
@@ -135,24 +167,25 @@
           "localizedDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠"
         }
       ],
-      "version": "26.3.4",
       "versionDate": "2025-10-14T10:44:00Z",
-      "versionDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/viber.26.3.4/Viber.v26.3.4.ipa",
-      "size": 138918469
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/viber.26.3.4/Viber.v26.3.4.ipa"
     },
     {
       "beta": false,
       "name": "Rổ Phim Vip",
+      "type": 1,
       "bundleIdentifier": "co.roteam.roteamios",
       "developerName": "Rophim.com",
       "subtitle": "Xem phim cả rổ",
       "localizedDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
-      "iconURL": "https://drphe.github.io/KhoIPA/icon/26.png",
+      "versionDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
       "tintColor": "977272",
+      "iconURL": "https://drphe.github.io/KhoIPA/icon/26.png",
       "screenshotURLs": [
         "https://picul.de/view/Yh-"
       ],
+      "size": 35989896,
+      "version": "1.0.5",
       "versions": [
         {
           "version": "1.0.5",
@@ -162,27 +195,28 @@
           "localizedDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục"
         }
       ],
-      "version": "1.0.5",
       "versionDate": "2025-10-14T09:03:00Z",
-      "versionDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/26.1.0.5/26.v1.0.5.ipa",
-      "size": 35989896
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/26.1.0.5/26.v1.0.5.ipa"
     },
     {
       "beta": false,
       "name": "Duolingo Premium",
+      "type": 1,
       "bundleIdentifier": "com.duolingo.app",
       "developerName": "IPAOMTK.com",
       "subtitle": "Duolingo Premium unlock, super duolingo.",
       "localizedDescription": "Duolingo IPA MOD là phiên bản sửa đổi của ứng dụng Duolingo cung cấp cho người dùng các tính năng cao cấp miễn phí. Với MOD này, bạn có thể tận hưởng trái tim không giới hạn, bài học ngoại tuyến, học không có quảng cáo và các tính năng độc quyền khác mà không cần đăng ký.",
-      "iconURL": "https://ipa.playmod24.com/wp-content/uploads/2025/02/Duolingo-IPA-MOD-iOS-150x150.webp",
+      "versionDescription": "Duolingo premium ver 7.65",
       "tintColor": "8AA32E",
+      "iconURL": "https://ipa.playmod24.com/wp-content/uploads/2025/02/Duolingo-IPA-MOD-iOS-150x150.webp",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/e5/d3/dde5d3d1-af38-7146-aa0b-01c10a266bc1/dc94e408-8dff-4907-94f9-ebb5f8ffdb81_en_iphone5.5_screen-nofree_1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/52/84/7e/52847ea1-3006-7254-b9a5-17a6ad6df76c/93f4d1c8-4144-44de-8b57-a5a091c838f4_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_3.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/b0/98/1cb09850-ebbc-0e5b-f07c-de3fc4f22a6b/cd048832-2375-4fd9-88e8-3711d102065e_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_4.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cb/4f/3a/cb4f3aa8-08fe-b5da-43f0-b02100c493a0/c9c1f806-63ba-4809-bdfd-1b9e144aa854_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_5.png/392x696bb.png"
       ],
+      "size": 122190712,
+      "version": "7.65",
       "versions": [
         {
           "version": "7.65",
@@ -199,24 +233,25 @@
           "localizedDescription": "Phiên bản 7.60"
         }
       ],
-      "version": "7.65",
       "versionDate": "2025-09-04T15:31:00Z",
-      "versionDescription": "Duolingo premium ver 7.65",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.65/Doulingo_7.65.ipa",
-      "size": 122190712
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.65/Doulingo_7.65.ipa"
     },
     {
       "beta": false,
       "name": "Phim 4K",
+      "type": 1,
       "bundleIdentifier": "com.phim4k.app",
       "developerName": "Phim4k.xyz",
       "subtitle": "Phần mềm xem phim 4K",
       "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện",
-      "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
+      "versionDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện.\nVersion 1.9.7",
       "tintColor": "535050",
+      "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
       "screenshotURLs": [
         "https://drphe.github.io/KhoIPA/common/assets/img/phim4k.jpg"
       ],
+      "size": 38179467,
+      "version": "1.9.7",
       "versions": [
         {
           "version": "1.9.7",
@@ -226,25 +261,26 @@
           "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện.\nVersion 1.9.7"
         }
       ],
-      "version": "1.9.7",
       "versionDate": "2025-10-12T10:52:00Z",
-      "versionDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện.\nVersion 1.9.7",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/phim4k/Phim.4K.v1.9.7.ipa",
-      "size": 38179467
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/phim4k/Phim.4K.v1.9.7.ipa"
     },
     {
       "beta": false,
       "name": "X++",
+      "type": 1,
       "bundleIdentifier": "com.atebits.Tweetie2",
       "developerName": "atebits",
       "subtitle": "X (Twitter) mod premium",
       "localizedDescription": "Phiên bản X++ mod không quảng cáo",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+      "versionDescription": "🆔 Bundle ID: com.atebits.Tweetie2\n⬆️ Updated to: 11.30.1\n🔧 Minimum iOS: 15.0\n✅ Patched\n💎 Modifier: TwiGalaxy v1.11\n🔄 Tweaked by @blatants\n\n📝 Note:\nTweak by DENS0R Showcase (https://t.me/DENS0R/297)\n\nChangelog:\nTWIGalaxy V1.11\n- Slideshow Actions : Custom actions when tapping 'more' in slideshow - save, copy info, and share\n- Fixed Download Videos \n- Fixed Download Voice messages \n+ Improvements",
       "tintColor": "3A3636",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
       "screenshotURLs": [
         "https://onejailbreak.com/site/assets/files/1481/bhtwitter-ios.766x0.webp",
         "https://onejailbreak.com/site/assets/files/1481/bhtwitter-tweak.823x0-is.webp"
       ],
+      "size": 163535212,
+      "version": "11.30.1",
       "versions": [
         {
           "version": "11.30.1",
@@ -261,27 +297,28 @@
           "localizedDescription": "Phiên bản mod premium mới nhất 11.29 của X."
         }
       ],
-      "version": "11.30.1",
       "versionDate": "2025-10-14T09:16:00Z",
-      "versionDescription": "🆔 Bundle ID: com.atebits.Tweetie2\n⬆️ Updated to: 11.30.1\n🔧 Minimum iOS: 15.0\n✅ Patched\n💎 Modifier: TwiGalaxy v1.11\n🔄 Tweaked by @blatants\n\n📝 Note:\nTweak by DENS0R Showcase (https://t.me/DENS0R/297)\n\nChangelog:\nTWIGalaxy V1.11\n- Slideshow Actions : Custom actions when tapping 'more' in slideshow - save, copy info, and share\n- Fixed Download Videos \n- Fixed Download Voice messages \n+ Improvements",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.31/X.v11.30.1.TwiGalaxy.v1.11.blatant.Patched.ipa",
-      "size": 163535212
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.31/X.v11.30.1.TwiGalaxy.v1.11.blatant.Patched.ipa"
     },
     {
       "beta": false,
       "name": "iTorrent",
+      "type": 1,
       "bundleIdentifier": "com.itorrent.app",
       "developerName": "XITRIX",
       "subtitle": "Torrent client for iOS",
       "localizedDescription": "iTorrent officially in the AltStore!\n\nIt is an ordinary torrent client for iOS with Files app support and much more.\n\nWhat can this app do:\n\n• Download in the background\n• Live Activity and Dynamic Island progress bar\n• Downloading on external drives\n• Sequential download (use VLC to watch films while loading)\n• Add torrent files from Share menu (Safari and other apps)\n• Add magnet links directly from Safari\n• Store files in Files app\n• File sharing directly from app\n• Download torrent by url\n• Download torrent by magnet\n• Show progress in Dynamic Island\n• Send notification on torrent downloaded\n• Web/WebDav Server\n• Select files download priority\n• Change UI to dark theme\n• Color personalization\n• RSS Feed",
-      "iconURL": "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/icon.png",
+      "versionDescription": "* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\n* LibTorrent updated to version 2.0.11\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\n* Added Spanish localization by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\n\n## New Contributors\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\n* @fraucs made their first contribution in https://github.com/XITRIX/iTorrent/pull/385\n* @yaptx made their first contribution in https://github.com/XITRIX/iTorrent/pull/391\n\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.0.14-1...v2.0.15-1",
       "tintColor": "D73C3C",
+      "iconURL": "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/icon.png",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/1.PNG",
         "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/2.PNG",
         "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/3.PNG",
         "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/4.PNG"
       ],
+      "size": 7090878,
+      "version": "2.0.15",
       "versions": [
         {
           "version": "2.0.15",
@@ -291,25 +328,26 @@
           "localizedDescription": "* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\n* LibTorrent updated to version 2.0.11\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\n* Added Spanish localization by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\n\n## New Contributors\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\n* @fraucs made their first contribution in https://github.com/XITRIX/iTorrent/pull/385\n* @yaptx made their first contribution in https://github.com/XITRIX/iTorrent/pull/391\n\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.0.14-1...v2.0.15-1"
         }
       ],
-      "version": "2.0.15",
       "versionDate": "2025-09-22T05:36:00Z",
-      "versionDescription": "* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\n* LibTorrent updated to version 2.0.11\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\n* Added Spanish localization by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\n\n## New Contributors\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\n* @fraucs made their first contribution in https://github.com/XITRIX/iTorrent/pull/385\n* @yaptx made their first contribution in https://github.com/XITRIX/iTorrent/pull/391\n\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.0.14-1...v2.0.15-1",
-      "downloadURL": "https://release-assets.githubusercontent.com/github-production-release-asset/133687113/74379dc7-d404-4c67-9fb1-84dbefe0feaa?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-08T06%3A31%3A06Z&rscd=attachment%3B+filename%3DiTorrent.ipa&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-08T05%3A30%3A47Z&ske=2025-10-08T06%3A31%3A06Z&sks=b&skv=2018-11-09&sig=Lo34%2FywJZ0jFkTY4Hd3SD4lg7EqPygJ7Vb3kcBG3mx4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1OTkwMTk0MiwibmJmIjoxNzU5OTAxNjQyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.B7w3i3NWuAJm4WKkFYAAk6rfgfRc9pfhk9MMnyiRlLY&response-content-disposition=attachment%3B%20filename%3DiTorrent.ipa&response-content-type=application%2Foctet-stream",
-      "size": 7090878
+      "downloadURL": "https://release-assets.githubusercontent.com/github-production-release-asset/133687113/74379dc7-d404-4c67-9fb1-84dbefe0feaa?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-08T06%3A31%3A06Z&rscd=attachment%3B+filename%3DiTorrent.ipa&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-08T05%3A30%3A47Z&ske=2025-10-08T06%3A31%3A06Z&sks=b&skv=2018-11-09&sig=Lo34%2FywJZ0jFkTY4Hd3SD4lg7EqPygJ7Vb3kcBG3mx4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1OTkwMTk0MiwibmJmIjoxNzU5OTAxNjQyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.B7w3i3NWuAJm4WKkFYAAk6rfgfRc9pfhk9MMnyiRlLY&response-content-disposition=attachment%3B%20filename%3DiTorrent.ipa&response-content-type=application%2Foctet-stream"
     },
     {
       "beta": false,
       "name": "Youtube Premium",
+      "type": 1,
       "bundleIdentifier": "com.youtube.youtube",
       "developerName": "apptesters.org",
       "subtitle": "Youtube Premium (full chức năng)",
       "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.\nTải ứng dụng YouTube chính thức dành cho iPhone và iPad.\nXem nội dung mọi người đang xem về âm nhạc, trò chơi, giải trí, tin tức và nhiều nội dung khác. Đăng ký kênh, chia sẻ với bạn bè, chỉnh sửa và tải video lên, xem trên thiết bị bất kỳ.\nBạn cũng có thể tạo danh sách phát, xem nội dung đang thịnh hành, thể hiện bản thân bằng nhận xét, chia sẻ video với bạn bè, truyền video đến TV và hơn thế nữa – tất cả đều từ bên trong ứng dụng.",
-      "iconURL": "https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-1024.png",
+      "versionDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.",
       "tintColor": "F01414",
+      "iconURL": "https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-1024.png",
       "screenshotURLs": [
         "https://img.utdstc.com/screen/eb3/262/eb32628e7e6300bcda32f5ec788b1ab5038163732ff496ba4d7ce520eafc17ef:400",
         "https://img.utdstc.com/screen/61b/6da/61b6daa8b3ae1a1edf0b989ac77a873e5aa02b22acfdbd42a40b34f20e5a8ac3:400"
       ],
+      "size": 129712392,
+      "version": "20.39.6",
       "versions": [
         {
           "version": "20.39.6",
@@ -319,24 +357,25 @@
           "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium."
         }
       ],
-      "version": "20.39.6",
       "versionDate": "2025-10-01T17:31:00Z",
-      "versionDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/youtube.premium.20.39.6/YouTube_20.39.6_Premium.ipa",
-      "size": 129712392
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/youtube.premium.20.39.6/YouTube_20.39.6_Premium.ipa"
     },
     {
       "beta": false,
       "name": "Facebook Glow++",
+      "type": 1,
       "bundleIdentifier": "com.facebook.facebook",
       "developerName": "IPAOMTK.com",
       "subtitle": "Facebook No ADS",
       "localizedDescription": "Ứng dụng Facebook No ADS, bản mod không có quảng cáo, chặn đã xem tin...",
-      "iconURL": "https://images.icon-icons.com/555/PNG/512/facebook_icon-icons.com_53612.png",
+      "versionDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo, nguồn apptesters.org",
       "tintColor": "5825D0",
+      "iconURL": "https://images.icon-icons.com/555/PNG/512/facebook_icon-icons.com_53612.png",
       "screenshotURLs": [
         "https://play-lh.googleusercontent.com/PQ-I5iK74sGn8nu6dGAY37ThWXeRElBnjMI7yltIX_NWrvBBiPMTH_c5TNana2U95aY=w1052-h592-rw"
       ],
+      "size": 161653658,
+      "version": "534.0.0",
       "versions": [
         {
           "version": "534.0.0",
@@ -353,25 +392,26 @@
           "localizedDescription": "Phiên bản 531.0. Nguồn IPAOMTK.com"
         }
       ],
-      "version": "534.0.0",
       "versionDate": "2025-10-04T23:50:00Z",
-      "versionDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo, nguồn apptesters.org",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.534/Facebook_534.0.0_Premium.ipa",
-      "size": 161653658
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.534/Facebook_534.0.0_Premium.ipa"
     },
     {
       "beta": false,
       "name": "Zalo 2",
+      "type": 1,
       "bundleIdentifier": "com.zalo.app",
       "developerName": "VNG",
       "subtitle": "Nhân bản Zalo",
       "localizedDescription": "Ứng dụng zalo2 giúp nhân bản, dùng song song 2 Zalo trên điện thoại.",
-      "iconURL": "https://chat.zalo.me/apple-icon-144x144.png",
+      "versionDescription": "Bản Zalo 2 mod từ phiên bản 25.06.1 của IOSVIET.vn, bản này chống bị ban nick.",
       "tintColor": "8880F4",
+      "iconURL": "https://chat.zalo.me/apple-icon-144x144.png",
       "screenshotURLs": [
         "https://play-lh.googleusercontent.com/5hMCCsM7Q6uHr2s7sZ_9h-j6w5CspdhDNi1yhMjJgDW-mEWi2mQltAplG9uSvL2b9jY=w1052-h592-rw",
         "https://play-lh.googleusercontent.com/XSpiYD7x-NUwzhWNbipRf1iGIEZytxRpS46SepNvG0UWB9qa6lUbLMOBaGqKMwJ-a2E=w1052-h592-rw"
       ],
+      "size": 111351384,
+      "version": "25.06.01",
       "versions": [
         {
           "version": "25.06.01",
@@ -395,25 +435,26 @@
           "localizedDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé."
         }
       ],
-      "version": "25.06.01",
       "versionDate": "2025-10-09T11:51:00Z",
-      "versionDescription": "Bản Zalo 2 mod từ phiên bản 25.06.1 của IOSVIET.vn, bản này chống bị ban nick.",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa",
-      "size": 111351384
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa"
     },
-  {
+    {
       "beta": false,
       "name": "Feather",
+      "type": 1,
       "bundleIdentifier": "com.feather.app",
       "developerName": "Khcrysalis",
       "subtitle": "Ký và cài đặt IPA cho IOS",
       "localizedDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!\n👇🏻👇🏻👇🏻 WEB LẤY IPA TRẮNG \nWeb 1: https://decrypt.day/ \nWeb 2: https://armconverter.com/decryptedappstore/us",
-      "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
+      "versionDescription": "Phiên bản mới nhất 2.4",
       "tintColor": "6156B8",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
       "screenshotURLs": [
         "https://ios.codevn.net/wp-content/uploads/2025/02/Repos-710x1536.png",
         "https://ios.codevn.net/wp-content/uploads/2025/02/Store-710x1536.png"
       ],
+      "size": 12711617,
+      "version": "2.4",
       "versions": [
         {
           "version": "2.4",
@@ -423,24 +464,25 @@
           "localizedDescription": "Phiên bản mới nhất 2.4"
         }
       ],
-      "version": "2.4",
       "versionDate": "2025-10-01T04:41:00Z",
-      "versionDescription": "Phiên bản mới nhất 2.4",
-      "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa",
-      "size": 12711617
+      "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa"
     },
     {
       "beta": false,
       "name": "轻松签-ESign",
+      "type": 1,
       "bundleIdentifier": "p3.xyz.yyyue.esign",
       "developerName": "yyy",
       "subtitle": "Ứng dụng ký IPA",
       "localizedDescription": "轻松签是一款免越狱可给ipa签名的工具，具有注入库，去库等功能。\nhttps://github.com/iOS17/Esign",
-      "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
+      "versionDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới.",
       "tintColor": "B2BFE6",
+      "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
       "screenshotURLs": [
         "https://private-user-images.githubusercontent.com/135683347/328411146-c2d21c1c-817b-497a-a5dd-a144b20207dc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk5MDA4MjksIm5iZiI6MTc1OTkwMDUyOSwicGF0aCI6Ii8xMzU2ODMzNDcvMzI4NDExMTQ2LWMyZDIxYzFjLTgxN2ItNDk3YS1hNWRkLWExNDRiMjAyMDdkYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwNTE1MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMTM4ZjY0ZGFiMThmODRhMDNlZjliNjc3YzY0Njg4ZmQ0NWUwODE4NDIzZGE4ZGEzYTJmMzc0ZTlkZTNkZmM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ENBDuPWwYnJzymI6zDz77mfCYZHoriht0H8UfY68v14"
       ],
+      "size": 7206362,
+      "version": "5.0.2",
       "versions": [
         {
           "version": "5.0.2",
@@ -450,11 +492,8 @@
           "localizedDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới."
         }
       ],
-      "version": "5.0.2",
       "versionDate": "2024-01-28T15:13:00Z",
-      "versionDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới.",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa",
-      "size": 7206362
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa"
     }
   ],
   "featuredApps": [

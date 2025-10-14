@@ -72,9 +72,14 @@ main((json) => {
         title: `Get "${app.name}"`
     });
     installAppAlert.addAction({
-        title: "Install with AltStore",
+        title: "Install via AltStore",
         style: 'default',
         handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`altstore://install?url=${app.downloadURL}`))
+    });
+    installAppAlert.addAction({
+        title: "Install via Esign",
+        style: 'default',
+        handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
     });
     installAppAlert.addAction({
         title: "Download IPA",
