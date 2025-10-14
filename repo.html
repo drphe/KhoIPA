@@ -1259,11 +1259,11 @@ renderRepo();
       document.getElementById('output').value = JSON.stringify(baseData, null, 2);
     }
 
-    window.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("DOMContentLoaded", async() => {
   	const params = new URLSearchParams(window.location.search);
   	const source = params.get("source");
-	if(source) fetchRepoData(source);
-        else init();
+	if(source) await fetchRepoData(source);
+        else await init();
         document.getElementById("loading")?.remove();
     });
 

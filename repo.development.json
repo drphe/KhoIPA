@@ -1,7 +1,7 @@
 {
   "name": "Development apps",
   "identifier": "org.khoIPA.repo2",
-  "sourceURL": "https://github.com/drphe/KhoIPA",
+  "sourceURL": "https://drphe.github.io/KhoIPA/repo.development.json",
   "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itimeteo.webssh.png",
   "website": "https://github.com/drphe/KhoIPA",
   "description": "Các ứng dụng IPA phục vụ mod, tiêm thuốc (.dylib) mà không cần Jailbreak máy....  được cập nhật phiên bản mới nhất cho ios.",
@@ -114,5 +114,9 @@
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa",
       "size": 7206362
     }
+  ],
+  "featuredApps": [
+    "com.feather.app",
+    "p3.xyz.yyyue.esign"
   ]
 }
