@@ -74,7 +74,10 @@
       "iconURL": "https://ipa.playmod24.com/wp-content/uploads/2025/02/Duolingo-IPA-MOD-iOS-150x150.webp",
       "tintColor": "8AA32E",
       "screenshotURLs": [
-        "https://boxipa.com/wp-content/uploads/2025/09/1_PhN85XNlJX_K-jJ6EJ-VoA-768x549.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/e5/d3/dde5d3d1-af38-7146-aa0b-01c10a266bc1/dc94e408-8dff-4907-94f9-ebb5f8ffdb81_en_iphone5.5_screen-nofree_1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/52/84/7e/52847ea1-3006-7254-b9a5-17a6ad6df76c/93f4d1c8-4144-44de-8b57-a5a091c838f4_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/b0/98/1cb09850-ebbc-0e5b-f07c-de3fc4f22a6b/cd048832-2375-4fd9-88e8-3711d102065e_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_4.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cb/4f/3a/cb4f3aa8-08fe-b5da-43f0-b02100c493a0/c9c1f806-63ba-4809-bdfd-1b9e144aa854_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_5.png/392x696bb.png"
       ],
       "versions": [
         {
@@ -106,7 +109,7 @@
       "subtitle": "Phần mềm xem phim 4K",
       "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện",
       "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
-      "tintColor": "271616",
+      "tintColor": "535050",
       "screenshotURLs": [
         "https://drphe.github.io/KhoIPA/common/assets/img/phim4k.jpg"
       ],
@@ -128,14 +131,24 @@
     {
       "beta": false,
       "name": "X++",
-      "bundleIdentifier": "com.twitter.app",
+      "bundleIdentifier": "com.atebits.Tweetie2",
       "developerName": "atebits",
       "subtitle": "X (Twitter) mod premium",
       "localizedDescription": "Phiên bản X++ mod không quảng cáo",
       "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
       "tintColor": "3A3636",
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://onejailbreak.com/site/assets/files/1481/bhtwitter-ios.766x0.webp",
+        "https://onejailbreak.com/site/assets/files/1481/bhtwitter-tweak.823x0-is.webp"
+      ],
       "versions": [
+        {
+          "version": "11.30.1",
+          "date": "2025-10-14T09:16:00Z",
+          "size": 163535212,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.31/X.v11.30.1.TwiGalaxy.v1.11.blatant.Patched.ipa",
+          "localizedDescription": "🆔 Bundle ID: com.atebits.Tweetie2\n⬆️ Updated to: 11.30.1\n🔧 Minimum iOS: 15.0\n✅ Patched\n💎 Modifier: TwiGalaxy v1.11\n🔄 Tweaked by @blatants\n\n📝 Note:\nTweak by DENS0R Showcase (https://t.me/DENS0R/297)\n\nChangelog:\nTWIGalaxy V1.11\n- Slideshow Actions : Custom actions when tapping 'more' in slideshow - save, copy info, and share\n- Fixed Download Videos \n- Fixed Download Voice messages \n+ Improvements"
+        },
         {
           "version": "11.29",
           "date": "2025-10-10T00:19:00Z",
@@ -144,11 +157,11 @@
           "localizedDescription": "Phiên bản mod premium mới nhất 11.29 của X."
         }
       ],
-      "version": "11.29",
-      "versionDate": "2025-10-10T00:19:00Z",
-      "versionDescription": "Phiên bản mod premium mới nhất 11.29 của X.",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.29/X_11.29_Premium.ipa",
-      "size": 163220760
+      "version": "11.30.1",
+      "versionDate": "2025-10-14T09:16:00Z",
+      "versionDescription": "🆔 Bundle ID: com.atebits.Tweetie2\n⬆️ Updated to: 11.30.1\n🔧 Minimum iOS: 15.0\n✅ Patched\n💎 Modifier: TwiGalaxy v1.11\n🔄 Tweaked by @blatants\n\n📝 Note:\nTweak by DENS0R Showcase (https://t.me/DENS0R/297)\n\nChangelog:\nTWIGalaxy V1.11\n- Slideshow Actions : Custom actions when tapping 'more' in slideshow - save, copy info, and share\n- Fixed Download Videos \n- Fixed Download Voice messages \n+ Improvements",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.31/X.v11.30.1.TwiGalaxy.v1.11.blatant.Patched.ipa",
+      "size": 163535212
     },
     {
       "beta": false,
@@ -284,5 +297,10 @@
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa",
       "size": 111351384
     }
+  ],
+  "featuredApps": [
+    "com.phim4k.app",
+    "com.atebits.Tweetie2",
+    "com.duolingo.app"
   ]
 }

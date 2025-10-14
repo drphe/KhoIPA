@@ -339,7 +339,7 @@
   <div class="container" style="background: #fff !important;">
     <div id="top">
       <div id="nav-bar" class="">
-        <a href="../KhoIPA/" target="_blank" class="" title="Kho IPA Mod">🔙</a>
+        <a href="../KhoIPA/" target="_blank" class="back-button" title="Kho IPA Mod">🔙</a>
         <div id="title" class="">
           <p>🛠️ Quản lý Json Repository</p>
         </div>
@@ -1313,6 +1313,7 @@ renderRepo();
         // Cập nhật dữ liệu toàn cục
         baseData = await response.json();
         prefixUrl = url;
+	document.querySelector(".back-button").href = `./view/?source=${window.base64Convert(prefixUrl)}`;
         nameUrl = getNameRepo(url);
         newsArray = baseData.news;
         appsArray = baseData.apps;
