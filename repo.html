@@ -432,9 +432,8 @@
 
       <button onclick="addOrUpdateNews()" class="btn-primary">Thêm / Cập nhật tin</button>
       <button onclick="cancelNewsEdit()" id="cancelNewsBtn" class="btn-cancel" style="display:none;">Thoát chỉnh sửa</button>
-
+        <h3 class="font-bold text-lg mt-6">Danh sách Tin tức (<span class="total_news">0</span>)</h3>
       <div class="news-list" id="newsList">
-        <h3 class="font-bold text-lg mt-6">Danh sách Tin tức</h3>
       </div>
     </div>
 
@@ -511,17 +510,14 @@
         <button onclick="cancelVersionEdit()" id="cancelVersionBtn" class="btn-cancel" style="display:none;">Thoát chỉnh sửa Version</button>
 
         <div class="version-list" id="versionList">
-          <h4 class="font-bold text-md mt-6">Danh sách Versions</h4>
+          <h4 class="font-bold text-md mt-6">Danh sách Versions (<span class="total_versions">0</span>)</h4>
         </div>
       </div>
       <div> 
-        <div class="version-list" id="versionList">
-          <h3 class="font-bold text-lg mt-6">Danh sách Ứng dụng</h3>
-        </div>
+          <h3 class="font-bold text-lg mt-6">Danh sách Ứng dụng (<span class="total_apps">0</span>)</h3>
       <input type="text" id="filterInput" placeholder="Tìm kiếm theo tên app..." oninput="filterApps()" style="margin-top:10px;">
 	</div>
-      <div class="app-list" id="appList">
-      </div>
+      <div class="app-list" id="appList"></div>
     </div>
 
     <!-- OUTPUT AND ACTIONS -->
@@ -743,10 +739,10 @@
 
     function renderNewsList() {
       const list = document.getElementById('newsList');
-      list.innerHTML = '<h3 class="font-bold text-lg mt-6">Danh sách Tin tức</h3>';
+      list.innerHTML = '';
       // Sắp xếp lại tin tức theo ngày (mới nhất lên đầu)
       const sortedNews = [...newsArray].sort((a, b) => new Date(b.date) - new Date(a.date));
-
+      document.querySelector(".total_news").innerHTML = sortedNews.length ?? 0;
       sortedNews.forEach((item, index) => {
         const originalIndex = newsArray.indexOf(item); // Tìm index gốc
         const div = document.createElement('div');
@@ -908,7 +904,8 @@ function filterApps() {
 
     function renderAppList() {
       const list = document.getElementById('appList');
-      list.innerHTML = '<h3 class="font-bold text-lg mt-6">Danh sách Ứng dụng</h3>';
+      list.innerHTML ="";
+      document.querySelector(".total_apps").innerHTML = appsArray.length ?? 0;
       appsArray.forEach((item, index) => {
         const versionCount = (item.versions || []).length;
         const latestVersion = item.version || 'N/A';
@@ -986,10 +983,10 @@ function filterApps() {
 
     function renderVersionList(versions) {
       const list = document.getElementById('versionList');
-      list.innerHTML = '<h4 class="font-bold text-md mt-6">Danh sách Versions</h4>';
 
       // Sắp xếp versions theo ngày mới nhất
       const sortedVersions = [...versions].sort((a, b) => new Date(b.date) - new Date(a.date));
+      list.innerHTML = `<h4 class="font-bold text-md mt-6">Danh sách Versions (<span>${sortedVersions.length??0}</span>)</h4>`;
 
       sortedVersions.forEach((item, index) => {
         const originalIndex = versions.indexOf(item); // Tìm index gốc
