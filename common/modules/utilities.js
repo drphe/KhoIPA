@@ -107,11 +107,16 @@ export function showUIAlert(title, message) {
 
 export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
     const uiAlert = new UIAlert({
-        title: `Add "${sourceName}" to AltStore / SideStore?`,
-        message: "If you have AltStore beta or SideStore, add this source so you'll receive notifications when app updates are available."
+        title: `Add "${sourceName}" to AltStore / Esign?`,
+        message: "If you have AltStore beta or Esign, add this source so you'll receive notifications when app updates are available."
     });
     uiAlert.addAction({
-        title: "Add to AltStore / SideStore",
+        title: "Add to Esign",
+        style: "default",
+        handler: () => window.location.href = `esign://addsource?url=${sourceURL}`
+    });
+    uiAlert.addAction({
+        title: "Add to AltStore beta",
         style: "default",
         handler: () => window.location.href = `altstore://source?url=${sourceURL}`
     });
