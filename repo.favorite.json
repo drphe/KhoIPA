@@ -39,6 +39,66 @@
   "apps": [
     {
       "beta": false,
+      "name": "Wechat 2",
+      "bundleIdentifier": "com.tencent.xin",
+      "developerName": "DVC",
+      "subtitle": "Nhân bản",
+      "localizedDescription": "WeChat 2 – WeChat Clone – WeChat Song Song iPA giúp bạn sử dụng 2 ứng dụng WeChat trên cùng 1 thiết bị iPhone/iPad (bao gồm cả ứng dụng WeChat mà bạn đã tải từ App Store).",
+      "iconURL": "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-icon.jpeg?x-oss-process=image/resize,w_242/format,webp",
+      "tintColor": "E26060",
+      "screenshotURLs": [
+        "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-screenshot1.png",
+        "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-screenshot2.png",
+        "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-screenshot3.png",
+        "https://assets.apk.live/com.tencent.xin--ipa-8_0_54-screenshot4.png"
+      ],
+      "versions": [
+        {
+          "version": "8.0.62",
+          "date": "2025-08-22T10:53:00Z",
+          "size": 312821828,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wechat2/Wechat.v8.0.62.ipa",
+          "localizedDescription": "Wechat  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Cài Song Song"
+        }
+      ],
+      "version": "8.0.62",
+      "versionDate": "2025-08-22T10:53:00Z",
+      "versionDescription": "Wechat  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Cài Song Song",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wechat2/Wechat.v8.0.62.ipa",
+      "size": 312821828
+    },
+    {
+      "beta": false,
+      "name": "Viber 2",
+      "bundleIdentifier": "com.viber.app",
+      "developerName": "DVC",
+      "subtitle": "Nhân bản Viber",
+      "localizedDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2018/04/Viber-Messenger-%E2%80%93-Text-Call.jpg",
+      "tintColor": "2330E1",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/4a/e6/7b4ae601-4c5b-8efb-1e42-186730e06b83/c3414849-3e47-4923-85ca-4cd7af0437f1_Viber_AS_English_1284x2778_Screen1.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/21/25/86/2125863a-67a9-3707-d083-9b2d0ae2dc1b/630bc607-f372-4b1d-b7c0-a7c5f97b0856_Viber_AS_EN_1284x2778_Screen2.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/40/f0/ad40f0dc-ae94-a755-5131-aa3ce29b656c/1dd0e4bc-7c56-43e0-92b8-ee12c4d293db_Viber_AS_EN_1284x2778_Screen3.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/24/11/ed/2411ed23-a6ae-fb4e-cf2e-bc2717317294/391801ec-334a-4b55-9e3e-d940a64f3404_Viber_AS_EN_1284x2778_Screen4.jpg/300x0w.webp"
+      ],
+      "versions": [
+        {
+          "version": "26.3.4",
+          "date": "2025-10-14T10:44:00Z",
+          "size": 138918469,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/viber.26.3.4/Viber.v26.3.4.ipa",
+          "localizedDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠"
+        }
+      ],
+      "version": "26.3.4",
+      "versionDate": "2025-10-14T10:44:00Z",
+      "versionDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/viber.26.3.4/Viber.v26.3.4.ipa",
+      "size": 138918469
+    },
+    {
+      "beta": false,
       "name": "Rổ Phim Vip",
       "bundleIdentifier": "co.roteam.roteamios",
       "developerName": "Rophim.com",

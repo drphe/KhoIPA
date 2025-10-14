@@ -514,9 +514,13 @@
           <h4 class="font-bold text-md mt-6">Danh sách Versions</h4>
         </div>
       </div>
-
+      <div> 
+        <div class="version-list" id="versionList">
+          <h3 class="font-bold text-lg mt-6">Danh sách Ứng dụng</h3>
+        </div>
+      <input type="text" id="filterInput" placeholder="Tìm kiếm theo tên app..." oninput="filterApps()" style="margin-top:10px;">
+	</div>
       <div class="app-list" id="appList">
-        <h3 class="font-bold text-lg mt-6">Danh sách Ứng dụng</h3>
       </div>
     </div>
 
@@ -803,6 +807,29 @@ renderRepo();
 }
 
     // --- Chức năng Quản lý APPS ---
+// lọc app
+function filterApps() {
+  const input = document.getElementById('filterInput').value.toLowerCase();
+  const items = document.querySelectorAll('.app-list .app-item');
+
+  items.forEach(item => {
+    const borderColor = item.style.borderLeftColor;
+    const appName = item.querySelector('strong')?.textContent.toLowerCase() || '';
+
+    // Nếu ô input rỗng thì hiển thị tất cả
+    if (input.trim() === '') {
+      item.classList.remove('hidden');
+    } else {
+      // Chỉ hiển thị nếu đúng màu và tên chứa từ khóa
+      if (appName.includes(input)) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    }
+  });
+}
+
     function addOrUpdateApp() {
       const name = document.getElementById('app_name').value.trim();
       const bundleIdentifier = document.getElementById('app_bundleIdentifier').value.trim();
