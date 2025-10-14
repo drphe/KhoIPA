@@ -116,7 +116,7 @@ export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
         handler: () => window.location.href = `esign://addsource?url=${sourceURL}`
     });
     uiAlert.addAction({
-        title: "Add to AltStore beta",
+        title: "Add to AltStore",
         style: "default",
         handler: () => window.location.href = `altstore://source?url=${sourceURL}`
     });
