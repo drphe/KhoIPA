@@ -1,13 +1,15 @@
 import { sourceURL, base64Convert } from "../common/modules/constants.js";
-import { formatString, open, setUpBackButton  } from "../common/modules/utilities.js";
+import { formatString, open, setUpBackButton , json } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";
 
+const editorsources = await json("../common/assets/json/editorsources.json");
+
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
         e.preventDefault();
-        open(`../repo.html?source=${sourceURL}`);
+	if(editorsources.includes(sourceURL)) open(`../repo.html?source=${sourceURL}`);
     });
 
     document.getElementById("add")?.addEventListener("click", e => {

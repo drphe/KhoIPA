@@ -93,7 +93,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
 Đối với **Feather, Esign** là những ứng dụng được cài đặt bằng các công cụ online như tại mục 2.3 hoặc cài đặt qua Trollstore
 
-Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm link cài đặt trực tiếp các ipa mod phổ biến như Facebook NoADS, Youtube Lite,... Một số dịch vụ chính: Certapple.com, Unkeyapp.com, Thuthuatjb.com...
+Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng dung, công cụ hỗ trợ, cung cấp link cài đặt trực tiếp các ipa mod phổ biến như Facebook NoADS, Youtube Lite,... Một số dịch vụ chính: Certapple.com, Unkeyapp.com, Thuthuatjb.com, https://p12apple.com/...
 
 
 [Hướng dẫn cài IPA bằng Feather](https://thuthuatjb.com/huong-dan-su-dung-feather-de-cai-ipa-tren-cac-thiet-bi-ios-ipados/)
