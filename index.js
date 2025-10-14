@@ -75,8 +75,6 @@ for (const source of allSources) {
     allApps.push(...nonBetaApps); 
 }
 
-    loadMoreApps(); 
-
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
 
@@ -134,7 +132,7 @@ const searchBox = document.getElementById("filterText");
         }
     });
 
-
+    loadMoreApps(); 
 async function insertAppHeader(app){
 	return app ? `
 <div class="app-header-container">
