@@ -134,6 +134,8 @@ const searchBox = document.getElementById("filterText");
 
     loadMoreApps(); 
 function insertAppHeader(app){
+const baseHost = window.location.origin; 
+const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
 	return app ? `
 <div class="app-header-container">
 <a href="./view/app/?source=${base64Convert(app.sourceURL)}&id=${app.bundleIdentifier}" class="app-header-link">
