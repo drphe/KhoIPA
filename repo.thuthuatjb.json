@@ -12,6 +12,26 @@
   },
   "news": [
     {
+      "title": "Ủng hộ chúng tôi",
+      "identifier": "thuthuatjb-donate",
+      "caption": "TTJB IPA Repo là một dự án miễn phí. Để vận hành toàn bộ hệ thống Thủ Thuật Jailbreak là một điều không đơn giản, chúng tôi cũng đã gặp khá nhiều rào cản và khó khăn khi xây dựng các sản phẩm này. Nào là chi phí cho dịch vụ lưu trữ website (hosting), máy chủ dữ liệu, chi phí duy trì tên miền (domain) hàng năm và một vài chi phí phát sinh khác trong quá trình xây dựng. Chưa kể đến rất nhiều tâm huyết mà bọn mình đã cố gắng thực hiện và phát triển.",
+      "tintColor": "CC0000",
+      "imageURL": "https://ipa.thuthuatjb.com/img/donate.jpg",
+      "date": "2025-04-11",
+      "url": "https://thuthuatjb.com/donate",
+      "notify": false
+    },
+    {
+      "title": "TTJB IPA Repo",
+      "identifier": "ttjb-ipa-repo-about",
+      "caption": "TTJB IPA Repo là nguồn IPA của iOS/iPadOS cho TrollApps, Esign, Gbox, Altstore, Scarlet... Bạn có thể nhập địa chỉ: https://ipa.thuthuatjb.com/repo vào phần thêm nguồn trong ứng dụng của bạn hoặc nhấn truy cập Kho IPA để tải IPA.",
+      "tintColor": "EE0000",
+      "imageURL": "https://thuthuatjb.com/wp-content/uploads/2024/03/ttstore-for-trollstore-ios-780x470.png",
+      "url": "https://ipa.thuthuatjb.com",
+      "date": "2025-04-11",
+      "notify": true
+    },
+    {
       "title": "Hỗ trợ chọn phiên bản",
       "identifier": "ttjb-ipa-repo-version-with-feather",
       "caption": "TTJB IPA Repo đã hỗ trợ chọn phiên bản khi dùng với Feather, bạn có thể bấm giữ vào ứng dụng và chọn nút Phiên bản trước để chọn phiên bản. Tuy nhiên, Feather hiện lại chưa hỗ trợ xem thông tin phiên bản, nên nếu bạn muốn biết từng phiên bản thêm các tuỳ chỉnh gì, hãy dùng phiên bản cũ của nguồn là https://ipa.thuthuatjb.com/repo-old",
@@ -9220,13 +9240,13 @@
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
       "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/20/73/12/2073129f-5a35-8d2e-5771-d05b00ca8b30/b50f3413-5af5-4401-afc8-59d1f050d406_IOS_5.5_1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/7b/94/797b944e-5aef-28d8-3b24-00b4ee3667be/23d473c0-b9bb-4925-b93f-4d4a86fdee0f_IOS_5.5_2.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/4e/e5/344ee5be-7612-547c-a152-ef62793ba820/ec6f8ffc-2c27-451e-a745-f2cfae82591c_IOS_5.5_3.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b0/65/7d/b0657d7b-c068-7d4f-247e-30dbc65a595e/6c49538e-e386-4dc3-92aa-4fe79e093873_IOS_5.5_4.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/38/c6/50/38c65058-dd9a-37fe-b86a-69c5cf56ba20/b0a13888-f9c2-4362-9adb-4d8ff568581f_IOS_5.5_5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/17/d5/d8/17d5d80a-ce42-35df-215c-a5c0d08569aa/61078484-31d1-447e-a656-a25cb4212285_IOS_5.5_6.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/02/89/7602897a-109f-bafe-127e-f97db1fd0279/1044b7ba-f80c-4008-81fb-8010ddd32ca7_IOS_5.5_8.jpg/392x696bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/36/08/0b/36080b45-9e31-68c9-1788-27504188c3ff/b50f3413-5af5-4401-afc8-59d1f050d406_IOS_5.5_1.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/7c/5a/377c5a6c-0e52-4fd2-dddc-24bce60c5122/23d473c0-b9bb-4925-b93f-4d4a86fdee0f_IOS_5.5_2.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e3/a8/3b/e3a83b92-2216-807f-115b-3bd892523a63/ec6f8ffc-2c27-451e-a745-f2cfae82591c_IOS_5.5_3.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/a6/fd/faa6fdf2-599c-f76b-368a-09a09b042c06/6c49538e-e386-4dc3-92aa-4fe79e093873_IOS_5.5_4.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/da/38/88/da3888ec-971a-82d1-117e-e68f501e99af/b0a13888-f9c2-4362-9adb-4d8ff568581f_IOS_5.5_5.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f4/bc/aa/f4bcaa16-648f-257f-d7fb-2c57bcea69ed/61078484-31d1-447e-a656-a25cb4212285_IOS_5.5_6.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f2/b5/ed/f2b5ed09-427c-cafb-38b6-718f1283f155/1044b7ba-f80c-4008-81fb-8010ddd32ca7_IOS_5.5_8.jpg/392x696bb.jpg"
       ],
       "size": 86635445,
       "version": "9.16.2",
@@ -12622,14 +12642,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.komoot.berlinbikeapp.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/0c/08/580c0875-670d-5590-f42d-77fc5b88fc79/c90a7133-0a82-4e05-b1bf-a37093e2b59c_1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2a/51/46/2a5146d6-6890-33e8-22a8-71b133d5571b/4c879c0d-b550-4b2e-b909-cf1d196a5ec9_2.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/24/7c/64247c05-c563-f958-4b8f-c741c8946288/fc01a798-b4fc-4c25-a209-b404f1c54210_3.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/5b/23/375b231f-4bad-b8b1-7e51-06bb3bdfd651/3262a64c-52a4-4327-a990-986073a2072b_4.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/54/7f/0c547f68-699e-38fc-6041-08cdd4372a02/164ca545-7fb7-4721-a7cd-7efa9d2fe545_5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ed/4e/92/ed4e92d7-6849-3c57-7228-4998a6032f9f/17ecab0e-3473-4c2a-94e0-c9c74a3759fb_6.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 156216865,
       "version": "2025.38.4",
       "versions": [
@@ -12856,15 +12869,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.actowise.browser.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/a3/d0/0a/a3d00a58-8f09-9ab1-8e79-a8f970ee0d09/tns.qgpjtkqf.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/b6/b7/1b/b6b71bba-e20d-2c6d-532c-44ca0e92809c/tns.tivaxfyb.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/e7/34/b9/e734b933-3dc7-651e-8c61-fd8dcc15d789/tns.ojgeupdc.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/6b/49/48/6b494881-96fb-6b44-db10-96cbf72bbfba/tns.lgxeegtx.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/db/7c/4e/db7c4ecd-ff74-a78d-0b97-912f78d6796e/tns.xpqfmzgm.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/0b/86/63/0b8663ed-d63b-1028-4236-48d1c971d4b2/tns.zzxqaztt.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/3a/3a/64/3a3a64d3-e928-4707-6239-7de9eb47389f/tns.oyzxnnzx.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 5599581,
       "version": "3.4",
       "versions": [
@@ -12911,11 +12916,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontierdesign.videostar.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/8e/47/62/8e4762ab-ca16-0930-10ec-134272b81a33/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/24/1d/48/241d48b5-e85a-17e1-eb34-a3fc32deb174/d3b6366e-9e66-4435-9e59-64a6aa9a5a9f_5pt5_English.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/05/b1/d2/05b1d274-36f9-bfe2-e82b-88a83516a4cb/pr_source.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 326262541,
       "version": "14.3.4",
       "versions": [
@@ -13011,16 +13012,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/design.yugen.Flow.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/38/5b/e1/385be1d4-6028-9b80-8080-7208379da81a/b7cd7880-59d0-4a76-9b1e-e009a8d32c0f_screenshot_ios_55_1_EN.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/94/92/f8/9492f887-d8a5-159d-b99a-d559f7979620/65fa9ab4-2e35-4fb5-8bb2-938d679a085a_screenshot_ios_55_2_EN.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c4/39/62/c4396286-529b-5745-cbce-8d4c9b2b3445/37fcc5b7-79a6-4d63-8a76-41081b518f46_screenshot_ios_55_3_EN.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c9/c4/b2/c9c4b28a-6371-c9b4-16eb-0f987488cbf3/ce5145fd-8b5c-460f-adc3-4f56df7c9635_screenshot_ios_55_4_EN.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/1c/07/061c073d-5de1-3f36-0d56-70a94d0ca264/c67ef008-1eb8-4034-90eb-e7505851203d_screenshot_ios_55_5_EN.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/0b/cc/840bccc4-7d3f-9a07-c229-d3af8011ce70/7f0422a1-6d75-4cfe-b7f5-b03777bac40c_screenshot_ios_55_6_EN.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/36/8f/d6368f50-a8ad-2b5f-eeed-41b160a520b1/e1db0029-9d6a-43ed-ad7d-ae9ed36e90dd_screenshot_ios_55_6_EN.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/54/bf/c3/54bfc377-eeee-5756-8ac9-b35d85778374/5297f24c-d42e-46ad-8e63-a5bba1c45caf_screenshot_ios_55_7_EN.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 16486717,
       "version": "4.5.0",
       "versions": [
@@ -13233,18 +13225,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.CalculatorForiPad.InternetRocks.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/20/12/3f/20123fd5-7e67-ff34-e131-fe4a99f485fe/1a5c8a96-5cf7-4ef5-9922-4e10ff9be0ca_1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/78/89/6c/78896ce9-277c-b345-9fcc-dbbedaba5566/edae8ea7-b95d-4d97-b623-d7ae186b2b9a_2.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/28/e1/2a28e158-98cf-aff4-244c-84e03e6d5d82/086500c6-8f07-4907-8cf7-f632f2aef2ed_3.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fc/2d/2c/fc2d2c1f-9597-c966-15f2-954cd97e8170/64d91808-d517-4b64-9011-3e5aad879079_4.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/1f/82/111f8292-74b4-57dd-b167-c149d9636ab1/f68d5916-87a8-45d5-ba98-57e8f24e0628_5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/28/f5/7b28f586-e932-a5f9-1028-272706412958/f9a61c86-62b8-495b-8c85-96b4fe59c48e_6.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/be/68/b8/be68b83a-8122-b624-5523-c599f32375cc/cffe7e2b-5f1c-49eb-afd7-a7448177941c_7.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/c8/91/d7c89199-da30-38ef-2db5-f6148b1b08fd/bb70bd3f-3eaf-4450-80c9-0ecdc6606229_8.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5a/91/32/5a913238-98b2-27e9-8e25-85ed3ac19348/440ba5d6-d82b-44fd-bf3c-39530e4b70f6_9.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/51/74/cf51742b-7993-301b-8605-27265cd29032/d0a16cda-c8a8-4a55-b4bf-7f39b2ac2c5d_10.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 268360975,
       "version": "2025.10.1",
       "versions": [
@@ -15026,11 +15007,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/nt.nr.ios.png",
-      "screenshotURLs": [
-        "https://ipa.thuthuatjb.com/view/img/repo-view.png",
-        "https://ipa.thuthuatjb.com/view/img/repo-view-2.png",
-        "https://ipa.thuthuatjb.com/view/img/repo-view-3.png"
-      ],
+      "screenshotURLs": [],
       "size": 935343735,
       "version": "12.169.3",
       "versions": [
@@ -16309,12 +16286,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.spacegab.slideshow.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/f1/9e/22/f19e2255-dce5-9993-c307-ae28c03a5e32/d13e4980-b18c-4411-8aad-21fc1e6c21a7_default__screenshots__iOS-5.5-in__01.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/d4/1b/f4/d41bf456-272f-2473-e38c-d59acb6c3095/9b249ab8-631f-4669-9302-672f277dbae6_default__screenshots__iOS-5.5-in__02.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/b1/44/e0/b144e0ab-a7b2-3c6f-ab8f-79fe5c351e62/0dfb7b0b-a118-4344-9dcb-a0f96a25b451_default__screenshots__iOS-5.5-in__03.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/43/7e/97/437e97f3-d1e0-c472-44df-a72626e85777/0aef4a90-bacf-43dc-b43c-8d8882e7cda5_default__screenshots__iOS-5.5-in__04.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 121754691,
       "version": "5.6.41",
       "versions": [
@@ -17125,16 +17097,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alphaprogression.alphaprogression.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/49/04/de490404-a67d-06be-a7b2-a9848c9ee7dc/b39c4241-cbbe-4045-aec1-613605da4858_5.5_-_EN_-_1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/b2/a5/01b2a5a9-7b7a-8aaf-9fd4-2beb9b85b9c4/1e66a976-ee7c-4b28-8ef0-6c5918bd6f68_5.5_-_EN_-_2.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/56/8e/61/568e6155-b3c5-952b-ec9b-1ad45378314f/51fa58b1-a14c-4243-9d37-229b5865c938_5.5_-_EN_-_3_-_lbs.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/c2/8f/0ec28fe6-bcc0-3cef-4c66-b7cfb7217d30/6ed71ed1-8bd8-4759-b484-7d7e49d2c643_5.5_-_EN_-_4.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4d/29/2e/4d292eee-a240-04db-381c-0adbf068928b/2fc39850-7a92-42bf-bd71-36217253c36b_5.5_-_EN_-_5_-_lbs.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9d/3a/9c/9d3a9c67-6c36-41e6-7d65-6ca0a206cd2b/c2642a15-e1e1-4ea0-aca7-3ef8642d3184_5.5_-_EN_-_6.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2a/39/4c/2a394c2b-c740-fabe-36b6-5791c65dd1b8/7f90862c-b604-4249-98b4-2a25eb03b553_5.5_-_EN_-_7_-_lbs.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/27/75/a7277578-f0af-b4be-5f03-d551a3427ae8/a805b63a-88bd-4c2b-942f-2eefb0f239e8_5.5_-_EN_-_8.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 143224415,
       "version": "6.1.1",
       "versions": [
@@ -18145,17 +18108,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.uplens.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9c/35/80/9c35805b-fffa-4469-a1ad-fbce1e949023/daf3b126-3496-4cd4-b672-86d05ce53882_1-5_U00275-en.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b0/b7/61/b0b761d1-4520-bb1f-6f9c-2a33cf99be0d/24864328-dab1-450c-9a87-20009c67cce8_2-5_U00275-en.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bf/28/a5/bf28a59a-a008-cdac-ab71-c7524b09f019/fb3be5a6-4f05-40fd-b202-8f672503eab0_3-5_U00275-en.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e7/ef/74/e7ef743b-6b1a-4655-934b-dcd188dd82c4/912accdc-d02d-42fc-9ca2-dd1c42202b39_4-5_U00275-en.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/af/9a/81af9a34-d92d-293f-c4c1-10e5a4d080fc/d1322cb8-ae03-427f-a3c0-a35d50619bca_5-5_U00275-en.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cd/08/d4/cd08d444-b47d-6ae2-10a4-94721adf0f9a/18a65433-b405-4d79-93f6-63a86d81c02c_6-5_U00275-en.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/f4/ff/32f4ffac-f03c-1378-c44e-5ab439c74b14/5de6ad60-b69d-46da-96c0-19c0d39a7386_7-5_U00275-en.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/fe/b3/36feb3fa-21ef-370f-8943-525e7d1efc57/1018be1f-f9b9-4153-a6a9-5193a2f14411_8-5_U00275-en.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/38/97/7f/38977fee-266c-66c3-5839-157f94a87ae2/1082e6ed-cf5b-49d2-a774-68148aeb5519_9-5_U00275-en.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 178992163,
       "version": "3.3.4",
       "versions": [
@@ -18314,15 +18267,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.crossforward.pedometer.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/10/87/14/10871431-6164-59a0-2284-02c792606197/56617795-f014-4947-8022-5b627a2513d1_Simulator_Screenshot_-_screenshot2_-_2023-11-23_at_12.32.54.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fd/3f/78/fd3f7815-025d-7451-627e-26ae2e48a374/9329a0fa-6435-45fe-ab4b-b04cb8a32375_Simulator_Screenshot_-_screenshot2_-_2023-11-23_at_12.33.24.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/92/03/dd92037a-1e4c-de34-ff5d-022b47115fa7/b50b5db7-ac72-4cb7-bfc7-288f2ca86575_plus-en-Widgets.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/76/24/f5762412-104f-67a1-aa4c-86e513cd0efa/31e44659-18e3-4bcb-a261-ed006e1f69c0_vvvvv.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6f/b6/59/6fb659b8-7cb5-127e-6919-c8e74220da81/ba04a075-9110-4ada-b64c-f3751e9634d2_Simulator_Screenshot_-_screenshot2_-_2023-11-23_at_12.32.39.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ea/35/f6/ea35f6a5-c4a0-897b-e4ad-12f630d6360a/c3d0ea38-9139-4837-852b-a419721d4305_xcvcv.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7c/83/89/7c8389a3-0d3b-8f06-cf93-ef6642b25475/14f6cf5c-6b90-40bd-af57-e5506f8de2f6_sdfsdfs.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 82943882,
       "version": "7.0.4",
       "versions": [
@@ -23255,13 +23200,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hassantaleb.mockup.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/85/ba/34/85ba346c-0843-15b6-0243-64b8b046101f/499d877b-8a6a-41a7-8979-c0201a9a3b68_Simulator_Screenshot_-_iPhone_8_Plus_-_2024-02-16_at_06.17.36.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d3/b2/da/d3b2da6d-b70e-35a5-7aed-a7951495968c/58f4b499-ddb3-4e4c-94c0-da3094f034c3_Simulator_Screenshot_-_iPhone_8_Plus_-_2024-02-16_at_06.19.38.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/94/a2/0594a288-f620-0551-a3e9-c5c977c152d0/70a3da8b-26fa-4c59-bc06-77e77664ecda_Simulator_Screenshot_-_iPhone_8_Plus_-_2024-02-16_at_06.23.41.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c5/8e/43/c58e43c8-30a8-f77a-9893-a7f4d6d083e6/7a735541-8ffb-4141-837c-5aa30a404c11_Simulator_Screenshot_-_iPhone_8_Plus_-_2024-02-16_at_06.24.46.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/c9/04/b3c904ec-ac88-724f-183b-edef5731b6d0/39041f44-943f-45af-ab34-0a7424f56173_Simulator_Screenshot_-_iPhone_8_Plus_-_2024-02-16_at_06.25.52.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 73665072,
       "version": "4.0.1",
       "versions": [
@@ -23316,13 +23255,13 @@
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bickster.myFitnessSync.png",
       "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/16/39/94/163994d5-c490-90a9-318b-c4ef92f6ce2c/be4c8a0a-0afa-406c-af86-df3240d36c78_own_your_data_wall_girl.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/40/90/c5/4090c579-3b82-4828-27f7-49f48d95c512/e46da22b-4c97-4a54-9a3c-1c4ca2a422b9_fitbit-history.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/7c/90/f5/7c90f5cf-7cbd-6955-04b0-53fd48ad6983/8d554288-d9ce-4d30-affe-2ed5d474843a_auto-sync.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/fd/02/f1/fd02f127-159b-3fdd-508d-4def67a388b5/bc28c333-8860-4d9b-9cb0-38e0175e9813_fields.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/28/50/ec/2850ec2b-3b06-999d-b3a8-68b01f6f65a0/9e142ab0-3fc1-4092-b0ed-08b9db4a491d_all-fitness-data.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/c3/f7/8c/c3f78c5a-e4d2-eb38-405f-a369a9486a7e/9a58ae44-a053-4011-95bf-df78062a8f54_sync-all-devices.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/e9/bf/9c/e9bf9c81-0b45-ad02-8c57-26932e7a04e3/61245437-81a2-4dac-9ea0-829a11e90708_reviews.png/392x696bb.png"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/53/7a/84537ad0-6880-18cf-9113-b037de7656c9/be4c8a0a-0afa-406c-af86-df3240d36c78_own_your_data_wall_girl.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/9b/ee/7a9beebc-dfbc-efb7-962b-1f6f0f08d575/e46da22b-4c97-4a54-9a3c-1c4ca2a422b9_fitbit-history.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/29/54/652954b7-2381-bd42-2960-1091cee251f3/8d554288-d9ce-4d30-affe-2ed5d474843a_auto-sync.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/4d/9f/744d9f9f-1ea8-9290-3c58-0d02923305cc/bc28c333-8860-4d9b-9cb0-38e0175e9813_fields.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/d2/6b/9ed26b3f-d2e0-a1a8-bc1c-2d84205ab5f6/9e142ab0-3fc1-4092-b0ed-08b9db4a491d_all-fitness-data.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/f4/22/d7f42258-5029-515d-771a-2ddcb14e0841/9a58ae44-a053-4011-95bf-df78062a8f54_sync-all-devices.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c5/03/65/c50365e1-e15a-441e-0abf-aaada5cf08f6/61245437-81a2-4dac-9ea0-829a11e90708_reviews.png/392x696bb.png"
       ],
       "size": 43932554,
       "version": "3.1.3",
@@ -23377,18 +23316,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.benchu.ARMCPUZ.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b4/02/cd/b402cd42-26d5-4b85-64a8-19f9c7dbf1d5/a7771c99-01da-4f91-a48b-312da919e0f1_e1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cb/d4/8c/cbd48c38-7642-e3c3-4c67-f323845bf585/tns.dnxtcops.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/02/9e/ab/029eabb0-ac29-6298-4640-59255c839f39/mzl.wnmqjvur.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/91/c3/2a91c38a-dd36-6ec0-b12c-a9177e6ee20c/mzl.bkcsxfrs.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/3a/2b/593a2b30-6a8a-469a-c6c4-bc0f0512ed11/mzl.pajrymde.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cb/76/de/cb76deb6-bc6e-0710-9e01-e3d59903c1af/mzl.utnbqqla.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9e/57/ae/9e57ae1a-1f07-e06b-c8c7-3a96f6bf465e/mzl.rcwqugge.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/e2/30/c2e2309f-b78c-05b0-42f9-5e06e66f0114/mzl.nizxrymm.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/93/45/2b9345e6-1f70-3bc3-24d6-1f7440bdf014/mzl.vokoijar.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4b/ea/ec/4beaece5-d845-2dda-4045-45e52eb485ae/mzl.ghgegubo.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 8585073,
       "version": "1.8.2",
       "versions": [
@@ -33505,14 +33433,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adguard.AdguardExtension.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/52/f0/19/52f01980-2cfb-0cb4-ceec-b9af058dafbd/pr_source.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e4/d1/a5/e4d1a50b-a195-4fd4-7e66-b6e22cb4f1f9/pr_source.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d0/6f/e1/d06fe152-4954-9ec5-1d24-bd1c06254af1/pr_source.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/3a/89/d6/3a89d6dc-dc8d-6ad1-50f1-4fd84511b775/cf38228d-3f38-4bec-bad6-017efe5c8ef9_5.5_4@3x.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/24/af/c7/24afc736-f08f-dcd0-faf5-b906198182dd/pr_source.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/7b/64/21/7b6421b2-6671-f52e-4f17-f32b49956014/417533aa-6a05-4a87-bda3-228766a5a967_1242x2208.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 41078590,
       "version": "4.5.12",
       "versions": [
@@ -33566,15 +33487,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.appnation.artgenerator.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/7d/4f/487d4f7a-262b-a0f0-a4c6-9db2c96051be/089c56cf-745a-4ed8-bdd8-154f0211a044_5.5-1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/14/99/a014991f-d27c-5b5f-7e78-fafd22bf2722/7e26fd96-ff5b-48a4-9886-49d22b267d59_5.5_-1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/dd/63/47/dd6347ee-df93-aaea-7683-5790844f1b6f/75d3a84d-b094-454f-b43c-9c30cfbee81f_5.5_-2.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/73/e0/1073e014-f3a7-6dcd-e725-58004e031059/f009c987-73bd-47b8-9799-01d523f0e43c_5.5_-3.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/83/5a/75835acb-5940-b9aa-9543-99bbb131be6f/252a5331-4d40-4b21-bd9d-5907e8daca66_5.5_-5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/8b/bf/6a8bbf68-18bc-5435-6330-b6cc0316ff1e/a517030a-9ba6-42ae-9eb9-fd27823e01a0_5.5_-6.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/1a/40/4a1a4043-bac7-6b17-e4e0-5904c86bcdcc/ae83eebe-6f0f-4df3-9c70-c58ff75208af_5.5_-7.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 70986700,
       "version": "3.6.0",
       "versions": [
@@ -33628,17 +33541,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.b612.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/90/af/ca/90afcae4-5ffc-c03b-bd81-68160de39fba/c602a0cc-9168-4dca-b0e0-443e76620fb3_01_2__U00283_U0029.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/60/02/0a/60020af4-6784-d55a-1d6d-ff3dbbd42acf/48553c9d-ffb9-4da2-a91a-3c254eb038dd_02.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/cd/1f/7d/cd1f7d91-7cc9-72ea-8e0f-c9f9424bc1e6/dca64d2f-a0e8-4f64-851a-eae83a6bf28d_03.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/99/ce/07/99ce0774-15bc-e45f-94e7-53880702ab3d/003130c4-8214-4c18-b8ca-7610c1e7cac9_04.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/3a/0e/5f/3a0e5f0d-f6ab-b13a-a09e-9605bf74e48e/d1189f05-7fe7-48fa-ae44-ca7b1b6a033a_05.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/92/6b/32/926b32ce-8d79-5fa3-74d7-ee3a4263686a/cdd879b7-0169-4999-879e-4ed157db7cb2_06.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/4e/68/58/4e685884-0bd8-a8ee-1115-c8b3261144b7/8edf5105-fac7-4301-88b2-d00a35db4b9a_07.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/da/9b/ff/da9bff6d-fe97-d8f2-bdd5-75871f2d3425/1437cccd-24f3-452b-bafb-d1f162b651aa_08.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/6b/35/96/6b359605-728f-2f81-9ec3-78ed27d6af0f/7d8023c4-41e7-47bc-8caa-47689e0585b6_09.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 138805125,
       "version": "14.4.10",
       "versions": [
@@ -33685,13 +33588,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sugarmo.ScrollClip.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/88/01/4788012f-1f5f-bb9e-eeda-1df8131fa000/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/1e/9a/5d1e9a23-9cd3-b8af-192d-fa7c016ddda8/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/a5/e4/f9a5e47e-dd15-4273-1fac-b7f63d801dd8/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/61/28/14/61281452-bb7c-317d-1a20-b57ce7242d9e/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3b/cc/b5/3bccb5de-c9ee-4d32-73b0-0f0113c60806/pr_source.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 35358940,
       "version": "3.12.2",
       "versions": [
@@ -33870,13 +33767,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/reels-maker-one.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/19/b7/28/19b7284b-3b29-c388-fbfe-ba0ba8dda27b/3a2c39be-0840-45c4-aa70-410eecc49033_01.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/55/e0/5555e057-53cb-ef5c-6f97-3b33a65b7067/b3d90f06-5bd5-4663-bbca-2f95dbbb070e_02.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ae/9a/fa/ae9afa71-9f21-3fc3-a114-b263fe47f29e/270b4cd2-b4d0-493a-835f-cf58cbbd14bd_03.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/d7/0f/58d70f9f-05e0-0775-63e7-bb86acdf8dcd/888759d7-f25e-4be4-a666-230c38b2e2eb_04.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/a0/a5/5fa0a53f-b496-3138-6eb6-e0bb604e50e8/361c1fe6-336c-4a84-bbf1-f254b10c3c1e_05.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 120833841,
       "version": "1.21.1",
       "versions": [
@@ -33949,17 +33840,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.PDFExpert5.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/28/5d/84285d02-62cb-2c00-afb7-37250f258e09/f7ffbfb9-3c17-429c-9ade-7a4d10785724_EN-iphone-5.5-aw1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/44/bc/f344bc6a-d546-c1b0-b9ae-efd9a7d55f82/689d978f-d90b-41a7-8644-fe7b6e9d31c9_EN-iphone-5.5-aw2.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/64/e0/d3/64e0d301-1afa-d47d-b2c4-3ba53faefe7d/bfc2201e-da5a-40d3-8c1e-a4bc0ee52566_EN-iphone-5.5-aw3.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/07/e9/d607e9f0-0078-1476-3188-3768fbbb13a7/3b396447-f7fe-4ef4-b82c-d21cee48cfe6_EN_5_U002c5_updated_ss_4.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e9/c1/fb/e9c1fbde-0380-464d-57d7-45d58754a461/dad16c56-46b2-49c4-8405-0837d6d660b2_EN-iphone-5.5-aw5.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/fb/03/cefb0359-33a8-4bcc-2ac7-97637641ec66/7e72efd3-abda-4452-b77b-e681f7acbdb0_EN-iphone-5.5-aw6.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/8d/01/f28d01f5-3cf2-0bb3-36f1-316ff7edd2d5/f384b559-e9d4-403c-ab84-09810932e9fe_EN-iphone-5.5-aw7.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/b1/a7/97b1a7ee-2cfa-877b-cd7a-498d3f99f071/98695b66-1737-4f37-86f0-2e78636f6b96_EN-iphone-5.5-aw8.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ea/ab/99/eaab99f3-0328-d541-7e0e-de30b7392319/e62dc987-cc2e-4101-94f5-9b456fa3258f_EN-iphone-5.5-aw9.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 152321401,
       "version": "7.23.7",
       "versions": [
@@ -34048,12 +33929,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dajiu.stay.pro.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/fb/50/ebfb5049-4029-f3a2-51ac-83f9a995fd29/a565e7ac-03ee-446f-88c6-abbfeb8a1c67_stay-2.5.8-en1-5.5.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/80/6d/ef806d0d-e546-d7bd-8255-fb0235cb1072/3d2a5f83-b39f-4668-a998-b6f61f873f62_5.5-en-t2.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/34/81/2f348189-69ad-92d1-56c3-4a31be0683c4/dc3e7ddc-c47d-469b-a4f9-928dc04ad537_sceenshot-en-5.5-t3.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/68/9f/3c689f8c-62f7-2b9a-9886-85491db95b40/b23ccce3-2cfc-4df2-a936-9cc3bf4996f8_sceenshot-en-5.5-t5.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 38200325,
       "version": "2.9.12",
       "versions": [
@@ -34093,11 +33969,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.finderbot.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7c/04/c8/7c04c880-58b0-534c-52c1-4076c1ac87db/1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/92/15/bb/9215bb28-856f-43b1-bfca-e319291ae4ac/2.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5a/43/23/5a432319-a530-1a76-3972-9be98fbdb273/3.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 74017773,
       "version": "2025.8.4",
       "versions": [
@@ -34360,16 +34232,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.innothenics.thenics.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/d0/fb/67/d0fb67b3-07ea-4c0e-03b4-1c17d878cf3a/5f18b6a2-6bce-49d0-b35a-8de0ed7f9c3a_screenshot1.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/5f/bf/15/5fbf15a3-b3d7-c1ee-1458-58231d5059f7/79f9443c-3fcf-40fe-9219-c75398430d5f_screenshot2.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/a9/05/db/a905db6d-8d38-10d9-392a-16a28cf0d35b/ae5521a0-4939-4b7d-9168-a680119ebc55_iPhone_5.5.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/a3/ed/fd/a3edfd6a-52e9-7d54-42e0-e0d52dfc3eb0/cec87c72-50ef-4da6-a51d-cc2279cf214a_screenshot4.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/9b/4b/61/9b4b61cf-5035-910e-e491-d5aeec998a13/450356bb-07e0-42cc-9137-899516ad4e68_screenshot5.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/80/f5/95/80f595ae-03aa-6a88-b1e1-7017bfd51e40/f8084086-dabe-4b3d-82cc-c3777df5d1c1_screenshot6.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/93/7c/88/937c88e6-3a22-7666-0835-5c3e772d16db/e637f68e-6b30-48f1-91ad-623b09b5ba3a_screenshot7.jpeg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/7c/5e/0f/7c5e0f60-1802-b457-3136-a25496d0a433/591fc765-d36f-4672-ad99-2d61ba0625d8_screenshot8.jpeg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 91136225,
       "version": "5.6.2",
       "versions": [
@@ -34484,18 +34347,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unicostudio.braintest.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/14/96/ab14962e-3187-9c8a-d321-27fa519c3de6/2108ee0b-3b30-46a7-885e-29501aef64ff_240315_SS_Reward_1242x2208_EN.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/40/0e/97/400e9748-6afa-a021-3456-82dcf367ac64/20b45d45-7263-420f-b6a7-f2b64b8e1d61_BT1_Klasik_IOS_5_5inch_EN_02.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/fb/ae/4ffbae49-0ee0-2584-b9cb-09b778308e00/f4ba275e-8117-4983-931a-50aefa4c64e4_BT1_Klasik_IOS_5_5inch_EN_09.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/7e/39/5c7e39d5-6ef3-87b4-9b21-367c0805f585/6a9cddd9-f591-415e-9827-31d1f07237ab_BT1_EN_IOS_5.5_inch_Blacksheep.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ac/27/93/ac27934b-0271-10c3-8ab8-5ed65812db86/de60f768-bc98-4db4-b29b-70b26ee3433e_BT1_Klasik_IOS_5_5inch_EN_03.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/80/aa/6480aa9a-5020-a55e-d250-9cdf34ffccb2/406f714a-df89-44c2-a60b-1dec7a1ffe30_BT1_EN_iOS_5.5_TightBelt.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/47/67/3f4767da-18bf-3e5b-339c-13a9a4fafa97/a8a00ec6-162e-47ea-bb6b-bf12aba8a49e_BT1_EN_iOS_5.5_Daughter.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/26/67/fc266755-8703-97ec-ac0f-dc182f05cedf/b3c834b7-2c4d-4cee-ab44-32b87a88bea0_BT1_EN_iOS_5.5_DrawShip.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/73/4a/01/734a0126-317b-9be6-12b8-7a32e725ba44/2c77889b-c63c-4a2c-b3d1-58ee9b4481b3_BT1_Klasik_IOS_5_5inch_EN_04.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/68/7d/dd687dd3-51eb-aa19-2784-6efa260e541b/703f7734-1fc4-47e0-a7a6-7ceb94160a83_BT1_Klasik_IOS_5_5inch_EN_05.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 139491427,
       "version": "2.761.4",
       "versions": [
@@ -34556,18 +34408,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unicostudio.braintest4.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/d5/6c/4dd56ca1-1a89-456a-5e76-3c7efa4c759e/befb66b9-3c41-4c7f-abbc-9a844539f933_06.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/9d/c1/bd9dc135-c86b-1003-c32c-93cb7b7922a7/7213750f-fb6c-4310-86ec-18cfac97ce22_01.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5a/bc/76/5abc7617-eaae-2f4b-1ba7-ad60370085dc/b2e437ee-dfc7-4e67-b4ae-5938ccb7e6c9_03.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/24/27/1124270d-c251-3caf-6e6e-24d3b5a6e64f/bca20d7d-c3f7-4748-83ab-ece39d453d56_BT4_EN_iOS_5.5_Fire.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/22/d7/c4/22d7c4d4-1cff-d589-f010-f5a0cf1bb9f8/7db15830-4a79-4f05-a34f-b2426e9774f2_BT4_EN_iOS_5.5_Bubba.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/57/5f/06575f9a-bb2b-b2f9-f058-bdd7eadf5ea4/9fcc04b1-a689-45a8-9c22-3186193347e2_05.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/35/fa/9c35fac5-40d6-99f9-7dc5-b1646ccfd637/f832718a-5724-4b6c-85a9-5f5c4e756795_BT4_EN_iOS_5.5_Sun.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/d8/e4/25d8e40f-49dc-93ed-6a8f-5f0b2097d1be/e6a91824-1056-464f-ac81-950032f1c7d9_08.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/71/06/fd/7106fd87-4e67-4ff9-1d9e-1d688495a701/2169a37b-868f-4586-baf5-7f42f5eae761_07.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a0/4e/09/a04e099e-9e58-7b80-47f1-d98488d2c594/ee3de37f-0385-4130-89e0-82e75357daa0_09.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 172659948,
       "version": "1.26.2",
       "versions": [
@@ -34607,16 +34448,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aichatbot.assistant.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f8/a3/54/f8a3548c-6f69-54cb-a2e1-dc504bcc17bc/b4067e9a-51db-49c9-9285-4d5d088899db_GPTCh1_SS_5.5_Current_v2.7_01.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/cb/04/a7cb0471-693d-2d4e-ae2b-28bdb7180f07/c51f1d19-c007-4f2b-b18e-8d178212295d_GPTCh1_SS_5.5_Current_v2.7_02.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/03/ad/7c03adec-b99e-bb5c-0a71-0fafbc4ed788/0c052a47-1c78-46af-9149-e10866b5ce13_GPTCh1_SS_5.5_v2.3_03_.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/33/09/97/330997ce-e60a-e5af-2873-340ecd46095d/a1ab5b08-7a0b-4153-bc56-7f521b40b8f7_GPTCh1_SS_5.5_v2.3_04_.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/7a/7f/d37a7f58-d639-2009-4e56-f493806352b6/12e8d040-2523-4cac-ba81-1cc507fabaff_GPTCh1_SS_5.5_v2.3_05_.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c4/b8/f0/c4b8f0a1-d148-93dc-608f-c72aa084ee22/fab2b7ea-a232-41ef-8fd8-c47cc9a14303_GPTCh1_SS_5.5_v2.3_06_.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/24/82/67/248267a6-835a-ecf5-9df0-6dd2c57cc011/f55706f9-2af3-4768-ae3f-cb486b4be243_GPTCh1_SS_5.5_v2.3_07_.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/2a/79/bd2a7904-334d-6182-5246-f4a807644d0d/0f68ec95-a532-4d51-8a89-7cb31c715133_GPTCh1_SS_5.5_v2.3_09_.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 105792663,
       "version": "2.31",
       "versions": [
@@ -42655,14 +42487,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.nexonm.dominations.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/79/aa/0d/79aa0d3e-6583-a66f-aef2-52896f5a34ec/60df430e-d63f-4f94-98a3-3584d55fd91d_DOM_AppStore_Images-Dominate-2023_2208x1242_EN__U00281_U0029.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2e/98/35/2e9835cb-8a5e-0bca-72f7-ad4541e33277/a3f68ec0-40f9-488e-a84d-7cd86b5de40a_DOM_AppStore-Images-Collect-2023_2208x1242_EN__U00281_U0029.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/93/56/ad/9356add0-40bd-c84e-46d9-6a94301bb648/b513ec90-4319-48d8-9a30-f5f8cecfaf30_DOM_AppStore-Images-Advance-2023_2208x1242_EN__U00281_U0029.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f3/b7/01/f3b701cf-353d-ed00-37d3-fa227d8bee79/bf0b82b2-a337-4e64-9cb1-b5046653a56d_DOM_AppStore-Images-Defend-2023_2208x1242_EN__U00281_U0029.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/41/1a/eb/411aeb55-c833-3209-f414-d9e2f0f8d35f/785d8fb7-b0cc-4834-bd43-6942b65b4467_DOM_AppStore-Images-Battle-2023_2208x1242_EN__U00281_U0029.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/f3/3b/def33bac-f949-255e-e7ab-08c041094fd8/7b2b8df7-e2f2-4609-8264-df4a7ed54049_DOM_AppStore-Images-Build-2023_2208x1242_EN__U00281_U0029.png/406x228bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 102280705,
       "version": "12.1490.1490",
       "versions": [
@@ -43245,12 +43070,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glority.receipt.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/c0/c5/29/c0c52984-34a7-5b4d-7956-304e56ca6d36/2bc222b6-b73c-4e61-8e2e-35f306eb9bf5_7_1@1x.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/7e/74/01/7e740168-6abe-1f5f-b863-a07715f4f13d/28dbb652-f60f-48e7-aa6e-56997b0e65c3_7_2@1x.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/e4/0e/a6/e40ea677-2dfe-1b75-5179-8896827fa0d6/1177c4d0-ec96-48a9-acd7-c1fb42fa5be0_7_3@1x.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/78/bb/3c/78bb3ca4-a8f2-ac03-bb9d-ad1db4028837/b0311e86-ee67-4db9-8333-c5e79749daf5_7_4@1x.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 14288235,
       "version": "1.7.10",
       "versions": [
@@ -43309,16 +43129,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/rr.carbon.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/57/05/32/57053296-21c3-4fce-571b-e8f788743359/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/58/7a/4d587ad0-c7c7-4a7f-431a-62d654859a28/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/ef/94/29/ef9429a9-2f64-5fbc-8afd-dc57d56927c8/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/66/6e/ba/666ebad1-87e3-75b6-ab87-dd93edc40f69/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/e4/c0/56/e4c056f8-1c10-6413-6f7c-0516cdc18b93/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ac/7c/81/ac7c8123-b8b8-ae77-0103-5fe21df676f6/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/da/a8/d0/daa8d0b6-a037-3e93-bb6f-b53d6e09e041/pr_source.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/3b/08/a8/3b08a8a9-9112-2d3a-6893-f69faaf75fee/pr_source.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 67395789,
       "version": "2.71.4131",
       "versions": [
@@ -43485,14 +43296,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.voodoo.dune.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/50/8d/b1/508db172-4cc8-d937-6f20-77ead0ca0424/mzl.ftddcuxp.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9c/45/16/9c451623-00f1-43eb-656f-8ac6176ee15d/mzl.hsbwldqw.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/fb/f7/7f/fbf77f1d-0d30-a4ef-5889-9525b59b2543/mzl.jiwpbbap.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/4a/ee/c5/4aeec5a8-7a61-e95c-f50d-595839824ee1/mzl.hclhkffx.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/15/81/8e/15818e30-89bd-0975-11bd-198789b318e0/mzl.sqbycaap.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/6f/2c/2c/6f2c2c91-c6df-8ac6-674c-f88b4f562c34/mzl.nkihhqkn.png/406x228bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 85507035,
       "version": "5.5.79",
       "versions": [
@@ -43525,18 +43329,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hipsterwhale.crossy.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fd/48/0b/fd480bdc-8355-da8e-7888-565905ece080/OS_iPhone5.5in_1242x2208.00_00_18_22.Still005.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/22/c8/e9/22c8e9d9-a3e2-524d-6314-0d3e4fec9487/CR_GGJ_Screenshot_iPhone5.5_1242x2208_01.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/24/c7/d3/24c7d3c2-1e94-17d8-dd81-3522ff04ac10/CR_Birthday_iOS-iPhone-5.5_1242x2208_04.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/d9/48/58d948bb-0e28-37f1-d6d2-a07832a05d7e/80245a87-2705-479e-b64d-0fc9ca573ffd_CR_en_iOS_iPhone5.5_1242x2208_Farm.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/b7/63/56b76310-fbd9-3f91-5fbb-b7cd4db6811f/6704e6c1-1995-4321-b50e-89ccdf1c889a_CR_en_iOS-5.5-in_1242x2208_023.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8b/20/04/8b20041f-8a2d-bc3e-ac82-ac48627c1b64/CR_en_iOS-5.5-in_1242x2208_031.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/60/83/cf608363-4fe6-5785-132a-db18a310d010/335d0032-62c1-4df7-a5f1-744d77689248_CR_en_iOS_5.5-in_1242x2208_Medieval_009.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/42/fe/7942fe3e-89c1-529a-5f29-d933a4d3509e/c4f8da09-3faf-4356-8772-a9baf1cdb9ed_CR_en_iOS-5.5-in_1242x2208_172.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/da/63/60da63b2-979a-1562-71aa-282019fc9226/fed8bd67-e21e-48ec-bd41-bc612431fb00_CR_en_iOS-5.5-in_1242x2208_094.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/44/9a/2a449aa0-a6b5-f806-be53-5705b0492af0/CR_en_iOS-5.5-in_1242x2208_015.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 148393831,
       "version": "7.5.0",
       "versions": [
@@ -43562,13 +43355,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hhp.magicEraser.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/62/da/dd62dac5-6f76-6e9f-5847-ea9f1634bcbf/mzl.dbahrhtk.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/2b/d1/792bd150-a2d6-45ec-20a8-f85509c30385/mzl.cggbvuck.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/59/df/d859df02-eb74-b069-198c-61727032933c/mzl.ojzniylx.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/89/c6/d0/89c6d03f-a32a-9829-b47b-52bfc729e8a1/mzl.iafvugay.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6d/97/d6/6d97d648-0f75-ae21-d923-4ca620809bb9/mzl.lzqhbpfr.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 244413160,
       "version": "3.8.0",
       "versions": [
@@ -43608,16 +43395,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tickettothemoon.gradient.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/05/ae/1105ae8d-0f4c-5680-6768-75f8770fc4ae/1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1d/30/a4/1d30a488-a9bd-354d-1e4d-8778a7cf411b/1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/aa/9d/3daa9ddd-3737-e10e-522b-659ad7e75431/d35b1c52-2e61-4b7c-b50e-5d0d58e0cda2_1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ae/12/1d/ae121d9b-861b-7fe2-79db-3caa48e947cb/4fe66965-0e1d-4e8b-83c1-74c5ca303a7d_3.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/49/97/32499725-4056-21ed-c7e1-c5d0ef00065f/64d1e3a0-c41e-456c-9422-5b94a86013ba_4.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/e8/2a/28e82a5d-8683-d22b-5f5b-b40d172e1166/5b9e2448-8de3-40f0-a453-114a3636ba01_5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/49/87/02/498702dc-2621-8d2e-8cbc-0d8e90ad047b/23e85633-37d5-49ce-bbee-8dbe73881b8a_6.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/71/d9/27/71d92764-5edd-a13c-abce-004723ba7978/2218d003-ecd5-4ddf-aa03-32df7c315771_7.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 230809830,
       "version": "1142",
       "versions": [
@@ -43669,13 +43447,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.goodturn.memorize.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/41/b9/87/41b9871d-150e-0565-d9f3-3c8010ec9fc6/692445be-5873-432d-9e39-cb52ccf8703c_1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/02/b5/ef/02b5ef72-56be-6602-fbfe-61ce2f11afb0/621f57c5-78e6-49b5-9e9d-c20eef013dce_2.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/60/08/16/6008164d-727e-47a9-2709-e74ea43e7d5d/a5d1fedc-079b-40c9-b9b9-4a0f0b92084e_3.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/a7/9a/75/a79a75c0-5b83-3b57-0c62-edc34b89b541/71ea8321-fbfb-4561-b356-0536388658d8_4.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/26/39/47/26394729-08d6-7b64-bfd2-f9e54cdd4ee8/8a10d6d4-0b0d-4203-9718-d3482ce6f2a2_5.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 14489479,
       "version": "5.4.1",
       "versions": [
@@ -43701,16 +43473,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.chopraglobal.chopra.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/23/dc/3f23dc93-a658-fb36-9d3f-8487e5dc5771/968f23a6-6987-41a0-a1ca-b6d9f469d458_AppStore_5.5_-1242x2208_s1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/75/68/3a756815-3f45-d951-5f77-f5031ef7e107/3c7da1d1-81fd-49fd-8eb6-b7a137b8a19a_AppStore_5.5_-1242x2208_s2.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/80/84/1580849e-1b7a-3903-e716-e574e656c283/09181347-4ddd-42fa-9de8-74bd6212c617_AppStore_5.5_-1242x2208_s3.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/a4/8d/74a48d10-f2a0-690d-f634-282da58f73af/3a3b0bf0-e3ce-4388-b989-901b4f67ba7c_AppStore_5.5_-1242x2208_s4.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/c7/c8/03c7c833-714a-d868-7736-4056e2ae2c34/150c6682-d8bf-4a2a-909d-28bb95a29afa_AppStore_5.5_-1242x2208_s5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/d4/9d/32d49d1d-e054-790b-0feb-02b558c18fc9/AppStore_5.5_-1242x2208_s6_1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/93/1e/53931e5f-5109-b74d-d937-59e587dfa488/dfd79f79-c5b0-47f9-bca6-76456637208f_AppStore_5.5_-1242x2208_s7.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/7c/d1/ab7cd164-075b-7ebd-83b2-868e98cc6b6b/ab41a05a-b509-42e1-83c7-86abd4ac435d_AppStore_5.5_-1242x2208_s8.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 26447616,
       "version": "3.0.0",
       "versions": [
@@ -43736,15 +43499,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.livintis.chatty.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/38/45/10/384510e6-2f3a-44e3-0603-1bdc7f367cac/b2e3942d-1106-4a83-982f-30839f5a6b03_1242x2208bb.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/22/ff/ca/22ffca39-dfaf-805c-720f-e1e46f52eb7a/4376ab66-20b9-484e-bd88-ed9560dd633d_1242x2208bb__U00281_U0029.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/0d/de/32/0dde3266-edeb-68f8-9309-a79e468b01d9/479c473c-75a9-4ba1-9fe0-4a613dea6197_1242x2208bb__U00286_U0029.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/1b/82/39/1b823964-0025-04c4-e3d7-7846a1774d88/bcbcce36-bcd6-4201-9c03-1f1c4749e2a7_1242x2208bb__U00283_U0029.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/48/6a/ac/486aace0-c5f6-6f01-483a-2c739bae0793/0f727147-e9ba-4dcb-882e-a12c601b5a01_1242x2208bb__U00284_U0029.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/6a/76/ba/6a76ba9b-79ee-1e7a-4e8a-e60436469431/f78afcda-5797-4551-a820-72ac34099be7_1242x2208bb__U00285_U0029.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/eb/dc/c5/ebdcc543-c948-1cf2-1c1d-5370377c332c/c0366f64-d226-40d7-ab5f-b82670629ad0_1242x2208bb__U00287_U0029.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 52852995,
       "version": "1.3",
       "versions": [
@@ -44641,14 +44396,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.heliogames.a1.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/c9/a3/12/c9a312ba-3019-3598-fbbf-349b71bacd86/pr_source.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/bd/b1/72/bdb17289-c550-804d-42fe-ff4830f85ec3/pr_source.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/cb/5a/1c/cb5a1cd5-b810-0cd1-5a9c-58c247491509/pr_source.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/a6/0e/bc/a60ebceb-b0ed-00ac-1f19-40bc6362a3b7/mzl.tqblikcx.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/25/ba/56/25ba56a1-e315-70e5-f44c-4edf2b9457ae/mzl.ezthsqmv.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/19/7c/25/197c2521-e9fc-bb1b-0edd-8c86bc14b511/mzl.mlstyhuz.png/406x228bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 574365843,
       "version": "9.4.0",
       "versions": [
@@ -44714,16 +44462,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.limepresso.pomodorofree.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/ea/7f/eaea7f6e-1189-68b4-8be7-af3d585ca64c/0dab42a4-7cd1-4617-803d-9191d97348b6_55_01.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/16/52/4c1652fc-5529-b640-89d1-241c578c2982/c40b7df3-792e-47ae-b106-0ae3e98379c1_55_02.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d0/7e/2f/d07e2f21-907b-6a8a-c3db-5ab8bdaf573d/fd70bb9d-aa90-41fa-be4a-fa984e9eef91_5.5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/ed/66/03ed6655-6e54-7001-1f93-34008a563514/a83cca4d-1e07-47c0-b45a-e7c92012f87b_widget.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fc/c5/a1/fcc5a12e-d0cb-b4a4-488f-6826883a75e5/704cc87b-cd42-42a6-8e24-a757e459142f_55_03.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/58/e3/ee58e3f7-0641-e331-3763-df60608775df/5d594521-a035-4ac6-82f9-47a1331d81c1_55_03-1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/89/4f/5d/894f5d42-8fac-2c3f-ea62-771b8bc74b6a/34a04d6b-bbed-4a74-abaf-49cf2d8e8e7d_55_04.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/e3/46/78e34697-c404-4c1d-2646-46f0a6c74290/f3b23199-485c-4f0a-88a5-0e3103fd9ddd_55_05.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 171665713,
       "version": "3.4.4",
       "versions": [
@@ -44777,18 +44516,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hiiker.hiiker.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/38/ec/8e/38ec8e0d-177e-4aa1-e04a-aa9555ff2cd6/4fd42d7f-8457-45ed-bd48-ae7df5b7928a_6.5_U201d_1242_x_2688_-_166__U00281_U0029.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/16/5d/51165da0-7958-2ebb-3bfd-db9f6fe3f0ee/d63f82fb-ed09-4e11-98b0-9d3a3e30fe43_5.5_U201d_1242_x_2208.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f4/18/41/f41841af-5b66-76e0-9e91-2c8ab6cacdfd/f68ead35-02f3-4a1c-bba3-e7bf27afd28f_6.5_U201d_1242_x_2688_-_193.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/e9/f1/35e9f17a-0799-953b-c987-4ec8ca30c9bb/ce418863-3af1-4f86-9b7a-da1650dd7cef_6.5_U201d_1242_x_2688_-_161.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/3a/57/5f3a5723-f7e2-7341-b1e9-da5924fd9859/61438821-a55b-42cb-8d83-14f20920f1ba_6.5_U201d_1242_x_2688_-_153.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1a/fd/ce/1afdcec2-a84c-6389-7833-e89bcd97c2fd/2b6867cf-25ee-4cd1-9670-91bc474af846_6.5_U201d_1242_x_2688_-_160.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f8/76/7e/f8767ed2-7844-efcb-e142-a204ded594b0/39faf8a6-e011-4b00-ad04-fdf85aab45ba_6.5_U201d_1242_x_2688_-_162.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/e6/f4/13e6f4af-6b7c-963b-fd0c-86d5ea5bc0f5/65084906-7492-4bfe-a8de-05e04afa81fa_6.5_U201d_1242_x_2688_-_165.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a6/32/38/a6323812-3092-4a1e-2df4-e4c1021c6b8f/5ecd7d69-5c28-4a9c-b1b3-51f592443448_6.5_U201d_1242_x_2688_-_164.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/19/62/ce/1962cef8-d2a2-8bb6-6558-318c95cd2023/b81730cb-951f-4201-800b-140c32e0360b_6.5_U201d_1242_x_2688_-_163.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 151809339,
       "version": "7.51",
       "versions": [
@@ -49326,16 +49054,16 @@
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ohbibi.fps.png",
       "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cc/55/f6/cc55f6a7-cd82-67a3-87d9-27d406504272/FRAG_Screen_6Y_CybergirlFPS_2208_U003b1242.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/40/aa/3e/40aa3edc-d7ca-4686-2401-aa0f554f3c2f/FRAG_Screen_DanTPS_2208_1242.jpg/406x228bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2e/9d/11/2e9d1119-6c93-6d4e-765c-47731300f68c/FRAG_Screen_CyberGirlTPS_2208_1242.jpg/406x228bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0f/27/ae/0f27ae59-58ee-45af-0f85-69f087d4378c/FRAG_Screen_MechaTPS_2208_1242.jpg/406x228bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/d7/ec/e0d7ec3c-96ca-c01d-89d8-e11eaaf782e7/6d41d629-809f-48b7-b7f5-4e1ae33a89c3_FRAG_Screen_Dec22_Target_UI_Cybergirl_FPS_2208_1242.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/d1/f3/8dd1f31a-3b28-9b8c-2d90-3867fe865093/6e1da5a2-21c5-4d7c-8b13-dd43c5b4dd93_Frag_Screens_Dec22_Mecha-Gun_2208_1242.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/59/77/2e59772a-05b5-d856-4247-ca124bbd3deb/1b11516c-d39f-456e-b6fa-82003f4e0f1c_Frag_Screens_Dec22_Dan-Gun_2208_1242.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/78/31/4d/78314d6c-8108-dab1-8bec-b8c8b65beabd/04c6e375-157d-429c-810a-336790bc96c7_FRAG_Screen_Dec22_Blue_Target_2208_1242.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1e/8b/3c/1e8b3cc4-e2f6-ebb3-2423-10a3c74a72d3/bfd61c88-8e6f-4c18-b210-ad1b54543c4a_FRAG_Screen_Dec22_Bridge_Dan-Tiger_FPS_2208_1242.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/90/f2/af/90f2af02-9d7f-bc7b-b8a5-376e4bfbd53d/FRAG_Screen_6Y_ToySoldier_2208_U003b1242.png/406x228bb.png"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4e/29/51/4e29517c-e48d-b514-c228-e8cc40b27bcd/FRAG_Screen_6Y_CybergirlFPS_2208_U003b1242.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d0/f3/5d/d0f35d53-fd77-d1bd-cb95-074eddb364d6/FRAG_Screen_DanTPS_2208_1242.jpg/406x228bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/85/2d/d7/852dd758-93ad-9286-49ce-615eb87940d1/FRAG_Screen_CyberGirlTPS_2208_1242.jpg/406x228bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/a0/2e/ffa02e47-3722-8986-0dda-94203d726042/FRAG_Screen_MechaTPS_2208_1242.jpg/406x228bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/25/58/a72558bf-2bdf-0ff7-7c0f-f5485e6d9839/6d41d629-809f-48b7-b7f5-4e1ae33a89c3_FRAG_Screen_Dec22_Target_UI_Cybergirl_FPS_2208_1242.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e9/4b/dd/e94bddf1-4022-510c-47da-0e5dd49103c1/6e1da5a2-21c5-4d7c-8b13-dd43c5b4dd93_Frag_Screens_Dec22_Mecha-Gun_2208_1242.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/56/3d/35563d87-d6e9-7b4b-2d9f-329ba803b381/1b11516c-d39f-456e-b6fa-82003f4e0f1c_Frag_Screens_Dec22_Dan-Gun_2208_1242.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/fb/aa/6afbaa06-ccac-758d-8baf-24df8926331d/04c6e375-157d-429c-810a-336790bc96c7_FRAG_Screen_Dec22_Blue_Target_2208_1242.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/f1/79/dbf17937-0c28-ec8c-bc3f-57bedbc212ce/bfd61c88-8e6f-4c18-b210-ad1b54543c4a_FRAG_Screen_Dec22_Bridge_Dan-Tiger_FPS_2208_1242.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/79/28/0d7928d6-9532-24f2-243b-25f2e57ddc81/FRAG_Screen_6Y_ToySoldier_2208_U003b1242.png/406x228bb.png"
       ],
       "size": 196685682,
       "version": "4.9.0",
@@ -52898,14 +52626,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kingkodestudio.gtclub.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d9/56/25/d9562510-5f4a-1802-261a-f2cbea6d608f/05657ea5-7402-4f88-83ef-9f511b4dbde7_1.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5c/37/d1/5c37d1b1-21cd-bd5c-8178-dd45408bf998/88ca5be5-66b9-410a-91eb-b83afba5b6a7_2.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2c/ea/20/2cea2097-f202-abde-59c1-11cf52a3cfd1/4a67d873-e56f-4a76-8cd7-dde491ce6908_3.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/95/a2/0295a2d3-e870-82dc-e00f-36a01753800b/6c909dba-789d-442b-b434-2156f927de41_4.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/af/a2/aaafa291-5d9c-c0b4-4121-f0b4da931b2e/b0c20683-6313-4b53-a671-e000039c27f8_5.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/2e/be/e02ebe45-f94b-9396-909c-6bd312def781/95e194f7-1906-4112-8aef-01d434fc880a_6.png/406x228bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 308768052,
       "version": "1.15.20",
       "versions": [
@@ -52931,14 +52652,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/soccer.score.star.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/21/bc/b721bc17-6551-5e61-ca7d-c3a553246d57/a8f3188d-1f8c-4924-a8d2-022a4b1662ce_03.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b9/0c/1a/b90c1a75-2a35-f616-2729-9b1fd870ec84/60e17c4c-f9f0-4b8b-844c-2fa9c99bd7d2_04.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/45/51/63/45516396-0a68-fc38-17c0-b716fe392e53/e4794426-faac-4494-aacf-5e1c1c6ef325_02.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/91/8d/d6918dd6-8e9d-ed93-8b2d-89bdb8753b15/61f99190-3e09-4c63-9a54-1316624f005f_2024_1242_U00d72208.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/fc/76/f0fc761e-567f-44da-0423-bd94f0c6c73a/dfbce596-e17b-4540-acc9-0bd3485111de_05.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b3/31/b5/b331b5f3-4375-fecd-7585-47acf17118e8/5136bd9e-46e2-44e3-a9a7-341904327042_01.jpg/392x696bb.jpg"
-      ],
+      "screenshotURLs": [],
       "size": 169738466,
       "version": "0.3.14",
       "versions": [
@@ -52964,14 +52678,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.playrix.township-ios.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/29/28/a9/2928a95a-5591-5ff9-9342-6c92a10a7c36/08561da9-4493-47f1-be57-4526dd7e607e_1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/b6/c5/e1/b6c5e17a-8c8a-f76e-ef2d-896b0585d7eb/13006f0b-2fdf-443c-b282-8f34318d3eaa_1242x2208_ts_aso_screenshot109_EN_v01_p2_as.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/bf/4c/6a/bf4c6a1a-300e-4de4-4fbc-726135ae305f/b94c9d35-3cb8-4910-9437-1117056d8772_1242x2208_ts_aso_screenshot109_EN_v01_p3_as.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d9/19/fd/d919fd66-ac21-3f4c-8d3a-17bf1a626185/631f09a7-e88c-45c5-af22-d477d8e34e54_4.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6b/b8/7e/6bb87e02-6e4c-1807-ac1f-ad4e0db4d7dc/3af7d2c6-39c0-4bb4-9aca-daf2e210cdb9_5.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/0f/f5/b8/0ff5b8e1-ca22-751d-7c9d-c241c5be1551/9d0ff776-e32e-4f7b-bdcd-01d396427a95_6.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 192664821,
       "version": "27.0.1",
       "versions": [
@@ -53184,18 +52891,7 @@
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://gh-proxy.com/raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/LiveScore.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/8c/7e/708c7efc-70e4-813a-72a7-b579fc2099e7/5.5_U201dLSM_Font_update_MTAS_01.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/b6/f9/0bb6f900-4799-8ddb-f3da-2b746b103b3e/Group_2.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/38/8f/a1388fba-b3ec-7d46-e7a8-2f363ebc955a/5.5_U201dLSM_Font_update_SEV_itself_03.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e9/2d/ed/e92ded1e-1089-da63-a993-ecbc505e58fc/5.5_U201dLSM_Font_update_Timeline_Page_04.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/2e/84/d62e845a-329d-ce78-3d8b-a86ee6332225/5.5_U201dLSM_Font_Update_FIRT_05.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/85/0e/ca/850eca23-e7a0-53e9-81fd-7037f5ff4530/0x0ss_-_2025-08-12T114313.305.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/d8/c7/37d8c7d7-000c-b078-db4c-92c1baf8e343/5.5_U201dLSM_Font_Update_Stats_06.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/4b/0f/9a4b0f0a-b881-1ec0-ca2f-e3d3dd9cd3e8/Group_72__U00282_U0029_1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/ca/26/01ca26d9-ebc6-0653-9bc3-5474e8e42c09/5.5_U201dLSM_Font_Update_Headlines_08.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/98/5d/c7985da2-5839-d40d-56e3-15c970dc6ce4/5.5_U201dLSM_Sevolution_Font_Update_09.png/392x696bb.png"
-      ],
+      "screenshotURLs": [],
       "size": 79924994,
       "version": "8.7.2",
       "versions": [
