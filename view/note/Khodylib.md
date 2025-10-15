@@ -76,3 +76,7 @@ Có thể sử dụng Esign, Feather... để tiêm dylib khi ký IPA hoặc [C�
 - Giống như phiên bản TrollStore, không có cách nào để buộc hiển thị thông báo. Việc buộc hiển thị thông báo hơi khó khăn, đặc biệt là đối với các ứng dụng hiển thị giao diện người dùng thông báo riêng khi ứng dụng của chúng được mở (ví dụ: WhatsApp).
 
 🐱 ImmortalizerTS (https://github.com/sergealagon/ImmortalizerTS)
+
+## 🔔Nguồn khác 
+
+📦 **Tải về:** [Thư mục mediafile](https://app.mediafire.com/folder/qlnbgj6n07d14)

@@ -14,6 +14,17 @@
   },
   "news": [
     {
+      "title": "Chặn quảng cáo bằng DNS",
+      "identifier": "hdsd-adblock",
+      "caption": "Hướng dẫn sử dụng DNS chặn quảng cáo trên ios",
+      "tintColor": "022740",
+      "imageURL": "https://cdn.tgdd.vn/Files/News/2023/05/18/5-cach-doi-dns-tren-iphone-nhanh-chong-chi-sau-thumb-560x292.jpg",
+      "appID": "com.example.app",
+      "date": "2025-10-15",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=dnsadblock.md"
+    },
+    {
       "title": "Chống thu hồi chứng chỉ bằng DNS",
       "identifier": "hdsd-anti-revoke",
       "caption": "Sử dụng cấu hình DNS ngăn chặn thu hồi chứng chỉ cài IPA ngoài.",

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerAddresses</key>
+					<array>
+						<string>103.167.197.172</string>
+						<string>222.255.119.53</string>
+						<string>94.140.14.14</string>
+						<string>94.140.15.15</string>
+						<string>176.103.130.130</string>
+						<string>176.103.130.131</string>
+						<string>2a10:50c0::ad1:ff</string>
+						<string>2a10:50c0::ad2:ff</string>
+						<string>2a00:5a60::ad1:0ff</string>
+						<string>2a00:5a60::ad2:0ff</string>
+					</array>
+					<key>ServerURL</key>
+					<string>https://dns.adguard.com/dns-query</string>
+				</dict>
+				<key>PayloadDisplayName</key>
+				<string>Bộ lọc chặn QC số 1</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.31411f67-21a2-4183-adc0-9871d493d288</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>8b544fa7-e0a5-4b7b-b8a7-4f75cc722e25</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://doh.tiar.app/dns-query</string>
+				</dict>
+				<key>PayloadDisplayName</key>
+				<string>Bộ lọc chặn QC số 2</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.60f78760-3278-4f58-b315-ad3efe1b4e6f</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>af9294fb-a125-45ef-a780-1f29566f8e74</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerAddresses</key>
+					<array>
+						<string>2a07:e340::3</string>
+						<string>194.242.2.3</string>
+					</array>
+					<key>ServerURL</key>
+					<string>https://adblock.doh.mullvad.net/dns-query</string>
+				</dict>
+				<key>PayloadDisplayName</key>
+				<string>Bộ lọc chặn QC số 3</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.5f4e7390-36b2-4900-8657-19165dd61619</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>3f7ccf08-3a16-4ea3-906f-137c85d18df7</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>TLS</string>
+					<key>ServerAddresses</key>
+					<array>
+						<string>2a01:4f8:c17:739a::2</string>
+						<string>159.69.114.157</string>
+					</array>
+					<key>ServerName</key>
+					<string>fdns2.dismail.de</string>
+				</dict>
+				<key>PayloadDisplayName</key>
+				<string>Bộ lọc chặn QC số 4</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.ef55c555-bb3d-42b9-92ba-5e88ca5b3897</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>61319cc3-96f2-4c67-afbd-d3c5a4813a28</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>ProhibitDisablement</key>
+				<false />
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerAddresses</key>
+					<array>
+						<string>176.9.93.198</string>
+						<string>2a01:4f8:151:34aa::198</string>
+						<string>176.9.1.117</string>
+						<string>2a01:4f8:141:316d::117</string>
+					</array>
+					<key>ServerURL</key>
+					<string>https://dnsforge.de/dns-query</string>
+				</dict>
+				<key>PayloadDisplayName</key>
+				<string>Bộ lọc chặn QC số 5</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.598e7928-3e15-49ed-98fa-953729c70267</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>04cdaff2-5002-46ed-b7ff-bcc46b3d6fe4</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string>Adblock Edit By HaPhung (v3.0) 2023:
+- Bổ sung 5 bộ lọc DNS chặn QC ( thay đổi trong VPN -&gt; DNS )
+- Chặn quảng cáo trung gian qua DNS ( 90% lượng QC dc tắt ).
+- Không bị hao pin và thiếu ổn định như kết nối như qua VPN.
+- Hỗ trợ tất cả các đời IOS từ 9.0 trở lên.
+- Hỗ trợ trên tất cả các HĐH của iPhone, iPad, MacOS, TvOS.
+- Hỗ trợ chặn quảng cáo trên 3G,4G và Wifi.
+- Chặn Ads trên cả ứng dụng và Web.</string>
+		<key>PayloadDisplayName</key>
+		<string>Adblock Edit By HaPhung (v3.0) 2023</string>
+		<key>PayloadIdentifier</key>
+		<string>adblock</string>
+		<key>PayloadRemovalDisallowed</key>
+		<false />
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>b3c2dc4e-ee25-4a5a-8169-a50f87774a93</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

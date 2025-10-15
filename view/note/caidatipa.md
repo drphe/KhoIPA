@@ -29,7 +29,6 @@ Các phương pháp này tận dụng máy tính (Windows/macOS) để ký và c
 
 * **Cách thức:** Cài 3uTools, kết nối iPhone, nhập IPA và cài đặt thẳng lên máy.
 * **Lưu ý:** Thường yêu cầu chứng chỉ của tài khoản dev trả phí hoặc dịch vụ ủy quyền cert (dịch vụ này đang bị Apple siết chặt hơn).
-
 * [https://thuthuat.taimienphi.vn/cai-3utools-su-dung-3utools-ket-noi-iphone-voi-may-tinh-12299n.aspx](https://thuthuat.taimienphi.vn/cai-3utools-su-dung-3utools-ket-noi-iphone-voi-may-tinh-12299n.aspx)
 
 ---
@@ -49,10 +48,9 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Quy trình:** Cài **TrollHelperOTA** hoặc tool phù hợp, sau đó cài IPA trong chính ứng dụng TrollStore.
 * **Ưu điểm:** App tồn tại **vĩnh viễn**, không cần PC (các bản ios cao hơn có thể cần PC để cài), không cần Apple ID hay cert.
 * **Nhược điểm:** **Giới hạn nghiêm ngặt** về phiên bản iOS và thiết bị tương thích.
-
-*  [Hướng dẫn cài IPA bằng Trollstore](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmRldmVsb3BtZW50Lmpzb24=&link=trollstore.md)
-
+* [Hướng dẫn cài IPA bằng Trollstore](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmRldmVsb3BtZW50Lmpzb24=&link=trollstore.md)
 * [Cài đặt IPA vĩnh viễn bằng TrollStore](https://thuthuatjb.com/huong-dan-su-dung-trollstore-de-cai-file-ipa-vinh-vien-tren-ios-ipados/)
+
 
 
 ### 2.2. TestFlight (Beta Testing)
@@ -89,11 +87,18 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
    [Cài đặt Scalert](https://usescarletapp.com)
 
-   [Cài đặt Feather](https://jcionx.github.io/ios-sideloading/) Link này giúp cài Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
+&nbsp;  [Cài đặt Feather](https://jcionx.github.io/ios-sideloading/) 
+
+Link này giúp cài Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
+
+&nbsp;  [Cài đặt Ksign](https://ksign-ios.com/)
+
+
 
 Đối với **Feather, Esign** là những ứng dụng được cài đặt bằng các công cụ online như tại mục 2.3 hoặc cài đặt qua Trollstore
 
 Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng dung, công cụ hỗ trợ, cung cấp link cài đặt trực tiếp các ipa mod phổ biến như Facebook NoADS, Youtube Lite,... Một số dịch vụ chính: Certapple.com, Unkeyapp.com, Thuthuatjb.com, https://p12apple.com/...
+
 
 
 [Hướng dẫn cài IPA bằng Feather](https://thuthuatjb.com/huong-dan-su-dung-feather-de-cai-ipa-tren-cac-thiet-bi-ios-ipados/)
@@ -106,6 +111,7 @@ Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng du
 * Nếu bạn cần ứng dụng đã được sử dụng rộng rãi, dễ tìm hướng dẫn \& certificate — eSign vẫn là lựa chọn phổ biến.
 * Scarlet là lựa chọn “đầy đủ” nếu bạn muốn một installer + signer + repo tích hợp — nhưng bệnh của nó là một vài tính năng ít minh bạch và khả năng revoke vẫn còn là vấn đề.
 * GBox: mình khuyên bạn nên cẩn trọng, vì cộng đồng ít sử dụng, ít đánh giá, và có cảnh báo về rủi ro về dữ liệu.
+
 
 
 **Chế độ Nhà phát triển (Developer Mode):** Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.

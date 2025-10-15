@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <!-- DNS Forge -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.example.dnsforge</string>
+            <key>PayloadUUID</key>
+            <string>1702-VIP11</string>
+            <key>PayloadDisplayName</key>
+            <string>Adblock DNS VIP01</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://dnsforge.de/dns-query</string>
+                <key>ServerName</key>
+                <array>
+                    <string>dnsforge.de</string>
+                </array>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>176.9.93.198</string>
+                    <string>176.9.1.117</string>
+                </array>
+            </dict>
+        </dict>
+
+        <!-- AdGuard DNS -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.example.adguard</string>
+            <key>PayloadUUID</key>
+            <string>1702-VIP22</string>
+            <key>PayloadDisplayName</key>
+            <string>Adblock DNS VIP02</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://dns.adguard.com/dns-query</string>
+                <key>ServerName</key>
+                <array>
+                    <string>dns.adguard.com</string>
+                </array>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>94.140.14.14</string>
+                    <string>94.140.15.15</string>
+                </array>
+            </dict>
+        </dict>
+
+        <!-- AdGuard Family -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.example.adguard.family</string>
+            <key>PayloadUUID</key>
+            <string>1702-VIP33</string>
+            <key>PayloadDisplayName</key>
+            <string>Adblock DNS VIP03</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://dns-family.adguard.com/dns-query</string>
+                <key>ServerName</key>
+                <array>
+                    <string>dns-family.adguard.com</string>
+                </array>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>94.140.14.15</string>
+                    <string>94.140.15.16</string>
+                </array>
+            </dict>
+        </dict>
+
+    </array>
+  <key>PayloadDescription</key>
+  <string>Adblock Edit By HaPhung (v4.0):
+- Chặn quảng cáo trung gian qua DNS ( 90% lượng QC đc tắt ).
+- Hỗ trợ chặn 1 phần quảng cáo trên Youtube, Facebook
+- Không bị hao pin và thiếu ổn định như kết nối như qua VPN.
+- Hỗ trợ tất cả các đời IOS.
+- Hỗ trợ iPhone, iPad, MacOS, TvOS.
+- Hỗ trợ chặn quảng cáo trên nền 3G,4G và Wifi.
+- Chặn Ads trên App và Web.</string>
+		<key>PayloadDisplayName</key>
+		<string>Adblock Edit By HaPhung(v4.0)</string>
+		<key>PayloadIdentifier</key>
+		<string>adblock</string>
+		<key>PayloadRemovalDisallowed</key>
+		<false />
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>f5eed13a-ec70-4b09-a80b-c77f85e9ea2d</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

@@ -150,7 +150,7 @@ Thường xuyên kiểm tra và gỡ bỏ chứng chỉ không còn sử dụng.
 
 
 
-1. [Chống Revoke](https://drphe.github.io/KhoIPA/anti_revoke.mobileconfig)
+1. [Chống Revoke](https://drphe.github.io/KhoIPA/upload/anti_revoke.mobileconfig)
    
 2. Tham khảo [Nguồn John220099](https://github.com/John220099/Anti-revoke-blacklist/tree/main)
 
@@ -179,4 +179,26 @@ Hoặc nhấn vào link trực tiếp:
 
 
 [https://api.cococloud-signing.online/website/dns/config/cococloud-block-revokes(v3).mobileconfig](https://api.cococloud-signing.online/website/dns/config/cococloud-block-revokes(v3).mobileconfig)
+
+
+
+4\. Chặn cập nhật IOS
+
+Mô tả:
+
+\- Cấu hình chặn cập nhật iOS là tệp .mobileconfig cài trên thiết bị iOS để ngăn tải hoặc cài bản cập nhật mới từ Apple
+
+Hướng dẫn:
+
+\- Tải xuống và cho phép cài về cấu hình
+
+\- Mở cài đặt - Vào cài đặt chung
+
+\- Quản lý VPN DNS \& thiết bị
+
+\- Tiến hành cài đặt cầu hình
+
+
+
+[Tải OTA](https://cydia.ichitaso.com/no-ota18.mobileconfig)
 
