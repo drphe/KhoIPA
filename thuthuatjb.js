@@ -23,7 +23,7 @@ downloadJSON('https://ipa.cypwn.xyz/cypwn_ts.json', 'repo.cypwn_ts.json');
 
 // Chạy chương trình bằng cách copy toàn bộ code ở đây, dán vào console của extension F2chart
 // công dụng: lấy repository từ thuthuatjb.com, lấy thêm url của screenshort
-main();
+//main();
 
 async function fetchScreenshotsForApps(apps) {
   let successCount = 0;
