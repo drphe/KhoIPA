@@ -21,7 +21,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     installAppAlert.addAction({
         title: "Install",
         style: 'default',
-        handler: () =>  open(`setup.mobileconfig`)
+        handler: () =>  open(`upload/setup.mobileconfig`)
     });
     installAppAlert.addAction({
         title: "Cancel",
