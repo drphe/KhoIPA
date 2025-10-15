@@ -5,7 +5,7 @@
   "iconURL": "https://repo.cypwn.xyz/assets/images/cypwn_small.png",
   "website": "https://ipa.cypwn.xyz",
   "sourceURL": "https://ipa.cypwn.xyz/cypwn_ts.json",
-  "tintColor": "6D5918", 
+  "tintColor": "FFC300",
   "featuredApps": [
     "com.xina.jailbreak"
   ],
@@ -3230,6 +3230,5 @@
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     }
-  ],
-  "description": ""
+  ]
 }

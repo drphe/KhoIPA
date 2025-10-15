@@ -14,6 +14,22 @@
   },
   "apps": [
     {
+      "name": "Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4 x CyPwn",
+      "version": "20.10.4",
+      "versionDate": "2025-10-14",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.ipa",
+      "localizedDescription": "YouTube",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.png",
+      "tintColor": "FFC300",
+      "size": 120586240,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4-1.png"
+      ]
+    },
+    {
       "name": "Asspp_2.3",
       "bundleIdentifier": "wiki.qaq.Asspp",
       "developerName": "Asspp_2.3 x CyPwn",
@@ -3082,6 +3098,16 @@
     }
   ],
   "news": [
+    {
+      "title": "Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4 now available!",
+      "identifier": "cypwn.Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.20.10.4",
+      "caption": "Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.png",
+      "date": "2025-10-14",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
     {
       "title": "Asspp_2.3 now available!",
       "identifier": "cypwn.Asspp_2.3.2.3",
