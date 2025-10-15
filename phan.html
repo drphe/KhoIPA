@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trích xuất từ vựng sang CSV</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    textarea { width: 100%; height: 300px; margin-bottom: 10px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    #downloadBtn { display: none; }
+  </style>
+</head>
+<body>
+  <h2>Trích xuất từ vựng từ HTML</h2>
+  <p>Dán nội dung HTML vào ô bên dưới:</p>
+  <textarea id="htmlInput" placeholder="Paste HTML content here..."></textarea>
+  <button onclick="extractAndDisplay()">Xuất ra bảng</button>
+
+  <div id="tableContainer"></div>
+  <button id="downloadBtn" onclick="downloadCSV()">Tải xuống CSV</button>
+
+  <script>
+    let csvContentGlobal = '';
+
+    function extractAndDisplay() {
+      const html = document.getElementById('htmlInput').value;
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const items = doc.querySelectorAll('.vocab-item');
+
+      const headers = ['Word', 'IPA', 'Word Class', 'Meaning', 'Example'];
+      const rows = [headers];
+
+      const table = document.createElement('table');
+      const thead = document.createElement('thead');
+      const tbody = document.createElement('tbody');
+
+      const headerRow = document.createElement('tr');
+      headers.forEach(h => {
+        const th = document.createElement('th');
+        th.textContent = h;
+        headerRow.appendChild(th);
+      });
+      thead.appendChild(headerRow);
+
+      items.forEach(item => {
+        const word = item.querySelector('.value textarea')?.value.trim() || '';
+        const ipa = item.querySelector('.ipa textarea')?.value.trim() || '';
+        const wordClass = item.querySelector('.word_class textarea')?.value.trim() || '';
+        const meaning = item.querySelector('.meaning textarea')?.value.trim() || '';
+        const example = item.querySelector('.example textarea')?.value.trim() || '';
+
+        const row = [word, ipa, wordClass, meaning, example];
+        rows.push(row);
+
+        const tr = document.createElement('tr');
+        row.forEach(cell => {
+          const td = document.createElement('td');
+          td.textContent = cell;
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+
+      table.appendChild(thead);
+      table.appendChild(tbody);
+      document.getElementById('tableContainer').innerHTML = '';
+      document.getElementById('tableContainer').appendChild(table);
+
+      // Tạo nội dung CSV và lưu vào biến toàn cục
+      csvContentGlobal = rows.map(row =>
+        row.map(cell => `"${cell.replace(/"/g, '""')}"`).join(',')
+      ).join('\n');
+
+      // Hiện nút tải xuống
+      document.getElementById('downloadBtn').style.display = 'inline-block';
+    }
+
+    function downloadCSV() {
+      const blob = new Blob([csvContentGlobal], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'vocab.csv';
+      link.click();
+    }
+  </script>
+</body>
+</html>
