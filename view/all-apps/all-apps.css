@@ -15,7 +15,7 @@
 #apps .app-container:last-of-type {
   margin-bottom: 1em;
 }
-.subtitle{
+.title{
   word-wrap: break-word;  
   white-space: normal;
   }
