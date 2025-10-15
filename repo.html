@@ -459,7 +459,7 @@ button:hover {
         <label for="app_name">Tên App (*):</label>
         <input type="text" id="app_name" placeholder="Nhấn Enter sau nhập để tra cứu!" title="Nhấn ESC để ẩn kết quả tìm kếm!">
       </div>
-      <div class="apple_apps" style="max-height: 320px;overflow: auto;"></div>
+      <div class="apple_apps" style="max-height: 220px;overflow: auto;"></div>
       <div class="form-group">
         <div>
           <label for="app_bundleIdentifier">Bundle ID (*):</label>
@@ -543,10 +543,13 @@ button:hover {
   <div id="customAlertModal" style="display:none;"></div>
   <div id="customConfirmModal" style="display:none;"></div>
 <div id="customConfirm" class="confirm-box" style="display:none;">
-  <div class="confirm-content">
-    <p>Chọn thông tin cần lấy?</p>
+  <div class="confirm-content" style="display: flex;flex-direction: column;">
+    <p><b>Chọn thông tin cần lấy:</b></p>
     <button onclick="insertApps('info')">Thông tin cơ bản</button>
-    <button onclick="insertApps('description')">Mô tả</button>
+    <button onclick="insertApps('screenshort')">Ảnh chụp màn hình</button>
+    <button onclick="insertApps('description')">Mô tả ứng dụng</button>
+    <button onclick="insertApps('all')">Điền tất cả</button>
+    <button onclick="insertApps('delall')">Xóa tất cả</button>
     <button onclick="insertApps()">Hủy</button>
   </div>
 </div>
@@ -855,6 +858,7 @@ let appDataToGet = {}
 function showConfirm(i) {
   document.getElementById('customConfirm').style.display = 'flex';
   appDataToGet = appleData[i];
+console.log(appDataToGet)
 }
 
 function insertApps(d) {
@@ -863,11 +867,23 @@ function insertApps(d) {
      document.getElementById('app_bundleIdentifier').value = appDataToGet.bundleId;
      document.getElementById('app_developerName').value = appDataToGet.artistName;
      document.getElementById('app_iconURL').value = appDataToGet.artworkUrl100;
-     document.getElementById('app_screenshotURLs').value = appDataToGet.screenshotUrls.join(", ");
   }else if(d == 'description'){
       document.getElementById('app_localizedDescription').value = `Yêu cầu: IOS ${appDataToGet.minimumOsVersion} trở lên \n${appDataToGet.description}`;
-
-  }
+  }else if(d == 'screenshort'){
+     document.getElementById('app_screenshotURLs').value = appDataToGet.screenshotUrls.join(", ");
+ }else if(d=='all'){
+     document.getElementById('app_bundleIdentifier').value = appDataToGet.bundleId;
+     document.getElementById('app_developerName').value = appDataToGet.artistName;
+     document.getElementById('app_iconURL').value = appDataToGet.artworkUrl100;
+      document.getElementById('app_localizedDescription').value = `Yêu cầu: IOS ${appDataToGet.minimumOsVersion} trở lên \n${appDataToGet.description}`;
+     document.getElementById('app_screenshotURLs').value = appDataToGet.screenshotUrls.join(", ");
+}else if(d=="delall"){
+     document.getElementById('app_bundleIdentifier').value = '';
+     document.getElementById('app_developerName').value = '';
+     document.getElementById('app_iconURL').value = '';
+      document.getElementById('app_localizedDescription').value = '';
+     document.getElementById('app_screenshotURLs').value = '';
+}
 }
 // lọc app
 function filterApps() {
