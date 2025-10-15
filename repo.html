@@ -8,336 +8,342 @@
   <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
   <title>KhoIPA || Quản lý JSON Repo</title>
   <script type="module">
-    import {
-      base64Convert
-    } from "./common/modules/constants.js";
-    import UIAlert from "./common/vendor/uialert.js/uialert.js";
-    import {
-      open,
-      json,
-      showUIAlert
-    } from "./common/modules/utilities.js";
+import {
+  base64Convert
+} from "./common/modules/constants.js";
+import UIAlert from "./common/vendor/uialert.js/uialert.js";
+import {
+  open,
+  json,
+  showUIAlert
+} from "./common/modules/utilities.js";
+window.open = open;
+window.json = json;
+window.base64Convert = base64Convert;
+window.UIAlert = UIAlert;
+window.showUIAlert = showUIAlert;
 
-    window.open = open;
-    window.json = json;
-    window.base64Convert = base64Convert;
-    window.UIAlert = UIAlert;
-    window.showUIAlert = showUIAlert;
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url("./common/vendor/uialert.js/uialert.css");
+@import url("./common/vendor/uialert.js/uialert.css");
 
-    /* Tùy chỉnh Tailwind CSS */
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f0f4f8;
-      color: #333;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #292a2d;
-      }
-    }
-
-    ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 0 grey;
-      border-radius: 1px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #ccc;
-      border-radius: 10px
-    }
-
-    ::-webkit-scrollbar {
-      width: 7px;
-      height: 7px;
-      background: transparent;
-    }
-
-    .container {
-      max-width: 640px !important;
-      margin: 0px auto;
-      background: #fff !important;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    }
-
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 20px !important;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 5px;
-      border: 1px solid #dcdcdc;
-      font-size: 16px;
-      box-sizing: border-box;
-      transition: border-color 0.3s;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: #3498db;
-      outline: none;
-      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
-    }
-
-    input[type="color"],
-    input[type="text"],
-    input[type="date"] {
-      padding: 0;
-      height: 40px;
-    }
-
-    input[type="checkbox"] {
-      width: auto;
-      margin-right: 10px;
-      transform: scale(1.2);
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.1s;
-      font-weight: 600;
-    }
-
-    button:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Màu nút */
-    .btn-primary {
-      background: #3498db;
-      color: white;
-      padding: 4px;
-    }
-
-    .btn-primary:hover {
-      background: #2980b9;
-    }
-
-    .btn-edit {
-      background: #2ecc71;
-      color: white;
-    }
-
-    .btn-edit:hover {
-      background: #27ad60;
-    }
-
-    .btn-delete {
-      background: #e74c3c;
-      color: white;
-    }
-
-    .btn-delete:hover {
-      background: #c0392b;
-    }
-
-    .btn-cancel {
-      background: #f39c12;
-      color: white;
-    }
-
-    .btn-cancel:hover {
-      background: #e67e22;
-    }
-
-    /* Nút Import/Export */
-    .btn-import {
-      background: #34495e;
-      color: white;
-      padding: 0px 6px;
-      width: 25%;
-    }
-
-    .btn-import:hover {
-      background: #2c3e50;
-    }
-
-    .btn-download {
-      background: #27ae60;
-      color: white;
-      padding: 0px 6px;
-      width: 25%;
-    }
-
-    .btn-download:hover {
-      background: #219d55;
-    }
-
-    /* Danh sách */
-    .news-item,
-    .app-item,
-    .version-item {
-      background: #ecf0f1;
-      padding: 15px;
-      margin-bottom: 10px;
-      border-radius: 8px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-left: 5px solid #3498db;
-    }
-    .news-list {
-      max-height: 500px;
-      overflow: auto;
-    }
-    .news-item strong,
-    .app-item strong {
-      color: #2c3e50;
-    }
-
-    .item-actions {
-      display: flex;
-    }
-
-    .item-actions button {
-      margin-left: 8px;
-      margin-top: 0;
-      padding: 8px 12px;
-      font-size: 14px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .form-group>div {
-      flex: 1 1 30%;
-      min-width: 200px;
-    }
-
-    /* Tabs */
-    .tab-buttons {
-      margin-top: 20px;
-    }
-
-    .tab-buttons button {
-      margin: 0 5px;
-      padding: 6px 25px;
-      font-size: 16px;
-      background: #bdc3c7;
-      color: #333;
-      border-radius: 8px 8px 0 0;
-    }
-
-    .tab-buttons button.active {
-      background: #3498db;
-      color: white;
-    }
-
-    .tab-content {
-      border: 1px solid #dcdcdc;
-      padding: 20px;
-      border-radius: 0 0 12px 12px;
-      margin-bottom: 20px;
-    }
-.app-item strong{
-  word-wrap: break-word;  
-  white-space: normal;
-  }
-.app-item img {
-margin-right: 1rem;
-    display: block;
-    border-radius: 14px;
-    max-width: 64px;
-    border: 0.75px solid rgba(0, 0, 0, 0.1);
+/* Tùy chỉnh Tailwind CSS */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f4f8;
+  color: #333;
 }
-    /* Textarea Output */
-    #output {
-      min-height: 250px;
-      background: #f9f9f9;
-      font-size: 13px;
-      padding: 10px;
-    }
 
-    #nav-bar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 0.1px solid var(--color-separator);
-      background-color: var(--color-transparent);
-      -webkit-backdrop-filter: saturate(100%) blur(30px);
-      backdrop-filter: saturate(100%) blur(20px);
-      min-width: 0;
-      margin: 0 auto;
-      padding: 0.25em 16px 0.25em 16px;
-      z-index: 2;
-      min-height: 40px;
-    }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #292a2d;
+  }
+}
 
-    .app-list,
-    .version-list {
-      max-height: 500px;
-      overflow: auto;
-    }
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 grey;
+  border-radius: 1px;
+}
 
-    #top {
-      position: fixed;
-      z-index: 5;
-      left: 0;
-      right: 0;
-      top: 0;
-      max-width: 640px;
-      margin: auto;
-    }
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px
+}
 
-    #loading {
-      overflow: hidden;
-      background-color: rgb(26 25 27 / 87%) !important;
-    }
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: transparent;
+}
 
-    #loading {
-      position: fixed;
-      left: 0;
-      right: 0;
-      height: 100vh;
-      margin: 0 auto;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-    }
+.container {
+  max-width: 640px !important;
+  margin: 0px auto;
+  background: #fff !important;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
 
-    #loading img {
-      width: 24px;
-      opacity: 0.5;
-    }
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 20px !important;
+}
 
-    #loading p {
-      font-size: 0.75em;
-      font-weight: 500;
-      text-transform: uppercase;
-      opacity: 0.35;
-    }
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #dcdcdc;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+input[type="color"],
+input[type="text"],
+input[type="date"] {
+  padding: 0;
+  height: 40px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Màu nút */
+.btn-primary {
+  background: #3498db;
+  color: white;
+  padding: 4px;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+}
+
+.btn-edit {
+  background: #2ecc71;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #27ad60;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #c0392b;
+}
+
+.btn-cancel {
+  background: #f39c12;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: #e67e22;
+}
+
+/* Nút Import/Export */
+.btn-import {
+  background: #34495e;
+  color: white;
+  padding: 0px 6px;
+  width: 25%;
+}
+
+.btn-import:hover {
+  background: #2c3e50;
+}
+
+.btn-download {
+  background: #27ae60;
+  color: white;
+  padding: 0px 6px;
+  width: 25%;
+}
+
+.btn-download:hover {
+  background: #219d55;
+}
+
+/* Danh sách */
+.news-item,
+.app-item,
+.version-item {
+  background: #ecf0f1;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #3498db;
+}
+
+.news-list {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.news-item strong,
+.app-item strong {
+  color: #2c3e50;
+}
+
+.item-actions {
+  display: flex;
+}
+
+.item-actions button {
+  margin-left: 8px;
+  margin-top: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group>div {
+  flex: 1 1 30%;
+  min-width: 200px;
+}
+
+/* Tabs */
+.tab-buttons {
+  margin-top: 20px;
+}
+
+.tab-buttons button {
+  margin: 0 5px;
+  padding: 6px 25px;
+  font-size: 16px;
+  background: #bdc3c7;
+  color: #333;
+  border-radius: 8px 8px 0 0;
+}
+
+.tab-buttons button.active {
+  background: #3498db;
+  color: white;
+}
+
+.tab-content {
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 20px;
+}
+
+.app-item strong {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.app-item img {
+  margin-right: 1rem;
+  display: block;
+  border-radius: 14px;
+  max-width: 64px;
+  border: 0.75px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Textarea Output */
+#output {
+  min-height: 250px;
+  background: #f9f9f9;
+  font-size: 13px;
+  padding: 10px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px solid var(--color-separator);
+  background-color: var(--color-transparent);
+  -webkit-backdrop-filter: saturate(100%) blur(30px);
+  backdrop-filter: saturate(100%) blur(20px);
+  min-width: 0;
+  margin: 0 auto;
+  padding: 0.25em 16px 0.25em 16px;
+  z-index: 2;
+  min-height: 40px;
+}
+
+.app-list,
+.version-list {
+  max-height: 500px;
+  overflow: auto;
+}
+
+#top {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-width: 640px;
+  margin: auto;
+}
+
+#loading {
+  overflow: hidden;
+  background-color: rgb(26 25 27 / 87%) !important;
+}
+
+#loading {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+#loading img {
+  width: 24px;
+  opacity: 0.5;
+}
+
+#loading p {
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.35;
+}
+
   </style>
 </head>
 
@@ -358,36 +364,27 @@ margin-right: 1rem;
         </a>
       </div>
     </div>
-
     <!-- TAB NAVIGATION -->
     <div class="tab-buttons" style="display: flex;">
       <button class="active" onclick="showTab('repo', this)">Repository</button>
       <button onclick="showTab('news', this)">Tin tức</button>
       <button onclick="showTab('apps', this)">Ứng dụng</button>
-
     </div>
     <!-- NEWS TAB CONTENT -->
     <div id="repoTab" class="tab-content">
       <h2 class="text-xl font-semibold mb-4">Thông tin chung</h2>
-
       <label for="repo_name">Tên(*):</label>
       <input type="text" id="repo_name" placeholder="Tên repository">
-
       <label for="repo_identifier">Id repository (*):</label>
       <input type="text" id="repo_identifier" placeholder="Id của repository">
-
       <label for="repo_subtitle">Subtitle (*):</label>
       <input type="text" id="repo_subtitle" placeholder="Mô tả ngắn">
-
       <label for="repo_description">Description (*):</label>
       <input type="text" id="repo_description" placeholder="Mô tả đầy đủ">
-
       <label for="repo_iconURL">Link icon (*):</label>
       <input type="text" id="repo_iconURL" placeholder="URL icon">
-
       <label for="repo_apps">Feature App (Cách nhau bởi dấu phẩy):</label>
       <textarea id="repo_apps" rows="2" placeholder="BundleId1, bundleId2, bundleId3..."></textarea>
-
       <div class="form-group">
         <div>
           <label for="repo_tintColor">Mã màu:</label>
@@ -398,29 +395,21 @@ margin-right: 1rem;
           <input type="text" id="repo_sourceURL" value="" placeholder="Link tải repo">
         </div>
       </div>
-
       <button onclick="editRepo()" class="btn-primary">Sửa thông tin repo</button>
-   </div>
-
+    </div>
     <!-- NEWS TAB CONTENT -->
     <div id="newsTab" class="tab-content" style="display:none;">
       <h2 class="text-xl font-semibold mb-4">Quản lý Tin tức</h2>
-
       <label for="news_title">Tiêu đề (*):</label>
       <input type="text" id="news_title" placeholder="Tiêu đề tin tức">
-
       <label for="news_identifier">Id tin tức (*):</label>
       <input type="text" id="news_identifier" placeholder="Id của tin tức">
-
       <label for="news_caption">Caption (*):</label>
       <input type="text" id="news_caption" placeholder="Mô tả ngắn">
-
       <label for="news_imageURL">Link ảnh bìa (*):</label>
       <input type="text" id="news_imageURL" placeholder="URL ảnh bìa">
-
       <label for="news_url">Link tin tức :</label>
       <input type="text" id="news_url" placeholder="URL tin tức" value="">
-
       <div class="form-group">
         <div>
           <label for="news_tintColor">Mã màu:</label>
@@ -435,38 +424,32 @@ margin-right: 1rem;
           <input type="date" id="news_date">
         </div>
       </div>
-
       <label class="flex items-center mt-4">
-        <input type="checkbox" id="news_notify"> Notify
-      </label>
-
+        <input type="checkbox" id="news_notify"> Notify </label>
       <button onclick="addOrUpdateNews()" class="btn-primary">Thêm / Cập nhật tin</button>
       <button onclick="cancelNewsEdit()" id="cancelNewsBtn" class="btn-cancel" style="display:none;">Thoát chỉnh sửa</button>
-        <h3 class="font-bold text-lg mt-6">Danh sách Tin tức (<span class="total_news">0</span>)</h3>
+      <h3 class="font-bold text-lg mt-6">Danh sách Tin tức (<span class="total_news">0</span>)</h3>
       <div class="news-list" id="newsList">
       </div>
     </div>
-
     <!-- APPS TAB CONTENT -->
     <div id="appsTab" class="tab-content" style="display:none;">
       <h2 class="text-xl font-semibold mb-4">Quản lý Ứng dụng</h2>
-
+      <div>
+        <label for="app_name">Tên App (*):</label>
+        <input type="text" id="app_name" placeholder="Nhấn Enter sau nhập để tra cứu!" title="Nhấn ESC để ẩn kết quả tìm kếm!">
+      </div>
+      <div class="apple_apps" style="max-height: 320px;overflow: auto;"></div>
       <div class="form-group">
-        <div>
-          <label for="app_name">Tên App (*):</label>
-          <input type="text" id="app_name">
-        </div>
         <div>
           <label for="app_bundleIdentifier">Bundle ID (*):</label>
           <input type="text" id="app_bundleIdentifier" placeholder="Ví dụ: com.example.app">
         </div>
-<input type="text" id="filterInput" placeholder="Tìm kiếm theo tên app..." oninput="filterApps()" style="margin-top:10px;">
         <div>
           <label for="app_developerName">Nhà phát triển :</label>
           <input type="text" id="app_developerName">
         </div>
       </div>
-
       <div class="form-group">
         <div>
           <label for="app_subtitle">Phụ đề (*): </label>
@@ -481,19 +464,14 @@ margin-right: 1rem;
           <input type="color" id="app_tintColor" value="#000000">
         </div>
       </div>
-
       <label for="app_localizedDescription">Mô tả (*): </label>
       <textarea id="app_localizedDescription" rows="3"></textarea>
-
       <label for="app_screenshotURLs">Screenshot URLs (Ngăn cách bằng dấu phẩy): </label>
       <textarea id="app_screenshotURLs" rows="2" placeholder="url1, url2, url3"></textarea>
-
       <label class="flex items-center mt-4"><input type="checkbox" id="app_feature"> FeatureApps</label>
       <label class="flex items-center mt-4"><input type="checkbox" id="app_beta"> Beta</label>
-
       <button onclick="addOrUpdateApp()" class="btn-primary">Thêm / Cập nhật App</button>
       <button onclick="cancelAppEdit()" id="cancelAppBtn" class="btn-cancel" style="display:none;">Thoát chỉnh sửa</button>
-
       <!-- Versions Management Section -->
       <div id="versionSection" class="mt-6 pt-4 border-t border-gray-200" style="display:none;">
         <h3 class="text-xl font-semibold mb-4 text-gray-700">Quản lý Phiên bản (Versions)</h3>
@@ -513,296 +491,265 @@ margin-right: 1rem;
         </div>
         <label for="version_downloadURL">Download URL (*): <blink><a href="https://github.com/drphe/KhoIPA/releases/new" target=_blank>>>Upload tệp ở đây</a></blink></label>
         <input type="text" id="version_downloadURL">
-
         <label for="version_localizedDescription">Mô tả Version</label>
         <textarea id="version_localizedDescription" rows="3"></textarea>
-
         <button onclick="addOrUpdateVersion()" class="btn-edit mt-3">Thêm / Cập nhật Version</button>
         <button onclick="cancelVersionEdit()" id="cancelVersionBtn" class="btn-cancel" style="display:none;">Thoát chỉnh sửa Version</button>
-
         <div class="version-list" id="versionList">
           <h4 class="font-bold text-md mt-6">Danh sách Versions (<span class="total_versions">0</span>)</h4>
         </div>
       </div>
-      <div> 
-          <h3 class="font-bold text-lg mt-6">Danh sách Ứng dụng (<span class="total_apps">0</span>)</h3>
-      <input type="text" id="filterInput" placeholder="Tìm kiếm theo tên app..." oninput="filterApps()" style="margin-top:10px;">
-	</div>
+      <div>
+        <h3 class="font-bold text-lg mt-6">Danh sách Ứng dụng (<span class="total_apps">0</span>)</h3>
+        <input type="text" id="filterInput" placeholder="Tìm kiếm theo tên app..." oninput="filterApps()" style="margin-top:10px;">
+      </div>
       <div class="app-list" id="appList"></div>
     </div>
-
     <!-- OUTPUT AND ACTIONS -->
     <label for="output" class="mt-6">📦 Mã JSON xuất ra</label>
     <textarea id="output" placeholder="Mã json sẽ hiển thị ở đây!"></textarea>
     <div class="flex justify-between items-center mt-4">
       <input type="file" id="jsonFileInput" accept=".json" style="display: none;" onchange="handleFileSelect(event)">
-      <button onclick="init()" class="btn-import">
-        ☑️ Select
-      </button>
-      <button onclick="document.getElementById('jsonFileInput').click()" class="btn-import">
-        ⬆️ Import
-      </button>
-      <button onclick="copyOutput()" class="btn-download">
-        📄 Copy
-      </button>
-      <button onclick="downloadJSON()" class="btn-download">
-        ⬇️ Export
-      </button>
+      <button onclick="init()" class="btn-import"> ☑️ Select </button>
+      <button onclick="document.getElementById('jsonFileInput').click()" class="btn-import"> ⬆️ Import </button>
+      <button onclick="copyOutput()" class="btn-download"> 📄 Copy </button>
+      <button onclick="downloadJSON()" class="btn-download"> ⬇️ Export </button>
     </div>
   </div>
-
   <!-- Custom Alert and Confirm Modals -->
   <div id="customAlertModal" style="display:none;"></div>
   <div id="customConfirmModal" style="display:none;"></div>
   <script>
-    // --- Dữ liệu và Biến trạng thái ---
-    let newsArray = [];
-    let appsArray = [];
-    let newsEditIndex = -1;
-    let appEditIndex = -1;
-    let versionEditIndex = -1;
-    let prefixUrl = '';
-    let baseData = {};
-    let nameUrl='';
-    // Khởi tạo ngày mặc định
-    document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
+// --- Dữ liệu và Biến trạng thái ---
+let newsArray = [];
+let appsArray = [];
+let newsEditIndex = -1;
+let appEditIndex = -1;
+let versionEditIndex = -1;
+let prefixUrl = '';
+let baseData = {};
+let nameUrl = '';
+// Khởi tạo ngày mặc định
+document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
+// --- Custom UI functions (Thay thế alert/confirm) ---
+function showCustomAlert(message) {
+  let alertBox = document.getElementById('customAlertModal');
+  if (alertBox) alertBox.remove();
+  alertBox = document.createElement('div');
+  alertBox.id = 'customAlertModal';
+  alertBox.className = 'fixed top-4 right-4 bg-red-600 text-white p-4 rounded-lg shadow-xl font-semibold opacity-0 transition-opacity duration-500 z-50';
+  alertBox.textContent = message;
+  document.body.appendChild(alertBox);
+  setTimeout(() => {
+    alertBox.classList.remove('opacity-0');
+    alertBox.classList.add('opacity-100');
+  }, 10); // Ngay lập tức
+  setTimeout(() => {
+    alertBox.classList.remove('opacity-100');
+    alertBox.classList.add('opacity-0');
+    setTimeout(() => alertBox.remove(), 500);
+  }, 3000);
+}
 
-    // --- Custom UI functions (Thay thế alert/confirm) ---
-    function showCustomAlert(message) {
-      let alertBox = document.getElementById('customAlertModal');
-      if (alertBox) alertBox.remove();
+function showCustomConfirm(message, callback) {
+  const existingModal = document.getElementById('customConfirmModal');
+  if (existingModal) existingModal.remove();
+  const modal = document.createElement('div');
+  modal.id = 'customConfirmModal';
+  modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50';
+  const box = document.createElement('div');
+  box.className = 'bg-white p-6 rounded-lg shadow-2xl w-80 text-center';
+  const msg = document.createElement('p');
+  msg.textContent = message;
+  msg.className = 'mb-5 font-medium text-gray-800';
+  box.appendChild(msg);
+  const btnContainer = document.createElement('div');
+  btnContainer.className = 'flex justify-center space-x-4';
+  const btnYes = document.createElement('button');
+  btnYes.textContent = 'Đồng ý Xóa';
+  btnYes.className = 'btn-delete !mt-0';
+  btnYes.onclick = () => {
+    modal.remove();
+    callback(true);
+  };
+  const btnNo = document.createElement('button');
+  btnNo.textContent = 'Hủy';
+  btnNo.className = 'btn-cancel !mt-0';
+  btnNo.onclick = () => {
+    modal.remove();
+    callback(false);
+  };
+  btnContainer.appendChild(btnYes);
+  btnContainer.appendChild(btnNo);
+  box.appendChild(btnContainer);
+  modal.appendChild(box);
+  document.body.appendChild(modal);
+}
+// --- Chức năng Quản lý TAB ---
+function showTab(tabName, element) {
+  document.getElementById('newsTab').style.display = tabName === 'news' ? 'block' : 'none';
+  document.getElementById('appsTab').style.display = tabName === 'apps' ? 'block' : 'none';
+  document.getElementById('repoTab').style.display = tabName === 'repo' ? 'block' : 'none';
+  // Cập nhật trạng thái nút
+  document.querySelectorAll('.tab-buttons button').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  element.classList.add('active');
+  // Ẩn phần version khi chuyển tab hoặc không edit app
+  document.getElementById('versionSection').style.display = 'none';
+}
+// --- chức năng chỉnh sửa thông tin repo
+function editRepo() {
+  const name = document.getElementById('repo_name').value.trim();
+  const identifier = document.getElementById('repo_identifier').value.trim();
+  const subtitle = document.getElementById('repo_subtitle').value.trim();
+  const iconURL = document.getElementById('repo_iconURL').value.trim();
+  const sourceURL = document.getElementById('repo_sourceURL').value.trim();
+  const tintColor = document.getElementById('repo_tintColor').value.replace('#', '').toUpperCase();
+  const apps = document.getElementById('repo_apps').value.trim();
+  const description = document.getElementById('repo_description').value;
+  const featuredApps = apps ? apps.split(',').map(url => url.trim()).filter(url => url) : [];
+  if (!name || !identifier || !tintColor || !iconURL) {
+    window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin repository.");
+    return;
+  }
+  const repoItem = {
+    name,
+    identifier,
+    subtitle,
+    tintColor,
+    iconURL,
+    sourceURL,
+    featuredApps,
+    description
+  };
+  baseData = {
+    ...baseData,
+    ...repoItem
+  }; //Object.assign(baseData, repoItem);
+  updateOutput();
+  window.showUIAlert("Success", "Cập nhật dữ liệu thành công.");
+}
 
-      alertBox = document.createElement('div');
-      alertBox.id = 'customAlertModal';
-      alertBox.className = 'fixed top-4 right-4 bg-red-600 text-white p-4 rounded-lg shadow-xl font-semibold opacity-0 transition-opacity duration-500 z-50';
-      alertBox.textContent = message;
-      document.body.appendChild(alertBox);
+function renderRepo() {
+  document.getElementById('repo_name').value = baseData.name;
+  document.getElementById('repo_identifier').value = baseData.identifier;
+  document.getElementById('repo_subtitle').value = baseData.subtitle ?? '';
+  document.getElementById('repo_iconURL').value = baseData.iconURL ?? '';
+  document.getElementById('repo_sourceURL').value = baseData.sourceURL ?? '';
+  document.getElementById('repo_tintColor').value = '#' + (baseData.tintColor ? baseData.tintColor : '#C0C000').replace('#', '');
+  document.getElementById('repo_apps').value = (baseData.featuredApps || []).join(', ');
+  document.getElementById('repo_description').value = baseData.description ?? "";
+}
+// --- Chức năng Quản lý NEWS ---
+function addOrUpdateNews() {
+  const title = document.getElementById('news_title').value.trim();
+  const identifier = document.getElementById('news_identifier').value.trim();
+  const caption = document.getElementById('news_caption').value.trim();
+  const imageURL = document.getElementById('news_imageURL').value.trim();
+  const url = document.getElementById('news_url').value.trim();
+  const tintColor = document.getElementById('news_tintColor').value.replace('#', '').toUpperCase();
+  const appID = document.getElementById('news_appID').value.trim();
+  const date = document.getElementById('news_date').value;
+  const notify = document.getElementById('news_notify').checked;
+  if (!title || !caption || !imageURL || !appID || !identifier) {
+    window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin tin tức.");
+    return;
+  }
+  const newsItem = {
+    title,
+    identifier,
+    caption,
+    tintColor,
+    imageURL,
+    appID,
+    date,
+    notify,
+    url
+  };
+  if (newsItem.url === "") {
+    delete newsItem.url;
+  }
+  if (newsEditIndex >= 0) {
+    newsArray[newsEditIndex] = newsItem;
+    newsEditIndex = -1;
+    document.getElementById('cancelNewsBtn').style.display = 'none';
+  } else {
+    newsArray.unshift(newsItem); // Thêm vào đầu để tin mới nhất nằm trên
+  }
+  clearNewsForm();
+  renderNewsList();
+  updateOutput();
+  window.showUIAlert("Success", "Cập nhật dữ liệu thành công.");
+}
 
-      setTimeout(() => {
-        alertBox.classList.remove('opacity-0');
-        alertBox.classList.add('opacity-100');
-      }, 10); // Ngay lập tức
+function clearNewsForm() {
+  document.getElementById('news_title').value = '';
+  document.getElementById('news_identifier').value = '';
+  document.getElementById('news_caption').value = '';
+  document.getElementById('news_imageURL').value = '';
+  document.getElementById('news_url').value = `https://drphe.github.io/KhoIPA/view/note/?source=${window.base64Convert(prefixUrl)}&link=trollstore.md`;
+  document.getElementById('news_tintColor').value = '#3498db';
+  document.getElementById('news_appID').value = 'com.example.app';
+  document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
+  document.getElementById('news_notify').checked = false;
+}
 
-      setTimeout(() => {
-        alertBox.classList.remove('opacity-100');
-        alertBox.classList.add('opacity-0');
-        setTimeout(() => alertBox.remove(), 500);
-      }, 3000);
-    }
-
-    function showCustomConfirm(message, callback) {
-      const existingModal = document.getElementById('customConfirmModal');
-      if (existingModal) existingModal.remove();
-
-      const modal = document.createElement('div');
-      modal.id = 'customConfirmModal';
-      modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50';
-
-      const box = document.createElement('div');
-      box.className = 'bg-white p-6 rounded-lg shadow-2xl w-80 text-center';
-
-      const msg = document.createElement('p');
-      msg.textContent = message;
-      msg.className = 'mb-5 font-medium text-gray-800';
-      box.appendChild(msg);
-
-      const btnContainer = document.createElement('div');
-      btnContainer.className = 'flex justify-center space-x-4';
-
-      const btnYes = document.createElement('button');
-      btnYes.textContent = 'Đồng ý Xóa';
-      btnYes.className = 'btn-delete !mt-0';
-      btnYes.onclick = () => {
-        modal.remove();
-        callback(true);
-      };
-
-      const btnNo = document.createElement('button');
-      btnNo.textContent = 'Hủy';
-      btnNo.className = 'btn-cancel !mt-0';
-      btnNo.onclick = () => {
-        modal.remove();
-        callback(false);
-      };
-
-      btnContainer.appendChild(btnYes);
-      btnContainer.appendChild(btnNo);
-      box.appendChild(btnContainer);
-      modal.appendChild(box);
-      document.body.appendChild(modal);
-    }
-
-    // --- Chức năng Quản lý TAB ---
-    function showTab(tabName, element) {
-      document.getElementById('newsTab').style.display = tabName === 'news' ? 'block' : 'none';
-      document.getElementById('appsTab').style.display = tabName === 'apps' ? 'block' : 'none';
-      document.getElementById('repoTab').style.display = tabName === 'repo' ? 'block' : 'none';
-
-      // Cập nhật trạng thái nút
-      document.querySelectorAll('.tab-buttons button').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      element.classList.add('active');
-
-      // Ẩn phần version khi chuyển tab hoặc không edit app
-      document.getElementById('versionSection').style.display = 'none';
-    }
-    // --- chức năng chỉnh sửa thông tin repo
-    function editRepo(){
-      const name = document.getElementById('repo_name').value.trim();
-      const identifier = document.getElementById('repo_identifier').value.trim();
-      const subtitle = document.getElementById('repo_subtitle').value.trim();
-      const iconURL = document.getElementById('repo_iconURL').value.trim();
-      const sourceURL = document.getElementById('repo_sourceURL').value.trim();
-      const tintColor = document.getElementById('repo_tintColor').value.replace('#', '').toUpperCase();
-      const apps = document.getElementById('repo_apps').value.trim();
-      const description = document.getElementById('repo_description').value;
-      const featuredApps = apps ? apps.split(',').map(url => url.trim()).filter(url => url) : [];
-
-      if (!name || !identifier || !tintColor || !iconURL) {
-        window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin repository.");
-        return;
-      }
-
-      const repoItem = {
-        name,
-        identifier,
-        subtitle,
-        tintColor,
-        iconURL,
-        sourceURL,
-        featuredApps,
-        description
-      };
-
-      baseData = { ...baseData, ...repoItem };//Object.assign(baseData, repoItem);
-      updateOutput();
-      window.showUIAlert("Success", "Cập nhật dữ liệu thành công.");
-    }
-
-    function renderRepo() {
-      document.getElementById('repo_name').value = baseData.name;
-      document.getElementById('repo_identifier').value = baseData.identifier;
-      document.getElementById('repo_subtitle').value = baseData.subtitle??'';
-      document.getElementById('repo_iconURL').value = baseData.iconURL??'';
-      document.getElementById('repo_sourceURL').value = baseData.sourceURL??'';
-      document.getElementById('repo_tintColor').value = '#' + (baseData.tintColor?baseData.tintColor:'#C0C000').replace('#', '');
-      document.getElementById('repo_apps').value = (baseData.featuredApps || []).join(', ');
-      document.getElementById('repo_description').value = baseData.description ??"";
-    }
-
-    // --- Chức năng Quản lý NEWS ---
-    function addOrUpdateNews() {
-      const title = document.getElementById('news_title').value.trim();
-      const identifier = document.getElementById('news_identifier').value.trim();
-      const caption = document.getElementById('news_caption').value.trim();
-      const imageURL = document.getElementById('news_imageURL').value.trim();
-      const url = document.getElementById('news_url').value.trim();
-      const tintColor = document.getElementById('news_tintColor').value.replace('#', '').toUpperCase();
-      const appID = document.getElementById('news_appID').value.trim();
-      const date = document.getElementById('news_date').value;
-      const notify = document.getElementById('news_notify').checked;
-
-      if (!title || !caption || !imageURL || !appID || !identifier) {
-        window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin tin tức.");
-        return;
-      }
-
-      const newsItem = {
-        title,
-        identifier,
-        caption,
-        tintColor,
-        imageURL,
-        appID,
-        date,
-        notify,
-        url
-      };
-      if (newsItem.url === "") {
-        delete newsItem.url;
-      }
-      if (newsEditIndex >= 0) {
-        newsArray[newsEditIndex] = newsItem;
-        newsEditIndex = -1;
-        document.getElementById('cancelNewsBtn').style.display = 'none';
-      } else {
-        newsArray.unshift(newsItem); // Thêm vào đầu để tin mới nhất nằm trên
-      }
-
-      clearNewsForm();
-      renderNewsList();
-      updateOutput();
-      window.showUIAlert("Success", "Cập nhật dữ liệu thành công.");
-    }
-
-    function clearNewsForm() {
-      document.getElementById('news_title').value = '';
-      document.getElementById('news_identifier').value = '';
-      document.getElementById('news_caption').value = '';
-      document.getElementById('news_imageURL').value = '';
-      document.getElementById('news_url').value = `https://drphe.github.io/KhoIPA/view/note/?source=${window.base64Convert(prefixUrl)}&link=trollstore.md`;
-      document.getElementById('news_tintColor').value = '#3498db';
-      document.getElementById('news_appID').value = 'com.example.app';
-      document.getElementById('news_date').value = new Date().toISOString().split('T')[0];
-      document.getElementById('news_notify').checked = false;
-    }
-
-    function renderNewsList() {
-      const list = document.getElementById('newsList');
-      list.innerHTML = '';
-      // Sắp xếp lại tin tức theo ngày (mới nhất lên đầu)
-      const sortedNews = [...newsArray].sort((a, b) => new Date(b.date) - new Date(a.date));
-      document.querySelector(".total_news").innerHTML = sortedNews.length ?? 0;
-      sortedNews.forEach((item, index) => {
-        const originalIndex = newsArray.indexOf(item); // Tìm index gốc
-        const div = document.createElement('div');
-        div.className = 'news-item';
-        div.style.borderLeftColor = '#' + item.tintColor;
-        div.innerHTML = `
+function renderNewsList() {
+  const list = document.getElementById('newsList');
+  list.innerHTML = '';
+  // Sắp xếp lại tin tức theo ngày (mới nhất lên đầu)
+  const sortedNews = [...newsArray].sort((a, b) => new Date(b.date) - new Date(a.date));
+  document.querySelector(".total_news").innerHTML = sortedNews.length ?? 0;
+  sortedNews.forEach((item, index) => {
+    const originalIndex = newsArray.indexOf(item); // Tìm index gốc
+    const div = document.createElement('div');
+    div.className = 'news-item';
+    div.style.borderLeftColor = '#' + item.tintColor;
+    div.innerHTML = `
                     <span style="overflow: hidden;text-overflow: ellipsis; width: 400px;"><strong>${item.title}</strong> - ${item.caption} (${item.date})</span>
                     <div class="item-actions">
                         <button class="btn-edit" onclick="editNews(${originalIndex})">Sửa</button>
                         <button class="btn-delete" onclick="deleteNews(${originalIndex})">Xóa</button>
                     </div>
                 `;
-        list.appendChild(div);
-      });
-    }
+    list.appendChild(div);
+  });
+}
 
-    function editNews(index) {
-      const item = newsArray[index];
-      document.getElementById('news_title').value = item.title;
-      document.getElementById('news_identifier').value = item.identifier;
-      document.getElementById('news_caption').value = item.caption;
-      document.getElementById('news_imageURL').value = item.imageURL;
-      document.getElementById('news_url').value = item.url;
-      document.getElementById('news_tintColor').value = '#' + item.tintColor;
-      document.getElementById('news_appID').value = item.appID;
-      document.getElementById('news_date').value = item.date;
-      document.getElementById('news_notify').checked = item.notify;
-      newsEditIndex = index;
-      document.getElementById('cancelNewsBtn').style.display = 'inline-block';
-    }
+function editNews(index) {
+  const item = newsArray[index];
+  document.getElementById('news_title').value = item.title;
+  document.getElementById('news_identifier').value = item.identifier;
+  document.getElementById('news_caption').value = item.caption;
+  document.getElementById('news_imageURL').value = item.imageURL;
+  document.getElementById('news_url').value = item.url;
+  document.getElementById('news_tintColor').value = '#' + item.tintColor;
+  document.getElementById('news_appID').value = item.appID;
+  document.getElementById('news_date').value = item.date;
+  document.getElementById('news_notify').checked = item.notify;
+  newsEditIndex = index;
+  document.getElementById('cancelNewsBtn').style.display = 'inline-block';
+}
 
-    function deleteNews(index) {
-      showCustomConfirm("Bạn có chắc muốn xóa tin này?", (confirmed) => {
-        if (confirmed) {
-          newsArray.splice(index, 1);
-          renderNewsList();
-          updateOutput();
-        }
-      });
+function deleteNews(index) {
+  showCustomConfirm("Bạn có chắc muốn xóa tin này?", (confirmed) => {
+    if (confirmed) {
+      newsArray.splice(index, 1);
+      renderNewsList();
+      updateOutput();
     }
+  });
+}
 
-    function cancelNewsEdit() {
-      newsEditIndex = -1;
-      clearNewsForm();
-      document.getElementById('cancelNewsBtn').style.display = 'none';
-    }
+function cancelNewsEdit() {
+  newsEditIndex = -1;
+  clearNewsForm();
+  document.getElementById('cancelNewsBtn').style.display = 'none';
+}
 
 function updateFeaturedApps(bundleId, shouldAdd) {
-	baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
+  baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
   if (shouldAdd) {
     if (!baseData.featuredApps.includes(bundleId)) {
       baseData.featuredApps.push(bundleId);
@@ -810,19 +757,86 @@ function updateFeaturedApps(bundleId, shouldAdd) {
   } else {
     baseData.featuredApps = baseData.featuredApps.filter(app => app !== bundleId);
   }
-renderRepo();
+  renderRepo();
+}
+// --- Chức năng Quản lý APPS ---
+// tra cứu app
+const results = document.querySelector(".apple_apps");
+document.getElementById("app_name").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    results.innerHTML = ""; // Xóa kết quả cũ
+    const searchText = event.target.value;
+    getBundleId(searchText.trim());
+  }
+});
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    results.innerHTML = ""; // Xóa kết quả cũ
+  }
+});
+let appleData = [];
+
+function getBundleId(searchvalue, company = "VN", device = "iPhone") {
+  const media = device === 'iPad' ? 'entity=iPadSoftware' : 'media=software';
+  const url = `https://itunes.apple.com/search?limit=5&country=${company}&${media}&term=${encodeURIComponent(searchvalue)}`;
+  fetch(url).then(response => response.json()).then(json => {
+    appleData = [];
+    json.results.forEach((item, i) => {
+      appleData.push(item)
+      const appName = item.trackName;
+      const version = item.version;
+      const minimumOsVersion = item.minimumOsVersion;
+      const dateObj = new Date(item.currentVersionReleaseDate);
+      const currentVersionReleaseDate = dateObj.toLocaleDateString('en-GB', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      });
+      const appId = item.trackId;
+      const artworkUrl = item.artworkUrl100;
+      const artworkUrl_l = item.artworkUrl512;
+      const artistName = item.artistName;
+      const bundleId = item.bundleId;
+      const price = item.formattedPrice;
+      const trackViewUrl = item.trackViewUrl;
+      const resultHTML = `<div class="app-item">
+		    <a href="${artworkUrl_l}" download="${appName}.png" target="_blank">
+			<img src = "${artworkUrl}" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';"/>
+		    </a>
+                    <span style="overflow: hidden;text-overflow: ellipsis; width: 400px;">
+                        <p><a target="_blank" href="${trackViewUrl}"><b>${appName}</b></a> - ${artistName} <b>(v${version})</b></p>
+                        <p><a id="app_${appId}" class="bundleid" data-text="${bundleId}">${bundleId}</a></p>
+              		<p class="minimumOsVersion">Yêu cầu: ${minimumOsVersion} trở lên (${price})</p>
+              		<p class="currentVersionReleaseDate">Cập nhật: ${currentVersionReleaseDate}</p>
+                    </span>
+                    <div class="item-actions">
+                        <button class="btn-edit" onclick="insertApp(${i})">Chèn</button>
+                    </div></div>
+                `;
+      results.insertAdjacentHTML("beforeend", resultHTML);
+    });
+  }).catch(error => {
+    console.error("Lỗi khi gọi API:", error);
+  });
 }
 
-    // --- Chức năng Quản lý APPS ---
+function insertApp(i) {
+  const app = appleData[i];
+  document.getElementById('app_bundleIdentifier').value = app.bundleId;
+  document.getElementById('app_developerName').value = app.artistName;
+  document.getElementById('app_iconURL').value = app.artworkUrl100;
+  document.getElementById('app_localizedDescription').value = `Yêu cầu: IOS ${app.minimumOsVersion} trở lên \n${app.description}`;
+  document.getElementById('app_screenshotURLs').value = app.screenshotUrls.join(", ");
+  //document.getElementById('app_subtitle').value = `Yêu cầu: ${app.minimumOsVersion} trở lên`;
+}
 // lọc app
 function filterApps() {
   const input = document.getElementById('filterInput').value.toLowerCase();
   const items = document.querySelectorAll('.app-list .app-item');
-
   items.forEach(item => {
     const borderColor = item.style.borderLeftColor;
     const appName = item.querySelector('strong')?.textContent.toLowerCase() || '';
-
     // Nếu ô input rỗng thì hiển thị tất cả
     if (input.trim() === '') {
       item.classList.remove('hidden');
@@ -837,93 +851,84 @@ function filterApps() {
   });
 }
 
-    function addOrUpdateApp() {
-      const name = document.getElementById('app_name').value.trim();
-      const bundleIdentifier = document.getElementById('app_bundleIdentifier').value.trim();
-      const developerName = document.getElementById('app_developerName').value.trim();
-      const subtitle = document.getElementById('app_subtitle').value.trim();
-      const iconURL = document.getElementById('app_iconURL').value.trim();
-      const tintColor = document.getElementById('app_tintColor').value.replace('#', '').toUpperCase();
-      const localizedDescription = document.getElementById('app_localizedDescription').value.trim();
-      const screenshotURLsInput = document.getElementById('app_screenshotURLs').value.trim();
-      const beta = document.getElementById('app_beta').checked;
-      const feature = document.getElementById('app_feature').checked;
+function addOrUpdateApp() {
+  const name = document.getElementById('app_name').value.trim();
+  const bundleIdentifier = document.getElementById('app_bundleIdentifier').value.trim();
+  const developerName = document.getElementById('app_developerName').value.trim();
+  const subtitle = document.getElementById('app_subtitle').value.trim();
+  const iconURL = document.getElementById('app_iconURL').value.trim();
+  const tintColor = document.getElementById('app_tintColor').value.replace('#', '').toUpperCase();
+  const localizedDescription = document.getElementById('app_localizedDescription').value.trim();
+  const screenshotURLsInput = document.getElementById('app_screenshotURLs').value.trim();
+  const beta = document.getElementById('app_beta').checked;
+  const feature = document.getElementById('app_feature').checked;
+  if (!name || !bundleIdentifier || !developerName || !subtitle || !iconURL) {
+    window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin App bắt buộc (Tên, Bundle ID, Developer, Subtitle, Icon URL).");
+    return;
+  }
+  updateFeaturedApps(bundleIdentifier, feature); // thêm vào feature
+  const screenshotURLs = screenshotURLsInput ? screenshotURLsInput.split(',').map(url => url.trim()).filter(url => url) : [];
+  let appItem = {
+    beta,
+    name,
+    bundleIdentifier,
+    developerName,
+    subtitle,
+    localizedDescription,
+    iconURL,
+    tintColor: tintColor.startsWith('#') ? tintColor.substring(1) : tintColor,
+    screenshotURLs
+  };
+  let currentAppVersions = [];
+  if (appEditIndex >= 0) {
+    const existingApp = appsArray[appEditIndex];
+    currentAppVersions = existingApp.versions || [];
+    // Cập nhật các trường cố định
+    appItem = {
+      ...existingApp,
+      ...appItem
+    };
+  } else {
+    appItem.versions = [];
+  }
+  // Gán appItem vào mảng
+  if (appEditIndex >= 0) {
+    appsArray[appEditIndex] = updateAppLatestVersion(appItem);
+    appEditIndex = -1;
+    document.getElementById('cancelAppBtn').style.display = 'none';
+    document.getElementById('versionSection').style.display = 'none';
+  } else {
+    appsArray.unshift(updateAppLatestVersion(appItem)); // Thêm vào đầu
+  }
+  clearAppForm();
+  renderAppList();
+  updateOutput();
+}
 
-      if (!name || !bundleIdentifier || !developerName || !subtitle || !iconURL) {
-        window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin App bắt buộc (Tên, Bundle ID, Developer, Subtitle, Icon URL).");
-        return;
-      }
-      updateFeaturedApps(bundleIdentifier, feature);// thêm vào feature
+function clearAppForm() {
+  document.getElementById('app_name').value = '';
+  document.getElementById('app_bundleIdentifier').value = '';
+  document.getElementById('app_developerName').value = '';
+  document.getElementById('app_subtitle').value = '';
+  document.getElementById('app_iconURL').value = '';
+  document.getElementById('app_tintColor').value = '#000000';
+  document.getElementById('app_localizedDescription').value = '';
+  document.getElementById('app_screenshotURLs').value = '';
+  document.getElementById('app_beta').checked = false;
+  document.getElementById('app_feature').checked = false;
+}
 
-      const screenshotURLs = screenshotURLsInput ? screenshotURLsInput.split(',').map(url => url.trim()).filter(url => url) : [];
-
-      let appItem = {
-        beta,
-        name,
-        bundleIdentifier,
-        developerName,
-        subtitle,
-        localizedDescription,
-        iconURL,
-        tintColor: tintColor.startsWith('#') ? tintColor.substring(1) : tintColor,
-        screenshotURLs
-      };
-
-      let currentAppVersions = [];
-
-      if (appEditIndex >= 0) {
-        const existingApp = appsArray[appEditIndex];
-        currentAppVersions = existingApp.versions || [];
-
-        // Cập nhật các trường cố định
-        appItem = {
-          ...existingApp,
-          ...appItem
-        };
-
-      } else {
-        appItem.versions = [];
-      }
-
-      // Gán appItem vào mảng
-      if (appEditIndex >= 0) {
-        appsArray[appEditIndex] = updateAppLatestVersion(appItem);
-        appEditIndex = -1;
-        document.getElementById('cancelAppBtn').style.display = 'none';
-        document.getElementById('versionSection').style.display = 'none';
-      } else {
-        appsArray.unshift(updateAppLatestVersion(appItem)); // Thêm vào đầu
-      }
-
-      clearAppForm();
-      renderAppList();
-      updateOutput();
-    }
-
-    function clearAppForm() {
-      document.getElementById('app_name').value = '';
-      document.getElementById('app_bundleIdentifier').value = '';
-      document.getElementById('app_developerName').value = '';
-      document.getElementById('app_subtitle').value = '';
-      document.getElementById('app_iconURL').value = '';
-      document.getElementById('app_tintColor').value = '#000000';
-      document.getElementById('app_localizedDescription').value = '';
-      document.getElementById('app_screenshotURLs').value = '';
-      document.getElementById('app_beta').checked = false;
-      document.getElementById('app_feature').checked = false;
-    }
-
-    function renderAppList() {
-      const list = document.getElementById('appList');
-      list.innerHTML ="";
-      document.querySelector(".total_apps").innerHTML = appsArray.length ?? 0;
-      appsArray.forEach((item, index) => {
-        const versionCount = (item.versions || []).length;
-        const latestVersion = item.version || 'N/A';
-        const div = document.createElement('div');
-        div.className = 'app-item';
-        div.style.borderLeftColor = '#' + item.tintColor;
-        div.innerHTML = `
+function renderAppList() {
+  const list = document.getElementById('appList');
+  list.innerHTML = "";
+  document.querySelector(".total_apps").innerHTML = appsArray.length ?? 0;
+  appsArray.forEach((item, index) => {
+    const versionCount = (item.versions || []).length;
+    const latestVersion = item.version || 'N/A';
+    const div = document.createElement('div');
+    div.className = 'app-item';
+    div.style.borderLeftColor = '#' + item.tintColor;
+    div.innerHTML = `
 		    <img src = "${item.iconURL}" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';"/>
                     <span style="overflow: hidden;text-overflow: ellipsis; width: 400px;">
                         <strong>${item.name}</strong> (${item.bundleIdentifier}) - Phiên bản: ${latestVersion} 
@@ -934,80 +939,73 @@ function filterApps() {
                         <button class="btn-delete" onclick="deleteApp(${index})">Xóa</button>
                     </div>
                 `;
-        list.appendChild(div);
-      });
+    list.appendChild(div);
+  });
+}
+
+function editApp(index) {
+  const item = appsArray[index];
+  document.getElementById('app_name').value = item.name;
+  document.getElementById('app_bundleIdentifier').value = item.bundleIdentifier;
+  document.getElementById('app_developerName').value = item.developerName;
+  document.getElementById('app_subtitle').value = item.subtitle;
+  document.getElementById('app_iconURL').value = item.iconURL;
+  document.getElementById('app_tintColor').value = '#' + item.tintColor;
+  document.getElementById('app_localizedDescription').value = item.localizedDescription;
+  document.getElementById('app_screenshotURLs').value = (item.screenshotURLs || []).join(', ');
+  document.getElementById('app_beta').checked = item.beta;
+  document.getElementById('app_feature').checked = baseData.featuredApps.includes(item.bundleIdentifier)
+  appEditIndex = index;
+  document.getElementById('cancelAppBtn').style.display = 'inline-block';
+  document.getElementById('versionSection').style.display = 'block';
+  // Render versions cho app đang chỉnh sửa
+  renderVersionList(item.versions || []);
+  clearVersionForm();
+}
+
+function deleteApp(index) {
+  showCustomConfirm("Bạn có chắc muốn xóa ứng dụng này và tất cả versions của nó?", (confirmed) => {
+    if (confirmed) {
+      appsArray.splice(index, 1);
+      renderAppList();
+      updateOutput();
+      if (appEditIndex === index) {
+        cancelAppEdit();
+      }
     }
+  });
+}
 
-    function editApp(index) {
-      const item = appsArray[index];
-      document.getElementById('app_name').value = item.name;
-      document.getElementById('app_bundleIdentifier').value = item.bundleIdentifier;
-      document.getElementById('app_developerName').value = item.developerName;
-      document.getElementById('app_subtitle').value = item.subtitle;
-      document.getElementById('app_iconURL').value = item.iconURL;
-      document.getElementById('app_tintColor').value = '#' + item.tintColor;
-      document.getElementById('app_localizedDescription').value = item.localizedDescription;
-      document.getElementById('app_screenshotURLs').value = (item.screenshotURLs || []).join(', ');
-      document.getElementById('app_beta').checked = item.beta;
-      document.getElementById('app_feature').checked = baseData.featuredApps.includes(item.bundleIdentifier)
+function cancelAppEdit() {
+  appEditIndex = -1;
+  clearAppForm();
+  document.getElementById('cancelAppBtn').style.display = 'none';
+  document.getElementById('versionSection').style.display = 'none';
+  versionEditIndex = -1;
+}
+// --- Chức năng Quản lý Versions ---
+function clearVersionForm() {
+  document.getElementById('version_number').value = '';
+  document.getElementById('version_date').value = '';
+  document.getElementById('version_size').value = '';
+  document.getElementById('version_downloadURL').value = '';
+  document.getElementById('version_localizedDescription').value = '';
+  versionEditIndex = -1;
+  document.getElementById('cancelVersionBtn').style.display = 'none';
+}
 
-      appEditIndex = index;
-      document.getElementById('cancelAppBtn').style.display = 'inline-block';
-      document.getElementById('versionSection').style.display = 'block';
-
-      // Render versions cho app đang chỉnh sửa
-      renderVersionList(item.versions || []);
-      clearVersionForm();
-    }
-
-    function deleteApp(index) {
-      showCustomConfirm("Bạn có chắc muốn xóa ứng dụng này và tất cả versions của nó?", (confirmed) => {
-        if (confirmed) {
-          appsArray.splice(index, 1);
-          renderAppList();
-          updateOutput();
-          if (appEditIndex === index) {
-            cancelAppEdit();
-          }
-        }
-      });
-    }
-
-    function cancelAppEdit() {
-      appEditIndex = -1;
-      clearAppForm();
-      document.getElementById('cancelAppBtn').style.display = 'none';
-      document.getElementById('versionSection').style.display = 'none';
-      versionEditIndex = -1;
-    }
-
-    // --- Chức năng Quản lý Versions ---
-
-    function clearVersionForm() {
-      document.getElementById('version_number').value = '';
-      document.getElementById('version_date').value = '';
-      document.getElementById('version_size').value = '';
-      document.getElementById('version_downloadURL').value = '';
-      document.getElementById('version_localizedDescription').value = '';
-      versionEditIndex = -1;
-      document.getElementById('cancelVersionBtn').style.display = 'none';
-    }
-
-    function renderVersionList(versions) {
-      const list = document.getElementById('versionList');
-
-      // Sắp xếp versions theo ngày mới nhất
-      const sortedVersions = [...versions].sort((a, b) => new Date(b.date) - new Date(a.date));
-      list.innerHTML = `<h4 class="font-bold text-md mt-6">Danh sách Versions (<span>${sortedVersions.length??0}</span>)</h4>`;
-
-      sortedVersions.forEach((item, index) => {
-        const originalIndex = versions.indexOf(item); // Tìm index gốc
-        const datePart = item.date ? item.date.substring(0, 10) : 'N/A';
-        const sizeMB = item.size ? (item.size / 1024 / 1024).toFixed(2) + ' MB' : 'N/A';
-
-        const div = document.createElement('div');
-        div.className = 'version-item';
-        div.innerHTML = `
+function renderVersionList(versions) {
+  const list = document.getElementById('versionList');
+  // Sắp xếp versions theo ngày mới nhất
+  const sortedVersions = [...versions].sort((a, b) => new Date(b.date) - new Date(a.date));
+  list.innerHTML = `<h4 class="font-bold text-md mt-6">Danh sách Versions (<span>${sortedVersions.length??0}</span>)</h4>`;
+  sortedVersions.forEach((item, index) => {
+    const originalIndex = versions.indexOf(item); // Tìm index gốc
+    const datePart = item.date ? item.date.substring(0, 10) : 'N/A';
+    const sizeMB = item.size ? (item.size / 1024 / 1024).toFixed(2) + ' MB' : 'N/A';
+    const div = document.createElement('div');
+    div.className = 'version-item';
+    div.innerHTML = `
                     <span>
                         <strong>v${item.version}</strong> (${datePart}) - Kích thước: ${sizeMB}
                     </span>
@@ -1016,361 +1014,319 @@ function filterApps() {
                         <button class="btn-delete" onclick="deleteVersion(${originalIndex})">Xóa</button>
                     </div>
                 `;
-        list.appendChild(div);
-      });
-    }
+    list.appendChild(div);
+  });
+}
 
-    function addOrUpdateVersion() {
-      if (appEditIndex < 0) {
-        window.showUIAlert("Notification", "Vui lòng chọn hoặc thêm App trước khi thêm Version.");
-        return;
-      }
+function addOrUpdateVersion() {
+  if (appEditIndex < 0) {
+    window.showUIAlert("Notification", "Vui lòng chọn hoặc thêm App trước khi thêm Version.");
+    return;
+  }
+  const version = document.getElementById('version_number').value.trim();
+  const dateInput = document.getElementById('version_date').value;
+  const size = parseInt(document.getElementById('version_size').value, 10);
+  const downloadURL = document.getElementById('version_downloadURL').value.trim();
+  const localizedDescription = document.getElementById('version_localizedDescription').value.trim();
+  if (!version || !dateInput || isNaN(size) || size <= 0 || !downloadURL) {
+    window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin Version bắt buộc (Version, Ngày, Kích thước > 0, Download URL).");
+    return;
+  }
+  // Chuyển date/time local sang chuỗi ISO 8601
+  const date = new Date(dateInput).toISOString().replace(/\.\d{3}Z$/, 'Z');
+  const versionItem = {
+    version,
+    date,
+    size,
+    downloadURL,
+    localizedDescription
+  };
+  let currentApp = appsArray[appEditIndex];
+  currentApp.versions = currentApp.versions || [];
+  if (versionEditIndex >= 0) {
+    currentApp.versions[versionEditIndex] = versionItem;
+  } else {
+    currentApp.versions.push(versionItem);
+  }
+  // Cập nhật thông tin app với version mới nhất
+  appsArray[appEditIndex] = updateAppLatestVersion(currentApp);
+  clearVersionForm();
+  renderVersionList(appsArray[appEditIndex].versions);
+  renderAppList();
+  updateOutput();
+}
 
-      const version = document.getElementById('version_number').value.trim();
-      const dateInput = document.getElementById('version_date').value;
-      const size = parseInt(document.getElementById('version_size').value, 10);
-      const downloadURL = document.getElementById('version_downloadURL').value.trim();
-      const localizedDescription = document.getElementById('version_localizedDescription').value.trim();
+function updateAppLatestVersion(app) {
+  if ((app.versions || []).length > 0) {
+    // Sắp xếp để tìm version mới nhất
+    app.versions.sort((a, b) => new Date(b.date) - new Date(a.date));
+    const latestVersion = app.versions[0];
+    app.version = latestVersion.version;
+    app.versionDate = latestVersion.date;
+    app.versionDescription = latestVersion.localizedDescription;
+    app.downloadURL = latestVersion.downloadURL;
+    app.size = latestVersion.size;
+  }
+  return app;
+}
 
-      if (!version || !dateInput || isNaN(size) || size <= 0 || !downloadURL) {
-        window.showUIAlert("Notification", "Vui lòng điền đầy đủ thông tin Version bắt buộc (Version, Ngày, Kích thước > 0, Download URL).");
-        return;
-      }
+function editVersion(index) {
+  const versions = appsArray[appEditIndex].versions;
+  if (!versions || index < 0 || index >= versions.length) return;
+  const item = versions[index];
+  document.getElementById('version_number').value = item.version;
+  const dateObj = new Date(item.date);
+  const localDate = new Date(dateObj.getTime() - (dateObj.getTimezoneOffset() * 60000)).toISOString().slice(0, 16);
+  document.getElementById('version_date').value = localDate;
+  document.getElementById('version_size').value = item.size;
+  document.getElementById('version_downloadURL').value = item.downloadURL;
+  document.getElementById('version_localizedDescription').value = item.localizedDescription;
+  versionEditIndex = index;
+  document.getElementById('cancelVersionBtn').style.display = 'inline-block';
+}
 
-      // Chuyển date/time local sang chuỗi ISO 8601
-      const date = new Date(dateInput).toISOString().replace(/\.\d{3}Z$/, 'Z');
-
-      const versionItem = {
-        version,
-        date,
-        size,
-        downloadURL,
-        localizedDescription
-      };
-
+function deleteVersion(index) {
+  showCustomConfirm("Bạn có chắc muốn xóa version này?", (confirmed) => {
+    if (confirmed) {
       let currentApp = appsArray[appEditIndex];
-      currentApp.versions = currentApp.versions || [];
-
-      if (versionEditIndex >= 0) {
-        currentApp.versions[versionEditIndex] = versionItem;
-      } else {
-        currentApp.versions.push(versionItem);
-      }
-
-      // Cập nhật thông tin app với version mới nhất
+      currentApp.versions.splice(index, 1);
       appsArray[appEditIndex] = updateAppLatestVersion(currentApp);
-
-      clearVersionForm();
-      renderVersionList(appsArray[appEditIndex].versions);
+      renderVersionList(currentApp.versions);
       renderAppList();
       updateOutput();
-    }
-
-    function updateAppLatestVersion(app) {
-      if ((app.versions || []).length > 0) {
-        // Sắp xếp để tìm version mới nhất
-        app.versions.sort((a, b) => new Date(b.date) - new Date(a.date));
-        const latestVersion = app.versions[0];
-
-        app.version = latestVersion.version;
-        app.versionDate = latestVersion.date;
-        app.versionDescription = latestVersion.localizedDescription;
-        app.downloadURL = latestVersion.downloadURL;
-        app.size = latestVersion.size;
-      }
-      return app;
-    }
-
-
-    function editVersion(index) {
-      const versions = appsArray[appEditIndex].versions;
-      if (!versions || index < 0 || index >= versions.length) return;
-
-      const item = versions[index];
-      document.getElementById('version_number').value = item.version;
-
-      const dateObj = new Date(item.date);
-      const localDate = new Date(dateObj.getTime() - (dateObj.getTimezoneOffset() * 60000)).toISOString().slice(0, 16);
-      document.getElementById('version_date').value = localDate;
-
-      document.getElementById('version_size').value = item.size;
-      document.getElementById('version_downloadURL').value = item.downloadURL;
-      document.getElementById('version_localizedDescription').value = item.localizedDescription;
-
-      versionEditIndex = index;
-      document.getElementById('cancelVersionBtn').style.display = 'inline-block';
-    }
-
-    function deleteVersion(index) {
-      showCustomConfirm("Bạn có chắc muốn xóa version này?", (confirmed) => {
-        if (confirmed) {
-          let currentApp = appsArray[appEditIndex];
-          currentApp.versions.splice(index, 1);
-
-          appsArray[appEditIndex] = updateAppLatestVersion(currentApp);
-
-          renderVersionList(currentApp.versions);
-          renderAppList();
-          updateOutput();
-          clearVersionForm();
-        }
-      });
-    }
-
-    function cancelVersionEdit() {
       clearVersionForm();
     }
+  });
+}
 
-    // --- Chức năng IMPORT/EXPORT ---
-    function consolidateApps(source) {
-      const uniqueAppsMap = new Map();
-
-      source.apps.forEach(app => {
-        const bundleID = app.bundleIdentifier;
-
-        // Tạo đối tượng phiên bản để gộp
-        const firstVersion = app.versions?.[0] ?? {};
-        const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
-        const versionInfo = {
-          version: app.version ?? firstVersion.version ?? "1.0.0",
-          date: appDate,
-          size: app.size ?? firstVersion.size ?? 0,
-          downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
-          localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
-        };
-
-
-        if (uniqueAppsMap.has(bundleID)) {
-
-          const existingApp = uniqueAppsMap.get(bundleID);
-          if (appDate > existingApp.versionDate) {
-            existingApp.versionDate = appDate;
-            existingApp.version = app.version ?? firstVersion.version ?? "1.0.0";
-            existingApp.downloadURL = app.downloadURL ?? firstVersion.downloadURL ?? "";
-            existingApp.size = app.size ?? firstVersion.size ?? 0;
-            existingApp.localizedDescription = app.localizedDescription ?? "";
-          }
-          existingApp.versions.push(versionInfo);
-
-        } else {
-          // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
-          const newApp = {
-            // Sao chép tất cả các trường không phải phiên bản
-            beta: app.beta ?? false,
-            name: app.name,
-            type: app.type ?? 1,
-            bundleIdentifier: app.bundleIdentifier,
-            developerName: app.developerName ?? "",
-            subtitle: app.subtitle ?? "",
-            localizedDescription: app.localizedDescription ?? "",
-            versionDescription: app.versionDescription ?? "",
-            tintColor: app.tintColor ?? "00adef",
-            iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
-            screenshotURLs: app.screenshotURLs ?? [],
-            size: app.size ?? firstVersion.size ?? 0,
-            version: app.version ?? firstVersion.version ?? "1.0.0",
-            versions: app.versions ?? [versionInfo] ?? [],
-            versionDate: appDate,
-            downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
-          };
-
-          uniqueAppsMap.set(bundleID, newApp);
-        }
-      });
-      const consolidatedApps = Array.from(uniqueAppsMap.values());
-      const MAX_VERSIONS = 20;
-
-      consolidatedApps.forEach(app => {
-        if (app.versions.length > MAX_VERSIONS) {
-          app.versions = app.versions.slice(0, MAX_VERSIONS);
-        }
-      });
-
-      // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
-      const newSource = {
-        ...source,
-        apps: consolidatedApps
-      };
-
-      return newSource;
-    }
-
-    function normalizeDateFormat(dateStr) {
-      const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/; // dd-mm-yyyy
-      const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/; // yyyy-mm-dd
-
-      if (dmyRegex.test(dateStr)) {
-        const [, day, month, year] = dateStr.match(dmyRegex);
-        const dd = day.padStart(2, '0');
-        const mm = month.padStart(2, '0');
-        return `${year}-${mm}-${dd}`;
-      } else if (ymdRegex.test(dateStr)) {
-        const [, year, month, day] = dateStr.match(ymdRegex);
-        const dd = day.padStart(2, '0');
-        const mm = month.padStart(2, '0');
-        return `${year}-${mm}-${dd}`;
-      } else {
-        return dateStr; // không hợp lệ
+function cancelVersionEdit() {
+  clearVersionForm();
+}
+// --- Chức năng IMPORT/EXPORT ---
+function consolidateApps(source) {
+  const uniqueAppsMap = new Map();
+  source.apps.forEach(app => {
+    const bundleID = app.bundleIdentifier;
+    // Tạo đối tượng phiên bản để gộp
+    const firstVersion = app.versions?.[0] ?? {};
+    const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
+    const versionInfo = {
+      version: app.version ?? firstVersion.version ?? "1.0.0",
+      date: appDate,
+      size: app.size ?? firstVersion.size ?? 0,
+      downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
+      localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
+    };
+    if (uniqueAppsMap.has(bundleID)) {
+      const existingApp = uniqueAppsMap.get(bundleID);
+      if (appDate > existingApp.versionDate) {
+        existingApp.versionDate = appDate;
+        existingApp.version = app.version ?? firstVersion.version ?? "1.0.0";
+        existingApp.downloadURL = app.downloadURL ?? firstVersion.downloadURL ?? "";
+        existingApp.size = app.size ?? firstVersion.size ?? 0;
+        existingApp.localizedDescription = app.localizedDescription ?? "";
       }
-    }
-
-    function handleFileSelect(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        try {
-          const importedData = JSON.parse(e.target.result);
-          if (!importedData || !Array.isArray(importedData.news) || !Array.isArray(importedData.apps)) {
-            window.showUIAlert("Error", "Lỗi Import: File JSON không hợp lệ hoặc thiếu mảng 'news'/'apps'.");
-            return;
-          }
-          // Cập nhật dữ liệu toàn cục
-          baseData = consolidateApps(importedData);
-          newsArray = baseData.news;
-          appsArray = baseData.apps;
-
-          // Gán lại references trong baseData
-	  baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
-          baseData.news = newsArray;
-          baseData.apps = appsArray;
-
-          // Cập nhật giao diện
-	  renderRepo();
-          renderNewsList();
-          renderAppList();
-          updateOutput();
-          window.showUIAlert("Success", "Import file gốc thành công! Dữ liệu đã sẵn sàng để chỉnh sửa.");
-          // Reset input để có thể chọn lại cùng một file
-          event.target.value = '';
-
-        } catch (error) {
-          console.error("Lỗi phân tích cú pháp JSON:", error);
-          window.showUIAlert("Error", "Lỗi Import: Không thể phân tích cú pháp file JSON. Vui lòng kiểm tra định dạng.");
-        }
+      existingApp.versions.push(versionInfo);
+    } else {
+      // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
+      const newApp = {
+        // Sao chép tất cả các trường không phải phiên bản
+        beta: app.beta ?? false,
+        name: app.name,
+        type: app.type ?? 1,
+        bundleIdentifier: app.bundleIdentifier,
+        developerName: app.developerName ?? "",
+        subtitle: app.subtitle ?? "",
+        localizedDescription: app.localizedDescription ?? "",
+        versionDescription: app.versionDescription ?? "",
+        tintColor: app.tintColor ?? "00adef",
+        iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
+        screenshotURLs: app.screenshotURLs ?? [],
+        size: app.size ?? firstVersion.size ?? 0,
+        version: app.version ?? firstVersion.version ?? "1.0.0",
+        versions: app.versions ?? [versionInfo] ?? [],
+        versionDate: appDate,
+        downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
       };
-      reader.readAsText(file);
+      uniqueAppsMap.set(bundleID, newApp);
     }
+  });
+  const consolidatedApps = Array.from(uniqueAppsMap.values());
+  const MAX_VERSIONS = 20;
+  consolidatedApps.forEach(app => {
+    if (app.versions.length > MAX_VERSIONS) {
+      app.versions = app.versions.slice(0, MAX_VERSIONS);
+    }
+  });
+  // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
+  const newSource = {
+    ...source,
+    apps: consolidatedApps
+  };
+  return newSource;
+}
 
-    function copyOutput() {
-      const textarea = document.getElementById("output");
-      textarea.select();
-      textarea.setSelectionRange(0, 99999); // Cho mobile
+function normalizeDateFormat(dateStr) {
+  const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/; // dd-mm-yyyy
+  const ymdRegex = /^(\d{4})-(\d{1,2})-(\d{1,2})$/; // yyyy-mm-dd
+  if (dmyRegex.test(dateStr)) {
+    const [, day, month, year] = dateStr.match(dmyRegex);
+    const dd = day.padStart(2, '0');
+    const mm = month.padStart(2, '0');
+    return `${year}-${mm}-${dd}`;
+  } else if (ymdRegex.test(dateStr)) {
+    const [, year, month, day] = dateStr.match(ymdRegex);
+    const dd = day.padStart(2, '0');
+    const mm = month.padStart(2, '0');
+    return `${year}-${mm}-${dd}`;
+  } else {
+    return dateStr; // không hợp lệ
+  }
+}
 
-      // Dùng Clipboard API nếu có
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(textarea.value)
-          .then(() => alert("Đã copy nội dung!"))
-          .catch(err => alert("Không thể copy: " + err));
-      } else {
-        // Fallback cho trình duyệt cũ
-        document.execCommand("copy");
-        alert("Đã copy nội dung!");
+function handleFileSelect(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const importedData = JSON.parse(e.target.result);
+      if (!importedData || !Array.isArray(importedData.news) || !Array.isArray(importedData.apps)) {
+        window.showUIAlert("Error", "Lỗi Import: File JSON không hợp lệ hoặc thiếu mảng 'news'/'apps'.");
+        return;
       }
-    }
-
-    function downloadJSON() {
-      const jsonText = document.getElementById('output').value;
-      const filename = (nameUrl ?? 'repo') + '.json';
-      const blob = new Blob([jsonText], {
-        type: 'application/json'
-      });
-      const url = URL.createObjectURL(blob);
-
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = filename;
-      document.body.appendChild(a);
-      a.click();
-
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    }
-    // --- Chức năng OUTPUT ---
-    function updateOutput() {
-      // baseData.news và baseData.apps đã là tham chiếu, đảm bảo chúng trỏ đến các mảng hiện tại
+      // Cập nhật dữ liệu toàn cục
+      baseData = consolidateApps(importedData);
+      newsArray = baseData.news;
+      appsArray = baseData.apps;
+      // Gán lại references trong baseData
+      baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
       baseData.news = newsArray;
       baseData.apps = appsArray;
-      document.getElementById('output').value = JSON.stringify(baseData, null, 2);
+      // Cập nhật giao diện
+      renderRepo();
+      renderNewsList();
+      renderAppList();
+      updateOutput();
+      window.showUIAlert("Success", "Import file gốc thành công! Dữ liệu đã sẵn sàng để chỉnh sửa.");
+      // Reset input để có thể chọn lại cùng một file
+      event.target.value = '';
+    } catch (error) {
+      console.error("Lỗi phân tích cú pháp JSON:", error);
+      window.showUIAlert("Error", "Lỗi Import: Không thể phân tích cú pháp file JSON. Vui lòng kiểm tra định dạng.");
     }
+  };
+  reader.readAsText(file);
+}
 
-    window.addEventListener("DOMContentLoaded", async() => {
-  	const params = new URLSearchParams(window.location.search);
-  	const source = params.get("source");
-	if(source) await fetchRepoData(source);
-        else await init();
-        document.getElementById("loading")?.remove();
-    });
+function copyOutput() {
+  const textarea = document.getElementById("output");
+  textarea.select();
+  textarea.setSelectionRange(0, 99999); // Cho mobile
+  // Dùng Clipboard API nếu có
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(textarea.value).then(() => alert("Đã copy nội dung!")).catch(err => alert("Không thể copy: " + err));
+  } else {
+    // Fallback cho trình duyệt cũ
+    document.execCommand("copy");
+    alert("Đã copy nội dung!");
+  }
+}
 
-      const getNameRepo = (url) => {
-        const parts = url.split('/');
-        const lastPart = parts[parts.length - 1]; // "repo.favorite.json"
-        return lastPart.replace('.json', ''); // "repo.favorite"
-      }
-    async function init() {
-      try {
-      const editorsources = await window.json("./common/assets/json/editorsources.json");
-
-      if (editorsources.length) {
-        // alert install
-        const installAppAlert = new window.UIAlert({
-          title: `Which Repository?`,
-          message: "Lựa chọn nguồn dữ liệu để chỉnh sửa."
-        });
-        for (const url of editorsources) {
-          const name = await getNameRepo(url);
-          if (!name) continue;
-          installAppAlert.addAction({
-            title: name,
-            style: 'default',
-            handler: () => fetchRepoData(url)
-          });
-        }
+function downloadJSON() {
+  const jsonText = document.getElementById('output').value;
+  const filename = (nameUrl ?? 'repo') + '.json';
+  const blob = new Blob([jsonText], {
+    type: 'application/json'
+  });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+// --- Chức năng OUTPUT ---
+function updateOutput() {
+  // baseData.news và baseData.apps đã là tham chiếu, đảm bảo chúng trỏ đến các mảng hiện tại
+  baseData.news = newsArray;
+  baseData.apps = appsArray;
+  document.getElementById('output').value = JSON.stringify(baseData, null, 2);
+}
+window.addEventListener("DOMContentLoaded", async () => {
+  const params = new URLSearchParams(window.location.search);
+  const source = params.get("source");
+  if (source) await fetchRepoData(source);
+  else await init();
+  document.getElementById("loading")?.remove();
+});
+const getNameRepo = (url) => {
+  const parts = url.split('/');
+  const lastPart = parts[parts.length - 1]; // "repo.favorite.json"
+  return lastPart.replace('.json', ''); // "repo.favorite"
+}
+async function init() {
+  try {
+    const editorsources = await window.json("./common/assets/json/editorsources.json");
+    if (editorsources.length) {
+      // alert install
+      const installAppAlert = new window.UIAlert({
+        title: `Which Repository?`,
+        message: "Lựa chọn nguồn dữ liệu để chỉnh sửa."
+      });
+      for (const url of editorsources) {
+        const name = await getNameRepo(url);
+        if (!name) continue;
         installAppAlert.addAction({
-          title: "Cancel",
-          style: 'cancel',
+          title: name,
+          style: 'default',
+          handler: () => fetchRepoData(url)
         });
-        installAppAlert.present()
       }
-      } catch (error) {
-        window.showUIAlert("Error", "Lỗi khi tải nguồn Repository!");
-      }
+      installAppAlert.addAction({
+        title: "Cancel",
+        style: 'cancel',
+      });
+      installAppAlert.present()
     }
-    // khởi tạo
-
-    async function fetchRepoData(url) {
-      try {
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        // Cập nhật dữ liệu toàn cục
-        baseData = await response.json();
-        prefixUrl = url;
-	let button = document.querySelector(".back-button");
-	button.href = `./view/?source=${window.base64Convert(prefixUrl)}`;
-        nameUrl = getNameRepo(url);
-        newsArray = baseData.news;
-        appsArray = baseData.apps;
-	baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
-
-        // Gán lại references trong baseData
-        baseData.news = newsArray;
-        baseData.apps = appsArray;
-	baseData.sourceURL = url;
-
-        // Cập nhật giao diện
-	renderRepo();
-        clearNewsForm();
-        renderNewsList();
-        renderAppList();
-        updateOutput();
-        window.showUIAlert("Success", "Repository được tải thành công!");
-      } catch (error) {
-        window.showUIAlert("Error", "Lỗi khi tải Repository!");
-      }
+  } catch (error) {
+    window.showUIAlert("Error", "Lỗi khi tải nguồn Repository!");
+  }
+}
+// khởi tạo
+async function fetchRepoData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
     }
+    // Cập nhật dữ liệu toàn cục
+    baseData = await response.json();
+    prefixUrl = url;
+    let button = document.querySelector(".back-button");
+    button.href = `./view/?source=${window.base64Convert(prefixUrl)}`;
+    nameUrl = getNameRepo(url);
+    newsArray = baseData.news;
+    appsArray = baseData.apps;
+    baseData.featuredApps = Array.isArray(baseData.featuredApps) ? baseData.featuredApps : [];
+    // Gán lại references trong baseData
+    baseData.news = newsArray;
+    baseData.apps = appsArray;
+    baseData.sourceURL = url;
+    // Cập nhật giao diện
+    renderRepo();
+    clearNewsForm();
+    renderNewsList();
+    renderAppList();
+    updateOutput();
+    window.showUIAlert("Success", "Repository được tải thành công!");
+  } catch (error) {
+    window.showUIAlert("Error", "Lỗi khi tải Repository!");
+  }
+}
+
   </script>
 </body>
 
