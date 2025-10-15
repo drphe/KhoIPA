@@ -257,7 +257,17 @@
       border-radius: 0 0 12px 12px;
       margin-bottom: 20px;
     }
-
+.app-item strong{
+  word-wrap: break-word;  
+  white-space: normal;
+  }
+.app-item img {
+margin-right: 1rem;
+    display: block;
+    border-radius: 14px;
+    max-width: 64px;
+    border: 0.75px solid rgba(0, 0, 0, 0.1);
+}
     /* Textarea Output */
     #output {
       min-height: 250px;
@@ -450,6 +460,7 @@
           <label for="app_bundleIdentifier">Bundle ID (*):</label>
           <input type="text" id="app_bundleIdentifier" placeholder="Ví dụ: com.example.app">
         </div>
+<input type="text" id="filterInput" placeholder="Tìm kiếm theo tên app..." oninput="filterApps()" style="margin-top:10px;">
         <div>
           <label for="app_developerName">Nhà phát triển :</label>
           <input type="text" id="app_developerName">
@@ -749,7 +760,7 @@
         div.className = 'news-item';
         div.style.borderLeftColor = '#' + item.tintColor;
         div.innerHTML = `
-                    <span><strong>${item.title}</strong> - ${item.caption} (${item.date})</span>
+                    <span style="overflow: hidden;text-overflow: ellipsis; width: 400px;"><strong>${item.title}</strong> - ${item.caption} (${item.date})</span>
                     <div class="item-actions">
                         <button class="btn-edit" onclick="editNews(${originalIndex})">Sửa</button>
                         <button class="btn-delete" onclick="deleteNews(${originalIndex})">Xóa</button>
@@ -913,7 +924,8 @@ function filterApps() {
         div.className = 'app-item';
         div.style.borderLeftColor = '#' + item.tintColor;
         div.innerHTML = `
-                    <span>
+		    <img src = "${item.iconURL}" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';"/>
+                    <span style="overflow: hidden;text-overflow: ellipsis; width: 400px;">
                         <strong>${item.name}</strong> (${item.bundleIdentifier}) - Phiên bản: ${latestVersion} 
                         <span class="text-sm text-gray-500">(${versionCount} versions)</span>
                     </span>
