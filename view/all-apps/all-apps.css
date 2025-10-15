@@ -15,7 +15,10 @@
 #apps .app-container:last-of-type {
   margin-bottom: 1em;
 }
-
+.subtitle{
+  word-wrap: break-word;  
+  white-space: normal;
+  }
 .screenshots {
   display: flex;
   flex-direction: row;
