@@ -345,6 +345,26 @@ button:hover {
 }
 
   </style>
+<style>
+.confirm-box {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 9999;
+}
+.confirm-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.confirm-content button {
+  margin: 10px;
+}
+</style>
+
 </head>
 
 <body>
@@ -464,10 +484,13 @@ button:hover {
           <input type="color" id="app_tintColor" value="#000000">
         </div>
       </div>
-      <label for="app_localizedDescription">Mô tả (*): </label>
-      <textarea id="app_localizedDescription" rows="3"></textarea>
+
       <label for="app_screenshotURLs">Screenshot URLs (Ngăn cách bằng dấu phẩy): </label>
       <textarea id="app_screenshotURLs" rows="2" placeholder="url1, url2, url3"></textarea>
+
+      <label for="app_localizedDescription">Mô tả (*): </label>
+      <textarea id="app_localizedDescription" rows="3"></textarea>
+
       <label class="flex items-center mt-4"><input type="checkbox" id="app_feature"> FeatureApps</label>
       <label class="flex items-center mt-4"><input type="checkbox" id="app_beta"> Beta</label>
       <button onclick="addOrUpdateApp()" class="btn-primary">Thêm / Cập nhật App</button>
@@ -519,6 +542,14 @@ button:hover {
   <!-- Custom Alert and Confirm Modals -->
   <div id="customAlertModal" style="display:none;"></div>
   <div id="customConfirmModal" style="display:none;"></div>
+<div id="customConfirm" class="confirm-box" style="display:none;">
+  <div class="confirm-content">
+    <p>Chọn thông tin cần lấy?</p>
+    <button onclick="insertApps('info')">Thông tin cơ bản</button>
+    <button onclick="insertApps('description')">Mô tả</button>
+    <button onclick="insertApps()">Hủy</button>
+  </div>
+</div>
   <script>
 // --- Dữ liệu và Biến trạng thái ---
 let newsArray = [];
@@ -811,7 +842,7 @@ function getBundleId(searchvalue, company = "VN", device = "iPhone") {
               		<p class="currentVersionReleaseDate">Cập nhật: ${currentVersionReleaseDate}</p>
                     </span>
                     <div class="item-actions">
-                        <button class="btn-edit" onclick="insertApp(${i})">Chèn</button>
+                        <button class="btn-edit" onclick="showConfirm(${i})">Chèn</button>
                     </div></div>
                 `;
       results.insertAdjacentHTML("beforeend", resultHTML);
@@ -820,15 +851,23 @@ function getBundleId(searchvalue, company = "VN", device = "iPhone") {
     console.error("Lỗi khi gọi API:", error);
   });
 }
+let appDataToGet = {}
+function showConfirm(i) {
+  document.getElementById('customConfirm').style.display = 'flex';
+  appDataToGet = appleData[i];
+}
 
-function insertApp(i) {
-  const app = appleData[i];
-  document.getElementById('app_bundleIdentifier').value = app.bundleId;
-  document.getElementById('app_developerName').value = app.artistName;
-  document.getElementById('app_iconURL').value = app.artworkUrl100;
-  document.getElementById('app_localizedDescription').value = `Yêu cầu: IOS ${app.minimumOsVersion} trở lên \n${app.description}`;
-  document.getElementById('app_screenshotURLs').value = app.screenshotUrls.join(", ");
-  //document.getElementById('app_subtitle').value = `Yêu cầu: ${app.minimumOsVersion} trở lên`;
+function insertApps(d) {
+   document.getElementById('customConfirm').style.display = 'none';
+  if(d == 'info'){
+     document.getElementById('app_bundleIdentifier').value = appDataToGet.bundleId;
+     document.getElementById('app_developerName').value = appDataToGet.artistName;
+     document.getElementById('app_iconURL').value = appDataToGet.artworkUrl100;
+     document.getElementById('app_screenshotURLs').value = appDataToGet.screenshotUrls.join(", ");
+  }else if(d == 'description'){
+      document.getElementById('app_localizedDescription').value = `Yêu cầu: IOS ${appDataToGet.minimumOsVersion} trở lên \n${appDataToGet.description}`;
+
+  }
 }
 // lọc app
 function filterApps() {
