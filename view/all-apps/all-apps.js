@@ -42,7 +42,7 @@ main((json) => {
 
   // Tạo icon kính lúp
   const searchIcon = document.createElement("span");
-  searchIcon.textContent = ` <i class="bi bi-search"></i>`
+  searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
   searchIcon.style.position = "absolute";
   searchIcon.style.right = "10px";
   searchIcon.style.top = "50%";
