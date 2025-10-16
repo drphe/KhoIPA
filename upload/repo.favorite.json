@@ -1,7 +1,7 @@
 {
   "name": "Favorite apps",
   "identifier": "org.khoIPA.repo",
-  "sourceURL": "https://drphe.github.io/KhoIPA/repo.favorite.json",
+  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "website": "https://github.com/drphe/KhoIPA/",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
@@ -103,6 +103,136 @@
     }
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "AdGuard  — adblock&privacy",
+      "bundleIdentifier": "com.adguard.AdguardExtension",
+      "developerName": "Adguard Software Limited",
+      "subtitle": "Subscription Unlocked",
+      "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \nAdGuard is an ultra-efficient ad blocker for Safari. It will not only remove annoying ads but also secure your privacy with advanced tracking protection. AdGuard for iOS is an open source app, it’s totally transparent and safe to use. The app is free but offers additional paid Premium features for advanced users.\n\nKEY FEATURES:\n\n- Safari ad blocking. Removes all kinds of ads in Safari. Say goodbye to annoying banners, pop-ups and video ads. Whitelist your favorite websites or use manual blocking tool to hide any element on the page.\n\n- Privacy protection. The web is full of trackers that literally watch your every click. AdGuard offers a selection of filters aimed directly at trackers and web analytics that will ensure your private data stays that way.\n\n- Speed acceleration. Safari browser runs up to 4x faster. AdGuard removes tons of rubbish and you can freely surf the web!\n\n- Reduced traffic consumption and increased battery life. Banners and ads sometimes add up to half the size of the page. By blocking them, you’re saving your battery life and Wi-Fi/mobile traffic.\n\n- More than 50 popular subscriptions (EasyList, EasyPrivacy, etc.) plus AdGuard's own powerful ad filters, including language-specific filters. Together they don't leave ads a chance.\n\nADGUARD PREMIUM\n\nAdGuard Premium includes the following features:\n\n- Custom filters. Add your own filters by URL even if they are not on the default list.\n\n- DNS privacy. Blocking regular online trackers is not enough if you want to assure 100% protection of your online privacy. Choose any of the user-favorite DNS providers or configure a custom DNS server.\n\n- Security filters. Protect yourself from dangerous websites riddled with cryptojacking or fraud.\n\nAdGuard Premium is a paid service with the subscription cost $0.99/month or $4.99/year or a one-time purchase of lifetime subscription $12.99 (prices may vary by region). Payment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. The account will be charged for renewal within 24-hours prior to the end of the current period. Your subscriptions may be managed and your auto-renewal may be turned off by going to your iTunes Account Settings after purchasing a subscription.\n\n* Privacy policy: https://adguard.com/privacy.html\n* Terms of Use: https://adguard.com/eula.html\n\nABOUT ADGUARD\n\nAdGuard is a leading company in developing ad blocking software for multiple platforms. For more than ten years AdGuard has been helping millions of users enjoy safe, clean, and fast internet.\n\nFollow us at @AdGuard on Twitter, facebook.com/AdGuardEn/ on FB or send us a message at support@adguard.com.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cc/a0/91/cca091e4-c000-0577-7f61-2b799e3f89f7/AppIcon-0-0-1x_U007epad-0-11-0-sRGB-85-220.png/100x100bb.jpg",
+      "tintColor": "68B179",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/52/f0/19/52f01980-2cfb-0cb4-ceec-b9af058dafbd/pr_source.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e4/d1/a5/e4d1a50b-a195-4fd4-7e66-b6e22cb4f1f9/pr_source.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d0/6f/e1/d06fe152-4954-9ec5-1d24-bd1c06254af1/pr_source.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/3a/89/d6/3a89d6dc-dc8d-6ad1-50f1-4fd84511b775/cf38228d-3f38-4bec-bad6-017efe5c8ef9_5.5_4@3x.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/24/af/c7/24afc736-f08f-dcd0-faf5-b906198182dd/pr_source.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/7b/64/21/7b6421b2-6671-f52e-4f17-f32b49956014/417533aa-6a05-4a87-bda3-228766a5a967_1242x2208.png/392x696bb.png"
+      ],
+      "versions": [
+        {
+          "version": "4.5.13",
+          "date": "2025-10-16T16:40:00Z",
+          "size": 40777498,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adguard.4.5.13/AdGuard_adblock.privacy_v4_5_13.ipa",
+          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants"
+        }
+      ],
+      "version": "4.5.13",
+      "versionDate": "2025-10-16T16:40:00Z",
+      "versionDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adguard.4.5.13/AdGuard_adblock.privacy_v4_5_13.ipa",
+      "size": 40777498
+    },
+    {
+      "beta": false,
+      "name": "Buddy: Budget Planner App",
+      "bundleIdentifier": "com.iPwners.Plonkan",
+      "developerName": "Buddy Budgeting AB",
+      "subtitle": "Premium Unlocked",
+      "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nBuddy helps you set up a budget and keep track of your expenses, either by yourself or together with your loved ones.\nHere’s what is waiting for you inside:\n\n\nBUDGETS\nBuddy will help you not to overspend on your well-earned salary by setting up a budget plan that fits you. \nDo you want a shared budget with your partner? Or keep the expenses between you and your mates fair on the vacation? No problem, just invite them and get a clear picture of who spent what.\n\nOVERVIEW\nWe'll give you a beautiful & detailed overview of your spendings, income, and savings.\n\nSPLIT\nSplit lets you know who paid what, and how to settle up.\n\n\nAnd much more for you to find.\nTake control of your finance today!\n\nBuddy offers a $9.99 monthly renewing and a $49.99 yearly renewing subscription to unlock Premium functionality.\nThe purchase will be charged from your iTunes account if you choose to buy the Buddy Premium subscription. You can manage or cancel your subscription through the user settings in iTunes after the purchase. The subscription period ends with the same kind of subscription you already bought to the same price unless you turn off your subscription 24 hours before it renews. It is not possible to cancel your current subscription during the time your subscription is active.\n\nTerms & Conditions: http://www.nattkod.tech/privacy_policy_terms_conditions",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/08/97/3f/08973f60-09a9-2b33-c313-cb52a39d70b0/Buddy-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
+      "tintColor": "B884F5",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/09/d2/8109d27a-c152-8543-0b60-c654c64aed48/08dd639a-b928-47bf-b11d-82075d9e1592_Frame_1.png/434x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/34/83/2b34837d-3742-e4bb-f47b-e434cee1525c/607d6fe0-a81b-4349-995b-56a8938dbbd0_Frame_2.png/434x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/90/ae/67/90ae6773-486b-603c-11e1-5f7c5db4fa3c/7ec05a7a-d765-48e8-a76a-979c6cc9aaa6_Frame_3.png/434x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/a4/5f/1ea45f85-2eeb-6da0-23d4-ea8958d1c223/897bfafd-486f-4f93-9226-b917b0dc6d19_Frame_5.png/434x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/6a/37/7b6a3756-8282-8f75-97f8-05d4112b8e4b/94ccb9c2-776a-4907-835a-5667335470bf_Frame_6.png/434x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/c5/3a/e4c53af2-950f-f6c1-2312-17a84309f297/7d2059b4-90fd-435c-a965-759d16e89074_Frame_7.png/434x0w.webp"
+      ],
+      "versions": [
+        {
+          "version": "13.4",
+          "date": "2025-10-16T16:36:00Z",
+          "size": 68408188,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/buddy.13.4/iScreen_Widgets_._Wallpaper_v4_3_40.ipa",
+          "localizedDescription": "✅ Patched\n💎 Modifier: Premium Unlocked\n🔄 Tweaked by @blatants"
+        }
+      ],
+      "version": "13.4",
+      "versionDate": "2025-10-16T16:36:00Z",
+      "versionDescription": "✅ Patched\n💎 Modifier: Premium Unlocked\n🔄 Tweaked by @blatants",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/buddy.13.4/iScreen_Widgets_._Wallpaper_v4_3_40.ipa",
+      "size": 68408188
+    },
+    {
+      "beta": false,
+      "name": "Stay for Safari",
+      "bundleIdentifier": "com.dajiu.stay.pro",
+      "developerName": "寅 沈",
+      "subtitle": "Lifetime Pro",
+      "localizedDescription": "Yêu cầu: IOS 15.0 trở lên \n# The choice of one million Safari browser users, the next-generation browser extension platform. \n\nStay is a Safari browser extension that enhances browsing experience and interactivity to a great extent. With Stay, users can greatly improve their Safari browsing experience and make it more enjoyable.\n\nStay supports all Apple platforms and offers a one-time payment that covers iPhone, iPad, and Mac devices.\n\nWith Stay installed, what new features can you expect in your Safari browser?\n- Userscripts: Install or write your own userscripts to enable automatic page turning, immersive translation, anti-redirect, and aggregated search functions.\n- Ad blocking: Support for Adguard, uBlock Origin, AdBlock Plus, and other filtering rules based on the EasyList specification, making your browsing experience safer and cleaner.\n\nBy purchasing Stay Pro, you can enjoy the following additional benefits:\n- Synchronization of script content and settings across all platforms.\n- Add custom ad filtering rules and tag ads on pages.\n- Dark mode for web pages.\n\nPrivacy policy: https://www.privacypolicyonline.com/live.php?token=ZPXT0Jfv2diYUfbf5ciLDV9oYRgJ6Evc\nTerms of service: https://fastclip.app/policy/terms-stay.htm\n\nVisit our open-source version address at https://github.com/shenruisi/Stay.\nFor any questions, please follow our official Twitter @stayfork to provide feedback.\nJoin our Telegram group at t.me/fastclipchat.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/8e/dd/068edd6e-df5a-ab36-4fef-e7735e4637a6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+      "tintColor": "BB2DD7",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/fb/50/ebfb5049-4029-f3a2-51ac-83f9a995fd29/a565e7ac-03ee-446f-88c6-abbfeb8a1c67_stay-2.5.8-en1-5.5.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/80/6d/ef806d0d-e546-d7bd-8255-fb0235cb1072/3d2a5f83-b39f-4668-a998-b6f61f873f62_5.5-en-t2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/34/81/2f348189-69ad-92d1-56c3-4a31be0683c4/dc3e7ddc-c47d-469b-a4f9-928dc04ad537_sceenshot-en-5.5-t3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/68/9f/3c689f8c-62f7-2b9a-9886-85491db95b40/b23ccce3-2cfc-4df2-a936-9cc3bf4996f8_sceenshot-en-5.5-t5.png/392x696bb.png"
+      ],
+      "versions": [
+        {
+          "version": "2.9.14",
+          "date": "2025-10-16T16:31:00Z",
+          "size": 38335785,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/stayforsafari/Stay.for.Safari.v2.9.14.Lifetime.Pro.ipa",
+          "localizedDescription": "✅ Patched\n💎 Modifier: Lifetime Pro\n🔄 Tweaked by @blatants"
+        }
+      ],
+      "version": "2.9.14",
+      "versionDate": "2025-10-16T16:31:00Z",
+      "versionDescription": "✅ Patched\n💎 Modifier: Lifetime Pro\n🔄 Tweaked by @blatants",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/stayforsafari/Stay.for.Safari.v2.9.14.Lifetime.Pro.ipa",
+      "size": 38335785
+    },
+    {
+      "beta": false,
+      "name": "iScreen - Widgets & Wallpaper",
+      "bundleIdentifier": "com.zerone.hidesktop",
+      "developerName": "Xiamen iScreen Information Technology Co., Ltd.",
+      "subtitle": "Subscription Unlocked",
+      "localizedDescription": "Yêu cầu: IOS 14.0 trở lên \niScreen - personalized homescreen with various Widgets & Themes & Wallpaper to make your phone screen stand out!\n\n*iOS 26 Unlocked​！, featuring liquid glass effects and over 1000+ 3D space wallpapers and themes. Added dynamic Control Center customization for a more practical and fun experience.\n\nYou can not only keep pets and grow plants on the Dynamic Island, customize your Lock Screen with Interactive, Weather, Battery, Launcher, X-Panel, Text & Icon, Animation, Work Clock, Step Count widgets, but also add Home Screen widgets like Dynamic Panel, Photos, Scrolling Album, To-Do List, Countdown, Digital Clock, Calendar, Emoji Notes, Fan, Air Conditioner, and more for greater fun. Besides widgets, iScreen also offers various Themes, Wallpapers, AI-generated artwork, Charging Animations, and other features to make your phone screen more beautiful and unique.\n\nSpecial feature:  \n【iOS 26】\nFun iOS 26 Features, customized with 1000+ 3D space wallpapers and themes. Added dynamic Control Center effects to make your phone truly one-of-a-kind!\n\n【Control Center】\nCustomize your Control Center style with colorful icons. Features include a Counter, Water Reminder, Book of Answers, Dice Roll, and Quick Launch—combining beauty and practicality.\n\n【DIY Wallpapers】\nCreate static or dynamic wallpapers with rich templates like Polaroid, Heart Puzzle, Flip Card, and Animated Marquee Lights to make your home screen unique.\n\n【Widgets】\nIncludes popular widgets such as Dynamic Panel, Photo Wall, Weather, Battery, Countdown, Calendar, X-Panel, Emoji Notes, Digital Clock, Ferris Wheel, Windmill, and Air Conditioner. It also offers creative lock screen styles like Emojis, Animations, and Icons, with support for transparent effects — making your phone both fun and practical.\n\n【Charging Animation】\nCool and interesting charging animations with custom effects for a personalized charging experience.\n\n【Couple Widgets】\nSweet widgets designed for couples and friends. Send messages and photos to each other’s screens, and check real-time distance, weather, and moods.\n\n【Interactive Widgets】\nQuickly complete to-do check-ins or play games like Whack-a-Mole and Arcade without opening the app—adding fun to your daily routine.\n\n【Themes & Wallpapers】\nA vast collection of daily updated themes and wallpapers, including trending styles like Ins, minimalist, pink & black, AI art, and paper-cut designs. Easily elevate your home screen’s style and personalize your phone!\n\n【Dynamic Island】\nWe offers a variety of fun features, such as Pet Island, Plant Island, Animation Island, Weather Island, Panel Island, Calendar Island, Signature Island, Launcher Island, Timer Island, and more. It comes with multiple built-in creative animations, and you can also custom upload images or avatars to your Dynamic Island and set exclusive quotes\n\nUse Of Terms: https://www.xmzerone.com/about/deskagreement.html\nPrivacy Policy: http://www.xmzerone.com/about/deskprivacy.html",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/ce/73/c2ce733a-51c7-a593-5d07-e4f90a6fbe5b/AppIcon-0-0-1x_U007epad-0-0-0-8-0-0-sRGB-85-220.jpeg/100x100bb.jpg",
+      "tintColor": "FEA570",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/70/38/b37038bc-ce7d-6cd8-506b-dd530b6166ae/2208-OS26__U82f1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6b/a6/97/6ba697b8-46b4-a052-d36e-62f116c53107/2208-_U58c1_U7eb8__U82f1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/a5/5b/82a55ba3-af13-c0f2-8f29-8aa57778ed72/d649a293-6f8b-4aa2-9e8c-90c56de95539_2208-_U7075_U52a8__U82f13.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/07/5c/53/075c53ee-6e77-6a43-1db5-399aa82b7655/55e4fdea-791b-4c13-98df-550f5554cfd7_2208-_U82f1.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9d/c6/14/9dc6149c-9def-a142-cfc2-612df8ef1945/3027cd9c-f3e6-43da-a915-022ceaf8f18c_2208-_U9501_U5c4f_U5c0f_U7ec4_U4ef6__U82f12.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/dc/40/aadc40f1-c717-1d21-e85c-f8b1f59ed39d/4deb4a37-7f9c-4258-844b-8a4c80849644_2208-_U58c1_U7eb8_U5236_U4f5c__U82f11.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/f8/f9/adf8f946-9316-bc72-c8f8-c518328802a8/4d4a31a3-3e28-4d27-badd-e7e86251125b_2208-_U5bc6_U53cb__U82f1.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/25/3d/14/253d14c3-418b-7992-4140-43ba1acc4033/75f7e05c-590e-42e4-903e-b25447eaa87c_2208-_U8bed_U97f3__U82f15.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/db/f0/47/dbf047de-e140-b378-53de-8d7d85e765de/6e661b5f-e113-4002-9ea3-c29ab93c72db_2208-_U7075_U52a8__U82f1.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/46/78/0f467876-2be6-d2f8-7357-fa14ab916ee3/bb6db5e5-40c8-4907-a805-e359097ac1f9_2208-_U4e3b_U9898__U82f14.jpg/392x696bb.jpg"
+      ],
+      "versions": [
+        {
+          "version": "4.3.40",
+          "date": "2025-10-15T16:11:00Z",
+          "size": 389935188,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/iscreen.v4.30/iScreen_Widgets_._Wallpaper_v4_3_40.ipa",
+          "localizedDescription": "Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants"
+        }
+      ],
+      "version": "4.3.40",
+      "versionDate": "2025-10-15T16:11:00Z",
+      "versionDescription": "Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/iscreen.v4.30/iScreen_Widgets_._Wallpaper_v4_3_40.ipa",
+      "size": 389935188
+    },
     {
       "beta": false,
       "name": "Douyin 抖音",
@@ -585,8 +715,8 @@
   ],
   "featuredApps": [
     "com.phim4k.app",
-    "com.atebits.Tweetie2",
     "com.duolingo.DuolingoMobile",
-    "vn.com.vng.zingalo"
+    "vn.com.vng.zingalo",
+    "com.adguard.AdguardExtension"
   ]
 }
