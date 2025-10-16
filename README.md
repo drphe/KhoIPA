@@ -21,7 +21,7 @@
 
 
 
-https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.favorite.json
 
 
 ---
@@ -35,40 +35,10 @@ https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json
 
 
 
-https://raw.githubusercontent.com/drphe/KhoIPA/main/repo.json
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.favorite.json
 
 
 5. Nhấn **Thêm vào** để hoàn tất
-
----
-
-## 🔄 Quy trình cập nhật ứng dụng/tin tức/phiên bản mới
-
-1. Sau khi mod, upload file lên:
-
-
-https://github.com/drphe/khoIPA/releases
-
-
-2. Truy cập:
-
-
-https://drphe.github.io/KhoIPA/repo.html
-
-
-3. Tải lên file `repo.json` cũ
-
-4. Chọn tab **Ứng dụng** → Thêm ứng dụng mới
-
-5. Lấy mô tả và link từ trang release
-
-6. Tải file `repo.json` mới về
-
-7. Upload lên thư mục GitHub:
-
-
-https://github.com/drphe/khoIPA/
-
 
 ---
 
@@ -77,12 +47,9 @@ https://github.com/drphe/khoIPA/
 > ⚠️ Một số link không load được bằng AltStore Viewer do lỗi CORS. Vui lòng sử dụng Feather hoặc ESign để xem.
 
 
-https://drphe.github.io/KhoIPA/repo.development.json
-
-https://drphe.github.io/KhoIPA/repo.favorite.json
+https://drphe.github.io/KhoIPA/upload/repo.favorite.json
 
 https://ipa.thuthuatjb.com/repo
-https://ipa.io.vn/repo
 
 https://alt.getutm.app
 
