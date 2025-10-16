@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>DNSSettings</key>
+                <dict>
+                    <key>DNSProtocol</key>
+                    <string>HTTPS</string>
+                    <key>ServerURL</key>
+                    <string>https://apple.dns.nextdns.io/aff4ad</string>
+                </dict>
+                <key>PayloadDescription</key>
+                <string>made using .mobileconfig maker by nbxy</string>
+                <key>PayloadDisplayName</key>
+                <string>Anti revoke + blacklist </string>
+<key>PayloadIdentifier</key>
+                <string>Anti revoke + blacklist dns</string>
+                <key>PayloadType</key>
+                <string>com.apple.dnsSettings.managed</string>
+                <key>PayloadUUID</key>
+                <string>354645563-6719-5827-1779-2147483647</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+            </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>A anti revoke + blacklist dns</string>
+        <key>PayloadDisplayName</key>
+        <string>Anti revoke + blacklist </string>
+<key>PayloadOrganization</key>
+        <string>John220099</string>
+        <key>PayloadIdentifier</key>
+		<string>Anti revoke + blacklist dns</string>
+        <key>PayloadRemovalDisallowed</key>
+        <false/>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>        <string>354645563-6719-5827-1779-2147483647</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadScope</key>
+        <string>System</string>   
+    </dict>
+</plist>
