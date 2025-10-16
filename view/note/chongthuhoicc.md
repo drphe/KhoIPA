@@ -150,7 +150,7 @@ Thường xuyên kiểm tra và gỡ bỏ chứng chỉ không còn sử dụng.
 
 
 
-1. [Chống Revoke](https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/upload/anti_revoke.mobileconfig)
+1. [Chống Revoke](https://drphe.github.io/KhoIPA/upload/anti_revoke.mobileconfig)
 
 2. Tham khảo [Nguồn John220099](https://github.com/John220099/Anti-revoke-blacklist/tree/main)
 
