@@ -862,29 +862,53 @@ console.log(appDataToGet)
 }
 
 function insertApps(d) {
-   document.getElementById('customConfirm').style.display = 'none';
-  if(d == 'info'){
-     document.getElementById('app_bundleIdentifier').value = appDataToGet.bundleId;
-     document.getElementById('app_developerName').value = appDataToGet.artistName;
-     document.getElementById('app_iconURL').value = appDataToGet.artworkUrl100;
-  }else if(d == 'description'){
-      document.getElementById('app_localizedDescription').value = `Yêu cầu: IOS ${appDataToGet.minimumOsVersion} trở lên \n${appDataToGet.description}`;
-  }else if(d == 'screenshort'){
-     document.getElementById('app_screenshotURLs').value = appDataToGet.screenshotUrls.join(", ");
- }else if(d=='all'){
-     document.getElementById('app_bundleIdentifier').value = appDataToGet.bundleId;
-     document.getElementById('app_developerName').value = appDataToGet.artistName;
-     document.getElementById('app_iconURL').value = appDataToGet.artworkUrl100;
-      document.getElementById('app_localizedDescription').value = `Yêu cầu: IOS ${appDataToGet.minimumOsVersion} trở lên \n${appDataToGet.description}`;
-     document.getElementById('app_screenshotURLs').value = appDataToGet.screenshotUrls.join(", ");
-}else if(d=="delall"){
-     document.getElementById('app_bundleIdentifier').value = '';
-     document.getElementById('app_developerName').value = '';
-     document.getElementById('app_iconURL').value = '';
-      document.getElementById('app_localizedDescription').value = '';
-     document.getElementById('app_screenshotURLs').value = '';
+  document.getElementById('customConfirm').style.display = 'none';
+
+  const setValue = (id, value) => {
+    document.getElementById(id).value = value;
+  };
+
+  const clearFields = () => {
+    ['app_bundleIdentifier', 'app_developerName', 'app_iconURL', 'app_localizedDescription', 'app_screenshotURLs']
+      .forEach(id => setValue(id, ''));
+  };
+
+  const fillInfo = () => {
+    setValue('app_bundleIdentifier', appDataToGet.bundleId);
+    setValue('app_developerName', appDataToGet.artistName);
+    setValue('app_iconURL', appDataToGet.artworkUrl100);
+  };
+
+  const fillDescription = () => {
+    setValue('app_localizedDescription', `Yêu cầu: IOS ${appDataToGet.minimumOsVersion} trở lên \n${appDataToGet.description}`);
+  };
+
+  const fillScreenshots = () => {
+    const newValue = appDataToGet.screenshotUrls.join(", ").trim();
+    if (newValue) setValue('app_screenshotURLs', newValue);
+  };
+
+  switch (d) {
+    case 'info':
+      fillInfo();
+      break;
+    case 'description':
+      fillDescription();
+      break;
+    case 'screenshort':
+      fillScreenshots();
+      break;
+    case 'all':
+      fillInfo();
+      fillDescription();
+      setValue('app_screenshotURLs', appDataToGet.screenshotUrls.join(", "));
+      break;
+    case 'delall':
+      clearFields();
+      break;
+  }
 }
-}
+
 // lọc app
 function filterApps() {
   const input = document.getElementById('filterInput').value.toLowerCase();

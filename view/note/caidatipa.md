@@ -73,6 +73,8 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
    [https://sign.ipasign.cc/](https://sign.ipasign.cc/)
 
+&nbsp;  [https://sign.kravasign.com/](https://sign.kravasign.com/)
+
 
 
 ### 2.4. Ứng dụng "Signer" Trung Gian
@@ -87,11 +89,11 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
    [Cài đặt Scalert](https://usescarletapp.com)
 
-&nbsp;  [Cài đặt Feather](https://jcionx.github.io/ios-sideloading/) 
+   [Cài đặt Feather](https://jcionx.github.io/ios-sideloading/)
 
 Link này giúp cài Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
 
-&nbsp;  [Cài đặt Ksign](https://ksign-ios.com/)
+   [Cài đặt Ksign](https://ksign-ios.com/)
 
 
 
