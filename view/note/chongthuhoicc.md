@@ -154,7 +154,7 @@ Thường xuyên kiểm tra và gỡ bỏ chứng chỉ không còn sử dụng.
 
 2. Tham khảo [Nguồn John220099](https://github.com/John220099/Anti-revoke-blacklist/tree/main)
 
-[Tải xuống Anti-Revoke-Blacklist](https://drphe.github.io/KhoIPA/upload/Anti%20revoke%20%2B%20blacklist.mobileconfig)
+[Tải xuống Anti-Revoke-Blacklist](https://drphe.github.io/KhoIPA/upload/Anti-revoke-blacklist.mobileconfig)
 
 
 
