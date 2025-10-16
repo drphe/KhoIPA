@@ -22,7 +22,7 @@
       "appID": "com.example.app",
       "date": "2025-10-15",
       "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=dnsadblock.md"
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=dnsadblock.md"
     },
     {
       "title": "Chống thu hồi chứng chỉ bằng DNS",
@@ -33,7 +33,7 @@
       "appID": "com.example.app",
       "date": "2025-10-14",
       "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=chongthuhoicc.md"
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=chongthuhoicc.md"
     },
     {
       "title": "Bật chế độ Nhà phát triển",
@@ -44,7 +44,7 @@
       "appID": "com.example.app",
       "date": "2025-10-11",
       "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=developermod.md"
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=developermod.md"
     },
     {
       "title": "Hướng dẫn cài IPA bằng TrollStore",
@@ -55,7 +55,7 @@
       "appID": "com.trollstore.app",
       "date": "2025-10-09",
       "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=trollstore.md"
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=trollstore.md"
     },
     {
       "title": "Chia sẻ *.dylib, *.deb",
@@ -66,7 +66,7 @@
       "appID": "com.dylib.app",
       "date": "2025-10-09",
       "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=Khodylib.md"
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=Khodylib.md"
     },
     {
       "title": "Cài File IPA lên iPhone (Không Cần Jailbreak)",
@@ -77,7 +77,7 @@
       "appID": "com.feather.app",
       "date": "2025-10-13",
       "notify": false,
-      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=caidatipa.md"
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=caidatipa.md"
     },
     {
       "title": "Mẹo sử dụng Cert cài IPA qua Feather, Esign",
@@ -88,7 +88,7 @@
       "appID": "com.example.app",
       "date": "2025-10-14",
       "notify": false,
-      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=cert.md"
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=cert.md"
     },
     {
       "title": "Zalo 2 - Cập nhật",
