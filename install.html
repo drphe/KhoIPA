@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#ffffff">
+<title>Hướng dẫn cài đặt</title>
+
+<style>
+:root {
+  --bg: #f9f9fb;
+  --text: #111;
+  --card-bg: #fff;
+  --accent: #007aff;
+  --progress-bg: #e5e5ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0c;
+    --text: #fff;
+    --card-bg: #1c1c1e;
+    --accent: #0a84ff;
+    --progress-bg: #2c2c2e;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  padding: 24px;
+  position: relative;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 3px;
+  width: 100%;
+  background: var(--progress-bg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.4s ease;
+}
+
+.steps {
+  display: flex;
+  width: 500%;
+  transition: transform 0.5s ease;
+}
+
+.step {
+  width: 100%;
+  padding: 40px 24px 80px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.4s ease;
+}
+.step.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.step img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+  transition: opacity 0.3s;
+}
+button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+button:active { opacity: 0.7; }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: var(--progress-bg);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--accent);
+  width: 20px;
+  border-radius: 6px;
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="progress-bar"><div class="progress"></div></div>
+
+      <div class="steps" id="steps">
+        <div class="step active">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732202.png" alt="Safari">
+          <h1>Bước 1</h1>
+          <p>Mở <b>Safari</b> và truy cập vào đường dẫn cài đặt ứng dụng.</p>
+        </div>
+
+        <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/983/983977.png" alt="Profile">
+          <h1>Bước 2</h1>
+          <p>Nhấn “Cho phép” để tải cấu hình cài đặt về thiết bị.</p>
+        </div>
+
+        <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Settings">
+          <h1>Bước 3</h1>
+          <p>Mở <b>Cài đặt → Cấu hình đã tải về</b> và nhấn “Cài đặt”.</p>
+        </div>
+
+        <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/1000/1000621.png" alt="Trust">
+          <h1>Bước 4</h1>
+          <p>Vào <b>Cài đặt → Cài đặt chung → Quản lý thiết bị</b> và chọn “Tin cậy nhà phát triển”.</p>
+        </div>
+
+        <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="App">
+          <h1>Hoàn tất!</h1>
+          <p>Nhấn nút bên dưới để tải hoặc mở ứng dụng giải trí của bạn.</p>
+        </div>
+      </div>
+
+      <div class="dots" id="dots"></div>
+
+      <div class="buttons">
+        <button class="secondary" onclick="prevStep()">Quay lại</button>
+        <button onclick="nextStep()">Tiếp tục</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+let currentStep = 0;
+const steps = document.querySelectorAll('.step');
+const totalSteps = steps.length;
+const progress = document.querySelector('.progress');
+const dotsContainer = document.getElementById('dots');
+
+function updateDots() {
+  dotsContainer.innerHTML = "";
+  for (let i = 0; i < totalSteps; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (i === currentStep) dot.classList.add('active');
+    dotsContainer.appendChild(dot);
+  }
+}
+
+function updateView() {
+  steps.forEach((s, i) => {
+    s.classList.toggle('active', i === currentStep);
+  });
+  progress.style.width = `${((currentStep + 1) / totalSteps) * 100}%`;
+  updateDots();
+}
+
+function nextStep() {
+  if (currentStep < totalSteps - 1) {
+    currentStep++;
+    updateView();
+  } else {
+    installApp();
+  }
+}
+
+function prevStep() {
+  if (currentStep > 0) {
+    currentStep--;
+    updateView();
+  }
+}
+
+function installApp() {
+  // 👉 Thay link bên dưới bằng link app thực tế (vd: esign://install?url=...)
+  const appLink = "https://example.com/app-download";
+  window.location.href = appLink;
+}
+
+updateView();
+</script>
+</body>
+</html>
