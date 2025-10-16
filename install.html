@@ -2,7 +2,8 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#ffffff">
 <title>Hướng dẫn cài đặt</title>
@@ -26,6 +27,11 @@
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
@@ -40,18 +46,24 @@ body {
 
 .container {
   width: 100%;
-  max-width: 420px;
+  max-width: 480px;
   text-align: center;
-  padding: 24px;
   position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card {
   background: var(--card-bg);
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -3px 20px rgba(0,0,0,0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
-  position: relative;
 }
 
 .progress-bar {
@@ -71,6 +83,7 @@ body {
 }
 
 .steps {
+  flex: 1;
   display: flex;
   width: 500%;
   transition: transform 0.5s ease;
@@ -78,8 +91,7 @@ body {
 
 .step {
   width: 100%;
-  padding: 40px 24px 80px;
-  box-sizing: border-box;
+  padding: 40px 24px 100px;
   flex-shrink: 0;
   opacity: 0;
   transform: translateX(30px);
@@ -97,8 +109,8 @@ h1 {
 }
 
 .step img {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   margin-bottom: 20px;
   border-radius: 30px;
@@ -109,41 +121,11 @@ p {
   line-height: 1.4;
 }
 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  position: absolute;
-  bottom: 24px;
-  left: 0;
-  width: 100%;
-  padding: 0 24px;
-  box-sizing: border-box;
-}
-
-button {
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: 12px;
-  padding: 14px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  flex: 1;
-  transition: opacity 0.3s;
-}
-button.secondary {
-  background: transparent;
-  color: var(--accent);
-  border: 2px solid var(--accent);
-}
-button:active { opacity: 0.7; }
-
 .dots {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .dot {
@@ -158,6 +140,45 @@ button:active { opacity: 0.7; }
   background: var(--accent);
   width: 20px;
   border-radius: 6px;
+}
+
+/* Nút sát mép dưới, full width */
+.buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  z-index: 10;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 16px 0;
+  font-size: 17px;
+  font-weight: 600;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+button.secondary {
+  background: var(--progress-bg);
+  color: var(--accent);
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+@supports(padding: max(0px)) {
+  button {
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
 }
 </style>
 </head>
@@ -200,11 +221,11 @@ button:active { opacity: 0.7; }
       </div>
 
       <div class="dots" id="dots"></div>
+    </div>
 
-      <div class="buttons">
-        <button class="secondary" onclick="prevStep()">Quay lại</button>
-        <button onclick="nextStep()">Tiếp tục</button>
-      </div>
+    <div class="buttons">
+      <button class="secondary" onclick="prevStep()">◀ Quay lại</button>
+      <button onclick="nextStep()">Tiếp tục ▶</button>
     </div>
   </div>
 
@@ -250,7 +271,7 @@ function prevStep() {
 }
 
 function installApp() {
-  // 👉 Thay link bên dưới bằng link app thực tế (vd: esign://install?url=...)
+  // 👉 Thay bằng link app thật của bạn (vd: esign://install?url=...)
   const appLink = "https://example.com/app-download";
   window.location.href = appLink;
 }
