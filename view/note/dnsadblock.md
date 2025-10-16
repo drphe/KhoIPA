@@ -29,8 +29,8 @@ Bạn có thể sử dụng Shortcut để thiết lập DNS nhanh chóng:
 
 Tải và cài đặt cấu hình DNS chặn quảng cáo bằng file `.mobileconfig`:
 
-- [Adblock By HaPhung v3.0 (2023)](https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/Adblock%20Edit%20By%20HaPhung%20(v3.0)%202023.mobileconfig)
-- [Adblock By HaPhung v4.0 (2025)](https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/Adblock%20Edit%20By%20HaPhung%20(v4.0)%202025%20.mobileconfig)
+- [Adblock By HaPhung v3.0 (2023)](https://drphe.github.io/KhoIPA/upload/Adblock%20Edit%20By%20HaPhung%20(v3.0)%202023.mobileconfig)
+- [Adblock By HaPhung v4.0 (2025)](https://drphe.github.io/KhoIPA/upload/Adblock%20Edit%20By%20HaPhung%20(v4.0)%202025%20.mobileconfig)
 - [DNS noADS](https://vdns.io.vn/dot-Signed.mobileconfig)
 
 ---
