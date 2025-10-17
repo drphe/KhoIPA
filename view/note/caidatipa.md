@@ -91,13 +91,9 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
    [Cài đặt Ksign](https://ksign-ios.com/)
 
-   [Cài đặt Feather](https://jcionx.github.io/ios-sideloading/)
-
-Link này giúp cài Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
-* [Xem bài này](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=verifyapp.md)
-
-
 Đối với **Feather, Esign** là những ứng dụng được cài đặt bằng các công cụ online như tại mục 2.3 hoặc cài đặt qua Trollstore
+Link này giúp cài ESign, Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
+* [Xem bài này](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=verifyapp.md)
 
 Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng dung, công cụ hỗ trợ, cung cấp link cài đặt trực tiếp các ipa mod phổ biến như Facebook NoADS, Youtube Lite,... Một số dịch vụ chính: Certapple.com, Unkeyapp.com, Thuthuatjb.com, https://p12apple.com/...
 
@@ -108,7 +104,7 @@ Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng du
 [Hướng dẫn cài IPA bằng ESign](https://certapple.com/index.php/blog/huong-dan-su-dung-esign-de-cai-ipa-tren-cac-thiet-bi-iphoneipad)
 
 
-
+* Nếu thiết bị IOS đời thấp <18 thì ưu tiên cài Esign, đời cao cài Feather, Ksign...
 * Nếu bạn ưu tiên mở / minh bạch / ít rủi ro và muốn có tùy biến cao — thì Feather là lựa chọn đáng cân nhắc.
 * Nếu bạn cần ứng dụng đã được sử dụng rộng rãi, dễ tìm hướng dẫn \& certificate — eSign vẫn là lựa chọn phổ biến.
 * Scarlet là lựa chọn “đầy đủ” nếu bạn muốn một installer + signer + repo tích hợp — nhưng bệnh của nó là một vài tính năng ít minh bạch và khả năng revoke vẫn còn là vấn đề.

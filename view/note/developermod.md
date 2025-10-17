@@ -12,7 +12,7 @@ Thực hiện theo các bước sau:
 2. Chọn **Cài đặt chung (General)**.
 3. Cuộn xuống và chọn **Chế độ nhà phát triển (Developer Mode)**.
 4. Gạt nút từ **Tắt ➜ Bật** để kích hoạt, hoặc ngược lại để tắt.
-4. Khởi động lại máy.
+5. Khởi động lại máy.
 
 ---
 
@@ -20,9 +20,10 @@ Thực hiện theo các bước sau:
 
 [![Xem video hướng dẫn](../../common/assets/img/DEVELOPEMODE.png)](https://youtu.be/E9ZXQF78lCo?si=zjluYBAcUPhWVLqw)
 
-⚙️Cài đặt => Riêng tư & bảo mật => chế độ nhà phát triển => Bật✅=> Khởi động lại 
+⚙️Cài đặt => Riêng tư \& bảo mật => chế độ nhà phát triển => Bật✅=> Khởi động lại
 
 [Đọc bài hướng dẫn gốc](https://iosgods.com/topic/161257-ios-16171826-developer-mode-what-is-it-how-to-enable/)
-![https://ios.codevn.net/wp-content/uploads/2023/02/che-do-nha-phat-trien-1536x995.jpeg]
+![Chế độ nhà phát triển](https://ios.codevn.net/wp-content/uploads/2023/02/che-do-nha-phat-trien-1536x995.jpeg)
 
 [Chế độ Developer Mode bị ẩn trên IOS 16](https://certapple.com/blog/ios-16-developer-mode-bi-an-cach-bat-developer-mode-bi-an-tren-iphone)
+
