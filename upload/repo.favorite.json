@@ -14,6 +14,17 @@
   },
   "news": [
     {
+      "title": "Sử dụng Certificates bị revoke bằng DNS",
+      "identifier": "hdsd-dns",
+      "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
+      "tintColor": "BED2E0",
+      "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
+      "appID": "com.example.app",
+      "date": "2025-10-17",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=verifyapp.md"
+    },
+    {
       "title": "Chặn quảng cáo bằng DNS",
       "identifier": "hdsd-adblock",
       "caption": "Hướng dẫn sử dụng DNS chặn quảng cáo trên ios",

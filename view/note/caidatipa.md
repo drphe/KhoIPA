@@ -48,7 +48,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Quy trình:** Cài **TrollHelperOTA** hoặc tool phù hợp, sau đó cài IPA trong chính ứng dụng TrollStore.
 * **Ưu điểm:** App tồn tại **vĩnh viễn**, không cần PC (các bản ios cao hơn có thể cần PC để cài), không cần Apple ID hay cert.
 * **Nhược điểm:** **Giới hạn nghiêm ngặt** về phiên bản iOS và thiết bị tương thích.
-* [Hướng dẫn cài IPA bằng Trollstore](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmRldmVsb3BtZW50Lmpzb24=&link=trollstore.md)
+* [Hướng dẫn cài IPA bằng Trollstore](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=trollstore.md)
 * [Cài đặt IPA vĩnh viễn bằng TrollStore](https://thuthuatjb.com/huong-dan-su-dung-trollstore-de-cai-file-ipa-vinh-vien-tren-ios-ipados/)
 
 
@@ -73,7 +73,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
    [https://sign.ipasign.cc/](https://sign.ipasign.cc/)
 
-&nbsp;  [https://sign.kravasign.com/](https://sign.kravasign.com/)
+   [https://sign.kravasign.com/](https://sign.kravasign.com/)
 
 
 
@@ -89,12 +89,12 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
    [Cài đặt Scalert](https://usescarletapp.com)
 
+   [Cài đặt Ksign](https://ksign-ios.com/)
+
    [Cài đặt Feather](https://jcionx.github.io/ios-sideloading/)
 
 Link này giúp cài Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
-
-   [Cài đặt Ksign](https://ksign-ios.com/)
-
+* [Xem bài này](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=verifyapp.md)
 
 
 Đối với **Feather, Esign** là những ứng dụng được cài đặt bằng các công cụ online như tại mục 2.3 hoặc cài đặt qua Trollstore
