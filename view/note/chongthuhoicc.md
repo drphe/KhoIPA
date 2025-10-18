@@ -202,3 +202,4 @@ Hướng dẫn:
 
 [Tải OTA](https://cydia.ichitaso.com/no-ota18.mobileconfig)
 
+[OTA newest](https://ios.cfw.guide/blocking-updates/)
