@@ -17,7 +17,7 @@
       "title": "Sử dụng Certificates bị revoke bằng DNS",
       "identifier": "hdsd-dns",
       "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
-      "tintColor": "BED2E0",
+      "tintColor": "506471",
       "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
       "appID": "com.example.app",
       "date": "2025-10-17",
@@ -114,6 +114,74 @@
     }
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "Adobe Premiere: Video Editor",
+      "bundleIdentifier": "com.adobe.premiere.ios",
+      "developerName": "Adobe Inc.",
+      "subtitle": "Subscription Unlocked",
+      "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nEffortless editing. Total control. Meet the fast, free, and focused mobile video editing app that's powerful enough for any idea, yet simple enough for anyone to use. Edit videos from wherever you are, with no ads or watermarks. Premiere offers unmatched speed on a precise multi-track timeline and studio-quality audio featuring crystal clear voice recordings and perfectly timed AI sound effects -- plus Firefly-powered visuals to create stand out videos.\n\nTell your story with unique, scroll-stopping videos. Level up your content with AI editing tools and create stand out edits to share on TikTok, YouTube, Instagram, Facebook, and more. Record voiceovers and achieve studio-quality audio with crystal clear voice recordings and perfectly timed AI sound effects. Get inspired and kickstart your project with Adobe’s massive library of free creative assets. Speed up your editing with Adobe Firefly AI-generated sound effects, images, videos, and stickers.\n\nCapture the moment and create trends with Adobe Premiere.\n\nFEATURES:\n\nLIGHTNING-FAST TIMELINE\n• Frame-Accurate Edits: Trim, split, or merge video clips with the industry’s most accurate video editor.\n• AI Auto Captions: generate captions and add attention grabbing animations in seconds.\n• Smooth Speed Effects: speed up, slow down, reverse or freeze key moments.\n• Unique Colour Presets: Apply Adobe Lightroom presets and fine tune to fit your aesthetic.\n• Instant Background Removal: Cut out subjects with one tap. Create overlays, title effects, and more.\n\nPRECISION CONTROL\n• Unlimited Tracks: Overlay clips and organize your timeline with no limits to your creativity.\n• Resize and Post to Any Platform: Adjust videos to fit any aspect ratio and share anywhere easily.\n• Advanced Clip Controls: Flip, fit, fill, or extract audio to customise every cut.\n\nSTUDIO QUALITY SOUND\n• AI Enhance Speech: Create studio quality voiceovers with the help of AI.\n• DIY Sound Effects: Use your voice to generate your own sounds.\n\nGENERATIVE AI ASSETS\n• AI Text to Image Generation: create unique, commercially safe images from a simple text prompt with Adobe Firefly.\n• Stickers That Pop: Generate your own AI stickers or select from the free in-app library.\n• AI Background Expansion: Extend, enhance, or replace backgrounds with a prompt.\n\nFREE LIBRARY OF CREATIVE ASSETS\n• Get going with quality images, sounds, music, and video from the Adobe library.\n• Add Music to Your Videos: Select from a library of free and royalty free tracks.\n• Respects Creator Content Ownership: Adobe never trains on user content.\n\nSPEED AND PERFORMANCE\n• Built natively on iOS for a fast, smooth, editing experience.\n• Import your assets directly from your device or favourite cloud storage provider.\n• Edit without distracting pop-up ads, clutter, or watermarks.\n\nFREE TO DOWNLOAD AND USE\n• Everything you need to create great videos is available for free. Only pay when you need Firefly generative AI credits.\n\nTERMS & CONDITIONS:\nYour use of this application is governed by the Adobe General Terms of Use http://www.adobe.com/go/terms_linkfree_uk and the Adobe Privacy Policy http://www.adobe.com/go/privacy_policy_linkfree_uk\n\nDo not sell or share my personal information: www.adobe.com/go/ca-rights-linkfree",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/ec/64/d4ec64be-4fba-b45b-56d2-588dec5e3703/AppIcon_Premiere-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/100x100bb.jpg",
+      "tintColor": "9A9AFF",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/33/87/123387b8-6b85-e307-57b7-2c13cc5312f2/A_Adobe_Premiere_EN_iOS_6.9_Screenshot_Localization_250822_01.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/21/9c/fc219cca-97aa-ef46-be33-2def432bff78/Adobe_Premiere_EN_iOS_6.9_Screenshots_250826_02.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/b0/d2/36b0d222-87aa-804c-e681-182214a06e1b/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_03.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/6c/15/4c6c15e4-4e3a-068d-dd5a-bf8f0bf019ca/Adobe_Premiere_EN_iOS_6.9_Screenshots_250826_04.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/18/63/ac1863a5-c0b8-c6f3-be82-48a20700e550/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_05.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/14/ef/1c14ef34-21a6-61b0-f225-2776aa03e492/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_06.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/22/2c/2f/222c2f29-0d47-a542-c027-71f3bc2f3ae2/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_07.png/300x0w.webp"
+      ],
+      "versions": [
+        {
+          "version": "25.5.0",
+          "date": "2025-10-18T01:08:00Z",
+          "size": 97895549,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adobe.premiere/Adobe_Premiere_Video_Editor_v25_5_0.ipa",
+          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants"
+        }
+      ],
+      "version": "25.5.0",
+      "versionDate": "2025-10-18T01:08:00Z",
+      "versionDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adobe.premiere/Adobe_Premiere_Video_Editor_v25_5_0.ipa",
+      "size": 97895549
+    },
+    {
+      "beta": false,
+      "name": "Adobe Photoshop: Photo Editor",
+      "bundleIdentifier": "com.adobe.photoshop.ios",
+      "developerName": "Adobe Inc.",
+      "subtitle": "Subscription Unlocked",
+      "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nPhotoshop on mobile includes a wide selection of free features to accomplish all the core photo editing capabilities. Whether you're new, curious, or already familiar with Photoshop, we’ve made it easier than ever to learn and expand your creative skills.\n\nPhotoshop on mobile simplifies your creative & design needs:\n- Add new objects\n- Blur or remove backgrounds\n- Replace backgrounds and remove unwanted objects\n- Retouch, refine and perfect your images with targeted adjustments\n- Combine multiple images to create high-quality compositions and explore intuitive AI tools\n- Create unique collages, album cover art, perfect your passion projects, and develop unique digital art—all in one place\n\nThere is no limit to what you can create.\n\nKEY FEATURES\n\nREMOVE OR REPLACE BACKGROUNDS\n- Effortlessly select the background with the Tap Select tool.\n- Easily replace backgrounds with an image directly from your phone, create AI-generated backgrounds with Generative Fill, or select from a large library of Adobe Stock images, including textures, filters and patterns.\n- Adjust the background, including the brightness, effects or vibrancy to bring your creations to life.\n\nREMOVE UNWANTED DISTRACTIONS\n- Brush out blemishes, spots, or small imperfections in seconds using the Spot Healing Brush.\n- Quickly and easily remove unwanted content from your images with our powerful Generative Fill feature.\n\nPERSONALIZED IMAGE DESIGN\n- Create stunning visual images that are uniquely yours by blending photos, graphics, text, utilizing effects and more.\n- Combine unique elements from your own photos with a selection of free Adobe Stock images, including textures, filters, fonts and patterns, to elevate your final creations.\n- Effortlessly select an object or person with the Tap Select tool.\n- Rearrange objects in your image and control how they come together with layers. \n- Easily add and remove content from your photos using simple text prompts with Generative Fill. Additionally, ideate, create new assets, and jumpstart your creativity using Generate Image.\n\nBRING COLOR AND LIGHT TO LIFE\n- Adjust the color of anything, like your shirt, pants or shoes, using adjustment layers. Use the Tap Select and other selection tools to perfectly edit the brightness or vibrancy to add a pop of color to your images.\n\nPREMIUM\n- Upgrade to the Photoshop Mobile & Web plan for enhanced control and precision, with access to iPhone, iPad, and web.\n- Easily remove entire objects just by brushing over it, and have the background filled in automatically with the Remove Tool.\n- Seamlessly fill selected portions of an image with content sampled from other parts of the image with Content Aware Fill.\n- Quickly and precisely select people and objects like plants, cars, and more with enhanced precision using Object Select.\n- 100 generative credits to add, expand, design or remove content from your images. In addition, ideate, create new assets, and generate your creativity using the latest features like Generate Image. \n- Change unique layer interactions to control transparency, color effects, filters and add style to your images with Advanced Blend Modes.\n- Quickly and easily select an object or area of your image based on similar colors and tones with the Magic Wand Tool and retouch it further with targeted adjustments.\n- Export in additional file formats (PSD, TIFF, JPG, PNG) and export options for print quality and compression.\n\nTERMS & CONDITIONS:\nYour use of this application is governed by the Adobe General Terms of Use http://www.adobe.com/go/terms_linkfree_en and the Adobe Privacy Policy http://www.adobe.com/go/privacy_policy_linkfree_en\nDo not sell or share my personal information: www.adobe.com/go/ca-rights-linkfree",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a4/f2/d2/a4f2d25b-c9a2-3010-8d83-3f2bfe22f53d/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/100x100bb.jpg",
+      "tintColor": "32A7FF",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/f2/9d/d6f29d4e-1e57-e102-0f83-d3b94c77f141/01_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/89/68/3d89686b-d98f-631c-df5f-1baa085a3bbb/02_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/a2/de/6da2de3b-488e-7c35-ef76-4cdc3040915e/03_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/76/a3/d9/76a3d9b5-d3c3-7ede-9f27-4cee0b410191/04_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/78/00/85/78008548-d252-d6e1-190e-70eb5f98136d/05_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6b/df/ec/6bdfec9b-6a44-b5b9-a302-1ecbf1de8792/06_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a6/49/5d/a6495d6e-4ee2-73bf-5fba-068b62a9ab5a/07_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c1/c0/b5/c1c0b5ee-9d0b-9f46-b923-93341636b8c7/08_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c1/c0/b5/c1c0b5ee-9d0b-9f46-b923-93341636b8c7/08_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp"
+      ],
+      "versions": [
+        {
+          "version": "6.6.2",
+          "date": "2025-10-18T01:02:00Z",
+          "size": 282683475,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adobe/Adobe_Photoshop_Photo_Editor_v6_6_2.ipa",
+          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants"
+        }
+      ],
+      "version": "6.6.2",
+      "versionDate": "2025-10-18T01:02:00Z",
+      "versionDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adobe/Adobe_Photoshop_Photo_Editor_v6_6_2.ipa",
+      "size": 282683475
+    },
     {
       "beta": false,
       "name": "AdGuard  — adblock&privacy",
