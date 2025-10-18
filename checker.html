@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CORS Checker — Kiểm tra CORS nhanh</title>
+<style>
+  :root{
+    --bg:#f3f5f7;
+    --card:#ffffff;
+    --text:#0b1220;
+    --muted:#6b7280;
+    --accent:#2563eb;
+    --accent-2:#06b6d4;
+    --success:#10b981;
+    --danger:#ef4444;
+    --glass: rgba(255,255,255,0.6);
+    --shadow: 0 6px 30px rgba(11,18,32,0.08);
+    --radius:14px;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg: linear-gradient(180deg,#07070a,#0b0b0f);
+      --card: rgba(8,10,14,0.6);
+      --text: #e6eef8;
+      --muted:#94a3b8;
+      --accent:#60a5fa;
+      --accent-2:#5eead4;
+      --glass: rgba(255,255,255,0.03);
+      --shadow: 0 8px 30px rgba(2,6,23,0.6);
+    }
+    body { background: var(--bg); }
+  }
+
+  html,body{
+    height:100%;
+    margin:0;
+    background: var(--bg);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+
+  .wrap{
+    min-height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px;
+    box-sizing:border-box;
+  }
+
+  .card{
+    width:100%;
+    max-width:880px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0.2));
+    background: var(--card);
+    border-radius:var(--radius);
+    box-shadow: var(--shadow);
+    padding:22px;
+    box-sizing:border-box;
+    backdrop-filter: blur(8px) saturate(120%);
+    border: 1px solid rgba(127,127,127,0.06);
+  }
+
+  .title-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:12px;
+  }
+  .title{
+    display:flex;
+    gap:12px;
+    align-items:center;
+  }
+  .logo{
+    width:44px;height:44px;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    background: linear-gradient(135deg,var(--accent),var(--accent-2));
+    box-shadow: 0 6px 20px rgba(37,99,235,0.14);
+  }
+  .title h1{ margin:0;font-size:18px;color:var(--text); }
+  .title p{ margin:0;font-size:13px;color:var(--muted); }
+
+  .controls{
+    display:flex;
+    gap:8px;
+    align-items:center;
+  }
+
+  .input-row{
+    display:flex;
+    gap:8px;
+    margin-top:14px;
+    margin-bottom:10px;
+  }
+  input[type="url"]{
+    flex:1;
+    padding:14px 14px;
+    border-radius:12px;
+    border:1px solid rgba(11,18,32,0.06);
+    font-size:15px;
+    outline:none;
+    box-sizing:border-box;
+    background: transparent;
+    color:var(--text);
+  }
+  .btn{
+    padding:10px 14px;
+    border-radius:10px;
+    border: none;
+    cursor:pointer;
+    font-weight:600;
+    font-size:14px;
+  }
+  .btn-ghost{
+    background:transparent;
+    border:1px solid rgba(11,18,32,0.06);
+    color:var(--text);
+  }
+  .btn-primary{
+    background: linear-gradient(90deg,var(--accent),var(--accent-2));
+    color:white;
+  }
+  .hint{
+    font-size:13px;color:var(--muted);
+    margin-top:6px;
+  }
+
+  .result{
+    margin-top:14px;
+    padding:14px;
+    border-radius:10px;
+    background: var(--glass);
+    border:1px solid rgba(11,18,32,0.04);
+    color:var(--text);
+    font-size:14px;
+    line-height:1.45;
+    word-break:break-word;
+  }
+
+  .status{
+    display:inline-flex;
+    gap:8px;
+    align-items:center;
+    padding:6px 10px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:13px;
+  }
+  .status.ok{ background: rgba(16,185,129,0.12); color:var(--success); }
+  .status.warn{ background: rgba(250,204,21,0.08); color:#b45309; }
+  .status.err{ background: rgba(239,68,68,0.08); color:var(--danger); }
+
+  pre.headers{
+    white-space:pre-wrap;
+    background: transparent;
+    margin:10px 0 0 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+    font-size:13px;
+    color:var(--muted);
+  }
+
+  .small{
+    font-size:13px;color:var(--muted);
+  }
+
+  /* responsive */
+  @media (max-width:560px){
+    .card{ padding:16px; border-radius:12px; }
+    input[type="url"]{ padding:12px; font-size:14px; }
+    .btn{ padding:10px 12px; font-size:13px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="main" aria-labelledby="title-main">
+      <div class="title-row">
+        <div class="title">
+          <div class="logo" aria-hidden="true">
+            <!-- simple svg icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z" fill="white" opacity="0.12"/>
+              <path d="M7 12h10" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 7v10" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <h1 id="title-main">CORS Checker — Kiểm tra CORS nhanh</h1>
+            <p>Kiểm tra nhanh xem endpoint có cho phép cross-origin requests hay không</p>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="exampleBtn" class="btn btn-ghost" title="Thêm ví dụ">Ví dụ</button>
+          <button id="clearBtn" class="btn btn-ghost" title="Xóa">Xóa</button>
+        </div>
+      </div>
+
+      <div class="input-row" role="region" aria-label="URL input and actions">
+        <input id="urlInput" type="url" placeholder="https://api.example.com/data (hoặc dán 1 đường dẫn)" autocomplete="off" />
+        <button id="pasteBtn" class="btn btn-ghost" title="Dán từ clipboard">Paste</button>
+        <button id="testBtn" class="btn btn-primary" title="Kiểm tra">Test</button>
+      </div>
+
+      <div class="hint small">Gõ/ dán URL rồi bấm <strong>Test</strong>. Nếu trang yêu cầu HTTPS hoặc có redirect, kết quả có thể khác nhau.</div>
+
+      <div id="result" class="result" aria-live="polite" hidden>
+        <!-- kết quả sẽ được fill JS -->
+      </div>
+
+      <div class="hint small" style="margin-top:10px;">
+        Ghi chú: trình duyệt chỉ cho phép kiểm tra client-side — nếu fetch bị chặn, bạn sẽ thấy lỗi mạng (có thể do CORS hoặc mạng). Xem phần "Giải thích" phía dưới.
+      </div>
+
+    </div>
+  </div>
+
+<script>
+(function(){
+  const urlInput = document.getElementById('urlInput');
+  const pasteBtn = document.getElementById('pasteBtn');
+  const testBtn = document.getElementById('testBtn');
+  const resultEl = document.getElementById('result');
+  const exampleBtn = document.getElementById('exampleBtn');
+  const clearBtn = document.getElementById('clearBtn');
+
+  function showResult({statusLabel, statusClass, message, details, headers}) {
+    resultEl.hidden = false;
+    resultEl.innerHTML = '';
+    const status = document.createElement('div');
+    status.className = 'status ' + statusClass;
+    status.textContent = statusLabel;
+    resultEl.appendChild(status);
+
+    const msg = document.createElement('div');
+    msg.style.marginTop = '10px';
+    msg.textContent = message;
+    resultEl.appendChild(msg);
+
+    if (details) {
+      const det = document.createElement('div');
+      det.className = 'small';
+      det.style.marginTop = '8px';
+      det.textContent = details;
+      resultEl.appendChild(det);
+    }
+
+    if (headers && Object.keys(headers).length) {
+      const pre = document.createElement('pre');
+      pre.className = 'headers';
+      pre.textContent = Object.entries(headers).map(([k,v]) => `${k}: ${v}`).join('\\n');
+      resultEl.appendChild(pre);
+    }
+  }
+
+  function sanitizeUrl(input){
+    if (!input) return null;
+    input = input.trim();
+    try {
+      // if user inputs without scheme, default to https
+      if (!/^https?:\\/\\//i.test(input)) input = 'https://' + input;
+      const u = new URL(input);
+      return u.toString();
+    } catch(e){
+      return null;
+    }
+  }
+
+  async function tryFetch(url){
+    // Try to fetch with CORS mode and attempt to read headers
+    const controller = new AbortController();
+    const timeout = setTimeout(()=> controller.abort(), 10000); // 10s
+    try {
+      const resp = await fetch(url, {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-store',
+        credentials: 'omit',
+        signal: controller.signal,
+        redirect: 'follow',
+      });
+      clearTimeout(timeout);
+
+      // If fetch succeeded, try read some useful info
+      const ok = resp.ok;
+      const status = resp.status;
+      // read CORS header if present
+      const acaOrigin = resp.headers.get('access-control-allow-origin');
+      const allowMethods = resp.headers.get('access-control-allow-methods');
+      const allowHeaders = resp.headers.get('access-control-allow-headers');
+
+      const headers = {};
+      if (acaOrigin) headers['access-control-allow-origin'] = acaOrigin;
+      if (allowMethods) headers['access-control-allow-methods'] = allowMethods;
+      if (allowHeaders) headers['access-control-allow-headers'] = allowHeaders;
+
+      // Note: if CORS is not allowed, fetch would typically throw below; but some responses can be opaque depending on mode/redirects.
+      if (ok) {
+        return {
+          verdict: 'ok',
+          status,
+          headers
+        };
+      } else {
+        return {
+          verdict: 'http-error',
+          status,
+          headers
+        };
+      }
+    } catch (err) {
+      clearTimeout(timeout);
+      // Network errors or CORS-denied will throw TypeError 'Failed to fetch' or AbortError
+      return { verdict: 'error', error: err };
+    }
+  }
+
+  // Extra probe: small HEAD request via fetch with mode:'no-cors' to see if resource loads (opaque)
+  // Note: mode:'no-cors' always returns an opaque response object which has limited info.
+  async function tryNoCorsProbe(url){
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(()=> controller.abort(), 8000);
+      const resp = await fetch(url, { method: 'GET', mode: 'no-cors', signal: controller.signal });
+      clearTimeout(timeout);
+      return { ok: resp && resp.type === 'opaque' };
+    } catch (e) {
+      return { ok: false, error: e };
+    }
+  }
+
+  testBtn.addEventListener('click', async ()=>{
+    const raw = urlInput.value;
+    const url = sanitizeUrl(raw);
+    if (!url) {
+      showResult({ statusLabel: 'Lỗi', statusClass: 'err', message: 'URL không hợp lệ. Hãy nhập 1 đường dẫn hợp lệ (ví dụ: https://api.example.com/data).' });
+      return;
+    }
+
+    showResult({ statusLabel: 'Đang kiểm tra...', statusClass: 'warn', message: 'Đang gửi yêu cầu từ trình duyệt. Vui lòng chờ (timeout 10s).' });
+
+    // First try: CORS fetch
+    const r = await tryFetch(url);
+
+    if (r.verdict === 'ok') {
+      const headers = r.headers || {};
+      const hasAca = headers['access-control-allow-origin'];
+      let m = `Yêu cầu thành công (HTTP ${r.status}).`;
+      if (hasAca) {
+        m += ' Server có header CORS.';
+        showResult({ statusLabel: 'CORS cho phép', statusClass: 'ok', message: m, details: 'Bạn có thể truy vấn endpoint này từ client (fetch) vì server trả Access-Control-Allow-Origin.', headers });
+      } else {
+        // no explicit ACAO header seen — might be same-origin or proxy; but if read headers it's allowed
+        showResult({ statusLabel: 'Truy vấn thành công', statusClass: 'ok', message: m, details: 'Fetch trả về nhưng không thấy header Access-Control-Allow-Origin (có thể server cho phép CORS với header khác hoặc bạn đang cùng origin).', headers });
+      }
+      return;
+    }
+
+    if (r.verdict === 'http-error') {
+      showResult({ statusLabel: 'HTTP error', statusClass: 'err', message: `Server trả HTTP ${r.status}.`, details: 'Mặc dù server phản hồi, trạng thái HTTP không phải 2xx. Kiểm tra endpoint bằng công cụ server-side hoặc curl để biết chi tiết.', headers: r.headers || {} });
+      return;
+    }
+
+    // r.verdict === 'error' -> fetch threw
+    // Try an additional probe with no-cors to see if resource can be loaded but CORS blocked
+    const probe = await tryNoCorsProbe(url);
+
+    if (probe.ok) {
+      // resource loads with no-cors (opaque) but fetch with mode:cors failed -> likely CORS not allowed
+      showResult({
+        statusLabel: 'Khả năng: CORS chặn',
+        statusClass: 'err',
+        message: 'Trình duyệt không cho phép đọc phản hồi bằng fetch (fetch lỗi), nhưng resource có thể tải ở chế độ no-cors (opaque).',
+        details: 'Kết luận: rất có thể server không trả header CORS cho domain của bạn. Để khắc phục, server cần trả Access-Control-Allow-Origin hoặc bạn dùng proxy server-side.'
+      });
+      return;
+    }
+
+    // probe failed too
+    const errMsg = (r.error && r.error.name) ? `${r.error.name}: ${r.error.message || ''}` : 'Lỗi không xác định.';
+    showResult({
+      statusLabel: 'Lỗi kết nối / CORS?',
+      statusClass: 'err',
+      message: 'Fetch bị lỗi (TypeError hoặc do mạng). Có thể do CORS hoặc do mạng/URL không reachable.',
+      details: `Chi tiết: ${errMsg}\nGợi ý: thử kiểm tra bằng server-side (curl) hoặc mở URL trực tiếp trong tab để xem.`
+    });
+  });
+
+  pasteBtn.addEventListener('click', async ()=>{
+    // try navigator.clipboard
+    try {
+      if (navigator.clipboard && navigator.clipboard.readText) {
+        const txt = await navigator.clipboard.readText();
+        if (txt) urlInput.value = txt.trim();
+        else showResult({ statusLabel:'Clipboard trống', statusClass:'warn', message:'Clipboard không có văn bản.'});
+      } else {
+        // fallback: execCommand (legacy)
+        showResult({ statusLabel:'Không hỗ trợ', statusClass:'warn', message:'Trình duyệt này không hỗ trợ navigator.clipboard.readText(). Hãy dán thủ công (Ctrl+V / Cmd+V).' });
+      }
+    } catch (e){
+      showResult({ statusLabel:'Từ chối quyền', statusClass:'err', message:'Không thể đọc clipboard. Trình duyệt có thể yêu cầu quyền hoặc không hỗ trợ API clipboard trong context này.' });
+    }
+  });
+
+  exampleBtn.addEventListener('click', ()=>{
+    // ví dụ đa dạng (người dùng có thể thay)
+    const examples = [
+      'https://jsonplaceholder.typicode.com/todos/1',
+      'https://api.github.com/repos/octocat/hello-world',
+      'https://httpbin.org/get',
+      'https://api.open-meteo.com/v1/forecast?latitude=13.75&longitude=100.5&hourly=temperature_2m'
+    ];
+    urlInput.value = examples[Math.floor(Math.random()*examples.length)];
+  });
+
+  clearBtn.addEventListener('click', ()=>{
+    urlInput.value = '';
+    resultEl.hidden = true;
+  });
+
+  // press Enter to test
+  urlInput.addEventListener('keydown', (e)=>{
+    if (e.key === 'Enter') testBtn.click();
+  });
+
+})();
+</script>
+</body>
+</html>
