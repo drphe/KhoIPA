@@ -6,5 +6,11 @@
     "https://community-apps.sidestore.io/sidecommunity.json",
     "https://driftywinds.github.io/AltStore/apps.json",
     "https://wuxu1.github.io/wuxu-complete-plus.json",
-    "https://wuxu1.github.io/wuxu-complete.json"
+    "https://wuxu1.github.io/wuxu-complete.json",
+    "https://aio.zxcvbn.fyi/r/repo.altstore.json",
+"https://aio.zxcvbn.fyi/r/repo.esign.json",
+"https://aio.zxcvbn.fyi/r/repo.feather.json",
+"https://aio.zxcvbn.fyi/r/repo.gbox.json",
+"https://aio.zxcvbn.fyi/r/repo.scarlet.json"
+    
 ]
