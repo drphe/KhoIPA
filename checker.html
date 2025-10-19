@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CORS Checker</title>
+<style>
+:root{
+  --bg:#f4f5f7;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --success:#16a34a;
+  --danger:#dc2626;
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0b0f16;
+    --card:#1c1f26;
+    --text:#e5e7eb;
+    --muted:#9ca3af;
+  }
+}
+body{
+  background:var(--bg);
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  color:var(--text);
+}
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:24px;
+  box-shadow:0 6px 24px rgba(0,0,0,0.08);
+  width:100%;
+  max-width:600px;
+}
+h1{
+  font-size:18px;
+  margin-top:0;
+  text-align:center;
+}
+.input-row{
+  display:flex;
+  gap:8px;
+  margin-top:16px;
+}
+input[type="url"]{
+  flex:1;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #d1d5db;
+  font-size:15px;
+  outline:none;
+  background:transparent;
+  color:var(--text);
+}
+.btn{
+  padding:12px 14px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:14px;
+}
+.btn-paste{
+  background:#e5e7eb;
+}
+.btn-test{
+  background:var(--accent);
+  color:white;
+}
+.result{
+  margin-top:16px;
+  border-radius:8px;
+  padding:12px;
+  font-size:14px;
+  background:rgba(0,0,0,0.05);
+  word-break:break-word;
+}
+.status{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:999px;
+  font-weight:600;
+  font-size:13px;
+}
+.ok{background:rgba(22,163,74,0.15);color:var(--success);}
+.err{background:rgba(220,38,38,0.15);color:var(--danger);}
+.warn{background:rgba(37,99,235,0.15);color:var(--accent);}
+@media (max-width:560px){
+  .card{padding:18px;}
+  input[type="url"]{font-size:14px;}
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>🔍 Kiểm tra lỗi CORS</h1>
+  <div class="input-row">
+    <input id="urlInput" type="url" placeholder="Nhập URL, ví dụ: https://api.example.com/data" />
+    <button id="pasteBtn" class="btn btn-paste">Dán</button>
+    <button id="testBtn" class="btn btn-test">Test</button>
+  </div>
+  <div id="result" class="result" hidden></div>
+</div>
+
+<script>
+const urlInput = document.getElementById('urlInput');
+const pasteBtn = document.getElementById('pasteBtn');
+const testBtn = document.getElementById('testBtn');
+const resultEl = document.getElementById('result');
+
+function showResult(type, message) {
+  resultEl.hidden = false;
+  resultEl.innerHTML = `<span class="status ${type}">${type.toUpperCase()}</span> ${message}`;
+}
+
+function sanitizeUrl(input){
+  if (!input) return null;
+  input = input.trim();
+  try {
+    if (!/^https?:\/\//i.test(input)) input = 'https://' + input;
+    return new URL(input).toString();
+  } catch { return null; }
+}
+
+async function checkCors(url){
+  try {
+    const resp = await fetch(url, {mode:'cors'});
+    const aca = resp.headers.get('access-control-allow-origin');
+    if (aca) {
+      showResult('ok', `Server cho phép CORS: <b>${aca}</b> (HTTP ${resp.status})`);
+    } else {
+      showResult('warn', `Fetch thành công (HTTP ${resp.status}) nhưng không thấy header Access-Control-Allow-Origin.`);
+    }
+  } catch (e) {
+    showResult('err', `Fetch lỗi: có thể bị chặn bởi CORS hoặc URL không truy cập được.<br><small>${e}</small>`);
+  }
+}
+
+testBtn.onclick = () => {
+  const url = sanitizeUrl(urlInput.value);
+  if (!url) return showResult('err', 'URL không hợp lệ.');
+  showResult('warn', 'Đang kiểm tra...');
+  checkCors(url);
+};
+
+pasteBtn.onclick = async () => {
+  try {
+    const text = await navigator.clipboard.readText();
+    if (text) urlInput.value = text.trim();
+    else showResult('warn', 'Clipboard trống.');
+  } catch {
+    showResult('err', 'Không thể đọc clipboard — có thể trình duyệt chưa cấp quyền.');
+  }
+};
+
+urlInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') testBtn.click();
+});
+</script>
+</body>
+</html>
