@@ -5,7 +5,7 @@
   "iconURL": "https://repo.cypwn.xyz/assets/images/cypwn_small.png",
   "website": "https://ipa.cypwn.xyz",
   "sourceURL": "https://ipa.cypwn.xyz/cypwn.json",
-  "tintColor": "DB7F33",
+  "tintColor": "FFC300",
   "featuredApps": [
     "Ed0ardo.CyPwnStore"
   ],
@@ -13,6 +13,21 @@
     "btc": "bc1qy5xq4xdw4w83gpauxskassck4rwvpe7xdlvtws"
   },
   "apps": [
+    {
+      "name": "discord",
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "discord x CyPwn",
+      "version": "301.0",
+      "versionDate": "2025-10-19",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
+      "localizedDescription": "BTLoader + Ketu",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
+      "tintColor": "FFC300",
+      "size": 94371840,
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/discord/discord-0.png"
+      ]
+    },
     {
       "name": "Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4",
       "bundleIdentifier": "com.google.ios.youtube",
@@ -3098,6 +3113,16 @@
     }
   ],
   "news": [
+    {
+      "title": "discord now available!",
+      "identifier": "cypwn.discord.301.0",
+      "caption": "discord added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
+      "date": "2025-10-19",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
     {
       "title": "Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4 now available!",
       "identifier": "cypwn.Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.20.10.4",
