@@ -79,7 +79,7 @@ main((json) => {
     installAppAlert.addAction({
         title: "Copy link",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Install App", () => copyText(app.downloadURL))
+        handler: () => showAddToAltStoreAlert(json.name, "Copy", () => copyText(app.downloadURL))
     });
     installAppAlert.addAction({
         title: "Download IPA",
