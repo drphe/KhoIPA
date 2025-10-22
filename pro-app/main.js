@@ -390,7 +390,7 @@
           if (bundleId && app !== {}) createPopupApp(app);
         }
       });
-    }, 2000);
+    }, 200000);
     const container = document.querySelector(".infinite-scroll-content");
     container.addEventListener("scroll", () => {
       const scrollTop = container.scrollTop;

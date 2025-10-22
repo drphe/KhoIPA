@@ -98,18 +98,34 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         e.target.innerText = "View All Apps";
       }
     });
-
+    async function run() {
+      appsContainer.innerHTML = "";
+      appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
+      const tasks = [];
+      for (let i = 0; i < 5; i++) {
+        tasks.push(insertAppLoading());
+      }
+      await Promise.all(tasks); // Chờ tất cả hoàn tất
+    }
     // search box
     const searchBox = document.getElementById("filterText");
-    searchBox.addEventListener("input", () => {
+    searchBox.addEventListener("input", async () => {
+      await run();
       const keyword = searchBox.value.toLowerCase();
       filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
       if (filteredApps.length === 0) {
         filteredApps = [...allApps];
       }
+      // Nếu có kết quả
       currentIndex = 0;
-      appsContainer.innerHTML = "";
+      setTimeout(() => {
+        appsContainer.innerHTML = "";
       loadMoreApps();
+        appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+        loadMoreApps();
+      }, 500);
+
+
     });
 
     function loadMoreApps() {
@@ -127,7 +143,30 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     });
 
     loadMoreApps();
-
+  // hàm chèn loadingApp
+  async function insertAppLoading(id = "apps-list", position = "beforeend") {
+    document.getElementById(id).insertAdjacentHTML(position, `<div class="app-container">
+<div class="app-header-container">
+    <a href="#" class="app-header-link">
+    <div class="app-header-inner-container">
+        <div class="app-header">
+            <div class="content">
+                <div class="skeleton-block"></div>
+                <div class="right">
+                    <div class="text">
+                        <p class="title">--- --- ---</p>
+                        <p class="subtitle">------</p>
+                    </div>
+                        <button class="uibutton">---</button>
+                    </div>
+                </div>
+            <div class="background" ></div>
+        </div>
+    </div>
+    </a>
+    </div></div>
+	`);
+  }
     function insertAppHeader(app) {
       const baseHost = window.location.origin;
       const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
