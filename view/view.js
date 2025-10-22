@@ -129,7 +129,7 @@ searchBox.style.backgroundColor = "var(--color-transparent)";
 
     // click button
     document.getElementById('search').addEventListener("click", (e) => {
-
+      e.preventDefault();
       if (e.target.innerText == "View All Apps") {
         appsContainer.style.display = 'block';
         featured.style.display = 'none';
