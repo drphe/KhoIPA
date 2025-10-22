@@ -43,7 +43,7 @@
    * @param {number} itemWidth - Chiều rộng cố định của mỗi slide (không tính margin). Mặc định: 300.
    * @param {number} containerWidth - Chiều rộng của khu vực chứa swiper. Mặc định: window.innerWidth.
    */
-  function swiperNews(id = "swiper-wrapper") {
+  function swiperNews(id = "swiper-wrapper", itemWidth) {
     const swiperWrapper = document.getElementById(id);
     if (!swiperWrapper) {
       console.error(`Element with id "${id}" not found.`);
@@ -55,7 +55,7 @@
     if (slides.length === 0) return;
     const slideStyle = getComputedStyle(slides[0]);
     const slideMarginRight = parseInt(slideStyle.marginRight || '0');
-    const itemWidth =  slides[0].getBoundingClientRect().width
+	if(!itemWidth) itemWidth =  slides[0].getBoundingClientRect().width
     const slideWidth = itemWidth + slideMarginRight;
     const visibleSlides = Math.floor(containerWidth / slideWidth);
     const maxIndex = slides.length - visibleSlides;
@@ -603,7 +603,7 @@
       </div>
       
       <div data-v-f4015073="" class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
-        <div class="swiper-wrapper" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(15px, 0px, 0px);">
+        <div class="swiper-wrapper" id="swiper-info" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(15px, 0px, 0px);">
           <div data-v-f4015073="" class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" style="margin-right: 10px;">
             <div data-v-f4015073="" class="block inset app-view-info-swiper__card">
               <div data-v-f4015073="" class="block-title block-title-medium" medium="true">${app.version}</div> Version
@@ -640,6 +640,9 @@
     div.style.display = 'block';
     setTime = setTimeout(() => div.classList.add("modal-in"), 200);
     swiperNews("swiper-screenshot");
+    swiperNews("swiper-info", 150);
+
+
     const closeBtn = div.querySelector('.popup-close');
     const moreBtn = div.querySelector('.app-sign-additional-actions-button-ui');
     if (moreBtn) {
@@ -674,7 +677,7 @@
       div.classList.add("modal-out");
       setTime = setTimeout(() => div.remove(), 200);
     });
-    document.addEventListener('click', () => {});
+    document.addEventListener('click', () => {});//
 
   }
 
