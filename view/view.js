@@ -102,7 +102,7 @@ main(json => {
   searchWrapper.appendChild(searchIcon);
   appsContainer.before(searchWrapper);
 
-    searchBox.addEventListener("keydown", asyn(event) => {
+    searchBox.addEventListener("keydown", async(event) => {
   if (event.key === "Enter") {
     await run();
     const keyword = searchBox.value.toLowerCase();
