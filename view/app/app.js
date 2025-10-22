@@ -84,13 +84,20 @@ main((json) => {
     installAppAlert.addAction({
         title: "Download IPA",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
+        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => downloadFile(app.downloadURL))
     });
     installAppAlert.addAction({
         title: "Cancel",
         style: 'cancel',
     });
-    
+    function downloadFile(url) {
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = ""; // Safari sẽ mở trình tải
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
     document.querySelectorAll("a.install").forEach(button => {
         button.addEventListener("click", event => {
             event.preventDefault();
