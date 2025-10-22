@@ -83,24 +83,14 @@ main(json => {
 
   // Tạo wrapper chứa input và icon
   const searchWrapper = document.createElement("div");
-  searchWrapper.style.position = "sticky";
-  searchWrapper.style.top = "125px";
-  searchWrapper.style.maxWidth = "400px";
-  searchWrapper.style.margin = "10px 20px";
-  searchWrapper.style.display = "none";
-  searchWrapper.style.zIndex = "10000";
+  searchWrapper.style.cssText = "display: block;z-index: 10000;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;"
 
   // Tạo ô tìm kiếm
   const searchBox = document.createElement("input");
   searchBox.type = "text";
   searchBox.placeholder = "Enter app name...";
   searchBox.className = "form-control mb-3";
-  searchBox.style.width = "100%";
-  searchBox.style.paddingRight = "35px"; // chừa chỗ cho icon
-  searchBox.style.boxSizing = "border-box";
-  searchBox.style.borderRadius = "20px"; // 
-  searchBox.autocomplete = "off";
-searchBox.style.backgroundColor = "var(--color-transparent)";
+  searchBox.style.cssText = "width: 100%; padding-right: 35px; box-sizing: border-box; border-radius: 20px; background-color: var(--color-transparent);"
 
   // Tạo icon kính lúp
   const searchIcon = document.createElement("span");

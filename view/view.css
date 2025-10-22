@@ -53,4 +53,9 @@ input[type="text"]:focus {
   box-shadow: 0 0 6px rgba(0,123,255,0.3);
   outline: none;
 }
-
+@media (prefers-color-scheme: dark) {
+     input {
+        background-color: rgba(255, 255, 255, 0.07);
+        color: white;
+    }
+}
