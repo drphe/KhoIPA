@@ -1,5 +1,5 @@
 import { sourceURL, base64Convert } from "../common/modules/constants.js";
-import { formatString, open, setUpBackButton , json } from "../common/modules/utilities.js";
+import { formatString, open, setUpBackButton , json , isValidHTTPURL } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";
@@ -20,7 +20,7 @@ main(json => {
     // Set "View All News" link
     document.querySelector("#news a").href = `./news/?source=${base64Convert(sourceURL)}`;
     // Set "View All Apps" link
-    document.querySelector("#apps a").href = `./all-apps/?source=${base64Convert(sourceURL)}`;
+    //document.querySelector("#apps a").href = `./all-apps/?source=${base64Convert(sourceURL)}`;
 
     // Set tab title
     document.title = json.name;
@@ -56,7 +56,7 @@ main(json => {
     if (json.featuredApps) {
         json.apps
             .filter(app => json.featuredApps.includes(app.bundleIdentifier))
-            .forEach(app => document.getElementById("apps").insertAdjacentHTML("beforeend", AppHeader(app)));
+            .forEach(app => document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app)));
     } else {
         let count = 1;
         json.apps.forEach(app => {
@@ -66,11 +66,121 @@ main(json => {
             // Ignore beta apps
             if (app.beta) return;
     
-            document.getElementById("apps").insertAdjacentHTML("beforeend", AppHeader(app));
+            document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app));
     
             count++;
         });
     }
+
+
+  const allApps = json.apps.filter(app => !app.beta);
+  let filteredApps = [...allApps];
+  let currentIndex = 0;
+  const appsPerLoad = 4;
+      const appsTitle = document.getElementById('apps-title');
+      const appsContainer = document.getElementById('apps-list');
+      const featured = document.getElementById('featured');
+
+    // click button
+    document.getElementById('search').addEventListener("click", (e) => {
+
+      if (e.target.innerText == "View All Apps") {
+        appsContainer.style.display = 'block';
+        featured.style.display = 'none';
+        appsTitle.innerHTML = `${allApps.length} Apps`;
+        e.target.innerText = "Close";
+      } else {
+        featured.style.display = 'block';
+        appsContainer.style.display = 'none';
+        appsTitle.innerHTML = "Featured Apps";
+        e.target.innerText = "View All Apps";
+      }
+    });
+
+  // Tạo wrapper chứa input và icon
+  const searchWrapper = document.createElement("div");
+  searchWrapper.style.position = "relative";
+  searchWrapper.style.maxWidth = "400px";
+  searchWrapper.style.margin = "10px 20px";
+
+  // Tạo ô tìm kiếm
+  const searchBox = document.createElement("input");
+  searchBox.type = "text";
+  searchBox.placeholder = "Tìm theo tên app...";
+  searchBox.className = "form-control mb-3";
+  searchBox.style.width = "100%";
+  searchBox.style.paddingRight = "35px"; // chừa chỗ cho icon
+  searchBox.style.boxSizing = "border-box";
+  searchBox.style.borderRadius = "20px"; // 
+  searchBox.autocomplete = "off";
+
+  // Tạo icon kính lúp
+  const searchIcon = document.createElement("span");
+  searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
+  searchIcon.style.position = "absolute";
+  searchIcon.style.right = "10px";
+  searchIcon.style.top = "50%";
+  searchIcon.style.transform = "translateY(-50%)";
+  searchIcon.style.pointerEvents = "none";
+  searchIcon.style.color = "#888";
+
+  // Gắn các phần tử
+  searchWrapper.appendChild(searchBox);
+  searchWrapper.appendChild(searchIcon);
+  appsContainer.before(searchWrapper);
+
+    searchBox.addEventListener("input", () => {
+        const keyword = searchBox.value.toLowerCase();
+        filteredApps = allApps.filter(app =>
+            app.name?.toLowerCase().includes(keyword)
+        );
+        currentIndex = 0;
+        appsContainer.innerHTML = "";
+        loadMoreApps();
+    });
+
+    function loadMoreApps() {
+        const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
+        nextApps.forEach(app => {
+            let html = `
+            <div class="app-container">
+                ${AppHeader(app, "..")}
+                <p class="subtitle">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
+                <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
+
+            if (app.screenshots) {
+                html += `<div class="screenshots">`;
+                for (let i = 0; i < app.screenshots.length && i < 2; i++) {
+                    const screenshot = app.screenshots[i];
+                    if (!screenshot) continue;
+                    if (screenshot.imageURL) html += `<img src="${screenshot.imageURL}" class="screenshot">`;
+                    else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
+                }
+                html += `</div>`;
+            } else if (app.screenshotURLs) {
+                html += `<div class="screenshots">`;
+                for (let i = 0; i < app.screenshotURLs.length && i < 2; i++) {
+                    if (app.screenshotURLs[i]) html += `<img src="${app.screenshotURLs[i]}" class="screenshot">`;
+                }
+                html += `</div>`;
+            }
+
+            html += `</div>`;
+            appsContainer.insertAdjacentHTML("beforeend", html);
+        });
+
+        currentIndex += appsPerLoad;
+    }
+
+    // Tải thêm khi cuộn gần cuối
+    window.addEventListener("scroll", () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+            loadMoreApps();
+        }
+    });
+
+    loadMoreApps(); // Tải lần đầu
+
 
     // 
     // About
