@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tải file IPA có tiến độ</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; }
+  #progressContainer { width: 100%; background: #eee; height: 10px; border-radius: 5px; overflow: hidden; }
+  #progressBar { height: 10px; background: #007aff; width: 0%; transition: width 0.2s; }
+  #percent { margin-top: 5px; font-size: 14px; }
+  #saveBtn { display: none; margin-top: 15px; padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 5px; }
+</style>
+</head>
+<body>
+
+<h3>Tải file IPA</h3>
+<div id="progressContainer"><div id="progressBar"></div></div>
+<div id="percent">0%</div>
+<button id="saveBtn">Lưu file</button>
+
+<script>
+async function downloadIPA(url, filename = "app.ipa") {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error("Lỗi tải file");
+
+  const total = +response.headers.get("Content-Length");
+  const reader = response.body.getReader();
+  let received = 0;
+  const chunks = [];
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+    received += value.length;
+    const percent = ((received / total) * 100).toFixed(1);
+    document.getElementById("progressBar").style.width = percent + "%";
+    document.getElementById("percent").textContent = percent + "%";
+  }
+
+  const blob = new Blob(chunks);
+  const blobUrl = URL.createObjectURL(blob);
+
+  const saveBtn = document.getElementById("saveBtn");
+  saveBtn.style.display = "inline-block";
+  saveBtn.onclick = () => {
+    const a = document.createElement("a");
+    a.href = blobUrl;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(blobUrl);
+  };
+}
+
+// 🔹 Gọi thử
+downloadIPA("https://example.com/path/to/app.ipa");
+</script>
+</body>
+</html>
