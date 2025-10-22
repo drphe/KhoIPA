@@ -81,25 +81,10 @@ main(json => {
       const appsContainer = document.getElementById('apps-list');
       const featured = document.getElementById('featured');
 
-    // click button
-    document.getElementById('search').addEventListener("click", (e) => {
-
-      if (e.target.innerText == "View All Apps") {
-        appsContainer.style.display = 'block';
-        featured.style.display = 'none';
-        appsTitle.innerHTML = `${allApps.length} Apps`;
-        e.target.innerText = "Close";
-      } else {
-        featured.style.display = 'block';
-        appsContainer.style.display = 'none';
-        appsTitle.innerHTML = "Featured Apps";
-        e.target.innerText = "View All Apps";
-      }
-    });
-
   // Tạo wrapper chứa input và icon
   const searchWrapper = document.createElement("div");
-  searchWrapper.style.position = "relative";
+  searchWrapper.style.position = "sticky";
+  searchWrapper.style.top = "125px";
   searchWrapper.style.maxWidth = "400px";
   searchWrapper.style.margin = "10px 20px";
 
@@ -113,6 +98,7 @@ main(json => {
   searchBox.style.boxSizing = "border-box";
   searchBox.style.borderRadius = "20px"; // 
   searchBox.autocomplete = "off";
+searchBox.style.backgroundColor = "var(--color-bg-dark-secondary)";
 
   // Tạo icon kính lúp
   const searchIcon = document.createElement("span");
@@ -139,12 +125,30 @@ main(json => {
         loadMoreApps();
     });
 
+    // click button
+    document.getElementById('search').addEventListener("click", (e) => {
+
+      if (e.target.innerText == "View All Apps") {
+        appsContainer.style.display = 'block';
+        featured.style.display = 'none';
+        appsTitle.innerHTML = `${allApps.length} Apps`;
+        e.target.innerText = "Close";
+	appsContainer.style.display = "block";
+      } else {
+	appsContainer.style.display = "none";
+        featured.style.display = 'block';
+        appsContainer.style.display = 'none';
+        appsTitle.innerHTML = "Featured Apps";
+        e.target.innerText = "View All Apps";
+      }
+    });
+
     function loadMoreApps() {
         const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
         nextApps.forEach(app => {
             let html = `
             <div class="app-container">
-                ${AppHeader(app, "..")}
+                ${AppHeader(app, ".")}
                 <p class="subtitle">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
                 <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
 
