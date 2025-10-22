@@ -16,7 +16,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     // alert install
     const installAppAlert = new UIAlert({
         title: `How to Install?`,
-        message: "Bạn sẽ tải về 'hồ sơ cấu hình' bằng cách nhấn Cho phép. Truy cập Cài đặt -> Cài đặt chung -> Quản lý VPN & Thiết bị -> Cài đặt hồ sơ  -> Done."
+        message: "Select Share Button ->Add To Home Screen  -> Done."
     });
     installAppAlert.addAction({
         title: "Install",
