@@ -16,15 +16,10 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     // alert install
     const installAppAlert = new UIAlert({
         title: `How to Install?`,
-        message: "Select Share Button ->Add To Home Screen  -> Done."
+        message: "Select Share Button ->Add To Home Screen  -> Done. "
     });
     installAppAlert.addAction({
-        title: "Install",
-        style: 'default',
-        handler: () =>  open(`upload/setup.mobileconfig`)
-    });
-    installAppAlert.addAction({
-        title: "Cancel",
+        title: "Done",
         style: 'cancel',
     });
     document.querySelectorAll("a.install").forEach(button => {
