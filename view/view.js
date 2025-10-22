@@ -87,6 +87,7 @@ main(json => {
   searchWrapper.style.top = "125px";
   searchWrapper.style.maxWidth = "400px";
   searchWrapper.style.margin = "10px 20px";
+  searchWrapper.style.display = "none";
 
   // Tạo ô tìm kiếm
   const searchBox = document.createElement("input");
