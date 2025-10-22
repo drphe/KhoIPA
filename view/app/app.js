@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL, base64Convert } from "../../common/modules/constants.js";
-import { formatString, insertSpaceInCamelString, insertSpaceInSnakeString, formatVersionDate, open, setTintColor, isValidHTTPURL, showAddToAltStoreAlert, json } from "../../common/modules/utilities.js";
+import { formatString, insertSpaceInCamelString, insertSpaceInSnakeString, formatVersionDate, open, setTintColor, isValidHTTPURL, showAddToAltStoreAlert, json, showUIAlert } from "../../common/modules/utilities.js";
 import { main } from "../../common/modules/main.js";
 import { AppPermissionItem } from "../../common/components/AppPermissionItem.js";
 import UIAlert from "../../common/vendor/uialert.js/uialert.js";
@@ -72,14 +72,14 @@ main((json) => {
         title: `Get "${app.name}"`
     });
     installAppAlert.addAction({
-        title: "Install via AltStore",
-        style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`altstore://install?url=${app.downloadURL}`))
-    });
-    installAppAlert.addAction({
         title: "Install via Esign",
         style: 'default',
         handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
+    });
+    installAppAlert.addAction({
+        title: "Copy link",
+        style: 'default',
+        handler: () => showAddToAltStoreAlert(json.name, "Install App", () => copyText(app.downloadURL))
     });
     installAppAlert.addAction({
         title: "Download IPA",
@@ -93,10 +93,20 @@ main((json) => {
     function downloadFile(url) {
   const a = document.createElement("a");
   a.href = url;
+  a.target ="_blank";
   a.download = ""; // Safari sẽ mở trình tải
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
+}
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    showUIAlert("✅ Success","Đã sao chép vào clipboard!");
+  } catch (err) {
+    showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
+    
+  }
 }
     document.querySelectorAll("a.install").forEach(button => {
         button.addEventListener("click", event => {
