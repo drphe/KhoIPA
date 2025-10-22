@@ -83,7 +83,7 @@ main(json => {
 
   // Tạo wrapper chứa input và icon
   const searchWrapper = document.createElement("div");
-  searchWrapper.style.cssText = "display: block;z-index: 10000;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;"
+  searchWrapper.style.cssText = "display: none;z-index: 10000;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;margin: 10px;"
 
   // Tạo ô tìm kiếm
   const searchBox = document.createElement("input");
@@ -95,7 +95,7 @@ main(json => {
   // Tạo icon kính lúp
   const searchIcon = document.createElement("span");
   searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-  searchIcon.style.cssText="position: absolute;right: 1.7rem;top: 60%;transform: translateY(-50%);pointer-events: none;color: rgb(136, 136, 136);";
+  searchIcon.style.cssText="position: absolute;right: 1rem;top: 60%;transform: translateY(-50%);pointer-events: none;color: rgb(136, 136, 136);";
 
   // Gắn các phần tử
   searchWrapper.appendChild(searchBox);
