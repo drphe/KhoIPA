@@ -1,59 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Tải file IPA có tiến độ</title>
-<style>
-  body { font-family: sans-serif; padding: 20px; }
-  #progressContainer { width: 100%; background: #eee; height: 10px; border-radius: 5px; overflow: hidden; }
-  #progressBar { height: 10px; background: #007aff; width: 0%; transition: width 0.2s; }
-  #percent { margin-top: 5px; font-size: 14px; }
-  #saveBtn { display: none; margin-top: 15px; padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 5px; }
-</style>
+<meta charset="utf-8">
+<title>Tạo mobileconfig bằng JS</title>
 </head>
 <body>
+  <h3>Tạo .mobileconfig bằng JS</h3>
+  <label>URL (ví dụ esign://... hoặc https://...):</label><br>
+  <input id="url" style="width:90%" value="https://example.com/open-me.html"><br>
+  <label>Tên hiển thị (Label):</label><br>
+  <input id="label" style="width:90%" value="Open in Safari"><br>
+  <label>Icon PNG (tuỳ chọn, phải CORS-allow):</label><br>
+  <input id="iconUrl" style="width:90%" placeholder="https://.../icon.png"><br><br>
 
-<h3>Tải file IPA</h3>
-<div id="progressContainer"><div id="progressBar"></div></div>
-<div id="percent">0%</div>
-<button id="saveBtn">Lưu file</button>
+  <button id="make">Tạo & Tải .mobileconfig</button>
+  <button id="open">Tạo & Mở (thử cài)</button>
 
 <script>
-async function downloadIPA(url, filename = "app.ipa") {
-  const response = await fetch(url);
-  if (!response.ok) throw new Error("Lỗi tải file");
-
-  const total = +response.headers.get("Content-Length");
-  const reader = response.body.getReader();
-  let received = 0;
-  const chunks = [];
-
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    chunks.push(value);
-    received += value.length;
-    const percent = ((received / total) * 100).toFixed(1);
-    document.getElementById("progressBar").style.width = percent + "%";
-    document.getElementById("percent").textContent = percent + "%";
-  }
-
-  const blob = new Blob(chunks);
-  const blobUrl = URL.createObjectURL(blob);
-
-  const saveBtn = document.getElementById("saveBtn");
-  saveBtn.style.display = "inline-block";
-  saveBtn.onclick = () => {
-    const a = document.createElement("a");
-    a.href = blobUrl;
-    a.download = filename;
-    a.click();
-    URL.revokeObjectURL(blobUrl);
-  };
+// Utility: tạo UUID v4
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+    const r = (crypto.getRandomValues(new Uint8Array(1))[0] & 15) >> (c === 'x' ? 0 : 0);
+    const v = c === 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  }).toUpperCase();
 }
 
-// 🔹 Gọi thử
-downloadIPA("https://release-assets.githubusercontent.com/github-production-release-asset/1071551464/042f0d86-0d91-4925-b1d1-e2f15b57af17?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-22T14%3A24%3A26Z&rscd=attachment%3B+filename%3DAdobe_Premiere_Video_Editor_v25_5_0.ipa&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-22T13%3A23%3A47Z&ske=2025-10-22T14%3A24%3A26Z&sks=b&skv=2018-11-09&sig=8u1jyrl5CXSN4%2BZ3aPOqm5llSIBahdQHlPM6cKM8UJM%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc2MTE0MjAzNCwibmJmIjoxNzYxMTQwMjM0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.bXFCTNDrd7NyMvLAKEnbDieA75SsfJF05tVUq8DindQ&response-content-disposition=attachment%3B%20filename%3DAdobe_Premiere_Video_Editor_v25_5_0.ipa&response-content-type=application%2Foctet-stream");
+// Lấy icon và trả về base64 string (hoặc null nếu ko cung cấp)
+async function fetchIconAsBase64(iconUrl) {
+  if (!iconUrl) return null;
+  try {
+    const res = await fetch(iconUrl, {mode: 'cors'});
+    if (!res.ok) throw new Error('Không tải được icon');
+    const blob = await res.blob();
+    // đọc Blob thành base64
+    return await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        // reader.result là "data:<type>;base64,AAAA..."
+        const dataUrl = String(reader.result);
+        // Lấy phần base64 thuần túy:
+        const comma = dataUrl.indexOf(',');
+        resolve(dataUrl.slice(comma + 1));
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+  } catch (e) {
+    console.warn('fetchIconAsBase64 lỗi:', e);
+    return null;
+  }
+}
+
+// Tạo nội dung .mobileconfig (string). iconBase64 là chuỗi base64 thuần túy (không có tiền tố data:)
+function buildMobileconfigXml({targetUrl, displayLabel = 'WebClip', iconBase64 = null}) {
+  const payloadUUID = uuidv4();
+  const topUUID = uuidv4();
+  const iconBlock = iconBase64 ? `<key>Icon</key><data>\n${iconBase64}\n</data>` : '';
+  // Nếu URL là custom-scheme (esign://...), WebClip vẫn lưu URL đó.
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>FullScreen</key><true/>
+      <key>IsRemovable</key><true/>
+      <key>Label</key>
+      <string>${escapeXml(displayLabel)}</string>
+      <key>PayloadDescription</key>
+      <string>WebClip - shortcut created by site</string>
+      <key>PayloadDisplayName</key>
+      <string>WebClip</string>
+      <key>PayloadIdentifier</key>
+      <string>com.example.webclip.${payloadUUID}</string>
+      <key>PayloadType</key>
+      <string>com.apple.webClip.managed</string>
+      <key>PayloadUUID</key>
+      <string>${payloadUUID}</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>Precomposed</key><true/>
+      <key>URL</key>
+      <string>${escapeXml(targetUrl)}</string>
+      ${iconBlock}
+    </dict>
+  </array>
+  <key>PayloadDisplayName</key>
+  <string>${escapeXml(displayLabel)}</string>
+  <key>PayloadIdentifier</key>
+  <string>com.example.webclip.top.${topUUID}</string>
+  <key>PayloadRemovalDisallowed</key><false/>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadUUID</key>
+  <string>${topUUID}</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+</dict>
+</plist>`;
+}
+
+// Escape XML special chars
+function escapeXml(unsafe) {
+  return String(unsafe)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+// Tạo Blob và trả về objectURL
+function makeMobileconfigBlobUrl(xmlString) {
+  // MIME type hợp lý cho mobileconfig
+  const blob = new Blob([xmlString], {type: 'application/x-apple-aspen-config'});
+  return URL.createObjectURL(blob);
+}
+
+// Tải file .mobileconfig xuống
+function downloadBlobUrl(url, filename = 'webclip.mobileconfig') {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+// Thử mở objectURL trực tiếp (ghì window.location) để Safari có thể show cài đặt
+function openBlobUrl(url) {
+  // Mở trong tab mới, hoặc thay window.location để navigation
+  window.location.href = url; // thử điều hướng tới objectURL
+}
+
+// Nút xử lý
+document.getElementById('make').addEventListener('click', async () => {
+  const targetUrl = document.getElementById('url').value.trim();
+  const label = document.getElementById('label').value.trim() || 'WebClip';
+  const iconUrl = document.getElementById('iconUrl').value.trim();
+  const iconBase64 = await fetchIconAsBase64(iconUrl);
+  const xml = buildMobileconfigXml({targetUrl, displayLabel: label, iconBase64});
+  const objUrl = makeMobileconfigBlobUrl(xml);
+  downloadBlobUrl(objUrl, `${label.replace(/\s+/g,'_')}.mobileconfig`);
+  // giải phóng sau 30s
+  setTimeout(() => URL.revokeObjectURL(objUrl), 30000);
+});
+
+document.getElementById('open').addEventListener('click', async () => {
+  const targetUrl = document.getElementById('url').value.trim();
+  const label = document.getElementById('label').value.trim() || 'WebClip';
+  const iconUrl = document.getElementById('iconUrl').value.trim();
+  const iconBase64 = await fetchIconAsBase64(iconUrl);
+  const xml = buildMobileconfigXml({targetUrl, displayLabel: label, iconBase64});
+  const objUrl = makeMobileconfigBlobUrl(xml);
+  // Thử điều hướng tới objectURL để iOS hiển thị dialogue cài profile
+  openBlobUrl(objUrl);
+  // Nếu không hoạt động, hãy nhắc user tải file rồi mở từ Files app / Mail
+  setTimeout(() => URL.revokeObjectURL(objUrl), 60000);
+});
 </script>
 </body>
 </html>
