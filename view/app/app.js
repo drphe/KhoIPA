@@ -77,9 +77,9 @@ main((json) => {
         handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
     });
     installAppAlert.addAction({
-        title: "Copy link",
+        title: "Copy Link",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Copy", () => copyText(app.downloadURL))
+        handler: () => showAddToAltStoreAlert(json.name, "Copy Link", () => copyText(app.downloadURL))
     });
     installAppAlert.addAction({
         title: "Download IPA",
