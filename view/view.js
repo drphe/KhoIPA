@@ -105,12 +105,7 @@ searchBox.style.backgroundColor = "var(--color-transparent)";
   // Tạo icon kính lúp
   const searchIcon = document.createElement("span");
   searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-  searchIcon.style.position = "absolute";
-  searchIcon.style.right = "10px";
-  searchIcon.style.top = "50%";
-  searchIcon.style.transform = "translateY(-50%)";
-  searchIcon.style.pointerEvents = "none";
-  searchIcon.style.color = "#888";
+  searchIcon.style.cssText="position: absolute;right: 1.7rem;top: 60%;transform: translateY(-50%);pointer-events: none;color: rgb(136, 136, 136);";
 
   // Gắn các phần tử
   searchWrapper.appendChild(searchBox);
