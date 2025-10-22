@@ -88,6 +88,7 @@ main(json => {
   searchWrapper.style.maxWidth = "400px";
   searchWrapper.style.margin = "10px 20px";
   searchWrapper.style.display = "none";
+  searchWrapper.style.zIndex = "10000";
 
   // Tạo ô tìm kiếm
   const searchBox = document.createElement("input");
@@ -99,7 +100,7 @@ main(json => {
   searchBox.style.boxSizing = "border-box";
   searchBox.style.borderRadius = "20px"; // 
   searchBox.autocomplete = "off";
-searchBox.style.backgroundColor = "var(--color-bg-dark-secondary)";
+searchBox.style.backgroundColor = "var(--color-transparent)";
 
   // Tạo icon kính lúp
   const searchIcon = document.createElement("span");
