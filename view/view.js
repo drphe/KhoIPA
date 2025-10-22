@@ -93,7 +93,7 @@ main(json => {
   // Tạo ô tìm kiếm
   const searchBox = document.createElement("input");
   searchBox.type = "text";
-  searchBox.placeholder = "Tìm theo tên app...";
+  searchBox.placeholder = "Enter app name...";
   searchBox.className = "form-control mb-3";
   searchBox.style.width = "100%";
   searchBox.style.paddingRight = "35px"; // chừa chỗ cho icon
