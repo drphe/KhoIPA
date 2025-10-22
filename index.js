@@ -109,25 +109,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     }
     // search box
     const searchBox = document.getElementById("filterText");
-    searchBox.addEventListener("input", async () => {
-      await run();
-      const keyword = searchBox.value.toLowerCase();
-      filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
-      if (filteredApps.length === 0) {
-        filteredApps = [...allApps];
-      }
-      // Nếu có kết quả
-      currentIndex = 0;
-      setTimeout(() => {
-        appsContainer.innerHTML = "";
-      loadMoreApps();
-        appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-        loadMoreApps();
-      }, 500);
-
-
-    });
-
 searchBox.addEventListener("keydown", async (event) => {
   if (event.key === "Enter") {
     await run();
