@@ -107,8 +107,8 @@ export function showUIAlert(title, message) {
 
 export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
     const uiAlert = new UIAlert({
-        title: `Add "${sourceName}" to AltStore / Esign?`,
-        message: "If you have AltStore beta or Esign, add this source so you'll receive notifications when app updates are available."
+        title: `Add "${sourceName}" to Esign?`,
+        message: "If you have Esign, add this source so you'll receive notifications when app updates are available."
     });
     uiAlert.addAction({
         title: "Add to Esign",
