@@ -59,10 +59,3 @@ input[type="text"]:focus {
   outline: none;
 }
 
-/* Responsive cho thiết bị nhỏ */
-@media (max-width: 600px) {
-  input[type="text"] {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-}
