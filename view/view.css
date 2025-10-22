@@ -37,18 +37,20 @@
 }
 /* Tùy chỉnh ô input tìm kiếm */
 input[type="text"] {
-  padding: 10px 14px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  width: 100%;
-  background:transparent;
   color: var(--uialert-text-color);
-  max-width: 400px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-
+input {
+  width: 95%;
+  font-size: 1em;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--color-transparent);
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+}
 /* Hover và focus hiệu ứng */
 input[type="text"]:hover,
 input[type="text"]:focus {
