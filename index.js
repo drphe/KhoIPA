@@ -8,7 +8,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
 
 (async function main() {
-
+    document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
     // alert install
     const installAppAlert = new UIAlert({
         title: `How to Install?`,
