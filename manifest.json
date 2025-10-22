@@ -1,0 +1,16 @@
+{
+  "name": "Kh0IPA",
+  "short_name": "Kh0IPA",
+  "description": "Kh0IPA Mod",
+  "lang": "en-US",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "./icon/logo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}
