@@ -120,7 +120,16 @@ function makeMobileconfigBlobUrl(xmlString) {
 }
 
 // Tải file .mobileconfig xuống
-function downloadBlobUrl(url, filename = 'webclip.mobileconfig') {
+async function downloadBlobUrl(url, filename = 'webclip.mobileconfig') {
+  async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(url);
+    alert("✅ Đã sao chép vào clipboard!");
+  } catch (err) {
+    alert("❌ Lỗi: Không thể sao chép!");
+    console.error(err);
+  }
+}
   const a = document.createElement('a');
   a.href = url;
   a.download = filename;
