@@ -35,7 +35,10 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     });
 
 
-    const fetchedSources = (await Promise.all(sources.map(url => fetchSource(url)))).filter(Boolean);
+    const fetchedSources = await Promise.all(sources.map(async url => {
+      const source = await fetchSource(url);
+      return source || null;
+    }));
     const fetchedEditorSources = await Promise.all(editorsources.map(async url => {
       const source = await fetchSource(url);
       return source || null;
