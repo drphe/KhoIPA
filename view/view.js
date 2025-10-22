@@ -102,16 +102,59 @@ main(json => {
   searchWrapper.appendChild(searchIcon);
   appsContainer.before(searchWrapper);
 
-    searchBox.addEventListener("input", () => {
-        const keyword = searchBox.value.toLowerCase();
-        filteredApps = allApps.filter(app =>
-            app.name?.toLowerCase().includes(keyword)
-        );
-        currentIndex = 0;
-        appsContainer.innerHTML = "";
-        loadMoreApps();
-    });
+    searchBox.addEventListener("keydown", asyn(event) => {
+  if (event.key === "Enter") {
+    await run();
+    const keyword = searchBox.value.toLowerCase();
+    filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
+    if (filteredApps.length === 0) {
+      filteredApps = [...allApps];
+    }
 
+      // Nếu có kết quả
+      currentIndex = 0;
+      setTimeout(() => {
+        appsContainer.innerHTML = "";
+      loadMoreApps();
+        appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+        loadMoreApps();
+      }, 500);
+  }
+
+    });
+  // hàm chèn loadingApp
+  async function insertAppLoading(id = "apps-list", position = "beforeend") {
+    document.getElementById(id).insertAdjacentHTML(position, `<div class="app-container">
+<div class="app-header-container">
+    <a href="#" class="app-header-link">
+    <div class="app-header-inner-container">
+        <div class="app-header">
+            <div class="content">
+                <div class="skeleton-block"></div>
+                <div class="right">
+                    <div class="text">
+                        <p class="title">--- --- ---</p>
+                        <p class="subtitle">------</p>
+                    </div>
+                        <button class="uibutton">---</button>
+                    </div>
+                </div>
+            <div class="background" ></div>
+        </div>
+    </div>
+    </a>
+    </div></div>
+	`);
+  }
+    async function run() {
+      appsContainer.innerHTML = "";
+      appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
+      const tasks = [];
+      for (let i = 0; i < 5; i++) {
+        tasks.push(insertAppLoading());
+      }
+      await Promise.all(tasks); // Chờ tất cả hoàn tất
+    }
     // click button
     document.getElementById('search').addEventListener("click", (e) => {
       e.preventDefault();

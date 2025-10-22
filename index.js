@@ -9,10 +9,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
 (async function main() {
 
-     if(/iPhone|iPad|Macintosh/i.test(navigator.userAgent)){
-    	document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
-	document.getElementById("nav-bar")?.classList.add("hidden");
-    }
     // alert install
     const installAppAlert = new UIAlert({
         title: `How to Install?`,
@@ -249,11 +245,10 @@ searchBox.addEventListener("keydown", async (event) => {
         const navBarTitle = navBar.querySelector("#title");
 
         if (title.getBoundingClientRect().y < 36) {
-            navBar.classList.remove("hide-border","hidden");
+            navBar.classList.remove("hide-border");
             navBarTitle.classList.remove("hidden");
         } else {
             navBar.classList.add("hide-border");
-   	    if(/iPhone|iPad|Macintosh/i.test(navigator.userAgent)) navBar.classList.add("hidden");
             navBarTitle.classList.add("hidden");
         }
     }
