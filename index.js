@@ -157,7 +157,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     </div>` : undefined;
     }
     async function fetchSource(url) {
-        try{
         const data = await json(url);
 	const source = consolidateApps(data);
 	source.sourceURL = url
@@ -182,11 +181,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             source.tintColor = "var(--tint-color);";
             source.url = url;
         return source;
-        }catch(e){
-            console.log("Error:",url)
-        }finally {
-            return null;
-            }
+        
     }
 
     async function insertSource(source, id = "repositories", position = "beforeend", flag = false) {
