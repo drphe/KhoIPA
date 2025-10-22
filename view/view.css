@@ -8,7 +8,7 @@
   margin-bottom: 1rem;
 }
 
-#featured .app-container ,#apps-list .app-container {
+#featured>.app-container ,#apps-list .app-container {
   margin: 1em 1rem 3.25em 1rem;
 }
 
