@@ -109,34 +109,44 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     }
     // search box
     const searchBox = document.getElementById("filterText");
-// Hàm debounce
-function debounce(func, delay) {
-  let timeout;
-  return function (...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => {
-      func.apply(this, args);
-    }, delay);
-  };
-}
+    searchBox.addEventListener("input", async () => {
+      await run();
+      const keyword = searchBox.value.toLowerCase();
+      filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
+      if (filteredApps.length === 0) {
+        filteredApps = [...allApps];
+      }
+      // Nếu có kết quả
+      currentIndex = 0;
+      setTimeout(() => {
+        appsContainer.innerHTML = "";
+      loadMoreApps();
+        appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+        loadMoreApps();
+      }, 500);
 
-// Hàm xử lý tìm kiếm
-const handleSearch = async () => {
-  await run();
-  const keyword = searchBox.value.toLowerCase();
-  filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
-  if (filteredApps.length === 0) {
-    filteredApps = [...allApps];
+
+    });
+
+searchBox.addEventListener("keydown", async (event) => {
+  if (event.key === "Enter") {
+    await run();
+    const keyword = searchBox.value.toLowerCase();
+    filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
+    if (filteredApps.length === 0) {
+      filteredApps = [...allApps];
+    }
+
+      // Nếu có kết quả
+      currentIndex = 0;
+      setTimeout(() => {
+        appsContainer.innerHTML = "";
+      loadMoreApps();
+        appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+        loadMoreApps();
+      }, 500);
   }
-  currentIndex = 0;
-  appsContainer.innerHTML = "";
-  appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-  loadMoreApps();
-};
-
-// Gắn sự kiện với debounce
-searchBox.addEventListener("input", debounce(handleSearch, 500));
-
+});
 
     function loadMoreApps() {
       const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
