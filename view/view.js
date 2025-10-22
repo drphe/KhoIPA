@@ -134,9 +134,9 @@ searchBox.style.backgroundColor = "var(--color-bg-dark-secondary)";
         featured.style.display = 'none';
         appsTitle.innerHTML = `${allApps.length} Apps`;
         e.target.innerText = "Close";
-	appsContainer.style.display = "block";
+	searchWrapper.style.display = "block";
       } else {
-	appsContainer.style.display = "none";
+	searchWrapper.style.display = "none";
         featured.style.display = 'block';
         appsContainer.style.display = 'none';
         appsTitle.innerHTML = "Featured Apps";
