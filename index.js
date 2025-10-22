@@ -182,9 +182,11 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             source.tintColor = "var(--tint-color);";
             source.url = url;
         return source;
-        }catch(){
-        return null;
-        }
+        }catch(e){
+            console.log("Error:",url)
+        }finally {
+            return null;
+            }
     }
 
     async function insertSource(source, id = "repositories", position = "beforeend", flag = false) {
