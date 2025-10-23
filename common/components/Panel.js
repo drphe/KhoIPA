@@ -72,8 +72,8 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
     <div id="nav-bar">
       <div id="back-container">
         <button id="back" type="button">
-          <i class="bi bi-chevron-left"></i>
-          Back
+          <i class="bi bi-chevron-down"></i>
+          Close
         </button>
       </div>
       <div id="title" class="hidden">
@@ -187,7 +187,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
   navigationBar.querySelector("#title>img").src = app.iconURL;
   // 
   // App header
-  const appHeader = bottomPanel.querySelector("#main .app-header");
+  const appHeader = bottomPanel.querySelector("#panel-body .app-header");
   // Icon
   appHeader.querySelector("img").src = app.iconURL;
   // App name
