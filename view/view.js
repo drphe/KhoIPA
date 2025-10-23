@@ -187,7 +187,24 @@ main(json => {
     document.getElementById("featured").querySelectorAll("a.app-header-link").forEach(button => {
         button.addEventListener("click", executePanel);
     });
-    //openPanel(html, 'NỘI DUNG CHI TIẾT', '../..', "side"); // MỞ TỪ PHẢI QUA
+
+// read news
+function executeNews(url){
+    fetch(url)
+      .then(response => {
+        if (!response.ok) throw new Error("Fetch failed");
+        return response.text();
+      })
+      .then(markdown => {
+        const html = marked.parse(markdown);
+        openPanel(html, 'NỘI DUNG CHI TIẾT', '../..', "side");
+      })
+      .catch(error => {
+        console.error("Lỗi khi tải nội dung:", error);
+      });
+}
+
+
     appsContainer.addEventListener("click", executePanel);
     function executePanel(e){
         const target = e.target.closest("a.app-header-link");

@@ -6,71 +6,69 @@ import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
-export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom") => {
-    const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
-    const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
-    const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
-    const ID = "modal-popup";
-    // check popup is exsit
-    const oldPopup = document.querySelector(`#${ID}`);
-    if (oldPopup) oldPopup.remove();
+export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom") => {
+  const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
+  const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
+  const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
+  const ID = "modal-popup";
+  // check popup is exsit
+  const oldPopup = document.querySelector(`#${ID}`);
+  if (oldPopup) oldPopup.remove();
+  let altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
+  const bottomPanel = document.createElement("div");
+  bottomPanel.id = ID;
+  document.body.append(bottomPanel);
 
-    let altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
-    const bottomPanel = document.createElement("div");
-    bottomPanel.id = ID;
-    if(direction == "bottom"){
+  if (direction == "bottom") {
     bottomPanel.classList.add("panel", "bottom");
     const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
     if (!app) {
-        showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
-        return;
+      showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
+      return;
     }
     // If has multiple versions, show the latest one
     if (app.versions) {
-        const latestVersion = app.versions[0];
-        app.version = latestVersion.version;
-        app.versionDate = latestVersion.date;
-        app.versionDescription = latestVersion.localizedDescription;
-        app.downloadURL = latestVersion.downloadURL;
-        app.size = latestVersion.size;
+      const latestVersion = app.versions[0];
+      app.version = latestVersion.version;
+      app.versionDate = latestVersion.date;
+      app.versionDescription = latestVersion.localizedDescription;
+      app.downloadURL = latestVersion.downloadURL;
+      app.size = latestVersion.size;
     }
     const tintColor = app.tintColor ? app.tintColor.replaceAll("#", "") : "var(--tint-color);";
     // Set tint color
     if (tintColor) setTintColor(tintColor);
     // Set up install buttons
     const installAppAlert = new UIAlert({
-        title: `Get "${app.name}"`
+      title: `Get "${app.name}"`
     });
     installAppAlert.addAction({
-        title: "Install via Esign",
-        style: 'default',
-        handler: () => showAddToAltStoreAlert(jsons.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
+      title: "Install via Esign",
+      style: 'default',
+      handler: () => showAddToAltStoreAlert(jsons.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
     });
     installAppAlert.addAction({
-        title: "Download IPA",
-        style: 'default',
-        handler: () => showAddToAltStoreAlert(jsons.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
+      title: "Download IPA",
+      style: 'default',
+      handler: () => showAddToAltStoreAlert(jsons.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
     });
     installAppAlert.addAction({
-        title: "Copy Link",
-        style: 'default',
-        handler: () => showAddToAltStoreAlert(jsons.name, "Copy Link", () => copyText(app.downloadURL))
+      title: "Copy Link",
+      style: 'default',
+      handler: () => showAddToAltStoreAlert(jsons.name, "Copy Link", () => copyText(app.downloadURL))
     });
-
     installAppAlert.addAction({
-        title: "Cancel",
-        style: 'cancel',
+      title: "Cancel",
+      style: 'cancel',
     });
     async function copyText(text) {
-        try {
-            await navigator.clipboard.writeText(text);
-            showUIAlert("✅ Success", "Đã sao chép vào clipboard!");
-        } catch (err) {
-            showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
-        }
+      try {
+        await navigator.clipboard.writeText(text);
+        showUIAlert("✅ Success", "Đã sao chép vào clipboard!");
+      } catch (err) {
+        showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
+      }
     }
-
-
     bottomPanel.innerHTML = `
 <div id="panel-header">
     <!-- Navigation bar -->
@@ -181,7 +179,6 @@ export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom
   </div>
   </div>
 `;
-
     // 
     // Navigation bar
     const navigationBar = bottomPanel.querySelector("#nav-bar");
@@ -198,7 +195,6 @@ export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom
     appHeader.querySelector(".title").textContent = app.name;
     // Developer name
     appHeader.querySelector(".subtitle").textContent = app.developerName;
-
     // 
     // Preview
     const preview = bottomPanel.querySelector("#preview");
@@ -207,21 +203,21 @@ export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom
     // Screenshots
     // New
     if (app.screenshots) {
-        app.screenshots.forEach((screenshot, i) => {
-            if (screenshot.imageURL) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
+      app.screenshots.forEach((screenshot, i) => {
+        if (screenshot.imageURL) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
                     <img src="${screenshot.imageURL}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
                 `);
-            else if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
+        else if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
                     <img src="${screenshot}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
                 `);
-        });
+      });
     } else if (app.screenshotURLs) {
-        // Legacy
-        app.screenshotURLs.forEach((url, i) => {
-            preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
+      // Legacy
+      app.screenshotURLs.forEach((url, i) => {
+        preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
                 <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
             `);
-        });
+      });
     }
     // Description
     const previewDescription = preview.querySelector("#description");
@@ -241,40 +237,27 @@ export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom
     // Version size
     const units = ["B", "KB", "MB", "GB"];
     var appSize = app.size,
-        i = 0;
+      i = 0;
     while (appSize > 1024) {
-        i++;
-        appSize = parseFloat(appSize / 1024).toFixed(1);
+      i++;
+      appSize = parseFloat(appSize / 1024).toFixed(1);
     }
     versionSizeElement.textContent = appSize ? `${appSize} ${units[i]}` : "";
     // Version description
     versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
     if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
-
     // Version history
     bottomPanel.querySelector("#version-history").addEventListener("click", (event) => {
-        //event.preventDefault();
-        const versionsContainer = bottomPanel.querySelector("#versions");
-        if (app.versions) {
-            app.versions.slice(1).forEach((version, i) => {
-                versionsContainer.insertAdjacentHTML("beforeend",
-                    VersionHistoryItem(
-                        jsons.name,
-                        version.version,
-                        formatVersionDate(version.date),
-                        formatString(version.localizedDescription),
-                        version.downloadURL,
-                        i + 1
-                    )
-                );
-            });
-        }
-
-        versionsContainer.querySelectorAll(".version-description").forEach(element => {
-            if (element.scrollHeight > element.clientHeight)
-                element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+      //event.preventDefault();
+      const versionsContainer = bottomPanel.querySelector("#versions");
+      if (app.versions) {
+        app.versions.slice(1).forEach((version, i) => {
+          versionsContainer.insertAdjacentHTML("beforeend", VersionHistoryItem(jsons.name, version.version, formatVersionDate(version.date), formatString(version.localizedDescription), version.downloadURL, i + 1));
         });
-
+      }
+      versionsContainer.querySelectorAll(".version-description").forEach(element => {
+        if (element.scrollHeight > element.clientHeight) element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+      });
     });
     // 
     // Permissions
@@ -284,67 +267,67 @@ export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom
     // 
     // Privacy
     if (appPermissions?.privacy || app.permissions) {
-        function updatePrivacyContainerHeader() {
-            privacyContainer.querySelector(".permission-icon").classList = "permission-icon bi-person-fill-lock";
-            privacyContainer.querySelector("b").innerText = "Privacy";
-            privacyContainer.querySelector(".description").innerText = `"${app.name}" may request to access the following:`;
-        }
-        //
-        // New (appPermissions.privacy)
-        if (appPermissions?.privacy) {
-            if (Array.isArray(appPermissions.privacy)) {
-                if (appPermissions.privacy.length) {
-                    for (const obj of appPermissions.privacy) {
-                        const id = `${obj.name}${Math.random()}`;
-                        const permission = knownPrivacyPermissions[`NS${obj.name}UsageDescription`];
-                        const permissionName = permission?.name ?? insertSpaceInCamelString(obj.name);
-                        let icon;
-                        if (permission?.icon) icon = permission.icon;
-                        else icon = "gear-wide-connected";
-                        privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, icon));
-                        document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
-                    }
-                    updatePrivacyContainerHeader();
-                }
-            } else {
-                for (const prop in appPermissions.privacy) {
-                    const id = `${prop}${Math.random()}`;
-                    const permission = knownPrivacyPermissions[prop];
-                    const permissionName = permission?.name ?? insertSpaceInCamelString(prop.split("NS")[1].split("UsageDescription")[0]);
-                    const permissionIcon = permission?.icon ?? "gear-wide-connected";
-                    privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-                    document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, appPermissions.privacy[prop]));
-                }
-                updatePrivacyContainerHeader();
-            }
-        }
-        //
-        // Legacy (app.permissions)
-        else {
-            for (const obj of app.permissions) {
-                const id = `${obj.type}${Math.random()}`;
-                const permission = legacyPermissions[obj.type];
-                const permissionName = insertSpaceInSnakeString(obj.type);
-                const permissionIcon = permission?.icon ?? "gear-wide-connected";
-                privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-                document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
+      function updatePrivacyContainerHeader() {
+        privacyContainer.querySelector(".permission-icon").classList = "permission-icon bi-person-fill-lock";
+        privacyContainer.querySelector("b").innerText = "Privacy";
+        privacyContainer.querySelector(".description").innerText = `"${app.name}" may request to access the following:`;
+      }
+      //
+      // New (appPermissions.privacy)
+      if (appPermissions?.privacy) {
+        if (Array.isArray(appPermissions.privacy)) {
+          if (appPermissions.privacy.length) {
+            for (const obj of appPermissions.privacy) {
+              const id = `${obj.name}${Math.random()}`;
+              const permission = knownPrivacyPermissions[`NS${obj.name}UsageDescription`];
+              const permissionName = permission?.name ?? insertSpaceInCamelString(obj.name);
+              let icon;
+              if (permission?.icon) icon = permission.icon;
+              else icon = "gear-wide-connected";
+              privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, icon));
+              document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
             }
             updatePrivacyContainerHeader();
+          }
+        } else {
+          for (const prop in appPermissions.privacy) {
+            const id = `${prop}${Math.random()}`;
+            const permission = knownPrivacyPermissions[prop];
+            const permissionName = permission?.name ?? insertSpaceInCamelString(prop.split("NS")[1].split("UsageDescription")[0]);
+            const permissionIcon = permission?.icon ?? "gear-wide-connected";
+            privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
+            document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, appPermissions.privacy[prop]));
+          }
+          updatePrivacyContainerHeader();
         }
+      }
+      //
+      // Legacy (app.permissions)
+      else {
+        for (const obj of app.permissions) {
+          const id = `${obj.type}${Math.random()}`;
+          const permission = legacyPermissions[obj.type];
+          const permissionName = insertSpaceInSnakeString(obj.type);
+          const permissionIcon = permission?.icon ?? "gear-wide-connected";
+          privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
+          document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
+        }
+        updatePrivacyContainerHeader();
+      }
     }
     //
     // Entitlements
     if (appPermissions?.entitlements?.length) {
-        for (const obj of appPermissions.entitlements) {
-            const id = `${obj.name ?? obj}${Math.random()}`;
-            const permission = knownEntitlements[obj.name ?? obj]; // Old: obj.name; new: obj
-            const permissionName = permission?.name ?? insertSpaceInSnakeString(obj.name ?? obj);
-            const permissionIcon = permission?.icon ?? "gear-wide-connected";
-            entitlementsContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-            document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, permission?.description ?? "altsource-viewer does not have detailed information about this entitlement."));
-        }
+      for (const obj of appPermissions.entitlements) {
+        const id = `${obj.name ?? obj}${Math.random()}`;
+        const permission = knownEntitlements[obj.name ?? obj]; // Old: obj.name; new: obj
+        const permissionName = permission?.name ?? insertSpaceInSnakeString(obj.name ?? obj);
+        const permissionIcon = permission?.icon ?? "gear-wide-connected";
+        entitlementsContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
+        document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, permission?.description ?? "altsource-viewer does not have detailed information about this entitlement."));
+      }
     } else {
-        entitlementsContainer.remove();
+      entitlementsContainer.remove();
     }
     // Source info
     const source = bottomPanel.querySelector("#source");
@@ -358,14 +341,14 @@ export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom
     let appCount = 0;
     let altSourceTintColor = "var(--tint-color);";
     for (const app of jsons.apps) {
-        if (app.beta || app.patreon?.hidden) continue;
-        let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
-        if (appVersionDate > lastUpdated) {
-            lastUpdated = appVersionDate;
-            altSourceIcon = app.iconURL;
-            if (app.tintColor) altSourceTintColor = app.tintColor;
-        }
-        appCount++;
+      if (app.beta || app.patreon?.hidden) continue;
+      let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
+      if (appVersionDate > lastUpdated) {
+        lastUpdated = appVersionDate;
+        altSourceIcon = app.iconURL;
+        if (app.tintColor) altSourceTintColor = app.tintColor;
+      }
+      appCount++;
     }
     sourceA.href = `${dir}/view/?source=${base64Convert(jsons.sourceURL)}`;
     sourceContainer.style.backgroundColor = `#${(jsons.tintColor ?? altSourceTintColor).replaceAll("#", "")}`;
@@ -374,37 +357,34 @@ export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom
     sourceContainer.href = `${dir}/?source=${base64Convert(jsons.sourceURL)}`;
     sourceSubtitle.innerText = `Last updated: ${formatVersionDate(lastUpdated)}`;
     sourceAppCount.innerText = appCount + (appCount === 1 ? " app" : " apps");
-
     // Hide/show navigation bar title & install button
     let isNavigationBarItemsVisible = false;
     bottomPanel.querySelector("#panel-body").onscroll = function(e) {
-        const appName = bottomPanel.querySelector(".app-header .text>.title");
-        const title = bottomPanel.querySelector("#title");
-        const button = bottomPanel.querySelector("#nav-bar .install");
-        if (!isNavigationBarItemsVisible && appName.getBoundingClientRect().y < 100) {
-            title.classList.remove("hidden");
-            button.classList.remove("hidden");
-            button.disabled = false;
-            isNavigationBarItemsVisible = true;
-        } else if (isNavigationBarItemsVisible && appName.getBoundingClientRect().y >= 100) { // Main app name is visible
-            // Hide navigation bar title & install button
-            title.classList.add("hidden");
-            button.classList.add("hidden");
-            button.disabled = true;
-            isNavigationBarItemsVisible = false;
-        }
+      const appName = bottomPanel.querySelector(".app-header .text>.title");
+      const title = bottomPanel.querySelector("#title");
+      const button = bottomPanel.querySelector("#nav-bar .install");
+      if (!isNavigationBarItemsVisible && appName.getBoundingClientRect().y < 100) {
+        title.classList.remove("hidden");
+        button.classList.remove("hidden");
+        button.disabled = false;
+        isNavigationBarItemsVisible = true;
+      } else if (isNavigationBarItemsVisible && appName.getBoundingClientRect().y >= 100) { // Main app name is visible
+        // Hide navigation bar title & install button
+        title.classList.add("hidden");
+        button.classList.add("hidden");
+        button.disabled = true;
+        isNavigationBarItemsVisible = false;
+      }
     }
     // listen install button
     bottomPanel.querySelectorAll("a.install").forEach(button => {
-        button.addEventListener("click", event => {
-            event.preventDefault();
-            installAppAlert.present();
-        });
+      button.addEventListener("click", event => {
+        event.preventDefault();
+        installAppAlert.present();
+      });
     });
-    } else if(direction == "side"){
-
+  } else if (direction == "side") {
     bottomPanel.classList.add("panel", direction);
-
     bottomPanel.innerHTML = `
 <div id="panel-header">
     <!-- Navigation bar -->
@@ -425,30 +405,25 @@ export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom
      ${jsons}
   </div>
 `;
+  }
+  // show popup
+  bottomPanel.classList.add("show"); // show when everything ready
+  document.body.classList.add('no-scroll');
 
+  // control popup
+  const closeBottom = bottomPanel.querySelector("#back-container");
+  closeBottom.addEventListener("click", () => {
+    bottomPanel.classList.remove("show");
+    document.body.classList.remove('no-scroll');
+  });
+  let startY;
+  bottomPanel.addEventListener("touchstart", e => {
+    startY = e.touches[0].clientY;
+  });
+  bottomPanel.addEventListener("touchend", e => {
+    let endY = e.changedTouches[0].clientY;
+    if (endY - startY > 50) { // vuốt xuống
+      bottomPanel.classList.remove("show");
     }
-
-    // add popup
-    document.body.append(bottomPanel);
-    bottomPanel.classList.add("show"); // show when everything ready
-    document.body.classList.add('no-scroll');
-
-    // control popup
-    const closeBottom = bottomPanel.querySelector("#back-container");
-    closeBottom.addEventListener("click", () => {
-        bottomPanel.classList.remove("show");
-        document.body.classList.remove('no-scroll');
-    });
-    let startY;
-    bottomPanel.addEventListener("touchstart", e => {
-        startY = e.touches[0].clientY;
-    });
-    bottomPanel.addEventListener("touchend", e => {
-        let endY = e.changedTouches[0].clientY;
-        if (endY - startY > 50) { // vuốt xuống
-            bottomPanel.classList.remove("show");
-        }
-    });
-
-
+  });
 }
