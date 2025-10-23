@@ -112,7 +112,11 @@ main(json => {
                 appsContainer.innerHTML = "";
                 loadMoreApps();
                 appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-                loadMoreApps();
+		const topMain = document.getElementById("news");
+		window.scrollTo({
+  			top: topMain.offsetTop,
+  			behavior: "smooth"
+		});
             }, 500);
         }
 
@@ -183,7 +187,7 @@ main(json => {
     appsContainer.addEventListener("click", event => {
         const target = event.target.closest("a.app-header-link");
         if (!target) return;
-
+	console.log(target, json, bundleId)
         event.preventDefault();
         const bundleId = target.getAttribute("bundleid-data");
         openPanel(json, bundleId, '../..');

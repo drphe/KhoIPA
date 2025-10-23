@@ -100,13 +100,16 @@ const editorsources = await json("./common/assets/json/editorsources.json");
                 filteredApps = [...allApps];
             }
 
-            // Nếu có kết quả
             currentIndex = 0;
             setTimeout(() => {
                 appsContainer.innerHTML = "";
                 loadMoreApps();
                 appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-                loadMoreApps();
+		const topMain = document.getElementById("main");
+		window.scrollTo({
+  			top: topMain.offsetTop,
+  			behavior: "smooth"
+		});
             }, 500);
         }
     });
