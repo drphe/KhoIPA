@@ -4,12 +4,12 @@ import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert,
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
-const knownPrivacyPermissions = await json("../assets/json/privacy.json");
-const knownEntitlements = await json("../assets/json/entitlements.json");
-const legacyPermissions = await json("../assets/json/legacy-permissions.json");
 const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
 
 export const openPanel = async (jsons, bundleId, id = "modal-popup", dir = '.') => {
+  const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
+  const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
+  const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
 
   const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
   console.log(app, jsons, bundleId)
