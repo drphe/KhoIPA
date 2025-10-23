@@ -422,8 +422,9 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
   });
   bottomPanel.addEventListener("touchend", e => {
     let endY = e.changedTouches[0].clientY;
-    if (endY - startY > 50) { // vuốt xuống
+    if (endY - startY > 100) { // vuốt xuống
       bottomPanel.classList.remove("show");
+      document.body.classList.remove('no-scroll');
     }
   });
 }
