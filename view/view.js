@@ -184,14 +184,18 @@ main(json => {
         currentIndex += appsPerLoad;
     }
 
-    appsContainer.addEventListener("click", event => {
-        const target = event.target.closest("a.app-header-link");
+    document.getElementById("featured").querySelectorAll("a.app-header-link").forEach(button => {
+        button.addEventListener("click", executePanel);
+    });
+
+    appsContainer.addEventListener("click", executePanel);
+    function executePanel(e){
+        const target = e.target.closest("a.app-header-link");
         if (!target) return;
-	console.log(target, json, bundleId)
-        event.preventDefault();
+        e.preventDefault();
         const bundleId = target.getAttribute("bundleid-data");
         openPanel(json, bundleId, '../..');
-    });
+    }
 
     loadMoreApps();
 
