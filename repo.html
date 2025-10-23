@@ -81,7 +81,7 @@ label {
   color: #333;
 }
 
-input,
+select, input,
 textarea {
   width: 100%;
   padding: 12px;
@@ -92,14 +92,14 @@ textarea {
   transition: border-color 0.3s;
 }
 
-input:focus,
+select:focus, input:focus,
 textarea:focus {
   border-color: #3498db;
   outline: none;
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
 }
 
-input[type="color"],
+select, input[type="color"],
 input[type="text"],
 input[type="date"] {
   padding: 0;
@@ -479,12 +479,24 @@ button:hover {
           <label for="app_iconURL">Icon URL (*): </label>
           <input type="text" id="app_iconURL">
         </div>
+      </div>
+      <div class="form-group">
         <div>
           <label for="app_tintColor">Mã màu: </label>
           <input type="color" id="app_tintColor" value="#000000">
         </div>
-      </div>
+        <div>
+          <label for="app_type">Phân loại: </label>
+<select id="app_type">
+  <option value="1" selected>Apps</option>
+  <option value="2">Games</option>
+  <option value="3">Audio</option>
+  <option value="4">Tool</option>
+  <option value="6">Dylib</option>
+</select>
+</div>
 
+      </div>
       <label for="app_screenshotURLs">Screenshot URLs (Ngăn cách bằng dấu phẩy): </label>
       <textarea id="app_screenshotURLs" rows="2" placeholder="url1, url2, url3"></textarea>
 
@@ -817,8 +829,9 @@ function getBundleId(searchvalue, company = "VN", device = "iPhone") {
   fetch(url).then(response => response.json()).then(json => {
     appleData = [];
     json.results.forEach((item, i) => {
-      appleData.push(item)
       const appName = item.trackName;
+      if (!appName) return;
+      appleData.push(item);
       const version = item.version;
       const minimumOsVersion = item.minimumOsVersion;
       const dateObj = new Date(item.currentVersionReleaseDate);
@@ -937,6 +950,7 @@ function addOrUpdateApp() {
   const subtitle = document.getElementById('app_subtitle').value.trim();
   const iconURL = document.getElementById('app_iconURL').value.trim();
   const tintColor = document.getElementById('app_tintColor').value.replace('#', '').toUpperCase();
+  const type = document.getElementById('app_type').value.trim();
   const localizedDescription = document.getElementById('app_localizedDescription').value.trim();
   const screenshotURLsInput = document.getElementById('app_screenshotURLs').value.trim();
   const beta = document.getElementById('app_beta').checked;
@@ -955,6 +969,7 @@ function addOrUpdateApp() {
     subtitle,
     localizedDescription,
     iconURL,
+    type,
     tintColor: tintColor.startsWith('#') ? tintColor.substring(1) : tintColor,
     screenshotURLs
   };
@@ -993,6 +1008,7 @@ function clearAppForm() {
   document.getElementById('app_tintColor').value = '#000000';
   document.getElementById('app_localizedDescription').value = '';
   document.getElementById('app_screenshotURLs').value = '';
+  document.getElementById('app_type').value = 1;
   document.getElementById('app_beta').checked = false;
   document.getElementById('app_feature').checked = false;
 }
@@ -1030,6 +1046,7 @@ function editApp(index) {
   document.getElementById('app_subtitle').value = item.subtitle;
   document.getElementById('app_iconURL').value = item.iconURL;
   document.getElementById('app_tintColor').value = '#' + item.tintColor;
+  document.getElementById('app_type').value = item.type;
   document.getElementById('app_localizedDescription').value = item.localizedDescription;
   document.getElementById('app_screenshotURLs').value = (item.screenshotURLs || []).join(', ');
   document.getElementById('app_beta').checked = item.beta;

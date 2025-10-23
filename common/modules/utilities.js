@@ -169,7 +169,7 @@ export function consolidateApps(source) {
         // Sao chép tất cả các trường không phải phiên bản
         beta: app.beta ?? false,
         name: app.name,
-        type: app.type ?? 1,
+        type: app.type ?? 1,// mặc định là app
         bundleIdentifier: app.bundleIdentifier,
         developerName: app.developerName ?? "",
         subtitle: app.subtitle ?? "",
