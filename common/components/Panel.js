@@ -1,4 +1,4 @@
-export const openPanel = async (sourceUrl, bundleId, id = "bottomPanel") => {
+export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
   const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
   const app = sourceUrl.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
   console.log(app, sourceUrl, bundleId)
@@ -53,7 +53,7 @@ export const openPanel = async (sourceUrl, bundleId, id = "bottomPanel") => {
   const oldPopup = document.querySelector(`#${id}`);
   if (oldPopup) oldPopup.remove();
 
-  const bottomPanel = document.creatElement("div");
+  const bottomPanel = document.createElement("div");
   bottomPanel.id = id;
   bottomPanel.classList.add("panel", "bottom");
   bottomPanel.innerHTML = `

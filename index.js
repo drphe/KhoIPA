@@ -240,6 +240,7 @@ searchBox.addEventListener("keydown", async (event) => {
             event.preventDefault();
 	    const bundleId = event.currentTarget.getAttribute('bundleid-data');
 	    const sourceTarget = allSources.find(item => item.apps.bundleIdentifier === bundleId);
+		console.log(sourceTarget, bundleId)
 	    if(!sourceTarget) return;
             openPanel(sourceTarget, bundleId);
         });
