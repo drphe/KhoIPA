@@ -1,16 +1,18 @@
 
-import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert, insertSpaceInSnakeString, insertSpaceInCamelString, formatString } from "../modules/utilities.js";
+import { base64Convert } from "../modules/constants.js";
+import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert, insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
+import UIAlert from "../vendor/uialert.js/uialert.js";
 
 const knownPrivacyPermissions = await json("../assets/json/privacy.json");
 const knownEntitlements = await json("../assets/json/entitlements.json");
 const legacyPermissions = await json("../assets/json/legacy-permissions.json");
 
 
-export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
+export const openPanel = async (json, bundleId, id = "modal-popup", dir = '.') => {
   const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
-  const app = sourceUrl.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
-  console.log(app, sourceUrl, bundleId)
+  const app = json.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
+  console.log(app, json, bundleId)
   if (!app) {
     showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
     return;
@@ -34,17 +36,17 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
   installAppAlert.addAction({
     title: "Install via Esign",
     style: 'default',
-    handler: () => showAddToAltStoreAlert(sourceUrl.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
+    handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
   });
   installAppAlert.addAction({
     title: "Copy Link",
     style: 'default',
-    handler: () => showAddToAltStoreAlert(sourceUrl.name, "Copy Link", () => copyText(app.downloadURL))
+    handler: () => showAddToAltStoreAlert(json.name, "Copy Link", () => copyText(app.downloadURL))
   });
   installAppAlert.addAction({
     title: "Download IPA",
     style: 'default',
-    handler: () => showAddToAltStoreAlert(sourceUrl.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
+    handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
   });
   installAppAlert.addAction({
     title: "Cancel",
@@ -174,9 +176,11 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
   </div>
   </div>
 `;
+  // add popup
+  document.body.append(bottomPanel);
   // 
   // Navigation bar
-  const navigationBar = bottomPanel.getElementById("nav-bar");
+  const navigationBar = bottomPanel.querySelector("#nav-bar");
   // Title
   navigationBar.querySelector("#title>p").textContent = app.name;
   // App icon
@@ -196,7 +200,7 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
     </a>`;
   window.revealTruncatedText = moreButton => {
     const textId = moreButton.parentNode.id;
-    const text = bottomPanel.getElementById(textId);
+    const text = bottomPanel.querySelector(`#${textId}`);
     text.style.display = "block";
     text.style.overflow = "auto";
     text.style.webkitLineClamp = "none";
@@ -205,7 +209,7 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
   }
   // 
   // Preview
-  const preview = bottomPanel.getElementById("preview");
+  const preview = bottomPanel.querySelector("#preview");
   // Subtitle
   preview.querySelector("#subtitle").textContent = app.subtitle;
   // Screenshots
@@ -234,10 +238,10 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
   if (!app.screenshots && !app.screenshotURLs && !app.localizedDescription) preview.remove();
   // 
   // Version info
-  const versionDateElement = bottomPanel.getElementById("version-date");
-  const versionNumberElement = bottomPanel.getElementById("version");
-  const versionSizeElement = bottomPanel.getElementById("version-size");
-  const versionDescriptionElement = bottomPanel.getElementById("version-description");
+  const versionDateElement = bottomPanel.querySelector("#version-date");
+  const versionNumberElement = bottomPanel.querySelector("#version");
+  const versionSizeElement = bottomPanel.querySelector("#version-size");
+  const versionDescriptionElement = bottomPanel.querySelector("#version-description");
   // Version date
   versionDateElement.textContent = formatVersionDate(app.versionDate);
   // Version number
@@ -255,12 +259,12 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
   versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
   if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", more);
   // Version history
-  document.getElementById("version-history").href = `./version-history/?source=${base64Convert(sourceURL)}&id=${app.bundleIdentifier}`;
+  document.querySelector("#version-history").href = `./version-history/?source=${base64Convert(json.sourceURL)}&id=${app.bundleIdentifier}`;
   // 
   // Permissions
   const appPermissions = app.appPermissions;
-  const privacyContainer = bottomPanel.getElementById("privacy");
-  const entitlementsContainer = bottomPanel.getElementById("entitlements");
+  const privacyContainer = bottomPanel.querySelector("#privacy");
+  const entitlementsContainer = bottomPanel.querySelector("#entitlements");
   // 
   // Privacy
   if (appPermissions?.privacy || app.permissions) {
@@ -321,13 +325,13 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
       const permissionName = permission?.name ?? insertSpaceInSnakeString(obj.name ?? obj);
       const permissionIcon = permission?.icon ?? "gear-wide-connected";
       entitlementsContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-      bottomPanel.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, permission?.description ?? "altsource-viewer does not have detailed information about this entitlement."));
+      document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, permission?.description ?? "altsource-viewer does not have detailed information about this entitlement."));
     }
   } else {
     entitlementsContainer.remove();
   }
   // Source info
-  const source = bottomPanel.getElementById("source");
+  const source = bottomPanel.querySelector("#source");
   const sourceA = source.querySelector("a");
   const sourceContainer = source.querySelector(".source");
   const sourceIcon = source.querySelector("img");
@@ -337,7 +341,7 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
   let lastUpdated = new Date("1970-01-01");
   let appCount = 0;
   let altSourceTintColor = "var(--tint-color);";
-  for (const app of sourceUrl.apps) {
+  for (const app of json.apps) {
     if (app.beta || app.patreon?.hidden) continue;
     let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
     if (appVersionDate > lastUpdated) {
@@ -347,17 +351,16 @@ export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
     }
     appCount++;
   }
-  sourceA.href = `../../view/?source=${base64Convert(sourceURL)}`;
-  sourceContainer.style.backgroundColor = `#${(sourceUrl.tintColor ?? altSourceTintColor).replaceAll("#", "")}`;
-  sourceIcon.src = sourceUrl.iconURL ?? altSourceIcon;
-  sourceTitle.innerText = sourceUrl.name;
-  sourceContainer.href = `../?source=${base64Convert(sourceURL)}`;
+  sourceA.href = `${dir}/view/?source=${base64Convert(json.sourceURL)}`;
+  sourceContainer.style.backgroundColor = `#${(json.tintColor ?? altSourceTintColor).replaceAll("#", "")}`;
+  sourceIcon.src = json.iconURL ?? altSourceIcon;
+  sourceTitle.innerText = json.name;
+  sourceContainer.href = `${dir}/?source=${base64Convert(json.sourceURL)}`;
   sourceSubtitle.innerText = `Last updated: ${formatVersionDate(lastUpdated)}`;
   sourceAppCount.innerText = appCount + (appCount === 1 ? " app" : " apps");
 
 
-  // add popup
-  document.body.append(bottomPanel);
+
   bottomPanel.classList.add("show"); // show when everything ready
 
   // control
