@@ -186,6 +186,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 	    const sourceTarget = allSources.find(json => {
 		return json.apps.some(app => app.bundleIdentifier === bundleId);
 	    });
+	    console.log(bundleId,sourceTarget)
 	    if(!sourceTarget) return;
             openPanel(sourceTarget, bundleId);
         });
