@@ -90,7 +90,7 @@ main(json => {
   searchBox.type = "text";
   searchBox.placeholder = "Enter app name...";
   searchBox.className = "form-control mb-3";
-  searchBox.style.cssText = "width: 100%; padding-right: 35px; box-sizing: border-box; border-radius: 20px; background-color: var(--color-transparent);"
+  searchBox.style.cssText = "width: 100%; padding-right: 35px; box-sizing: border-box; border-radius: 20px; "
 
   // Tạo icon kính lúp
   const searchIcon = document.createElement("span");
