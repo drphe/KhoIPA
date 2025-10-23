@@ -6,11 +6,11 @@ import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
-export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom") => {
+export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom", ID = "modal-popup") => {
   const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
   const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
   const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
-  const ID = "modal-popup";
+
   // check popup is exsit
   const oldPopup = document.querySelector(`#${ID}`);
   if (oldPopup) oldPopup.remove();
@@ -121,7 +121,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       <div class="header">
         <h2>What's New</h2>
         <p id="version-size"></p>
-        <a id="version-history" style="color: var(--tint-color);" href="#versions">More Versions</a>
+        <a id="version-history" style="color: var(--tint-color);" href="#versions">All Versions</a>
       </div>
       <div class="header">
         <p id="version">Version 2.0</p>
@@ -247,13 +247,15 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
     if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
     // Version history
+    let isAllVersion = false;
     bottomPanel.querySelector("#version-history").addEventListener("click", (event) => {
       //event.preventDefault();
       const versionsContainer = bottomPanel.querySelector("#versions");
-      if (app.versions) {
+      if (app.versions && !isAllVersion) {
         app.versions.slice(1).forEach((version, i) => {
           versionsContainer.insertAdjacentHTML("beforeend", VersionHistoryItem(jsons.name, version.version, formatVersionDate(version.date), formatString(version.localizedDescription), version.downloadURL, i + 1));
         });
+          isAllVersion = true;
       }
       versionsContainer.querySelectorAll(".version-description").forEach(element => {
         if (element.scrollHeight > element.clientHeight) element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
@@ -383,6 +385,19 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         installAppAlert.present();
       });
     });
+  // scroll down to close
+  let startY;
+  bottomPanel.addEventListener("touchstart", e => {
+    startY = e.touches[0].clientY;
+  });
+  bottomPanel.addEventListener("touchend", e => {
+    let endY = e.changedTouches[0].clientY;
+    if (endY - startY > 200) { // vuốt xuống
+      bottomPanel.classList.remove("show");
+      document.body.classList.remove('no-scroll');
+    }
+  });
+
   } else if (direction == "side") {
     bottomPanel.classList.add("panel", direction);
     bottomPanel.innerHTML = `
@@ -405,6 +420,22 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
      ${jsons}
   </div>
 `;
+
+// scroll right to close
+let startX;
+
+bottomPanel.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+});
+
+bottomPanel.addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+  if (endX - startX > 100) { // vuốt sang phải
+    bottomPanel.classList.remove("show");
+    document.body.classList.remove('no-scroll');
+  }
+});
+
   }
   // show popup
   bottomPanel.classList.add("show"); // show when everything ready
@@ -416,15 +447,5 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     bottomPanel.classList.remove("show");
     document.body.classList.remove('no-scroll');
   });
-  let startY;
-  bottomPanel.addEventListener("touchstart", e => {
-    startY = e.touches[0].clientY;
-  });
-  bottomPanel.addEventListener("touchend", e => {
-    let endY = e.changedTouches[0].clientY;
-    if (endY - startY > 200) { // vuốt xuống
-      bottomPanel.classList.remove("show");
-      document.body.classList.remove('no-scroll');
-    }
-  });
+
 }
