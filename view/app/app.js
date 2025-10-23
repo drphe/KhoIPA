@@ -77,15 +77,16 @@ main((json) => {
         handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
     });
     installAppAlert.addAction({
-        title: "Copy Link",
-        style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Copy Link", () => copyText(app.downloadURL))
-    });
-    installAppAlert.addAction({
         title: "Download IPA",
         style: 'default',
         handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
     });
+    installAppAlert.addAction({
+        title: "Copy Link",
+        style: 'default',
+        handler: () => showAddToAltStoreAlert(json.name, "Copy Link", () => copyText(app.downloadURL))
+    });
+    
     installAppAlert.addAction({
         title: "Cancel",
         style: 'cancel',
