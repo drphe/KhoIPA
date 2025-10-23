@@ -239,7 +239,7 @@ searchBox.addEventListener("keydown", async (event) => {
         button.addEventListener("click", event => {
             event.preventDefault();
 	    const bundleId = event.currentTarget.getAttribute('bundleid-data');
-	    const sourceTarget = allSources.filter(source => source.bundleId === bundleId);
+	    const sourceTarget = allSources.find(item => item.apps.bundleIdentifier === bundleId);
 	    if(!sourceTarget) return;
             openPanel(sourceTarget, bundleId);
         });
