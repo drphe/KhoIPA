@@ -1,3 +1,12 @@
+
+import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert, insertSpaceInSnakeString, insertSpaceInCamelString, formatString } from "../modules/utilities.js";
+import { AppPermissionItem } from "./AppPermissionItem.js";
+
+const knownPrivacyPermissions = await json("../assets/json/privacy.json");
+const knownEntitlements = await json("../assets/json/entitlements.json");
+const legacyPermissions = await json("../assets/json/legacy-permissions.json");
+
+
 export const openPanel = async (sourceUrl, bundleId, id = "modal-popup") => {
   const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
   const app = sourceUrl.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;

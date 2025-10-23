@@ -1,16 +1,11 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { formatString, insertSpaceInCamelString, insertSpaceInSnakeString, formatVersionDate, open, setTintColor, isValidHTTPURL, showAddToAltStoreAlert, showUIAlert,  json,  consolidateApps} from "./common/modules/utilities.js";
+import { formatVersionDate,  showUIAlert,  json,  consolidateApps} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import { openPanel } from "./common/components/Panel.js";
-import { AppPermissionItem } from "./common/components/AppPermissionItem.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
-const knownPrivacyPermissions = await json("./common/assets/json/privacy.json");
-const knownEntitlements = await json("./common/assets/json/entitlements.json");
-const legacyPermissions = await json("./common/assets/json/legacy-permissions.json");
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
-
 
 (async () =>{
     document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
