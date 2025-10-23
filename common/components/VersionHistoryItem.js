@@ -12,9 +12,9 @@ export const VersionHistoryItem = (sourceName, number, date, description, url, i
         <a class="version-install" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
             'Install App',
-            () => window.location.href = 'altstore://install?url=${url}'
+            () => window.location.href = 'esign://install?url=${url}'
         );">
-            Install with AltStore
+            Install with Esign
         </a>
         <a class="version-download" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
