@@ -238,7 +238,7 @@ searchBox.addEventListener("keydown", async (event) => {
     document.querySelectorAll("a.app-header-link").forEach(button => {
         button.addEventListener("click", event => {
             event.preventDefault();
-	    const bundleId = target.getAttribute('bundleId');
+	    const bundleId = event.target.getAttribute('bundleId');
 	    const sourceTarget = allSources.filter(source => source.bundleId === bundleId);
 	    if(!sourceTarget) return;
             openPanel(sourceTarget, bundleId);
