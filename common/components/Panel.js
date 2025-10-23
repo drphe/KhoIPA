@@ -9,10 +9,10 @@ const knownEntitlements = await json("../assets/json/entitlements.json");
 const legacyPermissions = await json("../assets/json/legacy-permissions.json");
 
 
-export const openPanel = async (json, bundleId, id = "modal-popup", dir = '.') => {
+export const openPanel = async (jsons, bundleId, id = "modal-popup", dir = '.') => {
   const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
-  const app = json.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
-  console.log(app, json, bundleId)
+  const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
+  console.log(app, jsons, bundleId)
   if (!app) {
     showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
     return;
@@ -36,17 +36,17 @@ export const openPanel = async (json, bundleId, id = "modal-popup", dir = '.') =
   installAppAlert.addAction({
     title: "Install via Esign",
     style: 'default',
-    handler: () => showAddToAltStoreAlert(json.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
+    handler: () => showAddToAltStoreAlert(jsons.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
   });
   installAppAlert.addAction({
     title: "Copy Link",
     style: 'default',
-    handler: () => showAddToAltStoreAlert(json.name, "Copy Link", () => copyText(app.downloadURL))
+    handler: () => showAddToAltStoreAlert(jsons.name, "Copy Link", () => copyText(app.downloadURL))
   });
   installAppAlert.addAction({
     title: "Download IPA",
     style: 'default',
-    handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
+    handler: () => showAddToAltStoreAlert(jsons.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
   });
   installAppAlert.addAction({
     title: "Cancel",
@@ -259,7 +259,7 @@ export const openPanel = async (json, bundleId, id = "modal-popup", dir = '.') =
   versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
   if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", more);
   // Version history
-  document.querySelector("#version-history").href = `./version-history/?source=${base64Convert(json.sourceURL)}&id=${app.bundleIdentifier}`;
+  document.querySelector("#version-history").href = `./version-history/?source=${base64Convert(jsons.sourceURL)}&id=${app.bundleIdentifier}`;
   // 
   // Permissions
   const appPermissions = app.appPermissions;
@@ -341,7 +341,7 @@ export const openPanel = async (json, bundleId, id = "modal-popup", dir = '.') =
   let lastUpdated = new Date("1970-01-01");
   let appCount = 0;
   let altSourceTintColor = "var(--tint-color);";
-  for (const app of json.apps) {
+  for (const app of jsons.apps) {
     if (app.beta || app.patreon?.hidden) continue;
     let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
     if (appVersionDate > lastUpdated) {
@@ -351,11 +351,11 @@ export const openPanel = async (json, bundleId, id = "modal-popup", dir = '.') =
     }
     appCount++;
   }
-  sourceA.href = `${dir}/view/?source=${base64Convert(json.sourceURL)}`;
-  sourceContainer.style.backgroundColor = `#${(json.tintColor ?? altSourceTintColor).replaceAll("#", "")}`;
-  sourceIcon.src = json.iconURL ?? altSourceIcon;
-  sourceTitle.innerText = json.name;
-  sourceContainer.href = `${dir}/?source=${base64Convert(json.sourceURL)}`;
+  sourceA.href = `${dir}/view/?source=${base64Convert(jsons.sourceURL)}`;
+  sourceContainer.style.backgroundColor = `#${(jsons.tintColor ?? altSourceTintColor).replaceAll("#", "")}`;
+  sourceIcon.src = jsons.iconURL ?? altSourceIcon;
+  sourceTitle.innerText = jsons.name;
+  sourceContainer.href = `${dir}/?source=${base64Convert(jsons.sourceURL)}`;
   sourceSubtitle.innerText = `Last updated: ${formatVersionDate(lastUpdated)}`;
   sourceAppCount.innerText = appCount + (appCount === 1 ? " app" : " apps");
 
