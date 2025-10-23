@@ -186,7 +186,7 @@ main(json => {
 
         event.preventDefault();
         const bundleId = target.getAttribute("bundleid-data");
-        openPanel(json, bundleId, '..');
+        openPanel(json, bundleId, '../..');
     });
 
     loadMoreApps();
