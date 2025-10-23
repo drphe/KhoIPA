@@ -3,7 +3,7 @@ import { formatString, open, setUpBackButton , json , isValidHTTPURL } from "../
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader, AppLoading } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";
-import { openPanel } from "./common/components/Panel.js";
+import { openPanel } from "../common/components/Panel.js";
 
 const editorsources = await json("../common/assets/json/editorsources.json");
 
@@ -197,11 +197,7 @@ main(json => {
         button.addEventListener("click", event => {
             event.preventDefault();
 	    const bundleId = event.currentTarget.getAttribute('bundleid-data');
-	    const sourceTarget = allSources.find(json => {
-		return json.apps.some(app => app.bundleIdentifier === bundleId);
-	    });
-	    if(!sourceTarget) return;
-            openPanel(sourceTarget, bundleId, '..');
+            openPanel(json, bundleId, '..');
         });
     });
 
