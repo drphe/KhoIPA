@@ -83,7 +83,7 @@ main(json => {
 
   // Tạo wrapper chứa input và icon
   const searchWrapper = document.createElement("div");
-  searchWrapper.style.cssText = "display: none;z-index: 10000;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;margin: 10px;"
+  searchWrapper.style.cssText = "display: none;z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;margin: 10px;"
 
   // Tạo ô tìm kiếm
   const searchBox = document.createElement("input");

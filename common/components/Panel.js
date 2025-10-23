@@ -121,7 +121,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
       <div class="header">
         <h2>What's New</h2>
         <p id="version-size"></p>
-        <a id="version-history" style="color: var(--tint-color);" href="#">More Versions</a>
+        <a id="version-history" style="color: var(--tint-color);" href="#versions">More Versions</a>
       </div>
       <div class="header">
         <p id="version">Version 2.0</p>
@@ -253,7 +253,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
 
   // Version history
   bottomPanel.querySelector("#version-history").addEventListener("click", (event)=> {
-    event.preventDefault();
+    //event.preventDefault();
     const versionsContainer = bottomPanel.querySelector("#versions");
     if (app.versions) {
         app.versions.slice(1).forEach((version, i) => {
@@ -403,20 +403,21 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
   // tự động hiện nút tải khi cuộn
   // Hide/show navigation bar title & install button
   let isNavigationBarItemsVisible = false;
-  window.onscroll = function(e) {
+
+  bottomPanel.querySelector("#panel-body").onscroll = function(e) {
     const appName = bottomPanel.querySelector(".app-header .text>.title");
     const title = bottomPanel.querySelector("#title");
     const button = bottomPanel.querySelector("#nav-bar .install");
     if (!isNavigationBarItemsVisible && appName.getBoundingClientRect().y < 100) {
       title.classList.remove("hidden");
       button.classList.remove("hidden");
-      button.disaled = false;
+      button.disabled = false;
       isNavigationBarItemsVisible = true;
     } else if (isNavigationBarItemsVisible && appName.getBoundingClientRect().y >= 100) { // Main app name is visible
       // Hide navigation bar title & install button
       title.classList.add("hidden");
       button.classList.add("hidden");
-      button.disaled = true;
+      button.disabled  = true;
       isNavigationBarItemsVisible = false;
     }
   }
