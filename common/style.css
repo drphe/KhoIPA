@@ -213,13 +213,13 @@ body {
 #nav-bar #back {
   cursor: pointer;
   margin-right: 6px;
-  padding: 0 0.5rem 0rem 0rem;
 }
 
 #nav-bar #back .bi {
   margin-left: -8px;
   -webkit-text-stroke: 1px;
   font-size: 1.3em;
+  padding: 0 0.5rem 0rem 0rem;
 }
 
 #nav-bar a {
@@ -747,7 +747,7 @@ a>button {
 }
 
 .no-scroll {
-  overflow: hidden;
+  overflow: hidden!important;
 }
 
 .skeleton-text {

@@ -1,12 +1,11 @@
-import { sourceURL, base64Convert } from "../modules/constants.js";
 import { formatVersionDate } from "../modules/utilities.js";
 
 const baseHost = window.location.origin; 
 const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
 
-export const AppHeader = (app, x = ".") => app ? `
+export const AppHeader = (app) => app ? `
 <div class="app-header-container">
-<a href="${x}/app/?source=${base64Convert(sourceURL)}&id=${app.bundleIdentifier}" class="app-header-link">
+ <a href="#" bundleid-data = "${app.bundleIdentifier}"  class="app-header-link">
     <div class="app-header-inner-container">
         <div class="app-header">
             <div class="content">
@@ -25,3 +24,31 @@ export const AppHeader = (app, x = ".") => app ? `
 </a>
 </div>
 ` : undefined;
+
+export const AppLoading = (id = "apps-list", position = "beforeend") => {
+  const container = document.getElementById(id);
+  if (!container) return console.warn(`Element with id "${id}" not found.`);
+  
+  container.insertAdjacentHTML(position, `
+    <div class="app-container">
+      <div class="app-header-container">
+        <a href="#" class="app-header-link">
+          <div class="app-header-inner-container">
+            <div class="app-header">
+              <div class="content">
+                <div class="skeleton-block"></div>
+                <div class="right">
+                  <div class="text">
+                    <p class="title">--- --- ---</p>
+                    <p class="subtitle">------</p>
+                  </div>
+                  <button class="uibutton">---</button>
+                </div>
+              </div>
+              <div class="background"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>`);
+};

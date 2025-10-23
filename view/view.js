@@ -1,8 +1,9 @@
 import { sourceURL, base64Convert } from "../common/modules/constants.js";
 import { formatString, open, setUpBackButton , json , isValidHTTPURL } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
-import { AppHeader } from "../common/components/AppHeader.js";
+import { AppHeader, AppLoading } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";
+import { openPanel } from "./common/components/Panel.js";
 
 const editorsources = await json("../common/assets/json/editorsources.json");
 
@@ -42,9 +43,6 @@ main(json => {
             document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
     } else document.getElementById("news").remove();
 
-    // Sort apps in descending order of version date
-    // json.apps.sort((a, b) => (new Date(b.versionDate)).valueOf() - (new Date(a.versionDate)).valueOf());
-
     json.apps.sort((a, b) => {
       const dateA = new Date(a.versionDate ?? a.versions?.[0]?.date ?? 0).valueOf();
       const dateB = new Date(b.versionDate ?? b.versions?.[0]?.date ?? 0).valueOf();
@@ -62,16 +60,12 @@ main(json => {
         json.apps.forEach(app => {
             // Max: 5 featured apps if not specified
             if (count > 5) return;
-    
             // Ignore beta apps
             if (app.beta) return;
-    
             document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app));
-    
             count++;
         });
     }
-
 
   const allApps = json.apps.filter(app => !app.beta);
   let filteredApps = [...allApps];
@@ -122,36 +116,13 @@ main(json => {
   }
 
     });
-  // hàm chèn loadingApp
-  async function insertAppLoading(id = "apps-list", position = "beforeend") {
-    document.getElementById(id).insertAdjacentHTML(position, `<div class="app-container">
-<div class="app-header-container">
-    <a href="#" class="app-header-link">
-    <div class="app-header-inner-container">
-        <div class="app-header">
-            <div class="content">
-                <div class="skeleton-block"></div>
-                <div class="right">
-                    <div class="text">
-                        <p class="title">--- --- ---</p>
-                        <p class="subtitle">------</p>
-                    </div>
-                        <button class="uibutton">---</button>
-                    </div>
-                </div>
-            <div class="background" ></div>
-        </div>
-    </div>
-    </a>
-    </div></div>
-	`);
-  }
+
     async function run() {
       appsContainer.innerHTML = "";
       appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
       const tasks = [];
       for (let i = 0; i < 5; i++) {
-        tasks.push(insertAppLoading());
+        tasks.push(AppLoading());
       }
       await Promise.all(tasks); // Chờ tất cả hoàn tất
     }
@@ -172,7 +143,7 @@ main(json => {
         e.target.innerText = "View All Apps";
       }
     });
-
+    //with screenshot
     function loadMoreApps() {
         const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
         nextApps.forEach(app => {
@@ -202,19 +173,9 @@ main(json => {
             html += `</div>`;
             appsContainer.insertAdjacentHTML("beforeend", html);
         });
-
         currentIndex += appsPerLoad;
     }
-
-    // Tải thêm khi cuộn gần cuối
-    window.addEventListener("scroll", () => {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-            loadMoreApps();
-        }
-    });
-
-    loadMoreApps(); // Tải lần đầu
-
+    loadMoreApps();
 
     // 
     // About
@@ -231,17 +192,28 @@ main(json => {
     `);
     if (!description && !json.website) document.getElementById("about").remove();
 
+    // open app panel
+    document.querySelectorAll("a.app-header-link").forEach(button => {
+        button.addEventListener("click", event => {
+            event.preventDefault();
+	    const bundleId = event.currentTarget.getAttribute('bundleid-data');
+	    const sourceTarget = allSources.find(json => {
+		return json.apps.some(app => app.bundleIdentifier === bundleId);
+	    });
+	    if(!sourceTarget) return;
+            openPanel(sourceTarget, bundleId, '..');
+        });
+    });
+
     window.onscroll = e => {
         const title = document.querySelector("h1");
         const navBar = document.getElementById("nav-bar");
         const navBarTitle = navBar.querySelector("#title");
+	const showItem = title.getBoundingClientRect().y < 85;
 
-        if (title.getBoundingClientRect().y < 85) {
-            navBar.classList.remove("hide-border");
-            navBarTitle.classList.remove("hidden");
-        } else {
-            navBar.classList.add("hide-border");
-            navBarTitle.classList.add("hidden");
-        }
+  	navBar.classList.toggle("hide-border", !showItem);
+  	navBarTitle.classList.toggle("hidden", !showItem);
+
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) loadMoreApps();
     }
 }, "../");

@@ -40,14 +40,14 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
     handler: () => showAddToAltStoreAlert(jsons.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
   });
   installAppAlert.addAction({
-    title: "Copy Link",
-    style: 'default',
-    handler: () => showAddToAltStoreAlert(jsons.name, "Copy Link", () => copyText(app.downloadURL))
-  });
-  installAppAlert.addAction({
     title: "Download IPA",
     style: 'default',
     handler: () => showAddToAltStoreAlert(jsons.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
+  });
+  installAppAlert.addAction({
+    title: "Copy Link",
+    style: 'default',
+    handler: () => showAddToAltStoreAlert(jsons.name, "Copy Link", () => copyText(app.downloadURL))
   });
   installAppAlert.addAction({
     title: "Cancel",

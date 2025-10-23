@@ -2,6 +2,7 @@ import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/cons
 import { formatVersionDate,  showUIAlert,  json,  consolidateApps} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import { openPanel } from "./common/components/Panel.js";
+import { AppHeader, AppLoading } from "./common/components/AppHeader.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 const sources = await json("./common/assets/json/sources.json");
@@ -82,13 +83,13 @@ const editorsources = await json("./common/assets/json/editorsources.json");
       appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
       const tasks = [];
       for (let i = 0; i < 5; i++) {
-        tasks.push(insertAppLoading());
+        tasks.push(AppLoading());
       }
       await Promise.all(tasks); // Chờ tất cả hoàn tất
     }
     // search box
     const searchBox = document.getElementById("filterText");
-searchBox.addEventListener("keydown", async (event) => {
+    searchBox.addEventListener("keydown", async (event) => {
   if (event.key === "Enter") {
     await run();
     const keyword = searchBox.value.toLowerCase();
@@ -111,65 +112,13 @@ searchBox.addEventListener("keydown", async (event) => {
     function loadMoreApps() {
       const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
       nextApps.forEach(app => {
-        appsContainer.insertAdjacentHTML("beforeend", `<div class="app-container">${insertAppHeader(app)}</div>`);
+        appsContainer.insertAdjacentHTML("beforeend", `<div class="app-container">${AppHeader(app)}</div>`);
       });
       currentIndex += appsPerLoad;
     }
-    // Tải thêm khi cuộn gần cuối
-    window.addEventListener("scroll", () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-        loadMoreApps();
-      }
-    });
 
     loadMoreApps();
-  // hàm chèn loadingApp
-  async function insertAppLoading(id = "apps-list", position = "beforeend") {
-    document.getElementById(id).insertAdjacentHTML(position, `<div class="app-container">
-<div class="app-header-container">
-    <a href="#" class="app-header-link">
-    <div class="app-header-inner-container">
-        <div class="app-header">
-            <div class="content">
-                <div class="skeleton-block"></div>
-                <div class="right">
-                    <div class="text">
-                        <p class="title">--- --- ---</p>
-                        <p class="subtitle">------</p>
-                    </div>
-                        <button class="uibutton">---</button>
-                    </div>
-                </div>
-            <div class="background" ></div>
-        </div>
-    </div>
-    </a>
-    </div></div>
-	`);
-  }
-    function insertAppHeader(app) {
-      const baseHost = window.location.origin;
-      const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
-      return app ? `<div class="app-header-container">
-    <a href="#" bundleid-data = "${app.bundleIdentifier}"  class="app-header-link">
-    <div class="app-header-inner-container">
-        <div class="app-header">
-            <div class="content">
-                <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" alt="">
-                <div class="right">
-                    <div class="text">
-                        <p class="title">${app.name}</p>
-                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
-                    </div>
-                        <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
-                    </div>
-                </div>
-            <div class="background" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};"></div>
-        </div>
-    </div>
-    </a>
-    </div>` : undefined;
-    }
+
     async function fetchSource(url) {
         const data = await json(url);
 	const source = consolidateApps(data);
@@ -241,18 +190,16 @@ searchBox.addEventListener("keydown", async (event) => {
             openPanel(sourceTarget, bundleId);
         });
     });
-   
+
     window.onscroll = e => {
         const title = document.querySelector("h1");
         const navBar = document.getElementById("nav-bar");
         const navBarTitle = navBar.querySelector("#title");
+	const showItem = title.getBoundingClientRect().y < 36;
 
-        if (title.getBoundingClientRect().y < 36) {
-            navBar.classList.remove("hide-border");
-            navBarTitle.classList.remove("hidden");
-        } else {
-            navBar.classList.add("hide-border");
-            navBarTitle.classList.add("hidden");
-        }
+  	navBar.classList.toggle("hide-border", !showItem);
+  	navBarTitle.classList.toggle("hidden", !showItem);
+
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) loadMoreApps();
     }
 })();
