@@ -239,7 +239,9 @@ searchBox.addEventListener("keydown", async (event) => {
         button.addEventListener("click", event => {
             event.preventDefault();
 	    const bundleId = event.currentTarget.getAttribute('bundleid-data');
-	    const sourceTarget = allSources.find(item => item.apps.bundleIdentifier === bundleId);
+	    const sourceTarget = allSources.find(json => {
+		return json.apps.some(app => app.bundleIdentifier === bundleId);
+	    });
 		console.log(sourceTarget, bundleId)
 	    if(!sourceTarget) return;
             openPanel(sourceTarget, bundleId);
