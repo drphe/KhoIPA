@@ -4,14 +4,13 @@ import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert,
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
-
 export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') => {
+
   const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
   const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
   const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
 
   const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
-  console.log(app, jsons, bundleId)
   if (!app) {
     showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
     return;

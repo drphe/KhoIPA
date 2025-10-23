@@ -237,7 +237,6 @@ searchBox.addEventListener("keydown", async (event) => {
 	    const sourceTarget = allSources.find(json => {
 		return json.apps.some(app => app.bundleIdentifier === bundleId);
 	    });
-		console.log(sourceTarget, bundleId)
 	    if(!sourceTarget) return;
             openPanel(sourceTarget, bundleId);
         });
