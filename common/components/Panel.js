@@ -1,8 +1,11 @@
 
 import { base64Convert } from "../modules/constants.js";
-import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert, insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate} from "../modules/utilities.js";
+import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert, 
+insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
+import { MoreButton } from "../components/MoreButton.js";
+import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
 export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') => {
 
@@ -118,13 +121,14 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
       <div class="header">
         <h2>What's New</h2>
         <p id="version-size"></p>
-        <a id="version-history" style="color: var(--tint-color);" href="http://">Version History</a>
+        <a id="version-history" style="color: var(--tint-color);" href="#">More Versions</a>
       </div>
       <div class="header">
         <p id="version">Version 2.0</p>
         <p id="version-date">Apr 10, 2023</p>
       </div>
       <p id="version-description"></p>
+      <div id="versions"></div>
     </div>
     <div id="permissions" class="section">
       <div class="header">
@@ -194,19 +198,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
   appHeader.querySelector(".title").textContent = app.name;
   // Developer name
   appHeader.querySelector(".subtitle").textContent = app.developerName;
-  const more = `
-    <a id="more" onclick="revealTruncatedText(this);">
-        <button>more</button>
-    </a>`;
-  window.revealTruncatedText = moreButton => {
-    const textId = moreButton.parentNode.id;
-    const text = bottomPanel.querySelector(`#${textId}`);
-    text.style.display = "block";
-    text.style.overflow = "auto";
-    text.style.webkitLineClamp = "none";
-    text.style.lineClamp = "none";
-    text.removeChild(moreButton)
-  }
+
   // 
   // Preview
   const preview = bottomPanel.querySelector("#preview");
@@ -234,7 +226,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
   // Description
   const previewDescription = preview.querySelector("#description");
   previewDescription.innerHTML = formatString(app.localizedDescription);
-  if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", more);
+  if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
   if (!app.screenshots && !app.screenshotURLs && !app.localizedDescription) preview.remove();
   // 
   // Version info
@@ -257,9 +249,33 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
   versionSizeElement.textContent = appSize ? `${appSize} ${units[i]}` : "";
   // Version description
   versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
-  if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", more);
+  if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+
   // Version history
-  document.querySelector("#version-history").href = `./version-history/?source=${base64Convert(jsons.sourceURL)}&id=${app.bundleIdentifier}`;
+  bottomPanel.querySelector("#version-history").addEventListener("click", (event)=> {
+    event.preventDefault();
+    const versionsContainer = bottomPanel.querySelector("#versions");
+    if (app.versions) {
+        app.versions.slice(1).forEach((version, i) => {
+            versionsContainer.insertAdjacentHTML("beforeend",
+                VersionHistoryItem(
+                    jsons.name,
+                    version.version,
+                    formatVersionDate(version.date),
+                    formatString(version.localizedDescription),
+                    version.downloadURL,
+                    i+1
+                )
+            );
+        });
+    } 
+
+    versionsContainer.querySelectorAll(".version-description").forEach(element => {
+        if (element.scrollHeight > element.clientHeight)
+            element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+    });
+
+    });
   // 
   // Permissions
   const appPermissions = app.appPermissions;
