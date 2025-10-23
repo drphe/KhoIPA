@@ -1,31 +1,20 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { isValidHTTPURL, open, formatVersionDate, json,  consolidateApps } from "./common/modules/utilities.js";
+import { formatString, insertSpaceInCamelString, insertSpaceInSnakeString, formatVersionDate, open, setTintColor, isValidHTTPURL, showAddToAltStoreAlert, showUIAlert,  json,  consolidateApps} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
+import { openPanel } from "./common/components/Panel.js";
+import { AppPermissionItem } from "./common/components/AppPermissionItem.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
+const knownPrivacyPermissions = await json("./common/assets/json/privacy.json");
+const knownEntitlements = await json("./common/assets/json/entitlements.json");
+const legacyPermissions = await json("./common/assets/json/legacy-permissions.json");
 const sources = await json("./common/assets/json/sources.json");
 const editorsources = await json("./common/assets/json/editorsources.json");
 
 
-(async function main() {
+(async () =>{
     document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
-    // alert install
-    const installAppAlert = new UIAlert({
-        title: `How to Install?`,
-        message: "Select Share Button ->Add To Home Screen  -> Done. "
-    });
-    installAppAlert.addAction({
-        title: "Done",
-        style: 'cancel',
-    });
-    document.querySelectorAll("a.install").forEach(button => {
-        button.addEventListener("click", event => {
-            event.preventDefault();
-            installAppAlert.present();
-        });
-    });
-
-
+    // fetch Data
     const fetchedSources = await Promise.all(sources.map(async url => {
       const source = await fetchSource(url);
       return source || null;
@@ -35,20 +24,19 @@ const editorsources = await json("./common/assets/json/editorsources.json");
       return source || null;
     }));
 
-
     // Sort sources by last updated
     fetchedSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
 
-    // chèn editor's choice
+    // insert editor's source choice
     for (const source of fetchedEditorSources) {
         await insertSource(source, "suggestions");
     }
-    // chèn featured
+    // insert other source
     for (const source of fetchedSources) {
         await insertSource(source);
     }
 
-    const allSources = [...fetchedEditorSources, ...fetchedSources]; // Gộp mảng
+    const allSources = [...fetchedEditorSources, ...fetchedSources]; 
     const allApps = [];
     for (const source of allSources) {
       if (!source || !Array.isArray(source.apps)) continue;
@@ -168,7 +156,7 @@ searchBox.addEventListener("keydown", async (event) => {
       const baseHost = window.location.origin;
       const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
       return app ? `<div class="app-header-container">
-    <a href="./view/app/?source=${base64Convert(app.sourceURL)}&id=${app.bundleIdentifier}" class="app-header-link">
+    <a href="#" bundleId = "${app.bundleIdentifier}"  class="app-header-link">
     <div class="app-header-inner-container">
         <div class="app-header">
             <div class="content">
@@ -238,7 +226,25 @@ searchBox.addEventListener("keydown", async (event) => {
             </div>
         `);
     }
+    // add to home screen
+    document.querySelectorAll("a.install").forEach(button => {
+        button.addEventListener("click", event => {
+            event.preventDefault();
+            showUIAlert("How To Install?","Select Share Button -> Add To Home Screen  -> Done");
+        });
+    });
 
+    // open app panel
+    document.querySelectorAll("a.app-header-link").forEach(button => {
+        button.addEventListener("click", event => {
+            event.preventDefault();
+	    const bundleId = target.getAttribute('bundleId');
+	    const sourceTarget = allSources.filter(source => source.bundleId === bundleId);
+	    if(!sourceTarget) return;
+            openPanel(sourceTarget, bundleId);
+        });
+    });
+   
     window.onscroll = e => {
         const title = document.querySelector("h1");
         const navBar = document.getElementById("nav-bar");
