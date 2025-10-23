@@ -4,9 +4,8 @@ import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert,
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
-const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
 
-export const openPanel = async (jsons, bundleId, id = "modal-popup", dir = '.') => {
+export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') => {
   const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
   const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
   const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
@@ -64,8 +63,9 @@ export const openPanel = async (jsons, bundleId, id = "modal-popup", dir = '.') 
   const oldPopup = document.querySelector(`#${id}`);
   if (oldPopup) oldPopup.remove();
 
+  let altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
   const bottomPanel = document.createElement("div");
-  bottomPanel.id = id;
+  bottomPanel.id = ID;
   bottomPanel.classList.add("panel", "bottom");
   bottomPanel.innerHTML = `
 <div id="top">
