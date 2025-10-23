@@ -7,10 +7,10 @@ import UIAlert from "../vendor/uialert.js/uialert.js";
 const knownPrivacyPermissions = await json("../assets/json/privacy.json");
 const knownEntitlements = await json("../assets/json/entitlements.json");
 const legacyPermissions = await json("../assets/json/legacy-permissions.json");
-
+const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
 
 export const openPanel = async (jsons, bundleId, id = "modal-popup", dir = '.') => {
-  const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
+
   const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
   console.log(app, jsons, bundleId)
   if (!app) {
@@ -157,9 +157,9 @@ export const openPanel = async (jsons, bundleId, id = "modal-popup", dir = '.') 
         <h2>Discover More On</h2>
       </div>
       <div class="source-container">
-        <a href="../../view/" class="source-link">
+        <a href="${dir}/view/" class="source-link">
           <div class="source">
-          <img src="../../common/assets/img/generic_app.jpeg" onerror="this.onerror=null; this.src='../../common/assets/img/generic_app.jpeg';" alt="source-icon">
+          <img src="${altSourceIcon}" onerror="this.onerror=null; this.src='${altSourceIcon}';" alt="source-icon">
           <div class="right">
               <div class="text">
               <p class="title">Source</p>
