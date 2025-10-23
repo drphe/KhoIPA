@@ -52,6 +52,7 @@ export const openPanel = async (sourceUrl, bundleId, id = "bottomPanel") => {
   // check popup is exsit
   const oldPopup = document.querySelector(`#${id}`);
   if (oldPopup) oldPopup.remove();
+
   const bottomPanel = document.creatElement("div");
   bottomPanel.id = id;
   bottomPanel.classList.add("panel", "bottom");
@@ -347,7 +348,7 @@ export const openPanel = async (sourceUrl, bundleId, id = "bottomPanel") => {
 
 
   // add popup
-  document.getElementById("main")?.append(bottomPanel);
+  document.body.append(bottomPanel);
   bottomPanel.classList.add("show"); // show when everything ready
 
   // control
