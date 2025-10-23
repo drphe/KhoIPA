@@ -28,8 +28,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
+    width: 1px;
+    height: 1px;
     background: transparent;
 }
 
@@ -886,7 +886,7 @@ a>button {
   left: 0;
   right: 0;
   bottom: 0;
-  height: calc(100vh - 3.4rem);
+  height: 85%;
   transform: translateY(100%);
 }
 
