@@ -1,7 +1,7 @@
 export const openPanel = async (sourceUrl, bundleId, id = "bottomPanel") => {
   const altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
   const app = sourceUrl.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
-
+  console.log(app, sourceUrl, bundleId)
   if (!app) {
     showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
     return;
