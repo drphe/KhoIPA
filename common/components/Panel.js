@@ -67,7 +67,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
   bottomPanel.id = ID;
   bottomPanel.classList.add("panel", "bottom");
   bottomPanel.innerHTML = `
-<div id="top">
+<div id="panel-header">
     <!-- Navigation bar -->
     <div id="nav-bar">
       <div id="back-container">
@@ -85,7 +85,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
       </a>
     </div>
   </div>
-  <div id = "main" class="panel-content">
+  <div id ="panel-body" class="panel-content">
     <!-- Content -->
     <div class="item">
       <div class="app-header">
@@ -177,6 +177,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
 `;
   // add popup
   document.body.append(bottomPanel);
+
   // 
   // Navigation bar
   const navigationBar = bottomPanel.querySelector("#nav-bar");
@@ -358,14 +359,14 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
   sourceSubtitle.innerText = `Last updated: ${formatVersionDate(lastUpdated)}`;
   sourceAppCount.innerText = appCount + (appCount === 1 ? " app" : " apps");
 
-
-
   bottomPanel.classList.add("show"); // show when everything ready
+  document.body.classList.add('no-scroll'); 
 
   // control
-  const closeBottom = bottomPanel.getElementById("back-container");
+  const closeBottom = bottomPanel.querySelector("#back-container");
   closeBottom.addEventListener("click", () => {
     bottomPanel.classList.remove("show");
+    document.body.classList.remove('no-scroll');
   });
   let startY;
   bottomPanel.addEventListener("touchstart", e => {
@@ -388,7 +389,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
   let isNavigationBarItemsVisible = false;
   window.onscroll = function(e) {
     const appName = bottomPanel.querySelector(".app-header .text>.title");
-    const title = bottomPanel.getElementById("title");
+    const title = bottomPanel.querySelector("#title");
     const button = bottomPanel.querySelector("#nav-bar .install");
     if (!isNavigationBarItemsVisible && appName.getBoundingClientRect().y < 100) {
       title.classList.remove("hidden");
