@@ -737,7 +737,7 @@
     {
       "beta": false,
       "name": "Feather",
-      "type": 1,
+      "type": 4,
       "bundleIdentifier": "com.feather.app",
       "developerName": "Khcrysalis",
       "subtitle": "Ký và cài đặt IPA cho IOS",
@@ -766,7 +766,7 @@
     {
       "beta": false,
       "name": "轻松签-ESign",
-      "type": 1,
+      "type": 4,
       "bundleIdentifier": "p3.xyz.yyyue.esign",
       "developerName": "yyy",
       "subtitle": "Ứng dụng ký IPA",
