@@ -58,7 +58,7 @@ a, img, span {
 
   body,
   .uibanner,
-  #loading,
+  #loading, .panel,
   .uibanner>.content>div>.text-container {
     background-color: var(--color-bg-dark) !important;
   }
@@ -871,7 +871,7 @@ a>button {
 
 .panel {
   position: fixed;
-  background: var(--color-bg-dark);
+  background: var(--color-bg);
   box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
   z-index: 200;
@@ -880,7 +880,6 @@ a>button {
 .panel-content {
     max-width: 382px;
     margin: 0 auto;
-    background: var(--color-transparent-dark);
 }
 
 .panel.bottom {

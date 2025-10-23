@@ -187,7 +187,7 @@ main(json => {
     document.getElementById("featured").querySelectorAll("a.app-header-link").forEach(button => {
         button.addEventListener("click", executePanel);
     });
-
+    //openPanel(html, 'NỘI DUNG CHI TIẾT', '../..', "side"); // MỞ TỪ PHẢI QUA
     appsContainer.addEventListener("click", executePanel);
     function executePanel(e){
         const target = e.target.closest("a.app-header-link");

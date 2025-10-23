@@ -6,11 +6,20 @@ import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
-export const openPanel = async (jsons, bundleId,  dir = '.', ID = "modal-popup") => {
+export const openPanel = async (jsons, bundleId,  dir = '.', direction = "bottom") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
+    const ID = "modal-popup";
+    // check popup is exsit
+    const oldPopup = document.querySelector(`#${ID}`);
+    if (oldPopup) oldPopup.remove();
 
+    let altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
+    const bottomPanel = document.createElement("div");
+    bottomPanel.id = ID;
+    if(direction == "bottom"){
+    bottomPanel.classList.add("panel", "bottom");
     const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
     if (!app) {
         showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
@@ -60,14 +69,8 @@ export const openPanel = async (jsons, bundleId,  dir = '.', ID = "modal-popup")
             showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
         }
     }
-    // check popup is exsit
-    const oldPopup = document.querySelector(`#${ID}`);
-    if (oldPopup) oldPopup.remove();
 
-    let altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
-    const bottomPanel = document.createElement("div");
-    bottomPanel.id = ID;
-    bottomPanel.classList.add("panel", "bottom");
+
     bottomPanel.innerHTML = `
 <div id="panel-header">
     <!-- Navigation bar -->
@@ -178,8 +181,6 @@ export const openPanel = async (jsons, bundleId,  dir = '.', ID = "modal-popup")
   </div>
   </div>
 `;
-    // add popup
-    document.body.append(bottomPanel);
 
     // 
     // Navigation bar
@@ -374,35 +375,8 @@ export const openPanel = async (jsons, bundleId,  dir = '.', ID = "modal-popup")
     sourceSubtitle.innerText = `Last updated: ${formatVersionDate(lastUpdated)}`;
     sourceAppCount.innerText = appCount + (appCount === 1 ? " app" : " apps");
 
-    bottomPanel.classList.add("show"); // show when everything ready
-    document.body.classList.add('no-scroll');
-
-    // control
-    const closeBottom = bottomPanel.querySelector("#back-container");
-    closeBottom.addEventListener("click", () => {
-        bottomPanel.classList.remove("show");
-        document.body.classList.remove('no-scroll');
-    });
-    let startY;
-    bottomPanel.addEventListener("touchstart", e => {
-        startY = e.touches[0].clientY;
-    });
-    bottomPanel.addEventListener("touchend", e => {
-        let endY = e.changedTouches[0].clientY;
-        if (endY - startY > 50) { // vuốt xuống
-            bottomPanel.classList.remove("show");
-        }
-    });
-    bottomPanel.querySelectorAll("a.install").forEach(button => {
-        button.addEventListener("click", event => {
-            event.preventDefault();
-            installAppAlert.present();
-        });
-    });
-    // tự động hiện nút tải khi cuộn
     // Hide/show navigation bar title & install button
     let isNavigationBarItemsVisible = false;
-
     bottomPanel.querySelector("#panel-body").onscroll = function(e) {
         const appName = bottomPanel.querySelector(".app-header .text>.title");
         const title = bottomPanel.querySelector("#title");
@@ -420,4 +394,61 @@ export const openPanel = async (jsons, bundleId,  dir = '.', ID = "modal-popup")
             isNavigationBarItemsVisible = false;
         }
     }
+    // listen install button
+    bottomPanel.querySelectorAll("a.install").forEach(button => {
+        button.addEventListener("click", event => {
+            event.preventDefault();
+            installAppAlert.present();
+        });
+    });
+    } else if(direction == "side"){
+
+    bottomPanel.classList.add("panel", direction);
+
+    bottomPanel.innerHTML = `
+<div id="panel-header">
+    <!-- Navigation bar -->
+    <div id="nav-bar">
+      <div id="back-container">
+        <button id="back" type="button">
+          <i class="bi bi-chevron-right"></i>
+          Close
+        </button>
+      </div>
+      <div id="title" class="">
+        ${bundleId}
+      </div>
+      <a href="#" class="install"></a>
+    </div>
+  </div>
+  <div id="panel-body" class="panel-content">
+     ${jsons}
+  </div>
+`;
+
+    }
+
+    // add popup
+    document.body.append(bottomPanel);
+    bottomPanel.classList.add("show"); // show when everything ready
+    document.body.classList.add('no-scroll');
+
+    // control popup
+    const closeBottom = bottomPanel.querySelector("#back-container");
+    closeBottom.addEventListener("click", () => {
+        bottomPanel.classList.remove("show");
+        document.body.classList.remove('no-scroll');
+    });
+    let startY;
+    bottomPanel.addEventListener("touchstart", e => {
+        startY = e.touches[0].clientY;
+    });
+    bottomPanel.addEventListener("touchend", e => {
+        let endY = e.changedTouches[0].clientY;
+        if (endY - startY > 50) { // vuốt xuống
+            bottomPanel.classList.remove("show");
+        }
+    });
+
+
 }
