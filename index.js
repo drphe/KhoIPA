@@ -156,7 +156,7 @@ searchBox.addEventListener("keydown", async (event) => {
       const baseHost = window.location.origin;
       const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
       return app ? `<div class="app-header-container">
-    <a href="#" bundleId = "${app.bundleIdentifier}"  class="app-header-link">
+    <a href="#" bundleid-data = "${app.bundleIdentifier}"  class="app-header-link">
     <div class="app-header-inner-container">
         <div class="app-header">
             <div class="content">
@@ -238,7 +238,7 @@ searchBox.addEventListener("keydown", async (event) => {
     document.querySelectorAll("a.app-header-link").forEach(button => {
         button.addEventListener("click", event => {
             event.preventDefault();
-	    const bundleId = event.target.getAttribute('bundleId');
+	    const bundleId = event.target.getAttribute('bundleid-data');
 	    const sourceTarget = allSources.filter(source => source.bundleId === bundleId);
 	    if(!sourceTarget) return;
             openPanel(sourceTarget, bundleId);
