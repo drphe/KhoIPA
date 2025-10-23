@@ -79,7 +79,7 @@ main((json) => {
     installAppAlert.addAction({
         title: "Download IPA",
         style: 'default',
-        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
+        handler: () => showAddToAltStoreAlert(json.name, "Download IPA", () => open(app.downloadURL))
     });
     installAppAlert.addAction({
         title: "Copy Link",
@@ -91,15 +91,7 @@ main((json) => {
         title: "Cancel",
         style: 'cancel',
     });
-    function downloadFile(url) {
-  const a = document.createElement("a");
-  a.href = url;
-  a.target ="_blank";
-  a.download = ""; // Safari sẽ mở trình tải
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
+    
 async function copyText(text) {
   try {
     await navigator.clipboard.writeText(text);
