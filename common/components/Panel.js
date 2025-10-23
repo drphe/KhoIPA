@@ -60,7 +60,7 @@ export const openPanel = async (jsons, bundleId, ID = "modal-popup", dir = '.') 
     }
   }
   // check popup is exsit
-  const oldPopup = document.querySelector(`#${id}`);
+  const oldPopup = document.querySelector(`#${ID}`);
   if (oldPopup) oldPopup.remove();
 
   let altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
