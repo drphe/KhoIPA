@@ -213,8 +213,7 @@ function executeNews(url, isAll = false){
 }
 }
 
-
-    appsContainer.addEventListener("click", executePanel);
+    document.addEventListener("click", executePanel);
 
     function executePanel(e){
         const targetLinks = e.target.closest("a.app-header-link");
