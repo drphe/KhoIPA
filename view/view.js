@@ -194,7 +194,7 @@ main(json => {
 // read news
 function executeNews(url, isAll = false){
     if(isAll){
-	const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, true)).join('')}</div>`;	
+	const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;	
 	openPanel(html, 'ALL NEWS', '..', "side", "news-popup");
     }else {
     if(!url) return;
@@ -220,13 +220,13 @@ function executeNews(url, isAll = false){
         const targetLinks = e.target.closest("a.app-header-link");
         const targetNews = e.target.closest("a.news-item-header");
         if (targetLinks){
-        e.preventDefault();
-        const bundleId = targetLinks.getAttribute("bundleid-data");
-        openPanel(json, bundleId, '..');
+        	e.preventDefault();
+        	const bundleId = targetLinks.getAttribute("bundleid-data");
+        	openPanel(json, bundleId, '..');
 	}else if (targetNews){
-        e.preventDefault();
-           const url = targetNews.getAttribute("data");
-        alert(url)
+        	e.preventDefault();
+           	const url = targetNews.getAttribute("data");
+        	console.log(url)
 	    if(isValidHTTPURL(url)){
 		window.open(url, "_blank");	
 		return;
