@@ -205,7 +205,7 @@ function executeNews(url, isAll = false){
       })
       .then(markdown => {
         const html = marked.parse(markdown);
-        openPanel(html, 'DETAILS', '../..', "side");
+        openPanel(html, 'DETAILS', '..', "side");
       })
       .catch(error => {
         console.error("Lỗi khi tải nội dung:", error);
@@ -222,7 +222,7 @@ function executeNews(url, isAll = false){
         if (targetLinks){
         e.preventDefault();
         const bundleId = targetLinks.getAttribute("bundleid-data");
-        openPanel(json, bundleId, '../..');
+        openPanel(json, bundleId, '..');
 	}else if (targetNews){
         e.preventDefault();
            const url = targetNews.getAttribute("href");
