@@ -204,7 +204,7 @@ function executeNews(url, isAll = false){
         return response.text();
       })
       .then(markdown => {
-        const html = marked.parse(markdown);
+        const html =`<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;	
         openPanel(html, 'DETAILS', '..', "side");
       })
       .catch(error => {
