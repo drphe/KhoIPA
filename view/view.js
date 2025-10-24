@@ -41,8 +41,10 @@ main(json => {
             document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
             document.getElementById("news-items").classList.add("one");
         } else
-            for (let i = 0; i < 5 && i < json.news.length; i++)
+            for (let i = 0; i < json.news.length; i++){
+		if (!json.news[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
+	    }
     } else document.getElementById("news").remove();
 
     json.apps.sort((a, b) => {
