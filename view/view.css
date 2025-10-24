@@ -70,3 +70,30 @@ border-top: 1px solid;
 }
 .panel img {max-width: 380px;}
 
+#news {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.news-item-wrapper {
+  margin-bottom: 2.5em;
+}
+
+.news-item-wrapper:last-of-type {
+  /*margin-bottom: 1em;*/
+}
+
+.news-item-wrapper .item {
+  margin-bottom: 1rem !important;
+}
+
+#news .item>.text {
+  margin: 1.5em;
+  color: #fff;
+  /* Remove line limit */
+  display: block;
+}
+
+#news .app-header-container {
+  padding: 0;
+}
