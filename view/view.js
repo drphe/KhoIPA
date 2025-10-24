@@ -226,6 +226,7 @@ function executeNews(url, isAll = false){
 	}else if (targetNews){
         e.preventDefault();
            const url = targetNews.getAttribute("data");
+        alert(url)
 	    if(isValidHTTPURL(url)){
 		window.open(url, "_blank");	
 		return;
