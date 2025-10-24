@@ -777,21 +777,6 @@
       ]
     },
     {
-      "name": "Stremio-1.0.1-7",
-      "bundleIdentifier": "com.stremio.one",
-      "developerName": "Stremio-1.0.1-7 x CyPwn",
-      "version": "1.0.1",
-      "versionDate": "2025-02-27",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Stremio-1.0.1-7.ipa",
-      "localizedDescription": "Stremio 1.0.1-7",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Stremio-1.0.1-7.png",
-      "tintColor": "FFC300",
-      "size": 68157440,
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Stremio-1.0.1-7/Stremio-1.0.1-7-0.png"
-      ]
-    },
-    {
       "name": "fGet_1.5.19_NoAds",
       "bundleIdentifier": "com.penguinbit.fastdownload",
       "developerName": "fGet_1.5.19_NoAds x CyPwn",
@@ -1541,21 +1526,6 @@
       "size": 98566144,
       "screenshotURLs": [
         "https://ipa.cypwn.xyz/serve/screenshots/Discord_228.1_Pyoncord/Discord_228.1_Pyoncord_DiscordNoTrack-0.png"
-      ]
-    },
-    {
-      "name": "Gopeed-v1.5.7-ios",
-      "bundleIdentifier": "com.gopeed",
-      "developerName": "Gopeed-v1.5.7-ios x CyPwn",
-      "version": "1.5.6",
-      "versionDate": "2024-05-08",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed-v1.5.7-ios.ipa",
-      "localizedDescription": "High-speed iOS download manager!",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Gopeed-v1.5.7-ios.png",
-      "tintColor": "FFC300",
-      "size": 34603008,
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Gopeed-v1.5.7-ios/Gopeed-v1.5.7-ios-0.png"
       ]
     },
     {
@@ -3614,16 +3584,6 @@
       "notify": true
     },
     {
-      "title": "Stremio-1.0.1-7 now available!",
-      "identifier": "cypwn.Stremio-1.0.1-7.1.0.1",
-      "caption": "Stremio-1.0.1-7 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Stremio-1.0.1-7.png",
-      "date": "2025-02-27",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
       "title": "fGet_1.5.19_NoAds now available!",
       "identifier": "cypwn.fGet_1.5.19_NoAds.1.5.19",
       "caption": "fGet_1.5.19_NoAds added to the CyPwn Library",
@@ -4110,16 +4070,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/Discord_228.1_Pyoncord_DiscordNoTrack.png",
       "date": "2024-05-10",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Gopeed-v1.5.7-ios now available!",
-      "identifier": "cypwn.Gopeed-v1.5.7-ios.1.5.6",
-      "caption": "Gopeed-v1.5.7-ios added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Gopeed-v1.5.7-ios.png",
-      "date": "2024-05-08",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
