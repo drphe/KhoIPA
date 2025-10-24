@@ -205,7 +205,7 @@ function executeNews(url, isAll = false){
       })
       .then(markdown => {
         const html = marked.parse(markdown);
-        openPanel(html, 'DETAILS', '..', "side");
+        openPanel(html, 'DETAILS', '../..', "side");
       })
       .catch(error => {
         console.error("Lỗi khi tải nội dung:", error);
