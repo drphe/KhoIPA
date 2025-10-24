@@ -413,7 +413,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       <a href="#" class="install"></a>
     </div>
   </div>
-  <div id="panel-body" class="panel-content" style="padding-bottom: 3.5rem;">
+  <div id="panel-body" class="panel-content news-content" style="padding-bottom: 7rem;">
      ${jsons}
   </div>
 `;
