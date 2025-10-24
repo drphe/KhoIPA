@@ -68,7 +68,13 @@ width: 100%;
 border: none;
 border-top: 1px solid;
 }
-.news-item-content img {max-width: 380px;}
+.news-item-content img {
+max-width: 380px;
+}
+.news-item-content {
+    padding-bottom: 3rem;
+}
+
 .news-content {
   margin-bottom:4rem;
   }
