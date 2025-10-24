@@ -225,7 +225,7 @@ function executeNews(url, isAll = false){
         	const bundleId = targetLinks.getAttribute("data-bundleid");
         	openPanel(json, bundleId, '..');
 	}
-	console(targetLinks, targetNews); return;
+	console.log(targetLinks, targetNews); return;
         if (targetNews){
         	e.preventDefault();
            	const url = targetNews.getAttribute("data-url");
