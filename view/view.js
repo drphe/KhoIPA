@@ -225,7 +225,7 @@ function executeNews(url, isAll = false){
         openPanel(json, bundleId, '..');
 	}else if (targetNews){
         e.preventDefault();
-           const url = targetNews.getAttribute("href");
+           const url = targetNews.getAttribute("data");
 	    if(isValidHTTPURL(url)){
 		window.open(url, "_blank");	
 		return;
