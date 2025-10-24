@@ -224,11 +224,9 @@ function executeNews(url, isAll = false){
         	const bundleId = targetLinks.getAttribute("data-bundleid");
         	openPanel(json, bundleId, '..');
 	}
-	console.log(targetLinks, targetNews); 
         if (targetNews){
         	e.preventDefault();
            	const url = targetNews.getAttribute("data-url");
-        	alert(url)
 	    if(isValidHTTPURL(url)){
 		window.open(url, "_blank");	
 		return;
