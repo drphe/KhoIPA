@@ -219,11 +219,13 @@ function executeNews(url, isAll = false){
     function executePanel(e){
         const targetLinks = e.target.closest("a.app-header-link");
         const targetNews = e.target.closest("a.news-item-header");
+	console(e, targetLinks, targetNews)
         if (targetLinks){
         	e.preventDefault();
         	const bundleId = targetLinks.getAttribute("bundleid-data");
         	openPanel(json, bundleId, '..');
-	}else if (targetNews){
+	}
+        if (targetNews){
         	e.preventDefault();
            	const url = targetNews.getAttribute("data");
         	console.log(url)

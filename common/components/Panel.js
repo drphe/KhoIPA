@@ -432,7 +432,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
   }
 
   // show popup
-  bottomPanel.classList.add("show"); // show when everything ready
+  setTimeout(()=>bottomPanel.classList.add("show"),300); // show when everything ready
   document.body.classList.add('no-scroll');
   // control popup
   const closeBottom = bottomPanel.querySelector("#back-container");
