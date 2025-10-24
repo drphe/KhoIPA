@@ -219,11 +219,16 @@ function executeNews(url, isAll = false){
         const targetNews = e.target.closest("a.news-item-header");
         if (targetLinks){
         e.preventDefault();
-        const bundleId = target.getAttribute("bundleid-data");
+        const bundleId = targetLinks.getAttribute("bundleid-data");
         openPanel(json, bundleId, '../..');
 	}else if (targetNews){
         e.preventDefault();
-	//lấy url => check => executeNews(url); hoặc window.open(url, "_blank");
+           const url = targetNews.getAttribute("href");
+	    if(isValidHTTPURL(url)){
+		window.open(url, "_blank");	
+		return;
+		}
+		executeNews('./note/'+url);
 	}
     }
 
