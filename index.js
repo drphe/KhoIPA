@@ -123,7 +123,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     }
 
 
-    appsContainer.addEventListener("click", event => {
+    document.addEventListener("click", event => {
         const target = event.target.closest("a.app-header-link");
         if (!target) return;
 
