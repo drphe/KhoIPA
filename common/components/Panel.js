@@ -396,8 +396,8 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       }
     });
   } else if (direction == "side") {
-    await bottomPanel.classList.add("panel", direction);
-    await bottomPanel.innerHTML = `
+    bottomPanel.classList.add("panel", direction);
+    bottomPanel.innerHTML = `
 <div id="panel-header">
     <!-- Navigation bar -->
     <div id="nav-bar">
