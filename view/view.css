@@ -68,7 +68,7 @@ width: 100%;
 border: none;
 border-top: 1px solid;
 }
-.panel img {max-width: 380px;}
+.news-content img {max-width: 380px;}
 
 #news {
   padding: 0 1rem;
