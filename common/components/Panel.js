@@ -396,8 +396,8 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       }
     });
   } else if (direction == "side") {
-    bottomPanel.classList.add("panel", direction);
-    bottomPanel.innerHTML = `
+    await bottomPanel.classList.add("panel", direction);
+    await bottomPanel.innerHTML = `
 <div id="panel-header">
     <!-- Navigation bar -->
     <div id="nav-bar">
@@ -413,7 +413,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       <a href="#" class="install"></a>
     </div>
   </div>
-  <div id="panel-body" class="panel-content">
+  <div id="panel-body" class="panel-content" style="padding-bottom: 1.5rem;">
      ${jsons}
   </div>
 `;
@@ -430,6 +430,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       }
     });
   }
+
   // show popup
   bottomPanel.classList.add("show"); // show when everything ready
   document.body.classList.add('no-scroll');
