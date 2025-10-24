@@ -5,7 +5,7 @@ const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
 
 export const AppHeader = (app) => app ? `
 <div class="app-header-container">
- <a href="#" bundleid-data = "${app.bundleIdentifier}"  class="app-header-link">
+ <a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link">
     <div class="app-header-inner-container">
         <div class="app-header">
             <div class="content">

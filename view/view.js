@@ -219,15 +219,16 @@ function executeNews(url, isAll = false){
     function executePanel(e){
         const targetLinks = e.target.closest("a.app-header-link");
         const targetNews = e.target.closest("a.news-item-header");
-	console(e, targetLinks, targetNews)
+
         if (targetLinks){
         	e.preventDefault();
-        	const bundleId = targetLinks.getAttribute("bundleid-data");
+        	const bundleId = targetLinks.getAttribute("data-bundleid");
         	openPanel(json, bundleId, '..');
 	}
+	console(targetLinks, targetNews); return;
         if (targetNews){
         	e.preventDefault();
-           	const url = targetNews.getAttribute("data");
+           	const url = targetNews.getAttribute("data-url");
         	console.log(url)
 	    if(isValidHTTPURL(url)){
 		window.open(url, "_blank");	
