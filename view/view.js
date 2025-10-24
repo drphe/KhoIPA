@@ -194,7 +194,7 @@ main(json => {
 // read news
 function executeNews(url, isAll = false){
     if(isAll){
-	const html = `<div id="news" class="section">${json.news.map(NewsItem).join('')}</div>`;	
+	const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, true)).join('')}</div>`;	
 	openPanel(html, 'ALL NEWS', '../..', "side", "news-popup");
     }else {
     if(!url) return;
