@@ -59,3 +59,14 @@ input[type="text"]:focus {
         color: white;
     }
 }
+.panel h1 { font-size: 26px; }
+.panel h2 { font-size: 20px; }
+.panel h3 { font-size: 16px; }
+.panel h4{font-size: 14px; }
+hr{
+width: 100%;
+border: none;
+border-top: 1px solid;
+}
+.panel img {max-width: 380px;}
+
