@@ -81,8 +81,8 @@ border-top: 1px solid;
   margin-bottom: 2.5em;
 }
 
-.news-item-wrapper:last-of-type {
-  /*margin-bottom: 1em;*/
+.section:last-of-type {
+  margin-bottom: 3em;
 }
 
 .news-item-wrapper .item {
