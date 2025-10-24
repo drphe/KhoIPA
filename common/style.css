@@ -64,8 +64,7 @@ a, img, span {
   }
 
   p,
-  h1,
-  h2 {
+  h1,h2,h3,h4,ol,ul,li {
     color: white !important;
   }
 
@@ -878,7 +877,7 @@ a>button {
 }
 
 .panel-content {
-    max-width: 382px;
+    max-width: 414px;
     margin: 0 auto;
 }
 

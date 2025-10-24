@@ -195,7 +195,7 @@ main(json => {
 function executeNews(url, isAll = false){
     if(isAll){
 	const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;	
-	openPanel(html, 'ALL NEWS', '..', "side", "news-popup");
+	openPanel(html, '<p>ALL NEWS</p>', '..', "side", "news-popup");
     }else {
     if(!url) return;
     fetch(url)
@@ -205,7 +205,7 @@ function executeNews(url, isAll = false){
       })
       .then(markdown => {
         const html =`<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;	
-        openPanel(html, 'DETAILS', '..', "side");
+        openPanel(html, '<p>CONTENTS</p>', '..', "side");
       })
       .catch(error => {
         console.error("Lỗi khi tải nội dung:", error);
