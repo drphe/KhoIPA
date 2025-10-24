@@ -128,7 +128,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         if (!target) return;
 
         event.preventDefault();
-        const bundleId = target.getAttribute("bundleid-data");
+        const bundleId = target.getAttribute("data-bundleid");
         const sourceTarget = allSources.find(json =>
             json.apps.some(app => app.bundleIdentifier === bundleId)
         );
