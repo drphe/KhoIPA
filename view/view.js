@@ -1,4 +1,4 @@
-import { sourceURL, base64Convert } from "../common/modules/constants.js";
+import { sourceURL} from "../common/modules/constants.js";
 import { formatString, open, setUpBackButton , json , isValidHTTPURL } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader, AppLoading } from "../common/components/AppHeader.js";
@@ -19,9 +19,10 @@ main(json => {
     });
 
     // Set "View All News" link
-    document.querySelector("#news a").href = `./news/?source=${base64Convert(sourceURL)}`;
-    // Set "View All Apps" link
-    //document.querySelector("#apps a").href = `./all-apps/?source=${base64Convert(sourceURL)}`;
+    document.getElementById('all-news').addEventListener("click", (e) => {
+        e.preventDefault();
+        executeNews("", true);
+     });
 
     // Set tab title
     document.title = json.name;
@@ -122,7 +123,7 @@ main(json => {
 
     });
 
-    // click button
+    // click button views all apps
     document.getElementById('search').addEventListener("click", (e) => {
         e.preventDefault();
         if (e.target.innerText == "View All Apps") {
@@ -189,7 +190,12 @@ main(json => {
     });
 
 // read news
-function executeNews(url){
+function executeNews(url, isAll = false){
+    if(isAll){
+	const html = `<div id="news" class="section">${json.news.map(NewsItem).join('')}</div>`;	
+	openPanel(html, 'ALL NEWS', '../..', "side", "news-popup");
+    }else {
+    if(!url) return;
     fetch(url)
       .then(response => {
         if (!response.ok) throw new Error("Fetch failed");
@@ -197,21 +203,28 @@ function executeNews(url){
       })
       .then(markdown => {
         const html = marked.parse(markdown);
-        openPanel(html, 'NỘI DUNG CHI TIẾT', '../..', "side");
+        openPanel(html, 'DETAILS', '../..', "side");
       })
       .catch(error => {
         console.error("Lỗi khi tải nội dung:", error);
       });
 }
+}
 
 
     appsContainer.addEventListener("click", executePanel);
+
     function executePanel(e){
-        const target = e.target.closest("a.app-header-link");
-        if (!target) return;
+        const targetLinks = e.target.closest("a.app-header-link");
+        const targetNews = e.target.closest("a.news-item-header");
+        if (targetLinks){
         e.preventDefault();
         const bundleId = target.getAttribute("bundleid-data");
         openPanel(json, bundleId, '../..');
+	}else if (targetNews){
+        e.preventDefault();
+	//lấy url => check => executeNews(url); hoặc window.open(url, "_blank");
+	}
     }
 
     loadMoreApps();

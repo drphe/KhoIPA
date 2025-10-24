@@ -10,7 +10,6 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
   const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
   const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
   const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
-
   // check popup is exsit
   const oldPopup = document.querySelector(`#${ID}`);
   if (oldPopup) oldPopup.remove();
@@ -18,7 +17,6 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
   const bottomPanel = document.createElement("div");
   bottomPanel.id = ID;
   document.body.append(bottomPanel);
-
   if (direction == "bottom") {
     bottomPanel.classList.add("panel", "bottom");
     const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
@@ -255,7 +253,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         app.versions.slice(1).forEach((version, i) => {
           versionsContainer.insertAdjacentHTML("beforeend", VersionHistoryItem(jsons.name, version.version, formatVersionDate(version.date), formatString(version.localizedDescription), version.downloadURL, i + 1));
         });
-          isAllVersion = true;
+        isAllVersion = true;
       }
       versionsContainer.querySelectorAll(".version-description").forEach(element => {
         if (element.scrollHeight > element.clientHeight) element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
@@ -385,19 +383,18 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         installAppAlert.present();
       });
     });
-  // scroll down to close
-  let startY;
-  bottomPanel.addEventListener("touchstart", e => {
-    startY = e.touches[0].clientY;
-  });
-  bottomPanel.addEventListener("touchend", e => {
-    let endY = e.changedTouches[0].clientY;
-    if (endY - startY > 200) { // vuốt xuống
-      bottomPanel.classList.remove("show");
-      document.body.classList.remove('no-scroll');
-    }
-  });
-
+    // scroll down to close
+    let startY;
+    bottomPanel.addEventListener("touchstart", e => {
+      startY = e.touches[0].clientY;
+    });
+    bottomPanel.addEventListener("touchend", e => {
+      let endY = e.changedTouches[0].clientY;
+      if (endY - startY > 200) { // vuốt xuống
+        bottomPanel.classList.remove("show");
+        document.body.classList.remove('no-scroll');
+      }
+    });
   } else if (direction == "side") {
     bottomPanel.classList.add("panel", direction);
     bottomPanel.innerHTML = `
@@ -420,32 +417,26 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
      ${jsons}
   </div>
 `;
-
-// scroll right to close
-let startX;
-
-bottomPanel.addEventListener("touchstart", e => {
-  startX = e.touches[0].clientX;
-});
-
-bottomPanel.addEventListener("touchend", e => {
-  let endX = e.changedTouches[0].clientX;
-  if (endX - startX > 100) { // vuốt sang phải
-    bottomPanel.classList.remove("show");
-    document.body.classList.remove('no-scroll');
-  }
-});
-
+    // scroll right to close
+    let startX;
+    bottomPanel.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+    });
+    bottomPanel.addEventListener("touchend", e => {
+      let endX = e.changedTouches[0].clientX;
+      if (endX - startX > 100) { // vuốt sang phải
+        bottomPanel.classList.remove("show");
+        document.body.classList.remove('no-scroll');
+      }
+    });
   }
   // show popup
   bottomPanel.classList.add("show"); // show when everything ready
   document.body.classList.add('no-scroll');
-
   // control popup
   const closeBottom = bottomPanel.querySelector("#back-container");
   closeBottom.addEventListener("click", () => {
     bottomPanel.classList.remove("show");
     document.body.classList.remove('no-scroll');
   });
-
 }
