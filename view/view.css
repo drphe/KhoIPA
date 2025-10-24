@@ -69,7 +69,9 @@ border: none;
 border-top: 1px solid;
 }
 .news-content img {max-width: 380px;}
-
+.news-content {
+  padding-bottom:7rem;
+  }
 #news {
   padding: 0 1rem;
   margin-top: 1rem;
