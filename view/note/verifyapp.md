@@ -25,7 +25,7 @@ DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài
 
 Truy cập một trong các công cụ sau:
 
-=> <a href="https://drphe.github.io/KhoIPA/" data-url="allsetupipa.md"> Tổng hợp </a>
+=> <a href="#" data-url="allsetupipa.md"> Tổng hợp </a>
 
 
 * ✅ [eSign](https://techybuff.com/esign/)
