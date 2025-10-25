@@ -58,7 +58,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     let currentIndex = 0;
     const appsPerLoad = 10;
     const appsContainer = document.getElementById("apps-list");
-    const totalRepoCount document.getElementById('title2');
+    const totalRepoCount = document.getElementById('title2');
     const totalAppsCount = document.getElementById('title3');
 
     // total of repositories

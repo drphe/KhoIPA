@@ -424,7 +424,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     });
     bottomPanel.addEventListener("touchend", e => {
       let endX = e.changedTouches[0].clientX;
-      if (endX - startX > 100) { // vuốt sang phải
+      if (endX - startX > 60) { // vuốt sang phải
         bottomPanel.classList.remove("show");
         document.body.classList.remove('no-scroll');
       }
