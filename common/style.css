@@ -977,7 +977,7 @@ a>button {
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  padding-right: 1em;
+  margin: 1em;
 }
 
 #preview #screenshots>img {
