@@ -882,6 +882,7 @@ a>button {
 }
 .panel-content .item{
     padding: 0 1rem;
+    border-radius: 1.5em;
 }
 .panel.bottom {
   left: 0;
