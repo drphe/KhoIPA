@@ -1208,3 +1208,7 @@ a>button {
 .version-date {
   opacity: 0.5;
 }
+
+.no-padding {
+  padding:0!important;
+}
