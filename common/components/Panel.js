@@ -384,17 +384,44 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       });
     });
     // scroll down to close
-    let startY;
-    bottomPanel.addEventListener("touchstart", e => {
-      startY = e.touches[0].clientY;
-    });
-    bottomPanel.addEventListener("touchend", e => {
-      let endY = e.changedTouches[0].clientY;
-      if (endY - startY > 200) { // vuốt xuống
-        bottomPanel.classList.remove("show");
-        document.body.classList.remove('no-scroll');
-      }
-    });
+let startY;
+let currentY;
+let isDragging = false;
+
+bottomPanel.addEventListener("touchstart", e => {
+  startY = e.touches[0].clientY;
+  isDragging = true;
+  bottomPanel.style.transition = "none";
+});
+
+bottomPanel.addEventListener("touchmove", e => {
+  if (!isDragging) return;
+  currentY = e.touches[0].clientY;
+  let deltaY = currentY - startY;
+  if (deltaY > 0) {
+    bottomPanel.style.transform = `translateY(${deltaY}px)`; 
+  }
+});
+
+bottomPanel.addEventListener("touchend", e => {
+  isDragging = false;
+  let endY = e.changedTouches[0].clientY;
+  let deltaY = endY - startY;
+
+  bottomPanel.style.transition = "transform 0.3s ease"; 
+
+  if (deltaY > 200) {
+    bottomPanel.style.transform = `translateY(100%)`;
+    setTimeout(() => {
+      bottomPanel.classList.remove("show");
+      document.body.classList.remove('no-scroll');
+      bottomPanel.style.transform = ""; 
+    }, 100);
+  } else {
+    bottomPanel.style.transform = ""; 
+  }
+});
+
   } else if (direction == "side") {
     bottomPanel.classList.add("panel", direction);
     bottomPanel.innerHTML = `
@@ -417,18 +444,45 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
      ${jsons}
   </div>
 `;
-    // scroll right to close
-    let startX;
-    bottomPanel.addEventListener("touchstart", e => {
-      startX = e.touches[0].clientX;
-    });
-    bottomPanel.addEventListener("touchend", e => {
-      let endX = e.changedTouches[0].clientX;
-      if (endX - startX > 60) { // vuốt sang phải
-        bottomPanel.classList.remove("show");
-        document.body.classList.remove('no-scroll');
-      }
-    });
+let startX;
+let currentX;
+let isDragging = false;
+
+bottomPanel.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+  isDragging = true;
+  bottomPanel.style.transition = "none"; // Tắt hiệu ứng khi kéo
+});
+
+bottomPanel.addEventListener("touchmove", e => {
+  if (!isDragging) return;
+  currentX = e.touches[0].clientX;
+  let deltaX = currentX - startX;
+  if (deltaX > 0) {
+    bottomPanel.style.transform = `translateX(${deltaX}px)`; 
+  }
+});
+
+bottomPanel.addEventListener("touchend", e => {
+  isDragging = false;
+  let endX = e.changedTouches[0].clientX;
+  let deltaX = endX - startX;
+
+  bottomPanel.style.transition = "transform 0.3s ease"; 
+
+  if (deltaX > 60) {
+    bottomPanel.style.transform = `translateX(100%)`; 
+    setTimeout(() => {
+      bottomPanel.classList.remove("show");
+      document.body.classList.remove('no-scroll');
+      bottomPanel.style.transform = ""; 
+    }, 300); // đợi hiệu ứng xong rồi reset
+  } else {
+    bottomPanel.style.transform = ""; 
+  }
+});
+
+
   }
 
   // show popup
