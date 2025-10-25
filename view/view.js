@@ -215,7 +215,7 @@ searchBox.addEventListener('input', () => {
 function executeNews(url, isAll = false, id='news-popup'){
     if(isAll){
 	const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;	
-	openPanel(html, '<p>ALL NEWS</p>', '..', "side", id);
+	openPanel(html, '<p>ALL NEWS</p>', '..', "side", "news-popup-all");
     }else {
     if(!url) return;
     fetch(url)
