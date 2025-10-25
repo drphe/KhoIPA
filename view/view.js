@@ -212,7 +212,7 @@ searchBox.addEventListener('input', () => {
     });
 
 // read news
-function executeNews(url, isAll = false, id='news-popup'){
+function executeNews(url, isAll = false, id='news-popup-content'){
     if(isAll){
 	const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;	
 	openPanel(html, '<p>ALL NEWS</p>', '..', "side", "news-popup-all");
@@ -247,7 +247,7 @@ function executeNews(url, isAll = false, id='news-popup'){
         if (targetNewsLink){
         	e.preventDefault();
            	const url = targetNews.getAttribute("data-url");
-		executeNews('./note/'+url, false, "news-popup-content");
+		executeNews('./note/'+url, false, "news-popup-link");
 	}
         if (targetNews){
             e.preventDefault();
