@@ -880,8 +880,7 @@ a>button {
     max-width: 414px;
     margin: 0 auto;
 }
-.panel-content .item{
-    padding: 0 1rem;
+.panel-content .app-header{
     border-radius: 1.5em;
 }
 .panel.bottom {
