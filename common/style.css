@@ -1193,7 +1193,7 @@ a>button {
   margin-bottom: 0.25em;
 }
 
-.version-options {
+.version-options, .version-install, .version-download {
   color: var(--tint-color);
 }
 
