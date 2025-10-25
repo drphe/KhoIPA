@@ -36,8 +36,10 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     const allApps = [];
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
+        const randomCode = Math.random().toString(36).substring(2, 6);
         for (const app of source.apps) {
             app.sourceURL = source.sourceURL;
+            app.bundleIdentifier += randomCode;
         }
         const nonBetaApps = source.apps.filter(app => !app.beta);
         allApps.push(...nonBetaApps);
