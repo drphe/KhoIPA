@@ -881,11 +881,9 @@ a>button {
     margin: 0 auto;
     padding: 0 1rem;
 }
-.panel-content .item{
-    padding: 0 1rem;
-}
+
 .panel-content .app-header{
-    border-radius: 1.5em;
+    border-radius: 1.5em!important;
 }
 .panel.bottom {
   left: 0;
