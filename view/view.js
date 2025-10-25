@@ -81,12 +81,12 @@ main(json => {
 
     // Tạo wrapper chứa input và icon
     const searchWrapper = document.createElement("div");
-    searchWrapper.style.cssText = "display: none;z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;margin: 10px;"
+    searchWrapper.style.cssText = "display: none;z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;padding:0 1rem;"
 
     // Tạo icon kính lúp
     const searchIcon = document.createElement("span");
     searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-    searchIcon.style.cssText = "position: absolute;left: 1rem;top: 60%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);";
+    searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 63%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);";
 
     // Tạo ô tìm kiếm
     const searchBox = document.createElement("input");
@@ -98,7 +98,7 @@ main(json => {
     // Tạo icon x
     const xIcon = document.createElement("span");
     xIcon.innerHTML = ` <i class="bi bi-x-circle-fill"></i>`
-    xIcon.style.cssText = "display:none;position: absolute;right: 1rem;top: 55%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+    xIcon.style.cssText = "display:none;position: absolute;right: 1.7rem;top: 58%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
 
     // Gắn các phần tử
     searchWrapper.appendChild(searchIcon);
