@@ -410,7 +410,7 @@ bottomPanel.addEventListener("touchend", e => {
 
   bottomPanel.style.transition = "transform 0.3s ease"; 
 
-  if (deltaY > 200) {
+  if (deltaY > 150) {
     bottomPanel.style.transform = `translateY(100%)`;
     setTimeout(() => {
       bottomPanel.classList.remove("show");
@@ -470,7 +470,7 @@ bottomPanel.addEventListener("touchend", e => {
 
   bottomPanel.style.transition = "transform 0.3s ease"; 
 
-  if (deltaX > 60) {
+  if (deltaX > 100) {
     bottomPanel.style.transform = `translateX(100%)`; 
     setTimeout(() => {
       bottomPanel.classList.remove("show");
