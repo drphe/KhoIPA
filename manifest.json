@@ -5,7 +5,7 @@
   "lang": "en-US",
   "display": "standalone",
   "background_color": "#fff",
-  "theme_color": "#fff",
+  "theme_color": "rgba(255,255,255,0)",
   "icons": [
     {
       "src": "./icon/logo.png",
