@@ -879,7 +879,6 @@ a>button {
 .panel-content {
     max-width: 414px;
     margin: 0 auto;
-    padding: 0 1rem;
 }
 
 .panel-content .app-header{
@@ -930,8 +929,7 @@ a>button {
   padding-top: 0rem;
 }
 
-#panel-body.item {
-  margin-bottom: 0;
+#panel-body .item {
   padding: 0 1rem;
 }
 
@@ -987,6 +985,10 @@ a>button {
   margin-left: 1em;
   border-radius: 0.5em;
   border: 0.75px solid rgba(0, 0, 0, 0.2);
+}
+
+#preview #screenshots > img:first-child {
+  margin-left: 0;
 }
 
 #preview #description {

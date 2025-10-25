@@ -58,10 +58,12 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     let currentIndex = 0;
     const appsPerLoad = 10;
     const appsContainer = document.getElementById("apps-list");
+    const totalRepoCount document.getElementById('title2');
+    const totalAppsCount = document.getElementById('title3');
 
     // total of repositories
-    document.getElementById('title2').innerText = `${allSources.length} Repositories`;
-    document.getElementById('title3').innerText = `${filteredApps.length} Applications`;
+    totalRepoCount.innerText = `${allSources.length} Repositories`;
+    totalAppsCount.innerText = `Total ${filteredApps.length} apps`;
 
     // click button
     document.getElementById('search').addEventListener("click", (e) => {
@@ -105,6 +107,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
        searchBox.focus();
        filteredApps = [...allApps];
        appsContainer.innerHTML = "";
+       totalAppsCount.innerText = `Total ${filteredApps.length} apps`;
        loadMoreApps();
       appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
   });
@@ -113,6 +116,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         if (event.key === "Enter") {
             const keyword = searchBox.value.toLowerCase();
             filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
+                totalAppsCount.innerText = `Found ${filteredApps.length} apps`;
             if (filteredApps.length === 0) {
                 filteredApps = [...allApps];
             }
