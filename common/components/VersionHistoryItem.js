@@ -9,14 +9,14 @@ export const VersionHistoryItem = (sourceName, number, date, description, url, i
         <p class="version-date">${date}</p>
     </div>
     <div class="version-options">
-        <a class="version-install" onclick="showAddToAltStoreAlert(
+        <a style="color: var(--tint-color);" class="version-install" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
             'Install App',
             () => window.location.href = 'esign://install?url=${url}'
         );">
             Install with Esign
         </a>
-        <a class="version-download" onclick="showAddToAltStoreAlert(
+        <a style="color: var(--tint-color);" class="version-download" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
             'Download IPA',
             () => window.location.href = '${url}'
