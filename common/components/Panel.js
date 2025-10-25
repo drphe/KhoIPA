@@ -398,29 +398,39 @@ bottomPanel.addEventListener("touchmove", e => {
   if (!isDragging) return;
   currentY = e.touches[0].clientY;
   let deltaY = currentY - startY;
+
+  // Kiểm tra nếu nội dung bên trong đang cuộn
+  const scrollable = bottomPanel.querySelector('.panel-content');
+  if (scrollable && scrollable.scrollTop > 0) {
+    isDragging = false; 
+    return;
+  }
+
   if (deltaY > 0) {
-    bottomPanel.style.transform = `translateY(${deltaY}px)`; 
+    bottomPanel.style.transform = `translateY(${deltaY}px)`;
   }
 });
 
 bottomPanel.addEventListener("touchend", e => {
+  if (!isDragging) return;
   isDragging = false;
   let endY = e.changedTouches[0].clientY;
   let deltaY = endY - startY;
 
-  bottomPanel.style.transition = "transform 0.3s ease"; 
+  bottomPanel.style.transition = "transform 0.3s ease";
 
   if (deltaY > 150) {
     bottomPanel.style.transform = `translateY(100%)`;
     setTimeout(() => {
       bottomPanel.classList.remove("show");
       document.body.classList.remove('no-scroll');
-      bottomPanel.style.transform = ""; 
-    }, 100);
+      bottomPanel.style.transform = "";
+    }, 300);
   } else {
-    bottomPanel.style.transform = ""; 
+    bottomPanel.style.transform = "";
   }
 });
+
 
   } else if (direction == "side") {
     bottomPanel.classList.add("panel", direction);

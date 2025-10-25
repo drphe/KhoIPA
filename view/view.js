@@ -212,10 +212,10 @@ searchBox.addEventListener('input', () => {
     });
 
 // read news
-function executeNews(url, isAll = false){
+function executeNews(url, isAll = false, id='news-popup'){
     if(isAll){
 	const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;	
-	openPanel(html, '<p>ALL NEWS</p>', '..', "side", "news-popup");
+	openPanel(html, '<p>ALL NEWS</p>', '..', "side", id);
     }else {
     if(!url) return;
     fetch(url)
@@ -225,7 +225,7 @@ function executeNews(url, isAll = false){
       })
       .then(markdown => {
         const html =`<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;	
-        openPanel(html, '<p>CONTENTS</p>', '..', "side");
+        openPanel(html, '<p>CONTENTS</p>', '..', "side", id);
       })
       .catch(error => {
         console.error("Lỗi khi tải nội dung:", error);
@@ -238,20 +238,25 @@ function executeNews(url, isAll = false){
     function executePanel(e){
         const targetLinks = e.target.closest("a.app-header-link");
         const targetNews = e.target.closest("a.news-item-header");
-
+        const targetNewsLink = e.target.closest("a.news-item-link");
         if (targetLinks){
         	e.preventDefault();
         	const bundleId = targetLinks.getAttribute("data-bundleid");
         	openPanel(json, bundleId, '..');
 	}
-        if (targetNews){
+        if (targetNewsLink){
         	e.preventDefault();
            	const url = targetNews.getAttribute("data-url");
+		executeNews('./note/'+url, false, "news-popup-content");
+	}
+        if (targetNews){
+            e.preventDefault();
+            const url = targetNews.getAttribute("data-url");
 	    if(isValidHTTPURL(url)){
 		window.open(url, "_blank");	
 		return;
-		}
-		executeNews('./note/'+url);
+	    }
+	    executeNews('./note/'+url);
 	}
     }
 
