@@ -425,7 +425,7 @@ bottomPanel.addEventListener("touchend", e => {
       bottomPanel.classList.remove("show");
       document.body.classList.remove('no-scroll');
       bottomPanel.style.transform = "";
-    }, 300);
+    }, 100);
   } else {
     bottomPanel.style.transform = "";
   }
@@ -486,7 +486,7 @@ bottomPanel.addEventListener("touchend", e => {
       bottomPanel.classList.remove("show");
       document.body.classList.remove('no-scroll');
       bottomPanel.style.transform = ""; 
-    }, 300); // đợi hiệu ứng xong rồi reset
+    }, 100); // đợi hiệu ứng xong rồi reset
   } else {
     bottomPanel.style.transform = ""; 
   }

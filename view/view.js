@@ -246,7 +246,7 @@ function executeNews(url, isAll = false, id='news-popup-content'){
 	}
         if (targetNewsLink){
         	e.preventDefault();
-           	const url = targetNews.getAttribute("data-url");
+           	const url = targetNewsLink.getAttribute("data-url");
 		executeNews('./note/'+url, false, "news-popup-link");
 	}
         if (targetNews){
