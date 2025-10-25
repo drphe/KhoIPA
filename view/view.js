@@ -83,26 +83,46 @@ main(json => {
     const searchWrapper = document.createElement("div");
     searchWrapper.style.cssText = "display: none;z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;margin: 10px;"
 
+    // Tạo icon kính lúp
+    const searchIcon = document.createElement("span");
+    searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
+    searchIcon.style.cssText = "position: absolute;left: 1rem;top: 60%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);";
+
     // Tạo ô tìm kiếm
     const searchBox = document.createElement("input");
     searchBox.type = "text";
     searchBox.placeholder = "Enter app name...";
     searchBox.className = "form-control mb-3";
-    searchBox.style.cssText = "width: 100%; padding-right: 35px; box-sizing: border-box; border-radius: 20px; "
+    searchBox.style.cssText = "width: 100%; padding-left: 35px; box-sizing: border-box; border-radius: 20px; "
 
-    // Tạo icon kính lúp
-    const searchIcon = document.createElement("span");
-    searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-    searchIcon.style.cssText = "position: absolute;right: 1rem;top: 60%;transform: translateY(-50%);pointer-events: none;color: rgb(136, 136, 136);";
+    // Tạo icon x
+    const xIcon = document.createElement("span");
+    xIcon.innerHTML = ` <i class="bi bi-x-circle-fill"></i>`
+    xIcon.style.cssText = "display:none;position: absolute;right: 1rem;top: 55%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
 
     // Gắn các phần tử
-    searchWrapper.appendChild(searchBox);
     searchWrapper.appendChild(searchIcon);
+    searchWrapper.appendChild(searchBox);
+    searchWrapper.appendChild(xIcon);
     appsContainer.before(searchWrapper);
 
-    searchBox.addEventListener("keydown", async (event) => {
+xIcon.addEventListener('click', () => {
+    searchBox.value = '';
+    xIcon.style.display = 'none';
+    searchBox.focus();
+    filteredApps = [...allApps];
+    appsContainer.innerHTML = "";
+    loadMoreApps();
+    appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+  });
+
+searchBox.addEventListener('input', () => {
+    xIcon.style.display = searchBox.value ? 'block' : 'none';
+    run();
+  });
+
+    searchBox.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
-            await run();
             const keyword = searchBox.value.toLowerCase();
             filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
             if (filteredApps.length === 0) {

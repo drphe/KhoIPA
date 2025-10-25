@@ -93,9 +93,24 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     // search box
     const searchBox = document.getElementById("filterText");
-    searchBox.addEventListener("keydown", async (event) => {
+    const clearBtn = document.getElementById('clearBtn');
+
+    searchBox.addEventListener('input', () => {
+        clearBtn.style.display = searchBox.value ? 'block' : 'none';
+        run();
+    });
+    clearBtn.addEventListener('click', () => {
+       searchBox.value = '';
+       clearBtn.style.display = 'none';
+       searchBox.focus();
+       filteredApps = [...allApps];
+       appsContainer.innerHTML = "";
+       loadMoreApps();
+      appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+  });
+
+    searchBox.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
-            await run();
             const keyword = searchBox.value.toLowerCase();
             filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
             if (filteredApps.length === 0) {
