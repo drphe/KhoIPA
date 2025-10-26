@@ -505,7 +505,7 @@ bottomPanel.addEventListener("touchend", e => {
     document.body.classList.remove('no-scroll');
   });
   document.addEventListener("click", (event) => { 
-    const moreBtn = document.querySlector("#more");
+    const moreBtn = document.querySelector("#more");
     if (!bottomPanel.contains(event.target) &&  !moreBtn.contains(event.target)) {
         bottomPanel.classList.remove("show");
         document.body.classList.remove('no-scroll');
