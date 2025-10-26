@@ -543,7 +543,7 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) 
         // Tạo icon x
         const xIcon = document.createElement("span");
         xIcon.innerHTML = ` <i class="bi bi-x-circle-fill"></i>`;
-        xIcon.style.cssText = "display:none;position: absolute;right: 1.7rem;top: 38%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+        xIcon.style.cssText = "display:none;position: absolute;right: 1.7rem;top: 35%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
         // Tạo total app
         const totalAppsCount = document.createElement("p");
         totalAppsCount.style.cssText = "margin:1rem 0;";
