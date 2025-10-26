@@ -57,6 +57,7 @@ allSources.forEach(sourceTarget => {
      	bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
     });
 });
+
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
 
@@ -150,18 +151,7 @@ allSources.forEach(sourceTarget => {
     }
 
 
-document.addEventListener("click", event => {
-    const target = event.target.closest("a.app-header-link");
-    if (!target) return;
-    event.preventDefault();
-    const bundleId = target.getAttribute("data-bundleid");
-    const sourceTarget = bundleIdToSourceMap.get(bundleId); 
-    if (!sourceTarget) {
-        console.warn(`Source not found for bundleId: ${bundleId}`);
-        return;
-    }
-    openPanel(sourceTarget, bundleId);
-});
+
 
     
 
@@ -218,6 +208,9 @@ document.addEventListener("click", event => {
             </div>
         `);
     }
+
+// 
+// listener event
     // add to home screen
     document.querySelectorAll("a.install").forEach(button => {
         button.addEventListener("click", event => {
@@ -225,6 +218,20 @@ document.addEventListener("click", event => {
             showUIAlert("How To Install?", "Select Share Button -> Add To Home Screen  -> Done");
         });
     });
+// open app
+document.addEventListener("click", event => {
+    const target = event.target.closest("a.app-header-link");
+    if (!target) return;
+    event.preventDefault();
+    const bundleId = target.getAttribute("data-bundleid");
+    const sourceTarget = bundleIdToSourceMap.get(bundleId); 
+    if (!sourceTarget) {
+        console.warn(`Source not found for bundleId: ${bundleId}`);
+        return;
+    }
+    openPanel(sourceTarget, bundleId);
+});
+
 
     window.onscroll = e => {
         const title = document.querySelector("h1");
