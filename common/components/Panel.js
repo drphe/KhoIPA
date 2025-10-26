@@ -505,11 +505,14 @@ bottomPanel.addEventListener("touchend", e => {
     document.body.classList.remove('no-scroll');
   });
   document.addEventListener("click", (event) => { 
-    const moreBtn = document.querySelector("#more");
-    if (!bottomPanel.contains(event.target) &&  (!moreBtn || !moreBtn.contains(event.target))) {
+    const moreTriggers = document.querySelectorAll(".more-trigger");
+    const target = event.target;
+    const isInsideMoreBtn = Array.from(moreTriggers).some(btn => btn.contains(target));
+    if (!bottomPanel.contains(target) && !isInsideMoreBtn) {
         bottomPanel.classList.remove("show");
         document.body.classList.remove('no-scroll');
     }
 });
+
 
 }
