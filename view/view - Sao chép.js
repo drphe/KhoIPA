@@ -18,6 +18,12 @@ main(json => {
             open(`altstore://source?url=${sourceURL}`);
     });
 
+    // Set "View All News" link
+    document.getElementById('all-news').addEventListener("click", (e) => {
+        e.preventDefault();
+        executeNews("", true);
+     });
+
     // Set tab title
     document.title = json.name;
     // Set page title
@@ -25,7 +31,7 @@ main(json => {
     document.querySelector("#nav-bar #title>p").innerText = json.name;
 
     // 
-    // Set News
+    // News
     if (json.news && json.news.length >= 1) {
         // Sort news in decending order of date (latest first)
         json.news.sort((a, b) => // If b < a
@@ -48,7 +54,7 @@ main(json => {
     });
 
     // 
-    // Set Featured apps
+    // Featured apps
     if (json.featuredApps) {
         json.apps
             .filter(app => json.featuredApps.includes(app.bundleIdentifier))
@@ -65,26 +71,17 @@ main(json => {
         });
     }
 
-
-    //  "View All apps"
-    document.getElementById('search').addEventListener("click", async(e) => {
-        e.preventDefault();
-        await openPanel('<div id="apps-list"></div>', '<p>ALL APPS</p>', '..', "side", "apps-popup-all");
-        addAppListPanel(json, true);
-     });
-
-async function addAppListPanel(source, isScreenshot = false){
-    const appsContainer = document.getElementById('apps-list');
-    if(!appsContainer) return;
-
-    const allApps = source.apps.filter(app => !app.beta);
+    const allApps = json.apps.filter(app => !app.beta);
     let filteredApps = [...allApps];
     let currentIndex = 0;
     const appsPerLoad = 4;
+    const appsTitle = document.getElementById('apps-title');
+    const appsContainer = document.getElementById('apps-list');
+    const featured = document.getElementById('featured');
 
     // Tạo wrapper chứa input và icon
     const searchWrapper = document.createElement("div");
-    searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;padding:0 1rem;"
+    searchWrapper.style.cssText = "display: none;z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top: 6.5rem;margin-bottom: 1rem;padding:0 1rem;"
 
     // Tạo icon kính lúp
     const searchIcon = document.createElement("span");
@@ -148,6 +145,25 @@ searchBox.addEventListener('input', () => {
 
     });
 
+    // click button views all apps
+    document.getElementById('search').addEventListener("click", (e) => {
+        e.preventDefault();
+        if (e.target.innerText == "View All Apps") {
+            appsContainer.style.display = 'block';
+            featured.style.display = 'none';
+            appsTitle.innerHTML = `${allApps.length} Apps`;
+            e.target.innerText = "Close";
+            searchWrapper.style.display = "block";
+        } else {
+            searchWrapper.style.display = "none";
+            featured.style.display = 'block';
+            appsContainer.style.display = 'none';
+            appsTitle.innerHTML = "Featured Apps";
+            e.target.innerText = "View All Apps";
+        }
+    });
+
+
     async function run() {
         appsContainer.innerHTML = "";
         appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
@@ -168,7 +184,7 @@ searchBox.addEventListener('input', () => {
                 <p class="subtitle">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
                 <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
 
-            if (app.screenshots && isScreenshot) {
+            if (app.screenshots) {
                 html += `<div class="screenshots">`;
                 for (let i = 0; i < app.screenshots.length && i < 2; i++) {
                     const screenshot = app.screenshots[i];
@@ -177,7 +193,7 @@ searchBox.addEventListener('input', () => {
                     else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
                 }
                 html += `</div>`;
-            } else if (app.screenshotURLs && isScreenshot) {
+            } else if (app.screenshotURLs) {
                 html += `<div class="screenshots">`;
                 for (let i = 0; i < app.screenshotURLs.length && i < 2; i++) {
                     if (app.screenshotURLs[i]) html += `<img src="${app.screenshotURLs[i]}" class="screenshot">`;
@@ -191,34 +207,29 @@ searchBox.addEventListener('input', () => {
         currentIndex += appsPerLoad;
     }
 
-    loadMoreApps();
+
+// read news
+function executeNews(url, isAll = false, id='news-popup-content'){
+    if(isAll){
+	const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;	
+	openPanel(html, '<p>ALL NEWS</p>', '..', "side", "news-popup-all");
+    }else {
+    if(!url) return;
+    fetch(url)
+      .then(response => {
+        if (!response.ok) throw new Error("Fetch failed");
+        return response.text();
+      })
+      .then(markdown => {
+        const html =`<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;	
+        openPanel(html, '<p>CONTENTS</p>', '..', "side", id);
+      })
+      .catch(error => {
+        console.error("Lỗi khi tải nội dung:", error);
+      });
 }
-    //  "View All News"
-    document.getElementById('all-news').addEventListener("click", (e) => {
-        e.preventDefault();
-        executeNews("", true);
-     });
+}
 
-    function executeNews(url, isAll = false, id = 'news-popup-content') {
-      if (isAll) {
-        const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;
-        openPanel(html, '<p>ALL NEWS</p>', '..', "side", "news-popup-all");
-      } else {
-        if (!url) return;
-        fetch(url).then(response => {
-          if (!response.ok) throw new Error("Fetch failed");
-          return response.text();
-        }).then(markdown => {
-          const html = `<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;
-          openPanel(html, '<p>CONTENTS</p>', '..', "side", id);
-        }).catch(error => {
-          console.error("Lỗi khi tải nội dung:", error);
-        });
-      }
-    }
-
-    //
-    // listener event over the page
     document.addEventListener("click", executePanel);
 
     function executePanel(e){
@@ -246,6 +257,7 @@ searchBox.addEventListener('input', () => {
 	}
     }
 
+    loadMoreApps();
 
     // 
     // About

@@ -363,12 +363,12 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       const appName = bottomPanel.querySelector(".app-header .text>.title");
       const title = bottomPanel.querySelector("#title");
       const button = bottomPanel.querySelector("#nav-bar .install");
-      if (!isNavigationBarItemsVisible && appName.getBoundingClientRect().y < 50) {
+      if (!isNavigationBarItemsVisible && appName.getBoundingClientRect().y < 100) {
         title.classList.remove("hidden");
         button.classList.remove("hidden");
         button.disabled = false;
         isNavigationBarItemsVisible = true;
-      } else if (isNavigationBarItemsVisible && appName.getBoundingClientRect().y >= 50) { // Main app name is visible
+      } else if (isNavigationBarItemsVisible && appName.getBoundingClientRect().y >= 100) { // Main app name is visible
         // Hide navigation bar title & install button
         title.classList.add("hidden");
         button.classList.add("hidden");
@@ -486,17 +486,15 @@ bottomPanel.addEventListener("touchend", e => {
       bottomPanel.classList.remove("show");
       document.body.classList.remove('no-scroll');
       bottomPanel.style.transform = ""; 
-    }, 100); // đợi hiệu ứng xong rồi reset
+    }, 100);
   } else {
     bottomPanel.style.transform = ""; 
   }
 });
-
-
   }
 
   // show popup
-  setTimeout(()=>bottomPanel.classList.add("show"),100); // show when everything ready
+  setTimeout(()=>bottomPanel.classList.add("show"),50); // show when everything ready
   document.body.classList.add('no-scroll');
   // control popup
   const closeBottom = bottomPanel.querySelector("#back-container");
@@ -506,12 +504,10 @@ bottomPanel.addEventListener("touchend", e => {
   });
   
 document.addEventListener("click", (event) => { 
-    // Lấy TẤT CẢ các nút có class 'more-trigger'
     const moreTriggers = document.querySelectorAll(".more-trigger");
     const target = event.target;
     const isInsideMoreBtn = [...moreTriggers].some(btn => btn.contains(target));
     
-    // Nếu click nằm ngoài panel VÀ KHÔNG nằm trong nút more
     if (!bottomPanel.contains(target) && !isInsideMoreBtn) {
         bottomPanel.classList.remove("show");
         document.body.classList.remove('no-scroll');

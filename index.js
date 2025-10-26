@@ -54,7 +54,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 const bundleIdToSourceMap = new Map();
 allSources.forEach(sourceTarget => {
     sourceTarget.apps.forEach(app => {
-bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
+     	bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
     });
 });
     document.body.classList.remove("loading");
