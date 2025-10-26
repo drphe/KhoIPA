@@ -4,6 +4,7 @@ insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVe
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
+import { AppHeader, AppLoading } from "../common/components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom", ID = "modal-popup") => {

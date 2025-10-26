@@ -1,8 +1,7 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
 import { formatVersionDate,  showUIAlert,  json,  consolidateApps} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
-import { openPanel ,addAppList } from "./common/components/Panel.js";
-import { AppHeader, AppLoading } from "./common/components/AppHeader.js";
+import { openPanel , addAppList } from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 const sources = await json("./common/assets/json/sources.json");
