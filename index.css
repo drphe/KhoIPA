@@ -7,15 +7,8 @@
   padding: 0 1rem;
 }
 
-#main input {
-  width: 95%;
-  font-size: 1em;
-  padding: 0.6rem 0.8rem;
-  border: none;
-  border-radius: 20px;
-  background-color: var(--color-transparent);
-  margin-top: 1rem;
-  border: 1px solid #ccc;
+.search-wrapper{
+	top:6em!important;
 }
 
 /* input:focus {
@@ -25,7 +18,9 @@
 .section a {
   color: white;
 }
-
+.sub-version{
+    margin-left:1em;
+}
 .suggestion {
   padding: 1rem 1rem 1rem 0;
   margin-left: 1rem;

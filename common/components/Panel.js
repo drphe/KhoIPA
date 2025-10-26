@@ -449,33 +449,52 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         let startX;
         let currentX;
         let isDragging = false;
+        const dragThreshold = 50; // Ngưỡng kéo 50px
+
         bottomPanel.addEventListener("touchstart", e => {
             startX = e.touches[0].clientX;
             isDragging = true;
             bottomPanel.style.transition = "none"; // Tắt hiệu ứng khi kéo
         });
+
         bottomPanel.addEventListener("touchmove", e => {
             if (!isDragging) return;
             currentX = e.touches[0].clientX;
             let deltaX = currentX - startX;
+            
+            // 1. Chỉ cho phép kéo sang phải (deltaX > 0)
             if (deltaX > 0) {
-                bottomPanel.style.transform = `translateX(${deltaX}px)`;
+                // 2. Kiểm tra ngưỡng kéo
+                if (deltaX > dragThreshold) {
+                    // Trừ đi ngưỡng để panel bắt đầu di chuyển từ 0 sau khi vượt ngưỡng
+                    let translateX = deltaX - dragThreshold; 
+                    bottomPanel.style.transform = `translateX(${translateX}px)`;
+                } else {
+                    // Nếu chưa vượt ngưỡng, giữ panel ở vị trí ban đầu
+                    bottomPanel.style.transform = `translateX(0px)`;
+                }
             }
         });
+
         bottomPanel.addEventListener("touchend", e => {
             isDragging = false;
             let endX = e.changedTouches[0].clientX;
-            let deltaX = endX - startX;
+            // Tính deltaX cuối cùng, bao gồm cả phần kéo dưới ngưỡng
+            let deltaX = endX - startX; 
+            
             bottomPanel.style.transition = "transform 0.3s ease";
-            if (deltaX > 100) {
+            
+            // So sánh deltaX với ngưỡng trượt cuối (100px)
+            if (deltaX > 100) { 
+                // Trượt đi
                 bottomPanel.style.transform = `translateX(100%)`;
                 setTimeout(() => {
                     bottomPanel.classList.remove("show");
                     document.body.classList.remove('no-scroll');
-                    bottomPanel.style.transform = "";
+                    bottomPanel.style.transform = ""; 
                 }, 100);
             } else {
-                bottomPanel.style.transform = "";
+                bottomPanel.style.transform = ""; 
             }
         });
     }
@@ -510,6 +529,7 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) 
         // Tạo wrapper chứa input và icon
         const searchWrapper = document.createElement("div");
         searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top:0;margin-bottom: 1rem;padding:0 1rem;"
+       searchWrapper.classList.add("search-wrapper")
         // Tạo icon kính lúp
         const searchIcon = document.createElement("span");
         searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
@@ -587,7 +607,7 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) 
                 let html = `
             <div class="app-container">
                 ${AppHeader(app, ".")}
-                <p class="subtitle">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
+                <p class="subtitle sub-version">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
                 <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
                 if (app.screenshots && isScreenshot) {
                     html += `<div class="screenshots">`;

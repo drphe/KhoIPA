@@ -154,6 +154,5 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         const showItem = title.getBoundingClientRect().y < 36;
         navBar.classList.toggle("hide-border", !showItem);
         navBarTitle.classList.toggle("hidden", !showItem);
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) loadMoreApps();
     }
 })();
