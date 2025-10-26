@@ -143,19 +143,27 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         currentIndex += appsPerLoad;
     }
 
-
-    document.addEventListener("click", event => {
-        const target = event.target.closest("a.app-header-link");
-        if (!target) return;
-
-        event.preventDefault();
-        const bundleId = target.getAttribute("data-bundleid");
-        const sourceTarget = allSources.find(json =>
-            json.apps.some(app => app.bundleIdentifier === bundleId)
-        );
-        if (!sourceTarget) return;
-        openPanel(sourceTarget, bundleId);
+const bundleIdToSourceMap = new Map();
+allSources.forEach(sourceTarget => {
+    sourceTarget.apps.forEach(app => {
+bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
     });
+});
+
+document.addEventListener("click", event => {
+    const target = event.target.closest("a.app-header-link");
+    if (!target) return;
+    event.preventDefault();
+    const bundleId = target.getAttribute("data-bundleid");
+    const sourceTarget = bundleIdToSourceMap.get(bundleId); 
+    if (!sourceTarget) {
+        console.warn(`Source not found for bundleId: ${bundleId}`);
+        return;
+    }
+    openPanel(sourceTarget, bundleId);
+});
+
+    
 
     loadMoreApps();
 
