@@ -156,14 +156,11 @@ const title = document.querySelector("h1");
 window.addEventListener('scroll', () => {
     if (!isScrolling) {
         window.requestAnimationFrame(() => {
-            
-
             if (title && navBar && navBarTitle) {
                 const showItem = title.getBoundingClientRect().y < 36;
                 navBar.classList.toggle("hide-border", !showItem);
                 navBarTitle.classList.toggle("hidden", !showItem);
             }
-
             isScrolling = false;
         });
         isScrolling = true;
