@@ -207,9 +207,6 @@ searchBox.addEventListener('input', () => {
         currentIndex += appsPerLoad;
     }
 
-    document.getElementById("featured").querySelectorAll("a.app-header-link").forEach(button => {
-        button.addEventListener("click", executePanel);
-    });
 
 // read news
 function executeNews(url, isAll = false, id='news-popup-content'){
