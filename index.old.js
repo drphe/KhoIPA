@@ -1,7 +1,7 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
 import { formatVersionDate,  showUIAlert,  json,  consolidateApps} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
-import { openPanel ,addAppList } from "./common/components/Panel.js";
+import { openPanel } from "./common/components/Panel.js";
 import { AppHeader, AppLoading } from "./common/components/AppHeader.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
@@ -19,8 +19,10 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         const source = await fetchSource(url);
         return source || null;
     }));
+
     // Sort sources by last updated
     fetchedSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
+
     // insert editor's source choice
     for (const source of fetchedEditorSources) {
         await insertSource(source, "suggestions");
@@ -29,6 +31,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     for (const source of fetchedSources) {
         await insertSource(source);
     }
+
     const allSources = [...fetchedEditorSources, ...fetchedSources];
     const allApps = [];
     for (const source of allSources) {
@@ -47,22 +50,115 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         const dateB = new Date(b.versionDate ?? b.versions?.[0]?.date ?? 0).valueOf();
         return dateB - dateA;
     });
-
-    const bundleIdToSourceMap = new Map();
-    allSources.forEach(sourceTarget => {
-        sourceTarget.apps.forEach(app => {
-            bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
-        });
+    
+const bundleIdToSourceMap = new Map();
+allSources.forEach(sourceTarget => {
+    sourceTarget.apps.forEach(app => {
+     	bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
     });
-
-    addAppList({ apps: allApps }, false, 10); // no shot, 10 app
-
-    // total of repositories
-    const totalRepoCount = document.getElementById('title-total-repo');
-    totalRepoCount.innerText = `${allSources.length} Repositories`;
+});
 
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
+
+
+// hàm search
+       // addAppListPanel({apps: allApps}, false, 10);// no shot, 10 app
+
+    let filteredApps = [...allApps];
+    let currentIndex = 0;
+    const appsPerLoad = 10;
+    const appsContainer = document.getElementById("apps-list");
+    const totalRepoCount = document.getElementById('title2');
+    const totalAppsCount = document.getElementById('title3');
+
+    // total of repositories
+    totalRepoCount.innerText = `${allSources.length} Repositories`;
+    totalAppsCount.innerText = `Total ${filteredApps.length} apps`;
+
+    // click button
+    document.getElementById('search').addEventListener("click", (e) => {
+        const suggestions = document.getElementById('suggestions');
+        const repositories = document.getElementById('repositories');
+        const apps = document.getElementById('apps');
+        if (e.target.innerText == "View All Apps") {
+            suggestions.style.display = 'none';
+            repositories.style.display = 'none';
+            apps.style.display = 'block';
+            e.target.innerText = "Close";
+        } else {
+            suggestions.style.display = 'block';
+            repositories.style.display = 'block';
+            apps.style.display = 'none';
+            e.target.innerText = "View All Apps";
+        }
+    });
+
+    async function run() {
+        appsContainer.innerHTML = "";
+        appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
+        const tasks = [];
+        for (let i = 0; i < 5; i++) {
+            tasks.push(AppLoading());
+        }
+        await Promise.all(tasks); // Chờ tất cả hoàn tất
+    }
+
+    // search box
+    const searchBox = document.getElementById("filterText");
+    const clearBtn = document.getElementById('clearBtn');
+
+    searchBox.addEventListener('input', () => {
+        clearBtn.style.display = searchBox.value ? 'block' : 'none';
+        run();
+    });
+    clearBtn.addEventListener('click', () => {
+       searchBox.value = '';
+       clearBtn.style.display = 'none';
+       searchBox.focus();
+       filteredApps = [...allApps];
+       appsContainer.innerHTML = "";
+       totalAppsCount.innerText = `Total ${filteredApps.length} apps`;
+       loadMoreApps();
+      appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+  });
+
+    searchBox.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            const keyword = searchBox.value.toLowerCase();
+            filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
+                totalAppsCount.innerText = `Found ${filteredApps.length} apps`;
+            if (filteredApps.length === 0) {
+                filteredApps = [...allApps];
+            }
+
+            currentIndex = 0;
+            setTimeout(() => {
+                appsContainer.innerHTML = "";
+                loadMoreApps();
+                appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+		const topMain = document.getElementById("main");
+		window.scrollTo({
+  			top: topMain.offsetTop,
+  			behavior: "smooth"
+		});
+            }, 500);
+        }
+    });
+
+    function loadMoreApps() {
+        const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
+        nextApps.forEach(app => {
+            appsContainer.insertAdjacentHTML("beforeend", `<div class="app-container">${AppHeader(app)}</div>`);
+        });
+        currentIndex += appsPerLoad;
+    }
+   
+
+    loadMoreApps();
+
+
+//// hết hàm search
 
     async function fetchSource(url) {
         const data = await json(url);
@@ -76,16 +172,22 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
             if (appVersionDate > source.lastUpdated) {
                 source.lastUpdated = appVersionDate;
-                if (!source.iconURL) source.iconURL = app.iconURL;
-                if (!source.tintColor) source.tintColor = app.tintColor;
+                if (!source.iconURL)
+                    source.iconURL = app.iconURL;
+                if (!source.tintColor)
+                    source.tintColor = app.tintColor;
             }
             source.appCount++;
         }
-        if (!source.iconURL) source.iconURL = "./common/assets/img/generic_app.jpeg";
-        if (!source.tintColor) source.tintColor = "var(--tint-color);";
+        if (!source.iconURL)
+            source.iconURL = "./common/assets/img/generic_app.jpeg";
+        if (!source.tintColor)
+            source.tintColor = "var(--tint-color);";
         source.url = url;
         return source;
+
     }
+
     async function insertSource(source, id = "repositories", position = "beforeend", flag = false) {
         document.getElementById(id).insertAdjacentHTML(position, `
             <div class="source-container">
@@ -109,8 +211,9 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             </div>
         `);
     }
-    // 
-    // listener event
+
+// 
+// listener event
     // add to home screen
     document.querySelectorAll("a.install").forEach(button => {
         button.addEventListener("click", event => {
@@ -118,43 +221,30 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             showUIAlert("How To Install?", "Select Share Button -> Add To Home Screen  -> Done");
         });
     });
-    // view app list
-    document.getElementById('search').addEventListener("click", (e) => {
-        const suggestions = document.getElementById('suggestions');
-        const repositories = document.getElementById('repositories');
-        const apps = document.getElementById('apps');
-        if (e.target.innerText == "View All Apps") {
-            suggestions.style.display = 'none';
-            repositories.style.display = 'none';
-            apps.style.display = 'block';
-            e.target.innerText = "Close";
-        } else {
-            suggestions.style.display = 'block';
-            repositories.style.display = 'block';
-            apps.style.display = 'none';
-            e.target.innerText = "View All Apps";
-        }
-    });
-    // open app
-    document.addEventListener("click", event => {
-        const target = event.target.closest("a.app-header-link");
-        if (!target) return;
-        event.preventDefault();
-        const bundleId = target.getAttribute("data-bundleid");
-        const sourceTarget = bundleIdToSourceMap.get(bundleId);
-        if (!sourceTarget) {
-            console.warn(`Source not found for bundleId: ${bundleId}`);
-            return;
-        }
-        openPanel(sourceTarget, bundleId);
-    });
+// open app
+document.addEventListener("click", event => {
+    const target = event.target.closest("a.app-header-link");
+    if (!target) return;
+    event.preventDefault();
+    const bundleId = target.getAttribute("data-bundleid");
+    const sourceTarget = bundleIdToSourceMap.get(bundleId); 
+    if (!sourceTarget) {
+        console.warn(`Source not found for bundleId: ${bundleId}`);
+        return;
+    }
+    openPanel(sourceTarget, bundleId);
+});
+
+
     window.onscroll = e => {
         const title = document.querySelector("h1");
         const navBar = document.getElementById("nav-bar");
         const navBarTitle = navBar.querySelector("#title");
         const showItem = title.getBoundingClientRect().y < 36;
+
         navBar.classList.toggle("hide-border", !showItem);
         navBarTitle.classList.toggle("hidden", !showItem);
+
         if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) loadMoreApps();
     }
 })();

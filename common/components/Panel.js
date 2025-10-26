@@ -498,3 +498,116 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         }
     });
 }
+
+export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) {
+        const appsContainer = document.getElementById('apps-list');
+        if (!appsContainer) return;
+        const allApps = source.apps.filter(app => !app.beta);
+        let filteredApps = [...allApps];
+        let currentIndex = 0;
+
+        // Tạo wrapper chứa input và icon
+        const searchWrapper = document.createElement("div");
+        searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top:0;margin-bottom: 1rem;padding:0 1rem;"
+        // Tạo icon kính lúp
+        const searchIcon = document.createElement("span");
+        searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
+        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 38%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);";
+        // Tạo ô tìm kiếm
+        const searchBox = document.createElement("input");
+        searchBox.type = "text";
+        searchBox.placeholder = "Enter app name...";
+        searchBox.className = "form-control mb-3";
+        searchBox.style.cssText = "width: 100%; padding-left: 35px; box-sizing: border-box; border-radius: 20px; "
+        // Tạo icon x
+        const xIcon = document.createElement("span");
+        xIcon.innerHTML = ` <i class="bi bi-x-circle-fill"></i>`;
+        xIcon.style.cssText = "display:none;position: absolute;right: 1.7rem;top: 38%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+        // Tạo total app
+        const totalAppsCount = document.createElement("p");
+        totalAppsCount.style.cssText = "margin:1rem 0;";
+        totalAppsCount.innerText = `Total ${allApps.length} apps`;
+
+        xIcon.addEventListener('click', () => {
+            searchBox.value = '';
+            xIcon.style.display = 'none';
+            searchBox.focus();
+            filteredApps = [...allApps];
+            appsContainer.innerHTML = "";
+            totalAppsCount.innerText = `Total ${allApps.length} apps`;
+            loadMoreApps();
+            appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+        });
+        searchBox.addEventListener('input', () => {
+            xIcon.style.display = searchBox.value ? 'block' : 'none';
+            run();
+        });
+        searchBox.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                const keyword = searchBox.value.toLowerCase();
+                filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
+                totalAppsCount.innerText = `Found ${filteredApps.length} apps`;
+                if (filteredApps.length === 0) {
+                    filteredApps = [...allApps];
+                }
+                // Nếu có kết quả
+                currentIndex = 0;
+                setTimeout(() => {
+                    appsContainer.innerHTML = "";
+                    loadMoreApps();
+                    appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+                    window.scrollTo({
+                        top: appsContainer.offsetTop,
+                        behavior: "smooth"
+                    });
+                }, 400);
+            }
+        });
+
+        // Gắn các phần tử
+        searchWrapper.appendChild(searchIcon);
+        searchWrapper.appendChild(searchBox);
+        searchWrapper.appendChild(xIcon);
+        searchWrapper.appendChild(totalAppsCount);
+        appsContainer.before(searchWrapper);
+        async function run() {
+            appsContainer.innerHTML = "";
+            appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
+            const tasks = [];
+            for (let i = 0; i < 5; i++) {
+                tasks.push(AppLoading());
+            }
+            await Promise.all(tasks); // Chờ tất cả hoàn tất
+        }
+        //with screenshot
+        function loadMoreApps() {
+            const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
+            nextApps.forEach(app => {
+                let html = `
+            <div class="app-container">
+                ${AppHeader(app, ".")}
+                <p class="subtitle">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
+                <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
+                if (app.screenshots && isScreenshot) {
+                    html += `<div class="screenshots">`;
+                    for (let i = 0; i < app.screenshots.length && i < 2; i++) {
+                        const screenshot = app.screenshots[i];
+                        if (!screenshot) continue;
+                        if (screenshot.imageURL) html += `<img src="${screenshot.imageURL}" class="screenshot">`;
+                        else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
+                    }
+                    html += `</div>`;
+                } else if (app.screenshotURLs && isScreenshot) {
+                    html += `<div class="screenshots">`;
+                    for (let i = 0; i < app.screenshotURLs.length && i < 2; i++) {
+                        if (app.screenshotURLs[i]) html += `<img src="${app.screenshotURLs[i]}" class="screenshot">`;
+                    }
+                    html += `</div>`;
+                }
+                html += `</div>`;
+                appsContainer.insertAdjacentHTML("beforeend", html);
+            });
+            currentIndex += appsPerLoad;
+        }
+        loadMoreApps();
+    }
