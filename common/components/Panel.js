@@ -417,7 +417,7 @@ bottomPanel.addEventListener("touchend", e => {
   let endY = e.changedTouches[0].clientY;
   let deltaY = endY - startY;
 
-  bottomPanel.style.transition = "transform 0.3s ease";
+  bottomPanel.style.transition = "transform 0.4s ease";
 
   if (deltaY > 150) {
     bottomPanel.style.transform = `translateY(100%)`;
@@ -478,7 +478,7 @@ bottomPanel.addEventListener("touchend", e => {
   let endX = e.changedTouches[0].clientX;
   let deltaX = endX - startX;
 
-  bottomPanel.style.transition = "transform 0.3s ease"; 
+  bottomPanel.style.transition = "transform 0.4s ease"; 
 
   if (deltaX > 100) {
     bottomPanel.style.transform = `translateX(100%)`; 
