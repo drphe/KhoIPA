@@ -1,9 +1,10 @@
 export const MoreButton = tintColor => `
-<a id="more"  onclick="revealTruncatedText(this);">
+<a id="more"  onclick="revealTruncatedText(event, this);">
     <button class="more-trigger" style="color: ${tintColor};">more</button>
 </a>`;
 
-window.revealTruncatedText = moreButton => {
+window.revealTruncatedText = (event, moreButton) => {
+    event.stopPropagation();
     const textId = moreButton.parentNode.id;
     const text = document.getElementById(textId);
     text.style.display = "block";
