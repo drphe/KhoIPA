@@ -638,7 +638,7 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) 
     const totalHeight = container.scrollHeight;
     const scrolledPosition = container.scrollTop;
     const visibleHeight = container.clientHeight;
-    if (scrolledPosition + visibleHeight >= totalHeight - 100) {
+    if (scrolledPosition + visibleHeight >= totalHeight - 10) {
         loadMoreApps();
     }
 });
