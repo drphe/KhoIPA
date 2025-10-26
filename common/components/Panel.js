@@ -496,7 +496,7 @@ bottomPanel.addEventListener("touchend", e => {
   }
 
   // show popup
-  setTimeout(()=>bottomPanel.classList.add("show"),200); // show when everything ready
+  setTimeout(()=>bottomPanel.classList.add("show"),100); // show when everything ready
   document.body.classList.add('no-scroll');
   // control popup
   const closeBottom = bottomPanel.querySelector("#back-container");
