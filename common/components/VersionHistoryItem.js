@@ -5,7 +5,7 @@ window.showAddToAltStoreAlert = showAddToAltStoreAlert;
 export const VersionHistoryItem = (sourceName, number, date, description, url, i) => `
 <div class="version">
     <div class="version-header">
-        <p class="version-number">${number}</p>
+        <p class="version-number">Version ${number}</p>
         <p class="version-date">${date}</p>
     </div>
     <div class="version-options">
