@@ -521,7 +521,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     });
 }
 
-export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) {
+export async function addAppList(source, isScreenshot = false, appsPerLoad = 5, idScroll ="") {
         const appsContainer = document.getElementById('apps-list');
         if (!appsContainer) return;
         const allApps = source.apps.filter(app => !app.beta);
@@ -634,7 +634,8 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) 
             currentIndex += appsPerLoad;
         }
         loadMoreApps();
-        appsContainer.parentElement.addEventListener('scroll', e => {
+        const scrollElement = idScroll? document.getElementById(idScroll):appsContainer;
+        scrollElement.parentElement.addEventListener('scroll', e => {
             const container = e.target;
             const totalHeight = container.scrollHeight;
             const scrolledPosition = container.scrollTop;
