@@ -504,10 +504,14 @@ bottomPanel.addEventListener("touchend", e => {
     bottomPanel.classList.remove("show");
     document.body.classList.remove('no-scroll');
   });
-  document.addEventListener("click", (event) => { 
+  
+document.addEventListener("click", (event) => { 
+    // Lấy TẤT CẢ các nút có class 'more-trigger'
     const moreTriggers = document.querySelectorAll(".more-trigger");
     const target = event.target;
-    const isInsideMoreBtn = Array.from(moreTriggers).some(btn => btn.contains(target));
+    const isInsideMoreBtn = [...moreTriggers].some(btn => btn.contains(target));
+    
+    // Nếu click nằm ngoài panel VÀ KHÔNG nằm trong nút more
     if (!bottomPanel.contains(target) && !isInsideMoreBtn) {
         bottomPanel.classList.remove("show");
         document.body.classList.remove('no-scroll');
