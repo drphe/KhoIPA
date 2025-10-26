@@ -489,7 +489,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     });
     document.addEventListener("click", (event) => {
         const uialert = document.querySelector("#uialert-container");
-        const moreTriggers = document.querySelectorAll(".more-trigger");
+        const moreTriggers = document.querySelectorAll(".panel");
         const target = event.target;
         const isInsideMoreBtn = [...moreTriggers].some(btn => btn.contains(target));
         if (!bottomPanel.contains(target) && !isInsideMoreBtn && (!uialert || !uialert.contains(target))) {

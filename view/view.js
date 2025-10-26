@@ -86,7 +86,7 @@ main(json => {
         // Tạo icon kính lúp
         const searchIcon = document.createElement("span");
         searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 46 %;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);";
+        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 38%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);";
         // Tạo ô tìm kiếm
         const searchBox = document.createElement("input");
         searchBox.type = "text";
@@ -96,7 +96,7 @@ main(json => {
         // Tạo icon x
         const xIcon = document.createElement("span");
         xIcon.innerHTML = ` <i class="bi bi-x-circle-fill"></i>`;
-        xIcon.style.cssText = "display:none;position: absolute;right: 1.7rem;top: 44%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+        xIcon.style.cssText = "display:none;position: absolute;right: 1.7rem;top: 38%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
         xIcon.addEventListener('click', () => {
             searchBox.value = '';
             xIcon.style.display = 'none';
