@@ -149,7 +149,5 @@ main(json => {
 
         navBar.classList.toggle("hide-border", !showItem);
         navBarTitle.classList.toggle("hidden", !showItem);
-
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) loadMoreApps();
     }
 }, "../");
