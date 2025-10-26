@@ -633,4 +633,14 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) 
             currentIndex += appsPerLoad;
         }
         loadMoreApps();
+        appsContainer.addEventListener('scroll', e =>{
+    const container = e.target;
+    const totalHeight = container.scrollHeight;
+    const scrolledPosition = container.scrollTop;
+    const visibleHeight = container.clientHeight;
+    if (scrolledPosition + visibleHeight >= totalHeight - 100) {
+        loadMoreApps();
+    }
+});
+
     }
