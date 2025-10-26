@@ -67,14 +67,14 @@ main(json => {
 
 
     //  "View All apps"
-    document.getElementById('search').addEventListener("click", async(e) => {
+    document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', '<p>ALL APPS</p>', '..', "side", "apps-popup-all");
         addAppList(json, true);
      });
 
     //  "View All News"
-    document.getElementById('all-news').addEventListener("click", (e) => {
+    document.getElementById('all-news')?.addEventListener("click", (e) => {
         e.preventDefault();
         executeNews("", true);
      });

@@ -425,6 +425,9 @@ input[type="text"]:focus {
   color: unset;
 }
 
+#apps-list {
+    padding-bottom: 4rem;
+}
 /* About */
 
 #about a:visited {
