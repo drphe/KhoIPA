@@ -54,7 +54,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         });
     });
 
-    addAppList({ apps: allApps }, false, 10, false); // no shot, 10 app, true for window scroll 
+    addAppList({ apps: allApps }, false, 10, true); // no shot, 10 app, true for window scroll 
 
     // total of repositories
     const totalRepoCount = document.getElementById('title-total-repo');
@@ -149,13 +149,14 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     });
     
     let isScrolling = false;
-
+const title = document.querySelector("h1");
+    const navBar = document.getElementById("nav-bar");
+    const navBarTitle = navBar.querySelector("#title");
+    
 window.addEventListener('scroll', () => {
     if (!isScrolling) {
         window.requestAnimationFrame(() => {
-            const title = document.querySelector("h1");
-            const navBar = document.getElementById("nav-bar");
-            const navBarTitle = navBar.querySelector("#title");
+            
 
             if (title && navBar && navBarTitle) {
                 const showItem = title.getBoundingClientRect().y < 36;
