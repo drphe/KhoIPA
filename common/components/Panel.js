@@ -354,7 +354,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     sourceContainer.style.backgroundColor = `#${(jsons.tintColor ?? altSourceTintColor).replaceAll("#", "")}`;
     sourceIcon.src = jsons.iconURL ?? altSourceIcon;
     sourceTitle.innerText = jsons.name;
-    sourceContainer.href = `${dir}/?source=${base64Convert(jsons.sourceURL)}`;
+    sourceContainer.href = `${dir}/view/?source=${base64Convert(jsons.sourceURL)}`;
     sourceSubtitle.innerText = `Last updated: ${formatVersionDate(lastUpdated)}`;
     sourceAppCount.innerText = appCount + (appCount === 1 ? " app" : " apps");
     // Hide/show navigation bar title & install button
