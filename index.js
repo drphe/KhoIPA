@@ -34,7 +34,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     const allSources = [...fetchedEditorSources, ...fetchedSources];
     const allApps = [];
-    
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
         const randomCode = Math.random().toString(36).substring(2, 6);
@@ -45,19 +44,19 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         const nonBetaApps = source.apps.filter(app => !app.beta);
         allApps.push(...nonBetaApps);
     }
-    const bundleIdToSourceMap = new Map();
-allSources.forEach(sourceTarget => {
-    sourceTarget.apps.forEach(app => {
-bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
-    });
-});
     // sort app 
     allApps.sort((a, b) => {
         const dateA = new Date(a.versionDate ?? a.versions?.[0]?.date ?? 0).valueOf();
         const dateB = new Date(b.versionDate ?? b.versions?.[0]?.date ?? 0).valueOf();
         return dateB - dateA;
     });
-
+    
+const bundleIdToSourceMap = new Map();
+allSources.forEach(sourceTarget => {
+    sourceTarget.apps.forEach(app => {
+bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
+    });
+});
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
 
@@ -150,6 +149,7 @@ bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
         currentIndex += appsPerLoad;
     }
 
+
 document.addEventListener("click", event => {
     const target = event.target.closest("a.app-header-link");
     if (!target) return;
@@ -162,6 +162,8 @@ document.addEventListener("click", event => {
     }
     openPanel(sourceTarget, bundleId);
 });
+
+    
 
     loadMoreApps();
 
