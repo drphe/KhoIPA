@@ -498,24 +498,26 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
             }
         });
     }
+    function closePanel() {
+        bottomPanel.classList.remove("show");
+        const remainingOpenPanels = document.querySelectorAll(".panel.show");
+        if (remainingOpenPanels.length === 0){
+        document.body.classList.remove('no-scroll');
+        }
+    }
+
     // show popup
     setTimeout(() => bottomPanel.classList.add("show"), 50); // show when everything ready
     document.body.classList.add('no-scroll');
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
-    closeBottom.addEventListener("click", () => {
-        bottomPanel.classList.remove("show");
-        document.body.classList.remove('no-scroll');
-    });
+    closeBottom.addEventListener("click", closePanel);
     document.addEventListener("click", (event) => {
         const uialert = document.querySelector("#uialert-container");
         const moreTriggers = document.querySelectorAll(".panel");
         const target = event.target;
         const isInsideMoreBtn = [...moreTriggers].some(btn => btn.contains(target));
-        if (!bottomPanel.contains(target) && !isInsideMoreBtn && (!uialert || !uialert.contains(target))) {
-            bottomPanel.classList.remove("show");
-            document.body.classList.remove('no-scroll');
-        }
+        if (!bottomPanel.contains(target) && !isInsideMoreBtn && (!uialert || !uialert.contains(target))) closePanel();
     });
 }
 
