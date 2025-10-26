@@ -432,7 +432,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     <div id="nav-bar">
       <div id="back-container">
         <button id="back" type="button">
-          <i class="bi bi-chevron-right"></i>
+          <i class="bi bi-arrow-90deg-left"></i>
           Close
         </button>
       </div>
@@ -563,6 +563,7 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5) 
         });
         searchBox.addEventListener('input', () => {
             xIcon.style.display = searchBox.value ? 'block' : 'none';
+            appsContainer.innerHTML = "";
             run();
         });
         searchBox.addEventListener("keydown", (event) => {
