@@ -147,12 +147,26 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         }
         openPanel(sourceTarget, bundleId);
     });
-    window.onscroll = e => {
-        const title = document.querySelector("h1");
-        const navBar = document.getElementById("nav-bar");
-        const navBarTitle = navBar.querySelector("#title");
-        const showItem = title.getBoundingClientRect().y < 36;
-        navBar.classList.toggle("hide-border", !showItem);
-        navBarTitle.classList.toggle("hidden", !showItem);
+    
+    let isScrolling = false;
+
+window.addEventListener('scroll', () => {
+    if (!isScrolling) {
+        window.requestAnimationFrame(() => {
+            const title = document.querySelector("h1");
+            const navBar = document.getElementById("nav-bar");
+            const navBarTitle = navBar.querySelector("#title");
+
+            if (title && navBar && navBarTitle) {
+                const showItem = title.getBoundingClientRect().y < 36;
+                navBar.classList.toggle("hide-border", !showItem);
+                navBarTitle.classList.toggle("hidden", !showItem);
+            }
+
+            isScrolling = false;
+        });
+        isScrolling = true;
     }
+});
+
 })();
