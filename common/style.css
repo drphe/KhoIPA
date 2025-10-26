@@ -244,7 +244,30 @@ body {
 .item {
   margin: 1rem 0;
 }
-
+/*input*/
+input {
+  width: 95%;
+  font-size: 1em;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--color-transparent);
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+}
+/* Hover và focus hiệu ứng */
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.3);
+  outline: none;
+}
+@media (prefers-color-scheme: dark) {
+     input {
+        background-color: rgba(255, 255, 255, 0.07);
+        color: white;
+    }
+}
 /* Section header */
 
 .header {
