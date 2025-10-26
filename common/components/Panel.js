@@ -363,12 +363,12 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
       const appName = bottomPanel.querySelector(".app-header .text>.title");
       const title = bottomPanel.querySelector("#title");
       const button = bottomPanel.querySelector("#nav-bar .install");
-      if (!isNavigationBarItemsVisible && appName.getBoundingClientRect().y < 100) {
+      if (!isNavigationBarItemsVisible && appName.getBoundingClientRect().y < 50) {
         title.classList.remove("hidden");
         button.classList.remove("hidden");
         button.disabled = false;
         isNavigationBarItemsVisible = true;
-      } else if (isNavigationBarItemsVisible && appName.getBoundingClientRect().y >= 100) { // Main app name is visible
+      } else if (isNavigationBarItemsVisible && appName.getBoundingClientRect().y >= 50) { // Main app name is visible
         // Hide navigation bar title & install button
         title.classList.add("hidden");
         button.classList.add("hidden");
