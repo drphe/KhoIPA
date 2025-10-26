@@ -507,7 +507,7 @@ bottomPanel.addEventListener("touchend", e => {
   
 document.addEventListener("click", (event) => { 
     // Lấy TẤT CẢ các nút có class 'more-trigger'
-    const moreTriggers = bottomPanel.querySelectorAll(".more-trigger");
+    const moreTriggers = document.querySelectorAll(".more-trigger");
     const target = event.target;
     const isInsideMoreBtn = [...moreTriggers].some(btn => btn.contains(target));
     
