@@ -54,7 +54,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         });
     });
 
-    addAppList({ apps: allApps }, false, 10, true); // no shot, 10 app, true for window scroll 
+    addAppList({ apps: allApps }, false, 10, false); // no shot, 10 app, true for window scroll 
 
     // total of repositories
     const totalRepoCount = document.getElementById('title-total-repo');
