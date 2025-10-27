@@ -521,7 +521,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     });
 }
 
-export async function addAppList(source, isScreenshot = false, appsPerLoad = 5, isWindowScroll = false) {
+export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, scrollTarget) {
         const appsContainer = document.getElementById('apps-list');
         if (!appsContainer) return;
         const allApps = source.apps.filter(app => !app.beta);
@@ -564,6 +564,7 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5, 
         searchBox.addEventListener('input', () => {
             xIcon.style.display = searchBox.value ? 'block' : 'none';
             appsContainer.innerHTML = "";
+            filteredApps = [];
             run();
         });
         searchBox.addEventListener("keydown", (event) => {
@@ -634,19 +635,54 @@ export async function addAppList(source, isScreenshot = false, appsPerLoad = 5, 
             currentIndex += appsPerLoad;
         }
         loadMoreApps();
-        
-        if(isWindowScroll){
-            window.onscroll = e => {
-                const totalHeight = document.body.offsetHeight;
-                if (window.innerHeight + window.scrollY >= totalHeight - 100) loadMoreApps();
-            }
-        }else{
-            appsContainer.parentElement.addEventListener('scroll', e => {
-                const container = e.target;
-                const totalHeight = container.scrollHeight;
-                const scrolledPosition = container.scrollTop;
-                const visibleHeight = container.clientHeight;
-                if (scrolledPosition + visibleHeight >= totalHeight - 100) loadMoreApps();
-            });
-        }
+
+       // scroll
+       const scrollToTop = (target) => {
+           if (target === window) {
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+           } else {
+               target.scrollTo({ top: 0, behavior: 'smooth' });
+           }
+       }
+       const scrollThreshold = 150;
+       scrollTarget ??= appsContainer.parentElement;
+
+       const buttonScroll = document.createElement('button');
+       buttonScroll.id = 'scrollToTopBtn';
+       buttonScroll.title = 'Scroll To Top';
+       const iconBtn = document.createElement('i');
+       iconBtn.className = 'bi bi-chevron-up';
+       buttonScroll.appendChild(iconBtn);
+       buttonScroll.onclick = () => scrollToTop(scrollTarget);
+
+       appsContainer.appendChild(buttonScroll);
+       buttonScroll.style.cssText = `
+        position: fixed;
+        bottom: 1rem;
+        left: 50%;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--uialert-text-color);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 25%;
+        font-size: 18px;
+        display: none;
+        transition: background-color 0.3s;
+    `;
+       buttonScroll.onmouseover = () => {
+           buttonScroll.style.backgroundColor = 'var(--uialert-background-color)';
+       };
+       buttonScroll.onmouseout = () => {
+           buttonScroll.style.backgroundColor = 'transparent';
+       };
+       scrollTarget.addEventListener('scroll', () => {
+           const scrollTop = scrollTarget === window ? document.documentElement.scrollTop || document.body.scrollTop : scrollTarget.scrollTop;
+           const scrollHeight = scrollTarget === window ? document.documentElement.scrollHeight || document.body.scrollHeight : scrollTarget.scrollHeight;
+           const clientHeight = scrollTarget === window ? document.documentElement.clientHeight || window.innerHeight : scrollTarget.clientHeight;
+           button.style.display = scrollTop > scrollThreshold ? 'block' : 'none';
+           if (scrollTop + clientHeight >= scrollHeight - 100) loadMoreApps();
+       });
     }

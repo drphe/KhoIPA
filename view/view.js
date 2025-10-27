@@ -70,7 +70,7 @@ main(json => {
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', '<p>ALL APPS</p>', '..', "side", "apps-popup-all");
-        addAppList(json, true);
+        addAppList(json); //5apps, with screenshot, target.parentElement scroll
      });
 
     //  "View All News"
