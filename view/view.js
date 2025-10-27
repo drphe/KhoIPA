@@ -34,11 +34,24 @@ main(json => {
         if (json.news.length == 1) {
             document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
             document.getElementById("news-items").classList.add("one");
-        } else
+        } else {
             for (let i = 0; i < json.news.length; i++){
 		if (!json.news[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
 	    }
+	}
+	// cuộn ngang
+	const containerNews = document.getElementById('news-items');
+	const item = containerNews.querySelector('.news-item-wrapper');
+	const itemWidth = item.offsetWidth + 15; 
+	containerNews.addEventListener('wheel', function (e) {
+  		e.preventDefault();
+  		const direction = e.deltaY > 0 ? 1 : -1;
+  		containerNews.scrollBy({
+    			left: direction * itemWidth,
+    			behavior: 'smooth'
+  		});
+	}, { passive: false });
     } else document.getElementById("news").remove();
 
     json.apps.sort((a, b) => {

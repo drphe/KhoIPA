@@ -64,7 +64,9 @@ max-width: 380px;
 .news-item-wrapper {
   margin-bottom: 2.5em;
 }
-
+.no-padding .news-item-wrapper {
+  margin-bottom: 0;
+}
 .section:last-of-type {
   margin-bottom: 3em;
 }

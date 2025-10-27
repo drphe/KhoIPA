@@ -28,12 +28,27 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         if (jsonNews.length == 1) {
             document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[0], true));
             document.getElementById("news-items").classList.add("one");
-        } else
+        } else {
             for (let i = 0; i < jsonNews.length; i++) {
                 if (!jsonNews[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
             }
+ 	}
+	// cuộn ngang
+	const containerNews = document.getElementById('news-items');
+	const item = containerNews.querySelector('.news-item-wrapper');
+	const itemWidth = item.offsetWidth + 15; // 10 là khoảng cách giữa các item
+	containerNews.addEventListener('wheel', function (e) {
+  		e.preventDefault();
+  		const direction = e.deltaY > 0 ? 1 : -1;
+  		containerNews.scrollBy({
+    			left: direction * itemWidth,
+    			behavior: 'smooth'
+  		});
+	}, { passive: false });
     } else document.getElementById("news").remove();
+
+
 
     const fetchedSources = (await Promise.all(sources.map(async url => {
         try {
@@ -53,7 +68,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     for (const source of fetchedSources) {
         await insertSource(source);
     }
-
 
     const allSources = [...fetchedEditorSources, ...fetchedSources];
     const allApps = [];
@@ -154,19 +168,19 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     document.addEventListener("click", event => {
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install");
-        const targetNews = e.target.closest("a.news-item-header");
-        const targetNewsLink = e.target.closest("a.news-item-link");
+        const targetNews = event.target.closest("a.news-item-header");
+        const targetNewsLink = event.target.closest("a.news-item-link");
         if (targetInstall) {
             event.preventDefault();
             showUIAlert("How To Install?", "Select Share Button -> Add To Home Screen  -> Done");
         }
         if (targetNewsLink) {
-            e.preventDefault();
+            event.preventDefault();
             const url = targetNewsLink.getAttribute("data-url");
             executeNews('./view/note/' + url, "news-popup-link");
         }
         if (targetNews) {
-            e.preventDefault();
+            event.preventDefault();
             const url = targetNews.getAttribute("data-url");
             if (isValidHTTPURL(url)) {
                 window.open(url, "_blank");
