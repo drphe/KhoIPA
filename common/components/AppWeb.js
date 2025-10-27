@@ -19,7 +19,7 @@ export const AppBanner = (name) => `
                 </p>
             </div>
         </div>
-        <a href="" class="install">
+        <a href="" class="install-app">
             <button id="add-to-altstore">Add</button>
         </a>
     </div>
