@@ -766,7 +766,7 @@
     {
       "beta": false,
       "name": "轻松签-ESign",
-      "type": 4,
+      "type": "4",
       "bundleIdentifier": "p3.xyz.yyyue.esign",
       "developerName": "yyy",
       "subtitle": "Ứng dụng ký IPA",
@@ -775,7 +775,9 @@
       "tintColor": "B2BFE6",
       "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
       "screenshotURLs": [
-        "https://private-user-images.githubusercontent.com/135683347/328411146-c2d21c1c-817b-497a-a5dd-a144b20207dc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk5MDA4MjksIm5iZiI6MTc1OTkwMDUyOSwicGF0aCI6Ii8xMzU2ODMzNDcvMzI4NDExMTQ2LWMyZDIxYzFjLTgxN2ItNDk3YS1hNWRkLWExNDRiMjAyMDdkYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwNTE1MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMTM4ZjY0ZGFiMThmODRhMDNlZjliNjc3YzY0Njg4ZmQ0NWUwODE4NDIzZGE4ZGEzYTJmMzc0ZTlkZTNkZmM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ENBDuPWwYnJzymI6zDz77mfCYZHoriht0H8UfY68v14"
+        "https://onejailbreak.com/site/assets/files/1108/esign-app.722x0-is.webp",
+        "https://onejailbreak.com/site/assets/files/1108/cutom-ipa-sign.722x0-is.webp",
+        "https://onejailbreak.com/site/assets/files/1108/esign-app-settings.722x0-is.webp"
       ],
       "size": 7206362,
       "version": "5.0.2",

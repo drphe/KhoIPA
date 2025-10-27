@@ -432,7 +432,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
     <div id="nav-bar">
       <div id="back-container">
         <button id="back" type="button">
-          <i class="bi bi-arrow-90deg-left"></i>
+          <i class="bi bi bi-chevron-left"></i>
           Close
         </button>
       </div>
@@ -666,7 +666,6 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         background-color: transparent;
         color: var(--uialert-text-color);
         cursor: pointer;
-        padding: 0.5rem;
         border-radius: 25%;
         font-size: 18px;
         display: none;
