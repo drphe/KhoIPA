@@ -559,6 +559,10 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
             totalAppsCount.innerText = `Total ${allApps.length} apps `;
             loadMoreApps();
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+                    window.scrollTo({
+                        top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
+                        behavior: "smooth"
+                    });
         });
         searchBox.addEventListener('input', () => {
             xIcon.style.display = searchBox.value ? 'block' : 'none';
@@ -581,7 +585,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
                     loadMoreApps();
                     appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
                     window.scrollTo({
-                        top: appsContainer.offsetTop,
+                        top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
                         behavior: "smooth"
                     });
                 }, 400);
