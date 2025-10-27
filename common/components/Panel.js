@@ -658,7 +658,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
 
        buttonScroll.style.cssText = `
         position: fixed;
-        bottom: 1rem;
+        bottom: 2rem;
         left: 50%;
         z-index: 99;
         border: none;

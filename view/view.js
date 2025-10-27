@@ -69,7 +69,7 @@ main(json => {
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        await openPanel('<div id="apps-list"></div>', '<p>ALL APPS</p>', '..', "side", "apps-popup-all");
+        await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json); //5apps, with screenshot, target.parentElement scroll
      });
 
