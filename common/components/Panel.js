@@ -654,8 +654,8 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
        iconBtn.className = 'bi bi-chevron-up';
        buttonScroll.appendChild(iconBtn);
        buttonScroll.onclick = () => scrollToTop(scrollTarget);
+	appsContainer.before(buttonScroll);
 
-       appsContainer.appendChild(buttonScroll);
        buttonScroll.style.cssText = `
         position: fixed;
         bottom: 1rem;
@@ -682,7 +682,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
            const scrollTop = scrollTarget === window ? document.documentElement.scrollTop || document.body.scrollTop : scrollTarget.scrollTop;
            const scrollHeight = scrollTarget === window ? document.documentElement.scrollHeight || document.body.scrollHeight : scrollTarget.scrollHeight;
            const clientHeight = scrollTarget === window ? document.documentElement.clientHeight || window.innerHeight : scrollTarget.clientHeight;
-           button.style.display = scrollTop > scrollThreshold ? 'block' : 'none';
+           buttonScroll.style.display = scrollTop > scrollThreshold ? 'block' : 'none';
            if (scrollTop + clientHeight >= scrollHeight - 100) loadMoreApps();
        });
     }
