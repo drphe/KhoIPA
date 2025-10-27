@@ -18,7 +18,7 @@ Thực hiện theo các bước sau:
 
 ## 🎬 Video hướng dẫn
 
-[![Xem video hướng dẫn](../../common/assets/img/DEVELOPEMODE.png)](https://youtu.be/E9ZXQF78lCo?si=zjluYBAcUPhWVLqw)
+[![Xem video hướng dẫn](https://drphe.github.io/KhoIPA/common/assets/img/DEVELOPEMODE.png)](https://youtu.be/E9ZXQF78lCo?si=zjluYBAcUPhWVLqw)
 
 ⚙️Cài đặt => Riêng tư \& bảo mật => chế độ nhà phát triển => Bật✅=> Khởi động lại
 
