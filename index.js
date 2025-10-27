@@ -97,7 +97,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     // total of repositories
     const totalRepoCount = document.getElementById('title-total-repo');
-    totalRepoCount.innerText = `${allSources.length} Repositories`;
+
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
     async function fetchSource(url) {
@@ -157,10 +157,12 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             repositories.style.display = 'none';
             apps.style.display = 'block';
             e.target.innerText = "Close";
+    	    totalRepoCount.innerText = `All Apps`;
         } else {
             suggestions.style.display = 'block';
             repositories.style.display = 'block';
             apps.style.display = 'none';
+    	    totalRepoCount.innerText = `Sources`;
             e.target.innerText = "View All Apps";
         }
     });
