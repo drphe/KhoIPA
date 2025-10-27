@@ -669,6 +669,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         border-radius: 25%;
         font-size: 18px;
         display: none;
+        scale:1.25;
         transition: background-color 0.3s;
     `;
        buttonScroll.onmouseover = () => {

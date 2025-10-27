@@ -76,13 +76,13 @@ main(json => {
     //  "View All News"
     document.getElementById('all-news')?.addEventListener("click", (e) => {
         e.preventDefault();
-        executeNews("", true);
+        executeNews("/","news-popup-all", true);
      });
 
-    function executeNews(url, isAll = false, id = 'news-popup-content') {
+    function executeNews(url, id = 'news-popup-content', isAll = false) {
       if (isAll) {
         const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;
-        openPanel(html, '<p>ALL NEWS</p>', '..', "side", "news-popup-all");
+        openPanel(html, '<p>ALL NEWS</p>', '..', "side", id);
       } else {
         if (!url) return;
         fetch(url).then(response => {
@@ -113,7 +113,7 @@ main(json => {
         if (targetNewsLink){
         	e.preventDefault();
            	const url = targetNewsLink.getAttribute("data-url");
-		executeNews('./note/'+url, false, "news-popup-link");
+		executeNews('./note/'+url, "news-popup-link");
 	}
         if (targetNews){
             e.preventDefault();

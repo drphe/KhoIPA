@@ -1,6 +1,7 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { formatVersionDate,  showUIAlert,  json,  consolidateApps} from "./common/modules/utilities.js";
+import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
+import { NewsItem } from "./common/components/NewsItem.js";
 import { openPanel , addAppList } from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
@@ -10,14 +11,38 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 (async () => {
     document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
     // fetch Data
-    const fetchedSources = await Promise.all(sources.map(async url => {
-        const source = await fetchSource(url);
-        return source || null;
-    }));
-    const fetchedEditorSources = await Promise.all(editorsources.map(async url => {
-        const source = await fetchSource(url);
-        return source || null;
-    }));
+    const fetchedEditorSources = (await Promise.all(editorsources.map(async url => {
+        try {
+            return await fetchSource(url);
+        } catch {
+            return null;
+        }
+    }))).filter(Boolean);
+
+    // Set News
+    const jsonNews = fetchedEditorSources[0].news;
+    if (jsonNews && jsonNews.length >= 1) {
+        // Sort news in decending order of date (latest first)
+        jsonNews.sort((a, b) => // If b < a
+            (new Date(b.date)).valueOf() - (new Date(a.date)).valueOf());
+        if (jsonNews.length == 1) {
+            document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[0], true));
+            document.getElementById("news-items").classList.add("one");
+        } else
+            for (let i = 0; i < jsonNews.length; i++) {
+                if (!jsonNews[i].notify) continue;
+                document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
+            }
+    } else document.getElementById("news").remove();
+
+    const fetchedSources = (await Promise.all(sources.map(async url => {
+        try {
+            return await fetchSource(url);
+        } catch {
+            return null;
+        }
+    }))).filter(Boolean);
+
     // Sort sources by last updated
     fetchedSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
     // insert editor's source choice
@@ -28,6 +53,8 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     for (const source of fetchedSources) {
         await insertSource(source);
     }
+
+
     const allSources = [...fetchedEditorSources, ...fetchedSources];
     const allApps = [];
     for (const source of allSources) {
@@ -46,23 +73,19 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         const dateB = new Date(b.versionDate ?? b.versions?.[0]?.date ?? 0).valueOf();
         return dateB - dateA;
     });
-
     const bundleIdToSourceMap = new Map();
     allSources.forEach(sourceTarget => {
         sourceTarget.apps.forEach(app => {
             bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
         });
     });
-
     addAppList({ apps: allApps }, 10, false, window); // 10 apps, no shot, window scroll 
 
     // total of repositories
     const totalRepoCount = document.getElementById('title-total-repo');
     totalRepoCount.innerText = `${allSources.length} Repositories`;
-
     document.body.classList.remove("loading");
     document.getElementById("loading")?.remove();
-
     async function fetchSource(url) {
         const data = await json(url);
         const source = consolidateApps(data);
@@ -110,13 +133,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     }
     // 
     // listener event
-    // add to home screen
-    document.querySelectorAll("a.install").forEach(button => {
-        button.addEventListener("click", event => {
-            event.preventDefault();
-            showUIAlert("How To Install?", "Select Share Button -> Add To Home Screen  -> Done");
-        });
-    });
     // view app list
     document.getElementById('search').addEventListener("click", (e) => {
         const suggestions = document.getElementById('suggestions');
@@ -136,10 +152,31 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     });
     // open app
     document.addEventListener("click", event => {
-        const target = event.target.closest("a.app-header-link");
-        if (!target) return;
+        const targetLink = event.target.closest("a.app-header-link");
+        const targetInstall = event.target.closest("a.install");
+        const targetNews = e.target.closest("a.news-item-header");
+        const targetNewsLink = e.target.closest("a.news-item-link");
+        if (targetInstall) {
+            event.preventDefault();
+            showUIAlert("How To Install?", "Select Share Button -> Add To Home Screen  -> Done");
+        }
+        if (targetNewsLink) {
+            e.preventDefault();
+            const url = targetNewsLink.getAttribute("data-url");
+            executeNews('./view/note/' + url, "news-popup-link");
+        }
+        if (targetNews) {
+            e.preventDefault();
+            const url = targetNews.getAttribute("data-url");
+            if (isValidHTTPURL(url)) {
+                window.open(url, "_blank");
+                return;
+            }
+            executeNews('./view/note/' + url);
+        }
+        if (!targetLink) return;
         event.preventDefault();
-        const bundleId = target.getAttribute("data-bundleid");
+        const bundleId = targetLink.getAttribute("data-bundleid");
         const sourceTarget = bundleIdToSourceMap.get(bundleId);
         if (!sourceTarget) {
             console.warn(`Source not found for bundleId: ${bundleId}`);
@@ -147,24 +184,40 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         }
         openPanel(sourceTarget, bundleId);
     });
-    
+
+    function executeNews(url, id = 'news-popup-content', isAll = false) {
+        if (isAll) {
+            const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;
+            openPanel(html, '<p>ALL NEWS</p>', '..', "side", id);
+        } else {
+            if (!url) return;
+            fetch(url).then(response => {
+                if (!response.ok) throw new Error("Fetch failed");
+                return response.text();
+            }).then(markdown => {
+                const html = `<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;
+                openPanel(html, '<p>CONTENTS</p>', '..', "side", id);
+            }).catch(error => {
+                console.error("Lỗi khi tải nội dung:", error);
+            });
+        }
+    }
     let isScrolling = false;
-const title = document.querySelector("h1");
+    const title = document.querySelector("h1");
     const navBar = document.getElementById("nav-bar");
     const navBarTitle = navBar.querySelector("#title");
-    
-window.addEventListener('scroll', () => {
-    if (!isScrolling) {
-        window.requestAnimationFrame(() => {
-            if (title && navBar && navBarTitle) {
-                const showItem = title.getBoundingClientRect().y < 36;
-                navBar.classList.toggle("hide-border", !showItem);
-                navBarTitle.classList.toggle("hidden", !showItem);
-            }
-            isScrolling = false;
-        });
-        isScrolling = true;
-    }
-});
-
+    window.addEventListener('scroll', () => {
+        if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+                if (title && navBar && navBarTitle) {
+                    const showItem = title.getBoundingClientRect().y < 36;
+                    navBar.classList.toggle("hide-border", !showItem);
+                    navBarTitle.classList.toggle("hidden", !showItem);
+                }
+                isScrolling = false;
+            });
+            isScrolling = true;
+        }
+    });
 })();
+
