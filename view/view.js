@@ -89,13 +89,13 @@ main(json => {
     //  "View All News"
     document.getElementById('all-news')?.addEventListener("click", (e) => {
         e.preventDefault();
-        executeNews("/","news-popup-all", true);
+        executeNews("/", "ALL NEWS","news-popup-all", true);
      });
 
-    function executeNews(url, id = 'news-popup-content', isAll = false) {
+    function executeNews(url, title , id = 'news-popup-content', isAll = false) {
       if (isAll) {
         const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;
-        openPanel(html, '<p>ALL NEWS</p>', '..', "side", id);
+        openPanel(html, `<p>${title}</p>`, '..', "side", id);
       } else {
         if (!url) return;
         fetch(url).then(response => {
@@ -103,7 +103,7 @@ main(json => {
           return response.text();
         }).then(markdown => {
           const html = `<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;
-          openPanel(html, '<p>CONTENTS</p>', '..', "side", id);
+          openPanel(html, `<p>${title}</p>`, '..', "side", id);
         }).catch(error => {
           console.error("Lỗi khi tải nội dung:", error);
         });
@@ -126,16 +126,17 @@ main(json => {
         if (targetNewsLink){
         	e.preventDefault();
            	const url = targetNewsLink.getAttribute("data-url");
-		executeNews('./note/'+url, "news-popup-link");
+		executeNews('./note/'+url, "CONTENTS", "news-popup-link");
 	}
         if (targetNews){
             e.preventDefault();
             const url = targetNews.getAttribute("data-url");
+            const title = targetNews.getAttribute("title");
 	    if(isValidHTTPURL(url)){
 		window.open(url, "_blank");	
 		return;
 	    }
-	    executeNews('./note/'+url);
+	    executeNews('./note/'+url, title);
 	}
     }
 

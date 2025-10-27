@@ -592,7 +592,6 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         searchWrapper.appendChild(searchIcon);
         searchWrapper.appendChild(searchBox);
         searchWrapper.appendChild(xIcon);
-        searchWrapper.appendChild(totalAppsCount);
         appsContainer.before(searchWrapper);
         async function run() {
             appsContainer.innerHTML = "";

@@ -179,16 +179,17 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         if (targetNewsLink) {
             event.preventDefault();
             const url = targetNewsLink.getAttribute("data-url");
-            executeNews('./view/note/' + url, "news-popup-link");
+            executeNews('./view/note/' + url, "CONTENTS", "news-popup-link");
         }
         if (targetNews) {
             event.preventDefault();
+            const title = targetNews.getAttribute("title");
             const url = targetNews.getAttribute("data-url");
             if (isValidHTTPURL(url)) {
                 window.open(url, "_blank");
                 return;
             }
-            executeNews('./view/note/' + url);
+            executeNews('./view/note/' + url, title);
         }
         if (!targetLink) return;
         event.preventDefault();
@@ -201,22 +202,17 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         openPanel(sourceTarget, bundleId);
     });
 
-    function executeNews(url, id = 'news-popup-content', isAll = false) {
-        if (isAll) {
-            const html = `<div id="news" class="section">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;
-            openPanel(html, '<p>ALL NEWS</p>', '..', "side", id);
-        } else {
+    function executeNews(url, title, id = 'news-popup-content') {
             if (!url) return;
             fetch(url).then(response => {
                 if (!response.ok) throw new Error("Fetch failed");
                 return response.text();
             }).then(markdown => {
                 const html = `<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;
-                openPanel(html, '<p>CONTENTS</p>', '..', "side", id);
+                openPanel(html, `<p>${title}</p>`, '.', "side", id);
             }).catch(error => {
                 console.error("Lỗi khi tải nội dung:", error);
             });
-        }
     }
     let isScrolling = false;
     const title = document.querySelector("h1");
