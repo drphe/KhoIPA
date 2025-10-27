@@ -758,7 +758,7 @@ a>button {
 
 .skeleton-block {
     height: 65px;
-    width: 65px;
+    width: 85px;
     display: block;
     border-radius:23%;
 }
@@ -888,7 +888,12 @@ a>button {
     --skeleton-color: #ccc;
     --skeleton-icon-color: rgba(0, 0, 0, .25)
 }
-
+@media (prefers-color-scheme: dark) {
+  * {
+    --skeleton-color: #515151;
+    --skeleton-icon-color: rgba(255, 255, 255, .25)
+  }
+}
 .dark {
     --skeleton-color: #515151;
     --skeleton-icon-color: rgba(255, 255, 255, .25)

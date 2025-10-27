@@ -28,7 +28,6 @@ export const AppHeader = (app) => app ? `
 export const AppLoading = (id = "apps-list", position = "beforeend") => {
   const container = document.getElementById(id);
   if (!container) return console.warn(`Element with id "${id}" not found.`);
-  
   container.insertAdjacentHTML(position, `
     <div class="app-container">
       <div class="app-header-container">
@@ -42,10 +41,10 @@ export const AppLoading = (id = "apps-list", position = "beforeend") => {
                     <p class="title">--- --- ---</p>
                     <p class="subtitle">------</p>
                   </div>
-                  <button class="uibutton">---</button>
+                  <button class="uibutton" style="background-color: var(--color-separator-dark);">---</button>
                 </div>
               </div>
-              <div class="background"></div>
+              <div class="background" style="background-color: var(--color-bg-dark-secondary);"></div>
             </div>
           </div>
         </a>
