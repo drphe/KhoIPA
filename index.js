@@ -169,7 +169,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     // open app
     document.addEventListener("click", event => {
         const targetLink = event.target.closest("a.app-header-link");
-        const targetInstall = event.target.closest("a.install");
+        const targetInstall = event.target.closest("a.install-app");
         const targetNews = event.target.closest("a.news-item-header");
         const targetNewsLink = event.target.closest("a.news-item-link");
         if (targetInstall) {
