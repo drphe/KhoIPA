@@ -682,7 +682,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
 	            totalAppsCount.innerText = `Total ${filteredApps.length} apps `;
                     currentIndex = 0; filterType = 0;
 	            appsContainer.innerHTML = "";
-		    filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
+                filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
                     loadMoreApps();
                     window.scrollTo({
                         top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
