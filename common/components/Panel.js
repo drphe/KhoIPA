@@ -633,7 +633,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
     		appsContainer.innerHTML  = `
     <div class="app-container">
       <div class="app-header-container">
-        <a href="#" class="nothing app-header-link">
+        <a href="#" class="nothing">
           <div class="app-header-inner-container">
             <div class="app-header">
               <div class="content" style="height: 30px;margin: auto;display: flex;justify-content: space-around;"><p>ⓧ Nothing found!</p></div>
