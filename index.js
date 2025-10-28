@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL} from "./common/modules/utilities.js";
+import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import { NewsItem } from "./common/components/NewsItem.js";
 import { openPanel , addAppList } from "./common/components/Panel.js";
@@ -21,6 +21,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     // Set News
     const jsonNews = fetchedEditorSources[0].news;
+    let jsonNewsUrl = [];
     if (jsonNews && jsonNews.length >= 1) {
         // Sort news in decending order of date (latest first)
         jsonNews.sort((a, b) => // If b < a
@@ -32,8 +33,11 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             for (let i = 0; i < jsonNews.length; i++) {
                 if (!jsonNews[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
+		const url = jsonNews[i].url; 
+		if(!/https?:\/\//.test(url)) jsonNewsUrl.push('./view/note/'+ url);
             }
  	}
+	prefetchAndCacheUrls(jsonNewsUrl);
 	// cuộn ngang
 	const containerNews = document.getElementById('news-items');
 	const item = containerNews.querySelector('.news-item-wrapper');
@@ -204,8 +208,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     function executeNews(url, title, id = 'news-popup-content') {
             if (!url) return;
-            fetch(url).then(response => {
-                if (!response.ok) throw new Error("Fetch failed");
+            openCachedUrl(url).then(response => {
                 return response.text();
             }).then(markdown => {
                 const html = `<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;

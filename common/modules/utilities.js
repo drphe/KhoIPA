@@ -200,3 +200,39 @@ export function consolidateApps(source) {
 const $ = selector => selector.startsWith("#") && !selector.includes(".") && !selector.includes(" ")
     ? document.getElementById(selector.substring(1))
     : document.querySelectorAll(selector);
+
+
+const CACHE_NAME = 'kh0ipa-data-cache-v1';
+
+export async function prefetchAndCacheUrls(urlList) {
+    if (!('caches' in window)) {
+        console.warn('Doesn't support Cache API.');
+        return;
+    }
+    try {
+        const cache = await caches.open(CACHE_NAME);
+        await cache.addAll(urlList);
+        console.log(`✅ ${urlList.length} URL was successfully cached!`);
+    } catch (error) {
+        console.error('❌ Prefetch failed.', error);
+    }
+}
+
+export async function openCachedUrl(url) {
+    if (!('caches' in window)) return fetch(url);
+    try {
+        const cache = await caches.open(CACHE_NAME);
+        const cachedResponse = await cache.match(url);
+        if (cachedResponse) {
+            return cachedResponse;
+        }
+        const networkResponse = await fetch(url);
+        if (networkResponse.ok) {
+            await cache.put(url, networkResponse.clone()); 
+        }
+        return networkResponse;
+    } catch (error) {
+        console.error(`Error hoặc cache URL: ${url}`);
+        throw error;
+    }
+}
