@@ -206,7 +206,7 @@ const CACHE_NAME = 'kh0ipa-data-cache-v1';
 
 export async function prefetchAndCacheUrls(urlList) {
     if (!('caches' in window)) {
-        console.warn('Doesn't support Cache API.');
+        console.warn(`Doesn't support Cache API.`);
         return;
     }
     try {

@@ -1,5 +1,5 @@
 import { sourceURL} from "../common/modules/constants.js";
-import { formatString, open, setUpBackButton , json , isValidHTTPURL } from "../common/modules/utilities.js";
+import { formatString, open, setUpBackButton , json , isValidHTTPURL,prefetchAndCacheUrls, openCachedUrl } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";
@@ -26,6 +26,7 @@ main(json => {
 
     // 
     // Set News
+    let jsonNewsUrl = [];
     if (json.news && json.news.length >= 1) {
         // Sort news in decending order of date (latest first)
         json.news.sort((a, b) => // If b < a
@@ -38,8 +39,11 @@ main(json => {
             for (let i = 0; i < json.news.length; i++){
 		if (!json.news[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
+		const url = json.news[i].url; 
+		if(!/https?:\/\//.test(url)) jsonNewsUrl.push('./note/'+ url);
 	    }
 	}
+	prefetchAndCacheUrls(jsonNewsUrl);
 	// cuộn ngang
 	const containerNews = document.getElementById('news-items');
 	const item = containerNews.querySelector('.news-item-wrapper');
@@ -98,8 +102,7 @@ main(json => {
         openPanel(html, `<p>${title}</p>`, '..', "side", id);
       } else {
         if (!url) return;
-        fetch(url).then(response => {
-          if (!response.ok) throw new Error("Fetch failed");
+        openCachedUrl(url).then(response => {
           return response.text();
         }).then(markdown => {
           const html = `<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;
