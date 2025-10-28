@@ -538,7 +538,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         // Tạo icon kính lúp
         const searchIcon = document.createElement("span");
         searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 62%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
+        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 45%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
         // Tạo ô tìm kiếm
         const searchBox = document.createElement("input");
         searchBox.type = "text";
@@ -548,11 +548,16 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         // Tạo icon x
         const xIcon = document.createElement("span");
         xIcon.innerHTML = ` <span class="totalSearch"></span><i class="bi bi-x-circle-fill"></i>`;
-        xIcon.style.cssText = "display:none;position: absolute;right: 0.7rem;top: 57%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+        xIcon.style.cssText = "display:none;position: absolute;right: 0.7rem;top: 45%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
         // Tạo total app
         const totalAppsCount = xIcon.querySelector(".totalSearch");
         totalAppsCount.innerText = `Total ${allApps.length} apps `;
+	// tạo filter
+        const filter = document.createElement("span");
+        filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
+        filter.style.cssText = "display: flex;justify-content: space-evenly;";
 
+	let filterType= 0;
         xIcon.addEventListener('click', () => {
             searchBox.value = '';
             xIcon.style.display = 'none';
@@ -595,10 +600,21 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
             }
         });
 
+     filter.querySelectorAll('.category').forEach((el, index) => {
+  	el.addEventListener('click', () => {
+    		filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
+	        el.classList.add('active');
+		filterType = index;
+                currentIndex = 0;
+                appsContainer.innerHTML = "";
+		loadMoreApps();
+	  });
+    });
         // Gắn các phần tử
         searchWrapper.appendChild(searchIcon);
         searchWrapper.appendChild(searchBox);
         searchWrapper.appendChild(xIcon);
+        searchWrapper.appendChild(filter);
         appsContainer.before(searchWrapper);
         async function run() {
             appsContainer.innerHTML = "";
@@ -609,9 +625,11 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
             }
             await Promise.all(tasks); // Chờ tất cả hoàn tất
         }
+apps.filter(app => app.type === 1);
         //with screenshot
         function loadMoreApps() {
-            const nextApps = filteredApps.slice(currentIndex, currentIndex + appsPerLoad);
+	    let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+            const nextApps = dataApps.slice(currentIndex, currentIndex + appsPerLoad);
             nextApps.forEach(app => {
                 let html = `
             <div class="app-container">
