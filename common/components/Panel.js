@@ -677,6 +677,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
 	appsContainer.addEventListener("click", event => {
         	const nothing = event.target.closest("a.nothing");
 		if(nothing) {
+            event.stopPropagation();
                     filteredApps = allApps
 	            totalAppsCount.innerText = `Total ${filteredApps.length} apps `;
                     currentIndex = 0; filterType = 0;
