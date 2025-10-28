@@ -34,7 +34,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
                 if (!jsonNews[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
 		const url = jsonNews[i].url; 
-		if(!/https?:\/\//.test(url)) jsonNewsUrl.push('./view/note/'+ url);
+		if(url && !isValidHTTPURL(jsonNews[i].url)) jsonNewsUrl.push('./view/note/'+ url);
             }
  	}
 	prefetchAndCacheUrls(jsonNewsUrl);

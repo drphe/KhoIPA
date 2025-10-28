@@ -40,7 +40,7 @@ main(json => {
 		if (!json.news[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
 		const url = json.news[i].url; 
-		if(!/https?:\/\//.test(url)) jsonNewsUrl.push('./note/'+ url);
+		if(url && !isValidHTTPURL(json.news[i].url)) jsonNewsUrl.push('./note/'+ url);
 	    }
 	}
 	prefetchAndCacheUrls(jsonNewsUrl);

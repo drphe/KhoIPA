@@ -53,14 +53,11 @@ export function insertNavigationBar(title) {
 
 }
 
-
-// https://stackoverflow.com/a/43467144/19227228
 export function isValidHTTPURL(string) {
     var url;
     try {
         url = new URL(string);
     } catch (error) {
-        console.error("An error occurred.", error);
         return false;
     }
     return url.protocol == "http:" || url.protocol == "https:";
