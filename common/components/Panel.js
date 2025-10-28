@@ -680,6 +680,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
             event.stopPropagation();
                     filteredApps = allApps
 	            totalAppsCount.innerText = `Total ${filteredApps.length} apps `;
+                searchBox.value = '';
                     currentIndex = 0; filterType = 0;
 	            appsContainer.innerHTML = "";
                 filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
