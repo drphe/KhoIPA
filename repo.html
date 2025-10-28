@@ -522,6 +522,7 @@ button:hover {
           <div>
             <label for="version_size">Kích thước (*) (bytes): </label>
             <input type="number" id="version_size" min="1" placeholder="Ví dụ: 50003343">
+		<button onclick="readFileSize()" style="    position: absolute;    right: 80px;">File</button>
           </div>
         </div>
         <label for="version_downloadURL">Download URL (*): <blink><a href="https://github.com/drphe/KhoIPA/releases/new" target=_blank>>>Upload tệp ở đây</a></blink></label>
@@ -1421,6 +1422,33 @@ async function fetchRepoData(url) {
   } catch (error) {
     window.showUIAlert("Error", "Lỗi khi tải Repository!");
   }
+}
+
+function readFileSize() {
+  // Tạo input tạm thời
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.style.display = 'none'; // Ẩn input
+
+  // Gắn sự kiện khi người dùng chọn file
+  input.addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const size = file.size
+      const modifiedDate = file.lastModifiedDate || new Date(file.lastModified);
+      const localDate = new Date(modifiedDate.getTime() - (modifiedDate.getTimezoneOffset() * 70000)).toISOString().slice(0, 16);
+       document.getElementById('version_size').value = file.size;
+	let number = document.getElementById('version_number').value
+       document.getElementById('version_downloadURL').value = "https://github.com/drphe/KhoIPA/releases/download/v." + number+"/"+file.name
+	document.getElementById('version_date').value = localDate;
+    }
+    // Xóa input sau khi dùng xong
+    document.body.removeChild(input);
+  });
+
+  // Thêm vào DOM và kích hoạt
+  document.body.appendChild(input);
+  input.click();
 }
 
   </script>
