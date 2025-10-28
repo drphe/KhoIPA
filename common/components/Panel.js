@@ -584,10 +584,6 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
                 filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
 		let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
                 totalAppsCount.innerText = `Found ${dataApps.length} apps `;
-                if (filteredApps.length === 0) {
-                    filteredApps = [...allApps];
-                }
-                // Nếu có kết quả
                 currentIndex = 0;
                 setTimeout(() => {
                     appsContainer.innerHTML = "";
@@ -633,6 +629,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         function loadMoreApps() {
 	    let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
             if(!dataApps.length) {
+   		appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
     		appsContainer.innerHTML  = `
     <div class="app-container">
       <div class="app-header-container">
