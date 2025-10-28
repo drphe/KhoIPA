@@ -632,6 +632,22 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         //with screenshot
         function loadMoreApps() {
 	    let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+            if(!dataApps.length) {
+    		appsContainer.innerHTML  = `
+    <div class="app-container">
+      <div class="app-header-container">
+        <a href="#" class="app-header-link">
+          <div class="app-header-inner-container">
+            <div class="app-header">
+              <div class="content" style="height: 30px;margin: auto;display: flex;justify-content: space-around;"><p>ⓧ Nothing found!</p></div>
+              <div class="background" style="background-color: var(--color-bg-dark-secondary);"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>`;
+		return;
+	    }
             const nextApps = dataApps.slice(currentIndex, currentIndex + appsPerLoad);
             nextApps.forEach(app => {
                 let html = `

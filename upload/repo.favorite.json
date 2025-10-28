@@ -321,7 +321,7 @@
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Đặc điểm nổi bật⚙️ 💚Được trích xuất từ 🎮🎮🎮 💚Đã sửa lỗi liên quan đến GameCenter khi ký bằng chứng chỉ🛠🛠🛠",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/32/bc/0a32bcc0-b4a5-d390-eac3-3cfa457c32d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "type": "2",
+      "type": 2,
       "tintColor": "2496EC",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/d8/35/ebd83561-81ad-43cb-74e5-32b394df1943/ad9a298f-4003-4445-aeb3-0f6de7cded3e_RELOADED_202306_2208x1242_37_Screenshot_en-US.png/406x228bb.png",
@@ -355,7 +355,7 @@
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️\n💚Đã bị xóa khỏi AppStore💙❌",
       "iconURL": "https://th.bing.com/th/id/OIP.7-xjm7lv-uMt2_h5uLZEPwAAAA",
-      "type": "2",
+      "type": 2,
       "tintColor": "42B9FD",
       "screenshotURLs": [
         "https://static.wikia.nocookie.net/angrybirds/images/5/5f/Henry-harling-henry-harling-untitled.jpg/revision/latest/scale-to-width-down/1000",
@@ -384,7 +384,7 @@
       "subtitle": "Game play",
       "localizedDescription": "Yêu cầu: IOS 12.0 trở lên \n⚙️Tính năng của bản mod⚙️\n💚Đã bị xóa khỏi AppStore💙❌",
       "iconURL": "https://upload.wikimedia.org/wikipedia/en/8/8d/Angry_Birds_Star_Wars.png",
-      "type": "2",
+      "type": 2,
       "tintColor": "F6312D",
       "screenshotURLs": [
         "https://static.wikia.nocookie.net/angrybirds/images/4/48/ABSW_Wii.jpg/revision/latest/scale-to-width-down/1000",
@@ -413,7 +413,7 @@
       "subtitle": "Tool for sign IPA",
       "localizedDescription": "⚙️Đặc điểm nổi bật⚙️\n💚Trình cài đặt sao chép hoàn toàn chức năng của ESign, thậm chí ở một số điểm còn tiện lợi hơn.\n\n😰 Theo thông tin từ nhà phát triển ESign, phần hỗ trợ máy chủ của ứng dụng sẽ sớm bị ngừng, điều này sẽ khiến việc cài đặt ứng dụng trở nên không khả thi. Trong tình huống này, KSign có thể trở thành một sự thay thế phù hợp.",
       "iconURL": "https://i0.wp.com/techybuff.com/wp-content/uploads/2025/05/Ksign-1.webp",
-      "type": "4",
+      "type": 4,
       "tintColor": "7376C2",
       "screenshotURLs": [
         "https://zeejb.com/wp-content/uploads/2025/07/IMG_4462-1024x1024.png",
@@ -847,7 +847,7 @@
     {
       "beta": false,
       "name": "Phim 4K",
-      "type": "1",
+      "type": 1,
       "bundleIdentifier": "com.phim4k.app",
       "developerName": "Phim4k.xyz",
       "subtitle": "Phần mềm xem phim 4K",
@@ -1095,7 +1095,7 @@
     {
       "beta": false,
       "name": "轻松签-ESign",
-      "type": "4",
+      "type": 4,
       "bundleIdentifier": "p3.xyz.yyyue.esign",
       "developerName": "yyy",
       "subtitle": "Ứng dụng ký IPA",

@@ -487,14 +487,14 @@ button:hover {
         </div>
         <div>
           <label for="app_type">Phân loại: </label>
-<select id="app_type">
-  <option value="1" selected>Apps</option>
-  <option value="2">Games</option>
-  <option value="3">Audio</option>
-  <option value="4">Tool</option>
-  <option value="5">Dylib</option>
-</select>
-</div>
+	  <select id="app_type">
+  		<option value="1" selected>Apps</option>
+  		<option value="2">Games</option>
+  		<option value="3">Audio</option>
+  		<option value="4">Tool</option>
+  		<option value="5">Dylib</option>
+	   </select>
+	</div>
 
       </div>
       <label for="app_screenshotURLs">Screenshot URLs (Ngăn cách bằng dấu phẩy): </label>
@@ -951,7 +951,7 @@ function addOrUpdateApp() {
   const subtitle = document.getElementById('app_subtitle').value.trim();
   const iconURL = document.getElementById('app_iconURL').value.trim();
   const tintColor = document.getElementById('app_tintColor').value.replace('#', '').toUpperCase();
-  const type = document.getElementById('app_type').value.trim();
+  const type = Number(document.getElementById('app_type').value.trim());
   const localizedDescription = document.getElementById('app_localizedDescription').value.trim();
   const screenshotURLsInput = document.getElementById('app_screenshotURLs').value.trim();
   const beta = document.getElementById('app_beta').checked;
@@ -1047,7 +1047,7 @@ function editApp(index) {
   document.getElementById('app_subtitle').value = item.subtitle;
   document.getElementById('app_iconURL').value = item.iconURL;
   document.getElementById('app_tintColor').value = '#' + item.tintColor;
-  document.getElementById('app_type').value = item.type;
+  document.getElementById('app_type').value = Number(item.type);
   document.getElementById('app_localizedDescription').value = item.localizedDescription;
   document.getElementById('app_screenshotURLs').value = (item.screenshotURLs || []).join(', ');
   document.getElementById('app_beta').checked = item.beta;
