@@ -1,6 +1,6 @@
 {
   "name": "Favorite apps",
-  "identifier": "org.khoIPA.repo",
+  "identifier": "repo.drphe.kh0ipa",
   "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "website": "https://github.com/drphe/KhoIPA/",
@@ -76,7 +76,7 @@
       "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
       "appID": "com.dylib.app",
       "date": "2025-10-09",
-      "notify": true,
+      "notify": false,
       "url": "Khodylib.md"
     },
     {
@@ -109,11 +109,332 @@
       "imageURL": "https://chat.zalo.me/apple-icon-144x144.png",
       "appID": "com.zalo.app",
       "date": "2025-10-09",
-      "notify": true,
+      "notify": false,
       "url": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa"
     }
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "Color Widgets",
+      "bundleIdentifier": "com.MMApps.WidgetsApp",
+      "developerName": "MM Apps, Inc.",
+      "subtitle": "Mod pro",
+      "localizedDescription": "Yêu cầu: IOS 15.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã kích hoạt Pro \n💚Đã sửa lỗi hoạt động của các widget🛠🛠🛠\n😰Để kích hoạt Pro, hãy khởi động lại ứng dụng và nhấn “Mua gói Pro” nhiều lần, đồng thời hủy nhập Apple ID.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/29/4d/a7294dc9-b315-8bdd-a3fb-9fef82e60aa5/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/100x100bb.jpg",
+      "type": "1",
+      "tintColor": "33D9B4",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/c0/73/31/c073315f-54ba-ed36-d113-4662cbb3fe7e/6b775054-7ae8-47b6-a882-294b6f1b09ad_i1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/7a/b1/6e/7ab16e3d-715c-8ecf-f250-785c89ea7e2b/579e98f4-a1c2-413d-9b8c-6019fbe96ef8_iphone-1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/64/fc/27/64fc2737-a3a9-af6b-5fce-a9ff2fd1fc86/60f8c185-a662-479f-8a35-c2d97e7fa191_i4.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/0f/2b/8f/0f2b8f30-ad0e-977a-0d64-542bd0c3878e/0172bece-e444-4c30-a654-1b1f0033858c_i3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/91/2d/64/912d6462-ae90-4de3-5f3c-bd1e795ada20/469406e0-3730-413b-97c5-9c9f3382eaac_i5.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/36/35/fb/3635fbbc-2a44-03e0-62ee-1daff4eef0e3/2aae5355-c11a-4ce0-bfa3-8010b6f3c094_i6.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fb/21/ff/fb21ff6e-5413-2639-d462-fee7ebb0adaa/3b26c18e-0764-4efd-b879-75b9d68f266b_iphonei8.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/cd/fd/05cdfda9-d8f0-f8c6-c6fc-17ec9a4a1853/af303dab-b4d8-4192-8f76-c45653df3ffb_iphonei7.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/b3/8a/33/b38a33e0-fe78-728e-7149-2da302628465/fc3e6cec-2f71-48c8-8f24-2f5ab5ee7eff_i9.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/41/2f/35412f3d-4e65-8534-5633-e821d3122389/bf4f3160-f3a0-48c8-936b-8c63f505d9a0_ipi10.png/392x696bb.png"
+      ],
+      "versions": [
+        {
+          "version": "6.3.0",
+          "date": "2025-07-10T15:55:00Z",
+          "size": 60545699,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.6.3.0/Color.Widgets.v6.3.0.ipa",
+          "localizedDescription": "❗️❗️Widget chỉ hoạt động với các chứng chỉ cá nhân được mua sau ngày 06.02.2025"
+        }
+      ],
+      "version": "6.3.0",
+      "versionDate": "2025-07-10T15:55:00Z",
+      "versionDescription": "❗️❗️Widget chỉ hoạt động với các chứng chỉ cá nhân được mua sau ngày 06.02.2025",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.6.3.0/Color.Widgets.v6.3.0.ipa",
+      "size": 60545699
+    },
+    {
+      "beta": false,
+      "name": "Sticker Maker",
+      "bundleIdentifier": "net.dreamdownloader.stickermaker",
+      "developerName": "Dream Downloader Infotech Ltd.",
+      "subtitle": "Mod premium",
+      "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fe/fe/02/fefe0210-06b4-dcfe-81e3-9fba16a67fd5/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.jpg",
+      "type": "1",
+      "tintColor": "601CFF",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/2d/9b/ca/2d9bca44-d42f-c53c-3d3e-26b2c71ad66e/403ce867-e475-4bdc-a792-dfb219e32029_Screenshot_1_6_Plus.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/4e/7b/b5/4e7bb5f5-78c8-603f-07d0-12d380ff3bc9/1dc80c78-4111-490c-9860-51a924659d2e_Screenshot_2_6_Plus.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/48/ba/26/48ba2687-1636-7c07-195b-31d9595ae87e/2b0c0f47-6ac3-4273-bc16-2b60bcda9715_Screenshot_3_6_Plus.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/4c/d7/57/4cd757d3-74d9-b54d-c627-fb820770aca9/e06d5e36-1df4-429f-91d5-dd6cb7adf4fc_Screenshot_4_6_Plus.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/e5/f9/38/e5f938d2-e62c-a724-ed60-da6f28d982e1/61e9783e-8196-4d10-987e-a96d0c681c7b_Screenshot_5_6_Plus.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/34/ca/3d/34ca3d9a-f806-0c7d-faaa-d19131e646b2/a5e680cf-9af5-41d0-8581-b751d3a80019_Screenshot_6_6_Plus.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/fd/2b/a6/fd2ba657-1f43-5620-e120-b4e954c98f66/9f57cea0-e26a-44b8-93dc-f3ab66fd23ef_Screenshot_7_6_Plus.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/8d/a3/4c/8da34c0c-8d24-ae3b-2109-040089785ff0/14822c19-298e-401d-af38-027a1eee9acb_Screenshot_8_6_Plus.png/392x696bb.png"
+      ],
+      "versions": [
+        {
+          "version": "1.4.4",
+          "date": "2025-03-06T15:50:00Z",
+          "size": 48791064,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.4.4/Sticker.Maker.v1.4.4.ipa",
+          "localizedDescription": "❤️💙Animock💙❤️\n⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️\n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker."
+        }
+      ],
+      "version": "1.4.4",
+      "versionDate": "2025-03-06T15:50:00Z",
+      "versionDescription": "❤️💙Animock💙❤️\n⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️\n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker.",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.4.4/Sticker.Maker.v1.4.4.ipa",
+      "size": 48791064
+    },
+    {
+      "beta": false,
+      "name": "Telegram++",
+      "bundleIdentifier": "ph.telegra.Telegraph",
+      "developerName": "Telegram FZ-LLC",
+      "subtitle": "Mod version",
+      "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã thêm tinh chỉnh mới 🧤🧤🧤TGExtra \n💚Thay đổi vị trí địa lý \n💚Chế độ hoàn toàn ngoại tuyến \n💚Đã xóa quảng cáo \n💚Chế độ ẩn danh: không hiển thị đã đọc tin nhắn hay xem story \n💚🔥Ẩn trạng thái đang gõ⌨️, ghi âm tin nhắn thoại, quay video tròn trong cuộc trò chuyện \n💚Cho phép chụp màn hình và quay màn hình ở mọi nơi, kể cả nơi bị hạn chế (kênh kín, nhóm riêng, ảnh tự hủy, chat bí mật) 💚Cho phép lưu và chuyển tiếp nội dung từ các nhóm và kênh riêng tư \n💚Có thể đăng nhập bằng mã SMS!",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/0f/f3/480ff3b9-cae0-7fc9-f917-19892541ffaa/Telegram-0-0-1x_U007epad-0-1-0-P3-85-220.png/100x100bb.jpg",
+      "type": "1",
+      "tintColor": "55B0E7",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/88/8c/50888cba-8bbe-276a-3339-8b98c44d8e95/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/c3/34/dac33442-7a2a-d617-6ead-65dfb2944102/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/8d/56/618d5645-2405-ece6-55d3-dacff34b1954/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d1/fc/09/d1fc097d-0c7f-f8ae-da3a-b6b440a9a9fe/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/75/14/ff7514fa-46c2-aaf5-5679-fe23e4983782/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/65/9c/3e659c49-90fa-06a5-4e1e-3b1d599734c4/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/17/53/b4/1753b486-089a-aed9-274b-c38c38dadd63/pr_source.png/392x696bb.png"
+      ],
+      "versions": [
+        {
+          "version": "11.9",
+          "date": "2025-02-27T15:41:00Z",
+          "size": 86635199,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.9/Telegram+.v11.9.ipa",
+          "localizedDescription": "❗️Thông báo hoạt động không ổn định\n\n❗️QUAN TRỌNG – Để mở cài đặt mod và kích hoạt tất cả tính năng, hãy nhấn nút “Chats💬” ở dưới cùng 5 lần (https://t.me/ZiSipa_chat/1034569)"
+        }
+      ],
+      "version": "11.9",
+      "versionDate": "2025-02-27T15:41:00Z",
+      "versionDescription": "❗️Thông báo hoạt động không ổn định\n\n❗️QUAN TRỌNG – Để mở cài đặt mod và kích hoạt tất cả tính năng, hãy nhấn nút “Chats💬” ở dưới cùng 5 lần (https://t.me/ZiSipa_chat/1034569)",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.9/Telegram+.v11.9.ipa",
+      "size": 86635199
+    },
+    {
+      "beta": false,
+      "name": "Folium",
+      "bundleIdentifier": "com.antique.Folium-iOS",
+      "developerName": "Jarrod Norwell",
+      "subtitle": "Giả lập game NDS",
+      "localizedDescription": "Yêu cầu: IOS 16.0 trở lên \n⚙️Mô tả⚙️ \n💚Trình giả lập các hệ máy console như NDS, 3DS, GBA và nhiều loại khác!",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/45/a8/de45a823-3935-bb2c-7fbc-d9580962d05d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "type": "1",
+      "tintColor": "63D97B",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/3c/2b/db3c2b3c-ba85-6ea2-5a49-96537f5fdf8c/522b914e-f092-4ce4-b9b0-cfb573a48064_0x0ss2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/03/ac/24/03ac2489-ac26-3af4-0b54-23dda45f4b9d/318ad492-7d53-47b8-bb42-9a247ceed3d7_0x0ss3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/95/3c/6d953c43-d625-d289-5dfa-1d69094549da/9405274d-83ee-4f47-83f6-d3e33e70ca3a_0x0ss.png/392x696bb.png"
+      ],
+      "versions": [
+        {
+          "version": "1.20",
+          "date": "2025-04-02T15:31:00Z",
+          "size": 26990855,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.20/Folium.v1.20.ipa",
+          "localizedDescription": "❤️💙Folium💙❤️ \n⚡️Phiên bản mới nhất⚡️"
+        }
+      ],
+      "version": "1.20",
+      "versionDate": "2025-04-02T15:31:00Z",
+      "versionDescription": "❤️💙Folium💙❤️ \n⚡️Phiên bản mới nhất⚡️",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.20/Folium.v1.20.ipa",
+      "size": 26990855
+    },
+    {
+      "beta": false,
+      "name": "Worms 3",
+      "bundleIdentifier": "com.team17.worms3",
+      "developerName": "Team17 Digital Limited",
+      "subtitle": "Playing game mod",
+      "localizedDescription": "Yêu cầu: IOS 8.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Giá trên 💙AppStore là 4.99$.\n 💚Không khả dụng trên 🇷🇺AppStore.",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/67/93/7c/67937cd2-0907-bbec-8987-4ecf0442411a/mzl.vjzejqyc.png/100x100bb.jpg",
+      "type": "2",
+      "tintColor": "EB4200",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/a9/5a/59/a95a597c-d9ff-e121-6d8f-9d8de911b91e/mzl.hzvdtgct.jpg/406x228bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/c6/70/93/c6709305-6673-a0e6-a808-5cf4169909df/mzl.fvcwsvkf.jpg/406x228bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/06/8e/b1/068eb1b4-c650-022e-c3fb-c2b28211fd31/mzl.uizbsbbu.jpg/406x228bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/b3/82/16/b38216cb-bf55-a00f-9c7e-d6a6436a850e/mzl.rrrqwyba.jpg/406x228bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/38/ea/8f/38ea8f42-7cde-9c4d-c65a-08c09daf89cf/mzl.pkwdqcof.jpg/406x228bb.jpg"
+      ],
+      "versions": [
+        {
+          "version": "1.24",
+          "date": "2025-04-16T15:25:00Z",
+          "size": 146279312,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.24/Worms.3.v1.24.ipa",
+          "localizedDescription": "❤️💙Worms 3💙❤️\n⚡️Phiên bản mới nhất⚡️"
+        }
+      ],
+      "version": "1.24",
+      "versionDate": "2025-04-16T15:25:00Z",
+      "versionDescription": "❤️💙Worms 3💙❤️\n⚡️Phiên bản mới nhất⚡️",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.24/Worms.3.v1.24.ipa",
+      "size": 146279312
+    },
+    {
+      "beta": false,
+      "name": "Bad Piggies",
+      "bundleIdentifier": "com.rovio.BadPiggies",
+      "developerName": "Rovio Entertainment Oyj",
+      "subtitle": "Playing game mod",
+      "localizedDescription": "Yêu cầu: IOS 12.0 trở lên \n⚙️Tính năng của bản mod⚙️\n 💚Đã bị xóa khỏi AppStore💙❌",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/f2/d0/86f2d00b-a564-747c-b5ad-934d9c417e0c/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/100x100bb.jpg",
+      "type": "2",
+      "tintColor": "DD1C20",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/ba/29/56/ba295645-6b49-c587-fa52-0a8fac053c41/c7a77f46-6d83-4e31-a1cd-ba7b9e499ad8_BP_gdpr_2208x1242_1_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/87/4c/4e/874c4e46-dd37-c0c9-4b76-6bae080ddeb0/d342aed6-7d26-403f-ac35-f73755c1066a_BP_gdpr_2208x1242_2_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/54/18/b6/5418b6c2-cd0a-9e67-1f78-df2ca5879008/3a47b298-6781-4195-99fe-dde5f5346c6f_BP_gdpr_2208x1242_3_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/60/eb/54/60eb54e0-181e-4cfb-6688-38e2e08d9918/53da444b-4e0a-4011-b9fd-9465af35af03_BP_gdpr_2208x1242_4_en-US.png/406x228bb.png"
+      ],
+      "versions": [
+        {
+          "version": "2.4.461",
+          "date": "2025-05-15T15:12:00Z",
+          "size": 151891104,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4.461/Bad.Piggies.v2.4.461.ipa",
+          "localizedDescription": "❤️💙Bad Piggies💙❤️\n⚡️Phiên bản mới nhất⚡️"
+        }
+      ],
+      "version": "2.4.461",
+      "versionDate": "2025-05-15T15:12:00Z",
+      "versionDescription": "❤️💙Bad Piggies💙❤️\n⚡️Phiên bản mới nhất⚡️",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4.461/Bad.Piggies.v2.4.461.ipa",
+      "size": 151891104
+    },
+    {
+      "beta": false,
+      "name": "Angry Birds Reloaded",
+      "bundleIdentifier": "com.rovio.abreloaded",
+      "developerName": "Rovio Entertainment Oyj",
+      "subtitle": "Playing game mod",
+      "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Đặc điểm nổi bật⚙️ 💚Được trích xuất từ 🎮🎮🎮 💚Đã sửa lỗi liên quan đến GameCenter khi ký bằng chứng chỉ🛠🛠🛠",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/32/bc/0a32bcc0-b4a5-d390-eac3-3cfa457c32d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+      "type": "2",
+      "tintColor": "2496EC",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/d8/35/ebd83561-81ad-43cb-74e5-32b394df1943/ad9a298f-4003-4445-aeb3-0f6de7cded3e_RELOADED_202306_2208x1242_37_Screenshot_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/fb/4c/44fb4cba-d0ba-e12b-e422-d5f9a43dc3d3/8611cb92-cb46-413a-aeab-8b347466b824_RELOADED_202104_2208x1242_Screenshots_01_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d4/b9/ead4b9aa-6616-e644-466d-d6360e1703eb/a0da4fc3-8507-4cfd-a2c5-3d6bc0188cfb_RELOADED_202104_2208x1242_Screenshots_02_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/da/4f/40da4f77-500a-4e8c-8e8a-d90b268d97b9/817b2401-01f7-430c-aed8-8db4d9bee85f_RELOADED_202104_2208x1242_Screenshots_03_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/c1/4b/b0c14be1-a1e3-7abc-86d5-9a596a606189/692e1f70-9b65-4cef-9715-805d11a380b1_RELOADED_202104_2208x1242_Screenshots_04_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cb/c5/3c/cbc53c21-2caf-d409-4ba8-02c06aa823ec/8d48165f-0d4d-4d74-adf0-50e79457782c_RELOADED_202104_2208x1242_Screenshots_05_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/59/80/09598086-ec2e-3843-232b-0ae4a9a2789b/2bbccaec-c939-4ff7-92bb-ce80a29f7da2_RELOADED_202203_2208x1242_MightyEagle_Screenshot_01_en-US.png/406x228bb.png"
+      ],
+      "versions": [
+        {
+          "version": "3.14",
+          "date": "2025-06-13T14:44:00Z",
+          "size": 396664994,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.3.14/Angry.Birds.Reloaded.v3.14.ipa",
+          "localizedDescription": "❤️💙Angry Birds Reloaded💙❤️\n⚡️Phiên bản mới nhất⚡️"
+        }
+      ],
+      "version": "3.14",
+      "versionDate": "2025-06-13T14:44:00Z",
+      "versionDescription": "❤️💙Angry Birds Reloaded💙❤️\n⚡️Phiên bản mới nhất⚡️",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.3.14/Angry.Birds.Reloaded.v3.14.ipa",
+      "size": 396664994
+    },
+    {
+      "beta": false,
+      "name": "Angry Birds GO",
+      "bundleIdentifier": "com.rovio.go",
+      "developerName": "Rovio Entertainment Oyj",
+      "subtitle": "Playing game mod",
+      "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️\n💚Đã bị xóa khỏi AppStore💙❌",
+      "iconURL": "https://th.bing.com/th/id/OIP.7-xjm7lv-uMt2_h5uLZEPwAAAA",
+      "type": "2",
+      "tintColor": "42B9FD",
+      "screenshotURLs": [
+        "https://static.wikia.nocookie.net/angrybirds/images/5/5f/Henry-harling-henry-harling-untitled.jpg/revision/latest/scale-to-width-down/1000",
+        "https://cdn.mobygames.com/screenshots/1666853-angry-birds-go-android-main-menu.jpg"
+      ],
+      "versions": [
+        {
+          "version": "2.8.3",
+          "date": "2025-08-18T14:32:00Z",
+          "size": 261551272,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.8.3/Angry.Birds.GO.v2.8.3.ipa",
+          "localizedDescription": "❤️💙Angry Birds GO💙❤️\n⚡️Phiên bản mới nhất⚡️"
+        }
+      ],
+      "version": "2.8.3",
+      "versionDate": "2025-08-18T14:32:00Z",
+      "versionDescription": "❤️💙Angry Birds GO💙❤️\n⚡️Phiên bản mới nhất⚡️",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.8.3/Angry.Birds.GO.v2.8.3.ipa",
+      "size": 261551272
+    },
+    {
+      "beta": false,
+      "name": "Angry Birds: Star Wars",
+      "bundleIdentifier": "com.rovio.starwar",
+      "developerName": "Rovio Entertainment Oyj",
+      "subtitle": "Game play",
+      "localizedDescription": "Yêu cầu: IOS 12.0 trở lên \n⚙️Tính năng của bản mod⚙️\n💚Đã bị xóa khỏi AppStore💙❌",
+      "iconURL": "https://upload.wikimedia.org/wikipedia/en/8/8d/Angry_Birds_Star_Wars.png",
+      "type": "2",
+      "tintColor": "F6312D",
+      "screenshotURLs": [
+        "https://static.wikia.nocookie.net/angrybirds/images/4/48/ABSW_Wii.jpg/revision/latest/scale-to-width-down/1000",
+        "https://static.wikia.nocookie.net/angrybirds/images/0/07/2017-11-21_5a147eee960c3_WiiU-AngryBirdsStarWars-950x633.jpg/revision/latest"
+      ],
+      "versions": [
+        {
+          "version": "1.9.24",
+          "date": "2025-06-28T14:16:00Z",
+          "size": 85085041,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.9.24/Angry.Birds_.Star.Wars.v1.9.24.ipa",
+          "localizedDescription": "❤️💙Angry Birds: Star Wars💙❤️\n⚡️Phiên bản mới nhất⚡️"
+        }
+      ],
+      "version": "1.9.24",
+      "versionDate": "2025-06-28T14:16:00Z",
+      "versionDescription": "❤️💙Angry Birds: Star Wars💙❤️\n⚡️Phiên bản mới nhất⚡️",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.9.24/Angry.Birds_.Star.Wars.v1.9.24.ipa",
+      "size": 85085041
+    },
+    {
+      "beta": false,
+      "name": "Ksign",
+      "bundleIdentifier": "com.ksign.tool",
+      "developerName": "Ksign",
+      "subtitle": "Tool for sign IPA",
+      "localizedDescription": "⚙️Đặc điểm nổi bật⚙️\n💚Trình cài đặt sao chép hoàn toàn chức năng của ESign, thậm chí ở một số điểm còn tiện lợi hơn.\n\n😰 Theo thông tin từ nhà phát triển ESign, phần hỗ trợ máy chủ của ứng dụng sẽ sớm bị ngừng, điều này sẽ khiến việc cài đặt ứng dụng trở nên không khả thi. Trong tình huống này, KSign có thể trở thành một sự thay thế phù hợp.",
+      "iconURL": "https://i0.wp.com/techybuff.com/wp-content/uploads/2025/05/Ksign-1.webp",
+      "type": "4",
+      "tintColor": "7376C2",
+      "screenshotURLs": [
+        "https://zeejb.com/wp-content/uploads/2025/07/IMG_4462-1024x1024.png",
+        "https://zeejb.com/wp-content/uploads/2025/07/IMG_4460.png",
+        "https://zeejb.com/wp-content/uploads/2025/07/IMG_4461-1024x1024.png"
+      ],
+      "versions": [
+        {
+          "version": "1.3.",
+          "date": "2025-10-22T11:49:00Z",
+          "size": 15791843,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.2/KSign.v1.3.2.ipa",
+          "localizedDescription": "❤️💙KSign💙❤️\n⚡️Phiên bản mới nhất⚡️"
+        }
+      ],
+      "version": "1.3.",
+      "versionDate": "2025-10-22T11:49:00Z",
+      "versionDescription": "❤️💙KSign💙❤️\n⚡️Phiên bản mới nhất⚡️",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.2/KSign.v1.3.2.ipa",
+      "size": 15791843
+    },
     {
       "beta": false,
       "name": "Adobe Premiere: Video Editor",
@@ -481,7 +802,7 @@
       "developerName": "Duolingo",
       "subtitle": "Duolingo Premium unlock, super duolingo.",
       "localizedDescription": "Duolingo IPA MOD là phiên bản sửa đổi của ứng dụng Duolingo cung cấp cho người dùng các tính năng cao cấp miễn phí. Với MOD này, bạn có thể tận hưởng trái tim không giới hạn, bài học ngoại tuyến, học không có quảng cáo và các tính năng độc quyền khác mà không cần đăng ký.",
-      "versionDescription": "Duolingo premium ver 7.65",
+      "versionDescription": "❤️💙Duolingo ⬆️💙❤️ ⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️ 💚Đã kích hoạt chế độ MAX\n😰Vui lòng đăng nhập hoặc đăng ký để kích hoạt gói đăng ký.\nhttps://t.me/ZiSipa",
       "tintColor": "8AA32E",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/df/0c/5f/df0c5f65-4c7c-8680-79f3-510ba742364a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
       "screenshotURLs": [
@@ -495,9 +816,16 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5e/90/a6/5e90a6ec-a799-0983-31b0-bb460c846bf9/7aa19a3b-a904-4d24-a355-c0eefd1c8391_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_9.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/31/52/96315243-7b1c-4a92-5728-4ac260c2aeac/20cf691d-4b1f-4d31-8a63-9db75a70513f_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_10.png/392x696bb.png"
       ],
-      "size": 122190712,
-      "version": "7.65",
+      "size": 190039009,
+      "version": "7.97.0",
       "versions": [
+        {
+          "version": "7.97.0",
+          "date": "2025-10-28T10:37:00Z",
+          "size": 190039009,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.97/Duolingo.v7.97.0.ipa",
+          "localizedDescription": "❤️💙Duolingo ⬆️💙❤️ ⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️ 💚Đã kích hoạt chế độ MAX\n😰Vui lòng đăng nhập hoặc đăng ký để kích hoạt gói đăng ký.\nhttps://t.me/ZiSipa"
+        },
         {
           "version": "7.65",
           "date": "2025-09-04T15:31:00Z",
@@ -513,13 +841,13 @@
           "localizedDescription": "Phiên bản 7.60"
         }
       ],
-      "versionDate": "2025-09-04T15:31:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.65/Doulingo_7.65.ipa"
+      "versionDate": "2025-10-28T10:37:00Z",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.97/Duolingo.v7.97.0.ipa"
     },
     {
       "beta": false,
       "name": "Phim 4K",
-      "type": 1,
+      "type": "1",
       "bundleIdentifier": "com.phim4k.app",
       "developerName": "Phim4k.xyz",
       "subtitle": "Phần mềm xem phim 4K",
@@ -528,7 +856,8 @@
       "tintColor": "535050",
       "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
       "screenshotURLs": [
-        "https://drphe.github.io/KhoIPA/common/assets/img/phim4k.jpg"
+        "https://drphe.github.io/KhoIPA/common/assets/img/phim4k.jpg",
+        "https://picul.de/view/YhE"
       ],
       "size": 38179467,
       "version": "1.9.7",
@@ -798,6 +1127,7 @@
     "com.phim4k.app",
     "com.duolingo.DuolingoMobile",
     "vn.com.vng.zingalo",
-    "com.adguard.AdguardExtension"
+    "com.adguard.AdguardExtension",
+    "com.ksign.tool"
   ]
 }

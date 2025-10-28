@@ -591,7 +591,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
                         top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
                         behavior: "smooth"
                     });
-                }, 400);
+                }, 300);
             }
         });
 

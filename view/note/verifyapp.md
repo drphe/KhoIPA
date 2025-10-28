@@ -28,9 +28,12 @@ Truy cập một trong các công cụ sau:
 => <a href="#" data-url="allsetupipa.md" class="news-item-link"> Tổng hợp </a>
 
 
+
 * ✅ [eSign](https://techybuff.com/esign/)
 * ✅ [Feather](https://techybuff.com/feather/)
 * ✅ [kSign](https://techybuff.com/ksign/)
+
+[Xem thêm ở đây](https://khoindvn.io.vn/)
 
 ### 1\. Tải và cài đặt cấu hình DNS
 
