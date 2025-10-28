@@ -122,7 +122,7 @@
       "subtitle": "Mod pro",
       "localizedDescription": "Yêu cầu: IOS 15.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã kích hoạt Pro \n💚Đã sửa lỗi hoạt động của các widget🛠🛠🛠\n😰Để kích hoạt Pro, hãy khởi động lại ứng dụng và nhấn “Mua gói Pro” nhiều lần, đồng thời hủy nhập Apple ID.",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/29/4d/a7294dc9-b315-8bdd-a3fb-9fef82e60aa5/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/100x100bb.jpg",
-      "type": "1",
+      "type": 1,
       "tintColor": "33D9B4",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/c0/73/31/c073315f-54ba-ed36-d113-4662cbb3fe7e/6b775054-7ae8-47b6-a882-294b6f1b09ad_i1.png/392x696bb.png",
@@ -159,7 +159,7 @@
       "subtitle": "Mod premium",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker.",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fe/fe/02/fefe0210-06b4-dcfe-81e3-9fba16a67fd5/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.jpg",
-      "type": "1",
+      "type": 1,
       "tintColor": "601CFF",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/2d/9b/ca/2d9bca44-d42f-c53c-3d3e-26b2c71ad66e/403ce867-e475-4bdc-a792-dfb219e32029_Screenshot_1_6_Plus.png/392x696bb.png",
@@ -228,7 +228,7 @@
       "subtitle": "Giả lập game NDS",
       "localizedDescription": "Yêu cầu: IOS 16.0 trở lên \n⚙️Mô tả⚙️ \n💚Trình giả lập các hệ máy console như NDS, 3DS, GBA và nhiều loại khác!",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/45/a8/de45a823-3935-bb2c-7fbc-d9580962d05d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
-      "type": "1",
+      "type": 1,
       "tintColor": "63D97B",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/3c/2b/db3c2b3c-ba85-6ea2-5a49-96537f5fdf8c/522b914e-f092-4ce4-b9b0-cfb573a48064_0x0ss2.png/392x696bb.png",
@@ -290,7 +290,7 @@
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 12.0 trở lên \n⚙️Tính năng của bản mod⚙️\n 💚Đã bị xóa khỏi AppStore💙❌",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/f2/d0/86f2d00b-a564-747c-b5ad-934d9c417e0c/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/100x100bb.jpg",
-      "type": "2",
+      "type": 2,
       "tintColor": "DD1C20",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/ba/29/56/ba295645-6b49-c587-fa52-0a8fac053c41/c7a77f46-6d83-4e31-a1cd-ba7b9e499ad8_BP_gdpr_2208x1242_1_en-US.png/406x228bb.png",
@@ -358,7 +358,6 @@
       "type": 2,
       "tintColor": "42B9FD",
       "screenshotURLs": [
-        "https://static.wikia.nocookie.net/angrybirds/images/5/5f/Henry-harling-henry-harling-untitled.jpg/revision/latest/scale-to-width-down/1000",
         "https://cdn.mobygames.com/screenshots/1666853-angry-birds-go-android-main-menu.jpg"
       ],
       "versions": [
@@ -387,8 +386,6 @@
       "type": 2,
       "tintColor": "F6312D",
       "screenshotURLs": [
-        "https://static.wikia.nocookie.net/angrybirds/images/4/48/ABSW_Wii.jpg/revision/latest/scale-to-width-down/1000",
-        "https://static.wikia.nocookie.net/angrybirds/images/0/07/2017-11-21_5a147eee960c3_WiiU-AngryBirdsStarWars-950x633.jpg/revision/latest"
       ],
       "versions": [
         {
