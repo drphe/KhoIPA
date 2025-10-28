@@ -633,7 +633,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
     		appsContainer.innerHTML  = `
     <div class="app-container">
       <div class="app-header-container">
-        <a href="#" class="app-header-link">
+        <a href="#" class="nothing app-header-link">
           <div class="app-header-inner-container">
             <div class="app-header">
               <div class="content" style="height: 30px;margin: auto;display: flex;justify-content: space-around;"><p>ⓧ Nothing found!</p></div>
@@ -674,7 +674,21 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
             currentIndex += appsPerLoad;
         }
         loadMoreApps();
-
+	appsContainer.addEventListener("click", event => {
+        	const nothing = event.target.closest("a.nothing");
+		if(nothing) {
+                    filteredApps = allApps
+	            totalAppsCount.innerText = `Total ${dataApps.length} apps `;
+                    currentIndex = 0; filterType = 0;
+	            appsContainer.innerHTML = "";
+		    filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
+                    loadMoreApps();
+                    window.scrollTo({
+                        top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
+                        behavior: "smooth"
+                    });
+		}
+	});
        // scroll
        const scrollToTop = (target) => {
            if (target === window) {
