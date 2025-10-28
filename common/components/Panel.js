@@ -582,7 +582,8 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
             if (event.key === "Enter") {
                 const keyword = searchBox.value.toLowerCase();
                 filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
-                totalAppsCount.innerText = `Found ${filteredApps.length} apps `;
+		let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+                totalAppsCount.innerText = `Found ${dataApps.length} apps `;
                 if (filteredApps.length === 0) {
                     filteredApps = [...allApps];
                 }
@@ -605,6 +606,8 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
     		filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
 	        el.classList.add('active');
 		filterType = index;
+		let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+                totalAppsCount.innerText = `Found ${dataApps.length} apps `;
                 currentIndex = 0;
                 appsContainer.innerHTML = "";
 		loadMoreApps();
@@ -625,7 +628,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
             }
             await Promise.all(tasks); // Chờ tất cả hoàn tất
         }
-apps.filter(app => app.type === 1);
+
         //with screenshot
         function loadMoreApps() {
 	    let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
