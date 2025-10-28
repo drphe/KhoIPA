@@ -38,6 +38,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         // Set tint color
         if (tintColor) setTintColor(tintColor);
         // Set up install buttons
+
         const installAppAlert = new UIAlert({
             title: `Get "${app.name}"`
         });
@@ -46,11 +47,13 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
             style: 'default',
             handler: () => showAddToAltStoreAlert(jsons.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
         });
-        installAppAlert.addAction({
+	if(!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
+          installAppAlert.addAction({
             title: "Download IPA",
             style: 'default',
             handler: () => showAddToAltStoreAlert(jsons.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
-        });
+          });
+	}
         installAppAlert.addAction({
             title: "Copy Link",
             style: 'default',
