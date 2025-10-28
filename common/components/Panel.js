@@ -538,7 +538,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         // Tạo icon kính lúp
         const searchIcon = document.createElement("span");
         searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 45%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
+        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 47%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
         // Tạo ô tìm kiếm
         const searchBox = document.createElement("input");
         searchBox.type = "text";
@@ -678,7 +678,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         	const nothing = event.target.closest("a.nothing");
 		if(nothing) {
                     filteredApps = allApps
-	            totalAppsCount.innerText = `Total ${dataApps.length} apps `;
+	            totalAppsCount.innerText = `Total ${filteredApps.length} apps `;
                     currentIndex = 0; filterType = 0;
 	            appsContainer.innerHTML = "";
 		    filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
