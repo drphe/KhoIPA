@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-10-29T08:50:02Z",
+  "updated_at": "2025-10-29T10:20:02Z",
   "name": "Nabzclan - App Store",
   "identifier": "com.nabzclan.repo.altstore",
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
@@ -25,6 +25,228 @@
     "com.huiynfim.play"
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "CapCut - Video Editor",
+      "type": 1,
+      "bundleIdentifier": "com.lemon.lvoverseas",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "CapCut hacked \r\n\r\nHow to: \r\n\r\nFind a vpn and point it to any U.S state\r\n\r\nCreate fancy videos with other unique features: auto captions, text-to-speech, motion tracking, and background removal. Show your personality and go viral on TikTok, YouTube, Instagram, WhatsApp, and Facebook!\r\n\r\nFEATURES\r\nBasic video editing\r\n• Trim and shorten clips and split or merge videos.\r\n• Adjust video speed from 0.1x to 100x, and apply speed curves to clips.\r\n• Animate video clips with incredible zoom in/out effects.\r\n• Highlight the best moments with the freeze feature.\r\n• Explore transition options with awesome effects on a",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901e93726c26.jpg",
+      "screenshotURLs": [],
+      "size": 135185769,
+      "version": "13.9.2",
+      "versions": [
+        {
+          "version": "13.9.2",
+          "date": "2025-10-29",
+          "size": 135185769,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1853",
+          "localizedDescription": "CapCut hacked \r\n\r\nHow to: \r\n\r\nFind a vpn and point it to any U.S state\r\n\r\nCreate fancy videos with other unique features: auto captions, text-to-speech, motion tracking, and background removal. Show your personality and go viral on TikTok, YouTube, Instagram, WhatsApp, and Facebook!\r\n\r\nFEATURES\r\nBasic video editing\r\n• Trim and shorten clips and split or merge videos.\r\n• Adjust video speed from 0.1x to 100x, and apply speed curves to clips.\r\n• Animate video clips with incredible zoom in/out effects.\r\n• Highlight the best moments with the freeze feature.\r\n• Explore transition options with awesome effects on a"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1853"
+    },
+    {
+      "beta": false,
+      "name": "PojavLauncher",
+      "type": 1,
+      "bundleIdentifier": "Minecraftpo",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Play Minecraft JAVA on your IDevice!",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/1761732351.jpeg",
+      "screenshotURLs": [],
+      "size": 109652551,
+      "version": "2.1.2",
+      "versions": [
+        {
+          "version": "2.1.2",
+          "date": "2025-10-29",
+          "size": 109652551,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1852",
+          "localizedDescription": "Play Minecraft JAVA on your IDevice!"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1852"
+    },
+    {
+      "beta": false,
+      "name": "Threads (Hack)",
+      "type": 1,
+      "bundleIdentifier": "com.burbn.barcelona",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Features: Downlaod photos and videos",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901e5b489a57.jpg",
+      "screenshotURLs": [],
+      "size": 68333402,
+      "version": "358.0.0",
+      "versions": [
+        {
+          "version": "358.0.0",
+          "date": "2025-10-29",
+          "size": 68333402,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1851",
+          "localizedDescription": "Features: Downlaod photos and videos"
+        },
+        {
+          "version": "403.1.0",
+          "date": "2025-10-25",
+          "size": 68222370,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/529",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1851"
+    },
+    {
+      "beta": false,
+      "name": "Mob Control Hack 1",
+      "type": 1,
+      "bundleIdentifier": "com.vincentb.MobControl",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "features:\r\n\r\n- Unlimited Currencies\r\n- skips\r\n- NO ADS",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901e3eaa0411.jpg",
+      "screenshotURLs": [],
+      "size": 193026627,
+      "version": "2.95.1",
+      "versions": [
+        {
+          "version": "2.95.1",
+          "date": "2025-10-29",
+          "size": 193026627,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1850",
+          "localizedDescription": "features:\r\n\r\n- Unlimited Currencies\r\n- skips\r\n- NO ADS"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1850"
+    },
+    {
+      "beta": false,
+      "name": "TuneIn Radio: Music & Sports (PRO)",
+      "type": 1,
+      "bundleIdentifier": "com.alexanderben.RadioIn",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "RADIO, YOUR WAY\r\n\r\nListen to all the live news, sports, music, podcasts and radio you love, from around the world—all on the TuneIn app.\r\n\r\nTuneIn Pro is a special version of the TuneIn app that, for a one-time fee, removes visual display ads and pre-roll commercials that normally play before content begins.\r\n\r\n\r\nALL YOUR AUDIO IN ONE APP.\r\n\r\n• News: Stay informed with 24/7 news from local, national, and global sources, including CNN, MSNBC, FOX News Radio, NPR, and BBC.\r\n\r\n• Sports: Listen to live NFL, NHL, and college games, anywhere you go, plus local, national, and global sports talk stations. And, get instant gametime notifications and customized listening when you pick your teams on the app.\r\n\r\n• Music: Find tunes for any mood with",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901db4934abd.jpg",
+      "screenshotURLs": [],
+      "size": 73117151,
+      "version": "32.9.0",
+      "versions": [
+        {
+          "version": "32.9.0",
+          "date": "2025-10-29",
+          "size": 73117151,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1848",
+          "localizedDescription": "RADIO, YOUR WAY\r\n\r\nListen to all the live news, sports, music, podcasts and radio you love, from around the world—all on the TuneIn app.\r\n\r\nTuneIn Pro is a special version of the TuneIn app that, for a one-time fee, removes visual display ads and pre-roll commercials that normally play before content begins.\r\n\r\n\r\nALL YOUR AUDIO IN ONE APP.\r\n\r\n• News: Stay informed with 24/7 news from local, national, and global sources, including CNN, MSNBC, FOX News Radio, NPR, and BBC.\r\n\r\n• Sports: Listen to live NFL, NHL, and college games, anywhere you go, plus local, national, and global sports talk stations. And, get instant gametime notifications and customized listening when you pick your teams on the app.\r\n\r\n• Music: Find tunes for any mood with"
+        },
+        {
+          "version": "40.1.0",
+          "date": "2025-10-25",
+          "size": 73117143,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1087",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1848"
+    },
+    {
+      "beta": false,
+      "name": "DramaBox - no ads",
+      "type": 1,
+      "bundleIdentifier": "com.storymatrix.drama",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Drama box with zero ads",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901da223db18.jpg",
+      "screenshotURLs": [],
+      "size": 39574699,
+      "version": "4.3.4",
+      "versions": [
+        {
+          "version": "4.3.4",
+          "date": "2025-10-29",
+          "size": 39574699,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1847",
+          "localizedDescription": "Drama box with zero ads"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1847"
+    },
+    {
+      "beta": false,
+      "name": "FL Studio Mobile (Hacked)",
+      "type": 1,
+      "bundleIdentifier": "com.imageline.FLStudioMobileHD",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Create and save complete multi-track music projects on your iPad, iPhone or Mac. Record, sequence, edit, mix and render complete songs.\r\n\r\n\r\nFEATURE HIGHLIGHTS\r\n\r\n* Audio recording, track-length stem/wav import\r\n* Browse sample and presets with preview\r\n* Effects modules (see Included Content)\r\n* Full-screen MacBook and iMac Trackpad and Mouse support.\r\n* High quality synthesizers, sampler, drum kits & sliced-loop beats\r\n* Instrument modules (see Included Content)\r\n* Load projects in the FL STUDIO** FREE Plugin version of this App\r\n* MIDI controller support (class compliant). Automation support.\r\n* MIDI file import and Export (Single-track or Multi-track)\r\n* Mixer: Per-track mute, solo, effect bus, pan and volume adjustment\r\n* Piano roll. Edit n",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901d75a6e103.jpg",
+      "screenshotURLs": [],
+      "size": 295933734,
+      "version": "4.8.10",
+      "versions": [
+        {
+          "version": "4.8.10",
+          "date": "2025-10-29",
+          "size": 295933734,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1846",
+          "localizedDescription": "Create and save complete multi-track music projects on your iPad, iPhone or Mac. Record, sequence, edit, mix and render complete songs.\r\n\r\n\r\nFEATURE HIGHLIGHTS\r\n\r\n* Audio recording, track-length stem/wav import\r\n* Browse sample and presets with preview\r\n* Effects modules (see Included Content)\r\n* Full-screen MacBook and iMac Trackpad and Mouse support.\r\n* High quality synthesizers, sampler, drum kits & sliced-loop beats\r\n* Instrument modules (see Included Content)\r\n* Load projects in the FL STUDIO** FREE Plugin version of this App\r\n* MIDI controller support (class compliant). Automation support.\r\n* MIDI file import and Export (Single-track or Multi-track)\r\n* Mixer: Per-track mute, solo, effect bus, pan and volume adjustment\r\n* Piano roll. Edit n"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1846"
+    },
+    {
+      "beta": false,
+      "name": "RedditFilter – Reddit++",
+      "type": 1,
+      "bundleIdentifier": "com.reddit.Reddit",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "RedditFilter is a tweak that brings the most demanding features to the Reddit app to enhance the overall user experience when using the app.",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901d62a4951b.jpg",
+      "screenshotURLs": [],
+      "size": 138542730,
+      "version": "2025.38.1",
+      "versions": [
+        {
+          "version": "2025.38.1",
+          "date": "2025-10-29",
+          "size": 138542730,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1845",
+          "localizedDescription": "RedditFilter is a tweak that brings the most demanding features to the Reddit app to enhance the overall user experience when using the app."
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1845"
+    },
     {
       "beta": false,
       "name": "Ksign",
@@ -10300,32 +10522,6 @@
     },
     {
       "beta": false,
-      "name": "TuneInRadio",
-      "type": 1,
-      "bundleIdentifier": "com.alexanderben.RadioIn",
-      "developerName": "Holloway",
-      "subtitle": "",
-      "localizedDescription": "Injected with Premium",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761375493.png",
-      "screenshotURLs": [],
-      "size": 73117143,
-      "version": "40.1.0",
-      "versions": [
-        {
-          "version": "40.1.0",
-          "date": "2025-10-25",
-          "size": 73117143,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1087",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1087"
-    },
-    {
-      "beta": false,
       "name": "SimplePi",
       "type": 1,
       "bundleIdentifier": "me.hirmer.SimplePi.free",
@@ -16302,32 +16498,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/531"
-    },
-    {
-      "beta": false,
-      "name": "Threads",
-      "type": 1,
-      "bundleIdentifier": "com.burbn.barcelona",
-      "developerName": "Holloway",
-      "subtitle": "",
-      "localizedDescription": "Injected with Premium",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761371704.png",
-      "screenshotURLs": [],
-      "size": 68222370,
-      "version": "403.1.0",
-      "versions": [
-        {
-          "version": "403.1.0",
-          "date": "2025-10-25",
-          "size": 68222370,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/529",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/529"
     },
     {
       "beta": false,
