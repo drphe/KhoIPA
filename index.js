@@ -41,15 +41,17 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 	// cuộn ngang
 	const containerNews = document.getElementById('news-items');
 	const item = containerNews.querySelector('.news-item-wrapper');
-	const itemWidth = item.offsetWidth + 15; // 10 là khoảng cách giữa các item
-	containerNews.addEventListener('wheel', function (e) {
-  		e.preventDefault();
-  		const direction = e.deltaY > 0 ? 1 : -1;
-  		containerNews.scrollBy({
-    			left: direction * itemWidth,
-    			behavior: 'smooth'
-  		});
-	}, { passive: false });
+	if(item){
+		const itemWidth = item.offsetWidth + 15; // 10 là khoảng cách giữa các item
+		containerNews.addEventListener('wheel', function (e) {
+  			e.preventDefault();
+  			const direction = e.deltaY > 0 ? 1 : -1;
+  			containerNews.scrollBy({
+    				left: direction * itemWidth,
+    				behavior: 'smooth'
+  			});
+		}, { passive: false });
+	}
     } else document.getElementById("news").remove();
 
 
