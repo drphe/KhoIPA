@@ -8,10 +8,11 @@ Apple gần đây đã giới thiệu các quy định mới về việc xác mi
 
 [WSF CFDNS](https://wsfteam.xyz/files/configurationprofiles/CFDNS-CP144.mobileconfig)
  hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/CFDNS-CP144.mobileconfig)
+hoặc truy cập vào [Page cfs team](https://wsfteam.xyz/)
 
 DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài đặt IPA** bằng các công cụ như **eSign**, **kSign**, và **Feather** — ngay cả khi dùng **chứng chỉ đã bị thu hồi**. 
 
-QUAN TRỌNG : => <a href="#" data-url="dnswfs.md" class="news-item-link"> Xem hướng dẫn sử dụng DNS WFS</a> trước khi bắt đầu.
+ => <a href="#" data-url="dnswfs.md" class="news-item-link">QUAN TRỌNG : Xem hướng dẫn sử dụng DNS WFS</a> trước khi bắt đầu.
 
 ### 🔥 Ưu điểm:
 
