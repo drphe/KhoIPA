@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-10-29T05:10:02Z",
+  "updated_at": "2025-10-29T08:50:02Z",
   "name": "Nabzclan - App Store",
   "identifier": "com.nabzclan.repo.altstore",
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
@@ -25,6 +25,32 @@
     "com.huiynfim.play"
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "Ksign",
+      "type": 1,
+      "bundleIdentifier": "nya.asami.ksign",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "iOS signing tool",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/1761725594.png",
+      "screenshotURLs": [],
+      "size": 14045394,
+      "version": "1.5",
+      "versions": [
+        {
+          "version": "1.5",
+          "date": "2025-10-29",
+          "size": 14045394,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1844",
+          "localizedDescription": "iOS signing tool"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1844"
+    },
     {
       "beta": false,
       "name": "Glen AI",
