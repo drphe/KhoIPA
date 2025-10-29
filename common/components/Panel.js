@@ -66,7 +66,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         async function copyText(text) {
             try {
                 await navigator.clipboard.writeText(text);
-                showUIAlert("✅ Success", "Đã sao chép vào clipboard!");
+                showUIAlert("✅ Success", "Đã sao chép vào clipboard! Dán link vào safari hoặc Esign => Tải xuống => URL => OK");
             } catch (err) {
                 showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
             }

@@ -39,9 +39,9 @@ Cấu hình này ngăn chặn việc thu hồi chứng chỉ bằng cách chặn
 **Ý nghĩa của các mã trong Config Profiles:**
 - **UB**: Chặn cập nhật OTA của Apple  
 - **AB**: Chặn quảng cáo và trình theo dõi  
-- **INSTALL ONLY**: Chỉ cho phép bạn cài đặt ứng dụng, sau đó có thể chuyển lại sang biến thể khác khi hoàn tất
+- **INSTALL ONLY**: Chỉ cho phép bạn cài đặt ứng dụng (từ khi sign đến install), sau đó có thể chuyển lại sang biến thể khác khi hoàn tất
 
----
+-----
 ## 2. Cài đặt Config Profile
 
 Mở Cài đặt trên thiết bị iOS của bạn Vào Settings > General > VPN & Device Management
@@ -53,8 +53,8 @@ Nhấn “Install” để cài đặt Làm theo hướng dẫn trên màn hình
 Xác nhận và cấp quyền nếu được yêu cầu Một số cấu hình yêu cầu bạn nhập mật khẩu hoặc xác nhận bằng Face ID/Touch ID.
 
 [Xem video HD](https://youtube.com/shorts/KgA9n51QfnQ?feature=share)
-----
 
+----
 ## 3. 📝 Ghi chú sau khi sử dụng DNS và cài đặt IPA
 
 Một số hướng dẫn cần tuân theo để đảm bảo ứng dụng của bạn không bị thu hồi:
@@ -80,7 +80,7 @@ Một số hướng dẫn cần tuân theo để đảm bảo ứng dụng của
 - **Không được sử dụng VPN nếu chưa làm theo hướng dẫn cấu hình VPN!**  
 - **Thường xuyên kiểm tra cập nhật, thông báo và thông tin chứng chỉ trong Portal!**
 
-
+-----
 ### 4. 🛡️ Hướng dẫn thiết lập VPN  
 
 **Lưu ý:** Hầu hết các VPN miễn phí sẽ **không hoạt động** với cấu hình này. Bạn cần xác định loại DNS mà VPN của bạn hỗ trợ và **thay thế bằng các thông tin dưới đây**.
@@ -132,7 +132,6 @@ https://dns.nextdns.io/f36ef2
 **DNS Servers:**  
 45.90.28.106  
 45.90.30.106
-
 
 #### ✅ madNS Config Profile + UB + AB  
 **DNS over HTTPS:**  

@@ -6,13 +6,14 @@ Apple gần đây đã giới thiệu các quy định mới về việc xác mi
 
 ## ✅ Giải pháp: Sử dụng DNS WFS
 
-[WSF CFDNS](https://wsfteam.xyz/files/configurationprofiles/CFDNS-CP144.mobileconfig)
- hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/CFDNS-CP144.mobileconfig)
-hoặc truy cập vào [Page cfs team](https://wsfteam.xyz/)
+
+<a href="#" data-url="dnswfs.md" class="news-item-link">QUAN TRỌNG : Xem hướng dẫn sử dụng DNS WFS</a> trước khi bắt đầu.
 
 DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài đặt IPA** bằng các công cụ như **eSign**, **kSign**, và **Feather** — ngay cả khi dùng **chứng chỉ đã bị thu hồi**. 
 
- => <a href="#" data-url="dnswfs.md" class="news-item-link">QUAN TRỌNG : Xem hướng dẫn sử dụng DNS WFS</a> trước khi bắt đầu.
+[WSF CFDNS](https://wsfteam.xyz/files/configurationprofiles/CFDNS-CP144.mobileconfig) hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/CFDNS-CP144.mobileconfig)
+[WSF madNS](https://wsfteam.xyz/files/configurationprofiles/madNS-CP144.mobileconfig) hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/madNS-CP144.mobileconfig)
+[WSF CFDNS](https://wsfteam.xyz/files/configurationprofiles/WFS-CP144.mobileconfig) hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/WFS-CP144.mobileconfig)
 
 ### 🔥 Ưu điểm:
 
@@ -28,8 +29,7 @@ DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài
 
 Truy cập một trong các trang sau để cài trực tiếp và tải cert:
 
-=> [Page cfs team](https://wsfteam.xyz/)
-
+* ✅ [Portal](https://wsfteam.xyz/#downloads)
 * ✅ [eSign](https://techybuff.com/esign/)
 * ✅ [Feather](https://techybuff.com/feather/)
 * ✅ [kSign](https://techybuff.com/ksign/)
@@ -62,19 +62,24 @@ Truy cập một trong các trang sau để cài trực tiếp và tải cert:
 
 * Dùng **eSign**, **kSign**, hoặc **Feather** để nhập chứng chỉ và ký IPA
 
+### 6\. Ký và Cài đặt IPA
+
+* Sau khi tải file IPA về, nhập vào Esign, Feather...
+* Chọn cấu hình INSTALL ONLY
+* Bắt đầu sign và cài đặt , chạy app lần đầu.
+* Chuyển cấu hình DNS sang cấu hình khác.
+
 ---
 
 ## 📌 Hướng dẫn sau khi cài đặt
 
-1. **Không tắt cấu hình DNS (Config Profile)**
-2. **Chỉ kích hoạt một cấu hình DNS tại một thời điểm**
-3. **Không cài quá nhiều IPA trong thời gian ngắn**
-4. **Khi chuyển DNS, bật chế độ máy bay trước**
-5. **Trước khi tắt máy / khởi động lại / cập nhật iOS:**
-
+1. Không tắt cấu hình DNS (Config Profile)
+2. Chỉ kích hoạt một cấu hình DNS tại một thời điểm
+3. Không cài quá nhiều IPA trong thời gian ngắn**
+4. Khi chuyển DNS, bật chế độ máy bay trước**
+5. Trước khi tắt máy / khởi động lại / cập nhật iOS:
    * Bật **chế độ máy bay** và **tắt Wi-Fi**
-
-6. **Chỉ dùng VPN sau khi làm đúng hướng dẫn thiết lập VPN**
+6. Chỉ dùng VPN sau khi làm đúng hướng dẫn thiết lập VPN
 
 ---
 
