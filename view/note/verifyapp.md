@@ -1,15 +1,17 @@
-# 🚀 Sử dụng Chứng Chỉ Bị Thu Hồi (Revoked) Bằng DNS "Chỉ Cài Đặt"
+# 🚀 Sử dụng Chứng Chỉ Bị Thu Hồi (Revoked) Bằng DNS WSF
 
 Apple gần đây đã giới thiệu các quy định mới về việc xác minh ứng dụng được cài đặt thông qua **chứng chỉ nhà phát triển**. Kết quả là nhiều người dùng gặp lỗi **“Không thể xác minh ứng dụng”** hoặc ứng dụng bị **crash** sau khi khởi chạy. Vấn đề này ảnh hưởng toàn cầu đến tất cả các dịch vụ sử dụng chứng chỉ nhà phát triển.
 
 ![Verify App](https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg)
 
-## ✅ Giải pháp: Sử dụng DNS "Chỉ Cài Đặt"
+## ✅ Giải pháp: Sử dụng DNS WFS
 
 [WSF CFDNS](https://wsfteam.xyz/files/configurationprofiles/CFDNS-CP144.mobileconfig)
-hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/CFDNS-CP144.mobileconfig)
+ hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/CFDNS-CP144.mobileconfig)
 
-DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài đặt IPA** bằng các công cụ như **eSign**, **kSign**, và **Feather** — ngay cả khi dùng **chứng chỉ đã bị thu hồi**.
+DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài đặt IPA** bằng các công cụ như **eSign**, **kSign**, và **Feather** — ngay cả khi dùng **chứng chỉ đã bị thu hồi**. 
+
+QUAN TRỌNG : => <a href="#" data-url="dnswfs.md" class="news-item-link"> Xem hướng dẫn sử dụng DNS WFS</a> trước khi bắt đầu.
 
 ### 🔥 Ưu điểm:
 
@@ -23,17 +25,18 @@ DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài
 
 ## 🛠️ Các bước thực hiện
 
-Truy cập một trong các công cụ sau:
+Truy cập một trong các trang sau để cài trực tiếp và tải cert:
 
-=> <a href="#" data-url="allsetupipa.md" class="news-item-link"> Tổng hợp </a>
-
-
+=> [Page cfs team](https://wsfteam.xyz/)
 
 * ✅ [eSign](https://techybuff.com/esign/)
 * ✅ [Feather](https://techybuff.com/feather/)
 * ✅ [kSign](https://techybuff.com/ksign/)
 
-[Xem thêm ở đây](https://khoindvn.io.vn/)
+=> <a href="#" data-url="allsetupipa.md" class="news-item-link"> Tổng hợp link của techybuff.com </a>
+
+=> [Page khoindvn.io.vn](https://khoindvn.io.vn/)
+
 
 ### 1\. Tải và cài đặt cấu hình DNS
 
@@ -41,8 +44,8 @@ Truy cập một trong các công cụ sau:
 
 ### 2\. Nhấn vào tên chứng chỉ để cài đặt ứng dụng
 
-* Chọn chứng chỉ mong muốn để cài IPA
-* Nếu lỗi, thử chứng chỉ khác cho đến khi thành công
+* Truy cập trang nguồn, chọn ứng dụng với chứng chỉ mong muốn để cài IPA
+* Nếu lỗi, thử ứng dụng khác cho đến khi thành công
 
 ### 3\. Tin cậy chứng chỉ nhà phát triển (nếu được yêu cầu)
 

@@ -17,8 +17,7 @@ Nếu cài được phiên bản nào, thì tải file zip certificates về, t�
 
 
 * Link cài trực tiếp
-
-1. [China Telecommunications Corp](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/m4kq6.plist)
+1. [HDFC Bank Limited](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/i3c1b.plist)
 2. [EEO Education Limited](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/70do9.plist)
 3. [Tianjin University of Commerce](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/estyf.plist)
 4. [Global Takeoff INC](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/1rqts.plist)
@@ -29,17 +28,21 @@ Nếu cài được phiên bản nào, thì tải file zip certificates về, t�
 9. [Dtt Technology Co.Ltd](itms-services://?action=download-manifest&url=https://khoindvn.io.vn/document/Plist/com.esign.app3.plist)
 10. [TCL Household Appliances](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/fnm1i.plist)
 11. [Wuling Power Corporation](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/vp07l.plist)
-12. [HDFC Bank Limited](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/i3c1b.plist)
+
 
 
 
 * Hướng dẫn Cài đặt
 
-1. Download \& Install DNS Profile
-2. Click on the Certificate Name to Directly Install the App
-3. Trust the developer Certificate (if required)
-4. Download Certificate Zip file
-5. Extract the Certificate Zip File \& Import to the app
+1. Tải và cài đặt DNS
+Có 3 DNS, ban đầu hãy chọn Config + Install
+2. Cài đặt app đã ký với cert 
+Nhớ tên Cert để import sau này
+3. Xác minh app
+Vào quản lý DNS & VPN, chọn tin cậy và khởi động lại
+Vào lại mục này và xác minh app đã cài với chứng chỉ tương ứng (nếu không xác minh được, thử các config của DNS trên)
+4. Tải thư mục Certificate về
+5. Giải nén và import cert tương ứng
 
 
 

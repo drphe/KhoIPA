@@ -79,6 +79,54 @@ https://driftywinds.github.io/AltStore/apps.json
 
 https://aio.zxcvbn.fyi/r/repo.feather.json
 
+https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/refs/heads/main/raw-files/app-repo.json
+
+https://qnblackcat.github.io/AltStore/apps.json
+
+https://wuxu1.github.io/wuxu-complete-plus.json
+
+https://raw.githubusercontent.com/TheNightmanCodeth/chromium-ios/master/altstore-source.json
+
+https://raw.githubusercontent.com/arichornloverALT/arichornloveralt.github.io/main/apps2.json
+
+https://raw.githubusercontent.com/arichornloveralt/arichornloveralt.github.io/main/apps.json
+
+https://raw.githubusercontent.com/lo-cafe/winston-altstore/main/apps.json
+
+https://qingsongqian.github.io/all.html
+
+https://tiny.one/SpotC
+
+https://theodyssey.dev/altstore/odysseysource.json
+
+https://provenance-emu.com/apps.json
+
+https://ish.app/altstore.json
+
+https://raw.githubusercontent.com/Balackburn/YTLitePlusAltstore/main/apps.json
+
+https://raw.githubusercontent.com/whoeevee/EeveeSpotify/swift/repo.json
+
+https://altstore.oatmealdome.me/
+
+https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json
+
+https://xitrix.github.io/iTorrent/AltStore.json
+
+https://driftywinds.github.io/repos/esign.json
+
+https://github.com/khcrysalis/Feather/raw/main/app-repo.json
+
+https://apps.nabzclan.vip/repos/altstore.php
+
+https://alt.crystall1ne.dev/
+
+https://apps.sidestore.io/
+
+https://repos.yattee.stream/alt/apps.json
+
+https://alt.thatstel.la/
+
 
 ---
 

@@ -1,5 +1,8 @@
 # **Hướng Dẫn Chống Thu Hồi Chứng Chỉ iOS**
 
+Update 29/10/2025, mình thấy dù xài DNS nhưng chứng chỉ vẫn bị thu hồi, do các cert mua thường theo lô (nhiều UDID cùng chung), khi apple quét thì vẫn bị thu hồi như thường, do vậy việc dùng DNS hữu ích trong chặn quảng cáo.
+=> <a href="#" data-url="dnsadblock.md" class="news-item-link"> Xem bài này </a>
+
 ### Thiết Lập Danh Sách Chặn URL với NextDNS
 
 [Tác giả: Rohit Chouhan – Cập nhật ngày 26/07/2025](https://blogs.rohitchouhan.com/hacks/ios-anti-revoke-esign-feather-nextdns-block-urls-guide/)

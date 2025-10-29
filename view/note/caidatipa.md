@@ -48,7 +48,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Quy trình:** Cài **TrollHelperOTA** hoặc tool phù hợp, sau đó cài IPA trong chính ứng dụng TrollStore.
 * **Ưu điểm:** App tồn tại **vĩnh viễn**, không cần PC (các bản ios cao hơn có thể cần PC để cài), không cần Apple ID hay cert.
 * **Nhược điểm:** **Giới hạn nghiêm ngặt** về phiên bản iOS và thiết bị tương thích.
-* [Hướng dẫn cài IPA bằng Trollstore](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=trollstore.md)
+* <a href="#" data-url="trollstore.md" class="news-item-link"> Hướng dẫn cài IPA bằng TrollStore </a>
 * [Cài đặt IPA vĩnh viễn bằng TrollStore](https://thuthuatjb.com/huong-dan-su-dung-trollstore-de-cai-file-ipa-vinh-vien-tren-ios-ipados/)
 
 
@@ -75,7 +75,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
    [https://sign.kravasign.com/](https://sign.kravasign.com/)
 
-
+   [https://wsfteam.xyz/](https://wsfteam.xyz/)
 
 ### 2.4. Ứng dụng "Signer" Trung Gian
 
@@ -93,7 +93,8 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 
 Đối với **Feather, Esign** là những ứng dụng được cài đặt bằng các công cụ online như tại mục 2.3 hoặc cài đặt qua Trollstore
 Link này giúp cài ESign, Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
-* [Xem bài này](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24=&link=verifyapp.md)
+
+=> <a href="#" data-url="verifyapp.md" class="news-item-link"> Xem bài này </a>
 
 Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng dung, công cụ hỗ trợ, cung cấp link cài đặt trực tiếp các ipa mod phổ biến như Facebook NoADS, Youtube Lite,... Một số dịch vụ chính: Certapple.com, Unkeyapp.com, Thuthuatjb.com, https://p12apple.com/...
 
@@ -113,5 +114,6 @@ Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng du
 
 
 **Chế độ Nhà phát triển (Developer Mode):** Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.
-[Xem bài hướng dẫn ở đây](https://drphe.github.io/KhoIPA/view/note/?source=aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZyZXBvLmRldmVsb3BtZW50Lmpzb24=&link=developermod.md)
+=> <a href="#" data-url="developermod.md" class="news-item-link"> Xem bài hướng dẫn ở đây </a>
+
 
