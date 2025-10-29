@@ -548,7 +548,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
         // Tạo icon x
         const xIcon = document.createElement("span");
         xIcon.innerHTML = ` <span class="totalSearch"></span><i class="bi bi-x-circle-fill"></i>`;
-        xIcon.style.cssText = "display:none;position: absolute;right: 0.7rem;top: 45%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+        xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 45%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
         // Tạo total app
         const totalAppsCount = xIcon.querySelector(".totalSearch");
         totalAppsCount.innerText = `Total ${allApps.length} apps `;
