@@ -10,7 +10,7 @@ const editorsources = await json("../common/assets/json/editorsources.json");
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
         e.preventDefault();
-        if (editorsources.includes(sourceURL)) open(`../repo.html?source=${sourceURL}`);
+        if (editorsources.includes(sourceURL)) open(`../studio/?source=${sourceURL}`);
     });
 
     document.getElementById("add")?.addEventListener("click", e => {

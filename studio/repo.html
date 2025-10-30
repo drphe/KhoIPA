@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="mask-icon" href="./icon/logo.svg" color="#000000">
-    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./icon/logo.png">
-    <title>KhoIPA || Quản lý JSON Repo</title>
+    <link rel="mask-icon" href="../icon/logo.svg" color="#000000">
+    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="../icon/logo.png">
+    <title> Quản lý JSON Repo</title>
     <script type="module">
 import {
     base64Convert
-} from "./common/modules/constants.js";
-import UIAlert from "./common/vendor/uialert.js/uialert.js";
+} from "../common/modules/constants.js";
+import UIAlert from "../common/vendor/uialert.js/uialert.js";
 import {
     open,
     json,
     showUIAlert
-} from "./common/modules/utilities.js";
+} from "../common/modules/utilities.js";
 window.open = open;
 window.json = json;
 window.base64Convert = base64Convert;
@@ -28,7 +28,7 @@ window.showUIAlert = showUIAlert;
     <script src="https://altstudio.app/js/app-info-parser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     <style>
-@import url("./common/vendor/uialert.js/uialert.css");
+@import url("../common/vendor/uialert.js/uialert.css");
 
 /* Tùy chỉnh Tailwind CSS */
 body {
@@ -447,13 +447,13 @@ button:hover {
 
 <body>
     <div id="loading">
-        <img src="./common/assets/img/loading.gif" alt="loading">
+        <img src="../common/assets/img/loading.gif" alt="loading">
         <p>Loading</p>
     </div>
     <div class="container" style="background: #fff !important;">
         <div id="top">
             <div id="nav-bar" class="">
-                <a href="../KhoIPA/" target="_blank" class="back-button" title="Kho IPA Mod">🔙</a>
+                <a href="../../KhoIPA/" target="_blank" class="back-button" title="Kho IPA Mod">🔙</a>
                 <div id="title" class="">
                     <p>🛠️ Quản lý Json Repository</p>
                 </div>
