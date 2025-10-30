@@ -1543,9 +1543,10 @@ const readIpa = async (t = {}, oo) => { // hàm đọc file
                 CFBundleDisplayName: n.CFBundleDisplayName,
                 CFBundleIdentifier: n.CFBundleIdentifier,
                 CFBundleName: n.CFBundleName,
-                CFBundleVersion: n.CFBundleVersion,
+                CFBundleShortVersionString: n.CFBundleShortVersionString,
                 MinimumOSVersion: "Minimum IOS: " + n.MinimumOSVersion,
                 TintColor: tint,
+		Icon: n.icon,
                 Name: t.name,
                 VersionSize: t.size,
                 VersionDate: localDate
@@ -1576,7 +1577,8 @@ function createPopup(data, isAll) {
       <span id="closeBtn" style="float:right;cursor:pointer;font-weight:bold;color:#888;">×</span>${isAll? `
       <div class="popup-section" id="appInfo">
         <h1>Thông tin ứng dụng</h1>
-        ${createRow("Name", data.CFBundleDisplayName, "app_name_ipa")}
+	<img src="${data.Icon}" style="width: 50px;display: flex;float: left;border-radius: 10px;margin-right: 12px;cursor: pointer;"  onclick="const a=document.createElement('a');a.href=this.src;a.download='${data.CFBundleDisplayName.replace(/\s+/g, '')}.png';a.click();document.getElementById('app_iconURL').value = 'https://drphe.github.io/KhoIPA/icon/${data.CFBundleDisplayName.replace(/\s+/g, '')}.png'">
+        ${createRow("", data.CFBundleDisplayName, "app_name_ipa")}
         ${createRow("Bundle ID", data.CFBundleIdentifier, "app_bundleIdentifier_ipa")}
         ${createRow("CFBundleName", data.CFBundleName, "app_developerName_ipa")}
         ${createRow("Minimum iOS", data.MinimumOSVersion, "app_subtitle_ipa")}
@@ -1586,7 +1588,7 @@ function createPopup(data, isAll) {
       <div class="popup-section" id="versionInfo">
         <h1>Thông tin phiên bản</h1>
         ${createRow("File Name", data.Name, "version_downloadURL_ipa")}
-        ${createRow("Version", data.CFBundleVersion, "version_number_ipa")}
+        ${createRow("Version", data.CFBundleShortVersionString, "version_number_ipa")}
         ${createRow("Date", data.VersionDate, "version_date_ipa")}
         ${createRow("Size", data.VersionSize, "version_size_ipa")}
         <button class="action-btn" onclick="insertSection('versionInfo')">Chèn thông tin phiên bản</button>
