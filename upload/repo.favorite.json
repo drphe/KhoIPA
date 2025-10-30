@@ -105,6 +105,61 @@
   "apps": [
     {
       "beta": false,
+      "name": "VidList",
+      "bundleIdentifier": "com.vh.vhub",
+      "developerName": "VidList",
+      "subtitle": "Minimum IOS: 10.0",
+      "localizedDescription": "VidList XXX Porn Videos",
+      "iconURL": "https://drphe.github.io/KhoIPA/icon/VidList.png",
+      "type": 3,
+      "tintColor": "B747F2",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "2.0",
+          "date": "2025-10-30T14:50:00Z",
+          "size": 22325270,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0/VidList_2.0_1739130348.ipa",
+          "localizedDescription": "Version mới nhất."
+        }
+      ],
+      "version": "2.0",
+      "versionDate": "2025-10-30T14:50:00Z",
+      "versionDescription": "Version mới nhất.",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0/VidList_2.0_1739130348.ipa",
+      "size": 22325270
+    },
+    {
+      "beta": false,
+      "name": "PornHub Premium",
+      "bundleIdentifier": "ru.ano.videoplayer",
+      "developerName": "PornHub Premium",
+      "subtitle": "Minimum IOS: 10.0",
+      "localizedDescription": "Pornhub | Premium, Plugin Include",
+      "iconURL": "https://drphe.github.io/KhoIPA/icon/PornHubPremium.png",
+      "type": 3,
+      "tintColor": "EF9D20",
+      "screenshotURLs": [
+        "https://cdn.aptoide.com/imgs/c/6/1/c61c0d0fcad5ab00820e98f91f5b8624_screen.jpg",
+        "https://cdn.aptoide.com/imgs/7/3/8/738b6d4f34445e832f75662f8e2b5fe1_screen.jpg"
+      ],
+      "versions": [
+        {
+          "version": "0.7",
+          "date": "2025-10-30T12:09:00Z",
+          "size": 7047721,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7/PornHub.Premium.ipa",
+          "localizedDescription": "Newest version."
+        }
+      ],
+      "version": "0.7",
+      "versionDate": "2025-10-30T12:09:00Z",
+      "versionDescription": "Newest version.",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7/PornHub.Premium.ipa",
+      "size": 7047721
+    },
+    {
+      "beta": false,
       "name": "Portal",
       "bundleIdentifier": "whysoooofurious.portal",
       "developerName": "wsfteam.xyz",
@@ -113,7 +168,11 @@
       "iconURL": "https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/refs/heads/main/raw-files/App%20Icons/Portal.png",
       "type": 4,
       "tintColor": "3498DB",
-      "screenshotURLs": ["https://picul.de/view/YhU", "https://picul.de/view/Yhp","https://picul.de/view/Yh9"],
+      "screenshotURLs": [
+        "https://picul.de/view/YhU",
+        "https://picul.de/view/Yhp",
+        "https://picul.de/view/Yh9"
+      ],
       "versions": [
         {
           "version": "3.3.0",
