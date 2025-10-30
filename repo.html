@@ -1495,8 +1495,7 @@ function scanIpa() {// hàm khi chọn file
   input.style.display = 'none'; // Ẩn input
 
   // Gắn sự kiện khi người dùng chọn file
-  input.addEventListener('change', function(event) {
-    const file = event.target.files[0];
+  input.addEventListener('change', function(event) {;
       const file = event.target.files[0];
       if (file && file.name.endsWith(".ipa")) {
         readIpa(file); // chuyển hàm đọc file
@@ -1524,14 +1523,14 @@ function scanIpa() {// hàm khi chọn file
 
 // tạo thông tin cần thiết
 const ipaData = {
-  CFBundleDisplayName: "MyApp",
-  CFBundleIdentifier: "com.example.myapp",
-  Platform: "iOS",
-  CFBundleVersion: "1.2.3",
-  MinimumOSVersion: "13.0",
+  CFBundleDisplayName: n.CFBundleDisplayName,
+  CFBundleIdentifier: n.CFBundleIdentifier,
+  Platform: n.Platform,
+  CFBundleVersion: n.CFBundleVersion,
+  MinimumOSVersion: n.MinimumOSVersion,
   TintColor: tint,
   VersionSize: t.size,
-  VersionDate: t.lastModifiedDate || new Date(t.lastModified);
+  VersionDate: t.lastModifiedDate || new Date(t.lastModified)
 };
 
 createPopup(ipaData); // tạo popup
@@ -1568,14 +1567,15 @@ function createPopup(data) {
         ${createRow("Tên", data.CFBundleDisplayName, "appName")}
         ${createRow("Bundle ID", data.CFBundleIdentifier, "bundleId")}
         ${createRow("Platform", data.Platform, "platform")}
+        ${createRow("Minimum iOS", data.MinimumOSVersion, "minIos")}
         <button class="action-btn" onclick="insertSection('appInfo')">Chèn thông tin ứng dụng</button>
       </div>
 
       <div class="popup-section" id="versionInfo">
         <h3>Thông tin phiên bản</h3>
-        ${createRow("Version", data.CFBundleShortVersionString, "version")}
-        ${createRow("Build", data.CFBundleVersion, "build")}
-        ${createRow("Minimum iOS", data.MinimumOSVersion, "minIos")}
+        ${createRow("Version", data.CFBundleVersion, "version-app-number")}
+        ${createRow("Date", data.VersionDate, "version-app-date")}
+        ${createRow("Size", data.VersionSize, "version-app-size")}
         <button class="action-btn" onclick="insertSection('versionInfo')">Chèn thông tin phiên bản</button>
       </div>
     </div>
@@ -1619,7 +1619,7 @@ function createRow(label, value, id) {
 //       document.getElementById('version_downloadURL').value = "https://github.com/drphe/KhoIPA/releases/download/v." + number+"/"+file.name
 //	document.getElementById('version_date').value = localDate;
 
-    }
+
 // Chèn toàn bộ thông tin trong 1 section
 function insertSection(sectionId) {
   const section = document.getElementById(sectionId);
