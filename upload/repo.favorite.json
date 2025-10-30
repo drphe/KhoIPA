@@ -1,174 +1,75 @@
 {
   "name": "Favorite apps",
-  "identifier": "repo.drphe.kh0ipa",
-  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
+  "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
+  "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "website": "https://github.com/drphe/KhoIPA/",
-  "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
-  "ipawebsite": "https://github.com/drphe/KhoIPA/releases",
-  "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
-  "tintColor": "5825D0",
-  "META": {
-    "repoName": "Favorite apps",
-    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
-  },
-  "news": [
-    {
-      "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
-      "identifier": "hdsd-dns",
-      "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
-      "tintColor": "506471",
-      "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
-      "appID": "wsfteam.portal",
-      "date": "2025-10-17",
-      "notify": true,
-      "url": "verifyapp.md"
-    },
-    {
-      "title": "Chặn quảng cáo bằng DNS",
-      "identifier": "hdsd-adblock",
-      "caption": "Hướng dẫn sử dụng DNS chặn quảng cáo trên ios",
-      "tintColor": "022740",
-      "imageURL": "https://cdn.tgdd.vn/Files/News/2023/05/18/5-cach-doi-dns-tren-iphone-nhanh-chong-chi-sau-thumb-560x292.jpg",
-      "appID": "com.example.app",
-      "date": "2025-10-15",
-      "notify": true,
-      "url": "dnsadblock.md"
-    },
-    {
-      "title": "Chống thu hồi chứng chỉ bằng DNS",
-      "identifier": "hdsd-anti-revoke",
-      "caption": "Sử dụng cấu hình DNS ngăn chặn thu hồi chứng chỉ cài IPA.",
-      "tintColor": "DB7F33",
-      "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
-      "appID": "com.example.app",
-      "date": "2025-10-14",
-      "notify": true,
-      "url": "chongthuhoicc.md"
-    },
-    {
-      "title": "Bật chế độ Nhà phát triển",
-      "identifier": "hdsd-developermode",
-      "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
-      "tintColor": "D73C3C",
-      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/logo/logocertapple.png",
-      "appID": "com.example.app",
-      "date": "2025-10-11",
-      "notify": true,
-      "url": "developermod.md"
-    },
-    {
-      "title": "Hướng dẫn cài IPA bằng TrollStore",
-      "identifier": "hd-cai-ipa",
-      "caption": "Hướng Dẫn Cài Ứng Dụng IPA Cho iPhone Bằng TrollStore",
-      "tintColor": "675809",
-      "imageURL": "https://thuthuatjb.com/wp-content/uploads/2022/09/Huong-dan-TrollStore-ios-ipados.jpg",
-      "appID": "com.trollstore.app",
-      "date": "2025-10-09",
-      "notify": true,
-      "url": "trollstore.md"
-    },
-    {
-      "title": "Chia sẻ *.dylib, *.deb",
-      "identifier": "share-dylib",
-      "caption": "Chia sẻ kho .dylib, .deb được sưu tầm hoặc tự build để tiêm cho IPA.",
-      "tintColor": "33DB5D",
-      "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
-      "appID": "com.dylib.app",
-      "date": "2025-10-09",
-      "notify": false,
-      "url": "Khodylib.md"
-    },
-    {
-      "title": "Cài File IPA lên iPhone (Không Cần Jailbreak)",
-      "identifier": "hdsd-caiipa",
-      "caption": "Bài hướng dẫn cài đặt ứng dụng ngoài Apple store (file .IPA) không cần Jailbreak.",
-      "tintColor": "0D6EC9",
-      "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
-      "appID": "com.feather.app",
-      "date": "2025-10-13",
-      "notify": false,
-      "url": "caidatipa.md"
-    },
-    {
-      "title": "Mẹo sử dụng Cert cài IPA qua Feather, Esign",
-      "identifier": "cert-apple",
-      "caption": "Mẹo cài đặt IPA bằng Feather, ESign với Cert có phí",
-      "tintColor": "3498DB",
-      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
-      "appID": "com.example.app",
-      "date": "2025-10-14",
-      "notify": false,
-      "url": "cert.md"
-    }
+  "patreonURL": "https://patreon.com/drphe",
+  "tintColor": "#5825D0",
+  "featuredApps": [
+    "com.ksign.tool",
+    "com.phim4k.app",
+    "com.duolingo.DuolingoMobile",
+    "vn.com.vng.zingalo",
+    "com.adguard.AdguardExtension"
   ],
+  "headerURL": "https://i.ibb.co/TxvH2Z4y/ff65c6ce8ae9.png",
   "apps": [
     {
       "beta": false,
       "name": "VidList",
       "bundleIdentifier": "com.vh.vhub",
+      "marketplaceID": "",
       "developerName": "VidList",
       "subtitle": "Minimum IOS: 10.0",
       "localizedDescription": "VidList XXX Porn Videos",
-      "iconURL": "https://drphe.github.io/KhoIPA/icon/VidList.png",
-      "type": 3,
-      "tintColor": "B747F2",
-      "screenshotURLs": [],
-      "versions": [
-        {
-          "version": "2.0",
-          "date": "2025-10-30T14:50:00Z",
-          "size": 22325270,
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0/VidList_2.0_1739130348.ipa",
-          "localizedDescription": "Version mới nhất."
-        }
-      ],
-      "version": "2.0",
-      "versionDate": "2025-10-30T14:50:00Z",
       "versionDescription": "Version mới nhất.",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0/VidList_2.0_1739130348.ipa",
-      "size": 22325270
-    },
-    {
-      "beta": false,
-      "name": "PornHub Premium",
-      "bundleIdentifier": "ru.ano.videoplayer",
-      "developerName": "PornHub Premium",
-      "subtitle": "Minimum IOS: 10.0",
-      "localizedDescription": "Pornhub | Premium, Plugin Include",
-      "iconURL": "https://drphe.github.io/KhoIPA/icon/PornHubPremium.png",
+      "iconURL": "https://drphe.github.io/KhoIPA/icon/VidList.png",
+      "tintColor": "#B747F2",
       "type": 3,
-      "tintColor": "EF9D20",
-      "screenshotURLs": [
+      "screenshots": [
         "https://cdn.aptoide.com/imgs/c/6/1/c61c0d0fcad5ab00820e98f91f5b8624_screen.jpg",
         "https://cdn.aptoide.com/imgs/7/3/8/738b6d4f34445e832f75662f8e2b5fe1_screen.jpg"
       ],
       "versions": [
         {
-          "version": "0.7",
-          "date": "2025-10-30T12:09:00Z",
-          "size": 7047721,
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7/PornHub.Premium.ipa",
-          "localizedDescription": "Newest version."
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.1/VidList_2.1_@vidlist.ipa",
+          "size": 21200000,
+          "version": "2.1",
+          "buildVersion": null,
+          "date": "2025-10-30T23:16:00+07:00",
+          "localizedDescription": "App yêu cầu cập nhật bản mới nhất\nĐăng ký tài khoản bất kỳ để sử \nNguồn: https://t.me/vidlist",
+          "minOSVersion": null
+        },
+        {
+          "version": "2.0",
+          "date": "2025-10-30T14:50:00Z",
+          "localizedDescription": "Version mới nhất.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0/VidList_2.0_1739130348.ipa",
+          "size": 22325270,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "version": "0.7",
-      "versionDate": "2025-10-30T12:09:00Z",
-      "versionDescription": "Newest version.",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7/PornHub.Premium.ipa",
-      "size": 7047721
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Portal",
       "bundleIdentifier": "whysoooofurious.portal",
+      "marketplaceID": "",
       "developerName": "wsfteam.xyz",
       "subtitle": "Tool for sideloading",
       "localizedDescription": "Dowload: https://wsfteam.xyz/#downloads\nInstall guide: https://youtube.com/shorts/KgA9n51QfnQ?feature=share\nỨng dụng Portal dành cho việc sideload trên iOS là một công cụ tiên tiến được phát triển bởi WSF (WhySooooFurious), cho phép người dùng iPhone và iPad cài đặt các ứng dụng bên thứ ba mà không cần phụ thuộc vào App Store của Apple hay máy tính. Nền tảng tất cả-trong-một này được thiết kế để đơn giản hóa quá trình sideload cho cả người mới bắt đầu lẫn người dùng nâng cao, kết hợp các công cụ, hồ sơ cấu hình, hướng dẫn và tiện ích bảo mật vào một giao diện liền mạch.\n\nhttps://github.com/WhySooooFurious/Ultimate-Sideloading-Guide\nhttps://www.youtube.com/watch?v=nni_DNix490&t=126s\nhttps://techybuff.com/portal-app-for-ios-sideloading/",
+      "versionDescription": "Phiên bản mới nhất",
       "iconURL": "https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/refs/heads/main/raw-files/App%20Icons/Portal.png",
+      "tintColor": "#3498DB",
       "type": 4,
-      "tintColor": "3498DB",
-      "screenshotURLs": [
+      "screenshots": [
         "https://picul.de/view/YhU",
         "https://picul.de/view/Yhp",
         "https://picul.de/view/Yh9"
@@ -177,83 +78,92 @@
         {
           "version": "3.3.0",
           "date": "2025-10-29T08:20:00Z",
-          "size": 33060927,
+          "localizedDescription": "Phiên bản mới nhất",
           "downloadURL": "https://drphe.github.io/KhoIPA/upload/Portal.ipa",
-          "localizedDescription": "Phiên bản mới nhất"
+          "size": 33060927,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "version": "3.3.0",
-      "versionDate": "2025-10-29T08:20:00Z",
-      "versionDescription": "Phiên bản mới nhất",
-      "downloadURL": "https://drphe.github.io/KhoIPA/upload/Portal.ipa",
-      "size": 33060927
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Battery Webhook",
-      "type": 1,
       "bundleIdentifier": "thatstel.la.battery-webhook",
+      "marketplaceID": "",
       "developerName": "ThatStella7922",
       "subtitle": "Send your battery info to popular services using webhooks!",
       "localizedDescription": "Webhooks allow an application to send real-time data to another application whenever a specific event occurs. What if you could send battery information whenever you connected your device to power? Even better, what if you could easily send it to a messaging app like Discord, in an easy-to-read format?\n\nBattery Webhook achieves this and also has:\n- A fully modern design, built in Swift and SwiftUI\n- Manual sending of battery info in the app\n- Automations support with Shortcuts Automations\n- Siri Shortcuts support\n- A highly power efficient design, with minimal power usage\n\nIt is simple to use the app, just fill out a few basic details and you can send your device's battery info. If you ever run into any roadblocks, there's step-by-step documentation available.\n\nDocumentation: https://docs.thatstel.la/battery-webhook\nSource code and bug reports: https://github.com/ThatStella7922/battery-webhook\n\nNote: Battery Webhook is not affiliated with or endorsed by Discord Inc in any way. All trademarks are property of their respective owners.\nNote 2: Battery Webhook installed from AltStore/SideStore does not include the Apple Watch app.",
       "versionDescription": "- Added support for iOS and iPadOS 14\n- Added support for Shortcuts on iOS and iPadOS 15 or older, enabling the use of automations on older devices\n- Added an option to override the webhook's preset avatar & name with your own avatar and display name (for Discord webhooks)\n- Added an option to show author details in automated battery info, not just manually sent battery info (for Discord webhooks)\n- Added support for sending to multiple webhooks of the same type by listing them comma separated\n- Fixed an issue where Battery Webhook would rarely be unable to accurately determine the OS version\n- Author details will now be shown in automated battery info, not just manually sent battery info\n- Lots of code improvements\n- Other minor bug fixes\n\nThanks for using Battery Webhook!\n- Stella https://alt.thatstel.la/",
-      "tintColor": "#03EE91",
       "iconURL": "https://raw.githubusercontent.com/ThatStella7922/battery-webhook/master/assets/iOS/AppIconiOS1024x1024.png",
-      "screenshotURLs": [
+      "tintColor": "#03EE91",
+      "type": 1,
+      "screenshots": [
         "https://files.thatstel.la/mainsitesw/BatteryWebhook/Screenshots/iPhone/BW1.3-6.7-Welcome.png",
         "https://files.thatstel.la/mainsitesw/BatteryWebhook/Screenshots/iPhone/BW1.3-6.7-Settings.png"
       ],
-      "size": 8028062,
-      "version": "1.3",
       "versions": [
         {
           "version": "1.3",
           "date": "2024-02-10T09:00:00-08:00",
-          "size": 8028062,
-          "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.3-NoWatch.ipa",
           "localizedDescription": "- Added support for iOS and iPadOS 14\n- Added support for Shortcuts on iOS and iPadOS 15 or older, enabling the use of automations on older devices\n- Added an option to override the webhook's preset avatar & name with your own avatar and display name (for Discord webhooks)\n- Added an option to show author details in automated battery info, not just manually sent battery info (for Discord webhooks)\n- Added support for sending to multiple webhooks of the same type by listing them comma separated\n- Fixed an issue where Battery Webhook would rarely be unable to accurately determine the OS version\n- Author details will now be shown in automated battery info, not just manually sent battery info\n- Lots of code improvements\n- Other minor bug fixes\n\nThanks for using Battery Webhook!\n- Stella",
+          "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.3-NoWatch.ipa",
+          "size": 8028062,
+          "buildVersion": null,
           "minOSVersion": "14.0"
         },
         {
           "version": "1.2",
           "date": "2024-01-10T07:00:00-08:00",
-          "size": 4740471,
-          "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.2-NoWatch.ipa",
           "localizedDescription": "New features and bug fixes.",
+          "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.2-NoWatch.ipa",
+          "size": 4740471,
+          "buildVersion": null,
           "minOSVersion": "15.0"
         },
         {
           "version": "1.1",
           "date": "2023-12-12T07:00:00-08:00",
-          "size": 4857264,
-          "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.1-NoWatch.ipa",
           "localizedDescription": "New features and bug fixes.",
+          "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.1-NoWatch.ipa",
+          "size": 4857264,
+          "buildVersion": null,
           "minOSVersion": "15.0"
         },
         {
           "version": "1.0",
           "date": "2023-12-06T07:00:00-08:00",
-          "size": 4833564,
-          "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.0-NoWatch.ipa",
           "localizedDescription": "Initial release.",
+          "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.0-NoWatch.ipa",
+          "size": 4833564,
+          "buildVersion": null,
           "minOSVersion": "15.0"
         }
       ],
-      "versionDate": "2024-02-10T09:00:00-08:00",
-      "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.3-NoWatch.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "SideStore",
-      "type": 4,
       "bundleIdentifier": "com.SideStore.SideStore",
+      "marketplaceID": "",
       "developerName": "SideStore Team",
-      "subtitle": "",
+      "subtitle": "An awesome app.",
       "localizedDescription": "SideStore is an alternative app store for non-jailbroken devices. \n\nSideStore allows you to sideload other .ipa files and apps from the Files app or via the SideStore Library \n https://apps.sidestore.io/",
       "versionDescription": "Hey there side commmunity. This is a patch to improve stability of sidestore. more specifically for sources.",
-      "tintColor": "A405FA",
       "iconURL": "https://apps.sidestore.io/apps/sidestore/v0.1.1/icon.png",
-      "screenshotURLs": [
+      "tintColor": "#A405FA",
+      "type": 4,
+      "screenshots": [
         "https://apps.sidestore.io/apps/sidestore/v0.1.1/browse-dark.png",
         "https://apps.sidestore.io/apps/sidestore/v0.1.1/apps-dark.png",
         "https://apps.sidestore.io/apps/sidestore/v0.1.1/news-dark.png",
@@ -261,109 +171,135 @@
         "https://apps.sidestore.io/apps/sidestore/v0.1.1/apps-light.png",
         "https://apps.sidestore.io/apps/sidestore/v0.1.1/news-light.png"
       ],
-      "size": 28873303,
-      "version": "0.6.2",
       "versions": [
         {
           "version": "0.6.2",
           "date": "2025-07-01T01:20:17Z",
           "localizedDescription": "## Build Info\nBuilt at (UTC): `Tue Jul  1 01:20:17 2025`\nBuilt at (UTC date): `2025-07-01`\nCommit SHA: `685d9567752c6b7396304f8b64f0f713f52cf936`\nVersion: `0.6.2`\n\n## What's Changed\n* Rebase 2.0 wip by @nythepegasus in https://github.com/SideStore/SideStore/pull/794\n* [Refresh]: Remove install stuffs from refresh since in refresh should only renew provisioning profiles by @mahee96 in https://github.com/SideStore/SideStore/pull/846\n* [Settings]: Fix: DisableAppLimit switch reverting back to off state even if on iOS where sparseRestore is not patched yet by @mahee96 in https://github.com/SideStore/SideStore/pull/850\n* Update trustedapps.json by @neoarz in https://github.com/SideStore/SideStore/pull/853\n* [Backup]: Fix: update logic during install missed since override keyword was missing by @mahee96 in https://github.com/SideStore/SideStore/pull/857\n* Fix Repository App Previews by @neoarz in https://github.com/SideStore/SideStore/pull/871\n* Feature: Bulk sources-add in sources screen with capability to stage them before persisting into database by @mahee96 in https://github.com/SideStore/SideStore/pull/888\n* Version 0.6.0: CoreData Migrations fix including xcdatamodels and xcmappingmodels by @mahee96 in https://github.com/SideStore/SideStore/pull/894\n* Feature: Render in-app update description as (full) markdown by @mahee96 in https://github.com/SideStore/SideStore/pull/897\n* fix: typo in hasUpdate comparison by @l2dy in https://github.com/SideStore/SideStore/pull/900\n* Update SettingsViewController.swift by @neoarz in https://github.com/SideStore/SideStore/pull/915\n* WIP: Fixes for migration issues when migrating from 0.5.9 to 0.6.0  by @mahee96 in https://github.com/SideStore/SideStore/pull/920\n* Fix typo \"levaraging\" -> \"leveraging\" by @lafrenierejm in https://github.com/SideStore/SideStore/pull/926\n* Added StosVPN to the EM Proxy part. by @Br0des in https://github.com/SideStore/SideStore/pull/940\n* StosVPN-integration: Removed em_proxy and EmotionalDamage module in favour of stosVPN by @mahee96 in https://github.com/SideStore/SideStore/pull/945\n* Disable minimuxer ready check which shows NO WIFI/VPN error since stosVPN can work on cellular too by @mahee96 in https://github.com/SideStore/SideStore/pull/935\n* Add iOS 17.4+ JIT and mounting by @jkcoxson in https://github.com/SideStore/SideStore/pull/953\n* Add export certificate feature by @hugeBlack in https://github.com/SideStore/SideStore/pull/959\n* Feat: Add Pairing File Export URL callback and replace Wireguard with StosVPN by @stossy11 in https://github.com/SideStore/SideStore/pull/962\n* Change front-facing references to AltStore by @owoellen in https://github.com/SideStore/SideStore/pull/987\n* Update OperationError.swift for idevice_pair by @CelloSerenity in https://github.com/SideStore/SideStore/pull/995\n* Add import/export certificate feature by @hugeBlack in https://github.com/SideStore/SideStore/pull/1008\n* Fix pairing file doc link by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1011\n* Add option for using main bundle's profile for app extensions, update AltSign & libmd by @hugeBlack in https://github.com/SideStore/SideStore/pull/1012\n* Use main profile when refreshing by @hugeBlack in https://github.com/SideStore/SideStore/pull/1013\n\n## New Contributors\n* @l2dy made their first contribution in https://github.com/SideStore/SideStore/pull/900\n* @lafrenierejm made their first contribution in https://github.com/SideStore/SideStore/pull/926\n* @Br0des made their first contribution in https://github.com/SideStore/SideStore/pull/940\n* @hugeBlack made their first contribution in https://github.com/SideStore/SideStore/pull/959\n* @owoellen made their first contribution in https://github.com/SideStore/SideStore/pull/987\n* @CelloSerenity made their first contribution in https://github.com/SideStore/SideStore/pull/995\n\n**Full Changelog**: https://github.com/SideStore/SideStore/compare/0.5.9...0.6.2\n",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.2/SideStore.ipa",
-          "size": 28873303
+          "size": 28873303,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.10",
           "date": "2024-12-27T01:01:50Z",
           "localizedDescription": "Hey there side commmunity. This is a patch to improve stability of sidestore. more specifically for sources.",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.10/SideStore.ipa",
-          "size": 9300000
+          "size": 9300000,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.9",
           "date": "2024-12-24T14:01:50Z",
           "localizedDescription": "We got another update, just in time for Christmas! (depending on where you live)\n\nBefore we bring in 0.6.0 with AltStore 2.0 fully merged, consider this as a point update for all the fun things we made before it!\n\n## What's Changed\n* feat: show custom anisette server list if set by @moonsn in https://github.com/SideStore/SideStore/pull/717\n* Fix for Refresh Operation causing renewal/install of provisioning profiles for removed app extensions by @mahee96 in https://github.com/SideStore/SideStore/pull/727\n* Fix-regression: restored update-check logic(2a392dd) in InstalledApp.swift which was dropped in (1713fcc) by @mahee96 in https://github.com/SideStore/SideStore/pull/728\n* xcode: Debug dylib support is still broken in iOS 18 causing No Entry Point Found. checked(null) by @mahee96 in https://github.com/SideStore/SideStore/pull/729\n* refresh-app: enhanced error logging when app extension validation check fails by @mahee96 in https://github.com/SideStore/SideStore/pull/730\n* diagnostics: improved error logging for OperationError.invalidParameters by @mahee96 in https://github.com/SideStore/SideStore/pull/736\n* -[cleanup]: restore changes dropped from altstore-1.6.3 merge by 1713fcc by @mahee96 in https://github.com/SideStore/SideStore/pull/738\n* Add missing = sign by @TheMasterOfMike in https://github.com/SideStore/SideStore/pull/739\n* minor fixes for Remove Refreshed.ipa removal and posting from background thread by @mahee96 in https://github.com/SideStore/SideStore/pull/740\n* Diagnostics & cleanup: Added diagnostics for RefreshAppOperation failure and removed stale entries in pbxproj by @mahee96 in https://github.com/SideStore/SideStore/pull/741\n* Partial-Fix for #723: Error on refresh operation must be set on self.context instead of group.context by @mahee96 in https://github.com/SideStore/SideStore/pull/742\n* Background and shortcut refresh fix - remove only excess extensions from new package during install by @mahee96 in https://github.com/SideStore/SideStore/pull/743\n* Widgets-Fix: Ported Widget compatibility for ios 18+ from altstore  by @mahee96 in https://github.com/SideStore/SideStore/pull/746\n* Update message about Disable Idle Timeout setting by @kaoneko in https://github.com/SideStore/SideStore/pull/747\n* Change gitignore, add package.resolve by @JoeMatt in https://github.com/SideStore/SideStore/pull/748\n* Twitter Updates & Email Support by @0-Blu in https://github.com/SideStore/SideStore/pull/762\n* -[xcode]: revert enabling debug dylib support for widgets by @mahee96 in https://github.com/SideStore/SideStore/pull/769\n* Fix: update sign-in screen toast text color to be primary color by @mahee96 in https://github.com/SideStore/SideStore/pull/770\n* - Fix: DatabaseManager.migrateDatabaseToAppGroupIfNeeded() src and dest for replaceItemAt() cannot be same by @mahee96 in https://github.com/SideStore/SideStore/pull/772\n* -[Feature]: client-side: Anisette server fallback impl when current server is unreachable by @mahee96 in https://github.com/SideStore/SideStore/pull/773\n* - Fix: Anisette-server-fallback: Try currently selected server first by @mahee96 in https://github.com/SideStore/SideStore/pull/775\n* - Fix: refresh(): app was being accessed after de-alloc causing EXC_BREAKPOINT by @mahee96 in https://github.com/SideStore/SideStore/pull/776\n* - Fix: AnisetteServers: refresh server request shouldn't use local cache to get proper updates by @mahee96 in https://github.com/SideStore/SideStore/pull/777\n* - [Partial-fix]: Show Toast regarding server switch due to fallback if UI context is available by @mahee96 in https://github.com/SideStore/SideStore/pull/779\n* Added launch arguments for coredata debugging and updated Scheme from AltStore to SideStore by @mahee96 in https://github.com/SideStore/SideStore/pull/785\n* Renamed libem_proxy.a to libem_proxy-ios.a for iOS builds and added echo to print the lib path being used in the run script by @mahee96 in https://github.com/SideStore/SideStore/pull/786\n* Updated LIB_FILE_NAME used in minimuxer shell script to link the binary by @mahee96 in https://github.com/SideStore/SideStore/pull/787\n* updated fetch-prebuilt.sh to reflect libem_proxy-ios.a renaming by @mahee96 in https://github.com/SideStore/SideStore/pull/788\n* [fetch-prebuilt.sh] - retain checked-in files from minimuxer repo by @mahee96 in https://github.com/SideStore/SideStore/pull/789\n* [fetch-prebuilt.sh]: force download when libs are missing locally and skip file is absent by @mahee96 in https://github.com/SideStore/SideStore/pull/796\n* [settings]: Fix: siri shortcut missing from settings by @mahee96 in https://github.com/SideStore/SideStore/pull/797\n* [dependencies]: updated Package.resolved to use latest commit for altsign package by @mahee96 in https://github.com/SideStore/SideStore/pull/798\n* added fix for downloadURL error + todo by @wynwxst in https://github.com/SideStore/SideStore/pull/807\n* Add entitlements by @junepark678 in https://github.com/SideStore/SideStore/pull/809\n* Update README.md by @neoarz in https://github.com/SideStore/SideStore/pull/803\n\n## New Contributors\n* @moonsn made their first contribution in https://github.com/SideStore/SideStore/pull/717\n* @TheMasterOfMike made their first contribution in https://github.com/SideStore/SideStore/pull/739\n* @kaoneko made their first contribution in https://github.com/SideStore/SideStore/pull/747\n* @wynwxst made their first contribution in https://github.com/SideStore/SideStore/pull/807\n* @neoarz made their first contribution in https://github.com/SideStore/SideStore/pull/803\n\n**Full Changelog**: https://github.com/SideStore/SideStore/compare/0.5.8...0.5.9\n",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.9/SideStore.ipa",
-          "size": 9300000
+          "size": 9300000,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.8",
           "date": "2024-9-07T18:30:00Z",
           "localizedDescription": "Ah, September! You are a doorway to the season that awakens another sidestore update! We have been very busy with doing quality of life changes and fixing bugs everyone’s been having. \n\n\n What's Changed: \n\n - UI Improvements for the Anisette Servers View. by @0-Blu in #672 \n\n - Added more feedback options. by @0-Blu in #673 \n\n - Fix SideJITServer Support for iOS 17+ by @stossy11 in #674 \n\n - Makes revoking optional by @junepark678 in #675 \n\n -  Better pairing file info by @bogotesr in #676  \n\n -  Selective app extension removal by @junepark678 in #677 \n\n -  legal: developer's certificate of origin 1.1 by @polymo1 in #686 \n\n Thanks to all of the community’s support to keep this project alive and motivated. We have more planned ahead and are doing our best to keep up with updates to make it a seamless/stress free experience. Stay tuned to our progress on future endeavors for SideStore on our discord! \n\n Discord: https://discord.gg/sidestore-949183273383395328",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.8/SideStore.ipa",
-          "size": 9300000
+          "size": 9300000,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.7",
           "date": "2024-8-05T18:30:00Z",
           "localizedDescription": "Happy August! We have been very busy with doing quality of life changes and fixing bugs everyone’s been having. \n\n\n What's Changed: \n\n - Added Stossy11 Anisette Server by stossy11 \n\n - Added SideJITServer Support for Enabling JIT on iOS 17+ by @stossy11 \n\n - Change AltStore Expiring Soon to SideStore Expiring Soon by therealFoxster \n\n - Add Dynamic anisette intervention \n\n -  Update to altstore 1.6.3 by @junepark678  \n\n -  Include Enable JIT errors in Error Log \n\n -  Fix minimuxer status checking \n\n -  Update no wifi message to include VPN \n\n -  Opens Error Log when tapping ToastView \n\n -  Fixes Error Log context menu covering cell content \n\n -  Fixes Error Log context menu appearing while scrolling \n\n -  Fixes incorrect Search FAQ URL \n\n -  Fix Error Log showing UIAlertController on iOS 14 + \n\n -  Fix Error Log not showing UIAlertController on iOS <=13 \n\n -  Fix wrong color in AuthenticationViewController \n\n Thanks to all of the community’s support to keep this project alive and motivated. We have more planned ahead and are doing our best to keep up with updates to make it a seamless/stress free experience. Stay tuned to our progress on future endeavors for SideStore on our discord! \n\n Discord: https://discord.gg/sidestore-949183273383395328",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.7/SideStore.ipa",
-          "size": 9300000
+          "size": 9300000,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.6",
           "date": "2024-4-22T13:30:00Z",
           "localizedDescription": "Happy April! This update we have some stability fixes and some improvement with sources page text. /n/n/n What has been changed: /n/n - Add description on what disable idle timeout toggle + change add to Siri text for accuracy by @Spidy123222 in #550 /n/n - Remove patreon exclusivity message for sources by @Spidy123222 in #594 /n/n Add ani.wesbryie.com to Anisette list by @WesleyBryie in #604 /n/n - Attempt to (hackily) fix embedded pairing file issues @nythepegasus",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.6/SideStore.ipa",
-          "size": 9195339
+          "size": 9195339,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.4",
           "date": "2023-11-27T13:30:00Z",
           "localizedDescription": "Happy November! Since we had to do a quick fix this update. We have been very busy with doing quality of life changes and fixing bugs everyone’s been having. \n\n\n What's Changed: \n\n - Clear cache button to help with the large size issues. \n\n - Fix: Fix AppID Crash \n\n - Version in settings showing as develop \n\n - Added Timeout Feature so when you install an app. Your device will not time out and mess up the install. \n\n - Remove the heavy reliance on Info.plist for UDID. \n\n - Better formatted dates so for example instead of it being 0 days it'll say 19 hours/30 minutes. \n\n - fix: fix AltWidget AppGroup Issue. \n\n - fix: Use forked libplist",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.4/SideStore.ipa",
-          "size": 9195339
+          "size": 9195339,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.2",
           "date": "2023-10-20T22:30:00Z",
           "localizedDescription": "Having a spooky October? We have too while working on stability improvements and better error logging for SideStore!\n\n# Changelog\n* Remove the buggy retry code finally (@nythepegasus)\n* Recompile and update AltBackup to make it function again (@nythepegasus)\n* Update submodule dependencies (@naturecodevoid and @nythepegasus)\n* Remove emuthreeds from trusted sources (down too frequently) (@Spidy123222)\n* Use provisioning profile details instead of guessing active app limit by @bogsen in https://github.com/SideStore/SideStore/pull/508\n**Full Changelog**: https://github.com/SideStore/SideStore/compare/0.5.1...0.5.2",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.2/SideStore.ipa",
-          "size": 9195339
+          "size": 9195339,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.1",
           "date": "2023-09-17T18:50:00Z",
           "localizedDescription": "Having a good September? We have been hard at work on stability improvements and better error logging for SideStore!\n\n# Changes \n\n * The Unable to install app (aka staging error) error message has been split into explicit error messages. This should allow people who get the error to troubleshoot more easily. (Dadoum for initial implementation, naturecodevoid for fixes)\n* AltSign and all other dependencies were updated. This should help fix some issues. (spidy123222 and Joelle Lonkell for AltSign, naturecodevoided for everything else)\n* The notification and alert explaining SideStore needing to be in the background to refresh was shortened and made clearer. (spidy123322)\nFull Changelog: https://github.com/SideStore/SideStore/compare/0.5.0..0.5.1",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.1/SideStore.ipa",
-          "size": 9157428
+          "size": 9157428,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.5.0",
           "date": "2023-07-27T06:00:00-5:00",
           "localizedDescription": "Happy July! We have been hard at work on stability improvements for SideStore!\n\n# Changes \n\n * [bugfix] Widget now functions properly from Github Actions builds\n* [bugfix] Installing and refreshing apps should be much more stable\n* [bugfix] Reintroduce notification when refreshing SideStore\n* [feature] Add retries to enabling JIT to make it a little more stable\n* [feature] Change the default anisette server to be https://ani.sidestore.io/ instead of the 6969 port (which no longer exists)\n* [UI] Change the Patreon screen to display our different social media accounts\n* [upstream] Fix many deprecation warnings\n* [upstream] Fix \"Open in..\" file dialog not working for SideStore\n* [upstream] Fix various UI elements to be more performant/less buggy\nFull Changelog: https://github.com/SideStore/SideStore/compare/0.4.0..0.5.0",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.0/SideStore.ipa",
-          "size": 9157428
+          "size": 9157428,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.4.0",
           "date": "2023-05-29T19:00:00-05:00",
           "localizedDescription": "Happy May! We have been very busy with doing quality of life changes and fixing bugs everyone’s been having. WE RECOMMEND FRESH INSTALL ON THIS UPDATE. it took this long as there was some problems that were hard and some things needed fixed before releasing and testing, but this should make sidestore much better to use. If you ever want to test sidestore versions use nightly version of sidestore. If you’re into even more experimental join our discord and try our ipas we ask for testing. \n\n For people that want to use MDC no3applimit (MacDirtyCow). It’s currently not ready as it includes the patch not needing any external apps. So for any brave people that really want it you will have to look at this pull request and use the ipa downloads from GitHub actions  https://github.com/SideStore/SideStore/pull/259 or get it from our site as a ipa labeled MDC.\n\n What's Changed: \n\n - Fix: Fix expire early issue (it will open safari to finish refreshing sidestore now.) \n\n - Updated to Anisette V3, this is much better than version 1 as it prevents locking and other anisette issues. \n\n - Fix: no provisioning profile with the requested identifier. \n\n - Remove jkcoxson anisette server from preferred servers. \n\n - Update store check to check for AltServer or SideServer installation \n\n - refactor minimuxer to use swift-bridge (#321) \n\n - Change the default anisette server \n\n - fix: hopefully reduce ApplicationVerificationFailed errors by removing _CodeSignature folders since those may cause a problems. \n\n - Fix: 'The name for this app is invalid' error(#361). \n\n - Remove app groups that contain AltStore \n\n - Change SideStore Anisette server url to use https. Full Commit Changelog: https://github.com/SideStore/SideStore/compare/0.3.1...0.4.0",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.4.0/SideStore.ipa",
-          "size": 5465976
+          "size": 5465976,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "0.3.1",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.3.1/SideStore.ipa",
           "date": "2023-03-01T14:00:00-05:00",
           "localizedDescription": "Happy March! We have been busy with doing quality of life changes and getting stuff up and running like deactivating and getting bugs fixed that you guys found in nightly. We don’t currently have a fix for expiring early issue but is in the works like anisette issues. This should allow basic support for all functions.\n\n For people that want to use MDC no3applimit (MacDirtyCow). It’s currently not ready as it includes the patch not needing any external apps. So for any brave people that really want it you will have to look at this pull request and use the ipa downloads from GitHub actions  https://github.com/SideStore/SideStore/pull/259 . We don’t recommend relying on pull requests as because a commit could break the app so be warned, this is the same for nightly but with nightly has latest develop branch changes.\n\n What's Changed: \n\n - Fix beta apps not refreshing \n\n - Fix beta apps on the my apps view \n\n - Fix deactivating/activating apps \n\n - Merge all of Riley's new error handling stuff \n\n - add easy anisette server selector iOS Settings app \n\n - added toggle for custom anisette server \n\n - Change the default anisette server \n\n - Add a bit more logging throughout the signing process to help us pin down issues \n\n - Allow for .mobiledevicepairing and .plist files to be selected, try and pin down why users can't select either \n\n - Hopefully fix AltWidget issues \n\n - Add analytics to help developers understand current demographic of users (and hopefully pin down version specific bugs) \n\n - Icon change (thanks LittRitt!) \n\n - Sidestore directory accessible in files \n\n - Reset pairing file button \n\n - Advanced settings button \n\n - Browse icon change \n\n - Credit adjustment \n\n - Background color fixes \n\n - Added more permission types for sources \n\n - Join Patreon button crash fix \n\n - Turned off background notification refreshes \n\n - Sidestore Logger \n\n - Minimuxer logger \n\n - Additional logging for minimuxer for sidestore for troubleshooting \n\n - Replace Placeholder video for pairing instructions. \n\n - Fix BundleId issues on parts of sidestore \n\n - Fix trusted sources if one app has problems that it shouldn’t take down the full list. \n\n \n\n Full Commit Changelog: https://github.com/SideStore/SideStore/compare/0.1.1...0.3.1",
-          "size": 5465976
+          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.3.1/SideStore.ipa",
+          "size": 5465976,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-07-01T01:20:17Z",
-      "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.2/SideStore.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Color Widgets",
-      "type": 1,
       "bundleIdentifier": "com.MMApps.WidgetsApp",
+      "marketplaceID": "",
       "developerName": "MM Apps, Inc.",
       "subtitle": "Mod pro",
       "localizedDescription": "Yêu cầu: IOS 15.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã kích hoạt Pro \n💚Đã sửa lỗi hoạt động của các widget🛠🛠🛠\n😰Để kích hoạt Pro, hãy khởi động lại ứng dụng và nhấn “Mua gói Pro” nhiều lần, đồng thời hủy nhập Apple ID.",
       "versionDescription": "❗️❗️Widget chỉ hoạt động với các chứng chỉ cá nhân được mua sau ngày 06.02.2025",
-      "tintColor": "33D9B4",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/29/4d/a7294dc9-b315-8bdd-a3fb-9fef82e60aa5/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#33D9B4",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/c0/73/31/c073315f-54ba-ed36-d113-4662cbb3fe7e/6b775054-7ae8-47b6-a882-294b6f1b09ad_i1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/7a/b1/6e/7ab16e3d-715c-8ecf-f250-785c89ea7e2b/579e98f4-a1c2-413d-9b8c-6019fbe96ef8_iphone-1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/64/fc/27/64fc2737-a3a9-af6b-5fce-a9ff2fd1fc86/60f8c185-a662-479f-8a35-c2d97e7fa191_i4.png/392x696bb.png",
@@ -375,32 +311,36 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/b3/8a/33/b38a33e0-fe78-728e-7149-2da302628465/fc3e6cec-2f71-48c8-8f24-2f5ab5ee7eff_i9.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/41/2f/35412f3d-4e65-8534-5633-e821d3122389/bf4f3160-f3a0-48c8-936b-8c63f505d9a0_ipi10.png/392x696bb.png"
       ],
-      "size": 60545699,
-      "version": "6.3.0",
       "versions": [
         {
           "version": "6.3.0",
           "date": "2025-07-10T15:55:00Z",
-          "size": 60545699,
+          "localizedDescription": "❗️❗️Widget chỉ hoạt động với các chứng chỉ cá nhân được mua sau ngày 06.02.2025",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.6.3.0/Color.Widgets.v6.3.0.ipa",
-          "localizedDescription": "❗️❗️Widget chỉ hoạt động với các chứng chỉ cá nhân được mua sau ngày 06.02.2025"
+          "size": 60545699,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-07-10T15:55:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.6.3.0/Color.Widgets.v6.3.0.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Sticker Maker",
-      "type": 1,
       "bundleIdentifier": "net.dreamdownloader.stickermaker",
+      "marketplaceID": "",
       "developerName": "Dream Downloader Infotech Ltd.",
       "subtitle": "Mod premium",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker.",
       "versionDescription": "❤️💙Animock💙❤️\n⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️\n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker.",
-      "tintColor": "601CFF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fe/fe/02/fefe0210-06b4-dcfe-81e3-9fba16a67fd5/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#601CFF",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/2d/9b/ca/2d9bca44-d42f-c53c-3d3e-26b2c71ad66e/403ce867-e475-4bdc-a792-dfb219e32029_Screenshot_1_6_Plus.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/4e/7b/b5/4e7bb5f5-78c8-603f-07d0-12d380ff3bc9/1dc80c78-4111-490c-9860-51a924659d2e_Screenshot_2_6_Plus.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/48/ba/26/48ba2687-1636-7c07-195b-31d9595ae87e/2b0c0f47-6ac3-4273-bc16-2b60bcda9715_Screenshot_3_6_Plus.png/392x696bb.png",
@@ -410,32 +350,36 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/fd/2b/a6/fd2ba657-1f43-5620-e120-b4e954c98f66/9f57cea0-e26a-44b8-93dc-f3ab66fd23ef_Screenshot_7_6_Plus.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/8d/a3/4c/8da34c0c-8d24-ae3b-2109-040089785ff0/14822c19-298e-401d-af38-027a1eee9acb_Screenshot_8_6_Plus.png/392x696bb.png"
       ],
-      "size": 48791064,
-      "version": "1.4.4",
       "versions": [
         {
           "version": "1.4.4",
           "date": "2025-03-06T15:50:00Z",
-          "size": 48791064,
+          "localizedDescription": "❤️💙Animock💙❤️\n⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️\n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker.",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.4.4/Sticker.Maker.v1.4.4.ipa",
-          "localizedDescription": "❤️💙Animock💙❤️\n⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️\n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker."
+          "size": 48791064,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-03-06T15:50:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.4.4/Sticker.Maker.v1.4.4.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Telegram++",
-      "type": "1",
       "bundleIdentifier": "ph.telegra.Telegraph",
+      "marketplaceID": "",
       "developerName": "Telegram FZ-LLC",
       "subtitle": "Mod version",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã thêm tinh chỉnh mới 🧤🧤🧤TGExtra \n💚Thay đổi vị trí địa lý \n💚Chế độ hoàn toàn ngoại tuyến \n💚Đã xóa quảng cáo \n💚Chế độ ẩn danh: không hiển thị đã đọc tin nhắn hay xem story \n💚🔥Ẩn trạng thái đang gõ⌨️, ghi âm tin nhắn thoại, quay video tròn trong cuộc trò chuyện \n💚Cho phép chụp màn hình và quay màn hình ở mọi nơi, kể cả nơi bị hạn chế (kênh kín, nhóm riêng, ảnh tự hủy, chat bí mật) 💚Cho phép lưu và chuyển tiếp nội dung từ các nhóm và kênh riêng tư \n💚Có thể đăng nhập bằng mã SMS!",
       "versionDescription": "❗️Thông báo hoạt động không ổn định\n\n❗️QUAN TRỌNG – Để mở cài đặt mod và kích hoạt tất cả tính năng, hãy nhấn nút “Chats💬” ở dưới cùng 5 lần (https://t.me/ZiSipa_chat/1034569)",
-      "tintColor": "55B0E7",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/0f/f3/480ff3b9-cae0-7fc9-f917-19892541ffaa/Telegram-0-0-1x_U007epad-0-1-0-P3-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#55B0E7",
+      "type": "1",
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/88/8c/50888cba-8bbe-276a-3339-8b98c44d8e95/pr_source.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/c3/34/dac33442-7a2a-d617-6ead-65dfb2944102/pr_source.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/8d/56/618d5645-2405-ece6-55d3-dacff34b1954/pr_source.png/392x696bb.png",
@@ -444,125 +388,141 @@
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/65/9c/3e659c49-90fa-06a5-4e1e-3b1d599734c4/pr_source.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/17/53/b4/1753b486-089a-aed9-274b-c38c38dadd63/pr_source.png/392x696bb.png"
       ],
-      "size": 86635199,
-      "version": "11.9",
       "versions": [
         {
           "version": "11.9",
           "date": "2025-02-27T15:41:00Z",
-          "size": 86635199,
+          "localizedDescription": "❗️Thông báo hoạt động không ổn định\n\n❗️QUAN TRỌNG – Để mở cài đặt mod và kích hoạt tất cả tính năng, hãy nhấn nút “Chats💬” ở dưới cùng 5 lần (https://t.me/ZiSipa_chat/1034569)",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.9/Telegram+.v11.9.ipa",
-          "localizedDescription": "❗️Thông báo hoạt động không ổn định\n\n❗️QUAN TRỌNG – Để mở cài đặt mod và kích hoạt tất cả tính năng, hãy nhấn nút “Chats💬” ở dưới cùng 5 lần (https://t.me/ZiSipa_chat/1034569)"
+          "size": 86635199,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-02-27T15:41:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.9/Telegram+.v11.9.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Folium",
-      "type": 1,
       "bundleIdentifier": "com.antique.Folium-iOS",
+      "marketplaceID": "",
       "developerName": "Jarrod Norwell",
       "subtitle": "Giả lập game NDS",
       "localizedDescription": "Yêu cầu: IOS 16.0 trở lên \n⚙️Mô tả⚙️ \n💚Trình giả lập các hệ máy console như NDS, 3DS, GBA và nhiều loại khác!",
       "versionDescription": "❤️💙Folium💙❤️ \n⚡️Phiên bản mới nhất⚡️",
-      "tintColor": "63D97B",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/45/a8/de45a823-3935-bb2c-7fbc-d9580962d05d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#63D97B",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/3c/2b/db3c2b3c-ba85-6ea2-5a49-96537f5fdf8c/522b914e-f092-4ce4-b9b0-cfb573a48064_0x0ss2.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/03/ac/24/03ac2489-ac26-3af4-0b54-23dda45f4b9d/318ad492-7d53-47b8-bb42-9a247ceed3d7_0x0ss3.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/95/3c/6d953c43-d625-d289-5dfa-1d69094549da/9405274d-83ee-4f47-83f6-d3e33e70ca3a_0x0ss.png/392x696bb.png"
       ],
-      "size": 26990855,
-      "version": "1.20",
       "versions": [
         {
           "version": "1.20",
           "date": "2025-04-02T15:31:00Z",
-          "size": 26990855,
+          "localizedDescription": "❤️💙Folium💙❤️ \n⚡️Phiên bản mới nhất⚡️",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.20/Folium.v1.20.ipa",
-          "localizedDescription": "❤️💙Folium💙❤️ \n⚡️Phiên bản mới nhất⚡️"
+          "size": 26990855,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-04-02T15:31:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.20/Folium.v1.20.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Worms 3",
-      "type": "2",
       "bundleIdentifier": "com.team17.worms3",
+      "marketplaceID": "",
       "developerName": "Team17 Digital Limited",
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 8.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Giá trên 💙AppStore là 4.99$.\n 💚Không khả dụng trên 🇷🇺AppStore.",
       "versionDescription": "❤️💙Worms 3💙❤️\n⚡️Phiên bản mới nhất⚡️",
-      "tintColor": "EB4200",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/67/93/7c/67937cd2-0907-bbec-8987-4ecf0442411a/mzl.vjzejqyc.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#EB4200",
+      "type": "2",
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/a9/5a/59/a95a597c-d9ff-e121-6d8f-9d8de911b91e/mzl.hzvdtgct.jpg/406x228bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/c6/70/93/c6709305-6673-a0e6-a808-5cf4169909df/mzl.fvcwsvkf.jpg/406x228bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/06/8e/b1/068eb1b4-c650-022e-c3fb-c2b28211fd31/mzl.uizbsbbu.jpg/406x228bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/b3/82/16/b38216cb-bf55-a00f-9c7e-d6a6436a850e/mzl.rrrqwyba.jpg/406x228bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/38/ea/8f/38ea8f42-7cde-9c4d-c65a-08c09daf89cf/mzl.pkwdqcof.jpg/406x228bb.jpg"
       ],
-      "size": 146279312,
-      "version": "1.24",
       "versions": [
         {
           "version": "1.24",
           "date": "2025-04-16T15:25:00Z",
-          "size": 146279312,
+          "localizedDescription": "❤️💙Worms 3💙❤️\n⚡️Phiên bản mới nhất⚡️",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.24/Worms.3.v1.24.ipa",
-          "localizedDescription": "❤️💙Worms 3💙❤️\n⚡️Phiên bản mới nhất⚡️"
+          "size": 146279312,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-04-16T15:25:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.24/Worms.3.v1.24.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Bad Piggies",
-      "type": 2,
       "bundleIdentifier": "com.rovio.BadPiggies",
+      "marketplaceID": "",
       "developerName": "Rovio Entertainment Oyj",
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 12.0 trở lên \n⚙️Tính năng của bản mod⚙️\n 💚Đã bị xóa khỏi AppStore💙❌",
       "versionDescription": "❤️💙Bad Piggies💙❤️\n⚡️Phiên bản mới nhất⚡️",
-      "tintColor": "DD1C20",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/f2/d0/86f2d00b-a564-747c-b5ad-934d9c417e0c/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#DD1C20",
+      "type": 2,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/ba/29/56/ba295645-6b49-c587-fa52-0a8fac053c41/c7a77f46-6d83-4e31-a1cd-ba7b9e499ad8_BP_gdpr_2208x1242_1_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/87/4c/4e/874c4e46-dd37-c0c9-4b76-6bae080ddeb0/d342aed6-7d26-403f-ac35-f73755c1066a_BP_gdpr_2208x1242_2_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/54/18/b6/5418b6c2-cd0a-9e67-1f78-df2ca5879008/3a47b298-6781-4195-99fe-dde5f5346c6f_BP_gdpr_2208x1242_3_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/60/eb/54/60eb54e0-181e-4cfb-6688-38e2e08d9918/53da444b-4e0a-4011-b9fd-9465af35af03_BP_gdpr_2208x1242_4_en-US.png/406x228bb.png"
       ],
-      "size": 151891104,
-      "version": "2.4.461",
       "versions": [
         {
           "version": "2.4.461",
           "date": "2025-05-15T15:12:00Z",
-          "size": 151891104,
+          "localizedDescription": "❤️💙Bad Piggies💙❤️\n⚡️Phiên bản mới nhất⚡️",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4.461/Bad.Piggies.v2.4.461.ipa",
-          "localizedDescription": "❤️💙Bad Piggies💙❤️\n⚡️Phiên bản mới nhất⚡️"
+          "size": 151891104,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-05-15T15:12:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4.461/Bad.Piggies.v2.4.461.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Angry Birds Reloaded",
-      "type": 2,
       "bundleIdentifier": "com.rovio.abreloaded",
+      "marketplaceID": "",
       "developerName": "Rovio Entertainment Oyj",
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Đặc điểm nổi bật⚙️ 💚Được trích xuất từ 🎮🎮🎮 💚Đã sửa lỗi liên quan đến GameCenter khi ký bằng chứng chỉ🛠🛠🛠",
       "versionDescription": "❤️💙Angry Birds Reloaded💙❤️\n⚡️Phiên bản mới nhất⚡️",
-      "tintColor": "2496EC",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/32/bc/0a32bcc0-b4a5-d390-eac3-3cfa457c32d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#2496EC",
+      "type": 2,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/d8/35/ebd83561-81ad-43cb-74e5-32b394df1943/ad9a298f-4003-4445-aeb3-0f6de7cded3e_RELOADED_202306_2208x1242_37_Screenshot_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/fb/4c/44fb4cba-d0ba-e12b-e422-d5f9a43dc3d3/8611cb92-cb46-413a-aeab-8b347466b824_RELOADED_202104_2208x1242_Screenshots_01_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d4/b9/ead4b9aa-6616-e644-466d-d6360e1703eb/a0da4fc3-8507-4cfd-a2c5-3d6bc0188cfb_RELOADED_202104_2208x1242_Screenshots_02_en-US.png/406x228bb.png",
@@ -571,116 +531,132 @@
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cb/c5/3c/cbc53c21-2caf-d409-4ba8-02c06aa823ec/8d48165f-0d4d-4d74-adf0-50e79457782c_RELOADED_202104_2208x1242_Screenshots_05_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/59/80/09598086-ec2e-3843-232b-0ae4a9a2789b/2bbccaec-c939-4ff7-92bb-ce80a29f7da2_RELOADED_202203_2208x1242_MightyEagle_Screenshot_01_en-US.png/406x228bb.png"
       ],
-      "size": 396664994,
-      "version": "3.14",
       "versions": [
         {
           "version": "3.14",
           "date": "2025-06-13T14:44:00Z",
-          "size": 396664994,
+          "localizedDescription": "❤️💙Angry Birds Reloaded💙❤️\n⚡️Phiên bản mới nhất⚡️",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.3.14/Angry.Birds.Reloaded.v3.14.ipa",
-          "localizedDescription": "❤️💙Angry Birds Reloaded💙❤️\n⚡️Phiên bản mới nhất⚡️"
+          "size": 396664994,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-06-13T14:44:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.3.14/Angry.Birds.Reloaded.v3.14.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Angry Birds GO",
-      "type": 2,
       "bundleIdentifier": "com.rovio.go",
+      "marketplaceID": "",
       "developerName": "Rovio Entertainment Oyj",
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️\n💚Đã bị xóa khỏi AppStore💙❌",
       "versionDescription": "❤️💙Angry Birds GO💙❤️\n⚡️Phiên bản mới nhất⚡️",
-      "tintColor": "42B9FD",
       "iconURL": "https://th.bing.com/th/id/OIP.7-xjm7lv-uMt2_h5uLZEPwAAAA",
-      "screenshotURLs": [
+      "tintColor": "#42B9FD",
+      "type": 2,
+      "screenshots": [
         "https://cdn.mobygames.com/screenshots/1666853-angry-birds-go-android-main-menu.jpg"
       ],
-      "size": 261551272,
-      "version": "2.8.3",
       "versions": [
         {
           "version": "2.8.3",
           "date": "2025-08-18T14:32:00Z",
-          "size": 261551272,
+          "localizedDescription": "❤️💙Angry Birds GO💙❤️\n⚡️Phiên bản mới nhất⚡️",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.8.3/Angry.Birds.GO.v2.8.3.ipa",
-          "localizedDescription": "❤️💙Angry Birds GO💙❤️\n⚡️Phiên bản mới nhất⚡️"
+          "size": 261551272,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-08-18T14:32:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.8.3/Angry.Birds.GO.v2.8.3.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Angry Birds: Star Wars",
-      "type": 2,
       "bundleIdentifier": "com.rovio.starwar",
+      "marketplaceID": "",
       "developerName": "Rovio Entertainment Oyj",
       "subtitle": "Game play",
       "localizedDescription": "Yêu cầu: IOS 12.0 trở lên \n⚙️Tính năng của bản mod⚙️\n💚Đã bị xóa khỏi AppStore💙❌",
       "versionDescription": "❤️💙Angry Birds: Star Wars💙❤️\n⚡️Phiên bản mới nhất⚡️",
-      "tintColor": "F6312D",
       "iconURL": "https://upload.wikimedia.org/wikipedia/en/8/8d/Angry_Birds_Star_Wars.png",
-      "screenshotURLs": [],
-      "size": 85085041,
-      "version": "1.9.24",
+      "tintColor": "#F6312D",
+      "type": 2,
+      "screenshots": [],
       "versions": [
         {
           "version": "1.9.24",
           "date": "2025-06-28T14:16:00Z",
-          "size": 85085041,
+          "localizedDescription": "❤️💙Angry Birds: Star Wars💙❤️\n⚡️Phiên bản mới nhất⚡️",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.9.24/Angry.Birds_.Star.Wars.v1.9.24.ipa",
-          "localizedDescription": "❤️💙Angry Birds: Star Wars💙❤️\n⚡️Phiên bản mới nhất⚡️"
+          "size": 85085041,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-06-28T14:16:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.9.24/Angry.Birds_.Star.Wars.v1.9.24.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Ksign",
-      "type": 4,
       "bundleIdentifier": "com.ksign.tool",
+      "marketplaceID": "",
       "developerName": "Ksign",
       "subtitle": "Tool for sign IPA",
       "localizedDescription": "⚙️Đặc điểm nổi bật⚙️\n💚Trình cài đặt sao chép hoàn toàn chức năng của ESign, thậm chí ở một số điểm còn tiện lợi hơn.\n\n😰 Theo thông tin từ nhà phát triển ESign, phần hỗ trợ máy chủ của ứng dụng sẽ sớm bị ngừng, điều này sẽ khiến việc cài đặt ứng dụng trở nên không khả thi. Trong tình huống này, KSign có thể trở thành một sự thay thế phù hợp.",
       "versionDescription": "❤️💙KSign💙❤️\n⚡️Phiên bản mới nhất⚡️",
-      "tintColor": "7376C2",
       "iconURL": "https://i0.wp.com/techybuff.com/wp-content/uploads/2025/05/Ksign-1.webp",
-      "screenshotURLs": [
+      "tintColor": "#7376C2",
+      "type": 4,
+      "screenshots": [
         "https://zeejb.com/wp-content/uploads/2025/07/IMG_4462-1024x1024.png",
         "https://zeejb.com/wp-content/uploads/2025/07/IMG_4460.png",
         "https://zeejb.com/wp-content/uploads/2025/07/IMG_4461-1024x1024.png"
       ],
-      "size": 15791843,
-      "version": "1.3.",
       "versions": [
         {
           "version": "1.3.",
           "date": "2025-10-22T11:49:00Z",
-          "size": 15791843,
+          "localizedDescription": "❤️💙KSign💙❤️\n⚡️Phiên bản mới nhất⚡️",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.2/KSign.v1.3.2.ipa",
-          "localizedDescription": "❤️💙KSign💙❤️\n⚡️Phiên bản mới nhất⚡️"
+          "size": 15791843,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-22T11:49:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.2/KSign.v1.3.2.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Adobe Premiere: Video Editor",
-      "type": 1,
       "bundleIdentifier": "com.adobe.premiere.ios",
+      "marketplaceID": "",
       "developerName": "Adobe Inc.",
       "subtitle": "Subscription Unlocked",
       "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nEffortless editing. Total control. Meet the fast, free, and focused mobile video editing app that's powerful enough for any idea, yet simple enough for anyone to use. Edit videos from wherever you are, with no ads or watermarks. Premiere offers unmatched speed on a precise multi-track timeline and studio-quality audio featuring crystal clear voice recordings and perfectly timed AI sound effects -- plus Firefly-powered visuals to create stand out videos.\n\nTell your story with unique, scroll-stopping videos. Level up your content with AI editing tools and create stand out edits to share on TikTok, YouTube, Instagram, Facebook, and more. Record voiceovers and achieve studio-quality audio with crystal clear voice recordings and perfectly timed AI sound effects. Get inspired and kickstart your project with Adobe’s massive library of free creative assets. Speed up your editing with Adobe Firefly AI-generated sound effects, images, videos, and stickers.\n\nCapture the moment and create trends with Adobe Premiere.\n\nFEATURES:\n\nLIGHTNING-FAST TIMELINE\n• Frame-Accurate Edits: Trim, split, or merge video clips with the industry’s most accurate video editor.\n• AI Auto Captions: generate captions and add attention grabbing animations in seconds.\n• Smooth Speed Effects: speed up, slow down, reverse or freeze key moments.\n• Unique Colour Presets: Apply Adobe Lightroom presets and fine tune to fit your aesthetic.\n• Instant Background Removal: Cut out subjects with one tap. Create overlays, title effects, and more.\n\nPRECISION CONTROL\n• Unlimited Tracks: Overlay clips and organize your timeline with no limits to your creativity.\n• Resize and Post to Any Platform: Adjust videos to fit any aspect ratio and share anywhere easily.\n• Advanced Clip Controls: Flip, fit, fill, or extract audio to customise every cut.\n\nSTUDIO QUALITY SOUND\n• AI Enhance Speech: Create studio quality voiceovers with the help of AI.\n• DIY Sound Effects: Use your voice to generate your own sounds.\n\nGENERATIVE AI ASSETS\n• AI Text to Image Generation: create unique, commercially safe images from a simple text prompt with Adobe Firefly.\n• Stickers That Pop: Generate your own AI stickers or select from the free in-app library.\n• AI Background Expansion: Extend, enhance, or replace backgrounds with a prompt.\n\nFREE LIBRARY OF CREATIVE ASSETS\n• Get going with quality images, sounds, music, and video from the Adobe library.\n• Add Music to Your Videos: Select from a library of free and royalty free tracks.\n• Respects Creator Content Ownership: Adobe never trains on user content.\n\nSPEED AND PERFORMANCE\n• Built natively on iOS for a fast, smooth, editing experience.\n• Import your assets directly from your device or favourite cloud storage provider.\n• Edit without distracting pop-up ads, clutter, or watermarks.\n\nFREE TO DOWNLOAD AND USE\n• Everything you need to create great videos is available for free. Only pay when you need Firefly generative AI credits.\n\nTERMS & CONDITIONS:\nYour use of this application is governed by the Adobe General Terms of Use http://www.adobe.com/go/terms_linkfree_uk and the Adobe Privacy Policy http://www.adobe.com/go/privacy_policy_linkfree_uk\n\nDo not sell or share my personal information: www.adobe.com/go/ca-rights-linkfree",
       "versionDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
-      "tintColor": "9A9AFF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/ec/64/d4ec64be-4fba-b45b-56d2-588dec5e3703/AppIcon_Premiere-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#9A9AFF",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/33/87/123387b8-6b85-e307-57b7-2c13cc5312f2/A_Adobe_Premiere_EN_iOS_6.9_Screenshot_Localization_250822_01.png/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/21/9c/fc219cca-97aa-ef46-be33-2def432bff78/Adobe_Premiere_EN_iOS_6.9_Screenshots_250826_02.png/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/b0/d2/36b0d222-87aa-804c-e681-182214a06e1b/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_03.png/300x0w.webp",
@@ -689,32 +665,36 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/14/ef/1c14ef34-21a6-61b0-f225-2776aa03e492/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_06.png/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/22/2c/2f/222c2f29-0d47-a542-c027-71f3bc2f3ae2/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_07.png/300x0w.webp"
       ],
-      "size": 97895549,
-      "version": "25.5.0",
       "versions": [
         {
           "version": "25.5.0",
           "date": "2025-10-18T01:08:00Z",
-          "size": 97895549,
+          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adobe.premiere/Adobe_Premiere_Video_Editor_v25_5_0.ipa",
-          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants"
+          "size": 97895549,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-18T01:08:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adobe.premiere/Adobe_Premiere_Video_Editor_v25_5_0.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Adobe Photoshop: Photo Editor",
-      "type": 1,
       "bundleIdentifier": "com.adobe.photoshop.ios",
+      "marketplaceID": "",
       "developerName": "Adobe Inc.",
       "subtitle": "Subscription Unlocked",
       "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nPhotoshop on mobile includes a wide selection of free features to accomplish all the core photo editing capabilities. Whether you're new, curious, or already familiar with Photoshop, we’ve made it easier than ever to learn and expand your creative skills.\n\nPhotoshop on mobile simplifies your creative & design needs:\n- Add new objects\n- Blur or remove backgrounds\n- Replace backgrounds and remove unwanted objects\n- Retouch, refine and perfect your images with targeted adjustments\n- Combine multiple images to create high-quality compositions and explore intuitive AI tools\n- Create unique collages, album cover art, perfect your passion projects, and develop unique digital art—all in one place\n\nThere is no limit to what you can create.\n\nKEY FEATURES\n\nREMOVE OR REPLACE BACKGROUNDS\n- Effortlessly select the background with the Tap Select tool.\n- Easily replace backgrounds with an image directly from your phone, create AI-generated backgrounds with Generative Fill, or select from a large library of Adobe Stock images, including textures, filters and patterns.\n- Adjust the background, including the brightness, effects or vibrancy to bring your creations to life.\n\nREMOVE UNWANTED DISTRACTIONS\n- Brush out blemishes, spots, or small imperfections in seconds using the Spot Healing Brush.\n- Quickly and easily remove unwanted content from your images with our powerful Generative Fill feature.\n\nPERSONALIZED IMAGE DESIGN\n- Create stunning visual images that are uniquely yours by blending photos, graphics, text, utilizing effects and more.\n- Combine unique elements from your own photos with a selection of free Adobe Stock images, including textures, filters, fonts and patterns, to elevate your final creations.\n- Effortlessly select an object or person with the Tap Select tool.\n- Rearrange objects in your image and control how they come together with layers. \n- Easily add and remove content from your photos using simple text prompts with Generative Fill. Additionally, ideate, create new assets, and jumpstart your creativity using Generate Image.\n\nBRING COLOR AND LIGHT TO LIFE\n- Adjust the color of anything, like your shirt, pants or shoes, using adjustment layers. Use the Tap Select and other selection tools to perfectly edit the brightness or vibrancy to add a pop of color to your images.\n\nPREMIUM\n- Upgrade to the Photoshop Mobile & Web plan for enhanced control and precision, with access to iPhone, iPad, and web.\n- Easily remove entire objects just by brushing over it, and have the background filled in automatically with the Remove Tool.\n- Seamlessly fill selected portions of an image with content sampled from other parts of the image with Content Aware Fill.\n- Quickly and precisely select people and objects like plants, cars, and more with enhanced precision using Object Select.\n- 100 generative credits to add, expand, design or remove content from your images. In addition, ideate, create new assets, and generate your creativity using the latest features like Generate Image. \n- Change unique layer interactions to control transparency, color effects, filters and add style to your images with Advanced Blend Modes.\n- Quickly and easily select an object or area of your image based on similar colors and tones with the Magic Wand Tool and retouch it further with targeted adjustments.\n- Export in additional file formats (PSD, TIFF, JPG, PNG) and export options for print quality and compression.\n\nTERMS & CONDITIONS:\nYour use of this application is governed by the Adobe General Terms of Use http://www.adobe.com/go/terms_linkfree_en and the Adobe Privacy Policy http://www.adobe.com/go/privacy_policy_linkfree_en\nDo not sell or share my personal information: www.adobe.com/go/ca-rights-linkfree",
       "versionDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
-      "tintColor": "32A7FF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a4/f2/d2/a4f2d25b-c9a2-3010-8d83-3f2bfe22f53d/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#32A7FF",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/f2/9d/d6f29d4e-1e57-e102-0f83-d3b94c77f141/01_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/89/68/3d89686b-d98f-631c-df5f-1baa085a3bbb/02_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/a2/de/6da2de3b-488e-7c35-ef76-4cdc3040915e/03_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
@@ -725,32 +705,36 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c1/c0/b5/c1c0b5ee-9d0b-9f46-b923-93341636b8c7/08_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c1/c0/b5/c1c0b5ee-9d0b-9f46-b923-93341636b8c7/08_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp"
       ],
-      "size": 282683475,
-      "version": "6.6.2",
       "versions": [
         {
           "version": "6.6.2",
           "date": "2025-10-18T01:02:00Z",
-          "size": 282683475,
+          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adobe/Adobe_Photoshop_Photo_Editor_v6_6_2.ipa",
-          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants"
+          "size": 282683475,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-18T01:02:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adobe/Adobe_Photoshop_Photo_Editor_v6_6_2.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "AdGuard  — adblock&privacy",
-      "type": 1,
       "bundleIdentifier": "com.adguard.AdguardExtension",
+      "marketplaceID": "",
       "developerName": "Adguard Software Limited",
       "subtitle": "Subscription Unlocked",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \nAdGuard is an ultra-efficient ad blocker for Safari. It will not only remove annoying ads but also secure your privacy with advanced tracking protection. AdGuard for iOS is an open source app, it’s totally transparent and safe to use. The app is free but offers additional paid Premium features for advanced users.\n\nKEY FEATURES:\n\n- Safari ad blocking. Removes all kinds of ads in Safari. Say goodbye to annoying banners, pop-ups and video ads. Whitelist your favorite websites or use manual blocking tool to hide any element on the page.\n\n- Privacy protection. The web is full of trackers that literally watch your every click. AdGuard offers a selection of filters aimed directly at trackers and web analytics that will ensure your private data stays that way.\n\n- Speed acceleration. Safari browser runs up to 4x faster. AdGuard removes tons of rubbish and you can freely surf the web!\n\n- Reduced traffic consumption and increased battery life. Banners and ads sometimes add up to half the size of the page. By blocking them, you’re saving your battery life and Wi-Fi/mobile traffic.\n\n- More than 50 popular subscriptions (EasyList, EasyPrivacy, etc.) plus AdGuard's own powerful ad filters, including language-specific filters. Together they don't leave ads a chance.\n\nADGUARD PREMIUM\n\nAdGuard Premium includes the following features:\n\n- Custom filters. Add your own filters by URL even if they are not on the default list.\n\n- DNS privacy. Blocking regular online trackers is not enough if you want to assure 100% protection of your online privacy. Choose any of the user-favorite DNS providers or configure a custom DNS server.\n\n- Security filters. Protect yourself from dangerous websites riddled with cryptojacking or fraud.\n\nAdGuard Premium is a paid service with the subscription cost $0.99/month or $4.99/year or a one-time purchase of lifetime subscription $12.99 (prices may vary by region). Payment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. The account will be charged for renewal within 24-hours prior to the end of the current period. Your subscriptions may be managed and your auto-renewal may be turned off by going to your iTunes Account Settings after purchasing a subscription.\n\n* Privacy policy: https://adguard.com/privacy.html\n* Terms of Use: https://adguard.com/eula.html\n\nABOUT ADGUARD\n\nAdGuard is a leading company in developing ad blocking software for multiple platforms. For more than ten years AdGuard has been helping millions of users enjoy safe, clean, and fast internet.\n\nFollow us at @AdGuard on Twitter, facebook.com/AdGuardEn/ on FB or send us a message at support@adguard.com.",
       "versionDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
-      "tintColor": "68B179",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cc/a0/91/cca091e4-c000-0577-7f61-2b799e3f89f7/AppIcon-0-0-1x_U007epad-0-11-0-sRGB-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#68B179",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/52/f0/19/52f01980-2cfb-0cb4-ceec-b9af058dafbd/pr_source.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e4/d1/a5/e4d1a50b-a195-4fd4-7e66-b6e22cb4f1f9/pr_source.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d0/6f/e1/d06fe152-4954-9ec5-1d24-bd1c06254af1/pr_source.jpg/392x696bb.jpg",
@@ -758,32 +742,36 @@
         "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/24/af/c7/24afc736-f08f-dcd0-faf5-b906198182dd/pr_source.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/7b/64/21/7b6421b2-6671-f52e-4f17-f32b49956014/417533aa-6a05-4a87-bda3-228766a5a967_1242x2208.png/392x696bb.png"
       ],
-      "size": 40777498,
-      "version": "4.5.13",
       "versions": [
         {
           "version": "4.5.13",
           "date": "2025-10-16T16:40:00Z",
-          "size": 40777498,
+          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adguard.4.5.13/AdGuard_adblock.privacy_v4_5_13.ipa",
-          "localizedDescription": "✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants"
+          "size": 40777498,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-16T16:40:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/adguard.4.5.13/AdGuard_adblock.privacy_v4_5_13.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Buddy: Budget Planner App",
-      "type": 1,
       "bundleIdentifier": "com.iPwners.Plonkan",
+      "marketplaceID": "",
       "developerName": "Buddy Budgeting AB",
       "subtitle": "Premium Unlocked",
       "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nBuddy helps you set up a budget and keep track of your expenses, either by yourself or together with your loved ones.\nHere’s what is waiting for you inside:\n\n\nBUDGETS\nBuddy will help you not to overspend on your well-earned salary by setting up a budget plan that fits you. \nDo you want a shared budget with your partner? Or keep the expenses between you and your mates fair on the vacation? No problem, just invite them and get a clear picture of who spent what.\n\nOVERVIEW\nWe'll give you a beautiful & detailed overview of your spendings, income, and savings.\n\nSPLIT\nSplit lets you know who paid what, and how to settle up.\n\n\nAnd much more for you to find.\nTake control of your finance today!\n\nBuddy offers a $9.99 monthly renewing and a $49.99 yearly renewing subscription to unlock Premium functionality.\nThe purchase will be charged from your iTunes account if you choose to buy the Buddy Premium subscription. You can manage or cancel your subscription through the user settings in iTunes after the purchase. The subscription period ends with the same kind of subscription you already bought to the same price unless you turn off your subscription 24 hours before it renews. It is not possible to cancel your current subscription during the time your subscription is active.\n\nTerms & Conditions: http://www.nattkod.tech/privacy_policy_terms_conditions",
       "versionDescription": "✅ Patched\n💎 Modifier: Premium Unlocked\n🔄 Tweaked by @blatants",
-      "tintColor": "B884F5",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/08/97/3f/08973f60-09a9-2b33-c313-cb52a39d70b0/Buddy-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#B884F5",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/09/d2/8109d27a-c152-8543-0b60-c654c64aed48/08dd639a-b928-47bf-b11d-82075d9e1592_Frame_1.png/434x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/34/83/2b34837d-3742-e4bb-f47b-e434cee1525c/607d6fe0-a81b-4349-995b-56a8938dbbd0_Frame_2.png/434x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/90/ae/67/90ae6773-486b-603c-11e1-5f7c5db4fa3c/7ec05a7a-d765-48e8-a76a-979c6cc9aaa6_Frame_3.png/434x0w.webp",
@@ -791,63 +779,71 @@
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/6a/37/7b6a3756-8282-8f75-97f8-05d4112b8e4b/94ccb9c2-776a-4907-835a-5667335470bf_Frame_6.png/434x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/c5/3a/e4c53af2-950f-f6c1-2312-17a84309f297/7d2059b4-90fd-435c-a965-759d16e89074_Frame_7.png/434x0w.webp"
       ],
-      "size": 68408188,
-      "version": "13.4",
       "versions": [
         {
           "version": "13.4",
           "date": "2025-10-16T16:36:00Z",
-          "size": 68408188,
+          "localizedDescription": "✅ Patched\n💎 Modifier: Premium Unlocked\n🔄 Tweaked by @blatants",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/buddy.13.4/iScreen_Widgets_._Wallpaper_v4_3_40.ipa",
-          "localizedDescription": "✅ Patched\n💎 Modifier: Premium Unlocked\n🔄 Tweaked by @blatants"
+          "size": 68408188,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-16T16:36:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/buddy.13.4/iScreen_Widgets_._Wallpaper_v4_3_40.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Stay for Safari",
-      "type": 1,
       "bundleIdentifier": "com.dajiu.stay.pro",
+      "marketplaceID": "",
       "developerName": "寅 沈",
       "subtitle": "Lifetime Pro",
       "localizedDescription": "Yêu cầu: IOS 15.0 trở lên \n# The choice of one million Safari browser users, the next-generation browser extension platform. \n\nStay is a Safari browser extension that enhances browsing experience and interactivity to a great extent. With Stay, users can greatly improve their Safari browsing experience and make it more enjoyable.\n\nStay supports all Apple platforms and offers a one-time payment that covers iPhone, iPad, and Mac devices.\n\nWith Stay installed, what new features can you expect in your Safari browser?\n- Userscripts: Install or write your own userscripts to enable automatic page turning, immersive translation, anti-redirect, and aggregated search functions.\n- Ad blocking: Support for Adguard, uBlock Origin, AdBlock Plus, and other filtering rules based on the EasyList specification, making your browsing experience safer and cleaner.\n\nBy purchasing Stay Pro, you can enjoy the following additional benefits:\n- Synchronization of script content and settings across all platforms.\n- Add custom ad filtering rules and tag ads on pages.\n- Dark mode for web pages.\n\nPrivacy policy: https://www.privacypolicyonline.com/live.php?token=ZPXT0Jfv2diYUfbf5ciLDV9oYRgJ6Evc\nTerms of service: https://fastclip.app/policy/terms-stay.htm\n\nVisit our open-source version address at https://github.com/shenruisi/Stay.\nFor any questions, please follow our official Twitter @stayfork to provide feedback.\nJoin our Telegram group at t.me/fastclipchat.",
       "versionDescription": "✅ Patched\n💎 Modifier: Lifetime Pro\n🔄 Tweaked by @blatants",
-      "tintColor": "BB2DD7",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/8e/dd/068edd6e-df5a-ab36-4fef-e7735e4637a6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#BB2DD7",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/fb/50/ebfb5049-4029-f3a2-51ac-83f9a995fd29/a565e7ac-03ee-446f-88c6-abbfeb8a1c67_stay-2.5.8-en1-5.5.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/80/6d/ef806d0d-e546-d7bd-8255-fb0235cb1072/3d2a5f83-b39f-4668-a998-b6f61f873f62_5.5-en-t2.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/34/81/2f348189-69ad-92d1-56c3-4a31be0683c4/dc3e7ddc-c47d-469b-a4f9-928dc04ad537_sceenshot-en-5.5-t3.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/68/9f/3c689f8c-62f7-2b9a-9886-85491db95b40/b23ccce3-2cfc-4df2-a936-9cc3bf4996f8_sceenshot-en-5.5-t5.png/392x696bb.png"
       ],
-      "size": 38335785,
-      "version": "2.9.14",
       "versions": [
         {
           "version": "2.9.14",
           "date": "2025-10-16T16:31:00Z",
-          "size": 38335785,
+          "localizedDescription": "✅ Patched\n💎 Modifier: Lifetime Pro\n🔄 Tweaked by @blatants",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/stayforsafari/Stay.for.Safari.v2.9.14.Lifetime.Pro.ipa",
-          "localizedDescription": "✅ Patched\n💎 Modifier: Lifetime Pro\n🔄 Tweaked by @blatants"
+          "size": 38335785,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-16T16:31:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/stayforsafari/Stay.for.Safari.v2.9.14.Lifetime.Pro.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "iScreen - Widgets & Wallpaper",
-      "type": 1,
       "bundleIdentifier": "com.zerone.hidesktop",
+      "marketplaceID": "",
       "developerName": "Xiamen iScreen Information Technology Co., Ltd.",
       "subtitle": "Subscription Unlocked",
       "localizedDescription": "Yêu cầu: IOS 14.0 trở lên \niScreen - personalized homescreen with various Widgets & Themes & Wallpaper to make your phone screen stand out!\n\n*iOS 26 Unlocked​！, featuring liquid glass effects and over 1000+ 3D space wallpapers and themes. Added dynamic Control Center customization for a more practical and fun experience.\n\nYou can not only keep pets and grow plants on the Dynamic Island, customize your Lock Screen with Interactive, Weather, Battery, Launcher, X-Panel, Text & Icon, Animation, Work Clock, Step Count widgets, but also add Home Screen widgets like Dynamic Panel, Photos, Scrolling Album, To-Do List, Countdown, Digital Clock, Calendar, Emoji Notes, Fan, Air Conditioner, and more for greater fun. Besides widgets, iScreen also offers various Themes, Wallpapers, AI-generated artwork, Charging Animations, and other features to make your phone screen more beautiful and unique.\n\nSpecial feature:  \n【iOS 26】\nFun iOS 26 Features, customized with 1000+ 3D space wallpapers and themes. Added dynamic Control Center effects to make your phone truly one-of-a-kind!\n\n【Control Center】\nCustomize your Control Center style with colorful icons. Features include a Counter, Water Reminder, Book of Answers, Dice Roll, and Quick Launch—combining beauty and practicality.\n\n【DIY Wallpapers】\nCreate static or dynamic wallpapers with rich templates like Polaroid, Heart Puzzle, Flip Card, and Animated Marquee Lights to make your home screen unique.\n\n【Widgets】\nIncludes popular widgets such as Dynamic Panel, Photo Wall, Weather, Battery, Countdown, Calendar, X-Panel, Emoji Notes, Digital Clock, Ferris Wheel, Windmill, and Air Conditioner. It also offers creative lock screen styles like Emojis, Animations, and Icons, with support for transparent effects — making your phone both fun and practical.\n\n【Charging Animation】\nCool and interesting charging animations with custom effects for a personalized charging experience.\n\n【Couple Widgets】\nSweet widgets designed for couples and friends. Send messages and photos to each other’s screens, and check real-time distance, weather, and moods.\n\n【Interactive Widgets】\nQuickly complete to-do check-ins or play games like Whack-a-Mole and Arcade without opening the app—adding fun to your daily routine.\n\n【Themes & Wallpapers】\nA vast collection of daily updated themes and wallpapers, including trending styles like Ins, minimalist, pink & black, AI art, and paper-cut designs. Easily elevate your home screen’s style and personalize your phone!\n\n【Dynamic Island】\nWe offers a variety of fun features, such as Pet Island, Plant Island, Animation Island, Weather Island, Panel Island, Calendar Island, Signature Island, Launcher Island, Timer Island, and more. It comes with multiple built-in creative animations, and you can also custom upload images or avatars to your Dynamic Island and set exclusive quotes\n\nUse Of Terms: https://www.xmzerone.com/about/deskagreement.html\nPrivacy Policy: http://www.xmzerone.com/about/deskprivacy.html",
       "versionDescription": "Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
-      "tintColor": "FEA570",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/ce/73/c2ce733a-51c7-a593-5d07-e4f90a6fbe5b/AppIcon-0-0-1x_U007epad-0-0-0-8-0-0-sRGB-85-220.jpeg/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#FEA570",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/70/38/b37038bc-ce7d-6cd8-506b-dd530b6166ae/2208-OS26__U82f1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6b/a6/97/6ba697b8-46b4-a052-d36e-62f116c53107/2208-_U58c1_U7eb8__U82f1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/a5/5b/82a55ba3-af13-c0f2-8f29-8aa57778ed72/d649a293-6f8b-4aa2-9e8c-90c56de95539_2208-_U7075_U52a8__U82f13.jpg/392x696bb.jpg",
@@ -859,64 +855,72 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/db/f0/47/dbf047de-e140-b378-53de-8d7d85e765de/6e661b5f-e113-4002-9ea3-c29ab93c72db_2208-_U7075_U52a8__U82f1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/46/78/0f467876-2be6-d2f8-7357-fa14ab916ee3/bb6db5e5-40c8-4907-a805-e359097ac1f9_2208-_U4e3b_U9898__U82f14.jpg/392x696bb.jpg"
       ],
-      "size": 389935188,
-      "version": "4.3.40",
       "versions": [
         {
           "version": "4.3.40",
           "date": "2025-10-15T16:11:00Z",
-          "size": 389935188,
+          "localizedDescription": "Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/iscreen.v4.30/iScreen_Widgets_._Wallpaper_v4_3_40.ipa",
-          "localizedDescription": "Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants"
+          "size": 389935188,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-15T16:11:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/iscreen.v4.30/iScreen_Widgets_._Wallpaper_v4_3_40.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Douyin 抖音",
-      "type": 1,
       "bundleIdentifier": "com.ss.iphone.ugc.Ame",
+      "marketplaceID": "",
       "developerName": "TikTok Ltd.",
       "subtitle": "Douyin - TikTok Trung Quốc",
       "localizedDescription": "Chắc chắn bạn không lạ gì với các tên mới thấy trên tiêu đề đúng không. Trở thành trào lưu trong khoảng thời gian gần đây. Thu hút hàng triệu người dùng trong thời gian ngắn. Không quá khi nói Douyin chính là “con gà đẻ trứng vàng” cho nhà phát triển TikTok Pte. Ltd. Luôn luôn là top 1 trong bảng xếp hạng giải trí trên Apple Store hay CH Play. Được nhiều người nổi tiếng sử dụng cũng như tạo nên xu hướng hay trend mới chỉ bằng một clip ngắn. Tuy nhiên TikTok Trung Quốc ipa – đất nước sản sinh ra mạng xã hội này mới là bản được nhiều người dùng đánh giá cao nhất.",
       "versionDescription": "Douyin  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ DYYY, cập nhật plugin mới nhất, nhấn giữ hai ngón tay trên trang chủ để mở menu\n✅Tiêm plugin chống thu hồi Yuki, chỉ cần bật trong cài đặt\n✅Trợ lý Douyin, nhấn giữ ba ngón tay để mở",
-      "tintColor": "201D1D",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/39/05/82390565-e3ad-7b97-e691-9435f06e6a35/AppIcon_TikTok-0-0-1x_U007epad-0-1-0-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#201D1D",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/0a/1a/ef/0a1aefde-4cfe-a7ab-7eed-e2dc1a6a2d7f/709e52b9-0d6e-40eb-8149-9d5c442a435b_Mother_iOS_2208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/79/d4/b6/79d4b6e8-6c19-bd6e-534e-90b0f1dd1a10/55082648-d299-4c6b-907b-5c32eeeed4a5_Recipe_iOS_2208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/64/43/fd/6443fd68-62f0-5e82-f163-53500cc7fc98/fceff0a7-2462-4b26-93f8-34564c5eb115_Pet_iOS_2208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/91/11/51/911151c5-afc1-37d0-51c6-dab2c5a9a99d/55c6970a-cd83-4a18-9d75-34281bee85f9_Hocky_iOS_2208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/7b/f7/5d/7bf75d45-0d7f-e965-4b6e-deed15b841ba/27257c16-12e8-463e-968a-cfdd5bca5092_Winter_AI_iOS_2208.png/392x696bb.png"
       ],
-      "size": 620890472,
-      "version": "35.4",
       "versions": [
         {
           "version": "35.4",
           "date": "2025-08-20T14:16:00Z",
-          "size": 620890472,
+          "localizedDescription": "Douyin  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ DYYY, cập nhật plugin mới nhất, nhấn giữ hai ngón tay trên trang chủ để mở menu\n✅Tiêm plugin chống thu hồi Yuki, chỉ cần bật trong cài đặt\n✅Trợ lý Douyin, nhấn giữ ba ngón tay để mở",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/douyn.35.4/Douyin.35.4.ipa",
-          "localizedDescription": "Douyin  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ DYYY, cập nhật plugin mới nhất, nhấn giữ hai ngón tay trên trang chủ để mở menu\n✅Tiêm plugin chống thu hồi Yuki, chỉ cần bật trong cài đặt\n✅Trợ lý Douyin, nhấn giữ ba ngón tay để mở"
+          "size": 620890472,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-08-20T14:16:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/douyn.35.4/Douyin.35.4.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Wink++",
-      "type": 1,
       "bundleIdentifier": "com.meitu.wink",
+      "marketplaceID": "",
       "developerName": "Xiamen Meitu Technology Co., Ltd.",
       "subtitle": "[Wink] Video Portrait Beautification Tool",
       "localizedDescription": "Wink++ iPA mở khóa các tính năng VIP của ứng dụng Wink- Video Retouching Tool.\nLưu ý: một số tính năng VIP không thể sử dụng vì nó xử lý trên máy chủ (server-side) ví dụ AI hoạt hình.",
       "versionDescription": "Wink 🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Mở khóa vip\n✅Sửa lỗi chất lượng hình ảnh không thể khắc phục\n✅Loại bỏ quảng cáo toàn cục\n✅Công cụ làm đẹp, chỉnh sửa ảnh cũng có thể chỉnh sửa video",
-      "tintColor": "292A2D",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/50/17/6150172b-86cb-6cc0-ed16-e6e653c0c51d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#292A2D",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/84/02/db84027a-a42b-f1cd-eca9-5cddf50e6367/iOS_1242x2208__U82f1_U6587-1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/94/90/95/949095ff-dec7-e605-b890-0c9b6d4800df/iOS_1242x2208__U82f1_U6587-2.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/38/43/1e/38431e06-ab41-0cf9-7960-b2ff207622d7/iOS_1242x2208__U82f1_U6587-3.jpg/392x696bb.jpg",
@@ -928,64 +932,72 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/37/b9/a5/37b9a592-c719-f04e-43f0-471d76edac85/iOS_1242x2208__U82f1_U6587-9.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5c/52/99/5c5299c3-d7f1-e87f-7616-91fdeece0a55/iOS_1242x2208__U82f1_U6587-10.jpg/392x696bb.jpg"
       ],
-      "size": 106904021,
-      "version": "2.15.",
       "versions": [
         {
           "version": "2.15.",
           "date": "2025-10-14T12:45:00Z",
-          "size": 106904021,
+          "localizedDescription": "Wink 🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Mở khóa vip\n✅Sửa lỗi chất lượng hình ảnh không thể khắc phục\n✅Loại bỏ quảng cáo toàn cục\n✅Công cụ làm đẹp, chỉnh sửa ảnh cũng có thể chỉnh sửa video",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wink.2.15.1/Wink_2.15.1.ipa",
-          "localizedDescription": "Wink 🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Mở khóa vip\n✅Sửa lỗi chất lượng hình ảnh không thể khắc phục\n✅Loại bỏ quảng cáo toàn cục\n✅Công cụ làm đẹp, chỉnh sửa ảnh cũng có thể chỉnh sửa video"
+          "size": 106904021,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-14T12:45:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wink.2.15.1/Wink_2.15.1.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Wechat 2",
-      "type": 1,
       "bundleIdentifier": "com.tencent.xin",
+      "marketplaceID": "",
       "developerName": "WeChat",
       "subtitle": "Nhân bản wechat",
       "localizedDescription": "WeChat 2 – WeChat Clone – WeChat Song Song iPA giúp bạn sử dụng 2 ứng dụng WeChat trên cùng 1 thiết bị iPhone/iPad (bao gồm cả ứng dụng WeChat mà bạn đã tải từ App Store).",
       "versionDescription": "Wechat  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Cài Song Song",
-      "tintColor": "E26060",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/80/ad/eb/80adeb0e-5580-f51e-d0d0-64564029fb46/AppIcon-0-0-1x_U007epad-0-6-0-sRGB-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#E26060",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/98/81/6d988159-11c0-5c90-2b49-cc8af410d890/1_U6d88_U606f_U5217_U8868_ios_1242_U00d72208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a2/7a/32/a27a32ca-db37-4659-17a4-9ebbb224afc8/2_U7fa4_U804a_ios_1242_U00d72208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/83/d2/6d83d24c-444e-b64b-85fa-3085149209c2/3_U89c6_U9891_U901a_U8bdd_ios_1242_U00d72208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/c8/fc/fac8fcc6-18df-2a50-259a-a6840e2598f8/4_U670b_U53cb_U5708_ios_1242_U00d72208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/af/d1/f3/afd1f38c-5a34-e033-c683-181ab184432e/5_U9752_U5c11_U5e74_U6a21_U5f0f_ios_1242_U00d72208.png/392x696bb.png"
       ],
-      "size": 312821828,
-      "version": "8.0.62",
       "versions": [
         {
           "version": "8.0.62",
           "date": "2025-08-22T10:53:00Z",
-          "size": 312821828,
+          "localizedDescription": "Wechat  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Cài Song Song",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wechat2/Wechat.v8.0.62.ipa",
-          "localizedDescription": "Wechat  🆕🆙🆙\n🦠 Tính Năng Hack 🦠\n✅ Cài Song Song"
+          "size": 312821828,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-08-22T10:53:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/wechat2/Wechat.v8.0.62.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Viber 2",
-      "type": 1,
       "bundleIdentifier": "com.viber",
+      "marketplaceID": "",
       "developerName": "Viber Media SARL.",
       "subtitle": "Nhân bản Viber",
       "localizedDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
       "versionDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
-      "tintColor": "2330E1",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/19/a7/8319a717-c8ce-82d3-a3f1-d961773e2e9e/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#2330E1",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/60/61/d4/6061d428-5d45-1006-10b1-124ab71579ce/34e2262c-bd73-4c44-9b2e-52e4910285a1_Viber_AS_English_1242x2208_Screen1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/5a/ef/1b5aefb6-77bb-a91a-b404-a5b67a1f695e/b5b18f8f-a611-44a4-9c98-29379e78ddd5_4.2__U00285.5_U0029.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/8b/96/e68b9653-5791-49f2-15cf-2870da7481b0/8c57ded5-074c-40d3-a2e3-db8fa7e94ea1_4.3__U00285.5_U0029.png/392x696bb.png",
@@ -994,60 +1006,68 @@
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/b6/1c/42b61c9f-73ca-bc8b-a295-dad07fd4d53a/3b9b9f60-2a63-4fa3-a3b8-c76999022b5b_4.6__U00285.5_U0029.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/70/a4/9f/70a49f59-a82c-a2ae-e029-6e683f468d22/aa319a66-4ed9-44e3-8cc5-e95204bb438d_4.7__U00285.5_U0029.png/392x696bb.png"
       ],
-      "size": 138918469,
-      "version": "26.3.4",
       "versions": [
         {
           "version": "26.3.4",
           "date": "2025-10-14T10:44:00Z",
-          "size": 138918469,
+          "localizedDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/viber.26.3.4/Viber.v26.3.4.ipa",
-          "localizedDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠"
+          "size": 138918469,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-14T10:44:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/viber.26.3.4/Viber.v26.3.4.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Rổ Phim Vip",
-      "type": 1,
       "bundleIdentifier": "co.roteam.roteamios",
+      "marketplaceID": "",
       "developerName": "Rophim.com",
       "subtitle": "Xem phim cả rổ",
       "localizedDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
       "versionDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
-      "tintColor": "977272",
       "iconURL": "https://drphe.github.io/KhoIPA/icon/26.png",
-      "screenshotURLs": [
+      "tintColor": "#977272",
+      "type": 1,
+      "screenshots": [
         "https://picul.de/view/Yh-"
       ],
-      "size": 35989896,
-      "version": "1.0.5",
       "versions": [
         {
           "version": "1.0.5",
           "date": "2025-10-14T09:03:00Z",
-          "size": 35989896,
+          "localizedDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/26.1.0.5/26.v1.0.5.ipa",
-          "localizedDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục"
+          "size": 35989896,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-14T09:03:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/26.1.0.5/26.v1.0.5.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Duolingo Premium",
-      "type": 1,
       "bundleIdentifier": "com.duolingo.DuolingoMobile",
+      "marketplaceID": "",
       "developerName": "Duolingo",
       "subtitle": "Duolingo Premium unlock, super duolingo.",
       "localizedDescription": "Duolingo IPA MOD là phiên bản sửa đổi của ứng dụng Duolingo cung cấp cho người dùng các tính năng cao cấp miễn phí. Với MOD này, bạn có thể tận hưởng trái tim không giới hạn, bài học ngoại tuyến, học không có quảng cáo và các tính năng độc quyền khác mà không cần đăng ký.",
       "versionDescription": "❤️💙Duolingo ⬆️💙❤️ ⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️ 💚Đã kích hoạt chế độ MAX\n😰Vui lòng đăng nhập hoặc đăng ký để kích hoạt gói đăng ký.\nhttps://t.me/ZiSipa",
-      "tintColor": "8AA32E",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/df/0c/5f/df0c5f65-4c7c-8680-79f3-510ba742364a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#8AA32E",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f4/1a/7f/f41a7f0b-2c85-4512-e1a6-87891377d0d2/b715d679-c25d-41c1-8b55-6c00114fa81e_en_iphone5.5_screen_1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1a/e6/3b/1ae63b15-bc91-6809-1185-19bfd34bd445/93f4d1c8-4144-44de-8b57-a5a091c838f4_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_3.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/a6/67/a6a667f6-1ce4-04d8-4805-c521edc9aca1/cd048832-2375-4fd9-88e8-3711d102065e_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_4.png/392x696bb.png",
@@ -1058,174 +1078,200 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5e/90/a6/5e90a6ec-a799-0983-31b0-bb460c846bf9/7aa19a3b-a904-4d24-a355-c0eefd1c8391_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_9.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/31/52/96315243-7b1c-4a92-5728-4ac260c2aeac/20cf691d-4b1f-4d31-8a63-9db75a70513f_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_10.png/392x696bb.png"
       ],
-      "size": 190039009,
-      "version": "7.97.0",
       "versions": [
         {
           "version": "7.97.0",
           "date": "2025-10-28T10:37:00Z",
-          "size": 190039009,
+          "localizedDescription": "❤️💙Duolingo ⬆️💙❤️ ⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️ 💚Đã kích hoạt chế độ MAX\n😰Vui lòng đăng nhập hoặc đăng ký để kích hoạt gói đăng ký.\nhttps://t.me/ZiSipa",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.97/Duolingo.v7.97.0.ipa",
-          "localizedDescription": "❤️💙Duolingo ⬆️💙❤️ ⚡️Phiên bản mới nhất⚡️\n⚙️Tính năng của bản mod⚙️ 💚Đã kích hoạt chế độ MAX\n😰Vui lòng đăng nhập hoặc đăng ký để kích hoạt gói đăng ký.\nhttps://t.me/ZiSipa"
+          "size": 190039009,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "7.65",
           "date": "2025-09-04T15:31:00Z",
-          "size": 122190712,
+          "localizedDescription": "Duolingo premium ver 7.65",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.65/Doulingo_7.65.ipa",
-          "localizedDescription": "Duolingo premium ver 7.65"
+          "size": 122190712,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "7.60",
           "date": "2025-07-18T15:27:00Z",
-          "size": 130310189,
+          "localizedDescription": "Phiên bản 7.60",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/duolingo.7.60/Duolingo.7.60.ipa",
-          "localizedDescription": "Phiên bản 7.60"
+          "size": 130310189,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-28T10:37:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.97/Duolingo.v7.97.0.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Phim 4K",
-      "type": 1,
       "bundleIdentifier": "com.phim4k.app",
+      "marketplaceID": "",
       "developerName": "Phim4k.xyz",
       "subtitle": "Phần mềm xem phim 4K",
       "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện",
       "versionDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện.\nVersion 1.9.7",
-      "tintColor": "535050",
       "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
-      "screenshotURLs": [
+      "tintColor": "#535050",
+      "type": 1,
+      "screenshots": [
         "https://drphe.github.io/KhoIPA/common/assets/img/phim4k.jpg",
         "https://picul.de/view/YhE"
       ],
-      "size": 38179467,
-      "version": "1.9.7",
       "versions": [
         {
           "version": "1.9.7",
           "date": "2025-10-12T10:52:00Z",
-          "size": 38179467,
+          "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện.\nVersion 1.9.7",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/phim4k/Phim.4K.v1.9.7.ipa",
-          "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện.\nVersion 1.9.7"
+          "size": 38179467,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-12T10:52:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/phim4k/Phim.4K.v1.9.7.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "X++",
-      "type": 1,
       "bundleIdentifier": "com.atebits.Tweetie2",
+      "marketplaceID": "",
       "developerName": "X Corp.",
       "subtitle": "X (Twitter) mod premium",
       "localizedDescription": "Phiên bản X++ mod không quảng cáo",
       "versionDescription": "🆔 Bundle ID: com.atebits.Tweetie2\n⬆️ Updated to: 11.30.1\n🔧 Minimum iOS: 15.0\n✅ Patched\n💎 Modifier: TwiGalaxy v1.11\n🔄 Tweaked by @blatants\n\n📝 Note:\nTweak by DENS0R Showcase (https://t.me/DENS0R/297)\n\nChangelog:\nTWIGalaxy V1.11\n- Slideshow Actions : Custom actions when tapping 'more' in slideshow - save, copy info, and share\n- Fixed Download Videos \n- Fixed Download Voice messages \n+ Improvements",
-      "tintColor": "3A3636",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4b/23/85/4b238571-7615-42f7-8e41-a5d05e08d8b9/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#3A3636",
+      "type": 1,
+      "screenshots": [
         "https://onejailbreak.com/site/assets/files/1481/bhtwitter-ios.766x0.webp",
         "https://onejailbreak.com/site/assets/files/1481/bhtwitter-tweak.823x0-is.webp"
       ],
-      "size": 163535212,
-      "version": "11.30.1",
       "versions": [
         {
           "version": "11.30.1",
           "date": "2025-10-14T09:16:00Z",
-          "size": 163535212,
+          "localizedDescription": "🆔 Bundle ID: com.atebits.Tweetie2\n⬆️ Updated to: 11.30.1\n🔧 Minimum iOS: 15.0\n✅ Patched\n💎 Modifier: TwiGalaxy v1.11\n🔄 Tweaked by @blatants\n\n📝 Note:\nTweak by DENS0R Showcase (https://t.me/DENS0R/297)\n\nChangelog:\nTWIGalaxy V1.11\n- Slideshow Actions : Custom actions when tapping 'more' in slideshow - save, copy info, and share\n- Fixed Download Videos \n- Fixed Download Voice messages \n+ Improvements",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.31/X.v11.30.1.TwiGalaxy.v1.11.blatant.Patched.ipa",
-          "localizedDescription": "🆔 Bundle ID: com.atebits.Tweetie2\n⬆️ Updated to: 11.30.1\n🔧 Minimum iOS: 15.0\n✅ Patched\n💎 Modifier: TwiGalaxy v1.11\n🔄 Tweaked by @blatants\n\n📝 Note:\nTweak by DENS0R Showcase (https://t.me/DENS0R/297)\n\nChangelog:\nTWIGalaxy V1.11\n- Slideshow Actions : Custom actions when tapping 'more' in slideshow - save, copy info, and share\n- Fixed Download Videos \n- Fixed Download Voice messages \n+ Improvements"
+          "size": 163535212,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "11.29",
           "date": "2025-10-10T00:19:00Z",
-          "size": 163220760,
+          "localizedDescription": "Phiên bản mod premium mới nhất 11.29 của X.",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.29/X_11.29_Premium.ipa",
-          "localizedDescription": "Phiên bản mod premium mới nhất 11.29 của X."
+          "size": 163220760,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-14T09:16:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.31/X.v11.30.1.TwiGalaxy.v1.11.blatant.Patched.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "iTorrent",
-      "type": 1,
       "bundleIdentifier": "com.itorrent.app",
+      "marketplaceID": "",
       "developerName": "XITRIX",
       "subtitle": "Torrent client for iOS",
       "localizedDescription": "iTorrent officially in the AltStore!\n\nIt is an ordinary torrent client for iOS with Files app support and much more.\n\nWhat can this app do:\n\n• Download in the background\n• Live Activity and Dynamic Island progress bar\n• Downloading on external drives\n• Sequential download (use VLC to watch films while loading)\n• Add torrent files from Share menu (Safari and other apps)\n• Add magnet links directly from Safari\n• Store files in Files app\n• File sharing directly from app\n• Download torrent by url\n• Download torrent by magnet\n• Show progress in Dynamic Island\n• Send notification on torrent downloaded\n• Web/WebDav Server\n• Select files download priority\n• Change UI to dark theme\n• Color personalization\n• RSS Feed",
       "versionDescription": "* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\n* LibTorrent updated to version 2.0.11\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\n* Added Spanish localization by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\n\n## New Contributors\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\n* @fraucs made their first contribution in https://github.com/XITRIX/iTorrent/pull/385\n* @yaptx made their first contribution in https://github.com/XITRIX/iTorrent/pull/391\n\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.0.14-1...v2.0.15-1",
-      "tintColor": "D73C3C",
       "iconURL": "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/icon.png",
-      "screenshotURLs": [
+      "tintColor": "#D73C3C",
+      "type": 1,
+      "screenshots": [
         "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/1.PNG",
         "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/2.PNG",
         "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/3.PNG",
         "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/4.PNG"
       ],
-      "size": 7090878,
-      "version": "2.0.15",
       "versions": [
         {
           "version": "2.0.15",
           "date": "2025-09-22T05:36:00Z",
-          "size": 7090878,
+          "localizedDescription": "* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\n* LibTorrent updated to version 2.0.11\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\n* Added Spanish localization by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\n\n## New Contributors\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\n* @fraucs made their first contribution in https://github.com/XITRIX/iTorrent/pull/385\n* @yaptx made their first contribution in https://github.com/XITRIX/iTorrent/pull/391\n\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.0.14-1...v2.0.15-1",
           "downloadURL": "https://release-assets.githubusercontent.com/github-production-release-asset/133687113/74379dc7-d404-4c67-9fb1-84dbefe0feaa?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-08T06%3A31%3A06Z&rscd=attachment%3B+filename%3DiTorrent.ipa&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-08T05%3A30%3A47Z&ske=2025-10-08T06%3A31%3A06Z&sks=b&skv=2018-11-09&sig=Lo34%2FywJZ0jFkTY4Hd3SD4lg7EqPygJ7Vb3kcBG3mx4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1OTkwMTk0MiwibmJmIjoxNzU5OTAxNjQyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.B7w3i3NWuAJm4WKkFYAAk6rfgfRc9pfhk9MMnyiRlLY&response-content-disposition=attachment%3B%20filename%3DiTorrent.ipa&response-content-type=application%2Foctet-stream",
-          "localizedDescription": "* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\n* LibTorrent updated to version 2.0.11\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\n* Added Spanish localization by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\n\n## New Contributors\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\n* @fraucs made their first contribution in https://github.com/XITRIX/iTorrent/pull/385\n* @yaptx made their first contribution in https://github.com/XITRIX/iTorrent/pull/391\n\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.0.14-1...v2.0.15-1"
+          "size": 7090878,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-09-22T05:36:00Z",
-      "downloadURL": "https://release-assets.githubusercontent.com/github-production-release-asset/133687113/74379dc7-d404-4c67-9fb1-84dbefe0feaa?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-10-08T06%3A31%3A06Z&rscd=attachment%3B+filename%3DiTorrent.ipa&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-10-08T05%3A30%3A47Z&ske=2025-10-08T06%3A31%3A06Z&sks=b&skv=2018-11-09&sig=Lo34%2FywJZ0jFkTY4Hd3SD4lg7EqPygJ7Vb3kcBG3mx4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1OTkwMTk0MiwibmJmIjoxNzU5OTAxNjQyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.B7w3i3NWuAJm4WKkFYAAk6rfgfRc9pfhk9MMnyiRlLY&response-content-disposition=attachment%3B%20filename%3DiTorrent.ipa&response-content-type=application%2Foctet-stream"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Youtube Premium",
-      "type": 1,
       "bundleIdentifier": "com.google.ios.youtube",
+      "marketplaceID": "",
       "developerName": "Google",
       "subtitle": "Youtube Premium (full chức năng)",
       "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.\nTải ứng dụng YouTube chính thức dành cho iPhone và iPad.\nXem nội dung mọi người đang xem về âm nhạc, trò chơi, giải trí, tin tức và nhiều nội dung khác. Đăng ký kênh, chia sẻ với bạn bè, chỉnh sửa và tải video lên, xem trên thiết bị bất kỳ.\nBạn cũng có thể tạo danh sách phát, xem nội dung đang thịnh hành, thể hiện bản thân bằng nhận xét, chia sẻ video với bạn bè, truyền video đến TV và hơn thế nữa – tất cả đều từ bên trong ứng dụng.",
       "versionDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.",
-      "tintColor": "F01414",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/2d/17/822d1799-53f4-2bb1-e335-0c66378fe7bf/logo_youtube_2024_q4_color-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220-0.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#F01414",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/f9/7c/74f97c4c-a362-89d8-914d-d9bcf0eacc54/cdfcf0fc-0f88-4237-9e9d-a1afb08724e3_iOS-5.5-in_1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6c/63/9a/6c639ae5-917f-4b8f-7f8d-6790c4ca4f1a/209c47e2-15a0-44a2-a1b7-ab82b74bd2d8_iOS-5.5-in_2.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/32/ed/4332edbd-9ea1-8511-7542-f3e43fe92f3e/f3b103d9-206a-43be-8cf5-c9e907471b04_iOS-5.5-in_3.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ed/33/09/ed33099c-b231-d116-5645-9d28c850613d/b5a5d11f-5974-4ebd-89a5-f3107a309616_iOS-5.5-in_4.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/fd/1d/dcfd1d54-bdf6-5b5c-56c7-4e9cf8735563/3e7991f1-3174-48fe-bdd6-463f5113d1a1_iOS-5.5-in_5.jpg/392x696bb.jpg"
       ],
-      "size": 129712392,
-      "version": "20.39.6",
       "versions": [
         {
           "version": "20.39.6",
           "date": "2025-10-01T17:31:00Z",
-          "size": 129712392,
+          "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/youtube.premium.20.39.6/YouTube_20.39.6_Premium.ipa",
-          "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium."
+          "size": 129712392,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-01T17:31:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/youtube.premium.20.39.6/YouTube_20.39.6_Premium.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Facebook Glow++",
-      "type": 1,
       "bundleIdentifier": "com.facebook.Facebook",
+      "marketplaceID": "",
       "developerName": "Meta Platforms, Inc.",
       "subtitle": "Facebook No ADS",
       "localizedDescription": "Ứng dụng Facebook No ADS, bản mod không có quảng cáo, chặn đã xem tin...",
       "versionDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo, nguồn apptesters.org",
-      "tintColor": "5825D0",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/f7/40/dbf74089-54d3-a5a1-67ea-ba9bcefa8481/Icon-Production-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#5825D0",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/ab/b1/faabb115-0b12-7aa0-2781-2686a446cfe9/f254967c-6ef9-4cc6-b4bf-e89cf016337c_1-iOS-5.5-Home.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6c/fc/57/6cfc57df-f4b7-5fb3-e8ff-5f6e558291b9/c795c58d-ec37-463c-9ab9-ba0b8bc00ddd_2-iOS-5.5-Reels.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cb/87/31/cb8731d5-be04-145c-443f-4e0cfd042d22/0130e841-7bad-4f8c-83c9-61ea0bac7d7b_3-iOS-5.5-Stories.png/392x696bb.png",
@@ -1237,39 +1283,45 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/59/4f/f7594f8b-49c2-d2b4-a4f5-5ccb14d03294/ee650e7b-1eaa-4de6-81a2-0b35dac16446_9-iOS-5.5-Write_with_AI.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/e4/d3/1be4d360-e2d6-fcb3-5280-760ef9da5fff/89fe27f2-ff0a-4a61-a502-73c2bd05da89_10-iOS-5.5-Notifications.png/392x696bb.png"
       ],
-      "size": 161653658,
-      "version": "534.0.0",
       "versions": [
         {
           "version": "534.0.0",
           "date": "2025-10-04T23:50:00Z",
-          "size": 161653658,
+          "localizedDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo, nguồn apptesters.org",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.534/Facebook_534.0.0_Premium.ipa",
-          "localizedDescription": "Phiên bản 534.0.0 facebook premium , không quảng cáo, nguồn apptesters.org"
+          "size": 161653658,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "531.0.0",
           "date": "2025-09-30T17:16:00Z",
-          "size": 161739546,
+          "localizedDescription": "Phiên bản 531.0. Nguồn IPAOMTK.com",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.531/Facebook-Glow-531.0.0.ipa",
-          "localizedDescription": "Phiên bản 531.0. Nguồn IPAOMTK.com"
+          "size": 161739546,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-04T23:50:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/facebook.534/Facebook_534.0.0_Premium.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Zalo 2",
-      "type": 1,
       "bundleIdentifier": "vn.com.vng.zingalo",
+      "marketplaceID": "",
       "developerName": "Zalo Group",
       "subtitle": "Nhân bản Zalo",
       "localizedDescription": "Ứng dụng zalo2 giúp nhân bản, dùng song song 2 Zalo trên điện thoại.",
       "versionDescription": "Bản Zalo 2 mod từ phiên bản 25.06.1 của IOSVIET.vn, bản này chống bị ban nick.",
-      "tintColor": "8880F4",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c4/1a/d3/c41ad395-78d6-11de-5a53-52e4e350479a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "tintColor": "#8880F4",
+      "type": 1,
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/b6/db/d2b6db6a-f5ec-9d10-34ca-f825f46ae118/c87ec889-3e3a-445f-8769-f0b529fe2a41_1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f9/8b/c0/f98bc0e1-417b-7f10-1ff0-b91a162ca885/a75aee13-8e50-4537-9a63-9a9de2d4da97_2.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/85/e3/1f85e363-213c-43d8-c5ed-51e71e9f2f71/f036d530-051d-444d-bfab-b68bb0fed5b8_3.jpg/392x696bb.jpg",
@@ -1277,99 +1329,197 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/02/f8/5302f874-b6b5-e35c-70cf-46aae0fe7191/179fe7b0-794f-40e7-81fe-80651f1b10b8_5.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/15/19/4a151984-ec14-ce40-e44e-9892b9a5550a/5cec8e59-71a3-4626-b56f-d447e1615f46_6.jpg/392x696bb.jpg"
       ],
-      "size": 111351384,
-      "version": "25.06.01",
       "versions": [
         {
           "version": "25.06.01",
           "date": "2025-10-09T11:51:00Z",
-          "size": 111351384,
+          "localizedDescription": "Bản Zalo 2 mod từ phiên bản 25.06.1 của IOSVIET.vn, bản này chống bị ban nick.",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa",
-          "localizedDescription": "Bản Zalo 2 mod từ phiên bản 25.06.1 của IOSVIET.vn, bản này chống bị ban nick."
+          "size": 111351384,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "25.02.02",
           "date": "2025-07-03T15:41:00Z",
-          "size": 149297453,
+          "localizedDescription": "Phiên bản zalo2 mod từ phiên bản zalo ngày 25.02.02",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250202/Zalo2-v250202.ipa",
-          "localizedDescription": "Phiên bản zalo2 mod từ phiên bản zalo ngày 25.02.02"
+          "size": 149297453,
+          "buildVersion": null,
+          "minOSVersion": null
         },
         {
           "version": "20.07.02",
           "date": "2025-04-01T15:34:00Z",
-          "size": 167645264,
+          "localizedDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé.",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo/Zalo2_200702_LeTi.ipa",
-          "localizedDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé."
+          "size": 167645264,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-09T11:51:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo2.v250601/Zalo.2_250601_iOSVIET.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "Feather",
-      "type": 4,
       "bundleIdentifier": "com.feather.app",
+      "marketplaceID": "",
       "developerName": "Khcrysalis",
       "subtitle": "Ký và cài đặt IPA cho IOS",
       "localizedDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!\n👇🏻👇🏻👇🏻 WEB LẤY IPA TRẮNG \nWeb 1: https://decrypt.day/ \nWeb 2: https://armconverter.com/decryptedappstore/us",
       "versionDescription": "Phiên bản mới nhất 2.4",
-      "tintColor": "6156B8",
       "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
-      "screenshotURLs": [
+      "tintColor": "#6156B8",
+      "type": 4,
+      "screenshots": [
         "https://ios.codevn.net/wp-content/uploads/2025/02/Repos-710x1536.png",
         "https://ios.codevn.net/wp-content/uploads/2025/02/Store-710x1536.png"
       ],
-      "size": 12711617,
-      "version": "2.4",
       "versions": [
         {
           "version": "2.4",
           "date": "2025-10-01T04:41:00Z",
-          "size": 12711617,
+          "localizedDescription": "Phiên bản mới nhất 2.4",
           "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa",
-          "localizedDescription": "Phiên bản mới nhất 2.4"
+          "size": 12711617,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-01T04:41:00Z",
-      "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     },
     {
       "beta": false,
       "name": "轻松签-ESign",
-      "type": 4,
       "bundleIdentifier": "p3.xyz.yyyue.esign",
+      "marketplaceID": "",
       "developerName": "yyy",
       "subtitle": "Ứng dụng ký IPA",
       "localizedDescription": "轻松签是一款免越狱可给ipa签名的工具，具有注入库，去库等功能。\nhttps://github.com/iOS17/Esign",
       "versionDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới.",
-      "tintColor": "B2BFE6",
       "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
-      "screenshotURLs": [
+      "tintColor": "#B2BFE6",
+      "type": 4,
+      "screenshots": [
         "https://onejailbreak.com/site/assets/files/1108/esign-app.722x0-is.webp",
         "https://onejailbreak.com/site/assets/files/1108/cutom-ipa-sign.722x0-is.webp",
         "https://onejailbreak.com/site/assets/files/1108/esign-app-settings.722x0-is.webp"
       ],
-      "size": 7206362,
-      "version": "5.0.2",
       "versions": [
         {
           "version": "5.0.2",
           "date": "2024-01-28T15:13:00Z",
-          "size": 7206362,
+          "localizedDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới.",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa",
-          "localizedDescription": "轻松签服务器即将过期，后续不再续费，建议更换签名软件。\nCập nhật phiên bản mới nhất để hỗ trợ các IOS mới."
+          "size": 7206362,
+          "buildVersion": null,
+          "minOSVersion": null
         }
       ],
-      "versionDate": "2024-01-28T15:13:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa"
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
     }
   ],
-  "featuredApps": [
-    "com.phim4k.app",
-    "com.duolingo.DuolingoMobile",
-    "vn.com.vng.zingalo",
-    "com.adguard.AdguardExtension",
-    "com.ksign.tool"
+  "news": [
+    {
+      "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
+      "identifier": "hdsd-dns",
+      "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
+      "date": "2025-10-17T07:00",
+      "tintColor": "#506471",
+      "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
+      "notify": true,
+      "url": "verifyapp.md",
+      "appID": "wsfteam.portal"
+    },
+    {
+      "title": "Chặn quảng cáo bằng DNS",
+      "identifier": "hdsd-adblock",
+      "caption": "Hướng dẫn sử dụng DNS chặn quảng cáo trên ios",
+      "date": "2025-10-15T07:00",
+      "tintColor": "#022740",
+      "imageURL": "https://cdn.tgdd.vn/Files/News/2023/05/18/5-cach-doi-dns-tren-iphone-nhanh-chong-chi-sau-thumb-560x292.jpg",
+      "notify": true,
+      "url": "dnsadblock.md",
+      "appID": "com.example.app"
+    },
+    {
+      "title": "Chống thu hồi chứng chỉ bằng DNS",
+      "identifier": "hdsd-anti-revoke",
+      "caption": "Sử dụng cấu hình DNS ngăn chặn thu hồi chứng chỉ cài IPA.",
+      "date": "2025-10-14T07:00",
+      "tintColor": "#DB7F33",
+      "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
+      "notify": true,
+      "url": "chongthuhoicc.md",
+      "appID": "com.example.app"
+    },
+    {
+      "title": "Mẹo sử dụng Cert cài IPA qua Feather, Esign",
+      "identifier": "cert-apple",
+      "caption": "Mẹo cài đặt IPA bằng Feather, ESign với Cert có phí",
+      "date": "2025-10-14T07:00",
+      "tintColor": "#3498DB",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
+      "notify": false,
+      "url": "cert.md",
+      "appID": "com.example.app"
+    },
+    {
+      "title": "Cài File IPA lên iPhone (Không Cần Jailbreak)",
+      "identifier": "hdsd-caiipa",
+      "caption": "Bài hướng dẫn cài đặt ứng dụng ngoài Apple store (file .IPA) không cần Jailbreak.",
+      "date": "2025-10-13T07:00",
+      "tintColor": "#0D6EC9",
+      "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
+      "notify": false,
+      "url": "caidatipa.md",
+      "appID": "com.feather.app"
+    },
+    {
+      "title": "Bật chế độ Nhà phát triển",
+      "identifier": "hdsd-developermode",
+      "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
+      "date": "2025-10-11T07:00",
+      "tintColor": "#D73C3C",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/logo/logocertapple.png",
+      "notify": true,
+      "url": "developermod.md",
+      "appID": "com.example.app"
+    },
+    {
+      "title": "Hướng dẫn cài IPA bằng TrollStore",
+      "identifier": "hd-cai-ipa",
+      "caption": "Hướng Dẫn Cài Ứng Dụng IPA Cho iPhone Bằng TrollStore",
+      "date": "2025-10-09T07:00",
+      "tintColor": "#675809",
+      "imageURL": "https://thuthuatjb.com/wp-content/uploads/2022/09/Huong-dan-TrollStore-ios-ipados.jpg",
+      "notify": true,
+      "url": "trollstore.md",
+      "appID": "com.trollstore.app"
+    },
+    {
+      "title": "Chia sẻ *.dylib, *.deb",
+      "identifier": "share-dylib",
+      "caption": "Chia sẻ kho .dylib, .deb được sưu tầm hoặc tự build để tiêm cho IPA.",
+      "date": "2025-10-09T07:00",
+      "tintColor": "#33DB5D",
+      "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
+      "notify": false,
+      "url": "Khodylib.md",
+      "appID": "com.dylib.app"
+    }
   ]
 }
