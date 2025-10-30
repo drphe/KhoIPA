@@ -106,7 +106,7 @@
     {
       "beta": false,
       "name": "Portal",
-      "bundleIdentifier": "wsfteam.portal",
+      "bundleIdentifier": "whysoooofurious.portal",
       "developerName": "wsfteam.xyz",
       "subtitle": "Tool for sideloading",
       "localizedDescription": "Dowload: https://wsfteam.xyz/#downloads\nInstall guide: https://youtube.com/shorts/KgA9n51QfnQ?feature=share\nỨng dụng Portal dành cho việc sideload trên iOS là một công cụ tiên tiến được phát triển bởi WSF (WhySooooFurious), cho phép người dùng iPhone và iPad cài đặt các ứng dụng bên thứ ba mà không cần phụ thuộc vào App Store của Apple hay máy tính. Nền tảng tất cả-trong-một này được thiết kế để đơn giản hóa quá trình sideload cho cả người mới bắt đầu lẫn người dùng nâng cao, kết hợp các công cụ, hồ sơ cấu hình, hướng dẫn và tiện ích bảo mật vào một giao diện liền mạch.\n\nhttps://github.com/WhySooooFurious/Ultimate-Sideloading-Guide\nhttps://www.youtube.com/watch?v=nni_DNix490&t=126s\nhttps://techybuff.com/portal-app-for-ios-sideloading/",
@@ -116,14 +116,14 @@
       "screenshotURLs": [],
       "versions": [
         {
-          "version": "1.0",
+          "version": "3.3.0",
           "date": "2025-10-29T08:20:00Z",
           "size": 33060927,
           "downloadURL": "https://drphe.github.io/KhoIPA/upload/Portal.ipa",
           "localizedDescription": "Phiên bản mới nhất"
         }
       ],
-      "version": "1.0",
+      "version": "3.3.0",
       "versionDate": "2025-10-29T08:20:00Z",
       "versionDescription": "Phiên bản mới nhất",
       "downloadURL": "https://drphe.github.io/KhoIPA/upload/Portal.ipa",
