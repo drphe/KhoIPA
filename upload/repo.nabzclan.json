@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-10-29T10:20:02Z",
+  "updated_at": "2025-10-30T05:30:02Z",
   "name": "Nabzclan - App Store",
   "identifier": "com.nabzclan.repo.altstore",
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
@@ -27,12 +27,556 @@
   "apps": [
     {
       "beta": false,
+      "name": "Pokémon GO - iSpoofer",
+      "type": 1,
+      "bundleIdentifier": "com.nianticlabs.pokemongo",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Why Use iSpoofer?\r\n\r\n🌍 Teleport to any location instantly\r\n🎮 Access rare & region-locked Pokémon\r\n🏆 Battle in distant gyms & raids\r\n🌀 Explore PokéStops from around the world\r\n✅ Works on iOS 14 – iOS 18 and iOS 26",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/1761770964.jpeg",
+      "screenshotURLs": [],
+      "size": 0,
+      "version": "0.385.0",
+      "versions": [
+        {
+          "version": "0.385.0",
+          "date": "2025-10-29",
+          "size": 0,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1874",
+          "localizedDescription": "Why Use iSpoofer?\r\n\r\n🌍 Teleport to any location instantly\r\n🎮 Access rare & region-locked Pokémon\r\n🏆 Battle in distant gyms & raids\r\n🌀 Explore PokéStops from around the world\r\n✅ Works on iOS 14 – iOS 18 and iOS 26"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1874"
+    },
+    {
+      "beta": false,
+      "name": "Aerofly FS Global",
+      "type": 1,
+      "bundleIdentifier": "com.aerofly.aerofly-fs-g1-ios",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Aerofly FS Global is a highly realistic Flight Simulator in PC-quality for your mobile device for beginner and professional flight sim pilots. Explore the world of flying with extremely detailed and accurately simulated airliners, fully interactive 3D cockpits and realistic aircraft systems. Fly with complex airliners, helicopters, business jets, fighter jets and warbirds, general aviation aircraft, aerobatic stuntplanes and gliders across the photorealistic landscape.\r\n\r\nIMPORTANT NOTE: The level of graphics details depends on your device performance and memory.\r\n\r\n▶ AIRCRAFT\r\n8 aircraft included in the base app:\r\n• Airbus A320\r\n• Dash 8-Q400\r\n• Learjet 45\r\n• Cessna 172\r\n• Baron 58\r\n• Aermacchi MB339\r\n• F-15E Strike Eagle\r\n• J",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6902792771fa1.jpg",
+      "screenshotURLs": [],
+      "size": 2297184971,
+      "version": "1.5.8",
+      "versions": [
+        {
+          "version": "1.5.8",
+          "date": "2025-10-29",
+          "size": 2297184971,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1873",
+          "localizedDescription": "Aerofly FS Global is a highly realistic Flight Simulator in PC-quality for your mobile device for beginner and professional flight sim pilots. Explore the world of flying with extremely detailed and accurately simulated airliners, fully interactive 3D cockpits and realistic aircraft systems. Fly with complex airliners, helicopters, business jets, fighter jets and warbirds, general aviation aircraft, aerobatic stuntplanes and gliders across the photorealistic landscape.\r\n\r\nIMPORTANT NOTE: The level of graphics details depends on your device performance and memory.\r\n\r\n▶ AIRCRAFT\r\n8 aircraft included in the base app:\r\n• Airbus A320\r\n• Dash 8-Q400\r\n• Learjet 45\r\n• Cessna 172\r\n• Baron 58\r\n• Aermacchi MB339\r\n• F-15E Strike Eagle\r\n• J"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1873"
+    },
+    {
+      "beta": false,
+      "name": "Minecraft",
+      "type": 1,
+      "bundleIdentifier": "com.mojang.minecraftpe",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Dive into an open world of building, crafting and survival. Gather resources, survive the night, and build whatever you can imagine one block at a time. Explore and craft your way through a completely open world where you can play with friends, build a city, start a farm, mine deep into the ground, face mysterious enemies, or just experiment to the limits of your imagination! \r\n \r\nThe possibilities are endless. Embark on an epic adventure and play with friends, building from the ground up. Build and expand in Creative mode, where you can craft from unlimited resources. Survive the night, face intense battles, craft tools, and fend off danger in Survival mode. With seamless cross-platform and multiplayer gameplay on Minecraft: Bedrock Edition, yo",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_690149fd42ad6.jpg",
+      "screenshotURLs": [],
+      "size": 589159033,
+      "version": "1.21.120",
+      "versions": [
+        {
+          "version": "1.21.120",
+          "date": "2025-10-29",
+          "size": 589159033,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1834",
+          "localizedDescription": "Dive into an open world of building, crafting and survival. Gather resources, survive the night, and build whatever you can imagine one block at a time. Explore and craft your way through a completely open world where you can play with friends, build a city, start a farm, mine deep into the ground, face mysterious enemies, or just experiment to the limits of your imagination! \r\n \r\nThe possibilities are endless. Embark on an epic adventure and play with friends, building from the ground up. Build and expand in Creative mode, where you can craft from unlimited resources. Survive the night, face intense battles, craft tools, and fend off danger in Survival mode. With seamless cross-platform and multiplayer gameplay on Minecraft: Bedrock Edition, yo"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1834"
+    },
+    {
+      "beta": false,
+      "name": "Getting Over It",
+      "type": 1,
+      "bundleIdentifier": "net.Foddy.GettingOverIt",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "A game I made\r\nFor a certain kind of person\r\n\r\nTo hurt them.\r\n\r\n• Climb up an enormous mountain with nothing but a hammer and a pot.\r\n• Listen as I make philosophical observations about the problem at hand.\r\n• Between 2 and ∞ hours of agonizing gameplay, depending. The median time to finish for my playtesters was 5 hours, but the mean was closer to ∞.\r\n• Lose all your progress, over and over.\r\n• Feel new types of frustration you didn't know you were capable of.",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6902776477ff7.jpg",
+      "screenshotURLs": [],
+      "size": 118260663,
+      "version": "1.14",
+      "versions": [
+        {
+          "version": "1.14",
+          "date": "2025-10-29",
+          "size": 118260663,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1872",
+          "localizedDescription": "A game I made\r\nFor a certain kind of person\r\n\r\nTo hurt them.\r\n\r\n• Climb up an enormous mountain with nothing but a hammer and a pot.\r\n• Listen as I make philosophical observations about the problem at hand.\r\n• Between 2 and ∞ hours of agonizing gameplay, depending. The median time to finish for my playtesters was 5 hours, but the mean was closer to ∞.\r\n• Lose all your progress, over and over.\r\n• Feel new types of frustration you didn't know you were capable of."
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1872"
+    },
+    {
+      "beta": false,
+      "name": "WhatsApp Business - WALocationSpoofer",
+      "type": 1,
+      "bundleIdentifier": "net.whatsapp.WhatsAppSMB",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "WhatsApp Business injected with WALocationSpoofer",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_69026bac76ca3.jpg",
+      "screenshotURLs": [],
+      "size": 114402011,
+      "version": "25.31.74",
+      "versions": [
+        {
+          "version": "25.31.74",
+          "date": "2025-10-29",
+          "size": 114402011,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1871",
+          "localizedDescription": "WhatsApp Business injected with WALocationSpoofer"
+        },
+        {
+          "version": "25.31.74",
+          "date": "2025-10-29",
+          "size": 123556058,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1867",
+          "localizedDescription": "Features:\r\n\r\n- Watusi"
+        },
+        {
+          "version": "25.12.73",
+          "date": "2025-10-25",
+          "size": 123128719,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1657",
+          "localizedDescription": "Injected with Watusi"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1871"
+    },
+    {
+      "beta": false,
+      "name": "WhatsApp - WALocationSpoofer",
+      "type": 1,
+      "bundleIdentifier": "net.whatsapp.WhatsApp",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "WhatsApp injected with WALocationSpoofer",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_69026b493e4ec.jpg",
+      "screenshotURLs": [],
+      "size": 107607668,
+      "version": "25.31.74",
+      "versions": [
+        {
+          "version": "25.31.74",
+          "date": "2025-10-29",
+          "size": 107607668,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1870",
+          "localizedDescription": "WhatsApp injected with WALocationSpoofer"
+        },
+        {
+          "version": "25.31.74",
+          "date": "2025-10-29",
+          "size": 116763745,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1866",
+          "localizedDescription": "Hack features:\r\n\r\n- Watusi 3"
+        },
+        {
+          "version": "25.12.73",
+          "date": "2025-10-25",
+          "size": 116069310,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1659",
+          "localizedDescription": "Injected with Watusi"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1870"
+    },
+    {
+      "beta": false,
+      "name": "Messenger - Flow",
+      "type": 1,
+      "bundleIdentifier": "com.facebook.Messenger",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Messenger injected with flow tweak",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_69026a2414373.jpg",
+      "screenshotURLs": [],
+      "size": 177500112,
+      "version": "537.0.0",
+      "versions": [
+        {
+          "version": "537.0.0",
+          "date": "2025-10-29",
+          "size": 177500112,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1869",
+          "localizedDescription": "Messenger injected with flow tweak"
+        },
+        {
+          "version": "390.0",
+          "date": "2025-10-27",
+          "size": 44656706,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1774",
+          "localizedDescription": "Shark is the ultimate Facebook Messenger tweak. It is the first and only tweak to add additional security to the app. You can access the tweak settings on the Messenger's settings page.\n\nFeatures\n- Disable Marking Messages\n- Disable Marking Stories\n- Disable Typing Status\n- Save Story images and videos\n\nAuthentication\n- Shark adds an extra layer of security with Face ID/Touch ID to view the Messenger App\n\nNote: There is a bug where nothing loads when you first sign in. Simply relaunch the app to"
+        },
+        {
+          "version": "530.0.0",
+          "date": "2025-10-25",
+          "size": 66487068,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/379",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1869"
+    },
+    {
+      "beta": false,
+      "name": "Facebook - Glow",
+      "type": 1,
+      "bundleIdentifier": "com.facebook.Facebook",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Features:\r\n\r\n- Facebook Glow tweak",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_690269c8256f1.jpg",
+      "screenshotURLs": [],
+      "size": 177500110,
+      "version": "537.0.0",
+      "versions": [
+        {
+          "version": "537.0.0",
+          "date": "2025-10-29",
+          "size": 177500110,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1868",
+          "localizedDescription": "Features:\r\n\r\n- Facebook Glow tweak"
+        },
+        {
+          "version": "502.2.0",
+          "date": "2025-10-27",
+          "size": 159682167,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1752",
+          "localizedDescription": "Facebook Wolf brings a number of new features to Facebook such as:\n\nUser\n• Disable marking messages as seen\n• Disable typing status in messages\n• No feed ads\n\nStory\n• Disable marking stories\n• Disable auto-advance in stories\n• Save Story images and videos\n• No story ads (Not working)\n\nFeed\n• Save Feed videos by long-pressing the video\n\nAnd more!"
+        },
+        {
+          "version": "536.0.0",
+          "date": "2025-10-25",
+          "size": 166455230,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/381",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1868"
+    },
+    {
+      "beta": false,
+      "name": "X - BHX",
+      "type": 1,
+      "bundleIdentifier": "com.atebits.Tweetie2",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Twitter injected with bhx",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_690267b01bf46.jpg",
+      "screenshotURLs": [],
+      "size": 159657450,
+      "version": "11.35",
+      "versions": [
+        {
+          "version": "11.35",
+          "date": "2025-10-29",
+          "size": 159657450,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1865",
+          "localizedDescription": "Twitter injected with bhx"
+        },
+        {
+          "version": "11.35",
+          "date": "2025-10-29",
+          "size": 160751278,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1838",
+          "localizedDescription": "Features:\r\n\r\n- NeoFreeBird"
+        },
+        {
+          "version": "11.32",
+          "date": "2025-10-28",
+          "size": 164890356,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1835",
+          "localizedDescription": "Features:\r\n\r\n- NeoFreeBird 5.1\r\n\r\n -  Twitter NoAds 1.1-2\r\n\r\n - TwitterNoAds 1.2.5"
+        },
+        {
+          "version": "10.83",
+          "date": "2025-10-27",
+          "size": 148905890,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1750",
+          "localizedDescription": "Features:\n\n• Download Videos (even if account private).\n• Replay later feature.\n• Video zoom feature.\n• No history feature.\n• Hide topics tweet feature.\n• Disable video layer caption.\n• Padlock.\n• Font changer.\n• Auto load photos in highest quality feature\n• Undo tweet feature.\n• Reader mode feature.\n• Disable new tweet style (A.K.A edge to edge tweet)\n• Enable voice tweet and voice message in DM.\n• Hide promoted tweet from the timeline.\n• Confirm alert when hit the tweet button.\n• Confirm alert"
+        },
+        {
+          "version": "11.33",
+          "date": "2025-10-25",
+          "size": 153928565,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/417",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1865"
+    },
+    {
+      "beta": false,
+      "name": "YouTube - YT Reborn",
+      "type": 1,
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Injected with YouTube reborn unknown features included",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_690265c070a2a.jpg",
+      "screenshotURLs": [],
+      "size": 130477112,
+      "version": "20.42.3",
+      "versions": [
+        {
+          "version": "20.42.3",
+          "date": "2025-10-29",
+          "size": 130477112,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1864",
+          "localizedDescription": "Injected with YouTube reborn unknown features included"
+        },
+        {
+          "version": "20.42.3",
+          "date": "2025-10-29",
+          "size": 126874123,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1862",
+          "localizedDescription": "Hacked YouTube"
+        },
+        {
+          "version": "20.42.3",
+          "date": "2025-10-28",
+          "size": 129724701,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
+          "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works."
+        },
+        {
+          "version": "20.09.3",
+          "date": "2025-10-27",
+          "size": 112848236,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1770",
+          "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n• Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n• Copy video, comment, and post information\n• Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n• Player settings: Gestures, default quality, preferred audio track\n• Save, Load and Restore settings. Clear cache once or automatically on app startup\n• Built-in SponsorBlock\n• An"
+        },
+        {
+          "version": "20.42.3",
+          "date": "2025-10-25",
+          "size": 130083531,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/545",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1864"
+    },
+    {
+      "beta": false,
+      "name": "Twitch - TwitchAdBlock",
+      "type": 1,
+      "bundleIdentifier": "tv.twitch",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Twitch with no ads",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6902648084733.jpg",
+      "screenshotURLs": [],
+      "size": 155541828,
+      "version": "26.5",
+      "versions": [
+        {
+          "version": "26.5",
+          "date": "2025-10-29",
+          "size": 155541828,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1863",
+          "localizedDescription": "Twitch with no ads"
+        },
+        {
+          "version": "25.1",
+          "date": "2025-10-25",
+          "size": 119054378,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1373",
+          "localizedDescription": "Injected with Adblock"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1863"
+    },
+    {
+      "beta": false,
+      "name": "Instagram - instagramBH",
+      "type": 1,
+      "bundleIdentifier": "com.burbn.instagram",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Injected with bh",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901f158c1e0c.jpg",
+      "screenshotURLs": [],
+      "size": 252364223,
+      "version": "404.0.0",
+      "versions": [
+        {
+          "version": "404.0.0",
+          "date": "2025-10-29",
+          "size": 252364223,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1857",
+          "localizedDescription": "Injected with bh"
+        },
+        {
+          "version": "379.0.0",
+          "date": "2025-10-29",
+          "size": 215095752,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1859",
+          "localizedDescription": "Injected with instagram NYX"
+        },
+        {
+          "version": "399.0.0",
+          "date": "2025-10-29",
+          "size": 242951063,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1858",
+          "localizedDescription": "Injected with AC tweak"
+        },
+        {
+          "version": "391.0.0",
+          "date": "2025-10-29",
+          "size": 202445884,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1856",
+          "localizedDescription": "injected with instagram regram"
+        },
+        {
+          "version": "356.1.0",
+          "date": "2025-10-27",
+          "size": 159649113,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1756",
+          "localizedDescription": "Regram for instagram!\n\nFeed Enhancements\n• Download posts (Videos and Photos)\n• Repost posts (Videos and Photos)\n• Long press on posts to zoom\n• Copy text captions from posts\n\nStories\n• Save stories to Camera Roll\n• View stories anonymously\n• Manually mark stories as seen\n• Mute and unmute video stories\n• Upload from Camera Roll (Swipe up)\n• Disable auto switch between stories\n• Hide stories bar from feed\n\nProfile\n• Show if other users follow you\n• Long press on profile image to zoom\n• Show exac"
+        },
+        {
+          "version": "403.0.0",
+          "date": "2025-10-25",
+          "size": 253460678,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/559",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1857"
+    },
+    {
+      "beta": false,
+      "name": "Clash Royale - nulls royal",
+      "type": 1,
+      "bundleIdentifier": "com.supercell.scroll",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Private game server",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_69025dca517f0.jpg",
+      "screenshotURLs": [],
+      "size": 938291814,
+      "version": "12.169.3",
+      "versions": [
+        {
+          "version": "12.169.3",
+          "date": "2025-10-29",
+          "size": 938291814,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1861",
+          "localizedDescription": "Private game server"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1861"
+    },
+    {
+      "beta": false,
+      "name": "Clash of Clans -nulls clash",
+      "type": 1,
+      "bundleIdentifier": "com.supercell.magic",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Private server that allows you to create and build keep in mind this doesn’t actually save",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_69025ca07aed7.jpg",
+      "screenshotURLs": [],
+      "size": 356576413,
+      "version": "17.477.13",
+      "versions": [
+        {
+          "version": "17.477.13",
+          "date": "2025-10-29",
+          "size": 356576413,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1860",
+          "localizedDescription": "Private server that allows you to create and build keep in mind this doesn’t actually save"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1860"
+    },
+    {
+      "beta": false,
+      "name": "Crunchyroll - Hack",
+      "type": 1,
+      "bundleIdentifier": "com.crunchyroll.iphone",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Features\r\n-Premium Unlocked/AD-Free)\r\n\r\nNot yet tested",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901eb8f538ca.jpg",
+      "screenshotURLs": [],
+      "size": 78824923,
+      "version": "4.41.0",
+      "versions": [
+        {
+          "version": "4.41.0",
+          "date": "2025-10-29",
+          "size": 78824923,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1855",
+          "localizedDescription": "Features\r\n-Premium Unlocked/AD-Free)\r\n\r\nNot yet tested"
+        }
+      ],
+      "versionDate": "2025-10-29",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1855"
+    },
+    {
+      "beta": false,
       "name": "CapCut - Video Editor",
       "type": 1,
       "bundleIdentifier": "com.lemon.lvoverseas",
       "developerName": "polo",
       "subtitle": "",
-      "localizedDescription": "CapCut hacked \r\n\r\nHow to: \r\n\r\nFind a vpn and point it to any U.S state\r\n\r\nCreate fancy videos with other unique features: auto captions, text-to-speech, motion tracking, and background removal. Show your personality and go viral on TikTok, YouTube, Instagram, WhatsApp, and Facebook!\r\n\r\nFEATURES\r\nBasic video editing\r\n• Trim and shorten clips and split or merge videos.\r\n• Adjust video speed from 0.1x to 100x, and apply speed curves to clips.\r\n• Animate video clips with incredible zoom in/out effects.\r\n• Highlight the best moments with the freeze feature.\r\n• Explore transition options with awesome effects on a",
+      "localizedDescription": "CapCut hacked \r\n\r\nHow to: \r\n\r\n- Find a vpn and point it to any U.S state to see premium content",
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901e93726c26.jpg",
@@ -45,7 +589,7 @@
           "date": "2025-10-29",
           "size": 135185769,
           "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1853",
-          "localizedDescription": "CapCut hacked \r\n\r\nHow to: \r\n\r\nFind a vpn and point it to any U.S state\r\n\r\nCreate fancy videos with other unique features: auto captions, text-to-speech, motion tracking, and background removal. Show your personality and go viral on TikTok, YouTube, Instagram, WhatsApp, and Facebook!\r\n\r\nFEATURES\r\nBasic video editing\r\n• Trim and shorten clips and split or merge videos.\r\n• Adjust video speed from 0.1x to 100x, and apply speed curves to clips.\r\n• Animate video clips with incredible zoom in/out effects.\r\n• Highlight the best moments with the freeze feature.\r\n• Explore transition options with awesome effects on a"
+          "localizedDescription": "CapCut hacked \r\n\r\nHow to: \r\n\r\n- Find a vpn and point it to any U.S state to see premium content"
         }
       ],
       "versionDate": "2025-10-29",
@@ -55,7 +599,7 @@
       "beta": false,
       "name": "PojavLauncher",
       "type": 1,
-      "bundleIdentifier": "Minecraftpo",
+      "bundleIdentifier": "net.kdt.pojavlauncher",
       "developerName": "polo",
       "subtitle": "",
       "localizedDescription": "Play Minecraft JAVA on your IDevice!",
@@ -431,53 +975,6 @@
     },
     {
       "beta": false,
-      "name": "X - X NeoFreeBird",
-      "type": 1,
-      "bundleIdentifier": "com.atebits.Tweetie2",
-      "developerName": "polo",
-      "subtitle": "",
-      "localizedDescription": "Features:\r\n\r\n- NeoFreeBird",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901512098ee1.jpg",
-      "screenshotURLs": [],
-      "size": 155810236,
-      "version": "11.33",
-      "versions": [
-        {
-          "version": "11.33",
-          "date": "2025-10-28",
-          "size": 155810236,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1838",
-          "localizedDescription": "Features:\r\n\r\n- NeoFreeBird"
-        },
-        {
-          "version": "11.32",
-          "date": "2025-10-28",
-          "size": 164890356,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1835",
-          "localizedDescription": "Features:\r\n\r\n- NeoFreeBird 5.1\r\n\r\n -  Twitter NoAds 1.1-2\r\n\r\n - TwitterNoAds 1.2.5"
-        },
-        {
-          "version": "10.83",
-          "date": "2025-10-27",
-          "size": 148905890,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1750",
-          "localizedDescription": "Features:\n\n• Download Videos (even if account private).\n• Replay later feature.\n• Video zoom feature.\n• No history feature.\n• Hide topics tweet feature.\n• Disable video layer caption.\n• Padlock.\n• Font changer.\n• Auto load photos in highest quality feature\n• Undo tweet feature.\n• Reader mode feature.\n• Disable new tweet style (A.K.A edge to edge tweet)\n• Enable voice tweet and voice message in DM.\n• Hide promoted tweet from the timeline.\n• Confirm alert when hit the tweet button.\n• Confirm alert"
-        },
-        {
-          "version": "11.33",
-          "date": "2025-10-25",
-          "size": 153928565,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/417",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "versionDate": "2025-10-28",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1838"
-    },
-    {
-      "beta": false,
       "name": "Bridge Constructor Stunts",
       "type": 1,
       "bundleIdentifier": "com.headupgames.bridgeconstructorstunts",
@@ -527,72 +1024,6 @@
       ],
       "versionDate": "2025-10-28",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1836"
-    },
-    {
-      "beta": false,
-      "name": "YouTube Plus",
-      "type": 1,
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "polo",
-      "subtitle": "",
-      "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_690135091203c.jpg",
-      "screenshotURLs": [],
-      "size": 129724701,
-      "version": "20.42.3",
-      "versions": [
-        {
-          "version": "20.42.3",
-          "date": "2025-10-28",
-          "size": 129724701,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
-          "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works."
-        },
-        {
-          "version": "20.09.3",
-          "date": "2025-10-27",
-          "size": 112848236,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1770",
-          "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n• Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n• Copy video, comment, and post information\n• Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n• Player settings: Gestures, default quality, preferred audio track\n• Save, Load and Restore settings. Clear cache once or automatically on app startup\n• Built-in SponsorBlock\n• An"
-        },
-        {
-          "version": "20.42.3",
-          "date": "2025-10-25",
-          "size": 130083531,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/545",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "versionDate": "2025-10-28",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824"
-    },
-    {
-      "beta": false,
-      "name": "Minecraft",
-      "type": 1,
-      "bundleIdentifier": "com.mojang.minecraftpe",
-      "developerName": "polo",
-      "subtitle": "",
-      "localizedDescription": "Dive into an open world of building, crafting and survival. Gather resources, survive the night, and build whatever you can imagine one block at a time. Explore and craft your way through a completely open world where you can play with friends, build a city, start a farm, mine deep into the ground, face mysterious enemies, or just experiment to the limits of your imagination! \r\n \r\nThe possibilities are endless. Embark on an epic adventure and play with friends, building from the ground up. Build and expand in Creative mode, where you can craft from unlimited resources. Survive the night, face intense battles, craft tools, and fend off danger in Survival mode. With seamless cross-platform and multiplayer gameplay on Minecraft: Bedrock Edition, yo",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_690149fd42ad6.jpg",
-      "screenshotURLs": [],
-      "size": 587203888,
-      "version": "1.21.114",
-      "versions": [
-        {
-          "version": "1.21.114",
-          "date": "2025-10-28",
-          "size": 587203888,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1834",
-          "localizedDescription": "Dive into an open world of building, crafting and survival. Gather resources, survive the night, and build whatever you can imagine one block at a time. Explore and craft your way through a completely open world where you can play with friends, build a city, start a farm, mine deep into the ground, face mysterious enemies, or just experiment to the limits of your imagination! \r\n \r\nThe possibilities are endless. Embark on an epic adventure and play with friends, building from the ground up. Build and expand in Creative mode, where you can craft from unlimited resources. Survive the night, face intense battles, craft tools, and fend off danger in Survival mode. With seamless cross-platform and multiplayer gameplay on Minecraft: Bedrock Edition, yo"
-        }
-      ],
-      "versionDate": "2025-10-28",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1834"
     },
     {
       "beta": false,
@@ -1647,39 +2078,6 @@
     },
     {
       "beta": false,
-      "name": "Messenger++",
-      "type": 1,
-      "bundleIdentifier": "com.facebook.Messenger",
-      "developerName": "lscs3",
-      "subtitle": "",
-      "localizedDescription": "Shark is the ultimate Facebook Messenger tweak. It is the first and only tweak to add additional security to the app. You can access the tweak settings on the Messenger's settings page.\n\nFeatures\n- Disable Marking Messages\n- Disable Marking Stories\n- Disable Typing Status\n- Save Story images and videos\n\nAuthentication\n- Shark adds an extra layer of security with Face ID/Touch ID to view the Messenger App\n\nNote: There is a bug where nothing loads when you first sign in. Simply relaunch the app to",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761537806.png",
-      "screenshotURLs": [],
-      "size": 44656706,
-      "version": "390.0",
-      "versions": [
-        {
-          "version": "390.0",
-          "date": "2025-10-27",
-          "size": 44656706,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1774",
-          "localizedDescription": "Shark is the ultimate Facebook Messenger tweak. It is the first and only tweak to add additional security to the app. You can access the tweak settings on the Messenger's settings page.\n\nFeatures\n- Disable Marking Messages\n- Disable Marking Stories\n- Disable Typing Status\n- Save Story images and videos\n\nAuthentication\n- Shark adds an extra layer of security with Face ID/Touch ID to view the Messenger App\n\nNote: There is a bug where nothing loads when you first sign in. Simply relaunch the app to"
-        },
-        {
-          "version": "530.0.0",
-          "date": "2025-10-25",
-          "size": 66487068,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/379",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "versionDate": "2025-10-27",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1774"
-    },
-    {
-      "beta": false,
       "name": "Duolingo++",
       "type": 1,
       "bundleIdentifier": "com.duolingo.DuolingoMobile",
@@ -1847,72 +2245,6 @@
       ],
       "versionDate": "2025-10-27",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1758"
-    },
-    {
-      "beta": false,
-      "name": "Instagram++",
-      "type": 1,
-      "bundleIdentifier": "com.burbn.instagram",
-      "developerName": "lscs3",
-      "subtitle": "",
-      "localizedDescription": "Regram for instagram!\n\nFeed Enhancements\n• Download posts (Videos and Photos)\n• Repost posts (Videos and Photos)\n• Long press on posts to zoom\n• Copy text captions from posts\n\nStories\n• Save stories to Camera Roll\n• View stories anonymously\n• Manually mark stories as seen\n• Mute and unmute video stories\n• Upload from Camera Roll (Swipe up)\n• Disable auto switch between stories\n• Hide stories bar from feed\n\nProfile\n• Show if other users follow you\n• Long press on profile image to zoom\n• Show exac",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761537747.png",
-      "screenshotURLs": [],
-      "size": 159649113,
-      "version": "356.1.0",
-      "versions": [
-        {
-          "version": "356.1.0",
-          "date": "2025-10-27",
-          "size": 159649113,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1756",
-          "localizedDescription": "Regram for instagram!\n\nFeed Enhancements\n• Download posts (Videos and Photos)\n• Repost posts (Videos and Photos)\n• Long press on posts to zoom\n• Copy text captions from posts\n\nStories\n• Save stories to Camera Roll\n• View stories anonymously\n• Manually mark stories as seen\n• Mute and unmute video stories\n• Upload from Camera Roll (Swipe up)\n• Disable auto switch between stories\n• Hide stories bar from feed\n\nProfile\n• Show if other users follow you\n• Long press on profile image to zoom\n• Show exac"
-        },
-        {
-          "version": "403.0.0",
-          "date": "2025-10-25",
-          "size": 253460678,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/559",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "versionDate": "2025-10-27",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1756"
-    },
-    {
-      "beta": false,
-      "name": "Facebook++",
-      "type": 1,
-      "bundleIdentifier": "com.facebook.Facebook",
-      "developerName": "lscs3",
-      "subtitle": "",
-      "localizedDescription": "Facebook Wolf brings a number of new features to Facebook such as:\n\nUser\n• Disable marking messages as seen\n• Disable typing status in messages\n• No feed ads\n\nStory\n• Disable marking stories\n• Disable auto-advance in stories\n• Save Story images and videos\n• No story ads (Not working)\n\nFeed\n• Save Feed videos by long-pressing the video\n\nAnd more!",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761537718.png",
-      "screenshotURLs": [],
-      "size": 159682167,
-      "version": "502.2.0",
-      "versions": [
-        {
-          "version": "502.2.0",
-          "date": "2025-10-27",
-          "size": 159682167,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1752",
-          "localizedDescription": "Facebook Wolf brings a number of new features to Facebook such as:\n\nUser\n• Disable marking messages as seen\n• Disable typing status in messages\n• No feed ads\n\nStory\n• Disable marking stories\n• Disable auto-advance in stories\n• Save Story images and videos\n• No story ads (Not working)\n\nFeed\n• Save Feed videos by long-pressing the video\n\nAnd more!"
-        },
-        {
-          "version": "536.0.0",
-          "date": "2025-10-25",
-          "size": 166455230,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/381",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "versionDate": "2025-10-27",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1752"
     },
     {
       "beta": false,
@@ -3187,58 +3519,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1661"
-    },
-    {
-      "beta": false,
-      "name": "WhatsApp",
-      "type": 1,
-      "bundleIdentifier": "net.whatsapp.WhatsApp",
-      "developerName": "Holloway",
-      "subtitle": "",
-      "localizedDescription": "Injected with Watusi",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761380307.png",
-      "screenshotURLs": [],
-      "size": 116069310,
-      "version": "25.12.73",
-      "versions": [
-        {
-          "version": "25.12.73",
-          "date": "2025-10-25",
-          "size": 116069310,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1659",
-          "localizedDescription": "Injected with Watusi"
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1659"
-    },
-    {
-      "beta": false,
-      "name": "WABusiness",
-      "type": 1,
-      "bundleIdentifier": "net.whatsapp.WhatsAppSMB",
-      "developerName": "Holloway",
-      "subtitle": "",
-      "localizedDescription": "Injected with Watusi",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761380291.png",
-      "screenshotURLs": [],
-      "size": 123128719,
-      "version": "25.12.73",
-      "versions": [
-        {
-          "version": "25.12.73",
-          "date": "2025-10-25",
-          "size": 123128719,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1657",
-          "localizedDescription": "Injected with Watusi"
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1657"
     },
     {
       "beta": false,
@@ -6827,32 +7107,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1375"
-    },
-    {
-      "beta": false,
-      "name": "Twitch",
-      "type": 1,
-      "bundleIdentifier": "tv.twitch",
-      "developerName": "Holloway",
-      "subtitle": "",
-      "localizedDescription": "Injected with Adblock",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761378098.png",
-      "screenshotURLs": [],
-      "size": 119054378,
-      "version": "25.1",
-      "versions": [
-        {
-          "version": "25.1",
-          "date": "2025-10-25",
-          "size": 119054378,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1373",
-          "localizedDescription": "Injected with Adblock"
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1373"
     },
     {
       "beta": false,
