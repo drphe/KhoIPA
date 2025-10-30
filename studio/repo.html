@@ -1445,7 +1445,7 @@ const getNameRepo = (url) => {
 }
 async function init() {
     try {
-        const editorsources = await window.json("./common/assets/json/editorsources.json");
+        const editorsources = await window.json("../common/assets/json/editorsources.json");
         if (editorsources.length) {
             // alert install
             const installAppAlert = new window.UIAlert({
