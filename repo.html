@@ -25,6 +25,8 @@ window.showUIAlert = showUIAlert;
 
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://altstudio.app/js/app-info-parser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
   <style>
 @import url("./common/vendor/uialert.js/uialert.css");
 
@@ -364,7 +366,69 @@ button:hover {
   margin: 10px;
 }
 </style>
+  <style>
+    #popupOverlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
 
+    #popupBox {
+      background: #fff;
+      padding: 20px;
+      width: 450px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .popup-section {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .popup-section h3 {
+      margin-top: 0;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 6px 0;
+    }
+
+    .info-row label {
+      flex: 1;
+    }
+
+    .info-row input[type="checkbox"] {
+      margin-left: 10px;
+    }
+
+    .action-btn {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #closeBtn {
+      float: right;
+      cursor: pointer;
+      font-weight: bold;
+      color: #888;
+    }
+  </style>
 </head>
 
 <body>
@@ -455,6 +519,7 @@ button:hover {
     <!-- APPS TAB CONTENT -->
     <div id="appsTab" class="tab-content" style="display:none;">
       <h2 class="text-xl font-semibold mb-4">Quản lý Ứng dụng</h2>
+<button onclick="scanIpa()" style="display:flex;float:right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>Scan IPA</button>
       <div>
         <label for="app_name">Tên App (*):</label>
         <input type="text" id="app_name" placeholder="Nhấn Enter sau nhập để tra cứu!" title="Nhấn ESC để ẩn kết quả tìm kếm!">
@@ -522,7 +587,6 @@ button:hover {
           <div>
             <label for="version_size">Kích thước (*) (bytes): </label>
             <input type="number" id="version_size" min="1" placeholder="Ví dụ: 50003343">
-		<button onclick="readFileSize()" style="position: absolute;">File</button>
           </div>
         </div>
         <label for="version_downloadURL">Download URL (*): <blink><a href="https://github.com/drphe/KhoIPA/releases/new" target=_blank>>>Upload tệp ở đây</a></blink></label>
@@ -1424,7 +1488,7 @@ async function fetchRepoData(url) {
   }
 }
 
-function readFileSize() {
+function scanIpa() {// hàm khi chọn file
   // Tạo input tạm thời
   const input = document.createElement('input');
   input.type = 'file';
@@ -1433,15 +1497,13 @@ function readFileSize() {
   // Gắn sự kiện khi người dùng chọn file
   input.addEventListener('change', function(event) {
     const file = event.target.files[0];
-    if (file) {
-      const size = file.size
-      const modifiedDate = file.lastModifiedDate || new Date(file.lastModified);
-      const localDate = new Date(modifiedDate.getTime() - (modifiedDate.getTimezoneOffset() * 70000)).toISOString().slice(0, 16);
-       document.getElementById('version_size').value = file.size;
-	let number = document.getElementById('version_number').value
-       document.getElementById('version_downloadURL').value = "https://github.com/drphe/KhoIPA/releases/download/v." + number+"/"+file.name
-	document.getElementById('version_date').value = localDate;
-    }
+      const file = event.target.files[0];
+      if (file && file.name.endsWith(".ipa")) {
+        readIpa(file); // chuyển hàm đọc file
+      } else {
+        alert("Vui lòng chọn file có định dạng .ipa");
+      }
+
     // Xóa input sau khi dùng xong
     document.body.removeChild(input);
   });
@@ -1451,6 +1513,126 @@ function readFileSize() {
   input.click();
 }
 
+        const readIpa = async (t={}) => { // hàm đọc file
+            try {
+                const e = new window.AppInfoParser(t);
+                try {
+                    const n = await e.parse();
+                    console.log(n); // đối tượng chưa thông tin
+
+  const img = document.getElementById("icon");
+    img.src = n.icon;
+    img.onload = () => {
+      const colorThief = new ColorThief();
+      const dominantColor = colorThief.getColor(img); // Trả về [R, G, B]
+	// mã màu tintColor: rgb(${dominantColor.join(", ")
+    };
+
+// tạo thông tin cần thiết
+const ipaData = {
+  CFBundleDisplayName: "MyApp",
+  CFBundleIdentifier: "com.example.myapp",
+  Platform: "iOS",
+  CFBundleShortVersionString: "1.2.3",
+  CFBundleVersion: "123",
+  MinimumOSVersion: "13.0"
+};
+
+createPopup(ipaData); // tạo popup
+                    
+                } catch (n) {
+                    return console.error(n),
+                    te.dialog.alert("Incorrect file format. Please make sure the file is in the right format and not damaged."),
+                    !1
+                } finally {
+                    t.value = null
+                }
+            } catch (e) {
+                return console.log(e),
+                te.dialog.alert("Incorrect file format. Please make sure the file is in the right format and not damaged."),
+                t.value = null,
+                !1
+            }
+        }
+
+
+function createPopup(data) {
+  // Tạo phần tử overlay
+  const overlay = document.createElement("div");
+  overlay.id = "popupOverlay";
+  overlay.style.display = "flex";
+
+  // Tạo nội dung popup
+  overlay.innerHTML = `
+    <div id="popupBox">
+      <span id="closeBtn" style="float:right;cursor:pointer;font-weight:bold;color:#888;">×</span>
+
+      <div class="popup-section" id="appInfo">
+        <h3>Thông tin ứng dụng</h3>
+        ${createRow("Tên", data.CFBundleDisplayName, "appName")}
+        ${createRow("Bundle ID", data.CFBundleIdentifier, "bundleId")}
+        ${createRow("Platform", data.Platform, "platform")}
+        <button class="action-btn" onclick="insertSection('appInfo')">Chèn thông tin ứng dụng</button>
+      </div>
+
+      <div class="popup-section" id="versionInfo">
+        <h3>Thông tin phiên bản</h3>
+        ${createRow("Version", data.CFBundleShortVersionString, "version")}
+        ${createRow("Build", data.CFBundleVersion, "build")}
+        ${createRow("Minimum iOS", data.MinimumOSVersion, "minIos")}
+        <button class="action-btn" onclick="insertSection('versionInfo')">Chèn thông tin phiên bản</button>
+      </div>
+    </div>
+  `;
+
+  // Gắn sự kiện đóng popup
+  overlay.querySelector("#closeBtn").onclick = () => {
+    overlay.remove();
+  };
+
+  // Gắn sự kiện checkbox
+  overlay.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+    checkbox.onchange = () => {
+      if (checkbox.checked) {
+        const label = checkbox.getAttribute("data-label");
+        const value = checkbox.getAttribute("data-value");
+        console.log(`${label}: ${value}`);
+      }
+    };
+  });
+
+  // Thêm popup vào body
+  document.body.appendChild(overlay);
+}
+
+// Tạo dòng thông tin có checkbox
+function createRow(label, value, id) {
+  return `
+    <div class="info-row">
+      <label>${label}: <span id="${id}">${value}</span></label>
+      <input type="checkbox" data-label="${label}" data-value="${value}">
+    </div>
+  `;
+}
+
+//      const size = file.size
+  //    const modifiedDate = file.lastModifiedDate || new Date(file.lastModified);
+    //  const localDate = new Date(modifiedDate.getTime() - (modifiedDate.getTimezoneOffset() * 70000)).toISOString().slice(0, 16);
+      // document.getElementById('version_size').value = file.size;
+	//let number = document.getElementById('version_number').value
+//       document.getElementById('version_downloadURL').value = "https://github.com/drphe/KhoIPA/releases/download/v." + number+"/"+file.name
+//	document.getElementById('version_date').value = localDate;
+
+    }
+// Chèn toàn bộ thông tin trong 1 section
+function insertSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  section.querySelectorAll("input[type='checkbox']").forEach(cb => {
+    const label = cb.getAttribute("data-label");
+    const value = cb.getAttribute("data-value");
+    console.log(`${label}: ${value}`);
+  });
+}
   </script>
 </body>
 
