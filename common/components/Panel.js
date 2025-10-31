@@ -508,7 +508,10 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
                 bottomPanel.style.transform = ""; 
             }
         });
-    }
+    }else{
+        return;
+        
+        }
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
