@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
-import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl} from "./common/modules/utilities.js";
+import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl, generateTOC} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import { NewsItem } from "./common/components/NewsItem.js";
 import { openPanel , addAppList } from "./common/components/Panel.js";
@@ -202,8 +202,27 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             openCachedUrl(url).then(response => {
                 return response.text();
             }).then(markdown => {
-                const html = `<div id="news" class="section news-item-content">${marked.parse(markdown)}</div>`;
-                openPanel(html, `<p>${title}</p>`, '.', "side", id);
+        const { tocHtml, headings } = generateTOC(markdown);
+        let htmlContent = marked.parse(markdown);
+        headings.forEach(h => {
+            const headingTag = `<h${h.level}>${h.text}</h${h.level}>`;
+            const headingWithId = `<h${h.level} id="${h.id}">${h.text}</h${h.level}>`;
+            htmlContent = htmlContent.replace(headingTag, headingWithId);
+        });
+        const finalHtml = `
+        <div id="news" class="section news-item-content">
+            <div class="two-column-layout">
+                <div class="toc-column">
+                    <h3>Mục lục</h3>
+                    ${tocHtml}
+                </div>
+                <div id="news" class="section news-item-content content-column">
+                    ${htmlContent}
+                </div>
+            </div>
+        </div>
+        `;
+        openPanel(finalHtml, `<p>${title}</p>`, '.', "side", id);
             }).catch(error => {
                 console.error("Lỗi khi tải nội dung:", error);
             });

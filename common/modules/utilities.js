@@ -235,3 +235,31 @@ export async function openCachedUrl(url) {
         throw error;
     }
 }
+
+export function generateTOC(markdown) {
+    const headings = [];
+    const headingRegex = /^(#{1,6})\s+(.*)$/gm;
+    let match;
+    while ((match = headingRegex.exec(markdown)) !== null) {
+        const level = match[1].length; // Số lượng '#'
+        const text = match[2].trim(); // Văn bản tiêu đề
+        const id = text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s]+/g, '-').trim();
+        headings.push({
+            level,
+            text,
+            id
+        });
+    }
+
+    let tocHtml = '<ul>';
+    let currentLevel = 0;
+
+    headings.forEach(h => {
+        if (h.level >= 2 && h.level <= 3) {
+            const paddingLeft = (h.level - 2) * 15; // 0px cho ##, 15px cho ###
+            tocHtml += `<li style="padding-left: ${paddingLeft}px;"><a href="#${h.id}">${h.text}</a></li>`;
+        }
+    });
+    tocHtml += '</ul>';
+    return { tocHtml, headings };
+}
