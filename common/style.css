@@ -141,10 +141,13 @@ body {
     max-width: 767px;
   }
 
-    #suggestions {
+    #suggestions, #repositories, #apps-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+.app-container {
+  max-width: 375px;
+}
 }
 
 .hidden {
@@ -296,7 +299,7 @@ input[type="text"]:focus {
   padding-bottom: 0.3rem;
 }
 #news-items>* {
-  width: 320px;
+  width: 380px;
   box-sizing: border-box;
 }
 
@@ -422,6 +425,7 @@ input[type="text"]:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width:100%;
 }
 
 .app-header>.content .text>.subtitle {
@@ -549,7 +553,7 @@ a>button {
   display: flex;
   align-items: center;
   height:55px;
-  margin-top: 0.75rem; */
+  margin-top: 0.75rem; 
   padding: 1rem;
   border-radius: 1.5rem;
   gap: 0.8rem;

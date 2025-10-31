@@ -139,7 +139,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
                         <div class="right">
                             <div class="text">
                                 <p class="title">${source.name}</p>
-                                <p class="subtitle">Last updated: ${formatVersionDate(source.lastUpdated)}</p>
+                                <p class="subtitle">Updated: ${formatVersionDate(source.lastUpdated)}</p>
                             </div>
                             <div class="app-count">
                                 ${source.appCount} app${source.appCount === 1 ? "" : "s"}
