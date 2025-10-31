@@ -297,6 +297,7 @@ input[type="text"]:focus {
   overflow-x: scroll;
   padding: 1rem;
   padding-bottom: 0.3rem;
+  margin:1rem;
 }
 #news-items>* {
   width: 380px;
