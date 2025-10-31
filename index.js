@@ -216,7 +216,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         if (!isScrolling) {
             window.requestAnimationFrame(() => {
                 if (title && navBar && navBarTitle) {
-                    const showItem = title.getBoundingClientRect().y < 36;
+                    const showItem = title.getBoundingClientRect().y < 30;
                     navBar.classList.toggle("hide-border", !showItem);
                     navBarTitle.classList.toggle("hidden", !showItem);
                 }

@@ -138,8 +138,13 @@ body {
 @media screen and (min-device-width: 767px) {
   body {
     margin: 0 auto;
-    max-width: 414px;
+    max-width: 767px;
   }
+
+    #suggestions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .hidden {
@@ -177,7 +182,6 @@ body {
   background-color: var(--color-transparent);
   -webkit-backdrop-filter: saturate(100%) blur(30px);
   backdrop-filter: saturate(100%) blur(20px);
-  max-width: 382px;
   min-width: 0;
   margin: 0 auto;
   padding: 0.25em 16px 0.25em 16px;
@@ -285,11 +289,14 @@ input[type="text"]:focus {
   display: grid;
   height: 100%;
   gap: 1em;
-  grid-auto-columns: 95%;
   grid-auto-flow: column;
   overflow-x: scroll;
   padding: 1rem;
   padding-bottom: 0.3rem;
+}
+#news-items>* {
+  width: 320px;
+  box-sizing: border-box;
 }
 
 #news-items.one {
@@ -540,7 +547,7 @@ a>button {
 .source {
   display: flex;
   align-items: center;
-  /* margin: 0 1rem 0 1rem;
+  height:55px;
   margin-top: 0.75rem; */
   padding: 1rem;
   border-radius: 1.5rem;
@@ -660,7 +667,7 @@ a>button {
 .uibanner {
   background: white;
   margin:auto;
-  max-width:414px;
+  max-width:767px;
 }
 
 @keyframes fade {
@@ -909,7 +916,7 @@ a>button {
 }
 
 .panel-content {
-    max-width: 414px;
+    max-width: 767px;
     margin: 0 auto;
 }
 
@@ -1255,7 +1262,7 @@ border: none;
 border-top: 1px solid;
 }
 .news-item-content img {
-max-width: 380px;
+max-width: -webkit-fill-available;
 }
 .news-item-content {
     padding-bottom: 3rem;
