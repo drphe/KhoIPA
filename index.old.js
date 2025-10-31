@@ -101,10 +101,11 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
         });
     });
+    addAppList({ apps: allApps }, 10, false, window); // 10 apps, no shot, window scroll 
 
     // total of repositories
     const totalRepoCount = document.getElementById('title-total-repo');
-
+    openPanel({},"");// preload panel
     async function fetchSource(url) {
         const data = await json(url);
         const source = consolidateApps(data);
@@ -153,14 +154,24 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     // 
     // listener event
     // view app list
-    //  "View All apps"
-    openPanel({},"");// preload panel
-    document.getElementById('search')?.addEventListener("click", async(e) => {
-        e.preventDefault();
-        await openPanel('<div id="apps-list"></div>', `<p>Kho IPA Mod</p>`, '.', "side", "apps-popup-all");
-        addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
-     });
-
+    document.getElementById('search').addEventListener("click", (e) => {
+        const suggestions = document.getElementById('suggestions');
+        const repositories = document.getElementById('repositories');
+        const apps = document.getElementById('apps');
+        if (e.target.innerText == "View All Apps") {
+            suggestions.style.display = 'none';
+            repositories.style.display = 'none';
+            apps.style.display = 'block';
+            e.target.innerText = "Close";
+    	    totalRepoCount.innerText = `All Apps`;
+        } else {
+            suggestions.style.display = 'block';
+            repositories.style.display = 'block';
+            apps.style.display = 'none';
+    	    totalRepoCount.innerText = `Sources`;
+            e.target.innerText = "View All Apps";
+        }
+    });
     // open app
     document.addEventListener("click", event => {
         const targetLink = event.target.closest("a.app-header-link");
