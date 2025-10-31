@@ -175,6 +175,8 @@ export function consolidateApps(source) {
         tintColor: app.tintColor ?? "00adef",
         iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
         screenshotURLs: app.screenshotURLs ?? [],
+	screenshots : app.screenshots ?? [],
+        appPermissions: app.appPermissions ?? {"entitlements": [],"privacy": {}},
         size: app.size ?? firstVersion.size ?? 0,
         version: app.version ?? firstVersion.version ?? "1.0.0",
         versions: app.versions ?? [versionInfo] ?? [],
