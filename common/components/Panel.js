@@ -642,7 +642,7 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
             if(!dataApps.length) {
    		appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
     		appsContainer.innerHTML  = `
-    <div class="app-container">
+    <div class="app-container" style="grid-column: 1 / -1;grid-row: 1 / -1;width: 100%;height: 100%;max-width: none !important; ">
       <div class="app-header-container">
         <a href="#" class="nothing">
           <div class="app-header-inner-container">
