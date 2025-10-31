@@ -10,6 +10,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
 (async () => {
     document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
+    openPanel({},"");// preload panel
     // fetch Data
     const fetchedEditorSources = (await Promise.all(editorsources.map(async url => {
         try {
