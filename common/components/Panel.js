@@ -204,12 +204,20 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         preview.querySelector("#subtitle").textContent = app.subtitle;
         // Screenshots
         // New
-        if (app.screenshots) {
+	const checkArray = (obj) => { return Array.isArray(obj) && obj.length > 0};// screenshots:[]
+	const checkIphoneScreenShots = (obj) => { return typeof obj === 'object' &&  obj !== null &&  Array.isArray(obj.iphone) &&  obj.iphone.length > 0}; //
+        if (checkArray(app.screenshots)) {
             app.screenshots.forEach((screenshot, i) => {
                 if (screenshot.imageURL) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
                     <img src="${screenshot.imageURL}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
                 `);
                 else if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
+                    <img src="${screenshot}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
+                `);
+            });
+        }else if (checkIphoneScreenShots(app.screenshots)) {
+            app.iphone.forEach((screenshot, i) => {
+		 if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
                     <img src="${screenshot}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
                 `);
             });
