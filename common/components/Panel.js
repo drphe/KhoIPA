@@ -535,7 +535,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     });
 }
 
-export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, scrollTarget) {
+export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, scrollTarget) {
         const appsContainer = document.getElementById('apps-list');
         if (!appsContainer) return;
         const allApps = source.apps.filter(app => !app.beta);
@@ -749,6 +749,6 @@ export async function addAppList(source, appsPerLoad = 5, isScreenshot = true, s
            const scrollHeight = scrollTarget === window ? document.documentElement.scrollHeight || document.body.scrollHeight : scrollTarget.scrollHeight;
            const clientHeight = scrollTarget === window ? document.documentElement.clientHeight || window.innerHeight : scrollTarget.clientHeight;
            buttonScroll.style.display = scrollTop > scrollThreshold ? 'block' : 'none';
-           if (scrollTop + clientHeight >= scrollHeight - 100) loadMoreApps();
+           if (scrollTop + clientHeight >= scrollHeight - 50) loadMoreApps();
        });
     }
