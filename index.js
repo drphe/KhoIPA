@@ -10,7 +10,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
 (async () => {
     document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
-    openPanel({},"");// preload panel
     // fetch Data
     const fetchedEditorSources = (await Promise.all(editorsources.map(async url => {
         try {
@@ -75,8 +74,10 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     for (const source of fetchedSources) {
         await insertSource(source);
     }
+    document.body.classList.remove("loading");// kết thúc load dữ liệu
+    document.getElementById("loading")?.remove();
 
-    const allSources = [...fetchedEditorSources, ...fetchedSources];
+    const allSources = [...fetchedEditorSources, ...fetchedSources]; // chuẩn bị danh sách app
     const allApps = [];
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
@@ -104,9 +105,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     // total of repositories
     const totalRepoCount = document.getElementById('title-total-repo');
-
-    document.body.classList.remove("loading");
-    document.getElementById("loading")?.remove();
+    openPanel({},"");// preload panel
     async function fetchSource(url) {
         const data = await json(url);
         const source = consolidateApps(data);

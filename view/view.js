@@ -85,7 +85,7 @@ main(json => {
         });
     }
 
-
+        openPanel({},"");// preload panel
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();

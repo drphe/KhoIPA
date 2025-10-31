@@ -7,7 +7,7 @@ import { MoreButton } from "../components/MoreButton.js";
 import { AppHeader, AppLoading } from "../components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
-export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom", ID = "modal-popup") => {
+export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
