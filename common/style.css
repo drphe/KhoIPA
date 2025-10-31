@@ -150,10 +150,11 @@ body {
   text-decoration:underline!important;
 }
 #top {
-  position: fixed;
+  position: sticky;
   z-index: 5;
   left: 0;
   right: 0;
+  top: 0;
 }
 
 #main>p:first-of-type {
@@ -239,8 +240,6 @@ body {
 
 #main {
   /* padding: 1em; */
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .item {
@@ -1267,7 +1266,6 @@ max-width: 380px;
   }
 #news {
   padding: 0 1rem;
-  margin-top: 1rem;
 }
 
 .news-item-wrapper {

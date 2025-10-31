@@ -7,14 +7,9 @@
   padding: 0 1rem;
 }
 
-.search-wrapper{
-	/*top:6em!important;*/
+#main #news-items {
+  padding: 0 1rem;
 }
-
-/* input:focus {
-  outline: none;
-} */
-
 
 .sub-version{
     margin-left:1em;
