@@ -141,7 +141,7 @@ body {
     max-width: 767px;
   }
 
-    #suggestions, #repositories, #apps-list {
+    #suggestions, #repositories, #apps-list ,#featured{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
