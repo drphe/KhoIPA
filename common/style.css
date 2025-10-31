@@ -145,7 +145,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-.app-container {
+.app-container,.app-header-container {
   max-width: 370px;
 }
 }
