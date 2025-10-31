@@ -127,7 +127,7 @@ main(json => {
         if (targetLinks){
         	e.preventDefault();
         	const bundleId = targetLinks.getAttribute("data-bundleid");
-        	openPanel(json, bundleId, '..');
+        	openPanel(json, bundleId, '..', "bottom");
 	}
         if (targetNewsLink){
         	e.preventDefault();

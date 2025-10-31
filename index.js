@@ -205,7 +205,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             console.warn(`Source not found for bundleId: ${bundleId}`);
             return;
         }
-        openPanel(sourceTarget, bundleId);
+        openPanel(sourceTarget, bundleId, ".", "bottom");
     });
 
     function executeNews(url, title, id = 'news-popup-content') {
