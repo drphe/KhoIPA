@@ -278,7 +278,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "bottom"
         const entitlementsContainer = bottomPanel.querySelector("#entitlements");
         // 
         // Privacy
-        if (appPermissions?.privacy || app.permissions) {
+        if (appPermissions?.privacy && Object.keys(appPermissions.privacy).length !== 0 || app.permissions) {
             function updatePrivacyContainerHeader() {
                 privacyContainer.querySelector(".permission-icon").classList = "permission-icon bi-person-fill-lock";
                 privacyContainer.querySelector("b").innerText = "Privacy";
