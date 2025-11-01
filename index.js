@@ -210,7 +210,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             htmlContent = htmlContent.replace(headingTag, headingWithId);
         });
         const finalHtml = `
-        <div id="news" class="section news-item-content">
             <div class="two-column-layout">
                 <div class="toc-column">
                     <h3>Mục lục</h3>
@@ -220,7 +219,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
                     ${htmlContent}
                 </div>
             </div>
-        </div>
         `;
         openPanel(finalHtml, `<p>${title}</p>`, '.', "side", id);
             }).catch(error => {
