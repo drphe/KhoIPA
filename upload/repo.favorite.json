@@ -1105,7 +1105,7 @@
       "tintColor": "#7f7f7f",
       "type": 3,
       "screenshots": [
-       "https://i.ibb.co/v6MGQTP2/IMG-3205.jpg",
+        "https://i.ibb.co/v6MGQTP2/IMG-3205.jpg",
         "https://i.ibb.co/V019R20K/dbb6eb0c5204.png"
       ],
       "versions": [
@@ -1414,6 +1414,17 @@
     }
   ],
   "news": [
+    {
+      "title": "Ủng hộ tác giả",
+      "identifier": "news_21m1wpwa9e",
+      "caption": "KhoIPA Mod là một dự án miễn phí. Để vận hành toàn bộ hệ thống là một điều không đơn giản, chúng tôi cũng đã gặp khá nhiều rào cản và khó khăn khi xây dựng các sản phẩm này.  Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
+      "date": "2025-11-01T08:55",
+      "tintColor": "#d03f25",
+      "imageURL": "https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png",
+      "notify": true,
+      "url": "donate.md",
+      "appID": null
+    },
     {
       "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
       "identifier": "hdsd-dns",
