@@ -1,4 +1,5 @@
 # 📬 Cách thức liên lạc  
+Các bro có thể liên lạc với mình qua các kênh sau nhé.
 
 ![Contact](https://i.ibb.co/Gvp32g1B/IMG-3213.jpg)
 
@@ -9,6 +10,7 @@
 ---
 
 ## 💖 Donate cho tác giả  
+
 
 ![Donate](https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png)
 
