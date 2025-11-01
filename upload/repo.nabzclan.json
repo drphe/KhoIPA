@@ -1,46 +1,28 @@
 {
-  "name": "TTJB IPA Repo",
-  "identifier": "com.thuthuatjb.iparepo",
-  "sourceURL": "https://ipa.thuthuatjb.com/",
-  "iconURL": "https://ipa.thuthuatjb.com/img/logo.png",
-  "sourceImage": "https://ipa.thuthuatjb.com/img/logo.png",
-  "website": "https://thuthuatjb.com",
-  "subtitle": "Kho IPA by TTJB Team",
+  "updated_at": "2025-11-01T08:00:03Z",
+  "name": "Nabzclan - App Store",
+  "identifier": "com.nabzclan.repo.altstore",
+  "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
+  "iconURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
+  "website": "https://appstore.nabzclan.vip/",
+  "ipawebsite": "https://appstore.nabzclan.vip/",
+  "apiVersion": "v1",
+  "subtitle": "Welcome to the Nabzclan - Your Premium App Store Repository",
+  "description": "Welcome to the Nabzclan - App Store Repo!",
+  "headerURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
+  "tintColor": "#F54F32",
   "META": {
-    "repoName": "TTJB IPA Repo",
-    "repoIcon": "https://ipa.thuthuatjb.com/img/logo.png"
+    "repoName": "Nabzclan - App Store",
+    "repoIcon": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png"
   },
-  "news": [
-    {
-      "title": "Ủng hộ chúng tôi",
-      "identifier": "thuthuatjb-donate",
-      "caption": "TTJB IPA Repo là một dự án miễn phí. Để vận hành toàn bộ hệ thống Thủ Thuật Jailbreak là một điều không đơn giản, chúng tôi cũng đã gặp khá nhiều rào cản và khó khăn khi xây dựng các sản phẩm này. Nào là chi phí cho dịch vụ lưu trữ website (hosting), máy chủ dữ liệu, chi phí duy trì tên miền (domain) hàng năm và một vài chi phí phát sinh khác trong quá trình xây dựng. Chưa kể đến rất nhiều tâm huyết mà bọn mình đã cố gắng thực hiện và phát triển.",
-      "tintColor": "CC0000",
-      "imageURL": "https://ipa.thuthuatjb.com/img/donate.jpg",
-      "date": "2025-04-11",
-      "url": "https://thuthuatjb.com/donate",
-      "notify": false
-    },
-    {
-      "title": "TTJB IPA Repo",
-      "identifier": "ttjb-ipa-repo-about",
-      "caption": "TTJB IPA Repo là nguồn IPA của iOS/iPadOS cho TrollApps, Esign, Gbox, Altstore, Scarlet... Bạn có thể nhập địa chỉ: https://ipa.thuthuatjb.com/repo vào phần thêm nguồn trong ứng dụng của bạn hoặc nhấn truy cập Kho IPA để tải IPA.",
-      "tintColor": "EE0000",
-      "imageURL": "https://thuthuatjb.com/wp-content/uploads/2024/03/ttstore-for-trollstore-ios-780x470.png",
-      "url": "https://ipa.thuthuatjb.com",
-      "date": "2025-04-11",
-      "notify": true
-    },
-    {
-      "title": "Hỗ trợ chọn phiên bản",
-      "identifier": "ttjb-ipa-repo-version-with-feather",
-      "caption": "TTJB IPA Repo đã hỗ trợ chọn phiên bản khi dùng với Feather, bạn có thể bấm giữ vào ứng dụng và chọn nút Phiên bản trước để chọn phiên bản. Tuy nhiên, Feather hiện lại chưa hỗ trợ xem thông tin phiên bản, nên nếu bạn muốn biết từng phiên bản thêm các tuỳ chỉnh gì, hãy dùng phiên bản cũ của nguồn là https://ipa.thuthuatjb.com/repo-old",
-      "tintColor": "EE0000",
-      "imageURL": "https://thuthuatjb.com/wp-content/uploads/2025/05/huong-dan-feather-780x470.png",
-      "url": "https://ipa.thuthuatjb.com",
-      "date": "2025-07-14",
-      "notify": true
-    }
+  "featuredApps": [
+    "nabzclan.glenai",
+    "nabzclan.safe-checker",
+    "com.AlfaBravo.CombatMaster",
+    "vn.vng.codmvn",
+    "com.roblox.robloxmobile",
+    "com.frontierdesign.videostar",
+    "com.huiynfim.play"
   ],
   "apps": [
     {
@@ -21352,13 +21334,16 @@
       "patreon": {}
     }
   ],
-    "featuredApps": [
-    "nabzclan.glenai",
-    "nabzclan.safe-checker",
-    "com.AlfaBravo.CombatMaster",
-    "vn.vng.codmvn",
-    "com.roblox.robloxmobile",
-    "com.frontierdesign.videostar",
-    "com.huiynfim.play"
+  "news": [
+    {
+      "title": "Welcome to Nabzclan - App Store Repo!",
+      "identifier": "vip.nabzclan.public.init",
+      "caption": "Tap to open our App Store",
+      "tintColor": "5bbad5",
+      "imageURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
+      "url": "https://appstore.nabzclan.vip/",
+      "date": "2023-01-01",
+      "notify": true
+    }
   ]
 }
