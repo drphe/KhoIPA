@@ -14,7 +14,7 @@
     "com.adguard.AdguardExtension"
   ],
   "sourceImage": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
-  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
+  "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.thuthuatjb.json",
   "identifier": "com.drphe.repo.favorite",
   "META": {
     "repoName": "Favorite apps",
