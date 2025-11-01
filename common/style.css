@@ -150,14 +150,16 @@ body {
         max-width: 767px;
     }
 
-    #suggestions,
+    #suggestions, .grid_news,
     #repositories,
     #apps-list,
     #featured {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
+   .grid_news>.news-item-wrapper {
+	margin:1rem;
+    }
     .app-container,
     .app-header-container {
         max-width: 350px;
