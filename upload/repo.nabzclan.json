@@ -20,6 +20,18 @@
     "com.frontierdesign.videostar",
     "com.huiynfim.play"
   ],
+    "news": [
+    {
+      "title": "Welcome to Nabzclan - App Store Repo!",
+      "identifier": "vip.nabzclan.public.init",
+      "caption": "Tap to open our App Store",
+      "tintColor": "5bbad5",
+      "imageURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
+      "url": "https://appstore.nabzclan.vip/",
+      "date": "2023-01-01",
+      "notify": true
+    }
+  ],
   "apps": [
     {
       "beta": false,
@@ -21328,18 +21340,6 @@
         }
       ],
       "patreon": {}
-    }
-  ],
-  "news": [
-    {
-      "title": "Welcome to Nabzclan - App Store Repo!",
-      "identifier": "vip.nabzclan.public.init",
-      "caption": "Tap to open our App Store",
-      "tintColor": "5bbad5",
-      "imageURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
-      "url": "https://appstore.nabzclan.vip/",
-      "date": "2023-01-01",
-      "notify": true
     }
   ]
 }
