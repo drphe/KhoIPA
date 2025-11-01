@@ -4,11 +4,8 @@
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
   "iconURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
   "website": "https://appstore.nabzclan.vip/",
-  "ipawebsite": "https://appstore.nabzclan.vip/",
-  "apiVersion": "v1",
   "subtitle": "Welcome to the Nabzclan - Your Premium App Store Repository",
   "description": "Welcome to the Nabzclan - App Store Repo!",
-  "headerURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
   "tintColor": "#F54F32",
   "META": {
     "repoName": "Nabzclan - App Store",
