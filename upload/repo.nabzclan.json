@@ -1,15 +1,15 @@
 {
-  "name": "Nabzclan - App Store",
-  "identifier": "com.nabzclan.repo.altstore",
-  "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
-  "iconURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
-  "website": "https://appstore.nabzclan.vip/",
-  "subtitle": "Welcome to the Nabzclan - Your Premium App Store Repository",
-  "description": "Welcome to the Nabzclan - App Store Repo!",
-  "tintColor": "#F54F32",
+
+  "name": "nab clas",
+  "identifier": "com.thuthuatjb.djdjd",
+  "sourceURL": "https://ipa.thuthuatjb.com/",
+  "iconURL": "https://ipa.thuthuatjb.com/img/logo.png",
+  "sourceImage": "https://ipa.thuthuatjb.com/img/logo.png",
+  "website": "https://thuthuatjb.com",
+  "subtitle": "Kho IPA by TTJB Team",
   "META": {
-    "repoName": "Nabzclan - App Store",
-    "repoIcon": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png"
+    "repoName": "TTJB IPA Repo",
+    "repoIcon": "https://ipa.thuthuatjb.com/img/logo.png"
   },
   "featuredApps": [
     "nabzclan.glenai",
