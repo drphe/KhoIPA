@@ -14,8 +14,8 @@ Các bro có thể liên lạc với mình qua các kênh sau nhé.
 
 ![Donate](https://i.ibb.co/yCDhBSr/IMG-3215.jpg)
 
-- 🏦 **MB Bank**: `2885999999`  
-- 🏦 **TechcomBank**: `282885999999`  
+- 🏦 **MB Bank**: `2885999999`  Nguyễn Văn Phê
+- 🏦 **TechcomBank**: `282885999999`  Nguyễn Văn Phê
 
 ![MB](https://i.ibb.co/JWG0Hvgd/IMG-3214.jpg)
 ---
