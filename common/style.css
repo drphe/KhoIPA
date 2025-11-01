@@ -300,7 +300,7 @@ input[type="text"]:focus {
   margin:1rem;
 }
 #news-items>* {
-  width: 380px;
+  width: 360px;
   box-sizing: border-box;
 }
 
@@ -1306,37 +1306,48 @@ max-width: -webkit-fill-available;
   padding: 0;
 }
 
-                .two-column-layout {
-                    display: flex; /* Kích hoạt Flexbox */
-                    height: 100%;
-                }
-                .toc-column {
-                    width: 20%; /* Cột mục lục chiếm 20% */
-                    padding: 15px;
-                    overflow-y: auto; /* Cuộn nếu mục lục dài */
-                    border-right: 1px solid #eee;
-                    box-sizing: border-box;
-                    flex-shrink: 0; /* Ngăn cột bị co lại */
-                }
-                .content-column {
-                    width: 80%; /* Cột nội dung chiếm 80% */
-                    padding: 15px;
-                    overflow-y: auto; /* Cuộn nếu nội dung dài */
-                    box-sizing: border-box;
-                }
-                .toc-column ul {
-                    list-style: none;
-                    padding: 0;
-                }
-                .toc-column li {
-                    margin-bottom: 5px;
-                }
-                .toc-column a {
-                    text-decoration: none;
-                    color: #333;
-                    display: block;
-                }
-                .toc-column a:hover {
-                    text-decoration: underline;
-                }
-                .content-column img { max-width: 100%; height: auto; }
+    .two-column-layout {
+        display: flex;
+        height: 100%;
+    }
+    .toc-column {
+        width: 20%; /* Cột mục lục chiếm 20% */
+        padding: 15px;
+        overflow-y: auto;
+        border-right: 1px solid #eee;
+        box-sizing: border-box;
+        flex-shrink: 0;
+    }
+    .content-column {
+        width: 80%; /* Cột nội dung chiếm 80% */
+        padding: 15px;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 767px) {
+        .two-column-layout {
+            flex-direction: column;
+        }
+        .toc-column {
+            display: none;
+        }
+
+        .content-column {
+            width: 100%;
+            border-left: none;
+        }
+    }
+
+    .toc-column ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc-column li {
+        margin-bottom: 5px;
+    }
+    .toc-column a {
+        text-decoration: none;
+        display: block;
+    }
+    .content-column img { max-width: 100%; height: auto; }

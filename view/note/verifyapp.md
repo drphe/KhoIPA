@@ -6,6 +6,7 @@ Apple gần đây đã giới thiệu các quy định mới về việc xác mi
 
 ## ✅ Giải pháp: Sử dụng DNS WFS
 
+Nếu thiết bị IOS đời cũ <16 <a href="#" data-url="chongthuhoicc.md" class="news-item-link">Xem bài này</a>.
 
 <a href="#" data-url="dnswfs.md" class="news-item-link">QUAN TRỌNG : Xem hướng dẫn sử dụng DNS WFS</a> trước khi bắt đầu.
 

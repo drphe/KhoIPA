@@ -1,7 +1,13 @@
 # **Hướng Dẫn Chống Thu Hồi Chứng Chỉ iOS**
 
-Update 29/10/2025, mình thấy dù xài DNS nhưng chứng chỉ vẫn bị thu hồi, do các cert mua thường theo lô (nhiều UDID cùng chung), khi apple quét thì vẫn bị thu hồi như thường, do vậy việc dùng DNS hữu ích trong chặn quảng cáo.
-=> <a href="#" data-url="dnsadblock.md" class="news-item-link"> Xem bài này </a>
+Update 29/10/2025, dù xài DNS nhưng chứng chỉ vẫn bị thu hồi, do các cert mua thường theo lô (nhiều UDID cùng chung), khi apple quét thì vẫn bị thu hồi như thường.
+Nếu thiết bị IOS đời cũ có thể dùng DNS Antirevok trong bài này để cài các App đã ký sẵn để sử dụng các chứng chỉ đã bị thu hồi.
+
+ => <a href="#" data-url="allsetupipa.md" class="news-item-link"> Tổng hợp link tải IPA trực tiếp của techybuff.com </a>
+
+Nếu muốn xài DNS để chặn quảng cáo <a href="#" data-url="dnsadblock.md" class="news-item-link"> Xem bài này </a>
+
+Nếu thiết bị IOS đời mỡi (IOS >16) <a href="#" data-url="verifyapp.md" class="news-item-link">Xem bài này</a>.
 
 ### Thiết Lập Danh Sách Chặn URL với NextDNS
 
