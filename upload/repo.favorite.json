@@ -6,6 +6,10 @@
   "website": "https://github.com/drphe/KhoIPA/",
   "patreonURL": "https://patreon.com/drphe",
   "tintColor": "#5825D0",
+  "META": {
+    "repoName": "Favorite apps",
+    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
+  },
   "featuredApps": [
     "com.ksign.tool",
     "xyz.phim4k.ios",
