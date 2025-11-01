@@ -4,9 +4,8 @@
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "sourceImage": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
-  "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/upload/repo.favorite.json",
+  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
   "website": "https://github.com/drphe/KhoIPA/",
-  "patreonURL": "https://patreon.com/drphe",
   "tintColor": "#5825D0",
   "META": {
     "repoName": "Favorite apps",
@@ -19,7 +18,6 @@
     "vn.com.vng.zingalo",
     "com.adguard.AdguardExtension"
   ],
-  "headerURL": "https://i.ibb.co/TxvH2Z4y/ff65c6ce8ae9.png",
   "apps": [
     {
       "beta": false,
