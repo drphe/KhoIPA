@@ -15,7 +15,7 @@
   ],
   "sourceImage": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.thuthuatjb.json",
-  "identifier": "com.drphe.repo.favorite",
+  "identifier": "com.drphe.repo",
   "META": {
     "repoName": "Favorite apps",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
