@@ -12,7 +12,7 @@ Các bro có thể liên lạc với mình qua các kênh sau nhé.
 ## 💖 Donate cho tác giả  
 
 
-![Donate](https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png)
+![Donate](https://i.ibb.co/yCDhBSr/IMG-3215.jpg)
 
 - 🏦 **MB Bank**: `2885999999`  
 - 🏦 **TechcomBank**: `282885999999`  
