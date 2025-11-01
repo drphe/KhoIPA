@@ -1,6 +1,6 @@
 # 📬 Cách thức liên lạc  
 
-![Contact](https://th.bing.com/th/id/R.55d049570657a7edfc208740d0df813c?rik=MDRfHthZOfpnBg&pid=ImgRaw&r=0)
+![Contact](https://i.ibb.co/Gvp32g1B/IMG-3213.jpg)
 
 - 💬 **Telegram**: [@Phetit](https://t.me/Phetit)  
 - 🎥 **Patreon**: [patreon.com/drphe](https://patreon.com/drphe)  
