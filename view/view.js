@@ -13,11 +13,6 @@ main(json => {
         if (editorsources.includes(sourceURL)) open(`../studio/?source=${sourceURL}`);
     });
 
-    document.getElementById("add")?.addEventListener("click", e => {
-        if (confirm(`Add "${json.name}" to Altstore?`))
-            open(`altstore://source?url=${sourceURL}`);
-    });
-
     // Set tab title
     document.title = json.name;
     // Set page title

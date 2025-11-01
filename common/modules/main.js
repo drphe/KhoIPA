@@ -37,8 +37,7 @@ export function main(callback, fallbackURL = "../../") {
 	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
     		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
 		const link = document.querySelector(".add");
-		      link.href = isEsignVisible ? `esign://addsource?url=${sourceURL}`:`altstore://source?url=${sourceURL}`;
-
+		      link.href = isEsignVisible ? `esign://addsource?url=${sourceURL}`:`feather://source/${sourceURL}`;
 	    });
 
             setApps(json.apps);
