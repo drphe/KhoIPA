@@ -1,5 +1,6 @@
 {
   "name": "Favorite apps",
+  "identifier": "com.drphe.repo.favorite",
   "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
