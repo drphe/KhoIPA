@@ -2,16 +2,10 @@
   "name": "Favorite apps",
   "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
-  "identifier": "drphe.repo.favorite",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
-  "sourceImage": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
-  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
   "website": "https://github.com/drphe/KhoIPA/",
+  "patreonURL": "https://patreon.com/drphe",
   "tintColor": "#5825D0",
-  "META": {
-    "repoName": "Favorite apps",
-    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
-  },
   "featuredApps": [
     "com.ksign.tool",
     "xyz.phim4k.ios",
@@ -19,6 +13,12 @@
     "vn.com.vng.zingalo",
     "com.adguard.AdguardExtension"
   ],
+  "sourceImage": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
+  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
+  "META": {
+    "repoName": "Favorite apps",
+    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
+  },
   "apps": [
     {
       "beta": false,
