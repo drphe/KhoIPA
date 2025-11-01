@@ -11,15 +11,7 @@
     "repoName": "TTJB IPA Repo",
     "repoIcon": "https://ipa.thuthuatjb.com/img/logo.png"
   },
-  "featuredApps": [
-    "nabzclan.glenai",
-    "nabzclan.safe-checker",
-    "com.AlfaBravo.CombatMaster",
-    "vn.vng.codmvn",
-    "com.roblox.robloxmobile",
-    "com.frontierdesign.videostar",
-    "com.huiynfim.play"
-  ],
+
     "news": [
     {
       "title": "Welcome to Nabzclan - App Store Repo!",
@@ -21341,5 +21333,14 @@
       ],
       "patreon": {}
     }
+  ],
+    "featuredApps": [
+    "nabzclan.glenai",
+    "nabzclan.safe-checker",
+    "com.AlfaBravo.CombatMaster",
+    "vn.vng.codmvn",
+    "com.roblox.robloxmobile",
+    "com.frontierdesign.videostar",
+    "com.huiynfim.play"
   ]
 }
