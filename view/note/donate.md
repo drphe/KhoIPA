@@ -1,7 +1,7 @@
 # 📬 Cách thức liên lạc  
 Các bro có thể liên lạc với mình qua các kênh sau nhé.
 
-![Contact](https://i.ibb.co/Gvp32g1B/IMG-3213.jpg)
+![Contact](https://i.ibb.co/39KrnHjM/IMG-3213.jpg)
 
 - 💬 **Telegram**: [@Phetit](https://t.me/Phetit)  
 - 🎥 **Patreon**: [patreon.com/drphe](https://patreon.com/drphe)  
