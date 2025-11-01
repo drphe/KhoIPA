@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-10-31T15:00:03Z",
+  "updated_at": "2025-11-01T06:10:03Z",
   "name": "Nabzclan - App Store",
   "identifier": "com.nabzclan.repo.altstore",
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
@@ -25,6 +25,61 @@
     "com.huiynfim.play"
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "YouTube Plus",
+      "type": 1,
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_690135091203c.jpg",
+      "screenshotURLs": [],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "versions": [
+        {
+          "version": "20.43.3",
+          "date": "2025-11-01",
+          "size": 135836336,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
+          "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works."
+        },
+        {
+          "version": "20.43.3",
+          "date": "2025-11-01",
+          "size": 127093589,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1862",
+          "localizedDescription": "Hacked YouTube"
+        },
+        {
+          "version": "20.43.3",
+          "date": "2025-10-31",
+          "size": 130690453,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1864",
+          "localizedDescription": "Injected with YouTube reborn unknown features included"
+        },
+        {
+          "version": "20.09.3",
+          "date": "2025-10-27",
+          "size": 112848236,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1770",
+          "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n• Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n• Copy video, comment, and post information\n• Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n• Player settings: Gestures, default quality, preferred audio track\n• Save, Load and Restore settings. Clear cache once or automatically on app startup\n• Built-in SponsorBlock\n• An"
+        },
+        {
+          "version": "20.42.3",
+          "date": "2025-10-25",
+          "size": 130083531,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/545",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "patreon": {}
+    },
     {
       "beta": false,
       "name": "AI Background Editor - Ereasy",
@@ -96,33 +151,6 @@
           "size": 141804893,
           "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/555",
           "localizedDescription": "Injected with Subscription Unlocked"
-        }
-      ],
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Roblox - SkibX",
-      "type": 1,
-      "bundleIdentifier": "com.gloop.skibmobile",
-      "developerName": "lscs3",
-      "subtitle": "",
-      "localizedDescription": "Roblox Executor",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761877920.jpeg",
-      "screenshotURLs": [],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "versions": [
-        {
-          "version": "2.695.955",
-          "date": "2025-10-31",
-          "size": 116232697,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1931",
-          "localizedDescription": "Roblox Executor"
         }
       ],
       "patreon": {}
@@ -1860,61 +1888,6 @@
           "date": "2025-10-25",
           "size": 153928565,
           "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/417",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "YouTube - YT Reborn",
-      "type": 1,
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "polo",
-      "subtitle": "",
-      "localizedDescription": "Injected with YouTube reborn unknown features included",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_690265c070a2a.jpg",
-      "screenshotURLs": [],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "versions": [
-        {
-          "version": "20.42.3",
-          "date": "2025-10-29",
-          "size": 130477112,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1864",
-          "localizedDescription": "Injected with YouTube reborn unknown features included"
-        },
-        {
-          "version": "20.42.3",
-          "date": "2025-10-29",
-          "size": 126874123,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1862",
-          "localizedDescription": "Hacked YouTube"
-        },
-        {
-          "version": "20.42.3",
-          "date": "2025-10-28",
-          "size": 129724701,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
-          "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works."
-        },
-        {
-          "version": "20.09.3",
-          "date": "2025-10-27",
-          "size": 112848236,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1770",
-          "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n• Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n• Copy video, comment, and post information\n• Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n• Player settings: Gestures, default quality, preferred audio track\n• Save, Load and Restore settings. Clear cache once or automatically on app startup\n• Built-in SponsorBlock\n• An"
-        },
-        {
-          "version": "20.42.3",
-          "date": "2025-10-25",
-          "size": 130083531,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/545",
           "localizedDescription": "Injected with Premium"
         }
       ],
