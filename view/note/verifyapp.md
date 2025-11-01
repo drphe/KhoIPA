@@ -13,7 +13,9 @@ Nếu thiết bị IOS đời cũ <16 <a href="#" data-url="chongthuhoicc.md" cl
 DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài đặt IPA** bằng các công cụ như **eSign**, **kSign**, và **Feather** — ngay cả khi dùng **chứng chỉ đã bị thu hồi**. 
 
 [WSF CFDNS](https://wsfteam.xyz/files/configurationprofiles/CFDNS-CP144.mobileconfig) hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/CFDNS-CP144.mobileconfig)
+
 [WSF madNS](https://wsfteam.xyz/files/configurationprofiles/madNS-CP144.mobileconfig) hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/madNS-CP144.mobileconfig)
+
 [WSF CFDNS](https://wsfteam.xyz/files/configurationprofiles/WFS-CP144.mobileconfig) hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/WFS-CP144.mobileconfig)
 
 ### 🔥 Ưu điểm:
