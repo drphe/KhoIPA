@@ -26,32 +26,16 @@ export function main(callback, fallbackURL = "../../") {
     fetch(sourceURL)
         .then(response => response.json())
         .then(source => {
-            const typeSource = detectSupport(source.apps[0]);
 	    const json = consolidateApps(source)
             // Set tint color
             const tintColor = json.tintColor?.replaceAll("#", "");
             if (tintColor) setTintColor(tintColor);
-
-    function detectSupport(app) {
-  	const supportsESign = !!(app.versionDate || app.fullDate);
-  	const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
-  	const hasFeatherMinimalRoot = typeof app.bundleIdentifier === "string" && typeof app.version === "string" && typeof app.downloadURL === "string";
-  	const supportsFeather = hasVersionsArray || hasFeatherMinimalRoot;
-
-  	if (supportsESign && supportsFeather) return "both";
-  	if (supportsESign) return "esign";
-  	if (supportsFeather) return "feather";
-  	return "both";
-    }
-			alert(typeSource)
-            		insertAltStoreBanner(json.name,typeSource);
+    insertAltStoreBanner(json.name);
 		
 	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
 	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
     		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
 		const link = document.querySelector(".add");
-			if(typeSource === 'feather') {link.href = `feather://source/${sourceURL}`; return;}
-			if(typeSource === 'esign') {link.href = `esign://addsource?url=${sourceURL}`; return;}
 		      link.href = isEsignVisible ?`feather://source/${sourceURL}`: `esign://addsource?url=${sourceURL}`;
 	    });
 
