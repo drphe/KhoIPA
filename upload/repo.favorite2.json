@@ -19,7 +19,17 @@
     "vn.com.vng.zingalo",
     "com.adguard.AdguardExtension"
   ],
-  "news": [
+  "news": [    {
+      "title": "Ủng hộ tác giả",
+      "identifier": "news_21m1wpwa9e",
+      "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
+      "date": "2025-11-01T08:55",
+      "tintColor": "#d03f25",
+      "imageURL": "https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png",
+      "notify": true,
+      "url": "donate.md",
+      "appID": null
+    },
     {
       "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
       "identifier": "hdsd-dns",
