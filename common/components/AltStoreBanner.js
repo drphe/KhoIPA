@@ -1,9 +1,5 @@
 import { sourceURL } from "../modules/constants.js";
-
-
-
 export const AltStoreBanner = (sourceName, typeSource) => {
-
 const icons = {
   feather: `<img src="https://dvntm0.github.io/img/feather.png" alt="altstore-icon" class="icon">`,
   esign: `<img src="https://esign.yyyue.xyz/ESignLogo200.png" alt="altstore-icon" class="icon">`,
@@ -12,7 +8,6 @@ const icons = {
     <img src="https://dvntm0.github.io/img/feather.png" alt="altstore-icon" class="icon">
   `
 };
-
 const texts = {
   feather: `
             <div class="text-container">
@@ -47,8 +42,7 @@ const texts = {
 return `<div class="uibanner">
     <div class="icons">${icons[typeSource] || ""}</div>
     <div class="content">
-        <div>${texts[typeSource] || ""}
-        </div>
+        <div>${texts[typeSource] || ""}</div>
         <a class="add">
             <button id="add-to-altstore">Add</button>
         </a>

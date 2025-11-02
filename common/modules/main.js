@@ -42,8 +42,8 @@ export function main(callback, fallbackURL = "../../") {
   	if (supportsFeather) return "feather";
   	return "both";
     }
-	    if(source?.apps && source.apps.length ){
-			 typeSource = detectSupport(source.apps[0]);
+	    if(source?.apps){
+			typeSource = detectSupport(source.apps[0]);
             		insertAltStoreBanner(json.name,typeSource);
 		}
 	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
