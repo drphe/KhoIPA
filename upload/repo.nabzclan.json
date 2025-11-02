@@ -12,7 +12,7 @@
   ],
   "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
-  "identifier": "com.nabzclan.repo.altstore",
+  "identifier": "com.nabzclan.repo",
   "META": {
     "repoName": "Nabzclan - App Store",
     "repoIcon": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png"
@@ -23059,10 +23059,10 @@
   "news": [
     {
       "title": "Welcome to Nabzclan - App Store Repo!",
-      "identifier": "vip-nabzclan-public-init",
+      "identifier": "public-init",
       "caption": "Tap to open our App Store",
       "date": "2023-01-01T07:00",
-      "tintColor": "#5bbad5",
+      "tintColor": "5bbad5",
       "imageURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
       "notify": true,
       "url": "https://appstore.nabzclan.vip/",
