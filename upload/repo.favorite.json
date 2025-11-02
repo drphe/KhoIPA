@@ -1421,10 +1421,10 @@
   "news": [
     {
       "title": "Ủng hộ tác giả",
-      "identifier": "news_21m1wpwa9e",
+      "identifier": "news-21m1wpwa9e",
       "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
       "date": "2025-11-01T08:55",
-      "tintColor": "#d03f25",
+      "tintColor": "d03f25",
       "imageURL": "https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png",
       "notify": true,
       "url": "donate.md",
@@ -1435,7 +1435,7 @@
       "identifier": "hdsd-dns",
       "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
       "date": "2025-10-17T07:00",
-      "tintColor": "#506471",
+      "tintColor": "506471",
       "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
       "notify": true,
       "url": "verifyapp.md",
