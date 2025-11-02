@@ -31,6 +31,17 @@ export function main(callback, fallbackURL = "../../") {
             const tintColor = json.tintColor?.replaceAll("#", "");
             if (tintColor) setTintColor(tintColor);
 	    let typeSource ='';
+    function detectSupport(app) {
+  	const supportsESign = !!(app.versionDate || app.fullDate);
+  	const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
+  	const hasFeatherMinimalRoot = typeof app.bundleIdentifier === "string" && typeof app.version === "string" && typeof app.downloadURL === "string";
+  	const supportsFeather = hasVersionsArray || hasFeatherMinimalRoot;
+
+  	if (supportsESign && supportsFeather) return "both";
+  	if (supportsESign) return "esign";
+  	if (supportsFeather) return "feather";
+  	return "both";
+    }
 	    if(source?.apps && source.apps.length ){
 			 typeSource = detectSupport(source.apps[0]);
             		insertAltStoreBanner(json.name,typeSource);
@@ -82,17 +93,7 @@ export function main(callback, fallbackURL = "../../") {
         // Bắt đầu tải
         newImage.src = image.src;
     });
-    function detectSupport(app) {
-  	const supportsESign = !!(app.versionDate || app.fullDate);
-  	const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
-  	const hasFeatherMinimalRoot = typeof app.bundleIdentifier === "string" && typeof app.version === "string" && typeof app.downloadURL === "string";
-  	const supportsFeather = hasVersionsArray || hasFeatherMinimalRoot;
 
-  	if (supportsESign && supportsFeather) return "both";
-  	if (supportsESign) return "esign";
-  	if (supportsFeather) return "feather";
-  	return "both";
-    }
 
     function imageLoaded() {
         count++;
