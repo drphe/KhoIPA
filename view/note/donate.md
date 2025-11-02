@@ -1,6 +1,7 @@
 # 👉🏻 Hướng dẫn sử dụng 
-Các app như esign, feather... yêu cầu định dạng file nguồn khác nhau, vì thế có thể không thêm được nguồn repository vào. Các reposite có định dạng khác nhau, dùng trên web sẽ hiển thị tốt nhất. 
-Có thể copy link tải ipa và sử dụng esign, feather hoặc safari tải về. Tuỳ vào sở thích của bạn.
+
+* Các app như esign, feather... yêu cầu định dạng file nguồn khác nhau, vì thế có thể không thêm được nguồn repository vào. Các reposite có định dạng khác nhau, dùng trên web sẽ hiển thị tốt nhất. 
+* Có thể copy link tải ipa và sử dụng esign, feather hoặc safari tải về. Tuỳ vào sở thích của bạn.
 ---
 
 
