@@ -21,6 +21,7 @@
       "developerName": "Battman x CyPwn",
       "subtitle": "",
       "localizedDescription": "Battman the Battery Manager",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Battman.png",
       "screenshotURLs": [
@@ -31,6 +32,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 410,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -40,6 +43,8 @@
           "localizedDescription": "Battman the Battery Manager"
         }
       ],
+      "versionDate": "2025-10-02",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Battman.ipa",
       "patreon": {}
     },
     {
@@ -50,6 +55,7 @@
       "developerName": "TrollVNC_2.4 x CyPwn",
       "subtitle": "",
       "localizedDescription": "placeholder",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_2.4.png",
       "screenshotURLs": [
@@ -60,6 +66,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "2.4",
       "versions": [
         {
           "version": "2.4",
@@ -69,6 +77,8 @@
           "localizedDescription": "placeholder"
         }
       ],
+      "versionDate": "2025-09-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollVNC_2.4.ipa",
       "patreon": {}
     },
     {
@@ -79,6 +89,7 @@
       "developerName": "CopyLog_1.7 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Clipboard history manager for TS!",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/CopyLog_1.7.png",
       "screenshotURLs": [
@@ -89,6 +100,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 6291456,
+      "version": "1.7",
       "versions": [
         {
           "version": "1.7",
@@ -98,6 +111,8 @@
           "localizedDescription": "Clipboard history manager for TS!"
         }
       ],
+      "versionDate": "2025-07-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CopyLog_1.7.ipa",
       "patreon": {}
     },
     {
@@ -108,6 +123,7 @@
       "developerName": "AmethystTS_1.0 x CyPwn",
       "subtitle": "",
       "localizedDescription": "TS version of Amethyst",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AmethystTS_1.0.png",
       "screenshotURLs": [
@@ -118,6 +134,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 29360128,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -127,6 +145,8 @@
           "localizedDescription": "TS version of Amethyst"
         }
       ],
+      "versionDate": "2025-07-14",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AmethystTS_1.0.ipa",
       "patreon": {}
     },
     {
@@ -137,6 +157,7 @@
       "developerName": "Animation_Speed_1.0.1 x CyPwn",
       "subtitle": "",
       "localizedDescription": "TS app to change animation speed",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Animation_Speed_1.0.1.png",
       "screenshotURLs": [
@@ -147,6 +168,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 155,
+      "version": "1.0.1",
       "versions": [
         {
           "version": "1.0.1",
@@ -163,6 +186,8 @@
           "localizedDescription": "TS app to change animation speed"
         }
       ],
+      "versionDate": "2025-07-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Animation_Speed_1.0.1.ipa",
       "patreon": {}
     },
     {
@@ -173,6 +198,7 @@
       "developerName": "ImmortalizerTS.1.0b x CyPwn",
       "subtitle": "",
       "localizedDescription": "Immortalizer for TrollStore",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ImmortalizerTS.1.0b.png",
       "screenshotURLs": [
@@ -183,6 +209,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 84,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -192,6 +220,8 @@
           "localizedDescription": "Immortalizer for TrollStore"
         }
       ],
+      "versionDate": "2025-07-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ImmortalizerTS.1.0b.ipa",
       "patreon": {}
     },
     {
@@ -202,6 +232,7 @@
       "developerName": "SpeedGG_3.3_Eng x CyPwn",
       "subtitle": "",
       "localizedDescription": "Live upload/download speed HUD",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/SpeedGG_3.3_Eng.png",
       "screenshotURLs": [
@@ -212,6 +243,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "3.3",
       "versions": [
         {
           "version": "3.3",
@@ -221,6 +254,8 @@
           "localizedDescription": "Live upload/download speed HUD"
         }
       ],
+      "versionDate": "2025-07-08",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SpeedGG_3.3_Eng.ipa",
       "patreon": {}
     },
     {
@@ -231,6 +266,7 @@
       "developerName": "ChargeLimiter_1.7 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Charge limiter for iOS",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ChargeLimiter_1.7.png",
       "screenshotURLs": [
@@ -241,6 +277,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "1.7",
       "versions": [
         {
           "version": "1.7",
@@ -257,6 +295,8 @@
           "localizedDescription": "Charge limiter for iOS!"
         }
       ],
+      "versionDate": "2025-06-15",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ChargeLimiter_1.7.ipa",
       "patreon": {}
     },
     {
@@ -267,6 +307,7 @@
       "developerName": "Apps_Manager_1.8.4_Cracked x CyPwn",
       "subtitle": "",
       "localizedDescription": "AppsManager v1.8.4 Cracked",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Apps_Manager_1.8.4_Cracked.png",
       "screenshotURLs": [
@@ -277,6 +318,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "1.8",
       "versions": [
         {
           "version": "1.8",
@@ -286,6 +329,8 @@
           "localizedDescription": "AppsManager v1.8.4 Cracked"
         }
       ],
+      "versionDate": "2025-06-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Apps_Manager_1.8.4_Cracked.ipa",
       "patreon": {}
     },
     {
@@ -296,6 +341,7 @@
       "developerName": "TrollOpen_2.1_FreeVersion x CyPwn",
       "subtitle": "",
       "localizedDescription": "Quick convenient app launcher",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollOpen_2.1_FreeVersion.png",
       "screenshotURLs": [
@@ -306,6 +352,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 6291456,
+      "version": "2.1",
       "versions": [
         {
           "version": "2.1",
@@ -315,6 +363,8 @@
           "localizedDescription": "Quick convenient app launcher"
         }
       ],
+      "versionDate": "2025-06-06",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollOpen_2.1_FreeVersion.ipa",
       "patreon": {}
     },
     {
@@ -325,6 +375,7 @@
       "developerName": "Geranium_1.1.3 x CyPwn",
       "subtitle": "",
       "localizedDescription": "LocSim, Daemon Mngr, Cleaner & more",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Geranium_1.1.3.png",
       "screenshotURLs": [
@@ -335,6 +386,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 5242880,
+      "version": "1.1.3",
       "versions": [
         {
           "version": "1.1.3",
@@ -344,6 +397,8 @@
           "localizedDescription": "LocSim, Daemon Mngr, Cleaner & more"
         }
       ],
+      "versionDate": "2025-05-31",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Geranium_1.1.3.ipa",
       "patreon": {}
     },
     {
@@ -354,6 +409,7 @@
       "developerName": "TrollBackgrounder_1.5 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Background your apps!",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollBackgrounder_1.5.png",
       "screenshotURLs": [
@@ -364,6 +420,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 914,
+      "version": "1.5",
       "versions": [
         {
           "version": "1.5",
@@ -373,6 +431,8 @@
           "localizedDescription": "Background your apps!"
         }
       ],
+      "versionDate": "2025-05-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollBackgrounder_1.5.ipa",
       "patreon": {}
     },
     {
@@ -383,6 +443,7 @@
       "developerName": "Battery_Info_1.2.0 x CyPwn",
       "subtitle": "",
       "localizedDescription": "TS app to check battery information",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Battery_Info_1.2.0.png",
       "screenshotURLs": [
@@ -393,6 +454,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 301,
+      "version": "1.2.0",
       "versions": [
         {
           "version": "1.2.0",
@@ -416,6 +479,8 @@
           "localizedDescription": "TS app to check battery information"
         }
       ],
+      "versionDate": "2025-05-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Battery_Info_1.2.0.ipa",
       "patreon": {}
     },
     {
@@ -426,6 +491,7 @@
       "developerName": "AppsDump3_4.0.9 x CyPwn",
       "subtitle": "",
       "localizedDescription": "AppsDump3_4.0.9",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppsDump3_4.0.9.png",
       "screenshotURLs": [
@@ -436,6 +502,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 4194304,
+      "version": "4.0.9",
       "versions": [
         {
           "version": "4.0.9",
@@ -459,6 +527,8 @@
           "localizedDescription": "AppsDump3 v4.0.5"
         }
       ],
+      "versionDate": "2025-05-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppsDump3_4.0.9.ipa",
       "patreon": {}
     },
     {
@@ -469,6 +539,7 @@
       "developerName": "TheBall_2.7 x CyPwn",
       "subtitle": "",
       "localizedDescription": "TheBall_2.7",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TheBall_2.7.png",
       "screenshotURLs": [
@@ -479,6 +550,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 847,
+      "version": "2.7",
       "versions": [
         {
           "version": "2.7",
@@ -495,6 +568,8 @@
           "localizedDescription": "Floating ball for quick app access."
         }
       ],
+      "versionDate": "2025-04-28",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TheBall_2.7.ipa",
       "patreon": {}
     },
     {
@@ -505,6 +580,7 @@
       "developerName": "TrollFools_3.7-42 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Inject tweaks into apps",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_3.7-42.png",
       "screenshotURLs": [
@@ -515,6 +591,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 5242880,
+      "version": "3.7",
       "versions": [
         {
           "version": "3.7",
@@ -531,6 +609,8 @@
           "localizedDescription": "Inject tweaks into apps"
         }
       ],
+      "versionDate": "2025-04-24",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollFools_3.7-42.ipa",
       "patreon": {}
     },
     {
@@ -541,6 +621,7 @@
       "developerName": "Reveil_2_0_6 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Reveil",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Reveil_2_0_6.png",
       "screenshotURLs": [
@@ -551,6 +632,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "2.0",
       "versions": [
         {
           "version": "2.0",
@@ -560,6 +643,8 @@
           "localizedDescription": "Reveil"
         }
       ],
+      "versionDate": "2025-03-11",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Reveil_2_0_6.ipa",
       "patreon": {}
     },
     {
@@ -570,6 +655,7 @@
       "developerName": "TrollFools_2.11-28_huamidev x CyPwn",
       "subtitle": "",
       "localizedDescription": "Inject tweaks into apps",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_2.11-28_huamidev.png",
       "screenshotURLs": [
@@ -580,6 +666,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 8388608,
+      "version": "2.11",
       "versions": [
         {
           "version": "2.11",
@@ -589,6 +677,8 @@
           "localizedDescription": "Inject tweaks into apps"
         }
       ],
+      "versionDate": "2025-02-15",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollFools_2.11-28_huamidev.ipa",
       "patreon": {}
     },
     {
@@ -599,6 +689,7 @@
       "developerName": "SF_Symbols_51.2 x CyPwn",
       "subtitle": "",
       "localizedDescription": "View “SF Symbols” on your iDevice",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/SF_Symbols_51.2.png",
       "screenshotURLs": [
@@ -612,6 +703,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "51.2",
       "versions": [
         {
           "version": "51.2",
@@ -621,6 +714,8 @@
           "localizedDescription": "View “SF Symbols” on your iDevice"
         }
       ],
+      "versionDate": "2025-02-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SF_Symbols_51.2.ipa",
       "patreon": {}
     },
     {
@@ -631,6 +726,7 @@
       "developerName": "ClearResidue_1.0 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Tool to remove Filza residue files",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ClearResidue_1.0.png",
       "screenshotURLs": [
@@ -641,6 +737,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 71,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -650,6 +748,8 @@
           "localizedDescription": "Tool to remove Filza residue files"
         }
       ],
+      "versionDate": "2025-01-20",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ClearResidue_1.0.ipa",
       "patreon": {}
     },
     {
@@ -660,6 +760,7 @@
       "developerName": "DumpDecrypter_1.4-8 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Decrypt iOS Apps and Plugins",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/DumpDecrypter_1.4-8.png",
       "screenshotURLs": [
@@ -670,6 +771,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 472,
+      "version": "1.4-8",
       "versions": [
         {
           "version": "1.4-8",
@@ -679,6 +782,8 @@
           "localizedDescription": "Decrypt iOS Apps and Plugins"
         }
       ],
+      "versionDate": "2024-10-20",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DumpDecrypter_1.4-8.ipa",
       "patreon": {}
     },
     {
@@ -689,6 +794,7 @@
       "developerName": "AppStore++_NewAPI x CyPwn",
       "subtitle": "",
       "localizedDescription": "AppStore++ with new API",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppStore++_NewAPI.png",
       "screenshotURLs": [
@@ -699,6 +805,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 15728640,
+      "version": "1.0.3",
       "versions": [
         {
           "version": "1.0.3",
@@ -708,6 +816,8 @@
           "localizedDescription": "AppStore++ with new API"
         }
       ],
+      "versionDate": "2024-10-14",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppStore++_NewAPI.ipa",
       "patreon": {}
     },
     {
@@ -718,6 +828,7 @@
       "developerName": "MuffinStore_1.1.2 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Experimental app downgrader.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/MuffinStore_1.1.2.png",
       "screenshotURLs": [
@@ -728,6 +839,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 214,
+      "version": "1.1.2",
       "versions": [
         {
           "version": "1.1.2",
@@ -737,6 +850,8 @@
           "localizedDescription": "Experimental app downgrader."
         }
       ],
+      "versionDate": "2024-10-08",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/MuffinStore_1.1.2.ipa",
       "patreon": {}
     },
     {
@@ -747,6 +862,7 @@
       "developerName": "Fortnite-31.00-Decrypted x CyPwn",
       "subtitle": "",
       "localizedDescription": "TrollStore iOS 16 ONLY",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Fortnite-31.00-Decrypted.png",
       "screenshotURLs": [
@@ -757,6 +873,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 241172480,
+      "version": "31.00.1",
       "versions": [
         {
           "version": "31.00.1",
@@ -766,6 +884,8 @@
           "localizedDescription": "TrollStore iOS 16 ONLY"
         }
       ],
+      "versionDate": "2024-08-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Fortnite-31.00-Decrypted.ipa",
       "patreon": {}
     },
     {
@@ -776,6 +896,7 @@
       "developerName": "SuperIcons_2.1.4_Huami x CyPwn",
       "subtitle": "",
       "localizedDescription": "Change app icons with TrollStore!",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/SuperIcons_2.1.4_Huami.png",
       "screenshotURLs": [
@@ -786,6 +907,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "2.1",
       "versions": [
         {
           "version": "2.1",
@@ -795,6 +918,8 @@
           "localizedDescription": "Change app icons with TrollStore!"
         }
       ],
+      "versionDate": "2024-08-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SuperIcons_2.1.4_Huami.ipa",
       "patreon": {}
     },
     {
@@ -805,6 +930,7 @@
       "developerName": "AddonsPro-3.8 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Powerful Safari browser extension!",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AddonsPro-3.8.png",
       "screenshotURLs": [
@@ -815,6 +941,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 28311552,
+      "version": "3.8",
       "versions": [
         {
           "version": "3.8",
@@ -831,6 +959,8 @@
           "localizedDescription": "Powerful Safari browser extension!"
         }
       ],
+      "versionDate": "2024-07-11",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AddonsPro-3.8.ipa",
       "patreon": {}
     },
     {
@@ -841,6 +971,7 @@
       "developerName": "DowngradeApp_1.1-9 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Downgrade apps! TrollStore required",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/DowngradeApp_1.1-9.png",
       "screenshotURLs": [
@@ -851,6 +982,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 530,
+      "version": "1.1-9",
       "versions": [
         {
           "version": "1.1-9",
@@ -860,6 +993,8 @@
           "localizedDescription": "Downgrade apps! TrollStore required"
         }
       ],
+      "versionDate": "2024-07-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DowngradeApp_1.1-9.ipa",
       "patreon": {}
     },
     {
@@ -870,6 +1005,7 @@
       "developerName": "SimLoc_1.8.5 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Location Simulation App",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/SimLoc_1.8.5.png",
       "screenshotURLs": [
@@ -880,6 +1016,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.8.5",
       "versions": [
         {
           "version": "1.8.5",
@@ -889,6 +1027,8 @@
           "localizedDescription": "Location Simulation App"
         }
       ],
+      "versionDate": "2024-06-20",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SimLoc_1.8.5.ipa",
       "patreon": {}
     },
     {
@@ -899,6 +1039,7 @@
       "developerName": "TrollDecrypt x CyPwn",
       "subtitle": "",
       "localizedDescription": "iOS IPA Decrypter for TrollStore",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollDecrypt.png",
       "screenshotURLs": [
@@ -911,6 +1052,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 675,
+      "version": "1.1",
       "versions": [
         {
           "version": "1.1",
@@ -920,6 +1063,8 @@
           "localizedDescription": "iOS IPA Decrypter for TrollStore"
         }
       ],
+      "versionDate": "2024-04-09",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollDecrypt.ipa",
       "patreon": {}
     },
     {
@@ -930,6 +1075,7 @@
       "developerName": "DolphiniOS_4.0.0b7 x CyPwn",
       "subtitle": "",
       "localizedDescription": "GameCube and Wii emulator for iOS",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/DolphiniOS_4.0.0b7.png",
       "screenshotURLs": [
@@ -940,6 +1086,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 13631488,
+      "version": "4.0.0b7",
       "versions": [
         {
           "version": "4.0.0b7",
@@ -949,6 +1097,8 @@
           "localizedDescription": "GameCube and Wii emulator for iOS"
         }
       ],
+      "versionDate": "2024-03-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DolphiniOS_4.0.0b7.ipa",
       "patreon": {}
     },
     {
@@ -959,6 +1109,7 @@
       "developerName": "AudioRecorderTS x CyPwn",
       "subtitle": "",
       "localizedDescription": "AudioRecorder for TS Cracked by CBZ",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AudioRecorderTS.png",
       "screenshotURLs": [
@@ -969,6 +1120,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 4194304,
+      "version": "6.0.3",
       "versions": [
         {
           "version": "6.0.3",
@@ -985,6 +1138,8 @@
           "localizedDescription": "AudioRecorder for TS Cracked by CBZ"
         }
       ],
+      "versionDate": "2024-02-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AudioRecorderTS.ipa",
       "patreon": {}
     },
     {
@@ -995,6 +1150,7 @@
       "developerName": "LocSim_1.4.1k_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Spoof GPS Location. Cracked by CBZ!",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/LocSim_1.4.1k_TS.png",
       "screenshotURLs": [
@@ -1006,6 +1162,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.4.1",
       "versions": [
         {
           "version": "1.4.1",
@@ -1015,6 +1173,8 @@
           "localizedDescription": "Spoof GPS Location. Cracked by CBZ!"
         }
       ],
+      "versionDate": "2024-02-12",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/LocSim_1.4.1k_TS.ipa",
       "patreon": {}
     },
     {
@@ -1025,6 +1185,7 @@
       "developerName": "Dumpy2_2.0.7 x CyPwn",
       "subtitle": "",
       "localizedDescription": "IPA Dumper/Decrypter",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Dumpy2_2.0.7.png",
       "screenshotURLs": [
@@ -1036,6 +1197,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "2.0.7",
       "versions": [
         {
           "version": "2.0.7",
@@ -1045,6 +1208,8 @@
           "localizedDescription": "IPA Dumper/Decrypter"
         }
       ],
+      "versionDate": "2024-02-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Dumpy2_2.0.7.ipa",
       "patreon": {}
     },
     {
@@ -1055,6 +1220,7 @@
       "developerName": "Xina2_2.1.6~f1 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Xina2… but better",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Xina2_2.1.6~f1.png",
       "screenshotURLs": [
@@ -1066,6 +1232,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 59768832,
+      "version": "2.1.6~f1",
       "versions": [
         {
           "version": "2.1.6~f1",
@@ -1075,6 +1243,8 @@
           "localizedDescription": "Xina2… but better"
         }
       ],
+      "versionDate": "2024-01-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Xina2_2.1.6~f1.ipa",
       "patreon": {}
     },
     {
@@ -1085,6 +1255,7 @@
       "developerName": "ModMyIPA_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Clone Apps with TrollStore",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ModMyIPA_TS.png",
       "screenshotURLs": [
@@ -1095,6 +1266,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "1.0.1",
       "versions": [
         {
           "version": "1.0.1",
@@ -1104,6 +1277,8 @@
           "localizedDescription": "Clone Apps with TrollStore"
         }
       ],
+      "versionDate": "2023-07-22",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ModMyIPA_TS.ipa",
       "patreon": {}
     },
     {
@@ -1114,6 +1289,7 @@
       "developerName": "YahooMailNoAds_7.18.0_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Yahoo Mail app with Ads disabled",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/YahooMailNoAds_7.18.0_TS.png",
       "screenshotURLs": [
@@ -1124,6 +1300,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 97517568,
+      "version": "7.18.0",
       "versions": [
         {
           "version": "7.18.0",
@@ -1133,6 +1311,8 @@
           "localizedDescription": "Yahoo Mail app with Ads disabled"
         }
       ],
+      "versionDate": "2023-07-18",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/YahooMailNoAds_7.18.0_TS.ipa",
       "patreon": {}
     },
     {
@@ -1143,6 +1323,7 @@
       "developerName": "Surge5 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Surge 5 thing",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Surge5.png",
       "screenshotURLs": [
@@ -1157,6 +1338,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 39845888,
+      "version": "5.2.1",
       "versions": [
         {
           "version": "5.2.1",
@@ -1166,6 +1349,8 @@
           "localizedDescription": "Surge 5 thing"
         }
       ],
+      "versionDate": "2023-07-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Surge_5.ipa",
       "patreon": {}
     },
     {
@@ -1176,6 +1361,7 @@
       "developerName": "AI_Chat_1.0.2 x CyPwn",
       "subtitle": "",
       "localizedDescription": "Cracked by Ravand",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AI_Chat_1.0.2.png",
       "screenshotURLs": [
@@ -1188,6 +1374,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 41943040,
+      "version": "1.0.2",
       "versions": [
         {
           "version": "1.0.2",
@@ -1197,6 +1385,8 @@
           "localizedDescription": "Cracked by Ravand"
         }
       ],
+      "versionDate": "2023-06-23",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AI_Chat_1.0.2.ipa",
       "patreon": {}
     },
     {
@@ -1207,6 +1397,7 @@
       "developerName": "Fugu15Max x CyPwn",
       "subtitle": "",
       "localizedDescription": "Fugu15 Max Beta 8 Keycap Fix includes:\r\n- Removed Zebra from bootstrap\r\n- Sileo 2.4.4 (Shitty-o can be installed by removing sileo version from essential dependencies)\r\n- UI Overhaul\r\n- Logs in main view\r\n- Custom bundleid\r\n- Modified version number\r\n- Everything from Opa's beta 8 + extra commits including:\r\n1. Deprecation fixes\r\n2. Fork reimplementation behavior fixes\r\n3. BaseBin forkfix fixup",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Fugu15Max.png",
       "screenshotURLs": [
@@ -1218,6 +1409,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 34603008,
+      "version": "1.0~beta8",
       "versions": [
         {
           "version": "1.0~beta8",
@@ -1227,6 +1420,8 @@
           "localizedDescription": "Fugu15 Max Beta 8 Keycap Fix includes:\r\n- Removed Zebra from bootstrap\r\n- Sileo 2.4.4 (Shitty-o can be installed by removing sileo version from essential dependencies)\r\n- UI Overhaul\r\n- Logs in main view\r\n- Custom bundleid\r\n- Modified version number\r\n- Everything from Opa's beta 8 + extra commits including:\r\n1. Deprecation fixes\r\n2. Fork reimplementation behavior fixes\r\n3. BaseBin forkfix fixup"
         }
       ],
+      "versionDate": "2023-04-19",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Fugu15Max.ipa",
       "patreon": {}
     },
     {
@@ -1237,6 +1432,7 @@
       "developerName": "Opener_1.11.9_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Open links in apps",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Opener_1.11.9_TS.png",
       "screenshotURLs": [
@@ -1247,6 +1443,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.11.9",
       "versions": [
         {
           "version": "1.11.9",
@@ -1256,6 +1454,8 @@
           "localizedDescription": "Open links in apps"
         }
       ],
+      "versionDate": "2023-02-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Opener_1.11.9_TS.ipa",
       "patreon": {}
     },
     {
@@ -1266,6 +1466,7 @@
       "developerName": "AppsManagerCracked_1.8.1 x CyPwn",
       "subtitle": "",
       "localizedDescription": "AppsManager v1.8.1 - App Data Manager by TigiSoftware. Activated crack by Paisseon.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppsManagerCracked_1.8.1.png",
       "screenshotURLs": [
@@ -1276,6 +1477,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.8.1",
       "versions": [
         {
           "version": "1.8.1",
@@ -1285,6 +1488,8 @@
           "localizedDescription": "AppsManager v1.8.1 - App Data Manager by TigiSoftware. Activated crack by Paisseon."
         }
       ],
+      "versionDate": "2022-12-23",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppsManagerCracked_1.8.1.ipa",
       "patreon": {}
     },
     {
@@ -1295,6 +1500,7 @@
       "developerName": "FilzaCracked_4.0.0_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Filza File Manager cracked by paisseon, powerful File Manager for iPhone, iPad, iPod Touch",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/FilzaCracked_4.0.0_TS.png",
       "screenshotURLs": [
@@ -1305,6 +1511,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 13631488,
+      "version": "4.0",
       "versions": [
         {
           "version": "4.0",
@@ -1314,6 +1522,8 @@
           "localizedDescription": "Filza File Manager cracked by paisseon, powerful File Manager for iPhone, iPad, iPod Touch"
         }
       ],
+      "versionDate": "2022-12-23",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/FilzaCracked_4.0.0_TS.ipa",
       "patreon": {}
     },
     {
@@ -1324,6 +1534,7 @@
       "developerName": "Appabetical-0.9_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Sort your apps A to Z or by color.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Appabetical-0.9_TS.png",
       "screenshotURLs": [
@@ -1334,6 +1545,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 409,
+      "version": "0.9",
       "versions": [
         {
           "version": "0.9",
@@ -1343,6 +1556,8 @@
           "localizedDescription": "Sort your apps A to Z or by color."
         }
       ],
+      "versionDate": "2022-12-16",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Appabetical-0.9_TS.ipa",
       "patreon": {}
     },
     {
@@ -1353,6 +1568,7 @@
       "developerName": "NewTerm3_for_Xina_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "NewTerm3 Terminal. For XinaA15 jailbreaks only.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/NewTerm3_for_Xina_TS.png",
       "screenshotURLs": [
@@ -1363,6 +1579,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "3.0b1",
       "versions": [
         {
           "version": "3.0b1",
@@ -1372,6 +1590,8 @@
           "localizedDescription": "NewTerm3 Terminal. For XinaA15 jailbreaks only."
         }
       ],
+      "versionDate": "2022-12-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NewTerm3_for_Xina_TS.ipa",
       "patreon": {}
     },
     {
@@ -1382,6 +1602,7 @@
       "developerName": "TweakSettings_for_Xina_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "TweakSettings app. For XinaA15 jailbreaks only. ",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TweakSettings_for_Xina_TS.png",
       "screenshotURLs": [
@@ -1392,6 +1613,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 3145728,
+      "version": "1.0.6",
       "versions": [
         {
           "version": "1.0.6",
@@ -1401,6 +1624,8 @@
           "localizedDescription": "TweakSettings app. For XinaA15 jailbreaks only. "
         }
       ],
+      "versionDate": "2022-12-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TweakSettings_for_Xina_TS.ipa",
       "patreon": {}
     },
     {
@@ -1411,6 +1636,7 @@
       "developerName": "TrollTools_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v2.2 beta 4 - iOS 15 only. Icon themes, Badge themes, Passcode themes.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollTools_TS.png",
       "screenshotURLs": [
@@ -1421,6 +1647,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 3145728,
+      "version": "2.2",
       "versions": [
         {
           "version": "2.2",
@@ -1430,6 +1658,8 @@
           "localizedDescription": "v2.2 beta 4 - iOS 15 only. Icon themes, Badge themes, Passcode themes."
         }
       ],
+      "versionDate": "2022-12-01",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollTools_TS.ipa",
       "patreon": {}
     },
     {
@@ -1440,6 +1670,7 @@
       "developerName": "Filza-NoURL_3.9.8_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Filza File Manager (no URL scheme filza://) v3.9.8 - Fully Activated crack by Paisseon. Root level access to /var. Terminal supports Fish shell.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Filza-NoURL_3.9.8_TS.png",
       "screenshotURLs": [
@@ -1450,6 +1681,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 14680064,
+      "version": "3.9",
       "versions": [
         {
           "version": "3.9",
@@ -1459,6 +1692,8 @@
           "localizedDescription": "Filza File Manager (no URL scheme filza://) v3.9.8 - Fully Activated crack by Paisseon. Root level access to /var. Terminal supports Fish shell."
         }
       ],
+      "versionDate": "2022-11-30",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Filza-NoURL_3.9.8_TS.ipa",
       "patreon": {}
     },
     {
@@ -1469,6 +1704,7 @@
       "developerName": "NovusPhone_36-b1_arm64e_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Novus is a completely redesigned Phone app tweak, bringing a more unified design compared to the stock app. ARM64e ONLY (iPhone XS and up) on 14.X - 15.X TrollStore.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/NovusPhone_36-b1_arm64e_TS.png",
       "screenshotURLs": [
@@ -1479,6 +1715,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 4194304,
+      "version": "36",
       "versions": [
         {
           "version": "36",
@@ -1488,6 +1726,8 @@
           "localizedDescription": "Novus is a completely redesigned Phone app tweak, bringing a more unified design compared to the stock app. ARM64e ONLY (iPhone XS and up) on 14.X - 15.X TrollStore."
         }
       ],
+      "versionDate": "2022-11-30",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NovusPhone_36-b1_arm64e_TS.ipa",
       "patreon": {}
     },
     {
@@ -1498,6 +1738,7 @@
       "developerName": "NovusPhone_36-b1_arm64_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Novus is a completely redesigned Phone app tweak, bringing a more unified design compared to the stock app. ARM64 ONLY (iPhone X and lower) on 14.X - 15.X TrollStore.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/NovusPhone_36-b1_arm64_TS.png",
       "screenshotURLs": [
@@ -1508,6 +1749,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "36",
       "versions": [
         {
           "version": "36",
@@ -1517,6 +1760,8 @@
           "localizedDescription": "Novus is a completely redesigned Phone app tweak, bringing a more unified design compared to the stock app. ARM64 ONLY (iPhone X and lower) on 14.X - 15.X TrollStore."
         }
       ],
+      "versionDate": "2022-11-30",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NovusPhone_36-b1_arm64_TS.ipa",
       "patreon": {}
     },
     {
@@ -1527,6 +1772,7 @@
       "developerName": "AirTroller-1.1.1_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "AirDrop spammer | flooder to troll friends.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AirTroller-1.1.1_TS.png",
       "screenshotURLs": [
@@ -1537,6 +1783,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.1.1",
       "versions": [
         {
           "version": "1.1.1",
@@ -1546,6 +1794,8 @@
           "localizedDescription": "AirDrop spammer | flooder to troll friends."
         }
       ],
+      "versionDate": "2022-11-28",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AirTroller-1.1.1_TS.ipa",
       "patreon": {}
     },
     {
@@ -1556,6 +1806,7 @@
       "developerName": "BackupAZ4_Crack_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "BackupAZ4 - this may be useful for a select few with TS and jailbroken. Cracked by Anna",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/BackupAZ4_Crack_TS.png",
       "screenshotURLs": [
@@ -1566,6 +1817,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 12582912,
+      "version": "1.3.1",
       "versions": [
         {
           "version": "1.3.1",
@@ -1575,6 +1828,8 @@
           "localizedDescription": "BackupAZ4 - this may be useful for a select few with TS and jailbroken. Cracked by Anna"
         }
       ],
+      "versionDate": "2022-11-26",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/BackupAZ4_Crack_TS.ipa",
       "patreon": {}
     },
     {
@@ -1585,6 +1840,7 @@
       "developerName": "FineReaderPDFPro_15.5.2_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "FineReader PDF Pro",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/FineReaderPDFPro_15.5.2_TS.png",
       "screenshotURLs": [
@@ -1595,6 +1851,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 63963136,
+      "version": "15.5.2",
       "versions": [
         {
           "version": "15.5.2",
@@ -1604,6 +1862,8 @@
           "localizedDescription": "FineReader PDF Pro"
         }
       ],
+      "versionDate": "2022-11-22",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/FineReaderPDFPro_15.5.2_TS.ipa",
       "patreon": {}
     },
     {
@@ -1614,6 +1874,7 @@
       "developerName": "CarrotUltra_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Carrot Weather 5.8.1 with Ultra unlocked",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/CarrotUltra_TS.png",
       "screenshotURLs": [
@@ -1624,6 +1885,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 38797312,
+      "version": "5.8.1",
       "versions": [
         {
           "version": "5.8.1",
@@ -1633,6 +1896,8 @@
           "localizedDescription": "Carrot Weather 5.8.1 with Ultra unlocked"
         }
       ],
+      "versionDate": "2022-11-19",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CarrotUltra_TS.ipa",
       "patreon": {}
     },
     {
@@ -1643,6 +1908,7 @@
       "developerName": "PandolifeApp_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Pandolife App v1.6 - This should only be installed if you have Pandora with Pandolife tweak injected. This add-on is a separate app to play and manage the downloaded music and other pandolife settings. By Julio Verne.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/PandolifeApp_TS.png",
       "screenshotURLs": [
@@ -1653,6 +1919,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 5242880,
+      "version": "1.6",
       "versions": [
         {
           "version": "1.6",
@@ -1662,6 +1930,8 @@
           "localizedDescription": "Pandolife App v1.6 - This should only be installed if you have Pandora with Pandolife tweak injected. This add-on is a separate app to play and manage the downloaded music and other pandolife settings. By Julio Verne."
         }
       ],
+      "versionDate": "2022-11-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/PandolifeApp_TS.ipa",
       "patreon": {}
     },
     {
@@ -1672,6 +1942,7 @@
       "developerName": "Pandolife_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Pandora v2211.1 with Pandolife 1.1a tweak. For complete Pandolife experience, you should also install the PandolifeApp v1.6 standalone app. By Julio Verne.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Pandolife_TS.png",
       "screenshotURLs": [
@@ -1682,6 +1953,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 83886080,
+      "version": "2211.1",
       "versions": [
         {
           "version": "2211.1",
@@ -1691,6 +1964,8 @@
           "localizedDescription": "Pandora v2211.1 with Pandolife 1.1a tweak. For complete Pandolife experience, you should also install the PandolifeApp v1.6 standalone app. By Julio Verne."
         }
       ],
+      "versionDate": "2022-11-16",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Pandolife_TS.ipa",
       "patreon": {}
     },
     {
@@ -1701,6 +1976,7 @@
       "developerName": "Santander_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v1.0 - Modern file manager.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Santander_TS.png",
       "screenshotURLs": [
@@ -1711,6 +1987,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 4194304,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -1720,6 +1998,8 @@
           "localizedDescription": "v1.0 - Modern file manager."
         }
       ],
+      "versionDate": "2022-11-14",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Santander_TS.ipa",
       "patreon": {}
     },
     {
@@ -1730,6 +2010,7 @@
       "developerName": "TrollNonce_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v1.1.2 - Nonce Setter for 15.0 - 15.1.1 (A10-A15) and 15.2-15.5b4 (A12+, not all device / version combinations supported atm), only works when installed through TrollStore 1.0.9 or newer.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollNonce_TS.png",
       "screenshotURLs": [
@@ -1740,6 +2021,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 247,
+      "version": "1.1.2",
       "versions": [
         {
           "version": "1.1.2",
@@ -1749,6 +2032,8 @@
           "localizedDescription": "v1.1.2 - Nonce Setter for 15.0 - 15.1.1 (A10-A15) and 15.2-15.5b4 (A12+, not all device / version combinations supported atm), only works when installed through TrollStore 1.0.9 or newer."
         }
       ],
+      "versionDate": "2022-11-13",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollNonce_TS.ipa",
       "patreon": {}
     },
     {
@@ -1759,6 +2044,7 @@
       "developerName": "Kodi_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Kodi 18.9 - currently this is the latest version that works on TS due to a switch from python2 to python3 in 19.X ",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Kodi_TS.png",
       "screenshotURLs": [
@@ -1769,6 +2055,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 92274688,
+      "version": "18.9",
       "versions": [
         {
           "version": "18.9",
@@ -1778,6 +2066,8 @@
           "localizedDescription": "Kodi 18.9 - currently this is the latest version that works on TS due to a switch from python2 to python3 in 19.X "
         }
       ],
+      "versionDate": "2022-11-11",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Kodi_TS.ipa",
       "patreon": {}
     },
     {
@@ -1788,6 +2078,7 @@
       "developerName": "Mugunghwa_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v3.0.2 - Badge Color Changer. Home Gesture. True icon theming (non webclip).",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Mugunghwa_TS.png",
       "screenshotURLs": [
@@ -1798,6 +2089,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 3145728,
+      "version": "3.0.2",
       "versions": [
         {
           "version": "3.0.2",
@@ -1807,6 +2100,8 @@
           "localizedDescription": "v3.0.2 - Badge Color Changer. Home Gesture. True icon theming (non webclip)."
         }
       ],
+      "versionDate": "2022-11-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Mugunghwa_TS.ipa",
       "patreon": {}
     },
     {
@@ -1817,6 +2112,7 @@
       "developerName": "NetworkManager1.1-2_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Control Network access on an app-by-app basis.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/NetworkManager1.1-2_TS.png",
       "screenshotURLs": [
@@ -1827,6 +2123,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 376,
+      "version": "1.1-2",
       "versions": [
         {
           "version": "1.1-2",
@@ -1836,6 +2134,8 @@
           "localizedDescription": "Control Network access on an app-by-app basis."
         }
       ],
+      "versionDate": "2022-11-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NetworkManager1.1-2_TS.ipa",
       "patreon": {}
     },
     {
@@ -1846,6 +2146,7 @@
       "developerName": "TrollSign_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v1.0 - Modify app entitlements.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollSign_TS.png",
       "screenshotURLs": [
@@ -1856,6 +2157,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -1865,6 +2168,8 @@
           "localizedDescription": "v1.0 - Modify app entitlements."
         }
       ],
+      "versionDate": "2022-11-06",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollSign_TS.ipa",
       "patreon": {}
     },
     {
@@ -1875,6 +2180,7 @@
       "developerName": "LocSim1.3.7_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "LocationSimulation v1.3.7 - Spoof your GPS location. Also includes other useful tools. Cracked by Anna! Latest crack allows for offline use and disables forced updates. *updated 11/4/2022*",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/LocSim1.3.7_TS.png",
       "screenshotURLs": [
@@ -1885,6 +2191,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.3.7",
       "versions": [
         {
           "version": "1.3.7",
@@ -1894,6 +2202,8 @@
           "localizedDescription": "LocationSimulation v1.3.7 - Spoof your GPS location. Also includes other useful tools. Cracked by Anna! Latest crack allows for offline use and disables forced updates. *updated 11/4/2022*"
         }
       ],
+      "versionDate": "2022-11-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/LocSim1.3.7_TS.ipa",
       "patreon": {}
     },
     {
@@ -1904,6 +2214,7 @@
       "developerName": "Unc0verLauncher_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "u0Launcher v1.0.1 - Fixes u0 step 18-19 codesign error. Requires Unc0ver to also be installed through TrollStore. When jailbreaking, start this u0Launcher app instead of unc0ver, it will do the necessary fix and then jump to unc0ver. Then you can press the \"Jailbreak\" button in the unc0ver app and it will work.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Unc0verLauncher_TS.png",
       "screenshotURLs": [
@@ -1914,6 +2225,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 545,
+      "version": "1.0.1",
       "versions": [
         {
           "version": "1.0.1",
@@ -1923,6 +2236,8 @@
           "localizedDescription": "u0Launcher v1.0.1 - Fixes u0 step 18-19 codesign error. Requires Unc0ver to also be installed through TrollStore. When jailbreaking, start this u0Launcher app instead of unc0ver, it will do the necessary fix and then jump to unc0ver. Then you can press the \"Jailbreak\" button in the unc0ver app and it will work."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Unc0verLauncher_TS.ipa",
       "patreon": {}
     },
     {
@@ -1933,6 +2248,7 @@
       "developerName": "CamScannerGold_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "CamScanner v6.27.0 Gold membership cracked by Sopranox.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/CamScannerGold_TS.png",
       "screenshotURLs": [
@@ -1943,6 +2259,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 81788928,
+      "version": "6.27.0",
       "versions": [
         {
           "version": "6.27.0",
@@ -1952,6 +2270,8 @@
           "localizedDescription": "CamScanner v6.27.0 Gold membership cracked by Sopranox."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CamScannerGold_TS.ipa",
       "patreon": {}
     },
     {
@@ -1962,6 +2282,7 @@
       "developerName": "SwiftKey_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Microsoft SwiftKey Keyboard v2.9.2 - Deprecated by Microsoft for iOS and removed from AppStore. This can still be used with TrollStore by switching it to a \"User\" app within TrollStore.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/SwiftKey_TS.png",
       "screenshotURLs": [
@@ -1972,6 +2293,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 79691776,
+      "version": "2.9.2",
       "versions": [
         {
           "version": "2.9.2",
@@ -1981,6 +2304,8 @@
           "localizedDescription": "Microsoft SwiftKey Keyboard v2.9.2 - Deprecated by Microsoft for iOS and removed from AppStore. This can still be used with TrollStore by switching it to a \"User\" app within TrollStore."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/SwiftKey_TS.ipa",
       "patreon": {}
     },
     {
@@ -1991,6 +2316,7 @@
       "developerName": "DowngradeApp_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v1.1-7 - Downgrade apps with ease, similar to AppStore++.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/DowngradeApp_TS.png",
       "screenshotURLs": [
@@ -2001,6 +2327,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 532,
+      "version": "1.1-7",
       "versions": [
         {
           "version": "1.1-7",
@@ -2010,6 +2338,8 @@
           "localizedDescription": "v1.1-7 - Downgrade apps with ease, similar to AppStore++."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DowngradeApp_TS.ipa",
       "patreon": {}
     },
     {
@@ -2020,6 +2350,7 @@
       "developerName": "NiceBattery_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "NiceBattery. The nicest.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/NiceBattery_TS.png",
       "screenshotURLs": [
@@ -2030,6 +2361,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 460,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2039,6 +2372,8 @@
           "localizedDescription": "NiceBattery. The nicest."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NiceBattery_TS.ipa",
       "patreon": {}
     },
     {
@@ -2049,6 +2384,7 @@
       "developerName": "WP-Maker_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Make Light & Dark wallpapers for WP-Loader.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/WP-Maker_TS.png",
       "screenshotURLs": [
@@ -2059,6 +2395,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2068,6 +2406,8 @@
           "localizedDescription": "Make Light & Dark wallpapers for WP-Loader."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WP-Maker_TS.ipa",
       "patreon": {}
     },
     {
@@ -2078,6 +2418,7 @@
       "developerName": "WP-Loader_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Load wallpapers created from WP-Maker.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/WP-Loader_TS.png",
       "screenshotURLs": [
@@ -2088,6 +2429,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2097,6 +2440,8 @@
           "localizedDescription": "Load wallpapers created from WP-Maker."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WP-Loader_TS.ipa",
       "patreon": {}
     },
     {
@@ -2107,6 +2452,7 @@
       "developerName": "ControlCenter++_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Rearrange all Control Center modules.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ControlCenter++_TS.png",
       "screenshotURLs": [
@@ -2117,6 +2463,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2126,6 +2474,8 @@
           "localizedDescription": "Rearrange all Control Center modules."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ControlCenter++_TS.ipa",
       "patreon": {}
     },
     {
@@ -2136,6 +2486,7 @@
       "developerName": "BatteryLife_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Advanced battery health, info, and statistics.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/BatteryLife_TS.png",
       "screenshotURLs": [
@@ -2146,6 +2497,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 39845888,
+      "version": "3.2.1",
       "versions": [
         {
           "version": "3.2.1",
@@ -2155,6 +2508,8 @@
           "localizedDescription": "Advanced battery health, info, and statistics."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/BatteryLife_TS.ipa",
       "patreon": {}
     },
     {
@@ -2165,6 +2520,7 @@
       "developerName": "AppInstalleriOS_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Random app installer with some cool features.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppInstalleriOS_TS.png",
       "screenshotURLs": [
@@ -2175,6 +2531,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 10485760,
+      "version": "6.0.0",
       "versions": [
         {
           "version": "6.0.0",
@@ -2184,6 +2542,8 @@
           "localizedDescription": "Random app installer with some cool features."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppInstalleriOS_TS.ipa",
       "patreon": {}
     },
     {
@@ -2194,6 +2554,7 @@
       "developerName": "Zebra_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Zebra package manager.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Zebra_TS.png",
       "screenshotURLs": [
@@ -2204,6 +2565,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 9437184,
+      "version": "1.1.28",
       "versions": [
         {
           "version": "1.1.28",
@@ -2213,6 +2576,8 @@
           "localizedDescription": "Zebra package manager."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Zebra_TS.ipa",
       "patreon": {}
     },
     {
@@ -2223,6 +2588,7 @@
       "developerName": "YouTuber_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "YouTuber v3.6 - Download YouTube videos and Convert to Audio or Ringtone files.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/YouTuber_TS.png",
       "screenshotURLs": [
@@ -2233,6 +2599,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "3.6",
       "versions": [
         {
           "version": "3.6",
@@ -2242,6 +2610,8 @@
           "localizedDescription": "YouTuber v3.6 - Download YouTube videos and Convert to Audio or Ringtone files."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/YouTuber_TS.ipa",
       "patreon": {}
     },
     {
@@ -2252,6 +2622,7 @@
       "developerName": "WiFiScanner_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Wifi scanner. Scans WiFi.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/WiFiScanner_TS.png",
       "screenshotURLs": [
@@ -2262,6 +2633,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 348,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2271,6 +2644,8 @@
           "localizedDescription": "Wifi scanner. Scans WiFi."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WiFiScanner_TS.ipa",
       "patreon": {}
     },
     {
@@ -2281,6 +2656,7 @@
       "developerName": "WifiList_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "View and share Wifi passwords.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/WifiList_TS.png",
       "screenshotURLs": [
@@ -2291,6 +2667,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 906,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2300,6 +2678,8 @@
           "localizedDescription": "View and share Wifi passwords."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WifiList_TS.ipa",
       "patreon": {}
     },
     {
@@ -2310,6 +2690,7 @@
       "developerName": "WiFiFoFumPro_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Wifi scanner. This Pro version includes advanced logging tools, with a live surveying map view that plots access points.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/WiFiFoFumPro_TS.png",
       "screenshotURLs": [
@@ -2320,6 +2701,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.1.1",
       "versions": [
         {
           "version": "1.1.1",
@@ -2329,6 +2712,8 @@
           "localizedDescription": "Wifi scanner. This Pro version includes advanced logging tools, with a live surveying map view that plots access points."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WiFiFoFumPro_TS.ipa",
       "patreon": {}
     },
     {
@@ -2339,6 +2724,7 @@
       "developerName": "WallpaperSetter_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Set Light Mode & Dark Mode wallpapers.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/WallpaperSetter_TS.png",
       "screenshotURLs": [
@@ -2349,6 +2735,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 143,
+      "version": "1.0.1",
       "versions": [
         {
           "version": "1.0.1",
@@ -2358,6 +2746,8 @@
           "localizedDescription": "Set Light Mode & Dark Mode wallpapers."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/WallpaperSetter_TS.ipa",
       "patreon": {}
     },
     {
@@ -2368,6 +2758,7 @@
       "developerName": "Unc0ver_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "unc0ver 8.0.2 for TrollStore. Use with u0Launcher to launch this patched version and jailbreak successfully.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Unc0ver_TS.png",
       "screenshotURLs": [
@@ -2378,6 +2769,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 53477376,
+      "version": "8.0.2",
       "versions": [
         {
           "version": "8.0.2",
@@ -2387,6 +2780,8 @@
           "localizedDescription": "unc0ver 8.0.2 for TrollStore. Use with u0Launcher to launch this patched version and jailbreak successfully."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Unc0ver_TS.ipa",
       "patreon": {}
     },
     {
@@ -2397,6 +2792,7 @@
       "developerName": "TSstore_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "App Store for downloading TrollStore compatible apps.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TSstore_TS.png",
       "screenshotURLs": [
@@ -2407,6 +2803,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 8388608,
+      "version": "3.0.1",
       "versions": [
         {
           "version": "3.0.1",
@@ -2416,6 +2814,8 @@
           "localizedDescription": "App Store for downloading TrollStore compatible apps."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TSstore_TS.ipa",
       "patreon": {}
     },
     {
@@ -2426,6 +2826,7 @@
       "developerName": "TotPocket_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Your tiny text companion.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TotPocket_TS.png",
       "screenshotURLs": [
@@ -2436,6 +2837,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 3145728,
+      "version": "1.2.1",
       "versions": [
         {
           "version": "1.2.1",
@@ -2445,6 +2848,8 @@
           "localizedDescription": "Your tiny text companion."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TotPocket_TS.ipa",
       "patreon": {}
     },
     {
@@ -2455,6 +2860,7 @@
       "developerName": "TheosTips_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Learn how to make tweaks with ease.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/TheosTips_TS.png",
       "screenshotURLs": [
@@ -2465,6 +2871,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 8388608,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2474,6 +2882,8 @@
           "localizedDescription": "Learn how to make tweaks with ease."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TheosTips_TS.ipa",
       "patreon": {}
     },
     {
@@ -2484,6 +2894,7 @@
       "developerName": "Textastic_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Text editor, Coding, SFTP Client, SSH.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Textastic_TS.png",
       "screenshotURLs": [
@@ -2494,6 +2905,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 20971520,
+      "version": "9.8.7",
       "versions": [
         {
           "version": "9.8.7",
@@ -2503,6 +2916,8 @@
           "localizedDescription": "Text editor, Coding, SFTP Client, SSH."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Textastic_TS.ipa",
       "patreon": {}
     },
     {
@@ -2513,6 +2928,7 @@
       "developerName": "Supervise_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Supervise your device.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Supervise_TS.png",
       "screenshotURLs": [
@@ -2523,6 +2939,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 290,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2532,6 +2950,8 @@
           "localizedDescription": "Supervise your device."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Supervise_TS.ipa",
       "patreon": {}
     },
     {
@@ -2542,6 +2962,7 @@
       "developerName": "Serial_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Find information on most Apple devices by serial number.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Serial_TS.png",
       "screenshotURLs": [
@@ -2552,6 +2973,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.0.3",
       "versions": [
         {
           "version": "1.0.3",
@@ -2561,6 +2984,8 @@
           "localizedDescription": "Find information on most Apple devices by serial number."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Serial_TS.ipa",
       "patreon": {}
     },
     {
@@ -2571,6 +2996,7 @@
       "developerName": "ScreenshotX_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Frame and mock-up iPhone screenshots.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ScreenshotX_TS.png",
       "screenshotURLs": [
@@ -2581,6 +3007,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 616,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2590,6 +3018,8 @@
           "localizedDescription": "Frame and mock-up iPhone screenshots."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ScreenshotX_TS.ipa",
       "patreon": {}
     },
     {
@@ -2600,6 +3030,7 @@
       "developerName": "Scarlet_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "3rd party app installer and true repo manager.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Scarlet_TS.png",
       "screenshotURLs": [
@@ -2610,6 +3041,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 12582912,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2619,6 +3052,8 @@
           "localizedDescription": "3rd party app installer and true repo manager."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Scarlet_TS.ipa",
       "patreon": {}
     },
     {
@@ -2629,6 +3064,7 @@
       "developerName": "RingTonesManager_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "RingTonesManager v1.1-2 by Netskao. Import ringtones into stock Ringtones settings.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/RingTonesManager_TS.png",
       "screenshotURLs": [
@@ -2639,6 +3075,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 6291456,
+      "version": "1.1-2",
       "versions": [
         {
           "version": "1.1-2",
@@ -2648,6 +3086,8 @@
           "localizedDescription": "RingTonesManager v1.1-2 by Netskao. Import ringtones into stock Ringtones settings."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/RingTonesManager_TS.ipa",
       "patreon": {}
     },
     {
@@ -2658,6 +3098,7 @@
       "developerName": "ResolutionSetter_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Change your display resolution. v1.0 by Haoict.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ResolutionSetter_TS.png",
       "screenshotURLs": [
@@ -2668,6 +3109,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 309,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2677,6 +3120,8 @@
           "localizedDescription": "Change your display resolution. v1.0 by Haoict."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ResolutionSetter_TS.ipa",
       "patreon": {}
     },
     {
@@ -2687,6 +3132,7 @@
       "developerName": "RedDot_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Change notification badge colors.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/RedDot_TS.png",
       "screenshotURLs": [
@@ -2697,6 +3143,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 713,
+      "version": "0.1",
       "versions": [
         {
           "version": "0.1",
@@ -2706,6 +3154,8 @@
           "localizedDescription": "Change notification badge colors."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/RedDot_TS.ipa",
       "patreon": {}
     },
     {
@@ -2716,6 +3166,7 @@
       "developerName": "PostBox-Pocket_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v0.8.1-7. AppStore release! Search cydia repos and download deb files. Extract themes for jailed device theming. Not used for installing debs.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/PostBox-Pocket_TS.png",
       "screenshotURLs": [
@@ -2726,6 +3177,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 5242880,
+      "version": "0.8.1",
       "versions": [
         {
           "version": "0.8.1",
@@ -2735,6 +3188,8 @@
           "localizedDescription": "v0.8.1-7. AppStore release! Search cydia repos and download deb files. Extract themes for jailed device theming. Not used for installing debs."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/PostBox-Pocket_TS.ipa",
       "patreon": {}
     },
     {
@@ -2745,6 +3200,7 @@
       "developerName": "PostBox_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v0.8.1-beta. Search cydia repos and download deb files. Not used for installing debs.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/PostBox_TS.png",
       "screenshotURLs": [
@@ -2755,6 +3211,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 8388608,
+      "version": "0.8.1",
       "versions": [
         {
           "version": "0.8.1",
@@ -2764,6 +3222,8 @@
           "localizedDescription": "v0.8.1-beta. Search cydia repos and download deb files. Not used for installing debs."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/PostBox_TS.ipa",
       "patreon": {}
     },
     {
@@ -2774,6 +3234,7 @@
       "developerName": "NetflixChecker_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Netflix account checker by Julio Verne.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/NetflixChecker_TS.png",
       "screenshotURLs": [
@@ -2784,6 +3245,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 58,
+      "version": "0.3",
       "versions": [
         {
           "version": "0.3",
@@ -2793,6 +3256,8 @@
           "localizedDescription": "Netflix account checker by Julio Verne."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NetflixChecker_TS.ipa",
       "patreon": {}
     },
     {
@@ -2803,6 +3268,7 @@
       "developerName": "MyFitnessPal_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v22.20.0 Premium Unlocked by Platinmods",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/MyFitnessPal_TS.png",
       "screenshotURLs": [
@@ -2813,6 +3279,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 66060288,
+      "version": "22.20.0",
       "versions": [
         {
           "version": "22.20.0",
@@ -2822,6 +3290,8 @@
           "localizedDescription": "v22.20.0 Premium Unlocked by Platinmods"
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/MyFitnessPal_TS.ipa",
       "patreon": {}
     },
     {
@@ -2832,6 +3302,7 @@
       "developerName": "MobileTSS_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "iOS app to check signing status of firmwares from Apple server and save SHSH blobs locally.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/MobileTSS_TS.png",
       "screenshotURLs": [
@@ -2842,6 +3313,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 809,
+      "version": "2.0.1",
       "versions": [
         {
           "version": "2.0.1",
@@ -2851,6 +3324,8 @@
           "localizedDescription": "iOS app to check signing status of firmwares from Apple server and save SHSH blobs locally."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/MobileTSS_TS.ipa",
       "patreon": {}
     },
     {
@@ -2861,6 +3336,7 @@
       "developerName": "Jaility_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Jaility v3.1 - Respring, Supervise your device, Add CC modules, & Theme store with webclip icon theming. *Swift rewrite! Now supports all devices and both iOS 14 & 15*",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Jaility_TS.png",
       "screenshotURLs": [
@@ -2871,6 +3347,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "3.1",
       "versions": [
         {
           "version": "3.1",
@@ -2880,6 +3358,8 @@
           "localizedDescription": "Jaility v3.1 - Respring, Supervise your device, Add CC modules, & Theme store with webclip icon theming. *Swift rewrite! Now supports all devices and both iOS 14 & 15*"
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Jaility_TS.ipa",
       "patreon": {}
     },
     {
@@ -2890,6 +3370,7 @@
       "developerName": "ITheosMaker_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "App to help you to create manage and build Theos projects with more than 10+ features.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ITheosMaker_TS.png",
       "screenshotURLs": [
@@ -2900,6 +3381,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 1048576,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2909,6 +3392,8 @@
           "localizedDescription": "App to help you to create manage and build Theos projects with more than 10+ features."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ITheosMaker_TS.ipa",
       "patreon": {}
     },
     {
@@ -2919,6 +3404,7 @@
       "developerName": "IPSW_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Check signed/unsigned iOS statuses.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/IPSW_TS.png",
       "screenshotURLs": [
@@ -2929,6 +3415,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 5242880,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2938,6 +3426,8 @@
           "localizedDescription": "Check signed/unsigned iOS statuses."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/IPSW_TS.ipa",
       "patreon": {}
     },
     {
@@ -2948,6 +3438,7 @@
       "developerName": "InstaSpring_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "InstaSpring 1.0 - Respring instantly by tapping the app icon.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/InstaSpring_TS.png",
       "screenshotURLs": [
@@ -2958,6 +3449,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 214,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -2967,6 +3460,8 @@
           "localizedDescription": "InstaSpring 1.0 - Respring instantly by tapping the app icon."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/InstaSpring_TS.ipa",
       "patreon": {}
     },
     {
@@ -2977,6 +3472,7 @@
       "developerName": "IMemScan_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Application memory editor.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/IMemScan_TS.png",
       "screenshotURLs": [
@@ -2987,6 +3483,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "1.2.6",
       "versions": [
         {
           "version": "1.2.6",
@@ -2996,6 +3494,8 @@
           "localizedDescription": "Application memory editor."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/IMemScan_TS.ipa",
       "patreon": {}
     },
     {
@@ -3006,6 +3506,7 @@
       "developerName": "IGameGod_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Be the god of your games. Not fully functioning yet.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/IGameGod_TS.png",
       "screenshotURLs": [
@@ -3016,6 +3517,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 69206016,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -3025,6 +3528,8 @@
           "localizedDescription": "Be the god of your games. Not fully functioning yet."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/IGameGod_TS.ipa",
       "patreon": {}
     },
     {
@@ -3035,6 +3540,7 @@
       "developerName": "HarpyReloaded_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Application to manage your local network.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/HarpyReloaded_TS.png",
       "screenshotURLs": [
@@ -3045,6 +3551,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 4194304,
+      "version": "1.0.1",
       "versions": [
         {
           "version": "1.0.1",
@@ -3054,6 +3562,8 @@
           "localizedDescription": "Application to manage your local network."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/HarpyReloaded_TS.ipa",
       "patreon": {}
     },
     {
@@ -3064,6 +3574,7 @@
       "developerName": "Fugu15_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Fugu15 v0.0.1 by Linus Henze. https://github.com/pinauten/Fugu15",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Fugu15_TS.png",
       "screenshotURLs": [
@@ -3074,6 +3585,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 34603008,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -3083,6 +3596,8 @@
           "localizedDescription": "Fugu15 v0.0.1 by Linus Henze. https://github.com/pinauten/Fugu15"
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Fugu15_TS.ipa",
       "patreon": {}
     },
     {
@@ -3093,6 +3608,7 @@
       "developerName": "DynaWall_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Dynamic and Live Wallpaper Generator.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/DynaWall_TS.png",
       "screenshotURLs": [
@@ -3103,6 +3619,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 5242880,
+      "version": "4.0",
       "versions": [
         {
           "version": "4.0",
@@ -3112,6 +3630,8 @@
           "localizedDescription": "Dynamic and Live Wallpaper Generator."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DynaWall_TS.ipa",
       "patreon": {}
     },
     {
@@ -3122,6 +3642,7 @@
       "developerName": "Delta_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Nintendo DS emulator.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Delta_TS.png",
       "screenshotURLs": [
@@ -3132,6 +3653,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 18874368,
+      "version": "1.3",
       "versions": [
         {
           "version": "1.3",
@@ -3141,6 +3664,8 @@
           "localizedDescription": "Nintendo DS emulator."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Delta_TS.ipa",
       "patreon": {}
     },
     {
@@ -3151,6 +3676,7 @@
       "developerName": "DebToIPA_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v1.0.2 - Convert debs to ipas for TrollStore. Only for debs containing Applications.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/DebToIPA_TS.png",
       "screenshotURLs": [
@@ -3161,6 +3687,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "1.0.2",
       "versions": [
         {
           "version": "1.0.2",
@@ -3170,6 +3698,8 @@
           "localizedDescription": "v1.0.2 - Convert debs to ipas for TrollStore. Only for debs containing Applications."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/DebToIPA_TS.ipa",
       "patreon": {}
     },
     {
@@ -3180,6 +3710,7 @@
       "developerName": "CocoaTop_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "GUI Process Viewer.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/CocoaTop_TS.png",
       "screenshotURLs": [
@@ -3190,6 +3721,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 325,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -3199,6 +3732,8 @@
           "localizedDescription": "GUI Process Viewer."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CocoaTop_TS.ipa",
       "patreon": {}
     },
     {
@@ -3209,6 +3744,7 @@
       "developerName": "Clip_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Clipboard Manager for iOS.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Clip_TS.png",
       "screenshotURLs": [
@@ -3219,6 +3755,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 412,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -3228,6 +3766,8 @@
           "localizedDescription": "Clipboard Manager for iOS."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Clip_TS.ipa",
       "patreon": {}
     },
     {
@@ -3238,6 +3778,7 @@
       "developerName": "ClassicPlayer_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "ClassicPlayer v1.0.2 - The Nostalgic Click Wheel iPod Simulator for iOS.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/ClassicPlayer_TS.png",
       "screenshotURLs": [
@@ -3248,6 +3789,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 57671680,
+      "version": "1.0.3",
       "versions": [
         {
           "version": "1.0.3",
@@ -3257,6 +3800,8 @@
           "localizedDescription": "ClassicPlayer v1.0.2 - The Nostalgic Click Wheel iPod Simulator for iOS."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ClassicPlayer_TS.ipa",
       "patreon": {}
     },
     {
@@ -3267,6 +3812,7 @@
       "developerName": "Cardio_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Cardio v1.1 - Customize Apple Pay cards in Wallet.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Cardio_TS.png",
       "screenshotURLs": [
@@ -3277,6 +3823,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 119,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -3286,6 +3834,8 @@
           "localizedDescription": "Cardio v1.1 - Customize Apple Pay cards in Wallet."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Cardio_TS.ipa",
       "patreon": {}
     },
     {
@@ -3296,6 +3846,7 @@
       "developerName": "Bundlr_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Easily search App Bundle IDs and copy them to clipboard.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Bundlr_TS.png",
       "screenshotURLs": [
@@ -3306,6 +3857,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 221,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -3315,6 +3868,8 @@
           "localizedDescription": "Easily search App Bundle IDs and copy them to clipboard."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Bundlr_TS.ipa",
       "patreon": {}
     },
     {
@@ -3325,6 +3880,7 @@
       "developerName": "BIDFetcher_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Download any app icons from AppStore by searching the bundle ID. Use with Bundlr to find the Bundle ID.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/BIDFetcher_TS.png",
       "screenshotURLs": [
@@ -3335,6 +3891,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 109,
+      "version": "1.0",
       "versions": [
         {
           "version": "1.0",
@@ -3344,6 +3902,8 @@
           "localizedDescription": "Download any app icons from AppStore by searching the bundle ID. Use with Bundlr to find the Bundle ID."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/BIDFetcher_TS.ipa",
       "patreon": {}
     },
     {
@@ -3354,6 +3914,7 @@
       "developerName": "AuroraPWmanager_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Aurora v0.9.2 - A vanilla password manager made in SwiftUI.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AuroraPWmanager_TS.png",
       "screenshotURLs": [
@@ -3364,6 +3925,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 764,
+      "version": "0.9.2",
       "versions": [
         {
           "version": "0.9.2",
@@ -3373,6 +3936,8 @@
           "localizedDescription": "Aurora v0.9.2 - A vanilla password manager made in SwiftUI."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AuroraPWmanager_TS.ipa",
       "patreon": {}
     },
     {
@@ -3383,6 +3948,7 @@
       "developerName": "AppStore++_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "v1.0.3-2 - Downgrade apps with ease.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppStore++_TS.png",
       "screenshotURLs": [
@@ -3393,6 +3959,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 16777216,
+      "version": "1.0.3",
       "versions": [
         {
           "version": "1.0.3",
@@ -3402,6 +3970,8 @@
           "localizedDescription": "v1.0.3-2 - Downgrade apps with ease."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppStore++_TS.ipa",
       "patreon": {}
     },
     {
@@ -3412,6 +3982,7 @@
       "developerName": "AppCake7_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "IPA store. More modern UI than AppCake6 but less search results. No Ads.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppCake7_TS.png",
       "screenshotURLs": [
@@ -3422,6 +3993,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 16777216,
+      "version": "7.2.2",
       "versions": [
         {
           "version": "7.2.2",
@@ -3431,6 +4004,8 @@
           "localizedDescription": "IPA store. More modern UI than AppCake6 but less search results. No Ads."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppCake7_TS.ipa",
       "patreon": {}
     },
     {
@@ -3441,6 +4016,7 @@
       "developerName": "AppCake6_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "IPA store. More search results than AppCake7 but older UI.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AppCake6_TS.png",
       "screenshotURLs": [
@@ -3451,6 +4027,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 19922944,
+      "version": "6.1.3",
       "versions": [
         {
           "version": "6.1.3",
@@ -3460,6 +4038,8 @@
           "localizedDescription": "IPA store. More search results than AppCake7 but older UI."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AppCake6_TS.ipa",
       "patreon": {}
     },
     {
@@ -3470,6 +4050,7 @@
       "developerName": "Aphrodite_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "Asset Catalog Editor.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Aphrodite_TS.png",
       "screenshotURLs": [
@@ -3480,6 +4061,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 2097152,
+      "version": "0.6.12",
       "versions": [
         {
           "version": "0.6.12",
@@ -3489,6 +4072,8 @@
           "localizedDescription": "Asset Catalog Editor."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Aphrodite_TS.ipa",
       "patreon": {}
     },
     {
@@ -3499,6 +4084,7 @@
       "developerName": "AdGuardPro_TS x CyPwn",
       "subtitle": "",
       "localizedDescription": "AdGuard Pro with all Pro features, except the DNS feature, unlocked.",
+      "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/AdGuardPro_TS.png",
       "screenshotURLs": [
@@ -3509,6 +4095,8 @@
         "entitlements": [],
         "privacy": {}
       },
+      "size": 29360128,
+      "version": "4.4.0",
       "versions": [
         {
           "version": "4.4.0",
@@ -3518,6 +4106,8 @@
           "localizedDescription": "AdGuard Pro with all Pro features, except the DNS feature, unlocked."
         }
       ],
+      "versionDate": "2022-11-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/AdGuardPro_TS.ipa",
       "patreon": {}
     }
   ],
@@ -4802,5 +5392,10 @@
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     }
-  ]
+  ],
+  "META": {
+    "repoName": "CyPwn Trollstore Library",
+    "repoIcon": "https://repo.cypwn.xyz/assets/images/cypwn_small.png"
+  },
+  "sourceImage": "https://repo.cypwn.xyz/assets/images/cypwn_small.png"
 }
