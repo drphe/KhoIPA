@@ -1,5 +1,9 @@
 import { sourceURL } from "../modules/constants.js";
 
+
+
+export const AltStoreBanner = (sourceName, typeSource) => {
+
 const icons = {
   feather: `<img src="https://dvntm0.github.io/img/feather.png" alt="altstore-icon" class="icon">`,
   esign: `<img src="https://esign.yyyue.xyz/ESignLogo200.png" alt="altstore-icon" class="icon">`,
@@ -40,8 +44,7 @@ const texts = {
   `
 };
 
-export const AltStoreBanner = (sourceName, typeSource) => `
-<div class="uibanner">
+return `<div class="uibanner">
     <div class="icons">${icons[typeSource] || ""}</div>
     <div class="content">
         <div>${texts[typeSource] || ""}
@@ -51,3 +54,4 @@ export const AltStoreBanner = (sourceName, typeSource) => `
         </a>
     </div>
 </div>`;
+}
