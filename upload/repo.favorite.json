@@ -1,11 +1,18 @@
 {
   "name": "Favorite apps",
+  "identifier": "repo.drphe.kh0ipa",
+  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
+  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
-  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "website": "https://github.com/drphe/KhoIPA/",
   "patreonURL": "https://patreon.com/drphe",
   "tintColor": "#5825D0",
+  "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
+  "META": {
+    "repoName": "Favorite apps",
+    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
+  },
   "featuredApps": [
     "com.ksign.tool",
     "xyz.phim4k.ios",
@@ -13,13 +20,107 @@
     "vn.com.vng.zingalo",
     "com.adguard.AdguardExtension"
   ],
-  "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
-  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
-  "identifier": "repo.drphe.kh0ipa",
-  "META": {
-    "repoName": "Favorite apps",
-    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
-  },
+  "news": [
+    {
+      "title": "Ủng hộ tác giả",
+      "identifier": "-ungho",
+      "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
+      "date": "2025-11-01T07:00",
+      "tintColor": "#d03f25",
+      "imageURL": "https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png",
+      "notify": true,
+      "url": "donate.md",
+      "appID": null
+    },
+    {
+      "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
+      "identifier": "hdsd-dns",
+      "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
+      "date": "2025-10-17T07:00",
+      "tintColor": "#506471",
+      "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
+      "notify": true,
+      "url": "verifyapp.md",
+      "appID": "wsfteam.portal"
+    },
+    {
+      "title": "Chặn quảng cáo bằng DNS",
+      "identifier": "hdsd-adblock",
+      "caption": "Hướng dẫn sử dụng DNS chặn quảng cáo trên ios",
+      "date": "2025-10-15T07:00",
+      "tintColor": "#022740",
+      "imageURL": "https://cdn.tgdd.vn/Files/News/2023/05/18/5-cach-doi-dns-tren-iphone-nhanh-chong-chi-sau-thumb-560x292.jpg",
+      "notify": true,
+      "url": "dnsadblock.md",
+      "appID": "com.example.app"
+    },
+    {
+      "title": "Chống thu hồi chứng chỉ bằng DNS",
+      "identifier": "hdsd-anti-revoke",
+      "caption": "Sử dụng cấu hình DNS ngăn chặn thu hồi chứng chỉ cài IPA.",
+      "date": "2025-10-14T07:00",
+      "tintColor": "#DB7F33",
+      "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
+      "notify": true,
+      "url": "chongthuhoicc.md",
+      "appID": "com.example.app"
+    },
+    {
+      "title": "Mẹo sử dụng Cert cài IPA qua Feather, Esign",
+      "identifier": "cert-apple",
+      "caption": "Mẹo cài đặt IPA bằng Feather, ESign với Cert có phí",
+      "date": "2025-10-14T07:00",
+      "tintColor": "#3498DB",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
+      "notify": false,
+      "url": "cert.md",
+      "appID": "com.example.app"
+    },
+    {
+      "title": "Cài File IPA lên iPhone (Không Cần Jailbreak) ",
+      "identifier": "hdsd-caiipa",
+      "caption": "Bài hướng dẫn cài đặt ứng dụng ngoài Apple store (file .IPA) không cần Jailbreak.",
+      "date": "2025-10-13T07:00",
+      "tintColor": "#0D6EC9",
+      "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
+      "notify": false,
+      "url": "caidatipa.md",
+      "appID": "com.feather.app"
+    },
+    {
+      "title": "Bật chế độ Nhà phát triển",
+      "identifier": "hdsd-developermode",
+      "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
+      "date": "2025-10-11T07:00",
+      "tintColor": "#D73C3C",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/logo/logocertapple.png",
+      "notify": true,
+      "url": "developermod.md",
+      "appID": "com.example.app"
+    },
+    {
+      "title": "Hướng dẫn cài IPA bằng TrollStore",
+      "identifier": "hd-cai-ipa",
+      "caption": "Hướng Dẫn Cài Ứng Dụng IPA Cho iPhone Bằng TrollStore",
+      "date": "2025-10-09T07:00",
+      "tintColor": "#675809",
+      "imageURL": "https://thuthuatjb.com/wp-content/uploads/2022/09/Huong-dan-TrollStore-ios-ipados.jpg",
+      "notify": true,
+      "url": "trollstore.md",
+      "appID": "com.trollstore.app"
+    },
+    {
+      "title": "Chia sẻ *.dylib, *.deb",
+      "identifier": "share-dylib",
+      "caption": "Chia sẻ kho .dylib, .deb được sưu tầm hoặc tự build để tiêm cho IPA.",
+      "date": "2025-10-09T07:00",
+      "tintColor": "#33DB5D",
+      "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
+      "notify": false,
+      "url": "Khodylib.md",
+      "appID": "com.dylib.app"
+    }
+  ],
   "apps": [
     {
       "beta": false,
@@ -1419,112 +1520,6 @@
       "patreon": {}
     },
     {},
-    {},
-    {},
-    {},
-    {},
-    {},
     {}
-  ],
-  "news": [
-    {
-      "title": "Ủng hộ tác giả",
-      "identifier": "-ungho",
-      "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
-      "date": "2025-11-01T07:00",
-      "tintColor": "#d03f25",
-      "imageURL": "https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png",
-      "notify": true,
-      "url": "donate.md",
-      "appID": null
-    },
-    {
-      "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
-      "identifier": "hdsd-dns",
-      "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
-      "date": "2025-10-17T07:00",
-      "tintColor": "#506471",
-      "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
-      "notify": true,
-      "url": "verifyapp.md",
-      "appID": "wsfteam.portal"
-    },
-    {
-      "title": "Chặn quảng cáo bằng DNS",
-      "identifier": "hdsd-adblock",
-      "caption": "Hướng dẫn sử dụng DNS chặn quảng cáo trên ios",
-      "date": "2025-10-15T07:00",
-      "tintColor": "#022740",
-      "imageURL": "https://cdn.tgdd.vn/Files/News/2023/05/18/5-cach-doi-dns-tren-iphone-nhanh-chong-chi-sau-thumb-560x292.jpg",
-      "notify": true,
-      "url": "dnsadblock.md",
-      "appID": "com.example.app"
-    },
-    {
-      "title": "Chống thu hồi chứng chỉ bằng DNS",
-      "identifier": "hdsd-anti-revoke",
-      "caption": "Sử dụng cấu hình DNS ngăn chặn thu hồi chứng chỉ cài IPA.",
-      "date": "2025-10-14T07:00",
-      "tintColor": "#DB7F33",
-      "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
-      "notify": true,
-      "url": "chongthuhoicc.md",
-      "appID": "com.example.app"
-    },
-    {
-      "title": "Mẹo sử dụng Cert cài IPA qua Feather, Esign",
-      "identifier": "cert-apple",
-      "caption": "Mẹo cài đặt IPA bằng Feather, ESign với Cert có phí",
-      "date": "2025-10-14T07:00",
-      "tintColor": "#3498DB",
-      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
-      "notify": false,
-      "url": "cert.md",
-      "appID": "com.example.app"
-    },
-    {
-      "title": "Cài File IPA lên iPhone (Không Cần Jailbreak) ",
-      "identifier": "hdsd-caiipa",
-      "caption": "Bài hướng dẫn cài đặt ứng dụng ngoài Apple store (file .IPA) không cần Jailbreak.",
-      "date": "2025-10-13T07:00",
-      "tintColor": "#0D6EC9",
-      "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
-      "notify": false,
-      "url": "caidatipa.md",
-      "appID": "com.feather.app"
-    },
-    {
-      "title": "Bật chế độ Nhà phát triển",
-      "identifier": "hdsd-developermode",
-      "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
-      "date": "2025-10-11T07:00",
-      "tintColor": "#D73C3C",
-      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/logo/logocertapple.png",
-      "notify": true,
-      "url": "developermod.md",
-      "appID": "com.example.app"
-    },
-    {
-      "title": "Hướng dẫn cài IPA bằng TrollStore",
-      "identifier": "hd-cai-ipa",
-      "caption": "Hướng Dẫn Cài Ứng Dụng IPA Cho iPhone Bằng TrollStore",
-      "date": "2025-10-09T07:00",
-      "tintColor": "#675809",
-      "imageURL": "https://thuthuatjb.com/wp-content/uploads/2022/09/Huong-dan-TrollStore-ios-ipados.jpg",
-      "notify": true,
-      "url": "trollstore.md",
-      "appID": "com.trollstore.app"
-    },
-    {
-      "title": "Chia sẻ *.dylib, *.deb",
-      "identifier": "share-dylib",
-      "caption": "Chia sẻ kho .dylib, .deb được sưu tầm hoặc tự build để tiêm cho IPA.",
-      "date": "2025-10-09T07:00",
-      "tintColor": "#33DB5D",
-      "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
-      "notify": false,
-      "url": "Khodylib.md",
-      "appID": "com.dylib.app"
-    }
   ]
 }
