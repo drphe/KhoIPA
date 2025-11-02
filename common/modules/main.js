@@ -30,7 +30,7 @@ export function main(callback, fallbackURL = "../../") {
             // Set tint color
             const tintColor = json.tintColor?.replaceAll("#", "");
             if (tintColor) setTintColor(tintColor);
-	    let typeSource ='';
+
     function detectSupport(app) {
   	const supportsESign = !!(app.versionDate || app.fullDate);
   	const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
@@ -42,10 +42,10 @@ export function main(callback, fallbackURL = "../../") {
   	if (supportsFeather) return "feather";
   	return "both";
     }
-	    if(source?.apps){
-			typeSource = detectSupport(source.apps[0]);
+	    
+			const typeSource = detectSupport(source.apps[0]);
             		insertAltStoreBanner(json.name,typeSource);
-		}
+		
 	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
 	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
     		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
