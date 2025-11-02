@@ -1339,6 +1339,9 @@ function consolidateApps(source) {
         ...source,
         apps: consolidatedApps
     };
+        newSource.META ||= {repoName: newSource.name,repoIcon: newSource.iconURL};
+        newSource.sourceImage ||= newSource.iconURL;
+        newSource.sourceURL ||= "https://drphe.github.io/KhoIPA/upload/";
     return newSource;
 }
 
@@ -1434,9 +1437,10 @@ function updateOutput() {
 window.addEventListener("DOMContentLoaded", async () => {
     const params = new URLSearchParams(window.location.search);
     const source = params.get("source");
+    setTimeout(() => document.getElementById("loading")?.remove(), 2000);
     if (source) await fetchRepoData(source);
     else await init();
-    document.getElementById("loading")?.remove();
+
 });
 const getNameRepo = (url) => {
     const parts = url.split('/');
