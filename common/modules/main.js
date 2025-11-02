@@ -43,7 +43,7 @@ export function main(callback, fallbackURL = "../../") {
   	if (supportsFeather) return "feather";
   	return "both";
     }
-			
+			alert(typeSource)
             		insertAltStoreBanner(json.name,typeSource);
 		
 	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
