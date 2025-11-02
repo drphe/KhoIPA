@@ -12,6 +12,13 @@
     "repoName": "Favorite apps",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
   },
+    "featuredApps": [
+    "com.ksign.tool",
+    "xyz.phim4k.ios",
+    "com.duolingo.DuolingoMobile",
+    "vn.com.vng.zingalo",
+    "com.adguard.AdguardExtension"
+  ],
   "news": [
     {
       "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
