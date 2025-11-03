@@ -32,8 +32,8 @@
       "versionDescription": "",
       "tintColor": "B747F2",
       "iconURL": "https://drphe.github.io/KhoIPA/icon/VidList.png",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://cdn.aptoide.com/imgs/7/3/8/738b6d4f34445e832f75662f8e2b5fe1_screen.jpg",
         "https://cdn.aptoide.com/imgs/c/6/1/c61c0d0fcad5ab00820e98f91f5b8624_screen.jpg"
       ],
@@ -78,8 +78,8 @@
       "versionDescription": "",
       "tintColor": "3498DB",
       "iconURL": "https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/refs/heads/main/raw-files/App%20Icons/Portal.png",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://picul.de/view/YhU",
         "https://picul.de/view/Yhp",
         "https://picul.de/view/Yh9"
@@ -116,9 +116,10 @@
       "versionDescription": "",
       "tintColor": "03EE91",
       "iconURL": "https://raw.githubusercontent.com/ThatStella7922/battery-webhook/master/assets/iOS/AppIconiOS1024x1024.png",
-      "screenshotURLs": [
-        "https://files.thatstel.la/mainsitesw/BatteryWebhook/screenshotURLs/iPhone/BW1.3-6.7-Welcome.png",
-        "https://files.thatstel.la/mainsitesw/BatteryWebhook/screenshotURLs/iPhone/BW1.3-6.7-Settings.png"
+      "screenshotURLs": [],
+      "screenshots": [
+        "https://files.thatstel.la/mainsitesw/BatteryWebhook/Screenshots/iPhone/BW1.3-6.7-Welcome.png",
+        "https://files.thatstel.la/mainsitesw/BatteryWebhook/Screenshots/iPhone/BW1.3-6.7-Settings.png"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -179,7 +180,8 @@
       "versionDescription": "",
       "tintColor": "A405FA",
       "iconURL": "https://apps.sidestore.io/apps/sidestore/v0.1.1/icon.png",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://apps.sidestore.io/apps/sidestore/v0.1.1/browse-dark.png",
         "https://apps.sidestore.io/apps/sidestore/v0.1.1/apps-dark.png",
         "https://apps.sidestore.io/apps/sidestore/v0.1.1/news-dark.png",
@@ -318,7 +320,8 @@
       "versionDescription": "",
       "tintColor": "33D9B4",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/29/4d/a7294dc9-b315-8bdd-a3fb-9fef82e60aa5/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/c0/73/31/c073315f-54ba-ed36-d113-4662cbb3fe7e/6b775054-7ae8-47b6-a882-294b6f1b09ad_i1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/7a/b1/6e/7ab16e3d-715c-8ecf-f250-785c89ea7e2b/579e98f4-a1c2-413d-9b8c-6019fbe96ef8_iphone-1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/64/fc/27/64fc2737-a3a9-af6b-5fce-a9ff2fd1fc86/60f8c185-a662-479f-8a35-c2d97e7fa191_i4.png/392x696bb.png",
@@ -362,7 +365,8 @@
       "versionDescription": "",
       "tintColor": "601CFF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fe/fe/02/fefe0210-06b4-dcfe-81e3-9fba16a67fd5/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/2d/9b/ca/2d9bca44-d42f-c53c-3d3e-26b2c71ad66e/403ce867-e475-4bdc-a792-dfb219e32029_Screenshot_1_6_Plus.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/4e/7b/b5/4e7bb5f5-78c8-603f-07d0-12d380ff3bc9/1dc80c78-4111-490c-9860-51a924659d2e_Screenshot_2_6_Plus.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/48/ba/26/48ba2687-1636-7c07-195b-31d9595ae87e/2b0c0f47-6ac3-4273-bc16-2b60bcda9715_Screenshot_3_6_Plus.png/392x696bb.png",
@@ -404,8 +408,8 @@
       "versionDescription": "",
       "tintColor": "55B0E7",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/0f/f3/480ff3b9-cae0-7fc9-f917-19892541ffaa/Telegram-0-0-1x_U007epad-0-1-0-P3-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/88/8c/50888cba-8bbe-276a-3339-8b98c44d8e95/pr_source.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/c3/34/dac33442-7a2a-d617-6ead-65dfb2944102/pr_source.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/8d/56/618d5645-2405-ece6-55d3-dacff34b1954/pr_source.png/392x696bb.png",
@@ -446,7 +450,8 @@
       "versionDescription": "",
       "tintColor": "63D97B",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/45/a8/de45a823-3935-bb2c-7fbc-d9580962d05d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/3c/2b/db3c2b3c-ba85-6ea2-5a49-96537f5fdf8c/522b914e-f092-4ce4-b9b0-cfb573a48064_0x0ss2.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/03/ac/24/03ac2489-ac26-3af4-0b54-23dda45f4b9d/318ad492-7d53-47b8-bb42-9a247ceed3d7_0x0ss3.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/95/3c/6d953c43-d625-d289-5dfa-1d69094549da/9405274d-83ee-4f47-83f6-d3e33e70ca3a_0x0ss.png/392x696bb.png"
@@ -483,7 +488,8 @@
       "versionDescription": "",
       "tintColor": "EB4200",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/67/93/7c/67937cd2-0907-bbec-8987-4ecf0442411a/mzl.vjzejqyc.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/a9/5a/59/a95a597c-d9ff-e121-6d8f-9d8de911b91e/mzl.hzvdtgct.jpg/406x228bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/c6/70/93/c6709305-6673-a0e6-a808-5cf4169909df/mzl.fvcwsvkf.jpg/406x228bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/06/8e/b1/068eb1b4-c650-022e-c3fb-c2b28211fd31/mzl.uizbsbbu.jpg/406x228bb.jpg",
@@ -522,7 +528,8 @@
       "versionDescription": "",
       "tintColor": "DD1C20",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/f2/d0/86f2d00b-a564-747c-b5ad-934d9c417e0c/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/ba/29/56/ba295645-6b49-c587-fa52-0a8fac053c41/c7a77f46-6d83-4e31-a1cd-ba7b9e499ad8_BP_gdpr_2208x1242_1_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/87/4c/4e/874c4e46-dd37-c0c9-4b76-6bae080ddeb0/d342aed6-7d26-403f-ac35-f73755c1066a_BP_gdpr_2208x1242_2_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/54/18/b6/5418b6c2-cd0a-9e67-1f78-df2ca5879008/3a47b298-6781-4195-99fe-dde5f5346c6f_BP_gdpr_2208x1242_3_en-US.png/406x228bb.png",
@@ -560,13 +567,14 @@
       "versionDescription": "",
       "tintColor": "2496EC",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/32/bc/0a32bcc0-b4a5-d390-eac3-3cfa457c32d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/d8/35/ebd83561-81ad-43cb-74e5-32b394df1943/ad9a298f-4003-4445-aeb3-0f6de7cded3e_RELOADED_202306_2208x1242_37_Screenshot_en-US.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/fb/4c/44fb4cba-d0ba-e12b-e422-d5f9a43dc3d3/8611cb92-cb46-413a-aeab-8b347466b824_RELOADED_202104_2208x1242_screenshotURLs_01_en-US.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d4/b9/ead4b9aa-6616-e644-466d-d6360e1703eb/a0da4fc3-8507-4cfd-a2c5-3d6bc0188cfb_RELOADED_202104_2208x1242_screenshotURLs_02_en-US.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/da/4f/40da4f77-500a-4e8c-8e8a-d90b268d97b9/817b2401-01f7-430c-aed8-8db4d9bee85f_RELOADED_202104_2208x1242_screenshotURLs_03_en-US.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/c1/4b/b0c14be1-a1e3-7abc-86d5-9a596a606189/692e1f70-9b65-4cef-9715-805d11a380b1_RELOADED_202104_2208x1242_screenshotURLs_04_en-US.png/406x228bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cb/c5/3c/cbc53c21-2caf-d409-4ba8-02c06aa823ec/8d48165f-0d4d-4d74-adf0-50e79457782c_RELOADED_202104_2208x1242_screenshotURLs_05_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/fb/4c/44fb4cba-d0ba-e12b-e422-d5f9a43dc3d3/8611cb92-cb46-413a-aeab-8b347466b824_RELOADED_202104_2208x1242_Screenshots_01_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d4/b9/ead4b9aa-6616-e644-466d-d6360e1703eb/a0da4fc3-8507-4cfd-a2c5-3d6bc0188cfb_RELOADED_202104_2208x1242_Screenshots_02_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/da/4f/40da4f77-500a-4e8c-8e8a-d90b268d97b9/817b2401-01f7-430c-aed8-8db4d9bee85f_RELOADED_202104_2208x1242_Screenshots_03_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/c1/4b/b0c14be1-a1e3-7abc-86d5-9a596a606189/692e1f70-9b65-4cef-9715-805d11a380b1_RELOADED_202104_2208x1242_Screenshots_04_en-US.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cb/c5/3c/cbc53c21-2caf-d409-4ba8-02c06aa823ec/8d48165f-0d4d-4d74-adf0-50e79457782c_RELOADED_202104_2208x1242_Screenshots_05_en-US.png/406x228bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/59/80/09598086-ec2e-3843-232b-0ae4a9a2789b/2bbccaec-c939-4ff7-92bb-ce80a29f7da2_RELOADED_202203_2208x1242_MightyEagle_Screenshot_01_en-US.png/406x228bb.png"
       ],
       "appPermissions": {
@@ -601,8 +609,9 @@
       "versionDescription": "",
       "tintColor": "42B9FD",
       "iconURL": "https://th.bing.com/th/id/OIP.7-xjm7lv-uMt2_h5uLZEPwAAAA",
-      "screenshotURLs": [
-        "https://cdn.mobygames.com/screenshotURLs/1666853-angry-birds-go-android-main-menu.jpg"
+      "screenshotURLs": [],
+      "screenshots": [
+        "https://cdn.mobygames.com/screenshots/1666853-angry-birds-go-android-main-menu.jpg"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -636,7 +645,8 @@
       "versionDescription": "",
       "tintColor": "F6312D",
       "iconURL": "https://upload.wikimedia.org/wikipedia/en/8/8d/Angry_Birds_Star_Wars.png",
-
+      "screenshotURLs": [],
+      "screenshots": [],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -669,7 +679,8 @@
       "versionDescription": "",
       "tintColor": "7376C2",
       "iconURL": "https://i0.wp.com/techybuff.com/wp-content/uploads/2025/05/Ksign-1.webp",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://zeejb.com/wp-content/uploads/2025/07/IMG_4462-1024x1024.png",
         "https://zeejb.com/wp-content/uploads/2025/07/IMG_4460.png",
         "https://zeejb.com/wp-content/uploads/2025/07/IMG_4461-1024x1024.png"
@@ -706,14 +717,15 @@
       "versionDescription": "",
       "tintColor": "9A9AFF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/ec/64/d4ec64be-4fba-b45b-56d2-588dec5e3703/AppIcon_Premiere-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/100x100bb.jpg",
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/33/87/123387b8-6b85-e307-57b7-2c13cc5312f2/A_Adobe_Premiere_EN_iOS_6.9_Screenshot_Localization_250822_01.png/300x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/21/9c/fc219cca-97aa-ef46-be33-2def432bff78/Adobe_Premiere_EN_iOS_6.9_screenshotURLs_250826_02.png/300x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/b0/d2/36b0d222-87aa-804c-e681-182214a06e1b/Adobe_Premiere_EN_iOS_6.9_screenshotURLs_250822_03.png/300x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/6c/15/4c6c15e4-4e3a-068d-dd5a-bf8f0bf019ca/Adobe_Premiere_EN_iOS_6.9_screenshotURLs_250826_04.png/300x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/18/63/ac1863a5-c0b8-c6f3-be82-48a20700e550/Adobe_Premiere_EN_iOS_6.9_screenshotURLs_250822_05.png/300x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/14/ef/1c14ef34-21a6-61b0-f225-2776aa03e492/Adobe_Premiere_EN_iOS_6.9_screenshotURLs_250822_06.png/300x0w.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/22/2c/2f/222c2f29-0d47-a542-c027-71f3bc2f3ae2/Adobe_Premiere_EN_iOS_6.9_screenshotURLs_250822_07.png/300x0w.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/21/9c/fc219cca-97aa-ef46-be33-2def432bff78/Adobe_Premiere_EN_iOS_6.9_Screenshots_250826_02.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/b0/d2/36b0d222-87aa-804c-e681-182214a06e1b/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_03.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/6c/15/4c6c15e4-4e3a-068d-dd5a-bf8f0bf019ca/Adobe_Premiere_EN_iOS_6.9_Screenshots_250826_04.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ac/18/63/ac1863a5-c0b8-c6f3-be82-48a20700e550/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_05.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/14/ef/1c14ef34-21a6-61b0-f225-2776aa03e492/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_06.png/300x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/22/2c/2f/222c2f29-0d47-a542-c027-71f3bc2f3ae2/Adobe_Premiere_EN_iOS_6.9_Screenshots_250822_07.png/300x0w.webp"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -747,8 +759,8 @@
       "versionDescription": "",
       "tintColor": "32A7FF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a4/f2/d2/a4f2d25b-c9a2-3010-8d83-3f2bfe22f53d/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/f2/9d/d6f29d4e-1e57-e102-0f83-d3b94c77f141/01_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/89/68/3d89686b-d98f-631c-df5f-1baa085a3bbb/02_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/a2/de/6da2de3b-488e-7c35-ef76-4cdc3040915e/03_Ps_iOS_6.9_1320x2868_en-US.jpg/300x0w.webp",
@@ -791,8 +803,8 @@
       "versionDescription": "",
       "tintColor": "68B179",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cc/a0/91/cca091e4-c000-0577-7f61-2b799e3f89f7/AppIcon-0-0-1x_U007epad-0-11-0-sRGB-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/52/f0/19/52f01980-2cfb-0cb4-ceec-b9af058dafbd/pr_source.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e4/d1/a5/e4d1a50b-a195-4fd4-7e66-b6e22cb4f1f9/pr_source.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d0/6f/e1/d06fe152-4954-9ec5-1d24-bd1c06254af1/pr_source.jpg/392x696bb.jpg",
@@ -832,8 +844,8 @@
       "versionDescription": "",
       "tintColor": "B884F5",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/08/97/3f/08973f60-09a9-2b33-c313-cb52a39d70b0/Buddy-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/09/d2/8109d27a-c152-8543-0b60-c654c64aed48/08dd639a-b928-47bf-b11d-82075d9e1592_Frame_1.png/434x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/34/83/2b34837d-3742-e4bb-f47b-e434cee1525c/607d6fe0-a81b-4349-995b-56a8938dbbd0_Frame_2.png/434x0w.webp",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/90/ae/67/90ae6773-486b-603c-11e1-5f7c5db4fa3c/7ec05a7a-d765-48e8-a76a-979c6cc9aaa6_Frame_3.png/434x0w.webp",
@@ -873,8 +885,8 @@
       "versionDescription": "",
       "tintColor": "BB2DD7",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/8e/dd/068edd6e-df5a-ab36-4fef-e7735e4637a6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/fb/50/ebfb5049-4029-f3a2-51ac-83f9a995fd29/a565e7ac-03ee-446f-88c6-abbfeb8a1c67_stay-2.5.8-en1-5.5.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/80/6d/ef806d0d-e546-d7bd-8255-fb0235cb1072/3d2a5f83-b39f-4668-a998-b6f61f873f62_5.5-en-t2.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/34/81/2f348189-69ad-92d1-56c3-4a31be0683c4/dc3e7ddc-c47d-469b-a4f9-928dc04ad537_sceenshot-en-5.5-t3.png/392x696bb.png",
@@ -912,8 +924,8 @@
       "versionDescription": "",
       "tintColor": "FEA570",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/ce/73/c2ce733a-51c7-a593-5d07-e4f90a6fbe5b/AppIcon-0-0-1x_U007epad-0-0-0-8-0-0-sRGB-85-220.jpeg/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/70/38/b37038bc-ce7d-6cd8-506b-dd530b6166ae/2208-OS26__U82f1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6b/a6/97/6ba697b8-46b4-a052-d36e-62f116c53107/2208-_U58c1_U7eb8__U82f1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/a5/5b/82a55ba3-af13-c0f2-8f29-8aa57778ed72/d649a293-6f8b-4aa2-9e8c-90c56de95539_2208-_U7075_U52a8__U82f13.jpg/392x696bb.jpg",
@@ -957,8 +969,8 @@
       "versionDescription": "",
       "tintColor": "201D1D",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/39/05/82390565-e3ad-7b97-e691-9435f06e6a35/AppIcon_TikTok-0-0-1x_U007epad-0-1-0-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/0a/1a/ef/0a1aefde-4cfe-a7ab-7eed-e2dc1a6a2d7f/709e52b9-0d6e-40eb-8149-9d5c442a435b_Mother_iOS_2208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/79/d4/b6/79d4b6e8-6c19-bd6e-534e-90b0f1dd1a10/55082648-d299-4c6b-907b-5c32eeeed4a5_Recipe_iOS_2208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/64/43/fd/6443fd68-62f0-5e82-f163-53500cc7fc98/fceff0a7-2462-4b26-93f8-34564c5eb115_Pet_iOS_2208.png/392x696bb.png",
@@ -997,8 +1009,8 @@
       "versionDescription": "",
       "tintColor": "292A2D",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/50/17/6150172b-86cb-6cc0-ed16-e6e653c0c51d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/84/02/db84027a-a42b-f1cd-eca9-5cddf50e6367/iOS_1242x2208__U82f1_U6587-1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/94/90/95/949095ff-dec7-e605-b890-0c9b6d4800df/iOS_1242x2208__U82f1_U6587-2.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/38/43/1e/38431e06-ab41-0cf9-7960-b2ff207622d7/iOS_1242x2208__U82f1_U6587-3.jpg/392x696bb.jpg",
@@ -1042,8 +1054,8 @@
       "versionDescription": "",
       "tintColor": "E26060",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/80/ad/eb/80adeb0e-5580-f51e-d0d0-64564029fb46/AppIcon-0-0-1x_U007epad-0-6-0-sRGB-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/98/81/6d988159-11c0-5c90-2b49-cc8af410d890/1_U6d88_U606f_U5217_U8868_ios_1242_U00d72208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a2/7a/32/a27a32ca-db37-4659-17a4-9ebbb224afc8/2_U7fa4_U804a_ios_1242_U00d72208.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/83/d2/6d83d24c-444e-b64b-85fa-3085149209c2/3_U89c6_U9891_U901a_U8bdd_ios_1242_U00d72208.png/392x696bb.png",
@@ -1082,8 +1094,8 @@
       "versionDescription": "",
       "tintColor": "2330E1",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/19/a7/8319a717-c8ce-82d3-a3f1-d961773e2e9e/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/60/61/d4/6061d428-5d45-1006-10b1-124ab71579ce/34e2262c-bd73-4c44-9b2e-52e4910285a1_Viber_AS_English_1242x2208_Screen1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/5a/ef/1b5aefb6-77bb-a91a-b404-a5b67a1f695e/b5b18f8f-a611-44a4-9c98-29379e78ddd5_4.2__U00285.5_U0029.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/8b/96/e68b9653-5791-49f2-15cf-2870da7481b0/8c57ded5-074c-40d3-a2e3-db8fa7e94ea1_4.3__U00285.5_U0029.png/392x696bb.png",
@@ -1124,8 +1136,8 @@
       "versionDescription": "",
       "tintColor": "977272",
       "iconURL": "https://drphe.github.io/KhoIPA/icon/26.png",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://picul.de/view/Yh-"
       ],
       "appPermissions": {
@@ -1160,8 +1172,8 @@
       "versionDescription": "",
       "tintColor": "8AA32E",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/df/0c/5f/df0c5f65-4c7c-8680-79f3-510ba742364a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f4/1a/7f/f41a7f0b-2c85-4512-e1a6-87891377d0d2/b715d679-c25d-41c1-8b55-6c00114fa81e_en_iphone5.5_screen_1.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1a/e6/3b/1ae63b15-bc91-6809-1185-19bfd34bd445/93f4d1c8-4144-44de-8b57-a5a091c838f4_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_3.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/a6/67/a6a667f6-1ce4-04d8-4805-c521edc9aca1/cd048832-2375-4fd9-88e8-3711d102065e_iPhone_5.5_030124_-_ASO_Testing_-_Round_2_-_Concept_1_-_EN_-_4.png/392x696bb.png",
@@ -1222,8 +1234,8 @@
       "versionDescription": "",
       "tintColor": "535050",
       "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://drphe.github.io/KhoIPA/common/assets/img/phim4k.jpg",
         "https://picul.de/view/YhE"
       ],
@@ -1259,8 +1271,8 @@
       "versionDescription": "",
       "tintColor": "3A3636",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4b/23/85/4b238571-7615-42f7-8e41-a5d05e08d8b9/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://onejailbreak.com/site/assets/files/1481/bhtwitter-ios.766x0.webp",
         "https://onejailbreak.com/site/assets/files/1481/bhtwitter-tweak.823x0-is.webp"
       ],
@@ -1305,12 +1317,12 @@
       "versionDescription": "",
       "tintColor": "D73C3C",
       "iconURL": "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/icon.png",
-
-      "screenshotURLs": [
-        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshotURLs/1.PNG",
-        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshotURLs/2.PNG",
-        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshotURLs/3.PNG",
-        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshotURLs/4.PNG"
+      "screenshotURLs": [],
+      "screenshots": [
+        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/1.PNG",
+        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/2.PNG",
+        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/3.PNG",
+        "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/screenshots/4.PNG"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -1344,8 +1356,8 @@
       "versionDescription": "",
       "tintColor": "F01414",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/2d/17/822d1799-53f4-2bb1-e335-0c66378fe7bf/logo_youtube_2024_q4_color-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220-0.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/f9/7c/74f97c4c-a362-89d8-914d-d9bcf0eacc54/cdfcf0fc-0f88-4237-9e9d-a1afb08724e3_iOS-5.5-in_1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6c/63/9a/6c639ae5-917f-4b8f-7f8d-6790c4ca4f1a/209c47e2-15a0-44a2-a1b7-ab82b74bd2d8_iOS-5.5-in_2.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/32/ed/4332edbd-9ea1-8511-7542-f3e43fe92f3e/f3b103d9-206a-43be-8cf5-c9e907471b04_iOS-5.5-in_3.jpg/392x696bb.jpg",
@@ -1384,8 +1396,8 @@
       "versionDescription": "",
       "tintColor": "5825D0",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/f7/40/dbf74089-54d3-a5a1-67ea-ba9bcefa8481/Icon-Production-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/ab/b1/faabb115-0b12-7aa0-2781-2686a446cfe9/f254967c-6ef9-4cc6-b4bf-e89cf016337c_1-iOS-5.5-Home.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6c/fc/57/6cfc57df-f4b7-5fb3-e8ff-5f6e558291b9/c795c58d-ec37-463c-9ab9-ba0b8bc00ddd_2-iOS-5.5-Reels.png/392x696bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cb/87/31/cb8731d5-be04-145c-443f-4e0cfd042d22/0130e841-7bad-4f8c-83c9-61ea0bac7d7b_3-iOS-5.5-Stories.png/392x696bb.png",
@@ -1438,8 +1450,8 @@
       "versionDescription": "",
       "tintColor": "8880F4",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c4/1a/d3/c41ad395-78d6-11de-5a53-52e4e350479a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/b6/db/d2b6db6a-f5ec-9d10-34ca-f825f46ae118/c87ec889-3e3a-445f-8769-f0b529fe2a41_1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f9/8b/c0/f98bc0e1-417b-7f10-1ff0-b91a162ca885/a75aee13-8e50-4537-9a63-9a9de2d4da97_2.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/85/e3/1f85e363-213c-43d8-c5ed-51e71e9f2f71/f036d530-051d-444d-bfab-b68bb0fed5b8_3.jpg/392x696bb.jpg",
@@ -1497,8 +1509,8 @@
       "versionDescription": "",
       "tintColor": "6156B8",
       "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://ios.codevn.net/wp-content/uploads/2025/02/Repos-710x1536.png",
         "https://ios.codevn.net/wp-content/uploads/2025/02/Store-710x1536.png"
       ],
@@ -1534,8 +1546,8 @@
       "versionDescription": "",
       "tintColor": "B2BFE6",
       "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
-
-      "screenshotURLs": [
+      "screenshotURLs": [],
+      "screenshots": [
         "https://onejailbreak.com/site/assets/files/1108/esign-app.722x0-is.webp",
         "https://onejailbreak.com/site/assets/files/1108/cutom-ipa-sign.722x0-is.webp",
         "https://onejailbreak.com/site/assets/files/1108/esign-app-settings.722x0-is.webp"
