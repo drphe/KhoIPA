@@ -8,7 +8,7 @@
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
   "website": "https://github.com/drphe/KhoIPA/",
   "patreonURL": "https://patreon.com/drphe",
-  "tintColor": "#5825D0",
+  "tintColor": "5825D0",
   "META": {
     "repoName": "Favorite apps",
     "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
@@ -30,7 +30,7 @@
       "subtitle": "Minimum IOS: 10.0",
       "localizedDescription": "VidList XXX Porn Videos",
       "versionDescription": "",
-      "tintColor": "#B747F2",
+      "tintColor": "B747F2",
       "iconURL": "https://drphe.github.io/KhoIPA/icon/VidList.png",
       "screenshotURLs": [],
       "screenshots": [
@@ -76,7 +76,7 @@
       "subtitle": "Tool for sideloading",
       "localizedDescription": "Dowload: https://wsfteam.xyz/#downloads\nInstall guide: https://youtube.com/shorts/KgA9n51QfnQ?feature=share\nỨng dụng Portal dành cho việc sideload trên iOS là một công cụ tiên tiến được phát triển bởi WSF (WhySooooFurious), cho phép người dùng iPhone và iPad cài đặt các ứng dụng bên thứ ba mà không cần phụ thuộc vào App Store của Apple hay máy tính. Nền tảng tất cả-trong-một này được thiết kế để đơn giản hóa quá trình sideload cho cả người mới bắt đầu lẫn người dùng nâng cao, kết hợp các công cụ, hồ sơ cấu hình, hướng dẫn và tiện ích bảo mật vào một giao diện liền mạch.\n\nhttps://github.com/WhySooooFurious/Ultimate-Sideloading-Guide\nhttps://www.youtube.com/watch?v=nni_DNix490&t=126s\nhttps://techybuff.com/portal-app-for-ios-sideloading/",
       "versionDescription": "",
-      "tintColor": "#3498DB",
+      "tintColor": "3498DB",
       "iconURL": "https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/refs/heads/main/raw-files/App%20Icons/Portal.png",
       "screenshotURLs": [],
       "screenshots": [
@@ -114,7 +114,7 @@
       "subtitle": "Send your battery info to popular services using webhooks!",
       "localizedDescription": "Webhooks allow an application to send real-time data to another application whenever a specific event occurs. What if you could send battery information whenever you connected your device to power? Even better, what if you could easily send it to a messaging app like Discord, in an easy-to-read format?\n\nBattery Webhook achieves this and also has:\n- A fully modern design, built in Swift and SwiftUI\n- Manual sending of battery info in the app\n- Automations support with Shortcuts Automations\n- Siri Shortcuts support\n- A highly power efficient design, with minimal power usage\n\nIt is simple to use the app, just fill out a few basic details and you can send your device's battery info. If you ever run into any roadblocks, there's step-by-step documentation available.\n\nDocumentation: https://docs.thatstel.la/battery-webhook\nSource code and bug reports: https://github.com/ThatStella7922/battery-webhook\n\nNote: Battery Webhook is not affiliated with or endorsed by Discord Inc in any way. All trademarks are property of their respective owners.\nNote 2: Battery Webhook installed from AltStore/SideStore does not include the Apple Watch app.",
       "versionDescription": "",
-      "tintColor": "#03EE91",
+      "tintColor": "03EE91",
       "iconURL": "https://raw.githubusercontent.com/ThatStella7922/battery-webhook/master/assets/iOS/AppIconiOS1024x1024.png",
       "screenshotURLs": [],
       "screenshots": [
@@ -178,7 +178,7 @@
       "subtitle": "An awesome app.",
       "localizedDescription": "SideStore is an alternative app store for non-jailbroken devices. \n\nSideStore allows you to sideload other .ipa files and apps from the Files app or via the SideStore Library \n https://apps.sidestore.io/",
       "versionDescription": "",
-      "tintColor": "#A405FA",
+      "tintColor": "A405FA",
       "iconURL": "https://apps.sidestore.io/apps/sidestore/v0.1.1/icon.png",
       "screenshotURLs": [],
       "screenshots": [
@@ -199,7 +199,7 @@
         {
           "version": "0.6.2",
           "date": "2025-07-01T01:20:17Z",
-          "localizedDescription": "## Build Info\nBuilt at (UTC): `Tue Jul  1 01:20:17 2025`\nBuilt at (UTC date): `2025-07-01`\nCommit SHA: `685d9567752c6b7396304f8b64f0f713f52cf936`\nVersion: `0.6.2`\n\n## What's Changed\n* Rebase 2.0 wip by @nythepegasus in https://github.com/SideStore/SideStore/pull/794\n* [Refresh]: Remove install stuffs from refresh since in refresh should only renew provisioning profiles by @mahee96 in https://github.com/SideStore/SideStore/pull/846\n* [Settings]: Fix: DisableAppLimit switch reverting back to off state even if on iOS where sparseRestore is not patched yet by @mahee96 in https://github.com/SideStore/SideStore/pull/850\n* Update trustedapps.json by @neoarz in https://github.com/SideStore/SideStore/pull/853\n* [Backup]: Fix: update logic during install missed since override keyword was missing by @mahee96 in https://github.com/SideStore/SideStore/pull/857\n* Fix Repository App Previews by @neoarz in https://github.com/SideStore/SideStore/pull/871\n* Feature: Bulk sources-add in sources screen with capability to stage them before persisting into database by @mahee96 in https://github.com/SideStore/SideStore/pull/888\n* Version 0.6.0: CoreData Migrations fix including xcdatamodels and xcmappingmodels by @mahee96 in https://github.com/SideStore/SideStore/pull/894\n* Feature: Render in-app update description as (full) markdown by @mahee96 in https://github.com/SideStore/SideStore/pull/897\n* fix: typo in hasUpdate comparison by @l2dy in https://github.com/SideStore/SideStore/pull/900\n* Update SettingsViewController.swift by @neoarz in https://github.com/SideStore/SideStore/pull/915\n* WIP: Fixes for migration issues when migrating from 0.5.9 to 0.6.0  by @mahee96 in https://github.com/SideStore/SideStore/pull/920\n* Fix typo \"levaraging\" -> \"leveraging\" by @lafrenierejm in https://github.com/SideStore/SideStore/pull/926\n* Added StosVPN to the EM Proxy part. by @Br0des in https://github.com/SideStore/SideStore/pull/940\n* StosVPN-integration: Removed em_proxy and EmotionalDamage module in favour of stosVPN by @mahee96 in https://github.com/SideStore/SideStore/pull/945\n* Disable minimuxer ready check which shows NO WIFI/VPN error since stosVPN can work on cellular too by @mahee96 in https://github.com/SideStore/SideStore/pull/935\n* Add iOS 17.4+ JIT and mounting by @jkcoxson in https://github.com/SideStore/SideStore/pull/953\n* Add export certificate feature by @hugeBlack in https://github.com/SideStore/SideStore/pull/959\n* Feat: Add Pairing File Export URL callback and replace Wireguard with StosVPN by @stossy11 in https://github.com/SideStore/SideStore/pull/962\n* Change front-facing references to AltStore by @owoellen in https://github.com/SideStore/SideStore/pull/987\n* Update OperationError.swift for idevice_pair by @CelloSerenity in https://github.com/SideStore/SideStore/pull/995\n* Add import/export certificate feature by @hugeBlack in https://github.com/SideStore/SideStore/pull/1008\n* Fix pairing file doc link by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1011\n* Add option for using main bundle's profile for app extensions, update AltSign & libmd by @hugeBlack in https://github.com/SideStore/SideStore/pull/1012\n* Use main profile when refreshing by @hugeBlack in https://github.com/SideStore/SideStore/pull/1013\n\n## New Contributors\n* @l2dy made their first contribution in https://github.com/SideStore/SideStore/pull/900\n* @lafrenierejm made their first contribution in https://github.com/SideStore/SideStore/pull/926\n* @Br0des made their first contribution in https://github.com/SideStore/SideStore/pull/940\n* @hugeBlack made their first contribution in https://github.com/SideStore/SideStore/pull/959\n* @owoellen made their first contribution in https://github.com/SideStore/SideStore/pull/987\n* @CelloSerenity made their first contribution in https://github.com/SideStore/SideStore/pull/995\n\n**Full Changelog**: https://github.com/SideStore/SideStore/compare/0.5.9...0.6.2\n",
+          "localizedDescription": "# Build Info\nBuilt at (UTC): `Tue Jul  1 01:20:17 2025`\nBuilt at (UTC date): `2025-07-01`\nCommit SHA: `685d9567752c6b7396304f8b64f0f713f52cf936`\nVersion: `0.6.2`\n\n## What's Changed\n* Rebase 2.0 wip by @nythepegasus in https://github.com/SideStore/SideStore/pull/794\n* [Refresh]: Remove install stuffs from refresh since in refresh should only renew provisioning profiles by @mahee96 in https://github.com/SideStore/SideStore/pull/846\n* [Settings]: Fix: DisableAppLimit switch reverting back to off state even if on iOS where sparseRestore is not patched yet by @mahee96 in https://github.com/SideStore/SideStore/pull/850\n* Update trustedapps.json by @neoarz in https://github.com/SideStore/SideStore/pull/853\n* [Backup]: Fix: update logic during install missed since override keyword was missing by @mahee96 in https://github.com/SideStore/SideStore/pull/857\n* Fix Repository App Previews by @neoarz in https://github.com/SideStore/SideStore/pull/871\n* Feature: Bulk sources-add in sources screen with capability to stage them before persisting into database by @mahee96 in https://github.com/SideStore/SideStore/pull/888\n* Version 0.6.0: CoreData Migrations fix including xcdatamodels and xcmappingmodels by @mahee96 in https://github.com/SideStore/SideStore/pull/894\n* Feature: Render in-app update description as (full) markdown by @mahee96 in https://github.com/SideStore/SideStore/pull/897\n* fix: typo in hasUpdate comparison by @l2dy in https://github.com/SideStore/SideStore/pull/900\n* Update SettingsViewController.swift by @neoarz in https://github.com/SideStore/SideStore/pull/915\n* WIP: Fixes for migration issues when migrating from 0.5.9 to 0.6.0  by @mahee96 in https://github.com/SideStore/SideStore/pull/920\n* Fix typo \"levaraging\" -> \"leveraging\" by @lafrenierejm in https://github.com/SideStore/SideStore/pull/926\n* Added StosVPN to the EM Proxy part. by @Br0des in https://github.com/SideStore/SideStore/pull/940\n* StosVPN-integration: Removed em_proxy and EmotionalDamage module in favour of stosVPN by @mahee96 in https://github.com/SideStore/SideStore/pull/945\n* Disable minimuxer ready check which shows NO WIFI/VPN error since stosVPN can work on cellular too by @mahee96 in https://github.com/SideStore/SideStore/pull/935\n* Add iOS 17.4+ JIT and mounting by @jkcoxson in https://github.com/SideStore/SideStore/pull/953\n* Add export certificate feature by @hugeBlack in https://github.com/SideStore/SideStore/pull/959\n* Feat: Add Pairing File Export URL callback and replace Wireguard with StosVPN by @stossy11 in https://github.com/SideStore/SideStore/pull/962\n* Change front-facing references to AltStore by @owoellen in https://github.com/SideStore/SideStore/pull/987\n* Update OperationError.swift for idevice_pair by @CelloSerenity in https://github.com/SideStore/SideStore/pull/995\n* Add import/export certificate feature by @hugeBlack in https://github.com/SideStore/SideStore/pull/1008\n* Fix pairing file doc link by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1011\n* Add option for using main bundle's profile for app extensions, update AltSign & libmd by @hugeBlack in https://github.com/SideStore/SideStore/pull/1012\n* Use main profile when refreshing by @hugeBlack in https://github.com/SideStore/SideStore/pull/1013\n\n## New Contributors\n* @l2dy made their first contribution in https://github.com/SideStore/SideStore/pull/900\n* @lafrenierejm made their first contribution in https://github.com/SideStore/SideStore/pull/926\n* @Br0des made their first contribution in https://github.com/SideStore/SideStore/pull/940\n* @hugeBlack made their first contribution in https://github.com/SideStore/SideStore/pull/959\n* @owoellen made their first contribution in https://github.com/SideStore/SideStore/pull/987\n* @CelloSerenity made their first contribution in https://github.com/SideStore/SideStore/pull/995\n\n**Full Changelog**: https://github.com/SideStore/SideStore/compare/0.5.9...0.6.2\n",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.2/SideStore.ipa",
           "size": 28873303,
           "buildVersion": null,
@@ -318,7 +318,7 @@
       "subtitle": "Mod pro",
       "localizedDescription": "Yêu cầu: IOS 15.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã kích hoạt Pro \n💚Đã sửa lỗi hoạt động của các widget🛠🛠🛠\n😰Để kích hoạt Pro, hãy khởi động lại ứng dụng và nhấn “Mua gói Pro” nhiều lần, đồng thời hủy nhập Apple ID.",
       "versionDescription": "",
-      "tintColor": "#33D9B4",
+      "tintColor": "33D9B4",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/29/4d/a7294dc9-b315-8bdd-a3fb-9fef82e60aa5/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -363,7 +363,7 @@
       "subtitle": "Mod premium",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã kích hoạt Premium! Nhấn “Mua gói đăng ký”, sau đó hủy nhập Apple ID.\n😰Công cụ đơn giản để tạo sticker.",
       "versionDescription": "",
-      "tintColor": "#601CFF",
+      "tintColor": "601CFF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fe/fe/02/fefe0210-06b4-dcfe-81e3-9fba16a67fd5/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -406,7 +406,7 @@
       "subtitle": "Mod version",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Đã thêm tinh chỉnh mới 🧤🧤🧤TGExtra \n💚Thay đổi vị trí địa lý \n💚Chế độ hoàn toàn ngoại tuyến \n💚Đã xóa quảng cáo \n💚Chế độ ẩn danh: không hiển thị đã đọc tin nhắn hay xem story \n💚🔥Ẩn trạng thái đang gõ⌨️, ghi âm tin nhắn thoại, quay video tròn trong cuộc trò chuyện \n💚Cho phép chụp màn hình và quay màn hình ở mọi nơi, kể cả nơi bị hạn chế (kênh kín, nhóm riêng, ảnh tự hủy, chat bí mật) 💚Cho phép lưu và chuyển tiếp nội dung từ các nhóm và kênh riêng tư \n💚Có thể đăng nhập bằng mã SMS!",
       "versionDescription": "",
-      "tintColor": "#55B0E7",
+      "tintColor": "55B0E7",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/0f/f3/480ff3b9-cae0-7fc9-f917-19892541ffaa/Telegram-0-0-1x_U007epad-0-1-0-P3-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -448,7 +448,7 @@
       "subtitle": "Giả lập game NDS",
       "localizedDescription": "Yêu cầu: IOS 16.0 trở lên \n⚙️Mô tả⚙️ \n💚Trình giả lập các hệ máy console như NDS, 3DS, GBA và nhiều loại khác!",
       "versionDescription": "",
-      "tintColor": "#63D97B",
+      "tintColor": "63D97B",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/45/a8/de45a823-3935-bb2c-7fbc-d9580962d05d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -486,7 +486,7 @@
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 8.0 trở lên \n⚙️Tính năng của bản mod⚙️ \n💚Giá trên 💙AppStore là 4.99$.\n 💚Không khả dụng trên 🇷🇺AppStore.",
       "versionDescription": "",
-      "tintColor": "#EB4200",
+      "tintColor": "EB4200",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/67/93/7c/67937cd2-0907-bbec-8987-4ecf0442411a/mzl.vjzejqyc.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -526,7 +526,7 @@
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 12.0 trở lên \n⚙️Tính năng của bản mod⚙️\n 💚Đã bị xóa khỏi AppStore💙❌",
       "versionDescription": "",
-      "tintColor": "#DD1C20",
+      "tintColor": "DD1C20",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/f2/d0/86f2d00b-a564-747c-b5ad-934d9c417e0c/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -565,7 +565,7 @@
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Đặc điểm nổi bật⚙️ 💚Được trích xuất từ 🎮🎮🎮 💚Đã sửa lỗi liên quan đến GameCenter khi ký bằng chứng chỉ🛠🛠🛠",
       "versionDescription": "",
-      "tintColor": "#2496EC",
+      "tintColor": "2496EC",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/32/bc/0a32bcc0-b4a5-d390-eac3-3cfa457c32d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -607,7 +607,7 @@
       "subtitle": "Playing game mod",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \n⚙️Tính năng của bản mod⚙️\n💚Đã bị xóa khỏi AppStore💙❌",
       "versionDescription": "",
-      "tintColor": "#42B9FD",
+      "tintColor": "42B9FD",
       "iconURL": "https://th.bing.com/th/id/OIP.7-xjm7lv-uMt2_h5uLZEPwAAAA",
       "screenshotURLs": [],
       "screenshots": [
@@ -643,7 +643,7 @@
       "subtitle": "Game play",
       "localizedDescription": "Yêu cầu: IOS 12.0 trở lên \n⚙️Tính năng của bản mod⚙️\n💚Đã bị xóa khỏi AppStore💙❌",
       "versionDescription": "",
-      "tintColor": "#F6312D",
+      "tintColor": "F6312D",
       "iconURL": "https://upload.wikimedia.org/wikipedia/en/8/8d/Angry_Birds_Star_Wars.png",
       "screenshotURLs": [],
       "screenshots": [],
@@ -677,7 +677,7 @@
       "subtitle": "Tool for sign IPA",
       "localizedDescription": "⚙️Đặc điểm nổi bật⚙️\n💚Trình cài đặt sao chép hoàn toàn chức năng của ESign, thậm chí ở một số điểm còn tiện lợi hơn.\n\n😰 Theo thông tin từ nhà phát triển ESign, phần hỗ trợ máy chủ của ứng dụng sẽ sớm bị ngừng, điều này sẽ khiến việc cài đặt ứng dụng trở nên không khả thi. Trong tình huống này, KSign có thể trở thành một sự thay thế phù hợp.",
       "versionDescription": "",
-      "tintColor": "#7376C2",
+      "tintColor": "7376C2",
       "iconURL": "https://i0.wp.com/techybuff.com/wp-content/uploads/2025/05/Ksign-1.webp",
       "screenshotURLs": [],
       "screenshots": [
@@ -715,7 +715,7 @@
       "subtitle": "Subscription Unlocked",
       "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nEffortless editing. Total control. Meet the fast, free, and focused mobile video editing app that's powerful enough for any idea, yet simple enough for anyone to use. Edit videos from wherever you are, with no ads or watermarks. Premiere offers unmatched speed on a precise multi-track timeline and studio-quality audio featuring crystal clear voice recordings and perfectly timed AI sound effects -- plus Firefly-powered visuals to create stand out videos.\n\nTell your story with unique, scroll-stopping videos. Level up your content with AI editing tools and create stand out edits to share on TikTok, YouTube, Instagram, Facebook, and more. Record voiceovers and achieve studio-quality audio with crystal clear voice recordings and perfectly timed AI sound effects. Get inspired and kickstart your project with Adobe’s massive library of free creative assets. Speed up your editing with Adobe Firefly AI-generated sound effects, images, videos, and stickers.\n\nCapture the moment and create trends with Adobe Premiere.\n\nFEATURES:\n\nLIGHTNING-FAST TIMELINE\n• Frame-Accurate Edits: Trim, split, or merge video clips with the industry’s most accurate video editor.\n• AI Auto Captions: generate captions and add attention grabbing animations in seconds.\n• Smooth Speed Effects: speed up, slow down, reverse or freeze key moments.\n• Unique Colour Presets: Apply Adobe Lightroom presets and fine tune to fit your aesthetic.\n• Instant Background Removal: Cut out subjects with one tap. Create overlays, title effects, and more.\n\nPRECISION CONTROL\n• Unlimited Tracks: Overlay clips and organize your timeline with no limits to your creativity.\n• Resize and Post to Any Platform: Adjust videos to fit any aspect ratio and share anywhere easily.\n• Advanced Clip Controls: Flip, fit, fill, or extract audio to customise every cut.\n\nSTUDIO QUALITY SOUND\n• AI Enhance Speech: Create studio quality voiceovers with the help of AI.\n• DIY Sound Effects: Use your voice to generate your own sounds.\n\nGENERATIVE AI ASSETS\n• AI Text to Image Generation: create unique, commercially safe images from a simple text prompt with Adobe Firefly.\n• Stickers That Pop: Generate your own AI stickers or select from the free in-app library.\n• AI Background Expansion: Extend, enhance, or replace backgrounds with a prompt.\n\nFREE LIBRARY OF CREATIVE ASSETS\n• Get going with quality images, sounds, music, and video from the Adobe library.\n• Add Music to Your Videos: Select from a library of free and royalty free tracks.\n• Respects Creator Content Ownership: Adobe never trains on user content.\n\nSPEED AND PERFORMANCE\n• Built natively on iOS for a fast, smooth, editing experience.\n• Import your assets directly from your device or favourite cloud storage provider.\n• Edit without distracting pop-up ads, clutter, or watermarks.\n\nFREE TO DOWNLOAD AND USE\n• Everything you need to create great videos is available for free. Only pay when you need Firefly generative AI credits.\n\nTERMS & CONDITIONS:\nYour use of this application is governed by the Adobe General Terms of Use http://www.adobe.com/go/terms_linkfree_uk and the Adobe Privacy Policy http://www.adobe.com/go/privacy_policy_linkfree_uk\n\nDo not sell or share my personal information: www.adobe.com/go/ca-rights-linkfree",
       "versionDescription": "",
-      "tintColor": "#9A9AFF",
+      "tintColor": "9A9AFF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/ec/64/d4ec64be-4fba-b45b-56d2-588dec5e3703/AppIcon_Premiere-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -757,7 +757,7 @@
       "subtitle": "Subscription Unlocked",
       "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nPhotoshop on mobile includes a wide selection of free features to accomplish all the core photo editing capabilities. Whether you're new, curious, or already familiar with Photoshop, we’ve made it easier than ever to learn and expand your creative skills.\n\nPhotoshop on mobile simplifies your creative & design needs:\n- Add new objects\n- Blur or remove backgrounds\n- Replace backgrounds and remove unwanted objects\n- Retouch, refine and perfect your images with targeted adjustments\n- Combine multiple images to create high-quality compositions and explore intuitive AI tools\n- Create unique collages, album cover art, perfect your passion projects, and develop unique digital art—all in one place\n\nThere is no limit to what you can create.\n\nKEY FEATURES\n\nREMOVE OR REPLACE BACKGROUNDS\n- Effortlessly select the background with the Tap Select tool.\n- Easily replace backgrounds with an image directly from your phone, create AI-generated backgrounds with Generative Fill, or select from a large library of Adobe Stock images, including textures, filters and patterns.\n- Adjust the background, including the brightness, effects or vibrancy to bring your creations to life.\n\nREMOVE UNWANTED DISTRACTIONS\n- Brush out blemishes, spots, or small imperfections in seconds using the Spot Healing Brush.\n- Quickly and easily remove unwanted content from your images with our powerful Generative Fill feature.\n\nPERSONALIZED IMAGE DESIGN\n- Create stunning visual images that are uniquely yours by blending photos, graphics, text, utilizing effects and more.\n- Combine unique elements from your own photos with a selection of free Adobe Stock images, including textures, filters, fonts and patterns, to elevate your final creations.\n- Effortlessly select an object or person with the Tap Select tool.\n- Rearrange objects in your image and control how they come together with layers. \n- Easily add and remove content from your photos using simple text prompts with Generative Fill. Additionally, ideate, create new assets, and jumpstart your creativity using Generate Image.\n\nBRING COLOR AND LIGHT TO LIFE\n- Adjust the color of anything, like your shirt, pants or shoes, using adjustment layers. Use the Tap Select and other selection tools to perfectly edit the brightness or vibrancy to add a pop of color to your images.\n\nPREMIUM\n- Upgrade to the Photoshop Mobile & Web plan for enhanced control and precision, with access to iPhone, iPad, and web.\n- Easily remove entire objects just by brushing over it, and have the background filled in automatically with the Remove Tool.\n- Seamlessly fill selected portions of an image with content sampled from other parts of the image with Content Aware Fill.\n- Quickly and precisely select people and objects like plants, cars, and more with enhanced precision using Object Select.\n- 100 generative credits to add, expand, design or remove content from your images. In addition, ideate, create new assets, and generate your creativity using the latest features like Generate Image. \n- Change unique layer interactions to control transparency, color effects, filters and add style to your images with Advanced Blend Modes.\n- Quickly and easily select an object or area of your image based on similar colors and tones with the Magic Wand Tool and retouch it further with targeted adjustments.\n- Export in additional file formats (PSD, TIFF, JPG, PNG) and export options for print quality and compression.\n\nTERMS & CONDITIONS:\nYour use of this application is governed by the Adobe General Terms of Use http://www.adobe.com/go/terms_linkfree_en and the Adobe Privacy Policy http://www.adobe.com/go/privacy_policy_linkfree_en\nDo not sell or share my personal information: www.adobe.com/go/ca-rights-linkfree",
       "versionDescription": "",
-      "tintColor": "#32A7FF",
+      "tintColor": "32A7FF",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a4/f2/d2/a4f2d25b-c9a2-3010-8d83-3f2bfe22f53d/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -801,7 +801,7 @@
       "subtitle": "Subscription Unlocked",
       "localizedDescription": "Yêu cầu: IOS 13.0 trở lên \nAdGuard is an ultra-efficient ad blocker for Safari. It will not only remove annoying ads but also secure your privacy with advanced tracking protection. AdGuard for iOS is an open source app, it’s totally transparent and safe to use. The app is free but offers additional paid Premium features for advanced users.\n\nKEY FEATURES:\n\n- Safari ad blocking. Removes all kinds of ads in Safari. Say goodbye to annoying banners, pop-ups and video ads. Whitelist your favorite websites or use manual blocking tool to hide any element on the page.\n\n- Privacy protection. The web is full of trackers that literally watch your every click. AdGuard offers a selection of filters aimed directly at trackers and web analytics that will ensure your private data stays that way.\n\n- Speed acceleration. Safari browser runs up to 4x faster. AdGuard removes tons of rubbish and you can freely surf the web!\n\n- Reduced traffic consumption and increased battery life. Banners and ads sometimes add up to half the size of the page. By blocking them, you’re saving your battery life and Wi-Fi/mobile traffic.\n\n- More than 50 popular subscriptions (EasyList, EasyPrivacy, etc.) plus AdGuard's own powerful ad filters, including language-specific filters. Together they don't leave ads a chance.\n\nADGUARD PREMIUM\n\nAdGuard Premium includes the following features:\n\n- Custom filters. Add your own filters by URL even if they are not on the default list.\n\n- DNS privacy. Blocking regular online trackers is not enough if you want to assure 100% protection of your online privacy. Choose any of the user-favorite DNS providers or configure a custom DNS server.\n\n- Security filters. Protect yourself from dangerous websites riddled with cryptojacking or fraud.\n\nAdGuard Premium is a paid service with the subscription cost $0.99/month or $4.99/year or a one-time purchase of lifetime subscription $12.99 (prices may vary by region). Payment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. The account will be charged for renewal within 24-hours prior to the end of the current period. Your subscriptions may be managed and your auto-renewal may be turned off by going to your iTunes Account Settings after purchasing a subscription.\n\n* Privacy policy: https://adguard.com/privacy.html\n* Terms of Use: https://adguard.com/eula.html\n\nABOUT ADGUARD\n\nAdGuard is a leading company in developing ad blocking software for multiple platforms. For more than ten years AdGuard has been helping millions of users enjoy safe, clean, and fast internet.\n\nFollow us at @AdGuard on Twitter, facebook.com/AdGuardEn/ on FB or send us a message at support@adguard.com.",
       "versionDescription": "",
-      "tintColor": "#68B179",
+      "tintColor": "68B179",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cc/a0/91/cca091e4-c000-0577-7f61-2b799e3f89f7/AppIcon-0-0-1x_U007epad-0-11-0-sRGB-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -842,7 +842,7 @@
       "subtitle": "Premium Unlocked",
       "localizedDescription": "Yêu cầu: IOS 17.0 trở lên \nBuddy helps you set up a budget and keep track of your expenses, either by yourself or together with your loved ones.\nHere’s what is waiting for you inside:\n\n\nBUDGETS\nBuddy will help you not to overspend on your well-earned salary by setting up a budget plan that fits you. \nDo you want a shared budget with your partner? Or keep the expenses between you and your mates fair on the vacation? No problem, just invite them and get a clear picture of who spent what.\n\nOVERVIEW\nWe'll give you a beautiful & detailed overview of your spendings, income, and savings.\n\nSPLIT\nSplit lets you know who paid what, and how to settle up.\n\n\nAnd much more for you to find.\nTake control of your finance today!\n\nBuddy offers a $9.99 monthly renewing and a $49.99 yearly renewing subscription to unlock Premium functionality.\nThe purchase will be charged from your iTunes account if you choose to buy the Buddy Premium subscription. You can manage or cancel your subscription through the user settings in iTunes after the purchase. The subscription period ends with the same kind of subscription you already bought to the same price unless you turn off your subscription 24 hours before it renews. It is not possible to cancel your current subscription during the time your subscription is active.\n\nTerms & Conditions: http://www.nattkod.tech/privacy_policy_terms_conditions",
       "versionDescription": "",
-      "tintColor": "#B884F5",
+      "tintColor": "B884F5",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/08/97/3f/08973f60-09a9-2b33-c313-cb52a39d70b0/Buddy-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -883,7 +883,7 @@
       "subtitle": "Lifetime Pro",
       "localizedDescription": "Yêu cầu: IOS 15.0 trở lên \n# The choice of one million Safari browser users, the next-generation browser extension platform. \n\nStay is a Safari browser extension that enhances browsing experience and interactivity to a great extent. With Stay, users can greatly improve their Safari browsing experience and make it more enjoyable.\n\nStay supports all Apple platforms and offers a one-time payment that covers iPhone, iPad, and Mac devices.\n\nWith Stay installed, what new features can you expect in your Safari browser?\n- Userscripts: Install or write your own userscripts to enable automatic page turning, immersive translation, anti-redirect, and aggregated search functions.\n- Ad blocking: Support for Adguard, uBlock Origin, AdBlock Plus, and other filtering rules based on the EasyList specification, making your browsing experience safer and cleaner.\n\nBy purchasing Stay Pro, you can enjoy the following additional benefits:\n- Synchronization of script content and settings across all platforms.\n- Add custom ad filtering rules and tag ads on pages.\n- Dark mode for web pages.\n\nPrivacy policy: https://www.privacypolicyonline.com/live.php?token=ZPXT0Jfv2diYUfbf5ciLDV9oYRgJ6Evc\nTerms of service: https://fastclip.app/policy/terms-stay.htm\n\nVisit our open-source version address at https://github.com/shenruisi/Stay.\nFor any questions, please follow our official Twitter @stayfork to provide feedback.\nJoin our Telegram group at t.me/fastclipchat.",
       "versionDescription": "",
-      "tintColor": "#BB2DD7",
+      "tintColor": "BB2DD7",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/8e/dd/068edd6e-df5a-ab36-4fef-e7735e4637a6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -922,7 +922,7 @@
       "subtitle": "Subscription Unlocked",
       "localizedDescription": "Yêu cầu: IOS 14.0 trở lên \niScreen - personalized homescreen with various Widgets & Themes & Wallpaper to make your phone screen stand out!\n\n*iOS 26 Unlocked​！, featuring liquid glass effects and over 1000+ 3D space wallpapers and themes. Added dynamic Control Center customization for a more practical and fun experience.\n\nYou can not only keep pets and grow plants on the Dynamic Island, customize your Lock Screen with Interactive, Weather, Battery, Launcher, X-Panel, Text & Icon, Animation, Work Clock, Step Count widgets, but also add Home Screen widgets like Dynamic Panel, Photos, Scrolling Album, To-Do List, Countdown, Digital Clock, Calendar, Emoji Notes, Fan, Air Conditioner, and more for greater fun. Besides widgets, iScreen also offers various Themes, Wallpapers, AI-generated artwork, Charging Animations, and other features to make your phone screen more beautiful and unique.\n\nSpecial feature:  \n【iOS 26】\nFun iOS 26 Features, customized with 1000+ 3D space wallpapers and themes. Added dynamic Control Center effects to make your phone truly one-of-a-kind!\n\n【Control Center】\nCustomize your Control Center style with colorful icons. Features include a Counter, Water Reminder, Book of Answers, Dice Roll, and Quick Launch—combining beauty and practicality.\n\n【DIY Wallpapers】\nCreate static or dynamic wallpapers with rich templates like Polaroid, Heart Puzzle, Flip Card, and Animated Marquee Lights to make your home screen unique.\n\n【Widgets】\nIncludes popular widgets such as Dynamic Panel, Photo Wall, Weather, Battery, Countdown, Calendar, X-Panel, Emoji Notes, Digital Clock, Ferris Wheel, Windmill, and Air Conditioner. It also offers creative lock screen styles like Emojis, Animations, and Icons, with support for transparent effects — making your phone both fun and practical.\n\n【Charging Animation】\nCool and interesting charging animations with custom effects for a personalized charging experience.\n\n【Couple Widgets】\nSweet widgets designed for couples and friends. Send messages and photos to each other’s screens, and check real-time distance, weather, and moods.\n\n【Interactive Widgets】\nQuickly complete to-do check-ins or play games like Whack-a-Mole and Arcade without opening the app—adding fun to your daily routine.\n\n【Themes & Wallpapers】\nA vast collection of daily updated themes and wallpapers, including trending styles like Ins, minimalist, pink & black, AI art, and paper-cut designs. Easily elevate your home screen’s style and personalize your phone!\n\n【Dynamic Island】\nWe offers a variety of fun features, such as Pet Island, Plant Island, Animation Island, Weather Island, Panel Island, Calendar Island, Signature Island, Launcher Island, Timer Island, and more. It comes with multiple built-in creative animations, and you can also custom upload images or avatars to your Dynamic Island and set exclusive quotes\n\nUse Of Terms: https://www.xmzerone.com/about/deskagreement.html\nPrivacy Policy: http://www.xmzerone.com/about/deskprivacy.html",
       "versionDescription": "",
-      "tintColor": "#FEA570",
+      "tintColor": "FEA570",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/ce/73/c2ce733a-51c7-a593-5d07-e4f90a6fbe5b/AppIcon-0-0-1x_U007epad-0-0-0-8-0-0-sRGB-85-220.jpeg/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -967,7 +967,7 @@
       "subtitle": "Douyin - TikTok Trung Quốc",
       "localizedDescription": "Chắc chắn bạn không lạ gì với các tên mới thấy trên tiêu đề đúng không. Trở thành trào lưu trong khoảng thời gian gần đây. Thu hút hàng triệu người dùng trong thời gian ngắn. Không quá khi nói Douyin chính là “con gà đẻ trứng vàng” cho nhà phát triển TikTok Pte. Ltd. Luôn luôn là top 1 trong bảng xếp hạng giải trí trên Apple Store hay CH Play. Được nhiều người nổi tiếng sử dụng cũng như tạo nên xu hướng hay trend mới chỉ bằng một clip ngắn. Tuy nhiên TikTok Trung Quốc ipa – đất nước sản sinh ra mạng xã hội này mới là bản được nhiều người dùng đánh giá cao nhất.",
       "versionDescription": "",
-      "tintColor": "#201D1D",
+      "tintColor": "201D1D",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/39/05/82390565-e3ad-7b97-e691-9435f06e6a35/AppIcon_TikTok-0-0-1x_U007epad-0-1-0-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1007,7 +1007,7 @@
       "subtitle": "[Wink] Video Portrait Beautification Tool",
       "localizedDescription": "Wink++ iPA mở khóa các tính năng VIP của ứng dụng Wink- Video Retouching Tool.\nLưu ý: một số tính năng VIP không thể sử dụng vì nó xử lý trên máy chủ (server-side) ví dụ AI hoạt hình.",
       "versionDescription": "",
-      "tintColor": "#292A2D",
+      "tintColor": "292A2D",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/50/17/6150172b-86cb-6cc0-ed16-e6e653c0c51d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1052,7 +1052,7 @@
       "subtitle": "Nhân bản wechat",
       "localizedDescription": "WeChat 2 – WeChat Clone – WeChat Song Song iPA giúp bạn sử dụng 2 ứng dụng WeChat trên cùng 1 thiết bị iPhone/iPad (bao gồm cả ứng dụng WeChat mà bạn đã tải từ App Store).",
       "versionDescription": "",
-      "tintColor": "#E26060",
+      "tintColor": "E26060",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/80/ad/eb/80adeb0e-5580-f51e-d0d0-64564029fb46/AppIcon-0-0-1x_U007epad-0-6-0-sRGB-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1092,7 +1092,7 @@
       "subtitle": "Nhân bản Viber",
       "localizedDescription": "Viber Nhân Bản 🆕🆙🆙\n\n🦠 Tính Năng Hack 🦠",
       "versionDescription": "",
-      "tintColor": "#2330E1",
+      "tintColor": "2330E1",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/19/a7/8319a717-c8ce-82d3-a3f1-d961773e2e9e/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1134,7 +1134,7 @@
       "subtitle": "Xem phim cả rổ",
       "localizedDescription": "Xem Phim Miễn Phí Cực Nhanh, Chất Lượng Cao Và Cập Nhật Liên Tục",
       "versionDescription": "",
-      "tintColor": "#977272",
+      "tintColor": "977272",
       "iconURL": "https://drphe.github.io/KhoIPA/icon/26.png",
       "screenshotURLs": [],
       "screenshots": [
@@ -1170,7 +1170,7 @@
       "subtitle": "Duolingo Premium unlock, super duolingo.",
       "localizedDescription": "Duolingo IPA MOD là phiên bản sửa đổi của ứng dụng Duolingo cung cấp cho người dùng các tính năng cao cấp miễn phí. Với MOD này, bạn có thể tận hưởng trái tim không giới hạn, bài học ngoại tuyến, học không có quảng cáo và các tính năng độc quyền khác mà không cần đăng ký.",
       "versionDescription": "",
-      "tintColor": "#8AA32E",
+      "tintColor": "8AA32E",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/df/0c/5f/df0c5f65-4c7c-8680-79f3-510ba742364a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1232,7 +1232,7 @@
       "subtitle": "Phần mềm xem phim 4K",
       "localizedDescription": "Phim4K mang cả rạp phim tới nhà của bạn. Kho phim đồ sộ, không quảng cáo, UI thân thiện",
       "versionDescription": "",
-      "tintColor": "#535050",
+      "tintColor": "535050",
       "iconURL": "https://phim4k.xyz/img/logo4k.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1269,7 +1269,7 @@
       "subtitle": "X (Twitter) mod premium",
       "localizedDescription": "Phiên bản X++ mod không quảng cáo",
       "versionDescription": "",
-      "tintColor": "#3A3636",
+      "tintColor": "3A3636",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4b/23/85/4b238571-7615-42f7-8e41-a5d05e08d8b9/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1315,7 +1315,7 @@
       "subtitle": "Torrent client for iOS",
       "localizedDescription": "iTorrent officially in the AltStore!\n\nIt is an ordinary torrent client for iOS with Files app support and much more.\n\nWhat can this app do:\n\n• Download in the background\n• Live Activity and Dynamic Island progress bar\n• Downloading on external drives\n• Sequential download (use VLC to watch films while loading)\n• Add torrent files from Share menu (Safari and other apps)\n• Add magnet links directly from Safari\n• Store files in Files app\n• File sharing directly from app\n• Download torrent by url\n• Download torrent by magnet\n• Show progress in Dynamic Island\n• Send notification on torrent downloaded\n• Web/WebDav Server\n• Select files download priority\n• Change UI to dark theme\n• Color personalization\n• RSS Feed",
       "versionDescription": "",
-      "tintColor": "#D73C3C",
+      "tintColor": "D73C3C",
       "iconURL": "https://raw.githubusercontent.com/XITRIX/xitrix.github.io/master/icon.png",
       "screenshotURLs": [],
       "screenshots": [
@@ -1354,7 +1354,7 @@
       "subtitle": "Youtube Premium (full chức năng)",
       "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.\nTải ứng dụng YouTube chính thức dành cho iPhone và iPad.\nXem nội dung mọi người đang xem về âm nhạc, trò chơi, giải trí, tin tức và nhiều nội dung khác. Đăng ký kênh, chia sẻ với bạn bè, chỉnh sửa và tải video lên, xem trên thiết bị bất kỳ.\nBạn cũng có thể tạo danh sách phát, xem nội dung đang thịnh hành, thể hiện bản thân bằng nhận xét, chia sẻ video với bạn bè, truyền video đến TV và hơn thế nữa – tất cả đều từ bên trong ứng dụng.",
       "versionDescription": "",
-      "tintColor": "#F01414",
+      "tintColor": "F01414",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/2d/17/822d1799-53f4-2bb1-e335-0c66378fe7bf/logo_youtube_2024_q4_color-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220-0.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1394,7 +1394,7 @@
       "subtitle": "Facebook No ADS",
       "localizedDescription": "Ứng dụng Facebook No ADS, bản mod không có quảng cáo, chặn đã xem tin...",
       "versionDescription": "",
-      "tintColor": "#5825D0",
+      "tintColor": "5825D0",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/f7/40/dbf74089-54d3-a5a1-67ea-ba9bcefa8481/Icon-Production-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1448,7 +1448,7 @@
       "subtitle": "Nhân bản Zalo",
       "localizedDescription": "Ứng dụng zalo2 giúp nhân bản, dùng song song 2 Zalo trên điện thoại.",
       "versionDescription": "",
-      "tintColor": "#8880F4",
+      "tintColor": "8880F4",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c4/1a/d3/c41ad395-78d6-11de-5a53-52e4e350479a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [],
       "screenshots": [
@@ -1507,7 +1507,7 @@
       "subtitle": "Ký và cài đặt IPA cho IOS",
       "localizedDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!\n👇🏻👇🏻👇🏻 WEB LẤY IPA TRẮNG \nWeb 1: https://decrypt.day/ \nWeb 2: https://armconverter.com/decryptedappstore/us",
       "versionDescription": "",
-      "tintColor": "#6156B8",
+      "tintColor": "6156B8",
       "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
       "screenshotURLs": [],
       "screenshots": [
@@ -1544,7 +1544,7 @@
       "subtitle": "Ứng dụng ký IPA",
       "localizedDescription": "轻松签是一款免越狱可给ipa签名的工具，具有注入库，去库等功能。\nhttps://github.com/iOS17/Esign",
       "versionDescription": "",
-      "tintColor": "#B2BFE6",
+      "tintColor": "B2BFE6",
       "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
       "screenshotURLs": [],
       "screenshots": [
@@ -1580,7 +1580,7 @@
       "identifier": "ungho",
       "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
       "date": "2025-11-01T07:00",
-      "tintColor": "#D03F25",
+      "tintColor": "D03F25",
       "imageURL": "https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png",
       "notify": true,
       "url": "donate.md",
@@ -1591,7 +1591,7 @@
       "identifier": "hdsd-dns",
       "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
       "date": "2025-10-17T07:00",
-      "tintColor": "#506471",
+      "tintColor": "506471",
       "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
       "notify": true,
       "url": "verifyapp.md",
@@ -1602,7 +1602,7 @@
       "identifier": "hdsd-adblock",
       "caption": "Hướng dẫn sử dụng DNS chặn quảng cáo trên ios",
       "date": "2025-10-15T07:00",
-      "tintColor": "#022740",
+      "tintColor": "022740",
       "imageURL": "https://cdn.tgdd.vn/Files/News/2023/05/18/5-cach-doi-dns-tren-iphone-nhanh-chong-chi-sau-thumb-560x292.jpg",
       "notify": true,
       "url": "dnsadblock.md",
@@ -1613,7 +1613,7 @@
       "identifier": "hdsd-anti-revoke",
       "caption": "Sử dụng cấu hình DNS ngăn chặn thu hồi chứng chỉ cài IPA.",
       "date": "2025-10-14T07:00",
-      "tintColor": "#DB7F33",
+      "tintColor": "DB7F33",
       "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
       "notify": true,
       "url": "chongthuhoicc.md",
@@ -1624,7 +1624,7 @@
       "identifier": "cert-apple",
       "caption": "Mẹo cài đặt IPA bằng Feather, ESign với Cert có phí",
       "date": "2025-10-14T07:00",
-      "tintColor": "#3498DB",
+      "tintColor": "3498DB",
       "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
       "notify": false,
       "url": "cert.md",
@@ -1635,7 +1635,7 @@
       "identifier": "hdsd-caiipa",
       "caption": "Bài hướng dẫn cài đặt ứng dụng ngoài Apple store (file .IPA) không cần Jailbreak.",
       "date": "2025-10-13T07:00",
-      "tintColor": "#0D6EC9",
+      "tintColor": "0D6EC9",
       "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
       "notify": false,
       "url": "caidatipa.md",
@@ -1646,7 +1646,7 @@
       "identifier": "hdsd-developermode",
       "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
       "date": "2025-10-11T07:00",
-      "tintColor": "#D73C3C",
+      "tintColor": "D73C3C",
       "imageURL": "https://h5m4.c19.e2-1.dev/image-video/logo/logocertapple.png",
       "notify": true,
       "url": "developermod.md",
@@ -1657,7 +1657,7 @@
       "identifier": "hd-cai-ipa",
       "caption": "Hướng Dẫn Cài Ứng Dụng IPA Cho iPhone Bằng TrollStore",
       "date": "2025-10-09T07:00",
-      "tintColor": "#675809",
+      "tintColor": "675809",
       "imageURL": "https://thuthuatjb.com/wp-content/uploads/2022/09/Huong-dan-TrollStore-ios-ipados.jpg",
       "notify": true,
       "url": "trollstore.md",
@@ -1668,7 +1668,7 @@
       "identifier": "share-dylib",
       "caption": "Chia sẻ kho .dylib, .deb được sưu tầm hoặc tự build để tiêm cho IPA.",
       "date": "2025-10-09T07:00",
-      "tintColor": "#33DB5D",
+      "tintColor": "33DB5D",
       "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
       "notify": false,
       "url": "Khodylib.md",

@@ -10,7 +10,7 @@
   "subtitle": "Welcome to the Nabzclan - Your Premium App Store Repository",
   "description": "Welcome to the Nabzclan - App Store Repo!",
   "headerURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
-  "tintColor": "#F54F32",
+  "tintColor": "F54F32",
   "META": {
     "repoName": "Nabzclan - App Store",
     "repoIcon": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png"
@@ -1165,7 +1165,7 @@
       "bundleIdentifier": "com.trueaxis.skate",
       "developerName": "polo",
       "subtitle": "",
-      "localizedDescription": "#1 game in 80 countries. Loved by millions of skateboarders all over the world.\r\n\r\n\"True Skate is clearly something special\" - 4.5/5 - Touch Arcade review.\r\n\r\nTrue Skate™ is the closest feeling to real-world skateboarding, with a decade long evolution as the ultimate skateboarding sim.\r\n\r\nNote: True Skate™ comes with a single skatepark and contains additional content available via In-App Purchase or Subscription. See below.\r\n\r\nPURE PHYSICS CONTROLS\r\nUse your fingers like you would your feet on a real skateboard. Flick the board to make it react exactly how you would expect & drag your finger on the ground to push.\r\n- Play with one finger, mind skate with 2 fingers, or play with 2 thumbs, now with Gamepad! The skateboard reacts instantly as f",
+      "localizedDescription": "1 game in 80 countries. Loved by millions of skateboarders all over the world.\r\n\r\n\"True Skate is clearly something special\" - 4.5/5 - Touch Arcade review.\r\n\r\nTrue Skate™ is the closest feeling to real-world skateboarding, with a decade long evolution as the ultimate skateboarding sim.\r\n\r\nNote: True Skate™ comes with a single skatepark and contains additional content available via In-App Purchase or Subscription. See below.\r\n\r\nPURE PHYSICS CONTROLS\r\nUse your fingers like you would your feet on a real skateboard. Flick the board to make it react exactly how you would expect & drag your finger on the ground to push.\r\n- Play with one finger, mind skate with 2 fingers, or play with 2 thumbs, now with Gamepad! The skateboard reacts instantly as f",
       "versionDescription": "",
       "tintColor": "00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903cd1a14b3c.jpg",
@@ -1183,7 +1183,7 @@
           "date": "2025-10-30",
           "size": 124111507,
           "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1905",
-          "localizedDescription": "#1 game in 80 countries. Loved by millions of skateboarders all over the world.\r\n\r\n\"True Skate is clearly something special\" - 4.5/5 - Touch Arcade review.\r\n\r\nTrue Skate™ is the closest feeling to real-world skateboarding, with a decade long evolution as the ultimate skateboarding sim.\r\n\r\nNote: True Skate™ comes with a single skatepark and contains additional content available via In-App Purchase or Subscription. See below.\r\n\r\nPURE PHYSICS CONTROLS\r\nUse your fingers like you would your feet on a real skateboard. Flick the board to make it react exactly how you would expect & drag your finger on the ground to push.\r\n- Play with one finger, mind skate with 2 fingers, or play with 2 thumbs, now with Gamepad! The skateboard reacts instantly as f"
+          "localizedDescription": "1 game in 80 countries. Loved by millions of skateboarders all over the world.\r\n\r\n\"True Skate is clearly something special\" - 4.5/5 - Touch Arcade review.\r\n\r\nTrue Skate™ is the closest feeling to real-world skateboarding, with a decade long evolution as the ultimate skateboarding sim.\r\n\r\nNote: True Skate™ comes with a single skatepark and contains additional content available via In-App Purchase or Subscription. See below.\r\n\r\nPURE PHYSICS CONTROLS\r\nUse your fingers like you would your feet on a real skateboard. Flick the board to make it react exactly how you would expect & drag your finger on the ground to push.\r\n- Play with one finger, mind skate with 2 fingers, or play with 2 thumbs, now with Gamepad! The skateboard reacts instantly as f"
         }
       ],
       "versionDate": "2025-10-30",
