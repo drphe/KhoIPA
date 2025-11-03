@@ -216,7 +216,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
                 `);
             });
         }else if (checkIphoneScreenShots(app.screenshots)) {
-            app.iphone.forEach((screenshot, i) => {
+            app.screenshots.iphone.forEach((screenshot, i) => {
 		 if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
                     <img src="${screenshot}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
                 `);
@@ -657,13 +657,15 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
 		return;
 	    }
             const nextApps = dataApps.slice(currentIndex, currentIndex + appsPerLoad);
+	const checkArray = (obj) => { return Array.isArray(obj) && obj.length > 0};// screenshots:[]
+	const checkIphoneScreenShots = (obj) => { return typeof obj === 'object' &&  obj !== null &&  Array.isArray(obj.iphone) &&  obj.iphone.length > 0}; //
             nextApps.forEach(app => {
                 let html = `
             <div class="app-container">
                 ${AppHeader(app, ".")}
                 <p class="subtitle sub-version">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
                 <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
-                if (app.screenshots && isScreenshot) {
+                if (checkArray(app.screenshots) && isScreenshot) {
                     html += `<div class="screenshots">`;
                     for (let i = 0; i < app.screenshots.length && i < 2; i++) {
                         const screenshot = app.screenshots[i];
@@ -672,7 +674,16 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
                         else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
                     }
                     html += `</div>`;
-                } else if (app.screenshotURLs && isScreenshot) {
+                }else if (checkIphoneScreenShots(app.screenshots) && isScreenshot) {
+                    html += `<div class="screenshots">`;
+                    for (let i = 0; i < app.screenshots.iphone.length && i < 2; i++) {
+                        const screenshot = app.screenshots.iphone[i];
+                        if (!screenshot) continue;
+                        if (screenshot) html += `<img src="${screenshot}" class="screenshot">`;
+                        else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
+                    }
+                    html += `</div>`;
+                }  else if (app.screenshotURLs && isScreenshot) {
                     html += `<div class="screenshots">`;
                     for (let i = 0; i < app.screenshotURLs.length && i < 2; i++) {
                         if (app.screenshotURLs[i]) html += `<img src="${app.screenshotURLs[i]}" class="screenshot">`;
