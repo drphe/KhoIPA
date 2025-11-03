@@ -10,7 +10,7 @@
   "subtitle": "Welcome to the Nabzclan - Your Premium App Store Repository",
   "description": "Welcome to the Nabzclan - App Store Repo!",
   "headerURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
-  "tintColor": "#F54F32",
+  "tintColor": "F54F32",
   "META": {
     "repoName": "Nabzclan - App Store",
     "repoIcon": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png"
