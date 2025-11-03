@@ -3,6 +3,7 @@
   "name": "Nabzclan - App Store",
   "identifier": "com.nabzclan.repo.altstore",
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
+    "sourceImage": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
   "iconURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
   "website": "https://appstore.nabzclan.vip/",
   "ipawebsite": "https://appstore.nabzclan.vip/",
@@ -25270,6 +25271,6 @@
       "date": "2023-01-01",
       "notify": true
     }
-  ],
-  "sourceImage": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png"
+  ]
+
 }
