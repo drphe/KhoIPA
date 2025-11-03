@@ -1278,72 +1278,75 @@ function deleteVersion(index) {
 function cancelVersionEdit() {
     clearVersionForm();
 }
-// --- Chức năng IMPORT/EXPORT ---
-function consolidateApps(source) {
-    const uniqueAppsMap = new Map();
-    source.apps.forEach(app => {
-        const bundleID = app.bundleIdentifier;
-        // Tạo đối tượng phiên bản để gộp
-        const firstVersion = app.versions?.[0] ?? {};
-        const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
-        const versionInfo = {
-            version: app.version ?? firstVersion.version ?? "1.0.0",
-            date: appDate,
-            size: app.size ?? firstVersion.size ?? 0,
-            downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
-            localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
-        };
-        if (uniqueAppsMap.has(bundleID)) {
-            const existingApp = uniqueAppsMap.get(bundleID);
-            if (appDate > existingApp.versionDate) {
-                existingApp.versionDate = appDate;
-                existingApp.version = app.version ?? firstVersion.version ?? "1.0.0";
-                existingApp.downloadURL = app.downloadURL ?? firstVersion.downloadURL ?? "";
-                existingApp.size = app.size ?? firstVersion.size ?? 0;
-                existingApp.localizedDescription = app.localizedDescription ?? "";
-            }
-            existingApp.versions.push(versionInfo);
-        } else {
-            // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
-            const newApp = {
-                // Sao chép tất cả các trường không phải phiên bản
-                beta: app.beta ?? false,
-                name: app.name,
-                type: app.type ?? 1,
-                bundleIdentifier: app.bundleIdentifier,
-                developerName: app.developerName ?? "",
-                subtitle: app.subtitle ?? "",
-                localizedDescription: app.localizedDescription ?? "",
-                versionDescription: app.versionDescription ?? "",
-                tintColor: app.tintColor ?? "00adef",
-                iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
-                screenshotURLs: app.screenshotURLs ?? [],
-                size: app.size ?? firstVersion.size ?? 0,
-                version: app.version ?? firstVersion.version ?? "1.0.0",
-                versions: app.versions ?? [versionInfo] ?? [],
-                versionDate: appDate,
-                downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? ""
-            };
-            uniqueAppsMap.set(bundleID, newApp);
-        }
-    });
-    const consolidatedApps = Array.from(uniqueAppsMap.values());
-    const MAX_VERSIONS = 20;
-    consolidatedApps.forEach(app => {
-        if (app.versions.length > MAX_VERSIONS) {
-            app.versions = app.versions.slice(0, MAX_VERSIONS);
-        }
-    });
-    // 2. Tạo đối tượng repo mới với danh sách ứng dụng đã được lọc
-    const newSource = {
-        ...source,
-        apps: consolidatedApps
-    };
+     function consolidateApps(source) { // sắp xếp lại dữ liệu
+       const uniqueAppsMap = new Map();
+       source.apps.forEach(app => {
+         const bundleID = app.bundleIdentifier;
+         // Tạo đối tượng phiên bản để gộp
+         const firstVersion = app.versions?.[0] ?? {};
+         const appDate = normalizeDateFormat(app.versionDate ?? firstVersion.date ?? "2025-01-01");
+         const versionInfo = {
+           version: app.version ?? firstVersion.version ?? "1.0.0",
+           date: appDate,
+           size: app.size ?? firstVersion.size ?? 0,
+           downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
+           localizedDescription: app.localizedDescription ?? firstVersion.localizedDescription ?? ""
+         };
+         if (uniqueAppsMap.has(bundleID)) {
+           const existingApp = uniqueAppsMap.get(bundleID);
+           if (appDate > existingApp.versionDate) {
+             existingApp.versionDate = appDate;
+             existingApp.version = app.version ?? firstVersion.version ?? "1.0.0";
+             existingApp.downloadURL = app.downloadURL ?? firstVersion.downloadURL ?? "";
+             existingApp.size = app.size ?? firstVersion.size ?? 0;
+             existingApp.localizedDescription = app.localizedDescription ?? "";
+           }
+           existingApp.versions.push(versionInfo);
+         } else {
+           // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
+           const newApp = {
+             // Sao chép tất cả các trường không phải phiên bản
+             beta: app.beta ?? false,
+             name: app.name,
+             type: app.type ?? 1,
+             bundleIdentifier: app.bundleIdentifier,
+             developerName: app.developerName ?? "",
+             subtitle: app.subtitle ?? "",
+             localizedDescription: app.localizedDescription ?? "",
+             versionDescription: app.versionDescription ?? "",
+             tintColor: app.tintColor ?? "00adef",
+             iconURL: app.iconURL ?? "./common/assets/img/generic_app.jpeg",
+             screenshotURLs: app.screenshotURLs ?? [],
+	     screenshots : app.screenshots ?? [],
+             appPermissions: app.appPermissions ?? {"entitlements": [],"privacy": {}},
+             size: app.size ?? firstVersion.size ?? 0,
+             version: app.version ?? firstVersion.version ?? "1.0.0",
+             versions: app.versions ?? [versionInfo] ?? [],
+             versionDate: appDate,
+             downloadURL: app.downloadURL ?? firstVersion.downloadURL ?? "",
+	     patreon:app.patreon ?? {}
+           };
+           uniqueAppsMap.set(bundleID, newApp);
+         }
+       });
+       // max 20 versions
+       const consolidatedApps = Array.from(uniqueAppsMap.values());
+       const MAX_VERSIONS = 20;
+       consolidatedApps.forEach(app => {
+         if (app.versions.length > MAX_VERSIONS) {
+           app.versions = app.versions.slice(0, MAX_VERSIONS);
+         }
+       });
+
+       const newSource = {
+         ...source,
+         apps: consolidatedApps
+       };
         newSource.META ||= {repoName: newSource.name,repoIcon: newSource.iconURL};
         newSource.sourceImage ||= newSource.iconURL;
         newSource.sourceURL ||= "https://drphe.github.io/KhoIPA/upload/";
-    return newSource;
-}
+       return newSource;
+     }
 
 function normalizeDateFormat(dateStr) {
     const dmyRegex = /^(\d{1,2})-(\d{1,2})-(\d{4})$/; // dd-mm-yyyy
