@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-11-02T07:40:03Z",
+  "updated_at": "2025-11-03T09:30:03Z",
   "name": "Nabzclan - App Store",
   "identifier": "com.nabzclan.repo.altstore",
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
@@ -25,6 +25,52 @@
     "com.huiynfim.play"
   ],
   "apps": [
+    {
+      "beta": false,
+      "name": "Spotifyevee",
+      "type": 1,
+      "bundleIdentifier": "com.spotify.client",
+      "developerName": "polo",
+      "subtitle": "",
+      "localizedDescription": "Hacked spoify",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_69005b062460a.jpg",
+      "screenshotURLs": [],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 89100646,
+      "version": "9.0.91",
+      "versions": [
+        {
+          "version": "9.0.91",
+          "date": "2025-11-02",
+          "size": 89100646,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1821",
+          "localizedDescription": "Hacked spoify"
+        },
+        {
+          "version": "9.0.20",
+          "date": "2025-10-27",
+          "size": 80560669,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1766",
+          "localizedDescription": "This tweak makes Spotify think that you have a Premium subscription, granting free listening, just like Spotilife.\n\nAlthough there are restrictions:\n\n• Using \"Very High\" audio quality\n• Downloading songs/playlists (podcast downloads work, though)"
+        },
+        {
+          "version": "9.0.86",
+          "date": "2025-10-25",
+          "size": 88466925,
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/887",
+          "localizedDescription": "Injected with Premium"
+        }
+      ],
+      "versionDate": "2025-11-02",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1821",
+      "patreon": {}
+    },
     {
       "beta": false,
       "name": "Streamer",
@@ -3447,52 +3493,6 @@
       ],
       "versionDate": "2025-10-28",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1822",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Spotifyevee",
-      "type": 1,
-      "bundleIdentifier": "com.spotify.client",
-      "developerName": "polo",
-      "subtitle": "",
-      "localizedDescription": "Hacked spoify",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_69005b062460a.jpg",
-      "screenshotURLs": [],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 88465809,
-      "version": "9.0.86",
-      "versions": [
-        {
-          "version": "9.0.86",
-          "date": "2025-10-28",
-          "size": 88465809,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1821",
-          "localizedDescription": "Hacked spoify"
-        },
-        {
-          "version": "9.0.20",
-          "date": "2025-10-27",
-          "size": 80560669,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1766",
-          "localizedDescription": "This tweak makes Spotify think that you have a Premium subscription, granting free listening, just like Spotilife.\n\nAlthough there are restrictions:\n\n• Using \"Very High\" audio quality\n• Downloading songs/playlists (podcast downloads work, though)"
-        },
-        {
-          "version": "9.0.86",
-          "date": "2025-10-25",
-          "size": 88466925,
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/887",
-          "localizedDescription": "Injected with Premium"
-        }
-      ],
-      "versionDate": "2025-10-28",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1821",
       "patreon": {}
     },
     {
