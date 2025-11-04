@@ -60,12 +60,12 @@
       "version": "532.0.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v532/Messenger.-.v532.0.0.ipa",
-          "size": 68600000,
           "version": "532.0.0",
-          "buildVersion": null,
           "date": "2025-11-04T15:33:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Remove ads\n✅ Hide story banner\n✅ Hide “People You May Know” section\n✅ Turn off “Typing…” status\n✅ Read messages anonymously\n✅ View stories anonymously\n✅ Replay stories\n✅ Download stories ",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v532/Messenger.-.v532.0.0.ipa",
+          "size": 68600000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -95,12 +95,12 @@
       "version": "1.0.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/codevn/CodeVNBackup.dylib",
-          "size": 1780000,
           "version": "1.0.0",
-          "buildVersion": "",
           "date": "2025-11-04T15:30:00+07:00",
           "localizedDescription": "Chức năng của CodeVN Backup\n– Sao lưu/khôi phục dữ liệu (Zalo clone)\nNếu bạn sao lưu và khôi phục ứng dụng khác KHÔNG THÀNH CÔNG vui lòng không báo lỗi vì CodeVN Backup chỉ hỗ trợ Zalo là chính.\n\nTải dylib về và dùng công cụ để inject nó vào ipa Zalo clone\nĐể mở menu CodeVN Backup: bấm giữ 3 hoặc 4 ngón tay",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/codevn/CodeVNBackup.dylib",
+          "size": 1780000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -1710,35 +1710,6 @@
       ],
       "versionDate": "2024-01-28T15:13:00Z",
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "type": 1,
-      "developerName": "",
-      "subtitle": "",
-      "localizedDescription": "",
-      "versionDescription": "",
-      "tintColor": "00adef",
-      "iconURL": "./common/assets/img/generic_app.jpeg",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 0,
-      "version": "1.0.0",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "date": "2025-01-01",
-          "size": 0,
-          "downloadURL": "",
-          "localizedDescription": ""
-        }
-      ],
-      "versionDate": "2025-01-01",
-      "downloadURL": "",
       "patreon": {}
     }
   ],
