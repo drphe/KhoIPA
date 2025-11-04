@@ -1745,8 +1745,8 @@
   "news": [
     {
       "title": "Mở liên kết từ safari vào các app mod",
-      "identifier": "news_f6e18jac5s",
-      "caption": "Khi cài đặt app mod sẽ bị thiếu tính năng khi truy cập bằng safari sẽ hiển thị một cái bảng thông báo để mở liên kết đó bên trong ứng dụng.",
+      "identifier": "molienketbangtusafari",
+      "caption": "Cài đặt app mod sẽ bị thiếu tính năng hiển thị thông báo để mở liên kết bên trong ứng dụng khi vào bằng safari .",
       "date": "2025-11-04",
       "tintColor": "#000000",
       "imageURL": "https://i.ibb.co/670gsV90/8767e01c340d.png",
@@ -1756,7 +1756,7 @@
     },
     {
       "title": "Hướng dẫn sử dụng",
-      "identifier": "ungho",
+      "identifier": "huongdansudung",
       "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
       "date": "2025-11-01",
       "tintColor": "#5525d0",
@@ -1827,7 +1827,7 @@
       "date": "2025-10-09",
       "tintColor": "#675809",
       "imageURL": "https://thuthuatjb.com/wp-content/uploads/2022/09/Huong-dan-TrollStore-ios-ipados.jpg",
-      "notify": true,
+      "notify": false,
       "url": "trollstore.md",
       "appID": "com.trollstore.app"
     },
