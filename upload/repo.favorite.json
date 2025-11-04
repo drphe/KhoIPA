@@ -23,6 +23,93 @@
   "apps": [
     {
       "beta": false,
+      "name": "Messenger ++",
+      "type": 1,
+      "bundleIdentifier": "com.facebook.Messenger",
+      "developerName": "IOS Crack VN",
+      "subtitle": "Messenger Mod",
+      "localizedDescription": "Messenger 🆕🆙🆙",
+      "versionDescription": "",
+      "tintColor": "#0c64fc",
+      "iconURL": "https://i.ibb.co/7d2G0qC0/3150eecc13cd.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "This lets you play Apple Music tracks, add tracks to your music library, and more.",
+          "NSBluetoothAlwaysUsageDescription": "This makes some features work with bluetooth accessories.",
+          "NSBluetoothPeripheralUsageDescription": "This makes some features work with bluetooth accessories.",
+          "NSCalendarsUsageDescription": "This will let Messenger sync events you're hosting or attending to your calendar.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "This will let Messenger sync events you're hosting or attending to your calendar.",
+          "NSCameraUsageDescription": "Messenger uses your device’s camera so you can do things like take photos, record and stream videos, make video calls, and create and use filters and effects.",
+          "NSContactsUsageDescription": "Allowing access to your address book helps you see the contacts you can choose to add and helps us provide a better service.",
+          "NSFaceIDUsageDescription": "Messenger uses Face ID to unlock the app.",
+          "NSHumanReadableCopyright": "Copyright 2004-present Facebook. All Rights Reserved.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "This makes some features work, enables location sharing with friends, and more.",
+          "NSLocationAlwaysUsageDescription": "This makes some features work, enables location sharing with friends, and more.",
+          "NSLocationUsageDescription": "Messenger uses this to provide more relevant and personalized experiences, like live location sharing and suggesting local places.",
+          "NSLocationWhenInUseUsageDescription": "Messenger uses this to provide more relevant and personalized experiences, like live location sharing and suggesting local places.",
+          "NSMicrophoneUsageDescription": "Messenger uses your device’s microphone so you can do things like record video with sound, make voice and video calls, and create voice messages.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you do things like save to your camera roll and enables other features for photos and videos.",
+          "NSPhotoLibraryUsageDescription": "Messenger uses your device’s photo library from your camera roll so you can do things like share photos and videos.",
+          "NSSiriUsageDescription": "This lets you use Siri to do things like make calls and read messages.",
+          "NSSpeechRecognitionUsageDescription": "Messenger will use speech recognition to detect your confirmation."
+        }
+      },
+      "size": 68600000,
+      "version": "532.0.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v532/Messenger.-.v532.0.0.ipa",
+          "size": 68600000,
+          "version": "532.0.0",
+          "buildVersion": null,
+          "date": "2025-11-04T15:33:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Remove ads\n✅ Hide story banner\n✅ Hide “People You May Know” section\n✅ Turn off “Typing…” status\n✅ Read messages anonymously\n✅ View stories anonymously\n✅ Replay stories\n✅ Download stories ",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-04T15:33:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v532/Messenger.-.v532.0.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "CodeVN Backup",
+      "type": 5,
+      "bundleIdentifier": "com.95qcg6jv4p.xbjazbhwv7",
+      "developerName": "CodeVN.net",
+      "subtitle": "Sao lưu/khôi phục dữ liệu (Zalo clone)",
+      "localizedDescription": "Một số câu hỏi thường gặp\n1. Có cần jailbreak hay trollstore không?\nTrả lời: không cần thiết, cài bằng chứng chỉ hay Apple ID đều dùng được.\n\nNếu bạn dùng TrollStore có thể sử dụng https://github.com/Lessica/TrollFools để inject dylib vào app Zalo\n\n2. Hỗ trợ những app nào?\nTrả lời: mục đích chính là dành cho anh em sử dụng Zalo clone vì nó lưu dữ liệu trên máy, lỡ mà chuyển máy hay chứng chỉ bị thu hồi thì hơi phiền. Các app khác hên xui, có thể sẽ KHÔNG hoạt động.\n\n3. Có lưu bản sao lưu lên Cloud không?\nTrả lời: có, bạn có thể tuỳ chọn cấu hình Google Drive hoặc Dropbox.\n\n4. Có thể khôi phục bản sao lưu từ Cloud không?\nTrả lời: có, CodeVN Backup có sẵn tính năng kết nối với Cloud bạn đã cấu hình để khôi phục.\n\n5. Có tự động sao lưu không?\nTrả lời : có (khi mở app lần đầu tiên trong ngày nó sẽ tự chạy sao lưu và có biểu tượng thông báo quá trình sao lưu và cả quá trình upload lên Cloud nếu bạn cấu hình Cloud)\n\n6. Trong quá trình sao lưu lỡ gặp lỗi thì có nặng data không?\nTrả lời: có, tuy nhiên CodeVN Backup có tính năng xoá file rác trong quá trình tạo bản sao lưu lỗi (cần kiểm tra và xoá thủ công)\n\n7. Có chạy nền không?\nTrả lời: không, vì do Apple nó hạn chế cho nên cần giữ app luôn mở để sao lưu và khôi phục.",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [
+        "https://codevn.net/wp-content/uploads/2025/11/1761978012-b3c4f7ab65ea7ab.jpeg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 1780000,
+      "version": "1.0.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/codevn/CodeVNBackup.dylib",
+          "size": 1780000,
+          "version": "1.0.0",
+          "buildVersion": "",
+          "date": "2025-11-04T15:30:00+07:00",
+          "localizedDescription": "Chức năng của CodeVN Backup\n– Sao lưu/khôi phục dữ liệu (Zalo clone)\nNếu bạn sao lưu và khôi phục ứng dụng khác KHÔNG THÀNH CÔNG vui lòng không báo lỗi vì CodeVN Backup chỉ hỗ trợ Zalo là chính.\n\nTải dylib về và dùng công cụ để inject nó vào ipa Zalo clone\nĐể mở menu CodeVN Backup: bấm giữ 3 hoặc 4 ngón tay",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-04T15:30:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/codevn/CodeVNBackup.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Asspp",
       "type": 4,
       "bundleIdentifier": "wiki.qaq.Asspp",
@@ -48,12 +135,12 @@
       "version": "2.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.3.30/Asspp_2.3.30.ipa",
-          "size": 10200000,
           "version": "2.3",
-          "buildVersion": null,
           "date": "2025-11-04T13:34:00+07:00",
           "localizedDescription": "😘 Asspp V2.3.30🍍\n👀Dễ dàng quản lý nhiều tài khoản App Store.\n\n✨Các tính năng chính:\n✅Quản lý nhiều tài khoản: Hỗ trợ nhiều ID Apple\n✅Truy cập liên vùng: Chọn khu vực App Store của bạn\n✅Tìm kiếm ứng dụng: Tìm kiếm ứng dụng theo từ khóa\n✅Tải xuống ứng dụng: Tải xuống ứng dụng từ App Store\n✅Cài đặt IPA: Cài đặt tệp IPA trên các thiết bị chưa jailbreak\n✅Chia sẻ IPA: Dễ dàng chia sẻ tệp IPA\n✅Lịch sử phiên bản: Tải xuống các phiên bản ứng dụng trước đây\n✅Thêm ứng dụng miễn phí vào Store: Thêm ứng dụng miễn phí vào lịch sử mua hàng của bạn chỉ bằng một cú nhấp chuột\n\n📄Cài đặt bằng Chứng chỉ 📄\n🔄 Cập nhật:\n✅ Hỗ trợ kho lưu trữ SideStore\n✅Điều chỉnh biểu tượng tối\n✅Đã khắc phục sự cố tự động quay lại trang trên iOS 16 đến iOS 18",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.3.30/Asspp_2.3.30.ipa",
+          "size": 10200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -481,12 +568,12 @@
       "version": "12.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v12.2/Telegram.v12.2.TGExtra.v1.6.tg@glesign.ipa",
-          "size": 67800000,
           "version": "12.2",
-          "buildVersion": null,
           "date": "2025-11-04T13:22:00+07:00",
           "localizedDescription": "🇺🇸 Bản beta của Telegram với giao diện Liquid Glass cải tiến và TGExtra cho quyền riêng tư \n— Ứng dụng từ TestFlight\n — Không có quảng cáo \n— Chế độ Ma, Tin nhắn ẩn danh, Xem Tin \n— Ẩn trạng thái “Đang nhập...” \n— Không giới hạn chụp màn hình \n— Để mở Cài đặt, giữ “Đặt câu hỏi” trong phần cài đặt của Telegram \n— Để sửa lỗi “Đang kết nối…”, hãy tắt “Cho phép lưu nội dung được bảo vệ” \n© Tạo bởi: iOSDecrypted (https://t.me/iosdecryptedchat) x Chocolate Fluffy",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v12.2/Telegram.v12.2.TGExtra.v1.6.tg@glesign.ipa",
+          "size": 67800000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
@@ -1624,16 +1711,56 @@
       "versionDate": "2024-01-28T15:13:00Z",
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa",
       "patreon": {}
+    },
+    {
+      "beta": false,
+      "type": 1,
+      "developerName": "",
+      "subtitle": "",
+      "localizedDescription": "",
+      "versionDescription": "",
+      "tintColor": "00adef",
+      "iconURL": "./common/assets/img/generic_app.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 0,
+      "version": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2025-01-01",
+          "size": 0,
+          "downloadURL": "",
+          "localizedDescription": ""
+        }
+      ],
+      "versionDate": "2025-01-01",
+      "downloadURL": "",
+      "patreon": {}
     }
   ],
   "news": [
     {
-      "title": "Ủng hộ tác giả",
+      "title": "Mở liên kết từ safari vào các app mod",
+      "identifier": "news_f6e18jac5s",
+      "caption": "Khi cài đặt app mod sẽ bị thiếu tính năng khi truy cập bằng safari sẽ hiển thị một cái bảng thông báo để mở liên kết đó bên trong ứng dụng.",
+      "date": "2025-11-04",
+      "tintColor": "#000000",
+      "imageURL": "https://i.ibb.co/670gsV90/8767e01c340d.png",
+      "notify": true,
+      "url": "openlink.md",
+      "appID": null
+    },
+    {
+      "title": "Hướng dẫn sử dụng",
       "identifier": "ungho",
       "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
       "date": "2025-11-01",
-      "tintColor": "#D03F25",
-      "imageURL": "https://i.ibb.co/KjJwXRP1/e7bd7d52884d.png",
+      "tintColor": "#5525d0",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
       "notify": true,
       "url": "donate.md",
       "appID": "com.example"
@@ -1669,17 +1796,6 @@
       "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
       "notify": true,
       "url": "chongthuhoicc.md",
-      "appID": "com.example.app"
-    },
-    {
-      "title": "Mẹo sử dụng Cert cài IPA qua Feather, Esign",
-      "identifier": "cert-apple",
-      "caption": "Mẹo cài đặt IPA bằng Feather, ESign với Cert có phí",
-      "date": "2025-10-14",
-      "tintColor": "#3498DB",
-      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
-      "notify": false,
-      "url": "cert.md",
       "appID": "com.example.app"
     },
     {
