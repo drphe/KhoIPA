@@ -1658,8 +1658,10 @@
       "tintColor": "#6156B8",
       "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
       "screenshotURLs": [
-        "https://ios.codevn.net/wp-content/uploads/2025/02/Repos-710x1536.png",
-        "https://ios.codevn.net/wp-content/uploads/2025/02/Store-710x1536.png"
+        "https://ios.codevn.net/wp-content/uploads/2025/02/Store-710x1536.png",
+        "https://i.ibb.co/PsybwWmH/59a5e2899e70.png",
+        "https://i.ibb.co/Z1pXhH2n/ce1797164cf5.png",
+        "https://i.ibb.co/DgjkkMYx/21408c265712.png"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -1684,23 +1686,30 @@
     },
     {
       "beta": false,
-      "name": "轻松签-ESign",
+      "name": "ESign",
       "type": 4,
       "bundleIdentifier": "p3.xyz.yyyue.esign",
       "developerName": "yyy",
       "subtitle": "Ứng dụng ký IPA",
       "localizedDescription": "轻松签是一款免越狱可给ipa签名的工具，具有注入库，去库等功能。\nhttps://github.com/iOS17/Esign",
       "versionDescription": "",
-      "tintColor": "#B2BFE6",
+      "tintColor": "#4ca4f4",
       "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
       "screenshotURLs": [
-        "https://onejailbreak.com/site/assets/files/1108/esign-app.722x0-is.webp",
-        "https://onejailbreak.com/site/assets/files/1108/cutom-ipa-sign.722x0-is.webp",
-        "https://onejailbreak.com/site/assets/files/1108/esign-app-settings.722x0-is.webp"
+        "https://i.ibb.co/XrrvVqrv/f3077fdc77ac.png",
+        "https://i.ibb.co/93msPB9b/1b5340092a68.png",
+        "https://i.ibb.co/RkH6vW3T/759015fad4a4.png"
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAppleMusicUsageDescription": "点允许，才能使用。",
+          "NSCameraUsageDescription": "授权后才能使用您的相机进行扫一扫",
+          "NSLocationWhenInUseUsageDescription": "开启定位服务，我们将根据您的位置,为您提供相关信息。在未经许可前不会开启定位服务，请放心使用。",
+          "NSPhotoLibraryAddUsageDescription": "授权后才能将图片保存到本地相册",
+          "NSPhotoLibraryUsageDescription": "授权后才能访问您的手机相册，您才能上传对应的图片",
+          "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you"
+        }
       },
       "size": 7206362,
       "version": "5.0.2",
