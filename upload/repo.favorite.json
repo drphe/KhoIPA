@@ -32,7 +32,14 @@
       "versionDescription": "",
       "tintColor": "#0c64fc",
       "iconURL": "https://i.ibb.co/7d2G0qC0/3150eecc13cd.png",
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/32/0a/e3/320ae389-f4a4-ea24-4f15-25953990e148/messenger_appstore_iphone_1284x2778_1.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/25/af/1b25af3a-c836-93a3-e02b-4b194ee29922/messenger_appstore_iphone_1284x2778_2.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/c7/4a/f5c74ae6-b8d0-69ca-1727-cf4ce4a909fe/messenger_appstore_iphone_1284x2778_3.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/5c/c5/425cc5f9-22b3-a5b1-15f0-4ed819d3a5a1/messenger_appstore_iphone_1284x2778_4.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d9/ed/4f/d9ed4f7e-ea68-9904-0cd4-30c50722e1b2/messenger_appstore_iphone_1284x2778_5.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/ba/e6/4fbae606-cc96-8cb2-670b-95d76bf3d942/messenger_appstore_iphone_1284x2778_6.png/230x498bb.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
