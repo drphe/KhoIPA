@@ -1,7 +1,7 @@
 # 🚀 Sử dụng Chứng Chỉ Bị Thu Hồi (Revoked) Bằng DNS WSF
 
 Apple gần đây đã giới thiệu các quy định mới về việc xác minh ứng dụng được cài đặt thông qua **chứng chỉ nhà phát triển**. Kết quả là nhiều người dùng gặp lỗi **“Không thể xác minh ứng dụng”** hoặc ứng dụng bị **crash** sau khi khởi chạy. Vấn đề này ảnh hưởng toàn cầu đến tất cả các dịch vụ sử dụng chứng chỉ nhà phát triển.
-
+<a href="#" data-url="loicert.md" class="news-item-link">Xem chi tiết</a>.
 ![Verify App](https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg)
 
 ## ✅ Giải pháp: Sử dụng DNS WFS
