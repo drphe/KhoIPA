@@ -1,6 +1,6 @@
 {
   "name": "Nabzclan - App Store",
-  "identifier": "com.nabzclan.repo",
+  "identifier": "com.nabzclan.repo.altstore",
   "sourceURL": "https://appstore.nabzclan.vip/repos/altstore.php",
   "sourceImage": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
   "iconURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
@@ -17,7 +17,51 @@
     "com.roblox.robloxmobile",
     "com.frontierdesign.videostar"
   ],
+  "headerURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
   "apps": [
+    {
+      "beta": false,
+      "name": "Roblox - Delta",
+      "type": 1,
+      "bundleIdentifier": "com.roblox.robloxmobile",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Delta is a revolutionary new way to experience the world of scripting with its extensive library of features that will make your life easier.",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6903dd43f1e0e.jpg",
+      "screenshotURLs": [],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 115616665,
+      "version": "2.696.799",
+      "versions": [
+        {
+          "version": "2.696.799",
+          "date": "2025-11-03",
+          "localizedDescription": "Delta is a revolutionary new way to experience the world of scripting with its extensive library of features that will make your life easier.",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
+          "size": 115616665,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "2.695.955",
+          "date": "2025-10-27",
+          "localizedDescription": "Roblox - Krnl",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/328",
+          "size": 111639123,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-03",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
+      "patreon": {}
+    },
     {
       "beta": false,
       "name": "Instagram - Rocket",
@@ -30,7 +74,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_690933f79e069.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f8ccd98.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f892591.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f857ead.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f81cb0c.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f7d68b0.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -118,7 +168,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_69005b062460a.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69005b07582c1.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69005b071d23b.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69005b06d61c7.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69005b069aade.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69005b065f7be.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -170,7 +226,9 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/1762058431.png",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/1762058431.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -204,7 +262,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6906200bd7c7b.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6906200d2ec6a.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6906200ce5bed.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6906200caa94d.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6906200c6ed4d.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6906200c3369b.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -315,7 +379,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_690135091203c.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350a440ce.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350a09394.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69013509c2748.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350987a29.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690135094caba.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -437,7 +507,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68fc4728397c6.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc47297e024.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc47293f6cc.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc4729019bd.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc4728b758a.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc47287a208.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -480,7 +556,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903e0316c9dd.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903e032cac32.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903e0328bf42.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903e0324ca99.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903e0320be0f.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903e031c1c91.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -504,49 +586,6 @@
     },
     {
       "beta": false,
-      "name": "Roblox - Delta",
-      "type": 1,
-      "bundleIdentifier": "com.roblox.robloxmobile",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Delta is a revolutionary new way to experience the world of scripting with its extensive library of features that will make your life easier.",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_6903dd43f1e0e.jpg",
-      "screenshotURLs": [],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 115382969,
-      "version": "2.695.955",
-      "versions": [
-        {
-          "version": "2.695.955",
-          "date": "2025-10-30",
-          "localizedDescription": "Delta is a revolutionary new way to experience the world of scripting with its extensive library of features that will make your life easier.",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
-          "size": 115382969,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "2.695.955",
-          "date": "2025-10-27",
-          "localizedDescription": "Roblox - Krnl",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/328",
-          "size": 111639123,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-30",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Balatro",
       "type": 1,
       "bundleIdentifier": "com.playstack.balatropremium",
@@ -557,7 +596,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903db38e77cc.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903db3a28de4.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903db39df018.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903db39a3b90.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903db39690f5.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903db392e51d.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -591,7 +636,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903da0a137fe.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903da0b67349.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903da0b16e04.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903da0acfdcc.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903da0a931f6.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903da0a4f03e.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -659,7 +710,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d5337350e.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d5353358b.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d534d5fd9.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d5349563e.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d533f1a95.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d533b200c.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -693,7 +750,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d4c26780b.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4c3a5eb3.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4c366195.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4c32874b.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4c2e1c83.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4c2a56fb.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -727,7 +790,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d4845c653.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d485d2c7f.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4858e8fa.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4851fc14.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d484d75ab.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d48498fe6.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -761,7 +830,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d444c981c.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d44640ede.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d445ee676.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4459cba1.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4454c72f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d4451310e.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -795,7 +870,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d34237a08.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d343aa1b0.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d3435b4d4.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d3431d561.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d342d2b34.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d3429475e.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -829,7 +910,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d2fb43fb9.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d2fc8951d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d2fc4e952.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d2fc158f7.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d2fbb8eeb.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d2fb7d44a.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -863,7 +950,11 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d2b25d3fd.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d2b323013.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d2b2dc63a.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d2b29ab6e.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -897,7 +988,12 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d25b994d0.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d25d62ff1.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d25d257b6.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d25cde233.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d25c9fbf6.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -931,7 +1027,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d209b7fe9.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d20b98237.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d20b54dbb.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d20b18a4c.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d20a36345.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d209efbe2.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -965,7 +1067,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d1c5cdb4f.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d1c7190f0.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d1c6ce7a6.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d1c69550f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d1c659154.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d1c61d25e.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -999,7 +1107,11 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d139a1288.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d13a78102.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d13a3cdc6.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d13a005d4.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1033,7 +1145,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d09df10e2.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d0a05ffde.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d09fcb8e0.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d09f84b76.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d09f38520.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d09ecc01d.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1067,7 +1185,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903d0317a4a0.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d0346ad7a.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d0341f17a.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d03354a1c.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d03318b0b.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903d0321ee6f.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1101,7 +1225,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903cff5b6f47.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cff70ff1f.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cff6bc7b5.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cff67f751.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cff6423d8.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cff601534.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1135,7 +1265,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903cf5818b84.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf59757f0.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf5937136.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf58d1229.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf58936eb.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf5856644.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1169,7 +1305,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903cf02138fe.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf0362fbd.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf03264f6.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf02dd122.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf029eb29.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cf025f2b8.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1203,7 +1345,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903cec229c63.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cec3f05f0.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cec3afe79.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cec370f3a.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cec334647.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cec272788.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1305,7 +1453,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903cd641295a.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd65b8114.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd657d1aa.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd64c8530.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd648c7ed.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd6450ee9.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1339,7 +1493,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903cd1a14b3c.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd1b69419.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd1b193d6.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd1ad04bb.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd1a9139a.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903cd1a521d1.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1509,7 +1669,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903c2a9f091e.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c2ac44f4f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c2abb1514.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c2ab75268.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c2aa76044.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c2aa3997e.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1543,7 +1709,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903c249ab686.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c24b7c20f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c24b2c2cb.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c24add170.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c24aa0719.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903c24a670f4.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1645,7 +1817,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903be4d3c954.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be4e8df69.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be4e525f6.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be4e0096e.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be4db6ff0.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be4d79d55.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1679,7 +1857,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903be130b972.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be15b389d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be147e43f.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be143fd79.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be137f755.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903be1345563.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1747,7 +1931,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903bcb545654.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903bcb747abd.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903bcb70adf8.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903bcb6c4367.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903bcb672972.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903bcb621263.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1849,7 +2039,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b70f0c963.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b7123612e.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b711a54b9.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b7111adf2.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b71039bd2.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b70f9f3ac.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1883,7 +2079,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b6a8a57fe.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b6ac3feb6.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b6abeff81.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b6aa703d1.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b6aa2adac.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b6a9bf0b0.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1917,7 +2119,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b5cd928d5.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b5d118184.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b5d001019.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b5cf197a7.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b5ce2c172.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b5cdd9c8e.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1951,7 +2159,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b4822a80d.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b48369aa5.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b4832df06.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b482e17c0.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b482a3e68.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b48266741.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -1985,7 +2199,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b2fdc1a92.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b2ff0d54f.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b2fec334b.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b2fe86370.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b2fe4906b.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b2fe0b935.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2019,7 +2239,12 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b29764a24.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b2985c7b2.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b298237d4.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b297db21e.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b297a0d9e.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2053,7 +2278,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b1d5d4fde.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b1d71a89a.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b1d6d2ab5.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b1d695216.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b1d6593a5.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b1d61df0c.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2087,7 +2318,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b1879313f.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b189d3047.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b18995746.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b18956ce2.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b188142bf.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b187ce043.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2121,7 +2358,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b12c4303d.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b12d78e62.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b12d3d5d2.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b12d02864.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b12cbaac4.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b12c7ea49.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2155,7 +2398,12 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903afad6154b.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903afae569ca.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903afae1c46d.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903afadd7517.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903afad9bb60.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2189,7 +2437,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903b0185cd6c.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b0198bbea.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b019525cc.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b0191a644.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b018d29ac.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903b01897b48.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2223,7 +2477,12 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6903af566d3a3.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903af5768343.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903af572d35d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903af56e67f3.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6903af56a99a4.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2257,7 +2516,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/1761770964.jpeg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027d843770e.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027d83f278a.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027d83b795d.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027d8378a7e.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027d833d9da.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2291,7 +2556,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6902792771fa1.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027928af8a9.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027928711cc.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6902792833641.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027927eab1c.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027927afde0.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2325,7 +2596,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_690149fd42ad6.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690149fe764d2.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690149fe3b0b5.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690149fe00000.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690149fdb8cd6.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690149fd7d35a.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2359,7 +2636,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6902776477ff7.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027765ced7e.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690277658f776.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690277655015b.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027765123f1.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69027764cd15d.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2393,7 +2676,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_69026bac76ca3.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026badaa810.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026bad6f64b.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026bad33cb9.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026bacec072.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026bacb05b3.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2445,7 +2734,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_69026b493e4ec.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026b4a905a3.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026b4a507bd.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026b4a021ae.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026b49bab61.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026b497fd49.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2549,7 +2844,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_690269c8256f1.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690269c95c532.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690269c921151.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690269c8da22b.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690269c89eb5a.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690269c861304.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2671,7 +2972,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6902648084733.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026481b72c8.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690264817ae7a.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6902648141732.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026481057d4.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026480bf44a.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2714,7 +3021,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_69025dca517f0.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025dcb85330.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025dcb4b694.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025dcb0f8b9.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025dcac7f7e.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025dca8b8d4.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2748,7 +3061,14 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_69025ca07aed7.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/1761762699.webp",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca1bb902.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca181b6e.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca144c19.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca108594.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca0b7dc9.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2816,7 +3136,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901e93726c26.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901e9385cf8c.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901e938203c0.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901e937d8969.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901e9379d5ce.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901e93761d7c.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2850,7 +3176,9 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/1761732351.jpeg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/1761732351.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -2961,7 +3289,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901db4934abd.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901db4b447fc.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901db4aaa95d.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901db4a6fae4.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901db4a2b866.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901db49894bc.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3038,7 +3372,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901d75a6e103.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d75baf6b7.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d75b7302c.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d75b32053.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d75ae757c.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d75aaaafc.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3072,7 +3412,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901d62a4951b.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d62bbbd60.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d62b80af4.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d62b0be06.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d62abff75.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901d62a8485c.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3242,7 +3588,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_690155896410f.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901558ac95a3.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901558a76858.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901558a32ccd.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69015589ea890.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69015589b0b20.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3276,7 +3628,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901543554573.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690154369da89.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690154364c463.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690154360ef95.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69015435c6dbd.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690154358be7a.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3310,7 +3668,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901529d3d639.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901529e843b1.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901529e45465.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901529df3350.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901529db525f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901529d79e1e.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3344,7 +3708,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901520dec755.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690152113b9bd.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690152107f191.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690152103f348.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901520f12910.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901520e51961.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3378,7 +3748,9 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/1761694053.png",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/1761694053.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3412,7 +3784,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_69014a690a2ff.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69014a6a3e830.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69014a6a02f4d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69014a69bb105.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69014a697f54d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69014a69447c1.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3464,7 +3842,9 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/1761692787.png",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/1761692787.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3498,7 +3878,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901485c12548.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901485d55803.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901485d1629d.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901485cd0122.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901485c9104e.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901485c50a8d.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3600,7 +3986,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_69013dd70208b.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69013dd84400c.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69013dd8072ce.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69013dd7bbaf6.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69013dd77bd40.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69013dd73eb89.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3677,7 +4069,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901361ba5274.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901361cdfd98.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901361ca31fc.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901361c621e2.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901361c25ef0.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901361bdf9f8.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3711,7 +4109,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901334e5f1f3.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901334faab48.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901334f6ebef.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901334f315a6.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901334ee5312.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901334ea76a5.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3745,7 +4149,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_6901315f74141.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901316188d3e.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690131607622d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690131603b0fd.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901315ff347e.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901315fafd5e.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3822,7 +4232,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68ff11280af88.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff112a1903c.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff1129d05cb.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff1128d3c5f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff112884dc3.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff11284799c.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3865,7 +4281,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68ff108baaa12.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff108ce708d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff108cab088.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff108c6d3af.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff108c2aeb9.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff108be5ede.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3908,7 +4330,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68ff0d80b5868.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff0d8260a86.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff0d8226037.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff0d8172102.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff0d81370d4.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68ff0d80f062d.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -4946,7 +5374,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68fed358b0051.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed35b0f49b.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed35ab42ef.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed35a3353a.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed359b020f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed3592ecac.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -4980,7 +5414,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68fed0dfb6994.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed0e0ec9be.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed0e0b1157.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed0e0757c6.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed0e03a414.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed0dff1fc9.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -5014,7 +5454,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68fed02f23442.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed030da81f.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed0302a00d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed02fdef8d.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed02f9e946.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fed02f60fe0.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -5048,7 +5494,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68fecf6173c01.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fecf62af8d8.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fecf627178f.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fecf6231ec3.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fecf61e9813.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fecf61ae489.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -5082,7 +5534,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68feceb6f3c42.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68feceb8342ee.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68feceb7ed5ec.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68feceb7b2903.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68feceb778425.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68feceb73b350.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -18433,7 +18891,7 @@
       "beta": false,
       "name": "Kanji",
       "type": 1,
-      "bundleIdentifier": "com.1wiizj6y3b.zq4f825vn3",
+      "bundleIdentifier": "com.e1kla5ha5t.ydrdr1d37i",
       "developerName": "Holloway",
       "subtitle": "An awesome app.",
       "localizedDescription": "Injected with Premium",
@@ -26831,7 +27289,9 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/1761366282.jpeg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/1761366282.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -26865,7 +27325,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68fc449aae970.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc449be106c.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc449ba5a3c.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc449b6af7f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc449b306d5.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68fc449ae99bb.jpg"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -26899,7 +27365,13 @@
       "tintColor": "#00adef",
       "iconURL": "https://appstore.nabzclan.vip/images/icon_68f995bf62aa8.jpg",
       "screenshotURLs": [],
-      "screenshots": [],
+      "screenshots": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68f995c0ad059.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68f995c06fde0.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68f995c02d608.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68f995bfe4687.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_68f995bf9f7dd.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -26990,5 +27462,17 @@
       "patreon": {}
     }
   ],
-  "news": []
+  "news": [
+    {
+      "title": "Welcome to Nabzclan - App Store Repo!",
+      "identifier": "vip.nabzclan.public.init",
+      "caption": "Tap to open our App Store",
+      "date": "2023-01-01",
+      "tintColor": "#5bbad5",
+      "imageURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
+      "notify": true,
+      "url": "https://appstore.nabzclan.vip/",
+      "appID": null
+    }
+  ]
 }
