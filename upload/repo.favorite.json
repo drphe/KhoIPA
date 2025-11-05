@@ -23,6 +23,54 @@
   "apps": [
     {
       "beta": false,
+      "name": "Focuskeeper",
+      "type": 1,
+      "bundleIdentifier": "com.limepresso.pomodorofree",
+      "developerName": "IPAOMTK.COM",
+      "subtitle": "Focus Keeper – Pomodoro Timer Unlocked",
+      "localizedDescription": "Discovering Focus Keeper: A Modern Approach to Time Management\nFocus Keeper Pomodoro IPA v3.8 for iOS emerges as an essential tool for individuals eager to reclaim control over their schedules and enhance productivity. Rooted in the well-established Pomodoro Technique, this app provides a streamlined and engaging interface that segments work into focused intervals separated by brief pauses. This structure not only sustains attention but also helps prevent mental fatigue, promoting a healthier and more efficient workflow. In this overview, we will explore the app’s key functionalities and advantages, illustrating how it can elevate your productivity and help you meet your objectives with greater clarity and intention.",
+      "versionDescription": "",
+      "tintColor": "#fc5840",
+      "iconURL": "https://i.ibb.co/q3tbTXVj/c157f8589ad9.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8c/a5/4f/8ca54f70-eeef-cc75-a460-60a0c2ebc633/A_65_01.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/13/50/cb1350a4-7e45-231e-0239-8718fd68c8bf/65_02.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4a/29/02/4a2902ef-886a-2fcf-b953-df90e9ac2bca/65_03.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/80/40/ab/8040abe1-e750-dead-f74f-e1a1e8e2b69d/65_04.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/25/aa/9e/25aa9e34-223b-103c-87e5-4e28ddfa2097/65_03-1.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f6/6f/92/f66f929c-30d7-f36c-eec9-150adf456f7e/65_05-1.jpg/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "NSUserTrackingUsageDescription",
+          "NSPhotoLibraryAddUsageDescription": "NSPhotoLibraryAddUsageDescription",
+          "NSAppleMusicUsageDescription": "NSAppleMusicUsageDescription",
+          "NSCalendarsUsageDescription": "NSCalendarsUsageDescription",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "NSCalendarsWriteOnlyAccessUsageDescription",
+          "NSCalendarsFullAccessUsageDescription": "NSCalendarsFullAccessUsageDescription",
+          "NSPhotoLibraryUsageDescription": "NSPhotoLibraryUsageDescription"
+        }
+      },
+      "size": 501500000,
+      "version": "3.9.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.9.1/Focus-Keeper-Pomodoro-Timer.ipa",
+          "size": 501500000,
+          "version": "3.9.1",
+          "buildVersion": null,
+          "date": "2025-11-05T20:03:00+07:00",
+          "localizedDescription": "Focus Keeper – Pomodoro Timer IPA MOD v3.9.1 (Unlocked) iOS",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05T20:03:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.9.1/Focus-Keeper-Pomodoro-Timer.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "60 seconds",
       "type": 2,
       "bundleIdentifier": "com.robotgentleman.game60seconds",
@@ -317,9 +365,18 @@
           "NSUserTrackingUsageDescription": "Этот идентификатор будет использован для подбора персонализированной рекламы."
         }
       },
-      "size": 21200000,
-      "version": "2.1",
+      "size": 21600000,
+      "version": "2.1.1",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.1.1/VidList_2.1.1@vidlist.ipa",
+          "size": 21600000,
+          "version": "2.1.1",
+          "buildVersion": null,
+          "date": "2025-11-05T20:11:00+07:00",
+          "localizedDescription": null,
+          "minOSVersion": null
+        },
         {
           "version": "2.1",
           "date": "2025-11-03T13:35:00+07:00",
@@ -339,8 +396,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-03T13:35:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.1/VidList_2.1_@vidlist.ipa",
+      "versionDate": "2025-11-05T20:11:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.1.1/VidList_2.1.1@vidlist.ipa",
       "patreon": {}
     },
     {
