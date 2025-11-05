@@ -42,7 +42,7 @@ function waitForAllImagesToLoad(container) {
         new Promise(resolve => setTimeout(resolve, 3000))
     ]).finally(loaded);
 }
-waitForAllImagesToLoad();
+
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
