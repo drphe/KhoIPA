@@ -7,6 +7,42 @@ import { MoreButton } from "../components/MoreButton.js";
 import { AppHeader, AppLoading } from "../components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
+const loaded = () => {
+    console.log('✅ All images settled or 3000ms timeout reached.');
+};
+
+function waitForAllImagesToLoad(container) {
+    const allImages = container.querySelectorAll("img");
+    if (allImages.length === 0) return loaded();
+
+    const imagePromises = Array.from(allImages).map(image => new Promise(resolve => {
+        const handleSettled = () => {
+            image.onload = null;
+            image.onerror = null;
+            resolve();
+        };
+
+        if (image.complete && image.naturalHeight !== 0) return resolve();
+
+        image.onload = handleSettled;
+        image.onerror = () => {
+            if (image.id === "app-icon") {
+                image.src = altSourceIcon;
+            } else {
+                image.remove();
+            }
+            handleSettled();
+        };
+        
+        if (!image.src) image.src = image.src;
+    }));
+
+    Promise.race([
+        Promise.allSettled(imagePromises),
+        new Promise(resolve => setTimeout(resolve, 3000))
+    ]).finally(loaded);
+}
+waitForAllImagesToLoad();
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
@@ -523,42 +559,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     // show popup
     setTimeout(() => bottomPanel.classList.add("show"), 50); // show when everything ready
     document.body.classList.add('no-scroll');
-const loaded = () => {
-    console.log('✅ All images settled or 3000ms timeout reached.');
-};
-
-function waitForAllImagesToLoad() {
-    const allImages = bottomPanel.querySelectorAll("img");
-    if (allImages.length === 0) return loaded();
-
-    const imagePromises = Array.from(allImages).map(image => new Promise(resolve => {
-        const handleSettled = () => {
-            image.onload = null;
-            image.onerror = null;
-            resolve();
-        };
-
-        if (image.complete && image.naturalHeight !== 0) return resolve();
-
-        image.onload = handleSettled;
-        image.onerror = () => {
-            if (image.id === "app-icon") {
-                image.src = altSourceIcon;
-            } else {
-                image.remove();
-            }
-            handleSettled();
-        };
-        
-        if (!image.src) image.src = image.src;
-    }));
-
-    Promise.race([
-        Promise.allSettled(imagePromises),
-        new Promise(resolve => setTimeout(resolve, 3000))
-    ]).finally(loaded);
-}
-waitForAllImagesToLoad();
+    waitForAllImagesToLoad(bottomPanel);
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
     closeBottom.addEventListener("click", closePanel);
@@ -730,6 +731,7 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
                 appsContainer.insertAdjacentHTML("beforeend", html);
             });
             currentIndex += appsPerLoad;
+	    waitForAllImagesToLoad(appsContainer);
         }
         loadMoreApps();
 	appsContainer.addEventListener("click", event => {
