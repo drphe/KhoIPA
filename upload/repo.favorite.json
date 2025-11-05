@@ -23,6 +23,172 @@
   "apps": [
     {
       "beta": false,
+      "name": "60 seconds",
+      "type": 2,
+      "bundleIdentifier": "com.robotgentleman.game60seconds",
+      "developerName": "IOSVN",
+      "subtitle": "60 Seconds 🆕🆙🆙",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "versionDescription": "",
+      "tintColor": "#f6f608",
+      "iconURL": "https://i.ibb.co/DhQwCtN/4e3fce637457.png",
+      "screenshotURLs": [
+        {
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/1a/91/25/1a912518-5682-6c81-7a4d-502a5e6e16e0/mzl.oxwrkjhf.png/406x228bb.png",
+          "width": 405,
+          "height": 228
+        },
+        {
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/b0/6d/d6/b06dd640-58ab-346e-9b29-b633996202ab/mzl.oaqpnmyi.png/406x228bb.png",
+          "width": 405,
+          "height": 228
+        },
+        {
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/7a/35/35/7a353539-6d91-092b-5f97-bd30d85451fa/mzl.htrqhtjt.png/406x228bb.png",
+          "width": 405,
+          "height": 228
+        },
+        {
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/59/ca/f2/59caf2ee-16c5-8e66-85e3-9b5d61b8a370/mzl.jmmqutza.png/406x228bb.png",
+          "width": 405,
+          "height": 228
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocationWhenInUseUsageDescription": "Texts localizations"
+        }
+      },
+      "size": 109300000,
+      "version": "1.27.11",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27.11/game60seconds.-.v1.27.11.ipa",
+          "size": 109300000,
+          "version": "1.27.11",
+          "buildVersion": null,
+          "date": "2025-11-05T02:30:00+07:00",
+          "localizedDescription": "60 Seconds 🆕🆙🆙\n\n🔩 Chức năng 🔩\n✅ Việt Hóa\n⚠️ Game tôi mua về cho anh em chơi. Nếu chơi dài lâu anh em mua game ủng hộ nhóm Việt Hóa nhé: Modviet (https://modviet.com/)",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05T02:30:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27.11/game60seconds.-.v1.27.11.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "SoundCloud",
+      "type": 3,
+      "bundleIdentifier": "com.soundcloud.TouchApp",
+      "developerName": "IOSVN",
+      "subtitle": "Sound Cloud 🆕🆙🆙",
+      "localizedDescription": "SCMusicPlus – SoundCloud++ iPA sử dụng dylib của @Rov3rRepo.",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/4wx2NC0F/40d35e5d3c46.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a1/24/d8/a124d82f-41b0-4c21-cd07-e3184c4f921b/9650a0c0-1790-4ecf-9d9d-5cf192da340f_6.7__Display-pink-copy1_-_1.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/da/9b/5b/da9b5b6f-e173-3d13-e456-cd9261f6dc8f/3b615c49-442e-4a88-8872-928182c45e6f_6.7__Display-pink-copy1_-_2.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7d/79/99/7d799934-1419-cf31-3142-a093240883ce/20f93d6f-9613-423a-95d4-48d5db99da85_6.7__Display-pink-copy1_-_3.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/8d/50/6d8d5046-9913-e945-9e12-9dccd229a870/97cf178c-5da5-43e1-8768-97f27206f41e_6.7__Display-pink-copy1_-_4.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8e/8b/c7/8e8bc79f-a735-9810-9e92-ccee066c0116/b755e8ac-8428-4f97-843e-91c3a384b2d2_6.7__Display-pink-copy1_-_5.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b5/9e/13/b59e13b9-0769-258e-54a6-5321121e7f49/46e0ed14-a647-431b-bf93-3b4fcaacbe4e_6.7__Display-pink-copy1_-_6.jpg/230x499bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSBluetoothPeripheralUsageDescription": "SoundCloud would like to use bluetooth.",
+          "NSCameraUsageDescription": "bla-bla-bla",
+          "NSLocalNetworkUsageDescription": "SoundCloud uses the local network to discover Cast-enabled devices on your WiFi network.",
+          "NSMicrophoneUsageDescription": "SoundCloud would like to use the microphone.",
+          "NSPhotoLibraryAddUsageDescription": "SoundCloud would like to access the photos library.",
+          "NSPhotoLibraryUsageDescription": "SoundCloud would like to store a photo.",
+          "NSSiriUsageDescription": "SoundCloud would like to use Siri",
+          "NSUserTrackingUsageDescription": "Your data will only be used to serve more relevant ads to you."
+        }
+      },
+      "size": 96700000,
+      "version": "8.38.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V8.3.1/SoundCloud.-.v8.38.1.ipa",
+          "size": 96700000,
+          "version": "8.38.1",
+          "buildVersion": null,
+          "date": "2025-11-05T09:23:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Go+ unlocked\n✅ HQ audio streaming\n✅ No ads (audio & visual)\n✅ No upgrade popups",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05T09:23:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V8.3.1/SoundCloud.-.v8.38.1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Roblox",
+      "type": 2,
+      "bundleIdentifier": "com.gloop.deltamobile",
+      "developerName": "IOSVN",
+      "subtitle": "Roblox Delta 🆕🆙🆙",
+      "localizedDescription": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join millions of people and discover an infinite variety of immersive experiences created by a global community!\n\nAlready have an account? Log in with your existing Roblox account and explore the infinite metaverse of Roblox.\n\nMILLIONS OF EXPERIENCES\n\nIn the mood for an epic adventure? Want to compete against rivals worldwide? Or do you just want to hang out and chat with your friends online? A growing library of experiences created by the community means there’s always something new and exciting for you every day.\n\nEXPLORE TOGETHER ANYTIME, ANYWHERE\n\nTake the fun on the go. Roblox features full cross-platform support, meaning you can join your friends and millions of other people on their computers, mobile devices, Xbox One, or VR headsets.\n\nBE ANYTHING YOU CAN IMAGINE\n\nBe creative and show off your unique style! Customize your avatar with tons of hats, shirts, faces, gear, and more. With an ever-expanding catalog of items, there’s no limit to the looks you can create.\n\nCHAT WITH FRIENDS\n\nHang out with friends around the world using chat features, private messages, and groups!",
+      "versionDescription": "",
+      "tintColor": "#345cfc",
+      "iconURL": "https://i.ibb.co/jPCyPS6C/b16328a568f4.png",
+      "screenshotURLs": [
+        {
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/f9/dd/9df9ddc3-64ae-c022-4b6d-4bfe354535c7/ASO_Q2_2025_2507_Apple_iPad_SC5.png/1286x0w.webp",
+          "width": 1286,
+          "height": 965
+        },
+        {
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/1a/ed/dd1aedd8-e66b-6c82-f221-4fc000115da4/ASO_Q2_2025_2507_Apple_iPad_SC1.png/1286x0w.webp",
+          "width": 1286,
+          "height": 965
+        },
+        {
+          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/3f/8e/9e3f8e89-81c1-d00b-4000-0a678ff74f5c/ASO_Q2_2025_2507_Apple_iPad_SC3.png/1286x0w.webp",
+          "width": 1286,
+          "height": 965
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSCameraUsageDescription": "Roblox uses your camera to animate your avatar with your movement and scan QR codes.",
+          "NSContactsUsageDescription": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
+          "NSHumanReadableCopyright": "2014 ROBLOX Inc.",
+          "NSLocalNetworkUsageDescription": "Roblox needs access to local networks to connect to players around you.",
+          "NSLocationWhenInUseUsageDescription": "Roblox needs access to your location to improve your user experience",
+          "NSMicrophoneUsageDescription": "Roblox needs access to your microphone for voice chat.",
+          "NSMotionUsageDescription": "Roblox needs access to the accelerometer to enhance your play experience.",
+          "NSPhotoLibraryAddUsageDescription": "Allow Roblox to access your photo library so you can save images and videos to your device's camera roll.",
+          "NSPhotoLibraryUsageDescription": "Roblox needs access to your photos to enhance your play experience."
+        }
+      },
+      "size": 122500000,
+      "version": "2.696.799",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V2.696.799/Roblox.-.iOSVN.ipa",
+          "size": 122500000,
+          "version": "2.696.799",
+          "buildVersion": null,
+          "date": "2025-11-05T09:16:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Still Undetected\n✅ Bug Fixes",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05T09:16:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V2.696.799/Roblox.-.iOSVN.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Messenger ++",
       "type": 1,
       "bundleIdentifier": "com.facebook.Messenger",
