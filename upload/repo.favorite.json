@@ -23,6 +23,120 @@
   "apps": [
     {
       "beta": false,
+      "name": "60Parsecs",
+      "type": 1,
+      "bundleIdentifier": "com.robotgentleman.game60parsecs",
+      "developerName": "IOSVN",
+      "subtitle": "60 Parsecs Việt hóa",
+      "localizedDescription": "60 Parsecs! is an Atomic Space Age adventure of scavenge and survival. Keep your crew alive and ready for action. Make difficult choices, face soup shortages and other horrors of outer space. And maybe reach your destination. Or not.",
+      "versionDescription": "",
+      "tintColor": "#ac944c",
+      "iconURL": "https://i.ibb.co/tTvsTKr2/7e75e520ebee.png",
+      "screenshotURLs": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646270/ss_172697460ff9765c13d24fbd855a31d18bca26f1.600x338.jpg?t=1737718717",
+         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646270/ss_955db48613a34a2380d3e12b16fdadf3187ab69b.600x338.jpg?t=1737718717",
+         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646270/ss_3da32205b491968adf7954072da4cd33b89ef50d.600x338.jpg?t=1737718717"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "Save media to Photos",
+          "NSPhotoLibraryUsageDescription": "Save media to Photos"
+        }
+      },
+      "size": 204300000,
+      "version": "1.3.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.3/60Parsecs.-.v1.3.3.ipa",
+          "size": 204300000,
+          "version": "1.3.3",
+          "buildVersion": null,
+          "date": "2025-11-05T23:52:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Việt Hóa\n⚠️ Game tôi mua về cho anh em chơi. Nếu chơi dài lâu anh em mua game ủng hộ nhóm Việt Hóa nhé: Modviet (https://modviet.com/)",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05T23:52:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.3/60Parsecs.-.v1.3.3.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Flow – Tiện Ích Cho Messenger",
+      "type": 5,
+      "bundleIdentifier": "com.6cpvn1nt8t.wblzyaa7va",
+      "developerName": "Dayanch96/Flow",
+      "subtitle": "Flow – Tiện Ích Cho Messenger",
+      "localizedDescription": "Features\nRemove ads\nRemove stories banner\nRemove 'People you may know'\nDisable typing indicator\nRead messages anonymously\nWatch stories anonymously\nLoop stories\nDownload stories\nRemove 'Stories' tab\nRemove 'Friends' tab\nRemove AI circle\nRequire call confirmation",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [
+        "https://github.com/dayanch96/Flow/raw/main/Sileo/screenshot1.jpg",
+        "https://github.com/dayanch96/Flow/raw/main/Sileo/screenshot2.jpg",
+        "https://github.com/dayanch96/Flow/raw/main/Sileo/screenshot3.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 500000,
+      "version": "1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/flow.messenger/Flow_messenger.zip",
+          "size": 500000,
+          "version": "1.0",
+          "buildVersion": "",
+          "date": "2025-11-05T23:49:00+07:00",
+          "localizedDescription": "🔧 Tính năng nổi bật:\n\n✅ Chặn quảng cáo\n📥 Tải story (nút 3 chấm)\n🚫 Chặn “đã xem” và “đang gõ”\n⚙️ Menu Flow: Cài Đặt → góc phải\n❗️ Nếu cần bản .deb, hãy tải từ repo gốc của tác giả.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05T23:49:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/flow.messenger/Flow_messenger.zip",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Glow – Tiện Ích Cho Facebook",
+      "type": 5,
+      "bundleIdentifier": "com.mtavc8tgbn.gbq2mhhbcm",
+      "developerName": "Dayanch96/Glow",
+      "subtitle": "Glow – Tiện Ích Cho Facebook",
+      "localizedDescription": "Download Media: Download whatever you like — videos, images, Reels, and even stories\nAnonymity: Stay unseen. View stories and mark them as seen only when you want to\nConfirmation: Worried about accidental likes? Now you can relax\nSimplicity: Flexible, intuitive settings — all tailored to you\nAnd More: Glow isn’t just a list of features. It unlocks even more tools for comfort and privacy",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [
+        "https://github.com/dayanch96/Glow/raw/main/Sileo/screenshot1.jpg",
+        "https://github.com/dayanch96/Glow/raw/main/Sileo/screenshot2.jpg",
+        "https://github.com/dayanch96/Glow/raw/main/Sileo/screenshot3.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 1200000,
+      "version": "1.3.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/glow.facebook/Glow_facebook.zip",
+          "size": 1200000,
+          "version": "1.3.1",
+          "buildVersion": "",
+          "date": "2025-11-05T16:40:00+07:00",
+          "localizedDescription": "🔗 Repo gốc: Dayanch96/Glow\n\n🔧 Tính năng nổi bật:\n\n✅ Chặn quảng cáo\n📥 Tải video/story (bấm giữ video)\n📂 Menu tùy chỉnh: bấm giữ nút Tab Menu, Trang chủ,...\n❗️ Nếu cần bản .deb, hãy tải từ repo gốc của tác giả.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05T16:40:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/glow.facebook/Glow_facebook.zip",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Focuskeeper",
       "type": 1,
       "bundleIdentifier": "com.limepresso.pomodorofree",
@@ -1261,7 +1375,7 @@
       "bundleIdentifier": "com.zerone.hidesktop",
       "developerName": "Xiamen iScreen Information Technology Co., Ltd.",
       "subtitle": "Subscription Unlocked",
-      "localizedDescription": "Yêu cầu: IOS 14.0 trở lên \niScreen - personalized homescreen with various Widgets & Themes & Wallpaper to make your phone screen stand out!\n\n*iOS 26 Unlocked​！, featuring liquid glass effects and over 1000+ 3D space wallpapers and themes. Added dynamic Control Center customization for a more practical and fun experience.\n\nYou can not only keep pets and grow plants on the Dynamic Island, customize your Lock Screen with Interactive, Weather, Battery, Launcher, X-Panel, Text & Icon, Animation, Work Clock, Step Count widgets, but also add Home Screen widgets like Dynamic Panel, Photos, Scrolling Album, To-Do List, Countdown, Digital Clock, Calendar, Emoji Notes, Fan, Air Conditioner, and more for greater fun. Besides widgets, iScreen also offers various Themes, Wallpapers, AI-generated artwork, Charging Animations, and other features to make your phone screen more beautiful and unique.\n\nSpecial feature:  \n【iOS 26】\nFun iOS 26 Features, customized with 1000+ 3D space wallpapers and themes. Added dynamic Control Center effects to make your phone truly one-of-a-kind!\n\n【Control Center】\nCustomize your Control Center style with colorful icons. Features include a Counter, Water Reminder, Book of Answers, Dice Roll, and Quick Launch—combining beauty and practicality.\n\n【DIY Wallpapers】\nCreate static or dynamic wallpapers with rich templates like Polaroid, Heart Puzzle, Flip Card, and Animated Marquee Lights to make your home screen unique.\n\n【Widgets】\nIncludes popular widgets such as Dynamic Panel, Photo Wall, Weather, Battery, Countdown, Calendar, X-Panel, Emoji Notes, Digital Clock, Ferris Wheel, Windmill, and Air Conditioner. It also offers creative lock screen styles like Emojis, Animations, and Icons, with support for transparent effects — making your phone both fun and practical.\n\n【Charging Animation】\nCool and interesting charging animations with custom effects for a personalized charging experience.\n\n【Couple Widgets】\nSweet widgets designed for couples and friends. Send messages and photos to each other’s screens, and check real-time distance, weather, and moods.\n\n【Interactive Widgets】\nQuickly complete to-do check-ins or play games like Whack-a-Mole and Arcade without opening the app—adding fun to your daily routine.\n\n【Themes & Wallpapers】\nA vast collection of daily updated themes and wallpapers, including trending styles like Ins, minimalist, pink & black, AI art, and paper-cut designs. Easily elevate your home screen’s style and personalize your phone!\n\n【Dynamic Island】\nWe offers a variety of fun features, such as Pet Island, Plant Island, Animation Island, Weather Island, Panel Island, Calendar Island, Signature Island, Launcher Island, Timer Island, and more. It comes with multiple built-in creative animations, and you can also custom upload images or avatars to your Dynamic Island and set exclusive quotes\n\nUse Of Terms: https://www.xmzerone.com/about/deskagreement.html\nPrivacy Policy: http://www.xmzerone.com/about/deskprivacy.html",
+      "localizedDescription": "Yêu cầu: IOS 14.0 trở lên \niScreen - Widgets & Wallpaper (https://apps.apple.com/app/id1534704608)\niScreen - personalized homescreen with various Widgets & Themes & Wallpaper to make your phone screen stand out!\n\n*iOS 26 Unlocked​！, featuring liquid glass effects and over 1000+ 3D space wallpapers and themes. Added dynamic Control Center customization for a more practical and fun experience.\n\nYou can not only keep pets and grow plants on the Dynamic Island, customize your Lock Screen with Interactive, Weather, Battery, Launcher, X-Panel, Text & Icon, Animation, Work Clock, Step Count widgets, but also add Home Screen widgets like Dynamic Panel, Photos, Scrolling Album, To-Do List, Countdown, Digital Clock, Calendar, Emoji Notes, Fan, Air Conditioner, and more for greater fun. Besides widgets, iScreen also offers various Themes, Wallpapers, AI-generated artwork, Charging Animations, and other features to make your phone screen more beautiful and unique.\n\nSpecial feature:  \n【iOS 26】\nFun iOS 26 Features, customized with 1000+ 3D space wallpapers and themes. Added dynamic Control Center effects to make your phone truly one-of-a-kind!\n\n【Control Center】\nCustomize your Control Center style with colorful icons. Features include a Counter, Water Reminder, Book of Answers, Dice Roll, and Quick Launch—combining beauty and practicality.\n\n【DIY Wallpapers】\nCreate static or dynamic wallpapers with rich templates like Polaroid, Heart Puzzle, Flip Card, and Animated Marquee Lights to make your home screen unique.\n\n【Widgets】\nIncludes popular widgets such as Dynamic Panel, Photo Wall, Weather, Battery, Countdown, Calendar, X-Panel, Emoji Notes, Digital Clock, Ferris Wheel, Windmill, and Air Conditioner. It also offers creative lock screen styles like Emojis, Animations, and Icons, with support for transparent effects — making your phone both fun and practical.\n\n【Charging Animation】\nCool and interesting charging animations with custom effects for a personalized charging experience.\n\n【Couple Widgets】\nSweet widgets designed for couples and friends. Send messages and photos to each other’s screens, and check real-time distance, weather, and moods.\n\n【Interactive Widgets】\nQuickly complete to-do check-ins or play games like Whack-a-Mole and Arcade without opening the app—adding fun to your daily routine.\n\n【Themes & Wallpapers】\nA vast collection of daily updated themes and wallpapers, including trending styles like Ins, minimalist, pink & black, AI art, and paper-cut designs. Easily elevate your home screen’s style and personalize your phone!\n\n【Dynamic Island】\nWe offers a variety of fun features, such as Pet Island, Plant Island, Animation Island, Weather Island, Panel Island, Calendar Island, Signature Island, Launcher Island, Timer Island, and more. It comes with multiple built-in creative animations, and you can also custom upload images or avatars to your Dynamic Island and set exclusive quotes\n\nUse Of Terms: https://www.xmzerone.com/about/deskagreement.html\nPrivacy Policy: http://www.xmzerone.com/about/deskprivacy.html",
       "versionDescription": "",
       "tintColor": "#FEA570",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/ce/73/c2ce733a-51c7-a593-5d07-e4f90a6fbe5b/AppIcon-0-0-1x_U007epad-0-0-0-8-0-0-sRGB-85-220.jpeg/100x100bb.jpg",
@@ -1281,9 +1395,18 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 389935188,
-      "version": "4.3.40",
+      "size": 400000000,
+      "version": "4.3.51",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.3.51/iScreen_Widgets_._Wallpaper_v4_3_51_Subscription_Unlocked_blatant.ipa",
+          "size": 400000000,
+          "version": "4.3.51",
+          "buildVersion": null,
+          "date": "2025-11-05T23:46:00+07:00",
+          "localizedDescription": "⬆️ Updated to: 4.3.51\n🔧 Minimum iOS: 14.0\n✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
+          "minOSVersion": null
+        },
         {
           "version": "4.3.40",
           "date": "2025-10-15T16:11:00Z",
@@ -1294,8 +1417,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-15T16:11:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/iscreen.v4.30/iScreen_Widgets_._Wallpaper_v4_3_40.ipa",
+      "versionDate": "2025-11-05T23:46:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.3.51/iScreen_Widgets_._Wallpaper_v4_3_51_Subscription_Unlocked_blatant.ipa",
       "patreon": {}
     },
     {
@@ -1528,9 +1651,18 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 190039009,
-      "version": "7.97.0",
+      "size": 192400000,
+      "version": "7.98.0",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.98.0/Duolingo_Language_Lessons_v7_98_0_Duolingo_MAX_Unlocked_blatant.ipa",
+          "size": 192400000,
+          "version": "7.98.0",
+          "buildVersion": null,
+          "date": "2025-11-05T23:38:00+07:00",
+          "localizedDescription": "🔧 Minimum iOS: 16.0\n✅ Patched\n💎 Modifier: Duolingo MAX Unlocked\n🔄 Tweaked by @blatants\n\n📝 Note:\nSign-in with google/apple.\nIgnore any purchase banners all features should work.\nCredit to j4gm4g for providing the original script.",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "7.97.0",
           "date": "2025-10-28T10:37:00Z",
@@ -1559,8 +1691,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-28T10:37:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.97/Duolingo.v7.97.0.ipa",
+      "versionDate": "2025-11-05T23:38:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.98.0/Duolingo_Language_Lessons_v7_98_0_Duolingo_MAX_Unlocked_blatant.ipa",
       "patreon": {}
     },
     {
@@ -1930,7 +2062,7 @@
       "identifier": "molienketbangtusafari",
       "caption": "Cài đặt app mod sẽ bị thiếu tính năng hiển thị thông báo để mở liên kết bên trong ứng dụng khi vào bằng safari .",
       "date": "2025-11-04",
-      "tintColor": "#000000",
+      "tintColor": "#cf5353",
       "imageURL": "https://i.ibb.co/670gsV90/8767e01c340d.png",
       "notify": true,
       "url": "openlink.md",
