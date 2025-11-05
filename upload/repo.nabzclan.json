@@ -21,6 +21,309 @@
   "apps": [
     {
       "beta": false,
+      "name": "Instagram - instagramBH",
+      "type": 1,
+      "bundleIdentifier": "com.burbn.instagram",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features\r\nHide Ads\r\nNo suggested post\r\nShow Like count\r\nConfirm like\r\nCopy description\r\nDownload Videos\r\nSave profile image\r\nKeep deleted message\r\nRemove last seen\r\nRemove screenshot alert\r\nUnlimited replay of once story\r\nDisable Story Seen Receipt\r\nPadlock",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901f158c1e0c.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901f159f0aba.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901f159b67ba.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901f1597c175.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901f159432d7.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901f1590834d.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 253781628,
+      "version": "405.1.0",
+      "versions": [
+        {
+          "version": "405.1.0",
+          "date": "2025-11-05",
+          "localizedDescription": "Features\r\nHide Ads\r\nNo suggested post\r\nShow Like count\r\nConfirm like\r\nCopy description\r\nDownload Videos\r\nSave profile image\r\nKeep deleted message\r\nRemove last seen\r\nRemove screenshot alert\r\nUnlimited replay of once story\r\nDisable Story Seen Receipt\r\nPadlock",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1857",
+          "size": 253781628,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "405.1.0",
+          "date": "2025-11-05",
+          "localizedDescription": "injected with instagram regram",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1856",
+          "size": 277582731,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "405.1.0",
+          "date": "2025-11-03",
+          "localizedDescription": "Instagram injected rocket Instagram",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1937",
+          "size": 254434541,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "379.0.0",
+          "date": "2025-10-29",
+          "localizedDescription": "Injected with instagram NYX",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1859",
+          "size": 215095752,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "399.0.0",
+          "date": "2025-10-29",
+          "localizedDescription": "Injected with AC tweak",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1858",
+          "size": 242951063,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "356.1.0",
+          "date": "2025-10-27",
+          "localizedDescription": "Regram for instagram!\n\nFeed Enhancements\n• Download posts (Videos and Photos)\n• Repost posts (Videos and Photos)\n• Long press on posts to zoom\n• Copy text captions from posts\n\nStories\n• Save stories to Camera Roll\n• View stories anonymously\n• Manually mark stories as seen\n• Mute and unmute video stories\n• Upload from Camera Roll (Swipe up)\n• Disable auto switch between stories\n• Hide stories bar from feed\n\nProfile\n• Show if other users follow you\n• Long press on profile image to zoom\n• Show exac",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1756",
+          "size": 159649113,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "403.0.0",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/559",
+          "size": 253460678,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1857",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Twitch - TwitchAdBlock",
+      "type": 1,
+      "bundleIdentifier": "tv.twitch",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Twitch with no ads",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6902648084733.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026481b72c8.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690264817ae7a.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6902648141732.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026481057d4.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69026480bf44a.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 141616970,
+      "version": "26.8",
+      "versions": [
+        {
+          "version": "26.8",
+          "date": "2025-11-05",
+          "localizedDescription": "Twitch with no ads",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1863",
+          "size": 141616970,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "25.1",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Adblock",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1373",
+          "size": 119054378,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1863",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "X - Twitter - TWIGalaxy",
+      "type": 1,
+      "bundleIdentifier": "com.atebits.Tweetie2",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "TWIGalaxy\r\n- Download Videos\r\n- Disable unfollow confirmation\r\n- Follow Confirmation\r\n- Like Confirmation\r\n- Save Confirmation\r\n- Retweet Confirmation\r\n- Reaction Confirmation\r\n- Copy Bio\r\n- Disable Double-Tap\r\n- Disable Long-press\r\n- Tweet Timestamp",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_690aa6dcd1f26.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 151020323,
+      "version": "11.36",
+      "versions": [
+        {
+          "version": "11.36",
+          "date": "2025-11-05",
+          "localizedDescription": "TWIGalaxy\r\n- Download Videos\r\n- Disable unfollow confirmation\r\n- Follow Confirmation\r\n- Like Confirmation\r\n- Save Confirmation\r\n- Retweet Confirmation\r\n- Reaction Confirmation\r\n- Copy Bio\r\n- Disable Double-Tap\r\n- Disable Long-press\r\n- Tweet Timestamp",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1939",
+          "size": 151020323,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "11.36",
+          "date": "2025-11-05",
+          "localizedDescription": "Key Features:\r\n\r\nOpen In Twitter extension for x.com links\r\nDisabled Grok and Video tabs by default\r\nFixed Profile and Communities toggles in Custom Navigation\r\nRemoved navigation items relocate to sidebar\r\nAbility to hide blue verified checkmarks (badge only)\r\nAdded back Flex tool for debugging\r\nMultiple minor bug fixes",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1838",
+          "size": 160873773,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "11.36",
+          "date": "2025-11-05",
+          "localizedDescription": "General Enhancements\r\nDownload videos (even from private accounts)\r\nLoad photos in highest quality available\r\nSave Tweets as images\r\nUndo Tweet\r\nEnable voice Tweets & voice messages in DM\r\nEnable new DM search UI\r\nUI Customization\r\nCustom tab bar\r\nThemes (like Twitter Blue)\r\nApp icon changer\r\nFont changer\r\nPadlock\r\nDisable edge-to-edge Tweet style\r\nAlways open in Safari\r\nHide Spaces bar\r\nHide topics Tweets\r\nNo history feature\r\nDisable RTL (Right-To-Left)\r\nDisable video layer caption\r\nInteraction & Behavior\r\nTwitter Circle feature\r\nCopy profile information\r\nTranslate bio\r\nConfirm alerts on:\r\nTweet\r\nLike\r\nFollow",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1865",
+          "size": 159767075,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "11.32",
+          "date": "2025-10-28",
+          "localizedDescription": "Features:\r\n\r\n- NeoFreeBird 5.1\r\n\r\n -  Twitter NoAds 1.1-2\r\n\r\n - TwitterNoAds 1.2.5",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1835",
+          "size": 164890356,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "10.83",
+          "date": "2025-10-27",
+          "localizedDescription": "Features:\n\n• Download Videos (even if account private).\n• Replay later feature.\n• Video zoom feature.\n• No history feature.\n• Hide topics tweet feature.\n• Disable video layer caption.\n• Padlock.\n• Font changer.\n• Auto load photos in highest quality feature\n• Undo tweet feature.\n• Reader mode feature.\n• Disable new tweet style (A.K.A edge to edge tweet)\n• Enable voice tweet and voice message in DM.\n• Hide promoted tweet from the timeline.\n• Confirm alert when hit the tweet button.\n• Confirm alert",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1750",
+          "size": 148905890,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "11.33",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/417",
+          "size": 153928565,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1939",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "YouTube - X",
+      "type": 1,
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "A lightweight YouTube improvement tweak.\r\n\r\nby \r\n@PoomSmart\r\n@dayanch96\r\n@asdfzxcvbn",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_690aa3167a362.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690aa317b025b.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690aa317728f2.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690aa31737cbc.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690aa316efe6b.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690aa316b55b6.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 119125682,
+      "version": "20.44.2",
+      "versions": [
+        {
+          "version": "20.44.2",
+          "date": "2025-11-05",
+          "localizedDescription": "A lightweight YouTube improvement tweak.\r\n\r\nby \r\n@PoomSmart\r\n@dayanch96\r\n@asdfzxcvbn",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1938",
+          "size": 119125682,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.44.2",
+          "date": "2025-11-05",
+          "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
+          "size": 136199586,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.44.2",
+          "date": "2025-11-05",
+          "localizedDescription": "Injected with YouTube reborn unknown features included",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1864",
+          "size": 131038057,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.44.2",
+          "date": "2025-11-05",
+          "localizedDescription": "Features:\r\n\r\nYTLite\r\n\r\nYTUHD\r\n\r\nYouPiP\r\n\r\nYTABConfig\r\n\r\nYouMute\r\n\r\nDontEatMyContent\r\n\r\nReturn YouTube Dislikes\r\n\r\niSponsorBlock\r\n\r\nYouRememberCaption\r\n\r\nYTNoTracking\r\n\r\nYTNoCheckLocalNetWork\r\n\r\nBigYTMiniPlayer\r\n\r\nYTSpeed\r\n\r\nYTHoldForSpeed\r\n\r\nYTVideoOverlay\r\n\r\nYouQuality\r\n\r\nYTNoModernUI\r\n\r\nOLEDDarkmode\r\n\r\nOLDDarkmode\r\n\r\nLowContrastMode",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1862",
+          "size": 127441357,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.09.3",
+          "date": "2025-10-27",
+          "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n• Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n• Copy video, comment, and post information\n• Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n• Player settings: Gestures, default quality, preferred audio track\n• Save, Load and Restore settings. Clear cache once or automatically on app startup\n• Built-in SponsorBlock\n• An",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1770",
+          "size": 112848236,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.42.3",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/545",
+          "size": 130083531,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-05",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1938",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Roblox - Delta",
       "type": 1,
       "bundleIdentifier": "com.roblox.robloxmobile",
@@ -59,99 +362,6 @@
       ],
       "versionDate": "2025-11-03",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Instagram - Rocket",
-      "type": 1,
-      "bundleIdentifier": "com.burbn.instagram",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Instagram injected rocket Instagram",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_690933f79e069.jpg",
-      "screenshotURLs": [
-        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f8ccd98.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f892591.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f857ead.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f81cb0c.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_690933f7d68b0.jpg"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 254434541,
-      "version": "405.1.0",
-      "versions": [
-        {
-          "version": "405.1.0",
-          "date": "2025-11-03",
-          "localizedDescription": "Instagram injected rocket Instagram",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1937",
-          "size": 254434541,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "404.0.0",
-          "date": "2025-10-29",
-          "localizedDescription": "Injected with bh",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1857",
-          "size": 252364223,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "379.0.0",
-          "date": "2025-10-29",
-          "localizedDescription": "Injected with instagram NYX",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1859",
-          "size": 215095752,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "399.0.0",
-          "date": "2025-10-29",
-          "localizedDescription": "Injected with AC tweak",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1858",
-          "size": 242951063,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "391.0.0",
-          "date": "2025-10-29",
-          "localizedDescription": "injected with instagram regram",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1856",
-          "size": 202445884,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "356.1.0",
-          "date": "2025-10-27",
-          "localizedDescription": "Regram for instagram!\n\nFeed Enhancements\n• Download posts (Videos and Photos)\n• Repost posts (Videos and Photos)\n• Long press on posts to zoom\n• Copy text captions from posts\n\nStories\n• Save stories to Camera Roll\n• View stories anonymously\n• Manually mark stories as seen\n• Mute and unmute video stories\n• Upload from Camera Roll (Swipe up)\n• Disable auto switch between stories\n• Hide stories bar from feed\n\nProfile\n• Show if other users follow you\n• Long press on profile image to zoom\n• Show exac",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1756",
-          "size": 159649113,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "403.0.0",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/559",
-          "size": 253460678,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-03",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1937",
       "patreon": {}
     },
     {
@@ -358,81 +568,6 @@
       ],
       "versionDate": "2025-11-01",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1933",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "YouTube Plus",
-      "type": 1,
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_690135091203c.jpg",
-      "screenshotURLs": [
-        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350a440ce.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350a09394.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69013509c2748.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350987a29.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_690135094caba.jpg"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 135836336,
-      "version": "20.43.3",
-      "versions": [
-        {
-          "version": "20.43.3",
-          "date": "2025-11-01",
-          "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
-          "size": 135836336,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.43.3",
-          "date": "2025-11-01",
-          "localizedDescription": "Hacked YouTube",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1862",
-          "size": 127093589,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.43.3",
-          "date": "2025-10-31",
-          "localizedDescription": "Injected with YouTube reborn unknown features included",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1864",
-          "size": 130690453,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.09.3",
-          "date": "2025-10-27",
-          "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n• Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n• Copy video, comment, and post information\n• Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n• Player settings: Gestures, default quality, preferred audio track\n• Save, Load and Restore settings. Clear cache once or automatically on app startup\n• Built-in SponsorBlock\n• An",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1770",
-          "size": 112848236,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.42.3",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/545",
-          "size": 130083531,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-01",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
       "patreon": {}
     },
     {
@@ -2819,123 +2954,6 @@
       ],
       "versionDate": "2025-10-29",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1868",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "X - BHX",
-      "type": 1,
-      "bundleIdentifier": "com.atebits.Tweetie2",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Twitter injected with bhx",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_690267b01bf46.jpg",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 159657450,
-      "version": "11.35",
-      "versions": [
-        {
-          "version": "11.35",
-          "date": "2025-10-29",
-          "localizedDescription": "Twitter injected with bhx",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1865",
-          "size": 159657450,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "11.35",
-          "date": "2025-10-29",
-          "localizedDescription": "Features:\r\n\r\n- NeoFreeBird",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1838",
-          "size": 160751278,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "11.32",
-          "date": "2025-10-28",
-          "localizedDescription": "Features:\r\n\r\n- NeoFreeBird 5.1\r\n\r\n -  Twitter NoAds 1.1-2\r\n\r\n - TwitterNoAds 1.2.5",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1835",
-          "size": 164890356,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "10.83",
-          "date": "2025-10-27",
-          "localizedDescription": "Features:\n\n• Download Videos (even if account private).\n• Replay later feature.\n• Video zoom feature.\n• No history feature.\n• Hide topics tweet feature.\n• Disable video layer caption.\n• Padlock.\n• Font changer.\n• Auto load photos in highest quality feature\n• Undo tweet feature.\n• Reader mode feature.\n• Disable new tweet style (A.K.A edge to edge tweet)\n• Enable voice tweet and voice message in DM.\n• Hide promoted tweet from the timeline.\n• Confirm alert when hit the tweet button.\n• Confirm alert",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1750",
-          "size": 148905890,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "11.33",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/417",
-          "size": 153928565,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-29",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1865",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Twitch - TwitchAdBlock",
-      "type": 1,
-      "bundleIdentifier": "tv.twitch",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Twitch with no ads",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_6902648084733.jpg",
-      "screenshotURLs": [
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69026481b72c8.png",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_690264817ae7a.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_6902648141732.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69026481057d4.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69026480bf44a.jpg"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 155541828,
-      "version": "26.5",
-      "versions": [
-        {
-          "version": "26.5",
-          "date": "2025-10-29",
-          "localizedDescription": "Twitch with no ads",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1863",
-          "size": 155541828,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "25.1",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Adblock",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1373",
-          "size": 119054378,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-29",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1863",
       "patreon": {}
     },
     {
@@ -18363,7 +18381,7 @@
       "beta": false,
       "name": "Kanji",
       "type": 1,
-      "bundleIdentifier": "com.z0od1kl3yp.rt1kqcrf9n",
+      "bundleIdentifier": "com.n2l88yxvle.2l0jnubg1p",
       "developerName": "Holloway",
       "subtitle": "An awesome app.",
       "localizedDescription": "Injected with Premium",
