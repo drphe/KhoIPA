@@ -28,31 +28,15 @@
       "bundleIdentifier": "com.robotgentleman.game60seconds",
       "developerName": "IOSVN",
       "subtitle": "60 Seconds 🆕🆙🆙",
-      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "localizedDescription": "60 Seconds Full Việt Hóa ",
       "versionDescription": "",
       "tintColor": "#f6f608",
       "iconURL": "https://i.ibb.co/DhQwCtN/4e3fce637457.png",
       "screenshotURLs": [
-        {
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/1a/91/25/1a912518-5682-6c81-7a4d-502a5e6e16e0/mzl.oxwrkjhf.png/406x228bb.png",
-          "width": 405,
-          "height": 228
-        },
-        {
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/b0/6d/d6/b06dd640-58ab-346e-9b29-b633996202ab/mzl.oaqpnmyi.png/406x228bb.png",
-          "width": 405,
-          "height": 228
-        },
-        {
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/7a/35/35/7a353539-6d91-092b-5f97-bd30d85451fa/mzl.htrqhtjt.png/406x228bb.png",
-          "width": 405,
-          "height": 228
-        },
-        {
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/59/ca/f2/59caf2ee-16c5-8e66-85e3-9b5d61b8a370/mzl.jmmqutza.png/406x228bb.png",
-          "width": 405,
-          "height": 228
-        }
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/1a/91/25/1a912518-5682-6c81-7a4d-502a5e6e16e0/mzl.oxwrkjhf.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/b0/6d/d6/b06dd640-58ab-346e-9b29-b633996202ab/mzl.oaqpnmyi.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/7a/35/35/7a353539-6d91-092b-5f97-bd30d85451fa/mzl.htrqhtjt.png/406x228bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/59/ca/f2/59caf2ee-16c5-8e66-85e3-9b5d61b8a370/mzl.jmmqutza.png/406x228bb.png"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -64,12 +48,12 @@
       "version": "1.27.11",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27.11/game60seconds.-.v1.27.11.ipa",
-          "size": 109300000,
           "version": "1.27.11",
-          "buildVersion": null,
           "date": "2025-11-05T02:30:00+07:00",
           "localizedDescription": "60 Seconds 🆕🆙🆙\n\n🔩 Chức năng 🔩\n✅ Việt Hóa\n⚠️ Game tôi mua về cho anh em chơi. Nếu chơi dài lâu anh em mua game ủng hộ nhóm Việt Hóa nhé: Modviet (https://modviet.com/)",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27.11/game60seconds.-.v1.27.11.ipa",
+          "size": 109300000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -114,12 +98,12 @@
       "version": "8.38.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V8.3.1/SoundCloud.-.v8.38.1.ipa",
-          "size": 96700000,
           "version": "8.38.1",
-          "buildVersion": null,
           "date": "2025-11-05T09:23:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Go+ unlocked\n✅ HQ audio streaming\n✅ No ads (audio & visual)\n✅ No upgrade popups",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V8.3.1/SoundCloud.-.v8.38.1.ipa",
+          "size": 96700000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -139,21 +123,9 @@
       "tintColor": "#345cfc",
       "iconURL": "https://i.ibb.co/jPCyPS6C/b16328a568f4.png",
       "screenshotURLs": [
-        {
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/f9/dd/9df9ddc3-64ae-c022-4b6d-4bfe354535c7/ASO_Q2_2025_2507_Apple_iPad_SC5.png/1286x0w.webp",
-          "width": 1286,
-          "height": 965
-        },
-        {
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/1a/ed/dd1aedd8-e66b-6c82-f221-4fc000115da4/ASO_Q2_2025_2507_Apple_iPad_SC1.png/1286x0w.webp",
-          "width": 1286,
-          "height": 965
-        },
-        {
-          "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/3f/8e/9e3f8e89-81c1-d00b-4000-0a678ff74f5c/ASO_Q2_2025_2507_Apple_iPad_SC3.png/1286x0w.webp",
-          "width": 1286,
-          "height": 965
-        }
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/f9/dd/9df9ddc3-64ae-c022-4b6d-4bfe354535c7/ASO_Q2_2025_2507_Apple_iPad_SC5.png/1286x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/1a/ed/dd1aedd8-e66b-6c82-f221-4fc000115da4/ASO_Q2_2025_2507_Apple_iPad_SC1.png/1286x0w.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/3f/8e/9e3f8e89-81c1-d00b-4000-0a678ff74f5c/ASO_Q2_2025_2507_Apple_iPad_SC3.png/1286x0w.webp"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -174,12 +146,12 @@
       "version": "2.696.799",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V2.696.799/Roblox.-.iOSVN.ipa",
-          "size": 122500000,
           "version": "2.696.799",
-          "buildVersion": null,
           "date": "2025-11-05T09:16:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Still Undetected\n✅ Bug Fixes",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V2.696.799/Roblox.-.iOSVN.ipa",
+          "size": 122500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
