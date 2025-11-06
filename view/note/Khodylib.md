@@ -99,8 +99,8 @@ Hoạt động trên hầu hết trò chơi để chỉnh sửa giá trị mà t
 🐱 ImmortalizerTS (https://github.com/sergealagon/ImmortalizerTS)
 
 * 🔔Nguồn khác 
-
 📦 **Tải về:** [Thư mục mediafile](https://app.mediafire.com/folder/qlnbgj6n07d14)
+
 ---
 ## ⚙️ Thêm Thư viện (Dylib/Debs) bằng Esign
 **Nhập file IPA và Deb/Dylib vào eSign**  
@@ -113,19 +113,19 @@ Hoạt động trên hầu hết trò chơi để chỉnh sửa giá trị mà t
 
 Hãy nhấp vào ứng dụng như bình thường nhưng thay vì nhấn **"Signature"** (Ký), hãy nhấn vào **"More settings"** (Cài đặt thêm).
 
-!([ảnh 2](https://i.ibb.co/SDyL4GpV/nh2.jpg))
+![ảnh 2](https://i.ibb.co/SDyL4GpV/nh2.jpg)
 
 Tiếp theo, tìm **"Add Library"** (Thêm Thư viện).
 
-!([ảnh 3](https://i.ibb.co/9kH8yqcz/nh3.jpg))
+![ảnh 3](https://i.ibb.co/9kH8yqcz/nh3.jpg)
 
 Sau đó, thêm những thư viện bạn muốn.
 
-!([ảnh 4](https://i.ibb.co/QvpbGzzm/nh4.jpg))
+![ảnh 4](https://i.ibb.co/QvpbGzzm/nh4.jpg)
 
 Nhấn **"OK"** và bạn sẽ thấy chúng đã được thêm vào.
 
-!([ảnh 5](https://i.ibb.co/8gGn96JX/nh5.jpg))
+![ảnh 5](https://i.ibb.co/8gGn96JX/nh5.jpg)
 
 Sau đó, chỉ cần **"Sign"** (Ký) ứng dụng là bạn đã hoàn tất!
 ---
@@ -135,6 +135,6 @@ Sau đó, chỉ cần **"Sign"** (Ký) ứng dụng là bạn đã hoàn tất!
 
 Trong tab **"More settings"** (Cài đặt thêm), bạn có thể nhấp vào **"Remove Existing Library"** (Xóa Thư viện Hiện có) để loại bỏ những thứ không mong muốn.
 
-!([ảnh 6](https://i.ibb.co/gZFLs9V4/nh6.jpg))
+![ảnh 6](https://i.ibb.co/gZFLs9V4/nh6.jpg)
 
 Việc này có thể hữu ích đối với các ứng dụng đã được tinh chỉnh có chứa một loạt các tinh chỉnh không cần thiết được chèn vào, đặc biệt là trong các ứng dụng YouTube, Spotify hoặc mạng xã hội đã được tinh chỉnh có thể gây ra sự cố.
