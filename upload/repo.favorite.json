@@ -23,6 +23,110 @@
   "apps": [
     {
       "beta": false,
+      "name": "FeedtheDeep",
+      "type": 2,
+      "bundleIdentifier": "com.Luke-Muscat.FtD",
+      "developerName": "IOSVN",
+      "subtitle": "Feed The Deep việt hóa",
+      "localizedDescription": "A lovecraftian roguelike. Dive into procedurally generated undersea caves. Collect gold, upgrade your equipment, and Feed the Deep.",
+      "versionDescription": "",
+      "tintColor": "#f8b404",
+      "iconURL": "https://i.ibb.co/pBpWZdVG/7c40d59c584a.png",
+      "screenshotURLs": [
+		"https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_9f22177082da22f0106660e0e6b47888e9983e71.600x338.jpg?t=1755250538",
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_ff81e563ccce81ce08814e166fa97cbcd5878242.600x338.jpg?t=1755250538",
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_e9153c0dc638a0dba73332e8c0b45118c71af255.600x338.jpg?t=1755250538",
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_26bf21743705697cfd058fd1c5dbd863e2259d3d.600x338.jpg?t=1755250538"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 153100000,
+      "version": "1.0.6",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.6/FeedtheDeep.-.v1.0.6.ipa",
+          "size": 153100000,
+          "version": "1.0.6",
+          "buildVersion": null,
+          "date": "2025-11-06T00:22:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Việt Hóa\n⚠️ Game tôi mua về cho anh em chơi. Nếu chơi dài lâu anh em mua game ủng hộ nhóm Việt Hóa nhé: Modviet (https://modviet.com/)",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-06T00:22:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.6/FeedtheDeep.-.v1.0.6.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Disable Network",
+      "type": 5,
+      "bundleIdentifier": "com.xognequm97.2lri168lcu",
+      "developerName": "Unknow",
+      "subtitle": "DisableNetwork – Chặn Kết Nối Mạng",
+      "localizedDescription": "🔧 Chức năng:\n🔒 Chặn kết nối mạng của ứng dụng\n⚠️ Khuyến nghị sử dụng với các game offline.",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 600000,
+      "version": "1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/disablenetwork/DisableNetwork.dylib",
+          "size": 600000,
+          "version": "1.0",
+          "buildVersion": "",
+          "date": "2025-11-06T00:20:00+07:00",
+          "localizedDescription": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-06T00:20:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/disablenetwork/DisableNetwork.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "iFaker",
+      "type": 5,
+      "bundleIdentifier": "com.6t52elatsp.1vs00gqpvs",
+      "developerName": "Unknow",
+      "subtitle": "iFaker – Giả Thông Tin Thiết Bị",
+      "localizedDescription": " Tính năng nổi bật:\n\n🌀 Fake phiên bản iOS\n🔢 Fake mã bản dựng\n📱 Fake phiên bản ứng dụng\n🧬 Fake mẫu máy\n⚠️ Gọi menu bằng cách giữ 4 ngón tay trên màn hình.",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 5700000,
+      "version": "1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/ifaker/iFaker.dylib",
+          "size": 5700000,
+          "version": "1.0",
+          "buildVersion": "",
+          "date": "2025-11-06T00:19:00+07:00",
+          "localizedDescription": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-06T00:19:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/ifaker/iFaker.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "60Parsecs",
       "type": 1,
       "bundleIdentifier": "com.robotgentleman.game60parsecs",
@@ -34,8 +138,8 @@
       "iconURL": "https://i.ibb.co/tTvsTKr2/7e75e520ebee.png",
       "screenshotURLs": [
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646270/ss_172697460ff9765c13d24fbd855a31d18bca26f1.600x338.jpg?t=1737718717",
-         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646270/ss_955db48613a34a2380d3e12b16fdadf3187ab69b.600x338.jpg?t=1737718717",
-         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646270/ss_3da32205b491968adf7954072da4cd33b89ef50d.600x338.jpg?t=1737718717"
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646270/ss_955db48613a34a2380d3e12b16fdadf3187ab69b.600x338.jpg?t=1737718717",
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646270/ss_3da32205b491968adf7954072da4cd33b89ef50d.600x338.jpg?t=1737718717"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -48,12 +152,12 @@
       "version": "1.3.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.3/60Parsecs.-.v1.3.3.ipa",
-          "size": 204300000,
           "version": "1.3.3",
-          "buildVersion": null,
           "date": "2025-11-05T23:52:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Việt Hóa\n⚠️ Game tôi mua về cho anh em chơi. Nếu chơi dài lâu anh em mua game ủng hộ nhóm Việt Hóa nhé: Modviet (https://modviet.com/)",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.3/60Parsecs.-.v1.3.3.ipa",
+          "size": 204300000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -63,7 +167,7 @@
     },
     {
       "beta": false,
-      "name": "Flow – Tiện Ích Cho Messenger",
+      "name": "Flow ",
       "type": 5,
       "bundleIdentifier": "com.6cpvn1nt8t.wblzyaa7va",
       "developerName": "Dayanch96/Flow",
@@ -85,12 +189,12 @@
       "version": "1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/flow.messenger/Flow_messenger.zip",
-          "size": 500000,
           "version": "1.0",
-          "buildVersion": "",
           "date": "2025-11-05T23:49:00+07:00",
           "localizedDescription": "🔧 Tính năng nổi bật:\n\n✅ Chặn quảng cáo\n📥 Tải story (nút 3 chấm)\n🚫 Chặn “đã xem” và “đang gõ”\n⚙️ Menu Flow: Cài Đặt → góc phải\n❗️ Nếu cần bản .deb, hãy tải từ repo gốc của tác giả.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/flow.messenger/Flow_messenger.zip",
+          "size": 500000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -100,7 +204,7 @@
     },
     {
       "beta": false,
-      "name": "Glow – Tiện Ích Cho Facebook",
+      "name": "Glow",
       "type": 5,
       "bundleIdentifier": "com.mtavc8tgbn.gbq2mhhbcm",
       "developerName": "Dayanch96/Glow",
@@ -122,12 +226,12 @@
       "version": "1.3.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/glow.facebook/Glow_facebook.zip",
-          "size": 1200000,
           "version": "1.3.1",
-          "buildVersion": "",
           "date": "2025-11-05T16:40:00+07:00",
           "localizedDescription": "🔗 Repo gốc: Dayanch96/Glow\n\n🔧 Tính năng nổi bật:\n\n✅ Chặn quảng cáo\n📥 Tải video/story (bấm giữ video)\n📂 Menu tùy chỉnh: bấm giữ nút Tab Menu, Trang chủ,...\n❗️ Nếu cần bản .deb, hãy tải từ repo gốc của tác giả.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/glow.facebook/Glow_facebook.zip",
+          "size": 1200000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -170,12 +274,12 @@
       "version": "3.9.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.9.1/Focus-Keeper-Pomodoro-Timer.ipa",
-          "size": 501500000,
           "version": "3.9.1",
-          "buildVersion": null,
           "date": "2025-11-05T20:03:00+07:00",
           "localizedDescription": "Focus Keeper – Pomodoro Timer IPA MOD v3.9.1 (Unlocked) iOS",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.9.1/Focus-Keeper-Pomodoro-Timer.ipa",
+          "size": 501500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -483,12 +587,12 @@
       "version": "2.1.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.1.1/VidList_2.1.1@vidlist.ipa",
-          "size": 21600000,
           "version": "2.1.1",
-          "buildVersion": null,
           "date": "2025-11-05T20:11:00+07:00",
           "localizedDescription": null,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.1.1/VidList_2.1.1@vidlist.ipa",
+          "size": 21600000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
@@ -1399,12 +1503,12 @@
       "version": "4.3.51",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.3.51/iScreen_Widgets_._Wallpaper_v4_3_51_Subscription_Unlocked_blatant.ipa",
-          "size": 400000000,
           "version": "4.3.51",
-          "buildVersion": null,
           "date": "2025-11-05T23:46:00+07:00",
           "localizedDescription": "⬆️ Updated to: 4.3.51\n🔧 Minimum iOS: 14.0\n✅ Patched\n💎 Modifier: Subscription Unlocked\n🔄 Tweaked by @blatants",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.3.51/iScreen_Widgets_._Wallpaper_v4_3_51_Subscription_Unlocked_blatant.ipa",
+          "size": 400000000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
@@ -1655,12 +1759,12 @@
       "version": "7.98.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.98.0/Duolingo_Language_Lessons_v7_98_0_Duolingo_MAX_Unlocked_blatant.ipa",
-          "size": 192400000,
           "version": "7.98.0",
-          "buildVersion": null,
           "date": "2025-11-05T23:38:00+07:00",
           "localizedDescription": "🔧 Minimum iOS: 16.0\n✅ Patched\n💎 Modifier: Duolingo MAX Unlocked\n🔄 Tweaked by @blatants\n\n📝 Note:\nSign-in with google/apple.\nIgnore any purchase banners all features should work.\nCredit to j4gm4g for providing the original script.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.98.0/Duolingo_Language_Lessons_v7_98_0_Duolingo_MAX_Unlocked_blatant.ipa",
+          "size": 192400000,
+          "buildVersion": null,
           "minOSVersion": "16.0"
         },
         {
