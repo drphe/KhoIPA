@@ -15,10 +15,15 @@ Yêu cầu: iOS 15.0 trở lên.
 
 
 [Instagram (by beebeo).](https://gist.github.com/beebeo/7b454b776577d7c0ac9c91a054cf50cb/raw/open-instagram-app.user.js)
+
 [YouTube (by asportnoy).](https://gist.githubusercontent.com/asportnoy/628b820184297f5fe296c1a5b79c8000/raw/open-youtube-app.user.js)
+
 [TikTok (by beebeo).](https://gist.github.com/beebeo/7b454b776577d7c0ac9c91a054cf50cb/raw/open-tiktok-app.user.js)
+
 [Reddit (by beebeo).](https://gist.github.com/beebeo/7b454b776577d7c0ac9c91a054cf50cb/raw/open-reddit-app.user.js)
-[Twitter (by beebeo).](https://gist.github.com/beebeo/7b454b776577d7c0ac9c91a054cf50cb/raw/open-twitter-app.user.js)
+
+[X-Twitter (by drphe95).](https://gist.githubusercontent.com/drphe/b83d375a26a1697c7beec96997cf7386/raw/7e62215474dab89fea1888185340231e57fc6fee/open-x-app.user.js)
+
 [Spotify (by beebeo).](https://gist.github.com/beebeo/7b454b776577d7c0ac9c91a054cf50cb/raw/open-spotify-app.user.js)
 
 
