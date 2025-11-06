@@ -12,7 +12,7 @@ export const AppHeader = (app) => app ? `
                 <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" alt="">
                 <div class="right">
                     <div class="text">
-                        <p class="title">${app.name}</p>
+                        <p class="title">${app.name} ${app.beta ? `<span class="small beta badge"></span>`:``}</p>
                         <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
