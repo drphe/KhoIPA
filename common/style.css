@@ -1313,6 +1313,9 @@ hr {
 
 .news-content {
     margin-bottom: 4rem;
+  white-space: normal;  
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
 }
 
 #news {
