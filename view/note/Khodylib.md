@@ -99,6 +99,7 @@ Hoạt động trên hầu hết trò chơi để chỉnh sửa giá trị mà t
 🐱 ImmortalizerTS (https://github.com/sergealagon/ImmortalizerTS)
 
 * 🔔Nguồn khác 
+
 📦 **Tải về:** [Thư mục mediafile](https://app.mediafire.com/folder/qlnbgj6n07d14)
 
 ---
@@ -128,7 +129,9 @@ Nhấn **"OK"** và bạn sẽ thấy chúng đã được thêm vào.
 ![ảnh 5](https://i.ibb.co/8gGn96JX/nh5.jpg)
 
 Sau đó, chỉ cần **"Sign"** (Ký) ứng dụng là bạn đã hoàn tất!
+
 ---
+
 ## 🗑️ Xóa Dylib/Debs
 
 Đôi khi các ứng dụng đã được tinh chỉnh (tweaked apps) đi kèm với những thứ rác rưởi không cần thiết (như các ứng dụng từ iosgods). Bạn có thể xóa những thứ không cần thiết như cửa sổ pop-up quảng cáo của iosgods theo cách tương tự.
