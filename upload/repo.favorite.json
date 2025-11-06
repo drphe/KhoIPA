@@ -2244,7 +2244,7 @@
       "appID": ""
     },
     {
-      "title": "Mở liên kết từ safari vào các app mod",
+      "title": "Mở liên kết từ safari vào app mod",
       "identifier": "molienketbangtusafari",
       "caption": "Cài đặt app mod sẽ bị thiếu tính năng hiển thị thông báo để mở liên kết bên trong ứng dụng khi vào bằng safari .",
       "date": "2025-11-04",
