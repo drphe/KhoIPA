@@ -23,6 +23,77 @@
   "apps": [
     {
       "beta": false,
+      "name": "Poker zmist",
+      "type": 2,
+      "bundleIdentifier": "com.byte3dz.poker",
+      "developerName": "IOSVN",
+      "subtitle": "Free Ipa",
+      "localizedDescription": "This app offers classic gameplay, full Facebook compatibility and an active community. You can compete against over 1 million other players worldwide. It's exciting Las Vegas style poker on the go!",
+      "versionDescription": "",
+      "tintColor": "#06ca16",
+      "iconURL": "https://i.ibb.co/XZGR3r2Q/9d1f318cb623.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/9b/3b/36/9b3b36e9-7e17-d909-bcc0-1bd6bda28052/94f25984-ce42-4dfa-b035-31f1f0530af5_09_v2.jpg/480x222bb.webp",
+         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/b7/d8/bb/b7d8bb7f-37b2-b464-19b0-bbea982c7591/13cbff95-adbb-488c-9c87-6c2ced6fb939_06_v2.jpg/480x222bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "Your data will be used to create a customized experience tailored to your interests."
+        }
+      },
+      "size": 59100000,
+      "version": "580",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v580/poker.zmist.-.v580.ipa",
+          "size": 59100000,
+          "version": "580",
+          "buildVersion": null,
+          "date": "2025-11-06T00:36:00+07:00",
+          "localizedDescription": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-06T00:36:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v580/poker.zmist.-.v580.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Immortalizer",
+      "type": 5,
+      "bundleIdentifier": "com.tr6v0z6daj.n59fnbg7na",
+      "developerName": "Unknow",
+      "subtitle": "Immortalizer - Chạy Nền Ứng Dụng",
+      "localizedDescription": "😀Hỗ trợ iOS 14 trở lên 😀Có thể cài đặt trên bất kỳ IPA nào mà không cần jailbreak hay TrollStore! 😀Phiên bản Troll: Tại đây (https://t.me/trollersteamvn/2688)\n\n😀Cài đặt 1️⃣ Không cần jailbreak hay TrollStore, vì vậy tất cả những gì bạn phải làm là inject dylib vào IPA mà bạn muốn nó hoạt động. 2️⃣ Bạn có thể sử dụng bất kỳ công cụ nào như Sideloadly, E-Sign hoặc thậm chí TrollFools để inject dylib vào ứng dụng. 😀Giải Thích Chức Năng :\n\nGiống như tinh chỉnh, nó có thể khiến ứng dụng luôn ở chế độ nền trước, tuy nhiên, bạn cần inject điều này vào ứng dụng mà bạn muốn luôn chạy nền.\nSẽ có một nút di chuyển nổi mà bạn có thể nhấn để bật Immortalizer\nGiống như phiên bản TrollStore, không có cách nào để buộc hiển thị thông báo. Việc buộc hiển thị thông báo hơi khó khăn, đặc biệt là đối với các ứng dụng hiển thị giao diện người dùng thông báo riêng khi ứng dụng của chúng được mở (ví dụ: WhatsApp).\n🐱 ImmortalizerTS (https://github.com/sergealagon/ImmortalizerTS)",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 300000,
+      "version": "1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/immortalizer/ImmortalizerJailed_arm.dylib",
+          "size": 300000,
+          "version": "1.0",
+          "buildVersion": "",
+          "date": "2025-11-06T00:35:00+07:00",
+          "localizedDescription": " ImmortalizerTS (https://github.com/sergealagon/ImmortalizerTS)",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-06T00:35:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/immortalizer/ImmortalizerJailed_arm.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "FeedtheDeep",
       "type": 2,
       "bundleIdentifier": "com.Luke-Muscat.FtD",
@@ -33,7 +104,7 @@
       "tintColor": "#f8b404",
       "iconURL": "https://i.ibb.co/pBpWZdVG/7c40d59c584a.png",
       "screenshotURLs": [
-		"https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_9f22177082da22f0106660e0e6b47888e9983e71.600x338.jpg?t=1755250538",
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_9f22177082da22f0106660e0e6b47888e9983e71.600x338.jpg?t=1755250538",
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_ff81e563ccce81ce08814e166fa97cbcd5878242.600x338.jpg?t=1755250538",
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_e9153c0dc638a0dba73332e8c0b45118c71af255.600x338.jpg?t=1755250538",
         "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2332260/ss_26bf21743705697cfd058fd1c5dbd863e2259d3d.600x338.jpg?t=1755250538"
@@ -46,12 +117,12 @@
       "version": "1.0.6",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.6/FeedtheDeep.-.v1.0.6.ipa",
-          "size": 153100000,
           "version": "1.0.6",
-          "buildVersion": null,
           "date": "2025-11-06T00:22:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Việt Hóa\n⚠️ Game tôi mua về cho anh em chơi. Nếu chơi dài lâu anh em mua game ủng hộ nhóm Việt Hóa nhé: Modviet (https://modviet.com/)",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.6/FeedtheDeep.-.v1.0.6.ipa",
+          "size": 153100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -79,12 +150,12 @@
       "version": "1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/disablenetwork/DisableNetwork.dylib",
-          "size": 600000,
           "version": "1.0",
-          "buildVersion": "",
           "date": "2025-11-06T00:20:00+07:00",
           "localizedDescription": null,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/disablenetwork/DisableNetwork.dylib",
+          "size": 600000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -112,12 +183,12 @@
       "version": "1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/ifaker/iFaker.dylib",
-          "size": 5700000,
           "version": "1.0",
-          "buildVersion": "",
           "date": "2025-11-06T00:19:00+07:00",
           "localizedDescription": null,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/ifaker/iFaker.dylib",
+          "size": 5700000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
