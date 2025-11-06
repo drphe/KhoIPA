@@ -2235,7 +2235,7 @@
 	{
       "title": "Free Sideloading bằng DNS",
       "identifier": "freesideloading",
-      "caption": "Sử dụng cert đã revoke và DNS để free sideloading",
+      "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
       "date": "2025-11-06",
       "tintColor": "#506471",
       "imageURL": "https://i.ibb.co/HfmTKwTN/z7195710253717-ac7ce5f82fd1608a073fdcca2adf1fc4.jpg",
@@ -2334,7 +2334,7 @@
     {
       "title": "Hướng dẫn sử dụng Dylib/Deb",
       "identifier": "share-dylib",
-      "caption": "Cách dùng Dylib/Deb để buil IPA mod.",
+      "caption": "Nguồn tải và cách tiêm  Dylib/Deb để tự build IPA mod khi không có sẵn.",
       "date": "2025-11-06",
       "tintColor": "#33DB5D",
       "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
