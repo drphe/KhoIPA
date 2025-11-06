@@ -2294,7 +2294,7 @@
       "date": "2025-10-14",
       "tintColor": "#DB7F33",
       "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
-      "notify": true,
+      "notify": false ,
       "url": "chongthuhoicc.md",
       "appID": "com.example.app"
     },
@@ -2332,13 +2332,13 @@
       "appID": "com.trollstore.app"
     },
     {
-      "title": "Chia sẻ *.dylib, *.deb",
+      "title": "Hướng dẫn sử dụng Dylib/Deb",
       "identifier": "share-dylib",
-      "caption": "Chia sẻ kho .dylib, .deb được sưu tầm hoặc tự build để tiêm cho IPA.",
-      "date": "2025-10-09",
+      "caption": "Cách dùng Dylib/Deb để buil IPA mod.",
+      "date": "2025-11-6",
       "tintColor": "#33DB5D",
       "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
-      "notify": false,
+      "notify": true ,
       "url": "Khodylib.md",
       "appID": "com.dylib.app"
     }
