@@ -559,7 +559,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     // show popup
     setTimeout(() => bottomPanel.classList.add("show"), 50); // show when everything ready
     document.body.classList.add('no-scroll');
-    waitForAllImagesToLoad(bottomPanel);
+    waitForAllImagesToLoad(bottomPanel.querySelector("#screenshots"));
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
     closeBottom.addEventListener("click", closePanel);
