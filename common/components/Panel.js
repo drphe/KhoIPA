@@ -119,7 +119,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
       </div>
       <div id="title" class="hidden">
         <img id="app-icon" src="${altSourceIcon}" onerror="this.onerror=null; this.src='${altSourceIcon}';" alt="generic-app-icon">
-        <p>DolphiniOS (Public Beta)</p>
+        <p>DolphiniOS</p>
       </div>
       <a href="#" class="install hidden">
         <button class="uibutton">Get</button>
@@ -389,7 +389,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         let appCount = 0;
         let altSourceTintColor = "var(--tint-color);";
         for (const app of jsons.apps) {
-            if (app.beta || app.patreon?.hidden) continue;
+            if (app.patreon?.hidden) continue;
             let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
             if (appVersionDate > lastUpdated) {
                 lastUpdated = appVersionDate;
@@ -575,7 +575,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
 export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, scrollTarget) {
         const appsContainer = document.getElementById('apps-list');
         if (!appsContainer) return;
-        const allApps = source.apps.filter(app => !app.beta);
+        const allApps = source.apps;
         let filteredApps = [...allApps];
         let currentIndex = 0;
 
