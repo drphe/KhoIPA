@@ -32,7 +32,9 @@ Việc sử dụng DNS sẽ chặn một số dịch vụ đặc thù của Appl
 (Lưu ý: điều này chỉ xảy ra khi dùng **khomod DNS**).  
 
 ### Ứng dụng bị crash
-Nếu ESign và các ứng dụng sideload bắt đầu bị crash khi mở, đây là lỗi đã biết. Cách khắc phục duy nhất là **xóa toàn bộ ứng dụng bị crash và cài lại bằng chứng chỉ khác**. (Cách tốt nhất để tránh là bật **chế độ máy bay** trước khi khởi động lại thiết bị).  
+
+Nếu ESign và các ứng dụng sideload bắt đầu bị crash khi mở, đây là lỗi đã biết. Cách khắc phục duy nhất là **xóa toàn bộ ứng dụng bị crash và cài lại bằng chứng chỉ khác**. (Cách tốt nhất để tránh là bật **chế độ máy bay** trước khi khởi động lại thiết bị).
+
 ---
 
 ## Hướng dẫn nhanh cho người mới  
@@ -49,7 +51,7 @@ Nếu ESign và các ứng dụng sideload bắt đầu bị crash khi mở, đ�
 
 ### Lưu ý quan trọng (Disclaimer)  
 DNS này đã được tạo sẵn và **mọi DNS đều có thể theo dõi hoạt động internet của bạn**! Bạn có thể sử dụng nếu muốn, nhưng hãy biết rằng người tạo DNS có khả năng theo dõi nhật ký internet của bạn.  
-
+---
 ## Hướng dẫn tạo DNS của riêng bạn**  *(Đã bỏ DNS dựng sẵn)*  
 
 ### Dùng NextDNS
