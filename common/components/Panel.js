@@ -700,7 +700,7 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
                 let html = `
             <div class="app-container">
                 ${AppHeader(app, ".")}
-                <p class="subtitle sub-version">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? ""}</p>
+                <p class="subtitle sub-version">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? "Unknown"}</p>
                 <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
                 if (checkArray(app.screenshots) && isScreenshot) {
                     html += `<div class="screenshots">`;
