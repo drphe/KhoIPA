@@ -230,7 +230,8 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         // Icon
         appHeader.querySelector("img").src = app.iconURL;
         // App name
-        appHeader.querySelector(".title").innerHTML = app.name +  app.beta ? `<span class="small beta badge"></span>`:``;
+        appHeader.querySelector(".title").innerHTML = 
+  app.name + (app.beta ? `<span class="small beta badge"></span>` : ``);
         // Developer name
         appHeader.querySelector(".subtitle").textContent = app.developerName;
         // 
