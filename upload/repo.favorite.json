@@ -2232,6 +2232,17 @@
     }
   ],
   "news": [
+	{
+      "title": "Free Sideloading bằng DNS",
+      "identifier": "freesideloading",
+      "caption": "Sử dụng cert đã revoke và DNS để free sideloading",
+      "date": "2025-11-6",
+      "tintColor": "#506471",
+      "imageURL": "https://i.ibb.co/HfmTKwTN/z7195710253717-ac7ce5f82fd1608a073fdcca2adf1fc4.jpg",
+      "notify": true,
+      "url": "freesideloading.md",
+      "appID": ""
+    },
     {
       "title": "Mở liên kết từ safari vào các app mod",
       "identifier": "molienketbangtusafari",
