@@ -49,10 +49,11 @@ Nếu ESign và các ứng dụng sideload bắt đầu bị crash khi mở, đ�
 - Nhập chứng chỉ vào Esign  
 - Hoàn tất ✅  
 
-### Lưu ý quan trọng (Disclaimer)  
+### Lưu ý quan trọng (Disclaimer)
 DNS này đã được tạo sẵn và **mọi DNS đều có thể theo dõi hoạt động internet của bạn**! Bạn có thể sử dụng nếu muốn, nhưng hãy biết rằng người tạo DNS có khả năng theo dõi nhật ký internet của bạn.  
+
 ---
-## Hướng dẫn tạo DNS của riêng bạn**  *(Đã bỏ DNS dựng sẵn)*  
+## Hướng dẫn tạo DNS của riêng bạn  *(Đã bỏ DNS dựng sẵn)*  
 
 ### Dùng NextDNS
 Khi bạn tự tạo DNS, có nhiều dịch vụ để lựa chọn (hoặc tự host server). Tôi khuyên dùng **NextDNS**.  
