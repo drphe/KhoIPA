@@ -3,7 +3,6 @@ import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, op
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
 export function main(callback, fallbackURL = "../../") {
-
     // If no source
     if (!urlSearchParams.has('source')) {
         open(fallbackURL);
@@ -15,108 +14,93 @@ export function main(callback, fallbackURL = "../../") {
         open(fallbackURL);
         return;
     }
-
     var apps;
-    window.setApps = array =>
-        apps = array;
-    window.getAppWithBundleId = bundleId =>
-        apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
-
+    window.setApps = array => apps = array;
+    window.getAppWithBundleId = bundleId => apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
     setUpBackButton();
-
-    fetch(sourceURL)
-        .then(response => response.json())
-        .then(source => {
-	    const json = consolidateApps(source)
-            // Set tint color
-            const tintColor = json.tintColor?.replaceAll("#", "");
-            if (tintColor) setTintColor(tintColor);
-    	    insertAltStoreBanner(json.name);
-	    const supportType = detectSupport(source.apps[0]);
-		console.log(supportType)
-	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
-	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
-    		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
-		const link = document.querySelector(".add");
-		      if(supportType === 'both'){
-		      	link.href = isEsignVisible ?`feather://source/${sourceURL}`: `esign://addsource?url=${sourceURL}`;
-		     }else {
-			  const installAppAlert = new UIAlert({
-            			title: `${json.name} ONLY support ${supportType}`
-        		  });
-        		installAppAlert.addAction({
-            			title: "Add to "+supportType,
-            			style: 'default',
-            			handler: supportType == "Esign"?open(`esign://install?url=${sourceURLL}`):open(`feather://source/${sourceURL}`)
-        		});
-        		installAppAlert.addAction({
-            			title: "Cancel",
-            			style: 'cancel',
-        		});
-		    }
-	    });
-
-            setApps(json.apps);
-            callback(json);
-            // loaded();
-            waitForAllImagesToLoad();
-        })
-        .catch(error => {
-            alert(error);
-            open(`${fallbackURL}?source=${sourceURL}`);
+    fetch(sourceURL).then(response => response.json()).then(source => {
+        const json = consolidateApps(source)
+        // Set tint color
+        const tintColor = json.tintColor?.replaceAll("#", "");
+        if (tintColor) setTintColor(tintColor);
+        insertAltStoreBanner(json.name);
+        const supportType = detectSupport(source.apps[0]);
+        const installAppAlert = new UIAlert({
+            title: `${json.name} ONLY support ${supportType}`
         });
-    function detectSupport(app) {
-  	const supportsESign = !!(app.versionDate || app.fullDate);
-  	const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
-  	const hasFeatherMinimalRoot = typeof app.bundleIdentifier === "string" && typeof app.version === "string" && typeof app.downloadURL === "string";
-  	const supportsFeather = hasVersionsArray || hasFeatherMinimalRoot;
-
-  	if (supportsESign && supportsFeather) return "both";
-  	if (supportsESign) return "Esign";
-  	if (supportsFeather) return "Feather";
-  	return "both";
-    }
-    function waitForAllImagesToLoad() {
-    const allImages = document.querySelectorAll("img");
-    let count = 0;
-    const total = allImages.length;
-
-    if (total === 0) {
-        loaded();
-        return;
-    }
-
-    allImages.forEach((image) => {
-        const newImage = new Image(); // same as document.createElement("img")
-
-        // Khi ảnh load xong hoặc lỗi, đều gọi imageLoaded()
-        newImage.onload = imageLoaded;
-        newImage.onerror = () => {
-            // Xử lý fallback cho ảnh lỗi
-            if (image.id === "app-icon") {
-                image.src = `${fallbackURL}common/assets/img/generic_app.jpeg`;
-            } else {
-                image.remove();
-            }
-            imageLoaded();
-        };
-
-        // Bắt đầu tải
-        newImage.src = image.src;
+        installAppAlert.addAction({
+            title: "Add to " + supportType,
+            style: 'default',
+            handler: supportType == "Esign" ? open(`esign://install?url=${sourceURLL}`) : open(`feather://source/${sourceURL}`)
+        });
+        installAppAlert.addAction({
+            title: "Cancel",
+            style: 'cancel',
+        });
+        document.getElementById('add-to-altstore').addEventListener('click', function(event) {
+            const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
+            const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
+            const link = document.querySelector(".add");
+            if (supportType === 'both') {
+                link.href = isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`;
+            } else installAppAlert.present();
+        });
+        setApps(json.apps);
+        callback(json);
+        // loaded();
+        waitForAllImagesToLoad();
+    }).catch(error => {
+        alert(error);
+        open(`${fallbackURL}?source=${sourceURL}`);
     });
 
-
-    function imageLoaded() {
-        count++;
-        if (count === total) loaded();
+    function detectSupport(app) {
+        const supportsESign = !!(app.versionDate || app.fullDate);
+        const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
+        const hasFeatherMinimalRoot = typeof app.bundleIdentifier === "string" && typeof app.version === "string" && typeof app.downloadURL === "string";
+        const supportsFeather = hasVersionsArray || hasFeatherMinimalRoot;
+        if (supportsESign && supportsFeather) return "both";
+        if (supportsESign) return "Esign";
+        if (supportsFeather) return "Feather";
+        return "both";
     }
-    setTimeout(() => {
-    if (count < total) loaded();
-}, 3000); // sau 3 giây thì ép hoàn tất
-}
 
-function loaded() {
-    document.body.classList.remove("loading");
-    document.getElementById("loading")?.remove();
-}
+    function waitForAllImagesToLoad() {
+        const allImages = document.querySelectorAll("img");
+        let count = 0;
+        const total = allImages.length;
+        if (total === 0) {
+            loaded();
+            return;
+        }
+        allImages.forEach((image) => {
+            const newImage = new Image(); // same as document.createElement("img")
+            // Khi ảnh load xong hoặc lỗi, đều gọi imageLoaded()
+            newImage.onload = imageLoaded;
+            newImage.onerror = () => {
+                // Xử lý fallback cho ảnh lỗi
+                if (image.id === "app-icon") {
+                    image.src = `${fallbackURL}common/assets/img/generic_app.jpeg`;
+                } else {
+                    image.remove();
+                }
+                imageLoaded();
+            };
+            // Bắt đầu tải
+            newImage.src = image.src;
+        });
+
+        function imageLoaded() {
+            count++;
+            if (count === total) loaded();
+        }
+        setTimeout(() => {
+            if (count < total) loaded();
+        }, 3000); // sau 3 giây thì ép hoàn tất
+    }
+
+    function loaded() {
+        document.body.classList.remove("loading");
+        document.getElementById("loading")?.remove();
+    }
 }
