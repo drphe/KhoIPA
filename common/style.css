@@ -159,6 +159,9 @@ body {
     }
    .grid_news>.news-item-wrapper {
 	margin:1rem;
+	display: grid;
+        align-items: center;
+        align-content: space-between;
     }
     .app-container,
     .app-header-container {
