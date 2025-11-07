@@ -1,5 +1,6 @@
 import { urlSearchParams, sourceURL } from "./constants.js";
 import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
+import UIAlert from "../vendor/uialert.js/uialert.js";
 
 export function main(callback, fallbackURL = "../../") {
 
@@ -30,13 +31,29 @@ export function main(callback, fallbackURL = "../../") {
             // Set tint color
             const tintColor = json.tintColor?.replaceAll("#", "");
             if (tintColor) setTintColor(tintColor);
-    insertAltStoreBanner(json.name);
-		
+    	    insertAltStoreBanner(json.name);
+	    const supportType = detectSupport(source.apps[0]);
+
 	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
 	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
     		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
 		const link = document.querySelector(".add");
-		      link.href = isEsignVisible ?`feather://source/${sourceURL}`: `esign://addsource?url=${sourceURL}`;
+		      if(supportType == 'both'){
+		      	link.href = isEsignVisible ?`feather://source/${sourceURL}`: `esign://addsource?url=${sourceURL}`;
+		     }else {
+			  const installAppAlert = new UIAlert({
+            			title: `${json.name} ONLY support ${supportType}`
+        		  });
+        		installAppAlert.addAction({
+            			title: "Add to "+supportType,
+            			style: 'default',
+            			handler: supportType == "Esign"?open(`esign://install?url=${app.downloadURL}`):open(`feather://source/${app.downloadURL}`)
+        		});
+        		installAppAlert.addAction({
+            			title: "Cancel",
+            			style: 'cancel',
+        		});
+		    }
 	    });
 
             setApps(json.apps);
@@ -48,7 +65,17 @@ export function main(callback, fallbackURL = "../../") {
             alert(error);
             open(`${fallbackURL}?source=${sourceURL}`);
         });
+    function detectSupport(app) {
+  	const supportsESign = !!(app.versionDate || app.fullDate);
+  	const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
+  	const hasFeatherMinimalRoot = typeof app.bundleIdentifier === "string" && typeof app.version === "string" && typeof app.downloadURL === "string";
+  	const supportsFeather = hasVersionsArray || hasFeatherMinimalRoot;
 
+  	if (supportsESign && supportsFeather) return "both";
+  	if (supportsESign) return "Esign";
+  	if (supportsFeather) return "Feather";
+  	return "both";
+    }
     function waitForAllImagesToLoad() {
     const allImages = document.querySelectorAll("img");
     let count = 0;
