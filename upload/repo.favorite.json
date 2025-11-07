@@ -58,12 +58,12 @@
       "version": "1.2.7",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27/TDS.-.DVC.IPA.-.v1.2.7.ipa",
-          "size": 150900000,
           "version": "1.2.7",
-          "buildVersion": null,
           "date": "2025-11-07T05:13:00+07:00",
           "localizedDescription": "🦠 Tính Năng Hack 🦠\n\n✅ Vô hạn Tiền tệ(vàng,kim cương, energy,skip ads… và 1 số tài nguyên khác) -> càng dùng càng tăng\n✅ Vô hạn vài Mảnh nâng cấp -> càng dùng càng tăng\nNote: 1 số tài nguyên không vô hạn nhé ae",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27/TDS.-.DVC.IPA.-.v1.2.7.ipa",
+          "size": 150900000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -101,12 +101,12 @@
       "version": "1.315.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.315.0.1/Candy-Crush-Saga.ipa",
-          "size": 114000000,
           "version": "1.315.0",
-          "buildVersion": null,
           "date": "2025-11-07T05:06:00+07:00",
           "localizedDescription": "⚙️Features🎆\n\n🌐 Infinite Lives🕓\n🌐 Infinite Boosters🕓\n🌐Infinite Moves🕓",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.315.0.1/Candy-Crush-Saga.ipa",
+          "size": 114000000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -2192,7 +2192,7 @@
       "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
       "date": "2025-11-06",
       "tintColor": "#506471",
-      "imageURL": "https://i.ibb.co/3m9g8FQ2/IMG-3237.jpg",
+      "imageURL": "https://i.ibb.co/QjPgF9bm/68000b213884.png",
       "notify": true,
       "url": "freesideloading.md",
       "appID": ""
@@ -2269,7 +2269,7 @@
       "caption": "Bài hướng dẫn cài đặt ứng dụng ngoài Apple store (file .IPA) không cần Jailbreak.",
       "date": "2025-10-13",
       "tintColor": "#0D6EC9",
-      "imageURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
+      "imageURL": "https://i.ibb.co/7M2LJky/bbf482dce6d7.png",
       "notify": false,
       "url": "caidatipa.md",
       "appID": "com.feather.app"
@@ -2280,7 +2280,7 @@
       "caption": "Hướng dẫn bật chế độ Nhà phát triển (Developer Mode)",
       "date": "2025-10-11",
       "tintColor": "#D73C3C",
-      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/logo/logocertapple.png",
+      "imageURL": "https://i.ibb.co/ymPXL6fH/cd8acd8b9e50.png",
       "notify": true,
       "url": "developermod.md",
       "appID": "com.example.app"

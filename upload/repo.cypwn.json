@@ -15,6 +15,54 @@
   "apps": [
     {
       "beta": false,
+      "name": "Discord + Kettu",
+      "type": 1,
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "Discord + Kettu x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "KettuTweak",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Discord + Kettu/discord-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 89128960,
+      "version": "302.0",
+      "versions": [
+        {
+          "version": "302.0",
+          "date": "2025-11-06",
+          "size": 89128960,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
+          "localizedDescription": "KettuTweak"
+        },
+        {
+          "version": "228.1",
+          "date": "2024-05-10",
+          "size": 98566144,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
+          "localizedDescription": "Discord mod."
+        },
+        {
+          "version": "224.0",
+          "date": "2024-04-10",
+          "size": 96468992,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
+          "localizedDescription": "Another one! Bestest Discord client"
+        }
+      ],
+      "versionDate": "2025-11-06",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "NeoFreeBird - Twitter - X",
       "type": 1,
       "bundleIdentifier": "com.atebits.Tweetie2",
@@ -118,54 +166,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/iTorrent.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Discord BTLoader (Ketu)",
-      "type": 1,
-      "bundleIdentifier": "com.hammerandchisel.discord",
-      "developerName": "Discord BTLoader (Ketu) x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "BTLoader + Ketu",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Discord BTLoader (Ketu)/discord-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 94371840,
-      "version": "301.0",
-      "versions": [
-        {
-          "version": "301.0",
-          "date": "2025-10-19",
-          "size": 94371840,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
-          "localizedDescription": "BTLoader + Ketu"
-        },
-        {
-          "version": "228.1",
-          "date": "2024-05-10",
-          "size": 98566144,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
-          "localizedDescription": "Discord mod."
-        },
-        {
-          "version": "224.0",
-          "date": "2024-04-10",
-          "size": 96468992,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
-          "localizedDescription": "Another one! Bestest Discord client"
-        }
-      ],
-      "versionDate": "2025-10-19",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
       "patreon": {}
     },
     {
@@ -6179,6 +6179,16 @@
   ],
   "news": [
     {
+      "title": "Discord + Kettu now available!",
+      "identifier": "cypwn.Discord + Kettu.302.0",
+      "caption": "Discord + Kettu added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
+      "date": "2025-11-06",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
       "title": "NeoFreeBird - Twitter - X now available!",
       "identifier": "cypwn.NeoFreeBird - Twitter - X.11.33",
       "caption": "NeoFreeBird - Twitter - X added to the CyPwn Library",
@@ -6205,16 +6215,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/iTorrent.png",
       "date": "2025-10-25",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Discord BTLoader (Ketu) now available!",
-      "identifier": "cypwn.Discord BTLoader (Ketu).301.0",
-      "caption": "Discord BTLoader (Ketu) added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
-      "date": "2025-10-19",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
