@@ -369,7 +369,7 @@ input[type="text"]:focus {
 }
 
 #news .item .image-wrapper {
-    max-height: 15.15em;
+    max-height: 12em;
     overflow: hidden;
 }
 
