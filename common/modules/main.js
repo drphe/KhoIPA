@@ -26,10 +26,11 @@ export function main(callback, fallbackURL = "../../") {
         insertAltStoreBanner(json.name);
         const supportType = detectSupport(source.apps[0]);
         const installAppAlert = new UIAlert({
-            title: `${json.name} ONLY support ${supportType}`
+            title: ` Add to ${supportType}`,
+            message: "${json.name} format ONLY support for ${supportType} app."
         });
         installAppAlert.addAction({
-            title: "Add to " + supportType,
+            title: "Agree",
             style: 'default',
             handler: supportType == "Esign" ? open(`esign://install?url=${sourceURLL}`) : open(`feather://source/${sourceURL}`)
         });
