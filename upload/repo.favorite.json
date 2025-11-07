@@ -23,6 +23,99 @@
   "apps": [
     {
       "beta": false,
+      "name": "TDS - Tower Destiny Survive",
+      "type": 2,
+      "bundleIdentifier": "com.playstrom.hero.tower",
+      "developerName": "DVC",
+      "subtitle": "Tower Destiny Survive - Menu v2",
+      "localizedDescription": "👑KING OF THE CASTLE\n\nWell technically it’s a tower, but still. It’s yours, as long as you can keep the zombies away from it in this tower defense strategy game. It appears the zombie apocalypse is upon us based on how many of them are roaming the streets, so keep your gun nearby as you work to build your tower and keep it moving despite the waves of zombies.",
+      "versionDescription": "",
+      "tintColor": "#c3783b",
+      "iconURL": "https://i.ibb.co/6JV0kXJr/ff70b9e09cb3.png",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/UYBJBH-n_kAU-KltT9kyzavnlYyH9fl8BSN0rNKAaeVp4INrPkXxQ_17nqIUlkR2HNml=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/XdjTU3PD4MvGCiQPXw7O242mMoX2Yow5R7EOxBbAME5spowQQ3PdkP-fhO8pEq80Dw=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/c4ibamxJ8wGNrnbLs0UPk0NUiLTAULsThsifCjnerxNmKNQXM2PtB9QXptGL42TCCdg=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/7Cq_L_DiTQaCZ9QOQYMxBSj1TosxR72ypTZC7plKMm_zaq3YTsopY3UOFJK-bAP65E10=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/AuRaBSA5ZkQQqQPfUoHiDy7ot74fFvRqqAH2gOFVH5iaGeMLizxGPI2Y5xXLDaphVK8=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/PNeKzbsLZ84MmDvV9_En6qJ7R861V2ptvyXUd4zdcCA2sTUIxpVW1JEPpzjZ7KgItw=w1052-h592-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://tracksaygames.io",
+          "NSCalendarsUsageDescription": "This app does not use the calendar.",
+          "NSCameraUsageDescription": "This app does not use the camera.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "This app does not use the location.",
+          "NSLocationAlwaysUsageDescription": "This app does not use the location.",
+          "NSLocationWhenInUseUsageDescription": "This app does not use the location.",
+          "NSMotionUsageDescription": "This app does not use the accelerometer.",
+          "NSPhotoLibraryUsageDescription": "This app does not use the photo library.",
+          "NSUserTrackingUsageDescription": "This will only be used to serve more relevant ads."
+        }
+      },
+      "size": 150900000,
+      "version": "1.2.7",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27/TDS.-.DVC.IPA.-.v1.2.7.ipa",
+          "size": 150900000,
+          "version": "1.2.7",
+          "buildVersion": null,
+          "date": "2025-11-07T05:13:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n\n✅ Vô hạn Tiền tệ(vàng,kim cương, energy,skip ads… và 1 số tài nguyên khác) -> càng dùng càng tăng\n✅ Vô hạn vài Mảnh nâng cấp -> càng dùng càng tăng\nNote: 1 số tài nguyên không vô hạn nhé ae",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-07T05:13:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27/TDS.-.DVC.IPA.-.v1.2.7.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "CandyCrushSaga",
+      "type": 2,
+      "bundleIdentifier": "com.midasplayer.apps.candycrushsaga",
+      "developerName": "IPAomtk.com",
+      "subtitle": "Candy Crush Saga IPA MOD",
+      "localizedDescription": "Play the sweetest game...\nPlay Candy Crush Saga and switch and match your way through hundreds of levels in this divine puzzle adventure. Join Tiffi and Mr. Toffee on their epic journey in an online game full of delicious treats! Ain't it the sweetest game ever?",
+      "versionDescription": "",
+      "tintColor": "#fc8c04",
+      "iconURL": "https://i.ibb.co/Fb6LmHRZ/f3d4245b6b7d.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5a/97/9b/5a979b6c-6be3-4fe9-2714-e0a52c7c9bd2/449f041f-b94d-44a0-b428-c213c65c9e53_v4-candies_478284_423160_CCS_Creative_Results_First_Screenshots_Nov_23_sta_ios-XS_1242x2688_4.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/ff/3e/37ff3e32-1012-83f2-5804-8c35f4010ad5/b3ae2543-a3e9-4195-9ec8-ceacf068f596_479855_CCS_Rewording_Taglines_Screenshots_Nov_23_route4_sta_ios-XS_1242x2688_1.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a1/74/e5/a174e512-361c-721d-e725-1128fa9a42ca/e97cabb9-bbfa-4c51-98f9-2a0ed2c38288_479855_CCS_Rewording_Taglines_Screenshots_Nov_23_route4_sta_ios-XS_1242x2688_2.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/ab/2b/61ab2b33-0290-d9d0-4ab1-6cb8bbaaf09e/a21a85ef-cd10-4b48-8045-7ef465d02139_479855_CCS_Rewording_Taglines_Screenshots_Nov_23_route4_sta_ios-XS_1242x2688_4.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/c1/0a/f5c10afd-050b-82f0-15a9-424ea796a1c5/404d4d7b-381c-4b0d-803c-23b687485be2_479855_CCS_Rewording_Taglines_Screenshots_Nov_23_route4_sta_ios-XS_1242x2688_3.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/72/a5/2072a5b8-c033-e9ae-4798-efa674700fa9/f0f436a0-a294-4277-b302-ad3e1d539e6d_Copy_of_285580_ccs_lt_aso-true-to-gameplay-ss_sta_ios-XS_1242x2688_6.jpg/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSUserTrackingUsageDescription": "Allow tracking to save your progress when signing in with third parties, and get personalized ads in this app and ads for our games in other apps."
+        }
+      },
+      "size": 114000000,
+      "version": "1.315.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.315.0.1/Candy-Crush-Saga.ipa",
+          "size": 114000000,
+          "version": "1.315.0",
+          "buildVersion": null,
+          "date": "2025-11-07T05:06:00+07:00",
+          "localizedDescription": "⚙️Features🎆\n\n🌐 Infinite Lives🕓\n🌐 Infinite Boosters🕓\n🌐Infinite Moves🕓",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-07T05:06:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.315.0.1/Candy-Crush-Saga.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Poker zmist",
       "type": 2,
       "bundleIdentifier": "com.byte3dz.poker",
@@ -34,7 +127,7 @@
       "iconURL": "https://i.ibb.co/XZGR3r2Q/9d1f318cb623.png",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/9b/3b/36/9b3b36e9-7e17-d909-bcc0-1bd6bda28052/94f25984-ce42-4dfa-b035-31f1f0530af5_09_v2.jpg/480x222bb.webp",
-         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/b7/d8/bb/b7d8bb7f-37b2-b464-19b0-bbea982c7591/13cbff95-adbb-488c-9c87-6c2ced6fb939_06_v2.jpg/480x222bb.webp"
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/b7/d8/bb/b7d8bb7f-37b2-b464-19b0-bbea982c7591/13cbff95-adbb-488c-9c87-6c2ced6fb939_06_v2.jpg/480x222bb.webp"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -46,12 +139,12 @@
       "version": "580",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v580/poker.zmist.-.v580.ipa",
-          "size": 59100000,
           "version": "580",
-          "buildVersion": null,
           "date": "2025-11-06T00:36:00+07:00",
           "localizedDescription": null,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v580/poker.zmist.-.v580.ipa",
+          "size": 59100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -79,12 +172,12 @@
       "version": "1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/immortalizer/ImmortalizerJailed_arm.dylib",
-          "size": 300000,
           "version": "1.0",
-          "buildVersion": "",
           "date": "2025-11-06T00:35:00+07:00",
           "localizedDescription": " ImmortalizerTS (https://github.com/sergealagon/ImmortalizerTS)",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/immortalizer/ImmortalizerJailed_arm.dylib",
+          "size": 300000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -792,145 +885,6 @@
       ],
       "versionDate": "2024-02-10T09:00:00-08:00",
       "downloadURL": "https://files.thatstel.la/mainsitesw/BatteryWebhook/AltStoreSideStoreIPAs/BatteryWebhook1.3-NoWatch.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "SideStore",
-      "type": 4,
-      "bundleIdentifier": "com.SideStore.SideStore",
-      "developerName": "SideStore Team",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "SideStore is an alternative app store for non-jailbroken devices. \n\nSideStore allows you to sideload other .ipa files and apps from the Files app or via the SideStore Library \n https://apps.sidestore.io/",
-      "versionDescription": "",
-      "tintColor": "#A405FA",
-      "iconURL": "https://apps.sidestore.io/apps/sidestore/v0.1.1/icon.png",
-      "screenshotURLs": [
-        "https://apps.sidestore.io/apps/sidestore/v0.1.1/browse-dark.png",
-        "https://apps.sidestore.io/apps/sidestore/v0.1.1/apps-dark.png",
-        "https://apps.sidestore.io/apps/sidestore/v0.1.1/news-dark.png",
-        "https://apps.sidestore.io/apps/sidestore/v0.1.1/browse-light.png",
-        "https://apps.sidestore.io/apps/sidestore/v0.1.1/apps-light.png",
-        "https://apps.sidestore.io/apps/sidestore/v0.1.1/news-light.png"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 28873303,
-      "version": "0.6.2",
-      "versions": [
-        {
-          "version": "0.6.2",
-          "date": "2025-07-01T01:20:17Z",
-          "localizedDescription": "# Build Info\nBuilt at (UTC): `Tue Jul  1 01:20:17 2025`\nBuilt at (UTC date): `2025-07-01`\nCommit SHA: `685d9567752c6b7396304f8b64f0f713f52cf936`\nVersion: `0.6.2`\n\n## What's Changed\n* Rebase 2.0 wip by @nythepegasus in https://github.com/SideStore/SideStore/pull/794\n* [Refresh]: Remove install stuffs from refresh since in refresh should only renew provisioning profiles by @mahee96 in https://github.com/SideStore/SideStore/pull/846\n* [Settings]: Fix: DisableAppLimit switch reverting back to off state even if on iOS where sparseRestore is not patched yet by @mahee96 in https://github.com/SideStore/SideStore/pull/850\n* Update trustedapps.json by @neoarz in https://github.com/SideStore/SideStore/pull/853\n* [Backup]: Fix: update logic during install missed since override keyword was missing by @mahee96 in https://github.com/SideStore/SideStore/pull/857\n* Fix Repository App Previews by @neoarz in https://github.com/SideStore/SideStore/pull/871\n* Feature: Bulk sources-add in sources screen with capability to stage them before persisting into database by @mahee96 in https://github.com/SideStore/SideStore/pull/888\n* Version 0.6.0: CoreData Migrations fix including xcdatamodels and xcmappingmodels by @mahee96 in https://github.com/SideStore/SideStore/pull/894\n* Feature: Render in-app update description as (full) markdown by @mahee96 in https://github.com/SideStore/SideStore/pull/897\n* fix: typo in hasUpdate comparison by @l2dy in https://github.com/SideStore/SideStore/pull/900\n* Update SettingsViewController.swift by @neoarz in https://github.com/SideStore/SideStore/pull/915\n* WIP: Fixes for migration issues when migrating from 0.5.9 to 0.6.0  by @mahee96 in https://github.com/SideStore/SideStore/pull/920\n* Fix typo \"levaraging\" -> \"leveraging\" by @lafrenierejm in https://github.com/SideStore/SideStore/pull/926\n* Added StosVPN to the EM Proxy part. by @Br0des in https://github.com/SideStore/SideStore/pull/940\n* StosVPN-integration: Removed em_proxy and EmotionalDamage module in favour of stosVPN by @mahee96 in https://github.com/SideStore/SideStore/pull/945\n* Disable minimuxer ready check which shows NO WIFI/VPN error since stosVPN can work on cellular too by @mahee96 in https://github.com/SideStore/SideStore/pull/935\n* Add iOS 17.4+ JIT and mounting by @jkcoxson in https://github.com/SideStore/SideStore/pull/953\n* Add export certificate feature by @hugeBlack in https://github.com/SideStore/SideStore/pull/959\n* Feat: Add Pairing File Export URL callback and replace Wireguard with StosVPN by @stossy11 in https://github.com/SideStore/SideStore/pull/962\n* Change front-facing references to AltStore by @owoellen in https://github.com/SideStore/SideStore/pull/987\n* Update OperationError.swift for idevice_pair by @CelloSerenity in https://github.com/SideStore/SideStore/pull/995\n* Add import/export certificate feature by @hugeBlack in https://github.com/SideStore/SideStore/pull/1008\n* Fix pairing file doc link by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1011\n* Add option for using main bundle's profile for app extensions, update AltSign & libmd by @hugeBlack in https://github.com/SideStore/SideStore/pull/1012\n* Use main profile when refreshing by @hugeBlack in https://github.com/SideStore/SideStore/pull/1013\n\n## New Contributors\n* @l2dy made their first contribution in https://github.com/SideStore/SideStore/pull/900\n* @lafrenierejm made their first contribution in https://github.com/SideStore/SideStore/pull/926\n* @Br0des made their first contribution in https://github.com/SideStore/SideStore/pull/940\n* @hugeBlack made their first contribution in https://github.com/SideStore/SideStore/pull/959\n* @owoellen made their first contribution in https://github.com/SideStore/SideStore/pull/987\n* @CelloSerenity made their first contribution in https://github.com/SideStore/SideStore/pull/995\n\n**Full Changelog**: https://github.com/SideStore/SideStore/compare/0.5.9...0.6.2\n",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.2/SideStore.ipa",
-          "size": 28873303,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.10",
-          "date": "2024-12-27T01:01:50Z",
-          "localizedDescription": "Hey there side commmunity. This is a patch to improve stability of sidestore. more specifically for sources.",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.10/SideStore.ipa",
-          "size": 9300000,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.9",
-          "date": "2024-12-24T14:01:50Z",
-          "localizedDescription": "We got another update, just in time for Christmas! (depending on where you live)\n\nBefore we bring in 0.6.0 with AltStore 2.0 fully merged, consider this as a point update for all the fun things we made before it!\n\n## What's Changed\n* feat: show custom anisette server list if set by @moonsn in https://github.com/SideStore/SideStore/pull/717\n* Fix for Refresh Operation causing renewal/install of provisioning profiles for removed app extensions by @mahee96 in https://github.com/SideStore/SideStore/pull/727\n* Fix-regression: restored update-check logic(2a392dd) in InstalledApp.swift which was dropped in (1713fcc) by @mahee96 in https://github.com/SideStore/SideStore/pull/728\n* xcode: Debug dylib support is still broken in iOS 18 causing No Entry Point Found. checked(null) by @mahee96 in https://github.com/SideStore/SideStore/pull/729\n* refresh-app: enhanced error logging when app extension validation check fails by @mahee96 in https://github.com/SideStore/SideStore/pull/730\n* diagnostics: improved error logging for OperationError.invalidParameters by @mahee96 in https://github.com/SideStore/SideStore/pull/736\n* -[cleanup]: restore changes dropped from altstore-1.6.3 merge by 1713fcc by @mahee96 in https://github.com/SideStore/SideStore/pull/738\n* Add missing = sign by @TheMasterOfMike in https://github.com/SideStore/SideStore/pull/739\n* minor fixes for Remove Refreshed.ipa removal and posting from background thread by @mahee96 in https://github.com/SideStore/SideStore/pull/740\n* Diagnostics & cleanup: Added diagnostics for RefreshAppOperation failure and removed stale entries in pbxproj by @mahee96 in https://github.com/SideStore/SideStore/pull/741\n* Partial-Fix for #723: Error on refresh operation must be set on self.context instead of group.context by @mahee96 in https://github.com/SideStore/SideStore/pull/742\n* Background and shortcut refresh fix - remove only excess extensions from new package during install by @mahee96 in https://github.com/SideStore/SideStore/pull/743\n* Widgets-Fix: Ported Widget compatibility for ios 18+ from altstore  by @mahee96 in https://github.com/SideStore/SideStore/pull/746\n* Update message about Disable Idle Timeout setting by @kaoneko in https://github.com/SideStore/SideStore/pull/747\n* Change gitignore, add package.resolve by @JoeMatt in https://github.com/SideStore/SideStore/pull/748\n* Twitter Updates & Email Support by @0-Blu in https://github.com/SideStore/SideStore/pull/762\n* -[xcode]: revert enabling debug dylib support for widgets by @mahee96 in https://github.com/SideStore/SideStore/pull/769\n* Fix: update sign-in screen toast text color to be primary color by @mahee96 in https://github.com/SideStore/SideStore/pull/770\n* - Fix: DatabaseManager.migrateDatabaseToAppGroupIfNeeded() src and dest for replaceItemAt() cannot be same by @mahee96 in https://github.com/SideStore/SideStore/pull/772\n* -[Feature]: client-side: Anisette server fallback impl when current server is unreachable by @mahee96 in https://github.com/SideStore/SideStore/pull/773\n* - Fix: Anisette-server-fallback: Try currently selected server first by @mahee96 in https://github.com/SideStore/SideStore/pull/775\n* - Fix: refresh(): app was being accessed after de-alloc causing EXC_BREAKPOINT by @mahee96 in https://github.com/SideStore/SideStore/pull/776\n* - Fix: AnisetteServers: refresh server request shouldn't use local cache to get proper updates by @mahee96 in https://github.com/SideStore/SideStore/pull/777\n* - [Partial-fix]: Show Toast regarding server switch due to fallback if UI context is available by @mahee96 in https://github.com/SideStore/SideStore/pull/779\n* Added launch arguments for coredata debugging and updated Scheme from AltStore to SideStore by @mahee96 in https://github.com/SideStore/SideStore/pull/785\n* Renamed libem_proxy.a to libem_proxy-ios.a for iOS builds and added echo to print the lib path being used in the run script by @mahee96 in https://github.com/SideStore/SideStore/pull/786\n* Updated LIB_FILE_NAME used in minimuxer shell script to link the binary by @mahee96 in https://github.com/SideStore/SideStore/pull/787\n* updated fetch-prebuilt.sh to reflect libem_proxy-ios.a renaming by @mahee96 in https://github.com/SideStore/SideStore/pull/788\n* [fetch-prebuilt.sh] - retain checked-in files from minimuxer repo by @mahee96 in https://github.com/SideStore/SideStore/pull/789\n* [fetch-prebuilt.sh]: force download when libs are missing locally and skip file is absent by @mahee96 in https://github.com/SideStore/SideStore/pull/796\n* [settings]: Fix: siri shortcut missing from settings by @mahee96 in https://github.com/SideStore/SideStore/pull/797\n* [dependencies]: updated Package.resolved to use latest commit for altsign package by @mahee96 in https://github.com/SideStore/SideStore/pull/798\n* added fix for downloadURL error + todo by @wynwxst in https://github.com/SideStore/SideStore/pull/807\n* Add entitlements by @junepark678 in https://github.com/SideStore/SideStore/pull/809\n* Update README.md by @neoarz in https://github.com/SideStore/SideStore/pull/803\n\n## New Contributors\n* @moonsn made their first contribution in https://github.com/SideStore/SideStore/pull/717\n* @TheMasterOfMike made their first contribution in https://github.com/SideStore/SideStore/pull/739\n* @kaoneko made their first contribution in https://github.com/SideStore/SideStore/pull/747\n* @wynwxst made their first contribution in https://github.com/SideStore/SideStore/pull/807\n* @neoarz made their first contribution in https://github.com/SideStore/SideStore/pull/803\n\n**Full Changelog**: https://github.com/SideStore/SideStore/compare/0.5.8...0.5.9\n",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.9/SideStore.ipa",
-          "size": 9300000,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.8",
-          "date": "2024-9-07T18:30:00Z",
-          "localizedDescription": "Ah, September! You are a doorway to the season that awakens another sidestore update! We have been very busy with doing quality of life changes and fixing bugs everyone’s been having. \n\n\n What's Changed: \n\n - UI Improvements for the Anisette Servers View. by @0-Blu in #672 \n\n - Added more feedback options. by @0-Blu in #673 \n\n - Fix SideJITServer Support for iOS 17+ by @stossy11 in #674 \n\n - Makes revoking optional by @junepark678 in #675 \n\n -  Better pairing file info by @bogotesr in #676  \n\n -  Selective app extension removal by @junepark678 in #677 \n\n -  legal: developer's certificate of origin 1.1 by @polymo1 in #686 \n\n Thanks to all of the community’s support to keep this project alive and motivated. We have more planned ahead and are doing our best to keep up with updates to make it a seamless/stress free experience. Stay tuned to our progress on future endeavors for SideStore on our discord! \n\n Discord: https://discord.gg/sidestore-949183273383395328",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.8/SideStore.ipa",
-          "size": 9300000,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.7",
-          "date": "2024-8-05T18:30:00Z",
-          "localizedDescription": "Happy August! We have been very busy with doing quality of life changes and fixing bugs everyone’s been having. \n\n\n What's Changed: \n\n - Added Stossy11 Anisette Server by stossy11 \n\n - Added SideJITServer Support for Enabling JIT on iOS 17+ by @stossy11 \n\n - Change AltStore Expiring Soon to SideStore Expiring Soon by therealFoxster \n\n - Add Dynamic anisette intervention \n\n -  Update to altstore 1.6.3 by @junepark678  \n\n -  Include Enable JIT errors in Error Log \n\n -  Fix minimuxer status checking \n\n -  Update no wifi message to include VPN \n\n -  Opens Error Log when tapping ToastView \n\n -  Fixes Error Log context menu covering cell content \n\n -  Fixes Error Log context menu appearing while scrolling \n\n -  Fixes incorrect Search FAQ URL \n\n -  Fix Error Log showing UIAlertController on iOS 14 + \n\n -  Fix Error Log not showing UIAlertController on iOS <=13 \n\n -  Fix wrong color in AuthenticationViewController \n\n Thanks to all of the community’s support to keep this project alive and motivated. We have more planned ahead and are doing our best to keep up with updates to make it a seamless/stress free experience. Stay tuned to our progress on future endeavors for SideStore on our discord! \n\n Discord: https://discord.gg/sidestore-949183273383395328",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.7/SideStore.ipa",
-          "size": 9300000,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.6",
-          "date": "2024-4-22T13:30:00Z",
-          "localizedDescription": "Happy April! This update we have some stability fixes and some improvement with sources page text. /n/n/n What has been changed: /n/n - Add description on what disable idle timeout toggle + change add to Siri text for accuracy by @Spidy123222 in #550 /n/n - Remove patreon exclusivity message for sources by @Spidy123222 in #594 /n/n Add ani.wesbryie.com to Anisette list by @WesleyBryie in #604 /n/n - Attempt to (hackily) fix embedded pairing file issues @nythepegasus",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.6/SideStore.ipa",
-          "size": 9195339,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.4",
-          "date": "2023-11-27T13:30:00Z",
-          "localizedDescription": "Happy November! Since we had to do a quick fix this update. We have been very busy with doing quality of life changes and fixing bugs everyone’s been having. \n\n\n What's Changed: \n\n - Clear cache button to help with the large size issues. \n\n - Fix: Fix AppID Crash \n\n - Version in settings showing as develop \n\n - Added Timeout Feature so when you install an app. Your device will not time out and mess up the install. \n\n - Remove the heavy reliance on Info.plist for UDID. \n\n - Better formatted dates so for example instead of it being 0 days it'll say 19 hours/30 minutes. \n\n - fix: fix AltWidget AppGroup Issue. \n\n - fix: Use forked libplist",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.4/SideStore.ipa",
-          "size": 9195339,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.2",
-          "date": "2023-10-20T22:30:00Z",
-          "localizedDescription": "Having a spooky October? We have too while working on stability improvements and better error logging for SideStore!\n\n# Changelog\n* Remove the buggy retry code finally (@nythepegasus)\n* Recompile and update AltBackup to make it function again (@nythepegasus)\n* Update submodule dependencies (@naturecodevoid and @nythepegasus)\n* Remove emuthreeds from trusted sources (down too frequently) (@Spidy123222)\n* Use provisioning profile details instead of guessing active app limit by @bogsen in https://github.com/SideStore/SideStore/pull/508\n**Full Changelog**: https://github.com/SideStore/SideStore/compare/0.5.1...0.5.2",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.2/SideStore.ipa",
-          "size": 9195339,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.1",
-          "date": "2023-09-17T18:50:00Z",
-          "localizedDescription": "Having a good September? We have been hard at work on stability improvements and better error logging for SideStore!\n\n# Changes \n\n * The Unable to install app (aka staging error) error message has been split into explicit error messages. This should allow people who get the error to troubleshoot more easily. (Dadoum for initial implementation, naturecodevoid for fixes)\n* AltSign and all other dependencies were updated. This should help fix some issues. (spidy123222 and Joelle Lonkell for AltSign, naturecodevoided for everything else)\n* The notification and alert explaining SideStore needing to be in the background to refresh was shortened and made clearer. (spidy123322)\nFull Changelog: https://github.com/SideStore/SideStore/compare/0.5.0..0.5.1",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.1/SideStore.ipa",
-          "size": 9157428,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.5.0",
-          "date": "2023-07-27T06:00:00-5:00",
-          "localizedDescription": "Happy July! We have been hard at work on stability improvements for SideStore!\n\n# Changes \n\n * [bugfix] Widget now functions properly from Github Actions builds\n* [bugfix] Installing and refreshing apps should be much more stable\n* [bugfix] Reintroduce notification when refreshing SideStore\n* [feature] Add retries to enabling JIT to make it a little more stable\n* [feature] Change the default anisette server to be https://ani.sidestore.io/ instead of the 6969 port (which no longer exists)\n* [UI] Change the Patreon screen to display our different social media accounts\n* [upstream] Fix many deprecation warnings\n* [upstream] Fix \"Open in..\" file dialog not working for SideStore\n* [upstream] Fix various UI elements to be more performant/less buggy\nFull Changelog: https://github.com/SideStore/SideStore/compare/0.4.0..0.5.0",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.5.0/SideStore.ipa",
-          "size": 9157428,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.4.0",
-          "date": "2023-05-29T19:00:00-05:00",
-          "localizedDescription": "Happy May! We have been very busy with doing quality of life changes and fixing bugs everyone’s been having. WE RECOMMEND FRESH INSTALL ON THIS UPDATE. it took this long as there was some problems that were hard and some things needed fixed before releasing and testing, but this should make sidestore much better to use. If you ever want to test sidestore versions use nightly version of sidestore. If you’re into even more experimental join our discord and try our ipas we ask for testing. \n\n For people that want to use MDC no3applimit (MacDirtyCow). It’s currently not ready as it includes the patch not needing any external apps. So for any brave people that really want it you will have to look at this pull request and use the ipa downloads from GitHub actions  https://github.com/SideStore/SideStore/pull/259 or get it from our site as a ipa labeled MDC.\n\n What's Changed: \n\n - Fix: Fix expire early issue (it will open safari to finish refreshing sidestore now.) \n\n - Updated to Anisette V3, this is much better than version 1 as it prevents locking and other anisette issues. \n\n - Fix: no provisioning profile with the requested identifier. \n\n - Remove jkcoxson anisette server from preferred servers. \n\n - Update store check to check for AltServer or SideServer installation \n\n - refactor minimuxer to use swift-bridge (#321) \n\n - Change the default anisette server \n\n - fix: hopefully reduce ApplicationVerificationFailed errors by removing _CodeSignature folders since those may cause a problems. \n\n - Fix: 'The name for this app is invalid' error(#361). \n\n - Remove app groups that contain AltStore \n\n - Change SideStore Anisette server url to use https. Full Commit Changelog: https://github.com/SideStore/SideStore/compare/0.3.1...0.4.0",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.4.0/SideStore.ipa",
-          "size": 5465976,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "0.3.1",
-          "date": "2023-03-01T14:00:00-05:00",
-          "localizedDescription": "Happy March! We have been busy with doing quality of life changes and getting stuff up and running like deactivating and getting bugs fixed that you guys found in nightly. We don’t currently have a fix for expiring early issue but is in the works like anisette issues. This should allow basic support for all functions.\n\n For people that want to use MDC no3applimit (MacDirtyCow). It’s currently not ready as it includes the patch not needing any external apps. So for any brave people that really want it you will have to look at this pull request and use the ipa downloads from GitHub actions  https://github.com/SideStore/SideStore/pull/259 . We don’t recommend relying on pull requests as because a commit could break the app so be warned, this is the same for nightly but with nightly has latest develop branch changes.\n\n What's Changed: \n\n - Fix beta apps not refreshing \n\n - Fix beta apps on the my apps view \n\n - Fix deactivating/activating apps \n\n - Merge all of Riley's new error handling stuff \n\n - add easy anisette server selector iOS Settings app \n\n - added toggle for custom anisette server \n\n - Change the default anisette server \n\n - Add a bit more logging throughout the signing process to help us pin down issues \n\n - Allow for .mobiledevicepairing and .plist files to be selected, try and pin down why users can't select either \n\n - Hopefully fix AltWidget issues \n\n - Add analytics to help developers understand current demographic of users (and hopefully pin down version specific bugs) \n\n - Icon change (thanks LittRitt!) \n\n - Sidestore directory accessible in files \n\n - Reset pairing file button \n\n - Advanced settings button \n\n - Browse icon change \n\n - Credit adjustment \n\n - Background color fixes \n\n - Added more permission types for sources \n\n - Join Patreon button crash fix \n\n - Turned off background notification refreshes \n\n - Sidestore Logger \n\n - Minimuxer logger \n\n - Additional logging for minimuxer for sidestore for troubleshooting \n\n - Replace Placeholder video for pairing instructions. \n\n - Fix BundleId issues on parts of sidestore \n\n - Fix trusted sources if one app has problems that it shouldn’t take down the full list. \n\n \n\n Full Commit Changelog: https://github.com/SideStore/SideStore/compare/0.1.1...0.3.1",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.3.1/SideStore.ipa",
-          "size": 5465976,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-07-01T01:20:17Z",
-      "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.2/SideStore.ipa",
       "patreon": {}
     },
     {
@@ -2232,7 +2186,7 @@
     }
   ],
   "news": [
-	{
+    {
       "title": "Free Sideloading bằng DNS",
       "identifier": "freesideloading",
       "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
@@ -2244,6 +2198,17 @@
       "appID": ""
     },
     {
+      "title": "Hướng dẫn sử dụng Dylib/Deb",
+      "identifier": "share-dylib",
+      "caption": "Nguồn tải và cách tiêm  Dylib/Deb để tự build IPA mod khi không có sẵn.",
+      "date": "2025-11-06",
+      "tintColor": "#33DB5D",
+      "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
+      "notify": true,
+      "url": "Khodylib.md",
+      "appID": null
+    },
+    {
       "title": "Mở liên kết từ safari vào app mod",
       "identifier": "molienketbangtusafari",
       "caption": "Cài đặt app mod sẽ bị thiếu tính năng hiển thị thông báo để mở liên kết bên trong ứng dụng khi vào bằng safari .",
@@ -2252,7 +2217,7 @@
       "imageURL": "https://i.ibb.co/670gsV90/8767e01c340d.png",
       "notify": true,
       "url": "openlink.md",
-      "appID": null
+      "appID": "com.soundcloud.TouchApp"
     },
     {
       "title": "Hướng dẫn sử dụng",
@@ -2263,7 +2228,7 @@
       "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
       "notify": true,
       "url": "donate.md",
-      "appID": "com.example"
+      "appID": "p3.xyz.yyyue.esign"
     },
     {
       "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
@@ -2294,7 +2259,7 @@
       "date": "2025-10-14",
       "tintColor": "#DB7F33",
       "imageURL": "https://onejailbreak.com/site/assets/files/1126/antirevoke.766x0.webp",
-      "notify": false ,
+      "notify": false,
       "url": "chongthuhoicc.md",
       "appID": "com.example.app"
     },
@@ -2330,17 +2295,6 @@
       "notify": false,
       "url": "trollstore.md",
       "appID": "com.trollstore.app"
-    },
-    {
-      "title": "Hướng dẫn sử dụng Dylib/Deb",
-      "identifier": "share-dylib",
-      "caption": "Nguồn tải và cách tiêm  Dylib/Deb để tự build IPA mod khi không có sẵn.",
-      "date": "2025-11-06",
-      "tintColor": "#33DB5D",
-      "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
-      "notify": true ,
-      "url": "Khodylib.md",
-      "appID": "com.dylib.app"
     }
   ]
 }
