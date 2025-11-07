@@ -162,6 +162,7 @@ body {
 	display: grid;
         align-items: center;
         align-content: space-between;
+	height:fit-content;
     }
     .app-container,
     .app-header-container {
@@ -949,6 +950,9 @@ a>button {
 .panel-content {
     max-width: 767px;
     margin: 0 auto;
+  white-space: normal;  
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
 }
 
 .panel-content .app-header {
@@ -1316,9 +1320,6 @@ hr {
 
 .news-content {
     margin-bottom: 4rem;
-  white-space: normal;  
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
 }
 
 #news {
