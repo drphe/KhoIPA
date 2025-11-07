@@ -2248,7 +2248,7 @@
       "date": "2025-10-15",
       "tintColor": "#022740",
       "imageURL": "https://cdn.tgdd.vn/Files/News/2023/05/18/5-cach-doi-dns-tren-iphone-nhanh-chong-chi-sau-thumb-560x292.jpg",
-      "notify": true,
+      "notify": false,
       "url": "dnsadblock.md",
       "appID": "com.example.app"
     },
