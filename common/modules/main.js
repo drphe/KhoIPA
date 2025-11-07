@@ -47,7 +47,7 @@ export function main(callback, fallbackURL = "../../") {
         		installAppAlert.addAction({
             			title: "Add to "+supportType,
             			style: 'default',
-            			handler: supportType == "Esign"?open(`esign://install?url=${app.downloadURL}`):open(`feather://source/${app.downloadURL}`)
+            			handler: supportType == "Esign"?open(`esign://install?url=${sourceURLL}`):open(`feather://source/${sourceURL}`)
         		});
         		installAppAlert.addAction({
             			title: "Cancel",
