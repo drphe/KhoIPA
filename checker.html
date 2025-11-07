@@ -135,6 +135,20 @@ async function checkCors(url){
   try {
     const resp = await fetch(url, {mode:'cors'});
     const aca = resp.headers.get('access-control-allow-origin');
+    const json = resp.json();
+    console.log(detectSupport(json.apps[0]));
+    function detectSupport(app) {
+  	const supportsESign = !!(app.versionDate || app.fullDate);
+  	const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
+  	const hasFeatherMinimalRoot = typeof app.bundleIdentifier === "string" && typeof app.version === "string" && typeof app.downloadURL === "string";
+  	const supportsFeather = hasVersionsArray || hasFeatherMinimalRoot;
+
+  	if (supportsESign && supportsFeather) return "both";
+  	if (supportsESign) return "esign";
+  	if (supportsFeather) return "feather";
+  	return "both";
+    }
+
     if (aca) {
       showResult('ok', `Server cho phép CORS: <b>${aca}</b> (HTTP ${resp.status})`);
     } else {
