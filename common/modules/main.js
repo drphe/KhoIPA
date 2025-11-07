@@ -33,12 +33,12 @@ export function main(callback, fallbackURL = "../../") {
             if (tintColor) setTintColor(tintColor);
     	    insertAltStoreBanner(json.name);
 	    const supportType = detectSupport(source.apps[0]);
-
+		console.log(supportType)
 	    document.getElementById('add-to-altstore').addEventListener('click', function(event) {
 	        const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
     		const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
 		const link = document.querySelector(".add");
-		      if(supportType == 'both'){
+		      if(supportType === 'both'){
 		      	link.href = isEsignVisible ?`feather://source/${sourceURL}`: `esign://addsource?url=${sourceURL}`;
 		     }else {
 			  const installAppAlert = new UIAlert({
