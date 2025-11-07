@@ -2215,7 +2215,7 @@
       "date": "2025-11-04",
       "tintColor": "#151515",
       "imageURL": "https://i.ibb.co/670gsV90/8767e01c340d.png",
-      "notify": true,
+      "notify": false,
       "url": "openlink.md",
       "appID": "com.soundcloud.TouchApp"
     },
