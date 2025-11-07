@@ -135,7 +135,7 @@ async function checkCors(url){
   try {
     const resp = await fetch(url, {mode:'cors'});
     const aca = resp.headers.get('access-control-allow-origin');
-    const json = resp.json();
+    const json = await resp.json();
     console.log(detectSupport(json.apps[0]));
     function detectSupport(app) {
   	const supportsESign = !!(app.versionDate || app.fullDate);
