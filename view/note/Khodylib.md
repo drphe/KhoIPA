@@ -18,89 +18,67 @@ Việc tìm các tệp này có thể khó khăn, vì vậy mình đã cung cấ
 
 Dưới đây là một số file có thể ở định dạng `.dylib`, `.deb`, hoặc `.plist`. Có thể sử dụng Esign, Feather... để tiêm dylib khi ký IPA hoặc [Công cụ inject (tiêm) dylib/deb vào iPA online](https://ipatool.codevn.net/inject-dylib/).
 
-* Adblock
-- [com.julioverne.adblock_0.2~beta1_iphoneos-arm.deb](https://julioverne.github.io/debfiles/com.julioverne.adblock_0.2~beta1_iphoneos-arm.deb)  
-- [splashadblock_1.5.deb](http://apt.thebigboss.org/repofiles/cydia/debs2.0/splashadblock_1.5.deb)  
-
-Nếu Adblock không hoạt động, hãy thử tìm file deb phù hợp với ứng dụng của bạn.
+* Adblock: Nếu Adblock không hoạt động, hãy thử tìm file deb phù hợp với ứng dụng của bạn.
+    - [com.julioverne.adblock_0.2~beta1_iphoneos-arm.deb](https://julioverne.github.io/debfiles/com.julioverne.adblock_0.2~beta1_iphoneos-arm.deb)  
+    - [splashadblock_1.5.deb](http://apt.thebigboss.org/repofiles/cydia/debs2.0/splashadblock_1.5.deb)  
 
 * IAP (Mua hàng trong ứng dụng miễn phí)
-- [SatellaJailed.dylib](https://github.com/Paisseon/SatellaJailed/blob/emt/SatellaJailed.dylib)  
+    - [SatellaJailed.dylib](https://github.com/Paisseon/SatellaJailed/blob/emt/SatellaJailed.dylib)  
 
-Chỉ hoạt động với IAP **không chạy trên máy chủ**, chủ yếu là các trò chơi có hệ thống chống gian lận thấp. (Không hoạt động với tất cả ứng dụng và có thể bị khóa tài khoản nếu trò chơi có phát hiện gian lận.)
+    Chỉ hoạt động với IAP **không chạy trên máy chủ**, chủ yếu là các trò chơi có hệ thống chống gian lận thấp. (Không hoạt động với tất cả ứng dụng và có thể bị khóa tài khoản nếu trò chơi có phát hiện gian lận.)
 
 * IGG (IGameGod Hex Editor)
-- [iGameGod](https://iosgods.com/igg)  
+    - [iGameGod](https://iosgods.com/igg)  
+    Hoạt động trên hầu hết trò chơi để chỉnh sửa giá trị mà trò chơi lưu trữ, như tiền mặt/vàng/kim cương, miễn là đó là dữ liệu **không lưu trên máy chủ**.
 
-Hoạt động trên hầu hết trò chơi để chỉnh sửa giá trị mà trò chơi lưu trữ, như tiền mặt/vàng/kim cương, miễn là đó là dữ liệu **không lưu trên máy chủ**.
+* Glow – Tiện Ích Cho Facebook
 
-* 🌟 Glow – Tiện Ích Cho Facebook
+    - [Glow_facebook.zip](https://github.com/drphe/KhoIPA/releases/download/glow.facebook/Glow_facebook.zip)  
+    - Nguồn: [Dayanch96/Glow](https://github.com/dayanch96/Glow)
 
-📦 **Tải về:** [Glow_facebook.zip](https://github.com/drphe/KhoIPA/releases/download/glow.facebook/Glow_facebook.zip)  
-🔗 **Repo gốc:** [Dayanch96/Glow](https://github.com/dayanch96/Glow)
+    Tính năng nổi bật: Chặn quảng cáo, Tải video/story (bấm giữ video), Menu tùy chỉnh: bấm giữ nút Tab Menu, Trang chủ,...
+    
+    Nếu cần bản `.deb`, hãy tải từ repo gốc của tác giả.
 
-🔧 **Tính năng nổi bật:**
-- ✅ Chặn quảng cáo
-- 📥 Tải video/story (bấm giữ video)
-- 📂 Menu tùy chỉnh: bấm giữ nút Tab Menu, Trang chủ,...
+* Flow – Tiện Ích Cho Messenger
 
-❗️ Nếu cần bản `.deb`, hãy tải từ repo gốc của tác giả.
+    - [Flow_messenger.zip](https://github.com/drphe/KhoIPA/releases/download/flow.messenger/Flow_messenger.zip)  
+    - Nguồn [Dayanch96/Flow](https://github.com/dayanch96/Flow)
 
-* 💬 Flow – Tiện Ích Cho Messenger
+    Tính năng nổi bật: Chặn quảng cáo, Tải story (nút 3 chấm), Chặn “đã xem” và “đang gõ”, Menu Flow: Cài Đặt → góc phải
+    
+    ❗️ Nếu cần bản `.deb`, hãy tải từ repo gốc của tác giả.
 
-📦 **Tải về:** [Flow_messenger.zip](https://github.com/drphe/KhoIPA/releases/download/flow.messenger/Flow_messenger.zip)  
-🔗 **Repo gốc:** [Dayanch96/Flow](https://github.com/dayanch96/Flow)
+* iFaker – Giả Thông Tin Thiết Bị
 
-🔧 **Tính năng nổi bật:**
-- ✅ Chặn quảng cáo
-- 📥 Tải story (nút 3 chấm)
-- 🚫 Chặn “đã xem” và “đang gõ”
-- ⚙️ Menu Flow: Cài Đặt → góc phải
+    - [iFaker.dylib](https://github.com/drphe/KhoIPA/releases/download/ifaker/iFaker.dylib)
 
-❗️ Nếu cần bản `.deb`, hãy tải từ repo gốc của tác giả.
+    Tính năng nổi bật: Fake phiên bản iOS, Fake mã bản dựng, Fake phiên bản ứng dụng, Fake mẫu máy.
+    
+    Gọi menu bằng cách giữ 4 ngón tay trên màn hình.
 
-* 💳 iFaker – Giả Thông Tin Thiết Bị
+* DisableNetwork – Chặn Kết Nối Mạng
 
-📦 **Tải về:** [iFaker.dylib](https://github.com/drphe/KhoIPA/releases/download/ifaker/iFaker.dylib)
+    - [DisableNetwork.dylib](https://github.com/drphe/KhoIPA/releases/download/disablenetwork/DisableNetwork.dylib)
 
-🔧 **Tính năng nổi bật:**
-- 🌀 Fake phiên bản iOS
-- 🔢 Fake mã bản dựng
-- 📱 Fake phiên bản ứng dụng
-- 🧬 Fake mẫu máy
+    - Chức năng: Chặn kết nối mạng của ứng dụng, Khuyến nghị sử dụng với các game offline.
 
-⚠️ Gọi menu bằng cách giữ 4 ngón tay trên màn hình.
+* Immortalizer - Chạy Nền Ứng Dụng
 
-* 🚫 DisableNetwork – Chặn Kết Nối Mạng
+    - [ImmortalizerJailed_arm.dylib](https://github.com/drphe/KhoIPA/releases/download/immortalizer/ImmortalizerJailed_arm.dylib)
+    - Tính năng: Hỗ trợ iOS 14 trở lên, Có thể cài đặt trên bất kỳ IPA nào mà không cần jailbreak hay TrollStore!
+    - 😀Phiên bản Troll: [Tại đây ](https://t.me/trollersteamvn/2688)
+    - 🐱 Nguồn: [ImmortalizerTS](https://github.com/sergealagon/ImmortalizerTS)
+    1️⃣ Không cần jailbreak hay TrollStore, vì vậy tất cả những gì bạn phải làm là inject dylib vào IPA mà bạn muốn nó hoạt động. 
+    
+    2️⃣ Bạn có thể sử dụng bất kỳ công cụ nào như Sideloadly, E-Sign hoặc thậm chí TrollFools để inject dylib vào ứng dụng. 
+    
+    😀Giải Thích Chức Năng :
+    - Giống như tinh chỉnh, nó có thể khiến ứng dụng luôn ở chế độ nền trước, tuy nhiên, bạn cần inject điều này vào ứng dụng mà bạn muốn luôn chạy nền. 
+    - Sẽ có một nút di chuyển nổi mà bạn có thể nhấn để bật Immortalizer 
+    - Giống như phiên bản TrollStore, không có cách nào để buộc hiển thị thông báo. Việc buộc hiển thị thông báo hơi khó khăn, đặc biệt là đối với các ứng dụng hiển thị giao diện người dùng thông báo riêng khi ứng dụng của chúng được mở (ví dụ: WhatsApp).
 
-📦 **Tải về:** [DisableNetwork.dylib](https://github.com/drphe/KhoIPA/releases/download/disablenetwork/DisableNetwork.dylib)
-
-🔧 **Chức năng:**
-- 🔒 Chặn kết nối mạng của ứng dụng
-
-⚠️ Khuyến nghị sử dụng với các game offline.
-
-* 🔔Immortalizer - Chạy Nền Ứng Dụng
-
-📦 **Tải về:** [ImmortalizerJailed_arm.dylib](https://github.com/drphe/KhoIPA/releases/download/immortalizer/ImmortalizerJailed_arm.dylib)
-
-😀Hỗ trợ iOS 14 trở lên
-😀Có thể cài đặt trên bất kỳ IPA nào mà không cần jailbreak hay TrollStore!
-😀Phiên bản Troll: Tại đây (https://t.me/trollersteamvn/2688)
-
-😀Cài đặt
-1️⃣ Không cần jailbreak hay TrollStore, vì vậy tất cả những gì bạn phải làm là inject dylib vào IPA mà bạn muốn nó hoạt động. 
-2️⃣ Bạn có thể sử dụng bất kỳ công cụ nào như Sideloadly, E-Sign hoặc thậm chí TrollFools để inject dylib vào ứng dụng. 
-😀Giải Thích Chức Năng :
-- Giống như tinh chỉnh, nó có thể khiến ứng dụng luôn ở chế độ nền trước, tuy nhiên, bạn cần inject điều này vào ứng dụng mà bạn muốn luôn chạy nền. 
-- Sẽ có một nút di chuyển nổi mà bạn có thể nhấn để bật Immortalizer 
-- Giống như phiên bản TrollStore, không có cách nào để buộc hiển thị thông báo. Việc buộc hiển thị thông báo hơi khó khăn, đặc biệt là đối với các ứng dụng hiển thị giao diện người dùng thông báo riêng khi ứng dụng của chúng được mở (ví dụ: WhatsApp).
-
-🐱 ImmortalizerTS (https://github.com/sergealagon/ImmortalizerTS)
-
-* 🔔Nguồn khác 
-
-📦 **Tải về:** [Thư mục mediafile](https://app.mediafire.com/folder/qlnbgj6n07d14)
+* Một số nnguồn khác : [Thư mục mediafile](https://app.mediafire.com/folder/qlnbgj6n07d14)
 
 ---
 ## ⚙️ Thêm Thư viện (Dylib/Debs) bằng Esign
