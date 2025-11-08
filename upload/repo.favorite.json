@@ -23,6 +23,360 @@
   "apps": [
     {
       "beta": false,
+      "name": "Monument Valley 2",
+      "type": 2,
+      "bundleIdentifier": "com.ustwo.monumentvalley2",
+      "developerName": "IPAOMTK",
+      "subtitle": "Monument Valley 2 IPA MOD",
+      "localizedDescription": "Monument Valley 2 cho iOS 1.3.7 thổi một \"làn gió\" mới lạ vào dòng game phiêu lưu giải đố trên mobile. Tải Monument Valley 2 cho iOS, người chơi không những được thưởng thức các bản nhạc du dương, đắm mình vào một thế giới cổ tích đầy màu sắc mà còn có cơ hội trổ tài giải mã mê cung nhiều tầng lớp vô cùng độc đáo.",
+      "versionDescription": "",
+      "tintColor": "#0789fc",
+      "iconURL": "https://i.ibb.co/4n1zx66w/e4eb37855501.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/2b/04/cd/2b04cdd4-23fd-ea6d-242f-412bf2133b62/mzl.jlehdvtb.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/3e/0b/28/3e0b28d8-fd8f-0c1e-ee12-ff9475cbcf67/mzl.anpxljma.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/2b/55/52/2b5552ed-8234-50cf-9feb-60a695e9d2dd/mzl.afvgtstf.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/9a/45/d1/9a45d1dc-3d26-b274-fa1f-87f7d46ea33c/mzl.lahsahln.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/4b/4d/ec/4b4decc2-5990-5b78-45ac-21995a72d4e9/mzl.oomtazum.png/392x696bb.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Remove this message later",
+          "NSPhotoLibraryAddUsageDescription": "",
+          "NSPhotoLibraryUsageDescription": "Share"
+        }
+      },
+      "size": 283100000,
+      "version": "3.10.604",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.10.604/Monument-Valley-2.ipa",
+          "size": 283100000,
+          "version": "3.10.604",
+          "buildVersion": null,
+          "date": "2025-11-07T22:09:00+07:00",
+          "localizedDescription": "Monument Valley 2 IPA MOD v3.10.604 (Unlocked DLC) iOS\nCài qua Trollstore chơi được.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-07T22:09:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.10.604/Monument-Valley-2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Monument Valley",
+      "type": 2,
+      "bundleIdentifier": "com.ustwo.monumentvalley",
+      "developerName": "IPAOMTK",
+      "subtitle": "Monument Valley IPA MOD",
+      "localizedDescription": "Monument Valley cho iOS là tựa game giải đố trí tuệ hấp dẫn về cả mặt thiết kế đồ họa nghệ thuật lẫn lối chơi sáng tạo, mà bạn sẽ bị mê hoặc ngay lập tức từ cái nhìn đầu tiên.\n\nGame đoạt giải năm 2014 Cấu trúc nghệ thuật Đồ họa tuyệt đẹp\n\nMonument Valley cho iOS được phát triển và phát hành bởi Ustwo Game, trong đó bạn sẽ dẫn đường cho công chúa câm lặng Ida vượt qua một thế giới tuyệt đẹp. Nhiệm vụ của bạn trong Monument Valley cho iOS là sử dụng cơ chế xoay chuyển, nâng hạ các cấu trúc để tạo ra lối đi đưa công chúa Ida thoát khỏi mê cung không gian ba chiều.\n\nChắc chắn, chưa cần phải chơi nhưng khi lần đầu mở game, bạn sẽ bị mê hoặc bởi đồ họa đẹp như tranh vẽ trong màu sắc nhẹ nhàng kết hợp với âm nhạc du dương có phần ma mị ngay lập tức. Bạn không những là người chỉ dẫn cho Ida mà còn phải tự mình đi qua những ảo giác, các hiệu ứng đánh lừa đôi mắt từ những cấu trúc tuyệt đẹp trong game để đi đến đích cuối của cuộc hành trình.",
+      "versionDescription": "",
+      "tintColor": "#04b893",
+      "iconURL": "https://i.ibb.co/vCx0S38H/01d4d7268ffc.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/1f/ff/3c/1fff3c37-f181-e58e-78a1-d40bfb9577a5/mzl.arnynljb.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/9c/3d/9b/9c3d9bb0-6ae5-f0dd-4349-32aba7f268ec/mzl.sbjggnvt.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/19/1e/5a/191e5abf-6f8a-b882-8a10-c7f289819470/mzl.xsjsgbpi.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/d7/8e/67/d78e67cf-399f-ef9d-9da9-c673af363773/mzl.xhkwkvnd.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/f4/94/b8/f494b83b-b979-1ac3-39f3-b72c40d7b295/mzl.iludlaga.png/392x696bb.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "",
+          "NSPhotoLibraryUsageDescription": ""
+        }
+      },
+      "size": 258800000,
+      "version": "3.9.744",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.9.744/Monument-Valley-v3.3.202.ipa",
+          "size": 258800000,
+          "version": "3.9.744",
+          "buildVersion": null,
+          "date": "2025-11-07T21:37:00+07:00",
+          "localizedDescription": "Monument Valley IPA MOD v3.9.744 (Paid) iOS\nCài qua trollstore chơi được.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-07T21:37:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.9.744/Monument-Valley-v3.3.202.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Carrion",
+      "type": 2,
+      "bundleIdentifier": "com.devolverdigital.carrion",
+      "developerName": "IOScrack.vn",
+      "subtitle": "Game kinh dị quái vật khát máu nổi tiếng",
+      "localizedDescription": "Game Carrion do Phobia Game Studio phát triển, đã giành được Giải thưởng Editor’s Choice EuroGamer E3 2019, Best in Show gamescom 2019 và Trò chơi Indie hay nhất 2018 (Digital Dragon Indie Showcase 2018), cùng nhiều giải thưởng và đề cử khác.\nTrong game, bạn vào vai sinh vật vô định hình có nguồn gốc bí ẩn, rình rập và nuốt chửng các nhà khoa học và những người khác đã giam cầm bạn để gieo rắc nỗi sợ hãi và hoảng loạn khắp trung tâm nghiên cứu.",
+      "versionDescription": "",
+      "tintColor": "#e20c36",
+      "iconURL": "https://i.ibb.co/pv2X6kqY/91c75915df3b.png",
+      "screenshotURLs": [
+        "https://st.download.com.vn/data/image/2024/10/26/Carrion-1.jpg",
+        "https://st.download.com.vn/data/image/2024/10/26/Carrion-2.jpg",
+        "https://st.download.com.vn/data/image/2024/10/26/Carrion-3.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 123200000,
+      "version": "1.0.34",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.34/Carrion.-.v1.0.34.ipa",
+          "size": 123200000,
+          "version": "1.0.34",
+          "buildVersion": null,
+          "date": "2025-11-07T20:55:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Unlock DLC (Ấn mua rồi huỷ)",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-07T20:55:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.34/Carrion.-.v1.0.34.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Detective",
+      "type": 2,
+      "bundleIdentifier": "escape.detective",
+      "developerName": "IOScrack.vn",
+      "subtitle": "Detective: Crime Mystery Game",
+      "localizedDescription": "Solve puzzles and riddles to escape room, search for clues and hidden objects, unravel a spooky murder mystery and find a maniac killer. The best escape games and offline are already here, the adventure begins! Detective story with lots of secrets is waiting for you. Come and play in adventurous terror!",
+      "versionDescription": "",
+      "tintColor": "#34646c",
+      "iconURL": "https://i.ibb.co/23MZZ2bP/c2f56245ac86.png",
+      "screenshotURLs": [
+        "https://assets.apk.live/escape.detective--ipa-1_5-ipadscreenshot1.png?x-oss-process=image/resize,h_1000/format,webp",
+        "https://assets.apk.live/escape.detective--ipa-1_5-ipadscreenshot2.png?x-oss-process=image/resize,h_1000/format,webp",
+        "https://assets.apk.live/escape.detective--ipa-1_5-ipadscreenshot4.png?x-oss-process=image/resize,h_1000/format,webp",
+        "https://assets.apk.live/escape.detective--ipa-1_5-ipadscreenshot5.png?x-oss-process=image/resize,h_1000/format,webp",
+        "https://assets.apk.live/escape.detective--ipa-1_5-ipadscreenshot6.png?x-oss-process=image/resize,h_1000/format,webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "Your data will be used to provide you a better and personalized ad experience."
+        }
+      },
+      "size": 123100000,
+      "version": "1.7",
+      "versions": [
+        {
+          "version": "1.7",
+          "date": "2025-11-08T01:54:00+07:00",
+          "localizedDescription": "Lên cho anh em con game trinh thám đã lâu\nNo Ads\nFree Iap\nDùng đầu trên đi ae 🗿",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.7/Detective.-.v1.7.ipa",
+          "size": 123100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T01:54:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.7/Detective.-.v1.7.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Discord++",
+      "type": 1,
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "Ioscrack.vn",
+      "subtitle": "Discord 🆕🆙🆙",
+      "localizedDescription": "Discord for iOS sẽ giúp bạn hòa vào thế giới game sống động, kết nối và trò chuyện với các thành viên nhóm trong khi chơi game dễ dàng, nhanh chóng.",
+      "versionDescription": "",
+      "tintColor": "#5464f4",
+      "iconURL": "https://i.ibb.co/sdQMQP01/49966a919da8.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/66/c5/2f66c537-1c12-e60e-195b-7dd3772eb3ca/baaf0ea6-bf25-48e8-bbcb-6f860eda5f96_1_GroupChat_Tile_EN_6-5.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ca/3b/7c/ca3b7c22-1c65-8337-204c-4c6fb6c15950/932d11eb-9349-4c32-a611-4c9b4384017b_2_Stream_Tile_EN_6-5.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/53/a1/5f53a16e-a2f6-a1a7-4f0f-5b770676f1b4/e4df6caa-49a5-4503-8213-19bec0fc5b99_5_ToDo_Tile_EN_6-5.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/af/30/ffaf30de-6ce2-5c06-398b-63aac988cd56/Hero_Image__U0028for_Apple_store_U0029_Server__U0028no_members_list_U0029_1242x2688_EN.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "To connect to your devices",
+          "NSBluetoothPeripheralUsageDescription": "To connect to your devices",
+          "NSCameraUsageDescription": "By allowing access to your camera, you can take pictures and others will be able to see you in voice and video calls.",
+          "NSContactsUsageDescription": "We can help you find people you know on Discord. Your contacts will be regularly sent to us so you can connect with friends. You can turn this off any time.",
+          "NSLocalNetworkUsageDescription": "Allow Discord access to your local network to find devices using the same internet connection.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "To enable services that require location",
+          "NSLocationAlwaysUsageDescription": "To enable services that require location",
+          "NSLocationWhenInUseUsageDescription": "To enable services that require location",
+          "NSMicrophoneUsageDescription": "By allowing access to your microphone, you'll be able to talk in calls.",
+          "NSPhotoLibraryAddUsageDescription": "By allowing access to your library, you'll be able to download photos and videos.",
+          "NSPhotoLibraryUsageDescription": "By allowing us access to your photos, you will be able to upload images as an avatar, server icon, and more, and you can send photos and videos to your friends and communities.",
+          "NSUserTrackingUsageDescription": "Allowing tracking helps us show you Quests for games you play or are interested in. You can opt out anytime in your iOS settings."
+        }
+      },
+      "size": 98600000,
+      "version": "304.0",
+      "versions": [
+        {
+          "version": "304.0",
+          "date": "2025-11-08T01:48:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Addon Plugins + Theme\n✅ Bypass NSFW Channel\nXem video trong post để biết cách bypass\nhttps://t.me/ioscrackvn/18867",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v304.0/Discord.-.v304.0.ipa",
+          "size": 98600000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T01:48:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v304.0/Discord.-.v304.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "HuntersOrigin",
+      "type": 2,
+      "bundleIdentifier": "com.hunters.legacy",
+      "developerName": "IOS Crack.vn",
+      "subtitle": "Huntera Origin 🆕🆙🆙",
+      "localizedDescription": "STEP INTO A LIVING WORLD\nFrom zero to hero – embark on an epic journey full of battles, loot, and legends!\nExplore a vast, hand-crafted world where every path leads to a story, a secret, or a monster to defeat. Shape your character through a class evolution system, a sprawling skill tree, and over 1,000 items to collect!",
+      "versionDescription": "",
+      "tintColor": "#0c74c4",
+      "iconURL": "https://i.ibb.co/xtsqd2xt/066f4c049c70.png",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/St0hJNqYXJJaJFFoHICqNu3W6uIuSEfL1RuZItriLMihcEuv_g6yKa3SHYxhquSt5VZc=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/fRpTGYDQ0XfISE_U77-LbjUodIazYLZxUyzat-i7r7X4TQevw94BDj4mnso7DMn8cw=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/FdRqbCcOd1INotMpmsRIAHFQFxMVlfmAuYnX3-uXXWkDnvmXzcQUz3eWMxILeGWahF7R=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/sizXm2QSwB_QNPDiz49S-d-mfz9BZcaWSyV4axlIVT579EJq5TNtKRGKCUNCYkA5cg=w1052-h592-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://skadnetwork-boombit.com/",
+          "NSBluetoothAlwaysUsageDescription": "Advertisement would like to use your bluetooth.",
+          "NSBluetoothPeripheralUsageDescription": "Advertisement would like to use your bluetooth.",
+          "NSCalendarsUsageDescription": "Advertisement would like to use your calendar.",
+          "NSCameraUsageDescription": "Advertisement would like to use camera.",
+          "NSLocationAlwaysUsageDescription": "Advertisement would like to use your location.",
+          "NSLocationWhenInUseUsageDescription": "Advertisement would like to use your location.",
+          "NSMotionUsageDescription": "Advertisement would like to have interactive ad controls.",
+          "NSPhotoLibraryAddUsageDescription": "The app requires access to Photos to save media to it.",
+          "NSPhotoLibraryUsageDescription": "Advertisement would like to store a photo.",
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads to you."
+        }
+      },
+      "size": 144500000,
+      "version": "1.0.2",
+      "versions": [
+        {
+          "version": "1.0.2",
+          "date": "2025-11-08T01:44:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ God Mode\n✅ Xuyên Tường\n✅ Speed Hack\n✅ Unlock Pass ( có thể crash game)\n😄 Make by: Dora Team Mods",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.02/HuntersOrigin.-.v1.0.2.ipa",
+          "size": 144500000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T01:44:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.02/HuntersOrigin.-.v1.0.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "PullPP Heroes",
+      "type": 2,
+      "bundleIdentifier": "com.fortune.td.game.global",
+      "developerName": "DVC IPA",
+      "subtitle": "PullPP Heroes - Long DVC IPA",
+      "localizedDescription": "Khi Daydreamer dấn thân vào khu rừng nguy hiểm, chỉ có may mắn mới có thể cứu rỗi!\nVới sự may mắn vô song, Daydreamer biến thành Lãnh Chúa, sẵn sàng cho trận chiến sử thi sử thi giữa may mắn và sức mạnh trong rừng!\nTập hợp các đồng minh thần bí, mở khóa sức mạnh cổ xưa, dùng kỹ năng chiến thuật của bạn để bảo vệ vương quốc!\nTận hưởng trò chơi thủ thành thư giãn, vui nhộn và trải nghiệm sự kết hợp hoàn hảo giữa chế tạo và phòng thủ!",
+      "versionDescription": "",
+      "tintColor": "#d92d1c",
+      "iconURL": "https://i.ibb.co/Y79xP5b5/1fb99f897bf3.png",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/1e05i9G9axuG6DI0N0DC5F9LcyoJq8LB0noCFpPrdAFBxkoswgtZsosLXd3coWu-iWs=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/vZclwjuzabRAl7PS5aEjfs3GoiB5yLzyOXpsfcmsXNGOpWibqLoXb4Bt-TcyPiA1eA=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/Og_LbMXbQQBamKIGZChV9m_uCuBKyscuebFh1eTTT0oT1VNEfLpbayYn_8bx6pBSUyD7=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/DZbOvijbFnL36F5weukh2gH5aQHqKzbSWr0hvrIPEyKmF0quXWzzC_JGJoyBNP8jpA=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/vSk8FIBMGcvQLA76PQ6UqGUfgB3KhVXP8iO834UPGBXz18c4hh9TZCrKFahBTggeVw=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/xtEdLHEA5ZlniQS6IyrL3s4bjrVC_GUkv6-ZChJg7mlh8MDZYNX04DPwi6PYPWq5aPs=w1052-h592-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "We need to use this function to provide you with better services",
+          "NSLocationWhenInUseUsageDescription": "We need to use location information to provide you with better network services",
+          "NSMicrophoneUsageDescription": "We need to use this function to provide you with better services",
+          "NSUserTrackingUsageDescription": "Your data will help us to provide a more personalized experience and offers."
+        }
+      },
+      "size": 377300000,
+      "version": "1.12.0",
+      "versions": [
+        {
+          "version": "1.12.0",
+          "date": "2025-11-08T01:37:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅Đóng Băng Quái -> Bật Trước Khi Vào Trận\n✅Speed 10% \n📣NOTE : Khi Dùng Speed (nó hiện cảnh báo mất kết nối thì ok là qua ải nha) KO hoạt động đi tháp\n\n🔋 Chạm icon DVC để bật tắt menu\n👉Kích hoạt tại: http://key.chungchidvc.com (chỉ từ 5k / 1 game)",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.12/PullPP.Heroes.v1.12.0.ipa",
+          "size": 377300000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T01:37:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.12/PullPP.Heroes.v1.12.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Tropic Escape",
+      "type": 2,
+      "bundleIdentifier": "com.zynga.FarmVilleTropicEscape",
+      "developerName": "DVC IPA",
+      "subtitle": "Tropic Escape - Thinhkk - DVC IPA",
+      "localizedDescription": "Escape to an island getaway filled with adventure, mystery, and fun new mini games from the makers of FarmVille, the number one farming franchise! Play this colorful free-to-play game, now available for iPhone, iPad, and iMessage app.\n\nBuild your very own beachside inn complete with island workshops, tropical crops, and exotic animals. Farm island fruits like pineapples, coconuts, and mangos to delight your guests. Craft delicious recipes and rare goods like piña coladas, grilled fish, and flower leis.\n\nCatch fish with Capri the dolphin and explore with Odney the playful monkey! Feed tasty treats to the cute, playful animals on your island to get unique photo ops for your guests. Story-based quests help you explore uncharted areas, learn more about your island and find rare items and goods.",
+      "versionDescription": "",
+      "tintColor": "#dca41c",
+      "iconURL": "https://i.ibb.co/MD4bqrQ7/2b71529b7027.png",
+      "screenshotURLs": [
+        "https://modlmh.com/wp-content/uploads/2022/09/farmville-2-tropic-escape-mod-apk.jpg",
+        "https://modlmh.com/wp-content/uploads/2022/09/farmville-2-tropic-escape-mod-android.jpg",
+        "https://modlmh.com/wp-content/uploads/2022/09/farmville-2-tropic-escape-mod.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCalendarsUsageDescription": "This is used to add an event to your calendar",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "To optimize the player's ad experience",
+          "NSLocationWhenInUseUsageDescription": "To optimize the player's ad experience",
+          "NSMicrophoneUsageDescription": "Accessing the microphone to allow users to record videos using camera meant to be sent as an attachment for help and support reasons",
+          "NSMotionUsageDescription": "for motion stats",
+          "NSPhotoLibraryUsageDescription": "Accessing photos library to allow users manually pick images meant to be sent as an attachment for help and support reasons",
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads to you."
+        }
+      },
+      "size": 157000000,
+      "version": "1.208",
+      "versions": [
+        {
+          "version": "1.208",
+          "date": "2025-11-08T01:29:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅ Vô hạn Tài nguyên -> càng dùng càng tăng",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.208/Tropic.Escape.-.Thinhkk.v1.208.ipa",
+          "size": 157000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T01:29:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.208/Tropic.Escape.-.Thinhkk.v1.208.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "TDS - Tower Destiny Survive",
       "type": 2,
       "bundleIdentifier": "com.playstrom.hero.tower",
@@ -258,7 +612,7 @@
     },
     {
       "beta": false,
-      "name": "iFaker",
+      "name": "Dylib iFaker",
       "type": 5,
       "bundleIdentifier": "com.6t52elatsp.1vs00gqpvs",
       "developerName": "Unknown",
@@ -631,9 +985,18 @@
           "NSSpeechRecognitionUsageDescription": "Messenger will use speech recognition to detect your confirmation."
         }
       },
-      "size": 68600000,
-      "version": "532.0.0",
+      "size": 173100000,
+      "version": "538.0.0",
       "versions": [
+        {
+          "version": "538.0.0",
+          "date": "2025-11-08T02:40:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Remove ads\n✅ Remove \"People You May Know\" in feed\n✅ Remove Reels carousel\n✅ Confirm post likes\n✅ Download videos\n✅ Download Reels\n✅ Hide UI overlay\n✅ Confirm Reels likes\n✅ Download via long press\n✅ Download Stories\n✅ Watch Stories anonymously\n✅ Disable auto-advancing\n✅ Remove \"People You May Know\" in Stories header\n✅ Clear app cache on startup",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v538.0/Facebook.-.v538.0.0.ipa",
+          "size": 173100000,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
         {
           "version": "532.0.0",
           "date": "2025-11-04T15:33:00+07:00",
@@ -644,8 +1007,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-04T15:33:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v532/Messenger.-.v532.0.0.ipa",
+      "versionDate": "2025-11-08T02:40:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v538.0/Facebook.-.v538.0.0.ipa",
       "patreon": {}
     },
     {
@@ -1993,7 +2356,7 @@
     },
     {
       "beta": false,
-      "name": "Facebook Glow++",
+      "name": "Facebook ++",
       "type": 1,
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Meta Platforms, Inc.",
@@ -2187,6 +2550,17 @@
   ],
   "news": [
     {
+      "title": "Hướng dẫn sử dụng",
+      "identifier": "huongdansudung",
+      "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
+      "date": "2025-11-08",
+      "tintColor": "#5525d0",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
+      "notify": true,
+      "url": "donate.md",
+      "appID": "p3.xyz.yyyue.esign"
+    },
+    {
       "title": "Free Sideloading bằng DNS",
       "identifier": "freesideloading",
       "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
@@ -2218,17 +2592,6 @@
       "notify": false,
       "url": "openlink.md",
       "appID": "com.soundcloud.TouchApp"
-    },
-    {
-      "title": "Hướng dẫn sử dụng",
-      "identifier": "huongdansudung",
-      "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
-      "date": "2025-11-01",
-      "tintColor": "#5525d0",
-      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
-      "notify": true,
-      "url": "donate.md",
-      "appID": "p3.xyz.yyyue.esign"
     },
     {
       "title": "Sử dụng Certificates bị revoke bằng DNS WFS",

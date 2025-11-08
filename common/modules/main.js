@@ -1,4 +1,4 @@
-import { urlSearchParams, sourceURL } from "./constants.js";
+import { urlSearchParams, sourceURL, base64Convert } from "./constants.js";
 import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
@@ -52,7 +52,7 @@ export function main(callback, fallbackURL = "../../") {
         waitForAllImagesToLoad();
     }).catch(error => {
         alert(error);
-        open(`${fallbackURL}?source=${sourceURL}`);
+        open(`${fallbackURL}?source=${base64Convert(sourceURL)}`);
     });
 
     function detectSupport(app) {
