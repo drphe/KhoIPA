@@ -27,12 +27,16 @@ export function main(callback, fallbackURL = "../../") {
         const supportType = detectSupport(source.apps[0]);
         const installAppAlert = new UIAlert({
             title: ` Add to ${supportType}`,
-            message: "${json.name} format ONLY support for ${supportType} app."
+            message: `${json.name} format is ONLY supported for ${supportType} app.`
         });
         installAppAlert.addAction({
             title: "Agree",
             style: 'default',
-            handler: supportType == "Esign" ? open(`esign://install?url=${sourceURLL}`) : open(`feather://source/${sourceURL}`)
+	    handler: () => {
+		supportType === "Esign"
+	        ? open(`esign://install?url=${sourceURL}`)
+        	: open(`feather://source/${sourceURL}`);
+	    }
         });
         installAppAlert.addAction({
             title: "Cancel",
