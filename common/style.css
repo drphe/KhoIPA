@@ -1374,22 +1374,20 @@ hr {
 .two-column-layout {
     display: flex;
     height: 100%;
-    padding-bottom:2rem;
 }
 
 .toc-column {
     width: 30%;
-    /* Cột mục lục chiếm 20% */
     padding: 15px;
     overflow-y: auto;
     border-right: 1px solid #eee;
     box-sizing: border-box;
     flex-shrink: 0;
+    margin-bottom:3rem;
 }
 
 .content-column {
-    width: 80%;
-    /* Cột nội dung chiếm 80% */
+    width: 70%;
     padding: 15px;
     overflow-y: auto;
     box-sizing: border-box;
