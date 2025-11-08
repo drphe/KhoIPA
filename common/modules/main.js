@@ -9,7 +9,7 @@ export function main(callback, fallbackURL = "../../") {
      //   return;
    // }
     // If source is not a valid HTTP URL
-    else if (!isValidHTTPURL(sourceURL)) {
+     if (!isValidHTTPURL(sourceURL)) {
         alert("Invalid HTTP URL.");
         open(fallbackURL);
         return;

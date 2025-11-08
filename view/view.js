@@ -1,4 +1,4 @@
-import { sourceURL, noteURL} from "../common/modules/constants.js";
+import { sourceURL, noteURL, dirNoteURL} from "../common/modules/constants.js";
 import { formatString, open, setUpBackButton , json , isValidHTTPURL,prefetchAndCacheUrls, openCachedUrl, generateTOC } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
@@ -36,7 +36,7 @@ main(json => {
             for (let i = 0; i < json.news.length; i++){
 		if (!json.news[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
-		const url = json.news[i].url.replace("https://drphe.github.io/KhoIPA/view/?note=",""); 
+		const url = json.news[i].url.replace(dirNoteURL,""); 
 		if(url && !isValidHTTPURL(url)) jsonNewsUrl.push('./note/'+ url);
 	    }
 	}

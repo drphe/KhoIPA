@@ -1,4 +1,4 @@
-import { urlSearchParams, sourceURL, base64Convert } from "./common/modules/constants.js";
+import { urlSearchParams, sourceURL, dirNoteURL, base64Convert } from "./common/modules/constants.js";
 import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl, generateTOC} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import { NewsItem } from "./common/components/NewsItem.js";
@@ -33,7 +33,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             for (let i = 0; i < jsonNews.length; i++) {
                 if (!jsonNews[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
-		const url = jsonNews[i].url.replace("https://drphe.github.io/KhoIPA/view/?note=","");
+		const url = jsonNews[i].url.replace(dirNoteURL,"");
 		if(url && !isValidHTTPURL(url)) jsonNewsUrl.push('./view/note/'+ url);
             }
  	}

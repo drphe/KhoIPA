@@ -6,6 +6,7 @@ export const sourceURL = base64Convert(
 );
 
 export const noteURL = urlSearchParams.get('note') ?? '';
+export const dirNoteURL = "https://drphe.github.io/KhoIPA/view/?note=";
 
 export const urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;()]*[-A-Z0-9+&@#\/%=~_|)])/ig;
 
