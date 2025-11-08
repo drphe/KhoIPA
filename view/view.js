@@ -5,13 +5,10 @@ import { AppHeader } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";
 import { openPanel, addAppList} from "../common/components/Panel.js";
 
-const editorsources = await json("../common/assets/json/editorsources.json");
-
-
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
         e.preventDefault();
-        if (editorsources.includes(sourceURL)) open(`../studio/?source=${sourceURL}`);
+        if (sourceURL) open(`../studio/?source=${sourceURL}`);
     });
 
     // Set tab title

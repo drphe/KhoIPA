@@ -23,7 +23,138 @@
   "apps": [
     {
       "beta": false,
-      "name": "Monsters - Thinhkk - DVC IPA",
+      "name": "OtoolsGG",
+      "type": 4,
+      "bundleIdentifier": "mumu.ProcFlowGG.OtoolsGG",
+      "developerName": "TheBallnow",
+      "subtitle": "Công cụ phân tích dylib",
+      "localizedDescription": "Bộ công cụ tích hợp chức năng phân tích toàn diện otool, có thể phân tích sâu đa chiều các tệp nhị phân Mach-O. \n• Bao gồm thông tin cơ bản (loại tệp, kích thước, thông tin đầu Mach-O)\n• Thông tin kiến trúc (kiến trúc hỗ trợ, lệnh tải)\n• Phân tích thư viện phụ thuộc (danh sách thư viện phụ thuộc, bảng ký hiệu gián tiếp)\n• Phân tích bảng ký hiệu (ký hiệu xuất, ký hiệu chưa định nghĩa), phân tích chuỗi (hằng chuỗi C, tất cả chuỗi)\n• Phân tích Objective-C (danh sách lớp, tham chiếu phương thức, tham chiếu giao thức)\n• Phân tích thông tin bảo mật (trạng thái mã hóa, chữ ký mã) cũng như phân tích thông tin đoạn (danh sách đoạn, thống kê kích thước đoạn). \n• Tất cả kết quả phân tích sẽ tạo ra báo cáo cấu trúc chi tiết, thuận tiện cho việc xem và xuất.",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/gFJZRLKD/95df68ea784e.png",
+      "screenshotURLs": [
+        "https://i.ibb.co/rKj8pjgZ/01baeaa70834.png",
+        "https://i.ibb.co/3V6y1qw/80ac60275b42.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSDocumentPickerUsageDescription": "需要访问文件以进行二进制分析",
+          "NSDocumentsFolderUsageDescription": "需要访问Documents目录以保存分析结果"
+        }
+      },
+      "size": 8300000,
+      "version": "1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0/OtoolsGG_VH_v1.0.ipa",
+          "size": 8300000,
+          "version": "1.0",
+          "buildVersion": null,
+          "date": "2025-11-08T17:04:00+07:00",
+          "localizedDescription": "🔧Công cụ phân tích dylib ( Thư viện động)\n😢Sử dụng khi bạn hiểu tính năng của ứng dụng, ai không biết vui lòng bỏ qua!\nCre: BallBallShow (https://t.me/TheBallnow)",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T17:04:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0/OtoolsGG_VH_v1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Opener",
+      "type": 4,
+      "bundleIdentifier": "com.tijo.opener.Opener",
+      "developerName": "Thanks to Paul",
+      "subtitle": "Paid 2$",
+      "localizedDescription": "Opener is an app that allows you to open links from the web in apps instead! Copy a link and launch Opener to see the apps that it can be opened in, or use Opener's action extension right from other apps! Opener currently supports over 280 apps with more being added all the time.\n\nIn addition to opening links in apps, Opener also supports:\n- Opening links in any browser of your choice.\n- Creating QR codes and shortened links using the long press menu.\n- Previewing links from a variety of popular services using long press menu.\n- Opening the Google AMP version of pages, which are significantly faster than normal web pages.\n\n\"If you find yourself looking to view web links in apps often, Opener is a good timesaver that cleverly uses iOS extensions to speed up the process.\" — MacStories\n",
+      "versionDescription": "",
+      "tintColor": "#2cecac",
+      "iconURL": "https://i.ibb.co/RpHSzDLK/13acdb800b6b.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/5d/ca/0f/5dca0fe4-40a7-5da8-107d-6cc71d087149/pr_source.jpg/460x996bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/44/c5/1c/44c51c8e-93ea-09bf-aa1d-ab2491ee8c76/pr_source.jpg/460x996bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/d7/cd/be/d7cdbe53-c041-1939-4fb1-40bda1c7ec44/pr_source.jpg/460x996bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/44/c5/1c/44c51c8e-93ea-09bf-aa1d-ab2491ee8c76/pr_source.jpg/460x996bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/d7/cd/be/d7cdbe53-c041-1939-4fb1-40bda1c7ec44/pr_source.jpg/460x996bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/b4/83/15/b48315b7-b7c2-9434-1693-8b9a9aac420d/pr_source.jpg/460x996bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "Opener saves photos to your Photo Library upon your request."
+        }
+      },
+      "size": 800000,
+      "version": "1.14",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4/com.tijo.opener.Opener-1.14-patched.2.ipa",
+          "size": 800000,
+          "version": "1.14",
+          "buildVersion": null,
+          "date": "2025-11-08T17:00:00+07:00",
+          "localizedDescription": "AppStore Link (https://apps.apple.com/ca/app/opener-open-links-in-apps/id989565871)\nPaid App $2\nThanks to Paul (https://t.me/crocodileturtleapple) for sharing the IPA",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T17:00:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4/com.tijo.opener.Opener-1.14-patched.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Imgur: Funny Memes & Gif Maker",
+      "type": 1,
+      "bundleIdentifier": "imgurmobile",
+      "developerName": "Cracked by CiesIPAs ",
+      "subtitle": "Subscription Unlocked",
+      "localizedDescription": "Imgur là ứng dụng dễ dàng để khám phá những meme hấp dẫn, những con thú dễ thương trong áo len, những sự thật khoa học đầy cảm hứng, những trò mèo tìm kiếm trong video game và tất cả những thứ giải trí hấp dẫn nhất trên Internet. Sử dụng ứng dụng này, điện thoại của bạn sẽ trở nên vui nhộn hơn rất nhiều.\n\nNgoài ra, Imgur còn có một cộng đồng tự hào, nơi bất kỳ ai cũng có thể đăng ảnh của một corgi đáng yêu và trở thành một ngôi sao trên Internet chỉ trong cùng một ngày. Bạn cũng có thể bầu chọn cho những hiện tượng lan truyền đáng chú ý.\n",
+      "versionDescription": "",
+      "tintColor": "#1cb46c",
+      "iconURL": "https://i.ibb.co/FLX8SV4H/b6af3cb58d41.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/48/d2/eb/48d2eb55-f842-3198-ce51-1aebef51c570/65918054-565b-4c56-b4e6-393d3791a801_1242x2688_01.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/43/ba/cc43ba71-8278-5f91-402d-5f11619458ef/84d3d833-e91c-4361-817d-dcb2d3d44226_1242x2688_02.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/cf/99/eacf991e-5e0b-acde-191f-7e6f1a10ffec/8475e2a5-eb1b-4699-97d3-fefe4ef9f64e_1242x2688_03.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/7e/03/8d7e0373-ffda-149d-2f32-3c77f4d587e0/3f57568e-77de-48cc-b9fd-a8d10f5f7824_1242x2688_04.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/4f/f0/c84ff028-90f4-830b-5b17-eeb99c80cccd/d1f7b986-53bc-42d9-a31b-e4dc20842160_1242x2688_05.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/1e/4e/121e4ea7-e9af-1270-0893-790dc833bea6/3f471136-1e0f-4afe-aa63-bba58b0a0354_1242x2688_06.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothPeripheralUsageDescription": "We do not use bluetooth, but a non-empty string is required here",
+          "NSCalendarsUsageDescription": "We do not need access to your calender, but a non-empty string is required here",
+          "NSCameraUsageDescription": "Use the camera to create the best content for your account.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "We do not use location, but a non-empty string is required here",
+          "NSLocationAlwaysUsageDescription": "We do not use location, but a non-empty string is required here",
+          "NSLocationWhenInUseUsageDescription": "We do not use location, but a non-empty string is required here",
+          "NSMicrophoneUsageDescription": "Record video with audio to create the best content for your account.",
+          "NSPhotoLibraryUsageDescription": "Save images to camera roll or select them to create the best content for your account.",
+          "NSUserTrackingUsageDescription": "Advertisers here use tech like cookies to show you ads they think you'll like. By allowing tracking, you'll receive ads tailored to you. By rejecting, you'll receive ads that may be irrelevant. Either way, no personal information about you is collected on Imgur."
+        }
+      },
+      "size": 79100000,
+      "version": "2025.09.02",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2025.09.02/imgurmobile.ipa",
+          "size": 79100000,
+          "version": "2025.09.02",
+          "buildVersion": null,
+          "date": "2025-11-08T16:54:00+07:00",
+          "localizedDescription": "- AppStore Link (https://apps.apple.com/ca/app/imgur-funny-memes-gif-maker/id639881495)\n- Subscription Unlocked\n- Minimum iOS/iPadOS 16.0\n- Cracked by CiesIPAs (https://t.me/ciesIPAs)\n- If it's crashing on iOS 26 use feather and Replace Substrate with Ellekit",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T16:54:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2025.09.02/imgurmobile.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Monsters",
       "type": 2,
       "bundleIdentifier": "es.socialpoint.MonsterCity",
       "developerName": "DVC IPA",
@@ -2755,7 +2886,7 @@
       "url": "https://drphe.github.io/KhoIPA/view/?note=freesideloading.md",
       "appID": ""
     },
-	    {
+    {
       "title": "Share link Testflight hay",
       "identifier": "news-kdwvbtt4tb",
       "caption": "Tổng hợp 1 số link testflight cài app beta hữu ích mà không cần mod.",
@@ -2771,7 +2902,7 @@
       "identifier": "share-dylib",
       "caption": "Nguồn tải và cách tiêm  Dylib/Deb để tự build IPA mod khi không có sẵn.",
       "date": "2025-11-06",
-      "tintColor": "#33DB5D",
+      "tintColor": "#3357db",
       "imageURL": "https://codevn.net/wp-content/uploads/2023/06/1687024389-92e213b670a058f.png",
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=Khodylib.md",
@@ -2782,11 +2913,11 @@
       "identifier": "molienketbangtusafari",
       "caption": "Cài đặt app mod sẽ bị thiếu tính năng hiển thị thông báo để mở liên kết bên trong ứng dụng khi vào bằng safari .",
       "date": "2025-11-04",
-      "tintColor": "#151515",
+      "tintColor": "#263e3e",
       "imageURL": "https://i.ibb.co/670gsV90/8767e01c340d.png",
       "notify": false,
       "url": "https://drphe.github.io/KhoIPA/view/?note=openlink.md",
-      "appID": "com.soundcloud.TouchApp"
+      "appID": "com.tijo.opener.Opener"
     },
     {
       "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
@@ -2826,7 +2957,7 @@
       "identifier": "hdsd-caiipa",
       "caption": "Bài hướng dẫn cài đặt ứng dụng ngoài Apple store (file .IPA) không cần Jailbreak.",
       "date": "2025-10-13",
-      "tintColor": "#0D6EC9",
+      "tintColor": "#c90dbc",
       "imageURL": "https://i.ibb.co/8gJbwDH7/0d5692712924.png",
       "notify": false,
       "url": "https://drphe.github.io/KhoIPA/view/?note=caidatipa.md",
