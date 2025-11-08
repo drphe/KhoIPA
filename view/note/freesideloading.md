@@ -5,7 +5,7 @@ Bất kỳ iOS nào! Không cần máy tính! Không giới hạn ứng dụng! 
 [https://www.reddit.com/u/PuReEnVyUs/s/UEAN9kowDo](https://www.reddit.com/u/PuReEnVyUs/s/UEAN9kowDo)  
 Ngày: 18/05/2024  
 
-## Giới thiệu
+## 1. Giới thiệu
 Tôi đã jailbreak/sideload trên iPhone của mình trong nhiều năm và muốn đóng góp lại cho cộng đồng bằng phương pháp sideloading miễn phí mới này.  
 
 Trước đây tôi dùng AltStore cho đến khi tìm ra phương pháp mới này, và đây là hướng dẫn nhanh (đã hoạt động hơn 10 tháng). Hướng dẫn này dành cho những người có kinh nghiệm, không phải bài viết chuyên sâu. Tôi tìm thấy tất cả các liên kết trên mạng, không biết ai tạo ra hay có liên kết với ai, chỉ đơn giản là muốn giúp cộng đồng.  
@@ -14,8 +14,9 @@ Phương pháp này sử dụng chứng chỉ đã bị thu hồi để cài đ�
 
 Cách này hoạt động trên cả iPad và iPhone, đã được kiểm nghiệm và xác nhận bởi cộng đồng r/sideloaded, r/jailbreak và r/piracy.  
 
+
 ---
-## Tuyên bố miễn trừ trách nhiệm
+## 2. Tuyên bố miễn trừ trách nhiệm
 
 Phương pháp này sử dụng DNS để chặn việc Apple kiểm tra phát hiện chứng chỉ đã bị thu hồi, nếu tính năng này bị vô hiệu hóa.  
 ![Lỗi](https://i.ibb.co/HfmTKwTN/z7195710253717-ac7ce5f82fd1608a073fdcca2adf1fc4.jpg)
@@ -34,9 +35,10 @@ Việc sử dụng DNS sẽ chặn một số dịch vụ đặc thù của Appl
 
 Nếu ESign và các ứng dụng sideload bắt đầu bị crash khi mở, đây là lỗi đã biết. Cách khắc phục duy nhất là **xóa toàn bộ ứng dụng bị crash và cài lại bằng chứng chỉ khác**. (Cách tốt nhất để tránh là bật **chế độ máy bay** trước khi khởi động lại thiết bị).
 
+
 ---
 
-## Hướng dẫn nhanh cho người mới  
+## 3. Hướng dẫn nhanh cho người mới  
 - Cài đặt hai **phím tắt (shortcuts)** sau:  
   - [DNS Shortcut](https://www.icloud.com/shortcuts/05dc7c8991fe4664870398d317cf52e5)
   - [Esign & Certs Shortcut](https://www.icloud.com/shortcuts/57f03a5d4bbf4529a03e2598828b05de)  
@@ -59,7 +61,7 @@ Nếu ESign và các ứng dụng sideload bắt đầu bị crash khi mở, đ�
 DNS này đã được tạo sẵn và **mọi DNS đều có thể theo dõi hoạt động internet của bạn**! Bạn có thể sử dụng nếu muốn, nhưng hãy biết rằng người tạo DNS có khả năng theo dõi nhật ký internet của bạn.  
 
 ---
-## Hướng dẫn tạo DNS của riêng bạn (Đã bỏ DNS dựng sẵn)
+## 4. Hướng dẫn tạo DNS của riêng bạn (Đã bỏ DNS dựng sẵn)
 
 ### Bước 1
 Khi bạn tự tạo DNS, có nhiều dịch vụ để lựa chọn (hoặc tự host server). Tôi khuyên dùng **NextDNS**.  
@@ -133,30 +135,30 @@ Có người đã tạo một **phím tắt** giúp việc cài đặt cả ESig
   - Bạn sẽ không thể cài đặt chứng chỉ từ các nguồn trên.  
   - Cách duy nhất để gỡ blacklist là **sao lưu dữ liệu > xóa toàn bộ nội dung và cài đặt > khôi phục lại thiết bị**.  
 
-### Bước 3: 
+### Bước 3
 - Tải xuống tệp nén chứng chỉ (FILE ESign Cert) từ cùng một trang web. Tệp này chứa các chứng chỉ đã bị thu hồi, sẽ được dùng để cài đặt ứng dụng.
 
-### Bước 4: 
+### Bước 4
 - Vào Cài đặt > Cài đặt chung > VPN & Quản lý thiết bị, sau đó chọn Trust ESign để cho phép mở ứng dụng.
 
 ![anh 7](https://i.ibb.co/NgMZkj67/nh7.jpg)
-### Bước 5: 
+### Bước 5
 - Mở ứng dụng ESign. (Cảnh báo) Tôi nhận thấy trên một số điện thoại có lỗi khiến tất cả ứng dụng ngừng hoạt động khi đang cố nhập tệp hoặc ứng dụng!
 - Trong trường hợp này, hãy khởi động lại  điện thoại (nhấn nhanh nút Tăng âm lượng, sau đó Giảm âm lượng, rồi giữ nút nguồn).
 
-### Bước 6: 
+### Bước 6
 - Trong ESign, vào tab ngoài cùng bên trái (Files). Ở góc trên bên phải, nhấn vào biểu tượng và chọn Import. 
 - Sau đó chọn tệp chứng chỉ dạng .zip để nhập. Khi đã nhập xong, nhấn vào tệp để giải nén. Sau khi giải nén, bạn có thể xóa tệp zip đi.
 
 ![anh 8](https://i.ibb.co/HTKyVrxg/nh8.jpg)
 ![anh 9](https://i.ibb.co/XkshMryY/nh9.jpg)
 
-### Bước 7:
+### Bước 7
 - Mở thư mục chứng chỉ (cert folder) và chọn một chứng chỉ để cài đặt. Tôi thường dùng HDFC, nhưng bất kỳ chứng chỉ nào cũng có thể hoạt động. Nếu một chứng chỉ không hoạt động, hãy thử chứng chỉ khác. 
 - Để nhập chứng chỉ, chỉ cần nhấn vào chứng chỉ đó và chọn Import.
 
 ![anh 10](https://i.ibb.co/fVXvVpGw/nh10.jpg)
-### Bước 8: 
+### Bước 8
 Vậy là bạn đã thiết lập xong, giờ là lúc cài ứng dụng! Có 2 cách để cài ứng dụng: 
 - Cách thứ nhất, bạn có thể nhập các tệp tải xuống dạng .ipa vào cùng vị trí tệp như thư mục zip. Khi nhập, hệ thống sẽ hỏi bạn có muốn nhập vào App Library không, hãy chọn Yes. Sau đó ứng dụng sẽ được chuyển sang tab Unsigned.
 
@@ -172,7 +174,7 @@ Vậy là bạn đã thiết lập xong, giờ là lúc cài ứng dụng! Có 2
 
 ![anh 14](https://i.ibb.co/spzKZQTv/nh14.png)
 
-### Bước 9:
+### Bước 9
 Vào tab Apps, bạn sẽ thấy ứng dụng chưa được ký (unsigned app) mà bạn đã nhập. Nhấn vào ứng dụng đó và chọn SIGNATURE (⚠️ KHÔNG chỉ nhấn Install, vì sẽ không hoạt động!). 
 - Sau đó nhấn Signature lần nữa để nó tải.
 - Tiếp theo, nhấn Install và một cửa sổ bật lên sẽ xuất hiện để cài đặt ứng dụng. Vậy là xong — không bị thu hồi chứng chỉ và bạn có thể cài bao nhiêu ứng dụng tùy thích!
