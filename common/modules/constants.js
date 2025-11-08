@@ -1,11 +1,12 @@
 export const urlSearchParams = new URLSearchParams(window.location.search);
 
 export const sourceURL = base64Convert(
-  decodeURIComponent(urlSearchParams.get('source')?.replaceAll("+", "%2B") ?? ''),
+  decodeURIComponent(urlSearchParams.get('source')?.replaceAll("+", "%2B") ?? 'aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24='),
   'decode'
 );
 
-// https://stackoverflow.com/a/8943487
+export const noteURL = urlSearchParams.get('note') ?? '';
+
 export const urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;()]*[-A-Z0-9+&@#\/%=~_|)])/ig;
 
 export function base64Convert(text, mode = 'encode') {

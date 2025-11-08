@@ -1,4 +1,4 @@
-import { sourceURL} from "../common/modules/constants.js";
+import { sourceURL, noteURL} from "../common/modules/constants.js";
 import { formatString, open, setUpBackButton , json , isValidHTTPURL,prefetchAndCacheUrls, openCachedUrl, generateTOC } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
@@ -6,6 +6,7 @@ import { main } from "../common/modules/main.js";
 import { openPanel, addAppList} from "../common/components/Panel.js";
 
 const editorsources = await json("../common/assets/json/editorsources.json");
+
 
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
@@ -35,7 +36,7 @@ main(json => {
             for (let i = 0; i < json.news.length; i++){
 		if (!json.news[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
-		const url = json.news[i].url; 
+		const url = json.news[i].url.replace("https://drphe.github.io/KhoIPA/view/?note=",""); 
 		if(url && !isValidHTTPURL(json.news[i].url)) jsonNewsUrl.push('./note/'+ url);
 	    }
 	}
@@ -79,8 +80,8 @@ main(json => {
             count++;
         });
     }
-
-        openPanel({},"","..");// preload panel
+	if(noteURL) executeNews('./note/'+noteURL, "CONTENTS", "news-popup-link");//read news
+        else openPanel({},"","..");// preload panel
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
