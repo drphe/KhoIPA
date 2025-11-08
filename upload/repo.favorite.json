@@ -23,6 +23,47 @@
   "apps": [
     {
       "beta": false,
+      "name": "Đấu trường chân lý",
+      "type": 2,
+      "bundleIdentifier": "com.riotgames.league.teamfighttacticsvn",
+      "developerName": "IOS crack.vn",
+      "subtitle": "Đấu trường chân lý mod",
+      "localizedDescription": "Đấu Trường Chân Lý (Teamfight Tactics – TFT) là một tựa game chiến thuật đến từ Riot Games, nổi tiếng với lối chơi độc đáo và cuốn hút. Phiên bản di động của Đấu Trường Chân Lý đã nhanh chóng tạo ra cơn sốt trong cộng đồng game thủ Việt Nam ngay từ khi ra mắt. Với sự phát triển mạnh mẽ và quy trình tải game đơn giản, bạn sẽ dễ dàng tham gia vào thế giới đầy sáng tạo của TFT Mobile.",
+      "versionDescription": "",
+      "tintColor": "#d6660c",
+      "iconURL": "https://i.ibb.co/3Y7JDPLJ/76bc3255ef2c.png",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/DENOILojL1IrSL8AaFXwOUrc_3s8vWs0QTffGvEbDyx_owgpGXckilEEONCIJyrZGGUO=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/xodlxG7kOSmFoykb9fu0MQUfLkZkil7--ZTFJx5_R8yo88jdiCaJnk3rzAnWOtBdToik=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/flXSKPH33QoHgruSAl8UZsQ79435enahGjbUSUfnAdS5InxmQ6m7PhtxgCJZZ-Tdmus=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/Ifx2jCpwYefvM5uqOhB8D3D3kb2zVLDhKu00-aXEErkVyMjVFFoGilelVigP-Ne5yfQp=w1052-h592-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSHumanReadableCopyright": "© 2020 Riot Games Inc. All rights reserved.",
+          "NSUserTrackingUsageDescription": "We use this to learn how you discovered our game and to share future content updates with you through personalized advertising"
+        }
+      },
+      "size": 100500000,
+      "version": "15.22.7231955",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.22.7231955/DauTruongChanLy.-.v15.22.7231955.ipa",
+          "size": 100500000,
+          "version": "15.22.7231955",
+          "buildVersion": null,
+          "date": "2025-11-08T10:58:00+07:00",
+          "localizedDescription": "Hỗ trợ duyệt tài liệu\nUnlock 60FPS cho đỡ ngứa mắt",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T10:58:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.22.7231955/DauTruongChanLy.-.v15.22.7231955.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "FAR: Lone Sails 2020 ",
       "type": 2,
       "bundleIdentifier": "de.mixtvision.farlonesails2020",
@@ -46,12 +87,12 @@
       "version": "1.32.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.32.1/farlonesails2020.-.v1.32.1.ipa",
-          "size": 496900000,
           "version": "1.32.1",
-          "buildVersion": null,
           "date": "2025-11-08T10:37:00+07:00",
           "localizedDescription": "Việt hóa",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.32.1/farlonesails2020.-.v1.32.1.ipa",
+          "size": 496900000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -2293,12 +2334,12 @@
       "version": "11.38",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.38/Twitter-v11.38-NeoFreeBird-v2.2-blatants-patched.ipa",
-          "size": 158800000,
           "version": "11.38",
-          "buildVersion": null,
           "date": "2025-11-08T10:41:00+07:00",
           "localizedDescription": "💎 Modifier: NeoFreeBird v2.2\n🔄 Tweaked by @blatants\n\n📝 Note:\nNeoFreeBird Showcase (https://github.com/NeoFreeBird/app)\n+ Fixed log in issues using new sign in flow (you can only sign in to one account at once but better than nothing) [#78]\n+ Localized the Post > Tweet replacer\n+ Improved the Open in Twitter extension\n+ Minor bug fixes and other minor improvements",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.38/Twitter-v11.38-NeoFreeBird-v2.2-blatants-patched.ipa",
+          "size": 158800000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
