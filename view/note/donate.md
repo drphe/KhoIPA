@@ -1,38 +1,32 @@
 # 👉🏻 Hướng dẫn sử dụng 
 
-[Hướng dẫn sử dụng ESign cơ bản](https://codevn.net/huong-dan-su-dung-esign-co-ban/)
+Để cài đặt được IPA không cần jailbreak bạn <a href="#" data-url="caidatipa.md" class="news-item-link">đọc bài này</a>.
 
-[Hướng dẫn sử dụng Feather cơ bản](https://codevn.net/huong-dan-su-dung-feather-co-ban/)
+## 1. Sử dụng Live Certificates
+Nếu bạn bạn đã mua chứng chỉ thì bắt đầu ngay bằng 2 bài dưới đây:
+* [Hướng dẫn sử dụng ESign cơ bản](https://codevn.net/huong-dan-su-dung-esign-co-ban/)
+* [Hướng dẫn sử dụng Feather cơ bản](https://codevn.net/huong-dan-su-dung-feather-co-ban/)
+*  <a href="#" data-url="chongthuhoicc.md" class="news-item-link">Chống thu hồi chứng chỉ bằng DNS</a>.
 
-* Các app như esign, feather... yêu cầu định dạng file nguồn khác nhau, vì thế có thể không thêm được nguồn repository vào. Các reposite có định dạng khác nhau, dùng trên web sẽ hiển thị tốt nhất. 
-* Có thể copy link tải ipa và sử dụng esign, feather hoặc safari tải về. Tuỳ vào sở thích của bạn.
----
-
-## 🛠️ Mẹo Ký và Cài App Bằng Chứng Chỉ
-
-### 1. Ưu Tiên Feather
-- Nên cài app bằng **Feather** trước. (Phần mềm mã nguồn mở, dễ dàng theo dõi hạn dùng Cert)
-- Nếu không thành công, chuyển sang **ESign**.
-- Feather có cơ chế **chèn mã ngẫu nhiên vào `bundleIdentifier`**, giúp tránh bị Apple thu hồi chứng chỉ (revoked).
-
-### 2. Kiểm Tra Phiên Bản IPA
-- Một số app yêu cầu phiên bản mới hoặc tương thích với hệ điều hành.
-- Nếu không cài được, hãy thử tải **file IPA khác** và lặp lại bước 1.
-
-### 3. Xử Lý Lỗi Chứng Chỉ
-- Nếu vẫn không cài được, có thể chứng chỉ đang gặp lỗi.
-- Thực hiện:
-  - **Xóa cache trình duyệt** (trên website cấp cert).
-  - **Tải lại chứng chỉ**.
-  - Nhập lại vào Feather hoặc ESign.
-  - Lặp lại bước 1.
-
----
-
-## ✅ Ghi Nhớ
+### Ghi Nhớ khi sử dụng Cert Live
 - Luôn kiểm tra tính tương thích của IPA với thiết bị và hệ điều hành.
 - Feather thường ổn định hơn và ít bị revoke hơn ESign.
 - Đừng quên theo dõi thời hạn chứng chỉ để tránh gián đoạn khi cài app.
+
+## 2. FreeSideloading
+Nếu bạn không mua chứng chỉ, muốn freesideloading thì đọc kỹ các bài hướng dẫn sau: 
+* Sử dụng Trollstore cho các thiết bị ios cũ:  <a href="#" data-url="trollstore.md" class="news-item-link">Cài IPA bằng trollstore</a>.
+
+* Sử dụng Cert bị revoke bằng DNS:  <a href="#" data-url="freesideloading.md" class="news-item-link">Hướng dẫn freesideloading</a>, <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoke bằng DNS WFS</a>.
+
+---
+
+## 3. Mẹo sử dụng Repo tải IPA
+* Các app như esign, feather... yêu cầu định dạng file nguồn khác nhau, vì thế có thể không thêm được nguồn repository vào. Các reposite có định dạng khác nhau nên có thể chỉ add vào Esign hoặc chỉ Feather, dùng trên web sẽ hiển thị tốt nhất. 
+* Tuy nhiên các repo trên KhoIPA đã được mình dành nhiều công sức để nó hỗ trợ cả hầu hết các phần mềm hỗ trợ ký IPA: Esign, Feather ...
+* Có thể copy link tải ipa và sử dụng esign, feather hoặc safari tải về. Tuỳ vào sở thích của bạn.
+
+---
 
 ## 📬 Cách thức liên lạc  
 Các bro có thể liên lạc với mình qua các kênh sau nhé.
