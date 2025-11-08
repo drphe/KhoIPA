@@ -1,7 +1,7 @@
 
 # Hướng dẫn cách cài đặt auto clicker trên iPhone
 
-Cài đặt auto clicclicker mà không cần jailbreak, máy tính hay ứng dụng bên thứ ba. Phương pháp sử dụng tính năng có sẵn trong iOS là Siri và Voice Control để ghi lại và lặp lại các thao tác chạm tự động.
+Cài đặt auto clicker mà không cần jailbreak, máy tính hay ứng dụng bên thứ ba. Phương pháp sử dụng tính năng có sẵn trong iOS là Siri và Voice Control để ghi lại và lặp lại các thao tác chạm tự động.
 
 ## Đặt vấn đề
 - iPhone không hỗ trợ ứng dụng auto clicker từ bên thứ ba
