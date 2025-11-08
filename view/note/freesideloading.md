@@ -49,11 +49,14 @@ Nếu ESign và các ứng dụng sideload bắt đầu bị crash khi mở, đ�
 - Hoàn tất ✅  
 
 ### Lưu ý quan trọng (Disclaimer)
-DNS này đã được tạo sẵn và **mọi DNS đều có thể theo dõi hoạt động internet của bạn**! Bạn có thể sử dụng nếu muốn, nhưng hãy biết rằng người tạo DNS có khả năng theo dõi nhật ký internet của bạn.  
 
 * Applejr.net cũng chia sẻ cách thức tương tự <a href="#" data-url="applejr.md" class="news-item-link">Xem chi tiết</a>.
 
+* Và cả [Page khoindvn.io.vn](https://khoindvn.io.vn/)
+
 * Hoặc sử dụng DNS của wsfteam.xyz <a href="#" data-url="verifyapp.md" class="news-item-link">Xem chi tiết</a>.
+
+DNS này đã được tạo sẵn và **mọi DNS đều có thể theo dõi hoạt động internet của bạn**! Bạn có thể sử dụng nếu muốn, nhưng hãy biết rằng người tạo DNS có khả năng theo dõi nhật ký internet của bạn.  
 
 ---
 ## Hướng dẫn tạo DNS của riêng bạn (Đã bỏ DNS dựng sẵn)

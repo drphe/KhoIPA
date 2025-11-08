@@ -41,8 +41,6 @@ Truy cập một trong các trang sau để cài trực tiếp và tải cert:
 
 => <a href="#" data-url="allsetupipa.md" class="news-item-link"> Tổng hợp link của techybuff.com </a>
 
-=> [Page khoindvn.io.vn](https://khoindvn.io.vn/)
-
 
 ### 1\. Tải và cài đặt cấu hình DNS
 
