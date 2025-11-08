@@ -23,6 +23,91 @@
   "apps": [
     {
       "beta": false,
+      "name": "Monsters - Thinhkk - DVC IPA",
+      "type": 2,
+      "bundleIdentifier": "es.socialpoint.MonsterCity",
+      "developerName": "DVC IPA",
+      "subtitle": "Monster Legends - menu v2",
+      "localizedDescription": "Monster Legends là một trong những tựa game chiến thuật nuôi quái vật cực kỳ ăn khách đến từ Social Point, ra mắt chính thức vào tháng 7 năm 2013. Với hơn một thập kỷ phát triển, tựa game này đã ghi dấu ấn mạnh mẽ trong lòng game thủ với hơn 100 triệu lượt tải trên Google Play và iOS. Người chơi được bước vào thế giới huyền bí nơi hàng trăm loài quái vật sinh sống, huấn luyện và chiến đấu trong những trận PvP đầy tính chiến thuật.",
+      "versionDescription": "",
+      "tintColor": "#04a3fc",
+      "iconURL": "https://i.ibb.co/C32Y30KB/43c3500a9652.png",
+      "screenshotURLs": [
+        "https://khumod.io/wp-content/uploads/2025/04/banner-hack-monster-lenends-1.jpg",
+        "https://khumod.io/wp-content/uploads/2025/04/banner2-monster-lenends-mod-apk.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSCalendarsUsageDescription": "The game would like to add special events to your calendar.",
+          "NSCameraUsageDescription": "You can take photos to use within the game and customize your experience.",
+          "NSMotionUsageDescription": "Motion data can help create a more interactive gameplay experience.",
+          "NSPhotoLibraryAddUsageDescription": "The game would like to be able to save the content you create to your Photo Library.",
+          "NSPhotoLibraryUsageDescription": "You can customize the game by using images from your photo library.",
+          "NSUserTrackingUsageDescription": "This data will be used to improve your ad experience and help this app stay free."
+        }
+      },
+      "size": 104100000,
+      "version": "18.3.8",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/untagged-066c8738392e23699984/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
+          "size": 104100000,
+          "version": "18.3.8",
+          "buildVersion": null,
+          "date": "2025-11-08T13:23:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅Bỏ lượt địch\n✅1 Hit\n✅Auto win\n✅No skill cost",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T13:23:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/untagged-066c8738392e23699984/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Trở Về Tuổi Thơ",
+      "type": 2,
+      "bundleIdentifier": "vn.corochti.returntochildhood",
+      "developerName": "DVC IPA",
+      "subtitle": "Trở Về Tuổi Thơ - DVC IPA",
+      "localizedDescription": "Trở Về Tuổi Thơ Mobile (Tro Ve Tuoi Tho) là tựa game mô phỏng vừa được ra mắt tại thị trường Việt Nam vào cuối tháng 1 năm 2025. Ngay từ khi ra mắt, game đã nhận được hàng loạt đánh giá tích cực cũng như sự quan tâm nồng nhiệt của cộng đồng game thủ Việt Nam. Sau hơn nửa tháng kể từ ngày phát hành, game đã có hơn 1 triệu lượt tải và hàng trăm ngàn lượt đánh giá tích cực.\n\nGame sẽ đưa người chơi trở về những năm 2000 và hóa thân thành các thanh thiếu niên thế hệ 8x 9x. Trong game, người chơi sẽ được trải nghiệm những ngày trưa hè không chịu ngủ trưa trốn đi câu cá cùng lũ bạn. Mua đồ ăn vặt ngoài cổng trường, chia nhau từng miếng bánh, từng ngụm nước ngọt mát lạnh. Tiết kiệm tiền ăn vặt để dành mua những món đồ chơi yêu thích.\n\nVề cơ bản thì nhiệm vụ của người chơi là hoàn thành các nhiệm vụ trong game mô phỏng Trở Về Tuổi Thơ Mobile để khám phá tuổi thơ của thế hệ 8x 9x. Từ việc đi học, chơi đùa đơn giản cho tới câu cá kiếm tiền, thậm chí bạn còn có thể chọc chó để trải nghiệm cảm giác được “truy đuổi”.\n\nĐặc biệt, một trong những hoạt động mà đa số thanh thiếu niên thế hệ 8x 9x yêu thích cũng sẽ có mặt trong game Trở Về Tuổi Thơ, đó chính là hoạt động mua kẹo rút thăm trúng thưởng. Người chơi có thể dùng số tiền tiết kiệm của mình để mua các viên kẹo được bàn bán trong căn tin, từ đó rút lấy con số may mắn và nhận được các phần thưởng hậu hĩnh.\n\nNgoại trừ các lối chơi và các hoạt động trong game, Trở Về Tuổi Thơ còn khiến không ít game thủ thích thú với đồ họa 2D đầy màu sắc. Đồng thời, game còn tái hiện lại chân thật những khung cảnh tuổi thơ của nhiều game thủ, khiến cho người chơi có cảm giác như mình đang thực sự quay về quá khứ và sống những ngày tháng vô tư vui vẻ.",
+      "versionDescription": "",
+      "tintColor": "#f0ba04",
+      "iconURL": "https://i.ibb.co/CpndR20G/8f4ae498fd72.png",
+      "screenshotURLs": [
+        "https://img-cdn.2game.vn/2025/02/05/Tro-Ve-Tuoi-Tho-1.jpg",
+        "https://img-cdn.2game.vn/2025/02/05/Tro-Ve-Tuoi-Tho-2.jpg",
+        "https://img-cdn.2game.vn/2025/02/05/Tro-Ve-Tuoi-Tho-4.jpg",
+        "https://img-cdn.2game.vn/2025/02/05/Tro-Ve-Tuoi-Tho-3.jpg",
+        "https://img-cdn.2game.vn/2025/02/05/Tro-Ve-Tuoi-Tho-5.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "This uses device info for more personalized ads and content"
+        }
+      },
+      "size": 110100000,
+      "version": "1.15.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.15.0/trovetuoitho.ipa",
+          "size": 110100000,
+          "version": "1.15.0",
+          "buildVersion": null,
+          "date": "2025-11-08T13:15:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n\n✅Vô hạn Tiền -> nhận 1 ít để tăng\n✅Vô hạn Phiếu chú bé đần -> nhận 1 ít để tăng\n✅Lên cấp nhanh\n✅Đóng băng Năng lượng \n✅Đóng băng Nước thức tỉnh\n\n🔋 Chạm icon DVC để bật tắt menu.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T13:15:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.15.0/trovetuoitho.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Đấu trường chân lý",
       "type": 2,
       "bundleIdentifier": "com.riotgames.league.teamfighttacticsvn",
@@ -49,12 +134,12 @@
       "version": "15.22.7231955",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.22.7231955/DauTruongChanLy.-.v15.22.7231955.ipa",
-          "size": 100500000,
           "version": "15.22.7231955",
-          "buildVersion": null,
           "date": "2025-11-08T10:58:00+07:00",
           "localizedDescription": "Hỗ trợ duyệt tài liệu\nUnlock 60FPS cho đỡ ngứa mắt",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.22.7231955/DauTruongChanLy.-.v15.22.7231955.ipa",
+          "size": 100500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
