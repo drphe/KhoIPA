@@ -3,11 +3,11 @@ import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, op
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
 export function main(callback, fallbackURL = "../../") {
-    // If no source
-    if (!urlSearchParams.has('source')) {
-        open(fallbackURL);
-        return;
-    }
+    // If no source => default
+    //if (!urlSearchParams.has('source')) {
+     //   open(fallbackURL);
+     //   return;
+   // }
     // If source is not a valid HTTP URL
     else if (!isValidHTTPURL(sourceURL)) {
         alert("Invalid HTTP URL.");
