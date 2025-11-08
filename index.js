@@ -33,8 +33,8 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             for (let i = 0; i < jsonNews.length; i++) {
                 if (!jsonNews[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
-		const url = jsonNews[i].url.replace("https://drphe.github.io/KhoIPA/view/?note=","");; 
-		if(url && !isValidHTTPURL(jsonNews[i].url)) jsonNewsUrl.push('./view/note/'+ url);
+		const url = jsonNews[i].url.replace("https://drphe.github.io/KhoIPA/view/?note=","");
+		if(url && !isValidHTTPURL(url)) jsonNewsUrl.push('./view/note/'+ url);
             }
  	}
 	prefetchAndCacheUrls(jsonNewsUrl);

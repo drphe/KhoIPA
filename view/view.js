@@ -37,7 +37,7 @@ main(json => {
 		if (!json.news[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
 		const url = json.news[i].url.replace("https://drphe.github.io/KhoIPA/view/?note=",""); 
-		if(url && !isValidHTTPURL(json.news[i].url)) jsonNewsUrl.push('./note/'+ url);
+		if(url && !isValidHTTPURL(url)) jsonNewsUrl.push('./note/'+ url);
 	    }
 	}
 	prefetchAndCacheUrls(jsonNewsUrl);
