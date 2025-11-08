@@ -77,6 +77,8 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     document.body.classList.remove("loading");// kết thúc load dữ liệu
     document.getElementById("loading")?.remove();
 
+    const fixYear =(d)=>{let x=new Date(d),y=new Date().getFullYear();return x.getFullYear()>y+10?(x.setFullYear(y),x.toISOString().split("T")[0]):d}
+
     const allSources = [...fetchedEditorSources, ...fetchedSources]; // chuẩn bị danh sách app
     const allApps = [];
     for (const source of allSources) {
@@ -88,6 +90,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             app.sourceIconURL = source.iconURL;
             app.sourceTintColor = source.tintColor;
             app.bundleIdentifier += randomCode;
+	    app.versionDate = app.versionDate? fixYear(app.versionDate):'';
         }
         //const nonBetaApps = source.apps.filter(app => !app.beta);
         allApps.push(...source.apps);
