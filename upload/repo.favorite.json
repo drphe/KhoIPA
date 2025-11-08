@@ -52,12 +52,12 @@
       "version": "18.3.8",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/untagged-066c8738392e23699984/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
-          "size": 104100000,
           "version": "18.3.8",
-          "buildVersion": null,
           "date": "2025-11-08T13:23:00+07:00",
           "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅Bỏ lượt địch\n✅1 Hit\n✅Auto win\n✅No skill cost",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/untagged-066c8738392e23699984/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
+          "size": 104100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -93,12 +93,12 @@
       "version": "1.15.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.15.0/trovetuoitho.ipa",
-          "size": 110100000,
           "version": "1.15.0",
-          "buildVersion": null,
           "date": "2025-11-08T13:15:00+07:00",
           "localizedDescription": "🦠 Tính Năng Hack 🦠\n\n✅Vô hạn Tiền -> nhận 1 ít để tăng\n✅Vô hạn Phiếu chú bé đần -> nhận 1 ít để tăng\n✅Lên cấp nhanh\n✅Đóng băng Năng lượng \n✅Đóng băng Nước thức tỉnh\n\n🔋 Chạm icon DVC để bật tắt menu.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.15.0/trovetuoitho.ipa",
+          "size": 110100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -2723,10 +2723,21 @@
   ],
   "news": [
     {
+      "title": "Hướng dẫn cách cài đặt auto clicker trên iPhone",
+      "identifier": "news-qj962r0up1",
+      "caption": "ài đặt auto clicclicker mà không cần jailbreak, máy tính hay ứng dụng bên thứ ba.",
+      "date": "2025-11-08",
+      "tintColor": "#00504a",
+      "imageURL": "https://i.ibb.co/XfDBx4nb/504e30b33fff.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=autoclick.md",
+      "appID": null
+    },
+    {
       "title": "Share link Testflight hay",
       "identifier": "news-kdwvbtt4tb",
       "caption": "Tổng hợp 1 số link testflight cài app beta hữu ích mà không cần mod.",
-      "date": "2025-11-08",
+      "date": "2025-11-07",
       "tintColor": "#5825D0",
       "imageURL": "https://i.ibb.co/jkr1zFm3/af4dd98ae80a.png",
       "notify": true,

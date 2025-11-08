@@ -74,8 +74,6 @@ main(json => {
         json.apps.forEach(app => {
             // Max: 5 featured apps if not specified
             if (count > 5) return;
-            // Ignore beta apps
-            //if (app.beta) return;
             document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app));
             count++;
         });
