@@ -11,7 +11,7 @@ export const AppHeader = (app) => app ? `
             <div class="content">
 		<div class="app-icon-wrapper">
                     <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" alt="">
-		    ${app.sourceIconURL ? `<img class="developer-icon" src="${app.sourceIconURL}" onerror="this.onerror=null; this.src='https://placehold.co/25x25/${app.sourceTintColor.replaceAll("#","")}/000?text=${app.sourceName.charAt(0).toUpperCase()}';" alt="">` : ``}
+		    ${app.sourceIconURL ? `<img class="developer-icon" src="${app.sourceIconURL}" onerror="this.onerror=null; this.src='https://placehold.co/25x25/${app.sourceTintColor.replaceAll("#","")}/FFFFFF?text=${app.sourceName.charAt(0).toUpperCase()}';" alt="">` : ``}
 		</div>
                 <div class="right">
                     <div class="text">
