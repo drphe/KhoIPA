@@ -28,19 +28,19 @@ Nếu bạn không mua chứng chỉ, muốn freesideloading thì đọc kỹ c�
 
 ---
 
-## 📬 Cách thức liên lạc  
+## 4. Cách thức liên lạc và trao đổi
+
+### 📬Liên lạc
 Các bro có thể liên lạc với mình qua các kênh sau nhé.
 
 ![Contact](https://i.ibb.co/39KrnHjM/IMG-3213.jpg)
 
 - 💬 **Telegram**: [@Phetit](https://t.me/Phetit)  
 - 🎥 **Patreon**: [patreon.com/drphe](https://patreon.com/drphe)  
-- 📘 **Facebook**: [fb.com/phebungphe1995](https://www.facebook.com/phebungphe1995)  
 - 📧 **Email**: [gmail](mailto://drphe95@gmail.com)
 ---
 
-## 💖 Donate cho tác giả  
-
+### 💖 Donate 
 
 ![Donate](https://i.ibb.co/yCDhBSr/IMG-3215.jpg)
 
