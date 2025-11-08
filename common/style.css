@@ -464,8 +464,8 @@ input[type="text"]:focus {
 
 .developer-icon {
     position: absolute;
-    bottom: -3px;
-    right: -3px;
+    bottom: 2px;
+    right: -0.5em;
     width: 1rem;
     height: 1rem;
     border: 2px solid white;
