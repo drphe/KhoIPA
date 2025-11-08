@@ -1,9 +1,11 @@
 # 👉🏻 Hướng dẫn sử dụng 
 
 Để cài đặt được IPA không cần jailbreak bạn <a href="#" data-url="caidatipa.md" class="news-item-link">đọc bài này</a>.
+**Chế độ Nhà phát triển (Developer Mode):** Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.
+=> <a href="#" data-url="developermod.md" class="news-item-link"> Xem bài hướng dẫn ở đây </a>
 
 ## 1. Sử dụng Live Certificates
-Nếu bạn bạn đã mua chứng chỉ thì bắt đầu ngay bằng 2 bài dưới đây:
+Nếu bạn bạn đã mua chứng chỉ thì bắt đầu ngay bằng các bài dưới đây:
 * [Hướng dẫn sử dụng ESign cơ bản](https://codevn.net/huong-dan-su-dung-esign-co-ban/)
 * [Hướng dẫn sử dụng Feather cơ bản](https://codevn.net/huong-dan-su-dung-feather-co-ban/)
 *  <a href="#" data-url="chongthuhoicc.md" class="news-item-link">Chống thu hồi chứng chỉ bằng DNS</a>.
@@ -13,11 +15,11 @@ Nếu bạn bạn đã mua chứng chỉ thì bắt đầu ngay bằng 2 bài d�
 - Feather thường ổn định hơn và ít bị revoke hơn ESign.
 - Đừng quên theo dõi thời hạn chứng chỉ để tránh gián đoạn khi cài app.
 
-## 2. FreeSideloading
+## 2. Free Sideloading
 Nếu bạn không mua chứng chỉ, muốn freesideloading thì đọc kỹ các bài hướng dẫn sau: 
 * Sử dụng Trollstore cho các thiết bị ios cũ:  <a href="#" data-url="trollstore.md" class="news-item-link">Cài IPA bằng trollstore</a>.
 
-* Sử dụng Cert bị revoke bằng DNS:  <a href="#" data-url="freesideloading.md" class="news-item-link">Hướng dẫn freesideloading</a>, <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoke bằng DNS WFS</a>.
+* Sử dụng Cert bị revoke bằng DNS:  <a href="#" data-url="freesideloading.md" class="news-item-link">Hướng dẫn freesideloading</a> hoặc <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoke bằng DNS WFS</a>.
 
 ---
 
@@ -38,7 +40,6 @@ Các bro có thể liên lạc với mình qua các kênh sau nhé.
 - 💬 **Telegram**: [@Phetit](https://t.me/Phetit)  
 - 🎥 **Patreon**: [patreon.com/drphe](https://patreon.com/drphe)  
 - 📧 **Email**: [gmail](mailto://drphe95@gmail.com)
----
 
 ### 💖 Donate 
 
@@ -48,6 +49,6 @@ Các bro có thể liên lạc với mình qua các kênh sau nhé.
 - 🏦 **TechcomBank**: `282885999999`  Nguyễn Văn Phê
 
 ![MB](https://i.ibb.co/JWG0Hvgd/IMG-3214.jpg)
----
+
 
 ✨ Cảm ơn bạn đã ủng hộ và đồng hành cùng tác giả!
