@@ -84,7 +84,9 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         const randomCode = Math.random().toString(36).substring(2, 6);
         for (const app of source.apps) {
             app.sourceURL = source.sourceURL;
+            app.sourceName = source.name;
             app.sourceIconURL = source.iconURL;
+            app.sourceTintColor = source.tintColor;
             app.bundleIdentifier += randomCode;
         }
         //const nonBetaApps = source.apps.filter(app => !app.beta);
