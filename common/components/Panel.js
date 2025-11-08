@@ -1,5 +1,5 @@
 import { base64Convert } from "../modules/constants.js";
-import {isValidHTTPURL, open, setTintColor, showAddToAltStoreAlert, showUIAlert, 
+import {isValidHTTPURL, open, setTintColor, showUIAlert, 
 insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
@@ -81,19 +81,19 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         installAppAlert.addAction({
             title: "Install via Esign",
             style: 'default',
-            handler: () => showAddToAltStoreAlert(jsons.name, "Install App", () => open(`esign://install?url=${app.downloadURL}`))
+            handler: () => open(`esign://install?url=${app.downloadURL}`)
         });
 	if(!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
           installAppAlert.addAction({
             title: "Download IPA",
             style: 'default',
-            handler: () => showAddToAltStoreAlert(jsons.name, "Download IPA", () => window.open(app.downloadURL, "_blank"))
+            handler: () => window.open(app.downloadURL, "_blank")
           });
 	}
         installAppAlert.addAction({
             title: "Copy Link",
             style: 'default',
-            handler: () => showAddToAltStoreAlert(jsons.name, "Copy Link", () => copyText(app.downloadURL))
+            handler: () =>  copyText(app.downloadURL)
         });
         installAppAlert.addAction({
             title: "Cancel",
