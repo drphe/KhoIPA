@@ -1374,6 +1374,7 @@ hr {
 .two-column-layout {
     display: flex;
     height: 100%;
+    padding-bottom:2rem;
 }
 
 .toc-column {
