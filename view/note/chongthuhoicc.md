@@ -1,6 +1,7 @@
 # **Hướng Dẫn Chống Thu Hồi Chứng Chỉ iOS**
 
-Update 29/10/2025, dù xài DNS nhưng chứng chỉ vẫn bị thu hồi, do các cert mua thường theo lô (nhiều UDID cùng chung), khi apple quét thì vẫn bị thu hồi như thường.
+Update 1/11/2025, dù xài DNS nhưng chứng chỉ vẫn bị thu hồi, do các cert mua thường theo lô (nhiều UDID cùng chung), khi apple quét thì vẫn bị thu hồi như thường. Apple rất căng và muốn ngăn chặn hoàn toàn việc Sideload app lậu. Revoke với số lượng lớn hoàn toàn. Những acc dev bị revoke đều là những acc dev trước đó gia hạn sử dụng trong nhiều năm liền. Việc bảo hành sẽ không thể gấp rút trước 35 ngày. 
+
 Nếu thiết bị IOS đời cũ có thể dùng DNS Antirevok trong bài này để cài các App đã ký sẵn để sử dụng các chứng chỉ đã bị thu hồi.
 
  => <a href="#" data-url="allsetupipa.md" class="news-item-link"> Tổng hợp link tải IPA trực tiếp của techybuff.com </a>

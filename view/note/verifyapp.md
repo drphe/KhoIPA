@@ -6,6 +6,8 @@ Apple gần đây đã giới thiệu các quy định mới về việc xác mi
 
 ## ✅ Giải pháp: Sử dụng DNS WFS
 
+Bạn là người mới, có thể <a href="#" data-url="freesideloading.md" class="news-item-link">Xem bài hướng dẫn này</a> để hiểu biết cơ bản về cách sử freesideloading bằng cert bị thu hồi.
+
 Nếu thiết bị IOS đời cũ <16 <a href="#" data-url="chongthuhoicc.md" class="news-item-link">Xem bài này</a>.
 
 <a href="#" data-url="dnswfs.md" class="news-item-link">QUAN TRỌNG : Xem hướng dẫn sử dụng DNS WFS</a> trước khi bắt đầu.
