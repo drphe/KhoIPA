@@ -9,7 +9,10 @@ export const AppHeader = (app) => app ? `
     <div class="app-header-inner-container">
         <div class="app-header">
             <div class="content">
+		<div class="app-icon-wrapper">
                 <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" alt="">
+		${app.sourceIconURL ? `<img class="developer-icon" src="${app.sourceIconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" alt="">`:``}
+		</div>
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name} ${app.beta ? `<span class="small beta badge"></span>`:``}</p>

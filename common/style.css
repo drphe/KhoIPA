@@ -456,7 +456,25 @@ input[type="text"]:focus {
     font-size: 0.85em;
     white-space: break-spaces;
 }
+.app-icon-wrapper {
+    position: relative; 
+    width: 70px; /* Đặt kích thước cho wrapper */
+    height: 70px;
+}
 
+.developer-icon {
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid white;
+    border-radius: 50%; /* Icon tròn */
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    z-index: 2;
+}
 .app-header-link {
     color: unset;
 }
