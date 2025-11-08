@@ -1428,7 +1428,6 @@ hr {
 }
 code{
     color:var(--color-primary);
-    background:var(--color-transparent-dark);
 }
 pre {
 margin-left: 2rem;
