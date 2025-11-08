@@ -23,6 +23,44 @@
   "apps": [
     {
       "beta": false,
+      "name": "FAR: Lone Sails 2020 ",
+      "type": 2,
+      "bundleIdentifier": "de.mixtvision.farlonesails2020",
+      "developerName": "IOS crack.vn",
+      "subtitle": "FAR: Lone Sails 2020 Việt hóa",
+      "localizedDescription": "FAR: Lone Sails is a vehicle adventure game. In a unique vehicle you travel across a dried-out ocean following the tracks of a once thriving civilization. Through an array of roadblocks and through hazardous weather you need to keep your vessel going. Where will this journey take you? Are you the last of your kind?",
+      "versionDescription": "",
+      "tintColor": "#a16d5d",
+      "iconURL": "https://i.ibb.co/0ppH1fgF/3f131cec7f9a.png",
+      "screenshotURLs": [
+        "https://gpstatic.com/acache/60/97/1/us/t620x300-f49fea532c9f64c01866eeb7e4f9022a.jpg",
+        "https://cdn.wccftech.com/wp-content/uploads/2019/05/far_lone_sails_art.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Required for augmented reality support."
+        }
+      },
+      "size": 496900000,
+      "version": "1.32.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.32.1/farlonesails2020.-.v1.32.1.ipa",
+          "size": 496900000,
+          "version": "1.32.1",
+          "buildVersion": null,
+          "date": "2025-11-08T10:37:00+07:00",
+          "localizedDescription": "Việt hóa",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-08T10:37:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.32.1/farlonesails2020.-.v1.32.1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Monument Valley 2",
       "type": 2,
       "bundleIdentifier": "com.ustwo.monumentvalley2",
@@ -51,12 +89,12 @@
       "version": "3.10.604",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.10.604/Monument-Valley-2.ipa",
-          "size": 283100000,
           "version": "3.10.604",
-          "buildVersion": null,
           "date": "2025-11-07T22:09:00+07:00",
           "localizedDescription": "Monument Valley 2 IPA MOD v3.10.604 (Unlocked DLC) iOS\nCài qua Trollstore chơi được.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.10.604/Monument-Valley-2.ipa",
+          "size": 283100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -93,12 +131,12 @@
       "version": "3.9.744",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.9.744/Monument-Valley-v3.3.202.ipa",
-          "size": 258800000,
           "version": "3.9.744",
-          "buildVersion": null,
           "date": "2025-11-07T21:37:00+07:00",
           "localizedDescription": "Monument Valley IPA MOD v3.9.744 (Paid) iOS\nCài qua trollstore chơi được.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.9.744/Monument-Valley-v3.3.202.ipa",
+          "size": 258800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -130,12 +168,12 @@
       "version": "1.0.34",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.34/Carrion.-.v1.0.34.ipa",
-          "size": 123200000,
           "version": "1.0.34",
-          "buildVersion": null,
           "date": "2025-11-07T20:55:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Unlock DLC (Ấn mua rồi huỷ)",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.34/Carrion.-.v1.0.34.ipa",
+          "size": 123200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -579,7 +617,7 @@
     },
     {
       "beta": false,
-      "name": "Disable Network",
+      "name": "Dylib Disable Network",
       "type": 5,
       "bundleIdentifier": "com.xognequm97.2lri168lcu",
       "developerName": "Unknown",
@@ -2251,9 +2289,18 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 163535212,
-      "version": "11.30.1",
+      "size": 158800000,
+      "version": "11.38",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.38/Twitter-v11.38-NeoFreeBird-v2.2-blatants-patched.ipa",
+          "size": 158800000,
+          "version": "11.38",
+          "buildVersion": null,
+          "date": "2025-11-08T10:41:00+07:00",
+          "localizedDescription": "💎 Modifier: NeoFreeBird v2.2\n🔄 Tweaked by @blatants\n\n📝 Note:\nNeoFreeBird Showcase (https://github.com/NeoFreeBird/app)\n+ Fixed log in issues using new sign in flow (you can only sign in to one account at once but better than nothing) [#78]\n+ Localized the Post > Tweet replacer\n+ Improved the Open in Twitter extension\n+ Minor bug fixes and other minor improvements",
+          "minOSVersion": null
+        },
         {
           "version": "11.30.1",
           "date": "2025-10-14T09:16:00Z",
@@ -2273,8 +2320,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-14T09:16:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/x.11.31/X.v11.30.1.TwiGalaxy.v1.11.blatant.Patched.ipa",
+      "versionDate": "2025-11-08T10:41:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.38/Twitter-v11.38-NeoFreeBird-v2.2-blatants-patched.ipa",
       "patreon": {}
     },
     {
@@ -2549,6 +2596,17 @@
     }
   ],
   "news": [
+    {
+      "title": "Share link Testflight hay",
+      "identifier": "news-kdwvbtt4tb",
+      "caption": "Tổng hợp 1 số link testflight cài app beta hữu ích mà không cần mod.",
+      "date": "2025-11-08",
+      "tintColor": "#5825D0",
+      "imageURL": "https://i.ibb.co/jkr1zFm3/af4dd98ae80a.png",
+      "notify": true,
+      "url": "testflight.md",
+      "appID": null
+    },
     {
       "title": "Hướng dẫn sử dụng",
       "identifier": "huongdansudung",

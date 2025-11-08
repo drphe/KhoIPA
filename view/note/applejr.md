@@ -1,5 +1,6 @@
 # AppleJr Esign/ Ksign/ Scarlet Certificates
 Nguồn : https://applejr.net/
+https://github.com/applejr12/signer/
 
 ## 1. DNS Anti-Revoke
 ### AppleJr DNS  
