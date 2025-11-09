@@ -23,6 +23,321 @@
   "apps": [
     {
       "beta": false,
+      "name": "FEZ Pocket Edition",
+      "type": 2,
+      "bundleIdentifier": "com.polytron.fez",
+      "developerName": "Decrypted by @Vaxmg",
+      "subtitle": "Paid game",
+      "localizedDescription": "Gomez is a 2D creature living in a 2D world. Or is he? When the existence of a mysterious 3rd dimension is revealed to him, Gomez is sent out on a journey that will take him to the very end of time and space. Use your ability to navigate 3D structures from 4 distinct classic 2D perspectives. Explore a serene and beautiful open-ended world full of secrets, puzzles and hidden treasures. Unearth the mysteries of the past and discover the truth about reality and perception. Change your perspective and look at the world in a different way.",
+      "versionDescription": "",
+      "tintColor": "#2cccfb",
+      "iconURL": "https://i.ibb.co/bM8CbZjN/0806ac815a44.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/7c/7b/18/7c7b183b-91e0-fbbe-be5c-4f4b42c16dfd/pr_source.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/b0/99/33/b09933c6-e0e2-95bd-27a3-e13335ca0ed3/pr_source.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/c5/68/22/c56822fc-76a5-7c64-a129-cc05093576b5/pr_source.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/3d/ae/42/3dae420d-2468-5746-4454-98863ad4ffd3/pr_source.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/28/56/a8/2856a86b-f906-8fa2-3e00-9ff911a3ea24/pr_source.png/480x222bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSMainNibFile": "MainWindow"
+        }
+      },
+      "size": 156800000,
+      "version": "1.0.6",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.4/FEZ.Pocket.Edition.1.0.4.ipa",
+          "size": 156800000,
+          "version": "1.0.6",
+          "buildVersion": null,
+          "date": "2025-11-09T13:03:00+07:00",
+          "localizedDescription": "Paid App 4.99$\n\nDecrypted by @Vaxmg",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T13:03:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.4/FEZ.Pocket.Edition.1.0.4.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Causality",
+      "type": 2,
+      "bundleIdentifier": "com.lojugames.games.Causality",
+      "developerName": "Decrypted by @Vaxmg",
+      "subtitle": "Paid game",
+      "localizedDescription": "Causality is a puzzle game about manipulating time, altering the sequence of events and changing the outcome of each level. Set across strange and alien landscapes, help a group of stranded astronauts find a route to safety. Travel through time, work with your past selves and solve paradoxes as you take on this uniquely challenging puzzler. Each level represents a brief but hazardous moment in time. Levels are completed by guiding each astronaut to an exit that matches their colour, within a limited time frame. When all astronauts reach an exit the level is complete. Control time and change the outcome of each level- Work with your past selves to solve puzzles- 60 levels to complete- 13 achievements to unlock.",
+      "versionDescription": "",
+      "tintColor": "#0765f7",
+      "iconURL": "https://i.ibb.co/L35wzq0/9df416375dff.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/15/87/cc/1587ccee-f4ef-99d0-31e1-da59246f1262/pr_source.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/54/5e/62/545e626d-c71d-319c-e081-175ea8107a07/pr_source.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/46/9a/41/469a41a0-74e5-f0b9-1588-119351e61062/pr_source.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/46/9a/41/469a41a0-74e5-f0b9-1588-119351e61062/pr_source.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/c5/58/34/c558344a-97ea-1e7b-41bc-0818d3659292/pr_source.png/480x222bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Causality uses camera.",
+          "NSContactsUsageDescription": "Causality uses contacts.",
+          "NSLocationWhenInUseUsageDescription": "Causality would like to user your location.",
+          "NSPhotoLibraryAddUsageDescription": "Causality wants to write to gallery.",
+          "NSPhotoLibraryUsageDescription": "Causality uses gallery."
+        }
+      },
+      "size": 85300000,
+      "version": "1.4.8",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.8/Causality.1.4.8.ipa",
+          "size": 85300000,
+          "version": "1.4.8",
+          "buildVersion": null,
+          "date": "2025-11-09T12:59:00+07:00",
+          "localizedDescription": "- Paid App 1.99$\n-Decrypted by @VAXMG",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T12:59:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.8/Causality.1.4.8.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Marvel - Future Fight",
+      "type": 2,
+      "bundleIdentifier": "com.netmarble.mheros",
+      "developerName": "DVC IPA",
+      "subtitle": "Mod game",
+      "localizedDescription": "MARVEL Future Fight is an action role playing game developed by Netmarble Corporation. The last update, v10.30, released on September 04, 2024, and it’s rated 4.52 out of 5 based on the latest 82K reviews. MARVEL Future Fight is FREE and requires iOS 12.0+ and Android 11 or newer to download.",
+      "versionDescription": "",
+      "tintColor": "#ec444c",
+      "iconURL": "https://i.ibb.co/5XvF688y/eb2db45bdf62.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/aa/18/e3/aa18e393-5fad-3f64-b71c-4ed234d2a571/241217_MFF_v980_1290x2796_EN.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/db/77/3ddb771b-d6d7-b2e8-83ec-264a99fa1c5f/251028_MFF_v1140_1290x2796_EN.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b6/e3/5f/b6e35fe0-d520-b34e-5c49-549340f4b3c1/241216_MFF_v700_1290x2796_05_EN.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/49/b5/98/49b598ad-056a-ef57-7684-0a896b832d35/241216_MFF_v700_1290x2796_06_EN.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/20/e9/b8/20e9b8a7-1b46-3f6d-9c5f-178148598ff2/241216_MFF_v700_1290x2796_07_EN.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/3d/5c/473d5c12-8e9e-e2c3-d1db-1f3f3175b57f/241216_MFF_v700_1290x2796_02_EN.jpg/230x499bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com",
+          "NSCameraUsageDescription": "Used in AR",
+          "NSLocationAlwaysUsageDescription": "Use location information when needed for user behavior analysis or marketing optimization",
+          "NSLocationWhenInUseUsageDescription": "Used in Third-Party Lib",
+          "NSMicrophoneUsageDescription": "Used in replaykit",
+          "NSPhotoLibraryAddUsageDescription": "Used in replaykit",
+          "NSPhotoLibraryUsageDescription": "using facebook sdk for iOS",
+          "NSUserTrackingUsageDescription": "Data tracking is required to provide you with personalized content and ads."
+        }
+      },
+      "size": 257200000,
+      "version": "11.4.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.4/Future.Fight.-.DVC.IPA.-.v11.4.0.ipa",
+          "size": 257200000,
+          "version": "11.4.0",
+          "buildVersion": null,
+          "date": "2025-11-09T12:56:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n\n✅ Instant Skill\n✅ No Assistant Cooldown\n✅ No Swap Cooldown\n✅ No Special Cooldown\n✅ Hero Level 60\n✅ Infinite Buff Time / God Mode\n✅ Freeze Enemies\n✅ Infinite HP / God Mode\n✅ Attack Multiplier\n✅ Defense Multiplier\n✅ Cooldown is 5X Faster",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T12:56:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v11.4/Future.Fight.-.DVC.IPA.-.v11.4.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Big Helmets: Heroes of Destiny ",
+      "type": 2,
+      "bundleIdentifier": "com.bighelmets.destiny",
+      "developerName": "DVC IPA",
+      "subtitle": "Mod game",
+      "localizedDescription": "Big Helmet Heroes là một trò chơi phiêu lưu hành động 3D kết hợp đồ họa tuyệt đẹp, hoạt ảnh chất lượng điện ảnh và hành động gay cấn. Tham gia cùng những hiệp sĩ dễ thương trong cuộc hành trình qua các vương quốc huyền ảo. Chơi cùng bạn bè trong chế độ hợp tác hai người chơi để giải cứu công chúa và khám phá những thử thách còn lớn hơn ở phía trước!",
+      "versionDescription": "",
+      "tintColor": "#0484e4",
+      "iconURL": "https://i.ibb.co/Y4NTkkWq/02281dbf7d73.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/a1/ea/05a1eaa0-8c79-4b0a-6900-37182e62c09f/id6070_BHH_scr1_K001_001_2796x1290_ExaltedStudio_EN_iOS_20250825.jpg/626x288bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/57/19/8f5719c6-7c46-516f-59aa-9f162d0cef97/id6070_BHH_scr2_K001_001_2796x1290_ExaltedStudio_EN_iOS_20250825.jpg/626x288bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/38/c0/e038c09a-4ce4-ba1d-b3fd-1bc38360c272/id6070_BHH_scr3_K001_001_2796x1290_ExaltedStudio_EN_iOS_20250825.jpg/626x288bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/f9/18/86f9188d-2795-1be0-3b1a-14e7c6a36ad4/id6070_BHH_scr4_K001_001_2796x1290_ExaltedStudio_EN_iOS_20250825.jpg/480x221bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/b3/de/47b3de19-82dc-f49a-5996-338dab53dd72/id6070_BHH_scr5_K001_001_2796x1290_ExaltedStudio_EN_iOS_20250825.jpg/480x221bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/04/02/97/0402979c-2f3a-86c5-e689-1e11eb5be6ac/id6070_BHH_scr6_K001_001_2796x1290_ExaltedStudio_EN_iOS_20250825.jpg/480x221bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSBluetoothAlwaysUsageDescription": "Advertisement would like to use your bluetooth.",
+          "NSBluetoothPeripheralUsageDescription": "Advertisement would like to use your bluetooth.",
+          "NSCalendarsUsageDescription": "Advertisement would like to use your calendar.",
+          "NSCameraUsageDescription": "Advertisement would like to use camera.",
+          "NSLocationAlwaysUsageDescription": "Advertisement would like to use your location.",
+          "NSLocationWhenInUseUsageDescription": "Advertisement would like to use your location.",
+          "NSMotionUsageDescription": "Advertisement would like to have interactive ad controls.",
+          "NSPhotoLibraryAddUsageDescription": "The app requires access to Photos to save media to it.",
+          "NSPhotoLibraryUsageDescription": "Advertisement would like to store a photo.",
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads to you."
+        }
+      },
+      "size": 170900000,
+      "version": "1.0.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.3/Big.Helmets_.Heroes.of.Destiny.-.DVC.IPA.-.v1.0.3.ipa",
+          "size": 170900000,
+          "version": "1.0.3",
+          "buildVersion": null,
+          "date": "2025-11-09T12:52:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅1 Hit -> 2000 tỷ damage 🤗\n✅Bất tử",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T12:52:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.3/Big.Helmets_.Heroes.of.Destiny.-.DVC.IPA.-.v1.0.3.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Township",
+      "type": 2,
+      "bundleIdentifier": "com.playrix.township-ios",
+      "developerName": "DVC IPA",
+      "subtitle": "Mod game",
+      "localizedDescription": "Township là tựa game thú vị đang được nhiều bản trẻ yêu thích và có hàng triệu người chơi trên toàn thế giới. Bài viết sau sẽ hướng dẫn bạn cách tải Township trên các thiết bị khác nhau như điện thoại iOS, Android, máy tính một cách đơn giản nhất!",
+      "versionDescription": "",
+      "tintColor": "#f4d804",
+      "iconURL": "https://i.ibb.co/4Q8PH76/a161533f593c.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/be/fe/a2/befea206-b182-70e1-c764-255cd96619e4/e376344c-449f-4ff1-b935-f8ee4a748788_1.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/a8/bd/75/a8bd75ab-2c92-b1da-e1dc-f272b7ec5771/4a5b6916-f001-4040-914c-380c2d65df6c_1284x2778_ts_aso_screenshot109_EN_v01_p2_as.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/6f/34/e4/6f34e49d-95d8-db6a-757f-f5904662f9d5/27e6fee9-cd23-4405-ae06-44f39596375c_1284x2778_ts_aso_screenshot109_EN_v01_p3_as.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a0/73/52/a073528a-c39d-105a-7c5e-7b810b2826d9/35089c5f-651e-4ead-934b-c5828c893a07_4.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/65/a5/93/65a5932f-e171-1d26-5e9d-28a91aae9046/28db44a5-0e51-48cd-998a-205d4730f57b_5.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/17/99/a8/1799a80b-cc4a-e7a6-0db9-aaaf1a106cba/84fab626-3174-45fe-aa85-ced116734c55_6.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://skanplayrix.com",
+          "NSCalendarsUsageDescription": "Adding events",
+          "NSCameraUsageDescription": "Taking selfies",
+          "NSHumanReadableCopyright": "Copyright © 2009-2010 Playrix Ent., All Rights Reserved.",
+          "NSMotionUsageDescription": "Interactive ad controls",
+          "NSPhotoLibraryAddUsageDescription": "A permission is required for saving a picture to photo library.",
+          "NSPhotoLibraryUsageDescription": "A permission is required for attaching a screenshot to the report.",
+          "NSUserTrackingUsageDescription": "This will help us optimize our ad campaigns and improve your gaming experience."
+        }
+      },
+      "size": 179300000,
+      "version": "31.1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v31.1.0/Township.-.DVC.IPA.-.v31.1.0.ipa",
+          "size": 179300000,
+          "version": "31.1.0",
+          "buildVersion": null,
+          "date": "2025-11-09T12:45:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n\n✅ Đóng băng Tiền\n✅ Đóng băng Vàng\n\n🔋 Chạm icon DVC để bật tắt menu.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T12:45:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v31.1.0/Township.-.DVC.IPA.-.v31.1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "WoW Search",
+      "type": 2,
+      "bundleIdentifier": "com.fugo.wowsearch.arc",
+      "developerName": "Apple Arcade",
+      "subtitle": "WoW: Search+",
+      "localizedDescription": "Welcome to Words of Wonders: Search! You will go on a journey around the world to explore wonderful cities and discover the hidden secrets of the seven wonders of the world. You will lose track of time and improve your vocabulary while playing this (literally!) wonderful crossword puzzle game. As you play this offline crossword game, you will explore the beauty of the English language and improve your puzzle solving skills as you discover the words hidden on the board. Using your intellect, you will be able to combine letters to create words in order to solve the enigmatic puzzles of the crossword genre.",
+      "versionDescription": "",
+      "tintColor": "#549cfc",
+      "iconURL": "https://i.ibb.co/YFHq2YTM/cc7e304f116a.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cd/2c/93/cd2c93de-c1cb-0500-59e2-3fef04f1644f/Words_of_Wonders_Search_U002b_6476141662_20250204_GameplayScreenshots__U002811_U0029.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/68/63/6d/68636d27-de61-3003-e51d-04e00554bda5/Words_of_Wonders_Search_U002b_6476141662_20250204_GameplayScreenshots__U00289_U0029.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/2b/cb/142bcb70-882f-cd74-85ab-3d03b16413a5/Words_of_Wonders_Search_U002b_6476141662_20250204_GameplayScreenshots__U00288_U0029.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/bf/83/93bf833b-d3a8-96f2-ec10-5e33890873e8/Words_of_Wonders_Search_U002b_6476141662_20250204_GameplayScreenshots__U002810_U0029.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/cd/d4/86cdd422-f6a6-bb78-3628-df99ff378282/Words_of_Wonders_Search_U002b_6476141662_20250204_GameplayScreenshots__U00287_U0029.jpg/230x499bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocationWhenInUseUsageDescription": "Some ad content may require user's location for better audience targeting.",
+          "NSPhotoLibraryUsageDescription": "This permission is required to save images to your device."
+        }
+      },
+      "size": 158300000,
+      "version": "3.1.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.1.3/WoW_.Search+.v3.1.3.ipa",
+          "size": 158300000,
+          "version": "3.1.3",
+          "buildVersion": null,
+          "date": "2025-11-09T11:56:00+07:00",
+          "localizedDescription": "Phiên bản mới nhất",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T11:56:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.1.3/WoW_.Search+.v3.1.3.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "HelixJump",
+      "type": 2,
+      "bundleIdentifier": "com.voodoo.helixjumpplus",
+      "developerName": "Apple Arcade",
+      "subtitle": "Helix Jump+ brings the ultimate bouncing adventure to a whole new level",
+      "localizedDescription": "Export from🎮🎮🎮",
+      "versionDescription": "",
+      "tintColor": "#844ca9",
+      "iconURL": "https://i.ibb.co/s9PBVHS5/64237193ba9b.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/18/43/f0184312-929e-efb7-b520-9af63e54f4d6/5_APP_IPHONE_65__withUI_5.png/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c5/ac/c4/c5acc4cd-f0d3-c60e-b776-da4e6b97cd01/2_APP_IPHONE_65__withUI_2.png/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4e/d6/7f/4ed67fc4-2c89-e7b5-b00d-1d4e314ba448/8_APP_IPHONE_65__withUI_8.png/230x499bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 102300000,
+      "version": "1.0.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.2/Helix.Jump+.v1.0.2.ipa",
+          "size": 102300000,
+          "version": "1.0.2",
+          "buildVersion": null,
+          "date": "2025-11-09T11:51:00+07:00",
+          "localizedDescription": "Phiên bản mới ",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T11:51:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.2/Helix.Jump+.v1.0.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Path of Giants",
       "type": 2,
       "bundleIdentifier": "com.JourneyBoundGames.PathofGiants",
@@ -48,12 +363,12 @@
       "version": "1.0.9",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.9/Path.of.Giants.1.0.9.ipa",
-          "size": 86100000,
           "version": "1.0.9",
-          "buildVersion": null,
           "date": "2025-11-09T11:00:00+07:00",
           "localizedDescription": "- Paid App 3.99$\n- Decrypted by @VAXMG",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.9/Path.of.Giants.1.0.9.ipa",
+          "size": 86100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -85,12 +400,12 @@
       "version": "1.7.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.7.0/MeloNX.v1.7.0.ipa",
-          "size": 57500000,
           "version": "1.7.0",
-          "buildVersion": null,
           "date": "2025-11-09T10:51:00+07:00",
           "localizedDescription": "⚡️Phiên bản mới nhất⚡️",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.7.0/MeloNX.v1.7.0.ipa",
+          "size": 57500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -133,12 +448,12 @@
       "version": "4.16.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.16.1/SlingDrift_v4.16.1-riftysipas.ipa",
-          "size": 61000000,
           "version": "4.16.1",
-          "buildVersion": null,
           "date": "2025-11-09T10:46:00+07:00",
           "localizedDescription": "Price: Free\nOS Limit: iOS 13.0\nGenre: Games\nAuthor: AI Games FZ\nLast Version: v4.16(216MB)\nVersion Date: 2024-10-23 15:45:43\nSupported Devices: \niPhone5s - iPadAir13M3Cellular",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.16.1/SlingDrift_v4.16.1-riftysipas.ipa",
+          "size": 61000000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -180,12 +495,12 @@
       "version": "4.5.134",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.5.134/Zombie.Tsunami.-.DTD.MOD.4.5.134.ipa",
-          "size": 119400000,
           "version": "4.5.134",
-          "buildVersion": null,
           "date": "2025-11-09T10:40:00+07:00",
           "localizedDescription": "Price: Free\nOS Limit: iOS 12.0\nGenre: Games\nAuthor: Mobigame\nLast Version: v4.5.139(263.7MB)\nVersion Date: 2024-12-05 23:11:35\nSupported Devices: \niPhone5s - iPadMiniA17ProCellular",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.5.134/Zombie.Tsunami.-.DTD.MOD.4.5.134.ipa",
+          "size": 119400000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -222,12 +537,12 @@
       "version": "2.6.100",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.6.100/TankStar_v2.6.100-riftysipas.ipa",
-          "size": 142500000,
           "version": "2.6.100",
-          "buildVersion": null,
           "date": "2025-11-09T10:39:00+07:00",
           "localizedDescription": "Supported Devices:\niPhone5s - iPadAir13M3Cellular\nPrice: Free\nOS Limit: iOS 13.0",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.6.100/TankStar_v2.6.100-riftysipas.ipa",
+          "size": 142500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -263,12 +578,12 @@
       "version": "2.0.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0.0/Undertale.ipa",
-          "size": 140600000,
           "version": "2.0.0",
-          "buildVersion": null,
           "date": "2025-11-09T10:26:00+07:00",
           "localizedDescription": "Undertale iOS port 2.0.0\nAn Undertale port made for iOS\nVia JuannosCarlos",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0.0/Undertale.ipa",
+          "size": 140600000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -309,12 +624,12 @@
       "version": "10.7",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v10.7/Textastic.-.v10.7.ipa",
-          "size": 10100000,
           "version": "10.7",
-          "buildVersion": null,
           "date": "2025-11-09T10:21:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Việt Hoá\n✅ Pro Unlock\n📝 Made by: vahufg\n💎 Copy share nhớ ghi nguồn iOSVN hoặc vahufg nhé anh em!",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v10.7/Textastic.-.v10.7.ipa",
+          "size": 10100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -362,12 +677,12 @@
       "version": "26.5.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v26.5.1/Moj.Telekom.HR-26.5.1.ipa",
-          "size": 117400000,
           "version": "26.5.1",
-          "buildVersion": null,
           "date": "2025-11-09T09:51:00+07:00",
           "localizedDescription": "The Moj Telekom application contains all important information about consumption, services and bills, and it also enables easy payment of monthly bills and the purchase of vouchers and options anytime and anywhere.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v26.5.1/Moj.Telekom.HR-26.5.1.ipa",
+          "size": 117400000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -404,12 +719,12 @@
       "version": "2.9.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.9.0/com.elsonbaty.chillio-2.9.0-eeveedecrypter.ipa",
-          "size": 105000000,
           "version": "2.9.0",
-          "buildVersion": null,
           "date": "2025-04-15T02:38:00+07:00",
           "localizedDescription": "名称: Chillio • IPTV智能播放器\nName: Chillio • IPTV Smarters Player\nBundleId: com.elsonbaty.chillio\nOS Limit: iOS 16.0\nSupported Devices:\niPhone5s - iPadAir13M3Cellular",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.9.0/com.elsonbaty.chillio-2.9.0-eeveedecrypter.ipa",
+          "size": 105000000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
