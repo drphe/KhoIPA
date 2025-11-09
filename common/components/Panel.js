@@ -555,9 +555,10 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             }
         });
     }else{
+	console.log("Preload Panel.")
         return;
         
-        }
+    }
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
