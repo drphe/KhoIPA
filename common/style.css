@@ -1084,7 +1084,14 @@ a {
 #preview #screenshots>img:first-child {
     margin-left: 0;
 }
-
+#preview #screenshots>a>img {
+    margin-left: 1em;
+    border-radius: 0.5em;
+    border: 0.75px solid rgba(0, 0, 0, 0.2);
+}
+#preview #screenshots>a>img:first-child {
+    margin-left: 0;
+}
 #preview #description {
     margin: 1em;
     -webkit-line-clamp: 5;
