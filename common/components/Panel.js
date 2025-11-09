@@ -561,8 +561,11 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
-        if (remainingOpenPanels.length === 0){
-        document.body.classList.remove('no-scroll');
+	if (bottomPanel.id === 'apps-popup-all' ) {
+		remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
+		document.body.classList.remove('no-scroll');
+	}else if (remainingOpenPanels.length === 0){
+        	document.body.classList.remove('no-scroll');
         }
     }
 
