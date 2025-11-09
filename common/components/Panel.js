@@ -3,9 +3,11 @@ import {isValidHTTPURL, open, setTintColor, showUIAlert,
 insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
+
 import { MoreButton } from "../components/MoreButton.js";
 import { AppHeader, AppLoading } from "../components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
+
 
 const loaded = () => {
     console.log('✅ All images settled or 3000ms timeout reached.');
@@ -246,26 +248,33 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         if (checkArray(app.screenshots)) {
             app.screenshots.forEach((screenshot, i) => {
                 if (screenshot.imageURL) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
-                    <img src="${screenshot.imageURL}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
+                    <img src="${screenshot.imageURL}" data-fslightbox="gallery" alt="${app.name} screenshot ${i + 1}" class="screenshot">
                 `);
                 else if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
-                    <img src="${screenshot}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
+	     <a href="${url}" data-fslightbox="gallery">
+                <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
+	     </a>
                 `);
             });
         }else if (checkIphoneScreenShots(app.screenshots)) {
             app.screenshots.iphone.forEach((screenshot, i) => {
 		 if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
-                    <img src="${screenshot}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
+	     <a href="${url}" data-fslightbox="gallery">
+                <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
+	     </a>
                 `);
             });
         } else if (app.screenshotURLs) {
             // Legacy
             app.screenshotURLs.forEach((url, i) => {
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
+	     <a href="${url}" data-fslightbox="gallery">
                 <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
+	     </a>
             `);
             });
         }
+	refreshFsLightbox();
         // Description
         const previewDescription = preview.querySelector("#description");
         previewDescription.innerHTML = formatString(app.localizedDescription);
