@@ -1,4 +1,4 @@
-import { sourceURL, noteURL, dirNoteURL} from "../common/modules/constants.js";
+import { sourceURL, noteURL, dirNoteURL, bundleID} from "../common/modules/constants.js";
 import { formatString, open, setUpBackButton , json , isValidHTTPURL,prefetchAndCacheUrls, openCachedUrl, generateTOC } from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
@@ -76,6 +76,7 @@ main(json => {
         });
     }
 	if(noteURL) executeNews('./note/'+noteURL, "CONTENTS", "news-popup-link");//read news
+	else if(bundleID) openPanel(json, bundleID, '..', "bottom");// open app
         else openPanel({},"","..");// preload panel
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {

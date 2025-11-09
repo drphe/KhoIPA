@@ -5,6 +5,7 @@ export const sourceURL = base64Convert(
   'decode'
 );
 
+export const bundleID = urlSearchParams.get('bundleID') ?? '';
 export const noteURL = urlSearchParams.get('note') ?? '';
 export const dirNoteURL = "https://drphe.github.io/KhoIPA/view/?note=";
 

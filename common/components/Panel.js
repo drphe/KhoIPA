@@ -44,6 +44,11 @@ function waitForAllImagesToLoad(container) {
         new Promise(resolve => setTimeout(resolve, 3000))
     ]).finally(loaded);
 }
+function updateBundleID(newBundleID) {
+  const url = new URL(window.location.href);
+  url.searchParams.set('bundleID', newBundleID);
+  history.replaceState({}, '', url);
+}
 
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
@@ -63,6 +68,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
             return;
         }
+	updateBundleID(bundleId);
         // If has multiple versions, show the latest one
         if (app.versions) {
             const latestVersion = app.versions[0];
