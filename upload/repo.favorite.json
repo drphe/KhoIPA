@@ -23,6 +23,402 @@
   "apps": [
     {
       "beta": false,
+      "name": "Path of Giants",
+      "type": 2,
+      "bundleIdentifier": "com.JourneyBoundGames.PathofGiants",
+      "developerName": "Decrypted by @VAXMG",
+      "subtitle": "Paid game",
+      "localizedDescription": "Path of Giants puts you in control of three explorers on their quest for a hidden treasure up an icy mountain. In this serene puzzle adventure game, each level will require you to use teamwork between the explorers to help them solve the puzzles!",
+      "versionDescription": "",
+      "tintColor": "#acc444",
+      "iconURL": "https://i.ibb.co/pBkNQ1rf/c5c91d474c71.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/53/9a/12/539a1254-882c-10bf-0161-c8811317c3c5/pr_source.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/6c/c9/d1/6cc9d149-e799-7499-24af-e753852de61b/pr_source.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/c1/02/d2/c102d201-bf70-8acf-4933-eb540d3ce9d0/pr_source.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/be/58/73/be587353-2ce2-e147-d49c-41c6a6b4cfc8/pr_source.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/c4/ab/dc/c4abdcaa-66ef-c06e-3810-84b354c16e9c/pr_source.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/52/ae/77/52ae7771-9032-f773-b03e-375ecac941e1/pr_source.jpg/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 86100000,
+      "version": "1.0.9",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.9/Path.of.Giants.1.0.9.ipa",
+          "size": 86100000,
+          "version": "1.0.9",
+          "buildVersion": null,
+          "date": "2025-11-09T11:00:00+07:00",
+          "localizedDescription": "- Paid App 3.99$\n- Decrypted by @VAXMG",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T11:00:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.9/Path.of.Giants.1.0.9.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "MeloNX",
+      "type": 4,
+      "bundleIdentifier": "com.stossy11.MeloNX",
+      "developerName": "EMU",
+      "subtitle": "💚Trình giả lập Nintendo Switch dành cho iOS",
+      "localizedDescription": "MeloNX enables Nintendo Switch game emulation on iOS using the Ryujinx iOS code base.\n\n\n       MeloNX is an iOS Nintendo Switch emulator based on Ryujinx, written primarily in C#. Designed to bring accurate performance and a user-friendly interface to iOS, MeloNX makes Switch games accessible on Apple devices.\n       Developed from the ground up, MeloNX is open-source and available on Github under the MeloNX license. \n\nCompatibility\nMeloNX works on iPhone 11 (XS/XR may work but can have issues) and later and iPad 8th Gen and later. Check out the Compatibility on the website.",
+      "versionDescription": "",
+      "tintColor": "#674cc8",
+      "iconURL": "https://i.ibb.co/bRgxf8fj/f336022212c4.png",
+      "screenshotURLs": [
+        "https://i.ibb.co/Y70Mbcn9/de6c15cf6d6a.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "MeloNX needs access to your Photo Library in order to save images"
+        }
+      },
+      "size": 57500000,
+      "version": "1.7.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.7.0/MeloNX.v1.7.0.ipa",
+          "size": 57500000,
+          "version": "1.7.0",
+          "buildVersion": null,
+          "date": "2025-11-09T10:51:00+07:00",
+          "localizedDescription": "⚡️Phiên bản mới nhất⚡️",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T10:51:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.7.0/MeloNX.v1.7.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Sling Drift",
+      "type": 2,
+      "bundleIdentifier": "com.rubygames.slingdrift",
+      "developerName": "AI Games FZ",
+      "subtitle": "Fun car game",
+      "localizedDescription": "Sling Drift is an exciting car drifting game that challenges players to master the art of drifting around sharp turns while collecting coins and unlocking new cars.",
+      "versionDescription": "",
+      "tintColor": "#ecc00a",
+      "iconURL": "https://i.ibb.co/V0jSyvBB/8564f17d039e.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/e4/5d/44e45d22-adb5-47ca-7c61-580028e654be/07e5379a-6c31-43ed-8cf1-937ff9ae2d9c_SLING_screen001_02_1242x2688_en.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6b/d3/30/6bd330b8-e328-b023-55d8-42fee0e9c76c/d1e90144-c181-42d2-8869-9f352ff568c4_SLING_screen001_01_1242x2688_en.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/60/77/64607753-8586-e32e-add3-ac4a5d29a382/d88d76fc-3347-43a8-8bb6-1cebdf58ee9c_SLING_screen001_06_1242x2688_en.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/4f/7f/894f7f0c-9c1a-e967-38dd-6778400a7340/0253797d-0dc6-40b2-9e93-f76057b5d5ca_SLING_screen001_03_1242x2688_en.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/26/9b/fe/269bfe88-ce9c-cf0f-e562-98d0ea54822a/f63cc061-939e-4351-8aa3-a77b8115ecba_SLING_screen001_07_1242x2688_en.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/12/44/fa/1244fa2e-dc03-9433-5954-1259e7c37479/8ea67518-e820-445b-b3d0-a337cb6b4f50_SLING_screen001_05_1242x2688_en.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://postbacks-app.com",
+          "NSPhotoLibraryUsageDescription": "Used for uploading selfies",
+          "NSCameraUsageDescription": "Used for Taking selfies",
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads to you and to improve app functionality",
+          "NSMotionUsageDescription": "Interactive ad controls",
+          "NSCalendarsUsageDescription": "Adding events",
+          "NSLocationWhenInUseUsageDescription": "Interactive ad controls"
+        }
+      },
+      "size": 61000000,
+      "version": "4.16.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.16.1/SlingDrift_v4.16.1-riftysipas.ipa",
+          "size": 61000000,
+          "version": "4.16.1",
+          "buildVersion": null,
+          "date": "2025-11-09T10:46:00+07:00",
+          "localizedDescription": "Price: Free\nOS Limit: iOS 13.0\nGenre: Games\nAuthor: AI Games FZ\nLast Version: v4.16(216MB)\nVersion Date: 2024-10-23 15:45:43\nSupported Devices: \niPhone5s - iPadAir13M3Cellular",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T10:46:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.16.1/SlingDrift_v4.16.1-riftysipas.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Zombie Tsunami",
+      "type": 2,
+      "bundleIdentifier": "net.mobigame.ZombieCarnaval",
+      "developerName": "Mobigame",
+      "subtitle": "Mod Game",
+      "localizedDescription": "Attack the city with a horde of zombies, change pedestrians into zombies and create the largest horde. Eat your friends, and challenge them to a crazy race by destroying everything in your path. Zombie Tsunami has proudly exceeded 400 million players around the world.",
+      "versionDescription": "",
+      "tintColor": "#80d024",
+      "iconURL": "https://i.ibb.co/NdkC8JRK/96cdef87a916.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/c5/41/1f/c5411f17-9eff-fde0-0bb6-cd540cfc7f9e/pr_source.jpg/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/82/5c/20/825c202c-5ebb-a72a-a528-fe45e6a2ab55/pr_source.jpg/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/3f/2a/a0/3f2aa09a-54a7-b51d-0e92-3e0b03bddb5e/pr_source.jpg/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ef/a9/2a/efa92ac0-8791-bc55-b4ce-36c9f509a25c/pr_source.jpg/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/ee/38/65/ee386525-ff06-91cc-5c07-9172ae79f0b1/pr_source.jpg/480x222bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSCalendarsUsageDescription": "Adding events",
+          "NSCameraUsageDescription": "Taking Pictures ",
+          "NSMotionUsageDescription ": "Interactive ad controls",
+          "NSPhotoLibraryAddUsageDescription": "Zombie Tsunami needs permission to write photos",
+          "NSPhotoLibraryUsageDescription": "Taking pictures",
+          "NSUserTrackingUsageDescription": "This will only be used to serve more interesting and relevant ads"
+        }
+      },
+      "size": 119400000,
+      "version": "4.5.134",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.5.134/Zombie.Tsunami.-.DTD.MOD.4.5.134.ipa",
+          "size": 119400000,
+          "version": "4.5.134",
+          "buildVersion": null,
+          "date": "2025-11-09T10:40:00+07:00",
+          "localizedDescription": "Price: Free\nOS Limit: iOS 12.0\nGenre: Games\nAuthor: Mobigame\nLast Version: v4.5.139(263.7MB)\nVersion Date: 2024-12-05 23:11:35\nSupported Devices: \niPhone5s - iPadMiniA17ProCellular",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T10:40:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.5.134/Zombie.Tsunami.-.DTD.MOD.4.5.134.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Tank Stars",
+      "type": 2,
+      "bundleIdentifier": "com.playgendary.tankstars",
+      "developerName": "AI Games FZ",
+      "subtitle": "Tank Stars: Blitz Robot War io",
+      "localizedDescription": "2D Tank Game that you can play with friends or offline.",
+      "versionDescription": "",
+      "tintColor": "#460498",
+      "iconURL": "https://i.ibb.co/1Gq1vpsc/167b6ffa7529.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/05/ea/d605ea09-0c32-7174-eef4-9e258184dd44/a877bebf-36bd-4054-93f6-a8f6c46a761d_TAST_screen001_01_2688x1242.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/72/56/ee/7256ee87-d5e7-d07b-cc90-cf48838c6b09/TAST_screen005_02_2688x1242_en.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/6a/d0/566ad0ef-d5f4-66a9-4d45-d231d5bec3d9/7131046c-02b5-4e40-906e-a1190d5d3d78_TAST_screen003_01_2688x1242_en.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a3/cc/00/a3cc0094-5531-a078-f3f8-f6a51a60a0b0/2934b742-8ba7-4dde-8f76-13650e627893_TAST_screen003_03_2688x1242_en.png/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/ba/59/37ba5942-d245-9c37-91be-7353f1b43b54/TAST_screen005_05_2688x1242_en.png/480x222bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads to you and to improve app functionality",
+          "NSLocationWhenInUseUsageDescription": "Application needs access to your location"
+        }
+      },
+      "size": 142500000,
+      "version": "2.6.100",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.6.100/TankStar_v2.6.100-riftysipas.ipa",
+          "size": 142500000,
+          "version": "2.6.100",
+          "buildVersion": null,
+          "date": "2025-11-09T10:39:00+07:00",
+          "localizedDescription": "Supported Devices:\niPhone5s - iPadAir13M3Cellular\nPrice: Free\nOS Limit: iOS 13.0",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T10:39:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.6.100/TankStar_v2.6.100-riftysipas.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "UNDERTALE",
+      "type": 2,
+      "bundleIdentifier": "com.jockeholm.undertale",
+      "developerName": "Via JuannosCarlos",
+      "subtitle": "An Undertale port made for iOS",
+      "localizedDescription": "Undertale là một trò chơi điện tử nhập vai (RPG), không phải ứng dụng tiện ích thông thường. Nó nổi tiếng với lối chơi độc đáo, cho phép người chơi chọn giữa chiến đấu hoặc tha thứ cho kẻ thù.",
+      "versionDescription": "",
+      "tintColor": "#fc0404",
+      "iconURL": "https://i.ibb.co/JRjPqRhx/b132ff18f430.png",
+      "screenshotURLs": [
+        "https://media.moddb.com/cache/images/mods/1/45/44218/thumb_620x2000/Runner_2019-11-26_22-53-02.png",
+        "https://media.moddb.com/cache/images/mods/1/45/44218/thumb_620x2000/Runner_2019-11-26_22-44-00.png",
+        "https://media.moddb.com/cache/images/mods/1/45/44218/thumb_620x2000/Runner_2019-11-26_22-48-33.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSMainNibFile": "MainWindow-iPhone",
+          "NSMainNibFile~ipad": "MainWindow",
+          "NSMainNibFile~iphone": "MainWindow-iPhone"
+        }
+      },
+      "size": 140600000,
+      "version": "2.0.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0.0/Undertale.ipa",
+          "size": 140600000,
+          "version": "2.0.0",
+          "buildVersion": null,
+          "date": "2025-11-09T10:26:00+07:00",
+          "localizedDescription": "Undertale iOS port 2.0.0\nAn Undertale port made for iOS\nVia JuannosCarlos",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T10:26:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.0.0/Undertale.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Textastic",
+      "type": 4,
+      "bundleIdentifier": "com.textasticapp.textastic-universal",
+      "developerName": "Made by: vahufg",
+      "subtitle": "Việt hóa, pro subcription",
+      "localizedDescription": "Textastic is an advanced code editor\nfor iPhone with support for syntax\nhighlighting, remote file transfer, and SSH",
+      "versionDescription": "",
+      "tintColor": "#5cb2f2",
+      "iconURL": "https://i.ibb.co/xqJ1Jyzs/e7e6ac0f8b5e.png",
+      "screenshotURLs": [
+        "https://www.textasticapp.com/images/screenshot_textastic10_iphone_1_th.png",
+        "https://www.textasticapp.com/images/screenshot_textastic10_iphone_2_th.png",
+        "https://www.textasticapp.com/images/screenshot_textastic10_iphone_3_th.png",
+        "https://www.textasticapp.com/images/screenshot_textastic10_iphone_4_th.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Lets you take a picture to save it as a new file in Textastic.",
+          "NSFaceIDUsageDescription": "To unlock the app",
+          "NSLocalNetworkUsageDescription": "Lets you connect to SSH, (S)FTP, and WebDAV servers on the local network.",
+          "NSMicrophoneUsageDescription": "Lets you access the microphone by using the Web Audio API when previewing web sites.",
+          "NSPhotoLibraryAddUsageDescription": "Lets you save photos.",
+          "NSPhotoLibraryUsageDescription": "Lets you choose a photo to save it as a new file in Textastic.",
+          "NSUbiquitousDisplaySet": "com.textasticapp.textastic"
+        }
+      },
+      "size": 10100000,
+      "version": "10.7",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v10.7/Textastic.-.v10.7.ipa",
+          "size": 10100000,
+          "version": "10.7",
+          "buildVersion": null,
+          "date": "2025-11-09T10:21:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Việt Hoá\n✅ Pro Unlock\n📝 Made by: vahufg\n💎 Copy share nhớ ghi nguồn iOSVN hoặc vahufg nhé anh em!",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T10:21:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v10.7/Textastic.-.v10.7.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Moj Telekom HR",
+      "type": 1,
+      "bundleIdentifier": "hr.t.ht.selfcare",
+      "developerName": "Example Developer",
+      "subtitle": "Moj Telekom HR",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "versionDescription": "",
+      "tintColor": "#e40474",
+      "iconURL": "https://i.ibb.co/GfYxTLyH/30fa62340ac4.png",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/KjNhaVuKQRqSoimxmPeEtoVF_xqaIWIgDEtJ8IeTSlImjwkdNrf89f4CirpOuwOpvA=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/fmJWXajn3hdsGjZZZlTx63qb-4dkF2KFuOQMl0xUJe2F3RlIVSASIPNPv3hCG6ukfA=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/oZ6hWfTNUhd1VtAdecx7TIOiz_AGzu1LSY2yotbcA099N0LNTEtfBGLXXroqaHmm2g=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/cQFwnmwT3WD-3hZhl72b_1XBJwFYnJIKsmDlYpi32TLZoCDgjOw4bnwPIEo-nFvvzhQ=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/M0f_RK1nbxFIRDA-QGBrof2ADum23_hSX7G1kf7c_x6KvZeZ2-et_gbOfVsqHt6Ye6QL=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/0Oj9DFCjigJEq7TC3TGWNbvBw5a_STX2OoGdteALbcYe2_v_NuA9TwsQ1R4za56Ox44=w1052-h592-rw",
+        "https://play-lh.googleusercontent.com/DUjxGZ7UqBXcYWh4FCLgTYYl0RLhLEYYMJnGXxVpD1uhCjO3mMMiiuyNcYrFFMzyRMk=w1052-h592-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Moj Telekom HR requires camera to scan Barcode.",
+          "NSContactsUsageDescription": "Moj Telekom HR requires contacts access.",
+          "NSFaceIDUsageDescription": "Moj Telekom HR requires Face ID permission to authenticate using Face recognition",
+          "NSLocalNetworkUsageDescription": "Moj Telekom HR requires this permission to test the quality of your connection.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Moj Telekom HR requires location access.",
+          "NSLocationAlwaysUsageDescription": "Moj Telekom HR requires location access.",
+          "NSLocationWhenInUseUsageDescription": "Moj Telekom HR requires location access.",
+          "NSMicrophoneUsageDescription": "Moj Telekom HR requires access to your microphone.",
+          "NSPhotoLibraryAddUsageDescription": "Moj Telekom HR requires access to photo library.",
+          "NSPhotoLibraryUsageDescription": "Moj Telekom HR requires access to photo library.",
+          "NSUserTrackingUsageDescription": "Moj Telekom HR requires for tracking purpose."
+        }
+      },
+      "size": 117400000,
+      "version": "26.5.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v26.5.1/Moj.Telekom.HR-26.5.1.ipa",
+          "size": 117400000,
+          "version": "26.5.1",
+          "buildVersion": null,
+          "date": "2025-11-09T09:51:00+07:00",
+          "localizedDescription": "The Moj Telekom application contains all important information about consumption, services and bills, and it also enables easy payment of monthly bills and the purchase of vouchers and options anytime and anywhere.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-09T09:51:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v26.5.1/Moj.Telekom.HR-26.5.1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Chillio IPTV Smarters Player",
+      "type": 3,
+      "bundleIdentifier": "com.elsonbaty.chillio",
+      "developerName": "Lumos Labs LLC",
+      "subtitle": "App IPTV",
+      "localizedDescription": "Stream live TV, movies & shows in one beautiful app. Chillio brings smart discovery, personalization, and premium playback to Apple TV, iPhone, and iPad.",
+      "versionDescription": "",
+      "tintColor": "#cc2c64",
+      "iconURL": "https://i.ibb.co/3mv8yQZ2/054d885c1cfa.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b0/93/4a/b0934a40-30f2-480a-9676-f430e4b8d934/1@2x.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/89/e3/c089e3a0-6da7-ceaf-69c2-5975e9d0ddc9/2@2x.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/99/2f/be992fa6-341e-1059-f72b-4350f68f00db/3@2x.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/d2/f8/9dd2f8c0-f412-cb5c-3dd6-33f3b0bad0bb/5@2x.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/79/f2/7579f218-479c-b24f-6eba-83186581862f/E31E6FB7-FE34-42F6-B2B9-0C4720C3CE75-6@2x_1.png/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4a/01/61/4a0161c0-ea51-f7a3-8ac1-fa4a8decc745/987F609A-70CA-49EE-BE43-2BC17F45FF7D-7@2x_1@2x.png/230x499bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Unused"
+        }
+      },
+      "size": 105000000,
+      "version": "2.9.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.9.0/com.elsonbaty.chillio-2.9.0-eeveedecrypter.ipa",
+          "size": 105000000,
+          "version": "2.9.0",
+          "buildVersion": null,
+          "date": "2025-04-15T02:38:00+07:00",
+          "localizedDescription": "名称: Chillio • IPTV智能播放器\nName: Chillio • IPTV Smarters Player\nBundleId: com.elsonbaty.chillio\nOS Limit: iOS 16.0\nSupported Devices:\niPhone5s - iPadAir13M3Cellular",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-04-15T02:38:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.9.0/com.elsonbaty.chillio-2.9.0-eeveedecrypter.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "OtoolsGG",
       "type": 4,
       "bundleIdentifier": "mumu.ProcFlowGG.OtoolsGG",
@@ -47,12 +443,12 @@
       "version": "1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0/OtoolsGG_VH_v1.0.ipa",
-          "size": 8300000,
           "version": "1.0",
-          "buildVersion": null,
           "date": "2025-11-08T17:04:00+07:00",
           "localizedDescription": "🔧Công cụ phân tích dylib ( Thư viện động)\n😢Sử dụng khi bạn hiểu tính năng của ứng dụng, ai không biết vui lòng bỏ qua!\nCre: BallBallShow (https://t.me/TheBallnow)",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0/OtoolsGG_VH_v1.0.ipa",
+          "size": 8300000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -89,12 +485,12 @@
       "version": "1.14",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4/com.tijo.opener.Opener-1.14-patched.2.ipa",
-          "size": 800000,
           "version": "1.14",
-          "buildVersion": null,
           "date": "2025-11-08T17:00:00+07:00",
           "localizedDescription": "AppStore Link (https://apps.apple.com/ca/app/opener-open-links-in-apps/id989565871)\nPaid App $2\nThanks to Paul (https://t.me/crocodileturtleapple) for sharing the IPA",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4/com.tijo.opener.Opener-1.14-patched.2.ipa",
+          "size": 800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -139,12 +535,12 @@
       "version": "2025.09.02",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2025.09.02/imgurmobile.ipa",
-          "size": 79100000,
           "version": "2025.09.02",
-          "buildVersion": null,
           "date": "2025-11-08T16:54:00+07:00",
           "localizedDescription": "- AppStore Link (https://apps.apple.com/ca/app/imgur-funny-memes-gif-maker/id639881495)\n- Subscription Unlocked\n- Minimum iOS/iPadOS 16.0\n- Cracked by CiesIPAs (https://t.me/ciesIPAs)\n- If it's crashing on iOS 26 use feather and Replace Substrate with Ellekit",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2025.09.02/imgurmobile.ipa",
+          "size": 79100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
