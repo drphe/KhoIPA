@@ -33,7 +33,7 @@ main(json => {
             for (let i = 0; i < json.news.length; i++){
 		if (!json.news[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
-		const url = json.news[i].url.replace(dirNoteURL,""); 
+		const url = json.news[i].url?.replace(dirNoteURL,""); 
 		if(url && !isValidHTTPURL(url)) jsonNewsUrl.push('./note/'+ url);
 	    }
 	}
