@@ -8,8 +8,6 @@ Apple gần đây đã giới thiệu các quy định mới về việc xác mi
 
 Bạn là người mới, có thể <a href="#" data-url="freesideloading.md" class="news-item-link">Xem bài hướng dẫn này</a> để hiểu biết cơ bản về cách sử freesideloading bằng cert bị thu hồi.
 
-Nếu thiết bị IOS đời cũ <16 <a href="#" data-url="chongthuhoicc.md" class="news-item-link">Xem bài này</a>.
-
 <a href="#" data-url="dnswfs.md" class="news-item-link">QUAN TRỌNG : Xem hướng dẫn sử dụng DNS WFS</a> trước khi bắt đầu.
 
 DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài đặt IPA** bằng các công cụ như **eSign**, **kSign**, và **Feather** — ngay cả khi dùng **chứng chỉ đã bị thu hồi**. 
