@@ -33,7 +33,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             for (let i = 0; i < jsonNews.length; i++) {
                 if (!jsonNews[i].notify) continue;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
-		const url = jsonNews[i].url.replace(dirNoteURL,"");
+		const url = jsonNews[i].url?.replace(dirNoteURL,"");
 		if(url && !isValidHTTPURL(url)) jsonNewsUrl.push('./view/note/'+ url);
             }
  	}
