@@ -1437,3 +1437,7 @@ code{
 pre {
 margin-left: 2rem;
 }
+.fslightbox-absoluted img {
+    max-height:100vh;
+    max-width:100%;
+}
