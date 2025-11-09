@@ -2,6 +2,7 @@
 
 Update 1/11/2025, dù xài DNS nhưng chứng chỉ vẫn bị thu hồi, do các cert mua thường theo lô (nhiều UDID cùng chung), khi apple quét thì vẫn bị thu hồi như thường. Apple rất căng và muốn ngăn chặn hoàn toàn việc Sideload app lậu. Revoke với số lượng lớn hoàn toàn. Những acc dev bị revoke đều là những acc dev trước đó gia hạn sử dụng trong nhiều năm liền. Việc bảo hành sẽ không thể gấp rút trước 35 ngày. 
 
+Hiện nay đã có thể xài DNS để sử dụng cert revoked cho ios 26, nếu bạn muốn free sideloading  <a href="#" data-url="freesideloading.md" class="news-item-link">Xem bài này</a>.
 
 Nếu muốn xài DNS để chặn quảng cáo <a href="#" data-url="dnsadblock.md" class="news-item-link"> Xem bài này </a>
 
