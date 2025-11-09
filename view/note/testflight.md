@@ -25,6 +25,9 @@ TestFlight là một dịch vụ của Apple giúp các nhà phát triển:
 ## ✅ Tổng hợp một số app hay
 
 * [Tube X without ads](https://testflight.apple.com/join/VZZ8r6pP)
+
 App YT k có QC, app ngon 🤤
 
 * [AdGuard VPN – Unlimited & Fast](https://testflight.apple.com/join/fZRiD1zt?nocache=792)
+
+* [XingTu china](https://testflight.apple.com/join/uEyGl8DM)
