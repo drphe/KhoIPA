@@ -1,4 +1,4 @@
-import { urlSearchParams, sourceURL, dirNoteURL, base64Convert } from "./common/modules/constants.js";
+import { urlSearchParams, sourceURL, dirNoteURL, bundleID, base64Convert } from "./common/modules/constants.js";
 import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl, generateTOC} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import { NewsItem } from "./common/components/NewsItem.js";
@@ -83,13 +83,16 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     const allApps = [];
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
-        const randomCode = Math.random().toString(36).substring(2, 6);
+	const b64 = base64Convert(source.name);
+	const mid = Math.floor(b64.length / 2);
+	const randomCode = b64.slice(0,2) + b64.slice(mid-1,mid+1) + b64.slice(-2);
+
         for (const app of source.apps) {
             app.sourceURL = source.sourceURL;
             app.sourceName = source.name;
             app.sourceIconURL = source.iconURL;
             app.sourceTintColor = source.tintColor;
-            app.bundleIdentifier += randomCode;
+            app.bundleIdentifier += `.${randomCode}`;
 	    app.versionDate = app.versionDate? fixYear(app.versionDate):'';
         }
         //const nonBetaApps = source.apps.filter(app => !app.beta);
@@ -160,7 +163,12 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     // listener event
     // view app list
     //  "View All apps"
-    openPanel({},"");// preload panel
+    if(bundleID){// load app
+	const sTarget = bundleIdToSourceMap.get(bundleID);
+        if (!sTarget) {
+            console.warn(`Source not found for bundleId: ${bundleId}`);
+        }else openPanel(sTarget, bundleID, ".", "bottom");
+    }else openPanel({},"");// preload panel
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>Kho IPA Mod</p>`, '.', "side", "apps-popup-all");

@@ -10,7 +10,7 @@ import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
 
 const loaded = () => {
-    console.log('✅ All images settled or 3000ms timeout reached.');
+    //console.log('✅ All images settled or 3000ms timeout reached.');
 };
 
 function waitForAllImagesToLoad(container) {
