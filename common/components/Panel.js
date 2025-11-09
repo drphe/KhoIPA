@@ -567,6 +567,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
 	}else if (remainingOpenPanels.length === 0){
         	document.body.classList.remove('no-scroll');
         }
+    	setTimeout(() => bottomPanel.remove(), 500); // auto remove 
     }
 
     // show popup

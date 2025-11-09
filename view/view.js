@@ -91,6 +91,7 @@ main(json => {
      });
 
     function executeNews(url, title , id = 'news-popup-content', isAll = false) {
+      id+= Math.random().toString(36).substring(2, 6);
       if (isAll) {
         const html = `<div id="news" class="section grid_news">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;
         openPanel(html, `<p>${title}</p>`, '..', "side", id);

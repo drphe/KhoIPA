@@ -204,6 +204,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     });
 
     function executeNews(url, title, id = 'news-popup-content') {
+	    id+= Math.random().toString(36).substring(2, 6);
             if (!url) return;
             openCachedUrl(url).then(response => {
                 return response.text();
