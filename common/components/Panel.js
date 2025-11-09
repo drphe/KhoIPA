@@ -573,13 +573,21 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
     closeBottom.addEventListener("click", closePanel);
-    document.addEventListener("click", (event) => {
-        const uialert = document.querySelector("#uialert-container");
-        const moreTriggers = document.querySelectorAll(".panel");
-        const target = event.target;
-        const isInsideMoreBtn = [...moreTriggers].some(btn => btn.contains(target));
-        if (!bottomPanel.contains(target) && !isInsideMoreBtn && (!uialert || !uialert.contains(target))) closePanel();
-    });
+document.addEventListener("click", ({ target }) => {// logic đóng panel
+    const uialert = document.querySelector("#uialert-container");
+    const fslight = document.querySelector(".fslightbox-container");
+    const panels = document.querySelectorAll(".panel");
+
+    const isInsidePanel = [...panels].some(panel => panel.contains(target));
+    const isOutsideBottomPanel = !bottomPanel.contains(target);
+    const isOutsideUIAlert = !uialert?.contains(target);
+    const isOutsideFsLight = !fslight?.contains(target);
+
+    if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight) {
+        closePanel();
+    }
+});
+
 }
 
 export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, scrollTarget) {
