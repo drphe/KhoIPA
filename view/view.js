@@ -82,16 +82,16 @@ main(json => {
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        activateNavLink("page-library");
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json); //5apps, with screenshot, target.parentElement scroll
+        activateNavLink("page-library");
      });
 
     //  "View All News"
-    document.getElementById('all-news')?.addEventListener("click", (e) => {
+    document.getElementById('all-news')?.addEventListener("click", async (e) => {
         e.preventDefault();
+        await executeNews("/", "ALL NEWS","news-popup-all", true);
        activateNavLink("page-news");
-        executeNews("/", "ALL NEWS","news-popup-all", true);
      });
 
     function executeNews(url, title , id = 'news-popup-content', isAll = false) {

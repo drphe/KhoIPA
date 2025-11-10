@@ -175,16 +175,15 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        activateNavLink("page-library");
         await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
+        activateNavLink("page-library");
      });
 
     //
     // view all source
     document.getElementById('all-source')?.addEventListener("click", async(e) => {
         e.preventDefault();
-       activateNavLink("page-source");
         await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
     	for (const source of fetchedEditorSources) {
         	await insertSource(source);
@@ -192,6 +191,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 	for (const source of fetchedSources) {
 	     await insertSource(source);
  	}
+       activateNavLink("page-source");
      });
     // open app
     document.addEventListener("click", event => {
