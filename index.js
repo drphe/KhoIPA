@@ -163,13 +163,13 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             </div>
         `);
     }
+
 const activateNavLink = (e) => {
   document.querySelectorAll(".nav-link").forEach(l => {
     if (l.dataset.target == e) l.classList.add("active");
     else l.classList.remove("active");
   });
 };
-
 
     // 
     //  "View All apps"
@@ -182,7 +182,7 @@ const activateNavLink = (e) => {
 
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        activateNavLink("page-library")
+        activateNavLink("page-library");
         await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
      });
@@ -191,7 +191,7 @@ const activateNavLink = (e) => {
     // view all source
     document.getElementById('all-source')?.addEventListener("click", async(e) => {
         e.preventDefault();
-       activateNavLink("page-source")
+       activateNavLink("page-source");
         await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
     	for (const source of fetchedEditorSources) {
         	await insertSource(source);
@@ -256,7 +256,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
     }else if(target == 'page-news'){
         const html = `<div id="news" class="section grid_news">${jsonNews.map(item =>NewsItem(item, true)).join('')}</div>`;
-        openPanel(html, `<p>ALL NEWS</p>`, '.', "side", id);
+        openPanel(html, `<p>ALL NEWS</p>`, '.', "side", "popup-all-news");
     }else {
 	document.querySelectorAll(".panel.show").forEach(l=>l.classList.remove("show"));
 	document.body.classList.remove('no-scroll');

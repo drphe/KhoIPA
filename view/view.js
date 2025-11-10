@@ -78,9 +78,18 @@ main(json => {
 	if(noteURL) executeNews('./note/'+noteURL, "CONTENTS", "news-popup-link");//read news
 	else if(bundleID) openPanel(json, bundleID, '..', "bottom");// open app
         else openPanel({},"","..");// preload panel
+
+
+const activateNavLink = (e) => {
+  document.querySelectorAll(".nav-link").forEach(l => {
+    if (l.dataset.target == e) l.classList.add("active");
+    else l.classList.remove("active");
+  });
+};
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
+        activateNavLink("page-library");
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json); //5apps, with screenshot, target.parentElement scroll
      });
@@ -88,6 +97,7 @@ main(json => {
     //  "View All News"
     document.getElementById('all-news')?.addEventListener("click", (e) => {
         e.preventDefault();
+       activateNavLink("page-news");
         executeNews("/", "ALL NEWS","news-popup-all", true);
      });
 
@@ -155,6 +165,27 @@ main(json => {
 	    executeNews('./note/'+url, title);
 	}
     }
+let oldTargetPage= "page-home";
+document.querySelectorAll(".nav-link").forEach(link=>{
+  link.addEventListener("click",async ()=>{
+    document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));
+    link.classList.add("active");
+    const target = link.dataset.target;
+    if(target == oldTargetPage) return;
+    oldTargetPage = target
+    if(target == 'page-library') {
+        await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
+        addAppList(json); //5apps, with screenshot, target.parentElement scroll
+    }else if(target == 'page-news'){
+        const html = `<div id="news" class="section grid_news">${json.map(item =>NewsItem(item, false)).join('')}</div>`;
+        openPanel(html, `<p>ALL NEWS</p>`, '..', "side", "popup-all-news");
+
+    }else {
+	document.querySelectorAll(".panel.show").forEach(l=>l.classList.remove("show"));
+	document.body.classList.remove('no-scroll');
+    }
+  });
+});
 
     // 
     // About
