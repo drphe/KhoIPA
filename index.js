@@ -1,6 +1,7 @@
 import { urlSearchParams, sourceURL, dirNoteURL, bundleID, base64Convert } from "./common/modules/constants.js";
 import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl, generateTOC} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
+import { AppHeader } from "./common/components/AppHeader.js";
 import { NewsItem } from "./common/components/NewsItem.js";
 import { openPanel , addAppList } from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
@@ -68,12 +69,18 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     fetchedSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
     // insert editor's source choice
     for (const source of fetchedEditorSources) {
-        await insertSource(source, "suggestions");
+        await insertSource(source, "repositories");
     }
-    // insert other source
-    for (const source of fetchedSources) {
-        await insertSource(source);
-    }
+
+
+	// insert newest app
+        let count = 1;
+        json.apps.forEach(app => {
+            if (count > 5) return;
+            document.getElementById("suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
+            count++;
+        });
+
     document.body.classList.remove("loading");// kết thúc load dữ liệu
     document.getElementById("loading")?.remove();
 
@@ -136,7 +143,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         source.url = url;
         return source;
     }
-    async function insertSource(source, id = "repositories", position = "beforeend", flag = false) {
+    async function insertSource(source, id = "sources-list", position = "beforeend", flag = false) {
         document.getElementById(id).insertAdjacentHTML(position, `
             <div class="source-container">
                 <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
@@ -159,9 +166,8 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             </div>
         `);
     }
+
     // 
-    // listener event
-    // view app list
     //  "View All apps"
     if(bundleID){// load app
 	const sTarget = bundleIdToSourceMap.get(bundleID);
@@ -169,12 +175,25 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             console.warn(`Source not found for bundleId: ${bundleId}`);
         }else openPanel(sTarget, bundleID, ".", "bottom");
     }else openPanel({},"");// preload panel
+
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>Kho IPA Mod</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
      });
 
+    //
+    // view all source
+    document.getElementById('all-source')?.addEventListener("click", async(e) => {
+        e.preventDefault();
+        await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
+    	for (const source of fetchedEditorSources) {
+        	await insertSource(source);
+   	 }
+	for (const source of fetchedSources) {
+	     await insertSource(source);
+ 	}
+     });
     // open app
     document.addEventListener("click", event => {
         const targetLink = event.target.closest("a.app-header-link");
