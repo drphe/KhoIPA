@@ -1,6 +1,6 @@
 # 💡 Phương Pháp Cài File IPA lên iPhone (Không Cần Jailbreak) - Mới Nhất 2025
 
-## 1\. Phương Pháp Cài IPA Có Dùng PC 💻
+## 1. Phương Pháp Cài IPA Có Dùng PC 💻
 
 Các phương pháp này tận dụng máy tính (Windows/macOS) để ký và cài đặt file IPA lên thiết bị.
 
@@ -94,7 +94,7 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 Đối với **Feather, Esign** là những ứng dụng được cài đặt bằng các công cụ online như tại mục 2.3 hoặc cài đặt qua Trollstore
 Link này giúp cài ESign, Feather với DNS giúp sử dụng certificate đã revoke và các certificate chia sẻ sẵn. Tải certificate miễn phí về sử dụng.
 
-=> <a href="#" data-url="verifyapp.md" class="news-item-link"> Xem bài này </a>
+=> <a href="#" data-url="freesideloading.md" class="news-item-link"> Xem bài này </a>
 
 Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng dung, công cụ hỗ trợ, cung cấp link cài đặt trực tiếp các ipa mod phổ biến như Facebook NoADS, Youtube Lite,... Một số dịch vụ chính: Certapple.com, Unkeyapp.com, Thuthuatjb.com, https://p12apple.com/...
 

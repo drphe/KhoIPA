@@ -227,6 +227,30 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         openPanel(sourceTarget, bundleId, ".", "bottom");
     });
 
+document.querySelectorAll(".nav-link").forEach(link=>{
+  link.addEventListener("click",async ()=>{
+    document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));
+    link.classList.add("active");
+    const target = link.dataset.target;
+    if(target == 'page-source') {
+        await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
+    	for (const source of fetchedEditorSources) {
+        	await insertSource(source);
+   	 }
+	for (const source of fetchedSources) {
+	     await insertSource(source);
+ 	}
+    }else if(target == 'page-library') {
+        await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
+        addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
+    }else if(target == 'page-news'){
+        const html = `<div id="news" class="section grid_news">${jsonNews.map(news =>NewsItem(news, false)).join('')}</div>`;
+        openPanel(html, `<p>ALL NEWS</p>`, '.', "side", id);
+    }
+
+  });
+});
+
     function executeNews(url, title, id = 'news-popup-content') {
 	    id+= Math.random().toString(36).substring(2, 6);
             if (!url) return;

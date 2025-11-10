@@ -587,14 +587,16 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
 document.addEventListener("click", ({ target }) => {// logic đóng panel
     const uialert = document.querySelector("#uialert-container");
     const fslight = document.querySelector(".fslightbox-container");
+    const navglass = document.querySelector(".bottom-nav-glass");
     const panels = document.querySelectorAll(".panel");
 
     const isInsidePanel = [...panels].some(panel => panel.contains(target));
     const isOutsideBottomPanel = !bottomPanel.contains(target);
     const isOutsideUIAlert = !uialert?.contains(target);
     const isOutsideFsLight = !fslight?.contains(target);
+    const isOutsideNav = !navglass?.contains(target);
 
-    if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight) {
+    if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight && isOutsideNav) {
         closePanel();
     }
 });
