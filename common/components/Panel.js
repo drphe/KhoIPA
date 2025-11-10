@@ -802,7 +802,7 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
     appsContainer.before(buttonScroll);
     buttonScroll.style.cssText = `
         position: fixed;
-        bottom: 2rem;
+        bottom: 6rem;
         left: 50%;
         z-index: 99;
         border: none;
