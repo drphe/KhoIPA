@@ -1509,7 +1509,7 @@ margin-left: 2rem;
 
 /* active glow and bounce */
 .nav-link.active {
-  color: var(--primary);
+  color: var(--tint-color);
   /* transform: translateY(-5px) scale(1.1); */
   text-shadow: 0 0 2px var(--primary);
   background: var(--color-separator-dark);

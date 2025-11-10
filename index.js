@@ -255,7 +255,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
         await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
     }else if(target == 'page-news'){
-        const html = `<div id="news" class="section grid_news">${jsonNews.map(news =>NewsItem(news)).join('')}</div>`;
+        const html = `<div id="news" class="section grid_news">${jsonNews.map(item =>NewsItem(item, true)).join('')}</div>`;
         openPanel(html, `<p>ALL NEWS</p>`, '.', "side", id);
     }else {
 	document.querySelectorAll(".panel.show").forEach(l=>l.classList.remove("show"));
