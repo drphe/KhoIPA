@@ -557,7 +557,6 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         document.querySelectorAll(".nav-link").forEach(l => {
             if (l.dataset.target == e) l.classList.add("active");
             else l.classList.remove("active");
-            oldTargetPage = e;
         });
     };
 
