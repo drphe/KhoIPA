@@ -82,7 +82,7 @@ main(json => {
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        activateNavLink(e.dataset.target);
+        activateNavLink("page-library");
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json); //5apps, with screenshot, target.parentElement scroll
      });
@@ -90,7 +90,7 @@ main(json => {
     //  "View All News"
     document.getElementById('all-news')?.addEventListener("click", (e) => {
         e.preventDefault();
-       activateNavLink(e.dataset.target);
+       activateNavLink("page-news");
         executeNews("/", "ALL NEWS","news-popup-all", true);
      });
 

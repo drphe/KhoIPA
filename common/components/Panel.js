@@ -48,7 +48,7 @@ window.oldTargetPage= "page-home";
 
 export const activateNavLink = (e) => {
         document.querySelectorAll(".nav-link").forEach(l => {
-            if (l.dataset.target === e) l.classList.add("active");
+            if (l.dataset.target == e) l.classList.add("active");
             else l.classList.remove("active");
         });
         window.oldTargetPage = e;
