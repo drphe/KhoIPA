@@ -177,7 +177,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
     if(target == 'page-library') {
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json); //5apps, with screenshot, target.parentElement scroll
-    }else if(target == 'page-news'){
+    }else if(target == 'page-news' && json.news.length){
         const html = `<div id="news" class="section grid_news">${json.news.map(item =>NewsItem(item, false)).join('')}</div>`;
         openPanel(html, `<p>ALL NEWS</p>`, '..', "side", "popup-all-news");
 
