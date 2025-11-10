@@ -565,6 +565,13 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         return;
         
     }
+const activateNavLink = (e) => {
+  document.querySelectorAll(".nav-link").forEach(l => {
+    if (l.dataset.target == e) l.classList.add("active");
+    else l.classList.remove("active");
+     oldTargetPage = e;
+  });
+};
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
@@ -572,6 +579,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
 		remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
 		document.body.classList.remove('no-scroll');
 	}else if (remainingOpenPanels.length === 0){
+        	activateNavLink("page-home");
         	document.body.classList.remove('no-scroll');
         }
     	setTimeout(() => bottomPanel.remove(), 500); // auto remove 

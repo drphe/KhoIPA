@@ -204,8 +204,6 @@ const activateNavLink = (e) => {
      });
     // open app
     document.addEventListener("click", event => {
-        const isHome= document.querySelectorAll(".panel.show");
-	if (!isHome.length && oldTargetPage !=="page-home") activateNavLink("page-home");
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install-app");
         const targetNews = event.target.closest("a.news-item-header");
