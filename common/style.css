@@ -152,7 +152,7 @@ body {
 
     #suggestions, .grid_news,
     #repositories,
-    #apps-list,
+    #apps-list, #sources-list,
     #featured {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -479,7 +479,7 @@ input[type="text"]:focus {
     color: unset;
 }
 
-#apps-list {
+#apps-list, #sources-list {
     padding-bottom: 4rem;
 }
 
