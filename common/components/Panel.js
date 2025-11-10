@@ -10,6 +10,7 @@ import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 const loaded = () => {
     //console.log('✅ All images settled or 3000ms timeout reached.');
 };
+window.oldTargetPage= "page-home";
 
 function waitForAllImagesToLoad(container) {
     const allImages = container.querySelectorAll("img.screenshot");
@@ -558,6 +559,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             if (l.dataset.target == e) l.classList.add("active");
             else l.classList.remove("active");
         });
+        oldTargetPage = e;
     };
 
     function closePanel() {

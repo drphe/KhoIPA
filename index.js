@@ -164,13 +164,13 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         `);
     }
 
-let oldTargetPage= "page-home";
+
 const activateNavLink = (e) => {
   document.querySelectorAll(".nav-link").forEach(l => {
     if (l.dataset.target == e) l.classList.add("active");
     else l.classList.remove("active");
-     oldTargetPage = e;
   });
+     oldTargetPage = e;
 };
 
     // 

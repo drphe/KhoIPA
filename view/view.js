@@ -79,13 +79,13 @@ main(json => {
 	else if(bundleID) openPanel(json, bundleID, '..', "bottom");// open app
         else openPanel({},"","..");// preload panel
 
-let oldTargetPage= "page-home";
+
 const activateNavLink = (e) => {
   document.querySelectorAll(".nav-link").forEach(l => {
     if (l.dataset.target == e) l.classList.add("active");
     else l.classList.remove("active");
-     oldTargetPage = e;
   });
+     oldTargetPage = e;
 };
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
