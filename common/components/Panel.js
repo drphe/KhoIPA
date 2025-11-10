@@ -566,6 +566,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         if (bottomPanel.id === 'apps-popup-all') {
             remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
             document.body.classList.remove('no-scroll');
+            activateNavLink("page-home");
         } else if (remainingOpenPanels.length === 0) {
             activateNavLink("page-home");
             document.body.classList.remove('no-scroll');
