@@ -3,7 +3,7 @@ import { formatString, open, setUpBackButton , json , isValidHTTPURL,prefetchAnd
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";
-import { openPanel, addAppList} from "../common/components/Panel.js";
+import { openPanel, addAppList, activateNavLink} from "../common/components/Panel.js";
 
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
@@ -79,14 +79,6 @@ main(json => {
 	else if(bundleID) openPanel(json, bundleID, '..', "bottom");// open app
         else openPanel({},"","..");// preload panel
 
-
-const activateNavLink = (e) => {
-  document.querySelectorAll(".nav-link").forEach(l => {
-    if (l.dataset.target == e) l.classList.add("active");
-    else l.classList.remove("active");
-  });
-     oldTargetPage = e;
-};
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
@@ -172,8 +164,8 @@ document.querySelectorAll(".nav-link").forEach(link=>{
     document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));
     link.classList.add("active");
     const target = link.dataset.target;
-    if(target == oldTargetPage) return;
-    oldTargetPage = target
+    if(target == window.oldTargetPage) return;
+    window.oldTargetPage = target
     if(target == 'page-library') {
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json); //5apps, with screenshot, target.parentElement scroll

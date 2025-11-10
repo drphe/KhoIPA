@@ -10,7 +10,7 @@ import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 const loaded = () => {
     //console.log('✅ All images settled or 3000ms timeout reached.');
 };
-window.oldTargetPage= "page-home";
+
 
 function waitForAllImagesToLoad(container) {
     const allImages = container.querySelectorAll("img.screenshot");
@@ -44,6 +44,15 @@ function updateBundleID(newBundleID) {
     url.searchParams.set('bundleID', newBundleID);
     history.replaceState({}, '', url);
 }
+window.oldTargetPage= "page-home";
+export const activateNavLink = (e) => {
+        document.querySelectorAll(".nav-link").forEach(l => {
+            if (l.dataset.target == e) l.classList.add("active");
+            else l.classList.remove("active");
+        });
+        window.oldTargetPage = e;
+    };
+
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
@@ -554,13 +563,6 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         console.log("Preload Panel.")
         return;
     }
-    const activateNavLink = (e) => {
-        document.querySelectorAll(".nav-link").forEach(l => {
-            if (l.dataset.target == e) l.classList.add("active");
-            else l.classList.remove("active");
-        });
-        oldTargetPage = e;
-    };
 
     function closePanel() {
         bottomPanel.classList.remove("show");

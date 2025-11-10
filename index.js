@@ -3,7 +3,7 @@ import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPUR
 import { AppBanner } from "./common/components/AppWeb.js";
 import { AppHeader } from "./common/components/AppHeader.js";
 import { NewsItem } from "./common/components/NewsItem.js";
-import { openPanel , addAppList } from "./common/components/Panel.js";
+import { openPanel , addAppList, activateNavLink } from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 const sources = await json("./common/assets/json/sources.json");
@@ -164,15 +164,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         `);
     }
 
-
-const activateNavLink = (e) => {
-  document.querySelectorAll(".nav-link").forEach(l => {
-    if (l.dataset.target == e) l.classList.add("active");
-    else l.classList.remove("active");
-  });
-     oldTargetPage = e;
-};
-
     // 
     //  "View All apps"
     if(bundleID){// load app
@@ -243,8 +234,8 @@ document.querySelectorAll(".nav-link").forEach(link=>{
     document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));
     link.classList.add("active");
     const target = link.dataset.target;
-    if(target == oldTargetPage) return;
-    oldTargetPage = target
+    if(target == window.oldTargetPage) return;
+    window.oldTargetPage = target
     if(target == 'page-source') {
         await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
     	for (const source of fetchedEditorSources) {
