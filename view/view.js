@@ -180,7 +180,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json); //5apps, with screenshot, target.parentElement scroll
     }else if(target == 'page-news'){
-        const html = `<div id="news" class="section grid_news">${json.map(item =>NewsItem(item, false)).join('')}</div>`;
+        const html = `<div id="news" class="section grid_news">${json.news.map(item =>NewsItem(item, false)).join('')}</div>`;
         openPanel(html, `<p>ALL NEWS</p>`, '..', "side", "popup-all-news");
 
     }else {
