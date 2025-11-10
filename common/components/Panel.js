@@ -3,11 +3,9 @@ import {isValidHTTPURL, open, setTintColor, showUIAlert,
 insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
-
 import { MoreButton } from "../components/MoreButton.js";
 import { AppHeader, AppLoading } from "../components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
-
 
 const loaded = () => {
     //console.log('✅ All images settled or 3000ms timeout reached.');
@@ -16,16 +14,13 @@ const loaded = () => {
 function waitForAllImagesToLoad(container) {
     const allImages = container.querySelectorAll("img.screenshot");
     if (allImages.length === 0) return loaded();
-
     const imagePromises = Array.from(allImages).map(image => new Promise(resolve => {
         const handleSettled = () => {
             image.onload = null;
             image.onerror = null;
             resolve();
         };
-
         if (image.complete && image.naturalHeight !== 0) return resolve();
-
         image.onload = handleSettled;
         image.onerror = () => {
             if (image.id === "app-icon") {
@@ -35,21 +30,19 @@ function waitForAllImagesToLoad(container) {
             }
             handleSettled();
         };
-        
         if (!image.src) image.src = image.src;
     }));
-
     Promise.race([
         Promise.allSettled(imagePromises),
         new Promise(resolve => setTimeout(resolve, 3000))
     ]).finally(loaded);
 }
-function updateBundleID(newBundleID) {
-  const url = new URL(window.location.href);
-  url.searchParams.set('bundleID', newBundleID);
-  history.replaceState({}, '', url);
-}
 
+function updateBundleID(newBundleID) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('bundleID', newBundleID);
+    history.replaceState({}, '', url);
+}
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
@@ -68,7 +61,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
             return;
         }
-	updateBundleID(bundleId);
+        updateBundleID(bundleId);
         // If has multiple versions, show the latest one
         if (app.versions) {
             const latestVersion = app.versions[0];
@@ -82,7 +75,6 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         // Set tint color
         if (tintColor) setTintColor(tintColor);
         // Set up install buttons
-
         const installAppAlert = new UIAlert({
             title: `Get "${app.name}"`
         });
@@ -91,17 +83,17 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             style: 'default',
             handler: () => open(`esign://install?url=${app.downloadURL}`)
         });
-	if(!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
-          installAppAlert.addAction({
-            title: "Download IPA",
-            style: 'default',
-            handler: () => window.open(app.downloadURL, "_blank")
-          });
-	}
+        if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
+            installAppAlert.addAction({
+                title: "Download IPA",
+                style: 'default',
+                handler: () => window.open(app.downloadURL, "_blank")
+            });
+        }
         installAppAlert.addAction({
             title: "Copy Link",
             style: 'default',
-            handler: () =>  copyText(app.downloadURL)
+            handler: () => copyText(app.downloadURL)
         });
         installAppAlert.addAction({
             title: "Cancel",
@@ -238,8 +230,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         // Icon
         appHeader.querySelector("img").src = app.iconURL;
         // App name
-        appHeader.querySelector(".title").innerHTML = 
-  app.name + (app.beta ? ` <span class="small beta badge"></span>` : ``);
+        appHeader.querySelector(".title").innerHTML = app.name + (app.beta ? ` <span class="small beta badge"></span>` : ``);
         // Developer name
         appHeader.querySelector(".subtitle").textContent = app.developerName;
         // 
@@ -249,8 +240,12 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         preview.querySelector("#subtitle").textContent = app.subtitle;
         // Screenshots
         // New
-	const checkArray = (obj) => { return Array.isArray(obj) && obj.length > 0};// screenshots:[]
-	const checkIphoneScreenShots = (obj) => { return typeof obj === 'object' &&  obj !== null &&  Array.isArray(obj.iphone) &&  obj.iphone.length > 0}; //
+        const checkArray = (obj) => {
+            return Array.isArray(obj) && obj.length > 0
+        }; // screenshots:[]
+        const checkIphoneScreenShots = (obj) => {
+            return typeof obj === 'object' && obj !== null && Array.isArray(obj.iphone) && obj.iphone.length > 0
+        }; //
         if (checkArray(app.screenshots)) {
             app.screenshots.forEach((screenshot, i) => {
                 if (screenshot.imageURL) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
@@ -262,9 +257,9 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
 	     </a>
                 `);
             });
-        }else if (checkIphoneScreenShots(app.screenshots)) {
+        } else if (checkIphoneScreenShots(app.screenshots)) {
             app.screenshots.iphone.forEach((screenshot, i) => {
-		 if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
+                if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
 	     <a href="${url}" data-fslightbox="gallery">
                 <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
 	     </a>
@@ -280,7 +275,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             `);
             });
         }
-	refreshFsLightbox();
+        refreshFsLightbox();
         // Description
         const previewDescription = preview.querySelector("#description");
         previewDescription.innerHTML = formatString(app.localizedDescription);
@@ -513,24 +508,21 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
         let currentX;
         let isDragging = false;
         const dragThreshold = 50; // Ngưỡng kéo 50px
-
         bottomPanel.addEventListener("touchstart", e => {
             startX = e.touches[0].clientX;
             isDragging = true;
             bottomPanel.style.transition = "none"; // Tắt hiệu ứng khi kéo
         });
-
         bottomPanel.addEventListener("touchmove", e => {
             if (!isDragging) return;
             currentX = e.touches[0].clientX;
             let deltaX = currentX - startX;
-            
             // 1. Chỉ cho phép kéo sang phải (deltaX > 0)
             if (deltaX > 0) {
                 // 2. Kiểm tra ngưỡng kéo
                 if (deltaX > dragThreshold) {
                     // Trừ đi ngưỡng để panel bắt đầu di chuyển từ 0 sau khi vượt ngưỡng
-                    let translateX = deltaX - dragThreshold; 
+                    let translateX = deltaX - dragThreshold;
                     bottomPanel.style.transform = `translateX(${translateX}px)`;
                 } else {
                     // Nếu chưa vượt ngưỡng, giữ panel ở vị trí ban đầu
@@ -538,53 +530,49 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
                 }
             }
         });
-
         bottomPanel.addEventListener("touchend", e => {
             isDragging = false;
             let endX = e.changedTouches[0].clientX;
             // Tính deltaX cuối cùng, bao gồm cả phần kéo dưới ngưỡng
-            let deltaX = endX - startX; 
-            
+            let deltaX = endX - startX;
             bottomPanel.style.transition = "transform 0.3s ease";
-            
             // So sánh deltaX với ngưỡng trượt cuối (100px)
-            if (deltaX > 100) { 
+            if (deltaX > 100) {
                 // Trượt đi
                 bottomPanel.style.transform = `translateX(100%)`;
                 setTimeout(() => {
                     bottomPanel.classList.remove("show");
                     document.body.classList.remove('no-scroll');
-                    bottomPanel.style.transform = ""; 
+                    bottomPanel.style.transform = "";
                 }, 100);
             } else {
-                bottomPanel.style.transform = ""; 
+                bottomPanel.style.transform = "";
             }
         });
-    }else{
-	console.log("Preload Panel.")
+    } else {
+        console.log("Preload Panel.")
         return;
-        
     }
-const activateNavLink = (e) => {
-  document.querySelectorAll(".nav-link").forEach(l => {
-    if (l.dataset.target == e) l.classList.add("active");
-    else l.classList.remove("active");
-     oldTargetPage = e;
-  });
-};
+    const activateNavLink = (e) => {
+        document.querySelectorAll(".nav-link").forEach(l => {
+            if (l.dataset.target == e) l.classList.add("active");
+            else l.classList.remove("active");
+            oldTargetPage = e;
+        });
+    };
+
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
-	if (bottomPanel.id === 'apps-popup-all' ) {
-		remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
-		document.body.classList.remove('no-scroll');
-	}else if (remainingOpenPanels.length === 0){
-        	activateNavLink("page-home");
-        	document.body.classList.remove('no-scroll');
+        if (bottomPanel.id === 'apps-popup-all') {
+            remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
+            document.body.classList.remove('no-scroll');
+        } else if (remainingOpenPanels.length === 0) {
+            activateNavLink("page-home");
+            document.body.classList.remove('no-scroll');
         }
-    	setTimeout(() => bottomPanel.remove(), 500); // auto remove 
+        setTimeout(() => bottomPanel.remove(), 500); // auto remove 
     }
-
     // show popup
     setTimeout(() => bottomPanel.classList.add("show"), 50); // show when everything ready
     document.body.classList.add('no-scroll');
@@ -592,132 +580,126 @@ const activateNavLink = (e) => {
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
     closeBottom.addEventListener("click", closePanel);
-document.addEventListener("click", ({ target }) => {// logic đóng panel
-    const uialert = document.querySelector("#uialert-container");
-    const fslight = document.querySelector(".fslightbox-container");
-    const navglass = document.querySelector(".bottom-nav-glass");
-    const panels = document.querySelectorAll(".panel");
-
-    const isInsidePanel = [...panels].some(panel => panel.contains(target));
-    const isOutsideBottomPanel = !bottomPanel.contains(target);
-    const isOutsideUIAlert = !uialert?.contains(target);
-    const isOutsideFsLight = !fslight?.contains(target);
-    const isOutsideNav = !navglass?.contains(target);
-
-    if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight && isOutsideNav) {
-        closePanel();
-    }
-});
-
-}
-
-export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, scrollTarget) {
-        const appsContainer = document.getElementById('apps-list');
-        if (!appsContainer) return;
-        const allApps = source.apps;
-        let filteredApps = [...allApps];
-        let currentIndex = 0;
-
-        // Tạo wrapper chứa input và icon
-        const searchWrapper = document.createElement("div");
-        searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top:0;padding:0 1rem;"
-       searchWrapper.classList.add("search-wrapper")
-        // Tạo icon kính lúp
-        const searchIcon = document.createElement("span");
-        searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 47%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
-        // Tạo ô tìm kiếm
-        const searchBox = document.createElement("input");
-        searchBox.type = "text";
-        searchBox.placeholder = "Enter app name...";
-        searchBox.className = "form-control mb-3";
-        searchBox.style.cssText = "width: 100%; padding-left: 35px; box-sizing: border-box; border-radius: 20px;backdrop-filter: blur(4px); "
-        // Tạo icon x
-        const xIcon = document.createElement("span");
-        xIcon.innerHTML = ` <span class="totalSearch"></span><i class="bi bi-x-circle-fill"></i>`;
-        xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 45%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
-        // Tạo total app
-        const totalAppsCount = xIcon.querySelector(".totalSearch");
-        totalAppsCount.innerText = `Total ${allApps.length} apps `;
-	// tạo filter
-        const filter = document.createElement("span");
-        filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
-        filter.style.cssText = "display: flex;justify-content: space-evenly;";
-
-	let filterType= 0;
-        xIcon.addEventListener('click', () => {
-            searchBox.value = '';
-            xIcon.style.display = 'none';
-            searchBox.focus();
-            filteredApps = [...allApps];
-            appsContainer.innerHTML = "";
-            totalAppsCount.innerText = `Total ${allApps.length} apps `;
-            loadMoreApps();
-            appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-                    window.scrollTo({
-                        top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
-                        behavior: "smooth"
-                    });
-        });
-        searchBox.addEventListener('input', () => {
-            xIcon.style.display = searchBox.value ? 'block' : 'none';
-            appsContainer.innerHTML = "";
-            filteredApps = [];
-            run();
-        });
-        searchBox.addEventListener("keydown", (event) => {
-            if (event.key === "Enter") {
-                const keyword = searchBox.value.toLowerCase();
-                filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
-		let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
-                totalAppsCount.innerText = `Found ${dataApps.length} apps `;
-                currentIndex = 0;
-                setTimeout(() => {
-                    appsContainer.innerHTML = "";
-                    loadMoreApps();
-                    appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-                    window.scrollTo({
-                        top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
-                        behavior: "smooth"
-                    });
-                }, 300);
-            }
-        });
-
-     filter.querySelectorAll('.category').forEach((el, index) => {
-  	el.addEventListener('click', () => {
-    		filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
-	        el.classList.add('active');
-		filterType = index;
-		let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
-                totalAppsCount.innerText = `Found ${dataApps.length} apps `;
-                currentIndex = 0;
-                appsContainer.innerHTML = "";
-		loadMoreApps();
-	  });
-    });
-        // Gắn các phần tử
-        searchWrapper.appendChild(searchIcon);
-        searchWrapper.appendChild(searchBox);
-        searchWrapper.appendChild(xIcon);
-        searchWrapper.appendChild(filter);
-        appsContainer.before(searchWrapper);
-        async function run() {
-            appsContainer.innerHTML = "";
-            appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
-            const tasks = [];
-            for (let i = 0; i < 10; i++) {
-                tasks.push(AppLoading());
-            }
-            await Promise.all(tasks); // Chờ tất cả hoàn tất
+    document.addEventListener("click", ({
+        target
+    }) => { // logic đóng panel
+        const uialert = document.querySelector("#uialert-container");
+        const fslight = document.querySelector(".fslightbox-container");
+        const navglass = document.querySelector(".bottom-nav-glass");
+        const panels = document.querySelectorAll(".panel");
+        const isInsidePanel = [...panels].some(panel => panel.contains(target));
+        const isOutsideBottomPanel = !bottomPanel.contains(target);
+        const isOutsideUIAlert = !uialert?.contains(target);
+        const isOutsideFsLight = !fslight?.contains(target);
+        const isOutsideNav = !navglass?.contains(target);
+        if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight && isOutsideNav) {
+            closePanel();
         }
-
-        //with screenshot
-        function loadMoreApps() {
-	    let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
-            if(!dataApps.length) {
-   		appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-    		appsContainer.innerHTML  = `
+    });
+}
+export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, scrollTarget) {
+    const appsContainer = document.getElementById('apps-list');
+    if (!appsContainer) return;
+    const allApps = source.apps;
+    let filteredApps = [...allApps];
+    let currentIndex = 0;
+    // Tạo wrapper chứa input và icon
+    const searchWrapper = document.createElement("div");
+    searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top:0;padding:0 1rem;"
+    searchWrapper.classList.add("search-wrapper")
+    // Tạo icon kính lúp
+    const searchIcon = document.createElement("span");
+    searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
+    searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 47%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
+    // Tạo ô tìm kiếm
+    const searchBox = document.createElement("input");
+    searchBox.type = "text";
+    searchBox.placeholder = "Enter app name...";
+    searchBox.className = "form-control mb-3";
+    searchBox.style.cssText = "width: 100%; padding-left: 35px; box-sizing: border-box; border-radius: 20px;backdrop-filter: blur(4px); "
+    // Tạo icon x
+    const xIcon = document.createElement("span");
+    xIcon.innerHTML = ` <span class="totalSearch"></span><i class="bi bi-x-circle-fill"></i>`;
+    xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 45%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+    // Tạo total app
+    const totalAppsCount = xIcon.querySelector(".totalSearch");
+    totalAppsCount.innerText = `Total ${allApps.length} apps `;
+    // tạo filter
+    const filter = document.createElement("span");
+    filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
+    filter.style.cssText = "display: flex;justify-content: space-evenly;";
+    let filterType = 0;
+    xIcon.addEventListener('click', () => {
+        searchBox.value = '';
+        xIcon.style.display = 'none';
+        searchBox.focus();
+        filteredApps = [...allApps];
+        appsContainer.innerHTML = "";
+        totalAppsCount.innerText = `Total ${allApps.length} apps `;
+        loadMoreApps();
+        appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+        window.scrollTo({
+            top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
+            behavior: "smooth"
+        });
+    });
+    searchBox.addEventListener('input', () => {
+        xIcon.style.display = searchBox.value ? 'block' : 'none';
+        appsContainer.innerHTML = "";
+        filteredApps = [];
+        run();
+    });
+    searchBox.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            const keyword = searchBox.value.toLowerCase();
+            filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
+            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+            totalAppsCount.innerText = `Found ${dataApps.length} apps `;
+            currentIndex = 0;
+            setTimeout(() => {
+                appsContainer.innerHTML = "";
+                loadMoreApps();
+                appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+                window.scrollTo({
+                    top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
+                    behavior: "smooth"
+                });
+            }, 300);
+        }
+    });
+    filter.querySelectorAll('.category').forEach((el, index) => {
+        el.addEventListener('click', () => {
+            filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
+            el.classList.add('active');
+            filterType = index;
+            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+            totalAppsCount.innerText = `Found ${dataApps.length} apps `;
+            currentIndex = 0;
+            appsContainer.innerHTML = "";
+            loadMoreApps();
+        });
+    });
+    // Gắn các phần tử
+    searchWrapper.appendChild(searchIcon);
+    searchWrapper.appendChild(searchBox);
+    searchWrapper.appendChild(xIcon);
+    searchWrapper.appendChild(filter);
+    appsContainer.before(searchWrapper);
+    async function run() {
+        appsContainer.innerHTML = "";
+        appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
+        const tasks = [];
+        for (let i = 0; i < 10; i++) {
+            tasks.push(AppLoading());
+        }
+        await Promise.all(tasks); // Chờ tất cả hoàn tất
+    }
+    //with screenshot
+    function loadMoreApps() {
+        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+        if (!dataApps.length) {
+            appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+            appsContainer.innerHTML = `
     <div class="app-container" style="grid-column: 1 / -1;grid-row: 1 / -1;height: 100%;max-width: none !important; ">
       <div class="app-header-container" style="max-width:730px;">
         <a href="#" class="nothing">
@@ -730,87 +712,96 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
         </a>
       </div>
     </div>`;
-		return;
-	    }
-            const nextApps = dataApps.slice(currentIndex, currentIndex + appsPerLoad);
-	const checkArray = (obj) => { return Array.isArray(obj) && obj.length > 0};// screenshots:[]
-	const checkIphoneScreenShots = (obj) => { return typeof obj === 'object' &&  obj !== null &&  Array.isArray(obj.iphone) &&  obj.iphone.length > 0}; //
-            nextApps.forEach(app => {
-                let html = `
+            return;
+        }
+        const nextApps = dataApps.slice(currentIndex, currentIndex + appsPerLoad);
+        const checkArray = (obj) => {
+            return Array.isArray(obj) && obj.length > 0
+        }; // screenshots:[]
+        const checkIphoneScreenShots = (obj) => {
+            return typeof obj === 'object' && obj !== null && Array.isArray(obj.iphone) && obj.iphone.length > 0
+        }; //
+        nextApps.forEach(app => {
+            let html = `
             <div class="app-container">
                 ${AppHeader(app, ".")}
                 <p class="subtitle sub-version">${app.version ? `Version ${app.version} • ` : ""}${app.developerName ?? "Unknown"}</p>
                 <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
-                if (checkArray(app.screenshots) && isScreenshot) {
-                    html += `<div class="screenshots">`;
-                    for (let i = 0; i < app.screenshots.length && i < 2; i++) {
-                        const screenshot = app.screenshots[i];
-                        if (!screenshot) continue;
-                        if (screenshot.imageURL) html += `<img src="${screenshot.imageURL}" class="screenshot">`;
-                        else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
-                    }
-                    html += `</div>`;
-                }else if (checkIphoneScreenShots(app.screenshots) && isScreenshot) {
-                    html += `<div class="screenshots">`;
-                    for (let i = 0; i < app.screenshots.iphone.length && i < 2; i++) {
-                        const screenshot = app.screenshots.iphone[i];
-                        if (!screenshot) continue;
-                        if (screenshot) html += `<img src="${screenshot}" class="screenshot">`;
-                        else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
-                    }
-                    html += `</div>`;
-                }  else if (app.screenshotURLs && isScreenshot) {
-                    html += `<div class="screenshots">`;
-                    for (let i = 0; i < app.screenshotURLs.length && i < 2; i++) {
-                        if (app.screenshotURLs[i]) html += `<img src="${app.screenshotURLs[i]}" class="screenshot">`;
-                    }
-                    html += `</div>`;
+            if (checkArray(app.screenshots) && isScreenshot) {
+                html += `<div class="screenshots">`;
+                for (let i = 0; i < app.screenshots.length && i < 2; i++) {
+                    const screenshot = app.screenshots[i];
+                    if (!screenshot) continue;
+                    if (screenshot.imageURL) html += `<img src="${screenshot.imageURL}" class="screenshot">`;
+                    else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
                 }
                 html += `</div>`;
-                appsContainer.insertAdjacentHTML("beforeend", html);
-            });
-            currentIndex += appsPerLoad;
-	    waitForAllImagesToLoad(appsContainer);
-        }
-        loadMoreApps();
-	appsContainer.addEventListener("click", event => {
-        	const nothing = event.target.closest("a.nothing");
-		if(nothing) {
+            } else if (checkIphoneScreenShots(app.screenshots) && isScreenshot) {
+                html += `<div class="screenshots">`;
+                for (let i = 0; i < app.screenshots.iphone.length && i < 2; i++) {
+                    const screenshot = app.screenshots.iphone[i];
+                    if (!screenshot) continue;
+                    if (screenshot) html += `<img src="${screenshot}" class="screenshot">`;
+                    else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
+                }
+                html += `</div>`;
+            } else if (app.screenshotURLs && isScreenshot) {
+                html += `<div class="screenshots">`;
+                for (let i = 0; i < app.screenshotURLs.length && i < 2; i++) {
+                    if (app.screenshotURLs[i]) html += `<img src="${app.screenshotURLs[i]}" class="screenshot">`;
+                }
+                html += `</div>`;
+            }
+            html += `</div>`;
+            appsContainer.insertAdjacentHTML("beforeend", html);
+        });
+        currentIndex += appsPerLoad;
+        waitForAllImagesToLoad(appsContainer);
+    }
+    loadMoreApps();
+    appsContainer.addEventListener("click", event => {
+        const nothing = event.target.closest("a.nothing");
+        if (nothing) {
             event.stopPropagation();
-                    filteredApps = allApps
-	            totalAppsCount.innerText = `Total ${filteredApps.length} apps `;
-                searchBox.value = '';
-                    currentIndex = 0; filterType = 0;
-	            appsContainer.innerHTML = "";
-                filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
-                    loadMoreApps();
-                    window.scrollTo({
-                        top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
-                        behavior: "smooth"
-                    });
-		}
-	});
-       // scroll
-       const scrollToTop = (target) => {
-           if (target === window) {
-               window.scrollTo({ top: 0, behavior: 'smooth' });
-           } else {
-               target.scrollTo({ top: 0, behavior: 'smooth' });
-           }
-       }
-       const scrollThreshold = 150;
-       scrollTarget ??= appsContainer.parentElement;
-
-       const buttonScroll = document.createElement('button');
-       buttonScroll.id = 'scrollToTopBtn';
-       buttonScroll.title = 'Scroll To Top';
-       const iconBtn = document.createElement('i');
-       iconBtn.className = 'bi bi-chevron-up';
-       buttonScroll.appendChild(iconBtn);
-       buttonScroll.onclick = () => scrollToTop(scrollTarget);
-	appsContainer.before(buttonScroll);
-
-       buttonScroll.style.cssText = `
+            filteredApps = allApps
+            totalAppsCount.innerText = `Total ${filteredApps.length} apps `;
+            searchBox.value = '';
+            currentIndex = 0;
+            filterType = 0;
+            appsContainer.innerHTML = "";
+            filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
+            loadMoreApps();
+            window.scrollTo({
+                top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
+                behavior: "smooth"
+            });
+        }
+    });
+    // scroll
+    const scrollToTop = (target) => {
+        if (target === window) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            target.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    }
+    const scrollThreshold = 150;
+    scrollTarget ??= appsContainer.parentElement;
+    const buttonScroll = document.createElement('button');
+    buttonScroll.id = 'scrollToTopBtn';
+    buttonScroll.title = 'Scroll To Top';
+    const iconBtn = document.createElement('i');
+    iconBtn.className = 'bi bi-chevron-up';
+    buttonScroll.appendChild(iconBtn);
+    buttonScroll.onclick = () => scrollToTop(scrollTarget);
+    appsContainer.before(buttonScroll);
+    buttonScroll.style.cssText = `
         position: fixed;
         bottom: 2rem;
         left: 50%;
@@ -826,17 +817,17 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
         scale:1.25;
         transition: background-color 0.3s;
     `;
-       buttonScroll.onmouseover = () => {
-           buttonScroll.style.backgroundColor = 'var(--uialert-background-color)';
-       };
-       buttonScroll.onmouseout = () => {
-           buttonScroll.style.backgroundColor = 'transparent';
-       };
-       scrollTarget.addEventListener('scroll', () => {
-           const scrollTop = scrollTarget === window ? document.documentElement.scrollTop || document.body.scrollTop : scrollTarget.scrollTop;
-           const scrollHeight = scrollTarget === window ? document.documentElement.scrollHeight || document.body.scrollHeight : scrollTarget.scrollHeight;
-           const clientHeight = scrollTarget === window ? document.documentElement.clientHeight || window.innerHeight : scrollTarget.clientHeight;
-           buttonScroll.style.display = scrollTop > scrollThreshold ? 'block' : 'none';
-           if (scrollTop + clientHeight >= scrollHeight - 50) loadMoreApps();
-       });
-    }
+    buttonScroll.onmouseover = () => {
+        buttonScroll.style.backgroundColor = 'var(--uialert-background-color)';
+    };
+    buttonScroll.onmouseout = () => {
+        buttonScroll.style.backgroundColor = 'transparent';
+    };
+    scrollTarget.addEventListener('scroll', () => {
+        const scrollTop = scrollTarget === window ? document.documentElement.scrollTop || document.body.scrollTop : scrollTarget.scrollTop;
+        const scrollHeight = scrollTarget === window ? document.documentElement.scrollHeight || document.body.scrollHeight : scrollTarget.scrollHeight;
+        const clientHeight = scrollTarget === window ? document.documentElement.clientHeight || window.innerHeight : scrollTarget.clientHeight;
+        buttonScroll.style.display = scrollTop > scrollThreshold ? 'block' : 'none';
+        if (scrollTop + clientHeight >= scrollHeight - 50) loadMoreApps();
+    });
+}
