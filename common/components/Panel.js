@@ -45,9 +45,10 @@ function updateBundleID(newBundleID) {
     history.replaceState({}, '', url);
 }
 window.oldTargetPage= "page-home";
+
 export const activateNavLink = (e) => {
         document.querySelectorAll(".nav-link").forEach(l => {
-            if (l.dataset.target == e) l.classList.add("active");
+            if (l.dataset.target === e) l.classList.add("active");
             else l.classList.remove("active");
         });
         window.oldTargetPage = e;
@@ -465,7 +466,6 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             if (!isDragging) return;
             currentY = e.touches[0].clientY;
             let deltaY = currentY - startY;
-            // Kiểm tra nếu nội dung bên trong đang cuộn
             const scrollable = bottomPanel.querySelector('.panel-content');
             if (scrollable && scrollable.scrollTop > 0) {
                 isDragging = false;
@@ -484,9 +484,8 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             if (deltaY > 150) {
                 bottomPanel.style.transform = `translateY(100%)`;
                 setTimeout(() => {
-                    bottomPanel.classList.remove("show");
-                    document.body.classList.remove('no-scroll');
                     bottomPanel.style.transform = "";
+		    closePanel();
                 }, 100);
             } else {
                 bottomPanel.style.transform = "";
@@ -531,11 +530,9 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             if (deltaX > 0) {
                 // 2. Kiểm tra ngưỡng kéo
                 if (deltaX > dragThreshold) {
-                    // Trừ đi ngưỡng để panel bắt đầu di chuyển từ 0 sau khi vượt ngưỡng
                     let translateX = deltaX - dragThreshold;
                     bottomPanel.style.transform = `translateX(${translateX}px)`;
                 } else {
-                    // Nếu chưa vượt ngưỡng, giữ panel ở vị trí ban đầu
                     bottomPanel.style.transform = `translateX(0px)`;
                 }
             }
@@ -551,9 +548,8 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
                 // Trượt đi
                 bottomPanel.style.transform = `translateX(100%)`;
                 setTimeout(() => {
-                    bottomPanel.classList.remove("show");
-                    document.body.classList.remove('no-scroll');
                     bottomPanel.style.transform = "";
+		    closePanel();
                 }, 100);
             } else {
                 bottomPanel.style.transform = "";

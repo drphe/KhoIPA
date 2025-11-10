@@ -103,7 +103,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 	// insert newest app
         let count = 1;
         allApps.forEach(app => {
-            if (count > 6) return;
+            if (count > 5) return;
             document.getElementById("suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
             count++;
         });
@@ -175,7 +175,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        activateNavLink("page-library");
+        activateNavLink(e.dataset.target);
         await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
      });
@@ -184,7 +184,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     // view all source
     document.getElementById('all-source')?.addEventListener("click", async(e) => {
         e.preventDefault();
-       activateNavLink("page-source");
+       activateNavLink(e.dataset.target);
         await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
     	for (const source of fetchedEditorSources) {
         	await insertSource(source);
