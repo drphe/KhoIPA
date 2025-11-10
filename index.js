@@ -257,7 +257,10 @@ document.querySelectorAll(".nav-link").forEach(link=>{
     }else if(target == 'page-news'){
         const html = `<div id="news" class="section grid_news">${jsonNews.map(news =>NewsItem(news)).join('')}</div>`;
         openPanel(html, `<p>ALL NEWS</p>`, '.', "side", id);
-    }else document.querySelectorAll(".panel.show").forEach(l=>l.classList.remove("show"));
+    }else {
+	document.querySelectorAll(".panel.show").forEach(l=>l.classList.remove("show"));
+	document.body.classList.remove('no-scroll');
+    }
 
   });
 });
