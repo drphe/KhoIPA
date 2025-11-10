@@ -72,18 +72,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         await insertSource(source, "repositories");
     }
 
-
-	// insert newest app
-        let count = 1;
-        json.apps.forEach(app => {
-            if (count > 5) return;
-            document.getElementById("suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
-            count++;
-        });
-
-    document.body.classList.remove("loading");// kết thúc load dữ liệu
-    document.getElementById("loading")?.remove();
-
     const fixYear =(d)=>{let x=new Date(d),y=new Date().getFullYear();return x.getFullYear()>y+10?(x.setFullYear(y),x.toISOString().split("T")[0]):d}
 
     const allSources = [...fetchedEditorSources, ...fetchedSources]; // chuẩn bị danh sách app
@@ -111,15 +99,24 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         const dateB = new Date(b.versionDate ?? b.versions?.[0]?.date ?? 0).valueOf();
         return dateB - dateA;
     });
+
+	// insert newest app
+        let count = 1;
+        allApps.forEach(app => {
+            if (count > 5) return;
+            document.getElementById("suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
+            count++;
+        });
+
+    document.body.classList.remove("loading");// kết thúc load dữ liệu
+    document.getElementById("loading")?.remove();
+
     const bundleIdToSourceMap = new Map();
     allSources.forEach(sourceTarget => {
         sourceTarget.apps.forEach(app => {
             bundleIdToSourceMap.set(app.bundleIdentifier, sourceTarget);
         });
     });
-
-    // total of repositories
-    const totalRepoCount = document.getElementById('title-total-repo');
 
     async function fetchSource(url) {
         const data = await json(url);
@@ -178,7 +175,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        await openPanel('<div id="apps-list"></div>', `<p>Kho IPA Mod</p>`, '.', "side", "apps-popup-all");
+        await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
      });
 
