@@ -127,7 +127,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
       </div>
       <div id="title" class="hidden">
         <img id="app-icon" src="${altSourceIcon}" onerror="this.onerror=null; this.src='${altSourceIcon}';" alt="generic-app-icon">
-        <p>DolphiniOS</p>
+        <p></p>
       </div>
       <a href="#" class="install hidden">
         <button class="uibutton">Get</button>
@@ -496,7 +496,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
       <div id="back-container">
         <button id="back" type="button">
           <i class="bi bi bi-chevron-left"></i>
-          Close
+          Back
         </button>
       </div>
       <div id="title" class="">

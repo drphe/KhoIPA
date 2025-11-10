@@ -482,7 +482,7 @@ input[type="text"]:focus {
 }
 
 #apps-list, #sources-list {
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 /* About */

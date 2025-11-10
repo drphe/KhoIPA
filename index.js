@@ -163,6 +163,13 @@ const editorsources = await json("./common/assets/json/editorsources.json");
             </div>
         `);
     }
+const activateNavLink = (e) => {
+  document.querySelectorAll(".nav-link").forEach(l => {
+    if (l.dataset.target == e) l.classList.add("active");
+    else l.classList.remove("active");
+  });
+};
+
 
     // 
     //  "View All apps"
@@ -175,6 +182,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
+        activateNavLink("page-library")
         await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
      });
@@ -183,6 +191,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     // view all source
     document.getElementById('all-source')?.addEventListener("click", async(e) => {
         e.preventDefault();
+       activateNavLink("page-source")
         await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
     	for (const source of fetchedEditorSources) {
         	await insertSource(source);
@@ -226,12 +235,14 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         }
         openPanel(sourceTarget, bundleId, ".", "bottom");
     });
-
+let oldTargetPage= "page-home";
 document.querySelectorAll(".nav-link").forEach(link=>{
   link.addEventListener("click",async ()=>{
     document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));
     link.classList.add("active");
     const target = link.dataset.target;
+    if(target == oldTargetPage) return;
+    oldTargetPage = target
     if(target == 'page-source') {
         await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
     	for (const source of fetchedEditorSources) {
@@ -244,9 +255,9 @@ document.querySelectorAll(".nav-link").forEach(link=>{
         await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
     }else if(target == 'page-news'){
-        const html = `<div id="news" class="section grid_news">${jsonNews.map(news =>NewsItem(news, false)).join('')}</div>`;
+        const html = `<div id="news" class="section grid_news">${jsonNews.map(news =>NewsItem(news)).join('')}</div>`;
         openPanel(html, `<p>ALL NEWS</p>`, '.', "side", id);
-    }
+    }else document.querySelectorAll(".panel.show").forEach(l=>l.classList.remove("show"));
 
   });
 });
