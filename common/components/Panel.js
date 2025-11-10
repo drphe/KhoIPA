@@ -285,7 +285,6 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             `);
             });
         }
-        refreshFsLightbox();
         // Description
         const previewDescription = preview.querySelector("#description");
         previewDescription.innerHTML = formatString(app.localizedDescription);
@@ -562,10 +561,10 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
-        if (bottomPanel.id === 'apps-popup-all') {
+        if (bottomPanel.id === 'apps-popup-all' || bottomPanel.id === 'popup-all-news) {
             remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
             document.body.classList.remove('no-scroll');
-            activateNavLink("page-home");
+	    activateNavLink("page-home");
         } else if (remainingOpenPanels.length === 0) {
             activateNavLink("page-home");
             document.body.classList.remove('no-scroll');
@@ -576,6 +575,7 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     setTimeout(() => bottomPanel.classList.add("show"), 50); // show when everything ready
     document.body.classList.add('no-scroll');
     waitForAllImagesToLoad(bottomPanel);
+    refreshFsLightbox();
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
     closeBottom.addEventListener("click", closePanel);
@@ -830,3 +830,21 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
         if (scrollTop + clientHeight >= scrollHeight - 50) loadMoreApps();
     });
 }
+
+export function wrapLightbox(htmlString) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlString, 'text/html');
+  const images = doc.querySelectorAll('img');
+  images.forEach(img => {
+    const src = img.getAttribute('src');
+    const alt = img.getAttribute('alt') || '';
+    const anchor = document.createElement('a');
+    anchor.setAttribute('href', src);
+    anchor.setAttribute('data-fslightbox', 'gallery');
+    //img.classList.add('screenshot');
+    img.replaceWith(anchor);
+    anchor.appendChild(img);
+  });
+  return doc.body.innerHTML;
+}
+

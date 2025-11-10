@@ -3,7 +3,7 @@ import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPUR
 import { AppBanner } from "./common/components/AppWeb.js";
 import { AppHeader } from "./common/components/AppHeader.js";
 import { NewsItem } from "./common/components/NewsItem.js";
-import { openPanel , addAppList, activateNavLink } from "./common/components/Panel.js";
+import { openPanel , addAppList, activateNavLink, wrapLightbox } from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 const sources = await json("./common/assets/json/sources.json");
@@ -54,8 +54,6 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 		}, { passive: false });
 	}
     } else document.getElementById("news").remove();
-
-
 
     const fetchedSources = (await Promise.all(sources.map(async url => {
         try {
@@ -278,7 +276,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
                     ${tocHtml}
                 </div>
                 <div id="news" class="section news-item-content content-column">
-                    ${htmlContent}
+                    ${wrapLightbox(htmlContent)}
                 </div>
             </div>
         `;

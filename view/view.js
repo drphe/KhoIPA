@@ -3,7 +3,7 @@ import { formatString, open, setUpBackButton , json , isValidHTTPURL,prefetchAnd
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";
-import { openPanel, addAppList, activateNavLink} from "../common/components/Panel.js";
+import { openPanel, addAppList, activateNavLink, wrapLightbox} from "../common/components/Panel.js";
 
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
@@ -118,7 +118,7 @@ main(json => {
                     ${tocHtml}
                 </div>
                 <div id="news" class="section news-item-content content-column">
-                    ${htmlContent}
+                    ${wrapLightbox(htmlContent)}
                 </div>
             </div>
         `;
