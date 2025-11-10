@@ -164,10 +164,12 @@ const editorsources = await json("./common/assets/json/editorsources.json");
         `);
     }
 
+let oldTargetPage= "page-home";
 const activateNavLink = (e) => {
   document.querySelectorAll(".nav-link").forEach(l => {
     if (l.dataset.target == e) l.classList.add("active");
     else l.classList.remove("active");
+     oldTargetPage = e;
   });
 };
 
@@ -202,6 +204,8 @@ const activateNavLink = (e) => {
      });
     // open app
     document.addEventListener("click", event => {
+        const isHome= document.querySelectorAll(".panel.show");
+	if (!isHome.length)activateNavLink("page-home");
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install-app");
         const targetNews = event.target.closest("a.news-item-header");
@@ -235,7 +239,7 @@ const activateNavLink = (e) => {
         }
         openPanel(sourceTarget, bundleId, ".", "bottom");
     });
-let oldTargetPage= "page-home";
+
 document.querySelectorAll(".nav-link").forEach(link=>{
   link.addEventListener("click",async ()=>{
     document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));

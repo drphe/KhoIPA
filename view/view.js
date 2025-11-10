@@ -79,11 +79,12 @@ main(json => {
 	else if(bundleID) openPanel(json, bundleID, '..', "bottom");// open app
         else openPanel({},"","..");// preload panel
 
-
+let oldTargetPage= "page-home";
 const activateNavLink = (e) => {
   document.querySelectorAll(".nav-link").forEach(l => {
     if (l.dataset.target == e) l.classList.add("active");
     else l.classList.remove("active");
+     oldTargetPage = e;
   });
 };
     //  "View All apps"
@@ -141,6 +142,8 @@ const activateNavLink = (e) => {
     document.addEventListener("click", executePanel);
 
     function executePanel(e){
+        const isHome= document.querySelectorAll(".panel.show");
+	if (!isHome.length)activateNavLink("page-home");
         const targetLinks = e.target.closest("a.app-header-link");
         const targetNews = e.target.closest("a.news-item-header");
         const targetNewsLink = e.target.closest("a.news-item-link");
@@ -165,7 +168,7 @@ const activateNavLink = (e) => {
 	    executeNews('./note/'+url, title);
 	}
     }
-let oldTargetPage= "page-home";
+
 document.querySelectorAll(".nav-link").forEach(link=>{
   link.addEventListener("click",async ()=>{
     document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));
