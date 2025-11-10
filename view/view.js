@@ -143,7 +143,7 @@ const activateNavLink = (e) => {
 
     function executePanel(e){
         const isHome= document.querySelectorAll(".panel.show");
-	if (!isHome.length)activateNavLink("page-home");
+	if (!isHome.length && oldTargetPage !=="page-home") activateNavLink("page-home");
         const targetLinks = e.target.closest("a.app-header-link");
         const targetNews = e.target.closest("a.news-item-header");
         const targetNewsLink = e.target.closest("a.news-item-link");
