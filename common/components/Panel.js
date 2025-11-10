@@ -44,7 +44,6 @@ function updateBundleID(newBundleID) {
     url.searchParams.set('bundleID', newBundleID);
     history.replaceState({}, '', url);
 }
-window.oldTargetPage= "page-home";
 
 export const activateNavLink = (e) => {
         document.querySelectorAll(".nav-link").forEach(l => {

@@ -1,3 +1,5 @@
+window.oldTargetPage= "page-home";
+
 export const urlSearchParams = new URLSearchParams(window.location.search);
 
 export const sourceURL = base64Convert(
