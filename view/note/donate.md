@@ -29,9 +29,11 @@ Nếu bạn không mua chứng chỉ, muốn freesideloading thì đọc kỹ c�
 * Có thể copy link tải ipa và sử dụng esign, feather hoặc safari tải về. Tuỳ vào sở thích của bạn.
 
 Trên khoIPA có tổng hợp nhiều nguồn repo IPA, một số nguồn tải IPA khác ae có thể tham khảo thêm.
+* [CodeVN](https://ios.codevn.net/): Trang chia sẻ IPA miễn phí của ae Việt Nam
+* [IPAOMTK](https://ipaomtk.com/): không chỉ có IPA mà cả APK mod cho ae, hoàn toàn miễn phí
+
 * [DVC Repo](https://dvcipa.github.io/index.html) : DVC có nhiều IPA game Hack, mod cho ae, nhưng họ bắt nạp tiền mua key kích hoạt chức năng hack.
-* [IPAOMTK](https://ipaomtk.com/): không chỉ có IPA mà cả APK mod cho ae
-* [AowVN](aowvn.org): Kho chia sẻ game, mâng việt hóa
+* [Flekstore](https://flekstore.com/): Kho chia sẻ game, ứng dụng, nhưng phải mua chứng chỉ của họ mới tải và cài đặt được ứng dụng
 
 ---
 
