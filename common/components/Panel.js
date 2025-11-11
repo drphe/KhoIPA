@@ -60,16 +60,15 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
 
 let bottomPanel = document.querySelector(`#${ID}`);
 if (bottomPanel) {
-  // nếu đã tồn tại thì xoá nội dung cũ
   bottomPanel.innerHTML = "";
+  bottomPanel.classList.remove("show");
 } else {
   // nếu chưa có thì tạo mới
   bottomPanel = document.createElement("div");
   bottomPanel.id = ID;
 }
-document.body.append(bottomPanel);
 bottomPanel.setAttribute("data-type", dataset);
-bottomPanel.classList.remove("show");
+document.body.append(bottomPanel);
 
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
