@@ -57,12 +57,12 @@
       "version": "7.4.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.7.42/com.FenderDigital.Play-7.4.2.ipa",
-          "size": 104800000,
           "version": "7.4.2",
-          "buildVersion": null,
           "date": "2025-11-11T10:21:00+07:00",
           "localizedDescription": "- AppStore Link (https://apps.apple.com/ca/app/fender-play-songs-lessons/id1226057939)\n- Music Learning App\n- Subscription Unlocked\n- Some features are server side or maybe just a skill issue\n\nCrack by @VAXMG\nDecrypted by @eeveedecrypterbot",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.7.42/com.FenderDigital.Play-7.4.2.ipa",
+          "size": 104800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -104,12 +104,12 @@
       "version": "5.65.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.65.0/com.magmic.NYTCrosswords09-5.65.0.ipa",
-          "size": 45800000,
           "version": "5.65.0",
-          "buildVersion": null,
           "date": "2025-11-11T10:16:00+07:00",
           "localizedDescription": " AppStore Link (https://apps.apple.com/ca/app/nyt-games-word-number-logic/id307569751)\nSubscription Unlocked \nMinimum iOS/iPadOS 17.0\nCrack by @VAXMG",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.65.0/com.magmic.NYTCrosswords09-5.65.0.ipa",
+          "size": 45800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -1104,9 +1104,18 @@
           "NSUserTrackingUsageDescription": "This uses device info for more personalized ads and content"
         }
       },
-      "size": 110100000,
-      "version": "1.15.0",
+      "size": 113900000,
+      "version": "1.16.0",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.16.0/TrVTuiTh.-.v1.16.0.ipa",
+          "size": 113900000,
+          "version": "1.16.0",
+          "buildVersion": null,
+          "date": "2025-11-11T12:18:00+07:00",
+          "localizedDescription": "Thêm tiền\nThêm Kinh Nghiệm\nCâu cá nhanh\nThêm sự tỉnh táo\nThêm năng lượng\nMade by: DoraTeamMods",
+          "minOSVersion": null
+        },
         {
           "version": "1.15.0",
           "date": "2025-11-08T13:15:00+07:00",
@@ -1117,8 +1126,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-08T13:15:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.15.0/trovetuoitho.ipa",
+      "versionDate": "2025-11-11T12:18:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.16.0/TrVTuiTh.-.v1.16.0.ipa",
       "patreon": {}
     },
     {
