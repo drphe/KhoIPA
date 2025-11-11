@@ -22,6 +22,43 @@
   ],
   "apps": [
     {
+      "beta": true ,
+      "name": "YouTube  ReVanced",
+      "type": 3,
+      "bundleIdentifier": "com.google.android.youtube",
+      "developerName": "Google LLC",
+      "subtitle": "Youtube Premium cho android không phải IOS",
+      "localizedDescription": "Thưởng thức các video và kênh bạn yêu thích trong ứng dụng YouTube chính thức.\nHãy tải ứng dụng YouTube chính thức dành cho điện thoại và máy tính bảng Android. Khám phá nội dung thịnh hành trên thế giới – từ các video nhạc đình đám cho đến những nội dung phổ biến trong các danh mục trò chơi, thời trang, làm đẹp, tin tức, học tập và còn nhiều nữa. Đăng ký những kênh bạn yêu thích, tự sáng tạo nội dung, chia sẻ với bạn bè và xem trên mọi thiết bị.",
+      "versionDescription": "",
+      "tintColor": "#f70404",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/2d/17/822d1799-53f4-2bb1-e335-0c66378fe7bf/logo_youtube_2024_q4_color-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220-0.png/100x100bb.jpg",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/x1-uZMLdBOiai3KFGvOw2gQoIovWdAdLe0dZeDrRiaYyfe1aRcZmDF5vOmPglcFGudc=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/dbKZY_8ywMvYSGdHrLJQk5HI-W4RaUbm9lkYEE260XSl166ZvBn7XgCPxTv_N0-9jhs=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/u-k_C7Eyc9QUYrbSnJOQ1FERGzrT5pazy6dwo8Et0w0K9azk_9ZvtvoxWJxMQmedF0w=w5120-h2880-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 159000000,
+      "version": "20.14.43",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.14.43/YouTube.ReVanced.20.14.43.apk",
+          "size": 159000000,
+          "version": "20.14.43",
+          "buildVersion": "",
+          "date": "2025-11-11T14:34:00+07:00",
+          "localizedDescription": "2⃣ ReVanced\n⬆️ 🆕 20.14.43 (RP: 5.45.0)\nVào kênh YouTube ReVanced (https://t.me/YoutubeModByVTA2610) để cập nhật phiên bản!",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-11T14:34:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.14.43/YouTube.ReVanced.20.14.43.apk",
+      "patreon": {}
+    },
+    {
       "beta": false,
       "name": "Fender Play",
       "type": 3,
@@ -1108,12 +1145,12 @@
       "version": "1.16.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.16.0/TrVTuiTh.-.v1.16.0.ipa",
-          "size": 113900000,
           "version": "1.16.0",
-          "buildVersion": null,
           "date": "2025-11-11T12:18:00+07:00",
           "localizedDescription": "Thêm tiền\nThêm Kinh Nghiệm\nCâu cá nhanh\nThêm sự tỉnh táo\nThêm năng lượng\nMade by: DoraTeamMods",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.16.0/TrVTuiTh.-.v1.16.0.ipa",
+          "size": 113900000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
@@ -3514,15 +3551,15 @@
     },
     {
       "beta": false,
-      "name": "Youtube Premium",
-      "type": 1,
+      "name": "YouTube OLED",
+      "type": 3,
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "Google",
       "subtitle": "Youtube Premium (full chức năng)",
       "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.\nTải ứng dụng YouTube chính thức dành cho iPhone và iPad.\nXem nội dung mọi người đang xem về âm nhạc, trò chơi, giải trí, tin tức và nhiều nội dung khác. Đăng ký kênh, chia sẻ với bạn bè, chỉnh sửa và tải video lên, xem trên thiết bị bất kỳ.\nBạn cũng có thể tạo danh sách phát, xem nội dung đang thịnh hành, thể hiện bản thân bằng nhận xét, chia sẻ video với bạn bè, truyền video đến TV và hơn thế nữa – tất cả đều từ bên trong ứng dụng.",
       "versionDescription": "",
-      "tintColor": "#F01414",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/2d/17/822d1799-53f4-2bb1-e335-0c66378fe7bf/logo_youtube_2024_q4_color-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220-0.png/100x100bb.jpg",
+      "tintColor": "#f70404",
+      "iconURL": "https://i.ibb.co/ycmwBxnM/d61c204cec2f.png",
       "screenshotURLs": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/f9/7c/74f97c4c-a362-89d8-914d-d9bcf0eacc54/cdfcf0fc-0f88-4237-9e9d-a1afb08724e3_iOS-5.5-in_1.jpg/392x696bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6c/63/9a/6c639ae5-917f-4b8f-7f8d-6790c4ca4f1a/209c47e2-15a0-44a2-a1b7-ab82b74bd2d8_iOS-5.5-in_2.jpg/392x696bb.jpg",
@@ -3532,11 +3569,30 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
+          "NSCameraUsageDescription": "This lets you create videos using the app.",
+          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
+          "NSLocationWhenInUseUsageDescription": "Makes it easier for you to attach location information to your videos and live streams and allows for features such as improved recommendations and ads.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
+          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created.",
+          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites."
+        }
       },
-      "size": 129712392,
-      "version": "20.39.6",
+      "size": 128200000,
+      "version": "20.45.3",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.45.3/YouTube.OLED.-.v20.45.3.ipa",
+          "size": 128200000,
+          "version": "20.45.3",
+          "buildVersion": null,
+          "date": "2025-11-11T14:23:00+07:00",
+          "localizedDescription": "YTLite\nYTUHD\nYouPiP\nYTABConfig\nYouMute\nDontEatMyContent\nReturn YouTube Dislikes\niSponsorBlock\nYouRememberCaption\nYTNoTracking\nYTNoCheckLocalNetWork\nBigYTMiniPlayer\nYTSpeed\nYTHoldForSpeed\nYTVideoOverlay\nYouQuality\nYTNoModernUi\nVà nhiều tinh chỉnh khác lười ghi quá 🫶🏻",
+          "minOSVersion": null
+        },
         {
           "version": "20.39.6",
           "date": "2025-10-01T17:31:00Z",
@@ -3547,8 +3603,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-01T17:31:00Z",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/youtube.premium.20.39.6/YouTube_20.39.6_Premium.ipa",
+      "versionDate": "2025-11-11T14:23:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.45.3/YouTube.OLED.-.v20.45.3.ipa",
       "patreon": {}
     },
     {
