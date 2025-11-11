@@ -15,12 +15,87 @@
   "apps": [
     {
       "beta": false,
+      "name": "OldOS 2.0",
+      "type": 1,
+      "bundleIdentifier": "com.zurac.OldOSSL2",
+      "developerName": "OldOS 2.0 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Recreating iOS 4 in Swift.",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/OldOS_2.0.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-3.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-4.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 81788928,
+      "version": "2.0",
+      "versions": [
+        {
+          "version": "2.0",
+          "date": "2025-11-11",
+          "size": 81788928,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS_2.0.ipa",
+          "localizedDescription": "Recreating iOS 4 in Swift."
+        }
+      ],
+      "versionDate": "2025-11-11",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS_2.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "NeoFreeBird - Twitter/X",
+      "type": 1,
+      "bundleIdentifier": "com.atebits.Tweetie2",
+      "developerName": "NeoFreeBird - Twitter/X x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "NeoFreeBird 2.2 - Twitter/X 11.35",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NeoFreeBird-2.2-Twitter-11.35 2.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-3.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 153092096,
+      "version": "11.35",
+      "versions": [
+        {
+          "version": "11.35",
+          "date": "2025-11-11",
+          "size": 153092096,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/NeoFreeBird-2.2-Twitter-11.35 2.ipa",
+          "localizedDescription": "NeoFreeBird 2.2 - Twitter/X 11.35"
+        }
+      ],
+      "versionDate": "2025-11-11",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/NeoFreeBird-2.2-Twitter-11.35 2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Discord + Kettu",
       "type": 1,
       "bundleIdentifier": "com.hammerandchisel.discord",
       "developerName": "Discord + Kettu x CyPwn",
       "subtitle": "",
-      "localizedDescription": "KettuTweak",
+      "localizedDescription": "Discord + Kettu loader for theming and plugins.",
       "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
@@ -40,7 +115,7 @@
           "date": "2025-11-06",
           "size": 89128960,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
-          "localizedDescription": "KettuTweak"
+          "localizedDescription": "Discord + Kettu loader for theming and plugins."
         },
         {
           "version": "228.1",
@@ -59,44 +134,6 @@
       ],
       "versionDate": "2025-11-06",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "NeoFreeBird - Twitter - X",
-      "type": 1,
-      "bundleIdentifier": "com.atebits.Tweetie2",
-      "developerName": "NeoFreeBird - Twitter - X x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "NeoFreeBird - BHTwitter rebranded.",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NeoFreeBird-2.1-Twitter-11.33.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter - X/NeoFreeBird-2.1-Twitter-11.33-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter - X/NeoFreeBird-2.1-Twitter-11.33-1.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter - X/NeoFreeBird-2.1-Twitter-11.33-2.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter - X/NeoFreeBird-2.1-Twitter-11.33-3.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter - X/NeoFreeBird-2.1-Twitter-11.33-4.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 160432128,
-      "version": "11.33",
-      "versions": [
-        {
-          "version": "11.33",
-          "date": "2025-10-27",
-          "size": 160432128,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/NeoFreeBird-2.1-Twitter-11.33.ipa",
-          "localizedDescription": "NeoFreeBird - BHTwitter rebranded."
-        }
-      ],
-      "versionDate": "2025-10-27",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/NeoFreeBird-2.1-Twitter-11.33.ipa",
       "patreon": {}
     },
     {
@@ -6179,22 +6216,32 @@
   ],
   "news": [
     {
+      "title": "OldOS 2.0 now available!",
+      "identifier": "cypwn.OldOS 2.0.2.0",
+      "caption": "OldOS 2.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/OldOS_2.0.png",
+      "date": "2025-11-11",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "NeoFreeBird - Twitter/X now available!",
+      "identifier": "cypwn.NeoFreeBird - Twitter/X.11.35",
+      "caption": "NeoFreeBird - Twitter/X added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NeoFreeBird-2.2-Twitter-11.35 2.png",
+      "date": "2025-11-11",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
       "title": "Discord + Kettu now available!",
       "identifier": "cypwn.Discord + Kettu.302.0",
       "caption": "Discord + Kettu added to the CyPwn Library",
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
       "date": "2025-11-06",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "NeoFreeBird - Twitter - X now available!",
-      "identifier": "cypwn.NeoFreeBird - Twitter - X.11.33",
-      "caption": "NeoFreeBird - Twitter - X added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NeoFreeBird-2.1-Twitter-11.33.png",
-      "date": "2025-10-27",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },

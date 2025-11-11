@@ -22,43 +22,6 @@
   ],
   "apps": [
     {
-      "beta": true ,
-      "name": "YouTube  ReVanced",
-      "type": 3,
-      "bundleIdentifier": "com.google.android.youtube",
-      "developerName": "Google LLC",
-      "subtitle": "Youtube Premium cho android không phải IOS",
-      "localizedDescription": "Thưởng thức các video và kênh bạn yêu thích trong ứng dụng YouTube chính thức.\nHãy tải ứng dụng YouTube chính thức dành cho điện thoại và máy tính bảng Android. Khám phá nội dung thịnh hành trên thế giới – từ các video nhạc đình đám cho đến những nội dung phổ biến trong các danh mục trò chơi, thời trang, làm đẹp, tin tức, học tập và còn nhiều nữa. Đăng ký những kênh bạn yêu thích, tự sáng tạo nội dung, chia sẻ với bạn bè và xem trên mọi thiết bị.",
-      "versionDescription": "",
-      "tintColor": "#f70404",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/2d/17/822d1799-53f4-2bb1-e335-0c66378fe7bf/logo_youtube_2024_q4_color-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220-0.png/100x100bb.jpg",
-      "screenshotURLs": [
-        "https://play-lh.googleusercontent.com/x1-uZMLdBOiai3KFGvOw2gQoIovWdAdLe0dZeDrRiaYyfe1aRcZmDF5vOmPglcFGudc=w5120-h2880-rw",
-        "https://play-lh.googleusercontent.com/dbKZY_8ywMvYSGdHrLJQk5HI-W4RaUbm9lkYEE260XSl166ZvBn7XgCPxTv_N0-9jhs=w5120-h2880-rw",
-        "https://play-lh.googleusercontent.com/u-k_C7Eyc9QUYrbSnJOQ1FERGzrT5pazy6dwo8Et0w0K9azk_9ZvtvoxWJxMQmedF0w=w5120-h2880-rw"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 159000000,
-      "version": "20.14.43",
-      "versions": [
-        {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.14.43/YouTube.ReVanced.20.14.43.apk",
-          "size": 159000000,
-          "version": "20.14.43",
-          "buildVersion": "",
-          "date": "2025-11-11T14:34:00+07:00",
-          "localizedDescription": "2⃣ ReVanced\n⬆️ 🆕 20.14.43 (RP: 5.45.0)\nVào kênh YouTube ReVanced (https://t.me/YoutubeModByVTA2610) để cập nhật phiên bản!",
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-11T14:34:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.14.43/YouTube.ReVanced.20.14.43.apk",
-      "patreon": {}
-    },
-    {
       "beta": false,
       "name": "Fender Play",
       "type": 3,
@@ -416,55 +379,6 @@
       ],
       "versionDate": "2025-11-09T12:52:00+07:00",
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.3/Big.Helmets_.Heroes.of.Destiny.-.DVC.IPA.-.v1.0.3.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Township",
-      "type": 2,
-      "bundleIdentifier": "com.playrix.township-ios",
-      "developerName": "DVC IPA",
-      "subtitle": "Mod game",
-      "localizedDescription": "Township là tựa game thú vị đang được nhiều bản trẻ yêu thích và có hàng triệu người chơi trên toàn thế giới. Bài viết sau sẽ hướng dẫn bạn cách tải Township trên các thiết bị khác nhau như điện thoại iOS, Android, máy tính một cách đơn giản nhất!",
-      "versionDescription": "",
-      "tintColor": "#f4d804",
-      "iconURL": "https://i.ibb.co/4Q8PH76/a161533f593c.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/be/fe/a2/befea206-b182-70e1-c764-255cd96619e4/e376344c-449f-4ff1-b935-f8ee4a748788_1.png/230x498bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/a8/bd/75/a8bd75ab-2c92-b1da-e1dc-f272b7ec5771/4a5b6916-f001-4040-914c-380c2d65df6c_1284x2778_ts_aso_screenshot109_EN_v01_p2_as.png/230x498bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/6f/34/e4/6f34e49d-95d8-db6a-757f-f5904662f9d5/27e6fee9-cd23-4405-ae06-44f39596375c_1284x2778_ts_aso_screenshot109_EN_v01_p3_as.png/230x498bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a0/73/52/a073528a-c39d-105a-7c5e-7b810b2826d9/35089c5f-651e-4ead-934b-c5828c893a07_4.png/230x498bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/65/a5/93/65a5932f-e171-1d26-5e9d-28a91aae9046/28db44a5-0e51-48cd-998a-205d4730f57b_5.png/230x498bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/17/99/a8/1799a80b-cc4a-e7a6-0db9-aaaf1a106cba/84fab626-3174-45fe-aa85-ced116734c55_6.png/230x498bb.webp"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://skanplayrix.com",
-          "NSCalendarsUsageDescription": "Adding events",
-          "NSCameraUsageDescription": "Taking selfies",
-          "NSHumanReadableCopyright": "Copyright © 2009-2010 Playrix Ent., All Rights Reserved.",
-          "NSMotionUsageDescription": "Interactive ad controls",
-          "NSPhotoLibraryAddUsageDescription": "A permission is required for saving a picture to photo library.",
-          "NSPhotoLibraryUsageDescription": "A permission is required for attaching a screenshot to the report.",
-          "NSUserTrackingUsageDescription": "This will help us optimize our ad campaigns and improve your gaming experience."
-        }
-      },
-      "size": 179300000,
-      "version": "31.1.0",
-      "versions": [
-        {
-          "version": "31.1.0",
-          "date": "2025-11-09T12:45:00+07:00",
-          "localizedDescription": "🦠 Tính Năng Hack 🦠\n\n✅ Đóng băng Tiền\n✅ Đóng băng Vàng\n\n🔋 Chạm icon DVC để bật tắt menu.",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v31.1.0/Township.-.DVC.IPA.-.v31.1.0.ipa",
-          "size": 179300000,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-09T12:45:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v31.1.0/Township.-.DVC.IPA.-.v31.1.0.ipa",
       "patreon": {}
     },
     {
@@ -1122,8 +1036,8 @@
       "name": "Trở Về Tuổi Thơ",
       "type": 2,
       "bundleIdentifier": "vn.corochti.returntochildhood",
-      "developerName": "DVC IPA",
-      "subtitle": "Trở Về Tuổi Thơ - DVC IPA",
+      "developerName": "IOS crack",
+      "subtitle": "Trở Về Tuổi Thơ",
       "localizedDescription": "Trở Về Tuổi Thơ Mobile (Tro Ve Tuoi Tho) là tựa game mô phỏng vừa được ra mắt tại thị trường Việt Nam vào cuối tháng 1 năm 2025. Ngay từ khi ra mắt, game đã nhận được hàng loạt đánh giá tích cực cũng như sự quan tâm nồng nhiệt của cộng đồng game thủ Việt Nam. Sau hơn nửa tháng kể từ ngày phát hành, game đã có hơn 1 triệu lượt tải và hàng trăm ngàn lượt đánh giá tích cực.\n\nGame sẽ đưa người chơi trở về những năm 2000 và hóa thân thành các thanh thiếu niên thế hệ 8x 9x. Trong game, người chơi sẽ được trải nghiệm những ngày trưa hè không chịu ngủ trưa trốn đi câu cá cùng lũ bạn. Mua đồ ăn vặt ngoài cổng trường, chia nhau từng miếng bánh, từng ngụm nước ngọt mát lạnh. Tiết kiệm tiền ăn vặt để dành mua những món đồ chơi yêu thích.\n\nVề cơ bản thì nhiệm vụ của người chơi là hoàn thành các nhiệm vụ trong game mô phỏng Trở Về Tuổi Thơ Mobile để khám phá tuổi thơ của thế hệ 8x 9x. Từ việc đi học, chơi đùa đơn giản cho tới câu cá kiếm tiền, thậm chí bạn còn có thể chọc chó để trải nghiệm cảm giác được “truy đuổi”.\n\nĐặc biệt, một trong những hoạt động mà đa số thanh thiếu niên thế hệ 8x 9x yêu thích cũng sẽ có mặt trong game Trở Về Tuổi Thơ, đó chính là hoạt động mua kẹo rút thăm trúng thưởng. Người chơi có thể dùng số tiền tiết kiệm của mình để mua các viên kẹo được bàn bán trong căn tin, từ đó rút lấy con số may mắn và nhận được các phần thưởng hậu hĩnh.\n\nNgoại trừ các lối chơi và các hoạt động trong game, Trở Về Tuổi Thơ còn khiến không ít game thủ thích thú với đồ họa 2D đầy màu sắc. Đồng thời, game còn tái hiện lại chân thật những khung cảnh tuổi thơ của nhiều game thủ, khiến cho người chơi có cảm giác như mình đang thực sự quay về quá khứ và sống những ngày tháng vô tư vui vẻ.",
       "versionDescription": "",
       "tintColor": "#f0ba04",
@@ -3556,7 +3470,7 @@
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "Google",
       "subtitle": "Youtube Premium (full chức năng)",
-      "localizedDescription": "Phiên bản youtube premium được mod từ youtube 20.39.6. Đã mod premium.\nTải ứng dụng YouTube chính thức dành cho iPhone và iPad.\nXem nội dung mọi người đang xem về âm nhạc, trò chơi, giải trí, tin tức và nhiều nội dung khác. Đăng ký kênh, chia sẻ với bạn bè, chỉnh sửa và tải video lên, xem trên thiết bị bất kỳ.\nBạn cũng có thể tạo danh sách phát, xem nội dung đang thịnh hành, thể hiện bản thân bằng nhận xét, chia sẻ video với bạn bè, truyền video đến TV và hơn thế nữa – tất cả đều từ bên trong ứng dụng.",
+      "localizedDescription": "Tải Youtube Revanced , Music Revanced cho Android thì truy cập https://t.me/YoutubeModByVTA2610\nKênh cập nhật YouTube chặn quảng cáo và chạy nền (hiện tại được build trên nền YouTube gốc và tích hợp mã nguồn của ReVanced).\n\nXem nội dung mọi người đang xem về âm nhạc, trò chơi, giải trí, tin tức và nhiều nội dung khác. Đăng ký kênh, chia sẻ với bạn bè, chỉnh sửa và tải video lên, xem trên thiết bị bất kỳ.\nBạn cũng có thể tạo danh sách phát, xem nội dung đang thịnh hành, thể hiện bản thân bằng nhận xét, chia sẻ video với bạn bè, truyền video đến TV và hơn thế nữa – tất cả đều từ bên trong ứng dụng.",
       "versionDescription": "",
       "tintColor": "#f70404",
       "iconURL": "https://i.ibb.co/ycmwBxnM/d61c204cec2f.png",
@@ -3585,12 +3499,12 @@
       "version": "20.45.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.45.3/YouTube.OLED.-.v20.45.3.ipa",
-          "size": 128200000,
           "version": "20.45.3",
-          "buildVersion": null,
           "date": "2025-11-11T14:23:00+07:00",
           "localizedDescription": "YTLite\nYTUHD\nYouPiP\nYTABConfig\nYouMute\nDontEatMyContent\nReturn YouTube Dislikes\niSponsorBlock\nYouRememberCaption\nYTNoTracking\nYTNoCheckLocalNetWork\nBigYTMiniPlayer\nYTSpeed\nYTHoldForSpeed\nYTVideoOverlay\nYouQuality\nYTNoModernUi\nVà nhiều tinh chỉnh khác lười ghi quá 🫶🏻",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.45.3/YouTube.OLED.-.v20.45.3.ipa",
+          "size": 128200000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
