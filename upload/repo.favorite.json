@@ -23,6 +23,102 @@
   "apps": [
     {
       "beta": false,
+      "name": "Fender Play",
+      "type": 3,
+      "bundleIdentifier": "com.FenderDigital.Play",
+      "developerName": "Crack by @Vaxmg",
+      "subtitle": "Subscription Unlocked ",
+      "localizedDescription": "Start your music journey with Fender Play, the comprehensive music app trusted by millions! Learn guitar, bass, and ukulele with step-by-step video lessons from the legendary guitar company with over 75 years of expertise. Whether you're a complete beginner or looking to master new songs, this essential music learning app makes playing your favorite instruments fun and achievable.",
+      "versionDescription": "",
+      "tintColor": "#d334a9",
+      "iconURL": "https://i.ibb.co/sv6kP4Z7/4dd0bbfb24ca.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/1e/dd/301edd7b-347e-a5d6-7507-fd3716edcf70/10ee0c63-3edd-443e-bdb9-9a60804d5911_Fender_FenderPlay_US_iOS_6.5_ScreenshotMockups_231129_V1A_01.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/e8/ee/97e8ee4f-9ad1-b6dc-8d87-bd7f38e7c586/be625148-f80a-43c7-adbb-848cdce30e72_Fender_FenderPlay_US_iOS_6.5_ScreenshotMockups_231129_V1A_02.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/7f/2f/8f7f2f84-c64b-2a15-ade5-b0512b5d5c50/8dec5a75-2731-4b74-8700-759a02e4ca5c_Fender_FenderPlay_US_iOS_6.5_ScreenshotMockups_231129_03.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/2f/dd/922fdddc-b3af-bccb-a177-56ab331acf47/a58a618c-15eb-4052-8823-1155ec702500_Fender_FenderPlay_US_iOS_6.5_ScreenshotMockups_231129_04.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/a9/ac/b2a9ac3f-4d71-c02c-1846-f235165d7194/271c952a-fefd-41b1-be2b-cab456dead3c_Fender_FenderPlay_US_iOS_6.5_ScreenshotMockups_231129_05.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e5/22/e4/e522e4ba-b1b0-b465-a4e8-8c33cd3e5396/a8715eb8-0d81-45e5-8c20-2149c7b09512_Fender_FenderPlay_US_iOS_6.5_ScreenshotMockups_231129_06.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Fender Play needs access to Bluetooth peripherals in order to use Chromecast.",
+          "NSBluetoothPeripheralUsageDescription": "Fender Play needs access to Bluetooth peripherals in order to use Chromecast.",
+          "NSLocalNetworkUsageDescription": "Fender Play would like access to your Wi-Fi network in order to enable Chromecast.",
+          "NSLocationAlwaysUsageDescription": "Fender Play would like access to your location to assist with customer support requests.",
+          "NSLocationWhenInUseUsageDescription": "Fender Play would like access to your location to assist with customer support requests.",
+          "NSMicrophoneUsageDescription": "Feedback Mode will listen to you play and score your accuracy.",
+          "NSPhotoLibraryUsageDescription": "Fender Play would like access to your photo library to assist with customer support requests.",
+          "NSUserTrackingUsageDescription": "Your information will be used to provide personalized marketing per our data and privacy policies."
+        }
+      },
+      "size": 104800000,
+      "version": "7.4.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.7.42/com.FenderDigital.Play-7.4.2.ipa",
+          "size": 104800000,
+          "version": "7.4.2",
+          "buildVersion": null,
+          "date": "2025-11-11T10:21:00+07:00",
+          "localizedDescription": "- AppStore Link (https://apps.apple.com/ca/app/fender-play-songs-lessons/id1226057939)\n- Music Learning App\n- Subscription Unlocked\n- Some features are server side or maybe just a skill issue\n\nCrack by @VAXMG\nDecrypted by @eeveedecrypterbot",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-11T10:21:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.7.42/com.FenderDigital.Play-7.4.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "NYT Games: Word, Number, Logic",
+      "type": 2,
+      "bundleIdentifier": "com.magmic.NYTCrosswords09",
+      "developerName": "Crack by @Vaxmg",
+      "subtitle": "Subscription Unlocked",
+      "localizedDescription": "Keep your mind sharp with word and logic puzzles from New York Times Games. Free to download, the app offers new puzzles daily for every skill level.",
+      "versionDescription": "",
+      "tintColor": "#749cd4",
+      "iconURL": "https://i.ibb.co/5XN27HW6/8eedcc95c557.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/c3/5d/89c35d10-c4de-7875-8451-b30fe1794047/TheNewYorkTimes_NYTGames_US_iOS_6.9_ScreenshotMockups_250703_V2_01.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/61/d6/1661d618-92f6-aa51-9c0b-f24628f999a7/TheNewYorkTimes_NYTGames_US_iOS_6.9_ScreenshotMockups_250703_V2_02.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e1/0d/d2/e10dd2be-2460-0ef7-e204-149eec7e9e43/TheNewYorkTimes_NYTGames_US_iOS_6.9_ScreenshotMockups_250703_V2_03.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/82/35/5f823506-cd2d-6bc9-779f-202b16d1c46d/TheNewYorkTimes_NYTGames_US_iOS_6.9_ScreenshotMockups_250703_V2_04.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/ab/90/22ab90c4-189b-ed7b-11dc-19ba48dcd042/TheNewYorkTimes_NYTGames_US_iOS_6.9_ScreenshotMockups_250703_V2_08.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Bluetooth access is not required. If you’re asked for this permission, you can deny access.",
+          "NSBluetoothPeripheralUsageDescription": "Bluetooth access is not required. If you’re asked for this permission, you can deny access.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Location access is not required. If you’re asked for this permission, you can deny access.",
+          "NSLocationAlwaysUsageDescription": "Location access is not required. If you’re asked for this permission, you can deny access.",
+          "NSLocationWhenInUseUsageDescription": "Location access is not required. If you’re asked for this permission, you can deny access.",
+          "NSPhotoLibraryAddUsageDescription": "Allow access to your camera roll to save images to your device.",
+          "NSUserTrackingUsageDescription": "App tracking allows for ads and marketing that are more relevant."
+        }
+      },
+      "size": 45800000,
+      "version": "5.65.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.65.0/com.magmic.NYTCrosswords09-5.65.0.ipa",
+          "size": 45800000,
+          "version": "5.65.0",
+          "buildVersion": null,
+          "date": "2025-11-11T10:16:00+07:00",
+          "localizedDescription": " AppStore Link (https://apps.apple.com/ca/app/nyt-games-word-number-logic/id307569751)\nSubscription Unlocked \nMinimum iOS/iPadOS 17.0\nCrack by @VAXMG",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-11T10:16:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.65.0/com.magmic.NYTCrosswords09-5.65.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Evil Tower",
       "type": 2,
       "bundleIdentifier": "com.aurecas.eviltower",
@@ -49,12 +145,12 @@
       "version": "0.7.21",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7.21/Evil.Tower.-.Long.-.DVC.IPA.-.v0.7.21.ipa",
-          "size": 146000000,
           "version": "0.7.21",
-          "buildVersion": null,
           "date": "2025-11-11T05:36:00+07:00",
           "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅ Bất Tử\n✅ Xoá ADS\n✅ Vô Hạn Tiền Tệ\n✅ Thêm menu chỉnh Speed\n\n🔋 Chạm icon DVC để bật tắt menu.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7.21/Evil.Tower.-.Long.-.DVC.IPA.-.v0.7.21.ipa",
+          "size": 146000000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -85,12 +181,12 @@
       "version": "3.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0/CarApp_3.0.ipa",
-          "size": 3500000,
           "version": "3.0",
-          "buildVersion": null,
           "date": "2025-11-11T05:32:00+07:00",
           "localizedDescription": "• Sửa lỗi phóng to kích thước khi thay thế hình ảnh trong tệp car\n• Thêm hiển thị kích thước/điểm ảnh khi chỉnh sửa tệp car\n• Có thể tìm kiếm tên tệp khi chỉnh sửa tệp car\n• Thêm đặt tên theo kích thước khi trích xuất tệp car",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0/CarApp_3.0.ipa",
+          "size": 3500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
