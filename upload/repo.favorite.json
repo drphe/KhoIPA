@@ -23,6 +23,83 @@
   "apps": [
     {
       "beta": false,
+      "name": "Evil Tower",
+      "type": 2,
+      "bundleIdentifier": "com.aurecas.eviltower",
+      "developerName": "LONG DVC IPA",
+      "subtitle": "Evil Tower - Menu v2 ",
+      "localizedDescription": "Evil Tower is a medieval idle tower defense game, a mix of tower defense strategies and roguelike decisions. Build your tower, upgrade it, and prepare your best battle tactics.\n\nEnjoy epic offline battles with incremental economy and progression, and build your unique idle tower of defense. It’s your age, build your empire!",
+      "versionDescription": "",
+      "tintColor": "#441ca4",
+      "iconURL": "https://i.ibb.co/ycrBWznW/b8c30e9905fa.png",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/cpfrK327fqcs6lhxRdw1Qp1ZWuC53pPice2X4qcS1MRtbSluGlVEx5O2sBS68MIyBQ=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/EZCAb4KhxnNVvC3HvYbGLS40oxvTrjj2W2ALrpShCsoBsVV1oYb9p9LISUFDUF17M9o=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/xGruHEgqND_xIBGx2i6y6rTY-qAf-VcDiuPAUEPBPc2SlwphYraKL6frdFmf6UFAtcA=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/9cT4yRKkYX59OdDTLdaovkd1MqplA0NNQno5qEbuonjge2hzvctBlgPykn8o9rjO=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/WeuD911AFZ9D3UPDUnMwkRVrpa6pL4MDEgCp9QH6zDRT6Q0HFfGziXDEB8DzXwucJOqi=w5120-h2880-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "Your data will be used to provide you a better and personalized ad experience."
+        }
+      },
+      "size": 146000000,
+      "version": "0.7.21",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7.21/Evil.Tower.-.Long.-.DVC.IPA.-.v0.7.21.ipa",
+          "size": 146000000,
+          "version": "0.7.21",
+          "buildVersion": null,
+          "date": "2025-11-11T05:36:00+07:00",
+          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅ Bất Tử\n✅ Xoá ADS\n✅ Vô Hạn Tiền Tệ\n✅ Thêm menu chỉnh Speed\n\n🔋 Chạm icon DVC để bật tắt menu.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-11T05:36:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7.21/Evil.Tower.-.Long.-.DVC.IPA.-.v0.7.21.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "CarApp",
+      "type": 4,
+      "bundleIdentifier": "com.iosdump.CarApp",
+      "developerName": "iosdump",
+      "subtitle": "Công cụ trích xuất file Assets.car ",
+      "localizedDescription": "(http://assets.car/)\n• Mặc định bật quyền truy cập file\n• Ứng dụng hỗ trợ tối thiểu iOS 15+\n• Hỗ trợ giao diện kính lỏng iOS 26\n📲Cập Nhật:\n• Hỗ trợ ký qua : Chứng chỉ hoặc cài đặt TrollStore cho ứng dụng trên iOS15-iOS26+",
+      "versionDescription": "",
+      "tintColor": "#20a2fa",
+      "iconURL": "https://i.ibb.co/JjfjQXp0/ac688340ed74.png",
+      "screenshotURLs": [
+        "https://i.ibb.co/cX6mZM7m/8f089d4d7f0b.png",
+        "https://i.ibb.co/1f0mvx2P/c2a1125f24c8.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 3500000,
+      "version": "3.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0/CarApp_3.0.ipa",
+          "size": 3500000,
+          "version": "3.0",
+          "buildVersion": null,
+          "date": "2025-11-11T05:32:00+07:00",
+          "localizedDescription": "• Sửa lỗi phóng to kích thước khi thay thế hình ảnh trong tệp car\n• Thêm hiển thị kích thước/điểm ảnh khi chỉnh sửa tệp car\n• Có thể tìm kiếm tên tệp khi chỉnh sửa tệp car\n• Thêm đặt tên theo kích thước khi trích xuất tệp car",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-11T05:32:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0/CarApp_3.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "FEZ Pocket Edition",
       "type": 2,
       "bundleIdentifier": "com.polytron.fez",
@@ -895,16 +972,16 @@
       "versions": [
         {
           "version": "18.3.8",
-          "date": "2025-11-08T13:23:00+07:00",
+          "date": "2025-11-08T06:23:00+07:00",
           "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅Bỏ lượt địch\n✅1 Hit\n✅Auto win\n✅No skill cost",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/untagged-066c8738392e23699984/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v18.3.8/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
           "size": 104100000,
           "buildVersion": null,
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-08T13:23:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/untagged-066c8738392e23699984/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
+      "versionDate": "2025-11-08T06:23:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v18.3.8/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
       "patreon": {}
     },
     {
@@ -3459,12 +3536,12 @@
       "version": "251002",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v251002/Zalo2_251002.ipa",
-          "size": 117400000,
           "version": "251002",
-          "buildVersion": null,
           "date": "2025-11-09T18:07:00+07:00",
           "localizedDescription": "Phiên bản mới nhất\nCodeVN Lê Tí",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v251002/Zalo2_251002.ipa",
+          "size": 117400000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
@@ -3588,8 +3665,8 @@
       "identifier": "news-qj962r0up1",
       "caption": "Cài đặt auto clicker mà không cần jailbreak, máy tính hay ứng dụng bên thứ ba.",
       "date": "2025-11-08",
-      "tintColor": "#00504a",
-      "imageURL": "https://i.ibb.co/XfDBx4nb/504e30b33fff.png",
+      "tintColor": "#b112a6",
+      "imageURL": "https://i.ibb.co/gZCZryvq/74a65d28cfcc.png",
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=autoclick.md",
       "appID": null
