@@ -280,7 +280,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
                 </div>
             </div>
         `;
-        openPanel(finalHtml, `<p>${title}</p>`, '.', "side", id);
+        openPanel(finalHtml, `<p>${title}</p>`, '.', "side", id, "news");
             }).catch(error => {
                 console.error("Lỗi khi tải nội dung:", error);
             });

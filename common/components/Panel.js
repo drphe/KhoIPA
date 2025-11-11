@@ -52,7 +52,7 @@ export function activateNavLink(e){
         window.oldTargetPage = e;
     };
 
-export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup") => {
+export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset="list") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
@@ -68,6 +68,7 @@ if (bottomPanel) {
   bottomPanel.id = ID;
 }
   document.body.append(bottomPanel);
+bottomPanel.setAttribute("data-type", dataset);
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
         const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
@@ -569,6 +570,9 @@ if (bottomPanel) {
             remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
             document.body.classList.remove('no-scroll');
 	    activateNavLink("page-home");
+  	    document.querySelectorAll('div[data-type="news"]').forEach(div => {
+  		div.remove();
+	    });
         } else if (remainingOpenPanels.length === 0) {
             activateNavLink("page-home");
             document.body.classList.remove('no-scroll');
