@@ -1,5 +1,5 @@
 # 📦 KhoIPA Mod
-![GitHub Repo stars](https://img.shields.io/github/stars/drphe/khoIPA?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/drphe/KhoIPA?style=social)
 ![Views](https://komarev.com/ghpvc/?username=drphe&label=Views&color=blue&style=flat)
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/drphe/KhoIPA/total)](https://github.com/drphe/KhoIPA/releases)
 
