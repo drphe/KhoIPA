@@ -1511,9 +1511,9 @@ margin-left: 2rem;
 
 
 /* active glow and bounce */
+.nav-link:focus,
 .nav-link.active {
   color: var(--tint-color);
-  /* transform: translateY(-5px) scale(1.1); */
   text-shadow: 0 0 2px var(--primary);
   background-color: var(--color-separator);
   border-radius: 3rem;
@@ -1558,7 +1558,6 @@ margin-left: 2rem;
 .nav-link:active {
   outline: none;
   box-shadow: none;
-  border-color: rgba(255, 255, 255, 0.25);
 }
 
 
