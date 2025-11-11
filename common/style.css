@@ -1553,3 +1553,14 @@ margin-left: 2rem;
   0%, 100% { transform: scale(1); opacity: 0.25; }
   50% { transform: scale(1.3); opacity: 0.4; }
 }
+.nav-link:focus,
+.nav-link:active {
+  outline: none;
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+
+.nav-link::-moz-focus-inner {
+  border: 0;
+}
