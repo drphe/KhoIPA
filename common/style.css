@@ -1498,7 +1498,7 @@ margin-left: 2rem;
   position: relative;
   margin: 0.5rem;
   padding: 0.25rem;
-  border-radius: 50%;
+  border-radius: 3rem;
 }
 
 /* icon */
@@ -1542,7 +1542,7 @@ margin-left: 2rem;
   bottom: 0;
   width: 35px;
   height: 35px;
-  border-radius: 50%;
+  border-radius: 3rem;
   background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
   opacity: 0.2;
   filter: blur(10px);
@@ -1557,12 +1557,10 @@ margin-left: 2rem;
 .nav-link:focus,
 .nav-link:active {
   outline: none;
-  box-shadow: none;
   border-radius:3rem;
 }
 
 
 .nav-link::-moz-focus-inner {
-  border: 0;
   border-radius:3rem;
 }
