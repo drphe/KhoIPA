@@ -11,7 +11,6 @@ const loaded = () => {
     //console.log('✅ All images settled or 3000ms timeout reached.');
 };
 
-
 function waitForAllImagesToLoad(container) {
     const allImages = container.querySelectorAll("img.screenshot");
     if (allImages.length === 0) return loaded();
@@ -57,13 +56,19 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
-    // check popup is exsit
-    const oldPopup = document.querySelector(`#${ID}`);
-    if (oldPopup) oldPopup.remove();
     let altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
-    const bottomPanel = document.createElement("div");
-    bottomPanel.id = ID;
-    document.body.append(bottomPanel);
+
+let bottomPanel = document.querySelector(`#${ID}`);
+if (bottomPanel) {
+  // nếu đã tồn tại thì xoá nội dung cũ
+  bottomPanel.innerHTML = "";
+} else {
+  // nếu chưa có thì tạo mới
+  bottomPanel = document.createElement("div");
+  bottomPanel.id = ID;
+  document.body.append(bottomPanel);
+}
+
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
         const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
@@ -569,7 +574,6 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
             activateNavLink("page-home");
             document.body.classList.remove('no-scroll');
         }
-        setTimeout(() => bottomPanel.remove(), 500); // auto remove 
     }
     // show popup
     setTimeout(() => bottomPanel.classList.add("show"), 50); // show when everything ready
