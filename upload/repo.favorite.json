@@ -878,9 +878,18 @@
           "NSDocumentsFolderUsageDescription": "需要访问Documents目录以保存分析结果"
         }
       },
-      "size": 8300000,
-      "version": "1.0",
+      "size": 10700000,
+      "version": "1.3",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3/OtoolsGG_v1.3.ipa",
+          "size": 10700000,
+          "version": "1.3",
+          "buildVersion": null,
+          "date": "2025-11-11T23:30:00+07:00",
+          "localizedDescription": "📲Cập Nhật:\nCông cụ này chỉ dùng cho mục đích học tập, trao đổi và gỡ lỗi, không được sử dụng để thao tác trực tiếp trên ứng dụng cửa hàng hoặc bất kỳ mục đích vi phạm pháp luật nào. Không hỗ trợ phân tích phần mềm mã hóa; khuyến nghị sử dụng IDA để điều chỉnh phần mềm lớn. Mọi hậu quả phát sinh từ việc sử dụng công cụ này do người dùng tự chịu trách nhiệm.\n\nChỉ hỗ trợ người dùng đã jailbreak vì cần một số công cụ cần thiết\nThêm chức năng chuyển đổi giữa tiếng Trung và tiếng Anh\nKhông hỗ trợ ứng dụng mã hóa, tức là cần phải phá vỏ giải mã\nKhuyên không nên dùng cho ứng dụng trên 300mb vì sẽ bị treo\nHỗ trợ thiết bị jailbreak iOS14.0+\nCác phụ thuộc cần thiết đều có thể xem trong phần chẩn đoán công cụ ở cài đặt\nĐã thêm gói Tiếng Việt 🇻🇳\n📝 Made: TrollsTeam",
+          "minOSVersion": null
+        },
         {
           "version": "1.0",
           "date": "2025-11-08T17:04:00+07:00",
@@ -891,8 +900,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-08T17:04:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0/OtoolsGG_VH_v1.0.ipa",
+      "versionDate": "2025-11-11T23:30:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3/OtoolsGG_v1.3.ipa",
       "patreon": {}
     },
     {
@@ -3282,9 +3291,18 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 192400000,
-      "version": "7.98.0",
+      "size": 191900000,
+      "version": "7.99.0",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.99.0/Duolingo_Language_Lessons_v7_99_0.ipa",
+          "size": 191900000,
+          "version": "7.99.0",
+          "buildVersion": null,
+          "date": "2025-11-11T23:31:00+07:00",
+          "localizedDescription": "Sign-in with google/apple.\nIgnore any purchase banners all features should work.\nCredit to j4gm4g for providing the original script.\n",
+          "minOSVersion": null
+        },
         {
           "version": "7.98.0",
           "date": "2025-11-05T23:38:00+07:00",
@@ -3322,8 +3340,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-05T23:38:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.98.0/Duolingo_Language_Lessons_v7_98_0_Duolingo_MAX_Unlocked_blatant.ipa",
+      "versionDate": "2025-11-11T23:31:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.99.0/Duolingo_Language_Lessons_v7_99_0.ipa",
       "patreon": {}
     },
     {
