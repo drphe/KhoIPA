@@ -24,14 +24,14 @@ Nếu bạn không mua chứng chỉ, muốn freesideloading thì đọc kỹ c�
 ---
 
 ## 3. Mẹo sử dụng Repo tải IPA
-* Các app như esign, feather... yêu cầu định dạng file nguồn khác nhau, vì thế có thể không thêm được nguồn repository vào. Các reposite có định dạng khác nhau nên có thể chỉ add vào Esign hoặc chỉ Feather, dùng trên web sẽ hiển thị tốt nhất. 
-* Tuy nhiên các repo trên KhoIPA đã được mình dành nhiều công sức để nó hỗ trợ cả hầu hết các phần mềm hỗ trợ ký IPA: Esign, Feather ...
+KhoIPA tổng hợp nhiều nguồn Repo IPA, trong đó Repo Favorite apps là các IPA do admin chọn lựa theo sở thích cá nhân chủ yếu theo chủ đề: công cụ tiện ích, ứng dụng hay sử dụng đã mod, game đã xóa khỏi store, các ứng dụng đã Paid trên store để chia sẻ lại free.
+
+* Các app như esign, feather... yêu cầu định dạng file nguồn khác nhau, vì thế có thể không thêm được nguồn repository vào. Các reposite có định dạng khác nhau nên có thể chỉ add vào Esign hoặc chỉ Feather, dùng trên web sẽ hiển thị tốt nhất. Tuy nhiên các repo trên KhoIPA đã được mình dành nhiều công sức để nó hỗ trợ cả hầu hết các phần mềm hỗ trợ ký IPA: Esign, Feather ...
 * Có thể copy link tải ipa và sử dụng esign, feather hoặc safari tải về. Tuỳ vào sở thích của bạn.
 
-Trên khoIPA có tổng hợp nhiều nguồn repo IPA, một số nguồn tải IPA khác ae có thể tham khảo thêm.
+Trên khoIPA có khá nhiều IPA rồi, nhưng trong trường hợp không tìm được IPA bạn cần, hãy tham khảo một số nguồn tải IPA khác dưới đây.
 * [CodeVN](https://ios.codevn.net/): Trang chia sẻ IPA miễn phí của ae Việt Nam
-* [IPAOMTK](https://ipaomtk.com/): không chỉ có IPA mà cả APK mod cho ae, hoàn toàn miễn phí
-
+* [IPAOMTK](https://ipaomtk.com/): không chỉ có IPA mà cả APK mod cho ae, hoàn toàn miễn phí.
 * [DVC Repo](https://dvcipa.github.io/index.html) : DVC có nhiều IPA game Hack, mod cho ae, nhưng họ bắt nạp tiền mua key kích hoạt chức năng hack.
 * [Flekstore](https://flekstore.com/): Kho chia sẻ game, ứng dụng, nhưng phải mua chứng chỉ của họ mới tải và cài đặt được ứng dụng
 
