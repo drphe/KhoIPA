@@ -1524,15 +1524,11 @@ margin-left: 2rem;
   filter: drop-shadow(0 0 2px var(--primary));
 }
 
-/* subtle blur transition effect */
-.page {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.page.active {
-  opacity: 1;
-  transform: translateY(0);
+
+.nav-link:not(.active):hover {
+    color: var(--tint-color, #1a73e8);
+    transform: translateY(-2px); /* Nâng nhẹ lên */
+    background-color: rgba(255, 255, 255, 0.1); /* Nền mờ nhẹ */
 }
 
 /* glowing pulse behind active nav */
