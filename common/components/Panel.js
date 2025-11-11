@@ -66,9 +66,8 @@ if (bottomPanel) {
   // nếu chưa có thì tạo mới
   bottomPanel = document.createElement("div");
   bottomPanel.id = ID;
-  document.body.append(bottomPanel);
 }
-
+  document.body.append(bottomPanel);
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
         const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
