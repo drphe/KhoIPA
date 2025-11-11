@@ -15,6 +15,40 @@
   "apps": [
     {
       "beta": false,
+      "name": "OtoolsGG_1.3",
+      "type": 1,
+      "bundleIdentifier": "mumu.ProcFlowGG.OtoolsGG",
+      "developerName": "OtoolsGG_1.3 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "OtoolsGG v1.3-2",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/OtoolsGG_1.3.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/OtoolsGG_1.3/OtoolsGG_1.3-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 10485760,
+      "version": "1.3",
+      "versions": [
+        {
+          "version": "1.3",
+          "date": "2025-11-10",
+          "size": 10485760,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/OtoolsGG_1.3.ipa",
+          "localizedDescription": "OtoolsGG v1.3-2"
+        }
+      ],
+      "versionDate": "2025-11-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/OtoolsGG_1.3.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Battman",
       "type": 1,
       "bundleIdentifier": "com.torrekie.Battman",
@@ -4112,6 +4146,16 @@
     }
   ],
   "news": [
+    {
+      "title": "OtoolsGG_1.3, Ver: 1.3 now available!",
+      "identifier": "cypwn.OtoolsGG_1.3.1.3",
+      "caption": "OtoolsGG_1.3 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/OtoolsGG_1.3.png",
+      "date": "2025-11-10",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
     {
       "title": "Battman, Ver: 1.0 now available!",
       "identifier": "cypwn.Battman.1.0",
