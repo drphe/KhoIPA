@@ -67,8 +67,10 @@ if (bottomPanel) {
   bottomPanel = document.createElement("div");
   bottomPanel.id = ID;
 }
-  document.body.append(bottomPanel);
+document.body.append(bottomPanel);
 bottomPanel.setAttribute("data-type", dataset);
+bottomPanel.classList.remove("show");
+
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
         const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
@@ -570,9 +572,7 @@ bottomPanel.setAttribute("data-type", dataset);
             remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
             document.body.classList.remove('no-scroll');
 	    activateNavLink("page-home");
-  	    document.querySelectorAll('div[data-type="news"]').forEach(div => {
-  		div.remove();
-	    });
+  	    document.querySelectorAll('div[data-type="news"]').forEach(div =>div.remove());
         } else if (remainingOpenPanels.length === 0) {
             activateNavLink("page-home");
             document.body.classList.remove('no-scroll');
