@@ -1,4 +1,4 @@
-# README: Thuật Ngữ Liên Quan Đến Mod IPA
+# Thuật Ngữ Liên Quan Đến Mod IPA
 
 Chào mừng bạn đến với hướng dẫn chi tiết giải thích các thuật ngữ phổ biến mà bạn sẽ gặp trong cộng đồng **mod IPA** (cài đặt ứng dụng iOS đã chỉnh sửa).
 
