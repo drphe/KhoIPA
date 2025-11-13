@@ -69,13 +69,10 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Hướng dẫn:**
 * Bạn sử dụng dịch vụ bán chứng chỉ (Cert) như certapple.com, iosviet.vn, thuthuatjb.com... hoặc truy cập [t.me/AppleP12](https://t.me/AppleP12) để tải chứng chỉ miễn phí (rủi ro revok và blacklist). Sau khi nhận được tệp cert.zip thì upload chứng chỉ và file IPA cần cài lên một các trang sau để nhận link cài trực tiếp:
 
-   [https://sign.codevn.net](https://sign.codevn.net)
-
-   [https://sign.ipasign.cc/](https://sign.ipasign.cc/)
-
-   [https://sign.kravasign.com/](https://sign.kravasign.com/)
-
-   [https://wsfteam.xyz/](https://wsfteam.xyz/)
+  - [https://sign.codevn.net](https://sign.codevn.net)
+  - [https://sign.ipasign.cc/](https://sign.ipasign.cc/)
+  - [https://sign.kravasign.com/](https://sign.kravasign.com/)
+  - [https://wsfteam.xyz/](https://wsfteam.xyz/)
 
 ### 2.4. Ứng dụng "Signer" Trung Gian
 
