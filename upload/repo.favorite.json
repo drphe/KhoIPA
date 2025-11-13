@@ -23,6 +23,200 @@
   "apps": [
     {
       "beta": false,
+      "name": "Sber Kids",
+      "type": 1,
+      "bundleIdentifier": "com.superpulp.pulp",
+      "developerName": "Unknow",
+      "subtitle": "Đã xóa khỏi applesotre",
+      "localizedDescription": "Sber Kids là ứng dụng tài chính dành cho trẻ em, được phát triển bởi SberBank (Nga), giúp trẻ học cách quản lý tiền bạc và sử dụng thẻ ngân hàng một cách an toàn dưới sự kiểm soát của phụ huynh.",
+      "versionDescription": "",
+      "tintColor": "#4c4cd4",
+      "iconURL": "https://i.ibb.co/Zzx5Sx34/7cdaa07c713f.png",
+      "screenshotURLs": [
+        "https://i.ibb.co/5x4CqzcH/5d2cde0d8eb1.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Разреши близкое соединение с устройствами",
+          "NSCameraUsageDescription": "Разреши доступ, чтобы сканировать QR-коды и получать подарки!",
+          "NSContactsUsageDescription": "Разреши доступ, чтобы выбирать контакты",
+          "NSFaceIDUsageDescription": "Чтобы входить быстрее",
+          "NSLocationWhenInUseUsageDescription": "Разреши определить положение",
+          "NSMicrophoneUsageDescription": "Разреши доступ, и сможешь говорить текст, а не печатать",
+          "NSPhotoLibraryAddUsageDescription": "Разреши доступ, чтобы сохранить в галерею",
+          "NSPhotoLibraryUsageDescription": "Разреши доступ, чтобы добавить фото или картинку",
+          "NSSpeechRecognitionUsageDescription": "Разреши превратить твой голос в текст"
+        }
+      },
+      "size": 172600000,
+      "version": "5.5.5",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.5.5/Sber.Kids.v5.5.5.ipa",
+          "size": 172600000,
+          "version": "5.5.5",
+          "buildVersion": null,
+          "date": "2025-11-13T08:51:00+07:00",
+          "localizedDescription": "❤️💙Sber Kids 💳⬆️💙❤️\n⚡️Phiên bản mới nhất ⚡️\n\n⚙️Tính năng⚙️\n💚Đã bị gỡ khỏi ❌💙AppStore.\n😰Phiên bản này từng xuất hiện trên \n💙AppStore với tên gọi «SuperPulp», và là phiên bản cập nhật nhất cho 🍏iOS\n💳 Được tạo chính thức bởi Sber, để vượt qua các lệnh trừng phạt.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-13T08:51:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.5.5/Sber.Kids.v5.5.5.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Alight Motion",
+      "type": 1,
+      "bundleIdentifier": "com.alightcreative.motion",
+      "developerName": "Unknow",
+      "subtitle": "Premium injection",
+      "localizedDescription": "Be part of the movement! Alight Motion is the first professional motion design app bringing you professional-quality animation, motion graphics, visual effects, video editing, video compositing, and more!\n\n• Add multiple layers of graphics, video, and audio\n• Vector and bitmap support: edit vector graphics right on your phone!\n• 160+ basic effect building blocks that can be combined to create sophisticated visual effects",
+      "versionDescription": "",
+      "tintColor": "#5168ad",
+      "iconURL": "https://i.ibb.co/xtCvBgX7/48e9942f6627.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/3a/f4/13/3af41371-60a1-7d0c-0d81-30e66cc0157a/810a6bd2-9961-4b28-852e-8c5f9bdbeb87_iPhone_6.5_screenshot_keyframeanimation.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/be/39/e9/be39e987-647a-0caf-ecb0-1745c5c2d782/193243da-ef76-4858-8bc2-20320b5f59ab_iPhone_6.5_screenshot_camera.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/84/58/53/845853e2-2cd4-a616-b43e-beebf9259bcd/bf3b770b-4f72-44e6-bbd4-030dc4ad3aa9_iPhone_6.5_screenshot_layerparenting.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/31/1a/a7/311aa7cc-2ff3-aef5-9371-d2d00fbd6b35/961fff56-7167-44aa-af81-8251dbcf57df_iPhone_6.5_screenshot_color.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/ba/e7/c6/bae7c6e6-489f-7c87-5bd2-36524de13a38/937ccfc5-1a8a-432c-befa-9441d421f894_iPhone_6.5_screenshot_aspectratio.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/55/b7/47/55b7477d-3071-3133-12f6-b3f9d57250c0/8a9080b6-85d2-4387-a9d8-420412d6ad27_iPhone_6.5_screenshot_vectorgraphics.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://tracking-bndspn.com",
+          "NSAppleMusicUsageDescription": "Alight Motion needs media access to import media",
+          "NSCameraUsageDescription": "Alight Motion needs camera access to import media",
+          "NSPhotoLibraryAddUsageDescription": "Alight Motion needs camera roll access to save photos and videos",
+          "NSPhotoLibraryUsageDescription": "Alight Motion needs photo access to import media",
+          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads."
+        }
+      },
+      "size": 129800000,
+      "version": "6.2.43",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6.2.43/Alight.Motion.v6.2.43.ipa",
+          "size": 129800000,
+          "version": "6.2.43",
+          "buildVersion": null,
+          "date": "2025-11-13T08:49:00+07:00",
+          "localizedDescription": "❤️💙Alight Motion 🎨💙❤️\n⚡️Phiên bản mới nhất⚡️",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-13T08:49:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6.2.43/Alight.Motion.v6.2.43.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "LumaFusion: Pro Video Editing",
+      "type": 1,
+      "bundleIdentifier": "com.luma-touch.LumaFusion",
+      "developerName": "Unknow",
+      "subtitle": "Paid on Applestore",
+      "localizedDescription": "Welcome to LumaFusion! The gold standard for storytellers worldwide. Offering a fluid, intuitive, touch-screen editing experience.\n\nPROFESSIONAL EDITING MADE EASY\n• Six video-with-audio or graphic tracks: Create multiple layer edits with smooth handling of media up to 4K.\n• Six additional audio only tracks: Build your soundscape.",
+      "versionDescription": "",
+      "tintColor": "#0f8fef",
+      "iconURL": "https://i.ibb.co/603NjSYt/eb1625c905f3.png",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/hm-eEh4htXdUzj6eeDOV4tnMb21y1MIBW0LPF3l-l-jIsRXVc8r5OG7FnfeirvnJgZ8=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/xriHdgVfP8zNeiOlJT4AXavJBgVwjJKIDymn54h8qzlo2vzvxjD1FFsl-KM6lrvpT1A=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/2bD54srxMK5ssMbcD8Fj5fUwVfBDqy6BxHdZi-Q1KP2UWB7l3k-FTq4Q067-iT79Ag=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/oUpqarDZQxLC7FM6JDIu_XhSxYLz4-WGMz65Sn2Xt-i4NEvqH_jQvL3qP89meYUKiA=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/RwgCNAqH3wqySAdb-oTywr1U-ie7gm50Y9RjBPcDQ4-sc_bOoOu3vs7McXkxU4KY=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/6748eqDVaREP-jElXD6Y2LjOa0jcylyNfAd41Ygwn0YqTKZYuzPbKMIjbpTL-pmFqQ=w5120-h2880-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "We require access to Music so that you can add music to your projects",
+          "NSMicrophoneUsageDescription": "We require access to the Microphone to record Voiceovers for your projects",
+          "NSPhotoLibraryUsageDescription": "We require access to Photos so that you can add photos and videos to your projects"
+        }
+      },
+      "size": 174300000,
+      "version": "5.3.4",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V5.3.4/LumaFusion.v5.3.4.ipa",
+          "size": 174300000,
+          "version": "5.3.4",
+          "buildVersion": null,
+          "date": "2025-11-13T08:38:00+07:00",
+          "localizedDescription": "❤️💙LumaFusion 🎨💙❤️\n⚡️Phiên bản mới nhất⚡️\n\n⚙️Tính năng của bản mod⚙️\n💚Đã kích hoạt Premium\n\n🟦🖤🖤🟥",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-13T08:38:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/V5.3.4/LumaFusion.v5.3.4.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Minecraft",
+      "type": 2,
+      "bundleIdentifier": "com.mojang.minecraftpe",
+      "developerName": "IOSCrack.vn",
+      "subtitle": "Paid on Appstore",
+      "localizedDescription": "Dive into an open world of 3D building, crafting and survival in the ultimate sandbox block builder. Gather resources, survive the night, and build an epic adventure one block at a time. Explore and craft your way through a completely open world where you can play with friends, build a block city, start a farm, mine deep into the ground, face mysterious enemies, or just experiment to the limits of your imagination with our building games!",
+      "versionDescription": "",
+      "tintColor": "#58ac3b",
+      "iconURL": "https://i.ibb.co/4w6C49Bx/b3c494354463.png",
+      "screenshotURLs": [
+        "https://play-lh.googleusercontent.com/E3ae4Jm7cLqmGEHg4In5rXdKrMAwDPPNb26coEAESZw4RjvkgS_bBJtRwFNGZrBMfw=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/ZSMzOOE-yQt2I2VjA1rqZ2hkQ1PzWBDXUnqkW6sCQMGs2d_H6X2UBVB-LF-B6Gm4VjYz=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/Va5XplRkZCroi-q8NZI5TLd1vHHndW1ps6o98X4fvtnSMwmS4iOHxwxB2B7fri-lOGA=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/V1CnCHYr1JP9pYrJLs53qS3YG9rbJVhxmLApqXY_pWt17ZQIwbXIibXeC2gGeckksy8=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/nZTKxyLI6340xoPhTTLMODDCCb9GW5tdb-_7rcOsN350fnGd7c2ph7-0RgC8Ot_-E4s=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/srkig0NrEF-DQI067-yYDRWmtDGyMWet_ocNu7GBU0fnoElm6WVmCXBgMZYJ8H4kfQ=w5120-h2880-rw"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Used for Live Broadcast",
+          "NSContactsUsageDescription": "When you use the Xbox Live Friend Finder, it will access your contacts to help you find your friends.",
+          "NSLocalNetworkUsageDescription": "Minecraft wants to access your local network. This allows you and others on your local network to play together. Declining this permission does not affect online features or gameplay. But will prevent you and others, on the same network, from playing together.",
+          "NSMainNibFile": "MainWindow",
+          "NSMicrophoneUsageDescription": "Used for Live Broadcast",
+          "NSPhotoLibraryAddUsageDescription": "Used to read and write Minecraft images.",
+          "NSPhotoLibraryUsageDescription": "Used to read and write Minecraft images.",
+          "NSUserTrackingUsageDescription": "Your data will be used to track advertising efficiency."
+        }
+      },
+      "size": 613500000,
+      "version": "1.21.130",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.21.130/Minecraft.-.v1.21.130.ipa",
+          "size": 613500000,
+          "version": "1.21.130",
+          "buildVersion": null,
+          "date": "2025-11-13T08:28:00+07:00",
+          "localizedDescription": "Paid on Applestore",
+          "minOSVersion": null
+        },
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.21.121/Minecraft.v1.21.121.ipa",
+          "size": 620400000,
+          "version": "1.21.121",
+          "buildVersion": null,
+          "date": "2025-11-13T08:22:00+07:00",
+          "localizedDescription": "⚙️Tính năng của mod⚙️\n💚Sửa lỗi đăng nhập vào ❎Xbox\n💚Không khả dụng ở 🇷🇺💙AppStore\n💚Giá trên 💙AppStore là 6,99$",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-13T08:28:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.21.130/Minecraft.-.v1.21.130.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Fender Play",
       "type": 3,
       "bundleIdentifier": "com.FenderDigital.Play",
@@ -882,12 +1076,12 @@
       "version": "1.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3/OtoolsGG_v1.3.ipa",
-          "size": 10700000,
           "version": "1.3",
-          "buildVersion": null,
           "date": "2025-11-11T23:30:00+07:00",
           "localizedDescription": "📲Cập Nhật:\nCông cụ này chỉ dùng cho mục đích học tập, trao đổi và gỡ lỗi, không được sử dụng để thao tác trực tiếp trên ứng dụng cửa hàng hoặc bất kỳ mục đích vi phạm pháp luật nào. Không hỗ trợ phân tích phần mềm mã hóa; khuyến nghị sử dụng IDA để điều chỉnh phần mềm lớn. Mọi hậu quả phát sinh từ việc sử dụng công cụ này do người dùng tự chịu trách nhiệm.\n\nChỉ hỗ trợ người dùng đã jailbreak vì cần một số công cụ cần thiết\nThêm chức năng chuyển đổi giữa tiếng Trung và tiếng Anh\nKhông hỗ trợ ứng dụng mã hóa, tức là cần phải phá vỏ giải mã\nKhuyên không nên dùng cho ứng dụng trên 300mb vì sẽ bị treo\nHỗ trợ thiết bị jailbreak iOS14.0+\nCác phụ thuộc cần thiết đều có thể xem trong phần chẩn đoán công cụ ở cài đặt\nĐã thêm gói Tiếng Việt 🇻🇳\n📝 Made: TrollsTeam",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3/OtoolsGG_v1.3.ipa",
+          "size": 10700000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
@@ -3295,12 +3489,12 @@
       "version": "7.99.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.99.0/Duolingo_Language_Lessons_v7_99_0.ipa",
-          "size": 191900000,
           "version": "7.99.0",
-          "buildVersion": null,
           "date": "2025-11-11T23:31:00+07:00",
           "localizedDescription": "Sign-in with google/apple.\nIgnore any purchase banners all features should work.\nCredit to j4gm4g for providing the original script.\n",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.99.0/Duolingo_Language_Lessons_v7_99_0.ipa",
+          "size": 191900000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
@@ -3773,6 +3967,17 @@
       "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=donate.md",
+      "appID": ""
+    },
+    {
+      "title": "Giải thích thuật ngữ",
+      "identifier": "giaithich",
+      "caption": "Tìm hiểu các thuật ngữ liên quan đến cài đặt ứng dụng ngoài Apple Store.",
+      "date": "2025-11-08",
+      "tintColor": "#5525d0",
+      "imageURL": "https://i.ibb.co/yFwgzMFp/a27695b26600.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=thuatngu.md",
       "appID": ""
     },
     {
