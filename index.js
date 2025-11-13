@@ -1,4 +1,4 @@
-import { urlSearchParams, sourceURL, dirNoteURL, bundleID, base64Convert } from "./common/modules/constants.js";
+import { urlSearchParams, sourceURL,noteURL, dirNoteURL, bundleID, base64Convert } from "./common/modules/constants.js";
 import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl, generateTOC} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import { AppHeader } from "./common/components/AppHeader.js";
@@ -164,6 +164,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     // 
     //  "View All apps"
+    if(noteURL) executeNews('./view/note/'+noteURL, "CONTENTS", "news-popup-link");//read news
     if(bundleID){// load app
 	const sTarget = bundleIdToSourceMap.get(bundleID);
         if (!sTarget) {
@@ -281,6 +282,9 @@ document.querySelectorAll(".nav-link").forEach(link=>{
             </div>
         `;
         openPanel(finalHtml, `<p>${title}</p>`, '.', "side", id, "news");
+    	const urlView = new URL(window.location.href);
+    	url.searchParams.set('note', url);
+    	history.replaceState({}, '', urlView);
             }).catch(error => {
                 console.error("Lỗi khi tải nội dung:", error);
             });
