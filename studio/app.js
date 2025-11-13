@@ -438,6 +438,7 @@ insertVideoBtn.addEventListener("click", () => {
   // ===== Insert: Link =====
   const linkTextInput = document.getElementById("linkText");
   const linkUrlInput = document.getElementById("linkUrl");
+  const typeUrlInput = document.getElementById("typeUrl");
   const insertLinkBtn = document.getElementById("insertLinkBtn");
 
   insertLinkBtn.addEventListener("click", () => {
@@ -447,7 +448,15 @@ insertVideoBtn.addEventListener("click", () => {
       alert("Vui lòng nhập đầy đủ tên hiển thị và URL.");
       return;
     }
-    const md = `[${text}](${url})\n\n`;
+    var md = `[${text}](${url})\n\n`;
+
+    if(typeUrlInput.value === "1") {
+	md = `<a href="#" data-url="${url}" class="news-item-link"> ${text} </a>\n\n`;
+    }else if(!typeUrlInput.value === "2") {
+	md = `<a href="#" data-bundleid="${url}" class="app-header-link"> ${text} </a>\n\n`;
+    }
+
+
     insertAtCursor(textarea, md);
     isDirty = true;
     updatePreview();

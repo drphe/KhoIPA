@@ -214,9 +214,16 @@ npm run dev
               <label for="linkText">Tên hiển thị</label>
               <input id="linkText" type="text" placeholder="Ví dụ: Đọc chi tiết" />
             </div>
+	    <div class="field">
+              <label for="typeUrl">Tùy chọn</label>
+              <select id="typeUrl" type="radio" value="0"><option value="0">None</option><option value="1">Tin tức</option><option value="2">Ứng dụng</option></select>
+            </div>
             <div class="field">
               <label for="linkUrl">URL</label>
               <input id="linkUrl" type="url" placeholder="https://..." />
+              <div class="help-text">
+                Điền tên file.md nếu chèn tin tức, điền bundleId nếu chèn ứng dụng.
+              </div>
             </div>
             <div class="modal-footer">
               <button id="insertLinkBtn" class="btn btn-primary">Chèn link</button>
