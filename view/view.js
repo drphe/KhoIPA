@@ -76,7 +76,7 @@ main(json => {
         });
     }
 	if(noteURL) executeNews('./note/'+noteURL, "CONTENTS", "news-popup-link");//read news
-	else if(bundleID) openPanel(json, bundleID, '..', "bottom");// open app
+	if(bundleID) openPanel(json, bundleID, '..', "bottom");// open app
         else openPanel({},"","..");// preload panel
 
     //  "View All apps"
@@ -124,7 +124,7 @@ main(json => {
         `;
         openPanel(finalHtml, `<p>${title}</p>`, '..', "side", id,"news");
     	const urlView = new URL(window.location.href);
-    	url.searchParams.set('note', url);
+    	urlView.searchParams.set('note', url);
     	history.replaceState({}, '', urlView);
         }).catch(error => {
           console.error("Lỗi khi tải nội dung:", error);
