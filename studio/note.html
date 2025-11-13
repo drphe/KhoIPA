@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Note Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+        <div class="app-title">
+          <span class="logo-dot"></span>
+          Note Builder
+        </div>
+      <div>
+    <div class="top-row">
+      <button id="insertBtn" class="btn btn-primary">
+        ✚ Chèn / chỉnh sửa
+      </button>
+
+      <div class="desktop-tools">
+        <button class="btn btn-ghost btn-copy">📋 Copy</button>
+        <button class="btn btn-ghost btn-export">⬇ Export</button>
+        <button class="btn btn-ghost btn-import">⬆ Import</button>
+        <input id="importInput" type="file" accept=".md,.markdown,.txt" class="hidden">
+      </div>
+    </div>
+      </div>
+    </header>
+
+
+
+    <main class="main">
+      <!-- Mobile Tools Panel -->
+      <section id="toolsPanel">
+        <div class="tools-grid">
+          <button class="btn btn-ghost btn-copy">📋 Copy</button>
+          <button class="btn btn-ghost btn-export">⬇ Export</button>
+          <button class="btn btn-ghost btn-import">⬆ Ịmport</button>
+        </div>
+        <p class="tools-note">
+          Tip: Bạn có thể nhập file README.md, chỉnh sửa trực tiếp code và xem kết quả ở tab "Xem trước".
+        </p>
+      </section>
+      <div class="panes">
+        <section class="pane pane-code" data-view="code">
+          <div class="pane-header">
+            <div class="pane-header-title">
+              <strong>Code Markdown</strong>
+              <span class="pane-header-badge" id="currentFileName">README.md</span>
+            </div>
+          </div>
+          <textarea id="markdownInput" placeholder="# Tiêu đề bản tin
+Mô tả ngắn về bản tin của bạn...
+
+## Tính năng
+- Tính năng 1
+- Tính năng 2
+
+## Các bước thực hiện
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+"></textarea>
+        </section>
+
+        <section class="pane pane-preview" data-view="preview">
+          <div class="pane-header">
+            <div class="pane-header-title">
+              <strong>Xem trước</strong>
+              <span class="pane-header-badge">Rendered</span>
+            </div>
+          </div>
+          <div id="preview"></div>
+        </section>
+      </div>
+
+
+    </main>
+  </div>
+
+  <!-- Mobile bottom tabs -->
+  <div class="mobile-tabs">
+    <button data-target="code">
+      <span class="icon">⌨️</span>
+      Code
+    </button>
+    <button data-target="preview">
+      <span class="icon">👁️</span>
+      Xem trước
+    </button>
+    <button class="active" data-target="tools">
+      <span class="icon">🛠️</span>
+      Công cụ
+    </button>
+  </div>
+
+  <!-- Insert Modal -->
+  <div id="insertModalBackdrop" class="modal-backdrop hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">Chèn nội dung</div>
+        <button id="closeInsertModal" class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-tabs">
+          <button class="modal-tab-btn active" data-section="section-text">✏️ Text</button>
+          <button class="modal-tab-btn" data-section="section-list">☰ Danh sách</button>
+          <button class="modal-tab-btn" data-section="section-video">🎬 Video</button>
+          <button class="modal-tab-btn" data-section="section-image">🖼 Ảnh</button>
+          <button class="modal-tab-btn" data-section="section-link">🔗 Link</button>
+
+        </div>
+
+        <div>
+          <!-- TEXT -->
+          <div id="section-text" class="modal-section active">
+            <div class="field">
+              <label for="textType">Loại text</label>
+              <select id="textType">
+                <option value="p">Đoạn văn thường</option>
+                <option value="h1">Tiêu đề H1 (#)</option>
+                <option value="h2">Tiêu đề H2 (##)</option>
+                <option value="h3">Tiêu đề H3 (###)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="textContent">Nội dung</label>
+              <textarea id="textContent" placeholder="Nhập nội dung..."></textarea>
+            </div>
+            <div class="modal-footer">
+              <button id="insertTextBtn" class="btn btn-primary">Chèn text</button>
+            </div>
+          </div>
+
+          <!-- IMAGE -->
+          <div id="section-image" class="modal-section">
+            <div class="field">
+              <label>Chọn Ảnh</label>
+              <div class="image-actions">
+                <button id="imagePasteBtn" type="button" class="btn btn-ghost btn-sm">
+                  📎 Dán link ảnh
+                </button>
+                <button id="imageUploadBtn" type="button" class="btn btn-ghost btn-sm">
+                  ⬆ Upload ảnh
+                </button>
+                <input id="imageFile" type="file" accept="image/*" class="hidden" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="imageUrl">URL ảnh đã chọn / upload</label>
+              <input id="imageUrl" type="url" placeholder="https://..." />
+              <div class="help-text">
+                Nút "Upload ảnh" sẽ tự upload lên imgbb và điền URL vào đây.
+              </div>
+            </div>
+            <div class="field">
+              <label for="imageAlt">Alt text (tuỳ chọn)</label>
+              <input id="imageAlt" type="text" placeholder="Mô tả ngắn cho ảnh..." />
+            </div>
+            <div class="modal-footer">
+              <button id="insertImageBtn" class="btn btn-primary">Chèn ảnh</button>
+            </div>
+          </div>
+
+<!-- VIDEO -->
+<div id="section-video" class="modal-section">
+  <div class="field">
+    <label for="videoUrl">URL video (YouTube, v.v.)</label>
+    <input id="videoUrl" type="url" placeholder="https://youtube.com/watch?v=..." />
+  </div>
+
+  <!-- NEW: giống phần IMAGE -->
+  <div class="field">
+    <label>Chọn Ảnh thumbnail</label>
+    <div class="image-actions">
+      <button id="videoThumbPasteBtn" type="button" class="btn btn-ghost btn-sm">
+        📎 Dán link ảnh
+      </button>
+      <button id="videoThumbUploadBtn" type="button" class="btn btn-ghost btn-sm">
+        ⬆ Upload ảnh
+      </button>
+      <input id="videoThumbFile" type="file" accept="image/*" class="hidden" />
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="videoThumbUrl">URL thumbnail đã chọn / upload</label>
+    <input id="videoThumbUrl" type="url" placeholder="https://..." />
+  </div>
+
+  <div class="field">
+    <label for="videoAlt">Alt text (tuỳ chọn)</label>
+    <input id="videoAlt" type="text" placeholder="Ví dụ: Xem video demo" />
+    <div class="help-text">
+      Sẽ chèn dạng: <code>[![alt](thumbnail)](video-url)</code>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button id="insertVideoBtn" class="btn btn-primary">Chèn video</button>
+  </div>
+</div>
+
+
+          <!-- LINK -->
+          <div id="section-link" class="modal-section">
+            <div class="field">
+              <label for="linkText">Tên hiển thị</label>
+              <input id="linkText" type="text" placeholder="Ví dụ: Đọc chi tiết" />
+            </div>
+            <div class="field">
+              <label for="linkUrl">URL</label>
+              <input id="linkUrl" type="url" placeholder="https://..." />
+            </div>
+            <div class="modal-footer">
+              <button id="insertLinkBtn" class="btn btn-primary">Chèn link</button>
+            </div>
+          </div>
+
+          <!-- LIST -->
+          <div id="section-list" class="modal-section">
+            <div class="field">
+              <label for="listType">Loại danh sách</label>
+              <select id="listType">
+                <option value="unordered">Dấu chấm tròn (-)</option>
+                <option value="ordered">Đánh số (1.)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="listItems">Các mục (mỗi dòng là 1 item)</label>
+              <textarea id="listItems" placeholder="Item 1
+Item 2
+Item 3"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button id="insertListBtn" class="btn btn-primary">Chèn danh sách</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- IMPORT WARNING POPUP -->
+<div id="importPopup" class="modal-backdrop hidden">
+  <div class="modal" style="max-width:360px;">
+    <div class="modal-header">
+      <div class="modal-title">Dữ liệu hiện có sẽ bị ghi đè</div>
+      <button id="importPopupClose" class="modal-close">✕</button>
+    </div>
+
+    <div class="modal-body" style="grid-template-columns:1fr;">
+      <p>Bạn muốn làm gì?</p>
+
+      <div class="modal-footer" style="flex-direction:column; gap:6px;">
+        <button id="importContinueBtn" class="btn btn-primary" style="width:100%;">Continue</button>
+        <button id="importExportBtn" class="btn btn-ghost" style="width:100%;">⬇ Export</button>
+        <button id="importCopyBtn" class="btn btn-ghost" style="width:100%;">📋 Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">
+    <span class="toast-icon"></span>
+    <span id="toastMessage"></span>
+  </div>
+</body>
+</html>
