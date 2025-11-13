@@ -124,7 +124,7 @@ main(json => {
         `;
         openPanel(finalHtml, `<p>${title}</p>`, '..', "side", id,"news");
     	const urlView = new URL(window.location.href);
-    	urlView.searchParams.set('note', url);
+    	urlView.searchParams.set('note', url.replace("./note/",""));
     	history.replaceState({}, '', urlView);
         }).catch(error => {
           console.error("Lỗi khi tải nội dung:", error);
