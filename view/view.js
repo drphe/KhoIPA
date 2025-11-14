@@ -75,9 +75,17 @@ main(json => {
             count++;
         });
     }
-	if(noteURL) executeNews('./note/'+noteURL, "CONTENTS", "news-popup-link");//read news
-	if(bundleID) openPanel(json, bundleID, '..', "bottom");// open app
-        else openPanel({},"","..");// preload panel
+	async function run() {
+    if (noteURL) {
+        await executeNews('./note/' + noteURL, "CONTENTS", "news-popup-link"); 
+    }
+    if (bundleID) {
+        await openPanel(json, bundleID, '..', "bottom");
+    } else {
+        await openPanel({}, "", ".."); 
+    }
+}
+run();
 
     //  "View All apps"
     document.getElementById('search')?.addEventListener("click", async(e) => {
