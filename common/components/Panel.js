@@ -578,7 +578,7 @@ document.body.append(bottomPanel);
         }
     }
     // show popup
-    bottomPanel.classList.add("show"); // show when everything ready
+   setTimeout(() => bottomPanel.classList.add("show"), 10);//show when everything ready
     document.body.classList.add('no-scroll');
     waitForAllImagesToLoad(bottomPanel);
     refreshFsLightbox();
