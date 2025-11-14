@@ -6,7 +6,7 @@ Bài viết này sẽ hướng dẫn mở liên kết từ safari vào các app 
 
 ## Cách 1: Sử dụng Opener
 
-Trên KhoIPA có ứng dụng Opener, cài ứng dụng này từ file IPA (nếu ko phải mua trên store).
+Trên KhoIPA có ứng dụng <a href="#" data-bundleid="com.tijo.opener.Opener.RmGUBz" class="app-header-link"> Opener </a>, cài ứng dụng này từ file IPA (nếu ko phải mua trên store).
 Cài đặt link https:// mở bằng trình duyệt yêu thích hoặcu ứng dụng nào đó.
 
 ## Cách 2: Sử dụng Script
