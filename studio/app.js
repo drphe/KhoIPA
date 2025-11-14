@@ -452,7 +452,7 @@ insertVideoBtn.addEventListener("click", () => {
 
     if(typeUrlInput.value === "1") {
 	md = `<a href="#" data-url="${url}" class="news-item-link"> ${text} </a>\n\n`;
-    }else if(!typeUrlInput.value === "2") {
+    }else if(typeUrlInput.value === "2") {
 	md = `<a href="#" data-bundleid="${url}" class="app-header-link"> ${text} </a>\n\n`;
     }
 
