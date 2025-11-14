@@ -79,11 +79,16 @@ document.body.append(bottomPanel);
 
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
-        const app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
+        let app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
         if (!app) {
-            showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
-            return;
+            bundleId = bundleId.substring(0, str.lastIndexOf("."));
+            app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
+            if(!app) {
+                showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
+                return;
+            }
         }
+        
         updateBundleID(bundleId);
         // If has multiple versions, show the latest one
         if (app.versions) {
