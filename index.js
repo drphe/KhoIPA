@@ -164,7 +164,9 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 
     // 
     //  "View All apps"
-    if(noteURL) executeNews('./view/note/'+noteURL, "CONTENTS", "news-popup-link");//read news
+    if(noteURL){
+        await executeNews('./view/note/'+noteURL, "CONTENTS", "news-popup-link");//read news
+    }
     if(bundleID){// load app
 	const sTarget = bundleIdToSourceMap.get(bundleID);
         if (!sTarget) {
