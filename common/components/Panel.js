@@ -50,6 +50,13 @@ export function activateNavLink(e){
             else l.classList.remove("active");
         });
         window.oldTargetPage = e;
+        if(e =="page-home"){
+            const urlView = new URL(window.location.href);
+urlView.searchParams.delete('note');
+urlView.searchParams.delete('bundleID');
+history.replaceState({}, '', urlView);
+            
+            }
     };
 
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset="list") => {
