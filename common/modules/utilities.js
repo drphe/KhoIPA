@@ -219,23 +219,17 @@ export async function prefetchAndCacheUrls(urlList) {
 
 export async function openCachedUrl(url) {
     if (!('caches' in window)) return fetch(url);
-    try {
-        const cache = await caches.open(CACHE_NAME);
-        const cachedResponse = await cache.match(url);
-        if (cachedResponse) {
-            return cachedResponse;
-        }
-        const networkResponse = await fetch(url);
-        if (networkResponse.ok) {
-            await cache.put(url, networkResponse.clone()); 
-        }
-        return networkResponse;
-    } catch (error) {
-        console.error(`Error hoặc cache URL: ${url}`);
-        throw error;
-    }
+    const cache = await caches.open(CACHE_NAME);
+    const cachedResponse = await cache.match(url);
+    fetch(url, { cache: "reload" })
+        .then(async (networkResponse) => {
+            if (networkResponse.ok) {
+                await cache.put(url, networkResponse.clone());
+            }
+        })
+        .catch(() => {});
+    return cachedResponse || fetch(url, { cache: "reload" });
 }
-
 export function generateTOC(markdown) {
     const headings = [];
     const headingRegex = /^(#{1,6})\s+(.*)$/gm;
