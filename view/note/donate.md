@@ -20,7 +20,7 @@ Nếu bạn không mua chứng chỉ, muốn freesideloading thì đọc kỹ c�
 * Sử dụng Trollstore cho các thiết bị ios cũ:  <a href="#" data-url="trollstore.md" class="news-item-link">Cài IPA bằng trollstore</a>.
 
 * Sử dụng Cert bị revoke bằng DNS: 
-Có nhiều trang chia sẻ về cách này, khác nhau ở bộ lọc DNS còn cơ bản là chứng chỉ Revoke giống nhau. Tham khảo bài của <a href="#" data-url="khoivn.md" class="news-item-link">Free sideloading với DNS - khoindvn</a> về cách thực hiện, có hướng dân từng bước và giải thích về sự cố rò rỉ DNS hoặc bài <a href="#" data-url="freesideloading.md" class="news-item-link">Free sideloading với DNS - PuReEnVyUs</a> hoặc <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoked bằng DNS WFS</a>.
+Có nhiều trang chia sẻ về cách này, khác nhau ở bộ lọc DNS còn cơ bản là chứng chỉ Revoke giống nhau. Tham khảo bài của <a href="#" data-url="khoivn.md" class="news-item-link">Free sideloading bằng DNS - khoindvn</a> về cách thực hiện, có hướng dân từng bước và giải thích về sự cố rò rỉ DNS hoặc bài <a href="#" data-url="freesideloading.md" class="news-item-link">Free sideloading bằng DNS - PuReEnVyUs</a> hoặc <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoked bằng DNS WFS</a>.
 
 ---
 
