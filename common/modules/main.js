@@ -49,6 +49,7 @@ export function main(callback, fallbackURL = "../../") {
             if (supportType === 'both') {
                 link.href = isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`;
             } else installAppAlert.present();
+               navigator.clipboard.writeText(sourceURL);
         });
         setApps(json.apps);
         callback(json);
