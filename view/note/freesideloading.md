@@ -1,4 +1,4 @@
-# **Sideloading miễn phí**
+# **Rree Sideloading với DNS**
 Bất kỳ iOS nào! Không cần máy tính! Không giới hạn ứng dụng! Không bị thu hồi chứng chỉ! Không cần ký lại sau 7 ngày!
 
 **Hướng dẫn được thực hiện bởi PuReEnVyUs**  
