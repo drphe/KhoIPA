@@ -52,9 +52,9 @@ Nếu ESign và các ứng dụng sideload bắt đầu bị crash khi mở, đ�
 
 ### Lưu ý quan trọng (Disclaimer)
 
-* Applejr.net cũng chia sẻ cách thức tương tự <a href="#" data-url="applejr.md" class="news-item-link">Xem chi tiết</a>.
+* Khoivndn cũng chia sẻ cách thức tương tự <a href="#" data-url="khoivn.md" class="news-item-link">Xem chi tiết</a>.
 
-* Và cả [Page khoindvn.io.vn](https://khoindvn.io.vn/)
+* Applejr.net cũng vậy <a href="#" data-url="applejr.md" class="news-item-link">Xem chi tiết</a>.
 
 * Hoặc sử dụng DNS của wsfteam.xyz <a href="#" data-url="verifyapp.md" class="news-item-link">Xem chi tiết</a>.
 
