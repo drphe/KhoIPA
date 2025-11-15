@@ -1,4 +1,5 @@
-# **Free Sideloading với DNS** Bất kỳ iOS nào! Không cần máy tính! Không giới hạn ứng dụng! Không bị thu hồi chứng chỉ! Không cần ký lại sau 7 ngày!
+# **Free Sideloading với DNS** Bất kỳ iOS nào! Không cần máy tính! 
+**Không giới hạn ứng dụng! Không bị thu hồi chứng chỉ! Không cần ký lại sau 7 ngày!**
 
 **Hướng dẫn được thực hiện bởi PuReEnVyUs**  
 [https://www.reddit.com/u/PuReEnVyUs/s/UEAN9kowDo](https://www.reddit.com/u/PuReEnVyUs/s/UEAN9kowDo)  
