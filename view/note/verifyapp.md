@@ -1,4 +1,6 @@
 # 🚀 Sử dụng Chứng Chỉ Bị Thu Hồi (Revoked) Bằng DNS WSF
+👉 [Xem video HD](https://www.youtube.com/watch?v=HXnNqb05ios)  
+**Nguồn bài viết:**[ Techjunkie Aman](https://t.me/TheTechjunkieAman)
 
 Apple gần đây đã giới thiệu các quy định mới về việc xác minh ứng dụng được cài đặt thông qua **chứng chỉ nhà phát triển**. Kết quả là nhiều người dùng gặp lỗi **“Không thể xác minh ứng dụng”** hoặc ứng dụng bị **crash** sau khi khởi chạy. Vấn đề này ảnh hưởng toàn cầu đến tất cả các dịch vụ sử dụng chứng chỉ nhà phát triển.
 <a href="#" data-url="loicert.md" class="news-item-link">Xem chi tiết</a>.
@@ -90,12 +92,9 @@ Truy cập một trong các trang sau để cài trực tiếp và tải cert:
 * [https://sign.ipasign.cc](https://sign.ipasign.cc/)
 * [https://sign.kravasign.com](https://sign.kravasign.com/)
 
-> Nếu chứng chỉ của bạn bị thu hồi, bạn vẫn có thể sử dụng DNS này kết hợp với eSign hoặc Feather đã ký bằng chứng chỉ đó để tiếp tục cài IPA.
+> Nếu chứng chỉ của bạn bị thu hồi, bạn vẫn có thể sử dụng chúng đến khi hết hạn bằng DNS này kết hợp với eSign hoặc Feather đã ký bằng chứng chỉ đó để tiếp tục cài IPA.
 
----
 
-## 📽️ Tham khảo video hướng dẫn
 
-👉 [Xem video trên YouTube](https://www.youtube.com/watch?v=HXnNqb05ios)  
-**Nguồn bài viết:**[ Techjunkie Aman](https://t.me/TheTechjunkieAman)
+
 
