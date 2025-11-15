@@ -5,6 +5,10 @@ https://youtu.be/TFyXj1UfVKQ?si=vHgWPxXZlJMPZht1
 
 Nếu bạn chưa từng Freesidloading thì đọc 2 bài viết sau trước nhé :
 
+- <a href="#" data-url="khoivn.md" class="news-item-link">Free sideloading bằng DNS - Khoindvn</a> cách thực hiện, có hướng dẫn từng bước và giải thích về sự cố rò rỉ DNS 
+- <a href="#" data-url="freesideloading.md" class="news-item-link">Free sideloading bằng DNS - PuReEnVyUs</a>
+
+
 ## 1. DNS Anti-Revoke
 ### AppleJr DNS  
 - [Anti-Revoke](https://d1yei2z3i6k35z.cloudfront.net/14890634/68f7bbc35c7c2_signed_AppleJrV22.mobileconfig)
