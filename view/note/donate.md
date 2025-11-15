@@ -9,8 +9,10 @@ Nếu bạn bạn đã mua chứng chỉ thì bắt đầu ngay bằng các bài
 * [Hướng dẫn sử dụng ESign cơ bản](https://codevn.net/huong-dan-su-dung-esign-co-ban/)
 * [Hướng dẫn sử dụng Feather cơ bản](https://codevn.net/huong-dan-su-dung-feather-co-ban/)
 *  <a href="#" data-url="chongthuhoicc.md" class="news-item-link">Chống thu hồi chứng chỉ bằng DNS</a>.
+* Lỗi xác minh ứng dụng <a href="#" data-url="loicert.md" class="news-item-link">Cách hạn chế</a>.
 
-### Ghi Nhớ khi sử dụng Cert Live
+
+### Ghi Nhớ khi sử dụng Live Cert
 - Luôn kiểm tra tính tương thích của IPA với thiết bị và hệ điều hành.
 - Feather thường ổn định hơn và ít bị revoke hơn ESign.
 - Đừng quên theo dõi thời hạn chứng chỉ để tránh gián đoạn khi cài app.
