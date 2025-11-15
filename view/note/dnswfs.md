@@ -69,13 +69,13 @@ Một số hướng dẫn cần tuân theo để đảm bảo ứng dụng của
 
 ![Change DNS](https://picul.de/view/Yhj)
 
-Tải [ShotCut - Change DNS](https://www.icloud.com/shortcuts/df77a51b21c9440b8c1ab441c9ffa50a) và cài đặt thành phím tắt trên menu thông báo để dễ dàng thay đổi DNS
+Tải [ShotCut - Change DNS](https://www.icloud.com/shortcuts/bcf7067e7bf348c29e333f659f41d58e) và cài đặt thành phím tắt trên menu thông báo để dễ dàng thay đổi DNS
 ![Phím tắt](https://i.ibb.co/4nJbznpy/clipboard-2025-11-13-16-15.png)
 
 ### ⚠️ Các lưu ý quan trọng:
 
 - Sử dụng biến thể DNS INSTALL ONLY khi cài ứng dụng  
-- Chuyển sang biến thể DNS khác sau khi cài xong  (
+- Chuyển sang biến thể DNS khác sau khi cài xong
 - **Không bao giờ tắt Config Profile!**  
 - **Không bật cùng lúc 2 Config Profile!**  
 - **Bật chế độ Máy bay khi chuyển đổi giữa các Config Profile!**  
