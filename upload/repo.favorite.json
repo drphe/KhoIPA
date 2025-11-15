@@ -3903,6 +3903,17 @@
   ],
   "news": [
     {
+      "title": " Free Sideloading bằng DNS - AppleJR",
+      "identifier": "news-applejr",
+      "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
+      "date": "2025-11-16",
+      "tintColor": "#8525d0",
+      "imageURL": "https://i.ibb.co/wFBvQ9TS/60c84cb685b6.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=applejr.md",
+      "appID": ""
+    },
+    {
       "title": "Free Sideloading bằng DNS - Khoindvn",
       "identifier": "news-uurzgvhjf1",
       "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
@@ -3928,7 +3939,7 @@
       "title": "Chào mừng bạn đến KhoIPA",
       "identifier": "huongdansudung",
       "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
-      "date": "2025-11-09",
+      "date": "2026-11-09",
       "tintColor": "#5525d0",
       "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
       "notify": true,
