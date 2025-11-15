@@ -46,9 +46,9 @@ Từ iOS 18 trở đi cũng có một thay đổi mới: thiết bị sẽ khở
 - Nếu một chứng chỉ không hoạt động với bạn, hãy thử một chứng chỉ khác.  
 - Vào **Cài đặt → Cài đặt chung → VPN, DNS, Quản lý thiết bị → Ứng dụng doanh nghiệp (Enterprise App)**.  
 - Nhấn vào tên chứng chỉ, sẽ có nút **Tin cậy (Trust)**.  
-- Sau đó mở ứng dụng Esign, dưới tab **Download** ở thanh điều hướng dưới cùng, tìm biểu tượng dấu ba chấm **•••** ở phía trên, rồi vào **Cài đặt (Settings)** để bật cả hai tùy chọn **Auto Import** và **Auto Delete**.  
+- Sau đó mở ứng dụng Esign, dưới tab **Download** ở thanh điều hướng dưới cùng, tìm biểu tượng dấu ba chấm **•••** ở phía trên, rồi vào **Cài đặt (Settings)** để bật cả hai tùy chọn **Auto Import** và **Auto Delete**.
+  
 ![image](https://i.imgur.com/GrFNPW9.png)
-Đây là bản dịch sang tiếng Việt cho đoạn bạn đưa:  
 
 ---
 
