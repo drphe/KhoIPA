@@ -1,6 +1,9 @@
 # AppleJr Esign/ Ksign/ Scarlet Certificates
 Nguồn : https://applejr.net/
 https://github.com/applejr12/signer/
+https://youtu.be/TFyXj1UfVKQ?si=vHgWPxXZlJMPZht1
+
+Nếu bạn chưa từng Freesidloading thì đọc 2 bài viết sau trước nhé :
 
 ## 1. DNS Anti-Revoke
 ### AppleJr DNS  
