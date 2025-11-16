@@ -3908,7 +3908,7 @@
       "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
       "date": "2025-11-16",
       "tintColor": "#8525d0",
-      "imageURL": "https://i.ibb.co/wFBvQ9TS/60c84cb685b6.png",
+      "imageURL": "https://i.ibb.co/RJ8dWxb/bOMvrzbm.jpg",
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=applejr.md",
       "appID": ""
@@ -4005,7 +4005,7 @@
       "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
       "identifier": "hdsd-dns",
       "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
-      "date": "2025-10-17",
+      "date": "2025-11-11",
       "tintColor": "#506471",
       "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
       "notify": true,
