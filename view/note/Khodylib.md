@@ -2,7 +2,7 @@
 
 Dành cho người dùng nâng cao, đôi khi bạn sẽ gặp một ứng dụng hoặc trò chơi không có phiên bản đã được chỉnh sửa. Đây là hướng dẫn nhanh để nhập hoặc gỡ bỏ các tệp **dylib/deb** từ một file **ipa** nhằm cho phép mua hàng trong ứng dụng miễn phí (IAP), chặn quảng cáo hoặc thêm **iGameGod** (một công cụ chỉnh sửa hex để thay đổi các giá trị như vàng/kim cương).
 
-Nếu bạn mới tìm hiểu về Mod IPA hãy dành thời gian đọc một vài <a href="#" data-url="khoivn.md" class="news-item-link">thuật ngữ</a> liên quan trước khi bắt đầu.
+Nếu bạn mới tìm hiểu về Mod IPA hãy dành thời gian đọc một vài <a href="#" data-url="thuatngu.md" class="news-item-link">thuật ngữ</a> liên quan trước khi bắt đầu.
 
 ## Nguồn tải ứng dụng đã giải mã
 - [https://decrypt.day/](https://decrypt.day/)  
