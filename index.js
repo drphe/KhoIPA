@@ -38,6 +38,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 		if(url && !isValidHTTPURL(url)) jsonNewsUrl.push('./view/note/'+ url);
             }
  	}
+        jsonNewsUrl.push('./view/index.html');
 	prefetchAndCacheUrls(jsonNewsUrl);
 	// cuộn ngang
 	const containerNews = document.getElementById('news-items');

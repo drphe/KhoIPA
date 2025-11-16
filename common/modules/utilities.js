@@ -2,6 +2,7 @@ import { AltStoreBanner } from "../components/AltStoreBanner.js";
 import { NavigationBar } from "../components/NavigationBar.js";
 import { urlRegex, sourceURL } from "./constants.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
+const CACHE_NAME = 'kh0ipa-data-cache-v1';
 
 export function formatVersionDate(arg) {
     let versionDate = new Date(arg);
@@ -143,7 +144,7 @@ export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
 }
 
 export async function json(url) {
-    return await fetch(url).then(response => response.json()).catch(error => console.error("An error occurred.", url));
+    return await openCachedUrl(url).then(response => response.json()).catch(error => console.error("An error occurred.", url));// opencache thay fetch
 }
 
 
@@ -217,8 +218,6 @@ const $ = selector => selector.startsWith("#") && !selector.includes(".") && !se
     ? document.getElementById(selector.substring(1))
     : document.querySelectorAll(selector);
 
-
-const CACHE_NAME = 'kh0ipa-data-cache-v1';
 
 export async function prefetchAndCacheUrls(urlList) {
     if (!('caches' in window)) {
