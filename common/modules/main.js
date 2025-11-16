@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./constants.js";
-import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps } from "./utilities.js";
+import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps, openCachedUrl } from "./utilities.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
 export function main(callback, fallbackURL = "../../") {
@@ -18,7 +18,7 @@ export function main(callback, fallbackURL = "../../") {
     window.setApps = array => apps = array;
     window.getAppWithBundleId = bundleId => apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
     setUpBackButton();
-    fetch(sourceURL).then(response => response.json()).then(source => {
+    openCachedUrl(sourceURL).then(response => response.json()).then(source => {
         const json = consolidateApps(source)
         // Set tint color
         const tintColor = json.tintColor?.replaceAll("#", "");
