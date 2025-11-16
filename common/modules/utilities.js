@@ -19,17 +19,31 @@ export function formatVersionDate(arg) {
     const msPerDay = 60 * 60 * 24 * 1000;
     const msDifference = today - versionDate;
 
+    const daysDiff = Math.floor(msDifference / msPerDay);
+    const weeksDiff = Math.floor(daysDiff / 7);
+    const monthsDiff = Math.floor(daysDiff / 30);
+
     const month = versionDate.toLocaleString("default", { month: "short" });
     const date = versionDate.getDate();
     const year = versionDate.getFullYear();
 
     let dateString = `${month} ${date}, ${year}`;
 
-    if (msDifference <= msPerDay && today.getDate() === versionDate.getDate())
+    // Giữ nguyên logic cũ
+    if (msDifference <= msPerDay && today.getDate() === versionDate.getDate()) {
         dateString = "Today";
-
-    else if (msDifference <= msPerDay * 2)
+    }
+    else if (msDifference <= msPerDay * 2) {
         dateString = "Yesterday";
+    }
+    // Bổ sung logic weeks
+    else if (daysDiff >= 7 && daysDiff < 30) {
+        dateString = weeksDiff === 1 ? "1 week ago" : `${weeksDiff} weeks ago`;
+    }
+    // Bổ sung logic months
+    else if (daysDiff >= 30 && daysDiff < 365) {
+        dateString = monthsDiff === 1 ? "1 month ago" : `${monthsDiff} months ago`;
+    }
 
     return dateString;
 }
