@@ -47,3 +47,6 @@ Khi cài đặt hoặc mở ứng dụng iOS được ký bằng chứng chỉ n
 ## 📚 Nguồn tham khảo
 *[Ошибки сертификата
 Разработчика Apple](https://iappsbest-repository-catalog.pages.dev/certificates-error/)
+
+https://youtu.be/hnJrzQ0hpec?si=2Y2225ZVXD1IdUXr
+
