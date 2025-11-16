@@ -36,18 +36,21 @@ export function formatVersionDate(arg) {
     else if (msDifference <= msPerDay * 2) {
         dateString = "Yesterday";
     }
-    // Bổ sung logic weeks
+    // < 7 ngày (nhưng không phải Yesterday)
+    else if (daysDiff < 7) {
+        dateString = daysDiff === 1 ? "1 day ago" : `${daysDiff} days ago`;
+    }
+    // 7–29 ngày → weeks ago
     else if (daysDiff >= 7 && daysDiff < 30) {
         dateString = weeksDiff === 1 ? "1 week ago" : `${weeksDiff} weeks ago`;
     }
-    // Bổ sung logic months
+    // 30–364 ngày → months ago
     else if (daysDiff >= 30 && daysDiff < 365) {
         dateString = monthsDiff === 1 ? "1 month ago" : `${monthsDiff} months ago`;
     }
 
     return dateString;
 }
-
 
 export function insertSpaceInSnakeString(string) {
     return string.split(".").slice(-1)[0].split("-").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
