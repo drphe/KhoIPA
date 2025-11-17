@@ -49,6 +49,7 @@ Với thiết bị chưa jailbreak, chỉ cần cài:
 
 Hai công cụ này cho phép xuất file IPA **đã giải mã**.
 
+
 ### Video hướng dẫn:
 
 * [https://youtu.be/M5iASlmSR7o?si=7dIWavwtR923PzMr](https://youtu.be/M5iASlmSR7o?si=7dIWavwtR923PzMr)
@@ -94,7 +95,8 @@ Bạn có thể tìm file IPA đã được giải mã được chia sẻ trên 
 Tương tự như phần 1, việc Tiêm các tweak (tinh chỉnh), hay các bản mod sẽ dễ dàng, và có nhiều ưu điểm hơn khi máy có Trollstore hay đã jailbreak. 
 Nếu có Trollstore, sử dụng công cụ Trollfool giúp vừa tiêm deb/dylib vào app, kể cả khi app được cập nhật từ store vẫn sử được mà không cần cài lại app hay tiêm lại. 
 
-* Xem hướng dẫn [Ở đây](https://youtu.be/7Ge_thyM2vY?si=XyE8qDVy_rZg12-7)
+* [Tiêm Trollfools/Trollstore](https://bvn-roothide.github.io/trollfools/)
+* Xem video hướng dẫn [Ở đây](https://youtu.be/7Ge_thyM2vY?si=XyE8qDVy_rZg12-7)
 
 ## Inject IPA bằng Web/ESign
 
