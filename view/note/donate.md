@@ -5,7 +5,17 @@
 => <a href="#" data-url="developermod.md" class="news-item-link"> Xem bài hướng dẫn ở đây </a>
 
 ## 1. Sử dụng Live Certificates
-Nếu bạn bạn đã mua chứng chỉ thì bắt đầu ngay bằng các bài dưới đây:
+Nếu bạn bạn đã mua chứng chỉ, sau khi nhận được tệp cert.zip thì upload chứng chỉ và file IPA cần cài lên một các trang sau để nhận link cài trực tiếp:
+
+- https://sign.codevn.net (công cụ của CodeVN)
+- https://sign.ipasign.cc/
+- https://sign.kravasign.com/
+- https://wsfteam.xyz/
+
+Bạn hãy cài Esign/Feather... là những ứng dụng hỗ trợ ký Cert và cài IPA ngoài Store mà ko cần jailbreak máy.
+
+Tiếp theo đọc các bài hướng dẫn sau để tìm hiểu về ứng dụng Esign/Feather...
+
 * [Hướng dẫn sử dụng ESign cơ bản](https://codevn.net/huong-dan-su-dung-esign-co-ban/)
 * [Hướng dẫn sử dụng Feather cơ bản](https://codevn.net/huong-dan-su-dung-feather-co-ban/)
 *  <a href="#" data-url="chongthuhoicc.md" class="news-item-link">Chống thu hồi chứng chỉ bằng DNS</a>.
