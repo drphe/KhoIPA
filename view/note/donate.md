@@ -41,7 +41,18 @@ Trên khoIPA có khá nhiều IPA rồi, nhưng trong trường hợp không tì
 
 ---
 
-## 4. Cách thức liên lạc và trao đổi
+## 4. Mẹo khi cài đặt IPA bằng Esign/Feather
+
+* Có thể 1 số bạn lên iOS 26 bị crash 1 số app mod khi cài bằng chứng chỉ, hãy sử dụng feather và bật tính năng này lên rồi import chứng chỉ + ipa vào feather ký và cài đặt lại
+![image](https://i.ibb.co/cKVBdcg7/16daaa72039b.jpg)
+
+* Đối với Cài đặt bằng Esign mà bị lỗi thì vào cài đặt, tích chọn Remove mobileprovision after signing và thử lại nhé. 
+![image](https://i.ibb.co/r271cBFX/34b51153a95f.jpg)
+
+
+---
+
+## 5. Cách thức liên lạc và trao đổi
 
 ### 📬Liên lạc
 Các bro có thể liên lạc với mình qua các kênh sau nhé.

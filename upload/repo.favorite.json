@@ -3903,6 +3903,28 @@
   ],
   "news": [
     {
+      "title": "Hướng dẫn Mod IPAs",
+      "identifier": "news-3pgl4ho7qa",
+      "caption": "Hướng dẫn cơ bản các bước để tự tạo file IPA mod dùng cho nhu cầu cá nhân.",
+      "date": "2025-11-17",
+      "tintColor": "#1d1d1f",
+      "imageURL": "https://i.ibb.co/JjvvSLCJ/e815f124c3e0.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=ipamod.md",
+      "appID": "wiki.qaq.Asspp"
+    },
+    {
+      "title": "Chào mừng bạn đến KhoIPA",
+      "identifier": "huongdansudung",
+      "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
+      "date": "2026-11-09",
+      "tintColor": "#5525d0",
+      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=donate.md",
+      "appID": ""
+    },
+    {
       "title": " Free Sideloading bằng DNS - AppleJR",
       "identifier": "news-applejr",
       "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
@@ -3925,6 +3947,28 @@
       "appID": "com.ksign.tool"
     },
     {
+      "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
+      "identifier": "hdsd-dns",
+      "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
+      "date": "2025-11-11",
+      "tintColor": "#506471",
+      "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=verifyapp.md",
+      "appID": "wsfteam.portal"
+    },
+    {
+      "title": "Free Sideloading bằng DNS - PuReEnVyUs",
+      "identifier": "freesideloading",
+      "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
+      "date": "2025-11-10",
+      "tintColor": "#000000",
+      "imageURL": "https://i.ibb.co/ycXwSqPG/3d5e95ff3cdf.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=freesideloading.md",
+      "appID": ""
+    },
+    {
       "title": "Hướng dẫn cách cài đặt auto clicker trên iPhone",
       "identifier": "news-qj962r0up1",
       "caption": "Cài đặt auto clicker mà không cần jailbreak, máy tính hay ứng dụng bên thứ ba.",
@@ -3936,36 +3980,14 @@
       "appID": null
     },
     {
-      "title": "Chào mừng bạn đến KhoIPA",
-      "identifier": "huongdansudung",
-      "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
-      "date": "2026-11-09",
-      "tintColor": "#5525d0",
-      "imageURL": "https://h5m4.c19.e2-1.dev/image-video/blog/banneresign.png",
-      "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/?note=donate.md",
-      "appID": ""
-    },
-    {
       "title": "Giải thích thuật ngữ",
       "identifier": "giaithich",
       "caption": "Tìm hiểu các thuật ngữ liên quan đến cài đặt ứng dụng ngoài Apple Store.",
       "date": "2025-11-08",
       "tintColor": "#5525d0",
       "imageURL": "https://i.ibb.co/yFwgzMFp/a27695b26600.png",
-      "notify": true,
+      "notify": false,
       "url": "https://drphe.github.io/KhoIPA/view/?note=thuatngu.md",
-      "appID": ""
-    },
-    {
-      "title": "Free Sideloading bằng DNS - PuReEnVyUs",
-      "identifier": "freesideloading",
-      "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
-      "date": "2025-11-10",
-      "tintColor": "#000000",
-      "imageURL": "https://i.ibb.co/ycXwSqPG/3d5e95ff3cdf.png",
-      "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/?note=freesideloading.md",
       "appID": ""
     },
     {
@@ -4000,17 +4022,6 @@
       "notify": false,
       "url": "https://drphe.github.io/KhoIPA/view/?note=openlink.md",
       "appID": "com.tijo.opener.Opener"
-    },
-    {
-      "title": "Sử dụng Certificates bị revoke bằng DNS WFS",
-      "identifier": "hdsd-dns",
-      "caption": "Sử dụng DNS khắc phục lỗi xác minh ứng dụng, cài ipa với cert bị revoke",
-      "date": "2025-11-11",
-      "tintColor": "#506471",
-      "imageURL": "https://drphe.github.io/KhoIPA/common/assets/img/verifyapp.jpg",
-      "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/?note=verifyapp.md",
-      "appID": "wsfteam.portal"
     },
     {
       "title": "Chặn quảng cáo bằng DNS",
