@@ -114,6 +114,9 @@ Các bước nâng cao bao gồm:
 * Phân tích *Mach-O*
 * Xem tài nguyên và cấu trúc bundle
 
+Ví dụ xem [Tìm mã để mod game](https://youtu.be/GE0G1Ak-zDs?si=0rJjXgbdPqt6uMne) hoặc [Hướng dẫn mod game IPA](https://youtu.be/TznPmwd5JPY?si=BaEREjAV6wuXeZ3m)
+
+
 ## 2. Tạo và sử dụng file **dylib**, **deb**
 
 * Viết lại hành vi của app
