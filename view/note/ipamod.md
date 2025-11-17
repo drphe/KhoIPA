@@ -102,6 +102,17 @@ Nếu có Trollstore, sử dụng công cụ Trollfool giúp vừa tiêm deb/dyl
 Một số nhà phát triển xây dựng website sẵn, việc của bạn là tìm dylib/deb thích hợp, tải IPA trắng (đã giải mã) và tự mình tiêm và cài đặt.
 
 * <a href="#" data-url="Khodylib.md" class="news-item-link"> HD tiêm dylib/deb </a>
+
+* [Tiêm dylib online](https://ipatool.codevn.net/inject-dylib/)
+### Một số dylib phổ biến
+
+- Satella (By Paisseon): đây là tweak dùng để mua hàng trong ứng dụng miễn phí, lưu ý là không phải ứng dụng/trò chơi nào cũng có thể hoạt động. Cách sử dụng là bấm vào biểu tượng Satella trong app, sau đó bật các tính năng bạn cần lên và bấm lưu, quay lại mở app lên bấm mua sau đó bấm hủy.
+- iGameGod (By iOSGods): đây là một tweak khá hay mà anh em chơi game hay sử dụng.
+- Bật Files Access: đây là một thành phần giao diện người dùng cho phép người dùng duyệt và quản lý các tài liệu trong ứng dụng, bao gồm cả các tệp tin, thư mục và các nguồn tài nguyên khác. Khi Files Access được bật, nghĩa là ứng dụng hỗ trợ trình duyệt tài liệu và sẽ được hệ điều hành iOS tích hợp với các tính năng liên quan. Lưu ý là không phải tất cả các ứng dụng/trò chơi đều có thẻ sử dụng tính năng này.
+Xóa Extensions: đây là tính năng xóa các tiện ích mở rộng của ứng dụng (nếu bạn đã biết thì tính năng này sẽ xóa tất cả các nội dung trong thư mục Plugins của ứng dụng/trò chơi).
+- Adblock: chặn quảng cáo trong app, trò chơi
+- Ifaker: giả mạo thông tin tiết bị...
+
 ---
 
 # 📌 Phần 3: Mod / Hack IPA
