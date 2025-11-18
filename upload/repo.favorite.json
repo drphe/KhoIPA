@@ -3822,12 +3822,12 @@
       "beta": false,
       "name": "Feather",
       "type": 4,
-      "bundleIdentifier": "com.feather.app",
+      "bundleIdentifier": "thewonderofyou.Feather",
       "developerName": "Khcrysalis",
       "subtitle": "Ký và cài đặt IPA cho IOS",
-      "localizedDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!\n👇🏻👇🏻👇🏻 WEB LẤY IPA TRẮNG \nWeb 1: https://decrypt.day/ \nWeb 2: https://armconverter.com/decryptedappstore/us",
+      "localizedDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!\n👇🏻👇🏻👇🏻 WEB LẤY IPA TRẮNG \nWeb 1: https://decrypt.day/ \nWeb 2: https://armconverter.com/decryptedappstore/us\n\nĐối với phiên bản chưa ký cần có chứng chỉ, nếu đã ký sẵn thì tải chứng chỉ trong phần mô tả về sử dụng. \n\nĐọc bài Freesideloading bằng DNS trước khi tải app: https://drphe.github.io/KhoIPA/index.html?note=verifyapp.md",
       "versionDescription": "",
-      "tintColor": "#6156B8",
+      "tintColor": "#7736c8",
       "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/02/Feather.png",
       "screenshotURLs": [
         "https://ios.codevn.net/wp-content/uploads/2025/02/Store-710x1536.png",
@@ -3837,23 +3837,34 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSHumanReadableCopyright": "Copyright (c) 2024 Samara M"
+        }
       },
-      "size": 12711617,
-      "version": "2.4",
+      "size": 12900000,
+      "version": "2.4.0",
       "versions": [
         {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4/feather.2.4.ipa",
+          "size": 12900000,
+          "version": "2.4.0",
+          "buildVersion": null,
+          "date": "2025-11-18T02:22:00+07:00",
+          "localizedDescription": "Feather đã ký sẵn\nCert link: https://github.com/drphe/KhoIPA/releases/download/cert.1.0/Etisalat.-.Emirates.Telecommunications.Corporation.zip\n",
+          "minOSVersion": null
+        },
+        {
           "version": "2.4",
-          "date": "2025-10-01T04:41:00Z",
-          "localizedDescription": "Phiên bản mới nhất 2.4",
+          "date": "2025-10-01T04:41:00+07:00",
+          "localizedDescription": "Phiên bản Feather gốc, chưa sign.",
           "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa",
-          "size": 12711617,
+          "size": 12700000,
           "buildVersion": null,
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-10-01T04:41:00Z",
-      "downloadURL": "https://github.com/khcrysalis/Feather/releases/download/v2.4.0/Feather.ipa",
+      "versionDate": "2025-11-18T02:22:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4/feather.2.4.ipa",
       "patreon": {}
     },
     {
@@ -3903,17 +3914,6 @@
   ],
   "news": [
     {
-      "title": "Hướng dẫn Mod IPAs",
-      "identifier": "news-3pgl4ho7qa",
-      "caption": "Hướng dẫn cơ bản các bước để tự tạo file IPA mod dùng cho nhu cầu cá nhân.",
-      "date": "2025-11-17",
-      "tintColor": "#1d1d1f",
-      "imageURL": "https://i.ibb.co/JjvvSLCJ/e815f124c3e0.png",
-      "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/?note=ipamod.md",
-      "appID": "wiki.qaq.Asspp"
-    },
-    {
       "title": "Chào mừng bạn đến KhoIPA",
       "identifier": "huongdansudung",
       "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
@@ -3923,6 +3923,17 @@
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=donate.md",
       "appID": ""
+    },
+    {
+      "title": "Hướng dẫn Mod IPAs",
+      "identifier": "news-3pgl4ho7qa",
+      "caption": "Hướng dẫn cơ bản các bước để tự tạo file IPA mod dùng cho nhu cầu cá nhân.",
+      "date": "2025-11-17",
+      "tintColor": "#1d1d1f",
+      "imageURL": "https://i.ibb.co/JjvvSLCJ/e815f124c3e0.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=ipamod.md",
+      "appID": "wiki.qaq.Asspp"
     },
     {
       "title": " Free Sideloading bằng DNS - AppleJR",
@@ -4054,7 +4065,7 @@
       "imageURL": "https://i.ibb.co/8gJbwDH7/0d5692712924.png",
       "notify": false,
       "url": "https://drphe.github.io/KhoIPA/view/?note=caidatipa.md",
-      "appID": "com.feather.app"
+      "appID": "thewonderofyou.Feather"
     },
     {
       "title": "Bật chế độ Nhà phát triển",
