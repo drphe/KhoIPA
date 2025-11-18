@@ -21,6 +21,45 @@
   "apps": [
     {
       "beta": false,
+      "name": "Hill Climb Racing (Hacked)",
+      "type": 1,
+      "bundleIdentifier": "com.fingersoft.hillclimbracing",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "features:\r\n\r\n- in app purchase\r\n\r\ntap buy and hit cancel",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_691b46040606b.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691b4605416bc.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691b460504b15.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691b4604b9c37.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691b46047d9d1.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691b460440c50.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 120001175,
+      "version": "1.67.3",
+      "versions": [
+        {
+          "version": "1.67.3",
+          "date": "2025-11-17",
+          "localizedDescription": "features:\r\n\r\n- in app purchase\r\n\r\ntap buy and hit cancel",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1951",
+          "size": 120001175,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-17",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1951",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "X - Twitter NeoFreeBird",
       "type": 1,
       "bundleIdentifier": "com.atebits.Tweetie2",
@@ -18774,7 +18813,7 @@
       "beta": false,
       "name": "Kanji",
       "type": 1,
-      "bundleIdentifier": "com.ve1oqeus8p.w7z8n4g31d",
+      "bundleIdentifier": "com.jy6aka0boh.kqia3nwgo4",
       "developerName": "Holloway",
       "subtitle": "An awesome app.",
       "localizedDescription": "Injected with Premium",
