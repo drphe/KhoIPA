@@ -830,6 +830,7 @@ a>button {
 
 .no-scroll {
     overflow: hidden !important;
+    height: 100vh;
 }
 
 .skeleton-text {
