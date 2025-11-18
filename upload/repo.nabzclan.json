@@ -21,6 +21,201 @@
   "apps": [
     {
       "beta": false,
+      "name": "Endel  (Cracked)",
+      "type": 1,
+      "bundleIdentifier": "com.endel.endel",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Cracked subscription",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_691cc778a2069.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc779eef12.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc779b2d0f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc779766a7.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc7793a1ba.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc778f25f5.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 190507611,
+      "version": "4.6.9",
+      "versions": [
+        {
+          "version": "4.6.9",
+          "date": "2025-11-18",
+          "localizedDescription": "Cracked subscription",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1955",
+          "size": 190507611,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "4.48.345",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Subscription Unlocked",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/413",
+          "size": 190413101,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-18",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1955",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "OldRoll - Vintage Film Camera (Hacked)",
+      "type": 1,
+      "bundleIdentifier": "com.zijayrate.analogcam",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "In app purchase",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_691cc7143d21e.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 162018064,
+      "version": "8.0.2",
+      "versions": [
+        {
+          "version": "8.0.2",
+          "date": "2025-11-18",
+          "localizedDescription": "In app purchase",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1954",
+          "size": 162018064,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "7.8.0",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with IAP",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1117",
+          "size": 150772768,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-18",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1954",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Impulse - Brain Training (hacked",
+      "type": 1,
+      "bundleIdentifier": "gen.tech.impulse",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features:\r\n\r\n- in app purchase",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_691cc6718a460.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc672cb4e2.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc6728e8b2.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc67251d6d.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc67212dc2.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc671c8ba6.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 89616249,
+      "version": "1.38",
+      "versions": [
+        {
+          "version": "1.38",
+          "date": "2025-11-18",
+          "localizedDescription": "Features:\r\n\r\n- in app purchase",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1953",
+          "size": 89616249,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "1.36",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with IAP",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/739",
+          "size": 92450885,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "1.36",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with IAP",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/713",
+          "size": 92453049,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-18",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1953",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Photoshop Express - (Hacked)",
+      "type": 1,
+      "bundleIdentifier": "com.adobe.PSMobile",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Subscription hacked",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_691cc6066ce7e.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc607a7fc0.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc6076af6f.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc6072ca80.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc606e2184.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_691cc606a6122.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 274370131,
+      "version": "25.43.0.8678",
+      "versions": [
+        {
+          "version": "25.43.0.8678",
+          "date": "2025-11-18",
+          "localizedDescription": "Subscription hacked",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1952",
+          "size": 274370131,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "25.35.0",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Subscription Unlocked",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1127",
+          "size": 138296240,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-18",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1952",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Hill Climb Racing (Hacked)",
       "type": 1,
       "bundleIdentifier": "com.fingersoft.hillclimbracing",
@@ -15859,39 +16054,6 @@
     },
     {
       "beta": false,
-      "name": "PSExpress",
-      "type": 1,
-      "bundleIdentifier": "com.adobe.PSMobile",
-      "developerName": "Holloway",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761375821.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 138296240,
-      "version": "25.35.0",
-      "versions": [
-        {
-          "version": "25.35.0",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Subscription Unlocked",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1127",
-          "size": 138296240,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1127",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "BackgroundMusic",
       "type": 1,
       "bundleIdentifier": "com.flyingnayeem.nmVideoMergerJune",
@@ -16020,39 +16182,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1119",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "OldRoll",
-      "type": 1,
-      "bundleIdentifier": "com.zijayrate.analogcam",
-      "developerName": "Holloway",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with IAP",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761375736.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 150772768,
-      "version": "7.8.0",
-      "versions": [
-        {
-          "version": "7.8.0",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with IAP",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1117",
-          "size": 150772768,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1117",
       "patreon": {}
     },
     {
@@ -18813,7 +18942,7 @@
       "beta": false,
       "name": "Kanji",
       "type": 1,
-      "bundleIdentifier": "com.jy6aka0boh.kqia3nwgo4",
+      "bundleIdentifier": "com.3gi0mw0mhd.1qg72ritxi",
       "developerName": "Holloway",
       "subtitle": "An awesome app.",
       "localizedDescription": "Injected with Premium",
@@ -21492,48 +21621,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/743",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Impulse",
-      "type": 1,
-      "bundleIdentifier": "gen.tech.impulse",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with IAP",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761373020.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 92450885,
-      "version": "1.36",
-      "versions": [
-        {
-          "version": "1.36",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with IAP",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/739",
-          "size": 92450885,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "1.36",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with IAP",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/713",
-          "size": 92453049,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/739",
       "patreon": {}
     },
     {
@@ -25668,39 +25755,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/415",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Endel",
-      "type": 1,
-      "bundleIdentifier": "com.endel.endel",
-      "developerName": "Holloway",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761370669.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 190413101,
-      "version": "4.48.345",
-      "versions": [
-        {
-          "version": "4.48.345",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Subscription Unlocked",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/413",
-          "size": 190413101,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/413",
       "patreon": {}
     },
     {
