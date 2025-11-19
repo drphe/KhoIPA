@@ -687,7 +687,7 @@ a>button {
     border-color: transparent;
 }
 
-xxx.badge, new.badge, updated.badge, .beta.badge {
+.xxx.badge, .new.badge, .updated.badge, .beta.badge {
     margin-bottom: 2px;
     background-color: #f5a10d;
 }

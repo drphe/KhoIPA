@@ -4,7 +4,7 @@ insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVe
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
-import { AppHeader, AppLoading } from "../components/AppHeader.js";
+import { AppHeader, AppLoading, checkBeta } from "../components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
 const loaded = () => {
@@ -249,7 +249,7 @@ document.body.append(bottomPanel);
         // Navigation bar
         const navigationBar = bottomPanel.querySelector("#nav-bar");
         // Title
-        navigationBar.querySelector("#title>p").innerHTML = app.name + (app.beta ? ` <span class="small beta badge"></span>` : ``);
+        navigationBar.querySelector("#title>p").innerHTML = app.name + (app.beta ? ` <span class="small ${checkBeta(app.beta)} badge"></span>` : ``);
         // App icon
         navigationBar.querySelector("#title>img").src = app.iconURL;
         // 
@@ -258,7 +258,7 @@ document.body.append(bottomPanel);
         // Icon
         appHeader.querySelector("img").src = app.iconURL;
         // App name
-        appHeader.querySelector(".title").innerHTML = app.name + (app.beta ? ` <span class="small beta badge"></span>` : ``);
+        appHeader.querySelector(".title").innerHTML = app.name + (app.beta ? ` <span class="small ${checkBeta(app.beta)} badge"></span>` : ``);
         // Developer name
         appHeader.querySelector(".subtitle").textContent = app.developerName;
         // 

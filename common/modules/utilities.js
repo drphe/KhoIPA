@@ -206,13 +206,10 @@ export function consolidateApps(source) {
   });
     const consolidatedApps = Array.from(uniqueAppsMap.values());
     consolidatedApps.forEach(app => {
-        if (!app.beta && calDiff(app.versionDate) <7) {
+        if (!app.beta && calDiff(app.versionDate) <3) {
 	    app.beta = app.versions.length > 1? "updated": "new";
         }
     });
-
-
-
   const newSource = {
     ...source,
     apps: consolidatedApps

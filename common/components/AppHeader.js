@@ -2,7 +2,7 @@ import { formatVersionDate } from "../modules/utilities.js";
 
 const baseHost = window.location.origin; 
 const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
-function checkBeta(inputValue) {
+export function checkBeta(inputValue) {
     if (typeof inputValue === 'boolean') {
         return inputValue === true ? "beta" : undefined;
     } else if (typeof inputValue === 'string') {
