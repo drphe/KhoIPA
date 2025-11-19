@@ -448,9 +448,7 @@ input[type="text"]:focus {
 .app-header>.content .text>.title {
     font-weight: 600;
     font-size: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
     width: 100%;
 }
 
