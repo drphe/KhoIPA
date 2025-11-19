@@ -206,7 +206,7 @@ export function consolidateApps(source) {
   });
     const consolidatedApps = Array.from(uniqueAppsMap.values());
     consolidatedApps.forEach(app => {
-        if (!app.beta && calDiff(app.versionDate) <3) {
+        if (!app.beta && calDiff(app.versionDate) <7) {
 	    app.beta = app.versions.length > 1? "updated": "new";
         }
     });
@@ -225,7 +225,7 @@ function calDiff(dateString) {
     inputDate.setHours(0, 0, 0, 0);
     currentDate.setHours(0, 0, 0, 0);
     
-    const timeDifferenceMs = inputDate.getTime() - currentDate.getTime();
+    const timeDifferenceMs =  currentDate.getTime() - inputDate.getTime();
     const MS_PER_DAY = 1000 * 60 * 60 * 24;
 
     return Math.floor(timeDifferenceMs / MS_PER_DAY);
