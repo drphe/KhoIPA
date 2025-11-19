@@ -2,7 +2,14 @@ import { formatVersionDate } from "../modules/utilities.js";
 
 const baseHost = window.location.origin; 
 const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
-
+function checkBeta(inputValue) {
+    if (typeof inputValue === 'boolean') {
+        return inputValue === true ? "beta" : undefined;
+    } else if (typeof inputValue === 'string') {
+        return inputValue;
+    }
+    return undefined;
+}
 export const AppHeader = (app) => app ? `
 <div class="app-header-container">
  <a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link">
@@ -15,7 +22,7 @@ export const AppHeader = (app) => app ? `
 		</div>
                 <div class="right">
                     <div class="text">
-                        <p class="title">${app.name} ${app.beta ? `<span class="small beta badge"></span>`:``}</p>
+                        <p class="title">${app.name} ${app.beta ? `<span class="small ${checkBeta(app.beta)} badge"></span>`:``}</p>
                         <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>

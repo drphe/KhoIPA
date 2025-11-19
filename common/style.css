@@ -687,7 +687,7 @@ a>button {
     border-color: transparent;
 }
 
-.beta.badge {
+xxx.badge, new.badge, updated.badge, .beta.badge {
     margin-bottom: 2px;
     background-color: #f5a10d;
 }
@@ -695,7 +695,15 @@ a>button {
 .beta.badge::before {
     content: "Beta";
 }
-
+.xxx.badge::before {
+    content: "18+";
+}
+.new.badge::before {
+    content: "New";
+}
+.updated.badge::before {
+    content: "Updated";
+}
 .small.badge {
     font-size: 8px;
 }

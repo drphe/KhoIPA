@@ -167,7 +167,6 @@ export function consolidateApps(source) {
 
 
     if (uniqueAppsMap.has(bundleID)) {
-
       const existingApp = uniqueAppsMap.get(bundleID);
       if (appDate > existingApp.versionDate) {
         existingApp.versionDate = appDate;
@@ -205,15 +204,35 @@ export function consolidateApps(source) {
       uniqueAppsMap.set(bundleID, newApp);
     }
   });
+    const consolidatedApps = Array.from(uniqueAppsMap.values());
+    consolidatedApps.forEach(app => {
+        if (!app.beta && calDiff(app.versionDate) <7) {
+	    app.beta = app.versions.length > 1? "updated": "new";
+        }
+    });
+
+
 
   const newSource = {
     ...source,
-    apps: Array.from(uniqueAppsMap.values())
+    apps: consolidatedApps
   };
 
   return newSource;
 }
 
+function calDiff(dateString) {
+    const inputDate = new Date(dateString);
+    const currentDate = new Date();
+
+    inputDate.setHours(0, 0, 0, 0);
+    currentDate.setHours(0, 0, 0, 0);
+    
+    const timeDifferenceMs = inputDate.getTime() - currentDate.getTime();
+    const MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+    return Math.floor(timeDifferenceMs / MS_PER_DAY);
+}
 const $ = selector => selector.startsWith("#") && !selector.includes(".") && !selector.includes(" ")
     ? document.getElementById(selector.substring(1))
     : document.querySelectorAll(selector);
