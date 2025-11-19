@@ -2384,7 +2384,7 @@
       "patreon": {}
     },
     {
-      "beta": false,
+      "beta": "xxx",
       "name": "VidList",
       "type": 3,
       "bundleIdentifier": "com.vh.vhub",
