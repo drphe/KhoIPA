@@ -62,7 +62,7 @@ main(json => {
 
     // 
     // Set Featured apps
-    if (json.featuredApps) {
+    if (json.featuredApps && json.featuredApps.length) {
         json.apps
             .filter(app => json.featuredApps.includes(app.bundleIdentifier))
             .forEach(app => document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app)));
