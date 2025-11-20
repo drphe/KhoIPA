@@ -331,15 +331,14 @@ document.body.append(bottomPanel);
         versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
         if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
         // Version history
-        let isAllVersion = false;
         bottomPanel.querySelector("#version-history").addEventListener("click", (event) => {
-            //event.preventDefault();
+            bottomPanel.removeChild(this);
+            event.preventDefault();
             const versionsContainer = bottomPanel.querySelector("#versions");
-            if (app.versions && !isAllVersion) {
+            if (app.versions) {
                 app.versions.slice(1).forEach((version, i) => {
                     versionsContainer.insertAdjacentHTML("beforeend", VersionHistoryItem(jsons.name, version.version, formatVersionDate(version.date), formatString(version.localizedDescription), version.downloadURL, i + 1));
                 });
-                isAllVersion = true;
             }
             versionsContainer.querySelectorAll(".version-description").forEach(element => {
                 if (element.scrollHeight > element.clientHeight) element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
