@@ -333,7 +333,8 @@ document.body.append(bottomPanel);
         // Version history
         bottomPanel.querySelector("#version-history").addEventListener("click", (event) => {
             event.preventDefault();
-            bottomPanel.removeChild(this);
+    	    const versionHistoryButton = event.currentTarget;
+            bottomPanel.removeChild(versionHistoryButton);
             const versionsContainer = bottomPanel.querySelector("#versions");
             if (app.versions) {
                 app.versions.slice(1).forEach((version, i) => {
