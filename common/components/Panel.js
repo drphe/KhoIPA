@@ -332,7 +332,7 @@ document.body.append(bottomPanel);
         if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
         // Version history
         bottomPanel.querySelector("#version-history").addEventListener("click", (event) => {
-            event.preventDefault();
+            event.stopPropagation();
     	    const versionHistoryButton = event.currentTarget;
             versionHistoryButton.remove();
             const versionsContainer = bottomPanel.querySelector("#versions");
