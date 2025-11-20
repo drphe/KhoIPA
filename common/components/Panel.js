@@ -332,8 +332,8 @@ document.body.append(bottomPanel);
         if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
         // Version history
         bottomPanel.querySelector("#version-history").addEventListener("click", (event) => {
-            bottomPanel.removeChild(this);
             event.preventDefault();
+            bottomPanel.removeChild(this);
             const versionsContainer = bottomPanel.querySelector("#versions");
             if (app.versions) {
                 app.versions.slice(1).forEach((version, i) => {
