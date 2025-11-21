@@ -1263,9 +1263,18 @@
           "NSUserTrackingUsageDescription": "We use this to learn how you discovered our game and to share future content updates with you through personalized advertising"
         }
       },
-      "size": 100500000,
-      "version": "15.22.7231955",
+      "size": 97600000,
+      "version": "15.23.0",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.0/DauTruongChanLy.-.v15.23.0.ipa",
+          "size": 97600000,
+          "version": "15.23.0",
+          "buildVersion": "",
+          "date": "2025-11-21T06:26:00+07:00",
+          "localizedDescription": "Hỗ trợ 60Fps\nChép Game.cfg theo đường dẫn Trên IPhone=> Đấu Trường Chân Lý=> Config=> dán đè vào là đc \nFile: https://drphe.github.io/KhoIPA/upload/Game.cfg\nLƯU Ý: KHI KÝ BẮT BUỘC BẬT HỖ TRỢ TRÌNH DUYỆT TÀI LIỆU",
+          "minOSVersion": null
+        },
         {
           "version": "15.22.7231955",
           "date": "2025-11-08T10:58:00+07:00",
@@ -1276,8 +1285,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-08T10:58:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.22.7231955/DauTruongChanLy.-.v15.22.7231955.ipa",
+      "versionDate": "2025-11-21T06:26:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.0/DauTruongChanLy.-.v15.23.0.ipa",
       "patreon": {}
     },
     {
@@ -3845,12 +3854,12 @@
       "version": "2.4.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4/feather.2.4.ipa",
-          "size": 12900000,
           "version": "2.4.0",
-          "buildVersion": null,
           "date": "2025-11-18T02:22:00+07:00",
           "localizedDescription": "Feather đã ký sẵn\nCert link: https://github.com/drphe/KhoIPA/releases/download/cert.1.0/Etisalat.-.Emirates.Telecommunications.Corporation.zip\n",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4/feather.2.4.ipa",
+          "size": 12900000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
