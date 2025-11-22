@@ -21,6 +21,548 @@
   "apps": [
     {
       "beta": false,
+      "name": "AllTrails",
+      "type": 1,
+      "bundleIdentifier": "com.alltrails.AllTrails",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Injected with Pro",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/1761372732.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 111985727,
+      "version": "25.11.30",
+      "versions": [
+        {
+          "version": "25.11.30",
+          "date": "2025-11-21",
+          "localizedDescription": "Injected with Pro",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/663",
+          "size": 111985727,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "25.10.20",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Pro",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/639",
+          "size": 115005640,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/663",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Edjing Mix - Hacked",
+      "type": 1,
+      "bundleIdentifier": "com.edjing.edjingdjturntable",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features:\r\n\r\n- hacked subscription",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6920dcc760fc0.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920dcc8be3b3.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920dcc87c178.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920dcc8359f6.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920dcc7e1c3f.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920dcc7a1934.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 432596553,
+      "version": "8.16.00",
+      "versions": [
+        {
+          "version": "8.16.00",
+          "date": "2025-11-21",
+          "localizedDescription": "Features:\r\n\r\n- hacked subscription",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1961",
+          "size": 432596553,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "8.13.00",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Subscription Unlocked",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/471",
+          "size": 432212903,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1961",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "ShutEye®: Sleep Tracker, Sound - (Hacked)",
+      "type": 1,
+      "bundleIdentifier": "health.sleep.sounds.tracker.alarm.calm",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features:\r\n- hacked subscription",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6920dbafee82b.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 398171974,
+      "version": "3.2.5",
+      "versions": [
+        {
+          "version": "3.2.5",
+          "date": "2025-11-21",
+          "localizedDescription": "Features:\r\n- hacked subscription",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1960",
+          "size": 398171974,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "3.2.2",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1065",
+          "size": 388883735,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "3.2.3",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/835",
+          "size": 395563995,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "3.2.3",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/809",
+          "size": 395563995,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1960",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "UNSCRIPTED Photography Poses - Hacked",
+      "type": 1,
+      "bundleIdentifier": "com.ibit.UNPOSED",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features:\r\n\r\n- hacked subscription",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6920db41206b2.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920db42613bc.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920db422459d.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920db41dd590.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920db41a0a81.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920db41626da.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 154618629,
+      "version": "4.5.6",
+      "versions": [
+        {
+          "version": "4.5.6",
+          "date": "2025-11-21",
+          "localizedDescription": "Features:\r\n\r\n- hacked subscription",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1959",
+          "size": 154618629,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "4.5.4",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Pro",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/353",
+          "size": 135847086,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1959",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Block Blast - No ads",
+      "type": 1,
+      "bundleIdentifier": "com.blockpuzzle.us.ios",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features:\r\n\r\n- no ads in the app",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6920dabf2b997.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 110221375,
+      "version": "6.5.4",
+      "versions": [
+        {
+          "version": "6.5.4",
+          "date": "2025-11-21",
+          "localizedDescription": "Features:\r\n\r\n- no ads in the app",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1958",
+          "size": 110221375,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "6.4.5",
+          "date": "2025-10-27",
+          "localizedDescription": "Block Blast Tweak",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/329",
+          "size": 112206662,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1958",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "FaceLab (Hacked)",
+      "type": 1,
+      "bundleIdentifier": "com.lyrebirdstudio.facelab",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features: \r\n\r\n- subscription unlocked",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6920da2ebadc0.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920da30059e4.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920da2fbb26e.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920da2f7eaa9.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920da2f42ffe.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920da2f051f2.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 157252815,
+      "version": "4.44.0",
+      "versions": [
+        {
+          "version": "4.44.0",
+          "date": "2025-11-21",
+          "localizedDescription": "Features: \r\n\r\n- subscription unlocked",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1957",
+          "size": 157252815,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "4.42.0",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1227",
+          "size": 162886918,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1957",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Threads (Hack)",
+      "type": 1,
+      "bundleIdentifier": "com.burbn.barcelona",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features: Downlaod photos and videos",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901e5b489a57.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 74355038,
+      "version": "407.0.0",
+      "versions": [
+        {
+          "version": "407.0.0",
+          "date": "2025-11-21",
+          "localizedDescription": "Features: Downlaod photos and videos",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1851",
+          "size": 74355038,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "403.1.0",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/529",
+          "size": 68222370,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1851",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "TOR Browser: OrNET Onion + VPN - (Hacked)",
+      "type": 1,
+      "bundleIdentifier": "ch.b-eng.tor",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Features:\r\n\r\n- hacked subscription",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6920d93b457c8.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920d93c05c74.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920d93bbebc7.png",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6920d93b82f1e.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 107119700,
+      "version": "3.9.5",
+      "versions": [
+        {
+          "version": "3.9.5",
+          "date": "2025-11-21",
+          "localizedDescription": "Features:\r\n\r\n- hacked subscription",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1956",
+          "size": 107119700,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "3.9",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/861",
+          "size": 90499846,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1956",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "YouTube Plus",
+      "type": 1,
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_690135091203c.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350a440ce.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350a09394.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69013509c2748.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350987a29.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_690135094caba.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 128003430,
+      "version": "20.46.3",
+      "versions": [
+        {
+          "version": "20.46.3",
+          "date": "2025-11-21",
+          "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
+          "size": 128003430,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.44.2",
+          "date": "2025-11-05",
+          "localizedDescription": "A lightweight YouTube improvement tweak.\r\n\r\nby \r\n@PoomSmart\r\n@dayanch96\r\n@asdfzxcvbn",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1938",
+          "size": 119125682,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.44.2",
+          "date": "2025-11-05",
+          "localizedDescription": "Injected with YouTube reborn unknown features included",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1864",
+          "size": 131038057,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.44.2",
+          "date": "2025-11-05",
+          "localizedDescription": "Features:\r\n\r\nYTLite\r\n\r\nYTUHD\r\n\r\nYouPiP\r\n\r\nYTABConfig\r\n\r\nYouMute\r\n\r\nDontEatMyContent\r\n\r\nReturn YouTube Dislikes\r\n\r\niSponsorBlock\r\n\r\nYouRememberCaption\r\n\r\nYTNoTracking\r\n\r\nYTNoCheckLocalNetWork\r\n\r\nBigYTMiniPlayer\r\n\r\nYTSpeed\r\n\r\nYTHoldForSpeed\r\n\r\nYTVideoOverlay\r\n\r\nYouQuality\r\n\r\nYTNoModernUI\r\n\r\nOLEDDarkmode\r\n\r\nOLDDarkmode\r\n\r\nLowContrastMode",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1862",
+          "size": 127441357,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.09.3",
+          "date": "2025-10-27",
+          "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n• Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n• Copy video, comment, and post information\n• Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n• Player settings: Gestures, default quality, preferred audio track\n• Save, Load and Restore settings. Clear cache once or automatically on app startup\n• Built-in SponsorBlock\n• An",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1770",
+          "size": 112848236,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "20.42.3",
+          "date": "2025-10-25",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/545",
+          "size": 130083531,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Roblox - Delta",
+      "type": 1,
+      "bundleIdentifier": "com.roblox.robloxmobile",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Delta is a revolutionary new way to experience the world of scripting with its extensive library of features that will make your life easier.",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_6903dd43f1e0e.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 117951540,
+      "version": "2.698.937",
+      "versions": [
+        {
+          "version": "2.698.937",
+          "date": "2025-11-21",
+          "localizedDescription": "Delta is a revolutionary new way to experience the world of scripting with its extensive library of features that will make your life easier.",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
+          "size": 117951540,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "2.695.955",
+          "date": "2025-10-27",
+          "localizedDescription": "Roblox - Krnl",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/328",
+          "size": 111639123,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Clash of Clans -nulls clash",
+      "type": 1,
+      "bundleIdentifier": "com.supercell.magic",
+      "developerName": "polo",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Private server that allows you to create and build keep in mind this doesn’t actually save",
+      "versionDescription": "",
+      "tintColor": "#00adef",
+      "iconURL": "https://appstore.nabzclan.vip/images/icon_69025ca07aed7.jpg",
+      "screenshotURLs": [
+        "https://appstore.nabzclan.vip/screenshots/1761762699.webp",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca1bb902.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca181b6e.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca144c19.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca108594.jpg",
+        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca0b7dc9.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 376491467,
+      "version": "18.0.2",
+      "versions": [
+        {
+          "version": "18.0.2",
+          "date": "2025-11-21",
+          "localizedDescription": "Private server that allows you to create and build keep in mind this doesn’t actually save",
+          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1860",
+          "size": 376491467,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-21",
+      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1860",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Endel  (Cracked)",
       "type": 1,
       "bundleIdentifier": "com.endel.endel",
@@ -717,90 +1259,6 @@
     },
     {
       "beta": false,
-      "name": "YouTube Plus",
-      "type": 1,
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_690135091203c.jpg",
-      "screenshotURLs": [
-        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350a440ce.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350a09394.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69013509c2748.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_6901350987a29.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_690135094caba.jpg"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 122042960,
-      "version": "20.42.3",
-      "versions": [
-        {
-          "version": "20.42.3",
-          "date": "2025-11-17",
-          "localizedDescription": "ℹ️ Features:\r\n\r\nContent download — save videos directly to your gallery.\r\n\r\nNo ads — neither from YouTube nor from bloggers.\r\n\r\nCustomizable interface — personalize the appearance, hide unnecessary elements, and enable dark mode for OLED displays.\r\n\r\nPlayer controls — adjust playback speed, quality, and behavior. Use gestures for convenience.\r\n\r\nAdditional options — save user settings, clear cache, and flexibly customize how the app works.",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
-          "size": 122042960,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.44.2",
-          "date": "2025-11-05",
-          "localizedDescription": "A lightweight YouTube improvement tweak.\r\n\r\nby \r\n@PoomSmart\r\n@dayanch96\r\n@asdfzxcvbn",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1938",
-          "size": 119125682,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.44.2",
-          "date": "2025-11-05",
-          "localizedDescription": "Injected with YouTube reborn unknown features included",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1864",
-          "size": 131038057,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.44.2",
-          "date": "2025-11-05",
-          "localizedDescription": "Features:\r\n\r\nYTLite\r\n\r\nYTUHD\r\n\r\nYouPiP\r\n\r\nYTABConfig\r\n\r\nYouMute\r\n\r\nDontEatMyContent\r\n\r\nReturn YouTube Dislikes\r\n\r\niSponsorBlock\r\n\r\nYouRememberCaption\r\n\r\nYTNoTracking\r\n\r\nYTNoCheckLocalNetWork\r\n\r\nBigYTMiniPlayer\r\n\r\nYTSpeed\r\n\r\nYTHoldForSpeed\r\n\r\nYTVideoOverlay\r\n\r\nYouQuality\r\n\r\nYTNoModernUI\r\n\r\nOLEDDarkmode\r\n\r\nOLDDarkmode\r\n\r\nLowContrastMode",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1862",
-          "size": 127441357,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.09.3",
-          "date": "2025-10-27",
-          "localizedDescription": "Tweak preferences can be found in the YouTube Settings\n\nFeatures:\n\n• Download videos, audio (including audio track selection), thumbnails, posts, and profile pictures\n• Copy video, comment, and post information\n• Interface customization: Remove feed elements, reorder tabs, enable OLED mode, and as use Shorts-only mode\n• Player settings: Gestures, default quality, preferred audio track\n• Save, Load and Restore settings. Clear cache once or automatically on app startup\n• Built-in SponsorBlock\n• An",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1770",
-          "size": 112848236,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "20.42.3",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/545",
-          "size": 130083531,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-17",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1824",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Brawl Stars - Null's Brawl",
       "type": 1,
       "bundleIdentifier": "com.supercell.laser",
@@ -1307,48 +1765,6 @@
       ],
       "versionDate": "2025-11-05",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1863",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Roblox - Delta",
-      "type": 1,
-      "bundleIdentifier": "com.roblox.robloxmobile",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Delta is a revolutionary new way to experience the world of scripting with its extensive library of features that will make your life easier.",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_6903dd43f1e0e.jpg",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 115616665,
-      "version": "2.696.799",
-      "versions": [
-        {
-          "version": "2.696.799",
-          "date": "2025-11-03",
-          "localizedDescription": "Delta is a revolutionary new way to experience the world of scripting with its extensive library of features that will make your life easier.",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
-          "size": 115616665,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "2.695.955",
-          "date": "2025-10-27",
-          "localizedDescription": "Roblox - Krnl",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/328",
-          "size": 111639123,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-03",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1929",
       "patreon": {}
     },
     {
@@ -3798,46 +4214,6 @@
     },
     {
       "beta": false,
-      "name": "Clash of Clans -nulls clash",
-      "type": 1,
-      "bundleIdentifier": "com.supercell.magic",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Private server that allows you to create and build keep in mind this doesn’t actually save",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_69025ca07aed7.jpg",
-      "screenshotURLs": [
-        "https://appstore.nabzclan.vip/screenshots/1761762699.webp",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca1bb902.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca181b6e.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca144c19.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca108594.jpg",
-        "https://appstore.nabzclan.vip/screenshots/screenshot_69025ca0b7dc9.jpg"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 356576413,
-      "version": "17.477.13",
-      "versions": [
-        {
-          "version": "17.477.13",
-          "date": "2025-10-29",
-          "localizedDescription": "Private server that allows you to create and build keep in mind this doesn’t actually save",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1860",
-          "size": 356576413,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-29",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1860",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Crunchyroll - Hack",
       "type": 1,
       "bundleIdentifier": "com.crunchyroll.iphone",
@@ -3941,48 +4317,6 @@
       ],
       "versionDate": "2025-10-29",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1852",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Threads (Hack)",
-      "type": 1,
-      "bundleIdentifier": "com.burbn.barcelona",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Features: Downlaod photos and videos",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_6901e5b489a57.jpg",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 68333402,
-      "version": "358.0.0",
-      "versions": [
-        {
-          "version": "358.0.0",
-          "date": "2025-10-29",
-          "localizedDescription": "Features: Downlaod photos and videos",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1851",
-          "size": 68333402,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "403.1.0",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/529",
-          "size": 68222370,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-29",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1851",
       "patreon": {}
     },
     {
@@ -5013,39 +5347,6 @@
       ],
       "versionDate": "2025-10-27",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1817",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Block Blast！",
-      "type": 1,
-      "bundleIdentifier": "com.blockpuzzle.us.ios",
-      "developerName": "lscs3",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Block Blast Tweak",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/icon_68fc3fad4fad7.jpg",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 112206662,
-      "version": "6.4.5",
-      "versions": [
-        {
-          "version": "6.4.5",
-          "date": "2025-10-27",
-          "localizedDescription": "Block Blast Tweak",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/329",
-          "size": 112206662,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-27",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/329",
       "patreon": {}
     },
     {
@@ -14470,39 +14771,6 @@
     },
     {
       "beta": false,
-      "name": "FaceLab",
-      "type": 1,
-      "bundleIdentifier": "com.lyrebirdstudio.facelab",
-      "developerName": "Holloway",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with Premium",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761376674.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 162886918,
-      "version": "4.42.0",
-      "versions": [
-        {
-          "version": "4.42.0",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1227",
-          "size": 162886918,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1227",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Quizlet",
       "type": 1,
       "bundleIdentifier": "com.quizlet.quizlet",
@@ -16996,57 +17264,6 @@
     },
     {
       "beta": false,
-      "name": "ShutEye",
-      "type": 1,
-      "bundleIdentifier": "health.sleep.sounds.tracker.alarm.calm",
-      "developerName": "Holloway",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with Premium",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761375319.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 388883735,
-      "version": "3.2.2",
-      "versions": [
-        {
-          "version": "3.2.2",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1065",
-          "size": 388883735,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "3.2.3",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/835",
-          "size": 395563995,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "3.2.3",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/809",
-          "size": 395563995,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/1065",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "GlowUp",
       "type": 1,
       "bundleIdentifier": "com.snowcorp.glowup",
@@ -18942,7 +19159,7 @@
       "beta": false,
       "name": "Kanji",
       "type": 1,
-      "bundleIdentifier": "com.3gi0mw0mhd.1qg72ritxi",
+      "bundleIdentifier": "com.6kt6owz4h5.mh3jrgfgg7",
       "developerName": "Holloway",
       "subtitle": "An awesome app.",
       "localizedDescription": "Injected with Premium",
@@ -20316,39 +20533,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/865",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "OrNETBrowser",
-      "type": 1,
-      "bundleIdentifier": "ch.b-eng.tor",
-      "developerName": "Holloway",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with Premium",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761373531.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 90499846,
-      "version": "3.9",
-      "versions": [
-        {
-          "version": "3.9",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/861",
-          "size": 90499846,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/861",
       "patreon": {}
     },
     {
@@ -22377,48 +22561,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/667",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "AllTrails",
-      "type": 1,
-      "bundleIdentifier": "com.alltrails.AllTrails",
-      "developerName": "polo",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with Pro",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761372732.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 115007877,
-      "version": "25.10.20",
-      "versions": [
-        {
-          "version": "25.10.20",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Pro",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/663",
-          "size": 115007877,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "25.10.20",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Pro",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/639",
-          "size": 115005640,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/663",
       "patreon": {}
     },
     {
@@ -24868,39 +25010,6 @@
     },
     {
       "beta": false,
-      "name": "edjingMix",
-      "type": 1,
-      "bundleIdentifier": "com.edjing.edjingdjturntable",
-      "developerName": "Holloway",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with Subscription Unlocked",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761371222.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 432212903,
-      "version": "8.13.00",
-      "versions": [
-        {
-          "version": "8.13.00",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Subscription Unlocked",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/471",
-          "size": 432212903,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/471",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Splice",
       "type": 1,
       "bundleIdentifier": "com.path36.SpliceFree",
@@ -26481,39 +26590,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/355",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Unscripted",
-      "type": 1,
-      "bundleIdentifier": "com.ibit.UNPOSED",
-      "developerName": "Holloway",
-      "subtitle": "An awesome app.",
-      "localizedDescription": "Injected with Pro",
-      "versionDescription": "",
-      "tintColor": "#00adef",
-      "iconURL": "https://appstore.nabzclan.vip/images/1761370141.png",
-      "screenshotURLs": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 135847086,
-      "version": "4.5.4",
-      "versions": [
-        {
-          "version": "4.5.4",
-          "date": "2025-10-25",
-          "localizedDescription": "Injected with Pro",
-          "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/353",
-          "size": 135847086,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://appstore.nabzclan.vip/download-repo-source/353",
       "patreon": {}
     },
     {
