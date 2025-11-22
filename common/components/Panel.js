@@ -849,20 +849,30 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
     });
 }
 
+
 export function wrapLightbox(htmlString) {
   const parser = new DOMParser();
   const doc = parser.parseFromString(htmlString, 'text/html');
-  const images = doc.querySelectorAll('img');
-  images.forEach(img => {
+  doc.querySelectorAll('img').forEach(img => {
     const src = img.getAttribute('src');
+    if (!src) return; // bỏ qua nếu không có src
     const alt = img.getAttribute('alt') || '';
     const anchor = document.createElement('a');
     anchor.setAttribute('href', src);
     anchor.setAttribute('data-fslightbox', 'gallery');
-    //img.classList.add('screenshot');
     img.replaceWith(anchor);
     anchor.appendChild(img);
   });
+
+  doc.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href')?.trim();
+    if (!href || href === '#') return; // bỏ qua link rỗng hoặc #
+    if (link.getAttribute('target') !== '_blank') {
+      link.setAttribute('target', '_blank');
+    }
+  });
+
   return doc.body.innerHTML;
 }
+
 
