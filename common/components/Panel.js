@@ -142,7 +142,7 @@ document.body.append(bottomPanel);
       <div id="back-container">
         <button id="back" type="button">
           <i class="bi bi-chevron-down"></i>
-          Close
+          Done
         </button>
       </div>
       <div id="title" class="hidden">
