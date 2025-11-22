@@ -267,12 +267,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
                 return response.text();
             }).then(markdown => {
         const { tocHtml, headings } = generateTOC(markdown);
-    const renderer = new marked.Renderer();
-    renderer.link = function(href, title, text) {
-      const titleAttr = title ? ` title="${title}"` : "";
-      return `<a href="${href}"${titleAttr} target="_blank" rel="noopener noreferrer">${text}</a>`;
-    };
-        let htmlContent = marked.parse(markdown,  { renderer: renderer });
+        let htmlContent = marked.parse(markdown);
         headings.forEach(h => {
             const headingTag = `<h${h.level}>${h.text}</h${h.level}>`;
             const headingWithId = `<h${h.level} id="${h.id}">${h.text}</h${h.level}>`;
