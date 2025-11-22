@@ -152,7 +152,9 @@ body {
         margin: 0 auto;
         max-width: 767px;
     }
-
+    .no-scroll{
+	left: calc(50vw - 384px)!important;
+    }
     #suggestions, .grid_news,
     #repositories,
     #apps-list, #sources-list,
@@ -841,6 +843,7 @@ a>button {
     height: 100vh;
     position: fixed;
     width: 100%;
+    left:0px;
 }
 
 .skeleton-text {
