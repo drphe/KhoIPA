@@ -591,9 +591,9 @@ document.body.append(bottomPanel);
     }
     // show popup
    setTimeout(() => bottomPanel.classList.add("show"), 10);//show when everything ready
-    document.body.classList.add('no-scroll');
     waitForAllImagesToLoad(bottomPanel);
     refreshFsLightbox();
+    document.body.classList.add('no-scroll');
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
     closeBottom.addEventListener("click", closePanel);
