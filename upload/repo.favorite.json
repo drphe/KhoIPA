@@ -23,6 +23,55 @@
   "apps": [
     {
       "beta": false,
+      "name": "Swiftgram",
+      "type": 1,
+      "bundleIdentifier": "app.swiftgram.ios",
+      "developerName": "IOS crack VN",
+      "subtitle": " TGExtra 1.7.0 fix các lỗi bản cũ",
+      "localizedDescription": "🔩 Chức năng 🔩\n✅ Cho phép lưu nội dung được bảo vệ (ảnh, video & tệp trong các nhóm bật hạn chế lưu tài liệu)\n✅ Vô hiệu tất cả quảng cáo\n✅ Vô hiệu hóa trạng thái trực tuyến\n✅ Vô hiệu hóa trạng thái gõ tin nhắn\n✅ Vô hiệu hóa trạng thái quay video & tải lên video\n✅ Vô hiệu hoá trạng thái ghi âm\n✅ Vô hiệu hoá trạng thái tải lên tin nhắn thoại, ảnh, video & tệp\n✅ Không hiển thị đã xem tin nhắn & story\n✅ Fake vị trí\n✅ Còn nhiều tính năng khác tự trải nghiệm\n\n📝 Mở menu TGExtra bằng cách mở tab Cài đặt -> nhấn giữ “Hỏi một câu hỏi”",
+      "versionDescription": "",
+      "tintColor": "#fc7c34",
+      "iconURL": "https://i.ibb.co/pvrwsh7g/50bc4a4b3d09.png",
+      "screenshotURLs": [
+        "https://framerusercontent.com/images/vJ4xpYMdIHsL2w9nQ8531gfQXE.png?scale-down-to=1024&width=1814&height=1813",
+        "https://framerusercontent.com/images/tFSLSFcXXeE9Dcl19afHefvIJY4.png?scale-down-to=512&width=942&height=876",
+        "https://framerusercontent.com/images/X6LBYXQ5asgmHvkjGUF1lXI.png?scale-down-to=1024&width=1341&height=1422"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocationAlwaysUsageDescription": "When you send your location to your friends, Swiftgram needs access to show them a map. You also need this to send locations from an Apple Watch.",
+          "NSSiriUsageDescription": "You can use Siri to send messages.",
+          "NSCameraUsageDescription": "We need this so that you can take and share photos and videos.",
+          "NSMotionUsageDescription": "When you send your location to your friends, Swiftgram needs access to show them a map.",
+          "NSPhotoLibraryAddUsageDescription": "We need this so that you can share photos and videos from your photo library.",
+          "NSSpeechRecognitionUsageDescription": "We need this to transcribe audio messages on your request.",
+          "NSMicrophoneUsageDescription": "We need this so that you can record and share voice messages and videos with sound.",
+          "NSLocationWhenInUseUsageDescription": "When you send your location to your friends, Swiftgram needs access to show them a map.",
+          "NSFaceIDUsageDescription": "You can use Face ID to unlock the app.",
+          "NSContactsUsageDescription": "Swiftgram stores your contacts heavily encrypted in the Telegram cloud to let you connect with your friends across all your devices.",
+          "NSPhotoLibraryUsageDescription": "We need this so that you can share photos and videos from your photo library."
+        }
+      },
+      "size": 82000000,
+      "version": "12.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v12.2.0/Swiftgram-Fluffy1.7.0-patched_12.2.ipa",
+          "size": 82000000,
+          "version": "12.2",
+          "buildVersion": null,
+          "date": "2025-11-23T23:15:00+07:00",
+          "localizedDescription": "Swiftgram ver 12.2 ✨ TGExtra 1.7.0 fix các lỗi bản cũ",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-23T23:15:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v12.2.0/Swiftgram-Fluffy1.7.0-patched_12.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Alight Motion",
       "type": 1,
       "bundleIdentifier": "com.alightcreative.motion",
@@ -1267,12 +1316,12 @@
       "version": "15.23.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.0/DauTruongChanLy.-.v15.23.0.ipa",
-          "size": 97600000,
           "version": "15.23.0",
-          "buildVersion": "",
           "date": "2025-11-21T06:26:00+07:00",
           "localizedDescription": "Hỗ trợ 60Fps\nChép Game.cfg theo đường dẫn Trên IPhone=> Đấu Trường Chân Lý=> Config=> dán đè vào là đc \nFile: https://drphe.github.io/KhoIPA/upload/Game.cfg\nLƯU Ý: KHI KÝ BẮT BUỘC BẬT HỖ TRỢ TRÌNH DUYỆT TÀI LIỆU",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.0/DauTruongChanLy.-.v15.23.0.ipa",
+          "size": 97600000,
+          "buildVersion": "",
           "minOSVersion": null
         },
         {
