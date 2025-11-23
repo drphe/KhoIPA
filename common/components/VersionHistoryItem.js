@@ -22,7 +22,7 @@ export const VersionHistoryItem = (sourceName, number, date, description, url, i
         <a style="color: var(--tint-color);" class="version-download" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
             isStandalone? 'Download IPA':'Copy Link IPA',
-            () => isStandalone? window.location.href = '${url}': copyLinkIPA(url)
+            () => isStandalone? window.location.href = '${url}': copyLinkIPA('${url}')
         );">
             Download IPA
         </a>
