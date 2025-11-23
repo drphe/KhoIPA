@@ -1,6 +1,6 @@
 import { base64Convert } from "../modules/constants.js";
 import {isValidHTTPURL, open, setTintColor, showUIAlert, 
-insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate} from "../modules/utilities.js";
+insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate, copyLinkIPA} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
@@ -119,22 +119,14 @@ document.body.append(bottomPanel);
             });
         }
         installAppAlert.addAction({
-            title: "Copy Link",
+            title: "Copy Link IPA",
             style: 'default',
-            handler: () => copyText(app.downloadURL)
+            handler: () => copyLinkIPA(app.downloadURL)
         });
         installAppAlert.addAction({
             title: "Cancel",
             style: 'cancel',
         });
-        async function copyText(text) {
-            try {
-                await navigator.clipboard.writeText(text);
-                showUIAlert("✅ Success", "Đã sao chép vào clipboard! Dán link vào safari hoặc Esign => Tải xuống => URL => OK");
-            } catch (err) {
-                showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
-            }
-        }
         bottomPanel.innerHTML = `
 <div id="panel-header">
     <!-- Navigation bar -->

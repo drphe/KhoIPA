@@ -1,6 +1,9 @@
-import { showAddToAltStoreAlert } from "../modules/utilities.js";
+import { showAddToAltStoreAlert, copyLinkIPA } from "../modules/utilities.js";
 
 window.showAddToAltStoreAlert = showAddToAltStoreAlert;
+window.copyLinkIPA = copyLinkIPA;
+
+window.isStandalone = !window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true;
 
 export const VersionHistoryItem = (sourceName, number, date, description, url, i) => `
 <div class="version">
@@ -18,8 +21,8 @@ export const VersionHistoryItem = (sourceName, number, date, description, url, i
         </a>
         <a style="color: var(--tint-color);" class="version-download" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
-            'Download IPA',
-            () => window.location.href = '${url}'
+            isStandalone? 'Download IPA':'Copy Link IPA',
+            () => isStandalone? window.location.href = '${url}': copyLinkIPA(url)
         );">
             Download IPA
         </a>

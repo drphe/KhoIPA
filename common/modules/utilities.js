@@ -289,3 +289,11 @@ export function generateTOC(markdown) {
     tocHtml += '</ul>';
     return { tocHtml, headings };
 }
+export async function copyLinkIPA(text) {
+            try {
+                await navigator.clipboard.writeText(text);
+                showUIAlert("✅ Success", "Đã sao chép vào clipboard!\nDán link vào safari hoặc Esign \nTải xuống => URL => OK");
+            } catch (err) {
+                showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
+            }
+        }
