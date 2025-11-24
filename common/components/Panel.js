@@ -741,8 +741,8 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
                 for (let i = 0; i < app.screenshots.length && i < 2; i++) {
                     const screenshot = app.screenshots[i];
                     if (!screenshot) continue;
-                    if (screenshot.imageURL) html += `<img src="${screenshot.imageURL}" class="screenshot">`;
-                    else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
+                    if (screenshot.imageURL) html += `<img src="${screenshot.imageURL}" class="screenshot ${app.beta === 'xxx' ? 'blur' : ''}">`;
+                    else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot ${app.beta === 'xxx' ? 'blur' : ''}">`;
                 }
                 html += `</div>`;
             } else if (checkIphoneScreenShots(app.screenshots) && isScreenshot) {
@@ -751,13 +751,13 @@ export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, s
                     const screenshot = app.screenshots.iphone[i];
                     if (!screenshot) continue;
                     if (screenshot) html += `<img src="${screenshot}" class="screenshot">`;
-                    else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot">`;
+                    else if (isValidHTTPURL(screenshot)) html += `<img src="${screenshot}" class="screenshot ${app.beta === 'xxx' ? 'blur' : ''}">`;
                 }
                 html += `</div>`;
             } else if (app.screenshotURLs && isScreenshot) {
                 html += `<div class="screenshots">`;
                 for (let i = 0; i < app.screenshotURLs.length && i < 2; i++) {
-                    if (app.screenshotURLs[i]) html += `<img src="${app.screenshotURLs[i]}" class="screenshot">`;
+                    if (app.screenshotURLs[i]) html += `<img src="${app.screenshotURLs[i]}" class="screenshot ${app.beta === 'xxx' ? 'blur' : ''}">`;
                 }
                 html += `</div>`;
             }

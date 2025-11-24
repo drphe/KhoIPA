@@ -1574,3 +1574,4 @@ margin-left: 2rem;
 .nav-link::-moz-focus-inner {
   border-radius:3rem;
 }
+.blur{filter: blur(2px);}
