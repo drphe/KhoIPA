@@ -7,12 +7,11 @@ import { openPanel , addAppList, activateNavLink, wrapLightbox } from "./common/
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 const sources = await json("./common/assets/json/sources.json");
-const editorsources = await json("./common/assets/json/editorsources.json");
 
 (async () => {
     document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
     // fetch Data
-    const fetchedEditorSources = (await Promise.all(editorsources.map(async url => {
+    const featuredSources = (await Promise.all(sources.featured.map(async url => {
         try {
             return await fetchSource(url);
         } catch {
@@ -21,7 +20,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     }))).filter(Boolean);
 
     // Set News
-    const jsonNews = fetchedEditorSources[0].news;
+    const jsonNews = featuredSources[0].news;
     let jsonNewsUrl = [];
     if (jsonNews && jsonNews.length >= 1) {
         // Sort news in decending order of date (latest first)
@@ -56,7 +55,7 @@ const editorsources = await json("./common/assets/json/editorsources.json");
 	}
     } else document.getElementById("news").remove();
 
-    const fetchedSources = (await Promise.all(sources.map(async url => {
+    const otherSources = (await Promise.all(sources.other.map(async url => {
         try {
             return await fetchSource(url);
         } catch {
@@ -65,15 +64,15 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     }))).filter(Boolean);
 
     // Sort sources by last updated
-    fetchedSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
+    otherSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
     // insert editor's source choice
-    for (const source of fetchedEditorSources) {
+    for (const source of featuredSources) {
         await insertSource(source, "repositories");
     }
 
     const fixYear =(d)=>{let x=new Date(d),y=new Date().getFullYear();return x.getFullYear()>y+10?(x.setFullYear(y),x.toISOString().split("T")[0]):d}
 
-    const allSources = [...fetchedEditorSources, ...fetchedSources]; // chuẩn bị danh sách app
+    const allSources = [...featuredSources, ...otherSources]; // chuẩn bị danh sách app
     const allApps = [];
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
@@ -187,10 +186,10 @@ const editorsources = await json("./common/assets/json/editorsources.json");
     document.getElementById('all-source')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
-    	for (const source of fetchedEditorSources) {
+    	for (const source of featuredSources) {
         	await insertSource(source);
    	 }
-	for (const source of fetchedSources) {
+	for (const source of otherSources) {
 	     await insertSource(source);
  	}
        activateNavLink("page-source");
@@ -240,10 +239,10 @@ document.querySelectorAll(".nav-link").forEach(link=>{
     window.oldTargetPage = target
     if(target == 'page-source') {
         await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
-    	for (const source of fetchedEditorSources) {
+    	for (const source of featuredSources) {
         	await insertSource(source);
    	 }
-	for (const source of fetchedSources) {
+	for (const source of otherSources) {
 	     await insertSource(source);
  	}
     }else if(target == 'page-library') {

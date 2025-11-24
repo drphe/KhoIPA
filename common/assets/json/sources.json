@@ -1,21 +1,32 @@
-[   
-    "https://alt.getutm.app",
-    "https://quarksources.github.io/dist/quantumsource.min.json",
-    "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
-    "https://repository.apptesters.org",
-    "https://community-apps.sidestore.io/sidecommunity.json",
-    "https://driftywinds.github.io/AltStore/apps.json",
-    "https://wuxu1.github.io/wuxu-complete-plus.json",
-    "https://wuxu1.github.io/wuxu-complete.json",
-    "https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/refs/heads/main/raw-files/app-repo.json",
-    "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/apps_esign.json?moduleError=1",
-    "https://cdn.dbservices.to/repo-jsons/2c61e8984f400fbe2c28d620494b9efee8621930.json",
-    "https://cdn.dbservices.to/repo-jsons/0852d7254534240c8fa12f3ed082c44c0023ad08.json",
-    "https://cdn.dbservices.to/repo-jsons/1ae857434ef5533ecf3a5ed64c3a8a7096dc3573.json",
-	"https://repo.owo.network",
-	"https://altstore.fouadraheb.com/",
-	"https://raw.githubusercontent.com/yodaluca23/SpotC-AltStore-Repo/main/AltStore%20Repo.json",
-	"https://raw.githubusercontent.com/arichornloveralt/arichornloveralt.github.io/main/apps.json",
-	"https://apps.sidestore.io/",
-	"https://raw.githubusercontent.com/royilkom-alt/EthSign/refs/heads/main/EthSign.json"
-]
+{
+	   "featured":[
+      "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
+      "https://drphe.github.io/KhoIPA/upload/repo.buildstore.json",
+      "https://drphe.github.io/KhoIPA/upload/repo.unkeyapp.json",
+      "https://drphe.github.io/KhoIPA/upload/repo.nabzclan.json",
+      "https://drphe.github.io/KhoIPA/upload/repo.thuthuatjb.json",
+      "https://repository.apptesters.org"
+   ],
+   "other":[
+      "https://drphe.github.io/KhoIPA/upload/repo.cypwn.json",
+      "https://drphe.github.io/KhoIPA/upload/repo.cypwn_ts.json",
+      "https://alt.getutm.app",
+      "https://quarksources.github.io/dist/quantumsource.min.json",
+      "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",
+      "https://community-apps.sidestore.io/sidecommunity.json",
+      "https://driftywinds.github.io/AltStore/apps.json",
+      "https://wuxu1.github.io/wuxu-complete-plus.json",
+      "https://wuxu1.github.io/wuxu-complete.json",
+      "https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/refs/heads/main/raw-files/app-repo.json",
+      "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/apps_esign.json?moduleError=1",
+      "https://cdn.dbservices.to/repo-jsons/2c61e8984f400fbe2c28d620494b9efee8621930.json",
+      "https://cdn.dbservices.to/repo-jsons/0852d7254534240c8fa12f3ed082c44c0023ad08.json",
+      "https://cdn.dbservices.to/repo-jsons/1ae857434ef5533ecf3a5ed64c3a8a7096dc3573.json",
+      "https://repo.owo.network",
+      "https://altstore.fouadraheb.com/",
+      "https://raw.githubusercontent.com/yodaluca23/SpotC-AltStore-Repo/main/AltStore%20Repo.json",
+      "https://raw.githubusercontent.com/arichornloveralt/arichornloveralt.github.io/main/apps.json",
+      "https://apps.sidestore.io/",
+      "https://raw.githubusercontent.com/royilkom-alt/EthSign/refs/heads/main/EthSign.json"
+   ]
+}
