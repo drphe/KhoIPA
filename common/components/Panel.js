@@ -63,7 +63,8 @@ export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID =
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
-    let altSourceIcon = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
+    let altSourceIcon = dir + "/common/assets/img/generic_app.jpeg";
+	
 
 let bottomPanel = document.querySelector(`#${ID}`);
 if (bottomPanel) {
@@ -220,7 +221,7 @@ document.body.append(bottomPanel);
       <div class="source-container">
         <a href="${dir}/view/" class="source-link">
           <div class="source">
-          <img src="${altSourceIcon}" onerror="this.onerror=null; this.src='${altSourceIcon}';" alt="source-icon">
+          <img src="${altSourceIcon}" onerror="this.onerror=null; this.src='${dir}/common/assets/img/no-img.png';" alt="source-icon">
           <div class="right">
               <div class="text">
               <p class="title">Source</p>

@@ -146,7 +146,7 @@ const sources = await json("./common/assets/json/sources.json");
                         background-color: #${source.tintColor.replaceAll("#", "")};
                         margin-bottom: ${flag ? "0.75rem" : "0"};
                     ">
-                        <img src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';">
+                        <img src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
                         <div class="right">
                             <div class="text">
                                 <p class="title">${source.name}</p>
