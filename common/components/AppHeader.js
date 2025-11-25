@@ -1,7 +1,6 @@
 import { formatVersionDate } from "../modules/utilities.js";
 
-const baseHost = window.location.origin; 
-const fallbackSrc = baseHost + "/KhoIPA/common/assets/img/generic_app.jpeg";
+const fallbackSrc = "https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg";
 export function checkBeta(inputValue) {
     if (typeof inputValue === 'boolean') {
         return inputValue === true ? "beta" : undefined;

@@ -3,7 +3,7 @@ window.oldTargetPage= "page-home";
 export const urlSearchParams = new URLSearchParams(window.location.search);
 
 export const sourceURL = base64Convert(
-  decodeURIComponent(urlSearchParams.get('source')?.replaceAll("+", "%2B") ?? 'aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24='),
+  decodeURIComponent(urlSearchParams.get('source')?.replaceAll("+", "%2B") ?? 'aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGcmVwby5mYXZvcml0ZS5qc29u'),
   'decode'
 );
 document.querySelector('meta[property="og:url"]')?.setAttribute("content", window.location.origin);

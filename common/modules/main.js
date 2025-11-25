@@ -51,6 +51,10 @@ export function main(callback, fallbackURL = "../../") {
             } else installAppAlert.present();
                navigator.clipboard.writeText(sourceURL);
         });
+		
+		if (!json.sourceURL) {
+			json.sourceURL = sourceURL;
+		}
         setApps(json.apps);
         callback(json);
         // loaded();
