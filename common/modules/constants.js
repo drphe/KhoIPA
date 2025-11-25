@@ -6,6 +6,7 @@ export const sourceURL = base64Convert(
   decodeURIComponent(urlSearchParams.get('source')?.replaceAll("+", "%2B") ?? 'aHR0cHMlM0ElMkYlMkZkcnBoZS5naXRodWIuaW8lMkZLaG9JUEElMkZ1cGxvYWQlMkZyZXBvLmZhdm9yaXRlLmpzb24='),
   'decode'
 );
+document.querySelector('meta[property="og:url"]')?.setAttribute("content", window.location.origin);
 
 export const bundleID = urlSearchParams.get('bundleID') ?? '';
 export const noteURL = urlSearchParams.get('note') ?? '';
