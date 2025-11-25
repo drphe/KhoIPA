@@ -2,7 +2,9 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/drphe/KhoIPA?style=social)
 ![Views](https://komarev.com/ghpvc/?username=drphe&label=Views&color=blue&style=flat)
 **KhoIPA Mod** là dự án miễn phí cung cấp các phiên bản IPA đã mod cho anh em sử dụng qua các công cụ như **Esign**, **Feather**, và **sideloading**.
-![Star History](https://api.star-history.com/svg?repos=<username>/<repo>&type=Date)
+
+
+![Star History](https://api.star-history.com/svg?repos=drphe/KhoIPA&type=Date)
 
 ## 📚 Thư viện *.Dylib
 👉 [Xem chi tiết](view/note/Khodylib.md)
