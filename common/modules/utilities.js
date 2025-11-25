@@ -251,17 +251,28 @@ export async function prefetchAndCacheUrls(urlList) {
 
 export async function openCachedUrl(url) {
     if (!('caches' in window)) return fetch(url);
+
     const cache = await caches.open(CACHE_NAME);
     const cachedResponse = await cache.match(url);
-    fetch(url, { cache: "reload" })
-        .then(async (networkResponse) => {
-            if (networkResponse.ok) {
-                await cache.put(url, networkResponse.clone());
-            }
-        })
-        .catch(() => {});
-    return cachedResponse || fetch(url, { cache: "reload" });
+
+    if (cachedResponse) {
+        fetch(url, { cache: "reload" })
+            .then(async (networkResponse) => {
+                if (networkResponse.ok) {
+                    await cache.put(url, networkResponse.clone());
+                }
+            })
+            .catch(() => {});
+        return cachedResponse;
+    } else {
+        const networkResponse = await fetch(url, { cache: "reload" });
+        if (networkResponse.ok) {
+            await cache.put(url, networkResponse.clone());
+        }
+        return networkResponse;
+    }
 }
+
 export function generateTOC(markdown) {
     const headings = [];
     const headingRegex = /^(#{1,6})\s+(.*)$/gm;
@@ -290,10 +301,10 @@ export function generateTOC(markdown) {
     return { tocHtml, headings };
 }
 export async function copyLinkIPA(text) {
-            try {
-                await navigator.clipboard.writeText(text);
-                showUIAlert("✅ Success", "Đã sao chép vào clipboard!\nDán link vào safari hoặc Esign \nTải xuống => URL => OK");
-            } catch (err) {
-                showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
-            }
-        }
+    try {
+        await navigator.clipboard.writeText(text);
+        showUIAlert("✅ Success", "Đã sao chép vào clipboard!\nDán link vào safari hoặc Esign \nTải xuống => URL => OK");
+    } catch (err) {
+        showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
+    }
+}
