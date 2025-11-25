@@ -1,15 +1,15 @@
 {
 	   "featured":[
-      "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
+      "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.favorite.json",
 	  "https://repository.apptesters.org",
-      "https://drphe.github.io/KhoIPA/upload/repo.buildstore.json",
-	  "https://drphe.github.io/KhoIPA/upload/repo.nabzclan.json",
-	  "https://drphe.github.io/KhoIPA/upload/repo.thuthuatjb.json",
-      "https://drphe.github.io/KhoIPA/upload/repo.unkeyapp.json"     
+      "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.buildstore.json",
+	  "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.nabzclan.json",
+	  "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.thuthuatjb.json",
+      "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.unkeyapp.json"     
    ],
    "other":[
-      "https://drphe.github.io/KhoIPA/upload/repo.cypwn.json",
-      "https://drphe.github.io/KhoIPA/upload/repo.cypwn_ts.json",
+      "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.cypwn.json",
+      "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.cypwn_ts.json",
       "https://alt.getutm.app",
       "https://quarksources.github.io/dist/quantumsource.min.json",
       "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",

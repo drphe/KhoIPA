@@ -1,7 +1,7 @@
 {
   "name": "Nabzclan - App Store",
   "identifier": "com.nabzclan.repo.altstore",
-  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.nabzclan.json",
+  "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.nabzclan.json",
   "sourceImage": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
   "iconURL": "https://cdn.nabzclan.vip/popupv3/imgs/logo-tras.png",
   "subtitle": "Welcome to the Nabzclan - Your Premium App Store Repository",
@@ -19159,7 +19159,7 @@
       "beta": false,
       "name": "Kanji",
       "type": 1,
-      "bundleIdentifier": "com.6kt6owz4h5.mh3jrgfgg7",
+      "bundleIdentifier": "com.pc6f8g7bsq.jqnhv28gp5",
       "developerName": "Holloway",
       "subtitle": "An awesome app.",
       "localizedDescription": "Injected with Premium",
