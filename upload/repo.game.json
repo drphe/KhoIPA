@@ -9,7 +9,7 @@
   "apps": [
     {
       "name": "Summonerts War: Rush",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.com2us.legion.ios.apple.global.normal",
       "bundleIdentifier": "com.com2us.legion.ios.apple.global.normal",
       "version": "1.4.25628",
@@ -20,12 +20,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/31.05.2025/Summoners.War.Rush_1.4.25628_1748689783.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.com2us.legion.ios.apple.global.normal.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.com2us.legion.ios.apple.global.normal.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/24/cc/8a/24cc8a31-3890-6691-584f-1b3872add1ec/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/24/cc/8a/24cc8a31-3890-6691-584f-1b3872add1ec/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Mini Football — Soccer Game",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.miniclip.minifootball",
       "bundleIdentifier": "com.miniclip.minifootball",
       "version": "3.12.0",
@@ -36,12 +36,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/31.05.2025/Mini.Football_3.12.0_1748690868.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.miniclip.minifootball.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.miniclip.minifootball.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0f/d8/06/0fd80601-34c8-7038-ed56-357babc0a94d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0f/d8/06/0fd80601-34c8-7038-ed56-357babc0a94d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Tap Titans 2 - Hero Legends",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.gamehivecorp.taptitans2",
       "bundleIdentifier": "com.gamehivecorp.taptitans2",
       "version": "7.11.1",
@@ -52,12 +52,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Tap.Titans.2_7.11.1_1751069747.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.gamehivecorp.taptitans2.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.gamehivecorp.taptitans2.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c2/3d/bf/c23dbf6f-3d9c-92db-2365-6806911c2576/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c2/3d/bf/c23dbf6f-3d9c-92db-2365-6806911c2576/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Last Cloudia - Pixel Art RPG",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.aidis.lastcloudiaen",
       "bundleIdentifier": "com.aidis.lastcloudiaen",
       "version": "6.1.1",
@@ -68,12 +68,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/31.05.2025/Last.Cloudia_6.1.1_1748691658.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.aidis.lastcloudiaen.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.aidis.lastcloudiaen.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/76/77/5f7677cb-4b64-3c48-52ba-151f6b07b3b5/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/76/77/5f7677cb-4b64-3c48-52ba-151f6b07b3b5/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Madfut 25",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.madfut.madfut25",
       "bundleIdentifier": "com.madfut.madfut25",
       "version": "1.1.3",
@@ -84,12 +84,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/31.05.2025/MADFUT_1.1.3_1748690720.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.madfut.madfut25.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.madfut.madfut25.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d1/21/88/d1218886-8823-a2f6-5efa-bff2f4b75aed/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d1/21/88/d1218886-8823-a2f6-5efa-bff2f4b75aed/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Archers Online - PvP",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.byril.stickmanarcher",
       "bundleIdentifier": "com.byril.stickmanarcher",
       "version": "25.0527.1607",
@@ -100,12 +100,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/31.05.2025/Stickman.Archer_25.0527.1607_1748690933.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.byril.stickmanarcher.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.byril.stickmanarcher.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/3a/90/363a90a9-d3c5-e99b-ff4c-802841339c81/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/3a/90/363a90a9-d3c5-e99b-ff4c-802841339c81/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Jurassic World™ - The Game",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ludia.jurassicworld",
       "bundleIdentifier": "com.ludia.jurassicworld",
       "version": "1.83.4",
@@ -116,12 +116,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Jurassic.World_1.83.4_1750258403.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ludia.jurassicworld.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ludia.jurassicworld.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/da/94/98da94e0-2dd8-0525-0316-d96525d5c3f8/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/da/94/98da94e0-2dd8-0525-0316-d96525d5c3f8/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Capybara Go!",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.habby.capybara",
       "bundleIdentifier": "com.habby.capybara",
       "version": "1.6.0",
@@ -132,12 +132,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Capybara_1.6.0_1750589891.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.habby.capybara.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.habby.capybara.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/d2/1c/01d21c35-eb00-880e-7718-8eb280ae7017/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/d2/1c/01d21c35-eb00-880e-7718-8eb280ae7017/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Survivor!.io",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.dxx.firenow",
       "bundleIdentifier": "com.dxx.firenow",
       "version": "3.9.4",
@@ -148,12 +148,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/31.05.2025/Survivor.io_3.9.4_1748690340.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.dxx.firenow.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.dxx.firenow.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/dd/54/4add54f7-4dd1-ca7a-af25-33d160004048/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/dd/54/4add54f7-4dd1-ca7a-af25-33d160004048/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Rivengard",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.snowprintstudios.rivengard",
       "bundleIdentifier": "com.snowprintstudios.rivengard",
       "version": "1.33.3",
@@ -164,12 +164,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/31.05.2025/Rivengard_1.33.3_1748691116.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.snowprintstudios.rivengard.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.snowprintstudios.rivengard.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/f8/42/1bf8424e-9f0b-fb75-4ea6-57ccd9895db0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/f8/42/1bf8424e-9f0b-fb75-4ea6-57ccd9895db0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/350x350.jpg"
     },
     {
       "name": "Dragon Ball Legends",
-      "type": 1,
+      "type": 2,
       "bundleID": "jp.co.bandainamcoent.BNEI0334",
       "bundleIdentifier": "jp.co.bandainamcoent.BNEI0334",
       "version": "6.3.0",
@@ -180,12 +180,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/DB.LEGENDS_6.3.0_1750258206.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/jp.co.bandainamcoent.BNEI0334.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/jp.co.bandainamcoent.BNEI0334.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/19/c6/5019c66f-cc66-b450-ca20-c395db4f34b7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/19/c6/5019c66f-cc66-b450-ca20-c395db4f34b7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Basketball Stars™ - Multiplayer",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.miniclip.basketballstars",
       "bundleIdentifier": "com.miniclip.basketballstars",
       "version": "2.1.2",
@@ -196,12 +196,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Basketball_2.1.2_1750590073.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.miniclip.basketballstars.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.miniclip.basketballstars.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/d9/b2/96d9b223-a1f3-8dec-25a0-53a6d324a2f4/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/d9/b2/96d9b223-a1f3-8dec-25a0-53a6d324a2f4/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Grim Soul - Survival Magic RPG",
-      "type": 1,
+      "type": 2,
       "bundleID": "fantasy.survival.game.rpg",
       "bundleIdentifier": "fantasy.survival.game.rpg",
       "version": "7.3.3",
@@ -212,12 +212,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Grim.Soul_7.3.3_1751297998.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/fantasy.survival.game.rpg.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/fantasy.survival.game.rpg.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c1/7c/36/c17c3628-3d92-7ad5-8a79-394a2b15ea97/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c1/7c/36/c17c3628-3d92-7ad5-8a79-394a2b15ea97/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Last Day on Earth - Survival",
-      "type": 1,
+      "type": 2,
       "bundleID": "zombie.survival.craft.z",
       "bundleIdentifier": "zombie.survival.craft.z",
       "version": "1.37.2",
@@ -228,12 +228,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Last.Day.On.Earth_.Survival_1.37.2_1751297734.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/zombie.survival.craft.z.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/zombie.survival.craft.z.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/51/c6/9e/51c69eae-3dbb-660c-d54f-5e323a28ad14/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/51/c6/9e/51c69eae-3dbb-660c-d54f-5e323a28ad14/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Angry Birds Friends",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.rovio.angrybirdsfriends",
       "bundleIdentifier": "com.rovio.angrybirdsfriends",
       "version": "13.3.0",
@@ -244,12 +244,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/AB.Friends_13.3.0_1750259227.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.rovio.angrybirdsfriends.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.rovio.angrybirdsfriends.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/f1/ac/25f1ac16-c8fa-6988-9251-a0e852f4eb06/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/f1/ac/25f1ac16-c8fa-6988-9251-a0e852f4eb06/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Case Battle - Skins Simulator",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.shadowdev.case",
       "bundleIdentifier": "com.shadowdev.case",
       "version": "7.7",
@@ -260,12 +260,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Case.Battle_7.7_1750258827.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.shadowdev.case.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.shadowdev.case.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/99/87/9a998723-7346-a6a1-131e-914b3b8695b1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/99/87/9a998723-7346-a6a1-131e-914b3b8695b1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Critical Strike CS - Online FPS",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.vertigo.criticalforce",
       "bundleIdentifier": "com.vertigo.criticalforce",
       "version": "13.903",
@@ -276,12 +276,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Critical.Strike_13.903_1750256857.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.vertigo.criticalforce.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.vertigo.criticalforce.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/de/c8/75/dec875a9-29ca-4671-d194-1895e5253259/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/de/c8/75/dec875a9-29ca-4671-d194-1895e5253259/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "DC Worlds Collide",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.wb.dc.dcwc",
       "bundleIdentifier": "com.wb.dc.dcwc",
       "version": "1.1.10",
@@ -292,12 +292,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/DC.Worlds.Collide_1.1.10_1750257509.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.wb.dc.dcwc.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.wb.dc.dcwc.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9b/5e/0d/9b5e0d8d-6869-5751-ee24-e5e28c5a1f06/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9b/5e/0d/9b5e0d8d-6869-5751-ee24-e5e28c5a1f06/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Demon Hunter Idle",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.mobirix.mbpdh",
       "bundleIdentifier": "com.mobirix.mbpdh",
       "version": "1.11.0",
@@ -308,12 +308,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Demon.Hunter.Idle_1.11.0_1750259095.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.mobirix.mbpdh.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.mobirix.mbpdh.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/84/42/12/844212f7-d2ec-376d-6546-c0708da4e194/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/84/42/12/844212f7-d2ec-376d-6546-c0708da4e194/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "DomiNations",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.nexonm.dominations",
       "bundleIdentifier": "com.nexonm.dominations",
       "version": "12.1480.1482",
@@ -324,12 +324,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/20.06.2025/DomiNations_12.1480.1482_1750437939.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.nexonm.dominations.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.nexonm.dominations.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1e/ec/0f/1eec0f62-eab5-26ab-686f-ff338312e645/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1e/ec/0f/1eec0f62-eab5-26ab-686f-ff338312e645/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Evertale",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.zigzagame.evertale",
       "bundleIdentifier": "com.zigzagame.evertale",
       "version": "2.0.100",
@@ -340,12 +340,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Evertale_2.0.100_1750259507.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.zigzagame.evertale.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.zigzagame.evertale.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/72/55/ba7255dc-afc0-57ad-4fb9-e51296d5c27d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/72/55/ba7255dc-afc0-57ad-4fb9-e51296d5c27d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "EA SPORTS FC™ Mobile Soccer",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ea.ios.fifamobile",
       "bundleIdentifier": "com.ea.ios.fifamobile",
       "version": "25.0.02",
@@ -356,12 +356,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/FC.Mobile_25.0.02_1750258896.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ea.ios.fifamobile.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ea.ios.fifamobile.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3d/aa/cd/3daacd7c-5b9f-0bed-765a-a75642163d49/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3d/aa/cd/3daacd7c-5b9f-0bed-765a-a75642163d49/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Harry Potter - Hogwarts Mystery",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.tinyco.potter",
       "bundleIdentifier": "com.tinyco.potter",
       "version": "6.5.2",
@@ -372,12 +372,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Harry.Potter_6.5.2_1750259157.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.tinyco.potter.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.tinyco.potter.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/cb/78/05cb7813-74d2-282c-2038-ff3f6f275118/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/05/cb/78/05cb7813-74d2-282c-2038-ff3f6f275118/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Modern Ops - Online Shooter FPS",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.edkongames.mobs",
       "bundleIdentifier": "com.edkongames.mobs",
       "version": "9.53",
@@ -388,12 +388,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Modern.Ops_9.53_1750256998.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.edkongames.mobs.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.edkongames.mobs.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/78/ca/a9/78caa92b-52cd-eb41-bbd4-ad4d1e73609b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/78/ca/a9/78caa92b-52cd-eb41-bbd4-ad4d1e73609b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Racing Kingdom",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.supergears.racingkingdom",
       "bundleIdentifier": "com.supergears.racingkingdom",
       "version": "1.0.5",
@@ -404,12 +404,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Racing.Kingdom_1.0.5_1750257221.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.supergears.racingkingdom.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.supergears.racingkingdom.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/85/01/1c8501dd-4cdd-cc16-7463-d343a62585ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/85/01/1c8501dd-4cdd-cc16-7463-d343a62585ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Real Racing 3 - Car Race Game",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ea.realracing3.inc",
       "bundleIdentifier": "com.ea.realracing3.inc",
       "version": "13.4.5",
@@ -420,12 +420,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Real.Racing.3_13.4.5_1750982925.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ea.realracing3.inc.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ea.realracing3.inc.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/55/3c/60/553c60c7-2b07-16bc-07a4-290b71b0d3b0/MobileAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/55/3c/60/553c60c7-2b07-16bc-07a4-290b71b0d3b0/MobileAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Royal Kingdom",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.dreamgames.royalkingdom",
       "bundleIdentifier": "com.dreamgames.royalkingdom",
       "version": "19315",
@@ -436,12 +436,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Royal.Kingdom_19315_1750259011.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.dreamgames.royalkingdom.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.dreamgames.royalkingdom.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b4/49/7e/b4497ede-65ab-d7cb-ba71-1c8c3eb1ae0d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b4/49/7e/b4497ede-65ab-d7cb-ba71-1c8c3eb1ae0d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Seven Hearts",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.brokksindri.sevenhearts.ios.kr",
       "bundleIdentifier": "com.brokksindri.sevenhearts.ios.kr",
       "version": "1.3.352",
@@ -452,12 +452,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Seven.Hearts_1.3.352_1750258606.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.brokksindri.sevenhearts.ios.kr.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.brokksindri.sevenhearts.ios.kr.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/e7/2b/47e72b48-0d3f-7d78-fa5e-862e8077b71e/g_AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/e7/2b/47e72b48-0d3f-7d78-fa5e-862e8077b71e/g_AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/350x350.jpg"
     },
     {
       "name": "The Seven Deadly Sins - Idle",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.netmarble.nanarise",
       "bundleIdentifier": "com.netmarble.nanarise",
       "version": "1.16.0",
@@ -468,12 +468,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/The.Seven.Deadly.Sins_.Idle.Adventure_1.16.0_1751297929.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.netmarble.nanarise.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.netmarble.nanarise.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/88/88/b8888896-9740-cec4-1146-2a92b75b365d/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/88/88/b8888896-9740-cec4-1146-2a92b75b365d/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Travel Town - Merge Adventure",
-      "type": 1,
+      "type": 2,
       "bundleID": "io.randomco.travel",
       "bundleIdentifier": "io.randomco.travel",
       "version": "2.12.1110",
@@ -484,12 +484,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Travel.Town_2.12.1110_1750983013.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/io.randomco.travel.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/io.randomco.travel.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e3/64/e0/e364e0f4-da5f-d077-002a-8639b8598346/NewAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e3/64/e0/e364e0f4-da5f-d077-002a-8639b8598346/NewAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Volleyball Arena - Spike Hard",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.miniclip.minivolley",
       "bundleIdentifier": "com.miniclip.minivolley",
       "version": "15.1.0",
@@ -500,12 +500,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/Volleyball.Arena_15.1.0_1750259435.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.miniclip.minivolley.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.miniclip.minivolley.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/b4/da/abb4daa6-3daf-749e-dbeb-d8941babd3af/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/b4/da/abb4daa6-3daf-749e-dbeb-d8941babd3af/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "World War 2 - Army FPS Shooter",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.edkongames.ww2",
       "bundleIdentifier": "com.edkongames.ww2",
       "version": "4.75",
@@ -516,12 +516,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/18.06.2025/World.War.2_4.75_1750257817.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.edkongames.ww2.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.edkongames.ww2.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ef/70/75/ef707594-8398-df08-83e6-3d68f6f5ca59/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ef/70/75/ef707594-8398-df08-83e6-3d68f6f5ca59/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "The Seven Deadly Sins",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.netmarble.nanagb",
       "bundleIdentifier": "com.netmarble.nanagb",
       "version": "2.79.1",
@@ -532,12 +532,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/20.06.2025/7DS_2.79.1_1750437457.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.netmarble.nanagb.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.netmarble.nanagb.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/37/56/4737569e-f236-0e27-fe38-74071c9336fd/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/37/56/4737569e-f236-0e27-fe38-74071c9336fd/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "After Inc.",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ndemiccreations.survivors",
       "bundleIdentifier": "com.ndemiccreations.survivors",
       "version": "1.4.1",
@@ -548,12 +548,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/20.06.2025/After.Inc._1.4.1_1750437771.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ndemiccreations.survivors.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ndemiccreations.survivors.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/39/c1/cd39c126-a41b-4116-6695-fa6b4e9e2ca3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/39/c1/cd39c126-a41b-4116-6695-fa6b4e9e2ca3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Dawn of Ages — Total War Battle",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.stratospheregames.dawnofages",
       "bundleIdentifier": "com.stratospheregames.dawnofages",
       "version": "2.0.6",
@@ -564,12 +564,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Dawn.of.Ages_2.0.6_1751297663.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.stratospheregames.dawnofages.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.stratospheregames.dawnofages.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/44/30/004430d3-02d9-14c4-36bc-c636323c8511/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/44/30/004430d3-02d9-14c4-36bc-c636323c8511/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Dice Dreams™",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.superplaystudios.dicedreams",
       "bundleIdentifier": "com.superplaystudios.dicedreams",
       "version": "1.92.2",
@@ -580,12 +580,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/20.06.2025/Dice.Dreams_1.92.2_1750437815.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.superplaystudios.dicedreams.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.superplaystudios.dicedreams.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/95/0e/d9950e13-5a82-12ad-258d-286f5dbea2bc/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/95/0e/d9950e13-5a82-12ad-258d-286f5dbea2bc/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Dragon City - Battle Adventure!",
-      "type": 1,
+      "type": 2,
       "bundleID": "es.socialpoint.dragoncity",
       "bundleIdentifier": "es.socialpoint.dragoncity",
       "version": "25.7.3",
@@ -596,12 +596,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/20.06.2025/DragonCity_25.7.3_1750437882.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/es.socialpoint.dragoncity.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/es.socialpoint.dragoncity.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bc/2b/c2/bc2bc294-0ece-b43a-9878-71fa07812d65/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bc/2b/c2/bc2bc294-0ece-b43a-9878-71fa07812d65/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Mobile Legends — Bang Bang",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.mobile.legends",
       "bundleIdentifier": "com.mobile.legends",
       "version": "1.9.94.1090.4",
@@ -612,12 +612,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Mobile.Legends_.Bang.Bang_1.9.91_1751378693.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.mobile.legends.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.mobile.legends.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/fa/8d/c8fa8d5f-75f3-c055-8d17-12114a5642f7/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/fa/8d/c8fa8d5f-75f3-c055-8d17-12114a5642f7/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Rebel Inc.",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ndemiccreations.peaceinc",
       "bundleIdentifier": "com.ndemiccreations.peaceinc",
       "version": "1.16.1",
@@ -628,12 +628,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/20.06.2025/Rebel.Inc._1.16.1_1750437677.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ndemiccreations.peaceinc.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ndemiccreations.peaceinc.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/0a/6c/d7/0a6cd718-9c73-0d42-201c-322904435830/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/0a/6c/d7/0a6cd718-9c73-0d42-201c-322904435830/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/350x350.jpg"
     },
     {
       "name": "Dragons - Rise of Berk",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ludia.dragons",
       "bundleIdentifier": "com.ludia.dragons",
       "version": "1.97.11",
@@ -644,12 +644,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/20.06.2025/Rise.of.Berk_1.97.11_1750437497.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ludia.dragons.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ludia.dragons.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/a7/4d/bea74df7-a46d-7c64-ea61-092bdb2f76c1/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/a7/4d/bea74df7-a46d-7c64-ea61-092bdb2f76c1/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Stick War - Saga",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.maxgames.stickwar3",
       "bundleIdentifier": "com.maxgames.stickwar3",
       "version": "2025.4.1624",
@@ -660,12 +660,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/20.06.2025/Stick.War.Saga_2025.4.1625_1750437291.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.maxgames.stickwar3.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.maxgames.stickwar3.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/06/94/08/069408c1-7568-e1f2-0241-05c15c98ea5b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/06/94/08/069408c1-7568-e1f2-0241-05c15c98ea5b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Among Us!",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.innersloth.amongus",
       "bundleIdentifier": "com.innersloth.amongus",
       "version": "2025.5.10",
@@ -676,12 +676,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Among.Us_2025.6.10_1750620680.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.innersloth.amongus.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.innersloth.amongus.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/e1/bd/d3e1bd9c-d2f9-90e6-4b28-24869b838911/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/e1/bd/d3e1bd9c-d2f9-90e6-4b28-24869b838911/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Archero",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.habby.archero",
       "bundleIdentifier": "com.habby.archero",
       "version": "6.14.0",
@@ -692,12 +692,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Archero_6.14.0_1750620786.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.habby.archero.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.habby.archero.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b5/70/ea/b570eabb-d9d3-0cfc-eceb-90f6bd412b6d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b5/70/ea/b570eabb-d9d3-0cfc-eceb-90f6bd412b6d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Arena of Valor",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ngame.allstar.eu",
       "bundleIdentifier": "com.ngame.allstar.eu",
       "version": "1.58.11380124",
@@ -708,12 +708,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Arena.of.Valor_1.58.11380124_1750589498.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ngame.allstar.eu.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ngame.allstar.eu.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/df/5c/cddf5c4d-faaf-ca4d-4403-ecfe5b7a5620/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/df/5c/cddf5c4d-faaf-ca4d-4403-ecfe5b7a5620/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Galaxiga — Classic 80s Arcad",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.os.space.force.galaxy.alien",
       "bundleIdentifier": "com.os.space.force.galaxy.alien",
       "version": "10.88",
@@ -724,12 +724,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Galaxiga_25.42_1750589382.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.os.space.force.galaxy.alien.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.os.space.force.galaxy.alien.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/3c/b0/1b3cb0d4-5450-f0dc-e6ea-fb71a8e23187/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/3c/b0/1b3cb0d4-5450-f0dc-e6ea-fb71a8e23187/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Gardenscapes",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.playrix.gardenscapes-m3-ios",
       "bundleIdentifier": "com.playrix.gardenscapes-m3-ios",
       "version": "8.8.5",
@@ -740,12 +740,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Gardenscapes_8.8.5_1750589153.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.playrix.gardenscapes-m3-ios.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.playrix.gardenscapes-m3-ios.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bd/c9/b6/bdc9b62b-e0aa-0356-ad7a-edb582c550c2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bd/c9/b6/bdc9b62b-e0aa-0356-ad7a-edb582c550c2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Hello Neighbor",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.tinybuildgames.helloneighbor",
       "bundleIdentifier": "com.tinybuildgames.helloneighbor",
       "version": "2.3.12",
@@ -756,12 +756,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Hello.Neighbor_2.3.12_1750620531.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.tinybuildgames.helloneighbor.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.tinybuildgames.helloneighbor.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/53/ce/b6/53ceb6fc-e33c-842b-7b35-2e6cc669fafe/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/53/ce/b6/53ceb6fc-e33c-842b-7b35-2e6cc669fafe/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Heroes vs. Hordes — Survivor",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.swiftgames.roguelikesurvival",
       "bundleIdentifier": "com.swiftgames.roguelikesurvival",
       "version": "5.0.2",
@@ -772,12 +772,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Heroes.v.Hordes_5.0.2_1750803614.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.swiftgames.roguelikesurvival.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.swiftgames.roguelikesurvival.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/23/c3/ab23c338-434a-401e-e7b0-1c7281c8f9de/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/23/c3/ab23c338-434a-401e-e7b0-1c7281c8f9de/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Left to Survive - Zombie Games",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.glu.zbs",
       "bundleIdentifier": "com.glu.zbs",
       "version": "7.5.4",
@@ -788,12 +788,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Left.to.Survive_7.5.4_1750588547.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.glu.zbs.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.glu.zbs.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/b3/99/b6b3991f-b943-c7ff-fdc7-3fe20f25b2a5/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/b3/99/b6b3991f-b943-c7ff-fdc7-3fe20f25b2a5/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Mr Autofire",
-      "type": 1,
+      "type": 2,
       "bundleID": "games.lightheart.mrautofire",
       "bundleIdentifier": "games.lightheart.mrautofire",
       "version": "4.0.1",
@@ -804,12 +804,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Mr.Autofire_4.0.1_1750589656.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/games.lightheart.mrautofire.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/games.lightheart.mrautofire.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/a8/2e/51a82ecd-3233-b9a2-b093-e1c0e9683c35/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/a8/2e/51a82ecd-3233-b9a2-b093-e1c0e9683c35/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Okara Escape - Merge & Story",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.escapemerge.cygame",
       "bundleIdentifier": "com.escapemerge.cygame",
       "version": "2.5.3",
@@ -820,12 +820,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Okara.Escape_2.5.3_1750589267.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.escapemerge.cygame.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.escapemerge.cygame.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/6c/c5/9a6cc569-4728-0540-ede0-f47e8d7e9d43/AppIcon-1x_U007epad-0-11-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/6c/c5/9a6cc569-4728-0540-ede0-f47e8d7e9d43/AppIcon-1x_U007epad-0-11-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Plant Power - Fruit Showdown!",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.CHEUNG.plant",
       "bundleIdentifier": "com.CHEUNG.plant",
       "version": "7.7.2",
@@ -836,12 +836,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Plant.Power_7.7.2_1750589718.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.CHEUNG.plant.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.CHEUNG.plant.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/ee/da/aeeeda96-869d-e475-fe46-533c3f9c6c97/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/ee/da/aeeeda96-869d-e475-fe46-533c3f9c6c97/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Pocket Necro",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.quicksand.pocketnecromancer",
       "bundleIdentifier": "com.quicksand.pocketnecromancer",
       "version": "1.5.3",
@@ -852,12 +852,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Pocket.Necro_1.5.3_1750589595.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.quicksand.pocketnecromancer.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.quicksand.pocketnecromancer.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0e/87/c9/0e87c90c-ce5f-1669-a3cb-94f848f37254/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0e/87/c9/0e87c90c-ce5f-1669-a3cb-94f848f37254/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Poker Hero — Joker Legend",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.gemini.dash.deck",
       "bundleIdentifier": "com.gemini.dash.deck",
       "version": "1.8.5",
@@ -868,12 +868,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Poker.Hero_1.8.5_1750589992.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.gemini.dash.deck.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.gemini.dash.deck.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/a3/1b/78a31b6b-6389-7e6c-48cc-16f3b4de292c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/a3/1b/78a31b6b-6389-7e6c-48cc-16f3b4de292c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Project Makeover",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.bgg.jump",
       "bundleIdentifier": "com.bgg.jump",
       "version": "2.116.1",
@@ -884,12 +884,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Project.Makeover_2.116.1_1750589031.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.bgg.jump.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.bgg.jump.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b0/dc/4d/b0dc4d98-ef44-b047-73ec-795fc68a295b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b0/dc/4d/b0dc4d98-ef44-b047-73ec-795fc68a295b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Squad Alpha — Action Shooting",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.game.missioncrit",
       "bundleIdentifier": "com.game.missioncrit",
       "version": "1.7.27",
@@ -900,12 +900,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Squad.Alpha_1.7.27_1750588446.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.game.missioncrit.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.game.missioncrit.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/9f/ea/5a9feac5-caf6-fab8-0626-d2fbfe0469c7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/9f/ea/5a9feac5-caf6-fab8-0626-d2fbfe0469c7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Westland Survival — Cowboy RPG",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.heliogames.a1",
       "bundleIdentifier": "com.heliogames.a1",
       "version": "9.4.0",
@@ -916,12 +916,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/22.06.2025/Westland.Survival_9.4.0_1750588910.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.heliogames.a1.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.heliogames.a1.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/02/25/ae02253e-129a-283f-37ae-134504a7298f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/02/25/ae02253e-129a-283f-37ae-134504a7298f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Bloons TD 6",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ninjakiwi.bloonstd6",
       "bundleIdentifier": "com.ninjakiwi.bloonstd6",
       "version": "6.49.0",
@@ -932,12 +932,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Bloons.TD.6_49.0_1750804212.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ninjakiwi.bloonstd6.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ninjakiwi.bloonstd6.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/95/af/4e/95af4e80-3c28-9eb8-427d-aec8e722d31d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/95/af/4e/95af4e80-3c28-9eb8-427d-aec8e722d31d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "City Of Survivors",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.gatherfun.cityofsurvivors",
       "bundleIdentifier": "com.gatherfun.cityofsurvivors",
       "version": "1.1",
@@ -948,12 +948,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/City.Of.Survivors_0.0.16_1750803989.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.gatherfun.cityofsurvivors.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.gatherfun.cityofsurvivors.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/bc/d4/32bcd495-1780-cebe-1427-d2b9e53a07bf/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/bc/d4/32bcd495-1780-cebe-1427-d2b9e53a07bf/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Combat Master Mobile",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.AlfaBravo.CombatMaster",
       "bundleIdentifier": "com.AlfaBravo.CombatMaster",
       "version": "0.25.27",
@@ -964,12 +964,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Combat.Master_0.25.27_1750803476.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.AlfaBravo.CombatMaster.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.AlfaBravo.CombatMaster.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/57/ce/8a57cef8-2199-cc9b-9053-d9f0ff6d418e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/57/ce/8a57cef8-2199-cc9b-9053-d9f0ff6d418e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Escape Time — Puzzle Brain Game",
-      "type": 1,
+      "type": 2,
       "bundleID": "webelinx.EscapeRoom.Free.Portrait.Game.free2",
       "bundleIdentifier": "webelinx.EscapeRoom.Free.Portrait.Game.free2",
       "version": "2.22.0",
@@ -980,12 +980,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Escape.Time_2.22.0_1750804177.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/webelinx.EscapeRoom.Free.Portrait.Game.free2.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/webelinx.EscapeRoom.Free.Portrait.Game.free2.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/b8/98/4cb8987a-3b23-f1b7-7f44-005b06940378/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/b8/98/4cb8987a-3b23-f1b7-7f44-005b06940378/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Galaxy Defense — Fortress TD",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.cyberjoy.galaxydefense",
       "bundleIdentifier": "com.cyberjoy.galaxydefense",
       "version": "0.9.2",
@@ -996,12 +996,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Galaxy.Defense_0.9.2_1750803787.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.cyberjoy.galaxydefense.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.cyberjoy.galaxydefense.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fc/f5/ba/fcf5ba64-024d-3076-1aa0-994d7c9e957d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fc/f5/ba/fcf5ba64-024d-3076-1aa0-994d7c9e957d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Hero Z — Idle defense",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.cyberjoy.heroz",
       "bundleIdentifier": "com.cyberjoy.heroz",
       "version": "0.0.7",
@@ -1012,12 +1012,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Hero.Z_0.0.7_1750803833.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.cyberjoy.heroz.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.cyberjoy.heroz.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/00/0d/43000db7-66eb-1f20-4b08-bb0849451339/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/00/0d/43000db7-66eb-1f20-4b08-bb0849451339/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Hunt Royale — Action RPG Battle",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.hunt.royale",
       "bundleIdentifier": "com.hunt.royale",
       "version": "3.11.0",
@@ -1028,12 +1028,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Hunt.Royale_3.11.0_1751376922.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.hunt.royale.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.hunt.royale.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/57/42/d3574239-8fc2-29bc-24b0-8122e9446404/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/57/42/d3574239-8fc2-29bc-24b0-8122e9446404/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Slots Era — Slot Machines 777",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.murka.slotsera",
       "bundleIdentifier": "com.murka.slotsera",
       "version": "2.56.0",
@@ -1044,12 +1044,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Slots.Era_2.56.0_1750803924.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.murka.slotsera.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.murka.slotsera.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/b5/9d/82b59dca-2e6f-7c03-fa3c-2496a6f9adbd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/b5/9d/82b59dca-2e6f-7c03-fa3c-2496a6f9adbd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Soul Knight",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ChillyRoom.DungeonShooter",
       "bundleIdentifier": "com.ChillyRoom.DungeonShooter",
       "version": "7.3.1",
@@ -1060,12 +1060,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/SoulKnight_7.3.1_1750804123.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ChillyRoom.DungeonShooter.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ChillyRoom.DungeonShooter.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/52/71/e0/5271e017-f18e-026b-79ec-1c63f5ebac3d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/52/71/e0/5271e017-f18e-026b-79ec-1c63f5ebac3d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "The Walking Zombie 2 — Shooter",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.aldagames.zombieshooter",
       "bundleIdentifier": "com.aldagames.zombieshooter",
       "version": "3.37.2",
@@ -1076,12 +1076,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/The.Walking.Zombie.2_3.37.2_1750803549.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.aldagames.zombieshooter.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.aldagames.zombieshooter.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/01/9c/42019c29-5dfa-c298-f343-9919ec8219ba/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/01/9c/42019c29-5dfa-c298-f343-9919ec8219ba/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Ultimate Golf!",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.hypgames.ultimategolf",
       "bundleIdentifier": "com.hypgames.ultimategolf",
       "version": "4.21.03",
@@ -1092,12 +1092,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Ultimate.Golf_4.21.03_1750803735.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.hypgames.ultimategolf.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.hypgames.ultimategolf.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/d2/d1/94d2d107-ed0d-21fe-8c5b-cad379e3ec8a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/d2/d1/94d2d107-ed0d-21fe-8c5b-cad379e3ec8a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Wizario — Idle Magic RPG",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.kolkagames.wizario",
       "bundleIdentifier": "com.kolkagames.wizario",
       "version": "1.0.92",
@@ -1108,12 +1108,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Wizario_1.0.92_1750804057.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.kolkagames.wizario.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.kolkagames.wizario.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/e2/f8/18e2f8c2-eb64-cb15-fdc9-e4458dd5fdbe/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/e2/f8/18e2f8c2-eb64-cb15-fdc9-e4458dd5fdbe/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Zombiepunk — Fight & Survive",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.defender.dude",
       "bundleIdentifier": "com.defender.dude",
       "version": "1.2.3",
@@ -1124,12 +1124,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/25.06.2025/Zombiepunk_.Fight.Survive_1.2.3_1750804253.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.defender.dude.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.defender.dude.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/3f/56/9f3f56b0-61ca-5faa-908c-a08e89174601/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/3f/56/9f3f56b0-61ca-5faa-908c-a08e89174601/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Assassin’s Creed Rebellion",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ubisoft.accovenant",
       "bundleIdentifier": "com.ubisoft.accovenant",
       "version": "3.6.1",
@@ -1140,12 +1140,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/AC.Rebellion_3.6.1_1751069553.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ubisoft.accovenant.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ubisoft.accovenant.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a0/7f/ce/a07fce23-c845-790c-9d8e-60675cca82d7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a0/7f/ce/a07fce23-c845-790c-9d8e-60675cca82d7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "BASEBALL 9",
-      "type": 1,
+      "type": 2,
       "bundleID": "us.kr.baseballnine",
       "bundleIdentifier": "us.kr.baseballnine",
       "version": "3.7.4",
@@ -1156,12 +1156,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/BASEBALL.9_3.7.4_1751069694.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/us.kr.baseballnine.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/us.kr.baseballnine.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/f0/23/01f023b6-848b-1a12-23f5-2bddecb207ef/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/f0/23/01f023b6-848b-1a12-23f5-2bddecb207ef/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Bullet Force",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.blayzegames.iosfps",
       "bundleIdentifier": "com.blayzegames.iosfps",
       "version": "1.105.0",
@@ -1172,12 +1172,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Bullet.Force_1.105.0_1751069457.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.blayzegames.iosfps.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.blayzegames.iosfps.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/bd/1b/dbbd1b3a-330b-eaaa-3d9b-f76531e31e6d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/bd/1b/dbbd1b3a-330b-eaaa-3d9b-f76531e31e6d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Frost World",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.winter.breaker",
       "bundleIdentifier": "com.winter.breaker",
       "version": "1.0.2",
@@ -1188,12 +1188,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Frost.World_1.0.2_1750983194.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.winter.breaker.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.winter.breaker.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/6a/de/986ade1a-8594-2d77-e9c4-2aff942f797c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/6a/de/986ade1a-8594-2d77-e9c4-2aff942f797c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Gossip Harborxae — Merge & Story",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.mergegame.icookie",
       "bundleIdentifier": "com.mergegame.icookie",
       "version": "3.68.0",
@@ -1204,12 +1204,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Gossip.Harbor_3.68.0_1750983055.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.mergegame.icookie.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.mergegame.icookie.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/f5/f8/05f5f8c7-dfb3-74d7-3341-8fd8fe417fff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/f5/f8/05f5f8c7-dfb3-74d7-3341-8fd8fe417fff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Merge Cookingxae",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.merge.cooking.theme.restaurant.food",
       "bundleIdentifier": "com.merge.cooking.theme.restaurant.food",
       "version": "1.1.96",
@@ -1220,12 +1220,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Merge.Cooking_1.1.96_1750983240.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.merge.cooking.theme.restaurant.food.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.merge.cooking.theme.restaurant.food.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/4b/75/064b75b5-e571-7a90-0359-39dd6565c659/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/4b/75/064b75b5-e571-7a90-0359-39dd6565c659/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Monster Super League",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ftt.msleague",
       "bundleIdentifier": "com.ftt.msleague",
       "version": "4.0.1",
@@ -1236,12 +1236,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Monster.Super.League_4.0.1_1751069882.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ftt.msleague.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ftt.msleague.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/1b/e2/f61be2d9-2899-41bf-cb60-709bcbd766b6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f6/1b/e2/f61be2d9-2899-41bf-cb60-709bcbd766b6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Pal Go — Tower Defense TD",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.playwindgames.freedefender",
       "bundleIdentifier": "com.playwindgames.freedefender",
       "version": "0.3.84",
@@ -1252,12 +1252,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Pal.Go_0.3.84_1750983094.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.playwindgames.freedefender.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.playwindgames.freedefender.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/b0/10/d3b0105b-8f74-dc13-3063-aa8cb87e86f2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/b0/10/d3b0105b-8f74-dc13-3063-aa8cb87e86f2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Pixel Combat — Zombie Games 3-D",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.gsgames.pixel.combat",
       "bundleIdentifier": "com.gsgames.pixel.combat",
       "version": "5.4.0",
@@ -1268,12 +1268,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Pixel.Combat_5.4.0_1750983155.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.gsgames.pixel.combat.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.gsgames.pixel.combat.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/98/f2/f298f224-e33d-cbe8-6d6d-88eaa1183824/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/98/f2/f298f224-e33d-cbe8-6d6d-88eaa1183824/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Zooba — Zoo Battle Royale Games",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.fungames.battleroyale",
       "bundleIdentifier": "com.fungames.battleroyale",
       "version": "5.17.0",
@@ -1284,12 +1284,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/28.06.2025/Zooba_5.17.0_1750983119.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.fungames.battleroyale.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.fungames.battleroyale.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dd/28/38/dd2838d4-4043-3aba-60ab-ec04729be4a9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dd/28/38/dd2838d4-4043-3aba-60ab-ec04729be4a9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Bitlife GO!",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.goodgamestudios.bitlife.go.lifesimulation",
       "bundleIdentifier": "com.goodgamestudios.bitlife.go.lifesimulation",
       "version": "1.0.79",
@@ -1300,12 +1300,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/BitLife.GO._1.0.79_1751298497.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.goodgamestudios.bitlife.go.lifesimulation.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.goodgamestudios.bitlife.go.lifesimulation.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/e0/15/44e015c5-09e6-d1c5-aac0-d818cca72945/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/e0/15/44e015c5-09e6-d1c5-aac0-d818cca72945/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "FRAG Pro Shooter",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.ohbibi.fps",
       "bundleIdentifier": "com.ohbibi.fps",
       "version": "4.10.0",
@@ -1316,12 +1316,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/FRAG_4.10.0_1751298233.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ohbibi.fps.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.ohbibi.fps.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/75/99/14/75991448-5dc9-ef49-a67a-f80d85a3909a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/75/99/14/75991448-5dc9-ef49-a67a-f80d85a3909a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "GrandChase",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.kog.grandchaseglobal",
       "bundleIdentifier": "com.kog.grandchaseglobal",
       "version": "1.90.2",
@@ -1332,12 +1332,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Grand.Chase_1.90.2_1751298312.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.kog.grandchaseglobal.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.kog.grandchaseglobal.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/36/54/c2365474-7d33-f3b2-4f26-a42673684c52/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/36/54/c2365474-7d33-f3b2-4f26-a42673684c52/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "KUBOOM — Online shooting games",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.Nobodyshot.kuboom",
       "bundleIdentifier": "com.Nobodyshot.kuboom",
       "version": "7.56.0",
@@ -1348,12 +1348,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/KUBOOM_7.56.0_1751298208.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.Nobodyshot.kuboom.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.Nobodyshot.kuboom.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/2c/89/be2c895a-def0-135d-7d9b-414388d95f51/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/2c/89/be2c895a-def0-135d-7d9b-414388d95f51/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Loot Heroes — Fantasy RPG Games",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.bbp.lootheroes",
       "bundleIdentifier": "com.bbp.lootheroes",
       "version": "1.8.1",
@@ -1364,12 +1364,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Loot.Heroes_1.8.1_1751376875.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.bbp.lootheroes.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.bbp.lootheroes.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4b/8b/17/4b8b1760-c3a3-005c-5a1f-50352fc1ae0c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4b/8b/17/4b8b1760-c3a3-005c-5a1f-50352fc1ae0c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Sneaky Sasquatch",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.rac7.SneakySasquatch",
       "bundleIdentifier": "com.rac7.SneakySasquatch",
       "version": "2.0.6",
@@ -1380,12 +1380,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Sasquatch_2.0.6_1751297850.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.rac7.SneakySasquatch.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.rac7.SneakySasquatch.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/e9/7b/a7e97bce-386b-b09b-70d0-5a8dad685f1a/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/e9/7b/a7e97bce-386b-b09b-70d0-5a8dad685f1a/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Shadow Fight 3 — RPG Fighting",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.nekki.shadowfight3",
       "bundleIdentifier": "com.nekki.shadowfight3",
       "version": "1.41.2",
@@ -1396,12 +1396,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Shadow.Fight.3_1.41.2_1751298064.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.nekki.shadowfight3.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.nekki.shadowfight3.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/63/3c/51633c0a-3dd6-eb15-7fbe-f6b1444eafba/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/63/3c/51633c0a-3dd6-eb15-7fbe-f6b1444eafba/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Shadow Fight 4 — Arena",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.nekki.shadowfightarena",
       "bundleIdentifier": "com.nekki.shadowfightarena",
       "version": "1.9.50",
@@ -1412,12 +1412,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Shadow.Fight.4_1.9.50_1751298120.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.nekki.shadowfightarena.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.nekki.shadowfightarena.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/25/fa/8b25fa83-6ab1-09f3-2614-9dc68bce0333/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/25/fa/8b25fa83-6ab1-09f3-2614-9dc68bce0333/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/350x350.jpg"
     },
     {
       "name": "Slime Castle — Idle TD RTS Game",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.redtailworks.slimetd",
       "bundleIdentifier": "com.redtailworks.slimetd",
       "version": "2.1.6",
@@ -1428,12 +1428,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Slime.Castle_2.1.6_1751376624.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.redtailworks.slimetd.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.redtailworks.slimetd.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b4/48/6f/b4486f13-e6db-60eb-fe80-a9f764d16bb6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b4/48/6f/b4486f13-e6db-60eb-fe80-a9f764d16bb6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Subway Surfers",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.kiloo.subwaysurfers",
       "bundleIdentifier": "com.kiloo.subwaysurfers",
       "version": "3.48.10",
@@ -1444,12 +1444,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Subway.Surf_3.48.10_1751298554.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.kiloo.subwaysurfers.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.kiloo.subwaysurfers.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9c/3d/57/9c3d57b9-6436-291f-c77d-546295871dde/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9c/3d/57/9c3d57b9-6436-291f-c77d-546295871dde/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "The Wolf — Animal Hunting Game",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.swiftappskom.thewolfrpg",
       "bundleIdentifier": "com.swiftappskom.thewolfrpg",
       "version": "4.0.2",
@@ -1460,12 +1460,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/The.Wolf_4.0.2_1751298352.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.swiftappskom.thewolfrpg.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.swiftappskom.thewolfrpg.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d5/ce/ab/d5ceab70-74a5-b3af-c56e-e49de7b0e125/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d5/ce/ab/d5ceab70-74a5-b3af-c56e-e49de7b0e125/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Tiny Defense — Tower Defense",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.bumbloo.tinydefense",
       "bundleIdentifier": "com.bumbloo.tinydefense",
       "version": "0.4.0",
@@ -1476,12 +1476,12 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/TinyDefense_0.4.0_1751298443.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.bumbloo.tinydefense.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.bumbloo.tinydefense.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/07/4a/48074a44-0c99-e1d8-88ce-cd985d1a743b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/07/4a/48074a44-0c99-e1d8-88ce-cd985d1a743b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     },
     {
       "name": "Tower of God — NEW WORLD",
-      "type": 1,
+      "type": 2,
       "bundleID": "com.netmarble.tog",
       "bundleIdentifier": "com.netmarble.tog",
       "version": "2.12.00",
@@ -1492,8 +1492,8 @@
       "downloadURL": "https://github.com/IAppsBestRepository/UploadGames/releases/download/30.06.2025/Tower.Of.God_.New.World_2.12.00_1751298183.ipa",
       "developerName": "",
       "localizedDescription": "▎Активирована подписка \"iOSGods VIP\"",
-      "icon": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.netmarble.tog.png",
-      "iconURL": "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/com.netmarble.tog.png"
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1a/13/f8/1a13f8e6-efa9-1f6e-4a3b-ae28850a0fc5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1a/13/f8/1a13f8e6-efa9-1f6e-4a3b-ae28850a0fc5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.jpg"
     }
   ]
 }
