@@ -4,13 +4,13 @@
 	  "https://repository.apptesters.org",
       "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.buildstore.json",
 	  "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.nabzclan.json",
-	  "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game.json",
 	  "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.thuthuatjb.json",
       "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.unkeyapp.json"     
    ],
    "other":[
       "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.cypwn.json",
       "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.cypwn_ts.json",
+	  "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game.json",
       "https://alt.getutm.app",
       "https://quarksources.github.io/dist/quantumsource.min.json",
       "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",

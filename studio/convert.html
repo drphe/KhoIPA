@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Định Dạng JSON</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+/* Tùy chỉnh để đảm bảo font chữ đẹp và dễ đọc */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fb;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 1rem;
+    background-color: #1e293b;
+    /* slate-800 */
+    color: #f0fdf4;
+    /* green-50 */
+    border-radius: 0.5rem;
+    max-height: 400px;
+    overflow: auto;
+    font-size: 0.875rem;
+    /* sm */
+}
+
+.container-shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+    </style>
+</head>
+
+<body class="p-4 sm:p-8">
+    <div id="app" class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-xl container-shadow">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Công Cụ Chuyển Đổi JSON</h1>
+        <!-- Khu vực Upload File -->
+        <div class="mb-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
+            <h2 class="text-xl font-semibold text-blue-800 mb-4">1. Import File JSON Gốc</h2>
+            <input type="file" id="jsonFile" accept=".json" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none" onchange="handleFileSelect()">
+            <p id="statusMessage" class="mt-3 text-sm text-gray-600"></p>
+        </div>
+        <!-- Khu vực Kết quả -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">2. Dữ Liệu Đã Chuyển Đổi</h2>
+            <div id="outputContainer" class="hidden">
+                <pre id="convertedJsonOutput"></pre>
+                <button onclick="downloadJson()" id="downloadButton" class="mt-4 w-full md:w-auto px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-150 ease-in-out disabled:opacity-50" disabled> Tải Xuống File JSON</button>
+            </div>
+            <p id="initialPrompt" class="text-gray-500 italic text-center p-10 bg-gray-100 rounded-lg"> Vui lòng chọn một file JSON để bắt đầu chuyển đổi. </p>
+        </div>
+        <!-- Khu vực Định nghĩa Chuyển đổi (Hiển thị cho người dùng biết quy tắc) -->
+        <div class="mt-10 pt-6 border-t border-gray-200">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Trang tạo Game Repo</h2>
+            <p class="text-sm text-gray-600 mb-2">Cho phép trang web copy và bật cửa sổ mới, load lại nếu ko thấy mở trang web mới
+		</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-gray-50 p-4 rounded-lg">
+                <div>
+                    <h3 class="font-bold text-gray-700">Cách thức sử dụng</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Sau khi tải trang, tự động copy code và mở trang jsoneditor</li>
+                        <li>Dán mã vào ô bên trái và lưu về máy</li>
+                        <li>Quay lại trang này, import file vừa tải về</li>
+                        <li>Lưu lại file json mới => ok</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+let convertedData = [];
+/**
+ * Hàm chuyển đổi định dạng một đối tượng ứng dụng.
+ * Nó lấy dữ liệu từ các trường cũ và ánh xạ/tính toán sang các trường mới.
+ *
+ * @param {object} sourceObject Đối tượng ứng dụng ở định dạng nguồn.
+ * @returns {object} Đối tượng ứng dụng ở định dạng đích.
+ */
+function convertAppObject(sourceObject) {
+    // Lấy ra ngày và giờ từ chuỗi appUpdateTime và loại bỏ phần múi giờ (+0300)
+    const fullDateString = sourceObject.appUpdateTime ? sourceObject.appUpdateTime.substring(0, 19).replace(/[-:]/g, '').replace('T', '') : null;
+    const versionDateString = sourceObject.appUpdateTime ? sourceObject.appUpdateTime.substring(0, 10) : null;
+    // Cố gắng trích xuất kích thước (size) từ appVersion (ví dụ: "1.4.25628 | 1380 MB | IOS 13.0")
+    let sizeInBytes = 0;
+    if (sourceObject.appVersion) {
+        const sizeMatch = sourceObject.appVersion.match(/(\d+(\.\d+)?)\s(MB|GB)/i);
+        if (sizeMatch) {
+            const value = parseFloat(sizeMatch[1]);
+            const unit = sizeMatch[3].toUpperCase();
+            if (unit === 'MB') {
+                sizeInBytes = Math.round(value * 1024 * 1024);
+            } else if (unit === 'GB') {
+                sizeInBytes = Math.round(value * 1024 * 1024 * 1024);
+            }
+        }
+    }
+    // Cố gắng tạo URL icon từ appBundle
+    // Đây là một giả định dựa trên ví dụ của bạn (có thể cần điều chỉnh nếu URL thực tế khác)
+    const iconBaseUrl = "https://raw.githubusercontent.com/IAppsBestRepository/UploadGames/main/icons/";
+    let iconUrl = sourceObject.appImage || "";
+    // Cố gắng trích xuất phiên bản (version) từ phần đầu của chuỗi appVersion
+    const versionMatch = sourceObject.appVersion ? sourceObject.appVersion.match(/^(\d+(\.\d+)*)/) : null;
+    const versionString = versionMatch ? versionMatch[0] : (sourceObject.appVersion || "");
+    return {
+        "name": sourceObject.appName || "",
+        "type": 2, // Giá trị cố định
+        "bundleID": sourceObject.appBundle || "",
+        "bundleIdentifier": sourceObject.appBundle || "",
+        "version": versionString,
+        "versionDate": versionDateString || "",
+        "fullDate": fullDateString || "",
+        "size": sizeInBytes,
+        "down": sourceObject.appPackage || "",
+        "downloadURL": sourceObject.appPackage || "",
+        "developerName": "", // Giá trị cố định
+        "localizedDescription": sourceObject.appDescription || "",
+        "icon": iconUrl,
+        "iconURL": iconUrl
+    };
+}
+/**
+ * Xử lý file JSON được chọn.
+ */
+function handleFileSelect() {
+    const fileInput = document.getElementById('jsonFile');
+    const statusMessage = document.getElementById('statusMessage');
+    const outputContainer = document.getElementById('outputContainer');
+    const convertedJsonOutput = document.getElementById('convertedJsonOutput');
+    const initialPrompt = document.getElementById('initialPrompt');
+    const downloadButton = document.getElementById('downloadButton');
+    statusMessage.textContent = '';
+    outputContainer.classList.add('hidden');
+    initialPrompt.classList.remove('hidden');
+    downloadButton.disabled = true;
+    convertedData = [];
+    const file = fileInput.files[0];
+    if (!file) {
+        statusMessage.textContent = 'Chưa chọn file.';
+        return;
+    }
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        try {
+            const jsonString = event.target.result;
+            let data = JSON.parse(jsonString);
+            // Kiểm tra xem dữ liệu là một mảng hay một đối tượng đơn lẻ
+            if (!Array.isArray(data)) {
+                // Nếu là đối tượng đơn lẻ, chuyển nó thành mảng 1 phần tử để xử lý
+                data = [data];
+            }
+            // Duyệt qua từng đối tượng và chuyển đổi
+            convertedData = data.map(convertAppObject);
+            // Hiển thị kết quả
+            convertedJsonOutput.textContent = JSON.stringify(convertedData, null, 2);
+            statusMessage.textContent = `Thành công! Đã chuyển đổi ${convertedData.length} đối tượng.`;
+            statusMessage.classList.remove('text-red-500');
+            statusMessage.classList.add('text-green-600');
+            outputContainer.classList.remove('hidden');
+            initialPrompt.classList.add('hidden');
+            downloadButton.disabled = false;
+        } catch (error) {
+            statusMessage.textContent = `Lỗi xử lý file: Không phải định dạng JSON hợp lệ hoặc lỗi chuyển đổi. Chi tiết: ${error.message}`;
+            statusMessage.classList.remove('text-green-600');
+            statusMessage.classList.add('text-red-500');
+            convertedJsonOutput.textContent = '[]';
+        }
+    };
+    reader.onerror = function() {
+        statusMessage.textContent = 'Lỗi đọc file.';
+        statusMessage.classList.remove('text-green-600');
+        statusMessage.classList.add('text-red-500');
+    };
+    reader.readAsText(file);
+}
+/**
+ * Tải xuống dữ liệu đã chuyển đổi dưới dạng file JSON.
+ */
+function downloadJson() {
+    if (convertedData.length === 0) {
+        document.getElementById('statusMessage').textContent = 'Không có dữ liệu để tải xuống.';
+        return;
+    }
+    const filename = 'converted_data.json';
+    var repo = {
+        "name": "Game - IOSGod Vip",
+        "identifier": "ios.god.vip.repo",
+        "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game.json",
+        "iconURL": "https://app.iosgods.com/img/logo.png",
+        "website": "https://iappsbest-repository-catalog.pages.dev/",
+        "ipawebsite": "https://kho-ipa.vercel.app",
+        "subtitle": "Game IOSgod Vip",
+        "apps": convertedData
+    }
+    const jsonText = JSON.stringify(repo, null, 2);
+    const blob = new Blob([jsonText], {
+        type: 'application/json'
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    document.getElementById('statusMessage').textContent = `Đã tải xuống ${filename} thành công!`;
+    document.getElementById('statusMessage').classList.remove('text-red-500');
+    document.getElementById('statusMessage').classList.add('text-green-600');
+}
+async function getApps() {
+    let res = await fetch("https://iappsbest-repository-catalog.pages.dev/_next/static/chunks/718.54bf1c40811cf052.js");
+    let text = await res.text();
+   // console.log(extractDataApp(text));
+	copyAndOpen(extractDataApp(text))
+    function extractDataApp(str) {
+        const start = str.indexOf('ee=[{appName');
+        if (start === -1) return null;
+        let cut = str.slice(start + 3);
+        const endRegex = /;var ea=/;
+        const match = cut.match(endRegex);
+        if (match) {
+            const end = cut.indexOf(match[0]);
+            cut = cut.slice(0, end);
+        }
+        return cut;
+    }
+}
+getApps();
+async function copyAndOpen(textToCopy) {
+    try {
+      // Ưu tiên Clipboard API (yêu cầu HTTPS và thao tác người dùng)
+      await navigator.clipboard.writeText(textToCopy);
+      // Copy thành công -> mở trang
+      window.open('https://jsoneditoronline.org/', '_blank');
+    } catch (err) {
+      // Fallback cho trình duyệt cũ: dùng execCommand
+      const ta = document.createElement('textarea');
+      ta.value = textToCopy;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try {
+        const ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        if (ok) {
+          window.open('https://jsoneditoronline.org/', '_blank');
+        } else {
+          alert('Không thể copy vào clipboard.');
+        }
+      } catch (e) {
+        document.body.removeChild(ta);
+        alert('Copy thất bại.');
+      }
+    }
+  }
+    </script>
+</body>
+
+</html>
