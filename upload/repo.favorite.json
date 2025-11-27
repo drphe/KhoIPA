@@ -406,14 +406,14 @@
           "version": "6.0",
           "date": "2025-11-27T09:44:00+07:00",
           "localizedDescription": "Sign, install, and open this app to see if your cert is set up right. Quick, simple, and no hassle!\nCredits to @brits8882 for making this app.",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6.0/AppGroupCheck.ipa",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6/appgroupcheck.ipa",
           "size": 600000,
           "buildVersion": null,
           "minOSVersion": null
         }
       ],
       "versionDate": "2025-11-27T09:44:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6.0/AppGroupCheck.ipa",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6/appgroupcheck.ipa",
       "patreon": {}
     },
     {
