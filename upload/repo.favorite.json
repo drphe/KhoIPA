@@ -23,6 +23,270 @@
   "apps": [
     {
       "beta": false,
+      "name": "Calculator++",
+      "type": 1,
+      "bundleIdentifier": "com.forfun.Calculator",
+      "developerName": "DPIXEL",
+      "subtitle": "Ứng dụng ẩn hình ảnh nhạy cảm",
+      "localizedDescription": "Máy tính... Nhưng Có Bí Mật! 🤫📱\n\nTôi đã tạo một ứng dụng đơn giản với giao diện Máy tính chính thức của Apple, nhưng chức năng thật sự của nó là thông minh và an toàn để ẩn đi những bức ảnh và video riêng tư của bạn.\n\n🔓 Cách truy cập kho bí mật: Mở ứng dụng và nhập phương trình: 2708=",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/bRFZgxxv/c04af5862ff0.png",
+      "screenshotURLs": [
+        "https://i.ibb.co/W43Xtynh/8c33829f595b.png",
+        "https://i.ibb.co/8LkpFmYk/388e0714bc97.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": ""
+        }
+      },
+      "size": 1200000,
+      "version": "1.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1/Calculator_1.1.ipa",
+          "size": 1200000,
+          "version": "1.1",
+          "buildVersion": null,
+          "date": "2025-11-27T17:10:00+07:00",
+          "localizedDescription": "✨ Tính năng nổi bật:\nNgụy trang thông minh: Giao diện máy tính hoàn toàn tự nhiên.\nẨn phương tiện: Bạn có thể thêm cả ảnh và video.\nTải lên hàng loạt: Chọn nhiều tệp và tải lên cùng lúc.\nTự động phân loại: Tách riêng ảnh và video trong giao diện.\nXem & Phóng to: Trình xem ảnh đầy đủ với khả năng phóng to.\nXóa nhiều: Có thể xóa một hoặc nhiều ảnh/video cùng lúc.\nLựa chọn thông minh: Không thêm trùng lặp ảnh/video đã có.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T17:10:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1/Calculator_1.1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Crsel Public",
+      "type": 1,
+      "bundleIdentifier": "com.frameoneapps.Crsel",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Subscription \"Pro\" activated",
+      "localizedDescription": "Crsel is the all-in-one app for creating aesthetic Instagram carousels, collages, stories, and Reels covers. Designed for creators who care about storytelling and style.\n\n• Use our seamless Instagram Carousel Maker. Design multi-slide posts that connect visually. Align elements across frames and preview the full swipe effect. Perfect for photo series, lookbooks, tutorials, or storytelling posts.\n\n•From clean, minimal layouts to bold, layered collages, Crsel gives you everything you need to design posts that feel intentional, premium, and uniquely yours.\n\n•Trendy Collage Templates. Choose from layered, editorial-style templates made for storytelling! Combine multiple photos, add text, and guide your audience through a visual journey.\n\n• Story Templates That Match Your Feed. Create IG stories and Reels covers using the same style as your carousels. Maintain a cohesive aesthetic across all your content, from feed to story highlights.\n\n• Reels Cover Designer. Design eye-catching Reels thumbnails that match your feed. Crsel helps you maintain a polished and branded look across all formats\n\n• AI Cutout Tool. Automatically remove backgrounds from photos with one tap. Easily layer people, objects, or products over textured backdrops and collage elements.\n\nWhether you're sharing a photo dump, promoting a product, or just curating your visual world. Crsel helps you craft posts that flow!\n\nWho It’s For? Crsel is built for anyone who tells stories visually:\n\n- Instagram creators & influencers\n- Lifestyle bloggers & photographers\n- Brands & small businesses\n- Anyone building a curated feed or portfolio\n- Aspiring Creators\n\nWhether you're recapping a trip, launching a product, or simply posting memories. Crsel gives your content clarity, flow, and visual impact.\n\nYour feed is your story. Tell it beautifully with Crsel. Download now and elevate your Instagram presence!\n\nTerms of use: https://telegra.ph/Terms-of-Use---Crsel-08-16\nPrivacy policy: https://telegra.ph/Privacy-Policy---Crsel-08-16\n\nGot a question about Crsel? Contact us at support@frameoneapps.com",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/Df4gYj8S/50b79b5c3ca5.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/57/ba/0b/57ba0b91-1f98-57ad-a92e-d717012f9ff8/1__U00281_U0029.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f5/a0/07/f5a00712-ec0b-4a4a-eef5-8be57ad9e075/2_V1.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/70/6d/63/706d63b1-08ac-f3ec-2607-f46c1985059b/33.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bf/fb/93/bffb9368-c75b-099e-8bef-5dfa90373c8f/44.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ea/d8/1f/ead81faf-d22e-41fb-25fb-4e9f85b35a87/55.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/b4/dc/55b4dc77-a7a5-8d46-e18c-1120696f5f67/66.jpg/230x499bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "Want to save your awesome creations to your Photos? Grant access to your Photo Library, and we’ll securely save your images for you!"
+        }
+      },
+      "size": 140700000,
+      "version": "1.1.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.1/Crsel_.Carousel.Story.Maker.tg@IAppsBest.ipa",
+          "size": 140700000,
+          "version": "1.1.1",
+          "buildVersion": null,
+          "date": "2025-11-27T17:01:00+07:00",
+          "localizedDescription": "Subscription \"Pro\" activated",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T17:01:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.1/Crsel_.Carousel.Story.Maker.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "LTX Buzz: AI Video Generator",
+      "type": 1,
+      "bundleIdentifier": "com.lightricks.Apollo",
+      "developerName": "tg@IAppsBest",
+      "subtitle": " Subscription \"Pro\" activated",
+      "localizedDescription": "Meet LTX Buzz! A free, AI-powered tool that transforms images into videos, brings ideas to life with text-to-image, and applies trending AI presets that spark creativity and fun.\n\nWelcome to the next-gen creative platform that turns still photos into dynamic, high-impact videos using generative AI. Whether you’re a content creator, storyteller, or just experimenting with your photos, LTX Buzz delivers professional-quality results in seconds.\n\nAt its core is the LTX AI model—a powerful engine that transforms your ideas into scroll-stopping visuals with no creative experience needed. Simply write a prompt and generate your video for free.",
+      "versionDescription": "",
+      "tintColor": "#f43c7c",
+      "iconURL": "https://i.ibb.co/vCdcSD9R/8f9865cc91ee.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/b9/33/23b93331-4810-eeba-fb91-9d074e1c7d20/PL-250608-EM-LTX-AI-Launch-V.2-6.5-05.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/40/25/1e/40251ee8-3e67-51c3-db2b-47bc6d594ca7/PL-250608-EM-LTX-AI-Launch-V.2-6.5-06.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/7b/bd/667bbdb0-d375-3b9d-98f1-9c6237b72dbb/PL-250720-EM-LTX-AI-Launch-6.5-03.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/fb/99/43fb99f5-7d04-f005-d7e7-7f3cc273cfa1/PL-250618-EM-LTX-AI-Launch-V.2-6.5-10.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5e/bd/30/5ebd30b8-4130-0121-5702-77f16f3e4485/PL-250618-EM-LTX-AI-Launch-V.2-6.5-08.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2d/f3/59/2df359d6-4902-55db-f48a-c220f6cedb6b/PL-250720-EM-LTX-AI-Launch-6.5-01.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ac/ef/13/acef1379-ad32-f7ca-35c7-40ff8ea4f4c5/PL-250608-EM-LTX-AI-Launch-V.2-6.5-03.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSAppleMusicUsageDescription": "LTX Buzz would like to access your music",
+          "NSCameraUsageDescription": "Allow camera access to capture images",
+          "NSLocationAlwaysUsageDescription": "LTX Buzz would like your current location to add geotagging to your photos",
+          "NSLocationWhenInUseUsageDescription": "We need to know your location to geotag your photos",
+          "NSPhotoLibraryAddUsageDescription": "We need access to save your creations to your device.",
+          "NSPhotoLibraryUsageDescription": "We need to access your photo library in order to allow you to edit your photos and videos using the app’s features. Learn more in our Privacy Policy.",
+          "NSUserTrackingUsageDescription": "This will be used to identify the service that referred you to provide a customized experience."
+        }
+      },
+      "size": 114800000,
+      "version": "1.7",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.7/LTX.Buzz_.AI.Video.Generator.tg@IAppsBest.ipa",
+          "size": 114800000,
+          "version": "1.7",
+          "buildVersion": null,
+          "date": "2025-11-27T16:57:00+07:00",
+          "localizedDescription": "— Subscription \"Pro\" activated\n— The application works properly when signed with an Apple developer certificate with a properly configured AppGroup configuration",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T16:57:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.7/LTX.Buzz_.AI.Video.Generator.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Baking Soda",
+      "type": 4,
+      "bundleIdentifier": "com.andadinosaur.BakingSoda",
+      "developerName": "Unknow",
+      "subtitle": "Paid on Apple Store",
+      "localizedDescription": "Ứng dụng Baking Soda – Tube Cleaner là một tiện ích mở rộng cho Safari trên iPhone/iPad/Mac, được thiết kế để thay thế các trình phát video tùy chỉnh bằng thẻ video HTML đơn giản. Đây là phần mềm thuộc danh mục Utilities, dung lượng nhẹ (3 MB), do nhà phát triển And a Dinosaur phát hành.",
+      "versionDescription": "",
+      "tintColor": "#4454f4",
+      "iconURL": "https://i.ibb.co/DDYYXtV2/79fab326fc11.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/90/b8/a1/90b8a105-c690-fed3-dbb9-715eff476d39/4df33573-83f7-40f6-8882-ecbb07c2fa82_1.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/18/7e/52/187e5282-e43c-b950-3423-1727e7f740f9/644f8af3-5624-45d2-b201-bdeabe4f6995_2.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor"
+        }
+      },
+      "size": 2500000,
+      "version": "1.2.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2.0/BakingSoda_1.2.0.ipa",
+          "size": 2500000,
+          "version": "1.2.0",
+          "buildVersion": null,
+          "date": "2025-11-27T16:51:00+07:00",
+          "localizedDescription": "Đã mua từ Applestore giá 2$",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T16:51:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2.0/BakingSoda_1.2.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Chatbot AI: Start Search Bot",
+      "type": 1,
+      "bundleIdentifier": "com.talgat.AIChat",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Subscription \"Pro\" activated",
+      "localizedDescription": "Chatbot AI\n\nYour all in one AI assistant for writing, creativity, productivity, learning, and everyday tasks.\n\nChatbot AI helps you brainstorm ideas, chat naturally, generate text, write essays, create images, summarize documents, search the web, and much more. Whether you are working on professional work, school studies, or creative projects, it brings advanced GPT powered tools to your fingertips.\n",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/Lz7TyDPT/c61d941ff089.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e6/1c/98/e61c982e-40ca-1488-2d53-6f5cd34cd51d/screenshot_1.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/22/26/ed/2226ed58-4147-4130-8727-98a29ae69e43/screenshot_1_copy_15.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/6a/1d/756a1d8c-8bec-2027-89aa-7f8008c182d6/screenshot_1_copy_10.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/57/40/82/574082fb-1c81-a5e5-2744-d1e43be96f55/screenshot_1_copy_16.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bc/9b/ce/bc9bceab-4503-7974-1d4b-8f4121d630eb/screenshot_1_copy_17.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c0/ea/42/c0ea4264-e620-cc1f-1ba8-3d1614ea2f55/screenshot_1_copy_18.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/72/f8/6872f827-e17b-59d9-7cd2-11ae2075baf7/screenshot_1_copy_19.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "We need to use the camera to scan text.",
+          "NSMicrophoneUsageDescription": "Converts your speech to text in Voice Mode to enable real-time conversations with Chatbot AI.",
+          "NSPhotoLibraryAddUsageDescription": "To save generated images to your device, please allow the app to access Photos.",
+          "NSSpeechRecognitionUsageDescription": "Converts your speech to text in Voice Mode to enable real-time conversations with Chatbot AI.",
+          "NSUserTrackingUsageDescription": "Let us enhance your experience with personalized content"
+        }
+      },
+      "size": 138700000,
+      "version": "3.28",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.28/Chatbot.AI_.Start.Search.Bot.tg@IAppsBest.ipa",
+          "size": 138700000,
+          "version": "3.28",
+          "buildVersion": null,
+          "date": "2025-11-27T16:48:00+07:00",
+          "localizedDescription": "Subscription \"Pro\" activated",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T16:48:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.28/Chatbot.AI_.Start.Search.Bot.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Kapi Cam - Vintage Camera",
+      "type": 1,
+      "bundleIdentifier": "com.future.kapi",
+      "developerName": "tg@IAppsBest",
+      "subtitle": " Subscription \"VIP\" activated",
+      "localizedDescription": "KAPI is an application that allows you to shoot DV, CCD, and film. You can use it to record the beautiful moments in life and enjoy the retro-style picture texture and atmosphere.\n\n• Simulates real DV and CCD effects, taking you back to the millennium in one second.\n• Provides a variety of retro-style filters and special effects, allowing you to create different visual effects as you like.\n• Supports real-time preview of effects, allowing you to easily capture your favorite images.\n• Simple and easy-to-use operation interface, making creation at your fingertips.\n\nKAPI is crafted by a small team focused on imaging simulation technology. We are committed to providing users with authentic, high-quality, and interesting retro effects. In the future, we will launch more DV, CCD, and film effects to help you realize what you want at a low cost!\n\nIf you like retro style, if you want to take different videos and photos, click to download KAPI!\n\n------------------\ncontact us:\nUser feedback QQ group: 137792806\n\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "versionDescription": "",
+      "tintColor": "#a4c484",
+      "iconURL": "https://i.ibb.co/XrtMhVjk/a642d069844c.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/a8/9f/aba89f5c-64ef-0a79-ec49-a9586d92b496/1.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/1d/fe/471dfe62-e4d1-d4b0-06aa-b94a4a991b05/2.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/d0/ce/bed0ce93-58c2-dec0-af68-90b3c3c18f15/3.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c4/63/c0/c463c034-cedc-950f-17d9-583e4da078a8/4.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/81/3c/96813c9c-7359-6876-7582-98ca2541e990/5.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/0c/f9/970cf9c2-59e0-51ae-0152-29681914fdf3/6.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "使用相机拍摄图片",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "需要访问你的定位信息",
+          "NSLocationWhenInUseUsageDescription": "需要访问你的定位信息",
+          "NSMicrophoneUsageDescription": "使用麦克风录音",
+          "NSMotionUsageDescription": "需要访问您的运动使用情况",
+          "NSPhotoLibraryAddUsageDescription": "访问你的相册",
+          "NSPhotoLibraryUsageDescription": "存储至你的相册",
+          "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+        }
+      },
+      "size": 167600000,
+      "version": "3.24.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.24.0/Kapi.Cam_.Vintage.Camera.tg@IAppsBest.ipa",
+          "size": 167600000,
+          "version": "3.24.0",
+          "buildVersion": null,
+          "date": "2025-11-27T16:41:00+07:00",
+          "localizedDescription": " Subscription \"VIP\" activated",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T16:41:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.24.0/Kapi.Cam_.Vintage.Camera.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "MD Clock - Flip Clock",
       "type": 1,
       "bundleIdentifier": "tech.miidii.MDClock",
@@ -55,12 +319,12 @@
       "version": "2.59",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.59/MD.Clock.tg@IAppsBest.ipa",
-          "size": 274500000,
           "version": "2.59",
-          "buildVersion": null,
           "date": "2025-11-27T15:16:00+07:00",
           "localizedDescription": "— Subscription \"Pro\" activated\nNote:\n— The widgets works when signed with an Apple developer certificate with a properly configured AppGroup configuration.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.59/MD.Clock.tg@IAppsBest.ipa",
+          "size": 274500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -106,12 +370,12 @@
       "version": "9.91.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v9.91.1/Flo.Cycle.Period.Tracker.tg@IAppsBest.ipa",
-          "size": 131200000,
           "version": "9.91.1",
-          "buildVersion": null,
           "date": "2025-11-27T15:00:00+07:00",
           "localizedDescription": "Subscription \"Premium\" activated",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v9.91.1/Flo.Cycle.Period.Tracker.tg@IAppsBest.ipa",
+          "size": 131200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -152,12 +416,12 @@
       "version": "5.0.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.0.3/FocusPomo_.Pomodoro.Time.tg@IAppsBest.ipa",
-          "size": 57300000,
           "version": "5.0.3",
-          "buildVersion": null,
           "date": "2025-11-27T14:53:00+07:00",
           "localizedDescription": "— Subscription \"Plus\" activated\nNote:\n— The app works when signed with an Apple developer certificate with a properly configured AppGroup configuration",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.0.3/FocusPomo_.Pomodoro.Time.tg@IAppsBest.ipa",
+          "size": 57300000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -194,12 +458,12 @@
       "version": "1.1.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.3/Chataway_.Private.AI.tg@IAppsBest.ipa",
-          "size": 20400000,
           "version": "1.1.3",
-          "buildVersion": null,
           "date": "2025-11-27T14:48:00+07:00",
           "localizedDescription": "Features:\n— Free use of the newest and best chat models [GPT-5 | Claude Sonnet 4.5 | Perplexity Pro]\n— Free use of the model to generate images [Nano Banana]",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.3/Chataway_.Private.AI.tg@IAppsBest.ipa",
+          "size": 20400000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
