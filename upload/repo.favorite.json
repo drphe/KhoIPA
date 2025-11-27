@@ -23,6 +23,89 @@
   "apps": [
     {
       "beta": false,
+      "name": "Calendars: Schedule Planner",
+      "type": 1,
+      "bundleIdentifier": "com.readdle.CalendarsLite",
+      "developerName": "IAppsBest",
+      "subtitle": "Subscription \"Premium\" activated",
+      "localizedDescription": "Quản lý lịch với chế độ xem ngày, tuần, tháng\nTạo sự kiện, đặt nhắc nhở, quản lý danh sách việc cần làm\nThêm nhanh sự kiện bằng ngôn ngữ tự nhiên\nTheo dõi thói quen, xây dựng lịch trình cá nhân\nKhóa học hướng dẫn tăng năng suất và quản lý thời gian\nĐồng bộ với Google Calendar, iCloud và nhiều dịch vụ khác\nTùy chỉnh bằng màu sắc, widget\nTham gia trực tiếp Zoom, Google Meet, GoToMeeting từ lịch",
+      "versionDescription": "",
+      "tintColor": "#21a4f0",
+      "iconURL": "https://i.ibb.co/1GSWCrdS/b96543b5d875.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0e/34/8b/0e348bac-f481-478e-b605-3aa210551859/6.5__SC-01-v1-no-flag__U00282_U0029.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cf/88/4e/cf884ef2-4329-8d3a-aa58-d18872e41d0d/6.5__SC-02.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/86/90/0e86909b-30e2-e51f-1a2c-e0c3beacd135/6.5__SC-03.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/71/45/a3/7145a3a2-d3ef-6c30-cf82-df6ffab39720/6.5__SC-04.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/29/39/8d293986-d029-9e9a-be64-ae396186aa77/6.5__SC-05.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/76/11/2d/76112d18-ac6c-86b6-244e-cc728d28c0b9/6.5__SC-06.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSCalendarsFullAccessUsageDescription": "To be able to show your events, Calendars needs to access your Calendar.",
+          "NSCalendarsUsageDescription": "To be able to show your events, Calendars needs to access your Calendar.",
+          "NSContactsUsageDescription": "To be able to invite Email Contacts, Calendars needs to access your Contacts.",
+          "NSLocationWhenInUseUsageDescription": "Calendars will use it to provide better location search suggestions and weather forecast.",
+          "NSPhotoLibraryUsageDescription": "Calendars needs to access your Photos.",
+          "NSRemindersFullAccessUsageDescription": "To be able to show your Tasks, Calendars needs to access your Reminders.",
+          "NSRemindersUsageDescription": "To be able to show your Tasks, Calendars needs to access your Reminders.",
+          "NSSiriUsageDescription": "This will let Siri respond to your request in showing your agenda."
+        }
+      },
+      "size": 271900000,
+      "version": "5.37.11",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.37.11/Calendars_.Schedule.Planner.tg@IAppsBest.ipa",
+          "size": 271900000,
+          "version": "5.37.11",
+          "buildVersion": null,
+          "date": "2025-11-27T06:41:00+07:00",
+          "localizedDescription": "Features:\n\n— Subscription \"Premium\" activated\n— Disabled no application update pop-up window\n— Files picker has been fixed",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T06:41:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.37.11/Calendars_.Schedule.Planner.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "XP3Player",
+      "type": 1,
+      "bundleIdentifier": "tvp.XP3Player",
+      "developerName": "Ios crack VN",
+      "subtitle": "Paid on Applestore",
+      "localizedDescription": "Trình xem video đa thể loại cho Ipad",
+      "versionDescription": "",
+      "tintColor": "#629bfb",
+      "iconURL": "https://i.ibb.co/zWX6CB1m/6dfbb8ad3821.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 16400000,
+      "version": "1.3.11",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.11/XP3Player.-.v1.3.11.ipa",
+          "size": 16400000,
+          "version": "1.3.11",
+          "buildVersion": null,
+          "date": "2025-11-27T06:36:00+07:00",
+          "localizedDescription": "Đã mua trên applestore 8$",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T06:36:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.11/XP3Player.-.v1.3.11.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Swiftgram",
       "type": 1,
       "bundleIdentifier": "app.swiftgram.ios",
@@ -57,12 +140,12 @@
       "version": "12.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v12.2.0/Swiftgram-Fluffy1.7.0-patched_12.2.ipa",
-          "size": 82000000,
           "version": "12.2",
-          "buildVersion": null,
           "date": "2025-11-23T23:15:00+07:00",
           "localizedDescription": "Swiftgram ver 12.2 ✨ TGExtra 1.7.0 fix các lỗi bản cũ",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v12.2.0/Swiftgram-Fluffy1.7.0-patched_12.2.ipa",
+          "size": 82000000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -1312,9 +1395,18 @@
           "NSUserTrackingUsageDescription": "We use this to learn how you discovered our game and to share future content updates with you through personalized advertising"
         }
       },
-      "size": 97600000,
-      "version": "15.23.0",
+      "size": 101200000,
+      "version": "15.23.7283286",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.7283286/DauTruongChanLy.-.v15.23.7283286.ipa",
+          "size": 101200000,
+          "version": "15.23.7283286",
+          "buildVersion": null,
+          "date": "2025-11-26T23:31:00+07:00",
+          "localizedDescription": "Đấu Trường Chân Lý: Update\nHỗ trợ 60Fps\nChép theo đường dẫn Trên IPhone=> Đấu Trường Chân Lý=> Config=> dán đè vào là đc \nFile: https://drphe.github.io/KhoIPA/upload/Game.cfg\nLƯU Ý: KHI KÝ BẮT BUỘC BẬT HỖ TRỢ TRÌNH DUYỆT TÀI LIỆU",
+          "minOSVersion": null
+        },
         {
           "version": "15.23.0",
           "date": "2025-11-21T06:26:00+07:00",
@@ -1334,8 +1426,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-21T06:26:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.0/DauTruongChanLy.-.v15.23.0.ipa",
+      "versionDate": "2025-11-26T23:31:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.7283286/DauTruongChanLy.-.v15.23.7283286.ipa",
       "patreon": {}
     },
     {
