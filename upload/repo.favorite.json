@@ -23,10 +23,219 @@
   "apps": [
     {
       "beta": false,
+      "name": "Brain.fm: Focus & Sleep Music",
+      "type": 3,
+      "bundleIdentifier": "fm.brainwave",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Subscription \"Premium\" activated",
+      "localizedDescription": "Focus, Relax, Meditate and Sleep, with Music Made for Your Brain.\n\nBrain.fm is science-backed music that enhances focus, improves sleep, and more. We use sound to change your brainwave patterns, so you can drop into deep focus or fall asleep faster, every time. Now with ADHD mode!\n\nIMPROVE FOCUS, RELAX, MEDITATION, SLEEP\nDo you struggle to focus at work or studying? Do you have trouble winding down or falling asleep at night? Brain.fm will help you:\n• Focus faster and get into flow.\n• Beat procrastination.\n• Stay in flow longer.\n• Fall asleep and stay asleep.\n• Meditate more effectively.\n• Reduce stress and anxiety.\n\n10X YOUR FOCUS\n• Boost activity in brain regions controlling attention\n• Increase focus by up to 10x\n• Reduce tension/anxiety by 2x compared to other relaxing music.\n• Improve brain signatures of deep sleep\n\nFunded by the National Science Foundation (USA)\nBrain.fm affects your brain differently than any other music! Our patented tech works via brainwave entrainment, and has been tested extensively with funding from the US government. Our music process includes both humans and AI, for the best-sounding AI music around.",
+      "versionDescription": "",
+      "tintColor": "#541cf4",
+      "iconURL": "https://i.ibb.co/Hph3r6hc/f317c465c80c.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/05/89/020589e2-cc01-a201-8e32-91a971ce20f7/9dc0fe52-95b1-44c3-a135-96cbd3680057_App_Store_248.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/f9/cc/fdf9cc04-d918-91a7-9b76-c4508b56dc27/a8f14e2c-2366-4b63-afe4-afcafe1ed7ff_App_Store_247.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/52/3a/a7/523aa72b-506a-154f-2224-175ab0d64e8f/51cea0e5-2740-4c13-986b-7a1521d05c83_App_Store_265.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7f/dd/87/7fdd878a-95c5-3e11-98ac-e03d93483b17/64aba752-8032-4641-a6e7-51c242fabc6b_App_Store_246.png/392x696bb.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79400000,
+      "version": "3.5.26",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.5.26/BrainFM_.Focus.Music.ipa",
+          "size": 79400000,
+          "version": "3.5.26",
+          "buildVersion": null,
+          "date": "2025-11-27T10:20:00+07:00",
+          "localizedDescription": "— Subscription \"Premium\" activated\nNote:\n— To activate subscription restart the application",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T10:20:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.5.26/BrainFM_.Focus.Music.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Beatleap Public",
+      "type": 1,
+      "bundleIdentifier": "com.lightricks.Lightwave",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Subscription \"Pro\" activated",
+      "localizedDescription": "There’s video editing, and then there’s Beatleap. We’re here to make the impossibly time consuming task of editing a video accessible in a few taps, and always at the tips of your fingers. Through vivid interactions and a playful editing experience, the game begins - and only you will determine your end destination.\n\nWhether you’re mixing your next workout instruction video, boomeranging your last trip, enjoying the scenery, or just dancing it out with friends - we’re setting the rhythm of your life to video, and for the first time ever, it’s also intuitive.\n\nWith video editing driven by the music, the audio you choose determines the right moments for effects, styles, slowing down your video, or speeding it up. Beatleap delivers a new, powerful video editing experience, raising the bar of what anyone can create.\n\nMake engaging, memorable videos in seconds and preserve your favorite moments in ways that fuel your creativity.\n\nNo more struggles to sort and find the best clips - you choose what you want to show, throw it in with the music you choose, and we’ll mix it up. Out comes a video a step above what you imagined, that tells your story - the funny ones, the adventurous ones, and all the bloopers in between. So what are you waiting for? Your next clip awaits!\n",
+      "versionDescription": "",
+      "tintColor": "#b8e830",
+      "iconURL": "https://i.ibb.co/wNXKcyRH/f06f72d49652.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/55/81/d7/5581d7df-ae2b-1565-0539-a2c825b10247/9a1eac5f-5561-40a2-83ba-cb3628c583a5_iPhone11_01.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource115/v4/26/2f/03/262f033a-530a-8d66-baca-06e300754a44/36151ac3-0c91-4070-b5f0-54e29b3b8687_iPhone11_02.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource115/v4/1d/69/b7/1d69b781-3396-5e8e-0062-1ad65e4b7d33/a0130b6e-4569-47b6-9cde-f03d4a03c1bf_iPhone11_04.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource115/v4/c1/62/fb/c162fb74-ec8b-8dac-77a9-c5fa0f6f8789/3d8942f3-7d85-4bcd-b71e-fc86dd6e1bfd_iPhone11_05.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/c7/cd/4d/c7cd4d03-1538-a920-160c-3e44a5859df2/0dbd8460-22e5-4fb8-8c41-12c0a8187819_iPhone8_07.jpg/392x696bb.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSAppleMusicUsageDescription": "To use your own music, allow access to your music library",
+          "NSCameraUsageDescription": "Allow camera access to use video recording",
+          "NSPhotoLibraryUsageDescription": "Beatleap needs access to your photo library for loading photos and videos",
+          "NSUserTrackingUsageDescription": "This will be used to identify the service that referred you to provide a customized experience."
+        }
+      },
+      "size": 57800000,
+      "version": "1.6.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.6.1/Beatleap.by.Lightricks.tg@IAppsBest.ipa",
+          "size": 57800000,
+          "version": "1.6.1",
+          "buildVersion": null,
+          "date": "2025-11-27T10:08:00+07:00",
+          "localizedDescription": "— Subscription \"Pro\" activated\n— Log in to your account to activate subscription\n— The application works properly when signed with an Apple developer certificate with a properly configured AppGroup configuration",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T10:08:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.6.1/Beatleap.by.Lightricks.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "CPU Max Public",
+      "type": 4,
+      "bundleIdentifier": "com.bestli.cpumax",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Subscription \"Pro\" activated",
+      "localizedDescription": "Sometimes we don't know the hardware information of our cell phone.\nSometimes we don't know how much traffic we have used.\nSometimes we don't know the performance of our phone's camera or how long it's been on.\nCPU Max can help you to solve this problem easily. With it, a small and light app, you can check the detailed parameters of your phone, and there are convenient widgets and widgets that you will love to use.\n\nMain functions:\n- Basic information: phone name, heat generation, sensors, interface, size, etc.\n- Processor: name, model, number of crystals, cpu cores, architecture, real-time main frequency, downscaling ratio, etc.\n- Memory: total memory, memory details usage, etc.\n- Network: connection type, traffic, external IP, internal IP, upload and download speed, etc.\n- Battery: capacity, estimated available time, power, low battery mode, etc.\n- Storage: total capacity, used capacity, remaining capacity\n- Screen: material, size, brightness, refresh rate, etc.\n- Camera: aperture, HDR, anti-shake, exposure time, resolution, frame rate, etc.\n- System: type, version, kernel, boot time, active time, supported versions, etc.\n\nTools:\n- widget: negative screen notification bar widget, real-time refresh, graphic overview\n- Traffic statistics: statistics of cell phone traffic, can set package traffic (Note: and operator data may have errors)\n- Network speed test: test the latency, jitter, upload speed, download speed, etc. of your network\n- Spin the wheel: Choose for yourself through the turntable, you can freely set the theme and style, fun and easy to use\n- Flip clock: display the page flip clock in full screen, the phone becomes a beautiful flip clock, the effect can be customized\n- Straight ruler: Turn your phone into a ruler with a millimeter scale, measure at any time, easy to use\n- Password generator: support 8 to 64-bit complex passwords, support the function of saving passwords, only saved locally (Tip: different platforms using a unified account password is most likely to generate information leakage)\n- Screen test: full-screen display of different types of Screen test pictures, so that problematic screens are visible at a glance\n- Conversion: binary, octal, decimal, hexadecimal free conversion, you may use\n\nThere will be more in the future, we want to be the best mobile tool, if you have a gadget you want, feel free to tell us in the App feedback.\n\nNote: If you select the Health widget, the app will need to read the step, distance and calorie data from your Health app to display the data on the widget.\n\nMember subscription:\n- You can subscribe for unlimited access to all features of Find Device\n- Subscriptions are charged on a weekly basis, depending on the subscription plan chosen\n\nBy using CPU Max, you agree to our Privacy Policy and Terms of Use:\nhttps://kuangbaoat.github.io/cpumax/privacy.html\nhttps://kuangbaoat.github.io/cpumax/terms.html",
+      "versionDescription": "",
+      "tintColor": "#1484fc",
+      "iconURL": "https://i.ibb.co/mVMZ2d1t/579491f0b57c.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e5/8c/a7/e58ca743-dda5-23ec-f15b-1dbe07df125a/en_1.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f1/0a/47/f10a47f5-f558-7237-27cd-3254d5ad8bf8/c1792bad-70ae-4eeb-988d-187114951b35_en_5.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/76/be/74/76be7481-1d24-dac7-860f-aaad8c6ea582/7b343e21-8ab0-4dc9-8090-2e82c7263ad1_en_3.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/dc/39/88dc396d-0d68-aa61-fabc-3a1a5eb45ccf/82cccd95-175f-4d0d-9d9c-e7e354b82482_en_4.png/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/49/bc/c4/49bcc401-c432-ee4c-53f3-a46beb5fa66f/ffd87ae9-6f03-4d10-8b51-0072184d4d91_en_2.png/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "需要获取蓝牙状态用来在小组件中展示",
+          "NSBluetoothPeripheralUsageDescription": "需要获取蓝牙状态用来在小组件中展示",
+          "NSHealthShareUsageDescription": "健康小组件展示需要读取健康数据",
+          "NSHealthUpdateUsageDescription": "健康小组件展示需要读取健康数据",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "需要位置权限才可以获取无线网名称",
+          "NSLocationUsageDescription": "需要位置权限才可以获取无线网名称",
+          "NSLocationWhenInUseUsageDescription": "需要位置权限才可以获取无线网名称",
+          "NSPhotoLibraryUsageDescription": "需要访问相册才可以使用图片自定义小组件样式",
+          "NSUserTrackingUsageDescription": "该标识符将用于向您投放个性化广告"
+        }
+      },
+      "size": 11700000,
+      "version": "1.2.100",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2.100/CPU.Max.Mobile.Spin.Wheel.tg@IAppsBest.ipa",
+          "size": 11700000,
+          "version": "1.2.100",
+          "buildVersion": null,
+          "date": "2025-11-27T10:02:00+07:00",
+          "localizedDescription": "Features:\n— Subscription \"Pro\" activated\n— The application works properly when signed with an Apple developer certificate with a properly configured AppGroup configuration",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T10:02:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2.100/CPU.Max.Mobile.Spin.Wheel.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "XS VPN Public",
+      "type": 4,
+      "bundleIdentifier": "com.xsvpn.free.turbofast",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Subscription \"Premium\" activated",
+      "localizedDescription": "XS VPN USA – AI-Powered Freedom: Fast, Private & Smart\n\nConnect instantly to 100+ high-speed servers worldwide. Experience lightning-fast speeds, total privacy and zero logs.\n\nWhat \"AI-Powered Freedom\" Means\nOur AI Smart Connect uses advanced machine learning to:\n\nLearn your location, device performance and server load in real time.\n\nPredict the fastest, most stable server for your needs.\n\nAdapt on the fly, rerouting you seamlessly if network conditions change.\n\nKey Features\n\nAI Smart Connect — One-tap setup to the optimal server for speed and stability.\n\nCategory Modes — Preconfigured profiles for Streaming, Gaming, Social and Browsing.\n\nGlobal Network — 100+ secure servers in the US, Europe, Asia and beyond.\n\nBuilt‑in Ad Blocker — Block ads and trackers across apps and websites.\n\nKill Switch — Instantly stops internet traffic if VPN disconnects.\n\nSmart DNS — Lower ping and buffer-free streaming.\n\nDynamic Island Support — Live VPN status and quick-connect on Dynamic Island.\n\nAdvanced Tunneling (V2Ray) — Enhanced proxy performance with v2raytun.\n\nNo‑Log Policy — We never record your IP address or online activity.\n\nWhether you’re streaming global content, gaming lag‑free or browsing securely on public Wi‑Fi, XS VPN USA delivers a premium, worry‑free experience.\n\nPremium Access (Subscription)\n\nUnlock all features with an optional subscription\n\nBilled through your Apple ID at confirmation\n\nAuto‑renews unless cancelled at least 24 hours before period end\n\nManage or cancel anytime in App Store Settings\n\nUnused trial time is forfeited upon upgrade\n\nPrivacy Policy: https://www.xsvpn.net/privacy-policyTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "versionDescription": "",
+      "tintColor": "#1f5fdf",
+      "iconURL": "https://i.ibb.co/gLd6rQc6/382c6e1a7c0e.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/78/db/1678db3d-967f-5dfc-7c2a-a46c1c59b0e6/1._Intro__U00282_U0029.png/460x998bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/64/b0/f7/64b0f712-fb3d-8ad7-f76d-101df6bd9ba0/2._AI_-_One_Tap_U002c_servers__U00282_U0029.png/460x998bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/9c/9e/ab9c9e80-9793-83da-431a-ea94e1b15747/3._Siri_U002c_Vote_U002c_Rare_servers__U00281_U0029.png/460x998bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e4/20/42/e42042b7-6e34-6b36-d22a-241cfe8cbed9/4._Videos__U00281_U0029.png/460x998bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/ae/18/76ae18ff-9d4e-3cd7-0a40-aac61308aa42/5._Live_activity_U002c_speed__U00281_U0029.png/460x998bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6a/18/bd/6a18bd7a-1b25-ef5b-ac4a-b30d927c3f2f/6._wathc_os__U00281_U0029.png/460x998bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSSiriUsageDescription": "connect and disconnect VPN with Siri shortcuts for instant, hands-free control",
+          "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+        }
+      },
+      "size": 83100000,
+      "version": "4.0.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.0.1/XS.VPN.USA_.Private.Fast.tg@IAppsBest.ipa",
+          "size": 83100000,
+          "version": "4.0.1",
+          "buildVersion": null,
+          "date": "2025-11-27T02:49:00+07:00",
+          "localizedDescription": "— Subscription \"Premium\" activated\n— The application works properly when signed with an Apple developer certificate with a properly configured AppGroup configuration\nFind AppGroups Checker app on repo to check your cert.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T02:49:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.0.1/XS.VPN.USA_.Private.Fast.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "AppGroups Checker",
+      "type": 4,
+      "bundleIdentifier": "com.choco",
+      "developerName": "brits8882",
+      "subtitle": "Check type of Certificates",
+      "localizedDescription": "Credits to @brits8882 for making this app.",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.ibb.co/nsy3vmtM/6cd66bbe05b7.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 600000,
+      "version": "6.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6.0/AppGroupCheck.ipa",
+          "size": 600000,
+          "version": "6.0",
+          "buildVersion": null,
+          "date": "2025-11-27T09:44:00+07:00",
+          "localizedDescription": "Sign, install, and open this app to see if your cert is set up right. Quick, simple, and no hassle!\nCredits to @brits8882 for making this app.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T09:44:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6.0/AppGroupCheck.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Calendars: Schedule Planner",
       "type": 1,
       "bundleIdentifier": "com.readdle.CalendarsLite",
-      "developerName": "IAppsBest",
+      "developerName": "tg@IAppsBest",
       "subtitle": "Subscription \"Premium\" activated",
       "localizedDescription": "Quản lý lịch với chế độ xem ngày, tuần, tháng\nTạo sự kiện, đặt nhắc nhở, quản lý danh sách việc cần làm\nThêm nhanh sự kiện bằng ngôn ngữ tự nhiên\nTheo dõi thói quen, xây dựng lịch trình cá nhân\nKhóa học hướng dẫn tăng năng suất và quản lý thời gian\nĐồng bộ với Google Calendar, iCloud và nhiều dịch vụ khác\nTùy chỉnh bằng màu sắc, widget\nTham gia trực tiếp Zoom, Google Meet, GoToMeeting từ lịch",
       "versionDescription": "",
@@ -58,12 +267,12 @@
       "version": "5.37.11",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.37.11/Calendars_.Schedule.Planner.tg@IAppsBest.ipa",
-          "size": 271900000,
           "version": "5.37.11",
-          "buildVersion": null,
           "date": "2025-11-27T06:41:00+07:00",
           "localizedDescription": "Features:\n\n— Subscription \"Premium\" activated\n— Disabled no application update pop-up window\n— Files picker has been fixed",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.37.11/Calendars_.Schedule.Planner.tg@IAppsBest.ipa",
+          "size": 271900000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -91,12 +300,12 @@
       "version": "1.3.11",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.11/XP3Player.-.v1.3.11.ipa",
-          "size": 16400000,
           "version": "1.3.11",
-          "buildVersion": null,
           "date": "2025-11-27T06:36:00+07:00",
           "localizedDescription": "Đã mua trên applestore 8$",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.11/XP3Player.-.v1.3.11.ipa",
+          "size": 16400000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -1399,12 +1608,12 @@
       "version": "15.23.7283286",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.7283286/DauTruongChanLy.-.v15.23.7283286.ipa",
-          "size": 101200000,
           "version": "15.23.7283286",
-          "buildVersion": null,
           "date": "2025-11-26T23:31:00+07:00",
           "localizedDescription": "Đấu Trường Chân Lý: Update\nHỗ trợ 60Fps\nChép theo đường dẫn Trên IPhone=> Đấu Trường Chân Lý=> Config=> dán đè vào là đc \nFile: https://drphe.github.io/KhoIPA/upload/Game.cfg\nLƯU Ý: KHI KÝ BẮT BUỘC BẬT HỖ TRỢ TRÌNH DUYỆT TÀI LIỆU",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v15.23.7283286/DauTruongChanLy.-.v15.23.7283286.ipa",
+          "size": 101200000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
