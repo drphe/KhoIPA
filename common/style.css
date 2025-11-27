@@ -485,7 +485,7 @@ input[type="text"]:focus {
 }
 
 #apps-list, #sources-list {
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
 }
 
 /* About */
@@ -1377,7 +1377,7 @@ hr {
 }
 
 .section:last-of-type {
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 .news-item-wrapper .item {
