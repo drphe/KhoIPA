@@ -99,53 +99,6 @@
     },
     {
       "beta": false,
-      "name": "MD Clock - Flip Clock",
-      "type": 1,
-      "bundleIdentifier": "tech.miidii.MDClock",
-      "developerName": "tg@IAppsBest",
-      "subtitle": "Subscription \"Pro\" activated",
-      "localizedDescription": "MD Clock is a crafted clock app to accompany you in studying, working, and life. 2022 Apple Design Award finalist.\n\n◎ 23 exquisite themes, and more to come\n◎ Fully adapted to the new Liquid Glass design—dynamic and luminous\n◎ Rich widgets and custom APP logo to meet your personality\n◎ Perfectly supports StandBy\n◎ Widgets support clear and blurred backgrounds, which are more integrated with the desktop\n◎ Support multiple timers, chimes and alarms\n◎ Refined animation and sound effects, polish every detail carefully\n\n* Subscription payments will be charged to your iTunes account at confirmation of your purchase.\n* Subscriptions will automatically renew and payment will be charged to your iTunes account unless auto-renew is turned off at least 24 hours prior to the end of the current.\n\nPrivacy Policy: https://miidii.super.site/miidii-tech/privacy-policy\nTerms Of Use: https://miidii.super.site/miidii-tech/terms-of-use",
-      "versionDescription": "",
-      "tintColor": "#36c8c8",
-      "iconURL": "https://i.ibb.co/qL7LQZvp/a1485c516091.png",
-      "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/4a/da/114adaa3-768f-b958-c2ad-ed1022883955/EN_1_6.5.jpg/230x498bb.webp",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/68/72/96687226-b351-27a4-6bd1-89bb9f9a12a6/8a85730d-9891-4618-8a37-dbbde7bab58c__U82f1_U8bed.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/72/cb/1272cbf4-61b3-77ab-a573-f944afb6a3e4/8e2ce13d-e38e-4aca-a3a1-2ac8db4fcd51__U82f1_U6587_5.5-2.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/43/41/0143415e-81a9-3b78-800c-87e52cf211b9/2b2924bb-9864-47a7-9d60-d70ca0ef396e_3.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/6d/19/686d194f-3ce0-02ae-d0f2-a4beb66be26b/9438bf5c-1d1b-420a-b849-723aecd02617_0.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/7d/11/707d117b-8d7e-0bd9-bd41-882313c1738f/4aedb135-adc2-457b-8f8b-472dba16aa37_1.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/60/d8/5b/60d85b2b-65f0-57bf-a63a-c654e6ddd80e/969492a3-e8a5-466f-92c6-b15f262b75b3_2.png/392x696bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e9/07/c0/e907c009-170f-649e-0fdc-88824a8d71c3/cd5775c8-ff9b-4012-b869-1cf413dabaf9_5.5.png/392x696bb.png"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAlarmKitUsageDescription": "MDClock Requires permission to shcedule Alarm.",
-          "NSDownloadsFolderUsageDescription": "MD Clock requires access to save photos in the Downloads folder",
-          "NSPhotoLibraryAddUsageDescription": "MD Clock needs access to Photos for save focus share card.",
-          "NSPhotoLibraryUsageDescription": "MD Clock needs access to Photos for save focus share card."
-        }
-      },
-      "size": 274500000,
-      "version": "2.59",
-      "versions": [
-        {
-          "version": "2.59",
-          "date": "2025-11-27T15:16:00+07:00",
-          "localizedDescription": "— Subscription \"Pro\" activated\nNote:\n— The widgets works when signed with an Apple developer certificate with a properly configured AppGroup configuration.",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.59/MD.Clock.tg@IAppsBest.ipa",
-          "size": 274500000,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-27T15:16:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.59/MD.Clock.tg@IAppsBest.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Brain.fm: Focus & Sleep Music",
       "type": 3,
       "bundleIdentifier": "fm.brainwave",
