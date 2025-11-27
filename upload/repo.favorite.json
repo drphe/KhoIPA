@@ -23,6 +23,192 @@
   "apps": [
     {
       "beta": false,
+      "name": "MD Clock - Flip Clock",
+      "type": 1,
+      "bundleIdentifier": "tech.miidii.MDClock",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Subscription \"Pro\" activated",
+      "localizedDescription": "MD Clock is a crafted clock app to accompany you in studying, working, and life. 2022 Apple Design Award finalist.\n\n◎ 23 exquisite themes, and more to come\n◎ Fully adapted to the new Liquid Glass design—dynamic and luminous\n◎ Rich widgets and custom APP logo to meet your personality\n◎ Perfectly supports StandBy\n◎ Widgets support clear and blurred backgrounds, which are more integrated with the desktop\n◎ Support multiple timers, chimes and alarms\n◎ Refined animation and sound effects, polish every detail carefully\n\n* Subscription payments will be charged to your iTunes account at confirmation of your purchase.\n* Subscriptions will automatically renew and payment will be charged to your iTunes account unless auto-renew is turned off at least 24 hours prior to the end of the current.\n\nPrivacy Policy: https://miidii.super.site/miidii-tech/privacy-policy\nTerms Of Use: https://miidii.super.site/miidii-tech/terms-of-use",
+      "versionDescription": "",
+      "tintColor": "#36c8c8",
+      "iconURL": "https://i.ibb.co/qL7LQZvp/a1485c516091.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/4a/da/114adaa3-768f-b958-c2ad-ed1022883955/EN_1_6.5.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/68/72/96687226-b351-27a4-6bd1-89bb9f9a12a6/8a85730d-9891-4618-8a37-dbbde7bab58c__U82f1_U8bed.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/72/cb/1272cbf4-61b3-77ab-a573-f944afb6a3e4/8e2ce13d-e38e-4aca-a3a1-2ac8db4fcd51__U82f1_U6587_5.5-2.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/43/41/0143415e-81a9-3b78-800c-87e52cf211b9/2b2924bb-9864-47a7-9d60-d70ca0ef396e_3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/6d/19/686d194f-3ce0-02ae-d0f2-a4beb66be26b/9438bf5c-1d1b-420a-b849-723aecd02617_0.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/7d/11/707d117b-8d7e-0bd9-bd41-882313c1738f/4aedb135-adc2-457b-8f8b-472dba16aa37_1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/60/d8/5b/60d85b2b-65f0-57bf-a63a-c654e6ddd80e/969492a3-e8a5-466f-92c6-b15f262b75b3_2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e9/07/c0/e907c009-170f-649e-0fdc-88824a8d71c3/cd5775c8-ff9b-4012-b869-1cf413dabaf9_5.5.png/392x696bb.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAlarmKitUsageDescription": "MDClock Requires permission to shcedule Alarm.",
+          "NSDownloadsFolderUsageDescription": "MD Clock requires access to save photos in the Downloads folder",
+          "NSPhotoLibraryAddUsageDescription": "MD Clock needs access to Photos for save focus share card.",
+          "NSPhotoLibraryUsageDescription": "MD Clock needs access to Photos for save focus share card."
+        }
+      },
+      "size": 274500000,
+      "version": "2.59",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.59/MD.Clock.tg@IAppsBest.ipa",
+          "size": 274500000,
+          "version": "2.59",
+          "buildVersion": null,
+          "date": "2025-11-27T15:16:00+07:00",
+          "localizedDescription": "— Subscription \"Pro\" activated\nNote:\n— The widgets works when signed with an Apple developer certificate with a properly configured AppGroup configuration.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T15:16:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.59/MD.Clock.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Flo Public",
+      "type": 1,
+      "bundleIdentifier": "org.iggymedia.periodtracker",
+      "developerName": "tg@IAppsBest",
+      "subtitle": " Subscription \"Premium\" activated",
+      "localizedDescription": "Welcome to the world’s leading period tracker*, backed by 120+ doctors and medical experts, recommended by OB-GYNs, and trusted by 430M+ women worldwide.\nWhether you're tracking your menstrual cycle, trying to conceive (TTC), understanding PMS or PMDD, or navigating pregnancy or perimenopause, Flo is here for every life stage.\nWith Flo’s period tracker, you’ll get personalized insights, accurate menstrual cycle predictions, and a better understanding of your ovulation, fertility, pregnancy, and overall health. Join Flo’s growing community today.",
+      "versionDescription": "",
+      "tintColor": "#ec6484",
+      "iconURL": "https://i.ibb.co/yB08xZ2C/d5879637dd18.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a1/df/8a/a1df8aec-f5eb-f85c-080c-0f2cc15b2221/EN_2-25_PP_9g_68-V17_1_1242x2688.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4e/c5/a0/4ec5a032-a44e-8b4c-cb8f-ef56b28fef3f/fdffebca-cc1f-448e-a4c3-944a3ab4ab17_EN_9-24_PP_9g_68-V5_1_1242x2688.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/f9/d5/5ef9d580-551f-bff4-8f79-1e52c566355f/6bceba94-add1-450b-90b5-b2d37249a851_EN_9-24_PP_9g_68-V6_1_1242x2688.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c9/9e/a8/c99ea85f-82d5-0cf7-8b56-4505461934fc/8ecbe270-b208-44c4-aa62-3648dc16a046_EN_9-24_PP_9g_68-V3_1_1242x2688.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/dc/92/7bdc9285-5fbb-4054-22cb-1852300c44af/ec2b7e2f-0f42-4e41-b36d-64aa0498c7dd_EN_9-24_PP_9g_68-V4_1_1242x2688.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/18/53/121853e0-f255-732e-0444-542925ebe263/EN_9-24_PP_9g_68-V11_1_1242x2688.jpg/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://flo.health",
+          "NSCameraUsageDescription": "Camera Usage",
+          "NSFaceIDUsageDescription": "Face ID Usage",
+          "NSHealthShareUsageDescription": "Health Share",
+          "NSHealthUpdateUsageDescription": "Health Update",
+          "NSMicrophoneUsageDescription": "Microphone Usage",
+          "NSMotionUsageDescription": "Motion Usage",
+          "NSPhotoLibraryAddUsageDescription": "Photo Usage",
+          "NSPhotoLibraryUsageDescription": "Photo Usage",
+          "NSUserTrackingUsageDescription": "Tracking Usage"
+        }
+      },
+      "size": 131200000,
+      "version": "9.91.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v9.91.1/Flo.Cycle.Period.Tracker.tg@IAppsBest.ipa",
+          "size": 131200000,
+          "version": "9.91.1",
+          "buildVersion": null,
+          "date": "2025-11-27T15:00:00+07:00",
+          "localizedDescription": "Subscription \"Premium\" activated",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T15:00:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v9.91.1/Flo.Cycle.Period.Tracker.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "FocusPomo Public",
+      "type": 1,
+      "bundleIdentifier": "com.MINE.PomodoroTimer",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Subscription \"Plus\" activated",
+      "localizedDescription": "FocusPomo is a minimalist, beautiful and professional app based on the \"Pomodoro Technique\". It helps you to stay focused without being distracted and become more productive when you are studying or working.\n\n# Who need FocusPomo\n\n1. Low learning efficiency\n2. Easy distraction\n3. Procrastination\n4. Not self-discipline\n5.Learning pressure",
+      "versionDescription": "",
+      "tintColor": "#fca464",
+      "iconURL": "https://i.ibb.co/DfRDMnPS/21dab278683e.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/d7/ae/96d7ae0a-2cbc-e974-c6e7-e892424813b5/en1.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1d/1e/67/1d1e6796-12a8-ecf7-e699-0b9b9d1cec9c/en2.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/32/a5/cb/32a5cba5-a9b0-0cbc-d1a5-d2532a1df4ea/en3.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/fc/3d/bafc3d66-0be9-8465-e1cf-f3274b7e5fc5/en6.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/91/89/a8918954-33dc-64c1-aed7-6044c4f176d6/en4.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/d5/13/6dd51341-600d-ebbf-ea92-73cde8b9c904/en5.jpg/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCalendarsFullAccessUsageDescription": "Allow FocusPomo to sync focus data with Apple Calendar",
+          "NSCalendarsUsageDescription": "Allow FocusPomo to sync focus data with Apple Calendar",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "Allow FocusPomo to sync focus data with Apple Calendar",
+          "NSHealthShareUsageDescription": "Allow FocusPomo to sync focus data with Apple Health",
+          "NSHealthUpdateUsageDescription": "Allow FocusPomo to sync focus data with Apple Health"
+        }
+      },
+      "size": 57300000,
+      "version": "5.0.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.0.3/FocusPomo_.Pomodoro.Time.tg@IAppsBest.ipa",
+          "size": 57300000,
+          "version": "5.0.3",
+          "buildVersion": null,
+          "date": "2025-11-27T14:53:00+07:00",
+          "localizedDescription": "— Subscription \"Plus\" activated\nNote:\n— The app works when signed with an Apple developer certificate with a properly configured AppGroup configuration",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T14:53:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.0.3/FocusPomo_.Pomodoro.Time.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Chataway Public",
+      "type": 1,
+      "bundleIdentifier": "app.chataway",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Free use of the newest and best chat models AI",
+      "localizedDescription": "Chataway: Your All-in-one AI Assistant\n\nChataway gives you private access to the world's best AI models : GPT-5 for brainstorming and deep thinking, Claude for writing & coding, Perplexity Sonar Pro for Search, Gemini 2.5 pro for vision, Grok 4 and Gemma 3n, a fully offline local model for complete privacy. Now you can choose the perfect AI for every situation without having to switch apps, get multiple subscriptions and most importantly - without sacrificing privacy.\n\nChataway does not record or store any of your chats on its servers. All your conversations are stored on your device. Also, your conversations are not used to train chat models by Chataway or the underlying model providers (for example, Open AI, Google, Anthropic). For the most privacy and security, you can talk to our completely offline local model that understands over 140 languages!\n\nWhether you’re testing ideas, getting help with drafting that mail, creating a marketing strategy, working on an important presentation or using AI for your everyday needs like learning about something new or asking for visual help, ChatAway gives you easy, private access to the best model for your job!\n\nStop chasing the latest AI models. We track, test, and integrate the best-performing models as soon as they launch, so you can focus on your work instead of researching which new AI has released. Simply choose and ask from the world’s best AI models to get the best answer for your query, without compromising on privacy.",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/4nq4Zx7j/16872c69422b.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/ca/f4/7ecaf462-ca83-5365-63ba-89dcba48d71a/303__U00281_U0029.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/84/37/4784378f-52f6-92cb-b7f8-7480ca22ed8f/304__U00281_U0029.jpg/230x499bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/83/12/fe/8312fef4-a261-c70a-f84a-b7074e547a65/305__U00283_U0029.jpg/230x499bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Allow camera access to capture photos for the AI to analyze and help with your requests.",
+          "NSMicrophoneUsageDescription": "Allow microphone access so you can transcribe your voice to text.",
+          "NSPhotoLibraryUsageDescription": "Allow access to your photos so you can share images with the AI for analysis and discussion.",
+          "NSUserTrackingUsageDescription": "This will help us reach more relevant users and reduce repetitive ads shown to you."
+        }
+      },
+      "size": 20400000,
+      "version": "1.1.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.3/Chataway_.Private.AI.tg@IAppsBest.ipa",
+          "size": 20400000,
+          "version": "1.1.3",
+          "buildVersion": null,
+          "date": "2025-11-27T14:48:00+07:00",
+          "localizedDescription": "Features:\n— Free use of the newest and best chat models [GPT-5 | Claude Sonnet 4.5 | Perplexity Pro]\n— Free use of the model to generate images [Nano Banana]",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-11-27T14:48:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.3/Chataway_.Private.AI.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Brain.fm: Focus & Sleep Music",
       "type": 3,
       "bundleIdentifier": "fm.brainwave",
@@ -46,12 +232,12 @@
       "version": "3.5.26",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.5.26/BrainFM_.Focus.Music.ipa",
-          "size": 79400000,
           "version": "3.5.26",
-          "buildVersion": null,
           "date": "2025-11-27T10:20:00+07:00",
           "localizedDescription": "— Subscription \"Premium\" activated\nNote:\n— To activate subscription restart the application",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.5.26/BrainFM_.Focus.Music.ipa",
+          "size": 79400000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -91,12 +277,12 @@
       "version": "1.6.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.6.1/Beatleap.by.Lightricks.tg@IAppsBest.ipa",
-          "size": 57800000,
           "version": "1.6.1",
-          "buildVersion": null,
           "date": "2025-11-27T10:08:00+07:00",
           "localizedDescription": "— Subscription \"Pro\" activated\n— Log in to your account to activate subscription\n— The application works properly when signed with an Apple developer certificate with a properly configured AppGroup configuration",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.6.1/Beatleap.by.Lightricks.tg@IAppsBest.ipa",
+          "size": 57800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -140,12 +326,12 @@
       "version": "1.2.100",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2.100/CPU.Max.Mobile.Spin.Wheel.tg@IAppsBest.ipa",
-          "size": 11700000,
           "version": "1.2.100",
-          "buildVersion": null,
           "date": "2025-11-27T10:02:00+07:00",
           "localizedDescription": "Features:\n— Subscription \"Pro\" activated\n— The application works properly when signed with an Apple developer certificate with a properly configured AppGroup configuration",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2.100/CPU.Max.Mobile.Spin.Wheel.tg@IAppsBest.ipa",
+          "size": 11700000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -184,12 +370,12 @@
       "version": "4.0.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.0.1/XS.VPN.USA_.Private.Fast.tg@IAppsBest.ipa",
-          "size": 83100000,
           "version": "4.0.1",
-          "buildVersion": null,
           "date": "2025-11-27T02:49:00+07:00",
           "localizedDescription": "— Subscription \"Premium\" activated\n— The application works properly when signed with an Apple developer certificate with a properly configured AppGroup configuration\nFind AppGroups Checker app on repo to check your cert.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v4.0.1/XS.VPN.USA_.Private.Fast.tg@IAppsBest.ipa",
+          "size": 83100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -217,12 +403,12 @@
       "version": "6.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6.0/AppGroupCheck.ipa",
-          "size": 600000,
           "version": "6.0",
-          "buildVersion": null,
           "date": "2025-11-27T09:44:00+07:00",
           "localizedDescription": "Sign, install, and open this app to see if your cert is set up right. Quick, simple, and no hassle!\nCredits to @brits8882 for making this app.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v6.0/AppGroupCheck.ipa",
+          "size": 600000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -605,47 +791,6 @@
       ],
       "versionDate": "2025-11-11T10:16:00+07:00",
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.65.0/com.magmic.NYTCrosswords09-5.65.0.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Evil Tower",
-      "type": 2,
-      "bundleIdentifier": "com.aurecas.eviltower",
-      "developerName": "LONG DVC IPA",
-      "subtitle": "Evil Tower - Menu v2 ",
-      "localizedDescription": "Evil Tower is a medieval idle tower defense game, a mix of tower defense strategies and roguelike decisions. Build your tower, upgrade it, and prepare your best battle tactics.\n\nEnjoy epic offline battles with incremental economy and progression, and build your unique idle tower of defense. It’s your age, build your empire!",
-      "versionDescription": "",
-      "tintColor": "#441ca4",
-      "iconURL": "https://i.ibb.co/ycrBWznW/b8c30e9905fa.png",
-      "screenshotURLs": [
-        "https://play-lh.googleusercontent.com/cpfrK327fqcs6lhxRdw1Qp1ZWuC53pPice2X4qcS1MRtbSluGlVEx5O2sBS68MIyBQ=w5120-h2880-rw",
-        "https://play-lh.googleusercontent.com/EZCAb4KhxnNVvC3HvYbGLS40oxvTrjj2W2ALrpShCsoBsVV1oYb9p9LISUFDUF17M9o=w5120-h2880-rw",
-        "https://play-lh.googleusercontent.com/xGruHEgqND_xIBGx2i6y6rTY-qAf-VcDiuPAUEPBPc2SlwphYraKL6frdFmf6UFAtcA=w5120-h2880-rw",
-        "https://play-lh.googleusercontent.com/9cT4yRKkYX59OdDTLdaovkd1MqplA0NNQno5qEbuonjge2hzvctBlgPykn8o9rjO=w5120-h2880-rw",
-        "https://play-lh.googleusercontent.com/WeuD911AFZ9D3UPDUnMwkRVrpa6pL4MDEgCp9QH6zDRT6Q0HFfGziXDEB8DzXwucJOqi=w5120-h2880-rw"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSUserTrackingUsageDescription": "Your data will be used to provide you a better and personalized ad experience."
-        }
-      },
-      "size": 146000000,
-      "version": "0.7.21",
-      "versions": [
-        {
-          "version": "0.7.21",
-          "date": "2025-11-11T05:36:00+07:00",
-          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅ Bất Tử\n✅ Xoá ADS\n✅ Vô Hạn Tiền Tệ\n✅ Thêm menu chỉnh Speed\n\n🔋 Chạm icon DVC để bật tắt menu.",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7.21/Evil.Tower.-.Long.-.DVC.IPA.-.v0.7.21.ipa",
-          "size": 146000000,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-11T05:36:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.7.21/Evil.Tower.-.Long.-.DVC.IPA.-.v0.7.21.ipa",
       "patreon": {}
     },
     {
@@ -1488,50 +1633,6 @@
     },
     {
       "beta": false,
-      "name": "Monsters",
-      "type": 2,
-      "bundleIdentifier": "es.socialpoint.MonsterCity",
-      "developerName": "DVC IPA",
-      "subtitle": "Monster Legends - menu v2",
-      "localizedDescription": "Monster Legends là một trong những tựa game chiến thuật nuôi quái vật cực kỳ ăn khách đến từ Social Point, ra mắt chính thức vào tháng 7 năm 2013. Với hơn một thập kỷ phát triển, tựa game này đã ghi dấu ấn mạnh mẽ trong lòng game thủ với hơn 100 triệu lượt tải trên Google Play và iOS. Người chơi được bước vào thế giới huyền bí nơi hàng trăm loài quái vật sinh sống, huấn luyện và chiến đấu trong những trận PvP đầy tính chiến thuật.",
-      "versionDescription": "",
-      "tintColor": "#04a3fc",
-      "iconURL": "https://i.ibb.co/C32Y30KB/43c3500a9652.png",
-      "screenshotURLs": [
-        "https://khumod.io/wp-content/uploads/2025/04/banner-hack-monster-lenends-1.jpg",
-        "https://khumod.io/wp-content/uploads/2025/04/banner2-monster-lenends-mod-apk.jpg"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
-          "NSCalendarsUsageDescription": "The game would like to add special events to your calendar.",
-          "NSCameraUsageDescription": "You can take photos to use within the game and customize your experience.",
-          "NSMotionUsageDescription": "Motion data can help create a more interactive gameplay experience.",
-          "NSPhotoLibraryAddUsageDescription": "The game would like to be able to save the content you create to your Photo Library.",
-          "NSPhotoLibraryUsageDescription": "You can customize the game by using images from your photo library.",
-          "NSUserTrackingUsageDescription": "This data will be used to improve your ad experience and help this app stay free."
-        }
-      },
-      "size": 104100000,
-      "version": "18.3.8",
-      "versions": [
-        {
-          "version": "18.3.8",
-          "date": "2025-11-08T06:23:00+07:00",
-          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅Bỏ lượt địch\n✅1 Hit\n✅Auto win\n✅No skill cost",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v18.3.8/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
-          "size": 104100000,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-08T06:23:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v18.3.8/Monsters.-.Thinhkk.-.DVC.IPA.-.v18.3.8.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Trở Về Tuổi Thơ",
       "type": 2,
       "bundleIdentifier": "vn.corochti.returntochildhood",
@@ -1939,146 +2040,6 @@
       ],
       "versionDate": "2025-11-08T01:44:00+07:00",
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.02/HuntersOrigin.-.v1.0.2.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "PullPP Heroes",
-      "type": 2,
-      "bundleIdentifier": "com.fortune.td.game.global",
-      "developerName": "DVC IPA",
-      "subtitle": "PullPP Heroes - Long DVC IPA",
-      "localizedDescription": "Khi Daydreamer dấn thân vào khu rừng nguy hiểm, chỉ có may mắn mới có thể cứu rỗi!\nVới sự may mắn vô song, Daydreamer biến thành Lãnh Chúa, sẵn sàng cho trận chiến sử thi sử thi giữa may mắn và sức mạnh trong rừng!\nTập hợp các đồng minh thần bí, mở khóa sức mạnh cổ xưa, dùng kỹ năng chiến thuật của bạn để bảo vệ vương quốc!\nTận hưởng trò chơi thủ thành thư giãn, vui nhộn và trải nghiệm sự kết hợp hoàn hảo giữa chế tạo và phòng thủ!",
-      "versionDescription": "",
-      "tintColor": "#d92d1c",
-      "iconURL": "https://i.ibb.co/Y79xP5b5/1fb99f897bf3.png",
-      "screenshotURLs": [
-        "https://play-lh.googleusercontent.com/1e05i9G9axuG6DI0N0DC5F9LcyoJq8LB0noCFpPrdAFBxkoswgtZsosLXd3coWu-iWs=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/vZclwjuzabRAl7PS5aEjfs3GoiB5yLzyOXpsfcmsXNGOpWibqLoXb4Bt-TcyPiA1eA=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/Og_LbMXbQQBamKIGZChV9m_uCuBKyscuebFh1eTTT0oT1VNEfLpbayYn_8bx6pBSUyD7=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/DZbOvijbFnL36F5weukh2gH5aQHqKzbSWr0hvrIPEyKmF0quXWzzC_JGJoyBNP8jpA=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/vSk8FIBMGcvQLA76PQ6UqGUfgB3KhVXP8iO834UPGBXz18c4hh9TZCrKFahBTggeVw=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/xtEdLHEA5ZlniQS6IyrL3s4bjrVC_GUkv6-ZChJg7mlh8MDZYNX04DPwi6PYPWq5aPs=w1052-h592-rw"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSCameraUsageDescription": "We need to use this function to provide you with better services",
-          "NSLocationWhenInUseUsageDescription": "We need to use location information to provide you with better network services",
-          "NSMicrophoneUsageDescription": "We need to use this function to provide you with better services",
-          "NSUserTrackingUsageDescription": "Your data will help us to provide a more personalized experience and offers."
-        }
-      },
-      "size": 377300000,
-      "version": "1.12.0",
-      "versions": [
-        {
-          "version": "1.12.0",
-          "date": "2025-11-08T01:37:00+07:00",
-          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅Đóng Băng Quái -> Bật Trước Khi Vào Trận\n✅Speed 10% \n📣NOTE : Khi Dùng Speed (nó hiện cảnh báo mất kết nối thì ok là qua ải nha) KO hoạt động đi tháp\n\n🔋 Chạm icon DVC để bật tắt menu\n👉Kích hoạt tại: http://key.chungchidvc.com (chỉ từ 5k / 1 game)",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.12/PullPP.Heroes.v1.12.0.ipa",
-          "size": 377300000,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-08T01:37:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.12/PullPP.Heroes.v1.12.0.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Tropic Escape",
-      "type": 2,
-      "bundleIdentifier": "com.zynga.FarmVilleTropicEscape",
-      "developerName": "DVC IPA",
-      "subtitle": "Tropic Escape - Thinhkk - DVC IPA",
-      "localizedDescription": "Escape to an island getaway filled with adventure, mystery, and fun new mini games from the makers of FarmVille, the number one farming franchise! Play this colorful free-to-play game, now available for iPhone, iPad, and iMessage app.\n\nBuild your very own beachside inn complete with island workshops, tropical crops, and exotic animals. Farm island fruits like pineapples, coconuts, and mangos to delight your guests. Craft delicious recipes and rare goods like piña coladas, grilled fish, and flower leis.\n\nCatch fish with Capri the dolphin and explore with Odney the playful monkey! Feed tasty treats to the cute, playful animals on your island to get unique photo ops for your guests. Story-based quests help you explore uncharted areas, learn more about your island and find rare items and goods.",
-      "versionDescription": "",
-      "tintColor": "#dca41c",
-      "iconURL": "https://i.ibb.co/MD4bqrQ7/2b71529b7027.png",
-      "screenshotURLs": [
-        "https://modlmh.com/wp-content/uploads/2022/09/farmville-2-tropic-escape-mod-apk.jpg",
-        "https://modlmh.com/wp-content/uploads/2022/09/farmville-2-tropic-escape-mod-android.jpg",
-        "https://modlmh.com/wp-content/uploads/2022/09/farmville-2-tropic-escape-mod.jpg"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSCalendarsUsageDescription": "This is used to add an event to your calendar",
-          "NSLocationAlwaysAndWhenInUseUsageDescription": "To optimize the player's ad experience",
-          "NSLocationWhenInUseUsageDescription": "To optimize the player's ad experience",
-          "NSMicrophoneUsageDescription": "Accessing the microphone to allow users to record videos using camera meant to be sent as an attachment for help and support reasons",
-          "NSMotionUsageDescription": "for motion stats",
-          "NSPhotoLibraryUsageDescription": "Accessing photos library to allow users manually pick images meant to be sent as an attachment for help and support reasons",
-          "NSUserTrackingUsageDescription": "Your data will be used to deliver personalized ads to you."
-        }
-      },
-      "size": 157000000,
-      "version": "1.208",
-      "versions": [
-        {
-          "version": "1.208",
-          "date": "2025-11-08T01:29:00+07:00",
-          "localizedDescription": "🦠 Tính Năng Hack 🦠\n✅ Vô hạn Tài nguyên -> càng dùng càng tăng",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.208/Tropic.Escape.-.Thinhkk.v1.208.ipa",
-          "size": 157000000,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-08T01:29:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.208/Tropic.Escape.-.Thinhkk.v1.208.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "TDS - Tower Destiny Survive",
-      "type": 2,
-      "bundleIdentifier": "com.playstrom.hero.tower",
-      "developerName": "DVC",
-      "subtitle": "Tower Destiny Survive - Menu v2",
-      "localizedDescription": "👑KING OF THE CASTLE\n\nWell technically it’s a tower, but still. It’s yours, as long as you can keep the zombies away from it in this tower defense strategy game. It appears the zombie apocalypse is upon us based on how many of them are roaming the streets, so keep your gun nearby as you work to build your tower and keep it moving despite the waves of zombies.",
-      "versionDescription": "",
-      "tintColor": "#c3783b",
-      "iconURL": "https://i.ibb.co/6JV0kXJr/ff70b9e09cb3.png",
-      "screenshotURLs": [
-        "https://play-lh.googleusercontent.com/UYBJBH-n_kAU-KltT9kyzavnlYyH9fl8BSN0rNKAaeVp4INrPkXxQ_17nqIUlkR2HNml=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/XdjTU3PD4MvGCiQPXw7O242mMoX2Yow5R7EOxBbAME5spowQQ3PdkP-fhO8pEq80Dw=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/c4ibamxJ8wGNrnbLs0UPk0NUiLTAULsThsifCjnerxNmKNQXM2PtB9QXptGL42TCCdg=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/7Cq_L_DiTQaCZ9QOQYMxBSj1TosxR72ypTZC7plKMm_zaq3YTsopY3UOFJK-bAP65E10=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/AuRaBSA5ZkQQqQPfUoHiDy7ot74fFvRqqAH2gOFVH5iaGeMLizxGPI2Y5xXLDaphVK8=w1052-h592-rw",
-        "https://play-lh.googleusercontent.com/PNeKzbsLZ84MmDvV9_En6qJ7R861V2ptvyXUd4zdcCA2sTUIxpVW1JEPpzjZ7KgItw=w1052-h592-rw"
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://tracksaygames.io",
-          "NSCalendarsUsageDescription": "This app does not use the calendar.",
-          "NSCameraUsageDescription": "This app does not use the camera.",
-          "NSLocationAlwaysAndWhenInUseUsageDescription": "This app does not use the location.",
-          "NSLocationAlwaysUsageDescription": "This app does not use the location.",
-          "NSLocationWhenInUseUsageDescription": "This app does not use the location.",
-          "NSMotionUsageDescription": "This app does not use the accelerometer.",
-          "NSPhotoLibraryUsageDescription": "This app does not use the photo library.",
-          "NSUserTrackingUsageDescription": "This will only be used to serve more relevant ads."
-        }
-      },
-      "size": 150900000,
-      "version": "1.2.7",
-      "versions": [
-        {
-          "version": "1.2.7",
-          "date": "2025-11-07T05:13:00+07:00",
-          "localizedDescription": "🦠 Tính Năng Hack 🦠\n\n✅ Vô hạn Tiền tệ(vàng,kim cương, energy,skip ads… và 1 số tài nguyên khác) -> càng dùng càng tăng\n✅ Vô hạn vài Mảnh nâng cấp -> càng dùng càng tăng\nNote: 1 số tài nguyên không vô hạn nhé ae",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27/TDS.-.DVC.IPA.-.v1.2.7.ipa",
-          "size": 150900000,
-          "buildVersion": null,
-          "minOSVersion": null
-        }
-      ],
-      "versionDate": "2025-11-07T05:13:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.27/TDS.-.DVC.IPA.-.v1.2.7.ipa",
       "patreon": {}
     },
     {
