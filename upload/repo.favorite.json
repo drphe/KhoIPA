@@ -23,6 +23,92 @@
   "apps": [
     {
       "beta": false,
+      "name": "DazzCamera",
+      "type": 1,
+      "bundleIdentifier": "dazz.camera.vintagecamera",
+      "developerName": "IOS crack Vn",
+      "subtitle": "Unlock hết bộ lọc",
+      "localizedDescription": "Máy ảnh Dazz, Nhiếp ảnh gia chuyên nghiệp trong túi của bạn \nChúng tôi tin vào sự đơn giản—không cần chỉnh sửa hậu kỳ. Chỉ với một lần chạm, bạn có thể chụp những bức ảnh hoặc video cổ điển chân thực nhất, cho phép bạn tận hưởng khoảnh khắc mà không bị phân tâm.\nMáy ảnh Dazz được lấy cảm hứng từ các máy ảnh phim cổ điển của những năm 80. Chúng tôi đã lấy mẫu phim thực tế để tái tạo màu sắc và kết cấu của nhiếp ảnh cổ điển.\nMáy ảnh Dazz hỗ trợ chụp ở nhiều định dạng phim cổ điển khác nhau như phim 135, phim 120, máy ảnh đồ chơi, phim slide, máy ảnh nửa khung hình, máy ảnh chụp lấy liền, nhiếp ảnh phim 3D, máy ảnh dùng một lần và nhiều định dạng khác.\n\nNgoài nhiếp ảnh phim, máy ảnh Dazz còn cung cấp các cấu hình màu của máy ảnh kỹ thuật số hiện đại, bao gồm máy ảnh compact, máy ảnh CCD, và chúng tôi liên tục bổ sung thêm nhiều tùy chọn khác.\nBạn cũng có thể quay video với phong cách cổ điển, sử dụng các định dạng như máy quay phim 8mm, máy quay phim 16mm, máy quay băng VHS, máy quay DCR, máy quay phim và máy chiếu slide.\n\nKhi bạn chụp ảnh và quay video, chúng tôi có một số tính năng và phụ kiện bổ sung thú vị dành cho bạn:\n- Lưu bản âm bản và xử lý lại để đạt được các mức phơi sáng và nhiệt độ màu khác nhau. (Chỉ khả dụng trên một số máy ảnh)\n- Hiệu ứng phơi sáng kép bằng cách xếp chồng hai bức ảnh.\n- Hẹn giờ để chụp ảnh chậm.\n- Đèn flash.\n- Nhập các bức ảnh hiện có của bạn để chỉnh sửa. (Chỉ khả dụng trên một số máy ảnh)\n- Điều chỉnh nhiệt độ màu và tông màu.\n- Chuyển đổi giữa các tiêu cự cài đặt trước hoặc điều chỉnh tự do.\n- Điều chỉnh bù phơi sáng.\n- Điều chỉnh ISO và tốc độ màn trập.\n- Cài đặt ổn định.\n- Lưới bố cục.\n- Ống kính mắt cá.\n- Ống kính ánh sao.\n- Bộ lọc đèn flash màu.\n- Ống kính lăng kính.\n- Bộ lọc ND.",
+      "versionDescription": "",
+      "tintColor": "#d0c80a",
+      "iconURL": "https://i.ibb.co/QFFGYP86/7ee1aec55892.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/88/2a/9a882a54-2fdc-52bc-892e-0fef368f59b5/4a402db1-c705-45a8-91fe-d480213955ff_en_s.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/01/2a/f1/012af1cc-25e6-7e0f-acb6-df20fb7988de/a9a72ff2-bfd1-4303-aee9-cf9b0ae9d123_02.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3a/70/cc/3a70ccfd-62da-3115-6622-59fad1086b17/ae9efb75-02f4-4daa-90fe-98e7f95309e5_03.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8e/d2/a3/8ed2a3c8-a6a9-731c-2cc0-2145709c0316/a02f68ed-3f05-4994-8667-dbc685351acc_04.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2f/0b/a2/2f0ba2b8-998d-8aac-fc5e-fcbe81d89021/710429fd-aab2-43d9-8a5f-b7c0ae8ad7f4_05.jpg/392x696bb.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "You can take photos and create wonderful effects with Dazz.",
+          "NSLocationWhenInUseUsageDescription": "This will save the location in the photo taken by Dazz.",
+          "NSMicrophoneUsageDescription": "You can record voice when you take video with Dazz.",
+          "NSPhotoLibraryAddUsageDescription": "To edit photos and videos in your library, allow access to your photos.",
+          "NSPhotoLibraryUsageDescription": "To edit photos and videos in your library, allow access to your photos."
+        }
+      },
+      "size": 113500000,
+      "version": "2.12.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.12.2/DazzCamera.-.v2.12.2.ipa",
+          "size": 113500000,
+          "version": "2.12.2",
+          "buildVersion": null,
+          "date": "2025-12-01T09:39:00+07:00",
+          "localizedDescription": "Unlock hết bộ lọc ảnh",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-01T09:39:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.12.2/DazzCamera.-.v2.12.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Liit",
+      "type": 4,
+      "bundleIdentifier": "liit.photovideo.editor",
+      "developerName": "IOS crack VN",
+      "subtitle": "Unlock VIP",
+      "localizedDescription": "Liit Photo & Video Effects Editor\n\nWith Liit you can create trendy photo and video effects in a simple way.\n\nAdjust the light and color of your photos and videos with tools like brightness, contrast, hue, saturation and more.\n\nGive your photos and videos texture with tools like blur, noise, dust, dark corners, and more.\n\nLiit offers a wide range of color filters extracted from real film to easily give your photos and videos an extraordinary vintage effect.\n\nPlease use the hashtag #Liit when you post content on social media.",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/F4PZntYz/ea25b81b498c.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/47/c9/36/47c93620-fa29-ee2e-2797-d69abdf6c8e2/8a6adada-5e86-4263-97ab-ea3403668aad_01.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e2/7d/4e/e27d4e3e-568e-7adc-af34-89f7214b1321/041d0297-48ac-49bb-8652-6fb64d8fe2cb_02.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/5a/42/81/5a42811b-e495-67ea-bdd8-910ad8c536f6/cbbedfdc-5003-4d43-8766-0dffe90afb65_02_x-copy-2.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/59/78/8e/59788ec7-fa28-7ebf-f107-8ac0c74b5dbf/a6573519-3a11-4187-bda7-4100edc4f94d_en2.jpg/392x696bb.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "To edit photos and videos in your library, allow access to your photos.",
+          "NSPhotoLibraryUsageDescription": "To edit photos and videos in your library, allow access to your photos."
+        }
+      },
+      "size": 39200000,
+      "version": "1.5.5",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.5.5/Liit.-.v1.5.5.ipa",
+          "size": 39200000,
+          "version": "1.5.5",
+          "buildVersion": null,
+          "date": "2025-12-01T09:28:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Unlock VIP",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-01T09:28:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.5.5/Liit.-.v1.5.5.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Calculator++",
       "type": 1,
       "bundleIdentifier": "com.forfun.Calculator",
