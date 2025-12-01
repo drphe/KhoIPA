@@ -23,6 +23,93 @@
   "apps": [
     {
       "beta": false,
+      "name": "LIMBO+",
+      "type": 1,
+      "bundleIdentifier": "com.playdeadgames.limbo.arcade",
+      "developerName": "ЗДЕСЬ И СЕЙЧАС IPA",
+      "subtitle": "Extract from Arcade",
+      "localizedDescription": "Limbo, the Apple Design Award winner, is now on Arcade.\n\nPlaydead’s award-winning indie adventure is critically acclaimed for its captivating puzzle design and immersive sound and visuals. Its dark, misty spaces and haunting narrative will stay with you forever.",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/S4VSg5kG/0e7a1794035e.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/08/b6/e4/08b6e402-07bc-2197-bdbd-ddaa469bc6c5/85c35a9d-4325-48ca-b382-876a6be01f82_Limbo_Screenshot_01.jpg/626x290bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/4a/e8/504ae86f-f17c-f150-cb81-3177d835609b/1c3bb1ab-bcca-48cc-8bcc-2fb1797cad14_Limbo_Screenshot_02.jpg/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fd/d9/68/fdd968a8-d982-7ffb-c800-207b357b6aa1/3ce852be-be3d-4b3a-afab-1b40e63d2cb0_Limbo_Screenshot_03.jpg/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9f/b7/29/9fb72969-686a-1217-30a1-49156f4083a2/a988dcb5-de04-4080-84a1-c15765cf8d7a_Limbo_Screenshot_04.jpg/480x222bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/84/18/ca/8418ca4a-b742-5ca3-24ba-28148cd2532e/52cb8bcb-4b80-4238-94ba-0442fb6a52cf_Limbo_Screenshot_05.jpg/480x222bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 135800000,
+      "version": "1.0.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.2/LIMBO+.v1.0.2.ipa",
+          "size": 135800000,
+          "version": "1.0.2",
+          "buildVersion": null,
+          "date": "2025-12-01T10:57:00+07:00",
+          "localizedDescription": "⚡️Phiên bản mới nhất⚡️\n⚙️Đặc điểm⚙️\n💚Được xuất từ 🎮🎮🎮",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-01T10:57:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.2/LIMBO+.v1.0.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Lingvist: Learn Languages Fast",
+      "type": 1,
+      "bundleIdentifier": "ee.keel24.Lingvist18",
+      "developerName": "ЗДЕСЬ И СЕЙЧАС IPA",
+      "subtitle": "Đã kích hoạt 🟢Premium",
+      "localizedDescription": "Lingvist is the language learning app built by scientists and language experts that teaches vocabulary better than anyone else in the world. The depth of our AI-powered courses combined with the latest research in machine learning gets you using a language with high proficiency, fast.\n\nGET LEVEL PLACED FOR FREE - TRY LINGVIST\n\nLEARN 16 LANGUAGES: English, Spanish, German, French, Swedish, Danish, Dutch, Italian, Brazilian Portuguese, Norwegian, Latin American Spanish, Estonian, Polish, Japanese, Korean and Russian.",
+      "versionDescription": "",
+      "tintColor": "#ad6dd4",
+      "iconURL": "https://i.ibb.co/rRjdGRhG/0ffc6b114c9f.png",
+      "screenshotURLs": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a7/22/12/a722125b-913e-76ea-1638-ebb066914f77/1ae56a5d-d2d1-4428-b21c-0a77a856a2a6_1._Choose_from_50_U002b_language_pairs.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b1/b9/45/b1b945c9-727f-4ec1-85f6-fb00241bf08f/bb2e0dfe-baf8-4ce0-a055-3bdda9ddc433_2._AI-powered_language_learning.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/a5/df/53a5df9d-3cd0-162b-35d7-b8927d2b259c/de2a9f52-5080-4167-9ab6-8fe9203b5e1b_3._Track_progress_and_see_results.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/d2/66/8fd26678-3d1f-ebd4-d820-23db83c1b50e/e5859e3e-5fe1-41ae-8b19-7bb114d10396_4._Build_vocabulary_at_your_own_pace.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/81/3e/e2/813ee2ff-be1c-b1c2-f605-a2407950e5a9/828f6994-a1ad-47d3-93ef-20b05a3dddde_5._Rapid_language_improvement.jpg/230x498bb.webp",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b9/c1/c8/b9c1c814-9f6d-f4fc-0013-edfcfbc56be9/3d93c562-9d2c-4436-8a87-81e7a7bf3e5b_6._Perfect_your_pronunciation.jpg/230x498bb.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSCameraUsageDescription": "Create a course from photo of text or an object",
+          "NSMicrophoneUsageDescription": "Allow access?",
+          "NSPhotoLibraryAddUsageDescription": "Save picture of the card",
+          "NSPhotoLibraryUsageDescription": "<<Lingvist does not use the photo library>>",
+          "NSPrincipalClass": "LVLingvistApplication",
+          "NSSpeechRecognitionUsageDescription": "Allow access?"
+        }
+      },
+      "size": 42900000,
+      "version": "2.64.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.64.1/Lingvist.v2.64.1.ipa",
+          "size": 42900000,
+          "version": "2.64.1",
+          "buildVersion": null,
+          "date": "2025-12-01T10:40:00+07:00",
+          "localizedDescription": "❤️💙Lingvist💙❤️\n⚡️Phiên bản mới nhất⚡️\n⚙️Các tính năng của bản mod⚙️\n💚Đã kích hoạt 🟢Premium\n😰Đăng nhập hoặc đăng ký để kích hoạt gói đăng ký.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-01T10:40:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.64.1/Lingvist.v2.64.1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "DazzCamera",
       "type": 1,
       "bundleIdentifier": "dazz.camera.vintagecamera",
@@ -53,12 +140,12 @@
       "version": "2.12.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.12.2/DazzCamera.-.v2.12.2.ipa",
-          "size": 113500000,
           "version": "2.12.2",
-          "buildVersion": null,
           "date": "2025-12-01T09:39:00+07:00",
           "localizedDescription": "Unlock hết bộ lọc ảnh",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.12.2/DazzCamera.-.v2.12.2.ipa",
+          "size": 113500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -94,12 +181,12 @@
       "version": "1.5.5",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.5.5/Liit.-.v1.5.5.ipa",
-          "size": 39200000,
           "version": "1.5.5",
-          "buildVersion": null,
           "date": "2025-12-01T09:28:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Unlock VIP",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.5.5/Liit.-.v1.5.5.ipa",
+          "size": 39200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
