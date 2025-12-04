@@ -81,16 +81,21 @@ document.body.append(bottomPanel);
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
         let app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
+		updateBundleID(bundleId);
         if (!app) {
-            bundleId = bundleId.substring(0, str.lastIndexOf("."));
+            bundleId = bundleId.substring(0, bundleId.lastIndexOf("."));
             app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
             if(!app) {
                 showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
                 return;
             }
         }
-        
-        updateBundleID(bundleId);
+        let appInfo = await getAppInfoByBundleId(bundleId);
+		if(!appInfo) {
+			bundleId = bundleId.substring(0, bundleId.lastIndexOf("."));
+			appInfo = await getAppInfoByBundleId(bundleId);
+		}
+		console.log(appInfo)
         // If has multiple versions, show the latest one
         if (app.versions) {
             const latestVersion = app.versions[0];
@@ -172,6 +177,7 @@ document.body.append(bottomPanel);
       <p id="subtitle"></p>
       <div class="header">
         <h2>Preview</h2>
+		<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store</a>
       </div>
       <div id="screenshots"></div>
       <p id="description"></p>
@@ -257,6 +263,11 @@ document.body.append(bottomPanel);
         // 
         // Preview
         const preview = bottomPanel.querySelector("#preview");
+		const moreDetail = bottomPanel.querySelector("#more-detail");
+		if(appInfo && appInfo.trackViewUrl) {
+			moreDetail.href= appInfo.trackViewUrl;
+			moreDetail.classList.remove("hidden");
+		}
         // Subtitle
         preview.querySelector("#subtitle").textContent = app.subtitle;
         // Screenshots
@@ -286,14 +297,15 @@ document.body.append(bottomPanel);
 	     </a>
                 `);
             });
-        } else if (app.screenshotURLs) {
-            // Legacy
+        } else if (app.screenshotURLs && app.screenshotURLs.length > 0) {
             app.screenshotURLs.forEach((url, i) => {
-                preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
-	     <a href="${url}" data-fslightbox="gallery">
-                <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
-	     </a>
-            `);
+                preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
+                <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot"></a>`);
+            });
+        } else if(appInfo && appInfo.screenshotUrls && appInfo.screenshotUrls.length > 0){
+            appInfo.screenshotUrls.forEach((url, i) => {
+                preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
+                <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot"></a>`);
             });
         }
         // Description
@@ -608,6 +620,7 @@ document.body.append(bottomPanel);
     });
 }
 export async function addAppList(source, appsPerLoad = 6, isScreenshot = true, scrollTarget) {
+	isScreenshot = false;// không hiển thị screen shot trong danh sách app
     const appsContainer = document.getElementById('apps-list');
     if (!appsContainer) return;
     const allApps = source.apps;
@@ -868,4 +881,23 @@ export function wrapLightbox(htmlString) {
   return doc.body.innerHTML;
 }
 
-
+async function getAppInfoByBundleId(bundleId) {
+    const baseUrl = "https://itunes.apple.com/lookup";
+    const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}`;
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Lỗi HTTP! Mã trạng thái: ${response.status}`);
+        }
+        const data = await response.json();
+        if (data.resultCount > 0 && data.results.length > 0) {
+            return data.results[0];
+        } else {
+            console.log(`Không tìm thấy ứng dụng nào cho bundle ID: ${bundleId}`);
+            return null; 
+        }
+    } catch (error) {
+        console.error("Đã xảy ra lỗi trong quá trình lấy dữ liệu:", error);
+        return null;
+    }
+}

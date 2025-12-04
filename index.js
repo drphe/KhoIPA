@@ -170,7 +170,7 @@ const sources = await json("./common/assets/json/sources.json");
     if(bundleID){// load app
 	const sTarget = bundleIdToSourceMap.get(bundleID);
         if (!sTarget) {
-            console.warn(`Source not found for bundleId: ${bundleId}`);
+            console.warn(`Source not found for bundleId: ${bundleID}`);
         }else openPanel(sTarget, bundleID, ".", "bottom");
     }else openPanel({},"");// preload panel
 
