@@ -177,7 +177,7 @@ const sources = await json("./common/assets/json/sources.json");
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
-        addAppList({ apps: allApps }, 10, false); // 10 apps, no shot
+        addAppList({ apps: allApps }, 10); // 10 apps
         activateNavLink("page-library");
      });
 

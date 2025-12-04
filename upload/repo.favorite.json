@@ -22,6 +22,39 @@
   ],
   "apps": [
     {
+      "beta": "xxx",
+      "name": "HornyVilla",
+      "type": 1,
+      "bundleIdentifier": "com.GreenT.HornyVilla",
+      "developerName": "Ios Crack VN",
+      "subtitle": "Patched",
+      "localizedDescription": "Horny Villa, a free-to-play match-3 hentai game, has taken the adult gaming world by storm since its release in May 2023. Available on both PC browsers and Android devices, this titillating puzzle adventure offers players a unique blend of casual gameplay and erotic content. As enthusiasts of adult entertainment, we at Kinkyquests couldn't resist diving into this steamy world of puzzles and pleasure.",
+      "versionDescription": "",
+      "tintColor": "#71363e",
+      "iconURL": "https://i.ibb.co/B5FFq7FW/914fcc05a554.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 132500000,
+      "version": "48.1.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v48.1.1/HornyVilla.-.v48.1.1.ipa",
+          "size": 132500000,
+          "version": "48.1.1",
+          "buildVersion": null,
+          "date": "2025-12-04T13:15:00+07:00",
+          "localizedDescription": "Sử dụng KC/Vàng không giảm\nLưu Ý: chơi qua hướng dẫn trước khi sử dụng hack\nGốc: “https://res-r.sritwyv.com/ipa/1203_6_1_HornyVilla.ipa”",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-04T13:15:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v48.1.1/HornyVilla.-.v48.1.1.ipa",
+      "patreon": {}
+    },
+    {
       "beta": false,
       "name": "LIMBO+",
       "type": 2,
@@ -47,12 +80,12 @@
       "version": "1.0.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.2/LIMBO+.v1.0.2.ipa",
-          "size": 135800000,
           "version": "1.0.2",
-          "buildVersion": null,
           "date": "2025-12-01T10:57:00+07:00",
           "localizedDescription": "⚡️Phiên bản mới nhất⚡️\n⚙️Đặc điểm⚙️\n💚Được xuất từ 🎮🎮🎮",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.2/LIMBO+.v1.0.2.ipa",
+          "size": 135800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -95,12 +128,12 @@
       "version": "2.64.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.64.1/Lingvist.v2.64.1.ipa",
-          "size": 42900000,
           "version": "2.64.1",
-          "buildVersion": null,
           "date": "2025-12-01T10:40:00+07:00",
           "localizedDescription": "❤️💙Lingvist💙❤️\n⚡️Phiên bản mới nhất⚡️\n⚙️Các tính năng của bản mod⚙️\n💚Đã kích hoạt 🟢Premium\n😰Đăng nhập hoặc đăng ký để kích hoạt gói đăng ký.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.64.1/Lingvist.v2.64.1.ipa",
+          "size": 42900000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
