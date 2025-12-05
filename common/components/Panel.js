@@ -747,7 +747,7 @@ export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
             let html = `
             <div class="app-container">
                 ${AppHeader(app, ".")}
-                <p style="text-align: center; font-size: 0.9em;">${app.developerName ? ` ${app.developerName} • ` : ""} ${app.subtitle ?? ""}</p></div>`;
+                <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p></div>`;
             appsContainer.insertAdjacentHTML("beforeend", html);
         });
         currentIndex += appsPerLoad;
