@@ -881,22 +881,38 @@ export function wrapLightbox(htmlString) {
 }
 
 async function getAppInfoByBundleId(bundleId) {
-    const baseUrl = "https://itunes.apple.com/lookup";
-    const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}`;
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Lỗi HTTP! Mã trạng thái: ${response.status}`);
+    // Promise timeout 500ms
+    const timeout = new Promise((resolve) => {
+        setTimeout(() => {
+            console.warn("getAppInfoByBundleId: Timeout sau 500ms");
+            resolve(null); // hoặc reject nếu muốn
+        }, 500);
+    });
+    // Promise fetch API
+    const fetchPromise = (async () => {
+        const baseUrl = "https://itunes.apple.com/lookup";
+        const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}`;
+
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Lỗi HTTP! Mã trạng thái: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            if (data.resultCount > 0 && data.results.length > 0) {
+                return data.results[0];
+            } else {
+                console.log(`Không tìm thấy ứng dụng nào cho bundle ID: ${bundleId}`);
+                return null;
+            }
+        } catch (error) {
+            console.error("Đã xảy ra lỗi trong quá trình lấy dữ liệu:", error);
+            return null;
         }
-        const data = await response.json();
-        if (data.resultCount > 0 && data.results.length > 0) {
-            return data.results[0];
-        } else {
-            console.log(`Không tìm thấy ứng dụng nào cho bundle ID: ${bundleId}`);
-            return null; 
-        }
-    } catch (error) {
-        console.error("Đã xảy ra lỗi trong quá trình lấy dữ liệu:", error);
-        return null;
-    }
+    })();
+
+    // Trả về kết quả nào đến trước: fetch hoặc timeout
+    return Promise.race([fetchPromise, timeout]);
 }
