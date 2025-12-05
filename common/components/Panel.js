@@ -743,6 +743,7 @@ export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
         const checkIphoneScreenShots = (obj) => {
             return typeof obj === 'object' && obj !== null && Array.isArray(obj.iphone) && obj.iphone.length > 0
         }; //
+        let isScreenshot =true;
         nextApps.forEach(app => {
             let html = `
             <div class="app-container">
