@@ -151,7 +151,9 @@ run();
         if (targetLinks){
         	e.preventDefault();
         	const bundleId = targetLinks.getAttribute("data-bundleid");
-        	openPanel(json, bundleId, '..', "bottom");
+        	try{
+                openPanel(json, bundleId, '..', "bottom");
+                }catch(e){alert(e)}
 	}
         if (targetNewsLink){
         	e.preventDefault();
