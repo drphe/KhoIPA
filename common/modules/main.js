@@ -64,9 +64,9 @@ export function main(callback, fallbackURL = "../../") {
     });
    
 function checkScheme(urlScheme) {
-   navigator.clipboard.writeText(sourceURL);
     const start = Date.now();
     open(urlScheme);
+    navigator.clipboard.writeText(sourceURL);
     setTimeout(() => {
         if (Date.now() - start < 1600) {
             
