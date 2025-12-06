@@ -288,14 +288,14 @@ document.body.append(bottomPanel);
                     <img src="${screenshot.imageURL}" data-fslightbox="gallery" alt="${app.name} screenshot ${i + 1}" class="screenshot">
                 `);
                 else if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
-	     <a href="${url}" data-fslightbox="gallery">
-                <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
+	     <a href="${screenshot}" data-fslightbox="gallery">
+                <img src="${screenshot}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
 	     </a>
                 `);
             });
         } else if (checkIphoneScreenShots(app.screenshots)) {
-            app.screenshots.iphone.forEach((screenshot, i) => {
-                if (isValidHTTPURL(screenshot)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
+            app.screenshots.iphone.forEach((url, i) => {
+                if (isValidHTTPURL(url)) preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `
 	     <a href="${url}" data-fslightbox="gallery">
                 <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot">
 	     </a>
