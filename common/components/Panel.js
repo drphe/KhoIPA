@@ -97,7 +97,7 @@ document.body.append(bottomPanel);
 			let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
 			appInfo = await getAppInfoByBundleId(bundleIds);
 		}
-        }catch(e){ }
+        }catch(e){alert(e) }
 		console.log(appInfo);
         // If has multiple versions, show the latest one
         if (app.versions) {
