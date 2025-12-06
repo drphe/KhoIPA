@@ -156,7 +156,6 @@ body {
 	left: calc(50vw - 384px)!important;
     }
      .grid_news,
-    #repositories,
     #apps-list, #sources-list,
     #featured {
         display: grid;
