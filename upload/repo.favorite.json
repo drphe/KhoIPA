@@ -3384,7 +3384,7 @@
       "bundleIdentifier": "com.ksign.tool",
       "developerName": "Ksign",
       "subtitle": "Tool for sign IPA",
-      "localizedDescription": "⚙️Đặc điểm nổi bật⚙️\n💚Trình cài đặt sao chép hoàn toàn chức năng của ESign, thậm chí ở một số điểm còn tiện lợi hơn.\n\n😰 Theo thông tin từ nhà phát triển ESign, phần hỗ trợ máy chủ của ứng dụng sẽ sớm bị ngừng, điều này sẽ khiến việc cài đặt ứng dụng trở nên không khả thi. Trong tình huống này, KSign có thể trở thành một sự thay thế phù hợp.",
+      "localizedDescription": "⚙️Đặc điểm nổi bật⚙️\n💚Trình cài đặt sao chép hoàn toàn chức năng của ESign, thậm chí ở một số điểm còn tiện lợi hơn.\n\n😰 Theo thông tin từ nhà phát triển ESign, phần hỗ trợ máy chủ của ứng dụng sẽ sớm bị ngừng, điều này sẽ khiến việc cài đặt ứng dụng trở nên không khả thi. Trong tình huống này, KSign có thể trở thành một sự thay thế phù hợp.\n Tải phiên bản mới => https://github.com/Nyasami/Ksign/releases ",
       "versionDescription": "",
       "tintColor": "#7376C2",
       "iconURL": "https://i0.wp.com/techybuff.com/wp-content/uploads/2025/05/Ksign-1.webp",
