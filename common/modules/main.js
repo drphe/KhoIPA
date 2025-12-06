@@ -64,12 +64,22 @@ export function main(callback, fallbackURL = "../../") {
     });
    
 function checkScheme(urlScheme) {
-    const start = Date.now();
-   window.location.href = urlScheme;
-    setTimeout(() => {
-        if (Date.now() - start < 1600) {
-            showUIAlert("Copied", "Không có app tương ứng.\nLink source copied!")
-        } 
+    let hasHidden = false;
+    const onHide = () => {
+        hasHidden = true;
+        clearTimeout(timer);
+        document.removeEventListener('visibilitychange', onHide);
+    };
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+            onHide();
+        }
+    });
+    window.location.href = urlScheme;
+    const timer = setTimeout(() => {
+        if (!hasHidden) {
+            showUIAlert("Copied", "Không có app tương ứng.\nLink source copied!");
+        }
     }, 1500);
 }
     function detectSupport(app) {
