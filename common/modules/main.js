@@ -49,7 +49,7 @@ export function main(callback, fallbackURL = "../../") {
             if (supportType === 'both') {
                checkScheme(isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`);
             } else installAppAlert.present();
-               
+               navigator.clipboard.writeText(sourceURL);
         });
 		if (!json.sourceURL) {
 			json.sourceURL = sourceURL;
@@ -65,8 +65,7 @@ export function main(callback, fallbackURL = "../../") {
    
 function checkScheme(urlScheme) {
     const start = Date.now();
-    open(urlScheme);
-    navigator.clipboard.writeText(sourceURL);
+   window.location.href = urlScheme;
     setTimeout(() => {
         if (Date.now() - start < 1600) {
             showUIAlert("Copied", "Không có app tương ứng.\nLink source copied!")
