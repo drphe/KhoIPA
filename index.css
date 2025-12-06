@@ -41,3 +41,9 @@
   }
 }
 
+#suggestions {
+        display: grid;
+        width: 768px;
+        overflow-x:scroll;
+        grid-template-columns: repeat(2, 1fr);
+    }
