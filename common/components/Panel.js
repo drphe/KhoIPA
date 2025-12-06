@@ -92,7 +92,7 @@ document.body.append(bottomPanel);
         }
         let appInfo;
         try{
-        let appInfo = await getAppInfoByBundleId(bundleId);
+             appInfo = await getAppInfoByBundleId(bundleId);
 		if(!appInfo) {
 			bundleId = bundleId.substring(0, bundleId.lastIndexOf("."));
 			appInfo = await getAppInfoByBundleId(bundleId);
