@@ -35,9 +35,7 @@ export function main(callback, fallbackURL = "../../") {
 	    handler: () => {
 		supportType === "Esign"
 	        ? checkScheme(`esign://addsource?url=${sourceURL}`)
-        	: checkScheme(`feather://source/${sourceURL}`,
-            () => open(`ksign://source/${sourceURL}`)
-            );
+        	: checkScheme(`feather://source/${sourceURL}`);
 	    }
         });
         installAppAlert.addAction({
@@ -49,15 +47,10 @@ export function main(callback, fallbackURL = "../../") {
             const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
             const link = document.querySelector(".add");
             if (supportType === 'both') {
-               checkScheme(
-    isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`,
-    () => open(`ksign://addsource/${sourceURL}`)
-);
-               
+               checkScheme(isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`);
             } else installAppAlert.present();
                
         });
-		
 		if (!json.sourceURL) {
 			json.sourceURL = sourceURL;
 		}
@@ -70,12 +63,11 @@ export function main(callback, fallbackURL = "../../") {
         open(`${fallbackURL}?source=${base64Convert(sourceURL)}`);
     });
    
-function checkScheme(urlScheme, onSuccess, onFail = null) {
+function checkScheme(urlScheme) {
     const start = Date.now();
     open(urlScheme);
     setTimeout(() => {
         if (Date.now() - start < 1600) {
-         onFail();
             navigator.clipboard.writeText(sourceURL);
             showUIAlert("Success", "Không có app tương ứng.\nLink source copied!")
         } 
