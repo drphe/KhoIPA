@@ -47,13 +47,12 @@ export function main(callback, fallbackURL = "../../") {
             const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
             const link = document.querySelector(".add");
             if (supportType === 'both') {
-               try{
-                link.href = isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`;
-               }catch(e){
-                  link.href =  `ksign://source/${sourceURL}`;
-                  navigator.clipboard.writeText(sourceURL);
-               showUIAlert("Success", "Link source copied");
-                  }
+               checkScheme(
+    isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`,
+    () => console.log("Mở app thành công"),
+    () => {navigator.clipboard.writeText(sourceURL),showUIAlert("Success", "Link source copied")}
+);
+               
             } else installAppAlert.present();
                
         });
@@ -69,7 +68,19 @@ export function main(callback, fallbackURL = "../../") {
         alert(error);
         open(`${fallbackURL}?source=${base64Convert(sourceURL)}`);
     });
+   
+function checkScheme(urlScheme, onSuccess, onFail) {
+    const start = Date.now();
+    window.location.href = urlScheme;
 
+    setTimeout(() => {
+        if (Date.now() - start < 1600) {
+            onFail();
+        } else {
+            onSuccess();
+        }
+    }, 1500);
+}
     function detectSupport(app) {
         const supportsESign = !!(app.versionDate || app.fullDate);
         const hasVersionsArray = Array.isArray(app.versions) && app.versions.length > 0;
