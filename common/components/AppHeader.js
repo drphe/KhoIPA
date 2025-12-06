@@ -9,6 +9,17 @@ export function checkBeta(inputValue) {
     }
     return undefined;
 }
+export const AppSize = (app) =>{
+// Version size
+        const units = ["B", "KB", "MB", "GB"];
+        var appSize = app.size,
+            i = 0;
+        while (appSize > 1024) {
+            i++;
+            appSize = parseFloat(appSize / 1024).toFixed(1);
+        }
+        return appSize ? `${appSize} ${units[i]}` : "";
+}
 export const AppHeader = (app) => app ? `
 <div class="app-header-container">
  <a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link">
@@ -22,7 +33,7 @@ export const AppHeader = (app) => app ? `
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name} ${app.beta ? `<span class="small ${checkBeta(app.beta)} badge"></span>`:``}</p>
-                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
+                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.size ? AppSize(app.size) + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
                     </div>
