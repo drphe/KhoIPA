@@ -60,6 +60,7 @@ history.replaceState({}, '', urlView);
     };
 
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset="list") => {
+    try{
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
@@ -97,8 +98,8 @@ document.body.append(bottomPanel);
 			let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
 			appInfo = await getAppInfoByBundleId(bundleIds);
 		}
-        }catch(e){alert(e) }
-		console.log(appInfo);
+        }catch(e){ }
+		//console.log(appInfo);
         // If has multiple versions, show the latest one
         if (app.versions) {
             const latestVersion = app.versions[0];
@@ -615,6 +616,7 @@ document.body.append(bottomPanel);
             closePanel();
         }
     });
+    }catch(e){alert(e)}
 }
 export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
     const appsContainer = document.getElementById('apps-list');
