@@ -48,5 +48,5 @@
         grid-template-columns: repeat(2, 1fr);
     }
   .app-header-container, .source-container {
-    max-width:375px;
+    min-width:375px;
 }
