@@ -155,7 +155,7 @@ body {
     .no-scroll{
 	left: calc(50vw - 384px)!important;
     }
-    #suggestions, .grid_news,
+     .grid_news,
     #repositories,
     #apps-list, #sources-list,
     #featured {
