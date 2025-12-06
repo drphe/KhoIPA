@@ -34,7 +34,7 @@ export function main(callback, fallbackURL = "../../") {
             style: 'default',
 	    handler: () => {
 		supportType === "Esign"
-	        ? checkScheme(`esign://install?url=${sourceURL}`)
+	        ? checkScheme(`esign://addsource?url=${sourceURL}`)
         	: checkScheme(`feather://source/${sourceURL}`,
             () => open(`ksign://source/${sourceURL}`)
             );
@@ -51,7 +51,7 @@ export function main(callback, fallbackURL = "../../") {
             if (supportType === 'both') {
                checkScheme(
     isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`,
-    () => open(`ksign://source/${sourceURL}`)
+    () => open(`ksign://addsource/${sourceURL}`)
 );
                
             } else installAppAlert.present();
