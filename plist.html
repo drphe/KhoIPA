@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>IPA → manifest.plist (Web tĩnh)</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:16px}
+  h1{font-size:1.4rem}
+  label{display:block;margin:12px 0 6px}
+  input[type="text"], input[type="url"]{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px}
+  button{padding:10px 14px;border-radius:8px;border:none;background:#0b84ff;color:#fff;cursor:pointer}
+  .row{display:flex;gap:8px}
+  .col{flex:1}
+  pre{background:#f7f7f8;padding:12px;border-radius:6px;overflow:auto}
+  img.icon{max-width:84px;border-radius:12px;border:1px solid #eee}
+  .muted{color:#666;font-size:0.9rem}
+  .warning{color:#a33}
+</style>
+</head>
+<body>
+
+<h1>IPA → Tạo manifest.plist (web tĩnh)</h1>
+<p class="muted">Upload file .ipa hoặc dán link .ipa (Nếu dán link, server .ipa phải cho phép CORS). Trang này chạy hoàn toàn trên trình duyệt.</p>
+
+<label>Chọn file .ipa (hoặc kéo thả)</label>
+<input id="fileInput" type="file" accept=".ipa,application/zip">
+
+<label>Hoặc dán link .ipa (HTTPS, cần CORS)</label>
+<div class="row">
+  <input id="urlInput" type="url" placeholder="https://example.com/app.ipa" class="col">
+  <button id="fetchBtn">Tải & xử lý</button>
+</div>
+
+<hr>
+
+<div id="info" style="display:none">
+  <h3>Thông tin phát hiện</h3>
+  <p><strong>Bundle ID:</strong> <span id="bundleId"></span></p>
+  <p><strong>Version:</strong> <span id="version"></span> — <span id="build"></span></p>
+  <p><strong>Tên app (Title):</strong> <span id="title"></span></p>
+  <p><strong>Icon:</strong> <span id="iconContainer"></span></p>
+
+  <h3>Tùy chọn manifest</h3>
+  <label>URL IPA (sử dụng URL để manifest tham chiếu)</label>
+  <input id="ipaUrl" type="url" placeholder="https://yourdomain.com/app.ipa">
+
+  <label>Tên file manifest sẽ tải về</label>
+  <input id="plistName" type="text" value="manifest.plist">
+
+  <div style="margin-top:12px">
+    <button id="makePlist">Tạo & Tải manifest.plist</button>
+    <button id="copyPlistText" style="margin-left:8px;background:#666">Xem / Sao chép nội dung plist</button>
+  </div>
+
+  <div style="margin-top:16px">
+    <p class="muted">Sau khi tải file <code>manifest.plist</code>, upload file đó lên hosting HTTPS của bạn, ví dụ: <code>https://yourdomain.com/app.plist</code>.</p>
+    <p><strong>Link cài đặt mẫu (sau khi host plist):</strong></p>
+    <pre id="installLink">itms-services://?action=download-manifest&url=https://yourdomain.com/app.plist</pre>
+    <p class="muted">Thay URL manifest bằng URL thực tế nơi bạn upload file plist.</p>
+  </div>
+
+  <div id="plistText" style="display:none;margin-top:12px">
+    <h4>Nội dung manifest.plist</h4>
+    <pre id="plistPre"></pre>
+  </div>
+
+  <p class="warning">Lưu ý: nếu bạn dùng dán link .ipa và fetch bị chặn do CORS, trình duyệt sẽ không thể tải file .ipa để phân tích.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<!-- plist (XML parser) -->
+<script src="https://unpkg.com/plist@3.0.1/dist/plist.min.js"></script>
+<!-- bplist-parser (binary plist) - ä thử dùng unpkg -->
+<script src="https://unpkg.com/bplist-parser@0.1.0/lib/bplistParser.js"></script>
+
+<script>
+// Helper: đơn giản escape xml
+function escapeXml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;') }
+
+// Tìm file Info.plist trong IPA zip
+async function parseIPAArrayBuffer(ab) {
+  const zip = await JSZip.loadAsync(ab);
+  // tìm entry có đường dẫn Payload/<AppName>.app/Info.plist
+  const files = Object.keys(zip.files);
+  const infoPath = files.find(p => /Payload\/[^\/]+\.app\/Info.plist$/.test(p));
+  if (!infoPath) throw new Error('Không tìm thấy Info.plist trong IPA');
+
+  // đọc raw bytes
+  const infoFile = zip.files[infoPath];
+  const infoArrayBuffer = await infoFile.async('arraybuffer');
+  const infoBytes = new Uint8Array(infoArrayBuffer);
+
+  // thử parse: nếu XML dùng plist.parse, nếu binary dùng bplistParser
+  let plistObj = null;
+  try {
+    // try decode as UTF-8 string
+    const text = new TextDecoder().decode(infoBytes);
+    // xml plist thường bắt đầu bằng "<?xml" hoặc "<plist"
+    if (text.trim().startsWith('<?xml') || text.trim().startsWith('<plist')) {
+      plistObj = plist.parse(text);
+    } else {
+      throw new Error('not xml');
+    }
+  } catch(e) {
+    // try binary plist parser (bplistParser)
+    try {
+      // bplistParser expects Buffer-like; convert
+      // bplistParser.parseBuffer returns array of objects
+      const nodeBuffer = infoBytes; // bplistParser uses Uint8Array fine
+      const parsed = bplistParser.parseBuffer(nodeBuffer);
+      plistObj = parsed && parsed[0];
+    } catch(err2) {
+      throw new Error('Không parse được Info.plist (XML hay binary).');
+    }
+  }
+
+  // lấy thông tin cơ bản
+  const bundleId = plistObj.CFBundleIdentifier || plistObj.cfBundleIdentifier || plistObj['CFBundleIdentifier'];
+  const shortVer = plistObj.CFBundleShortVersionString || plistObj.CFBundleVersion || plistObj['CFBundleShortVersionString'] || '';
+  const bundleVersion = plistObj.CFBundleVersion || '';
+  const title = plistObj.CFBundleDisplayName || plistObj.CFBundleName || plistObj['CFBundleDisplayName'] || plistObj['CFBundleName'] || '';
+
+  // tìm icon: danh sách có thể nằm trong CFBundleIcons (iOS) hoặc Icon files
+  let iconCandidates = [];
+
+  // helper: check png files inside .app
+  const appDir = infoPath.replace(/Info\.plist$/,'');
+  const pngFiles = files.filter(p => p.startsWith(appDir) && /\.(png|PNG)$/.test(p));
+  // include common icon filenames
+  pngFiles.forEach(p => iconCandidates.push(p));
+
+  // check CFBundleIcons keys for filenames
+  try {
+    const icons = plistObj.CFBundleIcons || plistObj.CFBundleIcons~ || plistObj['CFBundleIcons'];
+    if (icons && icons.CFBundlePrimaryIcon && icons.CFBundlePrimaryIcon.CFBundleIconFiles) {
+      icons.CFBundlePrimaryIcon.CFBundleIconFiles.forEach(name => {
+        // try multiple variants
+        ['.png','@2x.png','@3x.png',''].forEach(suf => {
+          const fn = appDir + name + suf;
+          if (files.includes(fn)) iconCandidates.push(fn);
+        });
+      });
+    }
+  } catch(e) {}
+
+  // try CFBundleIconFiles array
+  try {
+    const iconFiles = plistObj.CFBundleIconFiles || plistObj['CFBundleIconFiles'];
+    if (Array.isArray(iconFiles)) {
+      iconFiles.forEach(name => {
+        ['.png','@2x.png','@3x.png',''].forEach(suf => {
+          const fn = appDir + name + suf;
+          if (files.includes(fn)) iconCandidates.push(fn);
+        });
+      });
+    }
+  } catch(e){}
+
+  // dedupe and prioritize biggest file (by file size)
+  iconCandidates = Array.from(new Set(iconCandidates));
+  let icons = [];
+  for (const p of iconCandidates) {
+    try {
+      const f = zip.files[p];
+      if (!f) continue;
+      const arr = await f.async('arraybuffer');
+      icons.push({path: p, size: arr.byteLength, data: arr});
+    } catch(e){}
+  }
+  icons.sort((a,b)=>b.size-a.size); // lớn -> nhỏ
+
+  return { plistObj, bundleId, shortVer, bundleVersion, title, icons, files };
+}
+
+// tạo manifest plist string
+function createManifest({ipaUrl, bundleIdentifier, bundleVersion, title, iconUrl}) {
+  if (!ipaUrl) throw new Error('Missing ipaUrl for manifest');
+  const iconPart = iconUrl ? `
+        <dict>
+          <key>kind</key>
+          <string>display-image</string>
+          <key>url</key>
+          <string>${escapeXml(iconUrl)}</string>
+        </dict>` : '';
+  const full = `<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>items</key>
+  <array>
+    <dict>
+      <key>assets</key>
+      <array>
+        <dict>
+          <key>kind</key>
+          <string>software-package</string>
+          <key>url</key>
+          <string>${escapeXml(ipaUrl)}</string>
+        </dict>${iconPart}
+      </array>
+      <key>metadata</key>
+      <dict>
+        <key>bundle-identifier</key>
+        <string>${escapeXml(bundleIdentifier)}</string>
+        <key>bundle-version</key>
+        <string>${escapeXml(bundleVersion)}</string>
+        <key>kind</key>
+        <string>software</string>
+        <key>title</key>
+        <string>${escapeXml(title)}</string>
+      </dict>
+    </dict>
+  </array>
+</dict>
+</plist>`;
+  return full;
+}
+
+// UI bindings
+const fileInput = document.getElementById('fileInput');
+const fetchBtn = document.getElementById('fetchBtn');
+const urlInput = document.getElementById('urlInput');
+
+const infoBox = document.getElementById('info');
+const bundleEl = document.getElementById('bundleId');
+const versionEl = document.getElementById('version');
+const buildEl = document.getElementById('build');
+const titleEl = document.getElementById('title');
+const iconContainer = document.getElementById('iconContainer');
+const ipaUrlInput = document.getElementById('ipaUrl');
+const plistNameInput = document.getElementById('plistName');
+const makePlistBtn = document.getElementById('makePlist');
+const plistPre = document.getElementById('plistPre');
+const plistTextDiv = document.getElementById('plistText');
+const plistTextBtn = document.getElementById('copyPlistText');
+const installLinkPre = document.getElementById('installLink');
+
+let lastManifestText = '';
+let lastIconBlobUrl = '';
+
+fileInput.addEventListener('change', async (e) => {
+  if (!e.target.files || !e.target.files.length) return;
+  const f = e.target.files[0];
+  try {
+    const ab = await f.arrayBuffer();
+    await processIPA(ab, /*sourceNameForDefaultUrl*/ f.name);
+  } catch(err) {
+    alert('Lỗi đọc file: ' + err.message);
+    console.error(err);
+  }
+});
+
+fetchBtn.addEventListener('click', async () => {
+  const url = urlInput.value.trim();
+  if (!url) { alert('Nhập link .ipa'); return; }
+  try {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const ab = await resp.arrayBuffer();
+    await processIPA(ab, url);
+  } catch(err) {
+    alert('Không thể fetch .ipa (CORS hoặc lỗi mạng). Lỗi: ' + err.message + '\nNếu bị CORS, tải .ipa về máy rồi upload bằng nút chọn file.');
+    console.error(err);
+  }
+});
+
+async function processIPA(arrayBuffer, sourceName) {
+  // parse
+  try {
+    const res = await parseIPAArrayBuffer(arrayBuffer);
+    console.log(res);
+    bundleEl.textContent = res.bundleId || '(không tìm thấy)';
+    versionEl.textContent = res.shortVer || '(không)';
+    buildEl.textContent = res.bundleVersion || '(không)';
+    titleEl.textContent = res.title || '(không)';
+    // handle icon display
+    iconContainer.innerHTML = '';
+    if (lastIconBlobUrl) URL.revokeObjectURL(lastIconBlobUrl);
+    if (res.icons && res.icons.length) {
+      // dùng icon lớn nhất
+      const icon = res.icons[0];
+      const blob = new Blob([icon.data], {type:'image/png'});
+      const url = URL.createObjectURL(blob);
+      lastIconBlobUrl = url;
+      const img = document.createElement('img');
+      img.src = url;
+      img.className = 'icon';
+      iconContainer.appendChild(img);
+      // set ipaUrl default to provided sourceName if it's a URL (not file name)
+      if (sourceName && sourceName.startsWith('http')) ipaUrlInput.value = sourceName;
+    } else {
+      iconContainer.textContent = '(không tìm thấy icon)';
+      // set default ipaUrl if provided and looks like URL
+      if (sourceName && sourceName.startsWith('http')) ipaUrlInput.value = sourceName;
+    }
+
+    // reveal info area
+    infoBox.style.display = 'block';
+
+    // prepare manifest (but not set because user may want edit ipaUrl)
+    // auto-fill ipaUrl only if empty and sourceName is url
+    if (!ipaUrlInput.value && sourceName && sourceName.startsWith('http')) {
+      ipaUrlInput.value = sourceName;
+    }
+
+    // store parsed info on element for later use
+    infoBox._parsed = res;
+  } catch(err) {
+    alert('Lỗi phân tích IPA: ' + err.message);
+    console.error(err);
+  }
+}
+
+makePlistBtn.addEventListener('click', async () => {
+  if (!infoBox._parsed) { alert('Bạn chưa upload hoặc fetch IPA'); return; }
+  const parsed = infoBox._parsed;
+  const ipaUrl = ipaUrlInput.value.trim();
+  if (!ipaUrl) {
+    if (!confirm('Bạn chưa nhập URL IPA. Bạn có muốn tiếp tục tạo manifest có đường dẫn IPA trống (không hợp lệ cho cài OTA)?')) return;
+  }
+  const bundleId = parsed.bundleId || prompt('Nhập bundle identifier (CFBundleIdentifier):') || '';
+  const version = parsed.shortVer || parsed.bundleVersion || prompt('Nhập version:') || '';
+  const title = parsed.title || prompt('Nhập tên App (title):') || 'App';
+  // icon: nếu có blob in memory, upload icon lên host -> user may want to get icon URL
+  let iconUrl = '';
+  if (lastIconBlobUrl) {
+    // cannot auto-upload: but we can offer the blob URL as data for download
+    // Provide option: user can download icon, upload to hosting, then paste URL
+    const saveIcon = confirm('Trang có tìm thấy icon. Bạn có muốn tải icon về (để upload lên hosting và tham chiếu từ manifest)?\n(Chọn OK để tải icon hiện có.)');
+    if (saveIcon) {
+      // trigger icon download
+      const a = document.createElement('a');
+      a.href = lastIconBlobUrl;
+      a.download = 'icon.png';
+      a.click();
+      alert('Tải icon xuống. Upload icon này lên hosting HTTPS và paste URL vào ô "URL IPA" nếu muốn manifest tham chiếu icon.');
+    }
+  }
+
+  const manifestText = createManifest({
+    ipaUrl: ipaUrl,
+    bundleIdentifier: bundleId,
+    bundleVersion: version,
+    title: title,
+    iconUrl: iconUrl
+  });
+
+  lastManifestText = manifestText;
+  // download
+  const blob = new Blob([manifestText], {type:'application/xml'});
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = (plistNameInput.value || 'manifest.plist');
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+
+  // show manifest text and install link suggestion
+  plistPre.textContent = manifestText;
+  plistTextDiv.style.display = 'block';
+  const exampleManifestUrl = prompt('Nếu bạn đã upload manifest.plist lên hosting, paste URL manifest (HTTPS) vào đây để tạo link cài trực tiếp mẫu. Nếu bỏ qua, mình sẽ hiển thị mẫu URL để bạn thay thủ công:', '');
+  if (exampleManifestUrl) {
+    installLinkPre.textContent = 'itms-services://?action=download-manifest&url=' + exampleManifestUrl;
+  } else {
+    // leave example text unchanged
+  }
+});
+
+plistTextBtn.addEventListener('click', () => {
+  if (!lastManifestText) return alert('Chưa có manifest nào được tạo.');
+  // show/hide
+  if (plistTextDiv.style.display === 'none' || plistTextDiv.style.display === '') {
+    plistTextDiv.style.display = 'block';
+  } else {
+    plistTextDiv.style.display = 'none';
+  }
+});
+
+</script>
+</body>
+</html>
