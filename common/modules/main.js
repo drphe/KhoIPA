@@ -50,7 +50,7 @@ export function main(callback, fallbackURL = "../../") {
                checkScheme(
     isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`,
     () => console.log("Mở app thành công"),
-    () => {navigator.clipboard.writeText(sourceURL),showUIAlert("Success", "Link source copied")}
+    () => {open(`ksign://source/${sourceURL}`),navigator.clipboard.writeText(sourceURL),showUIAlert("Success", "Link source copied")}
 );
                
             } else installAppAlert.present();
@@ -71,8 +71,7 @@ export function main(callback, fallbackURL = "../../") {
    
 function checkScheme(urlScheme, onSuccess, onFail) {
     const start = Date.now();
-    window.location.href = urlScheme;
-
+    open(urlScheme);
     setTimeout(() => {
         if (Date.now() - start < 1600) {
             onFail();
