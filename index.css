@@ -47,6 +47,6 @@
         overflow-x:scroll;
         grid-template-columns: repeat(2, 1fr);
     }
-  .source-container {
-    max-width:380px;
+  .app-header-container, .source-container {
+    max-width:375px;
 }
