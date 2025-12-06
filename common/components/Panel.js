@@ -94,8 +94,8 @@ document.body.append(bottomPanel);
         try{
              appInfo = await getAppInfoByBundleId(bundleId);
 		if(!appInfo) {
-			bundleId = bundleId.substring(0, bundleId.lastIndexOf("."));
-			appInfo = await getAppInfoByBundleId(bundleId);
+			bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
+			appInfo = await getAppInfoByBundleId(bundleIds);
 		}
         }catch(e){}
 		console.log(appInfo);
