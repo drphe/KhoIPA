@@ -3,7 +3,7 @@
   "identifier": "repo.drphe.kh0ipa",
   "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
   "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
-  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
+  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png",
   "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
   "website": "https://github.com/drphe/KhoIPA/",
@@ -11,7 +11,7 @@
   "tintColor": "#5825D0",
   "META": {
     "repoName": "Favorite apps",
-    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
+    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
   },
   "featuredApps": [
     "xyz.phim4k.ios",
@@ -24,7 +24,7 @@
     {
       "beta": "xxx",
       "name": "HornyVilla",
-      "type": 1,
+      "type": 2,
       "bundleIdentifier": "com.GreenT.HornyVilla",
       "developerName": "Ios Crack VN",
       "subtitle": "Patched",
