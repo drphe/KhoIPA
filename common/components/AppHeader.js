@@ -33,7 +33,7 @@ export const AppHeader = (app) => app ? `
                 <div class="right">
                     <div class="text">
                         <p class="title">${app.name} ${app.beta ? `<span class="small ${checkBeta(app.beta)} badge"></span>`:``}</p>
-                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.size ? AppSize(app.size) + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
+                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.size ? AppSize(app) + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
                     </div>
