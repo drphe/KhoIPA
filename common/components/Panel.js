@@ -90,12 +90,15 @@ document.body.append(bottomPanel);
                 return;
             }
         }
+        let appInfo;
+        try{
         let appInfo = await getAppInfoByBundleId(bundleId);
 		if(!appInfo) {
 			bundleId = bundleId.substring(0, bundleId.lastIndexOf("."));
 			appInfo = await getAppInfoByBundleId(bundleId);
 		}
-		console.log(appInfo)
+        }catch(e){}
+		console.log(appInfo);
         // If has multiple versions, show the latest one
         if (app.versions) {
             const latestVersion = app.versions[0];
