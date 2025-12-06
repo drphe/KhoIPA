@@ -50,11 +50,12 @@ export function main(callback, fallbackURL = "../../") {
                try{
                 link.href = isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`;
                }catch(e){
-                  link.href =  `ksign://source/${sourceURL}`
+                  link.href =  `ksign://source/${sourceURL}`;
+                  navigator.clipboard.writeText(sourceURL);
+               showUIAlert("Success", "Link source copied");
                   }
             } else installAppAlert.present();
-               navigator.clipboard.writeText(sourceURL);
-               showUIAlert("Success", "Link source copied");
+               
         });
 		
 		if (!json.sourceURL) {
