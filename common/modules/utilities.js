@@ -89,7 +89,7 @@ export function formatString(string) {
     // const urlSet = [...new Set(urlArray)]; // Converting to set to remove duplicates
     var result = "";
     urlArray?.forEach(url => {
-        string = string.replace(url, `<a href="${url}">${url}</a>`)
+        string = string.replace(url, `<a href="${url}" target=_blank>${url}</a>`)
         // Remove formatted substring so it won't get formatted again (prevents <a> tag within the href attribute another <a> tag)
         let endIndexOfClosingTag = string.indexOf("</a>") + 4;
         let formattedSubstring = string.substring(0, endIndexOfClosingTag);
