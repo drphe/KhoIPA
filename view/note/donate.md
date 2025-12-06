@@ -42,7 +42,7 @@ KhoIPA tổng hợp nhiều nguồn Repo IPA, trong đó Repo Favorite apps là 
 
 * Các app như esign, feather... yêu cầu định dạng file nguồn khác nhau, vì thế có thể không thêm được nguồn repository vào. Các reposite có định dạng khác nhau nên có thể chỉ add vào Esign hoặc chỉ Feather, dùng trên web sẽ hiển thị tốt nhất. Tuy nhiên các repo trên KhoIPA đã được mình dành nhiều công sức để nó hỗ trợ cả hầu hết các phần mềm hỗ trợ ký IPA: Esign, Feather ...
 * Có thể copy link tải ipa và sử dụng esign, feather hoặc safari tải về. Tuỳ vào sở thích của bạn.
-* Nếu tệp IPA được ký sẵn, truy cập https://i.codevn.net để tạo link cài trực tiếp.
+* Nếu tệp IPA được ký sẵn, truy cập https://i.codevn.net hoặc https://installonair.com/ để tạo link cài trực tiếp.
 
 Trên khoIPA có khá nhiều IPA rồi, nhưng trong trường hợp không tìm được IPA bạn cần, hãy tham khảo một số nguồn tải IPA khác dưới đây.
 * [CodeVN](https://ios.codevn.net/): Trang chia sẻ IPA miễn phí của ae Việt Nam
