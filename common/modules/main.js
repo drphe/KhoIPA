@@ -47,7 +47,11 @@ export function main(callback, fallbackURL = "../../") {
             const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
             const link = document.querySelector(".add");
             if (supportType === 'both') {
+               try{
                 link.href = isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`;
+               }catch(e){
+                  link.href =  `ksign://source/${sourceURL}`
+                  }
             } else installAppAlert.present();
                navigator.clipboard.writeText(sourceURL);
         });
