@@ -1,5 +1,5 @@
 import { urlSearchParams, sourceURL, base64Convert } from "./constants.js";
-import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps, openCachedUrl } from "./utilities.js";
+import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps, openCachedUrl,showUIAlert } from "./utilities.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
 export function main(callback, fallbackURL = "../../") {
@@ -10,7 +10,7 @@ export function main(callback, fallbackURL = "../../") {
    // }
     // If source is not a valid HTTP URL
      if (!isValidHTTPURL(sourceURL)) {
-        alert("Invalid HTTP URL.");
+        showUIAlert("Error","Invalid HTTP URL.");
         open(fallbackURL);
         return;
     }
@@ -54,6 +54,7 @@ export function main(callback, fallbackURL = "../../") {
                   }
             } else installAppAlert.present();
                navigator.clipboard.writeText(sourceURL);
+               showUIAlert("Success", "Link source copied");
         });
 		
 		if (!json.sourceURL) {
