@@ -101,7 +101,7 @@ const sources = await json("./common/assets/json/sources.json");
 	// insert newest app
         let count = 1;
         allApps.forEach(app => {
-            if (count > 5) return;
+            if (count > 6) return;
             document.getElementById("suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
             count++;
         });
