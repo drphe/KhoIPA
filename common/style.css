@@ -597,7 +597,7 @@ a>button {
 .source {
     display: flex;
     align-items: center;
-    height: 55px;
+    height: 70px;
     margin-top: 0.75rem;
     padding: 1rem;
     border-radius: 1.5rem;
@@ -610,8 +610,8 @@ a>button {
 }
 
 .source>img {
-    max-width: 55px;
-    max-height: 55px;
+    max-width: 70px;
+    max-height: 70px;
     border-radius: 10px;
 }
 
