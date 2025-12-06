@@ -34,8 +34,10 @@ export function main(callback, fallbackURL = "../../") {
             style: 'default',
 	    handler: () => {
 		supportType === "Esign"
-	        ? open(`esign://install?url=${sourceURL}`)
-        	: open(`feather://source/${sourceURL}`);
+	        ? checkScheme(`esign://install?url=${sourceURL}`)
+        	: checkScheme(`feather://source/${sourceURL}`,
+            () => open(`ksign://source/${sourceURL}`)
+            );
 	    }
         });
         installAppAlert.addAction({
@@ -49,8 +51,7 @@ export function main(callback, fallbackURL = "../../") {
             if (supportType === 'both') {
                checkScheme(
     isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`,
-    () => console.log("Mở app thành công"),
-    () => {open(`ksign://source/${sourceURL}`),navigator.clipboard.writeText(sourceURL),showUIAlert("Success", "Link source copied")}
+    () => open(`ksign://source/${sourceURL}`)
 );
                
             } else installAppAlert.present();
@@ -69,15 +70,15 @@ export function main(callback, fallbackURL = "../../") {
         open(`${fallbackURL}?source=${base64Convert(sourceURL)}`);
     });
    
-function checkScheme(urlScheme, onSuccess, onFail) {
+function checkScheme(urlScheme, onSuccess, onFail = null) {
     const start = Date.now();
     open(urlScheme);
     setTimeout(() => {
         if (Date.now() - start < 1600) {
-            onFail();
-        } else {
-            onSuccess();
-        }
+         onFail();
+            navigator.clipboard.writeText(sourceURL);
+            showUIAlert("Success", "Không có app tương ứng.\nLink source copied!")
+        } 
     }, 1500);
 }
     function detectSupport(app) {
