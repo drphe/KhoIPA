@@ -69,8 +69,7 @@ function checkScheme(urlScheme) {
     navigator.clipboard.writeText(sourceURL);
     setTimeout(() => {
         if (Date.now() - start < 1600) {
-            
-            showUIAlert("Success", "Không có app tương ứng.\nLink source copied!")
+            showUIAlert("Copied", "Không có app tương ứng.\nLink source copied!")
         } 
     }, 1500);
 }
