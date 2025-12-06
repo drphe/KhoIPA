@@ -64,11 +64,12 @@ export function main(callback, fallbackURL = "../../") {
     });
    
 function checkScheme(urlScheme) {
+   navigator.clipboard.writeText(sourceURL);
     const start = Date.now();
     open(urlScheme);
     setTimeout(() => {
         if (Date.now() - start < 1600) {
-            navigator.clipboard.writeText(sourceURL);
+            
             showUIAlert("Success", "Không có app tương ứng.\nLink source copied!")
         } 
     }, 1500);
