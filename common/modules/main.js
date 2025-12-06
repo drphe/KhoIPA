@@ -80,7 +80,7 @@ function checkScheme(urlScheme) {
         if (!hasHidden) {
             showUIAlert("Copied", "Không có app tương ứng.\nLink source copied!");
         }
-    }, 1500);
+    }, 2000);
 }
     function detectSupport(app) {
         const supportsESign = !!(app.versionDate || app.fullDate);
