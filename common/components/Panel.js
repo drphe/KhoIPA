@@ -97,7 +97,7 @@ document.body.append(bottomPanel);
 			bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
 			appInfo = await getAppInfoByBundleId(bundleIds);
 		}
-        }catch(e){}
+        }catch(e){appInfo = null}
 		console.log(appInfo);
         // If has multiple versions, show the latest one
         if (app.versions) {
@@ -305,7 +305,7 @@ document.body.append(bottomPanel);
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
                 <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot"></a>`);
             });
-        } else if(appInfo && appInfo.screenshotUrls && appInfo.screenshotUrls.length > 0){
+        } else if(appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0){
             appInfo.screenshotUrls.forEach((url, i) => {
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
                 <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot"></a>`);
