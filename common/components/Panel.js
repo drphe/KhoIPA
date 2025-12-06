@@ -4,7 +4,7 @@ insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVe
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
-import { AppHeader, AppLoading, checkBeta } from "../components/AppHeader.js";
+import { AppHeader, AppSize, AppLoading, checkBeta } from "../components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
 const loaded = () => {
@@ -324,14 +324,8 @@ document.body.append(bottomPanel);
         // Version number
         versionNumberElement.textContent = `Version ${app.version}`;
         // Version size
-        const units = ["B", "KB", "MB", "GB"];
-        var appSize = app.size,
-            i = 0;
-        while (appSize > 1024) {
-            i++;
-            appSize = parseFloat(appSize / 1024).toFixed(1);
-        }
-        versionSizeElement.textContent = appSize ? `${appSize} ${units[i]}` : "";
+        
+        versionSizeElement.textContent = AppSize(app);
         // Version description
         versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
         if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
