@@ -267,7 +267,7 @@ document.body.append(bottomPanel);
         // Preview
         const preview = bottomPanel.querySelector("#preview");
 		const moreDetail = bottomPanel.querySelector("#more-detail");
-		if(appInfo && appInfo.trackViewUrl) {
+		if(appInfo?.trackViewUrl) {
 			moreDetail.href= appInfo.trackViewUrl;
 			moreDetail.classList.remove("hidden");
 		}
