@@ -151,7 +151,6 @@ const sources = await json("./common/assets/json/sources.json");
                             <div class="text">
                                 <p class="title">${source.name}</p>
                                 <p class="subtitle">Updated: ${formatVersionDate(source.lastUpdated)}</p>
-                                 <p class="subtitle">Tap to discover more…</p>
                             </div>
                             <div class="app-count">
                                 ${source.appCount} app${source.appCount === 1 ? "" : "s"}
