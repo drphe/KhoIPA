@@ -15,6 +15,88 @@
   "apps": [
     {
       "beta": false,
+      "name": "Discord + Kettu",
+      "type": 1,
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "Discord + Kettu x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Discord + Kettu for theming and plugins.",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Discord + Kettu/discord-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 97517568,
+      "version": "307.2",
+      "versions": [
+        {
+          "version": "307.2",
+          "date": "2025-12-07",
+          "size": 97517568,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
+          "localizedDescription": "Discord + Kettu for theming and plugins."
+        },
+        {
+          "version": "228.1",
+          "date": "2024-05-10",
+          "size": 98566144,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
+          "localizedDescription": "Discord mod."
+        },
+        {
+          "version": "224.0",
+          "date": "2024-04-10",
+          "size": 96468992,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
+          "localizedDescription": "Another one! Bestest Discord client"
+        }
+      ],
+      "versionDate": "2025-12-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "InjectionIPA_v5.0",
+      "type": 1,
+      "bundleIdentifier": "injectionDylibToIpa.Sniper",
+      "developerName": "InjectionIPA_v5.0 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Dylib injector tool",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/InjectionIPA_v5.0.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/InjectionIPA_v5.0/InjectionIPA_v5.0-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 4194304,
+      "version": "5.0",
+      "versions": [
+        {
+          "version": "5.0",
+          "date": "2025-12-05",
+          "size": 4194304,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/InjectionIPA_v5.0.ipa",
+          "localizedDescription": "Dylib injector tool"
+        }
+      ],
+      "versionDate": "2025-12-05",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/InjectionIPA_v5.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "DLiPA_v1.1",
       "type": 1,
       "bundleIdentifier": "com.ahmedbafkir.dlipa",
@@ -161,91 +243,6 @@
     },
     {
       "beta": false,
-      "name": "NeoFreeBird - Twitter/X",
-      "type": 1,
-      "bundleIdentifier": "com.atebits.Tweetie2",
-      "developerName": "NeoFreeBird - Twitter/X x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "NeoFreeBird 2.2 - Twitter/X 11.35",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NeoFreeBird-2.2-Twitter-11.35 2.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-1.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-2.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-3.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 153092096,
-      "version": "11.35",
-      "versions": [
-        {
-          "version": "11.35",
-          "date": "2025-11-11",
-          "size": 153092096,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/NeoFreeBird-2.2-Twitter-11.35 2.ipa",
-          "localizedDescription": "NeoFreeBird 2.2 - Twitter/X 11.35"
-        }
-      ],
-      "versionDate": "2025-11-11",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/NeoFreeBird-2.2-Twitter-11.35 2.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Discord + Kettu",
-      "type": 1,
-      "bundleIdentifier": "com.hammerandchisel.discord",
-      "developerName": "Discord + Kettu x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Discord + Kettu loader for theming and plugins.",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Discord + Kettu/discord-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 89128960,
-      "version": "302.0",
-      "versions": [
-        {
-          "version": "302.0",
-          "date": "2025-11-06",
-          "size": 89128960,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
-          "localizedDescription": "Discord + Kettu loader for theming and plugins."
-        },
-        {
-          "version": "228.1",
-          "date": "2024-05-10",
-          "size": 98566144,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
-          "localizedDescription": "Discord mod."
-        },
-        {
-          "version": "224.0",
-          "date": "2024-04-10",
-          "size": 96468992,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
-          "localizedDescription": "Another one! Bestest Discord client"
-        }
-      ],
-      "versionDate": "2025-11-06",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "PotatoIM",
       "type": 1,
       "bundleIdentifier": "org.potatochat.PotatoEnterprise",
@@ -311,41 +308,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/iTorrent.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Youtube YTPlus 5.2B4",
-      "type": 1,
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "Youtube YTPlus 5.2B4 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Youtube 20.10.4 YTPlus 5.2 Beta 4",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Youtube YTPlus 5.2B4/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/Youtube YTPlus 5.2B4/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4-1.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 120586240,
-      "version": "20.10.4",
-      "versions": [
-        {
-          "version": "20.10.4",
-          "date": "2025-10-14",
-          "size": 120586240,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.ipa",
-          "localizedDescription": "Youtube 20.10.4 YTPlus 5.2 Beta 4"
-        }
-      ],
-      "versionDate": "2025-10-14",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.ipa",
       "patreon": {}
     },
     {
@@ -6288,6 +6250,26 @@
   ],
   "news": [
     {
+      "title": "Discord + Kettu now available!",
+      "identifier": "cypwn.Discord + Kettu.307.2",
+      "caption": "Discord + Kettu added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
+      "date": "2025-12-07",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "InjectionIPA_v5.0 now available!",
+      "identifier": "cypwn.InjectionIPA_v5.0.5.0",
+      "caption": "InjectionIPA_v5.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/InjectionIPA_v5.0.png",
+      "date": "2025-12-05",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
       "title": "DLiPA_v1.1 now available!",
       "identifier": "cypwn.DLiPA_v1.1.1.1",
       "caption": "DLiPA_v1.1 added to the CyPwn Library",
@@ -6328,26 +6310,6 @@
       "notify": true
     },
     {
-      "title": "NeoFreeBird - Twitter/X now available!",
-      "identifier": "cypwn.NeoFreeBird - Twitter/X.11.35",
-      "caption": "NeoFreeBird - Twitter/X added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/NeoFreeBird-2.2-Twitter-11.35 2.png",
-      "date": "2025-11-11",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Discord + Kettu now available!",
-      "identifier": "cypwn.Discord + Kettu.302.0",
-      "caption": "Discord + Kettu added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
-      "date": "2025-11-06",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
       "title": "PotatoIM now available!",
       "identifier": "cypwn.PotatoIM.2.47.207251",
       "caption": "PotatoIM added to the CyPwn Library",
@@ -6364,16 +6326,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/iTorrent.png",
       "date": "2025-10-25",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Youtube YTPlus 5.2B4 now available!",
-      "identifier": "cypwn.Youtube YTPlus 5.2B4.20.10.4",
-      "caption": "Youtube YTPlus 5.2B4 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Youtube_20.10.4_YTPlus_5.2_Beta_4_Cyan_Edition_UHD_2.0.1_(super_stable)-v20.10.4.png",
-      "date": "2025-10-14",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
