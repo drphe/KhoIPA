@@ -36,6 +36,7 @@ pre { white-space:wrap; word-break:break-all; }
 <!-- Upload -->
 <div id="tabUpload" class="card">
   <input type="file" id="fileInput" class="input-file" accept=".ipa">
+  <input type="url" id="uploadUrlInput" class="input" placeholder="https://yourdomain.com/app.ipa">
   <div class="status" id="uploadStatus" style="display:none"></div>
 </div>
 
@@ -182,8 +183,9 @@ document.getElementById('fileInput').addEventListener('change', async (e) => {
     setErr('uploadStatus','❌ Chưa chọn file IPA.');
     return;
   }
-  ipaMeta.ipaUrl=''; // reset nếu upload file mới
-  await readIpa(file);
+  // lấy URL từ ô nhập khi upload
+  ipaMeta.ipaUrl=document.getElementById('uploadUrlInput').value.trim();
+  await readIpa(file, ipaMeta.ipaUrl);
 });
 
 // Sự kiện: Dán URL và tải/parse
