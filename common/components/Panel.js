@@ -122,23 +122,22 @@ document.body.append(bottomPanel);
             style: 'default',
             handler: () => open(`esign://install?url=${app.downloadURL}`)
         });
-        
+
         const plistUrl = await checkIpaAndGenerateInstallUrl(app.downloadURL);
-            if (plistUrl) {
+        if (plistUrl) {
                 installAppAlert.addAction({
                     title: "Install directly",
                     style: 'default',
                     handler: () => window.open(plistUrl)
                 });
-            } 
-
-        if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
+        }else if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
             installAppAlert.addAction({
                 title: "Download IPA",
                 style: 'default',
                 handler: () => window.open(app.downloadURL, "_blank")
             });
         }
+        
         installAppAlert.addAction({
             title: "Copy Link IPA",
             style: 'default',
