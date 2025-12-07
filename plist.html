@@ -192,9 +192,13 @@ document.getElementById('fileInput').addEventListener('change', async (e) => {
     setErr('uploadStatus','❌ Chưa chọn file IPA.');
     return;
   }
+  
+  const fileNameWithoutIpa = file.name.replace(/\.ipa$/i, '');
+  document.getElementById('plistName').value =fileNameWithoutIpa + '.plist'
   ipaMeta.ipaUrl=document.getElementById('uploadUrlInput').value.trim();
   await readIpa(file, ipaMeta.ipaUrl);
 });
+
 
 // Sự kiện: Dán URL và tải/parse
 document.getElementById('fetchBtn').addEventListener('click', async () => {
