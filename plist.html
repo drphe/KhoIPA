@@ -1,426 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>IPA → Manifest (OTA) — Mobile-friendly</title>
-
-<!-- Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-<!-- bplist-parser (for binary plist) -->
-<script src="https://unpkg.com/bplist-parser@0.1.0/lib/bplistParser.js"></script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IPA → manifest.plist (OTA) — Web tĩnh</title>
 <style>
-:root{
-  --bg:#f6f7fb; --card:#fff; --primary:#0b84ff; --muted:#666;
-  --danger:#d9534f; --ok:#28a745;
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:#111}
-.container{max-width:900px;margin:0 auto;padding:16px}
-.header{display:flex;gap:12px;align-items:center;margin-bottom:12px}
-.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#0b84ff 0%,#6fc6ff 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
-.title{font-size:1.05rem;font-weight:600}
-.card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(20,30,60,0.06);margin-bottom:12px}
-.tabs{display:flex;border-radius:10px;overflow:hidden;border:1px solid #e6e9ef;background:#fff}
-.tab-btn{flex:1;padding:10px;text-align:center;cursor:pointer;font-weight:600;background:transparent;border:none}
-.tab-btn.active{background:var(--primary);color:#fff}
-.row{display:flex;gap:8px}
-.input, .input-file, .btn, .small{width:100%}
-.input{padding:10px;border-radius:10px;border:1px solid #e6e9ef}
-.input-file{padding:8px}
-.btn{padding:10px;border-radius:10px;border:none;background:var(--primary);color:#fff;font-weight:700;cursor:pointer}
-.btn.secondary{background:#444}
-.small{font-size:0.85rem;color:var(--muted)}
-.status{padding:10px;border-radius:10px;background:#fbfdff;border:1px solid #e9f2ff;color:#111;margin-top:10px;white-space:pre-line}
-.status.error{border-color:#f8d7da;background:#fff5f5;color:var(--danger)}
-.status.ok{border-color:#c7f0d9;background:#f6fffa;color:var(--ok)}
-.flex{display:flex;gap:8px;align-items:center}
-.icon-preview{width:84px;height:84px;border-radius:16px;object-fit:contain;border:1px solid #eee}
-.field-row{margin-top:10px}
-.footer{font-size:0.85rem;color:var(--muted);margin-top:6px}
-
-@media (max-width:420px){
-  .row{flex-direction:column}
-  .header{gap:8px}
-  .title{font-size:1rem}
-}
+body { margin:0; font-family: system-ui, -apple-system, sans-serif; background:#f5f6fa; color:#111; }
+.container { max-width: 480px; margin:auto; padding:16px; }
+h2 { text-align:center; margin-bottom:16px; }
+.tabs { display:flex; margin-bottom:12px; border-radius:8px; overflow:hidden; }
+.tab-btn { flex:1; padding:10px; border:none; cursor:pointer; font-weight:600; background:#eee; }
+.tab-btn.active { background:#0b84ff; color:#fff; }
+.card { background:#fff; padding:12px; border-radius:10px; margin-bottom:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+.input, .input-file, .btn { width:100%; padding:10px; border-radius:8px; border:1px solid #ccc; margin-bottom:8px; }
+.input-file { padding:6px; }
+.btn { border:none; background:#0b84ff; color:#fff; font-weight:600; cursor:pointer; }
+.btn.secondary { background:#444; }
+.status { padding:10px; border-radius:8px; background:#f0f4ff; margin-top:6px; white-space:pre-line; }
+.status.error { background:#ffe6e6; color:#d9534f; border:1px solid #f5c6cb; }
+.status.ok { background:#e6ffe6; color:#28a745; border:1px solid #c3e6cb; }
+@media (max-width:420px){ .tabs { flex-direction:column; } }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <div class="logo">IPA</div>
-    <div>
-      <div class="title">IPA → manifest.plist (OTA)</div>
-      <div class="small">Upload .ipa hoặc dán link → tự tạo manifest để tải</div>
-    </div>
-  </div>
+<h2>IPA → manifest.plist (OTA)</h2>
 
-  <div class="card">
-    <div class="tabs" role="tablist" aria-label="tabs">
-      <button id="tabUploadBtn" class="tab-btn active" onclick="switchTab('upload')">Upload IPA</button>
-      <button id="tabUrlBtn" class="tab-btn" onclick="switchTab('url')">Dán link IPA</button>
-    </div>
+<div class="tabs">
+  <button id="tabUploadBtn" class="tab-btn active" onclick="switchTab('upload')">Upload IPA</button>
+  <button id="tabUrlBtn" class="tab-btn" onclick="switchTab('url')">Dán link IPA</button>
+</div>
 
-    <!-- UPLOAD -->
-    <div id="tabUpload" style="padding:12px">
-      <label class="small">Chọn file .ipa (kéo thả hoặc bấm chọn)</label>
-      <input id="fileInput" class="input-file" type="file" accept=".ipa,application/zip" />
-      <div style="margin-top:8px" class="row">
-        <button class="btn" onclick="handleFile()">Đọc file IPA</button>
-        <button class="btn secondary" onclick="clearAll()">Reset</button>
-      </div>
-      <div id="uploadStatus" class="status" style="display:none"></div>
-    </div>
+<!-- Upload -->
+<div id="tabUpload" class="card">
+  <input type="file" id="fileInput" class="input-file" accept=".ipa">
+  <div class="status" id="uploadStatus" style="display:none"></div>
+</div>
 
-    <!-- URL -->
-    <div id="tabUrl" style="display:none;padding:12px">
-      <label class="small">Dán link trực tiếp tới .ipa (HTTPS). Server .ipa cần cho phép CORS để trang này fetch được.</label>
-      <input id="urlInput" class="input" type="url" placeholder="https://example.com/app.ipa" />
-      <div class="field-row row">
-        <button class="btn" onclick="handleUrl()">Tải & Đọc IPA</button>
-        <button class="btn secondary" onclick="clearAll()">Reset</button>
-      </div>
-      <div id="urlStatus" class="status" style="display:none"></div>
-    </div>
-  </div>
+<!-- URL -->
+<div id="tabUrl" class="card" style="display:none">
+  <input type="url" id="urlInput" class="input" placeholder="https://example.com/app.ipa">
+  <div class="status" id="urlStatus" style="display:none"></div>
+</div>
 
-  <!-- Result -->
-  <div id="resultCard" class="card" style="display:none">
-    <div style="display:flex;gap:12px;align-items:center">
-      <div>
-        <img id="iconImg" class="icon-preview" alt="icon" style="display:none"/>
-      </div>
-      <div style="flex:1">
-        <div style="font-weight:700" id="appTitle">—</div>
-        <div class="small" id="bundleLine">Bundle: —</div>
-        <div class="small" id="verLine">Version: —</div>
-        <div style="margin-top:8px" class="row">
-          <input id="ipaUrlField" class="input" placeholder="https://yourdomain.com/app.ipa (bắt buộc để manifest tham chiếu)" />
-          <button class="btn" onclick="generatePlist()">Tạo manifest</button>
-        </div>
-        <div class="footer">Nếu bạn đã dùng tab "Dán link" và link fetch thành công, ô trên sẽ tự điền. Nếu bạn upload file, upload IPA lên hosting HTTPS rồi paste URL vào ô này trước khi tạo manifest.</div>
-      </div>
-    </div>
+<!-- Info Form -->
+<div class="card">
+  <label>Bundle ID</label>
+  <input type="text" id="bundleId" class="input" placeholder="com.example.app">
 
-    <div style="margin-top:12px" class="field-row">
-      <div class="small">Tên file manifest (tải xuống)</div>
-      <input id="plistName" class="input" value="manifest.plist" />
-    </div>
+  <label>App Name</label>
+  <input type="text" id="appName" class="input" placeholder="Tên ứng dụng">
 
-    <div id="manifestStatus" class="status" style="display:none"></div>
+  <label>Version</label>
+  <input type="text" id="appVersion" class="input" placeholder="1.0">
 
-    <div id="downloadArea" style="margin-top:12px;display:none">
-      <div class="row">
-        <button class="btn" id="downloadPlistBtn" onclick="downloadPlist()">Tải manifest.plist</button>
-        <button class="btn secondary" onclick="copyPlistText()">Xem / Sao chép nội dung</button>
-        <button class="btn" onclick="copyOta()">Copy link OTA</button>
-      </div>
-      <div style="margin-top:8px" class="small">Gợi ý link (sau khi upload manifest.plist lên host HTTPS):</div>
-      <pre id="otaPreview" style="background:#f3f7ff;padding:8px;border-radius:8px;border:1px solid #e6eefc"></pre>
-    </div>
-  </div>
+  <label>IPA URL (HTTPS)</label>
+  <input type="url" id="ipaUrl" class="input" placeholder="https://yourdomain.com/app.ipa">
 
-  <div id="plistModal" style="display:none;margin-top:12px" class="card">
-    <div class="small">Nội dung manifest.plist (bạn có thể sao chép)</div>
-    <pre id="plistText" style="white-space:pre-wrap;background:#fbfbff;padding:8px;border-radius:8px;border:1px solid #eef"></pre>
-  </div>
+  <label>Tên file manifest.plist</label>
+  <input type="text" id="plistName" class="input" value="manifest.plist">
 
-  <div style="margin-top:12px" class="small card">
-    <strong>Lưu ý:</strong>
-    <ul>
-      <li>Manifest và IPA phải phục vụ qua <strong>HTTPS</strong> để iOS chấp nhận cài OTA.</li>
-      <li>Nếu fetch từ link bị lỗi do <strong>CORS</strong>, hãy tải IPA về rồi dùng tab Upload.</li>
-      <li>IPA phải được ký hợp lệ (ad-hoc/enterprise) để cài trên thiết bị.</li>
-    </ul>
+  <button class="btn" onclick="generatePlist()">Tạo manifest.plist</button>
+  <div class="status" id="plistStatus" style="display:none"></div>
+</div>
+
+<!-- Download -->
+<div id="downloadCard" class="card" style="display:none">
+  <button class="btn" onclick="downloadPlist()">Tải manifest.plist</button>
+  <button class="btn secondary" onclick="copyManifest()">Copy nội dung manifest</button>
+  <div style="margin-top:8px;">
+    <div>Link OTA gợi ý:</div>
+    <pre id="otaLink" style="background:#f3f7ff;padding:6px;border-radius:6px;"></pre>
   </div>
 </div>
 
 <script>
-/* ----------------------- Utilities ----------------------- */
-function el(id){ return document.getElementById(id) }
-function show(elm){ elm.style.display = '' }
-function hide(elm){ elm.style.display = 'none' }
-function text(elm, v){ elm.textContent = v }
+let lastManifest = '';
 
-/* ----------------------- Tab ----------------------- */
 function switchTab(name){
-  el('tabUpload').style.display = name==='upload' ? '' : 'none'
-  el('tabUrl').style.display = name==='url' ? '' : 'none'
-  el('tabUploadBtn').classList.toggle('active', name==='upload')
-  el('tabUrlBtn').classList.toggle('active', name==='url')
-  // reset statuses
-  clearStatus()
+  document.getElementById('tabUpload').style.display = name==='upload'?'':'none';
+  document.getElementById('tabUrl').style.display = name==='url'?'':'none';
+  document.getElementById('tabUploadBtn').classList.toggle('active', name==='upload');
+  document.getElementById('tabUrlBtn').classList.toggle('active', name==='url');
+  hideStatus();
 }
 
-/* ----------------------- State ----------------------- */
-let parsedInfo = null
-let lastManifestText = ''
-
-function clearStatus(){
-  hide(el('uploadStatus')); hide(el('urlStatus')); hide(el('manifestStatus'))
-}
-function clearAll(){
-  parsedInfo = null
-  lastManifestText = ''
-  el('fileInput').value = ''
-  el('urlInput').value = ''
-  el('ipaUrlField').value = ''
-  el('plistName').value = 'manifest.plist'
-  hide(el('resultCard'))
-  hide(el('plistModal'))
-  hide(el('downloadArea'))
-  clearStatus()
+function hideStatus(){
+  document.getElementById('uploadStatus').style.display='none';
+  document.getElementById('urlStatus').style.display='none';
+  document.getElementById('plistStatus').style.display='none';
 }
 
-/* ----------------------- Read file (Upload) ----------------------- */
-async function handleFile(){
-  clearStatus()
-  const s = el('uploadStatus'); show(s); s.className='status'; text(s,'📦 Đang đọc file .ipa...')
-  const file = el('fileInput').files && el('fileInput').files[0]
-  if(!file){ text(s,'❌ Chưa chọn file IPA.'); s.className='status error'; return; }
-  try{
-    const ab = await file.arrayBuffer()
-    await parseIPA(ab, {sourceName: file.name, sourceUrl: ''})
-    text(s,'✅ Đã phân tích file IPA thành công.')
-    s.className='status ok'
-  }catch(err){
-    text(s, '❌ Lỗi phân tích IPA:\n' + (err && err.message ? err.message : String(err)))
-    s.className='status error'
-    console.error(err)
-  }
-}
+function generatePlist(){
+  hideStatus();
+  const bundle = document.getElementById('bundleId').value.trim();
+  const name = document.getElementById('appName').value.trim();
+  const version = document.getElementById('appVersion').value.trim();
+  const ipaUrl = document.getElementById('ipaUrl').value.trim();
+  const plistFileName = document.getElementById('plistName').value.trim() || 'manifest.plist';
 
-/* ----------------------- Read from URL (with progress) ----------------------- */
-async function handleUrl(){
-  clearStatus()
-  const s = el('urlStatus'); show(s); s.className='status'; text(s,'🌐 Đang tải IPA từ URL...')
-  const url = el('urlInput').value.trim()
-  if(!url){ text(s,'❌ Chưa nhập URL'); s.className='status error'; return; }
-  if(!/^https?:\/\//i.test(url)){ text(s,'❌ URL phải bắt đầu bằng http(s)'); s.className='status error'; return; }
-  try{
-    const resp = await fetch(url, {mode:'cors'})
-    if(!resp.ok) throw new Error('HTTP ' + resp.status)
-    // try to get content-length for progress
-    const cl = resp.headers.get('content-length')
-    if(!resp.body){
-      // fallback: arrayBuffer direct
-      const ab = await resp.arrayBuffer()
-      await parseIPA(ab, {sourceName:'', sourceUrl: url})
-      text(s,'✅ Đã tải và phân tích IPA.')
-      s.className='status ok'
-      return
-    }
-    // stream read with progress
-    const reader = resp.body.getReader()
-    const total = cl ? parseInt(cl,10) : null
-    let received = 0
-    const chunks = []
-    while(true){
-      const {done, value} = await reader.read()
-      if(done) break
-      chunks.push(value)
-      received += value.length
-      if(total){
-        const pct = Math.round(received/total*100)
-        text(s, `🌐 Đang tải IPA... ${pct}% (${received}/${total} bytes)`)
-      }else{
-        text(s, `🌐 Đang tải IPA... ${Math.round(received/1024)} KB`)
-      }
-    }
-    // concat chunks
-    let size = 0; for(const c of chunks) size+=c.length
-    const ab = new Uint8Array(size); let offset=0
-    for(const c of chunks){ ab.set(c, offset); offset+=c.length }
-    await parseIPA(ab.buffer, {sourceName:'', sourceUrl: url})
-    text(s,'✅ Đã tải và phân tích IPA.')
-    s.className='status ok'
-  }catch(err){
-    text(s,'❌ Lỗi tải IPA:\n' + (err && err.message ? err.message : String(err)))
-    s.className='status error'
-    console.error(err)
-  }
-}
-
-/* ----------------------- Parse IPA ----------------------- */
-async function parseIPA(arrayBuffer, meta){
-  // meta: {sourceName, sourceUrl}
-  const zip = await JSZip.loadAsync(arrayBuffer)
-  const filenames = Object.keys(zip.files)
-  // find Info.plist under Payload/*.app/Info.plist
-  const infoPath = filenames.find(p => /Payload\/[^\/]+\.app\/Info.plist$/.test(p))
-  if(!infoPath) throw new Error('Không tìm thấy Info.plist trong IPA')
-
-  // read as binary or string
-  const infoFile = zip.files[infoPath]
-  const raw = await infoFile.async('arraybuffer')
-  const u8 = new Uint8Array(raw)
-
-  // detect binary plist (starts with "bplist")
-  let plistObj = null
-  try{
-    const header = new TextDecoder('utf-8',{fatal:false}).decode(u8.slice(0,6))
-    if(header === 'bplist'){
-      // binary plist parse
-      // bplistParser.parseBuffer expects Buffer or arrayBuffer-like; library exposes bplistParser.parseBuffer
-      plistObj = bplistParser.parseBuffer(raw)
-      // parseBuffer returns array of objects; take first
-      if(Array.isArray(plistObj)) plistObj = plistObj[0]
-    }else{
-      // treat as XML text
-      const text = new TextDecoder('utf-8').decode(u8)
-      plistObj = parseXmlPlist(text)
-    }
-  }catch(e){
-    console.warn('xml parse failed, try binary parser', e)
-    // try binary as fallback
-    try{
-      plistObj = bplistParser.parseBuffer(raw)
-      if(Array.isArray(plistObj)) plistObj = plistObj[0]
-    }catch(e2){
-      throw new Error('Không parse được Info.plist (XML hoặc binary).')
-    }
+  if(!bundle || !name || !version || !ipaUrl){
+    const s = document.getElementById('plistStatus'); s.style.display='block'; s.className='status error';
+    s.textContent = '❌ Vui lòng điền đủ thông tin.';
+    return;
   }
 
-  // extract basic fields (robust)
-  const bundleId = plistObj.CFBundleIdentifier || plistObj.cfBundleIdentifier || plistObj['CFBundleIdentifier'] || ''
-  const shortVer = plistObj.CFBundleShortVersionString || plistObj['CFBundleShortVersionString'] || ''
-  const bundleVer = plistObj.CFBundleVersion || plistObj['CFBundleVersion'] || ''
-  const title = plistObj.CFBundleDisplayName || plistObj.CFBundleName || plistObj['CFBundleDisplayName'] || plistObj['CFBundleName'] || ''
-
-  if(!bundleId) throw new Error('Không đọc được CFBundleIdentifier từ Info.plist')
-
-  // find icons candidates
-  const appDir = infoPath.replace(/Info\.plist$/,'')
-  let iconCandidates = []
-
-  // 1) check CFBundleIcons / CFBundleIconFiles
-  try{
-    const icons = plistObj.CFBundleIcons || plistObj.CFBundleIcons~ || plistObj['CFBundleIcons']
-    if(icons && icons.CFBundlePrimaryIcon && Array.isArray(icons.CFBundlePrimaryIcon.CFBundleIconFiles)){
-      icons.CFBundlePrimaryIcon.CFBundleIconFiles.forEach(n => {
-        // try possible suffixes
-        ['','@2x','@3x','.png','@2x.png','@3x.png'].forEach(suf => {
-          const fn = appDir + n + suf
-          if(filenames.includes(fn)) iconCandidates.push(fn)
-        })
-      })
-    }
-  }catch(e){}
-
-  try{
-    const iconFiles = plistObj.CFBundleIconFiles || plistObj['CFBundleIconFiles']
-    if(Array.isArray(iconFiles)){
-      iconFiles.forEach(n=>{
-        ['','.png','@2x.png','@3x.png'].forEach(suf=>{
-          const fn = appDir + n + suf
-          if(filenames.includes(fn)) iconCandidates.push(fn)
-        })
-      })
-    }
-  }catch(e){}
-
-  // 2) naive: all pngs inside .app
-  filenames.forEach(p=>{
-    if(p.startsWith(appDir) && /\.(png|PNG)$/.test(p)) iconCandidates.push(p)
-  })
-
-  // dedupe and get file sizes, contents for top candidate(s)
-  iconCandidates = Array.from(new Set(iconCandidates))
-  const icons = []
-  for(const p of iconCandidates){
-    try{
-      const f = zip.files[p]
-      if(!f) continue
-      const data = await f.async('arraybuffer')
-      icons.push({path:p, size:data.byteLength, data})
-    }catch(e){}
-  }
-  icons.sort((a,b)=>b.size-a.size)
-
-  // prepare UI & state
-  parsedInfo = {
-    bundleId, shortVer, bundleVer, title,
-    icons, filenames, sourceName: meta.sourceName||'', sourceUrl: meta.sourceUrl||''
-  }
-
-  // fill UI
-  el('appTitle').textContent = title || '(No title)'
-  el('bundleLine').textContent = 'Bundle: ' + bundleId
-  el('verLine').textContent = 'Version: ' + (shortVer || bundleVer || '(n/a)')
-
-  // icon
-  const iconImg = el('iconImg')
-  if(icons.length){
-    const blob = new Blob([icons[0].data], {type:'image/png'})
-    const url = URL.createObjectURL(blob)
-    iconImg.src = url
-    iconImg.style.display = ''
-    // provide download on click
-    iconImg.onclick = ()=> {
-      const a = document.createElement('a'); a.href=url; a.download='icon.png'; a.click()
-    }
-  }else{
-    iconImg.style.display = 'none'
-  }
-
-  // auto fill ipaUrlField if sourceUrl exists
-  if(parsedInfo.sourceUrl) el('ipaUrlField').value = parsedInfo.sourceUrl
-
-  // show result card
-  show(el('resultCard'))
-  hide(el('plistModal'))
-  hide(el('downloadArea'))
-  hide(el('manifestStatus'))
-}
-
-/* ----------------------- XML plist parser (simple) ----------------------- */
-function parseXmlPlist(xmlText){
-  // parse <plist><dict> ... keys and values
-  const dom = new DOMParser().parseFromString(xmlText, 'application/xml')
-  const dict = dom.querySelector('plist > dict')
-  if(!dict) throw new Error('XML plist không chứa <dict>')
-  const children = Array.from(dict.childNodes).filter(n=>n.nodeType===1) // element nodes
-  const obj = {}
-  for(let i=0;i<children.length;i+=2){
-    const key = children[i]
-    const val = children[i+1]
-    if(!key || !val) continue
-    if(key.tagName !== 'key') continue
-    const name = key.textContent
-    if(val.tagName === 'string') obj[name] = val.textContent
-    else if(val.tagName === 'true') obj[name] = true
-    else if(val.tagName === 'false') obj[name] = false
-    else if(val.tagName === 'dict'){
-      // parse nested dict to plain object (shallow)
-      const sub = {}
-      const k2 = Array.from(val.childNodes).filter(n=>n.nodeType===1)
-      for(let j=0;j<k2.length;j+=2){
-        const kk = k2[j], vv = k2[j+1]
-        if(kk && vv && kk.tagName==='key'){
-          sub[kk.textContent] = vv.textContent || ''
-        }
-      }
-      obj[name] = sub
-    }else{
-      // fallback store raw text
-      obj[name] = val.textContent || ''
-    }
-  }
-  return obj
-}
-
-/* ----------------------- Create manifest text ----------------------- */
-function createManifestText({ipaUrl, bundleId, bundleVersion, title, iconUrl}){
-  const iconPart = iconUrl ? `
-        <dict>
-          <key>kind</key>
-          <string>display-image</string>
-          <key>url</key>
-          <string>${escapeXml(iconUrl)}</string>
-        </dict>` : ''
-  return `<?xml version="1.0" encoding="UTF-8"?>
+  const plistText = `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -433,80 +118,45 @@ function createManifestText({ipaUrl, bundleId, bundleVersion, title, iconUrl}){
           <key>kind</key>
           <string>software-package</string>
           <key>url</key>
-          <string>${escapeXml(ipaUrl)}</string>
-        </dict>${iconPart}
+          <string>${ipaUrl}</string>
+        </dict>
       </array>
       <key>metadata</key>
       <dict>
         <key>bundle-identifier</key>
-        <string>${escapeXml(bundleId)}</string>
+        <string>${bundle}</string>
         <key>bundle-version</key>
-        <string>${escapeXml(bundleVersion)}</string>
+        <string>${version}</string>
         <key>kind</key>
         <string>software</string>
         <key>title</key>
-        <string>${escapeXml(title)}</string>
+        <string>${name}</string>
       </dict>
     </dict>
   </array>
 </dict>
-</plist>`
-}
-function escapeXml(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') }
+</plist>`;
 
-/* ----------------------- Generate manifest flow ----------------------- */
-function generatePlist(){
-  hide(el('manifestStatus'))
-  if(!parsedInfo) { alert('Bạn chưa upload hoặc fetch IPA'); return }
-  const ipaUrl = el('ipaUrlField').value.trim()
-  if(!ipaUrl){ if(!confirm('Bạn chưa nhập URL cho IPA. Manifest sẽ chứa trường url rỗng và iOS sẽ không thể cài. Tiếp tục?')){} }
-  const plistName = (el('plistName').value || 'manifest.plist').trim()
-  const iconUrl = '' // we cannot auto-upload icon; leave empty. user can upload icon manually and edit manifest if muốn.
-  const textManifest = createManifestText({
-    ipaUrl: ipaUrl,
-    bundleId: parsedInfo.bundleId,
-    bundleVersion: parsedInfo.shortVer || parsedInfo.bundleVer || '1.0',
-    title: parsedInfo.title || parsedInfo.bundleId,
-    iconUrl: iconUrl
-  })
-  lastManifestText = textManifest
+  lastManifest = plistText;
+  document.getElementById('plistStatus').style.display='block';
+  document.getElementById('plistStatus').className='status ok';
+  document.getElementById('plistStatus').textContent='✅ Manifest.plist đã tạo.';
 
-  // show manifest status and download area
-  show(el('manifestStatus')); el('manifestStatus').className='status ok'; text(el('manifestStatus'),'✅ Manifest đã tạo, bạn có thể tải xuống hoặc xem nội dung.')
-  show(el('downloadArea'))
-  el('plistText').textContent = textManifest
-  el('plistModal').style.display = ''
-  const examplePlistUrlPrompt = '' // leave blank; user uploads file manually
-  el('otaPreview').textContent = `itms-services://?action=download-manifest&url=https://yourdomain.com/${plistName}`
+  document.getElementById('downloadCard').style.display='';
+  document.getElementById('otaLink').textContent = `itms-services://?action=download-manifest&url=https://yourdomain.com/${plistFileName}`;
 }
 
-/* ----------------------- Download / Copy helpers ----------------------- */
 function downloadPlist(){
-  if(!lastManifestText){ alert('Chưa có manifest'); return }
-  const name = (el('plistName').value || 'manifest.plist').trim()
-  const blob = new Blob([lastManifestText], {type:'text/xml'})
-  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; a.click()
+  if(!lastManifest){ alert('Chưa tạo manifest'); return; }
+  const plistFileName = document.getElementById('plistName').value.trim() || 'manifest.plist';
+  const blob = new Blob([lastManifest], {type:'text/xml'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = plistFileName; a.click();
 }
 
-function copyPlistText(){
-  if(!lastManifestText){ alert('Chưa có manifest'); return }
-  navigator.clipboard.writeText(lastManifestText).then(()=> alert('Đã copy nội dung manifest vào clipboard.'))
+function copyManifest(){
+  if(!lastManifest){ alert('Chưa tạo manifest'); return; }
+  navigator.clipboard.writeText(lastManifest).then(()=> alert('Đã copy nội dung manifest vào clipboard.'));
 }
-
-function copyOta(){
-  // build OTA link from preview or ask user for hosted manifest URL
-  const preview = el('otaPreview').textContent || ''
-  const hosted = prompt('Paste URL manifest.plist (HTTPS) sau khi bạn upload (ví dụ: https://yourdomain.com/manifest.plist):', '')
-  if(hosted){
-    const ota = `itms-services://?action=download-manifest&url=${hosted}`
-    navigator.clipboard.writeText(ota).then(()=> alert('Đã copy OTA link:\n' + ota))
-  }else if(preview){
-    navigator.clipboard.writeText(preview).then(()=> alert('Đã copy mẫu OTA link (hãy thay bằng URL manifest thực tế):\n' + preview))
-  }else alert('Không có link để copy.')
-}
-
-/* ----------------------- Init ----------------------- */
-switchTab('upload')
 </script>
 </body>
 </html>
