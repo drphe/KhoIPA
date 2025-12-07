@@ -116,11 +116,23 @@ document.body.append(bottomPanel);
         const installAppAlert = new UIAlert({
             title: `Get "${app.name}"`
         });
+        
         installAppAlert.addAction({
             title: "Install via Esign",
             style: 'default',
             handler: () => open(`esign://install?url=${app.downloadURL}`)
         });
+        
+        checkIpaAndGenerateInstallUrl(ipaLink).then(result => {
+            if (result) {
+                installAppAlert.addAction({
+                    title: "Install directly",
+                    style: 'default',
+                    handler: () => window.open(result)
+                });
+            } 
+        });
+
         if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
             installAppAlert.addAction({
                 title: "Download IPA",
@@ -914,4 +926,33 @@ async function getAppInfoByBundleId(bundleId) {
 
     // Trả về kết quả nào đến trước: fetch hoặc timeout
     return Promise.race([fetchPromise, timeout]);
+}
+async function checkIpaAndGenerateInstallUrl(ipaUrl) {
+    const manifestBasePath = 'https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/';
+
+    if (!ipaUrl || !ipaUrl.toLowerCase().endsWith('.ipa')) {
+        console.error('URL không phải là file .ipa hợp lệ.');
+        return null;
+    }
+
+    const urlParts = ipaUrl.split('/');
+    let fileNameWithParams = urlParts[urlParts.length - 1];
+    const fileName = fileNameWithParams.split('?')[0];
+
+    const manifestFileName = fileName.replace(/\.ipa$/i, '.plist');
+    const manifestUrl = manifestBasePath + manifestFileName;
+    const installUrl = `itms-services://?action=download-manifest&url=${encodeURIComponent(manifestUrl)}`;
+
+    try {
+        const response = await fetch(manifestUrl, { method: 'GET' });
+
+        if (response.ok) {
+            return installUrl;
+        } else {
+            console.log(`Lỗi truy cập file manifest .plist. Status: ${response.status}`);
+            return null;
+        }
+    } catch (error) {
+        return null;
+    }
 }
