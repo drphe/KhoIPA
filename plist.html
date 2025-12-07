@@ -77,7 +77,42 @@ h2 { text-align:center; margin-bottom:16px; }
 
 <script>
 let lastManifest = '';
-
+const readIpa = async (t = {}, oo) => { // hàm đọc file
+    try {
+        const e = new window.AppInfoParser(t);
+        try {
+            const n = await e.parse();
+            console.log(n); // đối tượng chưa thông tin
+            const tint = await getTintColorFromIcon(n.icon);
+            const modifiedDate = t.lastModifiedDate || new Date(t.lastModified);
+            const localDate = new Date(modifiedDate.getTime() - (modifiedDate.getTimezoneOffset() * 70000)).toISOString().slice(0, 16);
+            // tạo thông tin cần thiết
+            const ipaData = {
+                CFBundleDisplayName: n.CFBundleDisplayName,
+                CFBundleIdentifier: n.CFBundleIdentifier,
+                CFBundleName: n.CFBundleName,
+                CFBundleShortVersionString: n.CFBundleShortVersionString,
+                MinimumOSVersion: "Minimum IOS: " + n.MinimumOSVersion,
+                TintColor: tint,
+		Icon: n.icon,
+                Name: t.name,
+                VersionSize: t.size,
+                VersionDate: localDate
+            };
+            await createPopup(ipaData, oo); // tạo popup
+	    getBundleId(ipaData.CFBundleDisplayName);
+        } catch (n) {
+            return console.error(n),
+                te.dialog.alert("Incorrect file format. Please make sure the file is in the right format and not damaged."), !1
+        } finally {
+            t.value = null
+        }
+    } catch (e) {
+        return console.log(e),
+            te.dialog.alert("Incorrect file format. Please make sure the file is in the right format and not damaged."),
+            t.value = null, !1
+    }
+}
 function switchTab(name){
   document.getElementById('tabUpload').style.display = name==='upload'?'':'none';
   document.getElementById('tabUrl').style.display = name==='url'?'':'none';
