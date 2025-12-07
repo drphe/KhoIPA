@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,max-scale=1">
 <title>IPA → manifest.plist (OTA)</title>
 <style>
 body { margin:0; font-family: system-ui, -apple-system, sans-serif; background:#f5f6fa; color:#111; }
@@ -29,19 +29,19 @@ pre { white-space:wrap; word-break:break-all; }
 <script src="https://altstudio.app/js/app-info-parser.min.js"></script>
 
 <div class="tabs">
-  <button id="tabUploadBtn" class="tab-btn active" onclick="switchTab('upload')">Upload IPA</button>
-  <button id="tabUrlBtn" class="tab-btn" onclick="switchTab('url')">Dán link IPA</button>
+  <button id="tabUploadBtn" class="tab-btn" onclick="switchTab('upload')">Upload IPA</button>
+  <button id="tabUrlBtn" class="tab-btn active" onclick="switchTab('url')">Dán link IPA</button>
 </div>
 
 <!-- Upload -->
-<div id="tabUpload" class="card">
+<div id="tabUpload" class="card" style="display:none">
   <input type="file" id="fileInput" class="input-file" accept=".ipa">
   <input type="url" id="uploadUrlInput" class="input" placeholder="https://yourdomain.com/app.ipa">
   <div class="status" id="uploadStatus" style="display:none"></div>
 </div>
 
 <!-- URL -->
-<div id="tabUrl" class="card" style="display:none">
+<div id="tabUrl" class="card">
   <input type="url" id="urlInput" class="input" placeholder="https://example.com/app.ipa">
   <button class="btn" id="fetchBtn">Tải và tạo manifest</button>
   <div class="status" id="urlStatus" style="display:none"></div>
@@ -102,7 +102,10 @@ async function readIpa(file, overrideIpaUrl){
     document.getElementById('appName').value = info.CFBundleDisplayName || info.CFBundleName || '';
     setOk('uploadStatus', `✅ Đã đọc IPA: ${file.name}\nBundle: ${ipaMeta.bundleId}\nVersion: ${ipaMeta.version}`);
     autoGenerateIfReady();
-  } catch(e){ console.error(e); setErr('uploadStatus','❌ File IPA không hợp lệ.'); }
+  } catch(e){ 
+    console.error(e); 
+    setErr('uploadStatus','❌ File IPA không hợp lệ.'); 
+  }
 }
 
 function autoGenerateIfReady(){
@@ -114,7 +117,10 @@ function generatePlist(){
   hideStatus();
   const name=document.getElementById('appName').value.trim();
   const plistFileName=document.getElementById('plistName').value.trim()||'manifest.plist';
-  if(!ipaMeta.bundleId||!ipaMeta.version||!name||!ipaMeta.ipaUrl){ setErr('plistStatus','❌ Thiếu dữ liệu từ IPA hoặc URL.'); return; }
+  if(!ipaMeta.bundleId||!ipaMeta.version||!name||!ipaMeta.ipaUrl){ 
+    setErr('plistStatus','❌ Thiếu dữ liệu từ IPA hoặc URL.'); 
+    return; 
+  }
 
   const plistText=`<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -167,7 +173,10 @@ function downloadPlist(){
   if(!lastManifest){ alert('Chưa tạo manifest'); return; }
   const plistFileName=document.getElementById('plistName').value.trim()||'manifest.plist';
   const blob=new Blob([lastManifest],{type:'text/xml'});
-  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=plistFileName; a.click();
+  const a=document.createElement('a'); 
+  a.href=URL.createObjectURL(blob); 
+  a.download=plistFileName; 
+  a.click();
 }
 
 function copyManifest(){
@@ -183,7 +192,6 @@ document.getElementById('fileInput').addEventListener('change', async (e) => {
     setErr('uploadStatus','❌ Chưa chọn file IPA.');
     return;
   }
-  // lấy URL từ ô nhập khi upload
   ipaMeta.ipaUrl=document.getElementById('uploadUrlInput').value.trim();
   await readIpa(file, ipaMeta.ipaUrl);
 });
@@ -207,7 +215,11 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
     setOk('urlStatus', '✅ Đã tải và đọc IPA từ URL.');
   } catch (err) {
     console.error(err);
-    setErr('urlStatus','❌ Không thể tải IPA từ URL. Kiểm tra đường dẫn HTTPS và quyền truy cập.');
+    // fallback: chuyển sang tab upload, giữ nguyên URL
+    setErr('urlStatus','❌ Không thể tải IPA từ URL. Vui lòng upload file IPA.');
+    switchTab('upload');
+    document.getElementById('uploadUrlInput').value=url;
+    ipaMeta.ipaUrl=url;
   }
 });
 </script>
