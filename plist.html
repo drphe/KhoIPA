@@ -52,7 +52,7 @@ pre { white-space:wrap; word-break:break-all; }
   <label>App Name</label>
   <input type="text" id="appName" class="input" placeholder="Tên ứng dụng">
 
-  <label>Tên file manifest.plist</label>
+  <label>Tên file *.plist</label>
   <input type="text" id="plistName" class="input" value="manifest.plist">
 
   <button class="btn" onclick="generatePlist()">Tạo manifest.plist</button>
@@ -61,7 +61,7 @@ pre { white-space:wrap; word-break:break-all; }
 
 <!-- Download -->
 <div id="downloadCard" class="card" style="display:none">
-  <button class="btn" onclick="downloadPlist()">Tải manifest.plist</button>
+  <button class="btn" onclick="downloadPlist()">Tải *.plist</button>
   <button class="btn secondary" onclick="copyManifest()">Copy nội dung manifest</button>
   <div style="margin-top:8px;">
     <div>Link OTA gợi ý:</div>
