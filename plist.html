@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>IPA → manifest.plist (OTA) — Web tĩnh</title>
+<title>IPA → manifest.plist (OTA)</title>
 <style>
 body { margin:0; font-family: system-ui, -apple-system, sans-serif; background:#f5f6fa; color:#111; }
 .container { max-width: 480px; margin:auto; padding:16px; }
@@ -48,14 +48,8 @@ pre { white-space:wrap; word-break:break-all; }
 
 <!-- Info Form -->
 <div class="card">
-  <label>Bundle ID</label>
-  <input type="text" id="bundleId" class="input" placeholder="com.example.app">
-
   <label>App Name</label>
   <input type="text" id="appName" class="input" placeholder="Tên ứng dụng">
-
-  <label>Version</label>
-  <input type="text" id="appVersion" class="input" placeholder="1.0">
 
   <label>IPA URL (HTTPS)</label>
   <input type="url" id="ipaUrl" class="input" placeholder="https://yourdomain.com/app.ipa">
@@ -79,6 +73,7 @@ pre { white-space:wrap; word-break:break-all; }
 
 <script>
 let lastManifest = '';
+let ipaMeta = { bundleId:'', version:'' };
 
 function switchTab(name){
   document.getElementById('tabUpload').style.display = name==='upload' ? '' : 'none';
@@ -89,76 +84,41 @@ function switchTab(name){
 }
 
 function hideStatus(){
-  const ids = ['uploadStatus','urlStatus','plistStatus'];
-  ids.forEach(id => {
-    const el = document.getElementById(id);
+  ['uploadStatus','urlStatus','plistStatus'].forEach(id=>{
+    const el=document.getElementById(id);
     if(el){ el.style.display='none'; el.className='status'; el.textContent=''; }
   });
 }
 
-function setOk(id, text){
-  const el = document.getElementById(id);
-  el.style.display = 'block';
-  el.className = 'status ok';
-  el.textContent = text;
-}
-
-function setErr(id, text){
-  const el = document.getElementById(id);
-  el.style.display = 'block';
-  el.className = 'status error';
-  el.textContent = text;
-}
-
-// Đọc IPA, tự điền form, tạo manifest (không phụ thuộc hàm bên ngoài)
+function setOk(id,text){ const el=document.getElementById(id); el.style.display='block'; el.className='status ok'; el.textContent=text; }
+function setErr(id,text){ const el=document.getElementById(id); el.style.display='block'; el.className='status error'; el.textContent=text; }
 async function readIpa(file, overrideIpaUrl){
   try {
     const parser = new window.AppInfoParser(file);
     const info = await parser.parse();
-    // Tự điền form từ IPA
-    document.getElementById('bundleId').value = info.CFBundleIdentifier || '';
+    ipaMeta.bundleId = info.CFBundleIdentifier || '';
+    ipaMeta.version  = info.CFBundleShortVersionString || '';
     document.getElementById('appName').value = info.CFBundleDisplayName || info.CFBundleName || '';
-    document.getElementById('appVersion').value = info.CFBundleShortVersionString || '';
-
-    // Ưu tiên URL override nếu có (tab URL), nếu không giữ nguyên người dùng đã nhập
-    if (overrideIpaUrl) {
-      document.getElementById('ipaUrl').value = overrideIpaUrl;
-    }
-
-    setOk('uploadStatus', `✅ Đã đọc IPA: ${file.name}\nBundle: ${info.CFBundleIdentifier}\nVersion: ${info.CFBundleShortVersionString || 'N/A'}`);
-    // Tự tạo manifest ngay sau khi đọc (nếu đã có đủ url)
+    if (overrideIpaUrl) document.getElementById('ipaUrl').value = overrideIpaUrl;
+    setOk('uploadStatus', `✅ Đã đọc IPA: ${file.name}\nBundle: ${ipaMeta.bundleId}\nVersion: ${ipaMeta.version}`);
     autoGenerateIfReady();
-  } catch (err) {
-    console.error(err);
-    setErr('uploadStatus', '❌ File IPA không hợp lệ hoặc bị hỏng.');
-  }
+  } catch(e){ console.error(e); setErr('uploadStatus','❌ File IPA không hợp lệ.'); }
 }
 
-// Tự tạo nếu form đủ dữ liệu
 function autoGenerateIfReady(){
-  const bundle = document.getElementById('bundleId').value.trim();
-  const name = document.getElementById('appName').value.trim();
-  const version = document.getElementById('appVersion').value.trim();
-  const ipaUrl = document.getElementById('ipaUrl').value.trim();
-  if(bundle && name && version && ipaUrl){
-    generatePlist(); // Gọi tạo và hiển thị ngay
-  }
+  const name=document.getElementById('appName').value.trim();
+  const ipaUrl=document.getElementById('ipaUrl').value.trim();
+  if(ipaMeta.bundleId && ipaMeta.version && name && ipaUrl){ generatePlist(); }
 }
 
 function generatePlist(){
   hideStatus();
-  const bundle = document.getElementById('bundleId').value.trim();
-  const name = document.getElementById('appName').value.trim();
-  const version = document.getElementById('appVersion').value.trim();
-  const ipaUrl = document.getElementById('ipaUrl').value.trim();
-  const plistFileName = (document.getElementById('plistName').value.trim() || 'manifest.plist');
+  const name=document.getElementById('appName').value.trim();
+  const ipaUrl=document.getElementById('ipaUrl').value.trim();
+  const plistFileName=document.getElementById('plistName').value.trim()||'manifest.plist';
+  if(!ipaMeta.bundleId||!ipaMeta.version||!name||!ipaUrl){ setErr('plistStatus','❌ Thiếu dữ liệu từ IPA hoặc URL.'); return; }
 
-  if(!bundle || !name || !version || !ipaUrl){
-    setErr('plistStatus', '❌ Vui lòng điền đủ thông tin.');
-    return;
-  }
-
-  const plistText = `<?xml version="1.0" encoding="UTF-8"?>
+  const plistText=`<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -177,9 +137,9 @@ function generatePlist(){
       <key>metadata</key>
       <dict>
         <key>bundle-identifier</key>
-        <string>${bundle}</string>
+        <string>${ipaMeta.bundleId}</string>
         <key>bundle-version</key>
-        <string>${version}</string>
+        <string>${ipaMeta.version}</string>
         <key>kind</key>
         <string>software</string>
         <key>title</key>
@@ -190,22 +150,17 @@ function generatePlist(){
 </dict>
 </plist>`;
 
-  lastManifest = plistText;
-  setOk('plistStatus', '✅ Manifest.plist đã tạo.');
-
+  lastManifest=plistText;
+  setOk('plistStatus','✅ Manifest.plist đã tạo.');
   document.getElementById('downloadCard').style.display='';
-  document.getElementById('otaLink').textContent =
-    `itms-services://?action=download-manifest&url=https://yourdomain.com/${plistFileName}`;
+  document.getElementById('otaLink').textContent=`itms-services://?action=download-manifest&url=https://yourdomain.com/${plistFileName}`;
 }
 
 function downloadPlist(){
   if(!lastManifest){ alert('Chưa tạo manifest'); return; }
-  const plistFileName = document.getElementById('plistName').value.trim() || 'manifest.plist';
-  const blob = new Blob([lastManifest], {type:'text/xml'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = plistFileName;
-  a.click();
+  const plistFileName=document.getElementById('plistName').value.trim()||'manifest.plist';
+  const blob=new Blob([lastManifest],{type:'text/xml'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=plistFileName; a.click();
 }
 
 function copyManifest(){
@@ -221,7 +176,6 @@ document.getElementById('fileInput').addEventListener('change', async (e) => {
     setErr('uploadStatus','❌ Chưa chọn file IPA.');
     return;
   }
-  // Không override URL trong chế độ upload: người dùng sẽ nhập URL host ở trường IPA URL
   await readIpa(file);
 });
 
@@ -238,9 +192,7 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
     const res = await fetch(url, { cache: 'no-store' });
     if(!res.ok) throw new Error('Network error');
     const blob = await res.blob();
-    // Tạo đối tượng File từ blob để AppInfoParser parse
     const file = new File([blob], 'remote.ipa', { type: blob.type || 'application/octet-stream', lastModified: Date.now() });
-    // Override ipaUrl = URL người dùng đã nhập để nhúng vào manifest
     await readIpa(file, url);
     setOk('urlStatus', '✅ Đã tải và đọc IPA từ URL.');
   } catch (err) {
@@ -252,3 +204,4 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
 </div>
 </body>
 </html>
+
