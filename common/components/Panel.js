@@ -123,7 +123,7 @@ document.body.append(bottomPanel);
             handler: () => open(`esign://install?url=${app.downloadURL}`)
         });
         
-        checkIpaAndGenerateInstallUrl(ipaLink).then(result => {
+        checkIpaAndGenerateInstallUrl(app.downloadURL).then(result => {
             if (result) {
                 installAppAlert.addAction({
                     title: "Install directly",
