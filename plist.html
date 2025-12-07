@@ -51,9 +51,6 @@ pre { white-space:wrap; word-break:break-all; }
   <label>App Name</label>
   <input type="text" id="appName" class="input" placeholder="Tên ứng dụng">
 
-  <label>IPA URL (HTTPS)</label>
-  <input type="url" id="ipaUrl" class="input" placeholder="https://yourdomain.com/app.ipa">
-
   <label>Tên file manifest.plist</label>
   <input type="text" id="plistName" class="input" value="manifest.plist">
 
@@ -73,7 +70,7 @@ pre { white-space:wrap; word-break:break-all; }
 
 <script>
 let lastManifest = '';
-let ipaMeta = { bundleId:'', version:'' };
+let ipaMeta = { bundleId:'', version:'', icon:null, ipaUrl:'' };
 
 function switchTab(name){
   document.getElementById('tabUpload').style.display = name==='upload' ? '' : 'none';
@@ -98,8 +95,10 @@ async function readIpa(file, overrideIpaUrl){
     const info = await parser.parse();
     ipaMeta.bundleId = info.CFBundleIdentifier || '';
     ipaMeta.version  = info.CFBundleShortVersionString || '';
+    ipaMeta.icon     = info.icon || null;
+    ipaMeta.ipaUrl   = overrideIpaUrl || ipaMeta.ipaUrl;
+
     document.getElementById('appName').value = info.CFBundleDisplayName || info.CFBundleName || '';
-    if (overrideIpaUrl) document.getElementById('ipaUrl').value = overrideIpaUrl;
     setOk('uploadStatus', `✅ Đã đọc IPA: ${file.name}\nBundle: ${ipaMeta.bundleId}\nVersion: ${ipaMeta.version}`);
     autoGenerateIfReady();
   } catch(e){ console.error(e); setErr('uploadStatus','❌ File IPA không hợp lệ.'); }
@@ -107,16 +106,14 @@ async function readIpa(file, overrideIpaUrl){
 
 function autoGenerateIfReady(){
   const name=document.getElementById('appName').value.trim();
-  const ipaUrl=document.getElementById('ipaUrl').value.trim();
-  if(ipaMeta.bundleId && ipaMeta.version && name && ipaUrl){ generatePlist(); }
+  if(ipaMeta.bundleId && ipaMeta.version && name && ipaMeta.ipaUrl){ generatePlist(); }
 }
 
 function generatePlist(){
   hideStatus();
   const name=document.getElementById('appName').value.trim();
-  const ipaUrl=document.getElementById('ipaUrl').value.trim();
   const plistFileName=document.getElementById('plistName').value.trim()||'manifest.plist';
-  if(!ipaMeta.bundleId||!ipaMeta.version||!name||!ipaUrl){ setErr('plistStatus','❌ Thiếu dữ liệu từ IPA hoặc URL.'); return; }
+  if(!ipaMeta.bundleId||!ipaMeta.version||!name||!ipaMeta.ipaUrl){ setErr('plistStatus','❌ Thiếu dữ liệu từ IPA hoặc URL.'); return; }
 
   const plistText=`<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -131,8 +128,17 @@ function generatePlist(){
           <key>kind</key>
           <string>software-package</string>
           <key>url</key>
-          <string>${ipaUrl}</string>
+          <string>${ipaMeta.ipaUrl}</string>
         </dict>
+        ${ipaMeta.icon ? `
+        <dict>
+          <key>kind</key>
+          <string>display-image</string>
+          <key>needs-shine</key>
+          <true/>
+          <key>url</key>
+          <string>${ipaMeta.icon}</string>
+        </dict>` : ''}
       </array>
       <key>metadata</key>
       <dict>
@@ -176,6 +182,7 @@ document.getElementById('fileInput').addEventListener('change', async (e) => {
     setErr('uploadStatus','❌ Chưa chọn file IPA.');
     return;
   }
+  ipaMeta.ipaUrl=''; // reset nếu upload file mới
   await readIpa(file);
 });
 
@@ -187,13 +194,14 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
     setErr('urlStatus','❌ Vui lòng nhập URL IPA.');
     return;
   }
+  ipaMeta.ipaUrl=url; // lưu URL để dùng luôn
   try {
     setOk('urlStatus', '⏳ Đang tải file IPA...');
     const res = await fetch(url, { cache: 'no-store' });
     if(!res.ok) throw new Error('Network error');
     const blob = await res.blob();
     const file = new File([blob], 'remote.ipa', { type: blob.type || 'application/octet-stream', lastModified: Date.now() });
-    await readIpa(file, url);
+    await readIpa(file,url);
     setOk('urlStatus', '✅ Đã tải và đọc IPA từ URL.');
   } catch (err) {
     console.error(err);
@@ -204,4 +212,3 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
 </div>
 </body>
 </html>
-
