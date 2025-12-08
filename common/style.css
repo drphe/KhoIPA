@@ -156,7 +156,7 @@ body {
 	left: calc(50vw - 384px)!important;
     }
      .grid_news,
-    #apps-list, #sources-list,
+    #repositories,#apps-list, #sources-list,
     #featured {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -602,9 +602,7 @@ a>button {
     display: flex;
     align-items: center;
     height: 65px;
-    margin-top: 0.75rem;
     padding: 1rem;
-    border-radius: 1.5rem;
     gap: 0.8rem;
     background-color: var(--tint-color);
 }

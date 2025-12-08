@@ -138,13 +138,29 @@ const sources = await json("./common/assets/json/sources.json");
         source.url = url;
         return source;
     }
-    async function insertSource(source, id = "sources-list", position = "beforeend", flag = false) {
+    async function insertSource(source, id = "sources-list", position = "beforeend", flag = true) {
+		let firstNews;
+		if (source && source.news && source.news.length > 0) {
+			firstNews = source.news[0];
+		}
+
         document.getElementById(id).insertAdjacentHTML(position, `
             <div class="source-container">
                 <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
+					${firstNews ? `<div class="item" style="height:150px;padding:0px;opacity:0.9;background: url(`+ firstNews.imageURL+`) repeat center center;background-size: cover;margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
+						<div class="text" style="position: relative;"></div>
+						<div class="text" style="height:80%;margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));padding: 1em;">
+							<p>`+ formatVersionDate(firstNews.date) +`</p>
+							<h3>`+ firstNews.title + `</h3>
+							<p>` + firstNews.caption.slice(0, 100)+`</p>
+						</div> 
+					</div>`:`<div class="item" style="height:150px;padding:0px;opacity:0.9;background-color: #${source.tintColor.replaceAll("#", "")};margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
+						<div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));padding: 1em;height: 80%;text-align: center;">
+						<img style="width: 80px" src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';"><div class="text" style="position: relative;"><p>${source.subtitle ??""}</p></div></div> 
+					</div>`}
                     <div class="source" style="
                         background-color: #${source.tintColor.replaceAll("#", "")};
-                        margin-bottom: ${flag ? "0.75rem" : "0"};
+                        margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : ""} 1.5rem 1.5rem;
                     ">
                         <img src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
                         <div class="right">
