@@ -15,6 +15,44 @@
   "apps": [
     {
       "beta": false,
+      "name": "OldOS",
+      "type": 1,
+      "bundleIdentifier": "com.zrc.BudgetingBuddy",
+      "developerName": "OldOS x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Recreating iOS 4 in Swift.",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/OldOS.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS/OldOS-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS/OldOS-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS/OldOS-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS/OldOS-3.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/OldOS/OldOS-4.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 82837504,
+      "version": "2.0.7",
+      "versions": [
+        {
+          "version": "2.0.7",
+          "date": "2025-12-07",
+          "size": 82837504,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS.ipa",
+          "localizedDescription": "Recreating iOS 4 in Swift."
+        }
+      ],
+      "versionDate": "2025-12-07",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Discord + Kettu",
       "type": 1,
       "bundleIdentifier": "com.hammerandchisel.discord",
@@ -201,44 +239,6 @@
       ],
       "versionDate": "2025-11-14",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/Spotube-iOS.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "OldOS 2.0",
-      "type": 1,
-      "bundleIdentifier": "com.zurac.OldOSSL2",
-      "developerName": "OldOS 2.0 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Recreating iOS 4 in Swift.",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/OldOS_2.0.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-1.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-2.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-3.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/OldOS 2.0/OldOS_2.0-4.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 81788928,
-      "version": "2.0",
-      "versions": [
-        {
-          "version": "2.0",
-          "date": "2025-11-11",
-          "size": 81788928,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS_2.0.ipa",
-          "localizedDescription": "Recreating iOS 4 in Swift."
-        }
-      ],
-      "versionDate": "2025-11-11",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS_2.0.ipa",
       "patreon": {}
     },
     {
@@ -6250,6 +6250,16 @@
   ],
   "news": [
     {
+      "title": "OldOS now available!",
+      "identifier": "cypwn.OldOS.2.0.7",
+      "caption": "OldOS added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/OldOS.png",
+      "date": "2025-12-07",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
       "title": "Discord + Kettu now available!",
       "identifier": "cypwn.Discord + Kettu.307.2",
       "caption": "Discord + Kettu added to the CyPwn Library",
@@ -6296,16 +6306,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/Spotube-iOS.png",
       "date": "2025-11-14",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "OldOS 2.0 now available!",
-      "identifier": "cypwn.OldOS 2.0.2.0",
-      "caption": "OldOS 2.0 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/OldOS_2.0.png",
-      "date": "2025-11-11",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
