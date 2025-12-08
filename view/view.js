@@ -28,14 +28,21 @@ main(json => {
         if (json.news.length == 1) {
             document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
             document.getElementById("news-items").classList.add("one");
-	    document.getElementById('all-news').classList.add("hidden");
+            document.getElementById('all-news').classList.add("hidden");
         } else {
-            for (let i = 0; i < json.news.length; i++){
-		if (!json.news[i].notify) continue;
+			let hasNotify = false;
+            for (let i = 0; i < json.news.length; i++) {
+                if (!json.news[i].notify)
+                    continue;
+				hasNotify = true;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
-		const url = json.news[i].url?.replace(dirNoteURL,""); 
-		if(url && !isValidHTTPURL(url)) jsonNewsUrl.push('./note/'+ url);
-	    }
+                const url = json.news[i].url?.replace(dirNoteURL, "");
+                if (url && !isValidHTTPURL(url))
+                    jsonNewsUrl.push('./note/' + url);
+            }
+			if (!hasNotify && json.news.length > 0) {
+			document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
+		}
 	}
 	prefetchAndCacheUrls(jsonNewsUrl);
 	// cuộn ngang
