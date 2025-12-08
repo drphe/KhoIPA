@@ -757,7 +757,7 @@ export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
             let html = `
             <div class="app-container">
                 ${AppHeader(app, ".")}
-                <p style="text-align: center; font-size: 0.9em;">${app.subtitle ?? ""}</p>`;
+                <p style="text-align: center; font-size: 0.9em;margin: 1em 1rem 1.25em 1rem;">${app.subtitle ?? ""}</p>`;
             if (checkArray(app.screenshots) && isScreenshot) {
                 html += `<div class="screenshots">`;
                 for (let i = 0; i < app.screenshots.length && i < 2; i++) {
