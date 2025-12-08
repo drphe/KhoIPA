@@ -605,6 +605,7 @@ a>button {
     padding: 1rem;
     gap: 0.8rem;
     background-color: var(--tint-color);
+border-radius: 1.5rem;
 }
 
 #source>.header {
