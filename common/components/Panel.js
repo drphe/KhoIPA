@@ -641,7 +641,7 @@ export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
     // Tạo icon kính lúp
     const searchIcon = document.createElement("span");
     searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-    searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 47%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
+    searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 42%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
     // Tạo ô tìm kiếm
     const searchBox = document.createElement("input");
     searchBox.type = "text";
@@ -651,14 +651,14 @@ export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
     // Tạo icon x
     const xIcon = document.createElement("span");
     xIcon.innerHTML = ` <span class="totalSearch"></span><i class="bi bi-x-circle-fill"></i>`;
-    xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 45%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+    xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 40%;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
     // Tạo total app
     const totalAppsCount = xIcon.querySelector(".totalSearch");
     totalAppsCount.innerText = `Total ${allApps.length} apps `;
     // tạo filter
     const filter = document.createElement("span");
     filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
-    filter.style.cssText = "display: flex;justify-content: space-evenly;";
+    filter.style.cssText = "display: flex;justify-content: center;";
     let filterType = 0;
     xIcon.addEventListener('click', () => {
         searchBox.value = '';

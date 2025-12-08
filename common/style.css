@@ -80,7 +80,7 @@ span {
         color: white !important;
     }
 
-    #nav-bar, .nav-link.active {
+    .category,#nav-bar, .nav-link.active {
         background-color: var(--color-transparent-dark) !important;
     }
 
@@ -1578,3 +1578,20 @@ margin-left: 2rem;
   border-radius:3rem;
 }
 .blur{filter: blur(2px);}
+
+.category{
+    align-items: center;
+    background: var(--uialert-background-color);
+    display: flex;
+    flex-shrink: 0;
+    gap: 4px;
+    padding: 6px 12px;
+    position: relative;
+}
+.category:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.category:last-child {
+  border-radius: 0 10px 10px 0;
+}
