@@ -80,7 +80,7 @@ span {
         color: white !important;
     }
 
-    .category,#nav-bar, .nav-link.active {
+    #nav-bar, .nav-link.active {
         background-color: var(--color-transparent-dark) !important;
     }
 
