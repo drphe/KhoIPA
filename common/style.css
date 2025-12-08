@@ -170,8 +170,12 @@ body {
     }
     .app-container,
     .app-header-container {
-        max-width: 350px;
+        /*max-width: 350px;*/
     }
+  .app-header-container, .source-container {
+    min-width: 350px!important;
+  }
+
 }
 
 .hidden {

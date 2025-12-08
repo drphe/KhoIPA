@@ -913,7 +913,7 @@ async function getAppInfoByBundleId(bundleId) {
             if (data.resultCount > 0 && data.results.length > 0) {
                 return data.results[0];
             } else {
-                console.log(`Không tìm thấy ứng dụng nào cho bundle ID: ${bundleId}`);
+                //console.log(`Không tìm thấy ứng dụng nào cho bundle ID: ${bundleId}`);
                 return null;
             }
         } catch (error) {
@@ -947,7 +947,7 @@ async function checkIpaAndGenerateInstallUrl(ipaUrl) {
         if (response.ok) {
             return installUrl;
         } else {
-            console.log(`Lỗi truy cập file manifest .plist. Status: ${response.status}`);
+            //console.log(`Lỗi truy cập file manifest .plist. Status: ${response.status}`);
             return null;
         }
     } catch (error) {
