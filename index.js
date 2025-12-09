@@ -157,7 +157,7 @@ const sources = await json("./common/assets/json/sources.json");
 						</div> 
 					</div>`:`<div class="item" style="height:150px;padding:0px;opacity:0.9;background-color: #${source.tintColor.replaceAll("#", "")};margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
 						<div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));padding: 1em;height: 80%;text-align: center;">
-						<img style="width: 80px;border-radius: 10px;" src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';"><div class="text" style="position: relative;"><p>${source.subtitle ??""}</p></div></div> 
+						<img style="width: 80px;border-radius: 10px;" src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';"><div class="text" style="position: relative;color:white;"><p>${source.subtitle ??""}</p></div></div> 
 					</div>`}
                     <div class="source" style="
                         background-color: #${source.tintColor.replaceAll("#", "")};
