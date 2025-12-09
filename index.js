@@ -149,7 +149,7 @@ const sources = await json("./common/assets/json/sources.json");
                 <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
 					${firstNews ? `<div class="item" style="height:150px;padding:0px;opacity:0.9;background-color: #${firstNews.tintColor.replaceAll("#", "")};background-image: url(`+ firstNews.imageURL+`);background-repeat: repeat;background-position: center center;background-size: cover;margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
 						<div class="text" style="position: relative;"></div>
-						<div class="text" style="display: flex;flex-direction: column-reverse;height:80%;margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));padding: 1em;">
+						<div class="text" style="color:white;display: flex;flex-direction: column-reverse;height:80%;margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));padding: 1em;">
 							<p>`+ formatVersionDate(firstNews.date) +`</p>
 							<p>` + firstNews.caption.slice(0, 100)+`...</p>
 							<h3>`+ firstNews.title + `</h3>
