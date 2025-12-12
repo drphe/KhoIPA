@@ -23,6 +23,76 @@
   "apps": [
     {
       "beta": false,
+      "name": "Fait – The Machine - GHOST DVC IPA",
+      "type": 2,
+      "bundleIdentifier": "com.voltage.fait",
+      "developerName": "DVC IPA",
+      "subtitle": "Đã thanh toán trên applestore",
+      "localizedDescription": "Fait – The Machine is an atmospheric action-adventure platformer set in the ruins of an abandoned machine civilization.\n\nThe player controls a furry creature named Fait, who, after waking up from a deep sleep in a time capsule, tries to find out the secret of his origin and understand what exactly happened in this abandoned world.\n\nOn his way, he discovers a large number of unique obstacles and tries to breathe life into the world around him. But does everyone agree with this?",
+      "versionDescription": "",
+      "tintColor": "#d92c3c",
+      "iconURL": "https://i.ibb.co/FL0LqhLz/13fc55e2806f.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSMainStoryboardFile": "Main_iPhone"
+        }
+      },
+      "size": 103500000,
+      "version": "1.6",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.6/Fait.The.Machine.-.GHOST.DVC.IPA_1.6.ipa",
+          "size": 103500000,
+          "version": "1.6",
+          "buildVersion": null,
+          "date": "2025-12-12T05:00:00+07:00",
+          "localizedDescription": "Thanh Toán Trên Appstore",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-12T05:00:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.6/Fait.The.Machine.-.GHOST.DVC.IPA_1.6.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Vive le Roi 3",
+      "type": 2,
+      "bundleIdentifier": "com.seccia.vlr3",
+      "developerName": "DVC IPA",
+      "subtitle": "Arcade game -for IPAD",
+      "localizedDescription": "«Vive le Roi 3» is a puzzle and anticipation game, without chance or timing, based on mini puzzles to be solved by choosing the right ladder on each floor to reach the king and save him from his executioner.\n\nInspired by the concept of labyrinths, the originality of «Vive le Roi 3» is to be able to modify the state of the active elements of the levels according to your choices.\n\nThe levels are made up of numerous obstacles, such as doors, monsters, moving guards, tunnels… They are also made up of multicolored switches allowing to invert the states of the obstacles in order to clear a path.",
+      "versionDescription": "",
+      "tintColor": "#4f6faf",
+      "iconURL": "https://i.ibb.co/gZy73YzL/ba87543dd174.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocationWhenInUseUsageDescription": "Location is only used only to retrieve the country of the players thus we can translate the game accordingly and improve the game experience."
+        }
+      },
+      "size": 25900000,
+      "version": "1.0.8",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.8/Vive.le.Roi.3.-.v1.0.8.ipa",
+          "size": 25900000,
+          "version": "1.0.8",
+          "buildVersion": null,
+          "date": "2025-12-12T04:54:00+07:00",
+          "localizedDescription": "🟢Thanh Toán Trên Appstore\n💬 Game Vào Hơi Chậm Ae Kiên Nhẫn Là Vào Được",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-12T04:54:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.8/Vive.le.Roi.3.-.v1.0.8.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Eye Chart HD",
       "type": 1,
       "bundleIdentifier": "com.dok.eyecharthd",
@@ -44,12 +114,12 @@
       "version": "3.0.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0.0/Eye.Chart.HD.-.DVC.IPA.-.v3.0.0.ipa",
-          "size": 15600000,
           "version": "3.0.0",
-          "buildVersion": null,
           "date": "2025-12-11T23:58:00+07:00",
           "localizedDescription": "Mở khoá free",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0.0/Eye.Chart.HD.-.DVC.IPA.-.v3.0.0.ipa",
+          "size": 15600000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
