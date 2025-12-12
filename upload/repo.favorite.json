@@ -23,6 +23,42 @@
   "apps": [
     {
       "beta": false,
+      "name": "Eye Chart HD",
+      "type": 1,
+      "bundleIdentifier": "com.dok.eyecharthd",
+      "developerName": "DVC",
+      "subtitle": "Kiểm tra thị lực",
+      "localizedDescription": "Easy to use, clinically evaluated visual acuity screening app. Over 1M people have downloaded our mobile electronic eye charts for iOS. Read below for more information on the clinical evaluations.",
+      "versionDescription": "",
+      "tintColor": "#c42412",
+      "iconURL": "https://i.ibb.co/JbTjr3T/fedabbe0b21b.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Using the camera, we can automatically resize the chart for you based on the distance of your patient. It’s worth it, and you can turn the camera access off if you don’t like the feature.",
+          "NSLocationWhenInUseUsageDescription": "Location is not used by this app"
+        }
+      },
+      "size": 15600000,
+      "version": "3.0.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0.0/Eye.Chart.HD.-.DVC.IPA.-.v3.0.0.ipa",
+          "size": 15600000,
+          "version": "3.0.0",
+          "buildVersion": null,
+          "date": "2025-12-11T23:58:00+07:00",
+          "localizedDescription": "Mở khoá free",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-11T23:58:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0.0/Eye.Chart.HD.-.DVC.IPA.-.v3.0.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "FileBrowserPro",
       "type": 4,
       "bundleIdentifier": "com.stratospherix.filebrowserbiz",
