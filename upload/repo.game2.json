@@ -1,0 +1,917 @@
+{
+  "name": "Game Arcade - IOSVIET",
+  "identifier": "ios.arcade.repo",
+  "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game2.json",
+  "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
+  "iconURL": "https://cdn-icons-png.flaticon.com/128/1138/1138847.png",
+  "subtitle": "Game Arcade",
+  "description": "Welcome to my source! Here you'll find all of my apps.",
+  "website": "https://ios.codevn.net/category/games/",
+  "patreonURL": "https://patreon.com/drphe",
+  "tintColor": "#6156e2",
+  "META": {
+    "repoName": "My Example Repo",
+    "repoIcon": "https://i.imgur.com/pqIZoZo.jpeg"
+  },
+  "featuredApps": [],
+  "apps": [
+    {
+      "beta": false,
+      "name": "Very Little Nightmares+",
+      "type": 2,
+      "bundleIdentifier": "jp.co.bandainamcoent.BNEI0422",
+      "developerName": "Bandai Namco Entertainment Inc.",
+      "subtitle": "Đã mua từ Arcade",
+      "localizedDescription": "Giới thiệu game Very Little Nightmares+ (Apple Arcade)\n\nVery Little Nightmares+ là phiên bản đặc biệt của tựa game giải đố kinh dị nổi tiếng Very Little Nightmares, được phát hành độc quyền trên Apple Arcade. Trò chơi mang đến một trải nghiệm phiêu lưu rùng rợn, kết hợp yếu tố giải đố tinh tế và một bầu không khí u ám, đầy căng thẳng.\n\nCốt truyện bí ẩn, đầy ám ảnh\n\nNgười chơi sẽ vào vai Cô Bé Áo Vàng – một nhân vật nhỏ bé bị mắc kẹt trong một căn biệt thự kỳ quái có tên The Nest. Nơi đây ẩn chứa vô số cạm bẫy nguy hiểm và những sinh vật đáng sợ luôn rình rập. Nhiệm vụ của bạn là giúp cô bé tìm cách thoát khỏi nơi này, đồng thời khám phá những bí mật đen tối ẩn giấu trong từng ngóc ngách.\n\nLối chơi giải đố hấp dẫn\n\nVery Little Nightmares+ có lối chơi pha trộn giữa yếu tố phiêu lưu và giải đố, yêu cầu người chơi phải tìm cách vượt qua các chướng ngại vật, tránh né kẻ thù và sử dụng trí thông minh để sinh tồn. Game sở hữu thiết kế màn chơi thông minh, đòi hỏi người chơi quan sát kỹ lưỡng để tìm ra cách thoát hiểm.\n\nĐồ họa độc đáo, âm thanh ám ảnh\n\nTrò chơi mang phong cách đồ họa 2.5D với tông màu trầm tối, tạo nên một thế giới vừa đẹp mắt vừa đáng sợ. Thiết kế nhân vật và môi trường trong game mang đậm chất nghệ thuật, gợi nhớ đến Little Nightmares – tựa game gốc trên PC và console. Bên cạnh đó, âm thanh trong game được đầu tư kỹ lưỡng, từ tiếng bước chân vang vọng đến những âm thanh kỳ quái, khiến người chơi luôn có cảm giác bị theo dõi.\n\nTrải nghiệm tối ưu trên Apple Arcade\n\nLà một phần của dịch vụ Apple Arcade, Very Little Nightmares+ không có quảng cáo hay giao dịch mua trong ứng dụng, mang đến một trải nghiệm chơi game trọn vẹn và liền mạch trên iPhone, iPad và Mac.\n\nKết luận\n\nNếu bạn yêu thích thể loại game phiêu lưu, giải đố kết hợp yếu tố kinh dị, Very Little Nightmares+ chắc chắn là một tựa game không thể bỏ qua. Với cốt truyện lôi cuốn, lối chơi thử thách và bầu không khí u ám, game hứa hẹn sẽ mang đến những khoảnh khắc hồi hộp, đầy cảm xúc cho người chơi.\n\nBạn đã sẵn sàng giúp Cô Bé Áo Vàng trốn thoát khỏi The Nest chưa? 🚪💡",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2025/03/Very-Little-Nightmares-150x150.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 1800000000,
+      "version": "1.3.1",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2025-03-14T00:00:00+07:00",
+          "localizedDescription": "Đã mua từ Arcade",
+          "downloadURL": "https://link.codevn.net/FNzUQEbx",
+          "size": 1800000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-03-14T00:00:00+07:00",
+      "downloadURL": "https://link.codevn.net/FNzUQEbx",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Castlevania: Grimoire of Souls",
+      "type": 2,
+      "bundleIdentifier": "jp.konami.castlevania.ac",
+      "developerName": "KONAMI",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "■An All-New Castlevania Game!\n\nThe gothic fantasy series available on multiple consoles is back! This time you’re looking at an original game exclusive to AppleArcade: “Castlevania: Grimoire of Souls”!\n\n■Classic Sound &amp; Visuals\n\nImmerse yourself in the rich world of Castlevania with the work of renowned artists from its long-running history – featuring character designs from Ayami Kojima and music by Michiru Yamane. Experience a new original story spanning the Castlevania universe!\n\n■A True Action Game\n\n“Castlevania: Grimoire of Souls” is a full-fledged side-scrolling action game. Experience a game with epic amounts of content including 60 levels, a wide variety of equipment, daily and weekly missions, and more! Set in a world after Dracula has been sealed away, the pages of a new story bringing together heroes of the past have begun to turn…\n\n■Iconic Characters\n\nPlay as Alucard and unlock other legendary characters such as Simon Belmont, Charlotte, Shanoa, Maria and more to come! Master each character’s unique combat style to annihilate fearsome enemies and bosses!",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2024/01/Castlevania-Grimoire-of-Souls-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 2100000000,
+      "version": "1.4.1",
+      "versions": [
+        {
+          "version": "1.4.1",
+          "date": "2024-01-13T00:00:00+07:00",
+          "localizedDescription": "Đã mua từ Arcade",
+          "downloadURL": "http://link.codevn.net/N696",
+          "size": 2100000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2024-01-13T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/N696",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Taiko no Tatsujin Pop Tap Beat",
+      "type": 2,
+      "bundleIdentifier": "jp.co.bandainamcoent.BNEI0361",
+      "developerName": "Bandai Namco Entertainment Inc.",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Sync to the rhythm and drum away to those notes!\n\nThe traditional Japanese drumming rhythm game, Taiko no Tatsujin, comes to Apple Arcade.\n\nFeatures\n\n・Four difficulty levels: Easy, Normal, Hard, Extreme\n\n・Play various modes and collect lots of costumes!\n\n・Drum against your friends online!\n\nHow to Play\n\n・Tap the Taiko drum in sync with the notes!\n\nEach song comes with its own unique note charts. Sync to the rhythm and tap the drum in accordance with the notes.\n\nEach tap will be scored as GOOD, OK, or BAD depending on how well timed it is to the music note.\n\n・Fill up the Soul Gauge and clear the song!\n\nThe Soul Gauge fills up if taps are timed to the music notes, but loses steam when they are not.\n\nIf the Soul Gauge is filled past the clear line when the song ends, then it’s CLEARED!",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2024/01/Taiko-no-Tatsujin-Pop-Tap-Beat-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 2400000000,
+      "version": "1.16.0",
+      "versions": [
+        {
+          "version": "1.16.0",
+          "date": "2024-01-08T00:00:00+07:00",
+          "localizedDescription": "paid on arcade",
+          "downloadURL": "http://link.codevn.net/u2YIX36",
+          "size": 2400000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2024-01-08T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/u2YIX36",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Disney Dreamlight Valley",
+      "type": 2,
+      "bundleIdentifier": "com.gameloft.DisneyDreamlightValley.arcade",
+      "developerName": "Gameloft",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Play Disney Dreamlight Valley Arcade Edition on Apple Arcade, which includes full access to the base game and the Expansion Pass Disney Dreamlight Valley: A Rift in Time.\n\nDisney Dreamlight Valley Arcade Edition is not supported on iPhone XR, iPhone SE (2020) / (2nd generation), Apple iPad mini (2019) / (5th generation), Apple iPad Air (2019) / (3rd generation), Apple iPad 10.2 (2020) / (8th generation), Apple iPad 10.2 (2021) / (9th generation), Apple TV 4k 1st generation, Apple TV 4k 2nd generation, Apple TV HD, Apple TV 1st generation, Apple TV 2nd generation, Apple TV 3rd generation, or Intel-based Mac devices. This version of the game does not support cross-save with platforms outside of the Apple Arcade ecosystem.\n\nExperience this life-sim and adventure game rich with quests, exploration, and engaging activities featuring Disney and Pixar friends, both old and new.\n\nABOUT DISNEY DREAMLIGHT VALLEY\n\nOnce an idyllic land, Dreamlight Valley was a place where Disney and Pixar characters lived in harmony—until the Forgetting. Night Thorns grew across the land and severed the wonderful memories tied to this magical place. With nowhere else to go, the hopeless inhabitants of Dreamlight Valley retreated behind locked doors in the Dream Castle. Now it’s up to you to discover the stories of this world and bring the magic back to Dreamlight Valley!\n\nABOUT DISNEY DREAMLIGHT VALLEY: A RIFT IN TIME\n\nOnce an ancient kingdom full of treasures and magical artifacts, Eternity Isle has become lost in time as a result of Jafar’s meddling in magic. Journey to this faraway land and utilize a mysterious new Royal Tool—the Hourglass—as you discover new secrets and uncover lost treasures. Stop Jafar’s scheme to steal the Spark of Imagination, an ancient relic that holds the fabric of Dreamlight Valley together. With the help of the Hourglass, you are the key to fixing rifts in time and putting an end to Jafar’s evil plan!\n\nDISCOVER THE SECRETS OF DREAMLIGHT VALLEY\n\nFree the Dream Castle from the insidious grip of the Forgetting, and unlock the unique Realms of well-loved Disney and Pixar characters. Unlock the Realms of great queens and kings, such as Anna and Simba. Each Realm contains unique challenges with puzzles to solve in the quest to bring friendship back to the Valley.\n\nYou’ll start your adventure in the Valley, but your journey will take you to infinity… and beyond!\n\nFORGE FRIENDSHIPS WITH DISNEY &amp; PIXAR CHARACTERS\n\nGarden with WALL·E, cook with Remy or kick back and fish with Goofy. What better way to collect, craft, and rebuild the Valley than with a friend! From beautiful princesses to nefarious villains, every Dreamlight Valley resident brings their own story arc, quests, and rewards. Meet up in daily hangouts and make friends with some of your favourite Disney and Pixar characters.\n\nRESTORE THE VALLEY TO ITS FORMER GLORY\n\nFree the Valley from the grip of the Forgetting and return Dreamlight Valley to its former greatness by making it your own. In Dreamlight Valley, you can build the perfect neighborhood that is just for you with a fully customizable layout, creative landscaping, and thousands of decorative items.\n\nWill you settle on the Beach next to Moana, or call Buzz Lightyear your next-door neighbor in the Plaza?\n\nEXPRESS YOUR DISNEY STYLE\n\nBring out your inner princess, villain, or Disney bounder! Assemble unique outfits and decorate your home with thousands of fantastic items. Using the Touch of Magic tool, you can even create your own designs with Disney- and Pixar-inspired decals!\n\nWith the in-game Camera, get ready to snap a sunset selfie with Mirabel, capture a culinary creation with Remy, or simply cherish a moment.\n\nDISCLAIMER: Please note that Disney Dreamlight Valley Arcade Edition on Apple Arcade does not contain in-app purchases. As such, Star Path seasons and the Premium Shop are not found in this version.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Disney-Dreamlight-Valley-150x150.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 3500000000,
+      "version": "1.8.5",
+      "versions": [
+        {
+          "version": "1.8.5",
+          "date": "2023-12-14T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/Ar3bZjG",
+          "size": 3500000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-14T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/Ar3bZjG",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "PUZZLE & DRAGONS STORY",
+      "type": 2,
+      "bundleIdentifier": "jp.gungho.hanger",
+      "developerName": "GungHo Online Entertainment",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "The definitive Puzzle RPG! Embark on an epic fantasy adventure driven by match-3 puzzle play!\n\nRecruit allies, improve your teams, and conquer dungeons!\n\nDownloaded over 90 million times worldwide, PUZZLE &amp; DRAGONS is the definitive Puzzle RPG.\n\nThis newest installment in the series invites players on an epic fantasy adventure.\n\nHarness the power of Match-3 puzzle play to battle your way through deadly dungeons, recruiting and training allies along the way.\n\n– This game is a complete standalone experience, with no social elements or in-app purchases.\n\nEnjoy the story at your own pace, collecting and improving your creatures and teams!\n\n・Intuitive Puzzle Play\n\nSimply match 3 or more Orbs of the same color vertically or horizontally to erase them.\n\nWith clever Orb movement you can chain together exhilarating combos!\n\n– Matching 3 or more Orbs commands an allied creature of the same color as the Orbs to attack the enemy.\n\n– Matching 5 or more Orbs not only increases the power of your attack, it can also target multiple enemies at once.\n\n– Each Orb has an associated element and another element that it’s vulnerable to. Fire (Red) is weak to Water (Blue), etc.\n\nKeep an eye on the elements and vulnerabilities of your allies and enemies to fight more effectively.\n\n・Battle Fearsome Creatures\n\nMatching and erasing Orbs commands your allies to attack enemy creatures.\n\nSkilled puzzle play unleashes even more powerful attacks!\n\n– Enemy and allied creatures have various characteristics.\n\nFor example, even within the Dragon category creatures’ cuteness, coolness, and ferocity all vary widely, and each creature is equipped with their own unique abilities.\n\n・Recruit Allied Creatures\n\nGather materials by encountering creatures in dungeons, then create new allied creatures.\n\nSelect your favorites and form your own unique teams!\n\n– You’ll need to create and improve allied creatures to battle past the formidable enemies lurking within dungeons!\n\n– Adventure to gain access to new Team Skills: powerful abilities capable of enhancing your entire team that are activated by achieving certain numbers of combos, matching specific Orb types, etc.\n\nChoose a Team Skill that plays to your puzzle matching strengths!\n\n・Raise Your Creatures\n\nQuest and spend resources on your creatures to improve them.\n\nAs they gain levels, allied creatures grow more powerful.\n\n– Improved allies make an even greater contribution to the team with their enhanced attacking and healing abilities, helping you conquer dungeons.\n\n・Story Introduction\n\nOnce home to a civilization that prospered under the protection of a goddess, the continent of Libra fell to a tragic and mysterious cataclysm.\n\nAssuming the role of a Root Hunter, players will explore the wild continent, trying to uncover the hidden cause of Libra’s devastation.\n\n・Regular Updates\n\nNew dungeons and creatures are added frequently via content downloads and app updates.\n\nPlay through the added content to further explore a vast and mysterious fantasy land.\n\n*See in-game notices for details.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/PUZZLE-DRAGONS-STORY-150x150.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 1200000000,
+      "version": "1.0.2",
+      "versions": [
+        {
+          "version": "1.0.2",
+          "date": "2023-12-14T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/wEMQaSGp",
+          "size": 1200000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-14T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/wEMQaSGp",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Chess – Play & Learn+",
+      "type": 2,
+      "bundleIdentifier": "com.chess.iphone",
+      "developerName": "Chess.com",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Practice vs Bots! Play vs the world! Grow your inner grandmaster with Chess – Play &amp; Learn for Apple Arcade.\n\nImprove your skills with dozens of chess-bots, ranging from Beginner to Grandmaster. Play against virtual personalities from around the world, each with their own playing styles and weaknesses. Learn quickly with Adaptive Bots who play a little weaker when you are behind – and a little stronger when you have the advantage!\n\nReady to take on the world? There are thousands of chess fans ready to play right now! You’ll get your own chess rating that will grow with you as you improve – so you always play opponents at your level.\n\nIt’s chess at its best!\n\n* 60+ Computer Personalities to play\n\n* Five gorgeous visual themes\n\n* Join the world’s largest online chess community\n\n* Nine different time-controls for online play – from 30 minutes per side to speedy Bullet games!",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Chess-Play-Learn-150x150.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 443600000,
+      "version": "1.0.3",
+      "versions": [
+        {
+          "version": "1.0.3",
+          "date": "2023-12-12T10:00:00+07:00",
+          "localizedDescription": "Paid on arcade",
+          "downloadURL": "http://link.codevn.net/y72IbFQ",
+          "size": 443600000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-12T10:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/y72IbFQ",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Chess Universe+",
+      "type": 2,
+      "bundleIdentifier": "com.kingsofgames.chessuniverse",
+      "developerName": "Tilting Point LLC",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Are you a chess enthusiast looking to improve your skills and play against players worldwide? Look no further than Chess Universe+! Our app is the ultimate destination for chess players of all levels, providing a fun and engaging environment to learn and play chess.\n\nWith Chess Universe+, you’ll have access to a vast library of tutorials, lessons, and interactive challenges designed to help you master the game of chess. From beginners learning the basics to advanced players honing their skills, Chess Universe+ has something for everyone.\n\nBut that’s not all! Chess Universe+ also connects you to a community of chess players worldwide, allowing you to play against opponents from different countries and improve your skills. Whether you’re looking for a casual match or a challenging competition, you’ll find it all in Chess Universe+.\n\nIn addition to its comprehensive chess-playing features, Chess Universe+ also includes a fun and unique reward system. By winning games and completing challenges, you can unlock special chests that contain pets and character customization items. With a wide variety of pets to collect, from cute and cuddly to fierce, you can show off your personality and add a flair to your chess experience. And with a wide range of customization options, you can personalize your avatar and make your mark on the chess world.\n\nOur virtual chessboard is easy to use and intuitive, with beautiful graphics and realistic sound effects that make every game an immersive experience. And with support for different time controls and ratings, you can find opponents that match your preferred style of play.\n\nSo what are you waiting for? Join Chess Universe+ today and start your journey to becoming a master chess player!",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Chess-Universe-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 313000000,
+      "version": "1.20.1",
+      "versions": [
+        {
+          "version": "1.20.1",
+          "date": "2024-01-31T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/EudA",
+          "size": 313000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2024-01-31T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/EudA",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Sonic Dream Team",
+      "type": 2,
+      "bundleIdentifier": "com.sega.sdt",
+      "developerName": "SEGA",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Sonic the Hedgehog is back in Sonic Dream Team! A game packed with non-stop action and thrilling adventures!\n\nJoin Sonic and friends as they dive deep into a bizarre world of dreams! Unravel an original and captivating storyline while taking command of six dynamic playable characters. With their unique abilities, dash, climb and fly your way to victory against infamous Eggman!\n\nGet ready to race through mind-bending dream worlds that include wall-running, gravity changes, and more! Your mission: fight to rescue your friends and battle Eggman for control of an ancient artifact that can make dreams come true.\n\nComplete missions, fight bosses and find toys of your favourite Sonic characters to add to your ever-growing collection!",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Sonic-Dream-Team-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 2200000000,
+      "version": "1.1.2",
+      "versions": [
+        {
+          "version": "1.1.2",
+          "date": "2023-12-13T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/RHkyCj7",
+          "size": 2200000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-13T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/RHkyCj7",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Turmoil+",
+      "type": 2,
+      "bundleIdentifier": "com.gamious.turmoilplus",
+      "developerName": "Gamious B.V.",
+      "subtitle": "Paid on Arcade ",
+      "localizedDescription": "Turmoil+ offers players a visually charming, tongue-in-cheek take on the simulation genre inspired by the 19th century oil rush in North America. Get a taste of the rush and rivalry of the time as you earn your way to become a successful oil entrepreneur. As you make money digging up and selling oil, the town will grow along with you.\n\nLease land at the town auction and search for oil. Build a rig, create an efficient pipe network and bring up the oil to store it in silos. Sell the oil at the best times to maximize profits. Then buy essential upgrades in town to cope with rock, gas and ice. Acquire more town shares than your competitors in a bid to become the new mayor.\n\n– A campaign where you build your rags-to-riches oil baron career and beat your rivals.\n\n– Dozens of upgrades and new tools to improve your oil mining operations.\n\n– Maximize your profits by using natural gas to boost the oil price.\n\n– Outbid your competitors at the stock auction.\n\n– Meet the town’s characters in the saloon and make shady business deals.\n\n– Play single game mode to get one of literally millions of procedurally generated levels and earn as much as you can in one year.\n\nTurmoil+ – The Heat Is On is a new campaign with tons of oil to dig up and convert into cash! It is designed to make you feel right at home, but at the same time offer lots of new mechanics and fun features. Here’s what you can expect!\n\n– A new town (and mayor!) and a new oil-rich map divided into three areas.\n\n– In each area, new drilling mechanics are introduced, powered by a new underground substance: magma.\n\n– You’ll see familiar faces like Edward and Fred and William. They brought their goods with them in train wagons, so you can instantly stock up on all your favorite drilling gear.\n\n– There are also new people, like Philip, who runs a shady card game in the saloon.\n\n– Jack is a new character that runs a magma tools operation from his shed. He likes chicken.\n\n– Anthony is also back from last time. Instead of dealing in diamonds, he has his own store where you can sell and buy all sorts of underground treasures.\n\n– The new mayor is not quite like the old one. His tips are free, and he uses a different auction system. But shares still cost money!\n\n– There’s a cat walking around the village! He doesn’t do a whole lot, but what can you expect from these creatures?\n\n– And last but not least: a couple of brand new music tracks!\n\nThe metagame in this new DLC-campaign offers more depth. Instead of diamonds, a total of 9 underground treasures are available. Collecting them all (by trading or digging them up) will offer great benefits. Besides this, the village offers even more things to do, like playing a card game for money.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Turmoil-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 563400000,
+      "version": "1.0.1",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "date": "2023-12-12T17:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/WYqU1",
+          "size": 563400000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-12T17:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/WYqU1",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "GRIS+",
+      "type": 2,
+      "bundleIdentifier": "com.devolver.gris",
+      "developerName": "Devolver",
+      "subtitle": "Paid on Arcade ",
+      "localizedDescription": "“GRIS+” Apple Arcade: Hành trình Nghệ thuật và Tâm hồn\nỞ giữa thế giới rộng lớn của Apple Arcade, nơi người chơi có thể khám phá vô số trải nghiệm giải trí độc đáo, trò chơi GRIS+ nổi bật như một tác phẩm nghệ thuật tinh tế, chìm đắm người chơi vào một thế giới đầy mê hoặc và cảm xúc.\n\nGRIS+ là một phiên bản mở rộng của tựa game GRIS nổi tiếng, được phát triển bởi đội ngũ Nomada Studio. Trò chơi đã gặt hái nhiều thành công trước đó trên các nền tảng khác, và sự xuất hiện của nó trên Apple Arcade chắc chắn sẽ mang đến trải nghiệm độc đáo cho người chơi trên các thiết bị Apple.\n\nMột trong những điểm thu hút lớn nhất của GRIS+ chính là nghệ thuật tuyệt vời. Với đồ họa đẹp mắt, màu sắc tinh tế và thiết kế hình ảnh động đầy sáng tạo, trò chơi hòa quyện giữa nền âm nhạc tuyệt vời và cốt truyện động lòng người. Người chơi sẽ bắt gặp những cảm xúc sâu sắc thông qua hành trình của nhân vật chính – một cô gái trẻ tên là Gris, người đang cố gắng vượt qua nỗi đau và mất mát.\n\nNgoài ra, GRIS+ không chỉ là một trò chơi giải đố mà còn là một tác phẩm nghệ thuật tương tác, nơi người chơi có thể thể hiện sự tưởng tượng và sáng tạo thông qua việc giải quyết các câu đố và thách thức trong môi trường 2D độc đáo. Từ việc thay đổi môi trường đến khám phá những khả năng mới, GRIS+ không ngừng tạo ra những trải nghiệm mới mẻ và thú vị cho người chơi.\n\nĐặc biệt, việc GRIS+ xuất hiện trên Apple Arcade mang lại lợi ích lớn với người chơi, với việc có thể chơi trò chơi trên nhiều thiết bị Apple khác nhau mà không gặp rắc rối về tương thích.\n\nTóm lại, GRIS+ không chỉ là một trò chơi mà còn là một tác phẩm nghệ thuật sống động, tận dụng sức mạnh của Apple Arcade để mang đến một trải nghiệm chơi game đẳng cấp và sâu sắc. Cho dù bạn là người yêu thích nghệ thuật hay đơn giản là muốn trải nghiệm một câu chuyện đầy cảm xúc, GRIS+ chắc chắn là một lựa chọn xuất sắc.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/GRIS-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 2500000000,
+      "version": "1.0.4",
+      "versions": [
+        {
+          "version": "1.0.4",
+          "date": "2023-12-12T17:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/a1U6",
+          "size": 2500000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-12T17:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/a1U6",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Slay the Spire+",
+      "type": 2,
+      "bundleIdentifier": "com.humblebundle.slaythespire",
+      "developerName": "Humble Bundle",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Đã phát hành trên Arcade! Hãy chơi game thẻ bài roguelike, từng được IGN vinh danh là Game chiến lược hay nhất năm 2019.\n\nĐược Mega Crit phát triển, đây là một sự kết hợp giữa game thẻ bài và game roguelike, từ đó tạo ra game thẻ bài đối kháng một người chơi hay nhất. Hãy tạo một bộ thẻ bài độc đáo, chạm trán với những sinh vật kỳ quái, khám phá các cổ vật ẩn chứa sức mạnh to lớn và tận hưởng Slay the Spire!\n\nChọn một trong 4 nhân vật khác nhau để bắt đầu hành trình của bạn. Vào Spire và chiến đấu để đánh bại đối thủ từ những thẻ bài trong bộ bài của bạn. Không có trận chiến nào giống nhau, hãy chiến đấu theo cách của bạn để giành chiến thắng.\n\nTÍNH NĂNG:\n\n– LEO LÊN TẦNG CAO: Hơn 350 thẻ bài đã hoàn toàn được triển khai, hơn 200 vật phẩm đa dạng, hơn 50 pha chạm trán không đụng hàng và hơn 50 sự kiện bí ẩn có thể sẽ hỗ trợ hoặc gây tổn hại cho bạn!\n\n– TẠO BỘ THẺ BÀI NĂNG ĐỘNG: Hãy chọn thẻ bài một cách khôn ngoan! Sẽ có hàng trăm thẻ bài xuất hiện để thêm vào bộ bài của bạn sau mỗi lần đột phá trong Spire. Hãy chọn các thẻ hoạt động hữu hiệu cùng nhau để tiêu diệt đối thủ hiệu quả và đặt chân lên đỉnh tháp\n\n– PHÁO ĐÀI BIẾN ĐỔI: Bố cục bên trong tòa tháp sẽ hoàn toàn khác biệt trong mỗi lần bạn bắt đầu hành trình tiến vào Spire. Chọn một lối đi mạo hiểm hoặc an toàn, đối mặt với những kẻ thù khác nhau, chọn những lá bài khác nhau, khám phá những cổ vật khác nhau và thậm chí là chiến đấu với các quái trùm cũng khác nhau luôn!\n\n– NHỮNG CỔ VẬT QUYỀN NĂNG ĐANG CHỜ KHÁM PHÁ: Bạn có thể tìm thấy những vật phẩm ngập tràn uy lực, hay còn gọi là cổ vật, ở khắp mọi nơi trong Spire. Những cổ vật này có thể mang đến hiệu ứng giúp bộ bài của bạn được cải thiện đáng kể thông qua các tương tác mạnh mẽ. Nhưng hãy cẩn thận, để sở hữu được một cổ vật, cái giá mà bạn bỏ ra không chỉ là vàng thôi đâu…",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Slay-the-Spire-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 932800000,
+      "version": "1.03",
+      "versions": [
+        {
+          "version": "1.03",
+          "date": "2023-12-05T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/TGaW2kCs",
+          "size": 932800000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-05T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/TGaW2kCs",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Stardew Valley+",
+      "type": 2,
+      "bundleIdentifier": "com.chucklefish.stardewvalley",
+      "developerName": "ConcernedApe",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Stardew Valley+ trên Apple Arcade – Cuộc Sống Nông Trại Trong Mơ\nNếu bạn đang tìm kiếm một trò chơi mô phỏng cuộc sống nhẹ nhàng nhưng đầy cuốn hút, thì Stardew Valley+ trên Apple Arcade chính là lựa chọn hoàn hảo. Phiên bản này mang đến trải nghiệm đầy đủ của tựa game gốc Stardew Valley, nhưng không có quảng cáo hay mua hàng trong ứng dụng, giúp người chơi đắm chìm hoàn toàn vào cuộc sống nông trại yên bình.\n\nXây dựng nông trại của riêng bạn\nTrong Stardew Valley+, bạn vào vai một nhân vật rời bỏ cuộc sống bộn bề ở thành phố để đến vùng quê Pelican Town, nơi bạn thừa kế một nông trại cũ của ông nội. Tại đây, bạn có thể trồng trọt, chăn nuôi, khai thác khoáng sản, câu cá và tham gia vào nhiều hoạt động thú vị khác để phát triển trang trại của mình.\n\nBạn có thể tự do thiết kế nông trại theo ý thích, từ cách bố trí vườn tược đến việc trang trí nhà cửa. Tất cả đều mang đến cảm giác thư giãn và thỏa mãn khi chứng kiến từng mảnh đất cằn cỗi dần biến thành một khu vườn trù phú.\n\nGắn kết với cộng đồng &amp; xây dựng tình bạn\nPelican Town không chỉ có nông trại mà còn có một thị trấn sôi động với hơn 30 cư dân thân thiện. Bạn có thể làm quen, tặng quà, tham gia lễ hội và thậm chí kết hôn và lập gia đình với một trong những người dân trong thị trấn.\n\nMỗi nhân vật đều có tính cách, sở thích và câu chuyện riêng, giúp thế giới trong game trở nên sống động và chân thực hơn.\n\nKhám phá và phiêu lưu\nBên cạnh việc trồng trọt, bạn còn có thể khám phá hầm mỏ, chiến đấu với quái vật và tìm kiếm kho báu quý hiếm. Ngoài ra, game còn có nhiều nhiệm vụ thú vị như câu cá, săn bắn, làm nghề thủ công, mang đến vô số điều để bạn trải nghiệm.\n\nBạn cũng có thể giúp khôi phục Trung tâm Cộng đồng bằng cách thu thập tài nguyên và hoàn thành các gói nhiệm vụ, từ đó làm cho Pelican Town trở nên tươi đẹp hơn.\n\nĐồ họa pixel art tuyệt đẹp &amp; âm nhạc thư giãn\nStardew Valley+ sở hữu phong cách đồ họa pixel art đơn giản nhưng cực kỳ chi tiết và ấm áp. Mỗi mùa trong game đều có một sắc thái riêng, từ hoa anh đào rơi vào mùa xuân đến tuyết trắng phủ kín vào mùa đông, tạo nên một thế giới đầy màu sắc.\n\nNhạc nền trong game cũng rất nhẹ nhàng và thư giãn, giúp người chơi có những phút giây thoải mái sau những giờ làm việc căng thẳng.\n\nTrải nghiệm mượt mà trên Apple Arcade\nLà phiên bản + độc quyền trên Apple Arcade, Stardew Valley+ không có quảng cáo hay mua hàng trong ứng dụng, giúp bạn tận hưởng game một cách liền mạch và trọn vẹn. Game cũng hỗ trợ cảm ứng và tay cầm, mang đến trải nghiệm chơi tối ưu trên iPhone, iPad và Mac.\n\nTổng kết\nStardew Valley+ không chỉ là một trò chơi nông trại, mà còn là một hành trình đầy ý nghĩa về sự bình yên, sáng tạo và kết nối. Dù bạn muốn xây dựng nông trại trong mơ, kết bạn với dân làng hay khám phá những điều bí ẩn, trò chơi này đều có thể mang đến những giây phút thư giãn tuyệt vời.\n\nHãy bắt đầu cuộc sống mới tại Pelican Town ngay hôm nay! 🌱🏡💕",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Stardew-Valley-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 463000000,
+      "version": "1.5.6.46",
+      "versions": [
+        {
+          "version": "1.5.6.46",
+          "date": "2023-12-03T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/PFx0UJku",
+          "size": 463000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-03T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/PFx0UJku",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Fruit Ninja Classic+",
+      "type": 2,
+      "bundleIdentifier": "com.Halfbrick.Fruit",
+      "developerName": "Halfbrick Studios",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Slice fruit, don’t slice bombs – that is all you need to know to get started as a Fruit Ninja!\n\nThe original hit returns to satisfy your fruit-destroying appetite, now with juicy updates. Slice for a high score, line up combos for extra points, and go crazy on the multi-slice Pomegranate!\n\nSurvive the longest you can in Classic mode, go wild with special bananas in Arcade mode, or relax and practice your fruit-slicing skills in Zen mode.\n\nCollect Blades and Dojos so you can slice in style – Search Sensei’s Swag and uncover hidden challenges to unlock more!\n\nWant more fun? Go head-to-head and show off your skills as the ultimate ninja against your friends with local multiplayer and cut your way to the top!",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Fruit-Ninja-Classic-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 551400000,
+      "version": "1.20",
+      "versions": [
+        {
+          "version": "1.20",
+          "date": "2023-12-03T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/5O5p",
+          "size": 551400000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-03T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/5O5p",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Getting Over It+",
+      "type": 2,
+      "bundleIdentifier": "net.foddy.gettingoveritplus",
+      "developerName": "Bennett Foddy",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "A game I made\n\nFor a certain kind of person\n\nTo hurt them.\n\n• Climb up an enormous mountain with nothing but a hammer and a pot.\n\n• Listen as I make philosophical observations about the problem at hand.\n\n• Between 2 and ∞ hours of agonizing gameplay, depending. The median time to finish for my playtesters was 5 hours, but the mean was closer to ∞.\n\n• Lose all your progress, over and over.\n\n• Feel new types of frustration you didn’t know you were capable of.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Getting-Over-It-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 271200000,
+      "version": "1.93",
+      "versions": [
+        {
+          "version": "1.93",
+          "date": "2023-12-03T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/0h1l",
+          "size": 271200000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-12-03T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/0h1l",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Football Manager 2024 Touch",
+      "type": 2,
+      "bundleIdentifier": "com.sega.soccer.manager.23",
+      "developerName": "SEGA",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Football Manager 2024 Touch trên Apple Arcade – Trải Nghiệm Huấn Luyện Đỉnh Cao\nNếu bạn là một fan hâm mộ bóng đá và luôn muốn thử sức với vai trò huấn luyện viên, thì Football Manager 2024 Touch (FM24 Touch) trên Apple Arcade chính là tựa game hoàn hảo dành cho bạn. Phiên bản này mang đến trải nghiệm quản lý bóng đá chân thực, cho phép bạn dẫn dắt câu lạc bộ yêu thích, xây dựng đội hình trong mơ và chinh phục những danh hiệu danh giá nhất.\n\nTrải nghiệm quản lý bóng đá chân thực\nTrong FM24 Touch, bạn sẽ vào vai một HLV chuyên nghiệp với nhiệm vụ quản lý mọi khía cạnh của đội bóng, từ chiến thuật, chuyển nhượng, huấn luyện cầu thủ đến đối phó với truyền thông. Trò chơi sở hữu cơ sở dữ liệu đồ sộ với hàng chục nghìn cầu thủ và CLB từ hơn 50 quốc gia, mang đến một thế giới bóng đá vô cùng chân thực.\n\nBạn có toàn quyền kiểm soát đội bóng của mình, quyết định chiến thuật thi đấu, đội hình ra sân, hướng dẫn cầu thủ và thực hiện các điều chỉnh chiến thuật trong trận đấu để giành chiến thắng.\n\nTính năng nổi bật của FM24 Touch trên Apple Arcade\n🔹 Chiến thuật linh hoạt &amp; mô phỏng thực tếHệ thống AI chiến thuật được cải tiến giúp các trận đấu trở nên chân thực, hấp dẫn và phản ánh đúng phong cách bóng đá hiện đại. Bạn có thể lựa chọn pressing tầm cao, phản công nhanh hay kiểm soát bóng tiki-taka, tùy theo lối chơi mà bạn yêu thích.\n\n🔹 Thị trường chuyển nhượng hấp dẫnMua sắm cầu thủ, đàm phán hợp đồng và phát hiện tài năng trẻ để xây dựng đội hình mạnh mẽ. Hệ thống scouting (tuyển trạch viên) giúp bạn tìm kiếm những ngôi sao tương lai trước khi các CLB khác nhảy vào cuộc đua giành chữ ký.\n\n🔹 Hệ thống huấn luyện chuyên sâuCải thiện kỹ năng của cầu thủ thông qua chương trình tập luyện, giao nhiệm vụ phát triển và giúp họ phát huy tối đa tiềm năng. Bạn cũng có thể quản lý động lực của đội, tránh để xảy ra xung đột nội bộ và giữ tinh thần cầu thủ luôn cao nhất.\n\n🔹 Mô phỏng trận đấu đẹp mắtFM24 Touch mang đến giao diện 3D nâng cấp, giúp các trận đấu trở nên sống động và hấp dẫn hơn so với các phiên bản trước. Các pha bóng, cách di chuyển của cầu thủ và chiến thuật trên sân được tái hiện chân thực, mang đến trải nghiệm như một trận đấu thực thụ.\n\nTrải nghiệm tối ưu trên Apple Arcade\nPhiên bản FM24 Touch trên Apple Arcade không có quảng cáo hay mua hàng trong ứng dụng, giúp bạn tập trung hoàn toàn vào việc xây dựng đội bóng của mình.\n\nBên cạnh đó, game hỗ trợ điều khiển cảm ứng trên iPhone/iPad và cả tay cầm, giúp trải nghiệm trở nên mượt mà và dễ dàng hơn.\n\nTổng kết\nFootball Manager 2024 Touch trên Apple Arcade là một tựa game quản lý bóng đá chuyên sâu, chân thực và đầy thử thách. Dù bạn muốn đưa đội bóng nhỏ vươn lên đỉnh cao hay duy trì đế chế của một CLB hàng đầu, FM24 Touch đều có thể mang đến những giây phút căng thẳng và hào hứng như một huấn luyện viên thực thụ.\n\nHãy sẵn sàng dẫn dắt đội bóng của bạn đến vinh quang ngay hôm nay! ⚽🏆🔥",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/12/Football-Manager-2024-Touch-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 2200000000,
+      "version": "24.4.1",
+      "versions": [
+        {
+          "version": "24.4.1",
+          "date": "2025-03-14T17:00:00+07:00",
+          "localizedDescription": "Phiên bản cũ ",
+          "downloadURL": "http://link.codevn.net/3zK9YxW0",
+          "size": 2200000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-03-14T17:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/3zK9YxW0",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Junkworld TD",
+      "type": 2,
+      "bundleIdentifier": "com.ironhidegames.junkworld",
+      "developerName": "Ironhide Irl",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Daring adventures, perilous terrains… dubious companions, we have it all! Command the resourceful Scavenger clan as they survive the mayhem of post-apocalyptic tactical battles. Deploy towers, use special units and gadgets, and train amazing heroes.\n\nWelcome to JUNKWORLD!\n\nCommand the resourceful Scavenger clan as they survive the mayhem of epic post-apocalyptic battles. Deploy your strategy by using towers, special units and gadgets, as you train amazing crazy-looking heroes. Place your towers wherever you want, the whole map is your tactical playground!\n\nGAME FEATURES\n\n– 16 TOWERS with special skills. From towers with hydraulic drills or mechanical bulls, to even a weird one that transforms enemies into sheep… Don’t ask, we don’t know how that’s possible either.\n\n– 16 TACTICS ready to be deployed. How about a warrior in a garbage can armor? Who told you that 5-minute craft videos didn’t work? Deploy up to 4 tactics per stage from Landmines to Misfits, or even a tiny machine that creates powerful whirlwinds and decks your enemies down!\n\n– Command 9 HEROES that’ll be at your disposal to defeat the most strange, unexpected enemies. Upgrade them to unleash all their power and abilities to enhance your defense!\n\n– 4 HOSTILE TERRAINS: explore and conquer the fearsome wasteland and radioactive marshes, Psychopolis and the Order’s Headquarters.\n\n– 80 CHALLENGING STAGES that will test your tactical wits. Survive the most challenging weather conditions while visiting rough and dangerous battlefields.\n\n– Prove yourself in challenges and quests: set your strategy, lead your faction to victory, and collect awesome rewards.\n\n– Find all the easter eggs and get all the crazy, epic achievements!\n\n– Study your enemies and their weaknesses with the info we gather for you in the intel.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/10/Junkworld-TD-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 964000000,
+      "version": "1.0.2",
+      "versions": [
+        {
+          "version": "1.0.2",
+          "date": "2023-10-20T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/nXLow",
+          "size": 964000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-10-20T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/nXLow",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Angry Birds Reloaded",
+      "type": 2,
+      "bundleIdentifier": "angry-birds-reloaded",
+      "developerName": "Rovio Entertainment Oyj",
+      "subtitle": "Không còn trên applestore",
+      "localizedDescription": "The world’s most famous flock has returned in a new version of the mobile game that took the world by storm. Join Red, Chuck, Bomb, Silver and the rest of the gang for classic slingshot action that will please fans of all ages. Angry Birds Reloaded features familiar physics-based gameplay from the original game – now remastered with visual enhancements, new characters, and plenty of destruction!\n\nKing Pig and his minions have stolen the eggs again and the birds will stop at nothing to get them back! Life on the island will never be the same now that the Angry Birds must face off against both Pigs AND Eagles from the Angry Birds movies in a battle to save their eggs and their home.\n\nFEATURES:\n\nNEW BIRDS. NEW PIGS. NEW CHALLENGES.\n\nRed, Chuck, Bomb and the rest of the main flock are here – plus new additions from the expanded Angry Birds movie universe\n\nNEW GAME MODE\n\nHere come the Eagles! wreaking havoc on the island in a series of new levels. Can the Angry Birds stop them?\n\nPOWER UP!\n\nBoost your birds’ destructive strength with power-ups. Aim farther, fly higher and knock down the pig’s towers!\n\nTRACK YOUR SCORES with local leaderboards against friends and family members for top bragging rights. All scores are tracked on the same iCloud account.\n\nA TIMELESS CLASSIC – NOW RELOADED\n\nEnjoy the familiar and satisfying slingshot action of the original Angry Birds game, with hundreds of levels of swine-smashing, eagle-whacking, destructive fun in gameplay.\n\nWe may update the game periodically, for example to add new features or content or to fix bugs or other technical issues. Please note that the game may not function properly if you do not have the newest version installed. If you have not installed the latest update, Rovio will not be responsible for the game failing to function as expected.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Angry-Birds-Reloaded-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 300000000,
+      "version": "2.3",
+      "versions": [
+        {
+          "version": "2.3",
+          "date": "2023-09-19T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/mDYW",
+          "size": 300000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-19T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/mDYW",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Samba de Amigo: Party-To-Go",
+      "type": 2,
+      "bundleIdentifier": "com.sega.samba",
+      "developerName": "SEGA",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "It’s time to shake it on center stage in this vibrant rhythm action game.\n\nJoin Amigo and his friends in an all-new Samba de Amigo that takes the party wherever you go!\n\nShake it with your maracas and groove to 40 hit songs from the world’s most popular genres, with even more on the way!\n\nShake and groove to exclusive songs:\n\n– “The Edge of Glory” by Lady Gaga\n\n– “DADDY” by PSY\n\n– “The Walker” by Fitz and the Tantrums\n\nEmbark on a quest with Amigo to return lost music to the world!\n\n– Explore Amigo’s hometown and complete challenges\n\n– Meet new characters\n\nCustomize Amigo and show off your style with costumes, accessories, sound effects and more!\n\nDance your way through dazzling gameplay stages!\n\nRise to the top- score higher than other Amigos and get to the top of the leaderboards!",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Samba-de-Amigo-Party-To-Go-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 1900000000,
+      "version": "1.0.1",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "date": "2023-09-19T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/UGjIgx",
+          "size": 1900000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-19T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/UGjIgx",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "My Talking Angela 2+",
+      "type": 2,
+      "bundleIdentifier": "com.outfit7.mytalkingangela2",
+      "developerName": "Outfit7 Limited",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "The talking cat Angela is back with more dancing, fashion, and baking!\n\nMy Talking Angela 2+ is the virtual pet game that makes every day more stylish and fun. Players help this fashionable cat stay busy in her big-city home.\n\n– Awesome hair, makeup and fashion choices\n\n– Epic activities, like dancing, baking, and martial arts\n\n– Delicious food and snacks\n\n– Jet-setting travel options\n\n– Mini-games and puzzles test skills and reflexes\n\n– All-new sticker collections",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/My-Talking-Angela-2-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 349000000,
+      "version": "2.2",
+      "versions": [
+        {
+          "version": "2.2",
+          "date": "2023-09-18T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/Dquci7w",
+          "size": 349000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-18T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/Dquci7w",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Japanese Rural Life Adventure",
+      "type": 2,
+      "bundleIdentifier": "jp.gamestart.japaneserural",
+      "developerName": "GAME START LLC",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Experience slow living in the Japanese countryside.\n\n“Live in the Japanese countryside surrounded by nature.\n\nFix up an old house, make the yard nice, grow your own crops, and become self-sufficient.\n\nView the cherry blossoms in the spring;\n\nattend the festival in the summer;\n\neat roasted sweet potatoes in the fall;\n\nhear the temple bell ring in winter, and then it’s time for the first shrine visit of the New Year.\n\n– Build a pond and raise varicolored carp.\n\n– Catch wild fish and bugs and take photos of other wildlife.\n\n– Observe various Japanese customs throughout the year.\n\n– Help the village head revive the community.\n\n– Buy a mountain and explore your new backyard.”",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Japanese-Rural-Life-Adventure-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 205700000,
+      "version": "1.0.74",
+      "versions": [
+        {
+          "version": "1.0.74",
+          "date": "2023-09-18T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/QCIFh",
+          "size": 205700000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-18T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/QCIFh",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Oceanhorn 2",
+      "type": 2,
+      "bundleIdentifier": "com.cornfox.oceanhorn2",
+      "developerName": "Cornfox & Brothers Ltd.",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Oceanhorn 2: Knights of the Lost Realm – Cuộc Phiêu Lưu Hoành Tráng trên Apple Arcade\nNếu bạn là fan của thể loại hành động – phiêu lưu và từng yêu thích những tựa game như The Legend of Zelda, thì Oceanhorn 2: Knights of the Lost Realm chắc chắn sẽ khiến bạn say mê. Được phát triển bởi Cornfox &amp; Brothers, tựa game này là phần tiếp theo của Oceanhorn: Monster of Uncharted Seas, nhưng mở rộng hơn rất nhiều về thế giới, lối chơi và đồ họa.\n\nCốt truyện cuốn hút, thế giới mở rộng lớn\nOceanhorn 2 đưa người chơi đến một thế giới Gaia rộng lớn, nơi bạn vào vai một hiệp sĩ trẻ tuổi với sứ mệnh ngăn chặn phù thủy Mesmeroth và đội quân hắc ám của hắn. Hành trình của bạn sẽ đưa bạn qua những khu rừng rậm rạp, hang động bí ẩn, thành phố tráng lệ và vô số vùng đất kỳ diệu khác.\n\nKhông giống như phần đầu tiên, Oceanhorn 2 sở hữu lối chơi thế giới mở, cho phép bạn tự do khám phá, hoàn thành nhiệm vụ phụ và tìm kiếm bí mật ẩn giấu. Cốt truyện hấp dẫn kết hợp với những nhân vật đồng hành đáng nhớ khiến cuộc hành trình thêm phần sống động.\n\nLối chơi hấp dẫn: Giải đố, chiến đấu và khám phá\nTrò chơi kết hợp nhiều yếu tố như:✅ Chiến đấu thời gian thực: Sử dụng kiếm, súng, phép thuật để đối đầu với kẻ thù đa dạng.✅ Giải đố thông minh: Khám phá các ngôi đền, sử dụng môi trường xung quanh để vượt qua chướng ngại vật.✅ Đồng đội hỗ trợ: Trong suốt cuộc hành trình, bạn sẽ có những người bạn đồng hành giúp đỡ trong chiến đấu và giải đố.✅ Hệ thống nâng cấp: Thu thập vật phẩm, mở khóa kỹ năng mới và trở thành một hiệp sĩ mạnh mẽ hơn.\n\nĐồ họa và âm thanh tuyệt đẹp\nOceanhorn 2 gây ấn tượng mạnh với đồ họa 3D tuyệt đẹp, mang đến một thế giới sắc nét, đầy màu sắc và chi tiết. Các hiệu ứng ánh sáng, bóng đổ và cảnh quan đều được thiết kế tỉ mỉ, tạo cảm giác như đang bước vào một bộ phim hoạt hình chất lượng cao.\n\nÂm nhạc trong game cũng rất xuất sắc, với những bản nhạc nền hoành tráng, du dương, góp phần tạo nên bầu không khí huyền bí và kỳ diệu của Gaia.\n\nTrải nghiệm hoàn hảo trên Apple Arcade\nLà một trò chơi trên Apple Arcade, Oceanhorn 2 không có quảng cáo hay mua hàng trong ứng dụng, đảm bảo trải nghiệm liền mạch và trọn vẹn. Game cũng hỗ trợ tay cầm và chơi được trên iPhone, iPad, Mac và Apple TV, mang lại sự linh hoạt tối đa cho người chơi.\n\nKết luận\nOceanhorn 2: Knights of the Lost Realm là một tựa game phiêu lưu hành động đáng chơi nhất trên Apple Arcade. Với thế giới mở rộng lớn, lối chơi hấp dẫn, đồ họa tuyệt đẹp và cốt truyện lôi cuốn, đây chắc chắn là lựa chọn hoàn hảo cho những ai yêu thích phiêu lưu và khám phá.\n\nHãy bắt đầu hành trình trở thành hiệp sĩ và giải cứu vương quốc Gaia ngay hôm nay! ⚔️🌊✨",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Oceanhorn-2-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 2800000000,
+      "version": "4.1",
+      "versions": [
+        {
+          "version": "4.1",
+          "date": "2023-09-18T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/XkRdrw",
+          "size": 2800000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-18T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/XkRdrw",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Unleash the Light",
+      "type": 2,
+      "bundleIdentifier": "unleash-the-light",
+      "developerName": "Cartoon Network",
+      "subtitle": "Không còn trên applestore",
+      "localizedDescription": "Play Unleash the Light with Apple Arcade, a subscription service with over 100 groundbreaking new games.\n\nJoin the Crystal Gems for the ultimate mobile RPG. It’s time to Unleash the Light!\n\n9 PLAYABLE CHARACTERS\n\nPlay as your favorite Steven Universe characters, including Steven, Garnet, Pearl, Amethyst, Lapis Lazuli, Bismuth, Peridot, Connie, and Greg!\n\nCUSTOMIZE YOUR TEAM\n\nChoose which Gems are in your party, unlock awesome new abilities, and equip alternate costumes. Plus, change formation in battle to gain the advantage.\n\nTWO NEW GEMS\n\nFace off against two new Prism-wielding Gems co-created by Rebecca Sugar. Who are they and what are they plotting?\n\nFUSION TIME!\n\nTeam up for amazing combo attacks and Gem Fusions! Fuse to play as Smoky Quartz, Sunstone, Rainbow Quartz 2.0, and Obsidian!\n\nORIGINAL VO\n\n“Unleash the Light” features an original story co-written by Rebecca Sugar, and voiceover from the Steven Universe cast and special guest star Christine Baranski.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Unleash-the-Light-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 500000000,
+      "version": "4.0.2",
+      "versions": [
+        {
+          "version": "4.0.2",
+          "date": "2023-09-15T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/qsQAs",
+          "size": 500000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-15T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/qsQAs",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Red Reign",
+      "type": 2,
+      "bundleIdentifier": "red-reign",
+      "developerName": "Ninja Kiwi",
+      "subtitle": "Không còn trên applestore",
+      "localizedDescription": "Secure your stronghold, prepare your army, and battle to victory in this fun, fast-paced real time strategy game from the makers of Bloons TD.\n\nWhether playing as the fast, well-armored Humans or the fierce, heavy-hitting Orcs, each game plays differently as you choose how to manage your focus and your resources before launching the perfect attack to crush your opponent! Learn all aspects of the game by playing a range of AI styles and difficulties in fully offline Single Player mode, or jump right in and challenge your skills in to head-to-head Multiplayer mode, against friends or global players via Game Center.\n\nExplore these awesome features:\n\n* Head-to-head online and Bluetooth multiplayer\n\n* Fully offline vs. AI single player mode with 4 difficulties and multiple AI play styles\n\n* New ultra-challenging single player Survival Mode\n\n* Innovative player-enhanced tactical play – select an area on the battlefield to harvest resources faster, heal your troops, or crush the enemy!\n\n* 40 powerful troop types, including Beserkers, Marksmen, Knights, Warlocks, and Siege Trolls\n\n* Three powerful stronghold upgrades, enabling advanced troops and better defenses\n\n* 14 distinct battlefields, each with their own control points and resource limits\n\n* 39 achievements to earn and show your skill\n\n* Dynamic original music that reacts to the pitch of battle!\n\n* Colorful visuals and playful animation appeal to the whole family\n\nIt’s time to assemble your army, plan your strategy, and become a Red Reign champion!\n\nNinja Kiwi Notes:\n\n* You must sign in to Game Center to access Multiplayer mode. Once signed in, you can play Nearby players offline. You must be online to play Multiplayer against any other players who are not Nearby.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Red-Reign-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 1100000000,
+      "version": "1.7.1",
+      "versions": [
+        {
+          "version": "1.7.1",
+          "date": "2023-09-13T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/YbLH0Fuk",
+          "size": 1100000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-13T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/YbLH0Fuk",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Wonderbox: The Adventure Maker",
+      "type": 2,
+      "bundleIdentifier": "wonderbox-adventure-maker",
+      "developerName": "AQUIRIS GAME STUDIO LLC",
+      "subtitle": "Không còn trên applestore",
+      "localizedDescription": "Creating and exploring are the essence of Wonderbox, an action-adventure game set in beautiful dioramas. Discover this ever-expanding universe with your friends and family, where you can make and share your own adventures.\n\nSEVEN WONDERS OF THE GAME\n\n1 – The Adventures\n\nAccept the call, and your journey is set: to have fun! Prepare yourself to face a path full of challenges, enemies, puzzles, and platforms. Every time you open the game, a new road of trials stands between you and the heart of adventure. Only the brave will succeed.\n\n2 – The Creator Mode\n\nPlaying an adventure is cool, but what would it be like creating your own? You have all you need: Blocks, Characters, and Items. They come with premade behaviors and allow you to create an entire adventure using the same tools and content we use ourselves. See how blocks magically combine into stunning structures. Your finger is all you need to build environments, give life to characters, hide treasures, place enemies, and design combats. Take a chance! Publish your adventure, share it with friends and players around the world. Such creativity might even be featured in the Wonderbox gallery.\n\n3 – The Boxes\n\nThese are the core of the game: the carefully-crafted spaces where the adventure flows. Visuals are colorful and often breathtaking. Don’t get too cozy, though, because a quiet sunset box might lead to one with nightfall or sandstorm. From box to box, there is a deep chain of interconnected environments to explore. Each one is unique, like a masterly grown bonsai: small in shape, immense in meaning.\n\n4 – The Heroes\n\nChoose the hero you want to be. Customize your character with a vast diversity of possibilities. Earn more as you play and upgrade your collection. Assemble the coolest, the bravest, or even the weirdest hero for your quest. Travel through the boxes, talk to the villagers, cross the portals, beat the enemies, and avoid the hazards. Playing this game is all about exploring, fighting, jumping, and solving.\n\n5 – The Challenges\n\nSome boxes are amazing. Others are a maze. Sometimes you need coins to buy the sword to beat the goblin to get the key to open the door to finally escape. A treasure might be hidden under, above, in front of or behind a simple tree. Discover! Rotate the camera to explore each corner of the diorama. And beware: the challenges are limitless, just like the adventures.\n\n6 – The Party Mode\n\nExpandable fun! Up to 4 players can form a party and play any adventure together. Call your tribe and cross the threshold. Even a dark dungeon gets brighter when you’re surrounded by well-equipped family and friends.\n\n7 – The Soundtrack\n\nBe amused by the chords of Eric Chevalier, the composer of Rayman 2: The Great Escape. Each note of the soundtrack is there for a reason: to build the perfect atmosphere not only to play a game, but to play a hero.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Wonderbox-The-Adventure-Maker-150x150.jpeg",
+      "screenshotURLs": [
+        "https://cdn.tgdd.vn//GameApp/266907//tai-wonderbox-the-adventure-maker-800x448.png",
+        "https://cdn.tgdd.vn//GameApp/266907//Cot-truyen-800x367.png",
+        "https://cdn.tgdd.vn//GameApp/266907//Loi-choi-800x359.png",
+        "https://cdn.tgdd.vn//GameApp/266907//nhiem-vu-800x369.png",
+        "https://cdn.tgdd.vn//GameApp/266907//nhan-vat-800x446.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 2500000000,
+      "version": "2.5.1",
+      "versions": [
+        {
+          "version": "2.5.1",
+          "date": "2023-09-11T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/NUdbL",
+          "size": 2500000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-11T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/NUdbL",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "LIMBO+",
+      "type": 2,
+      "bundleIdentifier": "com.playdeadgames.limbo.arcade",
+      "developerName": "Playdead",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Uncertain of his sister’s fate, a boy enters Limbo.\n\nLimbo, the Apple Design Award winner, is now on Arcade.\n\nPlaydead’s award-winning indie adventure is critically acclaimed for its captivating puzzle design and immersive sound and visuals. Its dark, misty spaces and haunting narrative will stay with you forever.\n\nWhat the press said:\n\n“Limbo is as close to perfect at what it does as a game can get.”\n\nDestructoid – 10/10\n\n“The game is a masterpiece.”\n\nGiant Bomb – 5/5\n\n“Limbo is genius. Freaky, weird genius. Disturbing, uncomfortable genius.”\n\nThe Escapist – 5/5\n\n“Dark, disturbing, yet eerily beautiful, Limbo is a world that deserves to be explored.”\n\nJoystiq – 5/5\n\nLimbo is the winner of more than 100 awards, including:\n\n– Best Downloadable (Gameinformer)\n\n– Best Puzzle Game (Gamespot)\n\n– The Best Indie Game (Kotaku)\n\n– Digital Game of the Year (GameReactor)\n\n– Best Horror Game (IGN)\n\n– Best Visual Arts (Game Developers Choice Awards)\n\n– Technical Excellence (Independent Games Festival)\n\n– Adventure Game of the Year (D.I.C.E. Awards)\n\n– Outstanding Achievement in Sound Design (D.I.C.E. Awards)",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/LIMBO-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 153200000,
+      "version": "1.0.1",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "date": "2023-09-10T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/ozJqlz",
+          "size": 153200000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-10T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/ozJqlz",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Prune+",
+      "type": 2,
+      "bundleIdentifier": "com.Polyculture.PrunePlus",
+      "developerName": "Joel McDonald LLC",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Prune is a love letter to trees. A game about the beauty and joy of cultivation.\n\nWith a swipe of a finger, grow and shape your tree into the sunlight while avoiding the dangers of a hostile world. Bring life to a forgotten landscape and uncover a story hidden deep beneath the soil.\n\n• A unique digital plant for your pocket\n\n• Beautiful, minimalist art and a super clean interface—it’s just you and the trees\n\n• Meditative music and sound design for you to zen out to\n\n• No IAP, no monetization strategy, no currencies\n\n• Share screenshots of your unique tree creations with friends\n\n• Synchronize progress across all your devices\n\n—– RECEPTION —–\n\n“Unlike anything I’ve played before… the kind of experience I want to pull out to show my friends” – The Verge\n\n“Wildly creative, totally addictive, and oddly soothing” – Entertainment Weekly\n\n“Prune is a gorgeous and unique experience” – 5/5 TouchArcade\n\n“Prune is an awe-inspiring work of digital poetry” – 10/10 Pocket Gamer\n\n“A collaboration that feels more like a dance than puzzle-solving” – Kill Screen",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Prune-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 155600000,
+      "version": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2023-09-07T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/0gJw",
+          "size": 155600000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-09-07T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/0gJw",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dead Cells+",
+      "type": 2,
+      "bundleIdentifier": "com.playdigious.deadcells.applearcade",
+      "developerName": "Playdigious",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "Dead Cells+ Apple Arcade: Hành trình không hồi kết trong thế giới roguelike\nDead Cells+ là phiên bản cao cấp của tựa game hành động roguelike nổi tiếng Dead Cells, được phát hành trên Apple Arcade. Trò chơi mang đến trải nghiệm chiến đấu tốc độ cao, lối chơi không khoan nhượng cùng hệ thống nâng cấp đa dạng, hứa hẹn sẽ thách thức cả những game thủ kỳ cựu nhất.\n\nLối chơi hấp dẫn và không thể đoán trước\nDead Cells+ thuộc thể loại roguelike-metroidvania, nơi người chơi sẽ điều khiển một sinh vật ký sinh có khả năng kiểm soát cơ thể của những chiến binh đã chết. Nhiệm vụ của bạn là vượt qua các hầm ngục đầy rẫy quái vật, bẫy chết người và những tên trùm khổng lồ, đồng thời không ngừng nâng cấp vũ khí và kỹ năng để sống sót lâu nhất có thể.\n\nMỗi lần chơi sẽ là một trải nghiệm mới nhờ vào bản đồ tạo ngẫu nhiên, giúp trò chơi luôn giữ được sự tươi mới và thử thách. Cái chết không phải là dấu chấm hết, mà là cơ hội để học hỏi và thử lại với chiến thuật khác.\n\nHệ thống chiến đấu linh hoạt và đầy thử thách\nDead Cells+ có cơ chế chiến đấu nhịp độ cao, kết hợp giữa né tránh, chặt chém, dùng kỹ năng và kết hợp vũ khí. Người chơi có thể lựa chọn từ hàng trăm loại vũ khí khác nhau như kiếm, cung, giáo, bom, phép thuật, mỗi loại có phong cách chiến đấu riêng.\n\nNgoài ra, bạn còn có thể mở khóa các mutations (đột biến) giúp tăng cường khả năng chiến đấu, tùy chỉnh lối chơi theo phong cách cá nhân. Nhưng hãy nhớ rằng, mỗi sai lầm đều có thể phải trả giá bằng cả mạng sống!\n\nĐồ họa pixel art tuyệt đẹp, âm thanh sống động\nDù sử dụng phong cách đồ họa pixel art, Dead Cells+ vẫn tạo được sức hút mạnh mẽ với hình ảnh chi tiết, hiệu ứng mượt mà và chuyển động nhân vật cực kỳ linh hoạt. Kết hợp với đó là phần âm thanh sống động, giúp nâng cao trải nghiệm chiến đấu và khiến người chơi cảm nhận rõ sự căng thẳng trong từng trận chiến.\n\nDead Cells+ có gì đặc biệt trên Apple Arcade?\nPhiên bản Dead Cells+ trên Apple Arcade có đầy đủ nội dung của bản gốc và không có quảng cáo hay mua hàng trong ứng dụng. Điều này mang đến trải nghiệm liền mạch, giúp game thủ tập trung hoàn toàn vào hành trình sinh tồn mà không bị gián đoạn.\n\nNgoài ra, trò chơi cũng hỗ trợ điều khiển bằng cảm ứng và tay cầm, cho phép người chơi tận hưởng game theo cách họ thích nhất trên iPhone, iPad và Mac.\n\nTổng kết\nNếu bạn yêu thích những tựa game hành động hardcore, chiến đấu tốc độ cao và thử thách không ngừng nghỉ, thì Dead Cells+ trên Apple Arcade chắc chắn là lựa chọn hoàn hảo. Hãy sẵn sàng chinh phục hầm ngục, rèn luyện kỹ năng và tìm ra con đường sống sót trong thế giới tàn khốc của Dead Cells+ ngay hôm nay! 🚀🔥",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/09/Dead-Cells-150x150.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 1900000000,
+      "version": "3.5.6",
+      "versions": [
+        {
+          "version": "3.5.6",
+          "date": "2025-03-15T00:00:00+07:00",
+          "localizedDescription": "Paid on Arcade",
+          "downloadURL": "http://link.codevn.net/aJRFnCn",
+          "size": 1900000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-03-15T00:00:00+07:00",
+      "downloadURL": "http://link.codevn.net/aJRFnCn",
+      "patreon": {}
+    }
+  ],
+  "news": []
+}
