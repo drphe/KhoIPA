@@ -15,6 +15,54 @@
   "apps": [
     {
       "beta": false,
+      "name": "Gopeed-v1.8.3-ios",
+      "type": 1,
+      "bundleIdentifier": "com.gopeed.gopeed",
+      "developerName": "Gopeed-v1.8.3-ios x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "A modern download manager",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Gopeed-v1.8.3-ios.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Gopeed-v1.8.3-ios/Gopeed-v1.8.3-ios-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 41366323,
+      "version": "1.8.3",
+      "versions": [
+        {
+          "version": "1.8.3",
+          "date": "2025-12-12",
+          "size": 41366323,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed-v1.8.3-ios.ipa",
+          "localizedDescription": "A modern download manager"
+        },
+        {
+          "version": "1.7.0",
+          "date": "2025-04-18",
+          "size": 38807797,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed_1.7.0.ipa",
+          "localizedDescription": "A modern download manager"
+        },
+        {
+          "version": "1.6.10",
+          "date": "2025-03-11",
+          "size": 38587596,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed_1.6.10.ipa",
+          "localizedDescription": "A modern download manager."
+        }
+      ],
+      "versionDate": "2025-12-12",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed-v1.8.3-ios.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "OldOS",
       "type": 1,
       "bundleIdentifier": "com.zrc.BudgetingBuddy",
@@ -36,13 +84,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 82837504,
+      "size": 83267420,
       "version": "2.0.7",
       "versions": [
         {
           "version": "2.0.7",
           "date": "2025-12-07",
-          "size": 82837504,
+          "size": 83267420,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS.ipa",
           "localizedDescription": "Recreating iOS 4 in Swift."
         }
@@ -70,27 +118,27 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 97517568,
+      "size": 98513715,
       "version": "307.2",
       "versions": [
         {
           "version": "307.2",
           "date": "2025-12-07",
-          "size": 97517568,
+          "size": 98513715,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
           "localizedDescription": "Discord + Kettu for theming and plugins."
         },
         {
           "version": "228.1",
           "date": "2024-05-10",
-          "size": 98566144,
+          "size": 99425976,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
           "localizedDescription": "Discord mod."
         },
         {
           "version": "224.0",
           "date": "2024-04-10",
-          "size": 96468992,
+          "size": 96856965,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
           "localizedDescription": "Another one! Bestest Discord client"
         }
@@ -118,13 +166,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 4194304,
+      "size": 4424990,
       "version": "5.0",
       "versions": [
         {
           "version": "5.0",
           "date": "2025-12-05",
-          "size": 4194304,
+          "size": 4424990,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/InjectionIPA_v5.0.ipa",
           "localizedDescription": "Dylib injector tool"
         }
@@ -152,13 +200,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 468,
+      "size": 480112,
       "version": "1.1",
       "versions": [
         {
           "version": "1.1",
           "date": "2025-12-01",
-          "size": 468,
+          "size": 480112,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/DLiPA_v1.1.ipa",
           "localizedDescription": "An iOS app inspired by ipatool."
         }
@@ -188,13 +236,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 98566144,
+      "size": 98859745,
       "version": "7.40.2",
       "versions": [
         {
           "version": "7.40.2",
           "date": "2025-11-30",
-          "size": 98566144,
+          "size": 98859745,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Fortnite+Release-7.40-CL-5011364.ipa",
           "localizedDescription": "Fortnite season 7 private server"
         }
@@ -226,13 +274,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 34603008,
+      "size": 34980495,
       "version": "5.1.0",
       "versions": [
         {
           "version": "5.1.0",
           "date": "2025-11-14",
-          "size": 34603008,
+          "size": 34980495,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Spotube-iOS.ipa",
           "localizedDescription": "Open source music client"
         }
@@ -260,13 +308,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 159383552,
+      "size": 160390184,
       "version": "2.47.207251",
       "versions": [
         {
           "version": "2.47.207251",
           "date": "2025-10-25",
-          "size": 159383552,
+          "size": 160390184,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PotatoIM.ipa",
           "localizedDescription": "Chinese Telegram Clone"
         }
@@ -295,13 +343,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 6291456,
+      "size": 7088373,
       "version": "2.1.0",
       "versions": [
         {
           "version": "2.1.0",
           "date": "2025-10-25",
-          "size": 6291456,
+          "size": 7088373,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/iTorrent.ipa",
           "localizedDescription": "iTorrent v2.1.0-1 by XITRIX iOS 16+"
         }
@@ -329,13 +377,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 9437184,
+      "size": 10223616,
       "version": "2.3",
       "versions": [
         {
           "version": "2.3",
           "date": "2025-09-20",
-          "size": 9437184,
+          "size": 10223616,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Asspp_2.3.ipa",
           "localizedDescription": "Multi-account App Store management"
         }
@@ -363,20 +411,20 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 14680064,
+      "size": 14722007,
       "version": "23.0",
       "versions": [
         {
           "version": "23.0",
           "date": "2025-09-01",
-          "size": 14680064,
+          "size": 14722007,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/GoCoEdit_23.0.ipa",
           "localizedDescription": "Fast iOS Remote & Local Code Editor"
         },
         {
           "version": "22.3",
           "date": "2025-04-11",
-          "size": 14680064,
+          "size": 14690549,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/GoCoEdit_22.3.ipa",
           "localizedDescription": "Fast Remote and Local Code Editor"
         }
@@ -405,13 +453,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 494927872,
+      "size": 495777218,
       "version": "0",
       "versions": [
         {
           "version": "0",
           "date": "2025-08-30",
-          "size": 494927872,
+          "size": 495777218,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Deltarune_v727.ipa",
           "localizedDescription": "Deltarune chapter 1-4"
         }
@@ -439,13 +487,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 71303168,
+      "size": 71837941,
       "version": "10.8.0",
       "versions": [
         {
           "version": "10.8.0",
           "date": "2025-08-29",
-          "size": 71303168,
+          "size": 71837941,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/BazaartPremium_10.8.0.ipa",
           "localizedDescription": "Bazaart Premium unlocked"
         }
@@ -475,13 +523,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 25165824,
+      "size": 25333596,
       "version": "1.8.6",
       "versions": [
         {
           "version": "1.8.6",
           "date": "2025-08-20",
-          "size": 25165824,
+          "size": 25333596,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VPN_FAST.ipa",
           "localizedDescription": "Premium unlocked"
         }
@@ -510,13 +558,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 281,
+      "size": 288655,
       "version": "1.01",
       "versions": [
         {
           "version": "1.01",
           "date": "2025-08-19",
-          "size": 281,
+          "size": 288655,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Tasks_Create_Live_Activities.ipa",
           "localizedDescription": "Tasks cracked"
         }
@@ -544,13 +592,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 2097152,
+      "size": 2537553,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2025-08-09",
-          "size": 2097152,
+          "size": 2537553,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ChatGPTw15.ipa",
           "localizedDescription": "ChatGPT for iOS 15!"
         }
@@ -578,13 +626,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 3145728,
+      "size": 3701473,
       "version": "0.0.1",
       "versions": [
         {
           "version": "0.0.1",
           "date": "2025-08-06",
-          "size": 3145728,
+          "size": 3701473,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VoidLink_0.0.1.ipa",
           "localizedDescription": "Enhanced version of Moonlight app."
         }
@@ -614,13 +662,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 13631488,
+      "size": 13841203,
       "version": "2.2.8",
       "versions": [
         {
           "version": "2.2.8",
           "date": "2025-08-05",
-          "size": 13631488,
+          "size": 13841203,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VPN_Proxy_Master.ipa",
           "localizedDescription": "VPN - Proxy Master cracked!"
         }
@@ -649,13 +697,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 5242880,
+      "size": 6039797,
       "version": "1.2.2",
       "versions": [
         {
           "version": "1.2.2",
           "date": "2025-08-04",
-          "size": 5242880,
+          "size": 6039797,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VPN_Freedom.ipa",
           "localizedDescription": "VPN Freedom cracked!"
         }
@@ -683,13 +731,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 2097152,
+      "size": 2243952,
       "version": "1.2.1",
       "versions": [
         {
           "version": "1.2.1",
           "date": "2025-08-03",
-          "size": 2097152,
+          "size": 2243952,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/bitchat_1.2.1.ipa",
           "localizedDescription": "bitchat for iOS 15 and up!"
         }
@@ -719,13 +767,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 101711872,
+      "size": 102341017,
       "version": "1.10.1",
       "versions": [
         {
           "version": "1.10.1",
           "date": "2025-08-02",
-          "size": 101711872,
+          "size": 102341017,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/The_Free_VPN.ipa",
           "localizedDescription": "The Free VPN™ crack!"
         }
@@ -753,13 +801,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 82837504,
+      "size": 83288391,
       "version": "6.05.1",
       "versions": [
         {
           "version": "6.05.1",
           "date": "2025-07-28",
-          "size": 82837504,
+          "size": 83288391,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Vesc_Tool_6.05.1.ipa",
           "localizedDescription": "Configure your VESC Ecosystem"
         }
@@ -787,13 +835,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 79691776,
+      "size": 79754690,
       "version": "4.0.14",
       "versions": [
         {
           "version": "4.0.14",
           "date": "2025-07-20",
-          "size": 79691776,
+          "size": 79754690,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Shark_Arsenal_4.0.14.ipa",
           "localizedDescription": "Control Black Shark gear on iOS"
         }
@@ -821,27 +869,27 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 28311552,
+      "size": 28416409,
       "version": "25.7",
       "versions": [
         {
           "version": "25.7",
           "date": "2025-07-16",
-          "size": 28311552,
+          "size": 28416409,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FileBrowser_Pro_25.7.ipa",
           "localizedDescription": "FileBrowser Pro 25.7"
         },
         {
           "version": "25.6",
           "date": "2025-06-07",
-          "size": 28311552,
+          "size": 28395438,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FileBrowser_Pro_25.6.ipa",
           "localizedDescription": "FileBrowser Pro 25.6"
         },
         {
           "version": "25.5",
           "date": "2025-06-03",
-          "size": 28311552,
+          "size": 28395438,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FileBrowser_Pro_25.5.ipa",
           "localizedDescription": "FileBrowser Pro 25.5"
         }
@@ -869,13 +917,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 29360128,
+      "size": 30125588,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2025-07-14",
-          "size": 29360128,
+          "size": 30125588,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Amethyst_1.0.ipa",
           "localizedDescription": "Minecraft: Java Edition Launcher"
         }
@@ -904,13 +952,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 550,
+      "size": 563496,
       "version": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2025-07-13",
-          "size": 550,
+          "size": 563496,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/bitchat_1.0.0_1752444072.ipa",
           "localizedDescription": "Decentralized Bluetooth mesh chat."
         }
@@ -938,13 +986,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 2147483648,
+      "size": 13371337,
       "version": "1.0.2",
       "versions": [
         {
           "version": "1.0.2",
           "date": "2025-07-12",
-          "size": 2147483648,
+          "size": 13371337,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/LittleNightmares_1.0.2.ipa",
           "localizedDescription": "Play as Six, a lone child trapped in the Maw, a vast metal vessel filled with monstrous adults. Escape before it’s too late."
         }
@@ -972,13 +1020,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 4194304,
+      "size": 4466933,
       "version": "5.8.6",
       "versions": [
         {
           "version": "5.8.6",
           "date": "2025-06-07",
-          "size": 4194304,
+          "size": 4466933,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/SQLiteFlow_5.8.6.ipa",
           "localizedDescription": "SQLiteFlow 5.8.6"
         }
@@ -1006,13 +1054,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 9437184,
+      "size": 9678356,
       "version": "2.4",
       "versions": [
         {
           "version": "2.4",
           "date": "2025-05-22",
-          "size": 9437184,
+          "size": 9678356,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Scrcpy_Remote_2.4.ipa",
           "localizedDescription": "scrcpy for iOS."
         }
@@ -1040,13 +1088,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 123731968,
+      "size": 123742453,
       "version": "1.5.95",
       "versions": [
         {
           "version": "1.5.95",
           "date": "2025-05-20",
-          "size": 123731968,
+          "size": 123742453,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/True_Skate_1.5.95.ipa",
           "localizedDescription": "The ultimate skateboarding sim"
         }
@@ -1074,13 +1122,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 24117248,
+      "size": 24222105,
       "version": "8.5.4",
       "versions": [
         {
           "version": "8.5.4",
           "date": "2025-05-20",
-          "size": 24117248,
+          "size": 24222105,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FTPManager_8.5.4.ipa",
           "localizedDescription": "Fully featured FTP client"
         }
@@ -1108,13 +1156,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 63963136,
+      "size": 64026050,
       "version": "1.0.1",
       "versions": [
         {
           "version": "1.0.1",
           "date": "2025-05-19",
-          "size": 63963136,
+          "size": 64026050,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Stremio_1.0.1-17.ipa",
           "localizedDescription": "Stremio 1.0.1-17"
         }
@@ -1142,62 +1190,62 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 233832448,
+      "size": 234807623,
       "version": "380.0.0",
       "versions": [
         {
           "version": "380.0.0",
           "date": "2025-05-18",
-          "size": 233832448,
+          "size": 234807623,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Theta_1.5.ipa",
           "localizedDescription": "Instagram tweak by objc_msgSend"
         },
         {
           "version": "370.0.0",
           "date": "2025-03-11",
-          "size": 205520896,
+          "size": 206181498,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Theta_1_4.ipa",
           "localizedDescription": "Instagram tweak by objc_msgSend"
         },
         {
           "version": "351.0.1",
           "date": "2024-10-03",
-          "size": 173015040,
+          "size": 174011187,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Regram_1.0-b10_351.0.1.ipa",
           "localizedDescription": "Regram cracked by Sezo"
         },
         {
           "version": "347.2.5",
           "date": "2024-09-05",
-          "size": 158334976,
+          "size": 159205294,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Regram_1.0-b10_347.2.5.ipa",
           "localizedDescription": "Regram cracked by Sezo"
         },
         {
           "version": "343.0.0",
           "date": "2024-08-05",
-          "size": 159383552,
+          "size": 159666667,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Regram_1.0-b8_343.0.0.ipa",
           "localizedDescription": "Regram 1.0-b8 cracked"
         },
         {
           "version": "338.0.0",
           "date": "2024-07-02",
-          "size": 159383552,
+          "size": 160117555,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/IGRocketRegram_1.0-b7_338.0.0.ipa",
           "localizedDescription": "Rocket3.8.27 Regram1.0-b7 CBZ crack"
         },
         {
           "version": "335.1.8",
           "date": "2024-06-14",
-          "size": 136314880,
+          "size": 136367308,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Regram_1.0-b7_335.1.8.ipa",
           "localizedDescription": "Regram 1.0-b7 cracked by CBZ"
         },
         {
           "version": "335.0.8",
           "date": "2024-06-12",
-          "size": 150994944,
+          "size": 151739432,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Regram_1.0-b7_335.0.8.ipa",
           "localizedDescription": "Regram 1.0-b7 cracked by CBZ"
         }
@@ -1225,13 +1273,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 16777216,
+      "size": 16850616,
       "version": "2.1.0",
       "versions": [
         {
           "version": "2.1.0",
           "date": "2025-05-17",
-          "size": 16777216,
+          "size": 16850616,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/UniversalPaperclips.ipa",
           "localizedDescription": "Classic clicker"
         }
@@ -1259,13 +1307,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 183500800,
+      "size": 184538890,
       "version": "4.4.2",
       "versions": [
         {
           "version": "4.4.2",
           "date": "2025-05-17",
-          "size": 183500800,
+          "size": 184538890,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Pokecut_4.4.2.ipa",
           "localizedDescription": "Pokecut Max for free."
         }
@@ -1293,13 +1341,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 68157440,
+      "size": 69048729,
       "version": "14.7.3",
       "versions": [
         {
           "version": "14.7.3",
           "date": "2025-05-16",
-          "size": 68157440,
+          "size": 69048729,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ProCam_14.7.3.ipa",
           "localizedDescription": "Best premium all-in-one camera app."
         }
@@ -1327,13 +1375,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 31457280,
+      "size": 31604080,
       "version": "2.0.7",
       "versions": [
         {
           "version": "2.0.7",
           "date": "2025-05-05",
-          "size": 31457280,
+          "size": 31604080,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/maid2_0_7.ipa",
           "localizedDescription": "Cross-platform Flutter ai app"
         }
@@ -1361,13 +1409,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 65011712,
+      "size": 65556971,
       "version": "1.8.5",
       "versions": [
         {
           "version": "1.8.5",
           "date": "2025-05-04",
-          "size": 65011712,
+          "size": 65556971,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Ignited_1.8.5.ipa",
           "localizedDescription": "Ignited v1.8.5 for iOS 15"
         }
@@ -1395,48 +1443,48 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 83886080,
+      "size": 84190167,
       "version": "9.0.36",
       "versions": [
         {
           "version": "9.0.36",
           "date": "2025-04-30",
-          "size": 83886080,
+          "size": 84190167,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/EeveeSpotify-5.9.5-9.0.36.ipa",
           "localizedDescription": "EeveeSpotify-5.9.5-9.0.36"
         },
         {
           "version": "9.0.26",
           "date": "2025-03-13",
-          "size": 83886080,
+          "size": 84211138,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/EeveeSpotify-5.8.8-9.0.26.ipa",
           "localizedDescription": "EeveeSpotify-5.8.8-9.0.26"
         },
         {
           "version": "9.0.14",
           "date": "2025-02-02",
-          "size": 81788928,
+          "size": 82281758,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/EeveeSpotify-5.8.6-9.0.14.ipa",
           "localizedDescription": "Spotify Premium for free"
         },
         {
           "version": "8.9.90",
           "date": "2024-11-14",
-          "size": 80740352,
+          "size": 81243668,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/EeveeSpotify-5.8-8.9.90.ipa",
           "localizedDescription": ""
         },
         {
           "version": "8.9.68",
           "date": "2024-08-27",
-          "size": 77594624,
+          "size": 78475427,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/EeveeSpotify-4.9-8.9.68.ipa",
           "localizedDescription": "EeveeSpotify-4.9-8.9.68"
         },
         {
           "version": "8.6.94",
           "date": "2024-01-15",
-          "size": 37748736,
+          "size": 38681968,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Spotify++8.6.94_CyPwn.ipa",
           "localizedDescription": "Spotify++ 8.6.94 | CyPwn edition"
         }
@@ -1464,13 +1512,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 60817408,
+      "size": 61708697,
       "version": "1.0.1o",
       "versions": [
         {
           "version": "1.0.1o",
           "date": "2025-04-24",
-          "size": 60817408,
+          "size": 61708697,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Balatro_1.0.1o.ipa",
           "localizedDescription": "Balatro_1.0.1o"
         }
@@ -1498,60 +1546,19 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 58720256,
+      "size": 59422801,
       "version": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2025-04-22",
-          "size": 58720256,
+          "size": 59422801,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/CrazyCattle3D_1.0.0.ipa",
           "localizedDescription": "Crazy Cattle 3D Battle Royale"
         }
       ],
       "versionDate": "2025-04-22",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/CrazyCattle3D_1.0.0.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Gopeed_1.7.0",
-      "type": 1,
-      "bundleIdentifier": "com.gopeed.gopeed",
-      "developerName": "Gopeed_1.7.0 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "A modern download manager",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Gopeed_1.7.0.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Gopeed_1.7.0/Gopeed_1.7.0-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 38797312,
-      "version": "1.7.0",
-      "versions": [
-        {
-          "version": "1.7.0",
-          "date": "2025-04-18",
-          "size": 38797312,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed_1.7.0.ipa",
-          "localizedDescription": "A modern download manager"
-        },
-        {
-          "version": "1.6.10",
-          "date": "2025-03-11",
-          "size": 37748736,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed_1.6.10.ipa",
-          "localizedDescription": "A modern download manager."
-        }
-      ],
-      "versionDate": "2025-04-18",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed_1.7.0.ipa",
       "patreon": {}
     },
     {
@@ -1573,20 +1580,20 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 233832448,
+      "size": 234409164,
       "version": "4.7.7",
       "versions": [
         {
           "version": "4.7.7",
           "date": "2025-04-05",
-          "size": 233832448,
+          "size": 234409164,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FL_Studio_Mobile_4.7.7_SatellaJailed.ipa",
           "localizedDescription": "FL Studio Mobile 4.7.7 Satella"
         },
         {
           "version": "4.7.2",
           "date": "2025-02-24",
-          "size": 233832448,
+          "size": 234388193,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FL_Studio_Mobile_4.7.2_Patched.ipa",
           "localizedDescription": "FL Studio Mobile 4.7.2 w/ Satella"
         }
@@ -1614,20 +1621,20 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 16777216,
+      "size": 17196646,
       "version": "8.42.0",
       "versions": [
         {
           "version": "8.42.0",
           "date": "2025-04-05",
-          "size": 16777216,
+          "size": 17196646,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Photomath_8.42.0.ipa",
           "localizedDescription": "Photomath 8.42.0 Cracked"
         },
         {
           "version": "8.35.0",
           "date": "2024-04-16",
-          "size": 14680064,
+          "size": 15403581,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PhotoMathPlus_8.35.0.ipa",
           "localizedDescription": "Photomath Plus cracked"
         }
@@ -1657,13 +1664,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 3145728,
+      "size": 3722444,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2025-03-31",
-          "size": 3145728,
+          "size": 3722444,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/iTransmission.ipa",
           "localizedDescription": "Another torrent client for iOS."
         }
@@ -1691,13 +1698,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 127926272,
+      "size": 128461045,
       "version": "3.0.10",
       "versions": [
         {
           "version": "3.0.10",
           "date": "2025-03-28",
-          "size": 127926272,
+          "size": 128461045,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/LumaFusion_3.0.10_iOS_15.0.ipa",
           "localizedDescription": "LumaFusion 3.0.10"
         }
@@ -1725,20 +1732,20 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 854,
+      "size": 875048,
       "version": "7.1",
       "versions": [
         {
           "version": "7.1",
           "date": "2025-03-16",
-          "size": 854,
+          "size": 875048,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/CyPwnStore_7.1.ipa",
           "localizedDescription": "Download CyPwn Debs and Apps easily"
         },
         {
           "version": "7.0",
           "date": "2023-06-13",
-          "size": 893,
+          "size": 914688,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/CyPwn_Store.ipa",
           "localizedDescription": "CyPwn Store v7. Download Debs and IPAs from CyPwn directly from the App."
         }
@@ -1766,13 +1773,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 24117248,
+      "size": 24798822,
       "version": "6.2.1",
       "versions": [
         {
           "version": "6.2.1",
           "date": "2025-03-13",
-          "size": 24117248,
+          "size": 24798822,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Remoter_Pro_6.2.1.ipa",
           "localizedDescription": "A powerful remote desktop client."
         }
@@ -1800,13 +1807,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 10485760,
+      "size": 11335106,
       "version": "4.12.11",
       "versions": [
         {
           "version": "4.12.11",
           "date": "2025-03-13",
-          "size": 10485760,
+          "size": 11335106,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Screens_4.12.11.ipa",
           "localizedDescription": "Take control of your computers."
         }
@@ -1834,13 +1841,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 28311552,
+      "size": 28405923,
       "version": "9.8.0",
       "versions": [
         {
           "version": "9.8.0",
           "date": "2025-03-12",
-          "size": 28311552,
+          "size": 28405923,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Jump_9.8.0.ipa",
           "localizedDescription": "RDP and VNC application"
         }
@@ -1868,13 +1875,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 157286400,
+      "size": 157905059,
       "version": "1.0713",
       "versions": [
         {
           "version": "1.0713",
           "date": "2025-03-12",
-          "size": 157286400,
+          "size": 157905059,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Age_of_History_II_Europe_1.0713.ipa",
           "localizedDescription": "Age of History II Europe"
         }
@@ -1902,13 +1909,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 13631488,
+      "size": 14501806,
       "version": "1.5.19",
       "versions": [
         {
           "version": "1.5.19",
           "date": "2025-02-25",
-          "size": 13631488,
+          "size": 14501806,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/fGet_1.5.19_NoAds.ipa",
           "localizedDescription": "Fast file downloader/manager"
         }
@@ -1936,13 +1943,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 19922944,
+      "size": 20908605,
       "version": "1.5.0",
       "versions": [
         {
           "version": "1.5.0",
           "date": "2025-02-25",
-          "size": 19922944,
+          "size": 20908605,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/atvTools_1.5.0.ipa",
           "localizedDescription": "Must-have app for Android/Google TV"
         }
@@ -1970,13 +1977,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 594,
+      "size": 608389,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2025-02-25",
-          "size": 594,
+          "size": 608389,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Notepad-_1.0.ipa",
           "localizedDescription": "A convenient coding notepad for iOS"
         }
@@ -2038,13 +2045,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 8388608,
+      "size": 8671723,
       "version": "9.9.3",
       "versions": [
         {
           "version": "9.9.3",
           "date": "2025-01-28",
-          "size": 8388608,
+          "size": 8671723,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Textastic_9.9.3.ipa",
           "localizedDescription": "Advanced code editor for iPhone"
         }
@@ -2072,13 +2079,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 493,
+      "size": 505149,
       "version": "0.1",
       "versions": [
         {
           "version": "0.1",
           "date": "2025-01-24",
-          "size": 493,
+          "size": 505149,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/TS.Notes_0.1.ipa",
           "localizedDescription": "Simple and intuitive notes app."
         }
@@ -2107,13 +2114,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 34603008,
+      "size": 35347496,
       "version": "3.11.4",
       "versions": [
         {
           "version": "3.11.4",
           "date": "2025-01-06",
-          "size": 34603008,
+          "size": 35347496,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Picsew_3.11.4_Pro.ipa",
           "localizedDescription": "Screenshot stitching tool"
         }
@@ -2141,13 +2148,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 190840832,
+      "size": 191197347,
       "version": "13.1.0",
       "versions": [
         {
           "version": "13.1.0",
           "date": "2024-12-30",
-          "size": 190840832,
+          "size": 191197347,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/iota6.0-13.1.0.ipa",
           "localizedDescription": "Read the full description first!"
         }
@@ -2177,13 +2184,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 1048576,
+      "size": 1279262,
       "version": "1.4.2",
       "versions": [
         {
           "version": "1.4.2",
           "date": "2024-11-22",
-          "size": 1048576,
+          "size": 1279262,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Violyn_1.4.2.ipa",
           "localizedDescription": "Search and download from CyDown"
         }
@@ -2211,13 +2218,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 6291456,
+      "size": 6773800,
       "version": "1.7.2",
       "versions": [
         {
           "version": "1.7.2",
           "date": "2024-10-27",
-          "size": 6291456,
+          "size": 6773800,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/TransparentIcons_1.7.2.ipa",
           "localizedDescription": "Transparent App Icons"
         }
@@ -2245,13 +2252,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 104857600,
+      "size": 105056829,
       "version": "6.1.3",
       "versions": [
         {
           "version": "6.1.3",
           "date": "2024-10-05",
-          "size": 104857600,
+          "size": 105056829,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/CarrotPremium_6.1.3.ipa",
           "localizedDescription": "Carrot Premium Ultra membership"
         }
@@ -2279,13 +2286,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 59768832,
+      "size": 60156805,
       "version": "7.1.2",
       "versions": [
         {
           "version": "7.1.2",
           "date": "2024-10-05",
-          "size": 59768832,
+          "size": 60156805,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/GeniePro_7.1.2.ipa",
           "localizedDescription": "Genie Al Chat Pro crack by Blatant"
         }
@@ -2313,13 +2320,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 111149056,
+      "size": 111914516,
       "version": "7.37.1",
       "versions": [
         {
           "version": "7.37.1",
           "date": "2024-09-13",
-          "size": 111149056,
+          "size": 111914516,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/DuolingoMax_7.37.1.ipa",
           "localizedDescription": "Duolingo Max unlocked"
         }
@@ -2347,13 +2354,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 11534336,
+      "size": 12016680,
       "version": "20.1",
       "versions": [
         {
           "version": "20.1",
           "date": "2024-08-14",
-          "size": 11534336,
+          "size": 12016680,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Alook_Browser_20.1.ipa",
           "localizedDescription": "Ayy look, a browser!"
         }
@@ -2381,13 +2388,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 69206016,
+      "size": 69698846,
       "version": "3.19",
       "versions": [
         {
           "version": "3.19",
           "date": "2024-08-11",
-          "size": 69206016,
+          "size": 69698846,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/WallcraftPro_3.19.ipa",
           "localizedDescription": "Wallcraft Wallpapers Pro unlocked"
         }
@@ -2415,13 +2422,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 28311552,
+      "size": 29213327,
       "version": "3.9.6",
       "versions": [
         {
           "version": "3.9.6",
           "date": "2024-08-09",
-          "size": 28311552,
+          "size": 29213327,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Phantom_VPN_3.9.6_PhantomReset.ipa",
           "localizedDescription": "Phantom VPN with PhantomReset"
         }
@@ -2449,13 +2456,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 239075328,
+      "size": 239809331,
       "version": "1.82.1",
       "versions": [
         {
           "version": "1.82.1",
           "date": "2024-08-07",
-          "size": 239075328,
+          "size": 239809331,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VlogNow_1.82.1_Cracked.ipa",
           "localizedDescription": "VlogNow_1.82.1_Cracked"
         }
@@ -2483,27 +2490,27 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 103809024,
+      "size": 104417198,
       "version": "25.5.1",
       "versions": [
         {
           "version": "25.5.1",
           "date": "2024-08-07",
-          "size": 103809024,
+          "size": 104417198,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Picsart_25.5.1_Cracked.ipa",
           "localizedDescription": "Picsart_25.5.1_Cracked"
         },
         {
           "version": "25.4.2",
           "date": "2024-08-03",
-          "size": 113246208,
+          "size": 113393008,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Picsart_25.4.2_Premium.ipa",
           "localizedDescription": "Picsart_25.4.2_Premium"
         },
         {
           "version": "25.1.2",
           "date": "2024-06-13",
-          "size": 101711872,
+          "size": 102299074,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PicsArt_25.1.2.ipa",
           "localizedDescription": "PicsArt Premium for free!"
         }
@@ -2531,13 +2538,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 136314880,
+      "size": 136870625,
       "version": "12.0",
       "versions": [
         {
           "version": "12.0",
           "date": "2024-08-07",
-          "size": 136314880,
+          "size": 136870625,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/CapCut_12.0_Cracked.ipa",
           "localizedDescription": "CapCut_12.0_Cracked"
         }
@@ -2565,13 +2572,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 9437184,
+      "size": 10297016,
       "version": "3.13.15",
       "versions": [
         {
           "version": "3.13.15",
           "date": "2024-07-28",
-          "size": 9437184,
+          "size": 10297016,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/HelloWeatherVIP_3.13.6.ipa",
           "localizedDescription": "HelloWeather VIP Lifetime by Sultan"
         }
@@ -2599,13 +2606,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 19922944,
+      "size": 20006830,
       "version": "1.2",
       "versions": [
         {
           "version": "1.2",
           "date": "2024-07-28",
-          "size": 19922944,
+          "size": 20006830,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VidList_1.2.ipa",
           "localizedDescription": "NSFW"
         }
@@ -2635,13 +2642,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 74448896,
+      "size": 74941726,
       "version": "7.0.0",
       "versions": [
         {
           "version": "7.0.0",
           "date": "2024-07-11",
-          "size": 74448896,
+          "size": 74941726,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/AIChatSmithPremium-7.0.0.ipa",
           "localizedDescription": "Premium OpenAI GPT-4o app!"
         }
@@ -2669,13 +2676,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 7340032,
+      "size": 8042577,
       "version": "5.0.0",
       "versions": [
         {
           "version": "5.0.0",
           "date": "2024-07-10",
-          "size": 7340032,
+          "size": 8042577,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ESign_5.0_noLogs_V1.1.ipa",
           "localizedDescription": "IPA signer, tweak injector"
         }
@@ -2703,13 +2710,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 30408704,
+      "size": 30565990,
       "version": "5.2.176",
       "versions": [
         {
           "version": "5.2.176",
           "date": "2024-07-10",
-          "size": 30408704,
+          "size": 30565990,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Haaretz_Heb_Unlocked.ipa",
           "localizedDescription": "The Haaretz iPhone app"
         }
@@ -2737,13 +2744,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 17825792,
+      "size": 17836277,
       "version": "5.60",
       "versions": [
         {
           "version": "5.60",
           "date": "2024-07-10",
-          "size": 17825792,
+          "size": 17836277,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Haaretz_Eng_Unlocked.ipa",
           "localizedDescription": "The Haaretz iPhone app"
         }
@@ -2771,13 +2778,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 16777216,
+      "size": 17490247,
       "version": "4.2.52",
       "versions": [
         {
           "version": "4.2.52",
           "date": "2024-07-10",
-          "size": 16777216,
+          "size": 17490247,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/TheMarker_Heb_Unlocked.ipa",
           "localizedDescription": "Hebrew-language daily business news"
         }
@@ -2805,27 +2812,27 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 188743680,
+      "size": 189079224,
       "version": "3.9.12",
       "versions": [
         {
           "version": "3.9.12",
           "date": "2024-07-08",
-          "size": 188743680,
+          "size": 189079224,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Spark_3.9.12.ipa",
           "localizedDescription": "Injected with premium!"
         },
         {
           "version": "3.9.11",
           "date": "2024-07-05",
-          "size": 188743680,
+          "size": 189058252,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Spark_3.9.11.ipa",
           "localizedDescription": "Injected with premium!"
         },
         {
           "version": "3.9.2",
           "date": "2024-05-07",
-          "size": 97517568,
+          "size": 97706311,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Spark_3.9.2.ipa",
           "localizedDescription": "Spark Premium for free!"
         }
@@ -2858,13 +2865,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 0,
+      "size": 964689,
       "version": "2.1",
       "versions": [
         {
           "version": "2.1",
           "date": "2024-07-07",
-          "size": 0,
+          "size": 964689,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Climax.ipa",
           "localizedDescription": "A long awaited rewrite for Climax"
         }
@@ -2892,13 +2899,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 111149056,
+      "size": 111505571,
       "version": "2.93",
       "versions": [
         {
           "version": "2.93",
           "date": "2024-07-07",
-          "size": 111149056,
+          "size": 111505571,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/callrecorder.ipa",
           "localizedDescription": "Call Recorder with Premium hacked"
         }
@@ -2926,13 +2933,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 101711872,
+      "size": 101732843,
       "version": "2024.2.6",
       "versions": [
         {
           "version": "2024.2.6",
           "date": "2024-07-01",
-          "size": 101711872,
+          "size": 101732843,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/trailforks_hacked.ipa",
           "localizedDescription": "Trailforks: Offline Bike Maps"
         }
@@ -2960,13 +2967,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 1048576,
+      "size": 1059061,
       "version": "1.0.2",
       "versions": [
         {
           "version": "1.0.2",
           "date": "2024-06-14",
-          "size": 1048576,
+          "size": 1059061,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/CAPerfHUDSwift.ipa",
           "localizedDescription": "CAPerfHUD alternative."
         }
@@ -2994,13 +3001,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 54525952,
+      "size": 55144611,
       "version": "5.4.0",
       "versions": [
         {
           "version": "5.4.0",
           "date": "2024-06-04",
-          "size": 54525952,
+          "size": 55144611,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Speedtest_VPN_Premium_5.4.0.ipa",
           "localizedDescription": "Premium unlimited VPN"
         }
@@ -3062,20 +3069,20 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 34603008,
+      "size": 35064381,
       "version": "6.48.0",
       "versions": [
         {
           "version": "6.48.0",
           "date": "2024-05-10",
-          "size": 34603008,
+          "size": 35064381,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Mimo_6.48.0_Premium.ipa",
           "localizedDescription": "Injected with premium!"
         },
         {
           "version": "6.43.0",
           "date": "2024-04-02",
-          "size": 39845888,
+          "size": 39982202,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/MimoPro_6.43.ipa",
           "localizedDescription": "Mimo v6.43.0 - Pro unlocked!"
         }
@@ -3103,13 +3110,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 92274688,
+      "size": 93228892,
       "version": "1.6.2",
       "versions": [
         {
           "version": "1.6.2",
           "date": "2024-05-06",
-          "size": 92274688,
+          "size": 93228892,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Nicegram_1.6.2.ipa",
           "localizedDescription": "Nicegram Premium for free!"
         }
@@ -3137,13 +3144,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 85983232,
+      "size": 86717235,
       "version": "1.5.6",
       "versions": [
         {
           "version": "1.5.6",
           "date": "2024-04-30",
-          "size": 85983232,
+          "size": 86717235,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Gopeed_1.5.6.ipa",
           "localizedDescription": "A modern download manager."
         }
@@ -3171,20 +3178,20 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 100,
+      "size": 103362,
       "version": "2.0",
       "versions": [
         {
           "version": "2.0",
           "date": "2024-04-20",
-          "size": 100,
+          "size": 103362,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/LiveContainer_2.0.ipa",
           "localizedDescription": "Run apps without installing them!"
         },
         {
           "version": "1.0",
           "date": "2024-03-13",
-          "size": 84,
+          "size": 86743,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/LiveContainer_1.0.ipa",
           "localizedDescription": "Run unsigned iOS apps!"
         }
@@ -3212,13 +3219,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 69,
+      "size": 71536,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2024-04-19",
-          "size": 69,
+          "size": 71536,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/BundleReader.ipa",
           "localizedDescription": "See ipa contents"
         }
@@ -3246,13 +3253,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 75,
+      "size": 77445,
       "version": "1.00",
       "versions": [
         {
           "version": "1.00",
           "date": "2024-04-17",
-          "size": 75,
+          "size": 77445,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/APNS_Demo.ipa",
           "localizedDescription": "SwiftUI app to test notifications."
         }
@@ -3283,13 +3290,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 112197632,
+      "size": 113088921,
       "version": "9.17.0",
       "versions": [
         {
           "version": "9.17.0",
           "date": "2024-02-09",
-          "size": 112197632,
+          "size": 113088921,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Flightradar24_9.17.0.ipa",
           "localizedDescription": "FlightRadar24 Gold Subscription"
         }
@@ -3317,13 +3324,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 90177536,
+      "size": 90271907,
       "version": "2.0.12",
       "versions": [
         {
           "version": "2.0.12",
           "date": "2024-01-10",
-          "size": 90177536,
+          "size": 90271907,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/GameSeagull.ipa",
           "localizedDescription": "GamePigeon Hacks!"
         }
@@ -3351,13 +3358,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 27262976,
+      "size": 27640463,
       "version": "1.10.1",
       "versions": [
         {
           "version": "1.10.1",
           "date": "2024-01-01",
-          "size": 27262976,
+          "size": 27640463,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ToonSquid_1.10.1_ipa.store.ipa",
           "localizedDescription": "ToonSquid"
         }
@@ -3385,13 +3392,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 57671680,
+      "size": 58290339,
       "version": "4.100.0",
       "versions": [
         {
           "version": "4.100.0",
           "date": "2023-12-23",
-          "size": 57671680,
+          "size": 58290339,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/WazePlus_4.100.0.ipa",
           "localizedDescription": "A better way to Waze"
         }
@@ -3419,13 +3426,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 2097152,
+      "size": 3030384,
       "version": "2.27",
       "versions": [
         {
           "version": "2.27",
           "date": "2023-12-01",
-          "size": 2097152,
+          "size": 3030384,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/NFC_Tools_2.27.ipa",
           "localizedDescription": "Free Pro (Satella)"
         }
@@ -3455,13 +3462,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 75497472,
+      "size": 76514590,
       "version": "10.00.0",
       "versions": [
         {
           "version": "10.00.0",
           "date": "2023-11-18",
-          "size": 75497472,
+          "size": 76514590,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/EzFN-10.0.ipa",
           "localizedDescription": "EZFN Season X leak"
         }
@@ -3489,13 +3496,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 68157440,
+      "size": 68975329,
       "version": "0.5",
       "versions": [
         {
           "version": "0.5",
           "date": "2023-10-18",
-          "size": 68157440,
+          "size": 68975329,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/com.mysterytag.cryptominer.ipa",
           "localizedDescription": "Free iAP - SatellaJailed"
         }
@@ -3523,13 +3530,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 13631488,
+      "size": 14281605,
       "version": "2.0.6",
       "versions": [
         {
           "version": "2.0.6",
           "date": "2023-10-12",
-          "size": 13631488,
+          "size": 14281605,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Amen_Break_Generator-2.0.6.ipa",
           "localizedDescription": "drum loops sampled and remixed"
         }
@@ -3557,13 +3564,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 15728640,
+      "size": 15770583,
       "version": "2023.1.1",
       "versions": [
         {
           "version": "2023.1.1",
           "date": "2023-09-30",
-          "size": 15728640,
+          "size": 15770583,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/playSub_2023.1.1.ipa",
           "localizedDescription": "Delightful Subsonic Music Client"
         }
@@ -3595,13 +3602,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 3145728,
+      "size": 3795845,
       "version": "2.0",
       "versions": [
         {
           "version": "2.0",
           "date": "2023-08-26",
-          "size": 3145728,
+          "size": 3795845,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Picasso_v2_Beta_5.ipa",
           "localizedDescription": "Picasso v2 cracked for MDC users."
         }
@@ -3629,13 +3636,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 1048576,
+      "size": 1698693,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2023-08-03",
-          "size": 1048576,
+          "size": 1698693,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PropCashapp.ipa",
           "localizedDescription": "Fake CashApp for prop use"
         }
@@ -3666,13 +3673,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 72351744,
+      "size": 72582430,
       "version": "16.3",
       "versions": [
         {
           "version": "16.3",
           "date": "2023-07-16",
-          "size": 72351744,
+          "size": 72582430,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ProCamera.ipa",
           "localizedDescription": "ProCamera… fo free!"
         }
@@ -3700,13 +3707,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 42991616,
+      "size": 43432017,
       "version": "7.5.8",
       "versions": [
         {
           "version": "7.5.8",
           "date": "2023-07-12",
-          "size": 42991616,
+          "size": 43432017,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Suffuse3.ipa",
           "localizedDescription": "Infuse 7 with Pro unlocked"
         }
@@ -3734,13 +3741,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 92274688,
+      "size": 92589260,
       "version": "1.15.11",
       "versions": [
         {
           "version": "1.15.11",
           "date": "2023-07-05",
-          "size": 92274688,
+          "size": 92589260,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Apollo_1.15.11+Artemis1.3.ipa",
           "localizedDescription": "Apollo aint dead"
         }
@@ -3770,13 +3777,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 13631488,
+      "size": 14648606,
       "version": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2023-06-25",
-          "size": 13631488,
+          "size": 14648606,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Dystopia.ipa",
           "localizedDescription": "Alternative to Apollo for Reddit"
         }
@@ -3804,13 +3811,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 56623104,
+      "size": 57220792,
       "version": "6.03.1",
       "versions": [
         {
           "version": "6.03.1",
           "date": "2023-05-26",
-          "size": 56623104,
+          "size": 57220792,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/YTMusicUltimate_v1.4.1_YTM6.03.1.ipa",
           "localizedDescription": "YTMusicUltimate 1.4.1 by Ginsu. Premium features unlocked."
         }
@@ -3838,13 +3845,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 5242880,
+      "size": 5253365,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2023-04-20",
-          "size": 5242880,
+          "size": 5253365,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/RaceControlF1.ipa",
           "localizedDescription": "Comprehensive F1 App"
         }
@@ -3872,13 +3879,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 24117248,
+      "size": 24410849,
       "version": "1.1.5",
       "versions": [
         {
           "version": "1.1.5",
           "date": "2023-04-08",
-          "size": 24117248,
+          "size": 24410849,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/AppDB_1.1.5.ipa",
           "localizedDescription": "A fully-featured iOS client for appdb.to written in Swift 5."
         }
@@ -3910,13 +3917,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 14680064,
+      "size": 15225323,
       "version": "1.124",
       "versions": [
         {
           "version": "1.124",
           "date": "2023-03-31",
-          "size": 14680064,
+          "size": 15225323,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PeriodicTablePRO_1.124.ipa",
           "localizedDescription": "Chemistry in your phone!"
         }
@@ -3944,13 +3951,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 585,
+      "size": 599193,
       "version": "1.1.0",
       "versions": [
         {
           "version": "1.1.0",
           "date": "2023-03-30",
-          "size": 585,
+          "size": 599193,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Whitelist.ipa",
           "localizedDescription": "Jailed iOS app to un-blacklist all enterprise-signed apps"
         }
@@ -3980,13 +3987,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 11534336,
+      "size": 11817451,
       "version": "1.1.0",
       "versions": [
         {
           "version": "1.1.0",
           "date": "2023-03-25",
-          "size": 11534336,
+          "size": 11817451,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/DramaFlix_1.1.0.ipa",
           "localizedDescription": "Movie app"
         }
@@ -4016,13 +4023,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 20971520,
+      "size": 21558722,
       "version": "10.0.0",
       "versions": [
         {
           "version": "10.0.0",
           "date": "2023-03-23",
-          "size": 20971520,
+          "size": 21558722,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Cowabunga10.ipa",
           "localizedDescription": "OS 14.0-15.7.1 & 16.0-16.1.2 MacDirtyCow ToolBox\r\n\r\n**Latest release as of 3/23**"
         }
@@ -4050,13 +4057,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 937426944,
+      "size": 937626173,
       "version": "3.2.2",
       "versions": [
         {
           "version": "3.2.2",
           "date": "2023-03-11",
-          "size": 937426944,
+          "size": 937626173,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Dead_Cells_plus_v3.2.2.ipa",
           "localizedDescription": "Death is not the end.."
         }
@@ -4084,13 +4091,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 84934656,
+      "size": 85238743,
       "version": "21.8.6",
       "versions": [
         {
           "version": "21.8.6",
           "date": "2023-03-11",
-          "size": 84934656,
+          "size": 85238743,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PicsArtGold_21.8.6.ipa",
           "localizedDescription": "Picsart Gold Subscription"
         }
@@ -4121,13 +4128,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 300941312,
+      "size": 301570457,
       "version": "b0.8.5",
       "versions": [
         {
           "version": "b0.8.5",
           "date": "2023-02-20",
-          "size": 300941312,
+          "size": 301570457,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PelletDodge.ipa",
           "localizedDescription": "This version is obsolete.\nPlease use the TestFlight version:\nhttps://testflight.apple.com/join/NmEZZ8xp\nPellet Dodge is a simple, yet challenging game where you must dash through over 40 levels to save your friend, who’s being used as power for something more sinister. Developed by MysticalDevelopers, one of our fellow jailbreaker’s (Evil Monkey) very own son, Lag!"
         }
@@ -4155,13 +4162,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 132120576,
+      "size": 132760207,
       "version": "401.0",
       "versions": [
         {
           "version": "401.0",
           "date": "2023-02-11",
-          "size": 132120576,
+          "size": 132760207,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FacebookNoAds_401.0.ipa",
           "localizedDescription": "Free & Open Source Tweak for Facebook https:// github.com/haoict/facebook-no-ads/releases. Features:- Remove Ads - Download Video (long press to download) - Download Story - Download Profile Picture - Disable Story Seen - Hide Composer on News Feed - Hide Stories on News Feed"
         }
@@ -4189,13 +4196,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 55574528,
+      "size": 56025415,
       "version": "6.16.1",
       "versions": [
         {
           "version": "6.16.1",
           "date": "2023-02-10",
-          "size": 55574528,
+          "size": 56025415,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/DarkCloud_6.16.1.ipa",
           "localizedDescription": "SoundCloud w/ DarkCloud by CodeyMoore"
         }
@@ -4225,13 +4232,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 5242880,
+      "size": 5347737,
       "version": "1.10.7-1",
       "versions": [
         {
           "version": "1.10.7-1",
           "date": "2023-02-03",
-          "size": 5242880,
+          "size": 5347737,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/WDBFontOverwrite.ipa",
           "localizedDescription": "Proof-of-concept app to overwrite fonts on iOS 16.1.2 and below using CVE-2022-46689."
         }
@@ -4259,13 +4266,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 331,
+      "size": 339435,
       "version": "1.1",
       "versions": [
         {
           "version": "1.1",
           "date": "2023-01-30",
-          "size": 331,
+          "size": 339435,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/KillMyOTA-1.1.ipa",
           "localizedDescription": "OTA Killer for iOS 15.0 - 16.1.2."
         }
@@ -4293,13 +4300,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 13631488,
+      "size": 14648606,
       "version": "3.7",
       "versions": [
         {
           "version": "3.7",
           "date": "2023-01-30",
-          "size": 13631488,
+          "size": 14648606,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FilzaEscaped16.ipa",
           "localizedDescription": "FilzaEscaped16"
         }
@@ -4327,13 +4334,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 4194304,
+      "size": 4791992,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2023-01-29",
-          "size": 4194304,
+          "size": 4791992,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/SantanderEscaped-0.3.ipa",
           "localizedDescription": "A new, enhanced File Manager for iOS devices with the tccd exploit for full file access."
         }
@@ -4361,13 +4368,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 20971520,
+      "size": 21904752,
       "version": "0.31.0",
       "versions": [
         {
           "version": "0.31.0",
           "date": "2023-01-23",
-          "size": 20971520,
+          "size": 21904752,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/BeReal_0.31.0.ipa",
           "localizedDescription": "BeRealUnBlur"
         }
@@ -4395,13 +4402,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 9437184,
+      "size": 9510584,
       "version": "2.0.23",
       "versions": [
         {
           "version": "2.0.23",
           "date": "2023-01-20",
-          "size": 9437184,
+          "size": 9510584,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Ally_2.0.23.ipa",
           "localizedDescription": "Amiibo diary. Amiibo maker."
         }
@@ -4429,13 +4436,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 12582912,
+      "size": 13505658,
       "version": "1.0.1",
       "versions": [
         {
           "version": "1.0.1",
           "date": "2023-01-11",
-          "size": 12582912,
+          "size": 13505658,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Keka_1.0.1.ipa",
           "localizedDescription": "The file archiver"
         }
@@ -4464,13 +4471,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 4194304,
+      "size": 5012193,
       "version": "1.5.1",
       "versions": [
         {
           "version": "1.5.1",
           "date": "2023-01-08",
-          "size": 4194304,
+          "size": 5012193,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/McClockface.1.5.1.ipa",
           "localizedDescription": "Add beautiful timepiece widgets to your home screen with McClockface."
         }
@@ -4498,13 +4505,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 16777216,
+      "size": 17249075,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2022-12-31",
-          "size": 16777216,
+          "size": 17249075,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Naiad.ipa",
           "localizedDescription": "Offline, high-resolution AI image generation"
         }
@@ -4566,13 +4573,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 19922944,
+      "size": 20950548,
       "version": "3.5",
       "versions": [
         {
           "version": "3.5",
           "date": "2022-11-30",
-          "size": 19922944,
+          "size": 20950548,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Sonic_3.5.ipa",
           "localizedDescription": "Sonic Tone Generator cracked. Eject water from your speakers and more!"
         }
@@ -4600,13 +4607,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 593,
+      "size": 607805,
       "version": "1.8",
       "versions": [
         {
           "version": "1.8",
           "date": "2022-11-27",
-          "size": 593,
+          "size": 607805,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Summon_1.8_Satella.ipa",
           "localizedDescription": "Open Links in Apps! An ultra-efficient Safari Extension that helps you opens sites in app. Choose between over 200+ apps to open from Safari. Use Satella to purchase unlimited with “Click and Cancel” method."
         }
@@ -4634,13 +4641,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 210,
+      "size": 215521,
       "version": "2.4.2",
       "versions": [
         {
           "version": "2.4.2",
           "date": "2022-11-26",
-          "size": 210,
+          "size": 215521,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Vinegar_2.4.2.ipa",
           "localizedDescription": "Vinegar is a Safari extension that replaces the YouTube player with a minimal HTML video tag. It removes ads, restores picture-in-picture, and keeps videos playing in the background."
         }
@@ -4668,13 +4675,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 186646528,
+      "size": 187191787,
       "version": "5.1.41",
       "versions": [
         {
           "version": "5.1.41",
           "date": "2022-11-20",
-          "size": 186646528,
+          "size": 187191787,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/HeadsUp_5.1.41_Satella.ipa",
           "localizedDescription": "Satella injected for free in-app purchases. Tip: Disable receipts in satella settings then buy card packs. App may crash after clicking to buy stuff but they will appear on app restart. Turn off the Satella Enable switch before playing games to avoid further crashing."
         }
@@ -4702,13 +4709,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 83886080,
+      "size": 84148224,
       "version": "2211.1",
       "versions": [
         {
           "version": "2211.1",
           "date": "2022-11-16",
-          "size": 83886080,
+          "size": 84148224,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Pandolife1.1a_2211.1.ipa",
           "localizedDescription": "Pandora v2211.1 with Pandolife v1.1a by Julio Verne."
         }
@@ -4736,13 +4743,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 6291456,
+      "size": 6501171,
       "version": "3.6.0",
       "versions": [
         {
           "version": "3.6.0",
           "date": "2022-11-15",
-          "size": 6291456,
+          "size": 6501171,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/StarVPN_3.6.0.ipa",
           "localizedDescription": "Premium unlocked"
         }
@@ -4770,13 +4777,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 71303168,
+      "size": 71355596,
       "version": "8.7.1",
       "versions": [
         {
           "version": "8.7.1",
           "date": "2022-11-15",
-          "size": 71303168,
+          "size": 71355596,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/RadarbotVIP_8.7.1.ipa",
           "localizedDescription": "VIP unlocked. Cracked by @Sopranox"
         }
@@ -4804,13 +4811,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 5242880,
+      "size": 5326766,
       "version": "0.5.1",
       "versions": [
         {
           "version": "0.5.1",
           "date": "2022-11-12",
-          "size": 5242880,
+          "size": 5326766,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VidList_0.5.1.ipa",
           "localizedDescription": "NSFW"
         }
@@ -4838,13 +4845,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 16777216,
+      "size": 17343447,
       "version": "1.3",
       "versions": [
         {
           "version": "1.3",
           "date": "2022-11-07",
-          "size": 16777216,
+          "size": 17343447,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/cl1m4x.ipa",
           "localizedDescription": "v1.3 by Kanji - Eat some c0rn. Blow your h0rn. Watch some …"
         }
@@ -4872,13 +4879,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 2097152,
+      "size": 2936012,
       "version": "2.1.0",
       "versions": [
         {
           "version": "2.1.0",
           "date": "2022-11-07",
-          "size": 2097152,
+          "size": 2936012,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ChromaHue_2.1.0.ipa",
           "localizedDescription": "Create clean wallpapers w/ gradients and edge outlines."
         }
@@ -4906,13 +4913,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 20971520,
+      "size": 21359493,
       "version": "27.3",
       "versions": [
         {
           "version": "27.3",
           "date": "2022-11-06",
-          "size": 20971520,
+          "size": 21359493,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Ulysses_27.3k.ipa",
           "localizedDescription": "Ulysses writing app with the subscription cracked"
         }
@@ -4940,13 +4947,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 5242880,
+      "size": 6113198,
       "version": "0.8.1",
       "versions": [
         {
           "version": "0.8.1",
           "date": "2022-11-02",
-          "size": 5242880,
+          "size": 6113198,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PostBox-Pocket.ipa",
           "localizedDescription": "v0.8.1-7. AppStore release! Search cydia repos and download deb files. Extract themes for jailed device theming. Not used for installing debs."
         }
@@ -4974,13 +4981,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 8388608,
+      "size": 9227468,
       "version": "1.2.1",
       "versions": [
         {
           "version": "1.2.1",
           "date": "2022-10-10",
-          "size": 8388608,
+          "size": 9227468,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/SuperMario64_60FPS_1.2.1.ipa",
           "localizedDescription": "Latest release v1.2.1 of Super Mario 64 port for iOS. 60FPS!"
         }
@@ -5008,13 +5015,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 8388608,
+      "size": 8420065,
       "version": "1.2.1",
       "versions": [
         {
           "version": "1.2.1",
           "date": "2022-10-10",
-          "size": 8388608,
+          "size": 8420065,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/SuperMario64_30FPS_1.2.1.ipa",
           "localizedDescription": "Latest release v1.2.1 of Super Mario 64 port for iOS. 30FPS."
         }
@@ -5042,13 +5049,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 30408704,
+      "size": 31237079,
       "version": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2022-10-10",
-          "size": 30408704,
+          "size": 31237079,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/SuperMario64.ipa",
           "localizedDescription": "Original release v1.0.0 of Super Mario 64 port for iOS. 60FPS!"
         }
@@ -5076,13 +5083,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 99614720,
+      "size": 100369694,
       "version": "0.3.2",
       "versions": [
         {
           "version": "0.3.2",
           "date": "2022-10-06",
-          "size": 99614720,
+          "size": 100369694,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FRLegends++.ipa",
           "localizedDescription": "FR Legends v0.3.2 - Unlimited money, coins, & livery layers. Requires free iOSgods login."
         }
@@ -5110,13 +5117,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 27262976,
+      "size": 28206694,
       "version": "1.5.2",
       "versions": [
         {
           "version": "1.5.2",
           "date": "2022-09-28",
-          "size": 27262976,
+          "size": 28206694,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/WallpapersCentralPro_1.5.2.ipa",
           "localizedDescription": "Thousands of wallpapers at your fingertips. Pro features unlocked by clicking Buy on lifetime subscription, then Cancel."
         }
@@ -5144,13 +5151,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 126877696,
+      "size": 127884328,
       "version": "2.42.2",
       "versions": [
         {
           "version": "2.42.2",
           "date": "2022-09-27",
-          "size": 126877696,
+          "size": 127884328,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/LiveWallpapersForMe_2.42.2.ipa",
           "localizedDescription": "Premium unlocked. Cracked by @Sopranox"
         }
@@ -5178,13 +5185,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 130023424,
+      "size": 131009085,
       "version": "5.76.1",
       "versions": [
         {
           "version": "5.76.1",
           "date": "2022-09-26",
-          "size": 130023424,
+          "size": 131009085,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/YouCamPerfect_5.76.1.ipa",
           "localizedDescription": "Premium unlocked. Cracked by @Sopranox"
         }
@@ -5212,13 +5219,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 32505856,
+      "size": 32830914,
       "version": "2.6",
       "versions": [
         {
           "version": "2.6",
           "date": "2022-09-19",
-          "size": 32505856,
+          "size": 32830914,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Star_Map_2.6_Satella.ipa",
           "localizedDescription": "StarMap with Satella Jailed injection. Unlock all pro features for free. Click buy then cancel when it asks for apple id confirmation."
         }
@@ -5246,13 +5253,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 54525952,
+      "size": 55375298,
       "version": "3.12.0",
       "versions": [
         {
           "version": "3.12.0",
           "date": "2022-09-18",
-          "size": 54525952,
+          "size": 55375298,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/RefacePro_3.12.0.ipa",
           "localizedDescription": "Reface: Face Swap Videos. Pro unlocked."
         }
@@ -5280,13 +5287,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 16777216,
+      "size": 17186160,
       "version": "7.2.2",
       "versions": [
         {
           "version": "7.2.2",
           "date": "2022-09-16",
-          "size": 16777216,
+          "size": 17186160,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/AppCake+.ipa",
           "localizedDescription": "AppCake7+ IPA store - Dark Mode - Bypasses verify screen - No Ads"
         }
@@ -5314,13 +5321,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 15728640,
+      "size": 16410214,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2022-09-14",
-          "size": 15728640,
+          "size": 16410214,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/NewOS.ipa",
           "localizedDescription": "Bring the iOS 11 experience in an app!"
         }
@@ -5348,13 +5355,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 2097152,
+      "size": 2369781,
       "version": "1.0.2",
       "versions": [
         {
           "version": "1.0.2",
           "date": "2022-09-14",
-          "size": 2097152,
+          "size": 2369781,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/AddRepo.ipa",
           "localizedDescription": "App that can easily add repos to any package manager."
         }
@@ -5382,13 +5389,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 2097152,
+      "size": 2883584,
       "version": "1.0.0",
       "versions": [
         {
           "version": "1.0.0",
           "date": "2022-09-14",
-          "size": 2097152,
+          "size": 2883584,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Root.ipa",
           "localizedDescription": "The best Filza Escaped alternative for iOS 14.0 - 14.3. Other software versions will work with limited access"
         }
@@ -5416,13 +5423,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 82837504,
+      "size": 83393249,
       "version": "6.22.34",
       "versions": [
         {
           "version": "6.22.34",
           "date": "2022-09-08",
-          "size": 82837504,
+          "size": 83393249,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/SleepCycle_Premium.ipa",
           "localizedDescription": "Sleep Cycle Premium unlocked by Dz"
         }
@@ -5450,13 +5457,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 121634816,
+      "size": 122159104,
       "version": "6.68.0",
       "versions": [
         {
           "version": "6.68.0",
           "date": "2022-09-05",
-          "size": 121634816,
+          "size": 122159104,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Alarmy_6.68.0+Satella.ipa",
           "localizedDescription": "Includes Satella Jailed to unlock all in-app purchases. Click the floating purple star icon to open Satella settings. Enable tweak and turn on Receipts. Click buy on any IAP, then hit cancel upon confirmation."
         }
@@ -5484,13 +5491,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 75497472,
+      "size": 75570872,
       "version": "11.3.0",
       "versions": [
         {
           "version": "11.3.0",
           "date": "2022-08-31",
-          "size": 75497472,
+          "size": 75570872,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Adobe_Express_11.3.0+Satella.ipa",
           "localizedDescription": "Includes Satella Jailed to unlock all in-app purchases. Click the floating purple star icon to open Satella settings. Enable tweak and turn on Receipts. Click buy on any IAP, then hit cancel upon confirmation."
         }
@@ -5518,13 +5525,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 122683392,
+      "size": 122746306,
       "version": "2.7.3",
       "versions": [
         {
           "version": "2.7.3",
           "date": "2022-08-25",
-          "size": 122683392,
+          "size": 122746306,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Pixelmator2.7.3.ipa",
           "localizedDescription": "Powerful, full-featured image editor for iOS."
         }
@@ -5552,13 +5559,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 63963136,
+      "size": 64340623,
       "version": "15.4.2",
       "versions": [
         {
           "version": "15.4.2",
           "date": "2022-08-21",
-          "size": 63963136,
+          "size": 64340623,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FineReader_PDF_Pro_15.4.2.ipa",
           "localizedDescription": "FineReader PDF Pro cracked by @Demoxing"
         }
@@ -5586,13 +5593,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 95420416,
+      "size": 96049561,
       "version": "5.7.5",
       "versions": [
         {
           "version": "5.7.5",
           "date": "2022-08-21",
-          "size": 95420416,
+          "size": 96049561,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VideoShow_5.7.5.ipa",
           "localizedDescription": "VideoShow Pro cracked by @Demoxing"
         }
@@ -5620,13 +5627,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 41943040,
+      "size": 42760929,
       "version": "11.6.1",
       "versions": [
         {
           "version": "11.6.1",
           "date": "2022-08-21",
-          "size": 41943040,
+          "size": 42760929,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/iTablaPro_11.6.1.ipa",
           "localizedDescription": "iTablaPro cracked by @Demoxing"
         }
@@ -5654,13 +5661,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 8388608,
+      "size": 8556380,
       "version": "1.0.2",
       "versions": [
         {
           "version": "1.0.2",
           "date": "2022-08-15",
-          "size": 8388608,
+          "size": 8556380,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/HdoPlay-1-0-2-JKCrack.ipa",
           "localizedDescription": "Hdo Play - Movie Planner. Premium Cracked!"
         }
@@ -5688,13 +5695,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 1048576,
+      "size": 1426063,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2022-08-12",
-          "size": 1048576,
+          "size": 1426063,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Santander.ipa",
           "localizedDescription": "Modern File Manager for iOS 14, 15, & 16. Still in beta. Expect bugs and permission issues on newer iOS versions"
         }
@@ -5722,13 +5729,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 79691776,
+      "size": 80069263,
       "version": "1.226.0",
       "versions": [
         {
           "version": "1.226.0",
           "date": "2022-08-08",
-          "size": 79691776,
+          "size": 80069263,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Candy_Crush.ipa",
           "localizedDescription": "Candy Crush modded"
         }
@@ -5756,13 +5763,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 14680064,
+      "size": 15707668,
       "version": "2.8",
       "versions": [
         {
           "version": "2.8",
           "date": "2022-08-06",
-          "size": 14680064,
+          "size": 15707668,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Wallcraft_Pro_2.8.ipa",
           "localizedDescription": "Wallcraft Pro unlocked - Wallpapers for days"
         }
@@ -5790,13 +5797,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 1048576,
+      "size": 1205862,
       "version": "1.2",
       "versions": [
         {
           "version": "1.2",
           "date": "2022-08-04",
-          "size": 1048576,
+          "size": 1205862,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Jaility.ipa",
           "localizedDescription": "Respring your jailed iOS 15 device just like it was jailbroken. An example use case for this is when sideloaded apps wont appear on homescreen, simply respring with jaility to fix."
         }
@@ -5824,13 +5831,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 6291456,
+      "size": 7245660,
       "version": "0.8",
       "versions": [
         {
           "version": "0.8",
           "date": "2022-07-31",
-          "size": 6291456,
+          "size": 7245660,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/PostBox-0.8-beta.ipa",
           "localizedDescription": "An app for browsing tweak repos. Download and save debs on jailed devices to use for injecting and sideloading. This DOES NOT install tweaks on jailed devices, but you no longer need a jailbroken device to find and save deb files"
         }
@@ -5858,13 +5865,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 8388608,
+      "size": 9101639,
       "version": "2.2.1",
       "versions": [
         {
           "version": "2.2.1",
           "date": "2022-05-17",
-          "size": 8388608,
+          "size": 9101639,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/kok3shidoll_v2.2.1.ipa",
           "localizedDescription": "iOS 9.3.x semi-untethered jailbreak"
         }
@@ -5892,13 +5899,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 27262976,
+      "size": 27724349,
       "version": "11.17.3",
       "versions": [
         {
           "version": "11.17.3",
           "date": "2022-05-15",
-          "size": 27262976,
+          "size": 27724349,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Sync.ME_VIP_11.17.3.ipa",
           "localizedDescription": ""
         }
@@ -5926,13 +5933,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 87031808,
+      "size": 87535124,
       "version": "9.3.6",
       "versions": [
         {
           "version": "9.3.6",
           "date": "2022-05-15",
-          "size": 87031808,
+          "size": 87535124,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/VivaVideo_VIP_9.3.6.ipa",
           "localizedDescription": "VivaVideo w/ VIP unlocked"
         }
@@ -5960,13 +5967,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 42991616,
+      "size": 43987763,
       "version": "7.2.6",
       "versions": [
         {
           "version": "7.2.6",
           "date": "2022-05-12",
-          "size": 42991616,
+          "size": 43987763,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ClarityWallpaperPro7.2.6.ipa",
           "localizedDescription": "Endless Wallpapers. Pro IAP membership unlocked."
         }
@@ -5994,13 +6001,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 3145728,
+      "size": 3617587,
       "version": "1.22",
       "versions": [
         {
           "version": "1.22",
           "date": "2022-05-03",
-          "size": 3145728,
+          "size": 3617587,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/DualgramPro_1.22.ipa",
           "localizedDescription": "Record front and back cameras. Pro unlocked!"
         }
@@ -6028,13 +6035,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 104857600,
+      "size": 105644032,
       "version": "4.211",
       "versions": [
         {
           "version": "4.211",
           "date": "2022-05-01",
-          "size": 104857600,
+          "size": 105644032,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/remoteMousePro_4.211.ipa",
           "localizedDescription": "Pro features unlocked. Control your Mac, Windows, and Linux from your iOS device."
         }
@@ -6062,13 +6069,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 9437184,
+      "size": 9971957,
       "version": "0.01",
       "versions": [
         {
           "version": "0.01",
           "date": "2022-04-25",
-          "size": 9437184,
+          "size": 9971957,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Dystopia_0.01.ipa",
           "localizedDescription": "Alternative to Apollo for Reddit"
         }
@@ -6096,13 +6103,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 109051904,
+      "size": 109439877,
       "version": "0.2",
       "versions": [
         {
           "version": "0.2",
           "date": "2022-04-21",
-          "size": 109051904,
+          "size": 109439877,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Retro_0.2~88.ipa",
           "localizedDescription": "Retro iPod ClickWheel Player with Spotify integration"
         }
@@ -6130,13 +6137,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 35651584,
+      "size": 36406558,
       "version": "1.0",
       "versions": [
         {
           "version": "1.0",
           "date": "2022-04-10",
-          "size": 35651584,
+          "size": 36406558,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ScreenshotX1.0.ipa",
           "localizedDescription": "ScreenshotX by junesiphone"
         }
@@ -6164,13 +6171,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 122683392,
+      "size": 122809221,
       "version": "1.3.1",
       "versions": [
         {
           "version": "1.3.1",
           "date": "2022-04-10",
-          "size": 122683392,
+          "size": 122809221,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/ScreenSaver++1.3.1.ipa",
           "localizedDescription": "SleepSaver modified"
         }
@@ -6198,13 +6205,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 82837504,
+      "size": 83865108,
       "version": "1.0.18",
       "versions": [
         {
           "version": "1.0.18",
           "date": "2022-04-10",
-          "size": 82837504,
+          "size": 83865108,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS_1.0.18.ipa",
           "localizedDescription": "iOS 4 4 ur 4ne"
         }
@@ -6232,13 +6239,13 @@
         "entitlements": [],
         "privacy": {}
       },
-      "size": 35651584,
+      "size": 36123443,
       "version": "2.1.0",
       "versions": [
         {
           "version": "2.1.0",
           "date": "2022-04-09",
-          "size": 35651584,
+          "size": 36123443,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Provenance2.1.ipa",
           "localizedDescription": "Video game emulator"
         }
@@ -6249,6 +6256,16 @@
     }
   ],
   "news": [
+    {
+      "title": "Gopeed-v1.8.3-ios now available!",
+      "identifier": "cypwn.Gopeed-v1.8.3-ios.1.8.3",
+      "caption": "Gopeed-v1.8.3-ios added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Gopeed-v1.8.3-ios.png",
+      "date": "2025-12-12",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
     {
       "title": "OldOS now available!",
       "identifier": "cypwn.OldOS.2.0.7",
