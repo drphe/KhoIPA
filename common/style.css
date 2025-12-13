@@ -170,7 +170,7 @@ body {
     }
     .app-container,
     .app-header-container {
-        /*max-width: 350px;*/
+        max-width: 350px;
     }
   .app-header-container, .source-container {
     min-width: 350px!important;
@@ -1080,8 +1080,22 @@ a {
     text-align: center;
     font-size: 0.9em;
     margin: 0 1em;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    word-wrap: break-word;
 }
-
+.list-subtitle{
+text-align: center; font-size: 0.9em;margin: 1em 1rem 1.25em 1rem;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    word-wrap: break-word;
+}
 #preview .header {
     margin: 1em 0;
 }

@@ -283,7 +283,9 @@ document.body.append(bottomPanel);
 			moreDetail.classList.remove("hidden");
 		}
         // Subtitle
-        preview.querySelector("#subtitle").textContent = app.subtitle;
+        const previewSubtitle = preview.querySelector("#subtitle");
+        previewSubtitle.textContent = app.subtitle;
+        if (previewSubtitle.scrollHeight > previewSubtitle.clientHeight) previewSubtitle.insertAdjacentHTML("beforeend", MoreButton(tintColor));
         // Screenshots
         // New
         const checkArray = (obj) => {
@@ -757,7 +759,7 @@ export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
             let html = `
             <div class="app-container">
                 ${AppHeader(app, ".")}
-                <p style="text-align: center; font-size: 0.9em;margin: 1em 1rem 1.25em 1rem;">${app.subtitle ?? ""}</p>`;
+                <p class="list-subtitle">${app.subtitle ?? ""}</p>`;
             if (checkArray(app.screenshots) && isScreenshot) {
                 html += `<div class="screenshots">`;
                 for (let i = 0; i < app.screenshots.length && i < 2; i++) {
