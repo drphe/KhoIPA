@@ -15,6 +15,47 @@
   "apps": [
     {
       "beta": false,
+      "name": "True_Skate_1.5.102",
+      "type": 1,
+      "bundleIdentifier": "com.trueaxis.skate",
+      "developerName": "True_Skate_1.5.102 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "The ultimate skateboarding sim",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/True_Skate_1.5.102.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/True_Skate_1.5.102/True_Skate_1.5.102-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 121519472,
+      "version": "1.5.102",
+      "versions": [
+        {
+          "version": "1.5.102",
+          "date": "2025-12-14",
+          "size": 121519472,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/True_Skate_1.5.102.ipa",
+          "localizedDescription": "The ultimate skateboarding sim"
+        },
+        {
+          "version": "1.5.95",
+          "date": "2025-05-20",
+          "size": 123742453,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/True_Skate_1.5.95.ipa",
+          "localizedDescription": "The ultimate skateboarding sim"
+        }
+      ],
+      "versionDate": "2025-12-14",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/True_Skate_1.5.102.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Gopeed-v1.8.3-ios",
       "type": 1,
       "bundleIdentifier": "com.gopeed.gopeed",
@@ -1067,40 +1108,6 @@
       ],
       "versionDate": "2025-05-22",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/Scrcpy_Remote_2.4.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "True_Skate_1.5.95",
-      "type": 1,
-      "bundleIdentifier": "com.trueaxis.skate",
-      "developerName": "True_Skate_1.5.95 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "The ultimate skateboarding sim",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/True_Skate_1.5.95.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/True_Skate_1.5.95/True_Skate_1.5.95-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 123742453,
-      "version": "1.5.95",
-      "versions": [
-        {
-          "version": "1.5.95",
-          "date": "2025-05-20",
-          "size": 123742453,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/True_Skate_1.5.95.ipa",
-          "localizedDescription": "The ultimate skateboarding sim"
-        }
-      ],
-      "versionDate": "2025-05-20",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/True_Skate_1.5.95.ipa",
       "patreon": {}
     },
     {
@@ -6256,6 +6263,16 @@
     }
   ],
   "news": [
+    {
+      "title": "True_Skate_1.5.102 now available!",
+      "identifier": "cypwn.True_Skate_1.5.102.1.5.102",
+      "caption": "True_Skate_1.5.102 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/True_Skate_1.5.102.png",
+      "date": "2025-12-14",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
     {
       "title": "Gopeed-v1.8.3-ios now available!",
       "identifier": "cypwn.Gopeed-v1.8.3-ios.1.8.3",
