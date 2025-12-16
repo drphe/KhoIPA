@@ -60,7 +60,6 @@ history.replaceState({}, '', urlView);
     };
 
 export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset="list") => {
-    try{
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
@@ -98,7 +97,7 @@ document.body.append(bottomPanel);
 			let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
 			appInfo = await getAppInfoByBundleId(bundleIds);
 		}
-        }catch(e){ }
+        }catch(e){}
 		//console.log(appInfo);
         // If has multiple versions, show the latest one
         if (app.versions) {
@@ -628,7 +627,7 @@ document.body.append(bottomPanel);
             closePanel();
         }
     });
-    }catch(e){alert(e)}
+
 }
 export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
     const appsContainer = document.getElementById('apps-list');
@@ -887,44 +886,26 @@ export function wrapLightbox(htmlString) {
       link.setAttribute('target', '_blank');
     }
   });
-
   return doc.body.innerHTML;
 }
 
 async function getAppInfoByBundleId(bundleId) {
-    // Promise timeout 500ms
-    const timeout = new Promise((resolve) => {
-        setTimeout(() => {
-            console.warn("getAppInfoByBundleId: Timeout sau 500ms");
-            resolve(null); // hoặc reject nếu muốn
-        }, 500);
-    });
-    // Promise fetch API
+    const timeout = new Promise((resolve) => setTimeout(() => resolve(null), 500));
     const fetchPromise = (async () => {
         const baseUrl = "https://itunes.apple.com/lookup";
         const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}`;
-
         try {
             const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error(`Lỗi HTTP! Mã trạng thái: ${response.status}`);
-            }
-
             const data = await response.json();
-
             if (data.resultCount > 0 && data.results.length > 0) {
                 return data.results[0];
             } else {
-                //console.log(`Không tìm thấy ứng dụng nào cho bundle ID: ${bundleId}`);
                 return null;
             }
         } catch (error) {
-            console.error("Đã xảy ra lỗi trong quá trình lấy dữ liệu:", error);
             return null;
         }
     })();
-
-    // Trả về kết quả nào đến trước: fetch hoặc timeout
     return Promise.race([fetchPromise, timeout]);
 }
 async function checkIpaAndGenerateInstallUrl(ipaUrl) {
@@ -934,7 +915,6 @@ async function checkIpaAndGenerateInstallUrl(ipaUrl) {
         console.error('URL không phải là file .ipa hợp lệ.');
         return null;
     }
-
     const urlParts = ipaUrl.split('/');
     let fileNameWithParams = urlParts[urlParts.length - 1];
     const fileName = fileNameWithParams.split('?')[0];
@@ -942,14 +922,12 @@ async function checkIpaAndGenerateInstallUrl(ipaUrl) {
     const manifestFileName = fileName.replace(/\.ipa$/i, '.plist');
     const manifestUrl = manifestBasePath + manifestFileName;
     const installUrl = `itms-services://?action=download-manifest&url=${encodeURIComponent(manifestUrl)}`;
-
     try {
         const response = await fetch(manifestUrl, { method: 'GET' });
 
         if (response.ok) {
             return installUrl;
         } else {
-            //console.log(`Lỗi truy cập file manifest .plist. Status: ${response.status}`);
             return null;
         }
     } catch (error) {
