@@ -1,10 +1,10 @@
 {
-  "name": "Game Arcade - IOSVIET",
+  "name": "Game Arcade - CODEVN",
   "identifier": "ios.arcade.repo",
   "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game2.json",
   "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
   "iconURL": "https://cdn-icons-png.flaticon.com/128/1138/1138847.png",
-  "subtitle": "Game Arcade",
+  "subtitle": "Kho Game Arcade trích xuất từ Apple Arcade, link trực tiếp từ CODEVN",
   "description": "Welcome to my source! Here you'll find all of my apps.",
   "website": "https://ios.codevn.net/category/games/",
   "patreonURL": "https://patreon.com/drphe",

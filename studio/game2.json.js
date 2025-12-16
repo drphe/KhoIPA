@@ -1,6 +1,9 @@
 // dán vào console
 async function getArcade() {
-    const targetUrls = ["https://ios.codevn.net/category/apple-arcade/page/1/", "https://ios.codevn.net/category/apple-arcade/page/2/"];
+    const parseUrl = "https://ios.codevn.net/category/apple-arcade/page/ANHPHE/";
+    const totalPage = 2;
+    let targetUrls = [];
+    for(let i=1; i<totalPage+1; i++) targetUrls.push(parseUrl.replace("ANHPHE", i))
     const allAppsData = await fetchAndParseMultiplePages(targetUrls);
     const tasks = allAppsData.map(async (app) => {
         const appInfo = await extractGameContent(app.link);
