@@ -87,6 +87,17 @@
   </div>
 </div>
   <script src="index.js" type="module"></script>
-
+  <script>
+    async function loadCounter() {
+      try {
+        const res = await fetch('/api/counter');
+        const data = await res.json();
+        console.log(`Trang này đã có ${data.views} lượt xem`);
+      } catch (err) {
+        console.log(`Lỗi tải bộ đếm`);
+      }
+    }
+    loadCounter();
+  </script>
 </body>
 </html>
