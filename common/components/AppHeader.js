@@ -27,12 +27,13 @@ export const AppHeader = (app) => app ? `
         <div class="app-header">
             <div class="content">
 		<div class="app-icon-wrapper">
+		    ${app.beta ? `<span class="small ${checkBeta(app.beta)} badge" style="position:absolute;top:-4px;"></span>`:``}
                     <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" alt="">
 		    ${app.sourceIconURL ? `<img class="developer-icon" src="${app.sourceIconURL}" onerror="this.onerror=null; this.src='https://placehold.co/25x25/${app.sourceTintColor.replaceAll("#","")}/FFFFFF?text=${app.sourceName.charAt(0).toUpperCase()}';" alt="">` : ``}
 		</div>
                 <div class="right">
                     <div class="text">
-                        <p class="title">${app.name} ${app.beta ? `<span class="small ${checkBeta(app.beta)} badge"></span>`:``}</p>
+                        <p class="title">${app.name}</p>
                         <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.size ? AppSize(app) + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
                     </div>
                         <button class="uibutton" style="background-color: ${app.tintColor ? "#" + app.tintColor.replaceAll("#", "") : "var(--tint-color);"};">View</button>
