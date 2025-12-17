@@ -28,7 +28,7 @@
       "bundleIdentifier": "com.tactilegames.simonscatstorytime",
       "developerName": "DVC iOS",
       "subtitle": "Paid on Arcade",
-      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "localizedDescription": "Simon’s Cat is back in his latest pawsome adventure! Beat Match 3 puzzles to unearth the secret ancestral connections hiding in the gardens. Create powerful combos and use special pieces to become the Top Cat!\n\n- Renovate and explore the unique gardens of the Simon’s Cat world!\n- Over 9000+ challenging match-3 puzzles!\n- An expansive story with twists and turns!\n- Tournaments to prove who’s really the Top Cat!\n\nDiscover the true meaning of community spirit in this adorable addition to the Simon’s Cat franchise!",
       "versionDescription": "",
       "tintColor": "#84b4dc",
       "iconURL": "https://i.ibb.co/9Hfzbh1v/96a8686efec5.png",
@@ -41,12 +41,12 @@
       "version": "1.45.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.45.0/Simon.s.Cat.-.1.45.0.ipa",
-          "size": 211700000,
           "version": "1.45.0",
-          "buildVersion": null,
           "date": "2025-12-17T12:40:00+07:00",
           "localizedDescription": "Thanh toán trên Arcade",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.45.0/Simon.s.Cat.-.1.45.0.ipa",
+          "size": 211700000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -61,7 +61,7 @@
       "bundleIdentifier": "com.11bitstudios.beatcop",
       "developerName": "DVC",
       "subtitle": "Thanh toán trên applestore",
-      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "localizedDescription": "New York, more like a beast than a city. Explore it’s darkest corners and uncover its secrets as Jack Kelly, a former detective who has been framed for a murder. Degraded and forgotten by old pals, it’s your last chance to find the truth behind this whole terrible mess. The thing is, your new boss treats you horribly, your wife is a money sucking spawn from hell and the local mafia wants your head on a plate. I guess you could say, that things are complicated down here, in the middle of Brooklyn. Oh, and don't forget about writing tickets, reprimanding pedestrians & such. You're a beat cop after all.\n\nNONLINEAR STORY WITH MULTIPLE ENDINGS\nSomeone framed you and no one cares about this but you. Turn every stone in this city and find out who did that. The further you investigate the more missing puzzles you’ll find, but be careful. Some things should never be brought to daylight.\n\nTHE ESSENCE OF '80 COP SHOWS\nHave you ever dreamed of being one of the heroes of cop movies? Of course you did, like we all. Now you have a chance! Stay vigilant and quick-witted but remember that if this won’t work, you can always do some old school jaw wrecking. It’s ’80s after all!\n\nTHE HUMOR THAT YOUR MOM WOULDN'T APPROVE\nBe sarcastic. Be gloom. Be whatever you want. There are thousands of things in this world you can laugh at, and even more you shouldn't, but who cares. It’s jungle out there baby, and sometimes you just need something to release the stress.",
       "versionDescription": "",
       "tintColor": "#4c3cc4",
       "iconURL": "https://i.ibb.co/8kZcGYL/66a43c70c94d.png",
@@ -79,12 +79,12 @@
       "version": "1.0.4",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.4/Beat.Cop.-.v1.0.4.ipa",
-          "size": 186200000,
           "version": "1.0.4",
-          "buildVersion": null,
           "date": "2025-12-17T12:35:00+07:00",
           "localizedDescription": "Thanh toán trên apple store",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.4/Beat.Cop.-.v1.0.4.ipa",
+          "size": 186200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -114,12 +114,12 @@
       "version": "1.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2/Drive-Ahead._1.2.ipa",
-          "size": 287200000,
           "version": "1.2",
-          "buildVersion": null,
           "date": "2025-12-17T12:29:00+07:00",
           "localizedDescription": "🟢Thanh Toán Trên Arcade",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2/Drive-Ahead._1.2.ipa",
+          "size": 287200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -164,12 +164,12 @@
       "version": "8.74.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v8.74.0/Bilibili_8.74.0.ipa",
-          "size": 245100000,
           "version": "8.74.0",
-          "buildVersion": null,
           "date": "2025-12-17T12:24:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Không Quảng Cáo\n✅ 120Hz",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v8.74.0/Bilibili_8.74.0.ipa",
+          "size": 245100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -197,12 +197,12 @@
       "version": "1.0.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.3/Smash.Hit.-.1.0.3.ipa",
-          "size": 71600000,
           "version": "1.0.3",
-          "buildVersion": null,
           "date": "2025-12-17T12:21:00+07:00",
           "localizedDescription": "Đã thanh toán trên Arcade",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.3/Smash.Hit.-.1.0.3.ipa",
+          "size": 71600000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -233,12 +233,12 @@
       "version": "1.3.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.0/Altos-Odyssey.-.GHOST.DVC.IPA_1.3.0.ipa",
-          "size": 131500000,
           "version": "1.3.0",
-          "buildVersion": null,
           "date": "2025-12-17T12:15:00+07:00",
           "localizedDescription": "Thanh toán trên ",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.0/Altos-Odyssey.-.GHOST.DVC.IPA_1.3.0.ipa",
+          "size": 131500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -268,12 +268,12 @@
       "version": "7.2.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.2.1/TemporaryEmailPro.-.v7.2.1.ipa",
-          "size": 20500000,
           "version": "7.2.1",
-          "buildVersion": null,
           "date": "2025-12-17T12:11:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Unlock Pro",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.2.1/TemporaryEmailPro.-.v7.2.1.ipa",
+          "size": 20500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
