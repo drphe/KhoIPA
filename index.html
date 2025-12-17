@@ -36,8 +36,8 @@
   </div>
   <div id="top">
     <div id="nav-bar" class="hide-border">
-      <a href="https://github.com/drphe/KhoIPA" id="source-code" target = _blank title="Github Page">
-	<img class="counter" src="https://komarev.com/ghpvc/?username=drphe&repo=KhoIPA&label=Views&color=orange&style=flat-square" alt="Repo Views">
+      <a href="https://github.com/drphe/KhoIPA" id="source-code" target = _blank>
+	<img class="counter" src="https://komarev.com/ghpvc/?username=drphe&repo=KhoIPA&label=Views&color=orange&style=flat-square" title=" Total Source Views" alt="Pages Views">
       </a>
       <div id="title" class="hidden">
           <p>KHO IPA MOD</p>
@@ -93,7 +93,9 @@
         const res = await fetch('/api/counter');
         const data = await res.json();
         console.log(`Trang này đã có ${data.views} lượt xem`);
-	document.querySelector(".counter").src=`https://img.shields.io/badge/View-${data.views}-orange?style=flat-square`;
+	const counterImg = document.querySelector(".counter");
+	counterImg.src=`https://img.shields.io/badge/Views-${data.views}-orange?style=flat-square`;
+	counterImg.title=`Total Page Views`;
       } catch (err) {
         console.log(`Lỗi tải bộ đếm`);
       }
