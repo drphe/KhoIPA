@@ -163,7 +163,7 @@ const sources = await json("./common/assets/json/sources.json");
                 return;
             if (isValidHTTPURL(app.iconURL)) {
                 imgApps += `<a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link" style="display: inline-grid;justify-items: center;">
-					<img class="app-panel-icon" src="${app.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
+					<img class="app-panel-icon" src="${app.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';">
 					<span class="small ${checkBeta(app.beta)} badge" style="position: static;"></span>
 					</a>
 					`;
