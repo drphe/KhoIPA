@@ -23,6 +23,266 @@
   "apps": [
     {
       "beta": false,
+      "name": "Simon's Cat",
+      "type": 2,
+      "bundleIdentifier": "com.tactilegames.simonscatstorytime",
+      "developerName": "DVC iOS",
+      "subtitle": "Paid on Arcade",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#84b4dc",
+      "iconURL": "https://i.ibb.co/9Hfzbh1v/96a8686efec5.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 211700000,
+      "version": "1.45.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.45.0/Simon.s.Cat.-.1.45.0.ipa",
+          "size": 211700000,
+          "version": "1.45.0",
+          "buildVersion": null,
+          "date": "2025-12-17T12:40:00+07:00",
+          "localizedDescription": "Thanh toán trên Arcade",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-17T12:40:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.45.0/Simon.s.Cat.-.1.45.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Beat Cop",
+      "type": 2,
+      "bundleIdentifier": "com.11bitstudios.beatcop",
+      "developerName": "DVC",
+      "subtitle": "Thanh toán trên applestore",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#4c3cc4",
+      "iconURL": "https://i.ibb.co/8kZcGYL/66a43c70c94d.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "for making pictures",
+          "NSMicrophoneUsageDescription": "Bla bla bla",
+          "NSPhotoLibraryAddUsageDescription": "for taking pictures",
+          "NSPhotoLibraryUsageDescription": "for taking pictures"
+        }
+      },
+      "size": 186200000,
+      "version": "1.0.4",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.4/Beat.Cop.-.v1.0.4.ipa",
+          "size": 186200000,
+          "version": "1.0.4",
+          "buildVersion": null,
+          "date": "2025-12-17T12:35:00+07:00",
+          "localizedDescription": "Thanh toán trên apple store",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-17T12:35:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.4/Beat.Cop.-.v1.0.4.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Drive Ahead",
+      "type": 2,
+      "bundleIdentifier": "com.dodreams.carcade",
+      "developerName": "DVC",
+      "subtitle": "Thanh Toán Trên Arcade",
+      "localizedDescription": "Drive Ahead là tựa game retro chiến đấu chơi mạng đỉnh cao với xe hơi, sự hỗn loạn bất định và lái xe. Chiến đấu với xe vui nhộn, xe tải quái vật, xe tăng hoặc xe đường trường 4x4. Lái xe trong các ván chơi mạng hoặc coop ngoại tuyến chưa bao giờ vui tới vậy!",
+      "versionDescription": "",
+      "tintColor": "#ccb109",
+      "iconURL": "https://i.ibb.co/20FNHkh1/1b77ec1422da.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Permission is required to record gameplay replays. Your camera won’t be recorded."
+        }
+      },
+      "size": 287200000,
+      "version": "1.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2/Drive-Ahead._1.2.ipa",
+          "size": 287200000,
+          "version": "1.2",
+          "buildVersion": null,
+          "date": "2025-12-17T12:29:00+07:00",
+          "localizedDescription": "🟢Thanh Toán Trên Arcade",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-17T12:29:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.2/Drive-Ahead._1.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Bilibili - All Your Fav Videos",
+      "type": 1,
+      "bundleIdentifier": "tv.danmaku.bilianime",
+      "developerName": "IOS crack VN",
+      "subtitle": "No ads",
+      "localizedDescription": "Welcome to bilibili – the ultimate home for anime fans, game addicts, tech geeks, and culture lovers.\nEver dreamed of a place where you could binge anime edits, watch live esports with 10,000 danmu (bullet comments), and explore the artistic treasures of diverse cultures—all in a single afternoon?\n\nThat's what we do here.\nWe're bilibili. We watch, we laugh, we remix, we overthink, and then we create again.",
+      "versionDescription": "",
+      "tintColor": "#fc649c",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/db/da/a9dbdad4-a3de-2916-3676-178b353e8767/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/400x400ia-75.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "NSAppleMusicUsageDescription",
+          "NSBluetoothAlwaysUsageDescription": "NSBluetoothAlwaysUsageDescription",
+          "NSBluetoothPeripheralUsageDescription": "NSBluetoothPeripheralUsageDescription",
+          "NSCalendarsFullAccessUsageDescription": "NSCalendarsFullAccessUsageDescription",
+          "NSCalendarsUsageDescription": "NSCalendarsUsageDescription",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "NSCalendarsWriteOnlyAccessUsageDescription",
+          "NSCameraUsageDescription": "NSCameraUsageDescription",
+          "NSFaceIDUsageDescription": "NSFaceIDUsageDescription",
+          "NSLocalNetworkUsageDescription": "NSLocalNetworkUsageDescription",
+          "NSLocationWhenInUseUsageDescription": "NSLocationWhenInUseUsageDescription",
+          "NSMicrophoneUsageDescription": "NSMicrophoneUsageDescription",
+          "NSMotionUsageDescription": "NSMotionUsageDescription",
+          "NSPhotoLibraryAddUsageDescription": "NSPhotoLibraryAddUsageDescription",
+          "NSPhotoLibraryUsageDescription": "NSPhotoLibraryUsageDescription",
+          "NSSiriUsageDescription": "NSSiriUsageDescription",
+          "NSUserTrackingUsageDescription": "NSUserTrackingUsageDescription"
+        }
+      },
+      "size": 245100000,
+      "version": "8.74.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v8.74.0/Bilibili_8.74.0.ipa",
+          "size": 245100000,
+          "version": "8.74.0",
+          "buildVersion": null,
+          "date": "2025-12-17T12:24:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Không Quảng Cáo\n✅ 120Hz",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-17T12:24:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v8.74.0/Bilibili_8.74.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Smash Hit",
+      "type": 2,
+      "bundleIdentifier": "com.mediocre.smashhit.arcade",
+      "developerName": "DVC",
+      "subtitle": "Đã thanh toán trên Arcade",
+      "localizedDescription": "Take a surreal journey through an otherworldly dimension, move in harmony with sound and music and smash everything in your path! This experience requires focus, concentration, and timing to not only travel as far as you can, but also break the beautiful glass objects that stand in your way.\n\n* Smash your way through a beautiful futuristic dimension, smashing obstacles and targets in your path and experiencing the best destruction physics on mobile devices.",
+      "versionDescription": "",
+      "tintColor": "#b444ac",
+      "iconURL": "https://i.ibb.co/GvyMb2JY/886763a3dc59.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 71600000,
+      "version": "1.0.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.3/Smash.Hit.-.1.0.3.ipa",
+          "size": 71600000,
+          "version": "1.0.3",
+          "buildVersion": null,
+          "date": "2025-12-17T12:21:00+07:00",
+          "localizedDescription": "Đã thanh toán trên Arcade",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-17T12:21:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0.3/Smash.Hit.-.1.0.3.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Altos Odyssey",
+      "type": 2,
+      "bundleIdentifier": "com.snowman.altos-odyssey",
+      "developerName": "DVC",
+      "subtitle": "Đã thanh toán trên AppleStore",
+      "localizedDescription": "ust beyond the horizon sits a majestic desert, vast and unexplored.\n\n“Apple Design Award Winner, 2018”\n– Apple",
+      "versionDescription": "",
+      "tintColor": "#dc84b4",
+      "iconURL": "https://i.ibb.co/PKpNXBQ/d945b25f0260.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "Save screenshots to Camera Roll",
+          "NSPhotoLibraryUsageDescription": "Save screenshots to Camera Roll"
+        }
+      },
+      "size": 131500000,
+      "version": "1.3.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.0/Altos-Odyssey.-.GHOST.DVC.IPA_1.3.0.ipa",
+          "size": 131500000,
+          "version": "1.3.0",
+          "buildVersion": null,
+          "date": "2025-12-17T12:15:00+07:00",
+          "localizedDescription": "Thanh toán trên ",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-17T12:15:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.3.0/Altos-Odyssey.-.GHOST.DVC.IPA_1.3.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Temporary Email Pro",
+      "type": 1,
+      "bundleIdentifier": "com.temporary.email.pro",
+      "developerName": "IOS Crack VN",
+      "subtitle": "Unlock pro",
+      "localizedDescription": "Using Temporary Email Pro app, you can instantly generate disposable temporary email address and immediately receive emails, including photos or any other attachments.\n\nForget about revealing your real email to everyone. It causes endless spam, advertising mailings, email hacking, and phishing attempts. Keep your real inbox clean and secure. Temp Mail provides a temporary, anonymous, free, disposable email address in 10minute mail style.\n\nThis app is an advanced version of services also known as 10minutemail, disposable-mail, fake email, guerrillamail, mailinator, getairmail,mohmal mail, throwawaymail, tempmail, tempail, anonymous-mail, spambox, tmail, burnermail, trashmail, 20minute email, and others. But much more robust and with an option to unlock unique premium features.",
+      "versionDescription": "",
+      "tintColor": "#04cc74",
+      "iconURL": "https://i.ibb.co/cS3g82MB/f965ef7870e8.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+        }
+      },
+      "size": 20500000,
+      "version": "7.2.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.2.1/TemporaryEmailPro.-.v7.2.1.ipa",
+          "size": 20500000,
+          "version": "7.2.1",
+          "buildVersion": null,
+          "date": "2025-12-17T12:11:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Unlock Pro",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-17T12:11:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.2.1/TemporaryEmailPro.-.v7.2.1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Fait – The Machine - GHOST DVC IPA",
       "type": 2,
       "bundleIdentifier": "com.voltage.fait",
@@ -43,12 +303,12 @@
       "version": "1.6",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.6/Fait.The.Machine.-.GHOST.DVC.IPA_1.6.ipa",
-          "size": 103500000,
           "version": "1.6",
-          "buildVersion": null,
           "date": "2025-12-12T05:00:00+07:00",
           "localizedDescription": "Thanh Toán Trên Appstore",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.6/Fait.The.Machine.-.GHOST.DVC.IPA_1.6.ipa",
+          "size": 103500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -78,12 +338,12 @@
       "version": "1.0.8",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.8/Vive.le.Roi.3.-.v1.0.8.ipa",
-          "size": 25900000,
           "version": "1.0.8",
-          "buildVersion": null,
           "date": "2025-12-12T04:54:00+07:00",
           "localizedDescription": "🟢Thanh Toán Trên Appstore\n💬 Game Vào Hơi Chậm Ae Kiên Nhẫn Là Vào Được",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.8/Vive.le.Roi.3.-.v1.0.8.ipa",
+          "size": 25900000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],

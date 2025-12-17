@@ -468,6 +468,8 @@ input[type="text"]:focus {
     position: relative; 
     width: 70px; /* Đặt kích thước cho wrapper */
     height: 70px;
+    display: inline-grid;
+    justify-items: center;
 }
 
 .developer-icon {

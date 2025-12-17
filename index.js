@@ -162,9 +162,9 @@ const sources = await json("./common/assets/json/sources.json");
             if (count > 4)
                 return;
             if (isValidHTTPURL(app.iconURL)) {
-                imgApps += `<a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link" style="display: inline-grid;justify-items: start;">
+                imgApps += `<a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link" style="display: inline-grid;justify-items: center;">
 				<img class="app-panel-icon" src="${app.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';">
-				<span class="small ${checkBeta(app.beta)} badge" style="position: sticky;transform: translate(8px, -75px);"></span>
+				<span class="small ${checkBeta(app.beta)} badge" style="position: sticky;transform: translate(0px, -75px);"></span>
 				</a>`;
                 count++;
             }
