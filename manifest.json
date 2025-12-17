@@ -4,8 +4,8 @@
   "description": "Kh0IPA Mod",
   "lang": "en-US",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "./icon/logo.png",
