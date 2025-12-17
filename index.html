@@ -87,20 +87,9 @@
   </div>
 </div>
   <script src="index.js" type="module"></script>
-  <script>
-    async function loadCounter() {
-      try {
-        const res = await fetch('/api/counter');
-        const data = await res.json();
-        console.log(`Trang này đã có ${data.views} lượt xem`);
-	const counterImg = document.querySelector(".counter");
-	counterImg.src=`https://img.shields.io/badge/Views-${data.views}-orange?style=flat-square`;
-	counterImg.title=`Total Page Views`;
-      } catch (err) {
-        console.log(`Lỗi tải bộ đếm`);
-      }
-    }
-    loadCounter();
-  </script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
