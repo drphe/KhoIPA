@@ -18,7 +18,11 @@ const sources = await json("./common/assets/json/sources.json");
             return null;
         }
     }))).filter(Boolean);
-
+	const randCode = (e) => {
+		const b64 = base64Convert(e);
+		const mid = Math.floor(b64.length / 2);
+		return b64.slice(0,2) + b64.slice(mid-1,mid+1) + b64.slice(-2);
+	}
     // Set News
     const jsonNews = featuredSources[0].news;
     let jsonNewsUrl = [];
@@ -65,10 +69,6 @@ const sources = await json("./common/assets/json/sources.json");
 
     // Sort sources by last updated
     otherSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
-    // insert editor's source choice
-    for (const source of featuredSources) {
-        await insertSource(source, "repositories");
-    }
 
     const fixYear =(d)=>{let x=new Date(d),y=new Date().getFullYear();return x.getFullYear()>y+10?(x.setFullYear(y),x.toISOString().split("T")[0]):d}
 
@@ -76,20 +76,21 @@ const sources = await json("./common/assets/json/sources.json");
     const allApps = [];
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
-	const b64 = base64Convert(source.name);
-	const mid = Math.floor(b64.length / 2);
-	const randomCode = b64.slice(0,2) + b64.slice(mid-1,mid+1) + b64.slice(-2);
 
         for (const app of source.apps) {
             app.sourceURL = source.sourceURL;
             app.sourceName = source.name;
             app.sourceIconURL = source.iconURL;
             app.sourceTintColor = source.tintColor;
-            app.bundleIdentifier += `.${randomCode}`;
+            app.bundleIdentifier += `.${randCode(source.name)}`;
 	    app.versionDate = app.versionDate? fixYear(app.versionDate):'';
         }
         //const nonBetaApps = source.apps.filter(app => !app.beta);
         allApps.push(...source.apps);
+    }
+	    // insert editor's source choice
+    for (const source of featuredSources) {
+        await insertSource(source, "repositories");
     }
     // sort app 
     allApps.sort((a, b) => {
@@ -120,49 +121,69 @@ const sources = await json("./common/assets/json/sources.json");
         const data = await json(url);
         const source = consolidateApps(data);
         source.sourceURL = url
-        if (!source) return;
-        source.lastUpdated = new Date("1970-01-01");
+            if (!source)
+                return;
+            source.lastUpdated = new Date("1970-01-01");
         source.appCount = 0;
         for (const app of source.apps) {
-            if (app.patreon?.hidden) continue;
+            if (app.patreon?.hidden)
+                continue;
             let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
             if (appVersionDate > source.lastUpdated) {
                 source.lastUpdated = appVersionDate;
-                if (!source.iconURL) source.iconURL = app.iconURL;
-                if (!source.tintColor) source.tintColor = app.tintColor;
+                if (!source.iconURL)
+                    source.iconURL = app.iconURL;
+                if (!source.tintColor)
+                    source.tintColor = app.tintColor;
             }
             source.appCount++;
         }
-        if (!source.iconURL) source.iconURL = "./common/assets/img/generic_app.jpeg";
-        if (!source.tintColor) source.tintColor = "var(--tint-color);";
+        if (!source.iconURL)
+            source.iconURL = "./common/assets/img/generic_app.jpeg";
+        if (!source.tintColor)
+            source.tintColor = "var(--tint-color);";
         source.url = url;
         return source;
+
     }
     async function insertSource(source, id = "sources-list", position = "beforeend", flag = true) {
-		let firstNews;
-		if (source && source.news && source.news.length > 0) {
-			firstNews = source.news[0];
-		}
+        let imgApps = "";
+        let count = 1;
+        const checkBeta = (inputValue) => {
+            if (typeof inputValue === 'boolean') {
+                return inputValue === true ? "beta" : undefined;
+            } else if (typeof inputValue === 'string') {
+                return inputValue;
+            }
+            return undefined;
+        }
+		
+        source.apps.forEach(app => {
+            if (count > 4)
+                return;
+            if (isValidHTTPURL(app.iconURL)) {
+                imgApps += `<a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link" style="display: inline-grid;justify-items: center;">
+					<img class="app-panel-icon" src="${app.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
+					<span class="small ${checkBeta(app.beta)} badge" style="position: static;"></span>
+					</a>
+					`;
+                count++;
+            }
+        });
 
         document.getElementById(id).insertAdjacentHTML(position, `
             <div class="source-container">
-                <a href="./view/?source=${base64Convert(source.url)}" class="source-link">
-					${firstNews ? `<div class="item" style="height:150px;padding:0px;opacity:0.9;background-color: #${firstNews.tintColor.replaceAll("#", "")};background-image: url(`+ firstNews.imageURL+`);background-repeat: repeat;background-position: center center;background-size: cover;margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
-						<div class="text" style="position: relative;"></div>
-						<div class="text" style="color:white;display: flex;flex-direction: column-reverse;height:80%;margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));padding: 1em;">
-							<p>`+ formatVersionDate(firstNews.date) +`</p>
-							<p>` + firstNews.caption.slice(0, 100)+`...</p>
-							<h3>`+ firstNews.title + `</h3>
-							
-						</div> 
-					</div>`:`<div class="item" style="height:150px;padding:0px;opacity:0.9;background-color: #${source.tintColor.replaceAll("#", "")};margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
-						<div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));padding: 1em;height: 80%;text-align: center;">
-						<img style="width: 80px;border-radius: 10px;" src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';"><div class="text" style="position: relative;color:white;"><p>${source.subtitle ??""}</p></div></div> 
-					</div>`}
-                    <div class="source" style="
-                        background-color: #${source.tintColor.replaceAll("#", "")};
-                        margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : ""} 1.5rem 1.5rem;
-                    ">
+				<div class="item" style="height:150px;padding:0px;opacity:0.9;background-color: #${source.tintColor.replaceAll("#", "")};
+				margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
+					<div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));
+				padding: 1em;height: 80%;text-align: center;">
+					${imgApps}
+					<div class="text" style="position: relative;color:white;"><p>${source.subtitle ?? ""}</p></div>
+					</div> 
+				</div>
+				<a href="./view/?source=${base64Convert(source.url)}" class="source-link">
+                    <div class="source" style="background-color: #${source.tintColor.replaceAll("#", "")};
+				margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : ""} 1.5rem 1.5rem;">
                         <img src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
                         <div class="right">
                             <div class="text">
@@ -178,7 +199,6 @@ const sources = await json("./common/assets/json/sources.json");
             </div>
         `);
     }
-
     // 
     //  "View All apps"
     if(noteURL){

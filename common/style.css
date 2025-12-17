@@ -1608,3 +1608,9 @@ margin-left: 2rem;
 .category:last-child {
   border-radius: 0 10px 10px 0;
 }
+
+.app-panel-icon{
+width: 60px;
+border-radius: 10px;
+margin: 8px;
+}
