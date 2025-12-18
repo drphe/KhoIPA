@@ -845,11 +845,10 @@ border-radius: 1.5rem;
 .no-scroll {
     overflow: hidden !important;
     height: 100vh;
-    position: fixed;
     width: 100%;
     left:0px;
 }
-
+.no-scroll>#top{position:fixed;}
 .skeleton-text {
     -webkit-user-select: none;
     user-select: none

@@ -13,29 +13,32 @@ const loaded = () => {
 
 function waitForAllImagesToLoad(container) {
     const allImages = container.querySelectorAll("img.screenshot");
-    if (allImages.length === 0) return loaded();
+    if (allImages.length === 0)
+        return loaded();
     const imagePromises = Array.from(allImages).map(image => new Promise(resolve => {
-        const handleSettled = () => {
-            image.onload = null;
-            image.onerror = null;
-            resolve();
-        };
-        if (image.complete && image.naturalHeight !== 0) return resolve();
-        image.onload = handleSettled;
-        image.onerror = () => {
-            if (image.id === "app-icon") {
-                image.src = altSourceIcon;
-            } else {
-                image.remove();
-            }
-            handleSettled();
-        };
-        if (!image.src) image.src = image.src;
-    }));
+                const handleSettled = () => {
+                    image.onload = null;
+                    image.onerror = null;
+                    resolve();
+                };
+                if (image.complete && image.naturalHeight !== 0)
+                    return resolve();
+                image.onload = handleSettled;
+                image.onerror = () => {
+                    if (image.id === "app-icon") {
+                        image.src = altSourceIcon;
+                    } else {
+                        image.remove();
+                    }
+                    handleSettled();
+                };
+                if (!image.src)
+                    image.src = image.src;
+            }));
     Promise.race([
-        Promise.allSettled(imagePromises),
-        new Promise(resolve => setTimeout(resolve, 3000))
-    ]).finally(loaded);
+            Promise.allSettled(imagePromises),
+            new Promise(resolve => setTimeout(resolve, 3000))
+        ]).finally(loaded);
 }
 
 function updateBundleID(newBundleID) {
@@ -43,41 +46,40 @@ function updateBundleID(newBundleID) {
     url.searchParams.set('bundleID', newBundleID);
     history.replaceState({}, '', url);
 }
+export function activateNavLink(e) {
+    document.querySelectorAll(".nav-link").forEach(l => {
+        if (l.dataset.target == e)
+            l.classList.add("active");
+        else
+            l.classList.remove("active");
+    });
+    window.oldTargetPage = e;
+    if (e == "page-home") {
+        const urlView = new URL(window.location.href);
+        urlView.searchParams.delete('note');
+        urlView.searchParams.delete('bundleID');
+        history.replaceState({}, '', urlView);
 
-export function activateNavLink(e){
-        document.querySelectorAll(".nav-link").forEach(l => {
-            if (l.dataset.target == e) l.classList.add("active");
-            else l.classList.remove("active");
-        });
-        window.oldTargetPage = e;
-        if(e =="page-home"){
-            const urlView = new URL(window.location.href);
-urlView.searchParams.delete('note');
-urlView.searchParams.delete('bundleID');
-history.replaceState({}, '', urlView);
-            
-            }
-    };
+    }
+};
 
-export const openPanel = async (jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset="list") => {
+export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset = "list") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
     let altSourceIcon = dir + "/common/assets/img/generic_app.jpeg";
-	
 
-let bottomPanel = document.querySelector(`#${ID}`);
-if (bottomPanel) {
-  bottomPanel.innerHTML = "";
-  bottomPanel.classList.remove("show");
-} else {
-  // nếu chưa có thì tạo mới
-  bottomPanel = document.createElement("div");
-  bottomPanel.id = ID;
-}
-bottomPanel.setAttribute("data-type", dataset);
-document.body.append(bottomPanel);
-
+    let bottomPanel = document.querySelector(`#${ID}`);
+    if (bottomPanel) {
+        bottomPanel.innerHTML = "";
+        bottomPanel.classList.remove("show");
+    } else {
+        // nếu chưa có thì tạo mới
+        bottomPanel = document.createElement("div");
+        bottomPanel.id = ID;
+    }
+    bottomPanel.setAttribute("data-type", dataset);
+    document.body.append(bottomPanel);
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
         let app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
@@ -91,13 +93,13 @@ document.body.append(bottomPanel);
             }
         }
         let appInfo;
-        try{
-             appInfo = await getAppInfoByBundleId(bundleId);
-		if(!appInfo) {
-			let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
-			appInfo = await getAppInfoByBundleId(bundleIds);
-		}
-        }catch(e){}
+        try {
+            appInfo = await getAppInfoByBundleId(bundleId);
+            if (!appInfo) {
+                let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
+                appInfo = await getAppInfoByBundleId(bundleIds);
+            }
+        } catch (e) {}
 		//console.log(appInfo);
         // If has multiple versions, show the latest one
         if (app.versions) {
@@ -627,7 +629,6 @@ document.body.append(bottomPanel);
             closePanel();
         }
     });
-
 }
 export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTarget) {
     const appsContainer = document.getElementById('apps-list');
