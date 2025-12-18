@@ -10,7 +10,9 @@
 #main #news-items {
   padding: 0 1rem;
 }
-
+.bi {
+height: 1rem;
+}
 .sub-version{
     margin-left:1em;
 }
