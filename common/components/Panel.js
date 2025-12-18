@@ -92,15 +92,12 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 return;
             }
         }
-        let appInfo;
-        try {
-            appInfo = await getAppInfoByBundleId(bundleId);
-            if (!appInfo) {
-                let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
-                appInfo = await getAppInfoByBundleId(bundleIds);
-            }
-        } catch (e) {}
-		//console.log(appInfo);
+        let appInfo = await getAppInfoByBundleId(bundleId);
+        if (!appInfo) {
+           let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
+           appInfo = await getAppInfoByBundleId(bundleIds);
+        }
+
         // If has multiple versions, show the latest one
         if (app.versions) {
             const latestVersion = app.versions[0];
@@ -894,7 +891,7 @@ export function wrapLightbox(htmlString) {
 }
 
 async function getAppInfoByBundleId(bundleId) {
-    const timeout = new Promise((resolve) => setTimeout(() => resolve(null), 500));
+    const timeout = new Promise((resolve) => setTimeout(() => resolve(null), 250));
     const fetchPromise = (async () => {
         const baseUrl = "https://itunes.apple.com/lookup";
         const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}`;
