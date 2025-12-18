@@ -629,7 +629,7 @@ document.body.append(bottomPanel);
     });
 
 }
-export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
+export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTarget) {
     const appsContainer = document.getElementById('apps-list');
     if (!appsContainer) return;
     const allApps = source.apps;
@@ -660,7 +660,10 @@ export async function addAppList(source, appsPerLoad = 6, scrollTarget) {
     const filter = document.createElement("span");
     filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
     filter.style.cssText = "display: flex;justify-content: center;";
-    let filterType = 0;
+    filter.querySelectorAll('.category').forEach((el, index) => {
+	if(index == filterType) el.classList.add('active');
+	else el.classList.remove('active');
+    });
     xIcon.addEventListener('click', () => {
         searchBox.value = '';
         xIcon.style.display = 'none';

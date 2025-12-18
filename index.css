@@ -26,7 +26,7 @@
 }
 
 @media (hover:hover) {
-  .suggestion:hover {
+  .suggestions:hover {
     opacity: 0.75;
   }
 }
@@ -36,11 +36,11 @@
     background-color: rgba(255, 255, 255, 0.07);
     color: white;
   }
-  .suggestion {
+  .suggestions {
     border-bottom: 0.1px solid var(--color-separator-dark) !important;
   }
 }
-#suggestions {
+#suggestions,#suggestions2 {
         display: grid;
         max-width: 768px;
         overflow-x:scroll;

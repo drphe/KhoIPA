@@ -101,9 +101,16 @@ const sources = await json("./common/assets/json/sources.json");
 
 	// insert newest app
         let count = 1;
-        allApps.forEach(app => {
+	let allAppsView = allApps.filter(s=> s.type==1);
+        allAppsView.forEach(app => {
             if (count > 6) return;
             document.getElementById("suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
+            count++;
+        });
+	count=1, allAppsView = allApps.filter(s=> s.type==2);
+        allAppsView.forEach(app => {
+            if (count > 6) return;
+            document.getElementById("suggestions2").insertAdjacentHTML("beforeend", AppHeader(app));
             count++;
         });
 
@@ -213,10 +220,15 @@ const sources = await json("./common/assets/json/sources.json");
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
-        addAppList({ apps: allApps }, 10); // 10 apps
+        addAppList({ apps: allApps }, 10, 1); // 10 apps, lấy app type=1
         activateNavLink("page-library");
      });
-
+    document.getElementById('search2')?.addEventListener("click", async(e) => {
+        e.preventDefault();
+        await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
+        addAppList({ apps: allApps }, 10, 2); // 10 apps, lấy app type=1
+        activateNavLink("page-library");
+     });
     //
     // view all source
     document.getElementById('all-source')?.addEventListener("click", async(e) => {
