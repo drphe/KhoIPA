@@ -68,7 +68,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
     let altSourceIcon = dir + "/common/assets/img/generic_app.jpeg";
-
+    let hasScreenshot= true;
     let bottomPanel = document.querySelector(`#${ID}`);
     if (bottomPanel) {
         bottomPanel.innerHTML = "";
@@ -91,11 +91,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
                 return;
             }
-        }
-        let appInfo = await getAppInfoByBundleId(bundleId);
-        if (!appInfo) {
-           let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
-           appInfo = await getAppInfoByBundleId(bundleIds);
         }
 
         // If has multiple versions, show the latest one
@@ -273,13 +268,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         // Developer name
         appHeader.querySelector(".subtitle").textContent = app.developerName;
         // 
-        // Preview
-        const preview = bottomPanel.querySelector("#preview");
-		const moreDetail = bottomPanel.querySelector("#more-detail");
-		if(appInfo?.trackViewUrl) {
-			moreDetail.href= appInfo.trackViewUrl;
-			moreDetail.classList.remove("hidden");
-		}
         // Subtitle
         const previewSubtitle = preview.querySelector("#subtitle");
         previewSubtitle.textContent = app.subtitle;
@@ -316,12 +304,9 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
                 <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot"></a>`);
             });
-        } else if(appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0){
-            appInfo.screenshotUrls.forEach((url, i) => {
-                preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
-                <img src="${url}" alt="${app.name} screenshot ${i + 1}" class="screenshot"></a>`);
-            });
-        }
+        }else {
+		hasScreenshot=false;
+	}
         // Description
         const previewDescription = preview.querySelector("#description");
         previewDescription.innerHTML = formatString(app.localizedDescription);
@@ -588,6 +573,27 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         console.log("Preload Panel.")
         return;
     }
+async function getPreview(){
+	if(direction!=="bottom") return;
+        let appInfo = await getAppInfoByBundleId(bundleId);
+        if (!appInfo) {
+           let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
+           appInfo = await getAppInfoByBundleId(bundleIds);
+        }
+        // Preview
+        const preview = bottomPanel.querySelector("#preview");
+		const moreDetail = bottomPanel.querySelector("#more-detail");
+		if(appInfo?.trackViewUrl) {
+			moreDetail.href= appInfo.trackViewUrl;
+			moreDetail.classList.remove("hidden");
+		}
+	if(!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0){
+            appInfo.screenshotUrls.forEach((url, i) => {
+                preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
+                <img src="${url}" screenshot ${i + 1}" class="screenshot"></a>`);
+            });
+        }
+}
 
     function closePanel() {
         bottomPanel.classList.remove("show");
@@ -605,8 +611,9 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     // show popup
    setTimeout(() => bottomPanel.classList.add("show"), 10);//show when everything ready
     waitForAllImagesToLoad(bottomPanel);
-    refreshFsLightbox();
     document.body.classList.add('no-scroll');
+    await getPreview();
+    refreshFsLightbox();
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
     closeBottom.addEventListener("click", closePanel);
@@ -891,7 +898,7 @@ export function wrapLightbox(htmlString) {
 }
 
 async function getAppInfoByBundleId(bundleId) {
-    const timeout = new Promise((resolve) => setTimeout(() => resolve(null), 250));
+    const timeout = new Promise((resolve) => setTimeout(() => resolve(null), 2000));
     const fetchPromise = (async () => {
         const baseUrl = "https://itunes.apple.com/lookup";
         const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}`;
