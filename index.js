@@ -82,7 +82,7 @@ const sources = await json("./common/assets/json/sources.json");
             app.sourceName = source.name;
             app.sourceIconURL = source.iconURL;
             app.sourceTintColor = source.tintColor;
-            app.bundleIdentifier += `.${randCode(source.name)}`;
+            app.bundleIdentifier += `@${source.identifier}`;
 	    app.versionDate = app.versionDate? fixYear(app.versionDate):'';
         }
         //const nonBetaApps = source.apps.filter(app => !app.beta);

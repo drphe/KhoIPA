@@ -82,15 +82,12 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     document.body.append(bottomPanel);
     if (direction == "bottom") {
         bottomPanel.classList.add("panel", "bottom");
+        //bundleId = bundleId.split("@")[0];
         let app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
 		updateBundleID(bundleId);
-        if (!app) {
-            bundleId = bundleId.substring(0, bundleId.lastIndexOf("."));
-            app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
-            if(!app) {
-                showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
-                return;
-            }
+        if(!app) {
+            showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
+            return;
         }
 
         // If has multiple versions, show the latest one
@@ -569,31 +566,32 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 bottomPanel.style.transform = "";
             }
         });
-    } else {
+
+    }
+    else {
         console.log("Preload Panel.")
         return;
     }
-async function getPreview(){
-	if(direction!=="bottom") return;
-        let appInfo = await getAppInfoByBundleId(bundleId);
-        if (!appInfo) {
-           let bundleIds = bundleId.substring(0, bundleId.lastIndexOf("."));
-           appInfo = await getAppInfoByBundleId(bundleIds);
-        }
+    async function getPreview() {
+        if (direction !== "bottom")
+            return;
+        let appInfo = await getAppInfoByBundleId(bundleId.split("@")[0]);
+        if (!appInfo)
+            return;
         // Preview
         const preview = bottomPanel.querySelector("#preview");
-		const moreDetail = bottomPanel.querySelector("#more-detail");
-		if(appInfo?.trackViewUrl) {
-			moreDetail.href= appInfo.trackViewUrl;
-			moreDetail.classList.remove("hidden");
-		}
-	if(!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0){
+        const moreDetail = bottomPanel.querySelector("#more-detail");
+        if (appInfo?.trackViewUrl) {
+            moreDetail.href = appInfo.trackViewUrl;
+            moreDetail.classList.remove("hidden");
+        }
+        if (!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0) {
             appInfo.screenshotUrls.forEach((url, i) => {
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
                 <img src="${url}" screenshot ${i + 1}" class="screenshot"></a>`);
             });
         }
-}
+    }
 
     function closePanel() {
         bottomPanel.classList.remove("show");
