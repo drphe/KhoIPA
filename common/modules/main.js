@@ -27,33 +27,35 @@ export function main(callback, fallbackURL = "../../") {
         const supportType = detectSupport(source.apps[0]);
         const installAppAlert = new UIAlert({
             title: ` Add to ${supportType}`,
-            message: `${json.name} format is ONLY supported for ${supportType} app.`
+            message: `Which app would you like to add??`
         });
+	if(supportType == 'both' || supportType == 'Esign') {
+        	installAppAlert.addAction({
+            		title: "Add to Esign",
+            		style: 'default',
+	    		handler: () => checkScheme(`esign://addsource?url=${sourceURL}`)
+        	});
+	}
+	if(supportType == 'both' || supportType == 'Feather') {
+        	installAppAlert.addAction({
+            		title: "Add to Feather",
+            		style: 'default',
+	    		handler: () => checkScheme(`feather://source/${sourceURL}`)
+        	});
+	}
         installAppAlert.addAction({
-            title: "Agree",
-            style: 'default',
-	    handler: () => {
-		supportType === "Esign"
-	        ? checkScheme(`esign://addsource?url=${sourceURL}`)
-        	: checkScheme(`feather://source/${sourceURL}`);
-	    }
+            	title: "Copy link",
+            	style: 'default',
+	    	handler: () => {navigator.clipboard.writeText(sourceURL);showUIAlert("Copied", "Link source copied!");}
         });
         installAppAlert.addAction({
             title: "Cancel",
             style: 'cancel',
         });
         document.getElementById('add-to-altstore').addEventListener('click', function(event) {
-            const esignTextContainer = document.querySelector('.uibanner .text-container:last-of-type');
-            const isEsignVisible = window.getComputedStyle(esignTextContainer).opacity === '1';
-            const link = document.querySelector(".add");
-            if (supportType === 'both') {
-               checkScheme(isEsignVisible ? `feather://source/${sourceURL}` : `esign://addsource?url=${sourceURL}`);
-            } else installAppAlert.present();
-               navigator.clipboard.writeText(sourceURL);
+           installAppAlert.present();
         });
-		if (!json.sourceURL) {
-			json.sourceURL = sourceURL;
-		}
+	json.sourceURL ??= sourceURL;
         setApps(json.apps);
         callback(json);
         // loaded();
@@ -78,7 +80,7 @@ function checkScheme(urlScheme) {
     window.location.href = urlScheme;
     const timer = setTimeout(() => {
         if (!hasHidden) {
-            showUIAlert("Copied", "Không có app tương ứng.\nLink source copied!");
+            showUIAlert("Error", "Không có app tương ứng.");
         }
     }, 2000);
 }
