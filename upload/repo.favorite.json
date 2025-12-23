@@ -23,6 +23,228 @@
   "apps": [
     {
       "beta": false,
+      "name": "Summarizer: Brainnotes",
+      "type": 1,
+      "bundleIdentifier": "com.flingex.brainnotes",
+      "developerName": "@Sa1y0miii",
+      "subtitle": "Subscription unlocked.",
+      "localizedDescription": "Unlock the power of your content with Summarizer: Brainnotes, the ultimate AI-powered tool for turning information into knowledge. Whether you're a student, professional, or lifelong learner, Summarizer: Brainnotes helps you learn faster and retain more — with less effort.\n\nWith Summarizer: Brainnotes, you can instantly convert audio, YouTube videos, PDFs, and images into clear, organized notes. No more manual transcription or summarizing — just quick, accurate content extraction in seconds.\n\nOnce you’ve got your notes, Summarizer: Brainnotes lets you automatically generate flashcards and quizzes to reinforce your learning and test your understanding on the go.\n\nPrefer audio? Summarizer: Brainnotes can turn your notes into podcast-style audio, so you can listen and learn while commuting, exercising, or relaxing.\n\nStudying in multiple languages? No problem. Summarizer: Brainnotes supports translation into over 60 languages, making it easy to understand and share knowledge globally.\n\nNeed deeper insights? Just chat with your notes like an AI tutor — ask questions, clarify concepts, and explore topics in a whole new way.\n\nFrom simplifying content to supercharging study sessions, Summarizer: Brainnotes is your all-in-one tool for transforming how you learn and grow.\n\nAll features (including summarization, flashcards, audio notes, translation, and AI tutoring) require a paid subscription.\n\nNo features are available without purchase.\n\nPricing and subscription options are displayed within the app at checkout.\n\nTerms Of Service: https://www.brainnotes.app/tos\nPrivacy Policy: https://www.brainnotes.app/privacy",
+      "versionDescription": "",
+      "tintColor": "#842cd4",
+      "iconURL": "https://i.ibb.co/xKgbz2YV/a63b313e570c.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Turning on camera services will allow Brainnotes to take photos and create notes from them.",
+          "NSUserTrackingUsageDescription": "Your device identifier helps us deliver relevant ads and measure app performance.",
+          "NSSpeechRecognitionUsageDescription": "Turning on speech recognition services will allow Brainnotes to understand your voice commands.",
+          "NSMicrophoneUsageDescription": "Turning on microphone services will allow Brainnotes to record audio and create notes from the recording.",
+          "NSLocationWhenInUseUsageDescription": "This app does not directly request your location, but it may be accessed by third-party services for analytics or functionality.",
+          "NSPhotoLibraryUsageDescription": "Turning on photo services will allow Brainnotes to access your photos and create notes from them."
+        }
+      },
+      "size": 32300000,
+      "version": "4.1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.3/Summarizer_v2.3_tg@Sa1y0miii.ipa",
+          "size": 32300000,
+          "version": "4.1.0",
+          "buildVersion": null,
+          "date": "2025-12-23T08:08:00+07:00",
+          "localizedDescription": "📮 Notes: Click “restore purchases” or close the purchase page.  \n",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T08:08:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.3/Summarizer_v2.3_tg@Sa1y0miii.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Birthday Countdown: CandlesUp",
+      "type": 1,
+      "bundleIdentifier": "com.ap-dev.bday-reminder",
+      "developerName": "@Sa1y0miii",
+      "subtitle": "Subscription unlocked.",
+      "localizedDescription": "Never miss a special day again. CandlesUp is your all-in-one birthday reminder, countdown widget, and calendar tracker. Import birthdays from contacts or calendars and get smart reminders with birthday wishes.\n\nKey Features\n- Effortless Tracking – Manually add birthdays or import them directly from your contacts.\n- Countdown Timer – See the exact time left until upcoming birthdays.\n- Personalized Experience – Set up your own birthday profile and track your countdown.\n- Rich Details – View age, Western & Chinese zodiac signs, and more.\n- Quick Actions – Manage contacts, notifications, and calendar views with a single tap.\n- Insights - Get to know you friends and their bday analytics",
+      "versionDescription": "",
+      "tintColor": "#3c5cd4",
+      "iconURL": "https://i.ibb.co/hRzHDP5q/dc4f44aefb65.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCalendarsUsageDescription": "We need access to your calendar to add birthday reminders.",
+          "NSCameraUsageDescription": "We need access to your camera to take profile photos for your friends.",
+          "NSContactsUsageDescription": "We need access to your contacts to import your friends birthdays",
+          "NSPhotoLibraryAddUsageDescription": "We need permission to save your achievement and streak milestone images to your photo library."
+        }
+      },
+      "size": 28200000,
+      "version": "1.8.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.8.3/Birthday.Countdown_v1.8.3_tg@Sa1y0miii.ipa",
+          "size": 28200000,
+          "version": "1.8.3",
+          "buildVersion": null,
+          "date": "2025-12-23T15:05:00+07:00",
+          "localizedDescription": "Subscription unlocked.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T15:05:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.8.3/Birthday.Countdown_v1.8.3_tg@Sa1y0miii.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Superfan – The Social Music App",
+      "type": 1,
+      "bundleIdentifier": "com.superfan.app",
+      "developerName": "@Sa1y0miii",
+      "subtitle": "Subscription unlocked.",
+      "localizedDescription": "Get your Weekly Recap\nEvery Friday, Superfan drops a recap of what you listened to, complete with a vibe that captures your week in music!\n\nTrack your Concerts and Music Festivals\nKeep track of every show you've been to... ever! Tag your friends & share your photos, too.\n\nLog your Vinyl Collection\nYour signed copy of folklore? Yeah, you should brag about that here.\n\nJoin your Friends in Groups\nInvite your friends and see what they're listening to each week. Group awards call out the Saddest Songs and the Most Mainstream, so brace yourself!",
+      "versionDescription": "",
+      "tintColor": "#ec543c",
+      "iconURL": "https://i.ibb.co/Kj3gGC6b/ae0675eaa4d9.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "The app accesses your camera so you can upload images from concerts and vinylse.",
+          "NSPhotoLibraryAddUsageDescription": "Allow Superfan to save photos to your camera roll.",
+          "NSAppleMusicUsageDescription": "We connect to Apple Music to see what you're listening to and generate your recap each week.",
+          "NSMicrophoneUsageDescription": "Allow Superfan to access your microphone",
+          "NSPhotoLibraryUsageDescription": "The app accesses your photos to let you upload a profile picture."
+        }
+      },
+      "size": 22200000,
+      "version": "1.23.34",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.23.34/Superfan_v1.23.34_tg@Sa1y0miii.ipa",
+          "size": 22200000,
+          "version": "1.23.34",
+          "buildVersion": null,
+          "date": "2025-12-23T15:02:00+07:00",
+          "localizedDescription": "Subscription unlocked.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T15:02:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.23.34/Superfan_v1.23.34_tg@Sa1y0miii.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Pomidor: Focus & Rest Timer",
+      "type": 1,
+      "bundleIdentifier": "app.pomidor.project",
+      "developerName": "@Sa1y0miii",
+      "subtitle": "Subscription unlocked.",
+      "localizedDescription": "Build focus, structure your time, and boost your productivity - one session at a time.\n\nPomidor: Focus & Study Timer helps you stay consistent, productive, and mindful throughout your day.\nSwitch effortlessly between Focus and Rest sessions, track your performance, and design a routine that works for you. Whether you’re working, studying, or practicing deep focus, Pomidor keeps you on track with purpose and clarity.\n",
+      "versionDescription": "",
+      "tintColor": "#868678",
+      "iconURL": "https://i.ibb.co/r2k2FPgS/69ccae309af9.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 25500000,
+      "version": "1.0.13",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.13/Pomidor_v1.0.13_tg@Sa1y0miii.ipa",
+          "size": 25500000,
+          "version": "1.0.13",
+          "buildVersion": null,
+          "date": "2025-12-23T14:50:00+07:00",
+          "localizedDescription": "Subscription unlocked.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T14:50:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.13/Pomidor_v1.0.13_tg@Sa1y0miii.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Albums: Music Library Player",
+      "type": 1,
+      "bundleIdentifier": "com.talkingsmall.Albums",
+      "developerName": "@Sa1y0miii",
+      "subtitle": "Subscription unlocked.",
+      "localizedDescription": "Albums is the Apple Music player that puts you in control of your music. Whether you just want to throw on album shuffle or spend hours meticulously sorting and filtering your collection, Albums cares about your music library as much as you do.",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.ibb.co/N2b4LKFG/2ba7e3af9a9f.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "Albums requires access to your music library in order to play your music.",
+          "NSCameraUsageDescription": "Albums uses access to your camera to scan barcodes of albums to add to your library",
+          "NSHealthShareUsageDescription": "Albums needs permission to read your workout history in order to generate Workout Insights.",
+          "NSHealthUpdateUsageDescription": "Albums needs permission to read your workout history in order to generate Workout Insights.",
+          "NSPhotoLibraryAddUsageDescription": "Albums needs permission to save to your photo library if you'd like to save your Listening Reports there."
+        }
+      },
+      "size": 23600000,
+      "version": "7.0.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.0.2/Albums_v7.0.2_tg@Sa1y0miii.ipa",
+          "size": 23600000,
+          "version": "7.0.2",
+          "buildVersion": null,
+          "date": "2025-12-23T14:47:00+07:00",
+          "localizedDescription": "Subscription unlocked.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T14:47:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.0.2/Albums_v7.0.2_tg@Sa1y0miii.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Timeland - Save Your Journey",
+      "type": 1,
+      "bundleIdentifier": "com.jiangdi.traveljournal.app",
+      "developerName": "@Sa1y0miii",
+      "subtitle": "Subscription unlocked.",
+      "localizedDescription": "Every journey deserves to be cherished. Timeland is your personal AI travel journalist. Simply upload your photos, and watch as it automatically weaves them into a beautiful journal with smart summaries. Effortlessly organize your travel memories and make every look back a heartfelt experience.",
+      "versionDescription": "",
+      "tintColor": "#49cb33",
+      "iconURL": "https://i.ibb.co/KnjqXB3/03f2e7293b51.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 6400000,
+      "version": "0.1.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.2/Timeland_v1.0.1_tg@Sa1y0miii.ipa",
+          "size": 6400000,
+          "version": "0.1.2",
+          "buildVersion": null,
+          "date": "2025-12-23T14:42:00+07:00",
+          "localizedDescription": "Subscription unlocked.⠀",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T14:42:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.2/Timeland_v1.0.1_tg@Sa1y0miii.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "ProKnockOut",
       "type": 1,
       "bundleIdentifier": "com.loveyouchenapps.knockout",
@@ -51,12 +273,12 @@
       "version": "7.80",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.80/ProKnockOut.-.v7.80.ipa",
-          "size": 148300000,
           "version": "7.80",
-          "buildVersion": null,
           "date": "2025-12-23T09:55:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Unlock Pro",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.80/ProKnockOut.-.v7.80.ipa",
+          "size": 148300000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -90,12 +312,12 @@
       "version": "1.0.121805",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.121805/AyakashiRise.-.v1.0.121805.ipa",
-          "size": 159000000,
           "version": "1.0.121805",
-          "buildVersion": null,
           "date": "2025-12-23T09:35:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Damge Mutiple\n✅No Ads\n✅ God Mod\n📝 Make By: DoraTeamMod",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.121805/AyakashiRise.-.v1.0.121805.ipa",
+          "size": 159000000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -126,12 +348,12 @@
       "version": "20.9",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.9/Buffer.Editor_.Code.Editor.tg@IAppsBest.ipa",
-          "size": 20300000,
           "version": "20.9",
-          "buildVersion": null,
           "date": "2025-12-23T09:30:00+07:00",
           "localizedDescription": "Subscription \"Pro\" activated",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.9/Buffer.Editor_.Code.Editor.tg@IAppsBest.ipa",
+          "size": 20300000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -164,12 +386,12 @@
       "version": "99.1.35",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v99.1.35/+99.Reinforced.Wooden.Stick.-.v99.1.35.ipa",
-          "size": 620800000,
           "version": "99.1.35",
-          "buildVersion": null,
           "date": "2025-12-23T09:29:00+07:00",
           "localizedDescription": "🔩 Chức năng 🔩\n✅ Damge Mutiple\n✅No skill CD\n✅Speed\n✅ God Mod\n📝 Make By: DoraTeamMod",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v99.1.35/+99.Reinforced.Wooden.Stick.-.v99.1.35.ipa",
+          "size": 620800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
