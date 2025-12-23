@@ -23,6 +23,162 @@
   "apps": [
     {
       "beta": false,
+      "name": "ProKnockOut",
+      "type": 1,
+      "bundleIdentifier": "com.loveyouchenapps.knockout",
+      "developerName": "Crack VN",
+      "subtitle": "Unlock pro",
+      "localizedDescription": "Come and experience the Top 1 professional cutout and photo editing tool in Appstore! With this tool, you will become a master in photo editing area even if you are a beginner. One-click cutout、 multi-layer synthesis of pictures、 making ID photos、collages、 instantly erase redundant passers-by in photos、green screen cutouts、replace the sky··· In addition， a large number of templates and stickers making design extremely simple。\n\n*One-click cutout & batch cutout\n-After selecting the picture, you can get the results of the cutout with one click. Buckle out the characters, animals, products, stamps and other content in the picture with one click, and also support batch cutouts, which greatly improves the efficiency of the cutout.\n-Manually selection tools: Lasso, instant alpha, eraser, a lot of manual tools to cutout if you are not satisfied with the result of the automatic cutout tool.\n-The new \"Hair Refine\" and \"Edge Refine\" tools, offering you a first glimpse of how much easier it could be to select hair, fur and other fine details in an image.\n\n*Multi-layer composition\nPowerful image synthesis function, seamlessly synthesize multiple pictures, the effect is amazing.\n\n*ID photo\nID camera + multiple ID photo sizes + automatic cutout + modified background color + exquisite male and female formal wear + beauty",
+      "versionDescription": "",
+      "tintColor": "#0642f8",
+      "iconURL": "https://i.ibb.co/7tnyh1Mz/8b2ef6c80633.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "NSAppleMusicUsageDescription",
+          "NSCameraUsageDescription": "This app needs your permission to take photos/videos to edit in app",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Enable the feature to insert the location on photos.",
+          "NSLocationAlwaysUsageDescription": "Enable the feature to insert the location on photos.",
+          "NSLocationWhenInUseUsageDescription": "Enable the feature to insert the location on photos.",
+          "NSMicrophoneUsageDescription": "This app needs your permission to record audio in video",
+          "NSPhotoLibraryAddUsageDescription": "This app needs your permission to save the editing result",
+          "NSPhotoLibraryUsageDescription": "This app needs your permission to read the media library and save the editing result",
+          "NSUserTrackingUsageDescription": "This permission is only used to serve you with customized ads and to help us better understand the functions which you are interested in"
+        }
+      },
+      "size": 148300000,
+      "version": "7.80",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.80/ProKnockOut.-.v7.80.ipa",
+          "size": 148300000,
+          "version": "7.80",
+          "buildVersion": null,
+          "date": "2025-12-23T09:55:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Unlock Pro",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T09:55:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.80/ProKnockOut.-.v7.80.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Ayakashi Rise: AFK Demon Hunt",
+      "type": 2,
+      "bundleIdentifier": "com.clovergames.ayakashirise",
+      "developerName": "DoraTeamMod",
+      "subtitle": "Mod Game - for IPAD",
+      "localizedDescription": "Reports of unidentified \"evil spirits\" have surged across the city, prompting authorities to urge citizens to exercise extreme caution. Numerous unexplained phenomena have been confirmed, with vehicles, animals, and humans alike exhibiting unknown and abnormal changes. Severe breaches have also occurred in the city's protective ward system. In response, officials have issued an unprecedented \"Ayakashi-level\" disaster warning.\n\nBut hope remains.\nYou have been chosen as the Agent, spearheading the Anomaly Control Bureau.\nGifted with special abilities, use the power of Resonance and lead ordinary students to turn them into the mightiest force. Your girls await your command.\n\n〓Create a powerful team of adorable anime girls〓\nBattle with the charming maidens who are ready to stand by your side. Come meet the cute and innocent class president, the cool ace of the athletics club, a girl from a clan of miko shamanesses, an aspiring idol, and many more unique characters! Recruit, foster, and unlock their potential. Collect, create your own unique team and tactics, power up your students, and vanquish the demon spirits of Tokyo!\n\n〓Non-stop auto idle gameplay! No more grinding! The only way is forward!〓\nThe Agent and your girls never retreat. Hone your skills and teamwork with your students through club activities, and endlessly push through the city streets of Tokyo as you fight through the chaos. Even as you rest, your girls press on for you. Strengthen your team, claim victory, and protect the city!\n\n〓 From urban legends to nightmare come to life! Strategize, command, and vanquish!〓\nUrban legends that have been passed down through history have manifested on the city streets. Combine and utilize each girl's unique skills, uncover the identity of these unsettling, somewhat terrifying and strange spirits, and tactically gun down their weak point! Fear not, though! These girls have the most charming and alluring personalities that no demon spirit can withstand!",
+      "versionDescription": "",
+      "tintColor": "#d3343c",
+      "iconURL": "https://i.ibb.co/1YmgcBZ8/dc2513809638.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Requires access to the camera.",
+          "NSLocationWhenInUseUsageDescription": "This app uses your location to provide personalized services.",
+          "NSPhotoLibraryAddUsageDescription": "The app requires access to Photos to save media to it.",
+          "NSPhotoLibraryUsageDescription": "To save pictures, access permission is required.",
+          "NSUserTrackingUsageDescription": "Your personal data will not be collected and only be used to provide optimized content."
+        }
+      },
+      "size": 159000000,
+      "version": "1.0.121805",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.121805/AyakashiRise.-.v1.0.121805.ipa",
+          "size": 159000000,
+          "version": "1.0.121805",
+          "buildVersion": null,
+          "date": "2025-12-23T09:35:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Damge Mutiple\n✅No Ads\n✅ God Mod\n📝 Make By: DoraTeamMod",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T09:35:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.121805/AyakashiRise.-.v1.0.121805.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Buffer Editor Code Editor",
+      "type": 4,
+      "bundleIdentifier": "Upstart-Illustration-LLC.Buffer",
+      "developerName": "tg@IAppsBest",
+      "subtitle": "Cracked",
+      "localizedDescription": "Buffer Editor is a POWERFUL code and text editor that lets you easily develop software, view code or take notes on the go. Enjoy an editing experience that is both versatile and intuitive, and take your productivity to the next level.\n\n• Connect to GitHub, GitLab, BitBucket, Custom Git, Dropbox, iCloud, Google Drive, SFTP, SSH, and FTP servers\n• Git Operations for easy repository management\n• Git Visual Merge Tool to resolve merge conflicts.\n• Git Visual Branch and Commits History.\n• Live editing—open, edit, and save files directly to remote services\n• Network monitoring for remote services (FTP, SFTP, SSH)\n• Built-in Terminal (SSH Client) with multiple terminals in tabs.\n• Syntax highlighting & code autocomplete: ASP, AWK, ActionScript, Ada, Arduino, Bash, C, C++, C#, Clojure, Cobol, CSS, D, Dart, Dockerfile, Erlang, F#, Fortran, Gherkin, Go, HAML, Haskell, HTML (4 & 5), INI, Java, JavaScript, Julia, Kotlin, LaTeX, Common Lisp, Lua, Markdown, MATLAB, MQL (4 & 5), NSIS, Objective-C, Org Mode, Pascal, Perl, PHP, PowerShell, Progress, Prolog, Pug, Puppet, Python, Q/kdb+, R, reStructuredText, Ruby, Rust, Scala, Solidity, SQL, Stata, Swift, Terraform, TypeScript, TypeScript React, Verilog, VHDL, Visual Basic, Vue, x86 ASM, XML\n• Vim mode support\n• Symbol navigator / document outline\n• Code autocompletion, with custom snippets.\n• Find & replace with regular expression support\n• Recursive file and content search—match and jump to any file at a specific line\n• Find references in file and jump to any file\n• Bracket matching and highlighting\n• Line and word wrapping\n• Unicode support\n• Multiple windows, Split View, and Slide Over support\n• Tabs with automatic restore—quickly switch between files and terminals\n• Full screen mode\n• Extended keyboard with coding keys\n• Bluetooth keyboard support with shortcuts manager\n• Customizable fonts, font sizes, and over 300 dark and light themes\n• Full iOS Files integration—link external folders, open multiple files, import from any supported cloud provider\n• Preview websites(HTML,JS,CSS) on local server in Safari\n• Preview images, PDFs, movies, and documents\n• Send files by email\n• iOS \"Open In\" support (to and from other apps)\n• Touch ID / Face ID protection",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/nGd7FBw/e269cb528eaa.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSFaceIDUsageDescription": "Buffer editor needs permission to use Face ID",
+          "NSLocalNetworkUsageDescription": "Buffer editor needs permission to access Local Network"
+        }
+      },
+      "size": 20300000,
+      "version": "20.9",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.9/Buffer.Editor_.Code.Editor.tg@IAppsBest.ipa",
+          "size": 20300000,
+          "version": "20.9",
+          "buildVersion": null,
+          "date": "2025-12-23T09:30:00+07:00",
+          "localizedDescription": "Subscription \"Pro\" activated",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T09:30:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20.9/Buffer.Editor_.Code.Editor.tg@IAppsBest.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "+99 Reinforced Wooden Stick",
+      "type": 2,
+      "bundleIdentifier": "com.studiolico.woodenstick",
+      "developerName": "DoraTeamMod",
+      "subtitle": "Cracked - for IPAD",
+      "localizedDescription": "The legendary “+99 Reinforced Wooden Stick” is finally here on mobile!\n\n▶ An Original Story Unfolds!\nJoin Peace, Love, and Luna in an all-new adventure brought to life by ChronoLife Mobile.\nExperience their unique journey of courage, growth, and laughter.\n\n▶ Fast-Paced Hack & Slash Action!\nEnhance your trusty wooden stick and sweep through endless waves of monsters!\nUnlock powerful skills to fight faster, harder, and smarter.\n\n▶ Reinforce to +99 — No Limits!\nNo breakage. No downgrade. Only pure enhancement!\nUpgrade every weapon to +99 and forge the ultimate gear set.\n\n▶ Tons of Content and Growth Systems!\nFrom Ursus Dungeon to Guild Raids, dive into endless challenges.\nSend adventurers on missions, decode scrolls, and grow stronger.\nMeet the loyal “Assister” and harness the power of the “Ego” system!\n\n▶ Gear Overflow Every Day!\nThe automated forge produces gear nonstop!\nEquip everything with a single tap and feel your strength surge.\n\n▶ Unique Boss Battles Await!\nFace off against villains straight from the webtoon!\nEach boss has its own personality and attack style — can you defeat them all?",
+      "versionDescription": "",
+      "tintColor": "#f4544c",
+      "iconURL": "https://i.ibb.co/ksNtNsTp/0d366f95e682.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "99ReinforcedWoodenStick need to access the camera in order to capture photo for user's avatar.",
+          "NSPhotoLibraryAddUsageDescription": "99ReinforcedWoodenStick need to access the library in order to select photo for user's avatar.",
+          "NSPhotoLibraryUsageDescription": "99ReinforcedWoodenStick need to access the library in order to select photo for user's avatar.",
+          "NSUserTrackingUsageDescription": "99ReinforcedWoodenStick need to access the IDFA in order to improve personalized advertising of game, log player's behaviour and catch critical bugs."
+        }
+      },
+      "size": 620800000,
+      "version": "99.1.35",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v99.1.35/+99.Reinforced.Wooden.Stick.-.v99.1.35.ipa",
+          "size": 620800000,
+          "version": "99.1.35",
+          "buildVersion": null,
+          "date": "2025-12-23T09:29:00+07:00",
+          "localizedDescription": "🔩 Chức năng 🔩\n✅ Damge Mutiple\n✅No skill CD\n✅Speed\n✅ God Mod\n📝 Make By: DoraTeamMod",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-12-23T09:29:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v99.1.35/+99.Reinforced.Wooden.Stick.-.v99.1.35.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Simon's Cat",
       "type": 2,
       "bundleIdentifier": "com.tactilegames.simonscatstorytime",
