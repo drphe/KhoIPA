@@ -113,14 +113,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             handler: () => open(`esign://install?url=${app.downloadURL}`)
         });
 
-        const plistUrl = await checkIpaAndGenerateInstallUrl(app.downloadURL);
-        if (plistUrl) {
-                installAppAlert.addAction({
-                    title: "Install directly",
-                    style: 'default',
-                    handler: () => window.open(plistUrl)
-                });
-        }else if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
+	 if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
             installAppAlert.addAction({
                 title: "Download IPA",
                 style: 'default',
