@@ -68,7 +68,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
     let altSourceIcon = dir + "/common/assets/img/generic_app.jpeg";
-    let hasScreenshot= true;
+    let hasScreenshot= true, needPreview = false, tintColor ="000";
     let bottomPanel = document.querySelector(`#${ID}`);
     if (bottomPanel) {
         bottomPanel.innerHTML = "";
@@ -99,7 +99,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             app.downloadURL = latestVersion.downloadURL;
             app.size = latestVersion.size;
         }
-        const tintColor = app.tintColor ? app.tintColor.replaceAll("#", "") : "var(--tint-color);";
+        tintColor = app.tintColor ? app.tintColor.replaceAll("#", "") : "var(--tint-color);";
         // Set tint color
         if (tintColor) setTintColor(tintColor);
         // Set up install buttons
@@ -297,6 +297,8 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         }else {
 		hasScreenshot=false;
 	}
+		needPreview = app.versionDescription === app.localizedDescription;
+		
         // Description
         const previewDescription = preview.querySelector("#description");
         previewDescription.innerHTML = formatString(app.localizedDescription);
@@ -578,6 +580,12 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             moreDetail.href = appInfo.trackViewUrl;
             moreDetail.classList.remove("hidden");
         }
+		if (needPreview){
+			const previewDescription = preview.querySelector("#description");
+			console.log(appInfo)
+			previewDescription.innerHTML = formatString(appInfo.description);
+			if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+		}
         if (!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0) {
             appInfo.screenshotUrls.forEach((url, i) => {
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
