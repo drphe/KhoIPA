@@ -1484,7 +1484,7 @@ margin-left: 2rem;
     transform-origin: center center;
         height: 90vw !important;
         width: 90vh !important;
-        object-fit: cover;
+        object-fit: contain;
         max-width: none;
         max-height: none;
   }
