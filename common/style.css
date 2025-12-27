@@ -1485,6 +1485,8 @@ margin-left: 2rem;
     transform-origin: center center;
     height: 90vw !important;
     width: 90vh !important;
+    object-fit: contain;
+    border-radius: 0.5rem;
   }
 }
 
