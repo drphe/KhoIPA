@@ -1477,16 +1477,18 @@ margin-left: 2rem;
     max-width:100%;
     border-radius: 0.5rem;
 }
-
+.fslightbox-absoluted img {
+    height: 90vh!important;
+    width: 100%!important;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
 @media (max-width: 440px) {
-  .rotate-portrait {
+  .fslightbox-absoluted img.rotate-portrait {
     transform: rotate(-90deg);
     transform-origin: center center;
-        height: 90vw !important;
-        width: 90vh !important;
-        object-fit: contain;
-        max-width: none !important;
-        max-height: none !important;
+    height: 90vw !important;
+    width: 90vh !important;
   }
 }
 
