@@ -1475,8 +1475,15 @@ margin-left: 2rem;
 .fslightbox-absoluted img {
     max-height:90vh;
     max-width:100%;
+    border-radius: 0.5rem;
 }
 
+@media (max-width: 414px) {
+  .rotate-portrait {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+  }
+}
 
 /* ==== LIQUID GLASS NAV ==== */
 .bottom-nav-glass {
