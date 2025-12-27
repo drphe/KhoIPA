@@ -1478,10 +1478,15 @@ margin-left: 2rem;
     border-radius: 0.5rem;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .rotate-portrait {
     transform: rotate(-90deg);
     transform-origin: center center;
+        height: 90vw !important;
+        width: 90vh !important;
+        object-fit: cover;
+        max-width: none;
+        max-height: none;
   }
 }
 
