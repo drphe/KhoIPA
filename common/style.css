@@ -1485,8 +1485,8 @@ margin-left: 2rem;
         height: 90vw !important;
         width: 90vh !important;
         object-fit: contain;
-        max-width: none;
-        max-height: none;
+        max-width: none !important;
+        max-height: none !important;
   }
 }
 
