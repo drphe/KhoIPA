@@ -1,72 +1,57 @@
 {
   "name": "Unofficial Epic Games IPA Store",
-  "iconURL": "https://content-download-egs.distro.on.epicgames.com/.well-known/EG-Shield-2023-Black-dual-tone-expanded.png",
-  "sourceURL": "https://raw.githubusercontent.com/Romain-Pl/EpicGamesIPA//main/UnofficialEpicGamesIPASource.json",
-  "website": "https://epicgames.com",
   "identifier": "com.epicgames.altstore",
+  "sourceURL": "https://raw.githubusercontent.com/Romain-Pl/EpicGamesIPA//main/UnofficialEpicGamesIPASource.json",
+  "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
+  "iconURL": "https://content-download-egs.distro.on.epicgames.com/.well-known/EG-Shield-2023-Black-dual-tone-expanded.png",
+  "subtitle": "A source for all of my apps",
+  "description": "Welcome to my source! Here you'll find all of my apps.",
+  "website": "https://epicgames.com",
+  "patreonURL": "https://patreon.com/drphe",
   "tintColor": "#818181",
+  "META": {
+    "repoName": "My Example Repo",
+    "repoIcon": "https://i.imgur.com/pqIZoZo.jpeg"
+  },
   "featuredApps": [
     "com.epicgames.PatchedFortniteGame",
     "com.epicgames.FortniteGame",
-    "uk.co.mediatonic.fallguys",
+    "uk.co.mediatonic.fallguys"
   ],
   "apps": [
     {
+      "beta": false,
       "name": "Fortnite",
+      "type": 1,
       "bundleIdentifier": "com.epicgames.FortniteGame",
       "developerName": "Epic Games Sweden AB",
-      "subtitle": "",
+      "subtitle": "An awesome app.",
       "localizedDescription": "The future of Fortnite is here. Be the last player standing in Battle Royale and Zero Build, explore and survive in LEGO Fortnite, blast to the finish with Rocket Racing or headline a concert with Fortnite Festival. Play thousands of free creator made islands with friends including deathruns, tycoons, racing, zombie survival and more! Join the creator community and build your own island with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools. Each Fortnite island has an individual age rating so you can find the one that's right for you and your friends. Find it all in Fortnite! Fortnite requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM.",
-      "_localizedDescriptions": {
-        "en": "The future of Fortnite is here. Be the last player standing in Battle Royale and Zero Build, explore and survive in LEGO Fortnite, blast to the finish with Rocket Racing or headline a concert with Fortnite Festival. Play thousands of free creator made islands with friends including deathruns, tycoons, racing, zombie survival and more! Join the creator community and build your own island with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools. Each Fortnite island has an individual age rating so you can find the one that's right for you and your friends. Find it all in Fortnite! Fortnite requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM.",
-        "de": "Die Zukunft von Fortnite ist da. Überlebe bis zuletzt in Battle Royale und Null Bauen, erkunde und überlebe in LEGO Fortnite, rase bis zur Ziellinie in Rocket Racing oder gib ein Konzert mit Fortnite Festival. Spiele Tausende kostenlose, von Creators erstellte Inseln mit Freunden, darunter Deathruns, Tycoon-Spiele, Rennspiele, Zombie-Survival und mehr! Werde Teil der Creator-Community und erstelle deine eigene Insel mit Unreal Editor für Fortnite (UEFN) oder den Werkzeugen des Fortnite-Kreativmodus. Jede Fortnite-Insel verfügt über eine eigene Alterseinstufung, sodass du genau die finden kannst, die zu dir und deinen Freunden passt. All das erwartet dich in Fortnite! Fortnite erfordert eine Internetverbindung und unterstützt iPhone 11 oder neuer und iPads mit mindestens 4 GB RAM.",
-        "fr": "Le futur de Fortnite est arrivé. Soyez le dernier survivant dans Battle Royale et Zéro construction, explorez et survivez dans LEGO Fortnite, foncez vers l'arrivée dans Rocket Racing ou organisez votre concert dans Fortnite Festival. Découvrez avec vos amis des milliers d'îles conçues par des créateurs dans une multitude de genres : Deathrun, gestion, course, survie et plus encore ! Rejoignez la communauté de créateurs et créez votre propre île avec l'Unreal Editor for Fortnite (UEFN) ou les outils du mode Créatif. Fortnite, c'est tout ça à la fois ! Chaque île de Fortnite dispose de sa propre classification d'âge permettant à vous et vos amis de trouver le jeu qui vous correspond le mieux. Fortnite a besoin d'une connexion Internet et est compatible avec les iPhone 11 ou les versions plus récentes et avec les iPads disposant d'au moins 4 Go de RAM.",
-        "ru": "Будущее Fortnite наступило. Переживите всех соперников в «Королевской битве» и «Нулевой высоте», исследуйте и выживайте в LEGO Fortnite, жмите на газ в Rocket Racing или возглавьте хит-парад в Fortnite Festival. Играйте с друзьями на тысячах бесплатных островов от наших авторов: вас ждут полосы препятствий, экономические игры, гонки, соревнования на выживание с зомби и многое другое! Присоединяйтесь к сообществу авторов и создайте собственный остров с помощью Unreal Editor для Fortnite (UEFN) или инструментов творчества Fortnite. У каждого острова в Fortnite есть собственный возрастной рейтинг, поэтому вы всегда сможете легко найти то, что подойдёт вам и вашим друзьям. Всё это ждёт вас в Fortnite! Для игры в Fortnite требуется соединение с интернетом, iPad, iPhone 11 или более новая модель c 4 ГБ ОЗУ.",
-        "es": "Ya está aquí el futuro de Fortnite. Consigue ser el último jugador en pie en Battle Royale y Cero construcción, explora y sobrevive en LEGO Fortnite, corre hasta la línea de meta en Rocket Racing o encabeza un concierto en Fortnite Festival. ¡Juega a miles de islas de creadores gratuitas, como deathruns, juegos de gestión, carreras, supervivencia zombi y mucho más! Únete a la comunidad de creadores y construye tu propia isla con Unreal Editor para Fortnite (UEFN) o las herramientas del modo Creativo de Fortnite. Cada isla de Fortnite tiene una clasificación por edades individual para que encuentres la más adecuada para ti y tus amigos. ¡Encuéntralo todo en Fortnite! Fortnite requiere una conexión a internet y es compatible con iPhone 11 modelos posteriores y iPads con al menos 4 GB de memoria RAM.",
-        "pl": "Przyszłość Fortnite zaczyna się dziś. Zostań ostatnim graczem pozostałym przy życiu w Battle Royale i Zero Budowania, odkryj i przeżyj w LEGO Fortnite, pędź do mety z Rocket Racing lub zagraj koncert w Fortnite Festival. Razem ze znajomymi wypróbuj tysiące darmowych wysp stworzonych przez innych graczy, w tym skillruny, tycoony, wyścigi, survivale z zombie i nie tylko! Dołącz do społeczności twórców i stwórz własną wyspę przy użyciu Unreal Editora dla Fortnite (UEFN) lub narzędzi trybu kreatywnego. Każda wyspa Fortnite ma indywidualnie przypisaną klasyfikację wiekową, dzięki czemu znajdziesz taką, która będzie w sam raz dla ciebie i znajomych. Baw się w Fortnite! Fortnite wymaga połączenia z internetem i obsługuje iPhone 11 lub nowsze oraz iPady wyposażone w co najmniej 4 GB RAM.",
-        "it": "Il futuro di Fortnite è qui. Sopravvivi fino alla fine nelle modalità Battaglia reale e Zero costruzioni, esplora e sopravvivi in LEGO Fortnite, raggiungi il traguardo con Rocket Racing o assisti a un concerto con il Festival di Fortnite. Gioca con gli amici a migliaia di isole gratuite realizzate dai creatori, tra cui deathrun, giochi gestionali, corse, sopravvivenza zombi e altro ancora! Unisciti alla community dei creatori e costruisci la tua isola con Unreal Editor per Fortnite (UEFN) o gli strumenti della modalità Creativa di Fortnite. Ogni isola di Fortnite ha una classificazione per età diversa, così potrai trovare quella più adatta a te e ai tuoi amici. Trovale tutte su Fortnite! Fortnite richiede una connessione a internet e supporta iPhone 11 o successivi e iPad con almeno 4 GB di RAM.",
-        "tr": "Fortnite'ın geleceği geldi çattı. Battle Royale ve Sıfır İnşa'da hayatta kalan son oyuncu ol, Lego Fortnite'ta keşfe çık ve hayatta kal, Rocket Racing'de bitiş çizgisi için yarış veya Fortnite Festival'da kendi konserini ver. Arkadaşlarınla birlikte ölüm koşusu, tycoon, yarış, zombili hayatta kalma ve çok daha fazla türü içeren binlerce ücretsiz içerik üreticisi eseri adada oyna! İçerik üreticisi topluluğuna katıl ve Fortnite İçin Unreal Editor (UEFN) veya Fortnite Kreatif araçlarıyla kendi adanı oluştur. Her bir Fortnite adasının ayrı yaş derecelendirmesi vardır. Böylece hem senin hem de arkadaşların için en uygun oyunları bulabilirsin. Hepsi Fortnite'ta! Fortnite oynayabilmek için internet bağlantısı gerekir ve iPhone 11 veya üzeri modelleri ve en az 4 GB RAM'e sahip iPad modellerini destekler."
-      },
-      "appPermissions": {
-          "entitlements": [
-              "com.apple.security.application-groups",
-              "com.apple.developer.siri",
-              "com.apple.developer.associated-domains",
-              "com.apple.developer.kernel.extended-virtual-addressing",
-              "com.apple.developer.kernel.increased-memory-limit",
-              "aps-environment"
-          ],
-           "privacy": {
-              "NSMicrophoneUsageDescription": "App uses the microphone for voice chat.",
-              "NSCameraUsageDescription": "App uses the camera."
-          }
-      },
-      "iconURL": "https://cdn1.epicgames.com/item/fn/FN_Logo_512x512_1024x1024-0a19a924e7f61249ab0c76569abfdc31",
+      "versionDescription": "",
       "tintColor": "#818181",
-      "category": "games",
-      "screenshots": [
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/fn/FNBR_CH5S4_Logo_2688x1440_2688x1440-5ddfe90e9330b9c6406d8413f0f74623",
-          "width": 2688,
-          "height": 1440
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/fn/FNJN_BattleBus_KeyArt_DiscoveryTile_2688x1440_2688x1440-19f8d06c96c372915d4494020f42e6e7",
-          "width": 2688,
-          "height": 1440
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/fn/FNSP_05_MobileScreen_2688x1440_2688x1440-ccb8f89255a077ba448debc17aa6c500",
-          "width": 2688,
-          "height": 1440
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/fn/RR_Inferno_Island_Key_Art_RR_2688x1440_2688x1440-22ff07c036e235f49f69dd92d933beba",
-          "width": 2688,
-          "height": 1440
-        }
+      "iconURL": "https://cdn1.epicgames.com/item/fn/FN_Logo_512x512_1024x1024-0a19a924e7f61249ab0c76569abfdc31",
+      "screenshotURLs": [
+        "https://cdn1.epicgames.com/item/fn/FNBR_CH5S4_Logo_2688x1440_2688x1440-5ddfe90e9330b9c6406d8413f0f74623",
+        "https://cdn1.epicgames.com/item/fn/FNJN_BattleBus_KeyArt_DiscoveryTile_2688x1440_2688x1440-19f8d06c96c372915d4494020f42e6e7",
+        "https://cdn1.epicgames.com/item/fn/FNSP_05_MobileScreen_2688x1440_2688x1440-ccb8f89255a077ba448debc17aa6c500",
+        "https://cdn1.epicgames.com/item/fn/RR_Inferno_Island_Key_Art_RR_2688x1440_2688x1440-22ff07c036e235f49f69dd92d933beba"
       ],
-      "beta": false,
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups",
+          "com.apple.developer.siri",
+          "com.apple.developer.associated-domains",
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "aps-environment"
+        ],
+        "privacy": {
+          "NSMicrophoneUsageDescription": "App uses the microphone for voice chat.",
+          "NSCameraUsageDescription": "App uses the camera."
+        }
+      },
+      "size": 514957312,
+      "version": "36.00.1",
       "versions": [
         {
           "version": "36.00.1",
@@ -74,8 +59,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/Romain-Pl/EpicGamesIPA/releases/download/FortniteUpdate36.00.1/FortniteClient-IOS-Shipping_36.00.1.ipa",
           "size": 514957312,
-          "minOSVersion": "17.6",
-          "buildVersion": "43339410.3.4"
+          "buildVersion": "43339410.3.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "36.00",
@@ -83,8 +68,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FortniteUpdate36.00/FortniteClient-IOS-Shipping_36.00.zip",
           "size": 514924544,
-          "minOSVersion": "17.6",
-          "buildVersion": "43215260.2.3"
+          "buildVersion": "43215260.2.3",
+          "minOSVersion": "17.6"
         },
         {
           "version": "35.20",
@@ -92,8 +77,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FortniteUpdate35.20/FortniteClient-IOS-Shipping_35.20.ipa",
           "size": 486670336,
-          "minOSVersion": "17.6",
-          "buildVersion": "42911808.2.4"
+          "buildVersion": "42911808.2.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "35.10",
@@ -101,8 +86,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FortniteUpdate35.10/FortniteClient-IOS-Shipping_35.10.ipa",
           "size": 571281408,
-          "minOSVersion": "17.6",
-          "buildVersion": "42517454.3.4"
+          "buildVersion": "42517454.3.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "35.00.2",
@@ -110,8 +95,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/Fortnite35.00.2/FortniteClient-IOS-Shipping_35.00.2.ipa",
           "size": 475399168,
-          "minOSVersion": "17.6",
-          "buildVersion": "42262703.3.3"
+          "buildVersion": "42262703.3.3",
+          "minOSVersion": "17.6"
         },
         {
           "version": "35.00",
@@ -119,8 +104,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/Fortnite35.00/FortniteClient-IOS-Shipping_35.00.ipa",
           "size": 475382784,
-          "minOSVersion": "17.6",
-          "buildVersion": "42002682.1.4"
+          "buildVersion": "42002682.1.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "34.40",
@@ -128,8 +113,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FortniteUpdate/FortniteClient-IOS-Shipping_34.40.ipa",
           "size": 472716288,
-          "minOSVersion": "17.6",
-          "buildVersion": "41776299.1.4"
+          "buildVersion": "41776299.1.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "34.30.1",
@@ -137,8 +122,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/release2/FortniteClient-IOS-Shipping_34.30.1.ipa",
           "size": 470696960,
-          "minOSVersion": "17.6",
-          "buildVersion": "41514767.2.3"
+          "buildVersion": "41514767.2.3",
+          "minOSVersion": "17.6"
         },
         {
           "version": "34.30",
@@ -146,67 +131,47 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicIPASource/releases/download/release/FortniteClient-IOS-Shipping_34.30.ipa",
           "size": 470582272,
-          "minOSVersion": "17.6",
-          "buildVersion": "41305671.2.4"
-        },
+          "buildVersion": "41305671.2.4",
+          "minOSVersion": "17.6"
+        }
       ],
+      "versionDate": "2025-06-11T00:00:00.0000000Z",
+      "downloadURL": "https://github.com/Romain-Pl/EpicGamesIPA/releases/download/FortniteUpdate36.00.1/FortniteClient-IOS-Shipping_36.00.1.ipa",
+      "patreon": {}
     },
     {
+      "beta": true,
       "name": "Patched Fortnite",
+      "type": 1,
       "bundleIdentifier": "com.epicgames.PatchedFortniteGame",
       "developerName": "Epic Games Sweden AB",
       "subtitle": "For free Apple Accounts",
       "localizedDescription": "The future of Fortnite is here. Be the last player standing in Battle Royale and Zero Build, explore and survive in LEGO Fortnite, blast to the finish with Rocket Racing or headline a concert with Fortnite Festival. Play thousands of free creator made islands with friends including deathruns, tycoons, racing, zombie survival and more! Join the creator community and build your own island with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools. Each Fortnite island has an individual age rating so you can find the one that's right for you and your friends. Find it all in Fortnite! Fortnite requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM.",
-      "_localizedDescriptions": {
-        "en": "The future of Fortnite is here. Be the last player standing in Battle Royale and Zero Build, explore and survive in LEGO Fortnite, blast to the finish with Rocket Racing or headline a concert with Fortnite Festival. Play thousands of free creator made islands with friends including deathruns, tycoons, racing, zombie survival and more! Join the creator community and build your own island with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools. Each Fortnite island has an individual age rating so you can find the one that's right for you and your friends. Find it all in Fortnite! Fortnite requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM.",
-        "de": "Die Zukunft von Fortnite ist da. Überlebe bis zuletzt in Battle Royale und Null Bauen, erkunde und überlebe in LEGO Fortnite, rase bis zur Ziellinie in Rocket Racing oder gib ein Konzert mit Fortnite Festival. Spiele Tausende kostenlose, von Creators erstellte Inseln mit Freunden, darunter Deathruns, Tycoon-Spiele, Rennspiele, Zombie-Survival und mehr! Werde Teil der Creator-Community und erstelle deine eigene Insel mit Unreal Editor für Fortnite (UEFN) oder den Werkzeugen des Fortnite-Kreativmodus. Jede Fortnite-Insel verfügt über eine eigene Alterseinstufung, sodass du genau die finden kannst, die zu dir und deinen Freunden passt. All das erwartet dich in Fortnite! Fortnite erfordert eine Internetverbindung und unterstützt iPhone 11 oder neuer und iPads mit mindestens 4 GB RAM.",
-        "fr": "Le futur de Fortnite est arrivé. Soyez le dernier survivant dans Battle Royale et Zéro construction, explorez et survivez dans LEGO Fortnite, foncez vers l'arrivée dans Rocket Racing ou organisez votre concert dans Fortnite Festival. Découvrez avec vos amis des milliers d'îles conçues par des créateurs dans une multitude de genres : Deathrun, gestion, course, survie et plus encore ! Rejoignez la communauté de créateurs et créez votre propre île avec l'Unreal Editor for Fortnite (UEFN) ou les outils du mode Créatif. Fortnite, c'est tout ça à la fois ! Chaque île de Fortnite dispose de sa propre classification d'âge permettant à vous et vos amis de trouver le jeu qui vous correspond le mieux. Fortnite a besoin d'une connexion Internet et est compatible avec les iPhone 11 ou les versions plus récentes et avec les iPads disposant d'au moins 4 Go de RAM.",
-        "ru": "Будущее Fortnite наступило. Переживите всех соперников в «Королевской битве» и «Нулевой высоте», исследуйте и выживайте в LEGO Fortnite, жмите на газ в Rocket Racing или возглавьте хит-парад в Fortnite Festival. Играйте с друзьями на тысячах бесплатных островов от наших авторов: вас ждут полосы препятствий, экономические игры, гонки, соревнования на выживание с зомби и многое другое! Присоединяйтесь к сообществу авторов и создайте собственный остров с помощью Unreal Editor для Fortnite (UEFN) или инструментов творчества Fortnite. У каждого острова в Fortnite есть собственный возрастной рейтинг, поэтому вы всегда сможете легко найти то, что подойдёт вам и вашим друзьям. Всё это ждёт вас в Fortnite! Для игры в Fortnite требуется соединение с интернетом, iPad, iPhone 11 или более новая модель c 4 ГБ ОЗУ.",
-        "es": "Ya está aquí el futuro de Fortnite. Consigue ser el último jugador en pie en Battle Royale y Cero construcción, explora y sobrevive en LEGO Fortnite, corre hasta la línea de meta en Rocket Racing o encabeza un concierto en Fortnite Festival. ¡Juega a miles de islas de creadores gratuitas, como deathruns, juegos de gestión, carreras, supervivencia zombi y mucho más! Únete a la comunidad de creadores y construye tu propia isla con Unreal Editor para Fortnite (UEFN) o las herramientas del modo Creativo de Fortnite. Cada isla de Fortnite tiene una clasificación por edades individual para que encuentres la más adecuada para ti y tus amigos. ¡Encuéntralo todo en Fortnite! Fortnite requiere una conexión a internet y es compatible con iPhone 11 modelos posteriores y iPads con al menos 4 GB de memoria RAM.",
-        "pl": "Przyszłość Fortnite zaczyna się dziś. Zostań ostatnim graczem pozostałym przy życiu w Battle Royale i Zero Budowania, odkryj i przeżyj w LEGO Fortnite, pędź do mety z Rocket Racing lub zagraj koncert w Fortnite Festival. Razem ze znajomymi wypróbuj tysiące darmowych wysp stworzonych przez innych graczy, w tym skillruny, tycoony, wyścigi, survivale z zombie i nie tylko! Dołącz do społeczności twórców i stwórz własną wyspę przy użyciu Unreal Editora dla Fortnite (UEFN) lub narzędzi trybu kreatywnego. Każda wyspa Fortnite ma indywidualnie przypisaną klasyfikację wiekową, dzięki czemu znajdziesz taką, która będzie w sam raz dla ciebie i znajomych. Baw się w Fortnite! Fortnite wymaga połączenia z internetem i obsługuje iPhone 11 lub nowsze oraz iPady wyposażone w co najmniej 4 GB RAM.",
-        "it": "Il futuro di Fortnite è qui. Sopravvivi fino alla fine nelle modalità Battaglia reale e Zero costruzioni, esplora e sopravvivi in LEGO Fortnite, raggiungi il traguardo con Rocket Racing o assisti a un concerto con il Festival di Fortnite. Gioca con gli amici a migliaia di isole gratuite realizzate dai creatori, tra cui deathrun, giochi gestionali, corse, sopravvivenza zombi e altro ancora! Unisciti alla community dei creatori e costruisci la tua isola con Unreal Editor per Fortnite (UEFN) o gli strumenti della modalità Creativa di Fortnite. Ogni isola di Fortnite ha una classificazione per età diversa, così potrai trovare quella più adatta a te e ai tuoi amici. Trovale tutte su Fortnite! Fortnite richiede una connessione a internet e supporta iPhone 11 o successivi e iPad con almeno 4 GB di RAM.",
-        "tr": "Fortnite'ın geleceği geldi çattı. Battle Royale ve Sıfır İnşa'da hayatta kalan son oyuncu ol, Lego Fortnite'ta keşfe çık ve hayatta kal, Rocket Racing'de bitiş çizgisi için yarış veya Fortnite Festival'da kendi konserini ver. Arkadaşlarınla birlikte ölüm koşusu, tycoon, yarış, zombili hayatta kalma ve çok daha fazla türü içeren binlerce ücretsiz içerik üreticisi eseri adada oyna! İçerik üreticisi topluluğuna katıl ve Fortnite İçin Unreal Editor (UEFN) veya Fortnite Kreatif araçlarıyla kendi adanı oluştur. Her bir Fortnite adasının ayrı yaş derecelendirmesi vardır. Böylece hem senin hem de arkadaşların için en uygun oyunları bulabilirsin. Hepsi Fortnite'ta! Fortnite oynayabilmek için internet bağlantısı gerekir ve iPhone 11 veya üzeri modelleri ve en az 4 GB RAM'e sahip iPad modellerini destekler."
-      },
-      "appPermissions": {
-          "entitlements": [
-              "com.apple.security.application-groups",
-              "com.apple.developer.siri",
-              "com.apple.developer.associated-domains",
-              "com.apple.developer.kernel.extended-virtual-addressing",
-              "com.apple.developer.kernel.increased-memory-limit",
-              "aps-environment"
-          ],
-           "privacy": {
-              "NSMicrophoneUsageDescription": "App uses the microphone for voice chat.",
-              "NSCameraUsageDescription": "App uses the camera."
-          }
-      },
-      "iconURL": "https://cdn1.epicgames.com/item/fn/FN_Logo_512x512_1024x1024-0a19a924e7f61249ab0c76569abfdc31",
+      "versionDescription": "",
       "tintColor": "#818181",
-      "category": "games",
-      "screenshots": [
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/fn/FNBR_CH5S4_Logo_2688x1440_2688x1440-5ddfe90e9330b9c6406d8413f0f74623",
-          "width": 2688,
-          "height": 1440
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/fn/FNJN_BattleBus_KeyArt_DiscoveryTile_2688x1440_2688x1440-19f8d06c96c372915d4494020f42e6e7",
-          "width": 2688,
-          "height": 1440
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/fn/FNSP_05_MobileScreen_2688x1440_2688x1440-ccb8f89255a077ba448debc17aa6c500",
-          "width": 2688,
-          "height": 1440
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/fn/RR_Inferno_Island_Key_Art_RR_2688x1440_2688x1440-22ff07c036e235f49f69dd92d933beba",
-          "width": 2688,
-          "height": 1440
-        }
+      "iconURL": "https://cdn1.epicgames.com/item/fn/FN_Logo_512x512_1024x1024-0a19a924e7f61249ab0c76569abfdc31",
+      "screenshotURLs": [
+        "https://cdn1.epicgames.com/item/fn/FNBR_CH5S4_Logo_2688x1440_2688x1440-5ddfe90e9330b9c6406d8413f0f74623",
+        "https://cdn1.epicgames.com/item/fn/FNJN_BattleBus_KeyArt_DiscoveryTile_2688x1440_2688x1440-19f8d06c96c372915d4494020f42e6e7",
+        "https://cdn1.epicgames.com/item/fn/FNSP_05_MobileScreen_2688x1440_2688x1440-ccb8f89255a077ba448debc17aa6c500",
+        "https://cdn1.epicgames.com/item/fn/RR_Inferno_Island_Key_Art_RR_2688x1440_2688x1440-22ff07c036e235f49f69dd92d933beba"
       ],
-      "beta": true,
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups",
+          "com.apple.developer.siri",
+          "com.apple.developer.associated-domains",
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "aps-environment"
+        ],
+        "privacy": {
+          "NSMicrophoneUsageDescription": "App uses the microphone for voice chat.",
+          "NSCameraUsageDescription": "App uses the camera."
+        }
+      },
+      "size": 514957312,
+      "version": "36.00.1",
       "versions": [
         {
           "version": "36.00.1",
@@ -214,8 +179,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/Romain-Pl/EpicGamesIPA/releases/download/FortniteUpdate36.00.1/FortniteClient-IOS-Shipping_36.00.1-Patched-AltStore.ipa",
           "size": 514957312,
-          "minOSVersion": "17.6",
-          "buildVersion": "43339410.3.4"
+          "buildVersion": "43339410.3.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "36.00",
@@ -223,8 +188,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FortniteUpdate36.00/FortniteClient-IOS-Shipping_36.00-Patched-Altstore.zip",
           "size": 514924544,
-          "minOSVersion": "17.6",
-          "buildVersion": "43215260.2.3"
+          "buildVersion": "43215260.2.3",
+          "minOSVersion": "17.6"
         },
         {
           "version": "35.20",
@@ -232,8 +197,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FortniteUpdate35.20/FortniteClient-IOS-Shipping_35.20-Patched-AltStore.ipa",
           "size": 486670336,
-          "minOSVersion": "17.6",
-          "buildVersion": "42911808.2.4"
+          "buildVersion": "42911808.2.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "35.10",
@@ -241,8 +206,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FortniteUpdate35.10/FortniteClient-IOS-Shipping_35.10-Patched-AltStore.ipa",
           "size": 571281408,
-          "minOSVersion": "17.6",
-          "buildVersion": "42517454.3.4"
+          "buildVersion": "42517454.3.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "35.00.2",
@@ -250,8 +215,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/Fortnite35.00.2/FortniteClient-IOS-Shipping_35.00.2-Patched-AltStore.ipa",
           "size": 475399168,
-          "minOSVersion": "17.6",
-          "buildVersion": "42262703.3.3"
+          "buildVersion": "42262703.3.3",
+          "minOSVersion": "17.6"
         },
         {
           "version": "35.00",
@@ -259,8 +224,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/Fortnite35.00/FortniteClient-IOS-Shipping_35.00-Patched-AltStore.ipa",
           "size": 475382784,
-          "minOSVersion": "17.6",
-          "buildVersion": "42002682.1.4"
+          "buildVersion": "42002682.1.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "34.40",
@@ -268,8 +233,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FortniteUpdate/FortniteClient-IOS-Shipping_34.40-Patched-AltStore.ipa",
           "size": 472716288,
-          "minOSVersion": "17.6",
-          "buildVersion": "41776299.1.4"
+          "buildVersion": "41776299.1.4",
+          "minOSVersion": "17.6"
         },
         {
           "version": "34.30.1",
@@ -277,8 +242,8 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/release2/FortniteClient-IOS-Shipping_34.30.1-Patched.ipa",
           "size": 470696960,
-          "minOSVersion": "17.6",
-          "buildVersion": "41514767.2.3"
+          "buildVersion": "41514767.2.3",
+          "minOSVersion": "17.6"
         },
         {
           "version": "34.30",
@@ -286,73 +251,42 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicIPASource/releases/download/release/FortniteClient-IOS-Shipping-Patched.ipa",
           "size": 470582272,
-          "minOSVersion": "17.6",
-          "buildVersion": "41305671.2.4"
-        },
-      ],
-    },
-    {
-      "name": "Fall Guys",
-      "bundleIdentifier": "uk.co.mediatonic.fallguys",
-      "developerName": "Mediatonic, Ltd.",
-      "subtitle": "",
-      "category": "games",
-      "localizedDescription": "Jump into a massive-multiplayer party royale with Fall Guys and be the last Bean standing that takes the Crown. Enter the Blunderdome for a free for all platformer game that invites chaos and high-concentrated fun. Competitive & Cooperative: Tumble between competitive free-for-alls and cooperative challenges—or take on the Blunderdome with up to 3 friends! Play with Friends: Fall Guys supports cross-play, cross-platform parties and cross-progression via your Epic Games Account. Ever-Evolving Content: Play stays fresh with new collabs and game updates which bring new Costumes, Obstacles, and ways to play. Gloriously Customizable: Choose from a multitude of Colors, Patterns, Costumes and Nameplates. Relish wins with extravagant Celebrations and share your flair with Emotes! Fall Guys requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM.",
-      "_localizedDescriptions": {
-        "en": "Jump into a massive-multiplayer party royale with Fall Guys and be the last Bean standing that takes the Crown. Enter the Blunderdome for a free for all platformer game that invites chaos and high-concentrated fun. Competitive & Cooperative: Tumble between competitive free-for-alls and cooperative challenges—or take on the Blunderdome with up to 3 friends! Play with Friends: Fall Guys supports cross-play, cross-platform parties and cross-progression via your Epic Games Account. Ever-Evolving Content: Play stays fresh with new collabs and game updates which bring new Costumes, Obstacles, and ways to play. Gloriously Customizable: Choose from a multitude of Colors, Patterns, Costumes and Nameplates. Relish wins with extravagant Celebrations and share your flair with Emotes! Fall Guys requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM.",
-        "de": "Stürz dich in ein massives Multiplayer-Party-Royale-Spiel und hol dir als beste Bohne deine wohlverdiente Krone. Betritt die Stolperhalle dieses kostenlosen Spiels für alle Plattformen und erlebe pures Chaos und hochkonzentrierten Spaß. Wettkampf und Koop: Purzle zwischen allgemeinem Getümmel und Koop-Herausforderungen hin und her oder stürme die Stolperhalle mit bis zu 3 Freunden! Spiele mit Freunden: Fall Guys unterstützt mithilfe deines Epic Games-Kontos Crossplay und plattformübergreifende Gruppen und Fortschritte. Fortlaufend neue Inhalte: Durch erfrischende Gemeinschaftsprojekte und Spiel-Updates mit neuen Kostümen, Hindernissen und Spielarten wird es nie langweilig. Herrlich anpassbar: Wähle aus einer Fülle von Farben, Mustern, Kostümen und Namensschildern. Feiere Siege mit ausschweifendem Jubel und betone mit Emotes dein Talent! Fall Guys erfordert eine Internetverbindung und unterstützt iPhone 11 oder neuer und iPads mit mindestens 4 GB RAM.",
-        "fr": "Plonge-toi dans un jeu multijoueur de party royale avec Fall Guys, sois le dernier haricot debout et remporte la couronne. Pénètre dans le Blunderdome pour découvrir un jeu de plateforme gratuit, chaotique et super amusant. Compétitif et coopératif : trébuche entre compétitions chaotiques et défis coopératifs ou pars à l'assaut du Blunderdome avec 3 amis max ! Joue entre amis : Fall Guys te permet de jouer sur plusieurs plateformes et de bénéficier d'une progression partagée avec ton compte Epic Games. Du contenu évolutif : profite des collaborations et mises à jour régulières qui introduisent de nouveaux costumes, obstacles et manières de jouer. Fabuleusement personnalisable : choisis parmi tout un ensemble de couleurs, motifs, costumes et plaques nominales. Fête tes victoires avec des célébrations et des animations ! Fall Guys a besoin d'une connexion Internet et est compatible avec les iPhone 11 ou les versions plus récentes et avec les iPads disposant d'au moins 4 Go de RAM.",
-        "ru": "Примите участие в масштабной многопользовательской королевской вечеринке Fall Guys и станьте тем самым бобом, который получит корону! Fall Guys — бесплатный для всех платформер, полный хаоса и бурного веселья. Соревновательная и совместная игра: играйте против всех или проходите испытания вместе — или бросьте вызов Blunderdome вместе с одним, двумя или тремя друзьями! Играйте с друзьями: Fall Guys поддерживает кроссплатформенные игры и прогресс для учётной записи Epic Games. Новинки и сюрпризы: постоянные коллабы, регулярные обновления костюмов, препятствий и возможностей — игра никогда не наскучит! Полная персонализация: огромный выбор цветов, рисунков, костюмов и табличек для имени. Празднуйте победу разными триумфами, выражайте себя эмоциями! Для игры в Fall Guys требуется соединение с интернетом, iPad, iPhone 11 или более новая модель c 4 ГБ ОЗУ.",
-        "es": "Súmate a un party royale multijugador masivo con Fall Guys y conviértete en la alubia que se lleve la corona. Entra en la Cúpula del Tropiezo y accede a un juego para todas las plataformas que incita al caos y la diversión. Competitivo y cooperativo: avanza a trompicones en partidas competitivas en formato todos contra todos y en desafíos cooperativos, o conquista la Cúpula del Tropiezo con hasta tres amigos. Juega con amigos: Fall Guys es compatible con el juego, los grupos y el progreso multiplataforma con una cuenta de Epic Games. Contenido en constante evolución: el juego rebosa de originalidad con nuevas colaboraciones y actualizaciones, que incluyen disfraces, obstáculos y formas de jugar diferentes. Máxima personalización: un sinfín de colores, estampados, disfraces y placas identificativas. ¡Disfruta de las victorias con extravagantes celebraciones y demuestra tu estilo con gestos! Fall Guys requiere una conexión a internet y es compatible con iPhone 11 o modelos posteriores y iPads con al menos 4 GB de memoria RAM.",
-        "pl": "Dołącz do imprezowej gry MMO typu battle royale z Fall Guys i zdobądź koronę jako ostatnia zwycięska fasolka. Wejdź do Blunderdome, aby zagrać w platformową Wolnoamerykankę, która gwarantuje dużą dawkę chaosu i świetnej zabawy. Rywalizacja i kooperacja: zmagaj się w rywalizacyjnych rozgrywkach dla wszystkich albo w wyzwaniach kooperacyjnych. Do Blunderdome wskoczysz nawet z trójką znajomych! Graj z ekipą: Fall Guys jest bezpłatne i obsługuje grę międzyplatformową. To oznacza, że możesz grać ze znajomymi z różnych platform i zapisywać na koncie Epic Games postępy z wielu urządzeń. Stale modyfikowana zawartość: gra nigdy się nie nudzi dzięki współpracom i aktualizacjom wprowadzającym do Blunderdome nowe stroje, przeszkody i sposoby gry. Personalizuj do woli: wybieraj kolory, wzory, stroje i plakietki. Świętuj wygrane nadzwyczajnymi cieszynkami i wyrażaj siebie emotkami! Fall Guys wymaga połączenia z internetem i obsługuje iPhone 11 lub nowsze oraz iPady wyposażone w co najmniej 4 GB RAM.",
-        "it": "Tuffati in un party royale multigiocatore di massa con Fall Guys, sconfiggi tutti gli altri fagioli e conquista la corona. Entra a Ruzzolandia, dove ti aspetta un gioco platformer gratis per tutti, ricco di caos e tanto divertimento. Competitivo e cooperativo: rotola tra sfide competitive tutti contro tutti e cooperative, o affronta Ruzzolandia con altri 3 amici! Gioca con gli amici: Fall Guys supporta il cross-play, i gruppi multi-piattaforma e la progressione incrociata con l'account Epic Games. Contenuti sempre nuovi: il divertimento non finisce mai grazie a collaborazioni e aggiornamenti che portano nuovi costumi, ostacoli e modi di giocare. Totalmente personalizzabile: scegli tra una moltitudine di colori, motivi, costumi e targhette. Celebra le vittorie con festeggiamenti stravaganti e condividi il tuo stile con le emote! Fall Guys richiede una connessione a internet e supporta iPhone 11 o successivi e iPad con almeno 4 GB di RAM.",
-        "tr": "Fall Guys ile devasa çok oyunculu bir parti kapışmasına katıl ve Crown'ı alan son Fasulye olmaya çalış. Kaosu ve yüksek yoğunluklu eğlenceyi çağıran, oynaması ücretsiz platform oyunu için Blunderdome'a gir. Rekabet ve İşbirliği: Rekabetçi oyunlarla işbirliği gerektiren mücadeleler arasında yuvarlan veya 3 arkadaşınla Blunderdome'a meydan oku! Arkadaşlarınla Oyna: Fall Guys, Epic Games hesabı aracılığıyla platformlar arası oynamayı, grupları ve ilerlemeyi destekliyor. Sürekli Değişen İçerik: Yeni kostümler, engeller ve oynama tarzları getiren yeni işbirlikleri ve oyun güncellemeleri sayesinde oyun daima yeniliklerle dolu. Olağanüstü Özelleştirme: Çok çeşitli renk, desen, kostüm ve isim levhaları arasından seçim yap. Gösterişli kutlamalarla zaferinin keyfini çıkar ve ifadelerle tarzını göster! Fall Guys oynayabilmek için internet bağlantısı gerekir ve iPhone 11 veya üzeri modelleri ve en az 4 GB RAM'e sahip iPad modellerini destekler."
-      },
-      "appPermissions": {
-           "privacy": {
-              "NSMicrophoneUsageDescription": "App uses the microphone for voice chat."
-          }
-      },
-      "iconURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/iOS-New-512x512_512x512-ff4ce9348fe2142316cb4434228d78eb",
-      "tintColor": "#818181",
-      "screenshots": [
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot11_2556x1179-006efb2712f584d8a018a29d3f16f360",
-          "width": 2556,
-          "height": 1179
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot4_2556x1179-49c5241432d626e0a937d6f6b8306d16",
-          "width": 2556,
-          "height": 1179
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot51_2556x1179-22654008650c9b6000106aa49ec94b46",
-          "width": 2556,
-          "height": 1179
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot61_2556x1179-3060afccde2e596bb115b0507111cc8b",
-          "width": 2556,
-          "height": 1179
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot71_2556x1179-983b8acbda9ab639dc69a67c5eb3e618",
-          "width": 2556,
-          "height": 1179
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot21_2556x1179-ae1821ce5a0add1d4794a73317dbf172",
-          "width": 2556,
-          "height": 1179
-        },
-        {
-          "imageURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot31_2556x1179-e9141c407999996fc17ab8751570891d",
-          "width": 2556,
-          "height": 1179
+          "buildVersion": "41305671.2.4",
+          "minOSVersion": "17.6"
         }
       ],
+      "versionDate": "2025-06-11T00:00:00.0000000Z",
+      "downloadURL": "https://github.com/Romain-Pl/EpicGamesIPA/releases/download/FortniteUpdate36.00.1/FortniteClient-IOS-Shipping_36.00.1-Patched-AltStore.ipa",
+      "patreon": {}
+    },
+    {
       "beta": false,
+      "name": "Fall Guys",
+      "type": 1,
+      "bundleIdentifier": "uk.co.mediatonic.fallguys",
+      "developerName": "Mediatonic, Ltd.",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "Jump into a massive-multiplayer party royale with Fall Guys and be the last Bean standing that takes the Crown. Enter the Blunderdome for a free for all platformer game that invites chaos and high-concentrated fun. Competitive & Cooperative: Tumble between competitive free-for-alls and cooperative challenges—or take on the Blunderdome with up to 3 friends! Play with Friends: Fall Guys supports cross-play, cross-platform parties and cross-progression via your Epic Games Account. Ever-Evolving Content: Play stays fresh with new collabs and game updates which bring new Costumes, Obstacles, and ways to play. Gloriously Customizable: Choose from a multitude of Colors, Patterns, Costumes and Nameplates. Relish wins with extravagant Celebrations and share your flair with Emotes! Fall Guys requires an internet connection and supports iPhone 11 or later and iPads with at least 4GB of RAM.",
+      "versionDescription": "",
+      "tintColor": "#818181",
+      "iconURL": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/iOS-New-512x512_512x512-ff4ce9348fe2142316cb4434228d78eb",
+      "screenshotURLs": [
+        "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot11_2556x1179-006efb2712f584d8a018a29d3f16f360",
+        "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot4_2556x1179-49c5241432d626e0a937d6f6b8306d16",
+        "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot51_2556x1179-22654008650c9b6000106aa49ec94b46",
+        "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot61_2556x1179-3060afccde2e596bb115b0507111cc8b",
+        "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot71_2556x1179-983b8acbda9ab639dc69a67c5eb3e618",
+        "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot21_2556x1179-ae1821ce5a0add1d4794a73317dbf172",
+        "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/Screenshot31_2556x1179-e9141c407999996fc17ab8751570891d"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSMicrophoneUsageDescription": "App uses the microphone for voice chat."
+        }
+      },
+      "size": 2134734848,
+      "version": "19.0.0",
       "versions": [
         {
           "version": "19.0.0",
@@ -360,29 +294,35 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FallGuysUpdate19.0.0/FallGuys_19.0.0.ipa",
           "size": 2134734848,
-          "minOSVersion": "17.6",
-          "buildVersion": "6349"
-        }, 
+          "buildVersion": "6349",
+          "minOSVersion": "17.6"
+        },
         {
           "version": "18.0.0",
           "date": "2025-04-01T00:00:00.0000000Z",
           "localizedDescription": "",
           "downloadURL": "https://github.com/ChuteSpyro/EpicIPASource/releases/download/release/FallGuys_18.0.0.ipa",
           "size": 2134734848,
-          "minOSVersion": "17.6",
-          "buildVersion": "6034"
-        }, 
+          "buildVersion": "6034",
+          "minOSVersion": "17.6"
+        }
       ],
-    },
+      "versionDate": "2025-05-27T00:00:00.0000000Z",
+      "downloadURL": "https://github.com/ChuteSpyro/EpicGamesIPA/releases/download/FallGuysUpdate19.0.0/FallGuys_19.0.0.ipa",
+      "patreon": {}
+    }
   ],
-  "news": [{
+  "news": [
+    {
       "title": "Download EPIC game!",
       "identifier": "game.epic.download",
       "caption": "Download FortniteGame, FallGuy all version.",
-      "tintColor": "007aff",
-      "imageURL": "https://i.ibb.co/RpgbQk5k/c08e28c60b99.png",
       "date": "2025-12-29",
+      "tintColor": "#007aff",
+      "imageURL": "https://i.ibb.co/RpgbQk5k/c08e28c60b99.png",
+      "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/epic.html",
-      "notify": true
-    }]
+      "appID": null
+    }
+  ]
 }
