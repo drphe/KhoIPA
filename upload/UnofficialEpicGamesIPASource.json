@@ -1,6 +1,7 @@
 {
   "name": "Unofficial Epic Games IPA Store",
   "iconURL": "https://content-download-egs.distro.on.epicgames.com/.well-known/EG-Shield-2023-Black-dual-tone-expanded.png",
+  "sourceURL": "https://raw.githubusercontent.com/Romain-Pl/EpicGamesIPA//main/UnofficialEpicGamesIPASource.json",
   "website": "https://epicgames.com",
   "identifier": "com.epicgames.altstore",
   "tintColor": "#818181",
@@ -374,5 +375,14 @@
       ],
     },
   ],
-  "news": []
+  "news": [{
+      "title": "Download EPIC game!",
+      "identifier": "game.epic.download",
+      "caption": "Download FortniteGame, FallGuy all version.",
+      "tintColor": "007aff",
+      "imageURL": "https://i.ibb.co/RpgbQk5k/c08e28c60b99.png",
+      "date": "2025-12-29",
+      "url": "https://drphe.github.io/KhoIPA/view/epic.html",
+      "notify": true
+    }]
 }
