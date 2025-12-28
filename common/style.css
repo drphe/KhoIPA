@@ -1122,7 +1122,7 @@ text-align: center; font-size: 0.9em;margin: 1em 1rem 1.25em 1rem;
     margin-left: 1em;
     border-radius: 0.5em;
     border: 0.75px solid rgba(0, 0, 0, 0.2);
-    max-width: 350px;
+    max-width: 250px;
 }
 
 #preview #description {
@@ -1475,7 +1475,7 @@ margin-left: 2rem;
 
 .fslightbox-absoluted img {
     height: 90vh!important;
-    width: 100%!important;
+    width: 100vw!important;
     object-fit: contain;
     border-radius: 0.5rem;
 }
