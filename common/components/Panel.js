@@ -582,7 +582,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         }
 		if (needPreview){
 			const previewDescription = preview.querySelector("#description");
-			console.log(appInfo)
 			previewDescription.innerHTML = formatString(appInfo.description);
 			if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
 		}
