@@ -15,6 +15,147 @@
   "apps": [
     {
       "beta": false,
+      "name": "CloverPit-1.3.3",
+      "type": 1,
+      "bundleIdentifier": "com.PanikArcade.CloverPit",
+      "developerName": "CloverPit-1.3.3 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Rogue-lite slot machine game",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.3.3.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-3.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-4.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 114389155,
+      "version": "1.3.3",
+      "versions": [
+        {
+          "version": "1.3.3",
+          "date": "2025-12-27",
+          "size": 114389155,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.3.3.ipa",
+          "localizedDescription": "Rogue-lite slot machine game"
+        }
+      ],
+      "versionDate": "2025-12-27",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.3.3.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "ReDyne_1.2",
+      "type": 1,
+      "bundleIdentifier": "com.jian.ReDyne",
+      "developerName": "ReDyne_1.2 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "A native decompiler app for iOS!",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ReDyne_1.2.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/ReDyne_1.2/ReDyne_1.2-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 9856614,
+      "version": "1.2",
+      "versions": [
+        {
+          "version": "1.2",
+          "date": "2025-12-27",
+          "size": 9856614,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/ReDyne_1.2.ipa",
+          "localizedDescription": "A native decompiler app for iOS!"
+        }
+      ],
+      "versionDate": "2025-12-27",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/ReDyne_1.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Flappy_Bird_4.3",
+      "type": 1,
+      "bundleIdentifier": "org.brandonplank.flappybird",
+      "developerName": "Flappy_Bird_4.3 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Flappy Bird",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Flappy_Bird_4.3.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Flappy_Bird_4.3/Flappy_Bird_4.3-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 2107637,
+      "version": "4.3",
+      "versions": [
+        {
+          "version": "4.3",
+          "date": "2025-12-26",
+          "size": 2107637,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Flappy_Bird_4.3.ipa",
+          "localizedDescription": "Flappy Bird"
+        }
+      ],
+      "versionDate": "2025-12-26",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Flappy_Bird_4.3.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "iTorrent",
+      "type": 1,
+      "bundleIdentifier": "com.xitrix.iTorrent2",
+      "developerName": "iTorrent x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "iTorrent v2.1.1-1 by XITRIX iOS 16+",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/iTorrent.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/iTorrent/iTorrent-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/iTorrent/iTorrent-1.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 8357150,
+      "version": "2.1.1",
+      "versions": [
+        {
+          "version": "2.1.1",
+          "date": "2025-12-18",
+          "size": 8357150,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/iTorrent.ipa",
+          "localizedDescription": "iTorrent v2.1.1-1 by XITRIX iOS 16+"
+        }
+      ],
+      "versionDate": "2025-12-18",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/iTorrent.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "True_Skate_1.5.102",
       "type": 1,
       "bundleIdentifier": "com.trueaxis.skate",
@@ -138,54 +279,6 @@
       ],
       "versionDate": "2025-12-07",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/OldOS.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Discord + Kettu",
-      "type": 1,
-      "bundleIdentifier": "com.hammerandchisel.discord",
-      "developerName": "Discord + Kettu x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Discord + Kettu for theming and plugins.",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Discord + Kettu/discord-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 98513715,
-      "version": "307.2",
-      "versions": [
-        {
-          "version": "307.2",
-          "date": "2025-12-07",
-          "size": 98513715,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
-          "localizedDescription": "Discord + Kettu for theming and plugins."
-        },
-        {
-          "version": "228.1",
-          "date": "2024-05-10",
-          "size": 99425976,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
-          "localizedDescription": "Discord mod."
-        },
-        {
-          "version": "224.0",
-          "date": "2024-04-10",
-          "size": 96856965,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
-          "localizedDescription": "Another one! Bestest Discord client"
-        }
-      ],
-      "versionDate": "2025-12-07",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
       "patreon": {}
     },
     {
@@ -362,41 +455,6 @@
       ],
       "versionDate": "2025-10-25",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/PotatoIM.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "iTorrent",
-      "type": 1,
-      "bundleIdentifier": "com.xitrix.iTorrent2",
-      "developerName": "iTorrent x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "iTorrent v2.1.0-1 by XITRIX iOS 16+",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/iTorrent.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/iTorrent/iTorrent-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/iTorrent/iTorrent-1.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 7088373,
-      "version": "2.1.0",
-      "versions": [
-        {
-          "version": "2.1.0",
-          "date": "2025-10-25",
-          "size": 7088373,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/iTorrent.ipa",
-          "localizedDescription": "iTorrent v2.1.0-1 by XITRIX iOS 16+"
-        }
-      ],
-      "versionDate": "2025-10-25",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/iTorrent.ipa",
       "patreon": {}
     },
     {
@@ -1596,13 +1654,6 @@
           "size": 234409164,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/FL_Studio_Mobile_4.7.7_SatellaJailed.ipa",
           "localizedDescription": "FL Studio Mobile 4.7.7 Satella"
-        },
-        {
-          "version": "4.7.2",
-          "date": "2025-02-24",
-          "size": 234388193,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/FL_Studio_Mobile_4.7.2_Patched.ipa",
-          "localizedDescription": "FL Studio Mobile 4.7.2 w/ Satella"
         }
       ],
       "versionDate": "2025-04-05",
@@ -3096,6 +3147,47 @@
       ],
       "versionDate": "2024-05-10",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/Mimo_6.48.0_Premium.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Discord_228.1_Pyoncord",
+      "type": 1,
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "Discord_228.1_Pyoncord x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Discord mod.",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Discord_228.1_Pyoncord_DiscordNoTrack.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Discord_228.1_Pyoncord/Discord_228.1_Pyoncord_DiscordNoTrack-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 99425976,
+      "version": "228.1",
+      "versions": [
+        {
+          "version": "228.1",
+          "date": "2024-05-10",
+          "size": 99425976,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
+          "localizedDescription": "Discord mod."
+        },
+        {
+          "version": "224.0",
+          "date": "2024-04-10",
+          "size": 96856965,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
+          "localizedDescription": "Another one! Bestest Discord client"
+        }
+      ],
+      "versionDate": "2024-05-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
       "patreon": {}
     },
     {
@@ -6264,6 +6356,46 @@
   ],
   "news": [
     {
+      "title": "CloverPit-1.3.3 now available!",
+      "identifier": "cypwn.CloverPit-1.3.3.1.3.3",
+      "caption": "CloverPit-1.3.3 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.3.3.png",
+      "date": "2025-12-27",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "ReDyne_1.2 now available!",
+      "identifier": "cypwn.ReDyne_1.2.1.2",
+      "caption": "ReDyne_1.2 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ReDyne_1.2.png",
+      "date": "2025-12-27",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Flappy_Bird_4.3 now available!",
+      "identifier": "cypwn.Flappy_Bird_4.3.4.3",
+      "caption": "Flappy_Bird_4.3 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Flappy_Bird_4.3.png",
+      "date": "2025-12-26",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "iTorrent now available!",
+      "identifier": "cypwn.iTorrent.2.1.1",
+      "caption": "iTorrent added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/iTorrent.png",
+      "date": "2025-12-18",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
       "title": "True_Skate_1.5.102 now available!",
       "identifier": "cypwn.True_Skate_1.5.102.1.5.102",
       "caption": "True_Skate_1.5.102 added to the CyPwn Library",
@@ -6289,16 +6421,6 @@
       "caption": "OldOS added to the CyPwn Library",
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/OldOS.png",
-      "date": "2025-12-07",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Discord + Kettu now available!",
-      "identifier": "cypwn.Discord + Kettu.307.2",
-      "caption": "Discord + Kettu added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
       "date": "2025-12-07",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
@@ -6349,16 +6471,6 @@
       "caption": "PotatoIM added to the CyPwn Library",
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/PotatoIM.png",
-      "date": "2025-10-25",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "iTorrent now available!",
-      "identifier": "cypwn.iTorrent.2.1.0",
-      "caption": "iTorrent added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/iTorrent.png",
       "date": "2025-10-25",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
@@ -6870,16 +6982,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/Notepad-_1.0.png",
       "date": "2025-02-25",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "FL_Studio_Mobile_4.7.2_Patched now available!",
-      "identifier": "cypwn.FL_Studio_Mobile_4.7.2_Patched.4.7.2",
-      "caption": "FL_Studio_Mobile_4.7.2_Patched added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/FL_Studio_Mobile_4.7.2_Patched.png",
-      "date": "2025-02-24",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
