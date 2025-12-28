@@ -1480,6 +1480,9 @@ margin-left: 2rem;
     border-radius: 0.5rem;
 }
 @media (max-width: 440px) {
+  .fslightbox-slide-btn-container{
+    display:none!important;
+  }
   .fslightbox-absoluted img.rotate-portrait {
     transform: rotate(-90deg);
     transform-origin: center center;
