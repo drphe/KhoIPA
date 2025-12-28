@@ -913,5 +913,14 @@
       "patreon": {}
     }
   ],
-  "news": []
+  "news": [    {
+      "title": "Download EPIC game!",
+      "identifier": "game.epic.download",
+      "caption": "Download FortniteGame, FallGuy all version.",
+      "tintColor": "007aff",
+      "imageURL": "https://i.ibb.co/RpgbQk5k/c08e28c60b99.png",
+      "date": "2025-12-29",
+      "url": "./view/epic.html",
+      "notify": true
+    }]
 }
