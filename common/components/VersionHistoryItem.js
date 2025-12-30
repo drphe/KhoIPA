@@ -8,23 +8,23 @@ window.isStandalone = !window.matchMedia('(display-mode: standalone)').matches |
 export const VersionHistoryItem = (sourceName, number, date, description, url, i) => `
 <div class="version">
     <div class="version-header">
-        <p class="version-number">Version ${number}</p>
+        <p class="version-number">${langText['version']} ${number}</p>
         <p class="version-date">${date}</p>
     </div>
     <div class="version-options">
         <a style="color: var(--tint-color);" class="version-install" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
-            'Install App',
+            '${langText["installapp"]}',
             () => window.location.href = 'esign://install?url=${url}'
         );">
-            Install with Esign
+            ${langText['installviaesign']}
         </a>
         <a style="color: var(--tint-color);" class="version-download" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
-            isStandalone? 'Download IPA':'Copy Link IPA',
+            isStandalone? langText["downloadipa"]:langText["copylink"],
             () => isStandalone? window.location.href = '${url}': copyLinkIPA('${url}')
         );">
-            Download IPA
+            ${langText['downloadipa']}
         </a>
     </div>
     <p class="version-description" id="description${i}">${description || ''}</p>

@@ -104,30 +104,30 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         if (tintColor) setTintColor(tintColor);
         // Set up install buttons
         const installAppAlert = new UIAlert({
-            title: `Get "${app.name}"`
+            title: `${langText['get']} "${app.name}"`
         });
         
         installAppAlert.addAction({
-            title: "Install via Esign",
+            title: langText['installviaesign'],
             style: 'default',
             handler: () => open(`esign://install?url=${app.downloadURL}`)
         });
 
 	 if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
             installAppAlert.addAction({
-                title: "Download IPA",
+                title: langText['downloadipa'],
                 style: 'default',
                 handler: () => window.open(app.downloadURL, "_blank")
             });
         }
         
         installAppAlert.addAction({
-            title: "Copy Link IPA",
+            title: langText['copylink'],
             style: 'default',
             handler: () => copyLinkIPA(app.downloadURL)
         });
         installAppAlert.addAction({
-            title: "Cancel",
+            title: langText['cancel'],
             style: 'cancel',
         });
         bottomPanel.innerHTML = `
@@ -137,7 +137,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
       <div id="back-container">
         <button id="back" type="button">
           <i class="bi bi-chevron-down"></i>
-          Done
+          ${langText["done"]}
         </button>
       </div>
       <div id="title" class="hidden">
@@ -145,7 +145,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         <p></p>
       </div>
       <a href="#" class="install hidden">
-        <button class="uibutton">Get</button>
+        <button class="uibutton">${langText["get"]}</button>
       </a>
     </div>
   </div>
@@ -162,7 +162,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             </div>
             <div class="ipa">
               <a class="install">
-                <button class="uibutton">Get</button>
+                <button class="uibutton">${langText["get"]}</button>
               </a>
             </div>
           </div>
@@ -173,17 +173,21 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     <div id="preview" class="section">
       <p id="subtitle"></p>
       <div class="header">
-        <h2>Preview</h2>
-		<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store</a>
+        <div style="display:flex">
+	    <h2>${langText["preview"]}
+		<button onclick="translateText()" style="padding-bottom: 0px;background: transparent; border: none; color: var(--tint-color); cursor: pointer;"> 
+		<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${langCode.toUpperCase()}</span></button></h2>
+    	</div>
+	<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store</a>
       </div>
       <div id="screenshots"></div>
       <p id="description"></p>
     </div>
     <div id="whats-new" class="section">
       <div class="header">
-        <h2>What's New</h2>
+        <h2>${langText["whatnew"]}</h2>
         <p id="version-size"></p>
-        <a id="version-history" style="color: var(--tint-color);" href="#versions">All Versions</a>
+        <a id="version-history" style="color: var(--tint-color);" >${langText["allversion"]}</a>
       </div>
       <div class="header">
         <p id="version">Version 2.0</p>
@@ -194,14 +198,14 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     </div>
     <div id="permissions" class="section">
       <div class="header">
-        <h2>App Permissions</h2>
+        <h2>${langText["apppermit"]}</h2>
       </div>
       <div id="permission-containers">
         <div id="privacy" class="permission-container secondary-bg">
           <div class="permission-container-header">
             <i class="permission-icon bi-person-fill-dash"></i>
-            <p><b>Unknown</b></p>
-            <p class="description">The developer has not specified any permissions for this app.</p>
+            <p><b>${langText["unknown"]}</b></p>
+            <p class="description">${langText['notpermit']}</p>
           </div>
           <div class="permission-items">
           </div>
@@ -209,8 +213,8 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         <div id="entitlements" class="permission-container secondary-bg">
           <div class="permission-container-header">
             <i class="permission-icon bi-key-fill"></i>
-            <p><b>Entitlements</b></p>
-            <p class="description">Entitlements are additional permissions that grant access to certain system services, including potentially sensitive information.</p>
+            <p><b>${langText["entilement"]}</b></p>
+            <p class="description">${langText["entilementText"]}</p>
           </div>
           <div class="permission-items">
           </div>
@@ -219,7 +223,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     </div>
     <div id="source" class="section">
       <div class="header">
-        <h2>Discover More On</h2>
+        <h2>${langText["discovermore"]}</h2>
       </div>
       <div class="source-container">
         <a href="${dir}/view/" class="source-link">
@@ -302,6 +306,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         // Description
         const previewDescription = preview.querySelector("#description");
         previewDescription.innerHTML = formatString(app.localizedDescription);
+	window.textDescription = app.localizedDescription;
         if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
         if (!app.screenshots && !app.screenshotURLs && !app.localizedDescription) preview.remove();
         // 
@@ -313,7 +318,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         // Version date
         versionDateElement.textContent = formatVersionDate(app.versionDate);
         // Version number
-        versionNumberElement.textContent = `Version ${app.version}`;
+        versionNumberElement.textContent = `${langText["version"]} ${app.version}`;
         // Version size
         
         versionSizeElement.textContent = AppSize(app);
@@ -345,7 +350,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         if (appPermissions?.privacy && Object.keys(appPermissions.privacy).length !== 0 || app.permissions) {
             function updatePrivacyContainerHeader() {
                 privacyContainer.querySelector(".permission-icon").classList = "permission-icon bi-person-fill-lock";
-                privacyContainer.querySelector("b").innerText = "Privacy";
+                privacyContainer.querySelector("b").innerText = langText['privacy'];
                 privacyContainer.querySelector(".description").innerText = `"${app.name}" may request to access the following:`;
             }
             //
@@ -431,7 +436,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         sourceIcon.src = jsons.iconURL ?? altSourceIcon;
         sourceTitle.innerText = jsons.name;
         sourceContainer.href = `${dir}/view/?source=${base64Convert(jsons.sourceURL)}`;
-        sourceSubtitle.innerText = `Last updated: ${formatVersionDate(lastUpdated)}`;
+        sourceSubtitle.innerText = `${langText['lastupdate']}: ${formatVersionDate(lastUpdated)}`;
         sourceAppCount.innerText = appCount + (appCount === 1 ? " app" : " apps");
         // Hide/show navigation bar title & install button
         let isNavigationBarItemsVisible = false;
@@ -506,7 +511,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
       <div id="back-container">
         <button id="back" type="button">
           <i class="bi bi bi-chevron-left"></i>
-          Back
+          ${langText["back"]}
         </button>
       </div>
       <div id="title" class="">
@@ -567,6 +572,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         console.log("Preload Panel.")
         return;
     }
+    let isOriginalDescription = true;
     async function getPreview() {
         if (direction !== "bottom")
             return;
@@ -580,11 +586,18 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             moreDetail.href = appInfo.trackViewUrl;
             moreDetail.classList.remove("hidden");
         }
-		if (needPreview){
-			const previewDescription = preview.querySelector("#description");
-			previewDescription.innerHTML = formatString(appInfo.description);
-			if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+	if (needPreview){
+		const previewDescription = preview.querySelector("#description");
+		window.textDescription = appInfo.description;
+		if(!appInfo.languageCodesISO2A.includes(langCode.toUpperCase())){
+		     const newDecription = await translateTo(appInfo.description);
+		     previewDescription.innerHTML = formatString(newDecription);
+		     isOriginalDescription = false;
+  		}else {
+		    previewDescription.innerHTML = formatString(appInfo.description);
 		}
+		if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+	}
         if (!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0) {
             appInfo.screenshotUrls.forEach((url, i) => {
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
@@ -593,6 +606,14 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         }
     }
 
+    window.translateText = async ()=> {
+        const preview = bottomPanel.querySelector("#preview");
+	const previewDescription = preview.querySelector("#description");
+	const newDecription = isOriginalDescription ? await translateTo(textDescription): textDescription;
+	isOriginalDescription = !isOriginalDescription;
+        previewDescription.innerHTML = formatString(newDecription);
+	if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor)); 
+    }
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
@@ -899,7 +920,7 @@ async function getAppInfoByBundleId(bundleId) {
     const timeout = new Promise((resolve) => setTimeout(() => resolve(null), 2000));
     const fetchPromise = (async () => {
         const baseUrl = "https://itunes.apple.com/lookup";
-        const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}`;
+        const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}&lang=${langCode}`;
         try {
             const response = await fetch(url);
             const data = await response.json();
@@ -914,29 +935,28 @@ async function getAppInfoByBundleId(bundleId) {
     })();
     return Promise.race([fetchPromise, timeout]);
 }
-async function checkIpaAndGenerateInstallUrl(ipaUrl) {
-    const manifestBasePath = 'https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/';
 
-    if (!ipaUrl || !ipaUrl.toLowerCase().endsWith('.ipa')) {
-        console.error('URL không phải là file .ipa hợp lệ.');
-        return null;
+async function translateTo(text) {
+  const url = `https://edge.microsoft.com/translate/translatetext?from=&to=${langCode}&isEnterpriseClient=true`;
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+    },
+    body: JSON.stringify([text])
+  };
+
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      throw new Error(`Lỗi hệ thống: ${response.status}`);
     }
-    const urlParts = ipaUrl.split('/');
-    let fileNameWithParams = urlParts[urlParts.length - 1];
-    const fileName = fileNameWithParams.split('?')[0];
-
-    const manifestFileName = fileName.replace(/\.ipa$/i, '.plist');
-    const manifestUrl = manifestBasePath + manifestFileName;
-    const installUrl = `itms-services://?action=download-manifest&url=${encodeURIComponent(manifestUrl)}`;
-    try {
-        const response = await fetch(manifestUrl, { method: 'GET' });
-
-        if (response.ok) {
-            return installUrl;
-        } else {
-            return null;
-        }
-    } catch (error) {
-        return null;
-    }
+    const result = await response.json();
+    return result[0].translations[0].text;
+  } catch (error) {
+    console.error("Lỗi khi gọi API dịch:", error);
+    return null;
+  }
 }
+

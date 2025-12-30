@@ -32,22 +32,19 @@ export function formatVersionDate(arg) {
 
     // Giữ nguyên logic cũ
     if (msDifference <= msPerDay && today.getDate() === versionDate.getDate()) {
-        dateString = "Today";
+        dateString = langText['today'];
     }
     else if (msDifference <= msPerDay * 2) {
-        dateString = "Yesterday";
+        dateString = langText['yesterday'];
     }
-    // < 7 ngày (nhưng không phải Yesterday)
     else if (daysDiff < 7) {
-        dateString = daysDiff === 1 ? "1 day ago" : `${daysDiff} days ago`;
+        dateString = daysDiff === 1 ? "1 "+langText['dayago'] : `${daysDiff} ${langText['daysago']}`;
     }
-    // 7–29 ngày → weeks ago
     else if (daysDiff >= 7 && daysDiff < 30) {
-        dateString = weeksDiff === 1 ? "1 week ago" : `${weeksDiff} weeks ago`;
+        dateString = weeksDiff === 1 ? "1 "+langText['weekago'] : `${weeksDiff} ${langText['weeksago']}`;
     }
-    // 30–364 ngày → months ago
     else if (daysDiff >= 30 && daysDiff < 365) {
-        dateString = monthsDiff === 1 ? "1 month ago" : `${monthsDiff} months ago`;
+        dateString = monthsDiff === 1 ? "1 "+langText['monthago'] : `${monthsDiff} ${langText['monthago']}`;
     }
 
     return dateString;
@@ -123,21 +120,21 @@ export function showUIAlert(title, message) {
 export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
     const uiAlert = new UIAlert({
         title: `Add "${sourceName}" to Esign?`,
-        message: "If you have Esign, add this source so you'll receive notifications when app updates are available."
+        message: langText['addtoesignText']
     });
     uiAlert.addAction({
-        title: "Add to Esign",
+        title: langText['addtoesign'],
         style: "default",
         handler: () => window.location.href = `esign://addsource?url=${sourceURL}`
     });
 
     uiAlert.addAction({
-        title: `${actionTitle} Only`,
+        title: `${actionTitle}`,
         style: "default",
         handler: actionHandler
     });
     uiAlert.addAction({
-        title: "Cancel",
+        title: langText['cancel'],
         style: "cancel",
     });
     uiAlert.present();
@@ -178,9 +175,7 @@ export function consolidateApps(source) {
       existingApp.versions.push(versionInfo);
 
     } else {
-      // Trường hợp duy nhất: Tạo đối tượng mới và thêm vào Map
       const newApp = {
-        // Sao chép tất cả các trường không phải phiên bản
         beta: app.beta ?? false,
         name: app.name,
         type: app.type ?? 1,// mặc định là app
@@ -303,8 +298,8 @@ export function generateTOC(markdown) {
 export async function copyLinkIPA(text) {
     try {
         await navigator.clipboard.writeText(text);
-        showUIAlert("✅ Success", "Đã sao chép vào clipboard!\nDán link vào safari hoặc Esign \nTải xuống => URL => OK");
+        showUIAlert("✅ "+ langText['success'], langText['copysuccess']);
     } catch (err) {
-        showUIAlert("❌ Error", "Không thể sao chép link tải IPA!");
+        showUIAlert("❌ "+ langText['error'], langText['copyfailed']);
     }
 }

@@ -1,6 +1,6 @@
 export const MoreButton = tintColor => `
 <a id="more"  onclick="revealTruncatedText(event, this);">
-    <button class="more-trigger" style="color: ${tintColor};">more</button>
+    <button class="more-trigger" style="color: ${tintColor};">${langText["more"]}</button>
 </a>`;
 
 window.revealTruncatedText = (event, moreButton) => {

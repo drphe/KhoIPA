@@ -69,14 +69,9 @@ span {
     }
 
     .nav-link,
-    p,tr, td,
-    h1,
-    h2,
-    h3,
-    h4,
-    ol,
-    ul,
-    li {
+    h2 button, p,tr, td,
+    h1, h2, h3, h4,
+    ol, ul, li {
         color: white !important;
     }
 
@@ -513,7 +508,7 @@ button.uibutton {
     padding: 0 12px;
     font-size: 15px;
     font-weight: 700;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     border: none;
     border-radius: 20px;
     color: white;

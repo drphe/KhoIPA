@@ -76,7 +76,6 @@ main(json => {
     } else {
         let count = 1;
         json.apps.forEach(app => {
-            // Max: 5 featured apps if not specified
             if (count > 5) return;
             document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app));
             count++;
@@ -84,7 +83,7 @@ main(json => {
     }
 	async function run() {
     if (noteURL) {
-        await executeNews('./note/' + noteURL, "CONTENTS", "news-popup-link"); 
+        await executeNews('./note/' + noteURL, langText['contents'], "news-popup-link"); 
     }
     if (bundleID) {
         await openPanel(json, bundleID, '..', "bottom");
@@ -98,14 +97,14 @@ run();
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
-        addAppList(json); //5apps, target.parentElement scroll
+        addAppList(json); 
         activateNavLink("page-library");
      });
 
     //  "View All News"
     document.getElementById('all-news')?.addEventListener("click", async (e) => {
         e.preventDefault();
-        await executeNews("/", "ALL NEWS","news-popup-all", true);
+        await executeNews("/", langText['allnews'],"news-popup-all", true);
        activateNavLink("page-news");
      });
 
@@ -163,7 +162,7 @@ run();
         if (targetNewsLink){
         	e.preventDefault();
            	const url = targetNewsLink.getAttribute("data-url");
-		executeNews('./note/'+url, "CONTENTS", "news-popup-link");
+		executeNews('./note/'+url, langText['contents'], "news-popup-link");
 	}
         if (targetNews){
             e.preventDefault();
@@ -186,10 +185,10 @@ document.querySelectorAll(".nav-link").forEach(link=>{
     window.oldTargetPage = target
     if(target == 'page-library') {
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
-        addAppList(json); //5apps, target.parentElement scroll
+        addAppList(json); 
     }else if(target == 'page-news' && json.news.length){
         const html = `<div id="news" class="section grid_news">${json.news.map(item =>NewsItem(item, false)).join('')}</div>`;
-        openPanel(html, `<p>ALL NEWS</p>`, '..', "side", "popup-all-news");
+        openPanel(html, `<p>${langText['allnews']}</p>`, '..', "side", "popup-all-news");
 
     }else {
 	document.querySelectorAll(".panel.show").forEach(l=>l.classList.remove("show"));

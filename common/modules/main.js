@@ -30,25 +30,25 @@ export function main(callback, fallbackURL = "../../") {
         });
 	if(supportType == 'both' || supportType == 'Esign') {
         	installAppAlert.addAction({
-            		title: "Add to Esign",
+            		title: langText['addto']+" Esign",
             		style: 'default',
 	    		handler: () => checkScheme(`esign://addsource?url=${sourceURL}`)
         	});
 	}
 	if(supportType == 'both' || supportType == 'Feather') {
         	installAppAlert.addAction({
-            		title: "Add to Feather",
+            		title: langText['addto']+" Feather",
             		style: 'default',
 	    		handler: () => checkScheme(`feather://source/${sourceURL}`)
         	});
 	}
         installAppAlert.addAction({
-            	title: "Copy link",
+            	title: langText['copylink'],
             	style: 'default',
-	    	handler: () => {navigator.clipboard.writeText(sourceURL);showUIAlert("Copied", "Link source copied!");}
+	    	handler: () => {navigator.clipboard.writeText(sourceURL); showUIAlert(langText['success'], "Link source copied!");}
         });
         installAppAlert.addAction({
-            title: "Cancel",
+            title: langText['cancel'],
             style: 'cancel',
         });
         document.getElementById('add-to-altstore').addEventListener('click', function(event) {
@@ -79,7 +79,7 @@ function checkScheme(urlScheme) {
     window.location.href = urlScheme;
     const timer = setTimeout(() => {
         if (!hasHidden) {
-            showUIAlert("Error", "Không có app tương ứng.");
+            showUIAlert(langText['error'], langText['errorapp']);
         }
     }, 2000);
 }
@@ -104,10 +104,8 @@ function checkScheme(urlScheme) {
         }
         allImages.forEach((image) => {
             const newImage = new Image(); // same as document.createElement("img")
-            // Khi ảnh load xong hoặc lỗi, đều gọi imageLoaded()
             newImage.onload = imageLoaded;
             newImage.onerror = () => {
-                // Xử lý fallback cho ảnh lỗi
                 if (image.id === "app-icon") {
                     image.src = `${fallbackURL}common/assets/img/generic_app.jpeg`;
                 } else {
@@ -115,7 +113,6 @@ function checkScheme(urlScheme) {
                 }
                 imageLoaded();
             };
-            // Bắt đầu tải
             newImage.src = image.src;
         });
 
@@ -125,7 +122,7 @@ function checkScheme(urlScheme) {
         }
         setTimeout(() => {
             if (count < total) loaded();
-        }, 3000); // sau 3 giây thì ép hoàn tất
+        }, 3000); 
     }
 
     function loaded() {
