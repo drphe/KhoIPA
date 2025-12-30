@@ -690,7 +690,7 @@ export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTa
     xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
     // Tạo total app
     const totalAppsCount = xIcon.querySelector(".totalSearch");
-    totalAppsCount.innerText = `Total ${allApps.length} apps `;
+    totalAppsCount.innerText = `${langText['total']} ${allApps.length} apps `;
     // tạo filter
     const filter = document.createElement("span");
     filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
