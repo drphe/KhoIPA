@@ -928,7 +928,7 @@ export function wrapLightbox(htmlString) {
   return doc.body.innerHTML;
 }
 
-async function getAppInfoByBundleId(bundleId, retries = 1) {
+async function getAppInfoByBundleId(bundleId, retries = 3) {
     const baseUrl = "https://itunes.apple.com/lookup";
     const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}&lang=${langCode}`;
 
