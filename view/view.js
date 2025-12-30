@@ -183,7 +183,9 @@ document.querySelectorAll(".nav-link").forEach(link=>{
     const target = link.dataset.target;
     if(target == window.oldTargetPage) return;
     window.oldTargetPage = target
-    if(target == 'page-library') {
+    if(target == 'page-source') {
+	installSourceAlert.present();
+    }else if(target == 'page-library') {
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json); 
     }else if(target == 'page-news' && json.news.length){

@@ -25,34 +25,34 @@ export function main(callback, fallbackURL = "../../") {
         if (tintColor) setTintColor(tintColor);
         insertAltStoreBanner(json.name);
         const supportType = detectSupport(source.apps[0]);
-        const installAppAlert = new UIAlert({
+        window.installSourceAlert = new UIAlert({
             title: langText['whichapp']
         });
 	if(supportType == 'both' || supportType == 'Esign') {
-        	installAppAlert.addAction({
+        	installSourceAlert.addAction({
             		title: langText['addto']+" Esign",
             		style: 'default',
 	    		handler: () => checkScheme(`esign://addsource?url=${sourceURL}`)
         	});
 	}
 	if(supportType == 'both' || supportType == 'Feather') {
-        	installAppAlert.addAction({
+        	installSourceAlert.addAction({
             		title: langText['addto']+" Feather",
             		style: 'default',
 	    		handler: () => checkScheme(`feather://source/${sourceURL}`)
         	});
 	}
-        installAppAlert.addAction({
+        installSourceAlert.addAction({
             	title: langText['copylink'],
             	style: 'default',
 	    	handler: () => {navigator.clipboard.writeText(sourceURL); showUIAlert(langText['success'], "Link source copied!");}
         });
-        installAppAlert.addAction({
+        installSourceAlert.addAction({
             title: langText['cancel'],
             style: 'cancel',
         });
         document.getElementById('add-to-altstore').addEventListener('click', function(event) {
-           installAppAlert.present();
+           installSourceAlert.present();
         });
 	json.sourceURL ??= sourceURL;
         setApps(json.apps);
