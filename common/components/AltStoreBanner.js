@@ -10,13 +10,13 @@ return `<div class="uibanner">
             <div class="text-container">
                 <p class="title-text">ESign <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Add ${sourceName ? "\"" + sourceName + "\"" : "this source"} to Esign to receive app updates
+		    ${langText["addtorecieve"].replace(/TEXT/g, sourceName)}
                 </p>
             </div>
             <div class="text-container">
                 <p class="title-text">Feather <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Add ${sourceName ? "\"" + sourceName + "\"" : "this source"} to Feather to receive app updates
+		    ${langText["addtorecieve2"].replace(/TEXT/g, sourceName)}
                 </p>
             </div>
         </div>

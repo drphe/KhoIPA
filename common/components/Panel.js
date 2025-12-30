@@ -180,7 +180,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 		</button>
 	    </h2>
     	</div>
-	<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store</a>
+	<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store<i class="bi bi-chevron-right"></i></a>
       </div>
       <div id="screenshots"></div>
       <p id="description" class="preview-text-loading skeleton-effect-wave"></p>
@@ -582,6 +582,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         const preview = bottomPanel.querySelector("#preview");
         const moreDetail = bottomPanel.querySelector("#more-detail");
 	const previewDescription = preview.querySelector("#description");
+        const btn = bottomPanel.querySelector('#translateBtn');
         if (!appInfo){
 	     previewDescription.classList.remove("preview-text-loading", "skeleton-effect-wave");
             return;
@@ -602,6 +603,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 		if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
 	}
 	previewDescription.classList.remove("preview-text-loading", "skeleton-effect-wave");
+	btn.innerHTML = `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${isOriginalDescription?langCode.toUpperCase():"EN"}</span>`;
         if (!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0) {
             appInfo.screenshotUrls.forEach((url, i) => {
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
@@ -613,7 +615,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     window.translateText = async (event)=> {
 	event.stopPropagation();
         const btn = bottomPanel.querySelector('#translateBtn');
-	const originalIcon = btn.innerHTML;
 	btn.innerHTML = `<svg class="spinner" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>`;
         const preview = bottomPanel.querySelector("#preview");
 	const previewDescription = preview.querySelector("#description");
@@ -621,7 +622,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	isOriginalDescription = !isOriginalDescription;
         previewDescription.innerHTML = formatString(newDecription);
 	if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor)); 
-	btn.innerHTML = originalIcon;
+	btn.innerHTML = `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${isOriginalDescription?langCode.toUpperCase():"EN"}</span>`;
     }
     function closePanel() {
         bottomPanel.classList.remove("show");
@@ -705,7 +706,7 @@ export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTa
         searchBox.focus();
         filteredApps = [...allApps];
         appsContainer.innerHTML = "";
-        totalAppsCount.innerText = `Total ${allApps.length} apps `;
+        totalAppsCount.innerText = `${langText['total']} ${allApps.length} apps `;
         loadMoreApps();
         appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
         window.scrollTo({
@@ -927,26 +928,25 @@ export function wrapLightbox(htmlString) {
   return doc.body.innerHTML;
 }
 
-async function getAppInfoByBundleId(bundleId) {
-    const timeout = new Promise((resolve) => setTimeout(() => resolve(null), 2000));
-    const fetchPromise = (async () => {
-        const baseUrl = "https://itunes.apple.com/lookup";
-        const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}&lang=${langCode}`;
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            if (data.resultCount > 0 && data.results.length > 0) {
-                return data.results[0];
-            } else {
-                return null;
-            }
-        } catch (error) {
-            return null;
-        }
-    })();
-    return Promise.race([fetchPromise, timeout]);
-}
+async function getAppInfoByBundleId(bundleId, retries = 1) {
+    const baseUrl = "https://itunes.apple.com/lookup";
+    const url = `${baseUrl}?bundleId=${encodeURIComponent(bundleId)}&lang=${langCode}`;
 
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+	return (data.resultCount > 0 && data.results.length > 0)? data.results[0] : null ;
+    } catch (error) {
+        if (retries > 0) {
+            return getAppInfoByBundleId(bundleId, langCode, retries - 1);
+        }
+        console.error(error);
+        return null;
+    }
+}
 async function translateTo(text) {
   const url = `https://edge.microsoft.com/translate/translatetext?from=&to=${langCode}&isEnterpriseClient=true`;
   const options = {

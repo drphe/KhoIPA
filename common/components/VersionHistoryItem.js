@@ -21,7 +21,7 @@ export const VersionHistoryItem = (sourceName, number, date, description, url, i
         </a>
         <a style="color: var(--tint-color);" class="version-download" onclick="showAddToAltStoreAlert(
             '${sourceName?.replace(/(['"])/g, "\\$1")}',
-            isStandalone? langText["downloadipa"]:langText["copylink"],
+            isStandalone? langText['downloadipa']:langText['copylink'],
             () => isStandalone? window.location.href = '${url}': copyLinkIPA('${url}')
         );">
             ${langText['downloadipa']}

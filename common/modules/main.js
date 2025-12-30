@@ -26,7 +26,7 @@ export function main(callback, fallbackURL = "../../") {
         insertAltStoreBanner(json.name);
         const supportType = detectSupport(source.apps[0]);
         const installAppAlert = new UIAlert({
-            title: `Which app repo?`
+            title: langText['whichapp']
         });
 	if(supportType == 'both' || supportType == 'Esign') {
         	installAppAlert.addAction({

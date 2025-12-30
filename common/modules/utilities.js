@@ -119,7 +119,7 @@ export function showUIAlert(title, message) {
 
 export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
     const uiAlert = new UIAlert({
-        title: `Add "${sourceName}" to Esign?`,
+        title: langText["addtowhat"].replace(/TEXT/g, sourceName),
         message: langText['addtoesignText']
     });
     uiAlert.addAction({
