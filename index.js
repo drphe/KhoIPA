@@ -219,13 +219,13 @@ const sources = await json("./common/assets/json/sources.json");
 
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
+        await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, 1); // 10 apps, lấy app type=1
         activateNavLink("page-library");
      });
     document.getElementById('search2')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        await openPanel('<div id="apps-list"></div>', `<p>All Apps</p>`, '.', "side", "apps-popup-all");
+        await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10, 2); // 10 apps, lấy app type=1
         activateNavLink("page-library");
      });
@@ -233,7 +233,7 @@ const sources = await json("./common/assets/json/sources.json");
     // view all source
     document.getElementById('all-source')?.addEventListener("click", async(e) => {
         e.preventDefault();
-        await openPanel('<div id="sources-list"></div>', `<p>All Repositories</p>`, '.', "side", "sources-popup-all");
+        await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
     	for (const source of featuredSources) {
         	await insertSource(source);
    	 }
@@ -294,7 +294,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
 	     await insertSource(source);
  	}
     }else if(target == 'page-library') {
-        await openPanel('<div id="apps-list"></div>', `<p>${langText['allapp']}</p>`, '.', "side", "apps-popup-all");
+        await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
         addAppList({ apps: allApps }, 10); 
     }else if(target == 'page-news'){
         const html = `<div id="news" class="section grid_news">${jsonNews.map(item =>NewsItem(item, true)).join('')}</div>`;

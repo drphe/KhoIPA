@@ -175,13 +175,15 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
       <div class="header">
         <div style="display:flex">
 	    <h2>${langText["preview"]}
-		<button onclick="translateText()" style="padding-bottom: 0px;background: transparent; border: none; color: var(--tint-color); cursor: pointer;"> 
-		<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${langCode.toUpperCase()}</span></button></h2>
+		<button onclick="translateText(event)" id="translateBtn"> 
+		    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${langCode.toUpperCase()}</span>
+		</button>
+	    </h2>
     	</div>
 	<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store</a>
       </div>
       <div id="screenshots"></div>
-      <p id="description"></p>
+      <p id="description" class="preview-text-loading skeleton-effect-wave"></p>
     </div>
     <div id="whats-new" class="section">
       <div class="header">
@@ -351,7 +353,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             function updatePrivacyContainerHeader() {
                 privacyContainer.querySelector(".permission-icon").classList = "permission-icon bi-person-fill-lock";
                 privacyContainer.querySelector("b").innerText = langText['privacy'];
-                privacyContainer.querySelector(".description").innerText = `"${app.name}" may request to access the following:`;
+                privacyContainer.querySelector(".description").innerText = `"${app.name}" ${langText['privacyText']}:`;
             }
             //
             // New (appPermissions.privacy)
@@ -527,7 +529,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         let startX;
         let currentX;
         let isDragging = false;
-        const dragThreshold = 50; // Ngưỡng kéo 50px
+        const dragThreshold = 50; 
         bottomPanel.addEventListener("touchstart", e => {
             startX = e.touches[0].clientX;
             isDragging = true;
@@ -577,17 +579,18 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         if (direction !== "bottom")
             return;
         let appInfo = await getAppInfoByBundleId(bundleId.split("@")[0]);
-        if (!appInfo)
-            return;
-        // Preview
         const preview = bottomPanel.querySelector("#preview");
         const moreDetail = bottomPanel.querySelector("#more-detail");
+	const previewDescription = preview.querySelector("#description");
+        if (!appInfo){
+	     previewDescription.classList.remove("preview-text-loading", "skeleton-effect-wave");
+            return;
+	}
         if (appInfo?.trackViewUrl) {
             moreDetail.href = appInfo.trackViewUrl;
             moreDetail.classList.remove("hidden");
         }
 	if (needPreview){
-		const previewDescription = preview.querySelector("#description");
 		window.textDescription = appInfo.description;
 		if(!appInfo.languageCodesISO2A.includes(langCode.toUpperCase())){
 		     const newDecription = await translateTo(appInfo.description);
@@ -598,6 +601,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 		}
 		if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
 	}
+	previewDescription.classList.remove("preview-text-loading", "skeleton-effect-wave");
         if (!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0) {
             appInfo.screenshotUrls.forEach((url, i) => {
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
@@ -606,13 +610,18 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         }
     }
 
-    window.translateText = async ()=> {
+    window.translateText = async (event)=> {
+	event.stopPropagation();
+        const btn = bottomPanel.querySelector('#translateBtn');
+	const originalIcon = btn.innerHTML;
+	btn.innerHTML = `<svg class="spinner" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>`;
         const preview = bottomPanel.querySelector("#preview");
 	const previewDescription = preview.querySelector("#description");
 	const newDecription = isOriginalDescription ? await translateTo(textDescription): textDescription;
 	isOriginalDescription = !isOriginalDescription;
         previewDescription.innerHTML = formatString(newDecription);
 	if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor)); 
+	btn.innerHTML = originalIcon;
     }
     function closePanel() {
         bottomPanel.classList.remove("show");
@@ -640,6 +649,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         target
     }) => { // logic đóng panel
         const uialert = document.querySelector("#uialert-container");
+        const trans = document.querySelector("#translateBtn");
         const fslight = document.querySelector(".fslightbox-container");
         const navglass = document.querySelector(".bottom-nav-glass");
         const panels = document.querySelectorAll(".panel");
@@ -648,7 +658,8 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         const isOutsideUIAlert = !uialert?.contains(target);
         const isOutsideFsLight = !fslight?.contains(target);
         const isOutsideNav = !navglass?.contains(target);
-        if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight && isOutsideNav) {
+        const isOutsideTrans = !trans?.contains(target);
+        if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight && isOutsideNav && isOutsideTrans) {
             closePanel();
         }
     });
@@ -670,7 +681,7 @@ export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTa
     // Tạo ô tìm kiếm
     const searchBox = document.createElement("input");
     searchBox.type = "text";
-    searchBox.placeholder = "Enter app name...";
+    searchBox.placeholder = langText['enterapp'];
     searchBox.className = "form-control mb-3";
     searchBox.style.cssText = "width: 100%; padding-left: 35px; box-sizing: border-box; border-radius: 20px;backdrop-filter: blur(4px); margin-top: 0.5rem;"
     // Tạo icon x
@@ -713,7 +724,7 @@ export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTa
             const keyword = searchBox.value.toLowerCase();
             filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
             let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
-            totalAppsCount.innerText = `Found ${dataApps.length} apps `;
+            totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
             currentIndex = 0;
             setTimeout(() => {
                 appsContainer.innerHTML = "";
@@ -732,7 +743,7 @@ export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTa
             el.classList.add('active');
             filterType = index;
             let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
-            totalAppsCount.innerText = `Found ${dataApps.length} apps `;
+            totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
             currentIndex = 0;
             appsContainer.innerHTML = "";
             loadMoreApps();
@@ -764,7 +775,7 @@ export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTa
         <a href="#" class="nothing">
           <div class="app-header-inner-container">
             <div class="app-header">
-              <div class="content" style="height: 30px;margin: auto;display: flex;justify-content: space-around;"><p>ⓧ Nothing found!</p></div>
+              <div class="content" style="height: 30px;margin: auto;display: flex;justify-content: space-around;"><p>ⓧ ${langText['nothingfound']}</p></div>
               <div class="background" style="background-color: var(--color-bg-dark-secondary);"></div>
             </div>
           </div>
@@ -823,7 +834,7 @@ export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTa
         if (nothing) {
             event.stopPropagation();
             filteredApps = allApps
-            totalAppsCount.innerText = `Total ${filteredApps.length} apps `;
+            totalAppsCount.innerText = `${langText['total']} ${filteredApps.length} apps `;
             searchBox.value = '';
             currentIndex = 0;
             filterType = 0;

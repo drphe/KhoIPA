@@ -1625,3 +1625,19 @@ width: 60px;
 border-radius: 10px;
 margin: 8px;
 }
+#translateBtn{
+padding-bottom: 0px;
+background: transparent; 
+border: none; 
+color: var(--tint-color); 
+cursor: pointer;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.preview-text-loading{
+     color: var(--skeleton-color) !important;
+    letter-spacing: -0.2em !important;
+    -webkit-text-security: square;
+}
