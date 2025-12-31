@@ -595,8 +595,8 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 		window.textDescription = appInfo.description;
 		if(!appInfo.languageCodesISO2A.includes(langCode.toUpperCase())){
 		     const newDecription = await translateTo(appInfo.description);
-		     previewDescription.innerHTML = formatString(newDecription);
-		     isOriginalDescription = false;
+		     if(newDecription) {previewDescription.innerHTML = formatString(newDecription);
+		     isOriginalDescription = false;}
   		}else {
 		    previewDescription.innerHTML = formatString(appInfo.description);
 		}
