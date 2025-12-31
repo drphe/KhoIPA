@@ -591,12 +591,15 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             moreDetail.href = appInfo.trackViewUrl;
             moreDetail.classList.remove("hidden");
         }
-	if (needPreview){
+	if (needPreview &&appInfo.description){
 		window.textDescription = appInfo.description;
 		if(!appInfo.languageCodesISO2A.includes(langCode.toUpperCase())){
 		     const newDecription = await translateTo(appInfo.description);
 		     if(newDecription) {previewDescription.innerHTML = formatString(newDecription);
 		     isOriginalDescription = false;}
+            else {
+                previewDescription.innerHTML =appInfo.description;
+                }
   		}else {
 		    previewDescription.innerHTML = formatString(appInfo.description);
 		}
