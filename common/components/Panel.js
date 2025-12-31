@@ -931,9 +931,15 @@ export function wrapLightbox(htmlString) {
 async function getAppInfoByBundleId(bundleId, retries = 3) {
     const baseUrl = "https://itunes.apple.com/lookup";
     const url = `${baseUrl}?lang=${langCode}&bundleId=${encodeURIComponent(bundleId)}`;
-
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+    },
+  };
     try {
-        const response = await fetch(url);
+        const response = await fetch(url,options);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
