@@ -183,7 +183,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store<i class="bi bi-chevron-right"></i></a>
       </div>
       <div id="screenshots"></div>
-      <p id="description" class="preview-text-loading skeleton-effect-wave"></p>
+      <p id="description" class="skeleton-text skeleton-effect-wave"></p>
     </div>
     <div id="whats-new" class="section">
       <div class="header">
@@ -584,7 +584,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	const previewDescription = preview.querySelector("#description");
         const btn = bottomPanel.querySelector('#translateBtn');
         if (!appInfo){
-	     previewDescription.classList.remove("preview-text-loading", "skeleton-effect-wave");
+	     previewDescription.classList.remove("skeleton-text", "skeleton-effect-wave");
             return;
 	}
         if (appInfo?.trackViewUrl) {
@@ -605,7 +605,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 		}
 		if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
 	}
-	previewDescription.classList.remove("preview-text-loading", "skeleton-effect-wave");
+	previewDescription.classList.remove("skeleton-text", "skeleton-effect-wave");
 	btn.innerHTML = `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${isOriginalDescription?langCode.toUpperCase():"EN"}</span>`;
         if (!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0) {
             appInfo.screenshotUrls.forEach((url, i) => {
