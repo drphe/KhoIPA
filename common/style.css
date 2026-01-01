@@ -1647,8 +1647,18 @@ cursor: pointer;
     letter-spacing: -0.2em !important;
     -webkit-text-security: square;
 }
+
 .preview-text-loading {
   color: transparent;
+  position: relative;
+}
+
+.preview-text-loading::before {
+  content: "";
+  display: block;
+  height: 1em;
+  width: 100%;
+  margin-bottom: 0.5em;
   background: linear-gradient(
     90deg,
     var(--skeleton-color) 25%,
@@ -1658,9 +1668,4 @@ cursor: pointer;
   background-size: 400% 100%;
   animation: shimmer 1.4s ease infinite;
   border-radius: 4px;
-}
-
-@keyframes shimmer {
-  0% { background-position: 100% 0; }
-  100% { background-position: -100% 0; }
 }
