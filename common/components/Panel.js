@@ -183,7 +183,10 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store<i class="bi bi-chevron-right"></i></a>
       </div>
       <div id="screenshots"></div>
-      <p id="description" class="skeleton-text skeleton-effect-wave">Loading description...</p>
+      <p id="description" class="skeleton-text skeleton-effect-wave">--- --- ------ ---- ---- ----- ----
+     ----- ---- ---- ---- ------ ------ ----- ----
+    --- ----- --- ----- --- --- -- ----- ---- ----
+    --- ---- ---- ---- --------- -----...</p>
     </div>
     <div id="whats-new" class="section">
       <div class="header">
