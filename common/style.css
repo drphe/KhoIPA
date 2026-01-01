@@ -842,7 +842,7 @@ border-radius: 1.5rem;
     font-display: block
 }
 
-.no-scroll {
+.no-scroll *{
     overflow: hidden !important;
     height: 100vh;
     width: 100%;
