@@ -852,7 +852,7 @@ border-radius: 1.5rem;
 .no-scroll>#main {
     position: relative;
     top: 100px;
-    overflow:hidden;
+    overflow:hidden!important;
 }
 
 .skeleton-text {
