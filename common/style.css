@@ -49,7 +49,9 @@ span {
         line-height: 1.375em;
     }
 }
-
+a>h2 {
+  color: #000;
+  }
 #uialert>#text>#title {
     font-weight: 600;
 }
