@@ -1642,8 +1642,25 @@ cursor: pointer;
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
-.preview-text-loading{
+.preview-text-loading2{
      color: var(--skeleton-color) !important;
     letter-spacing: -0.2em !important;
     -webkit-text-security: square;
+}
+.preview-text-loading {
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-color) 25%,
+    #e5e7eb 37%,
+    var(--skeleton-color) 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
 }
