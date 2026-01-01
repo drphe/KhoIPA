@@ -28,7 +28,7 @@ main(json => {
         if (json.news.length == 1) {
             document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
             document.getElementById("news-items").classList.add("one");
-            document.getElementById('all-news').classList.add("hidden");
+            //document.querySelector('.all-news').classList.add("hidden");
         } else {
 			let hasNotify = false;
             for (let i = 0; i < json.news.length; i++) {

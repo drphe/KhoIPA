@@ -466,7 +466,10 @@ input[type="text"]:focus {
     display: inline-grid;
     justify-items: center;
 }
-
+#app-icon {
+    width:64px;
+    height:64px;
+}
 .developer-icon {
     position: absolute;
     bottom: 2px;
@@ -1646,4 +1649,7 @@ cursor: pointer;
      color: var(--skeleton-color) !important;
     letter-spacing: -0.2em !important;
     -webkit-text-security: square;
+}
+.bi-chevron-right{
+    height:1.2rem;
 }

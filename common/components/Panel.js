@@ -141,7 +141,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         </button>
       </div>
       <div id="title" class="hidden">
-        <img id="app-icon" src="${altSourceIcon}" onerror="this.onerror=null; this.src='${altSourceIcon}';" alt="generic-app-icon">
+        <img src="${altSourceIcon}" onerror="this.onerror=null; this.src='${altSourceIcon}';" alt="generic-app-icon">
         <p></p>
       </div>
       <a href="#" class="install hidden">
@@ -158,7 +158,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
           <div class="right">
             <div class="text">
               <p class="title">Esign</p>
-              <p class="subtitle">drphe</p>
+              <p class="subtitle kind">drphe</p>
             </div>
             <div class="ipa">
               <a class="install">
@@ -173,30 +173,32 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     <div id="preview" class="section">
       <p id="subtitle"></p>
       <div class="header">
-        <div style="display:flex">
-	    <h2>${langText["preview"]}
-		<button onclick="translateText(event)" id="translateBtn"> 
-		    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${langCode.toUpperCase()}</span>
-		</button>
-	    </h2>
-    	</div>
-	<a id="more-detail" class="hidden" style="color: var(--tint-color);" target=_blank href="#">Apple Store<i class="bi bi-chevron-right"></i></a>
+	<a id="more-detail" style="color: var(--tint-color);" target=_blank>
+	    <h2>${langText["preview"]}</h2>
+	    <i class="bi bi-chevron-right more-detail hidden" ></i>
+	</a>
+	<button onclick="translateText(event)" id="translateBtn"> 
+	    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${langCode.toUpperCase()}</span>
+	</button>
       </div>
       <div id="screenshots"></div>
-      <p id="description" class="skeleton-text skeleton-effect-wave">--- --- ------ ---- ---- ----- ----
+      <p id="description" class="skeleton-text skeleton-effect-wave">
+	--- --- ------ ---- ---- ----- ----
      ----- ---- ---- ---- ------ ------ ----- ----
     --- ----- --- ----- --- --- -- ----- ---- ----
     --- ---- ---- ---- --------- ---- -- -- ----
-    --- ---- ---- --- ------- ------ -----...</p>
+    --- ---- ---- --- ------- ------ -----</p>
     </div>
     <div id="whats-new" class="section">
       <div class="header">
-        <h2>${langText["whatnew"]}</h2>
-        <p id="version-size"></p>
-        <a id="version-history" style="color: var(--tint-color);" >${langText["allversion"]}</a>
+        <a id="version-history" style="color: var(--tint-color);" >
+		<h2>${langText["whatnew"]}</h2> 
+		<i class="bi bi-chevron-right version-history hidden"></i>
+	</a>
       </div>
       <div class="header">
-        <p id="version">Version 2.0</p>
+        <p id="version">${langText['version']} 2.0</p>
+        <p id="version-size"></p>
         <p id="version-date">Apr 10, 2023</p>
       </div>
       <p id="version-description"></p>
@@ -326,16 +328,13 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         // Version number
         versionNumberElement.textContent = `${langText["version"]} ${app.version}`;
         // Version size
-        
+        app.versions.length >1 && bottomPanel.querySelector(".version-history").classList.remove("hidden");
         versionSizeElement.textContent = AppSize(app);
         // Version description
         versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
         if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
         // Version history
         bottomPanel.querySelector("#version-history").addEventListener("click", (event) => {
-            event.stopPropagation();
-    	    const versionHistoryButton = event.currentTarget;
-            versionHistoryButton.remove();
             const versionsContainer = bottomPanel.querySelector("#versions");
             if (app.versions) {
                 app.versions.slice(1).forEach((version, i) => {
@@ -589,7 +588,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         const btn = bottomPanel.querySelector('#translateBtn');
         if (appInfo?.trackViewUrl) {
             moreDetail.href = appInfo.trackViewUrl;
-            moreDetail.classList.remove("hidden");
+	    bottomPanel.querySelector(".more-detail").classList.remove("hidden");
         }
     	if (needPreview &&appInfo?.description){
     		window.textDescription = appInfo.description;
@@ -610,8 +609,18 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
 	previewDescription.classList.remove("skeleton-text", "skeleton-effect-wave");
 	btn.innerHTML = `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${isOriginalDescription?langCode.toUpperCase():"EN"}</span>`;
-        if (!hasScreenshot && appInfo?.screenshotUrls && appInfo.screenshotUrls.length > 0) {
+	const kindTitle = bottomPanel.querySelector("#panel-body .app-header .kind")
+	if(!kindTitle.textContent && appInfo?.primaryGenreName){
+	     kindTitle.textContent = appInfo.primaryGenreName;
+	}
+	if(hasScreenshot) return;
+        if (appInfo?.screenshotUrls?.length > 0) {
             appInfo.screenshotUrls.forEach((url, i) => {
+                preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
+                <img src="${url}" screenshot ${i + 1}" class="screenshot"></a>`);
+            });
+        }else if (appInfo?.ipadScreenshotUrls?.length > 0) {
+            appInfo.ipadScreenshotUrls.forEach((url, i) => {
                 preview.querySelector("#screenshots").insertAdjacentHTML("beforeend", `<a href="${url}" data-fslightbox="gallery">
                 <img src="${url}" screenshot ${i + 1}" class="screenshot"></a>`);
             });
