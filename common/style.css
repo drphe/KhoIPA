@@ -842,9 +842,9 @@ border-radius: 1.5rem;
     font-display: block
 }
 
-.no-scroll *{
+.no-scroll {
     overflow: hidden !important;
-    
+    height:100vh;
 }
 .no-scroll>#top{position:fixed;}
 .no-scroll>#main {
