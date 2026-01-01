@@ -588,12 +588,12 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	const previewDescription = preview.querySelector("#description");
         const btn = bottomPanel.querySelector('#translateBtn');
         if (!appInfo){
-        previewDescription.innerHTML = formatString(textDescription);
+        previewDescription.innerHTML = formatString(window.textDescription);
         if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
 	     previewDescription.classList.remove("skeleton-text", "skeleton-effect-wave");
             return;
 	}
-        if (appInfo?.trackViewUrl) {
+    if (appInfo?.trackViewUrl) {
             moreDetail.href = appInfo.trackViewUrl;
             moreDetail.classList.remove("hidden");
     }
@@ -602,14 +602,19 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 		if(!appInfo.languageCodesISO2A.includes(langCode.toUpperCase())){
 		     const newDecription = await translateTo(appInfo.description);
 		     if(newDecription) {previewDescription.innerHTML = formatString(newDecription);
-		     isOriginalDescription = false;}
+		     isOriginalDescription = false;
+            }
             else {
-                previewDescription.innerHTML =appInfo.description;
+                previewDescription.innerHTML = formatString(appInfo.description);
                 }
   		}else {
 		    previewDescription.innerHTML = formatString(appInfo.description);
 		}
-	}
+	}else{
+        previewDescription.innerHTML = formatString(window.textDescription);
+        if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+	     previewDescription.classList.remove("skeleton-text", "skeleton-effect-wave");
+    }
     if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor));
 	previewDescription.classList.remove("skeleton-text", "skeleton-effect-wave");
 	btn.innerHTML = `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${isOriginalDescription?langCode.toUpperCase():"EN"}</span>`;
@@ -620,7 +625,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             });
         }
     }
-
+    
     window.translateText = async (event)=> {
 	event.stopPropagation();
         const btn = bottomPanel.querySelector('#translateBtn');
