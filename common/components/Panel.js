@@ -186,7 +186,8 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
       <p id="description" class="skeleton-text skeleton-effect-wave">--- --- ------ ---- ---- ----- ----
      ----- ---- ---- ---- ------ ------ ----- ----
     --- ----- --- ----- --- --- -- ----- ---- ----
-    --- ---- ---- ---- --------- -----...</p>
+    --- ---- ---- ---- --------- ---- -- -- ----
+    --- ---- ---- --- ------- ------ -----...</p>
     </div>
     <div id="whats-new" class="section">
       <div class="header">
