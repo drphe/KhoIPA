@@ -15,6 +15,89 @@
   "apps": [
     {
       "beta": false,
+      "name": "RustMobile_1_32_1",
+      "type": 1,
+      "bundleIdentifier": "com.tencent.rmos",
+      "developerName": "RustMobile_1_32_1 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Rust Mobile",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/RustMobile_1_32_1.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/RustMobile_1_32_1/RustMobile_1_32_1-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 519,
+      "version": "1.32.1",
+      "versions": [
+        {
+          "version": "1.32.1",
+          "date": "2026-01-04",
+          "size": 519,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/RustMobile_1_32_1.ipa",
+          "localizedDescription": "Rust Mobile"
+        }
+      ],
+      "versionDate": "2026-01-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/RustMobile_1_32_1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Discord_BTLoader_Kettu",
+      "type": 1,
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "Discord_BTLoader_Kettu x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "BTLoader + Kettu (plugin/theme)",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Discord_BTLoader_Kettu/discord-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Discord_BTLoader_Kettu/discord-1.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 99205775,
+      "version": "305.1",
+      "versions": [
+        {
+          "version": "305.1",
+          "date": "2026-01-02",
+          "size": 99205775,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
+          "localizedDescription": "BTLoader + Kettu (plugin/theme)"
+        },
+        {
+          "version": "228.1",
+          "date": "2024-05-10",
+          "size": 99425976,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
+          "localizedDescription": "Discord mod."
+        },
+        {
+          "version": "224.0",
+          "date": "2024-04-10",
+          "size": 96856965,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
+          "localizedDescription": "Another one! Bestest Discord client"
+        }
+      ],
+      "versionDate": "2026-01-02",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "CloverPit-1.3.3",
       "type": 1,
       "bundleIdentifier": "com.PanikArcade.CloverPit",
@@ -3147,47 +3230,6 @@
       ],
       "versionDate": "2024-05-10",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/Mimo_6.48.0_Premium.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Discord_228.1_Pyoncord",
-      "type": 1,
-      "bundleIdentifier": "com.hammerandchisel.discord",
-      "developerName": "Discord_228.1_Pyoncord x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Discord mod.",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Discord_228.1_Pyoncord_DiscordNoTrack.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Discord_228.1_Pyoncord/Discord_228.1_Pyoncord_DiscordNoTrack-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 99425976,
-      "version": "228.1",
-      "versions": [
-        {
-          "version": "228.1",
-          "date": "2024-05-10",
-          "size": 99425976,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
-          "localizedDescription": "Discord mod."
-        },
-        {
-          "version": "224.0",
-          "date": "2024-04-10",
-          "size": 96856965,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
-          "localizedDescription": "Another one! Bestest Discord client"
-        }
-      ],
-      "versionDate": "2024-05-10",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
       "patreon": {}
     },
     {
@@ -6355,6 +6397,26 @@
     }
   ],
   "news": [
+    {
+      "title": "RustMobile_1_32_1 now available!",
+      "identifier": "cypwn.RustMobile_1_32_1.1.32.1",
+      "caption": "RustMobile_1_32_1 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/RustMobile_1_32_1.png",
+      "date": "2026-01-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "Discord_BTLoader_Kettu now available!",
+      "identifier": "cypwn.Discord_BTLoader_Kettu.305.1",
+      "caption": "Discord_BTLoader_Kettu added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
+      "date": "2026-01-02",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
     {
       "title": "CloverPit-1.3.3 now available!",
       "identifier": "cypwn.CloverPit-1.3.3.1.3.3",

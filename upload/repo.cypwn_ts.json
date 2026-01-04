@@ -15,51 +15,123 @@
   "apps": [
     {
       "beta": false,
-      "name": "VansonMod_1.71",
+      "name": "Battman_1.0.3.2",
       "type": 1,
-      "bundleIdentifier": "com.vanson.modifier",
-      "developerName": "VansonMod_1.71 x CyPwn",
+      "bundleIdentifier": "com.torrekie.Battman",
+      "developerName": "Battman_1.0.3.2 x CyPwn",
       "subtitle": "",
-      "localizedDescription": "iOS memory editor",
+      "localizedDescription": "Battman the Battery Manager",
       "versionDescription": "",
       "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/VansonMod_1.71.png",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Battman_1.0.3.2.png",
       "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/VansonMod_1.71/VansonMod_1.71-0.png"
+        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-3.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-4.png"
       ],
       "screenshots": [],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
       },
-      "size": 1101004,
-      "version": "1.71",
+      "size": 672686,
+      "version": "1.0.3.2",
       "versions": [
         {
-          "version": "1.71",
-          "date": "2025-12-11",
-          "size": 1101004,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/VansonMod_1.71.ipa",
-          "localizedDescription": "iOS memory editor"
+          "version": "1.0.3.2",
+          "date": "2026-01-03",
+          "size": 672686,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Battman_1.0.3.2.ipa",
+          "localizedDescription": "Battman the Battery Manager"
         }
       ],
-      "versionDate": "2025-12-11",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/VansonMod_1.71.ipa",
+      "versionDate": "2026-01-03",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Battman_1.0.3.2.ipa",
       "patreon": {}
     },
     {
       "beta": false,
-      "name": "TrollVNC_2.8-1",
+      "name": "Troll_SIM_Switcher_1.1",
+      "type": 1,
+      "bundleIdentifier": "com.developlab.TrollSIMSwitcher",
+      "developerName": "Troll_SIM_Switcher_1.1 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "TrollStore App SIM data and type sw",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Troll_SIM_Switcher_1.1.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Troll_SIM_Switcher_1.1/Troll_SIM_Switcher_1.1-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 213370,
+      "version": "1.1",
+      "versions": [
+        {
+          "version": "1.1",
+          "date": "2026-01-02",
+          "size": 213370,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Troll_SIM_Switcher_1.1.ipa",
+          "localizedDescription": "TrollStore App SIM data and type sw"
+        }
+      ],
+      "versionDate": "2026-01-02",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Troll_SIM_Switcher_1.1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "VansonMod_2.0",
+      "type": 1,
+      "bundleIdentifier": "com.vanson.modifier",
+      "developerName": "VansonMod_2.0 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "iOS memory editor",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/VansonMod_2.0.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/VansonMod_2.0/VansonMod_2.0-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 1163919,
+      "version": "2.0",
+      "versions": [
+        {
+          "version": "2.0",
+          "date": "2025-12-30",
+          "size": 1163919,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/VansonMod_2.0.ipa",
+          "localizedDescription": "iOS memory editor"
+        }
+      ],
+      "versionDate": "2025-12-30",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/VansonMod_2.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "TrollVNC_3.0",
       "type": 1,
       "bundleIdentifier": "com.82flex.TrollVNCApp",
-      "developerName": "TrollVNC_2.8-1 x CyPwn",
+      "developerName": "TrollVNC_3.0 x CyPwn",
       "subtitle": "",
       "localizedDescription": "VNC server for iOS devices.",
       "versionDescription": "",
       "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_2.8-1.png",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_3.0.png",
       "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/TrollVNC_2.8-1/TrollVNC_2.8-1-0.png"
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollVNC_3.0/TrollVNC_3.0-0.png"
       ],
       "screenshots": [],
       "appPermissions": {
@@ -67,18 +139,18 @@
         "privacy": {}
       },
       "size": 2338324,
-      "version": "2.8-1",
+      "version": "3.0",
       "versions": [
         {
-          "version": "2.8-1",
-          "date": "2025-12-10",
+          "version": "3.0",
+          "date": "2025-12-26",
           "size": 2338324,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollVNC_2.8-1.ipa",
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollVNC_3.0.ipa",
           "localizedDescription": "VNC server for iOS devices."
         }
       ],
-      "versionDate": "2025-12-10",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollVNC_2.8-1.ipa",
+      "versionDate": "2025-12-26",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollVNC_3.0.ipa",
       "patreon": {}
     },
     {
@@ -113,40 +185,6 @@
       ],
       "versionDate": "2025-11-10",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/OtoolsGG_1.3.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Battman",
-      "type": 1,
-      "bundleIdentifier": "com.torrekie.Battman",
-      "developerName": "Battman x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Battman the Battery Manager",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Battman.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Battman/Battman-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 420464,
-      "version": "1.0",
-      "versions": [
-        {
-          "version": "1.0",
-          "date": "2025-10-02",
-          "size": 420464,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Battman.ipa",
-          "localizedDescription": "Battman the Battery Manager"
-        }
-      ],
-      "versionDate": "2025-10-02",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Battman.ipa",
       "patreon": {}
     },
     {
@@ -530,20 +568,6 @@
           "date": "2025-05-17",
           "size": 308531,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Battery_Info_1.2.0.ipa",
-          "localizedDescription": "TS app to check battery information"
-        },
-        {
-          "version": "1.1.8",
-          "date": "2025-03-09",
-          "size": 160061,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/BatteryInfo_1.1.8.ipa",
-          "localizedDescription": "TS app to check battery information"
-        },
-        {
-          "version": "1.1.6",
-          "date": "2025-02-23",
-          "size": 159262,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/BatteryInfo_1.1.6.ipa",
           "localizedDescription": "TS app to check battery information"
         }
       ],
@@ -4181,22 +4205,42 @@
   ],
   "news": [
     {
-      "title": "VansonMod_1.71, Ver: 1.71 now available!",
-      "identifier": "cypwn.VansonMod_1.71.1.71",
-      "caption": "VansonMod_1.71 added to the CyPwn Library",
+      "title": "Battman_1.0.3.2, Ver: 1.0.3.2 now available!",
+      "identifier": "cypwn.Battman_1.0.3.2.1.0.3.2",
+      "caption": "Battman_1.0.3.2 added to the CyPwn Library",
       "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/VansonMod_1.71.png",
-      "date": "2025-12-11",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Battman_1.0.3.2.png",
+      "date": "2026-01-03",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
     {
-      "title": "TrollVNC_2.8-1, Ver: 2.8-1 now available!",
-      "identifier": "cypwn.TrollVNC_2.8-1.2.8-1",
-      "caption": "TrollVNC_2.8-1 added to the CyPwn Library",
+      "title": "Troll_SIM_Switcher_1.1, Ver: 1.1 now available!",
+      "identifier": "cypwn.Troll_SIM_Switcher_1.1.1.1",
+      "caption": "Troll_SIM_Switcher_1.1 added to the CyPwn Library",
       "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_2.8-1.png",
-      "date": "2025-12-10",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Troll_SIM_Switcher_1.1.png",
+      "date": "2026-01-02",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "VansonMod_2.0, Ver: 2.0 now available!",
+      "identifier": "cypwn.VansonMod_2.0.2.0",
+      "caption": "VansonMod_2.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/VansonMod_2.0.png",
+      "date": "2025-12-30",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
+      "title": "TrollVNC_3.0, Ver: 3.0 now available!",
+      "identifier": "cypwn.TrollVNC_3.0.3.0",
+      "caption": "TrollVNC_3.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_3.0.png",
+      "date": "2025-12-26",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
@@ -4207,16 +4251,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/OtoolsGG_1.3.png",
       "date": "2025-11-10",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Battman, Ver: 1.0 now available!",
-      "identifier": "cypwn.Battman.1.0",
-      "caption": "Battman added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Battman.png",
-      "date": "2025-10-02",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
@@ -4401,32 +4435,12 @@
       "notify": true
     },
     {
-      "title": "BatteryInfo_1.1.8, Ver: 1.1.8 now available!",
-      "identifier": "cypwn.BatteryInfo_1.1.8.1.1.8",
-      "caption": "BatteryInfo_1.1.8 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/BatteryInfo_1.1.8.png",
-      "date": "2025-03-09",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
       "title": "TrollFools_3.2-32, Ver: 3.2 now available!",
       "identifier": "cypwn.TrollFools_3.2-32.3.2",
       "caption": "TrollFools_3.2-32 added to the CyPwn Library",
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollFools_3.2-32.png",
       "date": "2025-03-09",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "BatteryInfo_1.1.6, Ver: 1.1.6 now available!",
-      "identifier": "cypwn.BatteryInfo_1.1.6.1.1.6",
-      "caption": "BatteryInfo_1.1.6 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/BatteryInfo_1.1.6.png",
-      "date": "2025-02-23",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
