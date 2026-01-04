@@ -572,8 +572,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             }
         });
 
-    }
-    else {
+    } else {
         console.log("Preload Panel.")
         return;
     }
@@ -650,7 +649,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         } else if (remainingOpenPanels.length === 0) {
             activateNavLink("page-home");
             document.body.classList.remove('no-scroll');
-        }
+        } else document.body.classList.add('no-scroll');
     }
     // show popup
    setTimeout(() => bottomPanel.classList.add("show"), 10);//show when everything ready

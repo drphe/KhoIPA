@@ -49,7 +49,9 @@ span {
         line-height: 1.375em;
     }
 }
-
+a>h2 {
+  color: #000;
+  }
 #uialert>#text>#title {
     font-weight: 600;
 }
@@ -842,15 +844,13 @@ border-radius: 1.5rem;
 
 .no-scroll {
     overflow: hidden !important;
-    height: 100vh;
-    width: 100%;
-    left:0px;
+    height:100vh;
 }
 .no-scroll>#top{position:fixed;}
 .no-scroll>#main {
     position: relative;
     top: 100px;
-    overflow:hidden;
+    overflow:hidden!important;
 }
 
 .skeleton-text {
