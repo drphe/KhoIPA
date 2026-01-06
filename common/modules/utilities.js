@@ -141,7 +141,7 @@ export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
 }
 
 export async function json(url) {
-    return await openCachedUrl(url).then(response => response.json()).catch(error => console.error("An error occurred.", url));// opencache thay fetch
+    return await openCachedUrl(url).then(response => response.json()).catch(error => console.error("An error occurred.", url));
 }
 
 
@@ -245,13 +245,19 @@ export async function prefetchAndCacheUrls(urlList) {
 }
 
 export async function openCachedUrl(url) {
-    if (!('caches' in window)) return fetch(url);
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+    }
+  };
+    if (!('caches' in window)) return fetch(url, options);
 
     const cache = await caches.open(CACHE_NAME);
     const cachedResponse = await cache.match(url);
-
     if (cachedResponse) {
-        fetch(url, { cache: "reload" })
+        fetch(url, {cache: "reload"})
             .then(async (networkResponse) => {
                 if (networkResponse.ok) {
                     await cache.put(url, networkResponse.clone());
@@ -260,7 +266,7 @@ export async function openCachedUrl(url) {
             .catch(() => {});
         return cachedResponse;
     } else {
-        const networkResponse = await fetch(url, { cache: "reload" });
+        const networkResponse = await fetch(url, {cache: "reload"});
         if (networkResponse.ok) {
             await cache.put(url, networkResponse.clone());
         }
@@ -303,3 +309,42 @@ export async function copyLinkIPA(text) {
         showUIAlert("❌ "+ langText['error'], langText['copyfailed']);
     }
 }
+export function wrapLightbox(htmlString) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlString, 'text/html');
+  doc.querySelectorAll('img').forEach(img => {
+    const src = img.getAttribute('src');
+    if (!src) return; // bỏ qua nếu không có src
+    const alt = img.getAttribute('alt') || '';
+    const anchor = document.createElement('a');
+    anchor.setAttribute('href', src);
+    anchor.setAttribute('data-fslightbox', 'gallery');
+    img.replaceWith(anchor);
+    anchor.appendChild(img);
+  });
+
+  doc.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href')?.trim();
+    if (!href || href === '#') return; // bỏ qua link rỗng hoặc #
+    if (link.getAttribute('target') !== '_blank') {
+      link.setAttribute('target', '_blank');
+    }
+  });
+  return doc.body.innerHTML;
+}
+export function activateNavLink(e) {
+    document.querySelectorAll(".nav-link").forEach(l => {
+        if (l.dataset.target == e)
+            l.classList.add("active");
+        else
+            l.classList.remove("active");
+    });
+    window.oldTargetPage = e;
+    if (e == "page-home") {
+        const urlView = new URL(window.location.href);
+        urlView.searchParams.delete('note');
+        urlView.searchParams.delete('bundleID');
+        history.replaceState({}, '', urlView);
+
+    }
+};

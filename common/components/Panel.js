@@ -1,6 +1,6 @@
 import { base64Convert } from "../modules/constants.js";
 import {isValidHTTPURL, open, setTintColor, showUIAlert, 
-insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate, copyLinkIPA} from "../modules/utilities.js";
+insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate, copyLinkIPA ,activateNavLink} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
@@ -46,22 +46,7 @@ function updateBundleID(newBundleID) {
     url.searchParams.set('bundleID', newBundleID);
     history.replaceState({}, '', url);
 }
-export function activateNavLink(e) {
-    document.querySelectorAll(".nav-link").forEach(l => {
-        if (l.dataset.target == e)
-            l.classList.add("active");
-        else
-            l.classList.remove("active");
-    });
-    window.oldTargetPage = e;
-    if (e == "page-home") {
-        const urlView = new URL(window.location.href);
-        urlView.searchParams.delete('note');
-        urlView.searchParams.delete('bundleID');
-        history.replaceState({}, '', urlView);
 
-    }
-};
 
 export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset = "list") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
@@ -917,30 +902,6 @@ export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTa
     });
 }
 
-
-export function wrapLightbox(htmlString) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(htmlString, 'text/html');
-  doc.querySelectorAll('img').forEach(img => {
-    const src = img.getAttribute('src');
-    if (!src) return; // bỏ qua nếu không có src
-    const alt = img.getAttribute('alt') || '';
-    const anchor = document.createElement('a');
-    anchor.setAttribute('href', src);
-    anchor.setAttribute('data-fslightbox', 'gallery');
-    img.replaceWith(anchor);
-    anchor.appendChild(img);
-  });
-
-  doc.querySelectorAll('a[href]').forEach(link => {
-    const href = link.getAttribute('href')?.trim();
-    if (!href || href === '#') return; // bỏ qua link rỗng hoặc #
-    if (link.getAttribute('target') !== '_blank') {
-      link.setAttribute('target', '_blank');
-    }
-  });
-  return doc.body.innerHTML;
-}
 
 async function getAppInfoByBundleId(bundleId, retries = 3) {
     const baseUrl = "https://itunes.apple.com/lookup";

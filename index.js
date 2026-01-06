@@ -1,9 +1,9 @@
 import { urlSearchParams, sourceURL,noteURL, dirNoteURL, bundleID, base64Convert } from "./common/modules/constants.js";
-import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl, generateTOC} from "./common/modules/utilities.js";
+import { formatVersionDate,  showUIAlert,  json,  consolidateApps, isValidHTTPURL, prefetchAndCacheUrls, openCachedUrl, generateTOC, activateNavLink, wrapLightbox} from "./common/modules/utilities.js";
 import { AppBanner } from "./common/components/AppWeb.js";
 import { AppHeader } from "./common/components/AppHeader.js";
 import { NewsItem } from "./common/components/NewsItem.js";
-import { openPanel , addAppList, activateNavLink, wrapLightbox } from "./common/components/Panel.js";
+import { openPanel , addAppList } from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 const sources = await json("./common/assets/json/sources.json");
