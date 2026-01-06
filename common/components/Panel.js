@@ -7,11 +7,11 @@ import { MoreButton } from "../components/MoreButton.js";
 import { AppHeader, AppSize, AppLoading, checkBeta } from "../components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
+
+function waitForAllImagesToLoad(container) {
 const loaded = () => {
     //console.log('✅ All images settled or 3000ms timeout reached.');
 };
-
-function waitForAllImagesToLoad(container) {
     const allImages = container.querySelectorAll("img.screenshot");
     if (allImages.length === 0)
         return loaded();
@@ -41,17 +41,16 @@ function waitForAllImagesToLoad(container) {
         ]).finally(loaded);
 }
 
-function updateBundleID(newBundleID) {
-    const url = new URL(window.location.href);
-    url.searchParams.set('bundleID', newBundleID);
-    history.replaceState({}, '', url);
-}
-
 
 export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset = "list") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
+const updateBundleID = (newBundleID) =>{
+    const url = new URL(window.location.href);
+    url.searchParams.set('bundleID', newBundleID);
+    history.replaceState({}, '', url);
+}
     let altSourceIcon = dir + "/common/assets/img/generic_app.jpeg";
     let hasScreenshot= true, needPreview = false, tintColor ="000";
     let bottomPanel = document.querySelector(`#${ID}`);
@@ -319,16 +318,18 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         versionDescriptionElement.innerHTML = app.versionDescription ? formatString(app.versionDescription) : "";
         if (versionDescriptionElement.scrollHeight > versionDescriptionElement.clientHeight) versionDescriptionElement.insertAdjacentHTML("beforeend", MoreButton(tintColor));
         // Version history
-        bottomPanel.querySelector("#version-history").addEventListener("click", (event) => {
-            const versionsContainer = bottomPanel.querySelector("#versions");
-            if (app.versions) {
-                app.versions.slice(1).forEach((version, i) => {
+        bottomPanel.querySelector("#version-history").addEventListener("click", async (event) => {
+            if (app.versions?.length>1) {
+		await openPanel('<div id="versions-history-list"></div>', `<p>${langText['allversion']}</p>`, '.', "side", "versions-popup-all");
+            	const versionsContainer = document.querySelector("#versions-history-list");
+                app.versions.forEach((version, i) => {
                     versionsContainer.insertAdjacentHTML("beforeend", VersionHistoryItem(jsons.name, version.version, formatVersionDate(version.date), formatString(version.localizedDescription), version.downloadURL, i + 1));
                 });
+            	versionsContainer.querySelectorAll(".version-description").forEach(element => {
+                	if (element.scrollHeight > element.clientHeight) element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
+            	});
             }
-            versionsContainer.querySelectorAll(".version-description").forEach(element => {
-                if (element.scrollHeight > element.clientHeight) element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
-            });
+
         });
         // 
         // Permissions

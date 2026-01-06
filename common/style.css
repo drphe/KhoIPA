@@ -174,7 +174,9 @@ body {
   }
 
 }
-
+#versions-history-list{
+padding: 0 1rem;
+}
 .hidden {
     opacity: 0;
     pointer-events: none;
@@ -489,7 +491,7 @@ input[type="text"]:focus {
     color: unset;
 }
 
-#apps-list, #sources-list {
+#apps-list, #sources-list,#versions-history-list {
     padding-bottom: 8rem;
 }
 
@@ -1161,7 +1163,7 @@ text-align: center; font-size: 0.9em;margin: 1em 1rem 1.25em 1rem;
     text-align: right;
 }
 
-#whats-new #version-description {
+#whats-new #version-description, #versions-history-list .version-description {
     -webkit-line-clamp: 3;
     line-clamp: 3;
     display: -webkit-box;
