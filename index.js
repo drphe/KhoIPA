@@ -73,7 +73,7 @@ const sources = await json("./common/assets/json/sources.json");
     const fixYear =(d)=>{let x=new Date(d),y=new Date().getFullYear();return x.getFullYear()>y+10?(x.setFullYear(y-1),x.toISOString().split("T")[0]):d}
 
     const allSources = [...featuredSources, ...otherSources]; // chuẩn bị danh sách app
-    const allApps = [];
+    window.allApps = [];
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
 

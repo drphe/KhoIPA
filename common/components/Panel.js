@@ -1,56 +1,22 @@
 import { base64Convert } from "../modules/constants.js";
 import {isValidHTTPURL, open, setTintColor, showUIAlert, 
-insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate, copyLinkIPA ,activateNavLink} from "../modules/utilities.js";
+insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate, 
+copyLinkIPA ,activateNavLink, waitForAllImagesToLoad, findAppByName} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
 import { AppHeader, AppSize, AppLoading, checkBeta } from "../components/AppHeader.js";
 import { VersionHistoryItem } from "../components/VersionHistoryItem.js";
 
-
-function waitForAllImagesToLoad(container) {
-const loaded = () => {
-    //console.log('✅ All images settled or 3000ms timeout reached.');
-};
-    const allImages = container.querySelectorAll("img.screenshot");
-    if (allImages.length === 0)
-        return loaded();
-    const imagePromises = Array.from(allImages).map(image => new Promise(resolve => {
-                const handleSettled = () => {
-                    image.onload = null;
-                    image.onerror = null;
-                    resolve();
-                };
-                if (image.complete && image.naturalHeight !== 0)
-                    return resolve();
-                image.onload = handleSettled;
-                image.onerror = () => {
-                    if (image.id === "app-icon") {
-                        image.src = altSourceIcon;
-                    } else {
-                        image.remove();
-                    }
-                    handleSettled();
-                };
-                if (!image.src)
-                    image.src = image.src;
-            }));
-    Promise.race([
-            Promise.allSettled(imagePromises),
-            new Promise(resolve => setTimeout(resolve, 3000))
-        ]).finally(loaded);
-}
-
-
 export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = "modal-popup", dataset = "list") => {
     const knownPrivacyPermissions = await json(dir + "/common/assets/json/privacy.json");
     const knownEntitlements = await json(dir + "/common/assets/json/entitlements.json");
     const legacyPermissions = await json(dir + "/common/assets/json/legacy-permissions.json");
-const updateBundleID = (newBundleID) =>{
-    const url = new URL(window.location.href);
-    url.searchParams.set('bundleID', newBundleID);
-    history.replaceState({}, '', url);
-}
+    const updateBundleID = (newBundleID) =>{
+    	const url = new URL(window.location.href);
+	url.searchParams.set('bundleID', newBundleID);
+    	history.replaceState({}, '', url);
+    }
     let altSourceIcon = dir + "/common/assets/img/generic_app.jpeg";
     let hasScreenshot= true, needPreview = false, tintColor ="000";
     let bottomPanel = document.querySelector(`#${ID}`);
@@ -84,9 +50,7 @@ const updateBundleID = (newBundleID) =>{
             app.size = latestVersion.size;
         }
         tintColor = app.tintColor ? app.tintColor.replaceAll("#", "") : "var(--tint-color);";
-        // Set tint color
         if (tintColor) setTintColor(tintColor);
-        // Set up install buttons
         const installAppAlert = new UIAlert({
             title: `${langText['get']} "${app.name}"`
         });
@@ -215,7 +179,10 @@ const updateBundleID = (newBundleID) =>{
     </div>
     <div id="source" class="section">
       <div class="header">
-        <h2>${langText["discovermore"]}</h2>
+	<a id="discovermore" style="color: var(--tint-color);" >
+            <h2>${langText["discovermore"]}</h2>
+	     <i class="bi bi-chevron-right discovermore hidden"></i>
+	</a>
       </div>
       <div class="source-container">
         <a href="${dir}/view/" class="source-link">
@@ -329,8 +296,19 @@ const updateBundleID = (newBundleID) =>{
                 	if (element.scrollHeight > element.clientHeight) element.insertAdjacentHTML("beforeend", MoreButton(tintColor));
             	});
             }
-
         });
+        // Discorver more
+	const moreApps =findAppByName(window.allApps, app.name.split(" ")[0]);
+	moreApps.length >1 && bottomPanel.querySelector(".discovermore").classList.remove("hidden");
+
+        bottomPanel.querySelector("#discovermore").addEventListener("click", async (event) => {
+		if(moreApps.length <1 ) return;
+        	await openPanel('<div id="more-apps-list"></div>', `<p>${langText['discovermore']} (${moreApps.length-1})</p>`, '.', "side", "more-apps-popup");
+		moreApps.forEach(ap => {
+			if(ap.bundleIdentifier !== app.bundleIdentifier) document.getElementById("more-apps-list").insertAdjacentHTML("beforeend", AppHeader(ap));
+	        });
+        });
+
         // 
         // Permissions
         const appPermissions = app.appPermissions;
@@ -403,7 +381,7 @@ const updateBundleID = (newBundleID) =>{
         }
         // Source info
         const source = bottomPanel.querySelector("#source");
-        const sourceA = source.querySelector("a");
+        const sourceA = source.querySelector("a.source-link");
         const sourceContainer = source.querySelector(".source");
         const sourceIcon = source.querySelector("img");
         const sourceTitle = source.querySelector(".title");

@@ -304,34 +304,37 @@ export function generateTOC(markdown) {
 export async function copyLinkIPA(text) {
     try {
         await navigator.clipboard.writeText(text);
-        showUIAlert("✅ "+ langText['success'], langText['copysuccess']);
+        showUIAlert("✅ " + langText['success'], langText['copysuccess']);
     } catch (err) {
-        showUIAlert("❌ "+ langText['error'], langText['copyfailed']);
+        showUIAlert("❌ " + langText['error'], langText['copyfailed']);
     }
 }
 export function wrapLightbox(htmlString) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(htmlString, 'text/html');
-  doc.querySelectorAll('img').forEach(img => {
-    const src = img.getAttribute('src');
-    if (!src) return; // bỏ qua nếu không có src
-    const alt = img.getAttribute('alt') || '';
-    const anchor = document.createElement('a');
-    anchor.setAttribute('href', src);
-    anchor.setAttribute('data-fslightbox', 'gallery');
-    img.replaceWith(anchor);
-    anchor.appendChild(img);
-  });
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, 'text/html');
+    doc.querySelectorAll('img').forEach(img => {
+        const src = img.getAttribute('src');
+        if (!src)
+            return; // bỏ qua nếu không có src
+        const alt = img.getAttribute('alt') || '';
+        const anchor = document.createElement('a');
+        anchor.setAttribute('href', src);
+        anchor.setAttribute('data-fslightbox', 'gallery');
+        img.replaceWith(anchor);
+        anchor.appendChild(img);
+    });
 
-  doc.querySelectorAll('a[href]').forEach(link => {
-    const href = link.getAttribute('href')?.trim();
-    if (!href || href === '#') return; // bỏ qua link rỗng hoặc #
-    if (link.getAttribute('target') !== '_blank') {
-      link.setAttribute('target', '_blank');
-    }
-  });
-  return doc.body.innerHTML;
+    doc.querySelectorAll('a[href]').forEach(link => {
+        const href = link.getAttribute('href')?.trim();
+        if (!href || href === '#')
+            return; // bỏ qua link rỗng hoặc #
+        if (link.getAttribute('target') !== '_blank') {
+            link.setAttribute('target', '_blank');
+        }
+    });
+    return doc.body.innerHTML;
 }
+
 export function activateNavLink(e) {
     document.querySelectorAll(".nav-link").forEach(l => {
         if (l.dataset.target == e)
@@ -347,4 +350,49 @@ export function activateNavLink(e) {
         history.replaceState({}, '', urlView);
 
     }
+}
+
+export function waitForAllImagesToLoad(container) {
+    const loaded = () => {
+        //console.log('✅ All images settled or 3000ms timeout reached.');
+    };
+    const allImages = container.querySelectorAll("img.screenshot");
+    if (allImages.length === 0)
+        return loaded();
+    const imagePromises = Array.from(allImages).map(image => new Promise(resolve => {
+                const handleSettled = () => {
+                    image.onload = null;
+                    image.onerror = null;
+                    resolve();
+                };
+                if (image.complete && image.naturalHeight !== 0)
+                    return resolve();
+                image.onload = handleSettled;
+                image.onerror = () => {
+                    if (image.id === "app-icon") {
+                        image.src = altSourceIcon;
+                    } else {
+                        image.remove();
+                    }
+                    handleSettled();
+                };
+                if (!image.src)
+                    image.src = image.src;
+            }));
+    Promise.race([
+            Promise.allSettled(imagePromises),
+            new Promise(resolve => setTimeout(resolve, 3000))
+        ]).finally(loaded);
+}
+
+export const findAppByName = (data, searchName) => {
+    if (!data)
+        return [];
+    const result = [];
+    for (const app of data) {
+        if (app.name.includes(searchName)) {
+            result.push(app);
+        }
+    }
+    return result;
 };

@@ -153,7 +153,7 @@ body {
 	left: calc(50vw - 384px)!important;
     }
      .grid_news,
-    #repositories,#apps-list, #sources-list,
+    #repositories,#more-apps-list, #apps-list, #sources-list,
     #featured {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -491,7 +491,7 @@ input[type="text"]:focus {
     color: unset;
 }
 
-#apps-list, #sources-list,#versions-history-list {
+#more-apps-list,#apps-list, #sources-list,#versions-history-list {
     padding-bottom: 8rem;
 }
 
