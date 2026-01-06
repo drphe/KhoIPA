@@ -48,12 +48,12 @@
       "version": "4.1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.3/Summarizer_v2.3_tg@Sa1y0miii.ipa",
-          "size": 32300000,
           "version": "4.1.0",
-          "buildVersion": null,
           "date": "2025-12-23T08:08:00+07:00",
           "localizedDescription": "📮 Notes: Click “restore purchases” or close the purchase page.  \n",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.3/Summarizer_v2.3_tg@Sa1y0miii.ipa",
+          "size": 32300000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -86,12 +86,12 @@
       "version": "1.8.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.8.3/Birthday.Countdown_v1.8.3_tg@Sa1y0miii.ipa",
-          "size": 28200000,
           "version": "1.8.3",
-          "buildVersion": null,
           "date": "2025-12-23T15:05:00+07:00",
           "localizedDescription": "Subscription unlocked.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.8.3/Birthday.Countdown_v1.8.3_tg@Sa1y0miii.ipa",
+          "size": 28200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -125,12 +125,12 @@
       "version": "1.23.34",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.23.34/Superfan_v1.23.34_tg@Sa1y0miii.ipa",
-          "size": 22200000,
           "version": "1.23.34",
-          "buildVersion": null,
           "date": "2025-12-23T15:02:00+07:00",
           "localizedDescription": "Subscription unlocked.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.23.34/Superfan_v1.23.34_tg@Sa1y0miii.ipa",
+          "size": 22200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -158,12 +158,12 @@
       "version": "1.0.13",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.13/Pomidor_v1.0.13_tg@Sa1y0miii.ipa",
-          "size": 25500000,
           "version": "1.0.13",
-          "buildVersion": null,
           "date": "2025-12-23T14:50:00+07:00",
           "localizedDescription": "Subscription unlocked.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.13/Pomidor_v1.0.13_tg@Sa1y0miii.ipa",
+          "size": 25500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -197,12 +197,12 @@
       "version": "7.0.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.0.2/Albums_v7.0.2_tg@Sa1y0miii.ipa",
-          "size": 23600000,
           "version": "7.0.2",
-          "buildVersion": null,
           "date": "2025-12-23T14:47:00+07:00",
           "localizedDescription": "Subscription unlocked.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v7.0.2/Albums_v7.0.2_tg@Sa1y0miii.ipa",
+          "size": 23600000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -230,12 +230,12 @@
       "version": "0.1.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.2/Timeland_v1.0.1_tg@Sa1y0miii.ipa",
-          "size": 6400000,
           "version": "0.1.2",
-          "buildVersion": null,
           "date": "2025-12-23T14:42:00+07:00",
           "localizedDescription": "Subscription unlocked.⠀",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.2/Timeland_v1.0.1_tg@Sa1y0miii.ipa",
+          "size": 6400000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -5132,7 +5132,7 @@
       "identifier": "news-3pgl4ho7qa",
       "caption": "Hướng dẫn cơ bản các bước để tự tạo file IPA mod dùng cho nhu cầu cá nhân.",
       "date": "2025-11-17",
-      "tintColor": "#1d1d1f",
+      "tintColor": "#38321f",
       "imageURL": "https://i.ibb.co/JjvvSLCJ/e815f124c3e0.png",
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=ipamod.md",
