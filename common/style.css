@@ -853,6 +853,8 @@ border-radius: 1.5rem;
     position: relative;
     top: 100px;
     overflow:hidden!important;
+user-select: none;
+pointer-events: none;
 }
 
 .skeleton-text {
