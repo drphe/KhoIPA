@@ -643,7 +643,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         }
     });
 }
-export async function addAppList(source, appsPerLoad = 6, filterType=0, scrollTarget) {
+export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollTarget) {
     const appsContainer = document.getElementById('apps-list');
     if (!appsContainer) return;
     const allApps = source.apps;

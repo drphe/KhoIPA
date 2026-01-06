@@ -220,13 +220,13 @@ const sources = await json("./common/assets/json/sources.json");
     document.getElementById('search')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
-        addAppList({ apps: allApps }, 10, 1); // 10 apps, lấy app type=1
+        addAppList({ apps: allApps }, 20, 1);
         activateNavLink("page-library");
      });
     document.getElementById('search2')?.addEventListener("click", async(e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
-        addAppList({ apps: allApps }, 10, 2); // 10 apps, lấy app type=1
+        addAppList({ apps: allApps }, 20, 2); 
         activateNavLink("page-library");
      });
     //
@@ -295,7 +295,7 @@ document.querySelectorAll(".nav-link").forEach(link=>{
  	}
     }else if(target == 'page-library') {
         await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
-        addAppList({ apps: allApps }, 10); 
+        addAppList({ apps: allApps }, 20); 
     }else if(target == 'page-news'){
         const html = `<div id="news" class="section grid_news">${jsonNews.map(item =>NewsItem(item, true)).join('')}</div>`;
         openPanel(html, `<p>${langText["allnews"]}</p>`, '.', "side", "popup-all-news");
