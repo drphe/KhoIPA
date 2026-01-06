@@ -70,7 +70,7 @@ const sources = await json("./common/assets/json/sources.json");
     // Sort sources by last updated
     otherSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
 
-    const fixYear =(d)=>{let x=new Date(d),y=new Date().getFullYear();return x.getFullYear()>y+10?(x.setFullYear(y),x.toISOString().split("T")[0]):d}
+    const fixYear =(d)=>{let x=new Date(d),y=new Date().getFullYear();return x.getFullYear()>y+10?(x.setFullYear(y-1),x.toISOString().split("T")[0]):d}
 
     const allSources = [...featuredSources, ...otherSources]; // chuẩn bị danh sách app
     const allApps = [];
