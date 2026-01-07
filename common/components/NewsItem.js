@@ -13,7 +13,7 @@ export function getTextColor(bgColor) {
   return luminance > 186 ? '#000000' : '#ffffff';
 }
 export const NewsItem = (news, minimal = false) => `
-<div class="news-item-wrapper"> ${news.url ?
+<div class="swiper-slide news-item-wrapper"> ${news.url ?
     "<a href='#' data-url='" + news.url.replace(dirNoteURL,"") + "' title='" + news.title + "' class='news-item-header'>" : ""}
     <div class="item" style="padding:0;opacity:0.9;color:${getTextColor(news.tintColor)};background-color: #${news.tintColor.replaceAll("#", "")};${news.imageURL && minimal ?'background-image: url('+news.imageURL+');background-repeat: repeat;background-position: center center;background-size: cover;display: flex;justify-content: space-between;':''};">
 	${minimal ?'<div class="text" style="position: relative;"></div>':''}
@@ -29,4 +29,3 @@ export const NewsItem = (news, minimal = false) => `
     "</a>" : ""} ${news.appID && !minimal ?
         AppHeader(getAppWithBundleId(news.appID), "..") ?? "" : ""}
 </div>`;
-

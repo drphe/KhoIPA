@@ -1,24 +1,36 @@
-import { sourceURL, noteURL, dirNoteURL, bundleID} from "../common/modules/constants.js";
-import { formatString, open, setUpBackButton , json , 
-isValidHTTPURL,prefetchAndCacheUrls, openCachedUrl, 
-generateTOC,  activateNavLink, wrapLightbox} from "../common/modules/utilities.js";
-import { NewsItem } from "../common/components/NewsItem.js";
-import { AppHeader } from "../common/components/AppHeader.js";
-import { main } from "../common/modules/main.js";
-import { openPanel, addAppList} from "../common/components/Panel.js";
+import {
+    sourceURL,
+    noteURL,
+    dirNoteURL,
+    bundleID
+} from "../common/modules/constants.js";
+import {
+    formatString,
+    open,
+    setUpBackButton,
+    json,
+    isValidHTTPURL,
+    prefetchAndCacheUrls,
+    openCachedUrl,
+    generateTOC,
+    activateNavLink,
+    wrapLightbox
+} from "../common/modules/utilities.js";
+import {NewsItem}from "../common/components/NewsItem.js";
+import {AppHeader}from "../common/components/AppHeader.js";
+import {openPanel,addAppList}from "../common/components/Panel.js";
+import {main}from "../common/modules/main.js";
 
 main(json => {
     document.getElementById("edit").addEventListener("click", e => {
         e.preventDefault();
         if (sourceURL) open(`../studio/?source=${sourceURL}`);
     });
-
     // Set tab title
     document.title = json.name;
     // Set page title
     document.querySelector("h1").innerText = json.name;
     document.querySelector("#nav-bar #title>p").innerText = json.name;
-
     // 
     // Set News
     let jsonNewsUrl = [];
@@ -26,56 +38,54 @@ main(json => {
         // Sort news in decending order of date (latest first)
         json.news.sort((a, b) => // If b < a
             (new Date(b.date)).valueOf() - (new Date(a.date)).valueOf());
-
         if (json.news.length == 1) {
             document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
             document.getElementById("news-items").classList.add("one");
             //document.querySelector('.all-news').classList.add("hidden");
-        } else {
-			let hasNotify = false;
+        }
+        else {
+            let hasNotify = false;
             for (let i = 0; i < json.news.length; i++) {
-                if (!json.news[i].notify)
-                    continue;
-				hasNotify = true;
+                if (!json.news[i].notify) continue;
+                hasNotify = true;
                 document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
                 const url = json.news[i].url?.replace(dirNoteURL, "");
-                if (url && !isValidHTTPURL(url))
-                    jsonNewsUrl.push('./note/' + url);
+                if (url && !isValidHTTPURL(url)) jsonNewsUrl.push('./note/' + url);
             }
-			if (!hasNotify && json.news.length > 0) {
-			document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
-		}
-	}
-	prefetchAndCacheUrls(jsonNewsUrl);
-	// cuộn ngang
-	const containerNews = document.getElementById('news-items');
-	const item = containerNews.querySelector('.news-item-wrapper');
-	if(item){
-		const itemWidth = item.offsetWidth + 15; 
-		containerNews.addEventListener('wheel', function (e) {
-  			e.preventDefault();
-  			const direction = e.deltaY > 0 ? 1 : -1;
-  			containerNews.scrollBy({
-    				left: direction * itemWidth,
-    				behavior: 'smooth'
-  			});
-		}, { passive: false });
-	}
-    } else document.getElementById("news").remove();
-
+            if (!hasNotify && json.news.length > 0) {
+                document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
+            }
+        }
+        prefetchAndCacheUrls(jsonNewsUrl);
+        // cuộn ngang
+        var swiper = new Swiper(".mySwiperNews", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    centeredSlides: false,
+                }
+            }
+        });
+    }
+    else document.getElementById("news").remove();
     json.apps.sort((a, b) => {
         const dateA = new Date(a.versionDate ?? a.versions?.[0]?.date ?? 0).valueOf();
         const dateB = new Date(b.versionDate ?? b.versions?.[0]?.date ?? 0).valueOf();
         return dateB - dateA;
     });
-
     // 
     // Set Featured apps
     if (json.featuredApps && json.featuredApps.length) {
-        json.apps
-            .filter(app => json.featuredApps.includes(app.bundleIdentifier))
-            .forEach(app => document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app)));
-    } else {
+        json.apps.filter(app => json.featuredApps.includes(app.bundleIdentifier)).forEach(app => document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app)));
+    }
+    else {
         let count = 1;
         json.apps.forEach(app => {
             if (count > 5) return;
@@ -83,51 +93,54 @@ main(json => {
             count++;
         });
     }
-	async function run() {
-    if (noteURL) {
-        await executeNews('./note/' + noteURL, langText['contents'], "news-popup-link"); 
+    async function run() {
+        if (noteURL) {
+            await executeNews('./note/' + noteURL, langText['contents'], "news-popup-link");
+        }
+        if (bundleID) {
+            await openPanel(json, bundleID, '..', "bottom");
+        }
+        else {
+            await openPanel({}, "", "..");
+        }
     }
-    if (bundleID) {
-        await openPanel(json, bundleID, '..', "bottom");
-    } else {
-        await openPanel({}, "", ".."); 
-    }
-}
-run();
-
+    run();
     //  "View All apps"
-    document.getElementById('search')?.addEventListener("click", async(e) => {
+    document.getElementById('search')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
-        addAppList(json); 
+        addAppList(json);
         activateNavLink("page-library");
-     });
-
+    });
     //  "View All News"
     document.getElementById('all-news')?.addEventListener("click", async (e) => {
         e.preventDefault();
-        await executeNews("/", langText['allnews'],"news-popup-all", true);
-       activateNavLink("page-news");
-     });
+        await executeNews("/", langText['allnews'], "news-popup-all", true);
+        activateNavLink("page-news");
+    });
 
-    function executeNews(url, title , id = 'news-popup-content', isAll = false) {
-      id+= Math.random().toString(36).substring(2, 6);
-      if (isAll) {
-        const html = `<div id="news" class="section grid_news">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;
-        openPanel(html, `<p>${title}</p>`, '..', "side", id);
-      } else {
-        if (!url) return;
-        openCachedUrl(url).then(response => {
-          return response.text();
-        }).then(markdown => {
-        const { tocHtml, headings } = generateTOC(markdown);
-        let htmlContent = marked.parse(markdown);
-        headings.forEach(h => {
-            const headingTag = `<h${h.level}>${h.text}</h${h.level}>`;
-            const headingWithId = `<h${h.level} id="${h.id}">${h.text}</h${h.level}>`;
-            htmlContent = htmlContent.replace(headingTag, headingWithId);
-        });
-        const finalHtml = `
+    function executeNews(url, title, id = 'news-popup-content', isAll = false) {
+        id += Math.random().toString(36).substring(2, 6);
+        if (isAll) {
+            const html = `<div id="news" class="section grid_news">${json.news.map(news =>NewsItem(news, false)).join('')}</div>`;
+            openPanel(html, `<p>${title}</p>`, '..', "side", id);
+        }
+        else {
+            if (!url) return;
+            openCachedUrl(url).then(response => {
+                return response.text();
+            }).then(markdown => {
+                const {
+                    tocHtml,
+                    headings
+                } = generateTOC(markdown);
+                let htmlContent = marked.parse(markdown);
+                headings.forEach(h => {
+                    const headingTag = `<h${h.level}>${h.text}</h${h.level}>`;
+                    const headingWithId = `<h${h.level} id="${h.id}">${h.text}</h${h.level}>`;
+                    htmlContent = htmlContent.replace(headingTag, headingWithId);
+                });
+                const finalHtml = `
             <div class="two-column-layout">
                 <div class="toc-column">
                     <h3>Mục lục</h3>
@@ -138,69 +151,68 @@ run();
                 </div>
             </div>
         `;
-        openPanel(finalHtml, `<p>${title}</p>`, '..', "side", id,"news");
-    	const urlView = new URL(window.location.href);
-    	urlView.searchParams.set('note', url.replace("./note/",""));
-    	history.replaceState({}, '', urlView);
-        }).catch(error => {
-          console.error("Lỗi khi tải nội dung:", error);
-        });
-      }
+                openPanel(finalHtml, `<p>${title}</p>`, '..', "side", id, "news");
+                const urlView = new URL(window.location.href);
+                urlView.searchParams.set('note', url.replace("./note/", ""));
+                history.replaceState({}, '', urlView);
+            }).catch(error => {
+                console.error("Lỗi khi tải nội dung:", error);
+            });
+        }
     }
-
     //
     // listener event over the page
     document.addEventListener("click", executePanel);
 
-    function executePanel(e){
+    function executePanel(e) {
         const targetLinks = e.target.closest("a.app-header-link");
         const targetNews = e.target.closest("a.news-item-header");
         const targetNewsLink = e.target.closest("a.news-item-link");
-        if (targetLinks){
-        	e.preventDefault();
-        	const bundleId = targetLinks.getAttribute("data-bundleid");
-                openPanel(json, bundleId, '..', "bottom");
-	}
-        if (targetNewsLink){
-        	e.preventDefault();
-           	const url = targetNewsLink.getAttribute("data-url");
-		executeNews('./note/'+url, langText['contents'], "news-popup-link");
-	}
-        if (targetNews){
+        if (targetLinks) {
+            e.preventDefault();
+            const bundleId = targetLinks.getAttribute("data-bundleid");
+            openPanel(json, bundleId, '..', "bottom");
+        }
+        if (targetNewsLink) {
+            e.preventDefault();
+            const url = targetNewsLink.getAttribute("data-url");
+            executeNews('./note/' + url, langText['contents'], "news-popup-link");
+        }
+        if (targetNews) {
             e.preventDefault();
             const url = targetNews.getAttribute("data-url");
             const title = targetNews.getAttribute("title");
-	    if(isValidHTTPURL(url)){
-		window.open(url, "_blank");	
-		return;
-	    }
-	    executeNews('./note/'+url, title);
-	}
+            if (isValidHTTPURL(url)) {
+                window.open(url, "_blank");
+                return;
+            }
+            executeNews('./note/' + url, title);
+        }
     }
-
-document.querySelectorAll(".nav-link").forEach(link=>{
-  link.addEventListener("click",async ()=>{
-    document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));
-    link.classList.add("active");
-    const target = link.dataset.target;
-    if(target == window.oldTargetPage) return;
-    window.oldTargetPage = target
-    if(target == 'page-source') {
-	installSourceAlert.present();
-    }else if(target == 'page-library') {
-        await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
-        addAppList(json); 
-    }else if(target == 'page-news' && json.news.length){
-        const html = `<div id="news" class="section grid_news">${json.news.map(item =>NewsItem(item, false)).join('')}</div>`;
-        openPanel(html, `<p>${langText['allnews']}</p>`, '..', "side", "popup-all-news");
-
-    }else {
-	document.querySelectorAll(".panel.show").forEach(l=>l.classList.remove("show"));
-	document.body.classList.remove('no-scroll');
-    }
-  });
-});
-
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", async () => {
+            document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
+            link.classList.add("active");
+            const target = link.dataset.target;
+            if (target == window.oldTargetPage) return;
+            window.oldTargetPage = target
+            if (target == 'page-source') {
+                installSourceAlert.present();
+            }
+            else if (target == 'page-library') {
+                await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
+                addAppList(json);
+            }
+            else if (target == 'page-news' && json.news.length) {
+                const html = `<div id="news" class="section grid_news">${json.news.map(item =>NewsItem(item, false)).join('')}</div>`;
+                openPanel(html, `<p>${langText['allnews']}</p>`, '..', "side", "popup-all-news");
+            }
+            else {
+                document.querySelectorAll(".panel.show").forEach(l => l.classList.remove("show"));
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    });
     // 
     // About
     var description = formatString(json.description);
@@ -215,13 +227,11 @@ document.querySelectorAll(".nav-link").forEach(link=>{
         </div>
     `);
     if (!description && !json.website) document.getElementById("about").remove();
-
     window.onscroll = e => {
         const title = document.querySelector("h1");
         const navBar = document.getElementById("nav-bar");
         const navBarTitle = navBar.querySelector("#title");
         const showItem = title.getBoundingClientRect().y < 85;
-
         navBar.classList.toggle("hide-border", !showItem);
         navBarTitle.classList.toggle("hidden", !showItem);
     }

@@ -891,7 +891,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollT
 }
 
 
-async function getAppInfoByBundleId(bundleId, retries = 3) {
+async function getAppInfoByBundleId(bundleId, retries = 2) {
     const baseUrl = "https://itunes.apple.com/lookup";
     const url = `${baseUrl}?lang=${langCode}&bundleId=${encodeURIComponent(bundleId)}`;
   const options = {

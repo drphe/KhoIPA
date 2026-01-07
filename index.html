@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="./common/vendor/marked/marked.min.js"></script>
     <script src="./common/vendor/fslightbox/index.js"></script>
+    <script src="./common/vendor/swiper@11/swiper-bundle.min.js"></script>
     <title>Kho IPA MOD</title>
 </head>
 
@@ -49,8 +50,9 @@
     </div>
     <div id="main">
         <h1 id="title" class="">KHO IPA MOD</h1>
-        <div id="news" class="section no-padding">
-            <div id="news-items"></div>
+        <div id="news" class="section no-padding swiper mySwiperNews">
+            <div id="news-items" class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="header">
             <a id="search" href="#">
@@ -69,8 +71,11 @@
                 <h2><span data-text="featuredrepo">Featured Repo</span></h2> <i class="bi bi-chevron-right"></i>
             </a>
         </div>
-        <div id="repositories" class="section"></div>
-        <div class="source-container section">
+        <div id="repositories" class="section swiper mySwiperSources">
+            <div id="source-items" class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="section" style="margin: 0px 0.5rem;padding-bottom: 5rem;">
             <h2><span data-text="disclaimer">Disclaimer</span></h2>
             <p><span data-text="disclaimerText">All original content belongs to its respective owners. <br>Modified IPA files are provided for personal and educational use only.<br> No commercial intent is claimed.</span></p>
         </div>
