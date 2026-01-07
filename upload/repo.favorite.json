@@ -5128,6 +5128,17 @@
       "appID": ""
     },
     {
+      "title": "Mở khóa Premium bằng VPN",
+      "identifier": "news-xbm8h53gjv",
+      "caption": "Unlock App Premium Dành cho iPhone sử dụng ứng dụng ShadowRocket",
+      "date": "2026-01-07",
+      "tintColor": "#5f085e",
+      "imageURL": "https://i.ibb.co/LDPtJDNL/2fd3202dafaa.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=shadowrocket.md",
+      "appID": null
+    },
+    {
       "title": "Hướng dẫn Mod IPAs",
       "identifier": "news-3pgl4ho7qa",
       "caption": "Hướng dẫn cơ bản các bước để tự tạo file IPA mod dùng cho nhu cầu cá nhân.",
