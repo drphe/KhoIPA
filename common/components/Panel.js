@@ -707,24 +707,26 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollT
         filteredApps = [];
         run();
     });
-    searchBox.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-            const keyword = searchBox.value.toLowerCase();
-            filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
-            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
-            totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
-            currentIndex = 0;
-            setTimeout(() => {
-                appsContainer.innerHTML = "";
-                loadMoreApps();
-                appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-                window.scrollTo({
-                    top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
-                    behavior: "smooth"
-                });
-            }, 300);
-        }
-    });
+    let searchTimer;
+searchBox.addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+        const keyword = searchBox.value.toLowerCase();
+        filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
+        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+        totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
+        currentIndex = 0;
+
+        // Xử lý hiển thị
+        appsContainer.innerHTML = "";
+        loadMoreApps();
+        appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+        window.scrollTo({
+            top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
+            behavior: "smooth"
+        });
+    }, 1000); 
+});
     filter.querySelectorAll('.category').forEach((el, index) => {
         el.addEventListener('click', () => {
             filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));

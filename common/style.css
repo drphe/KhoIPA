@@ -164,7 +164,9 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
+    #apps-list{
+        margin:0.5rem;
+    }
     .grid_news,
     #sources-list {
         gap: 1rem;
@@ -187,8 +189,8 @@ body {
     }
 
     .app-header-container,
-    .source-container {
-        min-width: 370px !important;
+    #suggestions.source-container, #suggestions2.source-container {
+        min-width: 365px !important;
     }
 
     #sources-list>.source-container {
@@ -1161,6 +1163,7 @@ a {
     overflow: scroll;
     height: 100%;
     padding-top: 0rem;
+overflow-x: hidden;
 }
 
 #panel-body .item {
