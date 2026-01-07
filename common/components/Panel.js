@@ -474,7 +474,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     } else if (direction == "side") {
         bottomPanel.classList.add("panel", direction);
         bottomPanel.innerHTML = `
-<div class="backdrop"></div>
 <div id="panel-header">
     <!-- Navigation bar -->
     <div id="nav-bar">
