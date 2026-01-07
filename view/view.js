@@ -26,6 +26,16 @@ main(json => {
         e.preventDefault();
         if (sourceURL) open(`../studio/?source=${sourceURL}`);
     });
+    const welcomNews = {
+        "title": `Welcome to ${json.name}!`,
+        "identifier": "welcome.to.repo",
+        "caption": json.subtitle ?? "Tap to open our Website",
+        "date": "2026-04-15",
+        "tintColor": json.tintColor ?? "#00adef",
+        "imageURL": "https://i.ibb.co/3yhqBxqH/a53862b58d86.png",
+        "notify": true,
+        "url": json.website ?? null
+    }
     // Set tab title
     document.title = json.name;
     // Set page title
@@ -34,6 +44,7 @@ main(json => {
     // 
     // Set News
     let jsonNewsUrl = [];
+    if (!(json.news && json.news.length)) json.news = [welcomNews];
     if (json.news && json.news.length >= 1) {
         // Sort news in decending order of date (latest first)
         json.news.sort((a, b) => // If b < a
@@ -92,6 +103,7 @@ main(json => {
             document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app));
             count++;
         });
+	document.querySelector('span[data-text="featuredapps"]').textContent = langText['updateapp'];
     }
     async function run() {
         if (noteURL) {

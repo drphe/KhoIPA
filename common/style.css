@@ -188,7 +188,7 @@ body {
 
     .app-header-container,
     .source-container {
-        min-width: 350px !important;
+        min-width: 370px !important;
     }
 
     #sources-list>.source-container {
@@ -214,9 +214,6 @@ a, img, span {
     cursor: grab;
 }
 
-#repositories:active {
-    cursor: grabbing;
-}
 
 .swiper {
     width: 100%;

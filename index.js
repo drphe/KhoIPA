@@ -137,21 +137,62 @@ const sources = await json("./common/assets/json/sources.json");
         return dateB - dateA;
     });
     // insert newest app
-    let count = 1;
+    let count = 1,
+        maxapps = 30;
     let allAppsView = allApps.filter(s => s.type == 1);
     allAppsView.forEach(app => {
-        if (count > 6) return;
+        if (count > maxapps) return;
         document.getElementById("suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
         count++;
     });
     count = 1, allAppsView = allApps.filter(s => s.type == 2);
     allAppsView.forEach(app => {
-        if (count > 6) return;
+        if (count > maxapps) return;
         document.getElementById("suggestions2").insertAdjacentHTML("beforeend", AppHeader(app));
         count++;
     });
+    // cuộn ngang
+    const sliders = document.querySelectorAll('#suggestions, #suggestions2');
+    sliders.forEach(slider => {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let isDragging = false;
+        slider.addEventListener('mousedown', e => {
+            isDown = true;
+            isDragging = false; // Reset lại trạng thái khi mới nhấn chuột
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+            e.preventDefault();
+        });
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', (e) => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', e => {
+            if (!isDown) return;
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2;
+            if (Math.abs(x - startX) > 5) {
+                isDragging = true;
+            }
+            slider.scrollLeft = scrollLeft - walk;
+        });
+        slider.addEventListener('click', e => {
+            if (isDragging) {
+                e.preventDefault();
+            }
+        }, true);
+    });
+
     document.body.classList.remove("loading"); // kết thúc load dữ liệu
     document.getElementById("loading")?.remove();
+
     const bundleIdToSourceMap = new Map();
     allSources.forEach(sourceTarget => {
         sourceTarget.apps.forEach(app => {

@@ -50,23 +50,20 @@
     display: grid;
     max-width: 768px;
     overflow-x: scroll;
-    grid-template-columns: repeat(10, 3fr);
+    grid-template-columns: repeat(5, 3fr);
     scroll-snap-type: x mandatory;
     grid-auto-columns: 100vw;
     scroll-behavior: smooth;
     cursor: grab;
 }
-#suggestions .active,
-#suggestions2 .active{
-	cursor: grabbing;
+#suggestions:active,
+#suggestions2:active{
+cursor: grabbing;
 } 
 #suggestions>div, #suggestions2>div {
     scroll-snap-align: start;
 }
-#suggestions, #suggestions2 {
-  user-select: none; 
-  -webkit-user-drag: none;
-}
+
 
 
 .app-header-container {
