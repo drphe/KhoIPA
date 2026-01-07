@@ -395,4 +395,27 @@ export const findAppByName = (data, searchName) => {
         }
     }
     return result;
-};
+}
+export async function translateTo(text) {
+  const url = `https://edge.microsoft.com/translate/translatetext?from=&to=${langCode}&isEnterpriseClient=true`;
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+    },
+    body: JSON.stringify([text])
+  };
+
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      throw new Error(`Lỗi hệ thống: ${response.status}`);
+    }
+    const result = await response.json();
+    return result[0].translations[0].text;
+  } catch (error) {
+    console.error("Lỗi khi gọi API dịch:", error);
+    return null;
+  }
+}

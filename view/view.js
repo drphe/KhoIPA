@@ -1,5 +1,7 @@
 import { sourceURL, noteURL, dirNoteURL, bundleID} from "../common/modules/constants.js";
-import { formatString, open, setUpBackButton , json , isValidHTTPURL,prefetchAndCacheUrls, openCachedUrl, generateTOC,  activateNavLink, wrapLightbox} from "../common/modules/utilities.js";
+import { formatString, open, setUpBackButton , json , 
+isValidHTTPURL,prefetchAndCacheUrls, openCachedUrl, 
+generateTOC,  activateNavLink, wrapLightbox} from "../common/modules/utilities.js";
 import { NewsItem } from "../common/components/NewsItem.js";
 import { AppHeader } from "../common/components/AppHeader.js";
 import { main } from "../common/modules/main.js";

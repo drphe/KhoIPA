@@ -1,7 +1,7 @@
 import { base64Convert } from "../modules/constants.js";
 import {isValidHTTPURL, open, setTintColor, showUIAlert, 
 insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate, 
-copyLinkIPA ,activateNavLink, waitForAllImagesToLoad, findAppByName} from "../modules/utilities.js";
+copyLinkIPA ,activateNavLink, waitForAllImagesToLoad, findAppByName, translateTo} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 import { MoreButton } from "../components/MoreButton.js";
@@ -486,7 +486,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
       <div id="title" class="">
         ${bundleId}
       </div>
-      <a href="#" class="install"></a>
+      <a href="#" class="install">${langCode !=="vi"&&dataset === "news" ? `<button onclick="translateText(event)" id="translateBtn"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span>${langCode.toUpperCase()}</span></button>`:''}</a>
     </div>
   </div>
   <div id="panel-body" class="panel-content news-content" style="padding-bottom: 7rem;">
@@ -541,6 +541,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         return;
     }
     let isOriginalDescription = true;
+    let isOriginalNewsContent = true;
     async function getPreview() {
         if (direction !== "bottom")
             return;
@@ -594,13 +595,21 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	event.stopPropagation();
         const btn = bottomPanel.querySelector('#translateBtn');
 	btn.innerHTML = `<svg class="spinner" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>`;
-        const preview = bottomPanel.querySelector("#preview");
-	const previewDescription = preview.querySelector("#description");
-	const newDecription = isOriginalDescription ? await translateTo(textDescription): textDescription;
-	isOriginalDescription = !isOriginalDescription;
-        previewDescription.innerHTML = formatString(newDecription);
-	if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor)); 
-	btn.innerHTML = `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${isOriginalDescription?langCode.toUpperCase():"EN"}</span>`;
+	if(dataset !== "news"){
+        	const preview = bottomPanel.querySelector("#preview");
+		const previewDescription = preview.querySelector("#description");
+		const newDecription = isOriginalDescription ? await translateTo(textDescription): textDescription;
+		isOriginalDescription = !isOriginalDescription;
+        	previewDescription.innerHTML = formatString(newDecription);
+		if (previewDescription.scrollHeight > previewDescription.clientHeight) previewDescription.insertAdjacentHTML("beforeend", MoreButton(tintColor)); 
+		btn.innerHTML = `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${isOriginalDescription?langCode.toUpperCase():"EN"}</span>`;
+	}else {
+	        const newsContent = bottomPanel.querySelector("#panel-body");
+		newsContent.innerHTML = await isOriginalNewsContent ? await translateTo(jsons): jsons;
+		isOriginalNewsContent = !isOriginalNewsContent;
+		btn.innerHTML = `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width: 16px; height: 16px;"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><span> ${isOriginalNewsContent?langCode.toUpperCase(): "VI"}</span>`;
+	}
+
     }
     function closePanel() {
         bottomPanel.classList.remove("show");
@@ -907,27 +916,5 @@ async function getAppInfoByBundleId(bundleId, retries = 3) {
         return null;
     }
 }
-async function translateTo(text) {
-  const url = `https://edge.microsoft.com/translate/translatetext?from=&to=${langCode}&isEnterpriseClient=true`;
-  const options = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "*/*",
-    },
-    body: JSON.stringify([text])
-  };
 
-  try {
-    const response = await fetch(url, options);
-    if (!response.ok) {
-      throw new Error(`Lỗi hệ thống: ${response.status}`);
-    }
-    const result = await response.json();
-    return result[0].translations[0].text;
-  } catch (error) {
-    console.error("Lỗi khi gọi API dịch:", error);
-    return null;
-  }
-}
 
