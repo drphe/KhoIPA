@@ -40,7 +40,7 @@ navigator.serviceWorker.addEventListener('message', (event) => {
 const sources = await json("./common/assets/json/sources.json");
 (async () => {
     $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
-    Notification.requestPermission();
+
     // fetch Data
     const featuredSources = (await Promise.all(sources.featured.map(async url => {
         try {
@@ -434,6 +434,13 @@ const sources = await json("./common/assets/json/sources.json");
             console.error("Lỗi khi tải nội dung:", error);
         });
     }
+Notification.requestPermission().then(function(permission) {
+  if (permission === "granted") {
+    console.log("Thông báo đã được cho phép");
+  } else {
+    console.log("Thông báo bị từ chối");
+  }
+});
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");
