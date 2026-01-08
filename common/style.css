@@ -943,6 +943,7 @@ a>button {
     height: 100vh;
     -webkit-overflow-scrolling: auto;
     touch-action: none;
+    overscroll-behavior: none;
 }
 
 .no-scroll>#top {
