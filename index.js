@@ -29,15 +29,13 @@ import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('noti.js');
+    navigator.serviceWorker.addEventListener('message', (event) => {
+        if (event.data.action === 'refresh') {
+            window.isReload = false;
+            location.reload();
+        }
+    });
 }
-navigator.serviceWorker.addEventListener('message', (event) => {
-  if (event.data.action === 'refresh') {
-    window.isReload = false;
-    location.reload(); 
-  }
-});
-
-
 (async () => {
     $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
     // fetch Data

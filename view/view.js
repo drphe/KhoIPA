@@ -22,13 +22,6 @@ import {AppHeader}from "../common/components/AppHeader.js";
 import {openPanel,addAppList}from "../common/components/Panel.js";
 import {main}from "../common/modules/main.js";
 
-navigator.serviceWorker.addEventListener('message', (event) => {
-  if (event.data.action === 'refresh') {
-    window.isReload = false;
-    location.reload(); 
-  }
-});
-
 main(json => {
     $("#edit").addEventListener("click", e => {
         e.preventDefault();

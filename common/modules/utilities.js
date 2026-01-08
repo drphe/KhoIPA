@@ -482,21 +482,18 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
         bundleIdentifier: app.bundleIdentifier
     }));
     //send notification
-    if(!newApps.length && !removedApps.length && !updatedApps.length) return;
-    let greetingBody='';
-    if(newApps.length) {greetingBody+= newApps.length + langText["newapps"];}
-    if(updatedApps.length) {greetingBody+= newApps.length? ", ": "" + updatedApps.length + langText["updatedapps"];}
-    if(removedApps.length) {greetingBody+= updatedApps.length? ", ": "" + removedApps.length + langText["removedapps"];}
+    if (!newApps.length && !removedApps.length && !updatedApps.length) return;
+    let parts = [];
+    if (newApps.length) parts.push(newApps.length + langText["newapps"]);
+    if (updatedApps.length) parts.push(updatedApps.length + langText["updatedapps"]);
+    if (removedApps.length) parts.push(removedApps.length + langText["removedapps"]);
+
     const noti = {
             type: 'SHOW_UPDATE',
             title: newData.name + ' '+langText['hasupdate'],
-            body: greetingBody
+            body: parts.join(", ")
      };
-     window.isReload = true;
-     $("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh");
-    console.log(noti);
-    if (navigator.serviceWorker.controller) {
-        navigator.serviceWorker.controller.postMessage(noti);
-  }
 
+     window.isReload = true, $("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh");
+     navigator.serviceWorker?.controller?.postMessage(noti);
 }
