@@ -314,6 +314,56 @@ const sources = await json("./common/assets/json/sources.json");
         activateNavLink("page-source");
     });
     // open app
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+
+        async function enableNotifications() {
+            // Xin quyền thông báo (bắt buộc trên iOS phải qua click)
+            const permission = await Notification.requestPermission();
+            
+            if (permission === 'granted') {
+                document.getElementById('status').innerText = "Đã bật thông báo!";
+                sendGreeting();
+            } else {
+                alert("Bạn cần cho phép thông báo để tính năng này hoạt động.");
+            }
+        }
+
+        function sendGreeting() {
+            const hour = new Date().getHours();
+            let greetingTitle = "";
+            let greetingBody = "";
+
+            if (hour < 12) {
+                greetingTitle = "Chào buổi sáng! ☀️";
+                greetingBody = "Chúc bạn một ngày mới tốt lành và tràn đầy năng lượng.";
+            } else if (hour < 18) {
+                greetingTitle = "Chào buổi chiều! 🌤️";
+                greetingBody = "Bạn đã nghỉ trưa chưa? Tiếp tục làm việc tốt nhé.";
+            } else {
+                greetingTitle = "Chào buổi tối! 🌙";
+                greetingBody = "Kết thúc ngày dài rồi, hãy nghỉ ngơi thật thoải mái.";
+            }
+
+            // Gửi dữ liệu vào Service Worker để hiển thị
+            if (navigator.serviceWorker.controller) {
+                navigator.serviceWorker.controller.postMessage({
+                    type: 'SHOW_GREETING',
+                    title: greetingTitle,
+                    body: greetingBody
+                });
+            }
+        }
+
+        // Tự động gọi khi vào app (nếu đã có quyền)
+        window.onload = () => {
+            if (Notification.permission === 'granted') {
+                sendGreeting();
+            }
+        };
+
     document.addEventListener("click", event => {
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install-app");
@@ -321,6 +371,7 @@ const sources = await json("./common/assets/json/sources.json");
         const targetNewsLink = event.target.closest("a.news-item-link");
         if (targetInstall) {
             event.preventDefault();
+            enableNotifications();
             showUIAlert(langText['howtoinstall'], langText['howtoinstallText']);
         }
         if (targetNewsLink) {
