@@ -20,7 +20,7 @@ export const AppBanner = (name) => `
             </div>
         </div>
         <a href="" class="install-app">
-            <button id="add-to-altstore">Add</button>
+            <button id="add-to-altstore">${isPWA? "ON": "Add"}</button>
         </a>
     </div>
 </div>`;
