@@ -1,5 +1,8 @@
 const translations = {
     vi: {
+  	checknoti: "Cho phép Thông báo",
+	checknotiText: "để biết khi kho lưu trữ có cập nhật ứng dụng.",
+        continu: "Tiếp tục",
         statusTitle: "Trạng thái",
 	statusText: "Đã bật tính năng thông báo.",
 	statusTextNo: "Bạn cần cho phép thông báo để tính năng này hoạt động.",
@@ -36,7 +39,7 @@ const translations = {
         notpermit: "Thông tin về quyền không được cung cấp trong kho lưu trữ.",
         discovermore: "Khám phá thêm",
         unknown: "Không biết",
-        more: "thêm",
+        more: "xem thêm",
         allrepo: "Tất cả kho lưu trữ",
         allapps: "Tất cả ứng dụng",
         featuredapps: "Ứng dụng nổi bật",
@@ -222,6 +225,9 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+  	checknoti: "Enable Notification",
+	checknotiText: "to recive newest update information.",
+        continu: "Continue",
 	statusTitle: "Status",
 	statusText: "Notification feature is enabled.",
 	statusTextNo: "You need to allow notifications for this feature to work.",

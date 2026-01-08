@@ -434,10 +434,22 @@ navigator.serviceWorker.addEventListener('message', (event) => {
             console.error("Lỗi khi tải nội dung:", error);
         });
     }
-    const permission = await Notification.requestPermission();
-    if (permission === 'granted') {
-        showUIAlert(langText['statusTitle'], langText['statusText']);
-    }
+
+    const checkNoti = new UIAlert({
+        title: langText['checknoti'],
+        message:langText['checknotiText']
+    });
+    checkNoti.addAction({
+        title: langText['continu'],
+        style: "default",
+        handler: enableNotifications
+    });
+    checkNoti.addAction({
+        title: langText['cancel'],
+        style: "cancel",
+    });
+    isPWA && Notification.permission ==="default" && checkNoti.present();
+
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");
