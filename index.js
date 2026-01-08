@@ -16,7 +16,8 @@ import {
     openCachedUrl,
     generateTOC,
     activateNavLink,
-    wrapLightbox
+    wrapLightbox,
+    enableNotifications
 } from "./common/modules/utilities.js";
 import {AppBanner}from "./common/components/AppWeb.js";
 import {AppHeader}from "./common/components/AppHeader.js";
@@ -314,52 +315,6 @@ const sources = await json("./common/assets/json/sources.json");
         activateNavLink("page-source");
     });
     // open app
-
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('noti.js');
-        }
-
-        async function enableNotifications() {
-            // Xin quyền thông báo (bắt buộc trên iOS phải qua click)
-            const permission = await Notification.requestPermission();
-            
-            if (permission === 'granted') {
-                showUIAlert("Trạng thái", "Đã bật thông báo!");
-                sendGreeting();
-            } else {
-                alert("Bạn cần cho phép thông báo để tính năng này hoạt động.");
-            }
-        }
-
-        function sendGreeting() {
-            const hour = new Date().getHours();
-            let greetingTitle = "";
-            let greetingBody = "";
-
-            if (hour < 12) {
-                greetingTitle = "Chào buổi sáng! ☀️";
-                greetingBody = "Chúc bạn một ngày mới tốt lành và tràn đầy năng lượng.";
-            } else if (hour < 18) {
-                greetingTitle = "Chào buổi chiều! 🌤️";
-                greetingBody = "Bạn đã nghỉ trưa chưa? Tiếp tục làm việc tốt nhé.";
-            } else {
-                greetingTitle = "Chào buổi tối! 🌙";
-                greetingBody = "Kết thúc ngày dài rồi, hãy nghỉ ngơi thật thoải mái.";
-            }
-
-            // Gửi dữ liệu vào Service Worker để hiển thị
-            if (navigator.serviceWorker.controller) {
-                navigator.serviceWorker.controller.postMessage({
-                    type: 'SHOW_GREETING',
-                    title: greetingTitle,
-                    body: greetingBody
-                });
-            }
-        }
-        if (Notification.permission === 'granted') {
-            sendGreeting();
-        }
-    
     document.addEventListener("click", event => {
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install-app");
