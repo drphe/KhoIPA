@@ -1,8 +1,8 @@
 const translations = {
     vi: {
         newapps: " ứng dụng mới",
-	updatedapps: " cập nhật",
-	removedapps: " bị xóa",
+	updatedapps: " ứng dụng được cập nhật",
+	removedapps: " ứng dụng bị xóa",
         hasupdate: "có cập nhật, Refresh ngay!",
 	total: "Tổng",
 	found: "Tìm thấy",
