@@ -36,13 +36,7 @@ navigator.serviceWorker.addEventListener('message', (event) => {
     location.reload(); 
   }
 });
-Notification.requestPermission().then(function(permission) {
-  if (permission === "granted") {
-    showUIAlert(langText['statusTitle'], langText['statusText']);
-  } else {
-    console.log("Thông báo bị từ chối");
-  }
-});
+
 
 (async () => {
     $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
@@ -440,7 +434,7 @@ Notification.requestPermission().then(function(permission) {
             console.error("Lỗi khi tải nội dung:", error);
         });
     }
-
+    await Notification.requestPermission();
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");
