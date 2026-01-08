@@ -952,7 +952,7 @@ a>button {
 
 .no-scroll>#main {
     position: relative;
-    top: 100px;
+    top: 5.6rem;
     overflow: hidden !important;
     user-select: none;
     pointer-events: none;
@@ -1123,7 +1123,7 @@ a>button {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 85%;
+    height: 90%;
     transform: translateY(100%);
 }
 
