@@ -255,6 +255,7 @@ export async function openCachedUrl(url, onUpdate = null) {
                     const oldData = await cachedResponse.clone().json();
                     const newData = await networkResponse.clone().json();
                     onUpdate(oldData, newData)
+		    setInterval(() => openCachedUrl(url, onUpdate), 60 * 60 * 1000);// every 1 hour
                 }
                 await cache.put(url, networkResponse.clone());
             }
@@ -422,6 +423,13 @@ export async function translateTo(text) {
 }
 
 export async function enableNotifications() {
+    if(Notification.permission ==="denied"){
+	showUIAlert(langText['statusTitle'],langText['statusTextNo']);
+	return;
+    }else if(Notification.permission ==="granted"){
+	showUIAlert(langText['statusTitle'], langText['statusText']);
+	return;
+    } 
     const permission = await Notification.requestPermission();
     if (permission === 'granted') {
         showUIAlert(langText['statusTitle'], langText['statusText']);

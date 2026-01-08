@@ -335,7 +335,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                             if (permission?.icon) icon = permission.icon;
                             else icon = "gear-wide-connected";
                             privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, icon));
-                            $(`#${id}`).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
+                            document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
                         }
                         updatePrivacyContainerHeader();
                     }
@@ -346,7 +346,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                         const permissionName = permission?.name ?? insertSpaceInCamelString(prop.split("NS")[1].split("UsageDescription")[0]);
                         const permissionIcon = permission?.icon ?? "gear-wide-connected";
                         privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-                        $(`#${id}`).addEventListener("click", () => showUIAlert(permissionName, appPermissions.privacy[prop]));
+                        document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, appPermissions.privacy[prop]));
                     }
                     updatePrivacyContainerHeader();
                 }
@@ -360,7 +360,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                     const permissionName = insertSpaceInSnakeString(obj.type);
                     const permissionIcon = permission?.icon ?? "gear-wide-connected";
                     privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-                    $(`#${id}`).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
+                    document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
                 }
                 updatePrivacyContainerHeader();
             }
@@ -374,7 +374,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 const permissionName = permission?.name ?? insertSpaceInSnakeString(obj.name ?? obj);
                 const permissionIcon = permission?.icon ?? "gear-wide-connected";
                 entitlementsContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-                $(`#${id}`).addEventListener("click", () => showUIAlert(permissionName, permission?.description ?? "altsource-viewer does not have detailed information about this entitlement."));
+                document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, permission?.description ?? "altsource-viewer does not have detailed information about this entitlement."));
             }
         } else {
             entitlementsContainer.remove();
