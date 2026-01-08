@@ -80,8 +80,7 @@ const translations = {
 	newapps: " новые приложения",
 	updatedapps: " обновленные приложения",
 	removedapps: " удаленные приложения",
-	hasupdate: "есть обновление, обновите сейчас!"
-
+	hasupdate: "есть обновление, обновите сейчас!",
         total: "Всего",
         found: "Найдено",
         nothingfound: "Приложения не найдены!",
@@ -155,7 +154,7 @@ const translations = {
 	newapps: " 新しいアプリ",
 	updatedapps: " 更新されたアプリ",
 	removedapps: " 削除されたアプリ",
-	hasupdate: "更新があります。今すぐリフレッシュ！"
+	hasupdate: "更新があります。今すぐリフレッシュ！",
         total: "合計",
         found: "見つかりました",
         nothingfound: "アプリが見つかりません！",
