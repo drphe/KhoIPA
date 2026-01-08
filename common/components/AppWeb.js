@@ -1,4 +1,9 @@
-const btnText = () =>  return Notification.permission === "granted" ? "OK" : Notification.permission === "denied" ? "OFF" : "ON";
+const btnText = () =>
+  Notification.permission === "granted"
+    ? "OK"
+    : Notification.permission === "denied"
+    ? "OFF"
+    : "ON";
 
 export const AppBanner = (name) => `
 <div class="uibanner">
@@ -22,7 +27,7 @@ export const AppBanner = (name) => `
             </div>
         </div>
         <a href="" class="install-app">
-            <button id="add-to-altstore">${isPWA ? btnText: "Add"}</button>
+            <button id="add-to-altstore">${isPWA ? btnText(): "Add"}</button>
         </a>
     </div>
 </div>`;
