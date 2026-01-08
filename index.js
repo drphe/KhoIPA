@@ -356,14 +356,10 @@ const sources = await json("./common/assets/json/sources.json");
                 });
             }
         }
-
-        // Tự động gọi khi vào app (nếu đã có quyền)
-        window.onload = () => {
-            if (Notification.permission === 'granted') {
-                sendGreeting();
-            }
-        };
-
+        if (Notification.permission === 'granted') {
+            sendGreeting();
+        }
+    
     document.addEventListener("click", event => {
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install-app");
