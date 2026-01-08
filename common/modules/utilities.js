@@ -419,3 +419,42 @@ export async function translateTo(text) {
     return null;
   }
 }
+
+export async function enableNotifications() {
+            // Xin quyền thông báo (bắt buộc trên iOS phải qua click)
+            const permission = await Notification.requestPermission();
+            
+            if (permission === 'granted') {
+                showUIAlert("Trạng thái", "Đã bật thông báo!");
+                sendGreeting();
+            } else {
+                alert("Bạn cần cho phép thông báo để tính năng này hoạt động.");
+            }
+        }
+        
+export function sendGreeting() {
+            const hour = new Date().getHours();
+            let greetingTitle = "";
+            let greetingBody = "";
+
+            if (hour < 12) {
+                greetingTitle = "Chào buổi sáng! ☀️";
+                greetingBody = "Chúc bạn một ngày mới tốt lành và tràn đầy năng lượng.";
+            } else if (hour < 18) {
+                greetingTitle = "Chào buổi chiều! 🌤️";
+                greetingBody = "Bạn đã nghỉ trưa chưa? Tiếp tục làm việc tốt nhé.";
+            } else {
+                greetingTitle = "Chào buổi tối! 🌙";
+                greetingBody = "Kết thúc ngày dài rồi, hãy nghỉ ngơi thật thoải mái.";
+            }
+
+            // Gửi dữ liệu vào Service Worker để hiển thị
+            if (navigator.serviceWorker.controller) {
+                navigator.serviceWorker.controller.postMessage({
+                    type: 'SHOW_GREETING',
+                    title: greetingTitle,
+                    body: greetingBody
+                });
+            }
+        }
+    
