@@ -1,5 +1,8 @@
 const translations = {
     vi: {
+        statusTitle: "Trạng thái",
+	statusText: "Đã bật tính năng thông báo.",
+	statusTextNo: "Bạn cần cho phép thông báo để tính năng này hoạt động.",
         newapps: " ứng dụng mới",
 	updatedapps: " ứng dụng được cập nhật",
 	removedapps: " ứng dụng bị xóa",
@@ -71,6 +74,14 @@ const translations = {
         entilementText: "Quyền bổ sung là những quyền bổ sung cho phép ứng dụng truy cập vào một số dịch vụ hệ thống, bao gồm cả những thông tin có thể nhạy cảm."
     },
     ru: {
+	statusTitle: "Статус",
+	statusText: "Функция уведомлений включена.",
+	statusTextNo: "Необходимо разрешить уведомления, чтобы эта функция работала.",
+	newapps: " новые приложения",
+	updatedapps: " обновленные приложения",
+	removedapps: " удаленные приложения",
+	hasupdate: "есть обновление, обновите сейчас!"
+
         total: "Всего",
         found: "Найдено",
         nothingfound: "Приложения не найдены!",
@@ -138,6 +149,13 @@ const translations = {
         entilementText: "Дополнительные права позволяют приложению получать доступ к определенным системным службам, включая конфиденциальную информацию."
     },
     ja: {
+	statusTitle: "ステータス",
+	statusText: "通知機能が有効になっています。",
+	statusTextNo: "この機能を利用するには通知を許可する必要があります。",
+	newapps: " 新しいアプリ",
+	updatedapps: " 更新されたアプリ",
+	removedapps: " 削除されたアプリ",
+	hasupdate: "更新があります。今すぐリフレッシュ！"
         total: "合計",
         found: "見つかりました",
         nothingfound: "アプリが見つかりません！",
@@ -205,6 +223,9 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+	statusTitle: "Status",
+	statusText: "Notification feature is enabled.",
+	statusTextNo: "You need to allow notifications for this feature to work.",
         newapps: " new apps",
 	updatedapps: " updated apps",
 	removedapps: " removed apps",

@@ -424,9 +424,9 @@ export async function translateTo(text) {
 export async function enableNotifications() {
     const permission = await Notification.requestPermission();
     if (permission === 'granted') {
-        showUIAlert("Trạng thái", "Đã bật thông báo!");
+        showUIAlert(langText['statusTitle'], langText['statusText']);
     } else {
-        showUIAlert("Trạng thái","Bạn cần cho phép thông báo để tính năng này hoạt động.");
+        showUIAlert(langText['statusTitle'],langText['statusTextNo']);
     }
 }
         
