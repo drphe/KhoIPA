@@ -17,7 +17,8 @@ import {
     generateTOC,
     activateNavLink,
     wrapLightbox,
-    enableNotifications
+    enableNotifications,
+    sendGreeting
 } from "./common/modules/utilities.js";
 import {AppBanner}from "./common/components/AppWeb.js";
 import {AppHeader}from "./common/components/AppHeader.js";
@@ -25,6 +26,12 @@ import {NewsItem}from "./common/components/NewsItem.js";
 import {openPanel,addAppList}from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('noti.js');
+}
+if (Notification.permission === 'granted') {
+    sendGreeting();
+}
 const sources = await json("./common/assets/json/sources.json");
 (async () => {
     document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
