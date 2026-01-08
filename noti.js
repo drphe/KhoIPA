@@ -6,7 +6,6 @@ self.addEventListener('activate', (event) => {
     console.log('Service Worker đã kích hoạt');
 });
 
-// Lắng nghe sự kiện hiển thị thông báo từ file script chính
 self.addEventListener('message', (event) => {
     if (event.data && event.data.type === 'SHOW_UPDATE') {
         const options = {
@@ -18,4 +17,19 @@ self.addEventListener('message', (event) => {
         };
         self.registration.showNotification(event.data.title, options);
     }
+});
+
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(function(clientList) {
+      if (clientList.length > 0) {
+        let client = clientList[0];
+        client.focus();
+        client.postMessage({ action: 'refresh' });
+      } else {
+        clients.openWindow('/');
+      }
+    })
+  );
 });

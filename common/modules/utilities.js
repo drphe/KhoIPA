@@ -476,17 +476,17 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
     //send notification
     if(!newApps.length && !removedApps.length && !updatedApps.length) return;
     let greetingBody='';
-    if(newApps.length) {greetingBody+= newApps.length + " new apps";}
-    if(updatedApps.length) {greetingBody+= newApps.length? ", ": "" + updatedApps.length + " updated apps";}
-    if(removedApps.length) {greetingBody+= updatedApps.length? ", ": "" + removedApps.length + " removed apps";}
+    if(newApps.length) {greetingBody+= newApps.length + langText["newapps"];}
+    if(updatedApps.length) {greetingBody+= newApps.length? ", ": "" + updatedApps.length + langText["updatedapps"];}
+    if(removedApps.length) {greetingBody+= updatedApps.length? ", ": "" + removedApps.length + langText["removedapps"];}
     const noti = {
             type: 'SHOW_UPDATE',
-            title: newData.name + ' has update!',
+            title: newData.name + ' '+langText['hasupdate'],
             body: greetingBody
      };
      window.isReload = true;
      $("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh");
-    //console.log(noti);
+    console.log(noti);
     if (navigator.serviceWorker.controller) {
         navigator.serviceWorker.controller.postMessage(noti);
   }

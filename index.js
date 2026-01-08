@@ -30,6 +30,13 @@ import UIAlert from "./common/vendor/uialert.js/uialert.js";
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('noti.js');
 }
+navigator.serviceWorker.addEventListener('message', (event) => {
+  if (event.data.action === 'refresh') {
+    window.isReload = false;
+    location.reload(); 
+  }
+});
+
 const sources = await json("./common/assets/json/sources.json");
 (async () => {
     $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
@@ -328,9 +335,10 @@ const sources = await json("./common/assets/json/sources.json");
         const targetNewsLink = event.target.closest("a.news-item-link");
         if (targetInstall) {
             event.preventDefault();
-     	    window.isReload && (window.isReload = false, location.reload());
-
-            if (!isPWA) showUIAlert(langText['howtoinstall'], langText['howtoinstallText']);
+     	    if(window.isReload){
+		window.isReload = false;
+		location.reload();
+	    }else if (!isPWA) showUIAlert(langText['howtoinstall'], langText['howtoinstallText']);
             else enableNotifications();
         }
         if (targetNewsLink) {

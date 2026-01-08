@@ -1,5 +1,9 @@
 const translations = {
     vi: {
+        newapps: " ứng dụng mới",
+	updatedapps: " cập nhật",
+	removedapps: " bị xóa",
+        hasupdate: "có cập nhật, Refresh ngay!",
 	total: "Tổng",
 	found: "Tìm thấy",
 	nothingfound: "Không tìm thấy app nào!",
@@ -201,6 +205,10 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+        newapps: " new apps",
+	updatedapps: " updated apps",
+	removedapps: " removed apps",
+	hasupdate: "has update, Refresh now!",
 	total: "Total",
 	found: "Found",
 	nothingfound: "Nothing found!",
