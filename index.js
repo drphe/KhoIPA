@@ -324,7 +324,7 @@ const sources = await json("./common/assets/json/sources.json");
             const permission = await Notification.requestPermission();
             
             if (permission === 'granted') {
-                document.getElementById('status').innerText = "Đã bật thông báo!";
+                showUIAlert("Trạng thái", "Đã bật thông báo!");
                 sendGreeting();
             } else {
                 alert("Bạn cần cho phép thông báo để tính năng này hoạt động.");
@@ -371,8 +371,9 @@ const sources = await json("./common/assets/json/sources.json");
         const targetNewsLink = event.target.closest("a.news-item-link");
         if (targetInstall) {
             event.preventDefault();
-            enableNotifications();
+            if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) 
             showUIAlert(langText['howtoinstall'], langText['howtoinstallText']);
+            else enableNotifications();
         }
         if (targetNewsLink) {
             event.preventDefault();
