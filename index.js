@@ -316,7 +316,7 @@ const sources = await json("./common/assets/json/sources.json");
     // open app
 
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
+            navigator.serviceWorker.register('noti.js');
         }
 
         async function enableNotifications() {
