@@ -8,7 +8,7 @@ self.addEventListener('activate', (event) => {
 
 // Lắng nghe sự kiện hiển thị thông báo từ file script chính
 self.addEventListener('message', (event) => {
-    if (event.data && event.data.type === 'SHOW_GREETING') {
+    if (event.data && event.data.type === 'SHOW_UPDATE') {
         const options = {
             body: event.data.body,
             icon: 'icon/logo.png',

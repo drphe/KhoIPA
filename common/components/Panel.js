@@ -1,5 +1,5 @@
 import { base64Convert } from "../modules/constants.js";
-import {isValidHTTPURL, open, setTintColor, showUIAlert, 
+import {$, isValidHTTPURL, open, setTintColor, showUIAlert, 
 insertSpaceInSnakeString, insertSpaceInCamelString, formatString, json, formatVersionDate, 
 copyLinkIPA ,activateNavLink, waitForAllImagesToLoad, findAppByName, translateTo} from "../modules/utilities.js";
 import { AppPermissionItem } from "./AppPermissionItem.js";
@@ -61,7 +61,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             handler: () => open(`esign://install?url=${app.downloadURL}`)
         });
 
-	 if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) {
+	 if (!isPWA) {
             installAppAlert.addAction({
                 title: langText['downloadipa'],
                 style: 'default',
@@ -305,7 +305,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 		if(moreApps.length <2 ) return;
         	await openPanel('<div id="more-apps-list"></div>', `<p>${langText['discovermore']} (${moreApps.length-1})</p>`, '.', "side", "more-apps-popup");
 		moreApps.forEach(ap => {
-			if(ap.bundleIdentifier !== app.bundleIdentifier) document.getElementById("more-apps-list").insertAdjacentHTML("beforeend", AppHeader(ap));
+			if(ap.bundleIdentifier !== app.bundleIdentifier) $("#more-apps-list").insertAdjacentHTML("beforeend", AppHeader(ap));
 	        });
         });
 
@@ -335,7 +335,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                             if (permission?.icon) icon = permission.icon;
                             else icon = "gear-wide-connected";
                             privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, icon));
-                            document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
+                            $(`#${id}`).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
                         }
                         updatePrivacyContainerHeader();
                     }
@@ -346,7 +346,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                         const permissionName = permission?.name ?? insertSpaceInCamelString(prop.split("NS")[1].split("UsageDescription")[0]);
                         const permissionIcon = permission?.icon ?? "gear-wide-connected";
                         privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-                        document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, appPermissions.privacy[prop]));
+                        $(`#${id}`).addEventListener("click", () => showUIAlert(permissionName, appPermissions.privacy[prop]));
                     }
                     updatePrivacyContainerHeader();
                 }
@@ -360,7 +360,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                     const permissionName = insertSpaceInSnakeString(obj.type);
                     const permissionIcon = permission?.icon ?? "gear-wide-connected";
                     privacyContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-                    document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
+                    $(`#${id}`).addEventListener("click", () => showUIAlert(permissionName, obj.usageDescription));
                 }
                 updatePrivacyContainerHeader();
             }
@@ -374,7 +374,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 const permissionName = permission?.name ?? insertSpaceInSnakeString(obj.name ?? obj);
                 const permissionIcon = permission?.icon ?? "gear-wide-connected";
                 entitlementsContainer.querySelector(".permission-items").insertAdjacentHTML("beforeend", AppPermissionItem(id, permissionName, permissionIcon));
-                document.getElementById(id).addEventListener("click", () => showUIAlert(permissionName, permission?.description ?? "altsource-viewer does not have detailed information about this entitlement."));
+                $(`#${id}`).addEventListener("click", () => showUIAlert(permissionName, permission?.description ?? "altsource-viewer does not have detailed information about this entitlement."));
             }
         } else {
             entitlementsContainer.remove();
@@ -653,7 +653,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     });
 }
 export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollTarget) {
-    const appsContainer = document.getElementById('apps-list');
+    const appsContainer = $('#apps-list');
     if (!appsContainer) return;
     const allApps = source.apps;
     let filteredApps = [...allApps];

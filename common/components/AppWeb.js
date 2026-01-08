@@ -15,7 +15,7 @@ export const AppBanner = (name) => `
             <div class="text-container">
                 <p class="title-text">KhoIPA <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Save "${name?? 'this source'}" as a bookmark. 
+                    Receive notifications about app updates. 
                 </p>
             </div>
         </div>

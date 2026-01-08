@@ -7,6 +7,7 @@ import {
     base64Convert
 } from "./common/modules/constants.js";
 import {
+    $,
     formatVersionDate,
     showUIAlert,
     json,
@@ -14,11 +15,11 @@ import {
     isValidHTTPURL,
     prefetchAndCacheUrls,
     openCachedUrl,
+    onUpdateRepo,
     generateTOC,
     activateNavLink,
     wrapLightbox,
-    enableNotifications,
-    sendGreeting
+    enableNotifications
 } from "./common/modules/utilities.js";
 import {AppBanner}from "./common/components/AppWeb.js";
 import {AppHeader}from "./common/components/AppHeader.js";
@@ -29,12 +30,10 @@ import UIAlert from "./common/vendor/uialert.js/uialert.js";
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('noti.js');
 }
-if (Notification.permission === 'granted') {
-    sendGreeting();
-}
 const sources = await json("./common/assets/json/sources.json");
 (async () => {
-    document.getElementById("top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
+    $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
+    Notification.requestPermission();
     // fetch Data
     const featuredSources = (await Promise.all(sources.featured.map(async url => {
         try {
@@ -57,13 +56,13 @@ const sources = await json("./common/assets/json/sources.json");
         jsonNews.sort((a, b) => // If b < a
             (new Date(b.date)).valueOf() - (new Date(a.date)).valueOf());
         if (jsonNews.length == 1) {
-            document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[0], true));
-            document.getElementById("news-items").classList.add("one");
+            $("#news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[0], true));
+            $("#news-items").classList.add("one");
         }
         else {
             for (let i = 0; i < jsonNews.length; i++) {
                 if (!jsonNews[i].notify) continue;
-                document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
+                $("#news-items").insertAdjacentHTML("beforeend", NewsItem(jsonNews[i], true));
                 const url = jsonNews[i].url?.replace(dirNoteURL, "");
                 if (url && !isValidHTTPURL(url)) jsonNewsUrl.push('./view/note/' + url);
             }
@@ -87,7 +86,7 @@ const sources = await json("./common/assets/json/sources.json");
             }
         });
     }
-    else document.getElementById("news").remove();
+    else $("#news").remove();
     const otherSources = (await Promise.all(sources.other.map(async url => {
         try {
             return await fetchSource(url);
@@ -150,13 +149,13 @@ const sources = await json("./common/assets/json/sources.json");
     let allAppsView = allApps.filter(s => s.type == 1);
     allAppsView.forEach(app => {
         if (count > maxapps) return;
-        document.getElementById("suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
+        $("#suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
         count++;
     });
     count = 1, allAppsView = allApps.filter(s => s.type == 2);
     allAppsView.forEach(app => {
         if (count > maxapps) return;
-        document.getElementById("suggestions2").insertAdjacentHTML("beforeend", AppHeader(app));
+        $("#suggestions2").insertAdjacentHTML("beforeend", AppHeader(app));
         count++;
     });
     // cuộn ngang
@@ -199,7 +198,7 @@ const sources = await json("./common/assets/json/sources.json");
     });
 
     document.body.classList.remove("loading"); // kết thúc load dữ liệu
-    document.getElementById("loading")?.remove();
+    $("#loading")?.remove();
 
     const bundleIdToSourceMap = new Map();
     allSources.forEach(sourceTarget => {
@@ -208,7 +207,7 @@ const sources = await json("./common/assets/json/sources.json");
         });
     });
     async function fetchSource(url) {
-        const data = await json(url);
+        const data = await json(url, onUpdateRepo);
         const source = consolidateApps(data);
         source.sourceURL = url
         if (!source) return;
@@ -251,7 +250,7 @@ const sources = await json("./common/assets/json/sources.json");
                 count++;
             }
         });
-        document.getElementById(id).insertAdjacentHTML(position, `
+        $(`#${id}`).insertAdjacentHTML(position, `
             <div class="source-container swiper-slide">
 				<div class="item" style="height:150px;padding:0px;opacity:0.9;background-color: #${source.tintColor.replaceAll("#", "")};
 				margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
@@ -292,7 +291,7 @@ const sources = await json("./common/assets/json/sources.json");
         else openPanel(sTarget, bundleID, ".", "bottom");
     }
     else openPanel({}, ""); // preload panel
-    document.getElementById('search')?.addEventListener("click", async (e) => {
+    $('#search')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
         addAppList({
@@ -300,7 +299,7 @@ const sources = await json("./common/assets/json/sources.json");
         }, 20, 1);
         activateNavLink("page-library");
     });
-    document.getElementById('search2')?.addEventListener("click", async (e) => {
+    $('#search2')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
         addAppList({
@@ -310,7 +309,7 @@ const sources = await json("./common/assets/json/sources.json");
     });
     //
     // view all source
-    document.getElementById('all-source')?.addEventListener("click", async (e) => {
+   $('#all-source')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
         for (const source of featuredSources) {
@@ -329,8 +328,9 @@ const sources = await json("./common/assets/json/sources.json");
         const targetNewsLink = event.target.closest("a.news-item-link");
         if (targetInstall) {
             event.preventDefault();
-            if (!window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone !== true) 
-            showUIAlert(langText['howtoinstall'], langText['howtoinstallText']);
+     	    window.isReload && (window.isReload = false, location.reload());
+
+            if (!isPWA) showUIAlert(langText['howtoinstall'], langText['howtoinstallText']);
             else enableNotifications();
         }
         if (targetNewsLink) {
@@ -427,8 +427,8 @@ const sources = await json("./common/assets/json/sources.json");
         });
     }
     let isScrolling = false;
-    const title = document.querySelector("h1");
-    const navBar = document.getElementById("nav-bar");
+    const title = $("h1");
+    const navBar = $("#nav-bar");
     const navBarTitle = navBar.querySelector("#title");
     window.addEventListener('scroll', () => {
         if (!isScrolling) {

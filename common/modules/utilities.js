@@ -4,6 +4,10 @@ import { urlRegex, sourceURL } from "./constants.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 const CACHE_NAME = 'kh0ipa-data-cache-v1';
 
+export const $ = selector => selector.startsWith("#") && !selector.includes(".") && !selector.includes(" ")
+    ? document.getElementById(selector.substring(1))
+    : document.querySelector(selector);
+
 export function formatVersionDate(arg) {
     let versionDate = new Date(arg);
     if (isNaN(versionDate)) {
@@ -60,11 +64,11 @@ export function insertSpaceInCamelString(string) {
 }
 
 export function insertAltStoreBanner(sourceName) {
-    document.getElementById("top")?.insertAdjacentHTML("afterbegin", AltStoreBanner(sourceName));
+    $("#top")?.insertAdjacentHTML("afterbegin", AltStoreBanner(sourceName));
 }
 
 export function insertNavigationBar(title) {
-    document.getElementById("top")?.insertAdjacentHTML("beforeend", NavigationBar(title));
+    $("#top")?.insertAdjacentHTML("beforeend", NavigationBar(title));
 
 }
 
@@ -105,7 +109,7 @@ export function setTintColor(color) {
 }
 
 export function setUpBackButton() {
-    document.getElementById("back")?.addEventListener("click", () => history.back());
+    $("#back")?.addEventListener("click", () => history.back());
 }
 
 export function open(url) {
@@ -140,14 +144,12 @@ export function showAddToAltStoreAlert(sourceName, actionTitle, actionHandler) {
     uiAlert.present();
 }
 
-export async function json(url) {
-    return await openCachedUrl(url).then(response => response.json()).catch(error => console.error("An error occurred.", url));
+export async function json(url, onUpdate = null) {
+    return await openCachedUrl(url, onUpdate).then(response => response.json()).catch(error => console.error("An error occurred.", url));
 }
-
 
 export function consolidateApps(source) {
   const uniqueAppsMap = new Map();
-
   source.apps.forEach(app => {
     const bundleID = app.bundleIdentifier;
 
@@ -225,9 +227,6 @@ function calDiff(dateString) {
 
     return Math.floor(timeDifferenceMs / MS_PER_DAY);
 }
-const $ = selector => selector.startsWith("#") && !selector.includes(".") && !selector.includes(" ")
-    ? document.getElementById(selector.substring(1))
-    : document.querySelectorAll(selector);
 
 
 export async function prefetchAndCacheUrls(urlList) {
@@ -244,29 +243,31 @@ export async function prefetchAndCacheUrls(urlList) {
     }
 }
 
-export async function openCachedUrl(url) {
-  const options = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "*/*",
-    }
-  };
-    if (!('caches' in window)) return fetch(url, options);
-
+export async function openCachedUrl(url, onUpdate = null) {
+    if (!('caches' in window)) return fetch(url);
     const cache = await caches.open(CACHE_NAME);
     const cachedResponse = await cache.match(url);
-    if (cachedResponse) {
-        fetch(url, {cache: "reload"})
-            .then(async (networkResponse) => {
-                if (networkResponse.ok) {
-                    await cache.put(url, networkResponse.clone());
+    const updateCache = async () => {
+        try {
+            const networkResponse = await fetch(url, { cache: "reload" });
+            if (networkResponse.ok) {
+                if (onUpdate && cachedResponse) {
+                    const oldData = await cachedResponse.clone().json();
+                    const newData = await networkResponse.clone().json();
+                    onUpdate(oldData, newData)
                 }
-            })
-            .catch(() => {});
-        return cachedResponse;
+                await cache.put(url, networkResponse.clone());
+            }
+        } catch (error) {
+            console.log("Background fetch failed:", url);
+        }
+    };
+
+    if (cachedResponse) {
+        updateCache(); 
+        return cachedResponse.clone();
     } else {
-        const networkResponse = await fetch(url, {cache: "reload"});
+        const networkResponse = await fetch(url, { cache: "reload" });
         if (networkResponse.ok) {
             await cache.put(url, networkResponse.clone());
         }
@@ -421,38 +422,73 @@ export async function translateTo(text) {
 }
 
 export async function enableNotifications() {
-            // Xin quyền thông báo (bắt buộc trên iOS phải qua click)
-            const permission = await Notification.requestPermission();
-            if (permission === 'granted') {
-                showUIAlert("Trạng thái", "Đã bật thông báo!");
-            } else {
-                showUIAlert("Trạng thái","Bạn cần cho phép thông báo để tính năng này hoạt động.");
-            }
-        }
+    const permission = await Notification.requestPermission();
+    if (permission === 'granted') {
+        showUIAlert("Trạng thái", "Đã bật thông báo!");
+    } else {
+        showUIAlert("Trạng thái","Bạn cần cho phép thông báo để tính năng này hoạt động.");
+    }
+}
         
-export function sendGreeting() {
-            const hour = new Date().getHours();
-            let greetingTitle = "";
-            let greetingBody = "";
-
-            if (hour < 12) {
-                greetingTitle = "Chào buổi sáng! ☀️";
-                greetingBody = "Chúc bạn một ngày mới tốt lành và tràn đầy năng lượng.";
-            } else if (hour < 18) {
-                greetingTitle = "Chào buổi chiều! 🌤️";
-                greetingBody = "Bạn đã nghỉ trưa chưa? Tiếp tục làm việc tốt nhé.";
-            } else {
-                greetingTitle = "Chào buổi tối! 🌙";
-                greetingBody = "Kết thúc ngày dài rồi, hãy nghỉ ngơi thật thoải mái.";
-            }
-
-            // Gửi dữ liệu vào Service Worker để hiển thị
-            if (navigator.serviceWorker.controller) {
-                navigator.serviceWorker.controller.postMessage({
-                    type: 'SHOW_GREETING',
-                    title: greetingTitle,
-                    body: greetingBody
+export function onUpdateRepo(oldDataInput, newDataInput) {
+    let oldData, newData;
+    try{
+    	 oldData = consolidateApps(oldDataInput);
+    	 newData = consolidateApps(newDataInput);
+    }catch(e){
+	return;
+    }
+    if (!oldData || !newData || !Array.isArray(oldData.apps) || !Array.isArray(newData.apps)) {
+        return;
+    }
+    const oldAppMap = new Map();
+    oldData.apps.forEach(app => {
+        app.versions = Array.isArray(app.versions) ? app.versions : [];
+        oldAppMap.set(app.bundleIdentifier, app);
+    });
+    const newApps = [];
+    const updatedApps = [];
+    newData.apps.forEach(newApp => {
+        newApp.versions = Array.isArray(newApp.versions) ? newApp.versions : [];
+        const bundleId = newApp.bundleIdentifier;
+        const oldApp = oldAppMap.get(bundleId);
+        if (!oldApp) {
+            newApps.push({
+                name: newApp.name,
+                bundleIdentifier: bundleId
+            });
+        } else {
+            const oldVersions = oldApp.versions;
+            const newVersions = newApp.versions;
+            if (newVersions.length > oldVersions.length) {
+                updatedApps.push({
+                    name: newApp.name,
+                    bundleIdentifier: bundleId
                 });
             }
+            oldAppMap.delete(bundleId);
         }
-    
+    });
+    const removedApps = Array.from(oldAppMap.values()).map(app => ({
+        name: app.name,
+        bundleIdentifier: app.bundleIdentifier
+    }));
+    //send notification
+    if(!newApps.length && !removedApps.length && !updatedApps.length) return;
+    let greetingBody='';
+    if(newApps.length) {greetingBody+= newApps.length + " new apps";}
+    if(updatedApps.length) {greetingBody+= newApps.length? ", ": "" + updatedApps.length + " updated apps";}
+    if(removedApps.length) {greetingBody+= updatedApps.length? ", ": "" + removedApps.length + " removed apps";}
+    const noti = {
+            type: 'SHOW_UPDATE',
+            title: newData.name + ' has update!',
+            body: greetingBody
+     };
+     window.isReload = true;
+     $("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh");
+    //console.log(noti);
+    if (navigator.serviceWorker.controller) {
+        navigator.serviceWorker.controller.postMessage(noti);
+  }
+
+}

@@ -259,13 +259,14 @@ const translations = {
         entilementText: "Entitlements are additional permissions that grant access to certain system services, including potentially sensitive information."
     }
 };
-
+window.isPWA = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 window.langCode = getAppLanguage();
 window.langText = translations[langCode] || translations['en'];
-
+window.isReload = false;
 window.oldTargetPage = "page-home";
 
 document.querySelector('meta[property="og:url"]')?.setAttribute("content", window.location.origin);
+document.documentElement.lang = langCode;
 document.querySelectorAll('span[data-text]').forEach(
     span => span.textContent = langText[span.dataset.text] ?? span.textContent);
 

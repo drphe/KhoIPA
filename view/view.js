@@ -5,6 +5,7 @@ import {
     bundleID
 } from "../common/modules/constants.js";
 import {
+    $,
     formatString,
     open,
     setUpBackButton,
@@ -22,7 +23,7 @@ import {openPanel,addAppList}from "../common/components/Panel.js";
 import {main}from "../common/modules/main.js";
 
 main(json => {
-    document.getElementById("edit").addEventListener("click", e => {
+    $("#edit").addEventListener("click", e => {
         e.preventDefault();
         if (sourceURL) open(`../studio/?source=${sourceURL}`);
     });
@@ -50,21 +51,20 @@ main(json => {
         json.news.sort((a, b) => // If b < a
             (new Date(b.date)).valueOf() - (new Date(a.date)).valueOf());
         if (json.news.length == 1) {
-            document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
-            document.getElementById("news-items").classList.add("one");
-            //document.querySelector('.all-news').classList.add("hidden");
+            $("#news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
+            $("#news-items").classList.add("one");
         }
         else {
             let hasNotify = false;
             for (let i = 0; i < json.news.length; i++) {
                 if (!json.news[i].notify) continue;
                 hasNotify = true;
-                document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
+                $("#news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
                 const url = json.news[i].url?.replace(dirNoteURL, "");
                 if (url && !isValidHTTPURL(url)) jsonNewsUrl.push('./note/' + url);
             }
             if (!hasNotify && json.news.length > 0) {
-                document.getElementById("news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
+                $("#news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[0], true));
             }
         }
         prefetchAndCacheUrls(jsonNewsUrl);
@@ -85,7 +85,7 @@ main(json => {
             }
         });
     }
-    else document.getElementById("news").remove();
+    else $("#news").remove();
     json.apps.sort((a, b) => {
         const dateA = new Date(a.versionDate ?? a.versions?.[0]?.date ?? 0).valueOf();
         const dateB = new Date(b.versionDate ?? b.versions?.[0]?.date ?? 0).valueOf();
@@ -94,13 +94,13 @@ main(json => {
     // 
     // Set Featured apps
     if (json.featuredApps && json.featuredApps.length) {
-        json.apps.filter(app => json.featuredApps.includes(app.bundleIdentifier)).forEach(app => document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app)));
+        json.apps.filter(app => json.featuredApps.includes(app.bundleIdentifier)).forEach(app => $("#featured").insertAdjacentHTML("beforeend", AppHeader(app)));
     }
     else {
         let count = 1;
         json.apps.forEach(app => {
             if (count > 5) return;
-            document.getElementById("featured").insertAdjacentHTML("beforeend", AppHeader(app));
+            $("#featured").insertAdjacentHTML("beforeend", AppHeader(app));
             count++;
         });
 	document.querySelector('span[data-text="featuredapps"]').textContent = langText['updateapp'];
@@ -118,14 +118,14 @@ main(json => {
     }
     run();
     //  "View All apps"
-    document.getElementById('search')?.addEventListener("click", async (e) => {
+    $('#search')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
         addAppList(json);
         activateNavLink("page-library");
     });
     //  "View All News"
-    document.getElementById('all-news')?.addEventListener("click", async (e) => {
+    $('#all-news')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await executeNews("/", langText['allnews'], "news-popup-all", true);
         activateNavLink("page-news");
@@ -228,20 +228,20 @@ main(json => {
     // 
     // About
     var description = formatString(json.description);
-    if (description) document.getElementById("about").insertAdjacentHTML("beforeend", `
+    if (description) $("#about").insertAdjacentHTML("beforeend", `
         <div class="item">
             <p>${description}</p>
         </div>
     `);
-    if (json.website) document.getElementById("about").insertAdjacentHTML("beforeend", `
+    if (json.website) $("#about").insertAdjacentHTML("beforeend", `
         <div class="item">
             <a href="${json.website}" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i> ${json.website}</a>
         </div>
     `);
-    if (!description && !json.website) document.getElementById("about").remove();
+    if (!description && !json.website) $("#about").remove();
     window.onscroll = e => {
-        const title = document.querySelector("h1");
-        const navBar = document.getElementById("nav-bar");
+        const title = $("h1");
+        const navBar = $("#nav-bar");
         const navBarTitle = navBar.querySelector("#title");
         const showItem = title.getBoundingClientRect().y < 85;
         navBar.classList.toggle("hide-border", !showItem);

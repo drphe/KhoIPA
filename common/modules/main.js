@@ -1,13 +1,25 @@
-import { urlSearchParams, sourceURL, base64Convert } from "./constants.js";
-import { isValidHTTPURL, setTintColor, insertAltStoreBanner, setUpBackButton, open, consolidateApps, openCachedUrl,showUIAlert } from "./utilities.js";
+import {
+    urlSearchParams,
+    sourceURL,
+    base64Convert
+}
+from "./constants.js";
+import {
+    isValidHTTPURL,
+    setTintColor,
+    insertAltStoreBanner,
+    setUpBackButton,
+    open,
+    consolidateApps,
+    onUpdateRepo,
+    openCachedUrl,
+    showUIAlert
+}
+from "./utilities.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
 
+
 export function main(callback, fallbackURL = "../../") {
-    // If no source => default
-    //if (!urlSearchParams.has('source')) {
-     //   open(fallbackURL);
-     //   return;
-   // }
     // If source is not a valid HTTP URL
      if (!isValidHTTPURL(sourceURL)) {
         showUIAlert("Error","Invalid HTTP URL.");
@@ -18,7 +30,7 @@ export function main(callback, fallbackURL = "../../") {
     window.setApps = array => apps = array;
     window.getAppWithBundleId = bundleId => apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
     setUpBackButton();
-    openCachedUrl(sourceURL).then(response => response.json()).then(source => {
+    openCachedUrl(sourceURL, onUpdateRepo).then(response => response.json()).then(source => {
         const json = consolidateApps(source)
         // Set tint color
         const tintColor = json.tintColor?.replaceAll("#", "");
