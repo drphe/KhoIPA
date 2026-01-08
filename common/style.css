@@ -291,7 +291,7 @@ a, img, span {
     max-width: 767px;
     min-width: 0;
     margin: 0 auto;
-    padding: 0.25em 16px 0.25em 16px;
+    padding: 0;
     z-index: 2;
 }
 
