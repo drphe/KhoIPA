@@ -36,12 +36,18 @@ navigator.serviceWorker.addEventListener('message', (event) => {
     location.reload(); 
   }
 });
+Notification.requestPermission().then(function(permission) {
+  if (permission === "granted") {
+    showUIAlert(langText['statusTitle'], langText['statusText']);
+  } else {
+    console.log("Thông báo bị từ chối");
+  }
+});
 
-const sources = await json("./common/assets/json/sources.json");
 (async () => {
     $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
-
     // fetch Data
+    const sources = await json("./common/assets/json/sources.json");
     const featuredSources = (await Promise.all(sources.featured.map(async url => {
         try {
             return await fetchSource(url);
@@ -434,13 +440,7 @@ const sources = await json("./common/assets/json/sources.json");
             console.error("Lỗi khi tải nội dung:", error);
         });
     }
-Notification.requestPermission().then(function(permission) {
-  if (permission === "granted") {
-    console.log("Thông báo đã được cho phép");
-  } else {
-    console.log("Thông báo bị từ chối");
-  }
-});
+
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");
