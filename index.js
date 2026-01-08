@@ -434,7 +434,10 @@ navigator.serviceWorker.addEventListener('message', (event) => {
             console.error("Lỗi khi tải nội dung:", error);
         });
     }
-    await Notification.requestPermission();
+    const permission = await Notification.requestPermission();
+    if (permission === 'granted') {
+        showUIAlert(langText['statusTitle'], langText['statusText']);
+    }
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");
