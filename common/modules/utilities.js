@@ -423,12 +423,10 @@ export async function translateTo(text) {
 export async function enableNotifications() {
             // Xin quyền thông báo (bắt buộc trên iOS phải qua click)
             const permission = await Notification.requestPermission();
-            
             if (permission === 'granted') {
                 showUIAlert("Trạng thái", "Đã bật thông báo!");
-                sendGreeting();
             } else {
-                alert("Bạn cần cho phép thông báo để tính năng này hoạt động.");
+                showUIAlert("Trạng thái","Bạn cần cho phép thông báo để tính năng này hoạt động.");
             }
         }
         
