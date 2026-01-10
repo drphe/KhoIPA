@@ -23,6 +23,206 @@
   "apps": [
     {
       "beta": false,
+      "name": "InjectionIPA",
+      "type": 4,
+      "bundleIdentifier": "injectionDylibToIpa.Sniper",
+      "developerName": "@ Snipper (https://t.me/Crack_Sa1)",
+      "subtitle": "🔧Công cụ tiêm dylib vào ipa",
+      "localizedDescription": "✅Cài đặt bằng Chứng chỉ 📄\n🍎Hỗ trợ ios tối đa 26.0.1",
+      "versionDescription": "",
+      "tintColor": "#3c97fa",
+      "iconURL": "https://i.ibb.co/vvz7D7YH/8b0f5950fc36.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 4400000,
+      "version": "5.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.0/InjectionIPA_v5.0.ipa",
+          "size": 4400000,
+          "version": "5.0",
+          "buildVersion": null,
+          "date": "2026-01-09T15:51:00+07:00",
+          "localizedDescription": "♾Tính năng\n• Thay đổi ngôn ngữ ngay trong ứng dụng, có sẵn tiếng việt\n• Thêm tùy chọn sao lưu file info.plist\n• Sửa số phiên bản.\n• Hợp nhất nhiều đường dẫn có hoặc không có thư viện.\nVà cải tiến trên toàn ứng dụng.\n• Hỗ trợ iOS 26.0.1 phiên bản mới nhất mà không gặp vấn đề gì.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-09T15:51:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.0/InjectionIPA_v5.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dylib Lucky Speeder",
+      "type": 5,
+      "bundleIdentifier": "com.b1bx2gmrzw.q8tlpft8y8",
+      "developerName": "@kekeimiku",
+      "subtitle": "Sửa lỗi đã phát hiện",
+      "localizedDescription": "Dylib tăng tốc độ Game và tốc độ quảng cáo\nTải version mới nhất ở https://github.com/kekeimiku/LuckySpeeder/releases",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 80000,
+      "version": "1.0.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.1/LuckySpeeder_1.0.1.2.dylib",
+          "size": 80000,
+          "version": "1.0.1",
+          "buildVersion": "",
+          "date": "2026-01-10T05:20:00+07:00",
+          "localizedDescription": "Không phải App nào cũng có hiệu lực, bạn tự kiểm chứng ❗️\nBấm ♥️ ♦️ ♠️ ♣️ để chuyển chế độ.\nBấm ◀️◀️ hoặc ▶️▶️ để chỉnh tốc độ.\nBấm ▶️ ❚❚  để bật và tắt",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-10T05:20:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.1/LuckySpeeder_1.0.1.2.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dylib TiktokNoAds",
+      "type": 5,
+      "bundleIdentifier": "com.fa46utbgc2.26cb198c2c",
+      "developerName": "Unknow",
+      "subtitle": "Tiktok No Ads",
+      "localizedDescription": "Ẩn Logo quảng cáo sự kiện trên màn hình lướt Tiktok",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 4300000,
+      "version": "1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.01/TiktokNoAds_mall.dylib",
+          "size": 4300000,
+          "version": "1.0",
+          "buildVersion": "",
+          "date": "2026-01-09T22:12:00+07:00",
+          "localizedDescription": "Chứng chỉ, Trollstore OK",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-09T22:12:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.01/TiktokNoAds_mall.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dylib OhIpad",
+      "type": 5,
+      "bundleIdentifier": "com.5ldemqpp0o.1ue56psiva",
+      "developerName": "Unknow ",
+      "subtitle": "Nhận diện IPad",
+      "localizedDescription": "Một plugin cho phép ứng dụng nhận diện thiết bị hiện tại là iPad, hoạt động hiệu quả.",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 160000,
+      "version": "0.1.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.0/OhiPad.dylib",
+          "size": 160000,
+          "version": "0.1.0",
+          "buildVersion": "",
+          "date": "2026-01-10T05:08:00+07:00",
+          "localizedDescription": "🔥Lưu Ý:\n• Tuy nhiên, bạn cần tự mình kiểm tra xem ứng dụng nào hỗ trợ tính năng này \n• Một số ứng dụng dành cho iPad, nếu bạn chuyển chúng sang iPhone, thì hiệu quả lại vô cùng tuyệt vời.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-10T05:08:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.0/OhiPad.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dylib OhiPhone",
+      "type": 5,
+      "bundleIdentifier": "com.l0kpa8tvnf.c1ti8nqt17",
+      "developerName": "Unknow",
+      "subtitle": "Nhận diện Iphone",
+      "localizedDescription": "Một plugin cho phép ứng dụng nhận diện thiết bị hiện tại là iPhone, hoạt động hiệu quả.",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 150000,
+      "version": "0.1.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.1/OhiPhone.dylib",
+          "size": 150000,
+          "version": "0.1.1",
+          "buildVersion": "",
+          "date": "2026-01-10T05:05:00+07:00",
+          "localizedDescription": "🔥Lưu Ý:\n• Tuy nhiên, bạn cần tự mình kiểm tra xem ứng dụng nào hỗ trợ tính năng này\n• Một số ứng dụng dành cho iPad, nếu bạn chuyển chúng sang iPhone, thì hiệu quả lại vô cùng tuyệt vời.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-10T05:05:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.1/OhiPhone.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dylib Fake GPS",
+      "type": 5,
+      "bundleIdentifier": "com.wpdqmihlq7.7ci5rr3piv",
+      "developerName": "Unknow",
+      "subtitle": "Fake GPS cho từng ứng dụng",
+      "localizedDescription": "Pha ke vị trí cho từng app riêng biệt\n𝙵𝚒𝚕𝚎 𝙳𝚢𝚕𝚒𝚋 𝙵𝚊 𝚔𝚎 𝚍ù𝚗𝚐 𝚃𝚛𝚘𝚕𝚕𝙵𝚘𝚘𝚕𝚜/𝙴𝚜𝚒𝚐𝚗 𝚝𝚒ê𝚖 𝚌𝚑𝚘 𝚋ấ𝚝 𝚔ì ứ𝚗𝚐 𝚍ụ𝚗𝚐 𝚗à𝚘 𝚋ạ𝚗 𝚖𝚞ố𝚗. 𝙺𝚑ô𝚗𝚐 𝚌ầ𝚗 𝙹𝚊𝚒𝚕𝚋𝚛𝚎𝚊𝚔. 𝙼𝚒ễ𝚗 𝚖á𝚢 𝚑ỗ 𝚝𝚛ợ 𝚃𝚛𝚘𝚕𝚕𝚂𝚝𝚘𝚛𝚎 𝚟à 𝚍ù𝚗𝚐 𝚃𝚛𝚘𝚕𝚕𝙵𝚘𝚘𝚕𝚜\n• Chạm 2-3 lần bằng 3 ngón tay lên màn hình để mở giao diện pha ke vị trí\n• Tìm kiếm vị trí cần pha ke sau đó bấm giữ vào điểm cần pha ke, bạn có thể tìm vị trí bằng cách thủ công là vuốt và vuốt, hoặc sử dụng chức năng tìm kiếm thanh ở trên.\n• Chắc chắn rằng công tắc góc trái bản đồ được bật để pha ke vị trí.",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [
+        "https://i.ibb.co/jPX6sbdW/6683cea0b52d.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 190000,
+      "version": "0.1",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1/FakeGPS.dylib",
+          "size": 190000,
+          "version": "0.1",
+          "buildVersion": "",
+          "date": "2026-01-10T04:56:00+07:00",
+          "localizedDescription": "",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-10T04:56:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1/FakeGPS.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Summarizer: Brainnotes",
       "type": 1,
       "bundleIdentifier": "com.flingex.brainnotes",
@@ -3121,7 +3321,9 @@
       "versionDescription": "",
       "tintColor": "#5825D0",
       "iconURL": "https://i.imgur.com/cy22whi.jpeg",
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://i.ibb.co/S4XQ2yJP/ba44a681b1f3.png"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
@@ -3553,7 +3755,7 @@
       "bundleIdentifier": "wiki.qaq.Asspp",
       "developerName": "Lakr233",
       "subtitle": "Cài đặt ứng dụng từ nhiều tài khoản.",
-      "localizedDescription": "🔥 AssppPro là 1 ứng dụng giúp bạn tải và cài ứng dụng từ nhiều tài khoản. Công cụ này không yêu cầu Jailbreak hay Trollstore.\n➡️ Có thể tìm ứng dụng từ nhiều vùng nhưng AppleID của bạn ở vùng nào thì mới bấm được nút Acquire Licence (để mua ứng dụng đó vào tài khoản).\n➡️ Có thể thêm được nhiều tài khoản vào nên muốn tiện hãy tạo các AppleID ở các vùng bạn cần và thêm vào ứng dụng. \n➡️ AppleID của bạn thêm vào Asspp cần đăng nhập vào AppStore 1 lần trước khi cài ứng dụng được tải về qua Asspp, nếu không sẽ không thể mở được ứng dụng đó trên máy.\n➡️ IPA tải qua Asspp chưa được giải mã không thể cài qua chứng chỉ, chỉ có thể cài trực tiếp qua nút cài đặt trên Asspp. Muốn lấy IPA ra để lưu trữ có thể bấm Install Via AirDrop rồi lưu vào Tệp. \n➡️ Install Via Airdrop cũng có thể bắn qua máy khác. iOS 16+ khi bắn qua máy khác sẽ tự cài IPA vào máy khác. Máy nhận phải đăng nhập AppleID đã tải ứng dụng đó mới mở được.",
+      "localizedDescription": "Tải bản mới nhất ở đây : https://github.com/Lakr233/Asspp/releases\n🔥 AssppPro là 1 ứng dụng giúp bạn tải và cài ứng dụng từ nhiều tài khoản. Công cụ này không yêu cầu Jailbreak hay Trollstore.\n➡️ Có thể tìm ứng dụng từ nhiều vùng nhưng AppleID của bạn ở vùng nào thì mới bấm được nút Acquire Licence (để mua ứng dụng đó vào tài khoản).\n➡️ Có thể thêm được nhiều tài khoản vào nên muốn tiện hãy tạo các AppleID ở các vùng bạn cần và thêm vào ứng dụng. \n➡️ AppleID của bạn thêm vào Asspp cần đăng nhập vào AppStore 1 lần trước khi cài ứng dụng được tải về qua Asspp, nếu không sẽ không thể mở được ứng dụng đó trên máy.\n➡️ IPA tải qua Asspp chưa được giải mã không thể cài qua chứng chỉ, chỉ có thể cài trực tiếp qua nút cài đặt trên Asspp. Muốn lấy IPA ra để lưu trữ có thể bấm Install Via AirDrop rồi lưu vào Tệp. \n➡️ Install Via Airdrop cũng có thể bắn qua máy khác. iOS 16+ khi bắn qua máy khác sẽ tự cài IPA vào máy khác. Máy nhận phải đăng nhập AppleID đã tải ứng dụng đó mới mở được.",
       "versionDescription": "",
       "tintColor": "#4ca4e4",
       "iconURL": "https://i.ibb.co/gZHFz3yX/2cc32df71377.png",
@@ -5027,7 +5229,7 @@
       "type": 4,
       "bundleIdentifier": "thewonderofyou.Feather",
       "developerName": "Khcrysalis",
-      "subtitle": "Ký và cài đặt IPA cho IOS",
+      "subtitle": "Ký và cài đặt IPA, chỉ hỗ trợ iOS16 trở lên",
       "localizedDescription": "Feather là một ứng dụng tương tự như Esign cho phép bạn sử dụng chứng chỉ để ký và cài đặt ứng dụng trực tiếp trên thiết bị mà không cần máy tính, ngay cả trên iOS gốc. Đồng thời, ứng dụng cũng giúp bạn quản lý dễ dàng hơn.\nDo một số hạn chế, Feather không thể kiểm tra trực tiếp xem ứng dụng đã được cài đặt hay chưa, vì vậy bạn cần tự theo dõi các ứng dụng trên thiết bị của mình. Đây là một ứng dụng hoàn toàn dựa trên các tính năng có sẵn của iOS để hoạt động!\nĐối với phiên bản chưa ký cần có chứng chỉ, nếu đã ký sẵn thì tải chứng chỉ trong phần mô tả về sử dụng. \n\nĐọc bài Freesideloading bằng DNS trước khi tải app: https://drphe.github.io/KhoIPA/index.html?note=verifyapp.md",
       "versionDescription": "",
       "tintColor": "#7736c8",
@@ -5049,8 +5251,8 @@
       "versions": [
         {
           "version": "2.4.0",
-          "date": "2025-11-18T02:22:00+07:00",
-          "localizedDescription": "Feather đã ký sẵn\nTruy cập https://i.codevn.net hoặc https://installonair.com/ để tạo link cài trực tiếp.\nCert link: https://github.com/drphe/KhoIPA/releases/download/cert.1.0/Etisalat.-.Emirates.Telecommunications.Corporation.zip\n",
+          "date": "2025-11-17T19:22:00+07:00",
+          "localizedDescription": "• Sửa lỗi hiển thị ngày tháng của một số kho lưu trữ không chính xác bằng cách thêm khóa ngày tháng khác mà mọi người có thể sử dụng thay cho ngày tháng.\n\nFeather đã ký sẵn\nTruy cập https://i.codevn.net hoặc https://installonair.com/ để tạo link cài trực tiếp.\nCert link: https://github.com/drphe/KhoIPA/releases/download/cert.1.0/Etisalat.-.Emirates.Telecommunications.Corporation.zip\n",
           "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4/feather.2.4.ipa",
           "size": 12900000,
           "buildVersion": null,
@@ -5066,7 +5268,7 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-18T02:22:00+07:00",
+      "versionDate": "2025-11-17T19:22:00+07:00",
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.4/feather.2.4.ipa",
       "patreon": {}
     },
