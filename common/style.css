@@ -326,6 +326,7 @@ a, img, span {
 #nav-bar #back {
     cursor: pointer;
     margin-right: 6px;
+    margin-left:1rem;
 }
 
 #nav-bar #back .bi {
@@ -1174,6 +1175,9 @@ overflow-x: hidden;
 .panel #nav-bar #title,
 #nav-bar .install {
     transition: opacity 0.25s ease-in-out;
+}
+#nav-bar .install {
+    margin-right:1rem;
 }
 
 #nav-bar #back-container {
