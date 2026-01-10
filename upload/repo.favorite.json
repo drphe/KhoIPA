@@ -23,6 +23,77 @@
   "apps": [
     {
       "beta": false,
+      "name": "Online SMS",
+      "type": 1,
+      "bundleIdentifier": "com.wecan.smsreceiver",
+      "developerName": "Unknow",
+      "subtitle": "Mod premium",
+      "localizedDescription": "Số đt ảo và mail ảo nhận Verify",
+      "versionDescription": "",
+      "tintColor": "#8c4cf4",
+      "iconURL": "https://i.ibb.co/Rmpr0bZ/4bdef1ba4dd2.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSLocationAlwaysUsageDescription": "Your location is not needed. This request has popped up due to a 3rd party framework used by the app in a context that does NOT need you to reveal you location",
+          "NSLocationWhenInUseUsageDescription": "You will get zero benefit allowing this app accessing your location. You should never see this alert.",
+          "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+        }
+      },
+      "size": 27200000,
+      "version": "3.7.23",
+      "versions": [
+        {
+          "version": "3.7.23",
+          "date": "2026-01-10T09:07:00+07:00",
+          "localizedDescription": "",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.7.23/SMS.Reciever_3.7.23.ipa",
+          "size": 27200000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-10T09:07:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.7.23/SMS.Reciever_3.7.23.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Auto Clicker",
+      "type": 4,
+      "bundleIdentifier": "com.vietphaptravelvn.autoclick",
+      "developerName": "Unknow",
+      "subtitle": "Tự động click",
+      "localizedDescription": " Tự động nhấn- vuốt- đa điểm sử dụng cho Website",
+      "versionDescription": "",
+      "tintColor": "#72728c",
+      "iconURL": "https://i.ibb.co/vCgdYT8N/e9c38de30deb.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 8200000,
+      "version": "1.3",
+      "versions": [
+        {
+          "version": "1.3",
+          "date": "2026-01-10T08:56:00+07:00",
+          "localizedDescription": " Kích hoạt Premium\n• Bấm Mua hàng xong bấm Huỷ\n• Vào Settings bấm RestorePurchase 1-2 lần\n👍Cài đặt: 👻 | 📄\n\n😢 Nếu không sử dụng được hãy xoá nó đi đơn giản có thế thôi!",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/1.3/Auto.Clicker.1.3.ipa",
+          "size": 8200000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-10T08:56:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/1.3/Auto.Clicker.1.3.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "InjectionIPA",
       "type": 4,
       "bundleIdentifier": "injectionDylibToIpa.Sniper",
@@ -41,12 +112,12 @@
       "version": "5.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.0/InjectionIPA_v5.0.ipa",
-          "size": 4400000,
           "version": "5.0",
-          "buildVersion": null,
           "date": "2026-01-09T15:51:00+07:00",
           "localizedDescription": "♾Tính năng\n• Thay đổi ngôn ngữ ngay trong ứng dụng, có sẵn tiếng việt\n• Thêm tùy chọn sao lưu file info.plist\n• Sửa số phiên bản.\n• Hợp nhất nhiều đường dẫn có hoặc không có thư viện.\nVà cải tiến trên toàn ứng dụng.\n• Hỗ trợ iOS 26.0.1 phiên bản mới nhất mà không gặp vấn đề gì.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.0/InjectionIPA_v5.0.ipa",
+          "size": 4400000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -74,12 +145,12 @@
       "version": "1.0.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.1/LuckySpeeder_1.0.1.2.dylib",
-          "size": 80000,
           "version": "1.0.1",
-          "buildVersion": "",
           "date": "2026-01-10T05:20:00+07:00",
           "localizedDescription": "Không phải App nào cũng có hiệu lực, bạn tự kiểm chứng ❗️\nBấm ♥️ ♦️ ♠️ ♣️ để chuyển chế độ.\nBấm ◀️◀️ hoặc ▶️▶️ để chỉnh tốc độ.\nBấm ▶️ ❚❚  để bật và tắt",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.1/LuckySpeeder_1.0.1.2.dylib",
+          "size": 80000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -107,12 +178,12 @@
       "version": "1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.01/TiktokNoAds_mall.dylib",
-          "size": 4300000,
           "version": "1.0",
-          "buildVersion": "",
           "date": "2026-01-09T22:12:00+07:00",
           "localizedDescription": "Chứng chỉ, Trollstore OK",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.01/TiktokNoAds_mall.dylib",
+          "size": 4300000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -140,12 +211,12 @@
       "version": "0.1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.0/OhiPad.dylib",
-          "size": 160000,
           "version": "0.1.0",
-          "buildVersion": "",
           "date": "2026-01-10T05:08:00+07:00",
           "localizedDescription": "🔥Lưu Ý:\n• Tuy nhiên, bạn cần tự mình kiểm tra xem ứng dụng nào hỗ trợ tính năng này \n• Một số ứng dụng dành cho iPad, nếu bạn chuyển chúng sang iPhone, thì hiệu quả lại vô cùng tuyệt vời.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.0/OhiPad.dylib",
+          "size": 160000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -173,12 +244,12 @@
       "version": "0.1.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.1/OhiPhone.dylib",
-          "size": 150000,
           "version": "0.1.1",
-          "buildVersion": "",
           "date": "2026-01-10T05:05:00+07:00",
           "localizedDescription": "🔥Lưu Ý:\n• Tuy nhiên, bạn cần tự mình kiểm tra xem ứng dụng nào hỗ trợ tính năng này\n• Một số ứng dụng dành cho iPad, nếu bạn chuyển chúng sang iPhone, thì hiệu quả lại vô cùng tuyệt vời.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.1/OhiPhone.dylib",
+          "size": 150000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -208,12 +279,12 @@
       "version": "0.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1/FakeGPS.dylib",
-          "size": 190000,
           "version": "0.1",
-          "buildVersion": "",
           "date": "2026-01-10T04:56:00+07:00",
           "localizedDescription": "",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1/FakeGPS.dylib",
+          "size": 190000,
+          "buildVersion": "",
           "minOSVersion": null
         }
       ],
@@ -5314,6 +5385,72 @@
       ],
       "versionDate": "2024-01-28T15:13:00Z",
       "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/esign.v5.0.2/esign_5.0.2_unsigned.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dylib Auto Kill",
+      "type": 5,
+      "bundleIdentifier": "com.hqifkcvsl1.30q5swwkyu",
+      "developerName": "Unknow",
+      "subtitle": "Hẹn giờ thoát",
+      "localizedDescription": "⏰ Dylib hẹn giờ tự động thoát App\n\n🟢Gọi Menu bằng cách chạm 4 ngón tay lên màn hình\n🟢Hỗ trợ tất cả các app nghe nhạc, xem video, vân vân…. (VD : Tiktok, Youtube một số trường hợp không có chức năng hẹn giờ,….).",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 200000,
+      "version": "0.1.3",
+      "versions": [
+        {
+          "version": "0.1.3",
+          "date": "2025-10-09T02:00:00+07:00",
+          "localizedDescription": "Gọi Menu bằng cách chạm 4 ngón tay lên màn hình",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.3/AutoKill.dylib",
+          "size": 200000,
+          "buildVersion": "",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-10-09T02:00:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.3/AutoKill.dylib",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dylib Always on Screen",
+      "type": 5,
+      "bundleIdentifier": "com.9wrh8f2hnq.d5iijw05pp",
+      "developerName": "Unknow ",
+      "subtitle": "Giữ màn hình sáng",
+      "localizedDescription": "💡 Dylib giúp ứng dụng luôn sáng màn không bao giờ tắt",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.imgur.com/cy22whi.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 200000,
+      "version": "0.1",
+      "versions": [
+        {
+          "version": "0.1",
+          "date": "2025-10-01T19:03:00+07:00",
+          "localizedDescription": "🟢Ai tắt tự động khoá màn trong cài đặt iPhone rồi thì né qua bên",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/0.1/AlwaysOnScreen.dylib",
+          "size": 200000,
+          "buildVersion": "",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-10-01T19:03:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/0.1/AlwaysOnScreen.dylib",
       "patreon": {}
     }
   ],

@@ -32,7 +32,12 @@ Nếu bạn không mua chứng chỉ, muốn freesideloading thì đọc kỹ c�
 * Sử dụng Trollstore cho các thiết bị ios cũ:  <a href="#" data-url="trollstore.md" class="news-item-link">Cài IPA bằng trollstore</a>.
 
 * Sử dụng Cert bị revoke bằng DNS: 
-Có nhiều trang chia sẻ về cách này, khác nhau ở bộ lọc DNS còn cơ bản là chứng chỉ Revoked giống nhau. Việc dùng DNS giúp tránh sự kiểm tra Cert bị revoked nhưng nếu Cert hết thời hạn bạn vẫn phải cài lại, hay rò rỉ DNS khi khởi động máy hay khi update IOS làm chứng chỉ bị vào blacklist cũng vậy. Tham khảo bài  <a href="#" data-url="khoivn.md" class="news-item-link">Free sideloading bằng DNS - Khoindvn</a> về cách thực hiện, có hướng dẫn từng bước và giải thích về sự cố rò rỉ DNS hoặc bài <a href="#" data-url="freesideloading.md" class="news-item-link">Free sideloading bằng DNS - PuReEnVyUs</a> hoặc <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoked bằng DNS WFS</a>.
+Có nhiều trang chia sẻ về cách này, khác nhau ở bộ lọc DNS còn cơ bản là chứng chỉ Revoked giống nhau. Việc dùng DNS giúp tránh sự kiểm tra Cert bị revoked nhưng nếu Cert hết thời hạn bạn vẫn phải cài lại, hay rò rỉ DNS khi khởi động máy hay khi update IOS làm chứng chỉ bị vào blacklist cũng vậy. 
+- Tham khảo bài  <a href="#" data-url="khoivn.md" class="news-item-link">Free sideloading bằng DNS - Khoindvn</a> về cách thực hiện, có hướng dẫn từng bước và giải thích về sự cố rò rỉ DNS 
+- hoặc bài <a href="#" data-url="freesideloading.md" class="news-item-link">Free sideloading bằng DNS - PuReEnVyUs</a> 
+- hoặc <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoked bằng DNS WFS</a>.
+- hoặc vào trực tiếp đây cho nhanh, chia sẻ các chứng chỉ doanh nghiệp và Esign/Trollstore đã được ký sẵn, nhớ cài DNS để tránh bị revoke. => https://certvn.com/dns
+
 - Việc tạo DNS thủ công đã lỗi thời, thay vào đó sử dụng các DNS sẵn có, tránh rò rỉ DNS giúp xài Cert revoked đc lâu hơn, nhưng ko có gì đảm bảo mọi thứ suôn sẻ. Nên lưu ý: tốt nhất làm theo hướng dẫn trong các bài  (đọc kỹ trước làm sau), kiên nhẫn (có thể chứng chỉ nào đó ko sử dụng đc với thiết bị của bạn), và ko nên update IOS, các bản cập nhật mới vá lỗi bảo mật dễ  rò rỉ DNS và khiến các chứng chỉ bị blacklist.
 
 ---
