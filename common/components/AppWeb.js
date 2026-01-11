@@ -26,7 +26,7 @@ export const AppBanner = (name) => `
             <div class="text-container">
                 <p class="title-text">KhoIPA <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Receive notifications about app updates. 
+                    Receive notifications about app updates (>IOS 16). 
                 </p>
             </div>
         </div>
