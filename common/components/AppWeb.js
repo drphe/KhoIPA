@@ -1,9 +1,13 @@
-const btnText = () =>
-  Notification.permission === "granted"
+const btnText = () => {
+  const permission =
+    "Notification" in window ? Notification.permission : "default";
+
+  return permission === "granted"
     ? "OK"
-    : Notification.permission === "denied"
+    : permission === "denied"
     ? "OFF"
     : "ON";
+};
 
 export const AppBanner = (name) => `
 <div class="uibanner">
