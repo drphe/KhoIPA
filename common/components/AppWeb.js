@@ -1,9 +1,13 @@
-const btnText = () =>
-  Notification.permission === "granted"
+const btnText = () => {
+  const permission =
+    "Notification" in window ? Notification.permission : "default";
+
+  return permission === "granted"
     ? "OK"
-    : Notification.permission === "denied"
+    : permission === "denied"
     ? "OFF"
     : "ON";
+};
 
 export const AppBanner = (name) => `
 <div class="uibanner">
@@ -22,7 +26,7 @@ export const AppBanner = (name) => `
             <div class="text-container">
                 <p class="title-text">KhoIPA <span class="small beta badge"></span></p>
                 <p class="detail-text">
-                    Receive notifications about app updates. 
+                    Receive notifications about app updates (>IOS 16). 
                 </p>
             </div>
         </div>

@@ -446,8 +446,7 @@ if ('serviceWorker' in navigator) {
         title: langText['cancel'],
         style: "cancel",
     });
-    isPWA && Notification.permission ==="default" && checkNoti.present();
-
+    isPWA &&"Notification" in window && Notification.permission === "default" && checkNoti.present();
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");
