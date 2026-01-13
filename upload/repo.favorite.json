@@ -45,12 +45,12 @@
       "version": "2.5.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.5.0/ShortMax_2.5.0_1756947661.ipa",
-          "size": 58800000,
           "version": "2.5.0",
-          "buildVersion": null,
           "date": "2026-01-13T09:24:00+07:00",
           "localizedDescription": "Đã loại bỏ quảng cáo",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.5.0/ShortMax_2.5.0_1756947661.ipa",
+          "size": 58800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -83,12 +83,12 @@
       "version": "1.4.4",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.4/Love.Novel_1.4.4_1756917043.ipa",
-          "size": 22800000,
           "version": "1.4.4",
-          "buildVersion": null,
           "date": "2026-01-13T09:20:00+07:00",
           "localizedDescription": "Loại bỏ quảng cáo",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.4/Love.Novel_1.4.4_1756917043.ipa",
+          "size": 22800000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -5530,6 +5530,17 @@
     }
   ],
   "news": [
+    {
+      "title": "26000+ IPA Collection",
+      "identifier": "news-2lodvr1kn4",
+      "caption": "Download more IPA from archive.org repo!",
+      "date": "2026-01-13",
+      "tintColor": "#3b323f",
+      "imageURL": "https://i.ibb.co/chdkSJPb/fc4af4f7ce70.png",
+      "notify": true,
+      "url": "https://kho-ipa.vercel.app/oldipa-archive.html",
+      "appID": null
+    },
     {
       "title": "Chào mừng bạn đến KhoIPA",
       "identifier": "huongdansudung",

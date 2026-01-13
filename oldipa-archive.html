@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>IPA Archive</title>
+    <link rel="shortcut icon" href="https://stuffed18.github.io/ipa-archive-updated/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://stuffed18.github.io/ipa-archive-updated/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://drphe.github.io/KhoIPA/common/style.css">
+    <style>
+body {
+margin: auto;
+    padding: 1rem;
+    max-width: 767px;
+    font-family: sans-serif;
+    width: auto;
+}
+
+
+#minos,
+#maxos {
+    width: 4em;
+}
+
+/* General layout */
+#content {
+    margin: 20px 0;
+}
+
+
+/* IPA entry */
+h4 {
+    margin: 0 0 8px;
+}
+.info>.texto{
+white-space: nowrap;
+ overflow: hidden; 
+text-overflow: ellipsis;
+width: 370px;
+}
+.entry {
+    display: inline-block;
+    margin: 4px;
+    width: 370px;
+    background: var(--uialert-separator-color);
+    overflow-x: hidden;
+    white-space: nowrap;
+   border-radius:1rem;
+    
+}
+
+.entry>div {
+    display: inline-block;
+    margin: 8px 8px 8px 0;
+    vertical-align: top;
+}
+
+.entry img {
+    width: 74px;
+    height: 74px;
+    margin: 0 8px 2px;
+    border-radius: 17%;
+}
+
+.entry button {
+    display: block;
+    width: 74px;
+    margin: 0 auto;
+}
+
+/* Single-item page */
+.single {
+    display: block;
+    width: initial;
+}
+
+
+
+.itunes {
+    max-width: 650px;
+    margin: 40px auto;
+}
+
+.carousel {
+    display: block;
+    overflow: auto;
+    max-height: 350px;
+    white-space: nowrap;
+}
+
+.carousel img {
+    max-height: 330px;
+    margin: 8px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.itunes p {
+    white-space: pre-wrap;
+}
+
+.no-itunes {
+    color: #777;
+    text-align: center;
+}
+
+/* Pagination */
+.shortpage {
+    text-align: center;
+    margin: 30px;
+}
+
+.shortpage>span {
+    margin: 0 20px;
+}
+
+.shortpage>button {
+    font-size: 1em;
+}
+
+.shortpage>button:first-child {
+    float: left;
+}
+
+.shortpage>button:last-child {
+    float: right;
+}
+
+#pagination>a,
+#pagination>b {
+    display: inline-block;
+    padding: 4px;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Old IPA Archive</h1>
+    <form onsubmit="event.preventDefault(); searchIPA(); return false;" autocomplete="off" style="background: var(--uialert-background-color); padding: 1rem; border-radius: 1rem;">
+        <input id="page" hidden>
+        <input id="minid" hidden>
+        <p for="search">Search: <input id="search" placeholder="Search"></p>
+        <p for="bundleid">BundleId: <input id="bundleid" placeholder="com.gameloft."></p>
+        <div style="display:flex;justify-content: space-evenly;align-items: flex-end;">
+            <p for="unique">Unique: <input id="unique" type="checkbox" checked=""></p>
+            <p for="minos">min OS: <input id="minos" placeholder="1.0"></p>
+            <p for="maxos">max OS: <input id="maxos" placeholder="5.1.1"></p>
+            <p for="device">Device: <select id="device">
+                    <option value="">Any</option>
+                    <option value="1">iPhone</option>
+                    <option value="2">iPad</option>
+                    <option value="3">TV</option>
+                    <option value="4">Watch</option>
+                </select>
+            </p>
+                <button type="submit">Search</button>
+        </div>
+    </form>
+
+    <p id="content">JavaScript disabled?</p>
+    <div id="templates" hidden>
+        <div class="entry full">
+            <div>
+                <img src="$IMG">
+            </div>
+            <div class="info">
+                <h4>$TITLE</h4>
+                <div class="texto">BundleId: $BUNDLEID</div>
+                <div>Version: v$VERSION – $SIZE</div>
+                <div>Device: $PLATFORM</div>
+                <div>Minimum OS: $MINOS</div>
+                <div>Link: <a href="$URL" rel="noopener noreferrer nofollow">$URLNAME</a></div>
+            </div>
+        </div>
+        <div class="entry short">
+            <div><img src="$IMG"></div>
+            <div class="info">
+                <h4>$TITLE</h4>
+                <div>BundleId: $BUNDLEID</div>
+                <div>Device: $PLATFORM</div>
+                <div>Minimum OS: $MINOS</div>
+                <div><a onclick="searchBundle($IDX)">Show all</a></div>
+            </div>
+        </div>
+        <div class="itunes">
+            <h4>iTunes Info:</h4>
+            <div>Genre: $GENRES</div>
+            <div>Rating: $RATING</div>
+            <div>Advisory: $ADVISORY</div>
+            <br>
+            <div>Current Version: <b>$VERSION</b> (last update: $DATE)</div>
+            <div>Price: $PRICE</div>
+            <div>Link: <a href="$URL" rel="noopener noreferrer nofollow">iTunes</a></div>
+            <div>$IMG</div>
+            <p>$DESCRIPTION</p>
+        </div>
+        <a class="screenshot" href="$REF" target="_blank"><img src="$URL" crossorigin="anonymous" referrerpolicy="no-referrer"></a>
+    </div>
+    <script>
+var DB = [];
+var DB_result = [];
+var baseUrls = {};
+var PER_PAGE = 30;
+var isInitial = true;
+var previousSearch = '';
+var sourceUrl = "https://stuffed18.github.io/ipa-archive-updated/";
+NodeList.prototype.forEach = Array.prototype.forEach; // fix for < iOS 9.3
+/*
+ * Init
+ */
+function setMessage(msg) {
+    document.getElementById('content').innerHTML = msg;
+}
+
+function loadFile(url, onErrFn, fn) {
+    try {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = 'text';
+        xhr.onload = function(e) {
+            fn(e.target.response);
+        };
+        xhr.onerror = function(e) {
+            onErrFn('Server or network error.');
+        };
+        xhr.send();
+    }
+    catch (error) {
+        onErrFn(error);
+    }
+}
+
+function loadDB() {
+    var config = null;
+    try {
+        config = loadConfig(true);
+    }
+    catch (error) {
+        alert(error);
+    }
+    setMessage('Loading base-urls ...');
+    loadFile(sourceUrl + 'data/urls.json', setMessage, function(data) {
+        baseUrls = JSON.parse(data);
+        setMessage('Loading database ...');
+        loadFile(sourceUrl + 'data/ipa.json', setMessage, function(data) {
+            DB = JSON.parse(data);
+            setMessage('Ready! Database count: ' + DB.length);
+            if (config && (config.page > 0 || config.search || config.bundleid)) {
+                searchIPA(true);
+            }
+        });
+    });
+}
+
+function loadConfig(chkServer) {
+    if (!location.hash) {
+        return; // keep default values
+    }
+    const params = location.hash.substring(1).split('&');
+    const data = {};
+    params.forEach(function(param) {
+        const pair = param.split('=', 2);
+        data[pair[0]] = decodeURIComponent(pair[1]);
+    });
+    document.querySelectorAll('input,select').forEach(function(input) {
+        if (input.type === 'checkbox') {
+            input.checked = data[input.id] || null;
+        }
+        else {
+            input.value = data[input.id] || '';
+        }
+    });
+    if (chkServer && data['plistServer']) {
+        setPlistGen();
+    }
+    return data;
+}
+
+function saveConfig() {
+    const data = [];
+    document.querySelectorAll('input,select').forEach(function(e) {
+        const value = e.type === 'checkbox' ? e.checked : e.value;
+        if (value) {
+            data.push(e.id + '=' + encodeURIComponent(value));
+        }
+    });
+    const prev = location.hash;
+    location.hash = '#' + data.join('&');
+    return prev !== location.hash;
+}
+/*
+ * Search
+ */
+function applySearch() {
+    const term = document.getElementById('search').value.toLowerCase();
+    const bundle = document.getElementById('bundleid').value.trim().toLowerCase();
+    const unique = document.getElementById('unique').checked;
+    const minos = document.getElementById('minos').value;
+    const maxos = document.getElementById('maxos').value;
+    const platform = document.getElementById('device').value;
+    const minid = document.getElementById('minid').value;
+    const minV = minos ? strToVersion(minos) : 0;
+    const maxV = maxos ? strToVersion(maxos) : 9999999;
+    const device = platform ? 1 << platform : 255; // all flags
+    const minPK = minid ? parseInt(minid) : 0;
+    // [7, 2,20200,"180","com.headcasegames.180","1.0",1,"180.ipa", 189930], 
+    // [pk, platform, minOS, title, bundleId, version, baseUrl, pathName, size]
+    DB_result = [];
+    isInitial = false;
+    const uniqueBundleIds = {};
+    DB.forEach(function(ipa, i) {
+        if (ipa[2] < minV || ipa[2] > maxV || !(ipa[1] & device) || ipa[0] < minPK) {
+            return;
+        }
+        if (bundle && ipa[4].toLowerCase().indexOf(bundle) === -1) {
+            return;
+        }
+        if (!term || ipa[3].toLowerCase().indexOf(term) > -1 || ipa[4].toLowerCase().indexOf(term) > -1 || ipa[7].toLowerCase().indexOf(term) > -1) {
+            if (unique) {
+                const bId = ipa[4];
+                if (uniqueBundleIds[bId]) {
+                    return;
+                }
+                uniqueBundleIds[bId] = true;
+            }
+            DB_result.push(i);
+        }
+    });
+    delete uniqueBundleIds; // free up memory
+}
+
+function restoreSearch() {
+    location.hash = previousSearch;
+    const conf = loadConfig(false);
+    previousSearch = '';
+        searchIPA(true);
+}
+
+function searchBundle(idx, additional) {
+    previousSearch = location.hash + (additional || '');
+    document.getElementById('bundleid').value = DB[idx][4];
+    document.getElementById('search').value = '';
+    document.getElementById('page').value = null;
+    document.getElementById('unique').checked = false;
+    searchIPA();
+}
+
+function searchIPA(restorePage) {
+    var page = 0;
+    if (restorePage) {
+        page = document.getElementById('page').value;
+    }
+    else {
+        document.getElementById('page').value = null;
+    }
+    applySearch();
+    printIPA((page || 0) * PER_PAGE);
+    saveConfig();
+}
+
+/*
+ * Output
+ */
+function platformToStr(num) {
+    if (!num) {
+        return '?';
+    }
+    return [
+        num & (1 << 1) ? 'iPhone' : null,
+        num & (1 << 2) ? 'iPad' : null,
+        num & (1 << 3) ? 'TV' : null,
+        num & (1 << 4) ? 'Watch' : null,
+    ].filter(Boolean).join(', ');
+}
+
+function versionToStr(num) {
+    if (!num) {
+        return '?';
+    }
+    const major = Math.floor(num / 10000);
+    const minor = Math.floor(num / 100) % 100;
+    const patch = num % 100;
+    return major + '.' + minor + (patch ? '.' + patch : '');
+}
+
+function strToVersion(versionStr) {
+    const x = ((versionStr || '0') + '.0.0.0').split('.');
+    return parseInt(x[0]) * 10000 + parseInt(x[1]) * 100 + parseInt(x[2]);
+}
+
+function humanSize(size) {
+    var sizeIndex = 0;
+    while (size > 1024) {
+        size /= 1024;
+        sizeIndex += 1;
+    }
+    return size.toFixed(1) + ['kB', 'MB', 'GB'][sizeIndex];
+}
+
+function getTemplate(name) {
+    return document.getElementById('templates').querySelector(name).outerHTML;
+}
+
+function renderTemplate(template, values) {
+    return template.replace(/\$[A-Z]+/g, function(x) {
+        return values[x];
+    });
+}
+
+function validUrl(url) {
+    return encodeURI(url).replace('#', '%23').replace('?', '%3F');
+}
+
+function entryToDict(entry) {
+    const pk = entry[0];
+    return {
+        pk: pk,
+        platform: entry[1],
+        minOS: entry[2],
+        title: entry[3],
+        bundleId: entry[4],
+        version: entry[5],
+        baseUrl: entry[6],
+        pathName: entry[7],
+        size: entry[8],
+        ipa_url: baseUrls[entry[6]] + '/' + entry[7],
+        img_url: sourceUrl + 'data/' + Math.floor(pk / 1000) + '/' + pk + '.jpg',
+    }
+}
+
+function entriesToStr(templateType, data) {
+    const template = getTemplate(templateType);
+    var rv = '';
+    for (var i = 0; i < data.length; i++) {
+        const entry = entryToDict(DB[data[i]]);
+        rv += renderTemplate(template, {
+            $IDX: data[i],
+            $IMG: entry.img_url,
+            $TITLE: (entry.title || '?').replace('<', '&lt;'),
+            $VERSION: entry.version,
+            $BUNDLEID: entry.bundleId,
+            $MINOS: versionToStr(entry.minOS),
+            $PLATFORM: platformToStr(entry.platform),
+            $SIZE: humanSize(entry.size),
+            $URLNAME: entry.pathName.split('/').slice(-1), // decodeURI
+            $URL: validUrl(entry.ipa_url),
+        });
+    }
+    return rv;
+}
+
+function printIPA(offset) {
+    if (!offset) {
+        offset = 0;
+    }
+    const total = DB_result.length;
+    var content = '<h3>Results: ' + total;
+    if (previousSearch) {
+        content += ' -- Go to: <a onclick="restoreSearch()">previous search</a>';
+    }
+    content += '</h3>';
+    const page = Math.floor(offset / PER_PAGE);
+    const pages = Math.ceil(total / PER_PAGE);
+    if (pages > 1) {
+        content += paginationShort(page, pages);
+    }
+    const templateType = document.getElementById('unique').checked ? '.short' : '.entry';
+    content += entriesToStr(templateType, DB_result.slice(offset, offset + PER_PAGE));
+    if (pages > 1) {
+        content += paginationShort(page, pages);
+        content += paginationFull(page, pages);
+    }
+    document.getElementById('content').innerHTML = content;
+    window.scrollTo(0, 0);
+}
+/*
+ * Pagination
+ */
+function p(page) {
+    printIPA(page * PER_PAGE);
+    document.getElementById('page').value = page || null;
+    saveConfig();
+}
+
+function paginationShort(page, pages) {
+    return '<div class="shortpage">' + '<button onclick="p(' + (page - 1) + ')" ' + (page == 0 ? 'disabled' : '') + '>Prev</button>' + '<span>' + (page + 1) + ' / ' + pages + '</span>' + '<button onclick="p(' + (page + 1) + ')" ' + (page + 1 == pages ? 'disabled' : '') + '>Next</button>' + '</div>';
+}
+
+function paginationFull(page, pages) {
+    var rv = '<div id="pagination">Pages:';
+    for (var i = 0; i < pages; i++) {
+        if (i === page) {
+            rv += '\n<b>' + (i + 1) + '</b>';
+        }
+        else {
+            rv += '\n<a onclick="p(' + i + ')">' + (i + 1) + '</a>';
+        }
+    }
+    return rv + '</div>';
+}
+
+function urlWithSlash(url) {
+    return url.toString().slice(-1) === '/' ? url : (url + '/');
+}
+
+function utoa(data) {
+    return btoa(unescape(encodeURIComponent(data)));
+}
+loadDB()
+
+    </script>
+</body>
+
+</html>
