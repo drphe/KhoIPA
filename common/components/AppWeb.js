@@ -12,8 +12,8 @@ const btnText = () => {
 export const AppBanner = (name) => `
 <div class="uibanner">
     <div class="icons">
-        <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png" alt="sidestore-icon" class="icon">
-        <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png" alt="sidestore-icon" class="icon">
+        <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo128x128.png" alt="sidestore-icon" class="icon">
+        <img src="https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo128x128.png" alt="sidestore-icon" class="icon">
     </div>
     <div class="content">
         <div>
