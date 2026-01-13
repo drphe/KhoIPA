@@ -495,6 +495,6 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
      };
 
     window.isReload = true;
-	$("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh", $("#add-to-altstore").clasList.add("skeleton-effect-fade"));
+	$("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh", $("#add-to-altstore").classList.add("skeleton-effect-fade"));
      navigator.serviceWorker?.controller?.postMessage(noti);
 }
