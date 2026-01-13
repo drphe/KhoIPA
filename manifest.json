@@ -8,8 +8,33 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "./icon/logo.png",
+      "src": "./icon/logo128x128.png",
       "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/logo144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/logo152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/logo192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/logo256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/logo512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]

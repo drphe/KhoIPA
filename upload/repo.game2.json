@@ -915,7 +915,7 @@
     {
       "beta": false,
       "name": "Disney Crossy Road",
-      "type": 1,
+      "type": 2,
       "bundleIdentifier": "com.disney.disneycrossyroad",
       "developerName": "HIPSTER WHALE",
       "subtitle": "Why should the chicken get all the fun?",
@@ -948,7 +948,7 @@
     {
       "beta": false,
       "name": "Crossy Road+",
-      "type": 1,
+      "type": 2,
       "bundleIdentifier": "com.ttv67pc5ks.zlbzin3sq8",
       "developerName": "Hipster Whale",
       "subtitle": " The classic hopper re-imagined",
@@ -966,58 +966,22 @@
       "versions": [
         {
           "version": "1.0.1",
-          "date": "2026-01-13",
+          "date": "2020-01-13",
           "localizedDescription": "New release!",
           "downloadURL": "https://download944.mediafire.com/vgbuddenouvgERg_sbOLyuljmixd6wfUAQm-L1xIC95PxOxURSh-b9m11GQK-oYKOIKHjFbvPjxazuE31tGJ_wO6wiOaPcTjcZadvMJj0jO7VZrYugsSTpuQN91RUqW3K-ZCn5KUqxC2oJX2tL62q4c8h94SaApsOWyXWulVDXk/dva3wt6tzt2cfzr/Crossy-Road-plus-v1-0-1.ipa",
           "size": 64095207,
           "buildVersion": null,
           "minOSVersion": null
-        },
-        {
-          "version": "1.81",
-          "date": "2026-01-13",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://download1593.mediafire.com/38f67ht5kzpgBh6vf-2wo5j1mYse1PhBf4ADvVQsWOjX7uTgeqJQ0RoOj7a_I8qjhTSEYXQUzsryG4i8NmAl_FbQ6lbjeRj6caDBYjMYhKmQbaatKJe1HfxBGyOLml6bkcusnL7YVLOiFVR5rkXRnbUNFgjem1tsxlvj9j5xxX8/kesx4l9o1h78s7u/Dashy+Square+Lite_1.81_decrypted.ipa",
-          "size": 27629806,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "2.113",
-          "date": "2026-01-13",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://download1334.mediafire.com/pk26sus11mzg6c_2IFSIvwkF-5PlwV4o9jsV10HNGsRMmFXu5tez8Xi01bcMXeYRrFn9ap19N9mpoZqLNdH7D0wAgPzEB9oUfx2pCJDPv7UvYPxm3ZKkZGZUBIZecjlu3WA9M4uuefYKdzFcZxnIKA5Wc3gbQgWDjs7UPunHHr4/i54kg574lu24fxv/Geometry-Dash-v2-113.ipa",
-          "size": 81682740,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "2.113",
-          "date": "2026-01-13",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://download1334.mediafire.com/pk26sus11mzg6c_2IFSIvwkF-5PlwV4o9jsV10HNGsRMmFXu5tez8Xi01bcMXeYRrFn9ap19N9mpoZqLNdH7D0wAgPzEB9oUfx2pCJDPv7UvYPxm3ZKkZGZUBIZecjlu3WA9M4uuefYKdzFcZxnIKA5Wc3gbQgWDjs7UPunHHr4/i54kg574lu24fxv/Geometry-Dash-v2-113.ipa",
-          "size": 81682740,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "version": "1.0.2",
-          "date": "2026-01-13",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://download1529.mediafire.com/vgn2opx74v9gQrzlOO3kGBAPOHDeatrKww-n3B4eqyTIKaKqtpSvp4AVj3IVZIIvH6NvtwzH3mm3Up5cG5SH2P8DiSDd-4gBduAP67UgLYSUiJqjL6t9FXDs3Tm0wKa4ijw-3O4dDDrosYBtpYlKkfzN8CVea6xfYuI4uFAjKh0/s7tw1szwhdverzu/Friday+Night+Funkin.ipa",
-          "size": 79821,
-          "buildVersion": null,
-          "minOSVersion": null
         }
       ],
-      "versionDate": "2026-01-13",
+      "versionDate": "2020-01-13",
       "downloadURL": "https://download944.mediafire.com/vgbuddenouvgERg_sbOLyuljmixd6wfUAQm-L1xIC95PxOxURSh-b9m11GQK-oYKOIKHjFbvPjxazuE31tGJ_wO6wiOaPcTjcZadvMJj0jO7VZrYugsSTpuQN91RUqW3K-ZCn5KUqxC2oJX2tL62q4c8h94SaApsOWyXWulVDXk/dva3wt6tzt2cfzr/Crossy-Road-plus-v1-0-1.ipa",
       "patreon": {}
     },
     {
       "beta": false,
       "name": "Crossy Road Castle",
-      "type": 1,
+      "type": 2,
       "bundleIdentifier": "com.yourdeveloper.crossyroadcastle",
       "developerName": "HIPSTER WHALE",
       "subtitle": "Bring your friends and see how far you can get in this endless spinning tower of arcade fun!",
@@ -1050,7 +1014,7 @@
     {
       "beta": false,
       "name": "Alto's Odyssey",
-      "type": 1,
+      "type": 2,
       "bundleIdentifier": "com.noodlecake.altosodyssey",
       "developerName": "Noodlecake Studios Inc",
       "subtitle": "An endless sandboarding journey",
@@ -1083,7 +1047,7 @@
     {
       "beta": false,
       "name": "Alto's Adventure",
-      "type": 1,
+      "type": 2,
       "bundleIdentifier": "com.noodlecake.altosadventure",
       "developerName": "Noodlecake Studios",
       "subtitle": "A snowboarding adventure",
@@ -1118,7 +1082,7 @@
     {
       "beta": false,
       "name": "Universe in a Nutshell",
-      "type": 1,
+      "type": 2,
       "bundleIdentifier": "com.kurzgesagt.universeinanutshell",
       "developerName": "Kurzgesagt - In a Nutshell",
       "subtitle": "Learn science the easy way",
@@ -1151,7 +1115,7 @@
     {
       "beta": false,
       "name": "Monument Valley+",
-      "type": 1,
+      "type": 2,
       "bundleIdentifier": "com.ustwo.mvarcade",
       "developerName": "UsTwo2",
       "subtitle": " A Quest for Forgiveness ",
@@ -1181,6 +1145,109 @@
       ],
       "versionDate": "2020-01-12T17:00:00+07:00",
       "downloadURL": "https://download850.mediafire.com/1w71f72ntgqgr_5U1531JnpjyufyU5f7vROiHpQiEwNENcSM5wefrwz4Lw2ITig01C8sctfZBJDNUWJdyoTMu0xDwo281wrD2ssAS8eBp3X3YoaUA4libvP3hKHH-xk8qrDxsJCK6XofR4w-1JK6I9Nb39LS--vVa6BJTRBhPzE/jhw06t6n6lr0b7a/Monument+Valley%2B+%28iOS+13%29+%28v2.8.1.130%29.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Geometry Dash",
+      "type": 2,
+      "bundleIdentifier": "com.robtop.geometryjump",
+      "developerName": " RobTop Games AB",
+      "subtitle": "Paid from store",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#3399FF",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/87/a1/b1/87a1b173-cc9e-b506-c387-9faccdbb523e/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 81682740,
+      "version": "2.113",
+      "versions": [
+        {
+          "version": "2.113",
+          "date": "2023-01-13",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1334.mediafire.com/pk26sus11mzg6c_2IFSIvwkF-5PlwV4o9jsV10HNGsRMmFXu5tez8Xi01bcMXeYRrFn9ap19N9mpoZqLNdH7D0wAgPzEB9oUfx2pCJDPv7UvYPxm3ZKkZGZUBIZecjlu3WA9M4uuefYKdzFcZxnIKA5Wc3gbQgWDjs7UPunHHr4/i54kg574lu24fxv/Geometry-Dash-v2-113.ipa",
+          "size": 81682740,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-01-13",
+      "downloadURL": "https://download1334.mediafire.com/pk26sus11mzg6c_2IFSIvwkF-5PlwV4o9jsV10HNGsRMmFXu5tez8Xi01bcMXeYRrFn9ap19N9mpoZqLNdH7D0wAgPzEB9oUfx2pCJDPv7UvYPxm3ZKkZGZUBIZecjlu3WA9M4uuefYKdzFcZxnIKA5Wc3gbQgWDjs7UPunHHr4/i54kg574lu24fxv/Geometry-Dash-v2-113.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Friday Night Funkin' Mobile",
+      "type": 2,
+      "bundleIdentifier": "me.funkin.fnf",
+      "developerName": " Funkin' Crew",
+      "subtitle": "Mod game",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#3399FF",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/04/a2/9904a2d2-1f9d-fc19-d48d-488f94d0a3f1/AppIcon-0-0-1x_U007emarketing-0-11-0-P3-85-220.png/512x512bb.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0.2",
+      "versions": [
+        {
+          "version": "1.0.2",
+          "date": "2025-01-13",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1529.mediafire.com/vgn2opx74v9gQrzlOO3kGBAPOHDeatrKww-n3B4eqyTIKaKqtpSvp4AVj3IVZIIvH6NvtwzH3mm3Up5cG5SH2P8DiSDd-4gBduAP67UgLYSUiJqjL6t9FXDs3Tm0wKa4ijw-3O4dDDrosYBtpYlKkfzN8CVea6xfYuI4uFAjKh0/s7tw1szwhdverzu/Friday+Night+Funkin.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-01-13",
+      "downloadURL": "https://download1529.mediafire.com/vgn2opx74v9gQrzlOO3kGBAPOHDeatrKww-n3B4eqyTIKaKqtpSvp4AVj3IVZIIvH6NvtwzH3mm3Up5cG5SH2P8DiSDd-4gBduAP67UgLYSUiJqjL6t9FXDs3Tm0wKa4ijw-3O4dDDrosYBtpYlKkfzN8CVea6xfYuI4uFAjKh0/s7tw1szwhdverzu/Friday+Night+Funkin.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dashy Square Lite",
+      "type": 2,
+      "bundleIdentifier": "com.dashy",
+      "developerName": "Unknow",
+      "subtitle": "Mod game",
+      "localizedDescription": "Una aplicación gratuita para Android, de Kastriot Sulejmani.",
+      "versionDescription": "",
+      "tintColor": "#3399FF",
+      "iconURL": "https://image.winudf.com/v2/image/Y29tLmthc3Nhbml0eS5kYXNoeXNxdWFyZWxpdGVfaWNvbl9rdXR3ODVwag/icon.png?w=160&fakeurl=1",
+      "screenshotURLs": [
+        "https://th.bing.com/th/id/R.7091127dbcd0171d019b172ac3cab8e8?rik=KQyUcucCkee1tw&pid=ImgRaw&r=0",
+        "https://i.ytimg.com/vi/RUvN1LlJx78/maxresdefault.jpg",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/afd565d6-b2da-4d3a-aab7-9157ee2a2a97/2965161226/dashy-square-lite-screenshot.png"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 27629806,
+      "version": "1.81",
+      "versions": [
+        {
+          "version": "1.81",
+          "date": "2020-01-13",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1593.mediafire.com/38f67ht5kzpgBh6vf-2wo5j1mYse1PhBf4ADvVQsWOjX7uTgeqJQ0RoOj7a_I8qjhTSEYXQUzsryG4i8NmAl_FbQ6lbjeRj6caDBYjMYhKmQbaatKJe1HfxBGyOLml6bkcusnL7YVLOiFVR5rkXRnbUNFgjem1tsxlvj9j5xxX8/kesx4l9o1h78s7u/Dashy+Square+Lite_1.81_decrypted.ipa",
+          "size": 27629806,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2020-01-13",
+      "downloadURL": "https://download1593.mediafire.com/38f67ht5kzpgBh6vf-2wo5j1mYse1PhBf4ADvVQsWOjX7uTgeqJQ0RoOj7a_I8qjhTSEYXQUzsryG4i8NmAl_FbQ6lbjeRj6caDBYjMYhKmQbaatKJe1HfxBGyOLml6bkcusnL7YVLOiFVR5rkXRnbUNFgjem1tsxlvj9j5xxX8/kesx4l9o1h78s7u/Dashy+Square+Lite_1.81_decrypted.ipa",
       "patreon": {}
     }
   ],

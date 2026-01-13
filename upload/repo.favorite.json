@@ -3,7 +3,7 @@
   "identifier": "repo.drphe.kh0ipa",
   "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.json",
   "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
-  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png",
+  "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "subtitle": "Ứng dụng IPA mod cho Sideloading, Feather, Esign...",
   "description": "Các ứng dụng IPA đã mod full cho anh em xài cert hay sideloading mà không cần Jailbreak máy.... Mã nguồn mở, IPA sạch, luôn được cập nhật phiên bản mới nhất cho ios.",
   "website": "https://github.com/drphe/KhoIPA/",
@@ -11,7 +11,7 @@
   "tintColor": "#5825D0",
   "META": {
     "repoName": "Favorite apps",
-    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/logo.png"
+    "repoIcon": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png"
   },
   "featuredApps": [
     "xyz.phim4k.ios",
@@ -23,8 +23,8 @@
   "apps": [
     {
       "beta": false,
-      "name": "Shorts",
-      "type": 1,
+      "name": "ShortsMax - Xem Phim & Phim Bộ",
+      "type": 3,
       "bundleIdentifier": "live.shorttv.ios",
       "developerName": "Unknow",
       "subtitle": "Đã loại bỏ quảng cáo",
@@ -60,7 +60,7 @@
     },
     {
       "beta": false,
-      "name": "Love Novel",
+      "name": "Mê Truyện chữ - Nữ Hiệp",
       "type": 1,
       "bundleIdentifier": "com.novelfever.app",
       "developerName": "Unknow",
