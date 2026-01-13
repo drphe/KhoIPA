@@ -249,7 +249,7 @@ if ('serviceWorker' in navigator) {
             if (count > 4) return;
             if (isValidHTTPURL(app.iconURL)) {
                 imgApps += `<a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link" style="display: inline-grid;justify-items: center;">
-				<img class="app-panel-icon" src="${app.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';" onload="this.nextElementSibling.style.opacity='1';">
+				<img class="app-panel-icon  skeleton-effect-blink skeleton-block" src="${app.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';" onload="this.nextElementSibling.style.opacity='1';this.classList.remove('skeleton-effect-blink', 'skeleton-block');">
 				<span class="small ${checkBeta(app.beta)} badge" style="position: sticky;opacity:0;transform: translate(0px, -75px);"></span>
 				</a>`;
                 count++;

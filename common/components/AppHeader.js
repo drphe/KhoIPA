@@ -28,7 +28,7 @@ export const AppHeader = (app) => app ? `
             <div class="content">
 		<div class="app-icon-wrapper">
 		    ${app.beta ? `<span class="small ${checkBeta(app.beta)} badge" style="opacity:0;position:absolute;top:-4px;"></span>`:``}
-                    <img id="app-icon" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" onload="this.previousElementSibling?.style.setProperty('opacity', '1');" alt="">
+                    <img id="app-icon" class="skeleton-effect-blink skeleton-block" src="${app.iconURL}" onerror="this.onerror=null; this.src='${fallbackSrc}';" onload="this.previousElementSibling?.style.setProperty('opacity', '1');this.classList.remove('skeleton-effect-blink', 'skeleton-block');" alt="">
 		    ${app.sourceIconURL ? `<img class="developer-icon" src="${app.sourceIconURL}" onerror="this.onerror=null; this.src='https://placehold.co/25x25/${app.sourceTintColor.replaceAll("#","")}/FFFFFF?text=${app.sourceName.charAt(0).toUpperCase()}';" alt="">` : ``}
 		</div>
                 <div class="right">

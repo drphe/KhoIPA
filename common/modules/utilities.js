@@ -494,6 +494,7 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
             body: parts.join(", ")
      };
 
-     window.isReload = true, $("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh");
+    window.isReload = true;
+	$("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh", $("#add-to-altstore").clasList.add("skeleton-effect-fade"));
      navigator.serviceWorker?.controller?.postMessage(noti);
 }

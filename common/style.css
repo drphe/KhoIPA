@@ -1772,6 +1772,7 @@ pre {
 
 .app-panel-icon {
     width: 60px;
+    height: 60px;
     border-radius: 10px;
     margin: 8px;
 }

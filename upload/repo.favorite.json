@@ -23,6 +23,81 @@
   "apps": [
     {
       "beta": false,
+      "name": "Shorts",
+      "type": 1,
+      "bundleIdentifier": "live.shorttv.ios",
+      "developerName": "Unknow",
+      "subtitle": "Đã loại bỏ quảng cáo",
+      "localizedDescription": "Share app xem phim đã loại bỏ quảng cáo, ai dùng app này rùi sẽ bjk nha, còn xu thì cày nhiệm vụ để mở tập mới hoặc nạp mà nạp thì đắt vc 😂😂😂",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/YTf5Xy19/d9d12164b653.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSPhotoLibraryUsageDescription": "To save and share pictures, we need your permisson to access your photos.",
+          "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads and improve the experience."
+        }
+      },
+      "size": 58800000,
+      "version": "2.5.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.5.0/ShortMax_2.5.0_1756947661.ipa",
+          "size": 58800000,
+          "version": "2.5.0",
+          "buildVersion": null,
+          "date": "2026-01-13T09:24:00+07:00",
+          "localizedDescription": "Đã loại bỏ quảng cáo",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-13T09:24:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v2.5.0/ShortMax_2.5.0_1756947661.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Love Novel",
+      "type": 1,
+      "bundleIdentifier": "com.novelfever.app",
+      "developerName": "Unknow",
+      "subtitle": "Loại bỏ quảng cáo",
+      "localizedDescription": "App đọc truyện chữ tiên hiệp, kiếm hiệp các loại",
+      "versionDescription": "",
+      "tintColor": "#5825D0",
+      "iconURL": "https://i.ibb.co/kgsqVJhC/787fe43ca880.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Love Novel need to access your camera for updating avatar.",
+          "NSMicrophoneUsageDescription": "Love Novel need to access your micro phone for TTS Player",
+          "NSPhotoLibraryUsageDescription": "Love Novel need to access your library for updating avatar.",
+          "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+        }
+      },
+      "size": 22800000,
+      "version": "1.4.4",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.4/Love.Novel_1.4.4_1756917043.ipa",
+          "size": 22800000,
+          "version": "1.4.4",
+          "buildVersion": null,
+          "date": "2026-01-13T09:20:00+07:00",
+          "localizedDescription": "Loại bỏ quảng cáo",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-13T09:20:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.4/Love.Novel_1.4.4_1756917043.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Online SMS",
       "type": 1,
       "bundleIdentifier": "com.wecan.smsreceiver",
