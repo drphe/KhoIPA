@@ -707,6 +707,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollT
         filteredApps = [];
         run();
     });
+    searchBox.focus();// focus
     let searchTimer;
 searchBox.addEventListener("input", () => {
     clearTimeout(searchTimer);
@@ -725,7 +726,7 @@ searchBox.addEventListener("input", () => {
             top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
             behavior: "smooth"
         });
-    }, 1000); 
+    }, 500); 
 });
     filter.querySelectorAll('.category').forEach((el, index) => {
         el.addEventListener('click', () => {
