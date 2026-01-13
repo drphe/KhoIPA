@@ -1,5 +1,5 @@
 {
-  "name": "Game Arcade - CODEVN",
+  "name": "Game Arcade",
   "identifier": "ios.arcade.repo",
   "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game2.json",
   "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
@@ -910,6 +910,277 @@
       ],
       "versionDate": "2025-03-15T00:00:00+07:00",
       "downloadURL": "http://link.codevn.net/aJRFnCn",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Disney Crossy Road",
+      "type": 1,
+      "bundleIdentifier": "com.disney.disneycrossyroad",
+      "developerName": "HIPSTER WHALE",
+      "subtitle": "Why should the chicken get all the fun?",
+      "localizedDescription": "From Hipster Whale, the makers of the original Crossy Road with over 120,000,000 downloads, and Disney comes Disney Crossy Road, an all-new take on the 8-bit endless adventure to cross the road without splatting! Tap and swipe your way to a record-setting number of steps with 400+ Disney and Pixar figurines while dodging crazy and unexpected obstacles in 8-bit worlds!\n\nCOLLECT over 400+ Disney and Pixar figurines (many with fun surprises)!\nJOURNEY through 8-bit depictions of iconic locations while enjoying 8-bit versions of familiar tunes!\nMASTER special themed challenges unique to each of the worlds and then some!",
+      "versionDescription": "",
+      "tintColor": "#black",
+      "iconURL": "https://static.wikia.nocookie.net/disney/images/f/fd/Disney_Crossy_Road_May_2018_Logo.png/revision/latest?cb=20180602011834",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 76452396,
+      "version": "3.2",
+      "versions": [
+        {
+          "version": "3.2",
+          "date": "2023-10-24T14:00:00-07:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download850.mediafire.com/cxkrx1zm6xhg5ni1onl0i1DcNor_NWArZkc4WUy_6iDG_TkqoR7H7vOaZ3sgWgyy3pfRTITqcr9xbMo1GBJPzs8jVEbzD1gAvefcNdCQY3axV6gk6Pz7rhAXZvpw7cba-RHyWzYJno8ucPjHG2yccrJvW4omUH4GvqY0D-Xe8zq4SO6L/wu0si9i0f21z8ln/Disney-Crossy-Road-Hack.ipa",
+          "size": 76452396,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-10-24T14:00:00-07:00",
+      "downloadURL": "https://download850.mediafire.com/cxkrx1zm6xhg5ni1onl0i1DcNor_NWArZkc4WUy_6iDG_TkqoR7H7vOaZ3sgWgyy3pfRTITqcr9xbMo1GBJPzs8jVEbzD1gAvefcNdCQY3axV6gk6Pz7rhAXZvpw7cba-RHyWzYJno8ucPjHG2yccrJvW4omUH4GvqY0D-Xe8zq4SO6L/wu0si9i0f21z8ln/Disney-Crossy-Road-Hack.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Crossy Road+",
+      "type": 1,
+      "bundleIdentifier": "com.ttv67pc5ks.zlbzin3sq8",
+      "developerName": "Hipster Whale",
+      "subtitle": " The classic hopper re-imagined",
+      "localizedDescription": "Hop back into the adventure with Crossy Road® re-imagined for Apple Arcade.\n\nJoin Crossy Chicken to collect all the characters & discover CROSSY ROAD park.",
+      "versionDescription": "",
+      "tintColor": "#018084",
+      "iconURL": "https://cdn.jim-nielsen.com/ios/512/crossy-road-2022-09-26.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 64095207,
+      "version": "1.0.1",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "date": "2026-01-13",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download944.mediafire.com/vgbuddenouvgERg_sbOLyuljmixd6wfUAQm-L1xIC95PxOxURSh-b9m11GQK-oYKOIKHjFbvPjxazuE31tGJ_wO6wiOaPcTjcZadvMJj0jO7VZrYugsSTpuQN91RUqW3K-ZCn5KUqxC2oJX2tL62q4c8h94SaApsOWyXWulVDXk/dva3wt6tzt2cfzr/Crossy-Road-plus-v1-0-1.ipa",
+          "size": 64095207,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "1.81",
+          "date": "2026-01-13",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1593.mediafire.com/38f67ht5kzpgBh6vf-2wo5j1mYse1PhBf4ADvVQsWOjX7uTgeqJQ0RoOj7a_I8qjhTSEYXQUzsryG4i8NmAl_FbQ6lbjeRj6caDBYjMYhKmQbaatKJe1HfxBGyOLml6bkcusnL7YVLOiFVR5rkXRnbUNFgjem1tsxlvj9j5xxX8/kesx4l9o1h78s7u/Dashy+Square+Lite_1.81_decrypted.ipa",
+          "size": 27629806,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "2.113",
+          "date": "2026-01-13",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1334.mediafire.com/pk26sus11mzg6c_2IFSIvwkF-5PlwV4o9jsV10HNGsRMmFXu5tez8Xi01bcMXeYRrFn9ap19N9mpoZqLNdH7D0wAgPzEB9oUfx2pCJDPv7UvYPxm3ZKkZGZUBIZecjlu3WA9M4uuefYKdzFcZxnIKA5Wc3gbQgWDjs7UPunHHr4/i54kg574lu24fxv/Geometry-Dash-v2-113.ipa",
+          "size": 81682740,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "2.113",
+          "date": "2026-01-13",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1334.mediafire.com/pk26sus11mzg6c_2IFSIvwkF-5PlwV4o9jsV10HNGsRMmFXu5tez8Xi01bcMXeYRrFn9ap19N9mpoZqLNdH7D0wAgPzEB9oUfx2pCJDPv7UvYPxm3ZKkZGZUBIZecjlu3WA9M4uuefYKdzFcZxnIKA5Wc3gbQgWDjs7UPunHHr4/i54kg574lu24fxv/Geometry-Dash-v2-113.ipa",
+          "size": 81682740,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "1.0.2",
+          "date": "2026-01-13",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1529.mediafire.com/vgn2opx74v9gQrzlOO3kGBAPOHDeatrKww-n3B4eqyTIKaKqtpSvp4AVj3IVZIIvH6NvtwzH3mm3Up5cG5SH2P8DiSDd-4gBduAP67UgLYSUiJqjL6t9FXDs3Tm0wKa4ijw-3O4dDDrosYBtpYlKkfzN8CVea6xfYuI4uFAjKh0/s7tw1szwhdverzu/Friday+Night+Funkin.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-13",
+      "downloadURL": "https://download944.mediafire.com/vgbuddenouvgERg_sbOLyuljmixd6wfUAQm-L1xIC95PxOxURSh-b9m11GQK-oYKOIKHjFbvPjxazuE31tGJ_wO6wiOaPcTjcZadvMJj0jO7VZrYugsSTpuQN91RUqW3K-ZCn5KUqxC2oJX2tL62q4c8h94SaApsOWyXWulVDXk/dva3wt6tzt2cfzr/Crossy-Road-plus-v1-0-1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Crossy Road Castle",
+      "type": 1,
+      "bundleIdentifier": "com.yourdeveloper.crossyroadcastle",
+      "developerName": "HIPSTER WHALE",
+      "subtitle": "Bring your friends and see how far you can get in this endless spinning tower of arcade fun!",
+      "localizedDescription": "Bring your friends and see how far you can get in this endless spinning tower of arcade fun!\n\nKeep climbing as high as you can. Every run is different.\n\nHighlights:\n\n- Play Together: Designed for co-operative arcade platforming chaos. You can also play solo, but everything’s more fun with friends, right?\n- Connect Easily: Connect all players on a single device with game controllers, or connect together across multiple devices (or any mix that suits you).\n- Collect Everything: Unlock Crossy Chicken and friends. Dress up in silly hats.\n- Find New Stuff: Each tower run is procedurally generated and will be different every time!\n- Defeat an Oversized Angry Eagle: Why is it so angry?!\n- Play Offline: No internet? No worries. Everything except Challenge Events is enjoyable offline!\n- Get New Content: New Towers and Characters coming regularly!\n- Challenge Events: Test your tower climbing skills and compete for the best score!",
+      "versionDescription": "",
+      "tintColor": "#black",
+      "iconURL": "https://cdn.jim-nielsen.com/ios/512/crossy-road-castle-2020-04-03.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 271161543,
+      "version": "10.0",
+      "versions": [
+        {
+          "version": "10.0",
+          "date": "2023-10-24T14:00:00-07:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1530.mediafire.com/7o9bjfxdb9qgszhacWNzNC0qo4bYw42Xd_kmyQFLe-rn1CLVKHGPqYN0m3RFQvKXCFpFsS5Bv5zt1WmaWzDhD_SdqMsJZvPGwhfCxyvWmb_1kVn3siHcP7dazV224qDhuhGRCebCA2reuXzJ4d5KH2-CuuHpO3OUBTnG1GOEmr-AxhVu/8zkro1ea8bpidyh/Crossy+Road+Castle+%28v10.0%29.ipa",
+          "size": 271161543,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-10-24T14:00:00-07:00",
+      "downloadURL": "https://download1530.mediafire.com/7o9bjfxdb9qgszhacWNzNC0qo4bYw42Xd_kmyQFLe-rn1CLVKHGPqYN0m3RFQvKXCFpFsS5Bv5zt1WmaWzDhD_SdqMsJZvPGwhfCxyvWmb_1kVn3siHcP7dazV224qDhuhGRCebCA2reuXzJ4d5KH2-CuuHpO3OUBTnG1GOEmr-AxhVu/8zkro1ea8bpidyh/Crossy+Road+Castle+%28v10.0%29.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Alto's Odyssey",
+      "type": 1,
+      "bundleIdentifier": "com.noodlecake.altosodyssey",
+      "developerName": "Noodlecake Studios Inc",
+      "subtitle": "An endless sandboarding journey",
+      "localizedDescription": "Embark on an endless sandboarding journey through breathtaking landscapes",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://cdn.jim-nielsen.com/ios/512/altos-odyssey-2018-08-02.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 84074530,
+      "version": "1.2.0",
+      "versions": [
+        {
+          "version": "1.2.0",
+          "date": "2020-03-24T14:00:00-07:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1638.mediafire.com/dzm3sbcgs9bgL5EucFKtDKyngNlK6lFYs4LjFW3NBQ8vWBbQkpiGy8vpYhu7SlkQJLMN1FYnyQXZCpW9KrkUMIi6iT24JgzHx26GcLA6F-1Kjp8JuHr09_jii-gCTZXIh0zgnF_GygKNDXGZn7yMg3pCWdNcRpergf6ny4DLMQZgfNoL/jar01e261i5l557/Alto%5C%27s+Odyssey+%28v1.2.0%29.ipa",
+          "size": 84074530,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2020-03-24T14:00:00-07:00",
+      "downloadURL": "https://download1638.mediafire.com/dzm3sbcgs9bgL5EucFKtDKyngNlK6lFYs4LjFW3NBQ8vWBbQkpiGy8vpYhu7SlkQJLMN1FYnyQXZCpW9KrkUMIi6iT24JgzHx26GcLA6F-1Kjp8JuHr09_jii-gCTZXIh0zgnF_GygKNDXGZn7yMg3pCWdNcRpergf6ny4DLMQZgfNoL/jar01e261i5l557/Alto%5C%27s+Odyssey+%28v1.2.0%29.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Alto's Adventure",
+      "type": 1,
+      "bundleIdentifier": "com.noodlecake.altosadventure",
+      "developerName": "Noodlecake Studios",
+      "subtitle": "A snowboarding adventure",
+      "localizedDescription": "In this gorgeous twist on the infinite runner, you guide an agile snowboarder down a never-ending mountain, pulling off backflips over icy chasms and grinding along rooftops in sleepy villages. Simple one-finger controls make it instantly accessible, but tackling each level’s trio of challenges requires defft reflexes. With its exquisitely rendered visuals, soothing music, and finely tuned gameplay, Alto’s Adventure is simultaneously serene and exciting.",
+      "versionDescription": "",
+      "tintColor": "#018084",
+      "iconURL": "https://play-lh.googleusercontent.com/gxylrEt14mAOWhHLJbuHg7lIa3h8t5tLbXcCZL_ox437C4UVO7Euk9rj6fjGLUdnTWw",
+      "screenshotURLs": [
+        ""
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.3.1",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2020-03-24T14:00:00-07:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1076.mediafire.com/5tbhsntnu2agagdoke3T42FKCehAco7EuqSknth1ZXRWjFQnI1DqjxAAUUw0fEs0Z2BlsHdRi1qmT3k4hkJkTMWiUzyZS2RqSqsVyj6ztip3XjyzlpQYdCxA88D3IpDapwjiZn0yKiRO9moSoa_GP0iRCI4XB4BmNJGUGmrm9Kl4PeoZ/tsoujgjfa8jab7m/Altos-Adventure-v1.3.1.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2020-03-24T14:00:00-07:00",
+      "downloadURL": "https://download1076.mediafire.com/5tbhsntnu2agagdoke3T42FKCehAco7EuqSknth1ZXRWjFQnI1DqjxAAUUw0fEs0Z2BlsHdRi1qmT3k4hkJkTMWiUzyZS2RqSqsVyj6ztip3XjyzlpQYdCxA88D3IpDapwjiZn0yKiRO9moSoa_GP0iRCI4XB4BmNJGUGmrm9Kl4PeoZ/tsoujgjfa8jab7m/Altos-Adventure-v1.3.1.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Universe in a Nutshell",
+      "type": 1,
+      "bundleIdentifier": "com.kurzgesagt.universeinanutshell",
+      "developerName": "Kurzgesagt - In a Nutshell",
+      "subtitle": "Learn science the easy way",
+      "localizedDescription": "The range of size in the universe, from the tiniest particles to the epic galaxies - we take you on a journey of size that let’s you explore it all with a single swipe. How big is a planet, compared to a human? And how small is an atom really? You can’t fully wrap your head around the scope of things by just reading about them – so this app lets you experience them in comparison to get a feeling for their true scale. By simply swiping you can zoom in and out all the way from the world of fundamental particles up to the largest stars at the edge of the observable universe.",
+      "versionDescription": "",
+      "tintColor": "#3399FF",
+      "iconURL": "https://play-lh.googleusercontent.com/HtD1C00v-h6Jf8shU2JObSLTmJ-dFbk1C26YUgN0i0Dpm3YgKDK3OpxCQSQQKb_fiqx_",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 203901870,
+      "version": "1.2",
+      "versions": [
+        {
+          "version": "1.2",
+          "date": "2023-10-24T14:00:00-07:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download1583.mediafire.com/nu35zizws9lgZ1Mc3Xfv1D8xOkvPxUcdoxpWXRgu78w3Z0qFlLrhlzW-MW6mS2Kf5QxrqUrNn1hiZfzNlv9MX4uOlFB37bPkKq0ds2786D12VtyidbTNLy2w0zxF4xTH_HjN35RlCEzU5Ih_cnOCLG2qiew-LbwFt0k1OvkRJQrBNqkK/73fv7kr10nlmsmr/Kurzgezagt+Universe+in+a+Nutshell%281%29.ipa",
+          "size": 203901870,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2023-10-24T14:00:00-07:00",
+      "downloadURL": "https://download1583.mediafire.com/nu35zizws9lgZ1Mc3Xfv1D8xOkvPxUcdoxpWXRgu78w3Z0qFlLrhlzW-MW6mS2Kf5QxrqUrNn1hiZfzNlv9MX4uOlFB37bPkKq0ds2786D12VtyidbTNLy2w0zxF4xTH_HjN35RlCEzU5Ih_cnOCLG2qiew-LbwFt0k1OvkRJQrBNqkK/73fv7kr10nlmsmr/Kurzgezagt+Universe+in+a+Nutshell%281%29.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Monument Valley+",
+      "type": 1,
+      "bundleIdentifier": "com.ustwo.mvarcade",
+      "developerName": "UsTwo2",
+      "subtitle": " A Quest for Forgiveness ",
+      "localizedDescription": "In Monument Valley you will manipulate impossible architecture and guide a silent princess through a stunningly beautiful world.\n\nMonument Valley is a surreal exploration through fantastical architecture and impossible geometry. Guide the silent princess Ida through mysterious monuments, uncovering hidden paths, unfolding optical illusions and outsmarting the enigmatic Crow People.",
+      "versionDescription": "",
+      "tintColor": "#018084",
+      "iconURL": "data:image/jpeg;base64,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",
+      "screenshotURLs": [
+        ""
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 168000000,
+      "version": "2.8.1",
+      "versions": [
+        {
+          "version": "2.8.1",
+          "date": "2020-01-12T17:00:00+07:00",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://download850.mediafire.com/1w71f72ntgqgr_5U1531JnpjyufyU5f7vROiHpQiEwNENcSM5wefrwz4Lw2ITig01C8sctfZBJDNUWJdyoTMu0xDwo281wrD2ssAS8eBp3X3YoaUA4libvP3hKHH-xk8qrDxsJCK6XofR4w-1JK6I9Nb39LS--vVa6BJTRBhPzE/jhw06t6n6lr0b7a/Monument+Valley%2B+%28iOS+13%29+%28v2.8.1.130%29.ipa",
+          "size": 168000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2020-01-12T17:00:00+07:00",
+      "downloadURL": "https://download850.mediafire.com/1w71f72ntgqgr_5U1531JnpjyufyU5f7vROiHpQiEwNENcSM5wefrwz4Lw2ITig01C8sctfZBJDNUWJdyoTMu0xDwo281wrD2ssAS8eBp3X3YoaUA4libvP3hKHH-xk8qrDxsJCK6XofR4w-1JK6I9Nb39LS--vVa6BJTRBhPzE/jhw06t6n6lr0b7a/Monument+Valley%2B+%28iOS+13%29+%28v2.8.1.130%29.ipa",
       "patreon": {}
     }
   ],
