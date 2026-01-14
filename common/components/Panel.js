@@ -187,7 +187,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
       <div class="source-container">
         <a href="${dir}/view/" class="source-link">
           <div class="source">
-          <img src="${altSourceIcon}" onerror="this.onerror=null; this.src='${dir}/common/assets/img/no-img.png';" alt="source-icon">
+          <img src="${altSourceIcon}" class="skeleton-effect-blink skeleton-block" onload="this.classList.remove('skeleton-effect-blink', 'skeleton-block');" onerror="this.onerror=null; this.src='${dir}/common/assets/img/no-img.png';" alt="source-icon">
           <div class="right">
               <div class="text">
               <p class="title">Source</p>

@@ -72,7 +72,6 @@ if ('serviceWorker' in navigator) {
                 if (url && !isValidHTTPURL(url)) jsonNewsUrl.push('./view/note/' + url);
             }
         }
-        jsonNewsUrl.push('./view/index.html');
         prefetchAndCacheUrls(jsonNewsUrl);
         // cuộn ngang
         var swiper = new Swiper(".mySwiperNews", {
@@ -268,7 +267,7 @@ if ('serviceWorker' in navigator) {
 				<a href="./view/?source=${base64Convert(source.url)}" class="source-link">
                     <div class="source" style="background-color: #${source.tintColor.replaceAll("#", "")};
 				margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : ""} 1.5rem 1.5rem;">
-                        <img src="${source.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
+                        <img src="${source.iconURL}" class="skeleton-effect-blink skeleton-block" onload="this.classList.remove('skeleton-effect-blink', 'skeleton-block');" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
                         <div class="right">
                             <div class="text">
                                 <p class="title">${source.name}</p>
