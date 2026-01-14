@@ -4,7 +4,7 @@
   "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game2.json",
   "sourceImage": "https://i.imgur.com/pqIZoZo.jpeg",
   "iconURL": "https://cdn-icons-png.flaticon.com/128/1138/1138847.png",
-  "subtitle": "Kho Game Arcade trích xuất từ Apple Arcade, link trực tiếp từ CODEVN",
+  "subtitle": "Kho Game Arcade trích xuất từ Apple Arcade, game mod",
   "description": "Welcome to my source! Here you'll find all of my apps.",
   "website": "https://ios.codevn.net/category/games/",
   "patreonURL": "https://patreon.com/drphe",
@@ -1250,1175 +1250,3786 @@
       "downloadURL": "https://download1593.mediafire.com/38f67ht5kzpgBh6vf-2wo5j1mYse1PhBf4ADvVQsWOjX7uTgeqJQ0RoOj7a_I8qjhTSEYXQUzsryG4i8NmAl_FbQ6lbjeRj6caDBYjMYhKmQbaatKJe1HfxBGyOLml6bkcusnL7YVLOiFVR5rkXRnbUNFgjem1tsxlvj9j5xxX8/kesx4l9o1h78s7u/Dashy+Square+Lite_1.81_decrypted.ipa",
       "patreon": {}
     },
-  {
-    "name": "Boxes: Lost Fragments MOD IPA",
-    "type": 2,
-    "bundleID": "boxes-lost-fragments-mod-ipa",
-    "bundleIdentifier": "boxes-lost-fragments-mod-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/j9ue/7jZjB5ZdM",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2026/01/orig-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Spider-Man Unlimited IPA",
-    "type": 2,
-    "bundleID": "spider-man-unlimited-ipa",
-    "bundleIdentifier": "spider-man-unlimited-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/qBar/HpDjminA9",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/10/6-1-402684-52-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Sneaky Sasquatch IPA",
-    "type": 2,
-    "bundleID": "sneaky-sasquatch-ipa",
-    "bundleIdentifier": "sneaky-sasquatch-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/76SF/hA3n3uQyh",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/Sneaky-sasquatch-Icon-1-9-8-hospital.webp.png",
-    "version": "1.0"
-  },
-  {
-    "name": "Hello Kitty Island Adventure IPA mod",
-    "type": 2,
-    "bundleID": "hello-kitty-island-adventure-ipa-mod",
-    "bundleIdentifier": "hello-kitty-island-adventure-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/sakk/arMCGeycv",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/1x1-HelloKittyIslandAdventure-image500w-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Enter the Gungeon IPA MOD",
-    "type": 2,
-    "bundleID": "enter-the-gungeon-ipa-mod",
-    "bundleIdentifier": "enter-the-gungeon-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/VLNW/8YAe2mDB1",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/Enter-the-Gungeon-300x300.png",
-    "version": "1.0"
-  },
-  {
-    "name": "Cuphead IPA",
-    "type": 2,
-    "bundleID": "cuphead-ipa",
-    "bundleIdentifier": "cuphead-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/uojp/WBn4VYgYW",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/i-10-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Alien: Isolation IPA",
-    "type": 2,
-    "bundleID": "alien-isolation-ipa",
-    "bundleIdentifier": "alien-isolation-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/kKgb/qHUTRcfDM",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/i-5-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Z.O.N.A Project X IPA MOD",
-    "type": 2,
-    "bundleID": "z-o-n-a-project-x-ipa-mod",
-    "bundleIdentifier": "z-o-n-a-project-x-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/YnQn/Km2wNnxTz",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/512x512bb-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Reporter IPA",
-    "type": 2,
-    "bundleID": "reporter-ipa",
-    "bundleIdentifier": "reporter-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/FAHs/Qvp5KVxgg",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/unnamed-1-300x300.png",
-    "version": "1.0"
-  },
-  {
-    "name": "The Walking Dead IPA",
-    "type": 2,
-    "bundleID": "the-walking-dead-ipa-2",
-    "bundleIdentifier": "the-walking-dead-ipa-2",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/1HeS/bvjx25yia",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/IMG_0042-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Helix Jump+ IPA",
-    "type": 2,
-    "bundleID": "helix-jump-ipa",
-    "bundleIdentifier": "helix-jump-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/y8hs/qK7jcJhcM",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/unnamed-1-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Skate City NY IPA",
-    "type": 2,
-    "bundleID": "skate-city-ny-ipa",
-    "bundleIdentifier": "skate-city-ny-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/LGLY/g88ufMxB6",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/1736843324_avy.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "CASE: Animatronics IPA",
-    "type": 2,
-    "bundleID": "case-animatronics-ipa",
-    "bundleIdentifier": "case-animatronics-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/7pEP/y4r2HZvky",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/CASE-Animatronics-Horror-Game.png",
-    "version": "1.0"
-  },
-  {
-    "name": "Monster Train ipa",
-    "type": 2,
-    "bundleID": "monster-train-ipa",
-    "bundleIdentifier": "monster-train-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "http://monster%20train%20ipa/",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/i-7-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Dirt Trackin 3 IPA",
-    "type": 2,
-    "bundleID": "dirt-trackin-3-ipa",
-    "bundleIdentifier": "dirt-trackin-3-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/y1vg/3HqaMyWFh",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/hqdefault-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Null’s Brawl IPA",
-    "type": 2,
-    "bundleID": "nulls-brawl-ipa",
-    "bundleIdentifier": "nulls-brawl-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/MWgX/KxdB4euKz",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/i-35-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "True Skate IPA",
-    "type": 2,
-    "bundleID": "true-skate-ipa",
-    "bundleIdentifier": "true-skate-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/f5eD/d8pFwQA58",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-27-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Bright Memory: Infinite IPA",
-    "type": 2,
-    "bundleID": "bright-memory-infinite-ipa",
-    "bundleIdentifier": "bright-memory-infinite-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/ozpJ/3YQc5oDgG",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-25-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Real Racing 3 IPA MOD",
-    "type": 2,
-    "bundleID": "real-racing-3-ipa-mod",
-    "bundleIdentifier": "real-racing-3-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/m8o7/TDTVwkxNN",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/IvziHX4m6SrXlMhC4dMBbIa3kPEdwwGuWd5zgV9SwUOeqQup9nKzVnIac-qPdePOi3CbiZXbT3AtIVKBCe9D0RKp-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Harry Potter: Hogwarts Mystery IPA",
-    "type": 2,
-    "bundleID": "harry-potter-hogwarts-mystery-ipa",
-    "bundleIdentifier": "harry-potter-hogwarts-mystery-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/pzbf/kjNVqC9N4",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-12-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Five Nights at Freddy’s 3 IPA",
-    "type": 2,
-    "bundleID": "five-nights-at-freddys-3-ipa",
-    "bundleIdentifier": "five-nights-at-freddys-3-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/S5ad/F14L9AGdh",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-8-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Don’t Starve: Shipwrecked IPA",
-    "type": 2,
-    "bundleID": "dont-starve-shipwrecked-ipa",
-    "bundleIdentifier": "dont-starve-shipwrecked-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/Wu4T/LLvtq1Jde",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-5-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Poppy Playtime: Chapter 1 IPA",
-    "type": 2,
-    "bundleID": "poppy-playtime-chapter-1-ipa",
-    "bundleIdentifier": "poppy-playtime-chapter-1-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/Ckbe/uGrSrMCNp",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/orig-2-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Human: Fall Flat IPA",
-    "type": 2,
-    "bundleID": "human-fall-flat-ipa",
-    "bundleIdentifier": "human-fall-flat-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/53kK/HBB7AUjiZ",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-2-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Bully: Anniversary Edition IPA",
-    "type": 2,
-    "bundleID": "bully-anniversary-edition-ipa",
-    "bundleIdentifier": "bully-anniversary-edition-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/bUaq/TqL9nLBek",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/512x512bb-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Lara Croft GO IPA",
-    "type": 2,
-    "bundleID": "lara-croft-go-ipa",
-    "bundleIdentifier": "lara-croft-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/Vrov/Pb2KabZXy",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/Lara-Croft-Go-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Resident Evil Village IPA",
-    "type": 2,
-    "bundleID": "resident-evil-village-ipa",
-    "bundleIdentifier": "resident-evil-village-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/h9Y7/fCJTCvuFV",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/orig-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Final Outpost IPA",
-    "type": 2,
-    "bundleID": "final-outpost-ipa",
-    "bundleIdentifier": "final-outpost-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/Y966/3DiqihaHD",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-4-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "This Is the Police 2 IPA",
-    "type": 2,
-    "bundleID": "this-is-the-police-2-ipa",
-    "bundleIdentifier": "this-is-the-police-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/neGP/vFJ6bqos7",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/orig-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "This is the Police IPA",
-    "type": 2,
-    "bundleID": "this-is-the-police-ipa",
-    "bundleIdentifier": "this-is-the-police-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/NrHv/G6s8RiTxp",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-3-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Black Border 2 IPA",
-    "type": 2,
-    "bundleID": "black-border-2-ipa",
-    "bundleIdentifier": "black-border-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/5g7Z/Duk7Yn78j",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-2-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Slayaway Camp 2 IPA",
-    "type": 2,
-    "bundleID": "slayaway-camp-2-ipa",
-    "bundleIdentifier": "slayaway-camp-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/EZ36/vcCAiX1M4",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Dungeon Crawler IPA",
-    "type": 2,
-    "bundleID": "dungeon-crawler-ipa",
-    "bundleIdentifier": "dungeon-crawler-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/gqwF/hh6j12B8x",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/capsule-616x353-1-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Poppy Playtime Chapter 4 IPA",
-    "type": 2,
-    "bundleID": "poppy-playtime-chapter-4-ipa",
-    "bundleIdentifier": "poppy-playtime-chapter-4-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/ZReG/REWdz4wy7",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Beholder 2 IPA",
-    "type": 2,
-    "bundleID": "beholder-2-ipa",
-    "bundleIdentifier": "beholder-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/SsBS/pdcWfswrn",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-35-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Dungeon Tracer ipa",
-    "type": 2,
-    "bundleID": "dungeon-tracer-ipa",
-    "bundleIdentifier": "dungeon-tracer-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/2NNt/HXa9VK9xo",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-30-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Final Fantasy IPA",
-    "type": 2,
-    "bundleID": "final-fantasy-ipa",
-    "bundleIdentifier": "final-fantasy-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/nrwj/MgsazVaSg",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-29-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Pocket City 2 IPA",
-    "type": 2,
-    "bundleID": "pocket-city-2-ipa",
-    "bundleIdentifier": "pocket-city-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/HGX8/acydTCiXZ",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-23-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Apple Worm ipa mod",
-    "type": 2,
-    "bundleID": "apple-worm-ipa-mod",
-    "bundleIdentifier": "apple-worm-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/QSXK/PNzUSvomG",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-22-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "REPO ipa",
-    "type": 2,
-    "bundleID": "repo-ipa",
-    "bundleIdentifier": "repo-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/UyRP/9jAoNRUCR",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-19-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Subnautica ipa",
-    "type": 2,
-    "bundleID": "subnautica-ipa",
-    "bundleIdentifier": "subnautica-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/MsyC/B48kvbWEu",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/a87e894a7edf760455bdf4f97a9f2ae6-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "DeathMatch IPA",
-    "type": 2,
-    "bundleID": "deathmatch-ipa",
-    "bundleIdentifier": "deathmatch-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/D3q3/whbZUk58f",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/512x512bb-2-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Geometry Dash IPA MOD",
-    "type": 2,
-    "bundleID": "geometry-dash-ipa-mod",
-    "bundleIdentifier": "geometry-dash-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/C6rF/Rf9eExuHs",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/unnamed-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Лига Мечтателей IPA mod",
-    "type": 2,
-    "bundleID": "%d0%bb%d0%b8%d0%b3%d0%b0-%d0%bc%d0%b5%d1%87%d1%82%d0%b0%d1%82%d0%b5%d0%bb%d0%b5%d0%b9-ipa-mod",
-    "bundleIdentifier": "%d0%bb%d0%b8%d0%b3%d0%b0-%d0%bc%d0%b5%d1%87%d1%82%d0%b0%d1%82%d0%b5%d0%bb%d0%b5%d0%b9-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/32Ua/oJZBneU1M",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-21-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Duskwood MOD IPA",
-    "type": 2,
-    "bundleID": "duskwood-mod-ipa",
-    "bundleIdentifier": "duskwood-mod-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/6bxS/CjG3icXpt",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/230x0w-13.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "The Sims Mobile IPA MOD",
-    "type": 2,
-    "bundleID": "the-sims-mobile-ipa-mod",
-    "bundleIdentifier": "the-sims-mobile-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/WgBM/GTsqBbbLF",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/230x0w-12.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Vampire Survivors IPA MOD",
-    "type": 2,
-    "bundleID": "vampire-survivors-ipa-mod",
-    "bundleIdentifier": "vampire-survivors-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/pB3B/oWtQDf3ER",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/230x0w-7.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "LIMBO + IPA",
-    "type": 2,
-    "bundleID": "limbo-ipa",
-    "bundleIdentifier": "limbo-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/dgtL/5mRBEHpZP",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-11-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Reigns: Beyond IPA",
-    "type": 2,
-    "bundleID": "reigns-beyond-ipa",
-    "bundleIdentifier": "reigns-beyond-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/9KTn/MiQf8VYAB",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-8-2-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Crashlands 2 IPA",
-    "type": 2,
-    "bundleID": "crashlands-2-ipa",
-    "bundleIdentifier": "crashlands-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/FZLC/RJV3q1pLa",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-6-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Monument 2 IPA",
-    "type": 2,
-    "bundleID": "monument-2-ipa",
-    "bundleIdentifier": "monument-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/BC6H/vs1JpHZzB",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/p1-3697062-b5d220c9-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Slay the Spire IPA MOD",
-    "type": 2,
-    "bundleID": "slay-the-spire-ipa-mod",
-    "bundleIdentifier": "slay-the-spire-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/eSXV/vCiynD34R",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/slay-1712769096487-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Mini Motorways IPA",
-    "type": 2,
-    "bundleID": "mini-motorways-ipa",
-    "bundleIdentifier": "mini-motorways-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/zsde/xoyf5jKgM",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/2820fc72060564f0f1ef38ac828792e4-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Junkworld TD IPA",
-    "type": 2,
-    "bundleID": "junkworld-td-ipa",
-    "bundleIdentifier": "junkworld-td-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/WVV5/MyBh4iWm4",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-1-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Hitman GO IPA",
-    "type": 2,
-    "bundleID": "hitman-go-ipa",
-    "bundleIdentifier": "hitman-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/yVNw/1NFGheC2t",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/orig-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "XCOM: Enemy Within IPA",
-    "type": 2,
-    "bundleID": "xcom-enemy-within-ipa",
-    "bundleIdentifier": "xcom-enemy-within-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/1LRC/MdKiJoEcM",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-20-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Angry Birds Classic IPA",
-    "type": 2,
-    "bundleID": "angry-birds-classic-ipa",
-    "bundleIdentifier": "angry-birds-classic-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/szsp/3AobX7mMT",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-4-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "MadFut 25 IPA MOD",
-    "type": 2,
-    "bundleID": "madfut-25-ipa-mod",
-    "bundleIdentifier": "madfut-25-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/HwYB/E38u4z6Dj",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/CPimxjBAJsr-Z8ziJ1wngPewWguj9VJ-F82fLYAG5W1rZ5kONhpkRDuyRlOgdsfilw38e-8wVeydaOADFPE-ejas.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Raft Survival IPA MOD",
-    "type": 2,
-    "bundleID": "raft-survival-ipa-mod",
-    "bundleIdentifier": "raft-survival-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/moZE/5kZW85qbH",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-2-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Soul Knight IPA mod",
-    "type": 2,
-    "bundleID": "soul-knight-ipa-mod",
-    "bundleIdentifier": "soul-knight-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/cLQ5/bouYyzuix",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/9447554ce47d893a8de5441316991c1a-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Plants vs. Zombies 2 IPA mod",
-    "type": 2,
-    "bundleID": "plants-vs-zombies-2-ipa-mod",
-    "bundleIdentifier": "plants-vs-zombies-2-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/BdjA/c38ypYXgD",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/my-favorite-game-2-by-gachaimage12-dio05fl-pre-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Plants vs. Zombies IPA mod",
-    "type": 2,
-    "bundleID": "plants-vs-zombies-ipa-mod",
-    "bundleIdentifier": "plants-vs-zombies-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/4zYC/EXw8Yh6BS",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/artworks-000161259772-1qoeq3-t1080x1080-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Traffic Rider IPA",
-    "type": 2,
-    "bundleID": "traffic-rider-ipa",
-    "bundleIdentifier": "traffic-rider-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/iqQ4/d8MiyQKFN",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/81cQpbGAvL.-AC-UL800-QL65--300x300.jpeg",
-    "version": "1.0"
-  },
-  {
-    "name": "After Inc ipa mod",
-    "type": 2,
-    "bundleID": "after-inc-ipa-mod",
-    "bundleIdentifier": "after-inc-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/XoXb/FgVSeGJy5",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-39-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Last Day on Earth: Survival IPA",
-    "type": 2,
-    "bundleID": "last-day-on-earth-survival-ipa",
-    "bundleIdentifier": "last-day-on-earth-survival-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/DGGB/WAQq9T6Tx",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-37-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Minion Rush IPA",
-    "type": 2,
-    "bundleID": "minion-rush-ipa",
-    "bundleIdentifier": "minion-rush-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/xxEY/wBVadkaAS",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-35-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Don’t Starve: Pocket Edition ipa",
-    "type": 2,
-    "bundleID": "dont-starve-pocket-edition-ipa",
-    "bundleIdentifier": "dont-starve-pocket-edition-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/XNQv/13XrZrUtA",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-33-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Worms 3 IPA",
-    "type": 2,
-    "bundleID": "worms-3-ipa",
-    "bundleIdentifier": "worms-3-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/4RpU/s1vGaZJi4",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/71XyOmr4ubL.-AC-UL800-QL65--300x300.jpeg",
-    "version": "1.0"
-  },
-  {
-    "name": "Papa’s Sushiria To Go IPA",
-    "type": 2,
-    "bundleID": "papas-sushiria-to-go-ipa",
-    "bundleIdentifier": "papas-sushiria-to-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/hc64/9f2VXEpa1",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/71Oxh4KV4WL.-AC-UL800-QL65--300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Papa’s Burgeria To Go IPA",
-    "type": 2,
-    "bundleID": "papas-burgeria-to-go-ipa",
-    "bundleIdentifier": "papas-burgeria-to-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/31t7/VAsUbgBpN",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-16-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Papa’s Pancakeria To Go IPA",
-    "type": 2,
-    "bundleID": "papas-pancakeria-to-go-ipa",
-    "bundleIdentifier": "papas-pancakeria-to-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/pmvq/qEu5uJmxf",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-15-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Papa’s Cluckeria To Go IPA",
-    "type": 2,
-    "bundleID": "papas-cluckeria-to-go-ipa",
-    "bundleIdentifier": "papas-cluckeria-to-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/wUiV/4oeUYCJsk",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/81s6APpvA8L.-AC-UL960-QL65--300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Papa’s Wingeria To Go IPA",
-    "type": 2,
-    "bundleID": "papas-wingeria-to-go-ipa",
-    "bundleIdentifier": "papas-wingeria-to-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/NgK1/bNE7YizXb",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-12-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Papa’s Donuteria To Go IPA",
-    "type": 2,
-    "bundleID": "papas-donuteria-to-go-ipa",
-    "bundleIdentifier": "papas-donuteria-to-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/1pYa/z1aykMyfH",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-10-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Papa’s Pizzeria To Go ipa",
-    "type": 2,
-    "bundleID": "papas-pizzeria-to-go-ipa",
-    "bundleIdentifier": "papas-pizzeria-to-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/iokd/7zVC8XRPQ",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/maxresdefault-1-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Papa’s Hot Doggeria To Go IPA",
-    "type": 2,
-    "bundleID": "papas-hot-doggeria-to-go-ipa",
-    "bundleIdentifier": "papas-hot-doggeria-to-go-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/b8zJ/Dk8fmGZq9",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-7-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Half-Life 1 IPA",
-    "type": 2,
-    "bundleID": "half-life-1-ipa",
-    "bundleIdentifier": "half-life-1-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/RmZL/krZpA4Fwq",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/1732989909-new-preview-1686406108-new-preview-%D0%91%D0%B5%D0%B7%D1%96%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%B9-300x300.png",
-    "version": "1.0"
-  },
-  {
-    "name": "Stardew Valley IPA",
-    "type": 2,
-    "bundleID": "stardew-valley-ipa",
-    "bundleIdentifier": "stardew-valley-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/BUqo/cn35whdFu",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/512x512bb-2-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Sid Meier’s Civilization VI IPA mod",
-    "type": 2,
-    "bundleID": "sid-meiers-civilization-vi-ipa-mod",
-    "bundleIdentifier": "sid-meiers-civilization-vi-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/AqoK/gjHFREmoz",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/orig-2-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Tropico IPA MOD",
-    "type": 2,
-    "bundleID": "tropico-ipa-mod",
-    "bundleIdentifier": "tropico-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/k66P/irxtXVVav",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-3-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Office Cat: Idle Tycoon Game IPA mod",
-    "type": 2,
-    "bundleID": "office-cat-idle-tycoon-game-ipa-mod",
-    "bundleIdentifier": "office-cat-idle-tycoon-game-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/o5sL/T5yeWtWKy",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "The Escapists 2 IPA",
-    "type": 2,
-    "bundleID": "the-escapists-2-ipa",
-    "bundleIdentifier": "the-escapists-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/SyMt/cppQVNof1",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/The-Escapists-2-logo-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "The Escapists IPA mod",
-    "type": 2,
-    "bundleID": "the-escapists-ipa-mod",
-    "bundleIdentifier": "the-escapists-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/fdox/wMnvdNi1r",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-21-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "WorldBox IPA mod",
-    "type": 2,
-    "bundleID": "worldbox-ipa-mod",
-    "bundleIdentifier": "worldbox-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/vo7q/vAaXF5i8F",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-20-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "The Binding of Isaac IPA",
-    "type": 2,
-    "bundleID": "the-binding-of-isaac-ipa",
-    "bundleIdentifier": "the-binding-of-isaac-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/xfma/mjpAZK68n",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/maxresdefault-3-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Carrion IPA MOD",
-    "type": 2,
-    "bundleID": "carrion-ipa-mod",
-    "bundleIdentifier": "carrion-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/t9jD/4iMM5qrqr",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/orig-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "BADLAND 2 IPA",
-    "type": 2,
-    "bundleID": "badland-2-ipa",
-    "bundleIdentifier": "badland-2-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/aECz/N2C62KTCK",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-19-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "BADLAND IPA",
-    "type": 2,
-    "bundleID": "badland-ipa",
-    "bundleIdentifier": "badland-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/qMJH/wq5MPjEVy",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/unnamed-2-300x300.png",
-    "version": "1.0"
-  },
-  {
-    "name": "I Am Your Beast IPA MOD",
-    "type": 2,
-    "bundleID": "i-am-your-beast-ipa-mod",
-    "bundleIdentifier": "i-am-your-beast-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/3jxS/waXrBLjja",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/capsule-616x353-1-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Toca Boca World IPA MOD",
-    "type": 2,
-    "bundleID": "toca-boca-world-ipa-mod",
-    "bundleIdentifier": "toca-boca-world-ipa-mod",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/81hWyiEioTL.-AC-UL960-QL65--300x300.jpeg",
-    "version": "1.0"
-  },
-  {
-    "name": "Grand Theft Auto: Vice City – The Definitive Edition IPA",
-    "type": 2,
-    "bundleID": "grand-theft-auto-vice-city-the-definitive-edition-ipa",
-    "bundleIdentifier": "grand-theft-auto-vice-city-the-definitive-edition-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/RzrK/eDUJWCbkN",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-15-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "GTA: San Andreas The Definitive Edition IPA",
-    "type": 2,
-    "bundleID": "gta-san-andreas-the-definitive-edition-ipa",
-    "bundleIdentifier": "gta-san-andreas-the-definitive-edition-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/qmRC/mjWjN1Mf2",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/Grand-Theft-Auto-The-Trilogy-The-Definitive-Edition-logo.svg_-300x300.png",
-    "version": "1.0"
-  },
-  {
-    "name": "Grand Theft Auto III: The Definitive Edition IPA",
-    "type": 2,
-    "bundleID": "grand-theft-auto-iii-the-definitive-edition-ipa",
-    "bundleIdentifier": "grand-theft-auto-iii-the-definitive-edition-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/uBuz/LQ7buarg6",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/1699989537-new-preview-Grand-Theft-Auto-III-The-Definitive-Edition-logo.svg_-300x300.png",
-    "version": "1.0"
-  },
-  {
-    "name": "Balatro IPA",
-    "type": 2,
-    "bundleID": "balatro-ipa",
-    "bundleIdentifier": "balatro-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/Bfw8/rEzDW8kC8",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/orig-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Subway City ipa MOD",
-    "type": 2,
-    "bundleID": "subway-city-ipa-mod",
-    "bundleIdentifier": "subway-city-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/VQtK/hMLht78jj",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-21-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Клуб романтики mod ipa",
-    "type": 2,
-    "bundleID": "%d0%ba%d0%bb%d1%83%d0%b1-%d1%80%d0%be%d0%bc%d0%b0%d0%bd%d1%82%d0%b8%d0%ba%d0%b8-mod-ipa",
-    "bundleIdentifier": "%d0%ba%d0%bb%d1%83%d0%b1-%d1%80%d0%be%d0%bc%d0%b0%d0%bd%d1%82%d0%b8%d0%ba%d0%b8-mod-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/Xu74/S8vvEXGYm",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-18-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Car Parking Multiplayer IPA MOD",
-    "type": 2,
-    "bundleID": "car-parking-multiplayer-ipa-mod",
-    "bundleIdentifier": "car-parking-multiplayer-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/6pce/K3wvSFMvQ",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/image-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Dead Cells IPA MOD",
-    "type": 2,
-    "bundleID": "dead-cells-ipa-mod",
-    "bundleIdentifier": "dead-cells-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/EsCn/7kRfZsw5V",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-14-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Bloons TD 6 IPA MOD",
-    "type": 2,
-    "bundleID": "bloons-td-6-ipa-mod",
-    "bundleIdentifier": "bloons-td-6-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/HpGs/ZTY3Aj5vj",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/unnamed-1-300x300.png",
-    "version": "1.0"
-  },
-  {
-    "name": "Hungry Shark Evolution ipa MOD",
-    "type": 2,
-    "bundleID": "hungry-shark-evolution-ipa-mod",
-    "bundleIdentifier": "hungry-shark-evolution-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/TM6T/dKvBW541c",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-9-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Roblox IPA Cheat DELTA",
-    "type": 2,
-    "bundleID": "roblox-ipa-cheat-delta",
-    "bundleIdentifier": "roblox-ipa-cheat-delta",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/aq93/kC4jjmxGD",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/d453c1fe191638fbd724324d7b24f1bc-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Pou IPA MOD",
-    "type": 2,
-    "bundleID": "pou-ipa-mod",
-    "bundleIdentifier": "pou-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/U8e2/CFadz29Cm",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-7-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Hitman Sniper IPA MOD",
-    "type": 2,
-    "bundleID": "hitman-sniper-ipa-mod",
-    "bundleIdentifier": "hitman-sniper-ipa-mod",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-6-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Earn to Die 2 IPA",
-    "type": 2,
-    "bundleID": "earn-to-die-2-ipa",
-    "bundleIdentifier": "earn-to-die-2-ipa",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-13-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Vector 2 Premium IPA",
-    "type": 2,
-    "bundleID": "vector-2-premium-ipa",
-    "bundleIdentifier": "vector-2-premium-ipa",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-12-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Vector Classic mod ipa",
-    "type": 2,
-    "bundleID": "vector-classic-mod-ipa",
-    "bundleIdentifier": "vector-classic-mod-ipa",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-11-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Smash Hit MOD ipa",
-    "type": 2,
-    "bundleID": "smash-hit-mod-ipa",
-    "bundleIdentifier": "smash-hit-mod-ipa",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-5-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Terraria ipa",
-    "type": 2,
-    "bundleID": "terraria-ipa",
-    "bundleIdentifier": "terraria-ipa",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-4-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Papers, Please ipa",
-    "type": 2,
-    "bundleID": "papers-please-ipa",
-    "bundleIdentifier": "papers-please-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/iuM1/LvAqBYZGt",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/1498609341-preview-GuidePapersPlease-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Hungry Shark World IPA MOD",
-    "type": 2,
-    "bundleID": "hungry-shark-world-ipa-mod",
-    "bundleIdentifier": "hungry-shark-world-ipa-mod",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/04/i-8-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Minecraft ipa",
-    "type": 2,
-    "bundleID": "minecraft-ipa",
-    "bundleIdentifier": "minecraft-ipa",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/04/52536c15e7a102b7d6e3376ac99618df-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Fortnite IPA",
-    "type": 2,
-    "bundleID": "fortnite-ipa",
-    "bundleIdentifier": "fortnite-ipa",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/04/i-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Good Pizza IPA MOD",
-    "type": 2,
-    "bundleID": "good-pizza-ipa-mod",
-    "bundleIdentifier": "good-pizza-ipa-mod",
-    "description": "IPA Mod",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/04/GPGP_logo_2048x-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Last Day on Earth: Survival IPA",
-    "type": 2,
-    "bundleID": "last-day-on-earth-survival-ipa",
-    "bundleIdentifier": "last-day-on-earth-survival-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/DGGB/WAQq9T6Tx",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-37-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Hello Kitty Island Adventure IPA mod",
-    "type": 2,
-    "bundleID": "hello-kitty-island-adventure-ipa-mod",
-    "bundleIdentifier": "hello-kitty-island-adventure-ipa-mod",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/sakk/arMCGeycv",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/1x1-HelloKittyIslandAdventure-image500w-300x300.jpg",
-    "version": "1.0"
-  },
-  {
-    "name": "Don’t Starve: Shipwrecked IPA",
-    "type": 2,
-    "bundleID": "dont-starve-shipwrecked-ipa",
-    "bundleIdentifier": "dont-starve-shipwrecked-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/Wu4T/LLvtq1Jde",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-5-1-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Balatro IPA",
-    "type": 2,
-    "bundleID": "balatro-ipa",
-    "bundleIdentifier": "balatro-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/Bfw8/rEzDW8kC8",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/orig-300x300.webp",
-    "version": "1.0"
-  },
-  {
-    "name": "Human: Fall Flat IPA",
-    "type": 2,
-    "bundleID": "human-fall-flat-ipa",
-    "bundleIdentifier": "human-fall-flat-ipa",
-    "description": "IPA Mod",
-    "downloadURL": "https://cloud.mail.ru/public/53kK/HBB7AUjiZ",
-    "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-2-1-300x300.webp",
-    "version": "1.0"
-  }
+    {
+      "beta": false,
+      "name": "Boxes: Lost Fragments MOD IPA",
+      "type": 2,
+      "bundleIdentifier": "com.snapbreak.boxes",
+      "developerName": "hiz-ipa.ru",
+      "subtitle": "Game mod",
+      "localizedDescription": "",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2026/01/orig-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 657400000,
+      "version": "1.47",
+      "versions": [
+        {
+          "downloadURL": "https://t.me/HIZ_IPA_IOS/1846",
+          "size": 657400000,
+          "version": "1.47",
+          "buildVersion": "",
+          "date": "2026-01-14T05:09:00+07:00",
+          "localizedDescription": "No description",
+          "minOSVersion": null
+        },
+        {
+          "version": "1.4.1",
+          "date": "2026-01-09T17:00:00+07:00",
+          "localizedDescription": "🔓 Mở khóa toàn bộ trò chơi\n🛒 Mua hàng\n🚫 trong ứng dụng miễn phí Không có quảng cáo\n🔓 xâm nhập Truy cập vào tất cả các đoạn mã ẩn",
+          "downloadURL": "https://cloud.mail.ru/public/j9ue/7jZjB5ZdM",
+          "size": 850000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14T05:09:00+07:00",
+      "downloadURL": "https://t.me/HIZ_IPA_IOS/1846",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "MARVEL Spider-Man Unlimited",
+      "type": 2,
+      "bundleIdentifier": "com.gameloft.spiderman",
+      "developerName": "Unknow",
+      "subtitle": "Remove from store",
+      "localizedDescription": "About MARVEL Spider-Man Unlimited\n*** OVER 200 CHARACTERS FROM THE SPIDER-VERSE TO PLAY! ***\n\nCollect and unite every Spider-Man and Spider-Woman against the ultimate threat in a story-driven endless runner!\n\nExperience a story that feels like it jumped straight from a Marvel comic as you recruit an army of heroes in the Spider-Verse. Combat the new Sinister Six, who have opened a dimensional portal in New York to summon endless versions of themselves! This exponential evil is moving from dimension to dimension, destroying each one. Now ours is fighting to survive!\n\nTHE GREEN GOBLIN (ISSUE 1), THE VULTURE (ISSUE 2), ELECTRO (ISSUE 3), SANDMAN (ISSUE 4), DOC OCK (ISSUE 5), AND MYSTERIO (ISSUE 6) ARE HERE! What awaits you after the Sinister Six? Stay tuned to find out…\n\nTHE FIRST FREE SPIDER-MAN GAME!\n• Enjoy the thrill of the first Spider-Man web-runner! Swing, run and fight through chaotic Manhattan in over 7 different Marvel environments!\n• Go beyond a runner with unique gameplay! Fight in battles against dimensional super villains, swing, wall-climb and skydive!\n• Play Story mode with 5 boss battles and 25 missions per Issue! New daily and weekly events with spectacular rewards in Events mode! Or climb up the leaderboards in Unlimited mode!\n\nTHE FIRST NARRATIVE RUNNER!\n• A continuing episodic adventure: The Sinister Six are moving from dimension to dimension, destroying everything in their path – and our world is next! But it ends now… with an army of Spider-Men and Spider-Women!\n• Dive into an extensive Marvel Universe spanning over 50 years of Spider-Man with iconic characters, including dimensional Spideys, multiple variations of each villain, as well as Nick Fury, Mary Jane Watson, and Black Cat!\n• Written with an experienced Spider-Man comic writer to ensure a faithful recreation of the Spider-Man comics!\n\nTHE MOST SPIDEYS EVER IN A GAME… INCLUDING NEW SPIDER-WOMEN!\n• Summon, collect and play as tons of Spider-Men and Spider-Women featured throughout the Marvel Universe, including Superior Spider-Man, Spider-Gwen, Scarlet Spider, and Ultimate Spider-Man!\n• Collect, fuse, and level up your Spidey cards, each with its own unique in-game benefit, and send them on Spidey Ops missions around Manhattan!\n• CONSISTENT RELEASE OF NEW SPIDER-MAN CHARACTERS!",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/10/6-1-402684-52-300x300.jpg",
+      "screenshotURLs": [
+        "https://image.winudf.com/v2/image1/MjA4MTU2NTlfMTY4MjE0MDc2NV8wMTI/screen-0.png?fakeurl=1&type=webp",
+        "https://image.winudf.com/v2/image1/MjA4MTU2NTlfMTY4MjE0MDc2Nl8wMTI/screen-1.png?fakeurl=1&type=webp",
+        "https://image.winudf.com/v2/image1/MjA4MTU2NTlfMTY4MjE0MDc2OF8wMDM/screen-2.png?fakeurl=1&type=webp",
+        "https://image.winudf.com/v2/image1/MjA4MTU2NTlfMTY4MjE0MDc2OV8wNzk/screen-3.png?fakeurl=1&type=webp",
+        "https://image.winudf.com/v2/image1/MjA4MTU2NTlfMTY4MjE0MDc3Ml8wOTM/screen-4.png?fakeurl=1&type=webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 350000000,
+      "version": "4.6.0",
+      "versions": [
+        {
+          "version": "4.6.0",
+          "date": "2018-12-17T18:00:00+07:00",
+          "localizedDescription": "Tiền xu và pha lê vô hạn\nTất cả trang phục và anh hùng đều được mở khóa\nKhông hạn chế năng lượng",
+          "downloadURL": "https://cloud.mail.ru/public/qBar/HpDjminA9",
+          "size": 350000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2018-12-17T18:00:00+07:00",
+      "downloadURL": "https://cloud.mail.ru/public/qBar/HpDjminA9",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Sneaky Sasquatch",
+      "type": 2,
+      "bundleIdentifier": "com.rac7.SneakySasquatch",
+      "developerName": "Unknow",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/Sneaky-sasquatch-Icon-1-9-8-hospital.webp.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 338000000,
+      "version": "2.06",
+      "versions": [
+        {
+          "version": "2.06",
+          "date": "2026-01-14T00:00:00+07:00",
+          "localizedDescription": " Vàng vô hạn và mọi thứ đã được mở khóa\nMọi thứ đã được mở khóa\nHệ thống đói bị vô hiệu hóa",
+          "downloadURL": "https://cloud.mail.ru/public/76SF/hA3n3uQyh",
+          "size": 338000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14T00:00:00+07:00",
+      "downloadURL": "https://cloud.mail.ru/public/76SF/hA3n3uQyh",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Hello Kitty Island Adventure",
+      "type": 2,
+      "bundleIdentifier": "com.SunblinkEntertainment.HelloKitty",
+      "developerName": "Unknow",
+      "subtitle": "IGG - Tất cả các tính năng đã được mở khóa",
+      "localizedDescription": "",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/1x1-HelloKittyIslandAdventure-image500w-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 450000000,
+      "version": "1.35",
+      "versions": [
+        {
+          "version": "1.35",
+          "date": "2025-09-14T00:00:00+07:00",
+          "localizedDescription": "IGG - Tất cả các giao dịch mua đã được mở khóa\nTiền tệ và vật phẩm vô hạn\nNội dung đầy đủ không giới hạn",
+          "downloadURL": "https://cloud.mail.ru/public/sakk/arMCGeycv",
+          "size": 450000000,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2025-09-14T00:00:00+07:00",
+      "downloadURL": "https://cloud.mail.ru/public/sakk/arMCGeycv",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Enter the Gungeon IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "enter-the-gungeon-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/Enter-the-Gungeon-300x300.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/VLNW/8YAe2mDB1",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/VLNW/8YAe2mDB1",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Cuphead IPA",
+      "type": 2,
+      "bundleIdentifier": "cuphead-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/09/i-10-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/uojp/WBn4VYgYW",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/uojp/WBn4VYgYW",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Alien: Isolation IPA",
+      "type": 2,
+      "bundleIdentifier": "alien-isolation-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/i-5-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/kKgb/qHUTRcfDM",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/kKgb/qHUTRcfDM",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Z.O.N.A Project X IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "z-o-n-a-project-x-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/512x512bb-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/YnQn/Km2wNnxTz",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/YnQn/Km2wNnxTz",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Reporter IPA",
+      "type": 2,
+      "bundleIdentifier": "reporter-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/unnamed-1-300x300.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/FAHs/Qvp5KVxgg",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/FAHs/Qvp5KVxgg",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "The Walking Dead IPA",
+      "type": 2,
+      "bundleIdentifier": "the-walking-dead-ipa-2",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/IMG_0042-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/1HeS/bvjx25yia",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/1HeS/bvjx25yia",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Helix Jump+ IPA",
+      "type": 2,
+      "bundleIdentifier": "helix-jump-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/unnamed-1-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/y8hs/qK7jcJhcM",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/y8hs/qK7jcJhcM",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Skate City NY IPA",
+      "type": 2,
+      "bundleIdentifier": "skate-city-ny-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/1736843324_avy.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/LGLY/g88ufMxB6",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/LGLY/g88ufMxB6",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "CASE: Animatronics IPA",
+      "type": 2,
+      "bundleIdentifier": "case-animatronics-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/CASE-Animatronics-Horror-Game.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/7pEP/y4r2HZvky",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/7pEP/y4r2HZvky",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Monster Train ipa",
+      "type": 2,
+      "bundleIdentifier": "monster-train-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/i-7-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "http://monster%20train%20ipa/",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "http://monster%20train%20ipa/",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dirt Trackin 3 IPA",
+      "type": 2,
+      "bundleIdentifier": "dirt-trackin-3-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/hqdefault-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/y1vg/3HqaMyWFh",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/y1vg/3HqaMyWFh",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Null’s Brawl IPA",
+      "type": 2,
+      "bundleIdentifier": "nulls-brawl-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/08/i-35-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/MWgX/KxdB4euKz",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/MWgX/KxdB4euKz",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "True Skate IPA",
+      "type": 2,
+      "bundleIdentifier": "true-skate-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-27-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/f5eD/d8pFwQA58",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/f5eD/d8pFwQA58",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Bright Memory: Infinite IPA",
+      "type": 2,
+      "bundleIdentifier": "bright-memory-infinite-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-25-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/ozpJ/3YQc5oDgG",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/ozpJ/3YQc5oDgG",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Real Racing 3 IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "real-racing-3-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/IvziHX4m6SrXlMhC4dMBbIa3kPEdwwGuWd5zgV9SwUOeqQup9nKzVnIac-qPdePOi3CbiZXbT3AtIVKBCe9D0RKp-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/m8o7/TDTVwkxNN",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/m8o7/TDTVwkxNN",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Harry Potter: Hogwarts Mystery IPA",
+      "type": 2,
+      "bundleIdentifier": "harry-potter-hogwarts-mystery-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-12-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/pzbf/kjNVqC9N4",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/pzbf/kjNVqC9N4",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Five Nights at Freddy’s 3 IPA",
+      "type": 2,
+      "bundleIdentifier": "five-nights-at-freddys-3-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-8-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/S5ad/F14L9AGdh",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/S5ad/F14L9AGdh",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Don’t Starve: Shipwrecked IPA",
+      "type": 2,
+      "bundleIdentifier": "dont-starve-shipwrecked-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-5-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/Wu4T/LLvtq1Jde",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/Wu4T/LLvtq1Jde",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/Wu4T/LLvtq1Jde",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Poppy Playtime: Chapter 1 IPA",
+      "type": 2,
+      "bundleIdentifier": "poppy-playtime-chapter-1-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/orig-2-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/Ckbe/uGrSrMCNp",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/Ckbe/uGrSrMCNp",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Human: Fall Flat IPA",
+      "type": 2,
+      "bundleIdentifier": "human-fall-flat-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-2-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/53kK/HBB7AUjiZ",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/53kK/HBB7AUjiZ",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/53kK/HBB7AUjiZ",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Bully: Anniversary Edition IPA",
+      "type": 2,
+      "bundleIdentifier": "bully-anniversary-edition-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/512x512bb-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/bUaq/TqL9nLBek",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/bUaq/TqL9nLBek",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Lara Croft GO IPA",
+      "type": 2,
+      "bundleIdentifier": "lara-croft-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/Lara-Croft-Go-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/Vrov/Pb2KabZXy",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/Vrov/Pb2KabZXy",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Resident Evil Village IPA",
+      "type": 2,
+      "bundleIdentifier": "resident-evil-village-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/orig-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/h9Y7/fCJTCvuFV",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/h9Y7/fCJTCvuFV",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Final Outpost IPA",
+      "type": 2,
+      "bundleIdentifier": "final-outpost-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-4-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/Y966/3DiqihaHD",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/Y966/3DiqihaHD",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "This Is the Police 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "this-is-the-police-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/orig-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/neGP/vFJ6bqos7",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/neGP/vFJ6bqos7",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "This is the Police IPA",
+      "type": 2,
+      "bundleIdentifier": "this-is-the-police-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-3-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/NrHv/G6s8RiTxp",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/NrHv/G6s8RiTxp",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Black Border 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "black-border-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-2-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/5g7Z/Duk7Yn78j",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/5g7Z/Duk7Yn78j",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Slayaway Camp 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "slayaway-camp-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/EZ36/vcCAiX1M4",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/EZ36/vcCAiX1M4",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dungeon Crawler IPA",
+      "type": 2,
+      "bundleIdentifier": "dungeon-crawler-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/capsule-616x353-1-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/gqwF/hh6j12B8x",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/gqwF/hh6j12B8x",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Poppy Playtime Chapter 4 IPA",
+      "type": 2,
+      "bundleIdentifier": "poppy-playtime-chapter-4-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/ZReG/REWdz4wy7",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/ZReG/REWdz4wy7",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Beholder 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "beholder-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-35-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/SsBS/pdcWfswrn",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/SsBS/pdcWfswrn",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dungeon Tracer ipa",
+      "type": 2,
+      "bundleIdentifier": "dungeon-tracer-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-30-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/2NNt/HXa9VK9xo",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/2NNt/HXa9VK9xo",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Final Fantasy IPA",
+      "type": 2,
+      "bundleIdentifier": "final-fantasy-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-29-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/nrwj/MgsazVaSg",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/nrwj/MgsazVaSg",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Pocket City 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "pocket-city-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-23-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/HGX8/acydTCiXZ",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/HGX8/acydTCiXZ",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Apple Worm ipa mod",
+      "type": 2,
+      "bundleIdentifier": "apple-worm-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-22-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/QSXK/PNzUSvomG",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/QSXK/PNzUSvomG",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "REPO ipa",
+      "type": 2,
+      "bundleIdentifier": "repo-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/i-19-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/UyRP/9jAoNRUCR",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/UyRP/9jAoNRUCR",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Subnautica ipa",
+      "type": 2,
+      "bundleIdentifier": "subnautica-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/a87e894a7edf760455bdf4f97a9f2ae6-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/MsyC/B48kvbWEu",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/MsyC/B48kvbWEu",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "DeathMatch IPA",
+      "type": 2,
+      "bundleIdentifier": "deathmatch-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/07/512x512bb-2-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/D3q3/whbZUk58f",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/D3q3/whbZUk58f",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Geometry Dash IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "geometry-dash-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/unnamed-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/C6rF/Rf9eExuHs",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/C6rF/Rf9eExuHs",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Лига Мечтателей IPA mod",
+      "type": 2,
+      "bundleIdentifier": "com.zo7miuonlb.s8lok2csf6",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-21-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/32Ua/oJZBneU1M",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/32Ua/oJZBneU1M",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Duskwood MOD IPA",
+      "type": 2,
+      "bundleIdentifier": "duskwood-mod-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/230x0w-13.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/6bxS/CjG3icXpt",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/6bxS/CjG3icXpt",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "The Sims Mobile IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "the-sims-mobile-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/230x0w-12.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/WgBM/GTsqBbbLF",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/WgBM/GTsqBbbLF",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Vampire Survivors IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "vampire-survivors-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/230x0w-7.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/pB3B/oWtQDf3ER",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/pB3B/oWtQDf3ER",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "LIMBO + IPA",
+      "type": 2,
+      "bundleIdentifier": "limbo-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-11-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/dgtL/5mRBEHpZP",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/dgtL/5mRBEHpZP",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Reigns: Beyond IPA",
+      "type": 2,
+      "bundleIdentifier": "reigns-beyond-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-8-2-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/9KTn/MiQf8VYAB",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/9KTn/MiQf8VYAB",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Crashlands 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "crashlands-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-6-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/FZLC/RJV3q1pLa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/FZLC/RJV3q1pLa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Monument 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "monument-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/p1-3697062-b5d220c9-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/BC6H/vs1JpHZzB",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/BC6H/vs1JpHZzB",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Slay the Spire IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "slay-the-spire-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/slay-1712769096487-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/eSXV/vCiynD34R",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/eSXV/vCiynD34R",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Mini Motorways IPA",
+      "type": 2,
+      "bundleIdentifier": "mini-motorways-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/2820fc72060564f0f1ef38ac828792e4-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/zsde/xoyf5jKgM",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/zsde/xoyf5jKgM",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Junkworld TD IPA",
+      "type": 2,
+      "bundleIdentifier": "junkworld-td-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-1-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/WVV5/MyBh4iWm4",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/WVV5/MyBh4iWm4",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Hitman GO IPA",
+      "type": 2,
+      "bundleIdentifier": "hitman-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/orig-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/yVNw/1NFGheC2t",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/yVNw/1NFGheC2t",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "XCOM: Enemy Within IPA",
+      "type": 2,
+      "bundleIdentifier": "xcom-enemy-within-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-20-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/1LRC/MdKiJoEcM",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/1LRC/MdKiJoEcM",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Angry Birds Classic IPA",
+      "type": 2,
+      "bundleIdentifier": "angry-birds-classic-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-4-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/szsp/3AobX7mMT",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/szsp/3AobX7mMT",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "MadFut 25 IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "madfut-25-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/CPimxjBAJsr-Z8ziJ1wngPewWguj9VJ-F82fLYAG5W1rZ5kONhpkRDuyRlOgdsfilw38e-8wVeydaOADFPE-ejas.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/HwYB/E38u4z6Dj",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/HwYB/E38u4z6Dj",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Raft Survival IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "raft-survival-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-2-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/moZE/5kZW85qbH",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/moZE/5kZW85qbH",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Soul Knight IPA mod",
+      "type": 2,
+      "bundleIdentifier": "soul-knight-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/9447554ce47d893a8de5441316991c1a-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/cLQ5/bouYyzuix",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/cLQ5/bouYyzuix",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Plants vs. Zombies 2 IPA mod",
+      "type": 2,
+      "bundleIdentifier": "plants-vs-zombies-2-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/my-favorite-game-2-by-gachaimage12-dio05fl-pre-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/BdjA/c38ypYXgD",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/BdjA/c38ypYXgD",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Plants vs. Zombies IPA mod",
+      "type": 2,
+      "bundleIdentifier": "plants-vs-zombies-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/artworks-000161259772-1qoeq3-t1080x1080-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/4zYC/EXw8Yh6BS",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/4zYC/EXw8Yh6BS",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Traffic Rider IPA",
+      "type": 2,
+      "bundleIdentifier": "traffic-rider-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/81cQpbGAvL.-AC-UL800-QL65--300x300.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/iqQ4/d8MiyQKFN",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/iqQ4/d8MiyQKFN",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "After Inc ipa mod",
+      "type": 2,
+      "bundleIdentifier": "after-inc-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-39-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/XoXb/FgVSeGJy5",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/XoXb/FgVSeGJy5",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Last Day on Earth: Survival IPA",
+      "type": 2,
+      "bundleIdentifier": "last-day-on-earth-survival-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-37-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/DGGB/WAQq9T6Tx",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/DGGB/WAQq9T6Tx",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/DGGB/WAQq9T6Tx",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Minion Rush IPA",
+      "type": 2,
+      "bundleIdentifier": "minion-rush-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-35-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/xxEY/wBVadkaAS",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/xxEY/wBVadkaAS",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Don’t Starve: Pocket Edition ipa",
+      "type": 2,
+      "bundleIdentifier": "dont-starve-pocket-edition-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-33-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/XNQv/13XrZrUtA",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/XNQv/13XrZrUtA",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Worms 3 IPA",
+      "type": 2,
+      "bundleIdentifier": "worms-3-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/71XyOmr4ubL.-AC-UL800-QL65--300x300.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/4RpU/s1vGaZJi4",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/4RpU/s1vGaZJi4",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papa’s Sushiria To Go IPA",
+      "type": 2,
+      "bundleIdentifier": "papas-sushiria-to-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/71Oxh4KV4WL.-AC-UL800-QL65--300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/hc64/9f2VXEpa1",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/hc64/9f2VXEpa1",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papa’s Burgeria To Go IPA",
+      "type": 2,
+      "bundleIdentifier": "papas-burgeria-to-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-16-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/31t7/VAsUbgBpN",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/31t7/VAsUbgBpN",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papa’s Pancakeria To Go IPA",
+      "type": 2,
+      "bundleIdentifier": "papas-pancakeria-to-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-15-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/pmvq/qEu5uJmxf",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/pmvq/qEu5uJmxf",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papa’s Cluckeria To Go IPA",
+      "type": 2,
+      "bundleIdentifier": "papas-cluckeria-to-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/81s6APpvA8L.-AC-UL960-QL65--300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/wUiV/4oeUYCJsk",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/wUiV/4oeUYCJsk",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papa’s Wingeria To Go IPA",
+      "type": 2,
+      "bundleIdentifier": "papas-wingeria-to-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-12-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/NgK1/bNE7YizXb",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/NgK1/bNE7YizXb",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papa’s Donuteria To Go IPA",
+      "type": 2,
+      "bundleIdentifier": "papas-donuteria-to-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-10-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/1pYa/z1aykMyfH",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/1pYa/z1aykMyfH",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papa’s Pizzeria To Go ipa",
+      "type": 2,
+      "bundleIdentifier": "papas-pizzeria-to-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/maxresdefault-1-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/iokd/7zVC8XRPQ",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/iokd/7zVC8XRPQ",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papa’s Hot Doggeria To Go IPA",
+      "type": 2,
+      "bundleIdentifier": "papas-hot-doggeria-to-go-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/i-7-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/b8zJ/Dk8fmGZq9",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/b8zJ/Dk8fmGZq9",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Half-Life 1 IPA",
+      "type": 2,
+      "bundleIdentifier": "half-life-1-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/06/1732989909-new-preview-1686406108-new-preview-%D0%91%D0%B5%D0%B7%D1%96%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%B9-300x300.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/RmZL/krZpA4Fwq",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/RmZL/krZpA4Fwq",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Stardew Valley IPA",
+      "type": 2,
+      "bundleIdentifier": "stardew-valley-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/512x512bb-2-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/BUqo/cn35whdFu",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/BUqo/cn35whdFu",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Sid Meier’s Civilization VI IPA mod",
+      "type": 2,
+      "bundleIdentifier": "sid-meiers-civilization-vi-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/orig-2-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/AqoK/gjHFREmoz",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/AqoK/gjHFREmoz",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Tropico IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "tropico-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-3-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/k66P/irxtXVVav",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/k66P/irxtXVVav",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Office Cat: Idle Tycoon Game IPA mod",
+      "type": 2,
+      "bundleIdentifier": "office-cat-idle-tycoon-game-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/o5sL/T5yeWtWKy",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/o5sL/T5yeWtWKy",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "The Escapists 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "the-escapists-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/The-Escapists-2-logo-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/SyMt/cppQVNof1",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/SyMt/cppQVNof1",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "The Escapists IPA mod",
+      "type": 2,
+      "bundleIdentifier": "the-escapists-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-21-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/fdox/wMnvdNi1r",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/fdox/wMnvdNi1r",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "WorldBox IPA mod",
+      "type": 2,
+      "bundleIdentifier": "worldbox-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-20-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/vo7q/vAaXF5i8F",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/vo7q/vAaXF5i8F",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "The Binding of Isaac IPA",
+      "type": 2,
+      "bundleIdentifier": "the-binding-of-isaac-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/maxresdefault-3-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/xfma/mjpAZK68n",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/xfma/mjpAZK68n",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Carrion IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "carrion-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/orig-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/t9jD/4iMM5qrqr",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/t9jD/4iMM5qrqr",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "BADLAND 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "badland-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-19-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/aECz/N2C62KTCK",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/aECz/N2C62KTCK",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "BADLAND IPA",
+      "type": 2,
+      "bundleIdentifier": "badland-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/unnamed-2-300x300.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/qMJH/wq5MPjEVy",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/qMJH/wq5MPjEVy",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "I Am Your Beast IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "i-am-your-beast-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/capsule-616x353-1-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/3jxS/waXrBLjja",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/3jxS/waXrBLjja",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Toca Boca World IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "toca-boca-world-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/81hWyiEioTL.-AC-UL960-QL65--300x300.jpeg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Grand Theft Auto: Vice City – The Definitive Edition IPA",
+      "type": 2,
+      "bundleIdentifier": "grand-theft-auto-vice-city-the-definitive-edition-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-15-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/RzrK/eDUJWCbkN",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/RzrK/eDUJWCbkN",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "GTA: San Andreas The Definitive Edition IPA",
+      "type": 2,
+      "bundleIdentifier": "gta-san-andreas-the-definitive-edition-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/Grand-Theft-Auto-The-Trilogy-The-Definitive-Edition-logo.svg_-300x300.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/qmRC/mjWjN1Mf2",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/qmRC/mjWjN1Mf2",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Grand Theft Auto III: The Definitive Edition IPA",
+      "type": 2,
+      "bundleIdentifier": "grand-theft-auto-iii-the-definitive-edition-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/1699989537-new-preview-Grand-Theft-Auto-III-The-Definitive-Edition-logo.svg_-300x300.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/uBuz/LQ7buarg6",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/uBuz/LQ7buarg6",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Balatro IPA",
+      "type": 2,
+      "bundleIdentifier": "balatro-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/orig-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/Bfw8/rEzDW8kC8",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/Bfw8/rEzDW8kC8",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/Bfw8/rEzDW8kC8",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Subway City ipa MOD",
+      "type": 2,
+      "bundleIdentifier": "subway-city-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-21-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/VQtK/hMLht78jj",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/VQtK/hMLht78jj",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Клуб романтики mod ipa",
+      "type": 2,
+      "bundleIdentifier": "com.tlw29bd3dy.xkvlcp0dly",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-18-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/Xu74/S8vvEXGYm",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/Xu74/S8vvEXGYm",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Car Parking Multiplayer IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "car-parking-multiplayer-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/image-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/6pce/K3wvSFMvQ",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/6pce/K3wvSFMvQ",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Dead Cells IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "dead-cells-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-14-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/EsCn/7kRfZsw5V",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/EsCn/7kRfZsw5V",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Bloons TD 6 IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "bloons-td-6-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/unnamed-1-300x300.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/HpGs/ZTY3Aj5vj",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/HpGs/ZTY3Aj5vj",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Hungry Shark Evolution ipa MOD",
+      "type": 2,
+      "bundleIdentifier": "hungry-shark-evolution-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-9-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/TM6T/dKvBW541c",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/TM6T/dKvBW541c",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Roblox IPA Cheat DELTA",
+      "type": 2,
+      "bundleIdentifier": "roblox-ipa-cheat-delta",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/d453c1fe191638fbd724324d7b24f1bc-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/aq93/kC4jjmxGD",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/aq93/kC4jjmxGD",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Pou IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "pou-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-7-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/U8e2/CFadz29Cm",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/U8e2/CFadz29Cm",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Hitman Sniper IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "hitman-sniper-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-6-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Earn to Die 2 IPA",
+      "type": 2,
+      "bundleIdentifier": "earn-to-die-2-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-13-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Vector 2 Premium IPA",
+      "type": 2,
+      "bundleIdentifier": "vector-2-premium-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-12-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Vector Classic mod ipa",
+      "type": 2,
+      "bundleIdentifier": "vector-classic-mod-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-11-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Smash Hit MOD ipa",
+      "type": 2,
+      "bundleIdentifier": "smash-hit-mod-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-5-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Terraria ipa",
+      "type": 2,
+      "bundleIdentifier": "terraria-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/i-4-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Papers, Please ipa",
+      "type": 2,
+      "bundleIdentifier": "papers-please-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/05/1498609341-preview-GuidePapersPlease-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://cloud.mail.ru/public/iuM1/LvAqBYZGt",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://cloud.mail.ru/public/iuM1/LvAqBYZGt",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Hungry Shark World IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "hungry-shark-world-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/04/i-8-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Minecraft ipa",
+      "type": 2,
+      "bundleIdentifier": "minecraft-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/04/52536c15e7a102b7d6e3376ac99618df-300x300.jpg",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Fortnite IPA",
+      "type": 2,
+      "bundleIdentifier": "fortnite-ipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/04/i-1-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Good Pizza IPA MOD",
+      "type": 2,
+      "bundleIdentifier": "good-pizza-ipa-mod",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "versionDescription": "",
+      "tintColor": "#007aff",
+      "iconURL": "https://hiz-ipa.ru/wp-content/uploads/2025/04/GPGP_logo_2048x-300x300.webp",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79821,
+      "version": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-01-14",
+          "localizedDescription": "New release!",
+          "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+          "size": 79821,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-14",
+      "downloadURL": "https://myapp.com/myapp-1.0.ipa",
+      "patreon": {}
+    }
   ],
   "news": []
 }
