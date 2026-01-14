@@ -15,7 +15,7 @@ async function getArcade() {
     });
     await Promise.all(tasks);
     var repo = {
-        "name": "Game Arcade - IOSVIET",
+        "name": "Game Arcade",
         "identifier": "ios.arcade.repo",
         "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game2.json",
         "iconURL": "https://cdn-icons-png.flaticon.com/128/1138/1138847.png",

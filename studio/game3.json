@@ -1,0 +1,85 @@
+function getList() {
+    // Chọn tất cả các item sản phẩm
+    const items = document.querySelectorAll('li.type-product');
+    const products = Array.from(items).map(li => {
+        return {
+            name: li.querySelector('.woocommerce-loop-product__title')?.innerText.trim(),
+            link: li.querySelector('.ast-loop-product__link')?.href || li.querySelector('a')?.href,
+            iconURL: li.querySelector('img')?.src
+        };
+    }).filter(p => p.link); // Chỉ lấy những item có link
+
+    console.log(`Tìm thấy ${products.length} sản phẩm trên trang.`);
+    return products;
+}
+
+function parseAppsFromHTML(htmlString, appInfo) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, "text/html");
+    
+    // Lấy link từ mô tả ngắn
+    const linkElement = doc.querySelector('.woocommerce-product-details__short-description a');
+    const downloadLink = linkElement?.href;
+
+    // Trả về 1 object thông tin đầy đủ
+    return {
+        name: appInfo.name,
+        type: 2,
+        // Cố gắng lấy slug từ URL làm bundleID
+        bundleID: appInfo.link.replace(/\/$/, "").split("/").pop(),
+        bundleIdentifier: appInfo.link.replace(/\/$/, "").split("/").pop(),
+        description: "IPA Mod", 
+        link: downloadLink,
+        iconURL: appInfo.iconURL,
+        version: '1.0'
+    };
+}
+
+async function getdata(products) {
+    const allApps = [];
+    
+    // Sử dụng for...of để tránh quá tải server, hoặc dùng Promise.all nếu muốn nhanh hơn
+    for (const product of products) {
+        console.log(`Đang quét chi tiết: ${product.name}`);
+        try {
+            const response = await fetch(product.link);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            
+            const html = await response.text();
+            const appDetails = parseAppsFromHTML(html, product);
+            
+            allApps.push(appDetails); 
+            console.log(`✅ Đã lấy dữ liệu cho: ${product.name}`);
+        } catch (error) {
+            console.error(`❌ Lỗi tại ${product.link}:`, error.message);
+        }
+    }
+    return allApps;
+}
+
+async function main() {
+    console.log("Bắt đầu lấy danh sách...");
+    const list = getList(); 
+    
+    if (list.length === 0) {
+        console.warn("Không tìm thấy sản phẩm nào!");
+        return;
+    }
+
+    const result = await getdata(list);
+    console.log("--- KẾT QUẢ CUỐI CÙNG ---");
+    //console.table(result); // Hiển thị dạng bảng cho dễ nhìn
+           const filename = 'repo.game3.json';
+            const jsonText = JSON.stringify(result, null, 2);
+            const blob = new Blob([jsonText], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+}
+
+main();
