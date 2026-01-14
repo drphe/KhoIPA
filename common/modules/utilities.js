@@ -242,7 +242,7 @@ export async function prefetchAndCacheUrls(urlList) {
         console.error('❌ Prefetch failed.', error);
     }
 }
-
+const updateListCache = {};
 export async function openCachedUrl(url, onUpdate = null) {
     if (!('caches' in window)) return fetch(url);
     const cache = await caches.open(CACHE_NAME);
@@ -254,8 +254,10 @@ export async function openCachedUrl(url, onUpdate = null) {
                 if (onUpdate && cachedResponse) {
                     const oldData = await cachedResponse.clone().json();
                     const newData = await networkResponse.clone().json();
-                    onUpdate(oldData, newData)
-		    setInterval(() => openCachedUrl(url, onUpdate), 60 * 60 * 1000);// every 1 hour
+                    onUpdate(oldData, newData);
+		    if(!updateListCache[url]){
+		    	updateListCache[url] = setInterval(() => openCachedUrl(url, onUpdate), 60 * 60 * 1000);
+		    }
                 }
                 await cache.put(url, networkResponse.clone());
             }
@@ -423,6 +425,7 @@ export async function translateTo(text) {
 }
 
 export async function enableNotifications() {
+    if(!Notification in window) return;
     if(Notification.permission ==="denied"){
 	showUIAlert(langText['statusTitle'],langText['statusTextNo']);
 	return;
@@ -482,7 +485,7 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
         bundleIdentifier: app.bundleIdentifier
     }));
     //send notification
-    if (!newApps.length && !removedApps.length && !updatedApps.length) return;
+    if (!newApps.length && !removedApps.length && !updatedApps.length || !Notification in window) return;
     let parts = [];
     if (newApps.length) parts.push(newApps.length + langText["newapps"]);
     if (updatedApps.length) parts.push(updatedApps.length + langText["updatedapps"]);
