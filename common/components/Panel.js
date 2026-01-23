@@ -637,10 +637,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     refreshFsLightbox();
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
-    closeBottom.addEventListener("click", ()=> {
-        if (controller?.signal?.aborted) return;
-	closePanel()
-    });
+    closeBottom.addEventListener("click",closePanel);
     document.addEventListener("click", ({
         target
     }) => { // logic đóng panel
