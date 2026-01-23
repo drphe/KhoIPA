@@ -715,7 +715,6 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollT
         filteredApps = [];
         run();
     });
-    searchBox.focus();// focus
     let searchTimer;
 searchBox.addEventListener("input", () => {
     clearTimeout(searchTimer);
@@ -754,6 +753,7 @@ searchBox.addEventListener("input", () => {
     searchWrapper.appendChild(xIcon);
     searchWrapper.appendChild(filter);
     appsContainer.before(searchWrapper);
+    searchBox.focus();// focus
     async function run() {
         appsContainer.innerHTML = "";
         appsContainer.classList.add("skeleton-text", "skeleton-effect-wave");
