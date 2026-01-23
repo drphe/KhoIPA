@@ -401,6 +401,8 @@ export const findAppByName = (data, searchName) => {
     return result;
 }
 export async function translateTo(text) {
+  controller?.abort();
+  controller = new AbortController();
   const url = `https://edge.microsoft.com/translate/translatetext?from=&to=${langCode}&isEnterpriseClient=true`;
   const options = {
     method: "POST",
@@ -408,6 +410,7 @@ export async function translateTo(text) {
       "Content-Type": "application/json",
       "Accept": "*/*",
     },
+    signal: controller.signal,
     body: JSON.stringify([text])
   };
 

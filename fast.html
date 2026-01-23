@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Download Speed Test</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      background: #020617;
+      border-radius: 20px;
+      padding: 32px 36px;
+      width: 360px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,.4);
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+    .speed {
+      font-size: 48px;
+      font-weight: 800;
+      margin: 20px 0;
+    }
+    .unit {
+      font-size: 16px;
+      opacity: .7;
+    }
+    button {
+      background: #2563eb;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 14px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+    .status {
+      margin-top: 14px;
+      font-size: 13px;
+      opacity: .7;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Download Speed</h1>
+    <div class="speed" id="speed">—</div>
+    <div class="unit">Mbps</div>
+    <button id="start">Bắt đầu đo</button>
+    <div class="status" id="status"></div>
+  </div>
+
+<script>
+const DOWNLOAD_URL = "https://raw.githubusercontent.com/TestFileHub/FileHub/main/pdf/pdf5mb.pdf"; 
+// 🔴 NÊN thay bằng file của bạn (CDN / server riêng)
+
+const speedEl = document.getElementById("speed");
+const statusEl = document.getElementById("status");
+const btn = document.getElementById("start");
+
+btn.onclick = async () => {
+  btn.disabled = true;
+  speedEl.textContent = "…";
+  statusEl.textContent = "Đang đo tốc độ tải xuống...";
+
+  const url = DOWNLOAD_URL + "?t=" + Date.now();
+  const startTime = performance.now();
+  let loadedBytes = 0;
+
+  try {
+    const res = await fetch(url, { cache: "no-store" });
+    const reader = res.body.getReader();
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      loadedBytes += value.length;
+    }
+
+    const duration = (performance.now() - startTime) / 1000;
+    const mbps = (loadedBytes * 8) / duration / 1_000_000;
+
+    speedEl.textContent = mbps.toFixed(1);
+    statusEl.textContent = "Hoàn tất";
+  } catch (e) {
+    speedEl.textContent = "Lỗi";
+    statusEl.textContent = "Không tải được file";
+  }
+
+  btn.disabled = false;
+};
+</script>
+</body>
+</html>

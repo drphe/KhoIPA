@@ -298,6 +298,7 @@ window.langCode = getAppLanguage();
 window.langText = translations[langCode] || translations['en'];
 window.isReload = false;
 window.oldTargetPage = "page-home";
+window.controller = null;
 
 document.querySelector('meta[property="og:url"]')?.setAttribute("content", window.location.origin);
 document.documentElement.lang = langCode;

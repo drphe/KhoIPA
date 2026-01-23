@@ -17,6 +17,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	url.searchParams.set('bundleID', newBundleID);
     	history.replaceState({}, '', url);
     }
+
     let altSourceIcon = dir + "/common/assets/img/generic_app.jpeg";
     let hasScreenshot= true, needPreview = false, tintColor ="000";
     let bottomPanel = document.querySelector(`#${ID}`);
@@ -554,6 +555,10 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             moreDetail.href = appInfo.trackViewUrl;
 	    bottomPanel.querySelector(".more-detail").classList.remove("hidden");
         }
+	if (appInfo?.minimumOsVersion) {
+            const previewSubtitle = preview.querySelector("#subtitle");
+	    previewSubtitle.innerHTML += ` Requires iOS ${appInfo?.minimumOsVersion} or later`;
+        }
     	if (needPreview &&appInfo?.description){
     		window.textDescription = appInfo.description;
     		if(!appInfo.languageCodesISO2A.includes(langCode.toUpperCase())){
@@ -632,7 +637,10 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     refreshFsLightbox();
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
-    closeBottom.addEventListener("click", closePanel);
+    closeBottom.addEventListener("click", ()=> {
+        if (controller?.signal?.aborted) return;
+	closePanel()
+    });
     document.addEventListener("click", ({
         target
     }) => { // logic đóng panel
