@@ -407,7 +407,7 @@ export async function translateTo(text) {
     headers: {
       "Content-Type": "application/json",
       "Accept": "*/*",
-    }
+    },
     body: JSON.stringify([text])
   };
 
