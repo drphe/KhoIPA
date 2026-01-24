@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Định Dạng JSON</title>
+    <script src="https://tiptipios.github.io/tiptip/js/dylib.js"></script>
+    <script src="https://tiptipios.github.io/tiptip/js/app.js"></script>
+    <script src="https://tiptipios.github.io/tiptip/js/gta.js"></script>
+    <script src="https://tiptipios.github.io/tiptip/js/tiptip.js"></script>
+    <script src="https://tiptipios.github.io/tiptip/js/spike.js"></script>
+    <script src="https://tiptipios.github.io/tiptip/js/yeuthich.js"></script>
+
+
+<body>
+    <script>
+function mbToBytes(sizeStr) {
+    if (!sizeStr) return 0;
+
+    const match = sizeStr.match(/([\d.]+)\s*(mb|kb|gb)/i);
+    if (!match) return 0;
+
+    const value = parseFloat(match[1]);
+    const unit = match[2].toLowerCase();
+
+    switch (unit) {
+        case "kb": return Math.round(value * 1024);
+        case "mb": return Math.round(value * 1024 * 1024);
+        case "gb": return Math.round(value * 1024 * 1024 * 1024);
+        default: return 0;
+    }
+}
+
+function convertDylibData(d, t) {
+    return d.map(item => ({
+        name: item.title,
+
+        type: t,
+
+        bundleIdentifier: item.title
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, "-"),
+
+        version: item.version || "",
+        versionDate: item.updated_at || "",
+
+        size: mbToBytes(item.size),
+
+        downloadURL: item.download_url || "",
+        developerName: "TiptipIOS",
+
+        localizedDescription: item.description || "",
+        iconURL: item.image || ""
+    }));
+}
+
+
+    var repo = {
+        "name": "TiptipIOS Repo",
+        "identifier": "ios.tiptip.repo",
+        "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.tiptip.json",
+        "iconURL": "https://cdn-icons-png.flaticon.com/128/1138/1138847.png",
+        "website": "https://tiptipios.github.io/tiptip/gamehack",
+        "ipawebsite": "https://kho-ipa.vercel.app",
+        "subtitle": "Page Share Game,App Hack Free Cho ios \nTất cả đều miễn phí cho ae hết",
+        "apps": []
+    }
+repo.apps.push(...convertDylibData(appdata, 1))
+repo.apps.push(...convertDylibData(dylibdata, 4))
+repo.apps.push(...convertDylibData(gtadata, 2))
+repo.apps.push(...convertDylibData(gamedata, 2))
+repo.apps.push(...convertDylibData(spikedata, 2))
+repo.apps.push(...convertDylibData(yeuthichdata, 2))
+
+
+
+            const filename = 'repo.tiptip.json';
+            const jsonText = JSON.stringify(repo, null, 2);
+            const blob = new Blob([jsonText], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+</script>
+</body>
+</html>
