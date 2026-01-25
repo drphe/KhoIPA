@@ -6,11 +6,11 @@ Nguồn: [avieshek](https://avieshek.wordpress.com/2024/06/11/how-to-sideload-on
 
 ## Hướng dẫn Sideloading
 
-1. DNS – [Old](https://github.com/esigncert/khoindvn/raw/refs/heads/main/document/DNS/khoindns.mobileconfig)/ [New](https://files.catbox.moe/v9mzid.mobileconfig)
+1. DNS – [New](https://github.com/Nyasami/getUDID-JS/releases/download/1.0.0/signed_khoindvn_fullchain.mobileconfig)
 
 2. Esign – [Website](https://khoindvn.io.vn/)
 
-3. Certs – [Zip File](https://github.com/esigncert/khoindvn/raw/refs/heads/main/document/DNS/Esign-Certs.zip)
+3. Certs – [Zip File](https://khoindvn.io.vn/document/DNS/ESignCert.zip)
 
 ### Trước khi bắt đầu:
 
