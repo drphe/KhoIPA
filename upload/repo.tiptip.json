@@ -608,6 +608,18 @@
       "iconURL": "https://tiptipios.github.io/chanthuhoi/index/b1.jpg"
     },
     {
+      "name": "8 Ball Pool",
+      "type": 2,
+      "bundleIdentifier": "8-ball-pool",
+      "version": "56.17.1",
+      "versionDate": "2026-01-25",
+      "size": 103987282,
+      "downloadURL": "https://oklink.cfd/BNq71",
+      "developerName": "TiptipIOS",
+      "localizedDescription": "✅  Dự đoán đường bóng\n✅  cài song song bản gốc",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/fb/a1/30fba1ed-46d7-bc92-8e1d-318a92f81d0f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350bb.jpg"
+    },
+    {
       "name": "Liên Quân Mobile",
       "type": 2,
       "bundleIdentifier": "liên-quân-mobile",
