@@ -23,6 +23,41 @@
   "apps": [
     {
       "beta": false,
+      "name": "DLiPA",
+      "type": 4,
+      "bundleIdentifier": "com.ahmedbafkir.dlipa",
+      "developerName": "Unknow Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "DLiPA là một ứng dụng iOS lấy cảm hứng từ dự án ipatool. Ứng dụng cho phép người dùng tải về, cài đặt và chia sẻ các ứng dụng trên App Store bằng Apple ID của họ, hỗ trợ cả việc tải phiên bản cũ — không cần jailbreak.\nHỗ trợ: iOS 13 trở lên\nXem hướng dẫn sử dụng tại đây: https://www.youtube.com/shorts/W9NTXb_OB-M\n- Tính năng\nChọn khu vực (storefront) mong muốn.\nTìm kiếm ứng dụng theo tên, Bundle ID, hoặc liên kết.\nCó thể sao chép thông tin như Bundle ID, application ID, liên kết.\nHỗ trợ nhiều tài khoản Apple ID.\nChỉ mua các ứng dụng miễn phí.\nTải ứng dụng dưới dạng tệp .ipa.\nHỗ trợ tải phiên bản cũ của ứng dụng.\nMỗi tài khoản có mục tải xuống riêng biệt.\nChia sẻ ứng dụng dưới dạng tệp .ipa.\nCài đặt ứng dụng trực tiếp trên thiết bị.\nHỗ trợ cả thiết bị không jailbreak.",
+      "versionDescription": "",
+      "tintColor": "#1ce4fc",
+      "iconURL": "https://i.ibb.co/zhM3D4c2/cf1a636b9723.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Exchange data with nearby devices running the DLiPA."
+        }
+      },
+      "size": 500000,
+      "version": "1.0.0",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0/DLiPA_v1.0.0.ipa",
+          "size": 500000,
+          "version": "1.0.0",
+          "buildVersion": null,
+          "date": "2026-01-27T05:14:00+07:00",
+          "localizedDescription": "Việc cài đặt ứng dụng trực tiếp từ trong app có thể gây ra lỗi như không nhận cập nhật tự động.\nĐể đạt hiệu quả tốt nhất, nên dùng AirDrop để chia sẻ và cài đặt ứng dụng từ một thiết bị khác.\nFile iPA đã tải về là file iPA encrypt, chính vì thế mà không thể sử dụng TrollStore để cài đặt, cũng không cần phải sign lại bằng chứng chỉ mà sử dụng tính năng cài đặt trực tiếp có trong DLiPA hoặc sử dụng https://i.codevn.net để tạo liên kết cài đặt trực tiếp.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-27T05:14:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0/DLiPA_v1.0.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "ShortsMax - Xem Phim & Phim Bộ",
       "type": 3,
       "bundleIdentifier": "live.shorttv.ios",
@@ -5531,17 +5566,6 @@
   ],
   "news": [
     {
-      "title": "26000+ IPA Collection",
-      "identifier": "news-2lodvr1kn4",
-      "caption": "Download more IPA from archive.org repo!",
-      "date": "2026-01-13",
-      "tintColor": "#3b323f",
-      "imageURL": "https://i.ibb.co/chdkSJPb/fc4af4f7ce70.png",
-      "notify": true,
-      "url": "https://kho-ipa.vercel.app/oldipa-archive.html",
-      "appID": null
-    },
-    {
       "title": "Chào mừng bạn đến KhoIPA",
       "identifier": "huongdansudung",
       "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
@@ -5551,6 +5575,17 @@
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=donate.md",
       "appID": ""
+    },
+    {
+      "title": "14+ IPA Collection",
+      "identifier": "news-2lodvr1kn4",
+      "caption": "Download more IPA from telegram channel repo!",
+      "date": "2026-01-13",
+      "tintColor": "#3b323f",
+      "imageURL": "https://i.ibb.co/chdkSJPb/fc4af4f7ce70.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=collection.md",
+      "appID": null
     },
     {
       "title": "Mở khóa Premium bằng VPN",

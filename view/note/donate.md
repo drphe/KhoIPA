@@ -49,11 +49,7 @@ KhoIPA tổng hợp nhiều nguồn Repo IPA, trong đó Repo Favorite apps là 
 * Có thể copy link tải ipa và sử dụng esign, feather hoặc safari tải về. Tuỳ vào sở thích của bạn.
 * Nếu tệp IPA được ký sẵn, truy cập https://i.codevn.net hoặc https://installonair.com/ để tạo link cài trực tiếp.
 
-Trên khoIPA có khá nhiều IPA rồi, nhưng trong trường hợp không tìm được IPA bạn cần, hãy tham khảo một số nguồn tải IPA khác dưới đây.
-* [CodeVN](https://ios.codevn.net/): Trang chia sẻ IPA miễn phí của ae Việt Nam
-* [IPAOMTK](https://ipaomtk.com/): không chỉ có IPA mà cả APK mod cho ae, hoàn toàn miễn phí.
-* [DVC Repo](https://dvcipa.github.io/index.html) [DCV Library](https://t.me/dvcipaios): DVC có nhiều IPA game Hack, mod cho ae, nhưng họ bắt nạp tiền mua key kích hoạt chức năng hack.
-* [Flekstore](https://flekstore.com/): Kho chia sẻ game, ứng dụng, nhưng phải mua chứng chỉ của họ mới tải và cài đặt được ứng dụng
+Trên khoIPA có khá nhiều IPA rồi, nhưng trong trường hợp không tìm được IPA bạn cần, hãy tham khảo một số nguồn tải IPA khác <a href="#" data-url="collection.md" class="news-item-link">ở đây</a>. 
 
 ---
 
