@@ -56,7 +56,7 @@ main(json => {
         }
         else {
             let hasNotify = false;
-            for (let i = 0; i < json.news.length; i++) {
+            for (let i = 0; i < Math.min(json.news.length, 20); i++) {
                 if (!json.news[i].notify) continue;
                 hasNotify = true;
                 $("#news-items").insertAdjacentHTML("beforeend", NewsItem(json.news[i], true));
