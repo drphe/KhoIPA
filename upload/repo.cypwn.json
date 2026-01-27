@@ -20,7 +20,7 @@
       "bundleIdentifier": "Lilliana.Violyn",
       "developerName": "Violyn_1_4_4-2 x CyPwn",
       "subtitle": "",
-      "localizedDescription": "Violyn 1.4.4 with plenty of fixes",
+      "localizedDescription": "Search and download from CyDown",
       "versionDescription": "",
       "tintColor": "FFC300",
       "iconURL": "https://ipa.cypwn.xyz/serve/icons/Violyn_1_4_4-2.png",
@@ -42,7 +42,7 @@
           "date": "2026-01-12",
           "size": 1279262,
           "downloadURL": "https://ipa.cypwn.xyz/ipas/Violyn_1_4_4-2.ipa",
-          "localizedDescription": "Violyn 1.4.4 with plenty of fixes"
+          "localizedDescription": "Search and download from CyDown"
         },
         {
           "version": "1.4.2",
