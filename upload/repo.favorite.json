@@ -23,6 +23,39 @@
   "apps": [
     {
       "beta": false,
+      "name": "AppStore++",
+      "type": 4,
+      "bundleIdentifier": "com.cokepokes.AppStorePlus",
+      "developerName": "CokePokes",
+      "subtitle": "Downgrade installed apps.",
+      "localizedDescription": "AppStore++ tweak for TrollStore\n\nAllows you to downgrade installed apps.\n\nHow to install:\n\nInstall TrollStore on your device: https://github.com/opa334/TrollStore\nDownload AppStore++ here from your mobile safari.\nOpen Files app and \"Open in\" Trollstore. & Done.\nEnjoy.",
+      "versionDescription": "",
+      "tintColor": "#54acf4",
+      "iconURL": "https://i.ibb.co/PGyT43nL/e5da9773ad5c.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 17600000,
+      "version": "1.0.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.3.2/AppStore++_TrollStore_v1.0.3-2.ipa",
+          "size": 17600000,
+          "version": "1.0.3",
+          "buildVersion": null,
+          "date": "2026-01-27T14:35:00+07:00",
+          "localizedDescription": "Changes: v1.0.3-1 -- Ability to download AppStore++ updates & open in TrollStore\n\nv1.0.2-1 -- iPad support hopefully -- iOS13 support -- Back to using my reliable server.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-01-27T14:35:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.3.2/AppStore++_TrollStore_v1.0.3-2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "DLiPA",
       "type": 4,
       "bundleIdentifier": "com.ahmedbafkir.dlipa",
@@ -43,12 +76,12 @@
       "version": "1.0.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0/DLiPA_v1.0.0.ipa",
-          "size": 500000,
           "version": "1.0.0",
-          "buildVersion": null,
           "date": "2026-01-27T05:14:00+07:00",
           "localizedDescription": "Việc cài đặt ứng dụng trực tiếp từ trong app có thể gây ra lỗi như không nhận cập nhật tự động.\nĐể đạt hiệu quả tốt nhất, nên dùng AirDrop để chia sẻ và cài đặt ứng dụng từ một thiết bị khác.\nFile iPA đã tải về là file iPA encrypt, chính vì thế mà không thể sử dụng TrollStore để cài đặt, cũng không cần phải sign lại bằng chứng chỉ mà sử dụng tính năng cài đặt trực tiếp có trong DLiPA hoặc sử dụng https://i.codevn.net để tạo liên kết cài đặt trực tiếp.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0/DLiPA_v1.0.0.ipa",
+          "size": 500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
