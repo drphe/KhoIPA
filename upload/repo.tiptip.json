@@ -129,7 +129,7 @@
     },
     {
       "name": "Locket Gold",
-      "type": 4,
+      "type": 5,
       "bundleIdentifier": "locket-gold",
       "version": "12.5.00.",
       "versionDate": "2025-02-19",
@@ -141,7 +141,7 @@
     },
     {
       "name": "PicsArt",
-      "type": 4,
+      "type": 5,
       "bundleIdentifier": "picsart",
       "version": "All version ",
       "versionDate": "2025-02-19",
@@ -153,7 +153,7 @@
     },
     {
       "name": "YTPlus",
-      "type": 4,
+      "type": 5,
       "bundleIdentifier": "ytplus",
       "version": "0213",
       "versionDate": "2025-02-15",
@@ -165,7 +165,7 @@
     },
     {
       "name": "B612 ",
-      "type": 4,
+      "type": 5,
       "bundleIdentifier": "b612",
       "version": "All ",
       "versionDate": "2024-03-24",
@@ -177,7 +177,7 @@
     },
     {
       "name": "BH Tiktok ",
-      "type": 4,
+      "type": 5,
       "bundleIdentifier": "bh-tiktok",
       "version": "All ",
       "versionDate": "2024-03-24",
@@ -189,7 +189,7 @@
     },
     {
       "name": "Douyin  ",
-      "type": 4,
+      "type": 5,
       "bundleIdentifier": "douyin",
       "version": "All ",
       "versionDate": "2024-03-24",
@@ -201,7 +201,7 @@
     },
     {
       "name": "Lightroom ",
-      "type": 4,
+      "type": 5,
       "bundleIdentifier": "lightroom",
       "version": "All ",
       "versionDate": "2024-03-24",
@@ -213,7 +213,7 @@
     },
     {
       "name": "FaceBook ",
-      "type": 4,
+      "type": 5,
       "bundleIdentifier": "facebook",
       "version": "All ",
       "versionDate": "2024-03-24",
@@ -3741,7 +3741,7 @@
     },
     {
       "name": "Liên Quân Mobile",
-      "type": 2,
+      "type": 1,
       "bundleIdentifier": "liên-quân-mobile",
       "version": "1.61.11572693",
       "versionDate": "2026-01-22",
@@ -3753,7 +3753,7 @@
     },
     {
       "name": "Free Fire",
-      "type": 2,
+      "type": 1,
       "bundleIdentifier": "free-fire",
       "version": "",
       "versionDate": "",
@@ -3765,7 +3765,7 @@
     },
     {
       "name": "8 Ball Pool",
-      "type": 2,
+      "type": 1,
       "bundleIdentifier": "8-ball-pool",
       "version": "All Version",
       "versionDate": "2025-05-15",
@@ -3777,7 +3777,7 @@
     },
     {
       "name": "Bus Simulator : Ultimate",
-      "type": 2,
+      "type": 1,
       "bundleIdentifier": "bus-simulator-:-ultimate",
       "version": "2.2.4",
       "versionDate": "2025-05-10",
@@ -3789,7 +3789,7 @@
     },
     {
       "name": "GTA San Andreas",
-      "type": 2,
+      "type": 1,
       "bundleIdentifier": "gta-san-andreas",
       "version": "",
       "versionDate": "",
@@ -3801,7 +3801,7 @@
     },
     {
       "name": "The Spike",
-      "type": 2,
+      "type": 1,
       "bundleIdentifier": "the-spike",
       "version": "",
       "versionDate": "",
@@ -3813,7 +3813,7 @@
     },
     {
       "name": "Soul Knight",
-      "type": 2,
+      "type": 1,
       "bundleIdentifier": "soul-knight",
       "version": "7.3.0",
       "versionDate": "2025-06-10",
@@ -3825,7 +3825,7 @@
     },
     {
       "name": "CarX Street",
-      "type": 2,
+      "type": 1,
       "bundleIdentifier": "carx-street",
       "version": "1.11.0",
       "versionDate": "2025-05-02",
