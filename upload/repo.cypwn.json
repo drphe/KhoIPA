@@ -58,40 +58,6 @@
     },
     {
       "beta": false,
-      "name": "RustMobile_1_32_1",
-      "type": 1,
-      "bundleIdentifier": "com.tencent.rmos",
-      "developerName": "RustMobile_1_32_1 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Rust Mobile",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/RustMobile_1_32_1.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/RustMobile_1_32_1/RustMobile_1_32_1-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 519,
-      "version": "1.32.1",
-      "versions": [
-        {
-          "version": "1.32.1",
-          "date": "2026-01-04",
-          "size": 519,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/RustMobile_1_32_1.ipa",
-          "localizedDescription": "Rust Mobile"
-        }
-      ],
-      "versionDate": "2026-01-04",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/RustMobile_1_32_1.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Discord_BTLoader_Kettu",
       "type": 1,
       "bundleIdentifier": "com.hammerandchisel.discord",
@@ -830,40 +796,6 @@
       ],
       "versionDate": "2025-08-09",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/ChatGPTw15.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "VoidLink_0.0.1",
-      "type": 1,
-      "bundleIdentifier": "com.voidlink.tf.iOS",
-      "developerName": "VoidLink_0.0.1 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Enhanced version of Moonlight app.",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/VoidLink_0.0.1.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/VoidLink_0.0.1/VoidLink_0.0.1-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 3701473,
-      "version": "0.0.1",
-      "versions": [
-        {
-          "version": "0.0.1",
-          "date": "2025-08-06",
-          "size": 3701473,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/VoidLink_0.0.1.ipa",
-          "localizedDescription": "Enhanced version of Moonlight app."
-        }
-      ],
-      "versionDate": "2025-08-06",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/VoidLink_0.0.1.ipa",
       "patreon": {}
     },
     {
@@ -6415,16 +6347,6 @@
       "notify": true
     },
     {
-      "title": "RustMobile_1_32_1 now available!",
-      "identifier": "cypwn.RustMobile_1_32_1.1.32.1",
-      "caption": "RustMobile_1_32_1 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/RustMobile_1_32_1.png",
-      "date": "2026-01-04",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
       "title": "Discord_BTLoader_Kettu now available!",
       "identifier": "cypwn.Discord_BTLoader_Kettu.305.1",
       "caption": "Discord_BTLoader_Kettu added to the CyPwn Library",
@@ -6621,16 +6543,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/ChatGPTw15.png",
       "date": "2025-08-09",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "VoidLink_0.0.1 now available!",
-      "identifier": "cypwn.VoidLink_0.0.1.0.0.1",
-      "caption": "VoidLink_0.0.1 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/VoidLink_0.0.1.png",
-      "date": "2025-08-06",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
