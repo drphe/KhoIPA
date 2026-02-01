@@ -15,6 +15,40 @@
   "apps": [
     {
       "beta": false,
+      "name": "Terraria_4.5.0",
+      "type": 1,
+      "bundleIdentifier": "com.505games.terraria",
+      "developerName": "Terraria_4.5.0 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Terraria 4.5.0",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Terraria_4.5.0.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Terraria_4.5.0/Terraria_4.5.0-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 189278453,
+      "version": "4.5.0",
+      "versions": [
+        {
+          "version": "4.5.0",
+          "date": "2026-01-31",
+          "size": 189278453,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Terraria_4.5.0.ipa",
+          "localizedDescription": "Terraria 4.5.0"
+        }
+      ],
+      "versionDate": "2026-01-31",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Terraria_4.5.0.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Violyn_1_4_4-2",
       "type": 1,
       "bundleIdentifier": "Lilliana.Violyn",
@@ -6336,6 +6370,16 @@
     }
   ],
   "news": [
+    {
+      "title": "Terraria_4.5.0 now available!",
+      "identifier": "cypwn.Terraria_4.5.0.4.5.0",
+      "caption": "Terraria_4.5.0 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Terraria_4.5.0.png",
+      "date": "2026-01-31",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
     {
       "title": "Violyn_1_4_4-2 now available!",
       "identifier": "cypwn.Violyn_1_4_4-2.1.4.4",
