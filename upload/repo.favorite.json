@@ -23,6 +23,41 @@
   "apps": [
     {
       "beta": false,
+      "name": "Terraria",
+      "type": 2,
+      "bundleIdentifier": "com.505games.terraria",
+      "developerName": "🟦🖤🖤🟥",
+      "subtitle": "Paid Game",
+      "localizedDescription": "",
+      "versionDescription": "",
+      "tintColor": "#7ca0cc",
+      "iconURL": "https://i.ibb.co/Fbxp2Yg2/7d12e294a8fe.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Terraria uses the local network to announce, discover and connect to multiplayer sessions."
+        }
+      },
+      "size": 199500000,
+      "version": "1.4.5",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.5/Terraria.v1.4.5.ipa",
+          "size": 199500000,
+          "version": "1.4.5",
+          "buildVersion": null,
+          "date": "2026-02-01T23:32:00+07:00",
+          "localizedDescription": "Paid Game",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-02-01T23:32:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.5/Terraria.v1.4.5.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "AppStore++",
       "type": 4,
       "bundleIdentifier": "com.cokepokes.AppStorePlus",
@@ -41,12 +76,12 @@
       "version": "1.0.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.3.2/AppStore++_TrollStore_v1.0.3-2.ipa",
-          "size": 17600000,
           "version": "1.0.3",
-          "buildVersion": null,
           "date": "2026-01-27T14:35:00+07:00",
           "localizedDescription": "Changes: v1.0.3-1 -- Ability to download AppStore++ updates & open in TrollStore\n\nv1.0.2-1 -- iPad support hopefully -- iOS13 support -- Back to using my reliable server.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.0.3.2/AppStore++_TrollStore_v1.0.3-2.ipa",
+          "size": 17600000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
