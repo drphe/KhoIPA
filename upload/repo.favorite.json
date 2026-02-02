@@ -28,7 +28,7 @@
       "bundleIdentifier": "com.505games.terraria",
       "developerName": "🟦🖤🖤🟥",
       "subtitle": "Paid Game",
-      "localizedDescription": "",
+      "localizedDescription": "This great app is distributed beyond the Apple Store.",
       "versionDescription": "",
       "tintColor": "#7ca0cc",
       "iconURL": "https://i.ibb.co/Fbxp2Yg2/7d12e294a8fe.png",
@@ -43,12 +43,12 @@
       "version": "1.4.5",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.5/Terraria.v1.4.5.ipa",
-          "size": 199500000,
           "version": "1.4.5",
-          "buildVersion": null,
           "date": "2026-02-01T23:32:00+07:00",
           "localizedDescription": "Paid Game",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.4.5/Terraria.v1.4.5.ipa",
+          "size": 199500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -5633,6 +5633,17 @@
     }
   ],
   "news": [
+    {
+      "title": "Chặn ứng dụng ngân hàng",
+      "identifier": "news-0j8ivbmdfb",
+      "caption": "Không cung cấp dịch vụ ngân hàng trên thiết bị có cài app bên thứ 3.",
+      "date": "2026-02-02",
+      "tintColor": "#343d40",
+      "imageURL": "https://i.ibb.co/wNLWxxNy/b62a32fe49fa.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=thongtu.md",
+      "appID": null
+    },
     {
       "title": "Chào mừng bạn đến KhoIPA",
       "identifier": "huongdansudung",
