@@ -15,6 +15,47 @@
   "apps": [
     {
       "beta": false,
+      "name": "TrollDecrypt_1.2.2",
+      "type": 1,
+      "bundleIdentifier": "com.fiore.trolldecrypt",
+      "developerName": "TrollDecrypt_1.2.2 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "iOS IPA Decrypter for TrollStore",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollDecrypt_1.2.2.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/TrollDecrypt_1.2.2/TrollDecrypt_1.2.2-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 3460300,
+      "version": "1.2.2",
+      "versions": [
+        {
+          "version": "1.2.2",
+          "date": "2026-02-04",
+          "size": 3460300,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollDecrypt_1.2.2.ipa",
+          "localizedDescription": "iOS IPA Decrypter for TrollStore"
+        },
+        {
+          "version": "1.1",
+          "date": "2024-04-09",
+          "size": 691517,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollDecrypt.ipa",
+          "localizedDescription": "iOS IPA Decrypter for TrollStore"
+        }
+      ],
+      "versionDate": "2026-02-04",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollDecrypt_1.2.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Repo4Tweak_4.0.3",
       "type": 1,
       "bundleIdentifier": "xyz.cypwn.repo4tweakApp",
@@ -46,47 +87,6 @@
       ],
       "versionDate": "2026-01-28",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/Repo4Tweak_4.0.3.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "TrollDecrypt_1.2",
-      "type": 1,
-      "bundleIdentifier": "com.fiore.trolldecrypt",
-      "developerName": "TrollDecrypt_1.2 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Decrypt installed apps",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollDecrypt_1.2.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/TrollDecrypt_1.2/TrollDecrypt_1.2-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 3460300,
-      "version": "1.2",
-      "versions": [
-        {
-          "version": "1.2",
-          "date": "2026-01-19",
-          "size": 3460300,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollDecrypt_1.2.ipa",
-          "localizedDescription": "Decrypt installed apps"
-        },
-        {
-          "version": "1.1",
-          "date": "2024-04-09",
-          "size": 691517,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollDecrypt.ipa",
-          "localizedDescription": "iOS IPA Decrypter for TrollStore"
-        }
-      ],
-      "versionDate": "2026-01-19",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollDecrypt_1.2.ipa",
       "patreon": {}
     },
     {
@@ -4245,22 +4245,22 @@
   ],
   "news": [
     {
+      "title": "TrollDecrypt_1.2.2, Ver: 1.2.2 now available!",
+      "identifier": "cypwn.TrollDecrypt_1.2.2.1.2.2",
+      "caption": "TrollDecrypt_1.2.2 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollDecrypt_1.2.2.png",
+      "date": "2026-02-04",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
       "title": "Repo4Tweak_4.0.3, Ver: 4.0.3 now available!",
       "identifier": "cypwn.Repo4Tweak_4.0.3.4.0.3",
       "caption": "Repo4Tweak_4.0.3 added to the CyPwn Library",
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/Repo4Tweak_4.0.3.png",
       "date": "2026-01-28",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "TrollDecrypt_1.2, Ver: 1.2 now available!",
-      "identifier": "cypwn.TrollDecrypt_1.2.1.2",
-      "caption": "TrollDecrypt_1.2 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollDecrypt_1.2.png",
-      "date": "2026-01-19",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
