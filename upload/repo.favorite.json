@@ -108,8 +108,17 @@
         }
       },
       "size": 500000,
-      "version": "1.0.0",
+      "version": "1.1.0",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.0/DLiPA_v1.1.ipa",
+          "size": 500000,
+          "version": "1.1.0",
+          "buildVersion": null,
+          "date": "2026-02-10T00:42:00+07:00",
+          "localizedDescription": "⚠️Lưu Ý:\nCài đặt ứng dụng trực tiếp bên trong DLiPA có thể gây ra các vấn đề như thiếu tự động cập nhật.\n✅Phương pháp đề xuất:\nĐể có kết quả tốt nhất, hãy sử dụng AirDrop để chia sẻ và cài đặt IPA từ một thiết bị khác.",
+          "minOSVersion": null
+        },
         {
           "version": "1.0.0",
           "date": "2026-01-27T05:14:00+07:00",
@@ -120,8 +129,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2026-01-27T05:14:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v.1.0/DLiPA_v1.0.0.ipa",
+      "versionDate": "2026-02-10T00:42:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.0/DLiPA_v1.1.ipa",
       "patreon": {}
     },
     {
@@ -5634,17 +5643,6 @@
   ],
   "news": [
     {
-      "title": "Chặn ứng dụng ngân hàng",
-      "identifier": "news-0j8ivbmdfb",
-      "caption": "Không cung cấp dịch vụ ngân hàng trên thiết bị có cài app bên thứ 3.",
-      "date": "2026-02-02",
-      "tintColor": "#343d40",
-      "imageURL": "https://i.ibb.co/wNLWxxNy/b62a32fe49fa.png",
-      "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/?note=thongtu.md",
-      "appID": null
-    },
-    {
       "title": "Chào mừng bạn đến KhoIPA",
       "identifier": "huongdansudung",
       "caption": "KhoIPA Mod là một dự án miễn phí. Các bạn có góp ý hay donate thì hãy cứ thoải mái nhé.",
@@ -5654,6 +5652,17 @@
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=donate.md",
       "appID": ""
+    },
+    {
+      "title": "Chặn ứng dụng ngân hàng",
+      "identifier": "news-0j8ivbmdfb",
+      "caption": "Không cung cấp dịch vụ ngân hàng trên thiết bị có cài app bên thứ 3.",
+      "date": "2026-02-02",
+      "tintColor": "#343d40",
+      "imageURL": "https://i.ibb.co/wNLWxxNy/b62a32fe49fa.png",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=thongtu.md",
+      "appID": null
     },
     {
       "title": "14+ IPA Collection",
