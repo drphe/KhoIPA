@@ -15,6 +15,44 @@
   "apps": [
     {
       "beta": false,
+      "name": "CloverPit-1.3.7",
+      "type": 1,
+      "bundleIdentifier": "com.PanikArcade.CloverPit",
+      "developerName": "CloverPit-1.3.7 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "A rogue-lite slot machine nightmare",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.3.7.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.7/CloverPit-1.3.7-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.7/CloverPit-1.3.7-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.7/CloverPit-1.3.7-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.7/CloverPit-1.3.7-3.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.7/CloverPit-1.3.7-4.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 115112673,
+      "version": "1.3.7",
+      "versions": [
+        {
+          "version": "1.3.7",
+          "date": "2026-02-19",
+          "size": 115112673,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.3.7.ipa",
+          "localizedDescription": "A rogue-lite slot machine nightmare"
+        }
+      ],
+      "versionDate": "2026-02-19",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.3.7.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Terraria_4.5.0",
       "type": 1,
       "bundleIdentifier": "com.505games.terraria",
@@ -137,44 +175,6 @@
       ],
       "versionDate": "2026-01-02",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "CloverPit-1.3.3",
-      "type": 1,
-      "bundleIdentifier": "com.PanikArcade.CloverPit",
-      "developerName": "CloverPit-1.3.3 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Rogue-lite slot machine game",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.3.3.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-1.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-2.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-3.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.3/CloverPit-1.3.3-4.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 114389155,
-      "version": "1.3.3",
-      "versions": [
-        {
-          "version": "1.3.3",
-          "date": "2025-12-27",
-          "size": 114389155,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.3.3.ipa",
-          "localizedDescription": "Rogue-lite slot machine game"
-        }
-      ],
-      "versionDate": "2025-12-27",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.3.3.ipa",
       "patreon": {}
     },
     {
@@ -6371,6 +6371,16 @@
   ],
   "news": [
     {
+      "title": "CloverPit-1.3.7 now available!",
+      "identifier": "cypwn.CloverPit-1.3.7.1.3.7",
+      "caption": "CloverPit-1.3.7 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.3.7.png",
+      "date": "2026-02-19",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
       "title": "Terraria_4.5.0 now available!",
       "identifier": "cypwn.Terraria_4.5.0.4.5.0",
       "caption": "Terraria_4.5.0 added to the CyPwn Library",
@@ -6397,16 +6407,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
       "date": "2026-01-02",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "CloverPit-1.3.3 now available!",
-      "identifier": "cypwn.CloverPit-1.3.3.1.3.3",
-      "caption": "CloverPit-1.3.3 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.3.3.png",
-      "date": "2025-12-27",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
