@@ -125,78 +125,6 @@
     },
     {
       "beta": false,
-      "name": "TrollVNC_3.1",
-      "type": 1,
-      "bundleIdentifier": "com.82flex.TrollVNCApp",
-      "developerName": "TrollVNC_3.1 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "VNC server for iOS devices.",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_3.1.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/TrollVNC_3.1/TrollVNC_3.1-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 2338324,
-      "version": "3.1",
-      "versions": [
-        {
-          "version": "3.1",
-          "date": "2026-01-10",
-          "size": 2338324,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollVNC_3.1.ipa",
-          "localizedDescription": "VNC server for iOS devices."
-        }
-      ],
-      "versionDate": "2026-01-10",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/TrollVNC_3.1.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Battman_1.0.3.2",
-      "type": 1,
-      "bundleIdentifier": "com.torrekie.Battman",
-      "developerName": "Battman_1.0.3.2 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Battman the Battery Manager",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Battman_1.0.3.2.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-1.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-2.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-3.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/Battman_1.0.3.2/Battman_1.0.3.2-4.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 672686,
-      "version": "1.0.3.2",
-      "versions": [
-        {
-          "version": "1.0.3.2",
-          "date": "2026-01-03",
-          "size": 672686,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Battman_1.0.3.2.ipa",
-          "localizedDescription": "Battman the Battery Manager"
-        }
-      ],
-      "versionDate": "2026-01-03",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Battman_1.0.3.2.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "Troll_SIM_Switcher_1.1",
       "type": 1,
       "bundleIdentifier": "com.developlab.TrollSIMSwitcher",
@@ -4271,26 +4199,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/VansonMod_2.3.png",
       "date": "2026-01-13",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "TrollVNC_3.1, Ver: 3.1 now available!",
-      "identifier": "cypwn.TrollVNC_3.1.3.1",
-      "caption": "TrollVNC_3.1 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/TrollVNC_3.1.png",
-      "date": "2026-01-10",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Battman_1.0.3.2, Ver: 1.0.3.2 now available!",
-      "identifier": "cypwn.Battman_1.0.3.2.1.0.3.2",
-      "caption": "Battman_1.0.3.2 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Battman_1.0.3.2.png",
-      "date": "2026-01-03",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
