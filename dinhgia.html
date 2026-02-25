@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Định giá Cổ phiếu</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/full-screen.js"></script>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        background: white;
+    }
+
+    select,
+    option,
+    input[type="text"],
+    input[type="number"] {
+        padding: 2px;
+        border-radius: 4px;
+        background: transparent;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titlestyle {
+        font-size: 15;
+        font-weight: 600;
+        text-align: left;
+    }
+        /* Responsive cho mobile/tablet */
+        @media (max-width: 768px) {
+            .container {
+	        display: block;
+
+            }
+        }
+</style>
+<link rel="stylesheet" type="text/css" href="loading.css">
+
+<body>
+    <div class="container">
+        <div id="container" class="tactical" style="width:100%; height: calc(-74px + 100vh);"></div>
+        <div id="bieudo" class="tactical" style="width:100%; height: calc(-74px + 100vh)"></div>
+    </div>
+    <div style="text-align:center;">
+        <div id="load"></div>
+        Mã chứng khoán: <input placeholder="Mã" style="width: 60px;" title="Nhập và nhấn Enter" value="HPG" type="text" autocomplete="off" id="inputField" maxlength="3" />
+        <select id="opt" onchange="OptionChange(this.value)" title="Định giá bằng phương pháp nào?">
+            <option value="PB">P/B</option>
+            <option value="PE">P/E</option>
+        </select>
+        <select id="opt2" onchange="OptionChange2(this.value)" title="Khoảng thời gian báo cáo?">
+            <option value="90">90 ngày</option>
+            <option value="180">180 ngày</option>
+        </select>
+    </div>
+    <script>
+const AllCompany = [{c:"0101264009",t:"DDB"},{c:"0104498100",t:"VVS"},{c:"0105283073",t:"CCC"},{c:"0106798702",t:"ECO"},{c:"0107005554",t:"TAB"},{c:"0108720772",t:"VMK"},{c:"0109204756",t:"HIO"},{c:"0110879376",t:"TRV"},{c:"0313140100",t:"SBG"},{c:"0315858232",t:"VDG"},{c:"0700210210",t:"TSA"},{c:"0700519785",t:"THM"},{c:"0800462363",t:"DKG"},{c:"0900270055",t:"BHH"},{c:"10659",t:"HSV"},{c:"10669",t:"CST"},{c:"10708",t:"BVL"},{c:"10709",t:"SGI"},{c:"10729",t:"TOS"},{c:"10780",t:"VTZ"},{c:"10825",t:"SSH"},{c:"10847",t:"BCA"},{c:"10919",t:"FUCTVGF3"},{c:"10929",t:"FUEIP100"},{c:"10966",t:"GMH"},{c:"10969",t:"BIG"},{c:"10990",t:"CMM"},{c:"11009",t:"CNA"},{c:"11096",t:"FUEKIV30"},{c:"12109",t:"ODE"},{c:"12110",t:"HMR"},{c:"12166",t:"PCH"},{c:"12211",t:"DSD"},{c:"12215",t:"NO1"},{c:"12220",t:"MGR"},{c:"12223",t:"DKW"},{c:"12281",t:"PPT"},{c:"12464",t:"CAR"},{c:"12562",t:"GPC"},{c:"12615",t:"FUCTVGF4"},{c:"12681",t:"RYG"},{c:"2040143",t:"FUEDCMID"},{c:"2040177",t:"FUEKIVFS"},{c:"2172623",t:"FUEMAVND"},{c:"2173235",t:"FUEFCV50"},{c:"2250002",t:"FUEBFVND"},{c:"2349197",t:"FUCTVGF5"},{c:"2400379403",t:"AAH"},{c:"2440105",t:"FUEKIVND"},{c:"2447365",t:"FUEABVND"},{c:"2627315",t:"FUETCC50"},{c:"3500773109",t:"BMK"},{c:"3602503768",t:"GCF"},{c:"3702308640",t:"HLO"},{c:"5702162138",t:"TD6"},{c:"6300230407",t:"AVG"},{c:"6300254045",t:"TT6"},{c:"9646",t:"LPT"},{c:"AAA",t:"AAA"},{c:"AAM",t:"AAM"},{c:"AAT",t:"AAT"},{c:"AAV",t:"AAV"},{c:"ABB",t:"ABB"},{c:"ABI",t:"ABI"},{c:"ABR",t:"ABR"},{c:"ABS",t:"ABS"},{c:"ABSC",t:"ABW"},{c:"ABT",t:"ABT"},{c:"ACB",t:"ACB"},{c:"ACC",t:"ACC"},{c:"ACE",t:"ACE"},{c:"ACL",t:"ACL"},{c:"ACM",t:"ACM"},{c:"ACSC",t:"ACS"},{c:"ACVN",t:"ACV"},{c:"ADC",t:"ADC"},{c:"ADP",t:"ADP"},{c:"AFIEX",t:"AFX"},{c:"AGF",t:"AGF"},{c:"AGIMECO",t:"CKA"},{c:"AGIMEX",t:"AGP"},{c:"AGM",t:"AGM"},{c:"AGPORT",t:"CAG"},{c:"AGPPS",t:"LTG"},{c:"AGR",t:"AGR"},{c:"AGRE",t:"AGG"},{c:"AGREX",t:"AGX"},{c:"AGTEX1",t:"AG1"},{c:"AIGASIA",t:"AIG"},{c:"ALT",t:"ALT"},{c:"ALV",t:"ALV"},{c:"AMC",t:"AMC"},{c:"AMD",t:"AMD"},{c:"AME",t:"AME"},{c:"AMP",t:"AMP"},{c:"AMV",t:"AMV"},{c:"ANCUONGWOOD",t:"ACG"},{c:"ANOVA",t:"NCG"},{c:"ANTESCO",t:"ANT"},{c:"ANV",t:"ANV"},{c:"APC",t:"APC"},{c:"APF",t:"APF"},{c:"APG",t:"APG"},{c:"APHOLD",t:"APH"},{c:"API",t:"API"},{c:"APL",t:"APL"},{c:"APP",t:"APP"},{c:"APS",t:"APS"},{c:"APYB",t:"HII"},{c:"ARM",t:"ARM"},{c:"ASA",t:"ASA"},{c:"ASECO32",t:"A32"},{c:"ASGC",t:"ASG"},{c:"ASM",t:"ASM"},{c:"ASP",t:"ASP"},{c:"ATA",t:"ATA"},{c:"ATAJSC",t:"ATG"},{c:"ATB",t:"ATB"},{c:"ATS",t:"ATS"},{c:"AVF",t:"AVF"},{c:"AVHPC",t:"AVC"},{c:"BAFVN",t:"BAF"},{c:"BALPAC",t:"BAL"},{c:"BANGGIANG",t:"BCV"},{c:"BAONGOCCORP",t:"BNA"},{c:"BARU",t:"BRR"},{c:"BBC",t:"BBC"},{c:"BBCC",t:"VLB"},{c:"BBH",t:"BBH"},{c:"BBS",t:"BBS"},{c:"BBT",t:"BBT"},{c:"BCB",t:"BCB"},{c:"BCC",t:"BCC"},{c:"BCE",t:"BCE"},{c:"BCG",t:"BCG"},{c:"BCGENERGY",t:"BGE"},{c:"BCGLAND",t:"BCR"},{c:"BCP",t:"BCP"},{c:"BDB",t:"BDB"},{c:"BDBMC",t:"MVC"},{c:"BDFC",t:"BFC"},{c:"BDGAR",t:"BDG"},{c:"BDHC",t:"BSA"},{c:"BDMIE",t:"PRT"},{c:"BDW",t:"BDW"},{c:"BED",t:"BED"},{c:"BELCO",t:"BEL"},{c:"BEWACO",t:"NBT"},{c:"BGWS",t:"BGW"},{c:"BHA",t:"BHA"},{c:"BHC",t:"BHC"},{c:"BHK",t:"BHK"},{c:"BHN",t:"BHN"},{c:"BHP",t:"BHP"},{c:"BIC",t:"BIC"},{c:"BID",t:"BID"},{c:"BIDC",t:"BCM"},{c:"BIDIFOOD",t:"BLT"},{c:"BIDIP",t:"DBD"},{c:"BIENHOTEA",t:"BHG"},{c:"BII",t:"BII"},{c:"BIOPHARCO",t:"BIO"},{c:"BIWASE",t:"BWE"},{c:"BKC",t:"BKC"},{c:"BKGVN",t:"BKG"},{c:"BLF",t:"BLF"},{c:"BLIC",t:"BLI"},{c:"BLIP",t:"MH3"},{c:"BLURBAN",t:"DTB"},{c:"BMC",t:"BMC"},{c:"BMD",t:"BMD"},{c:"BMF",t:"BMF"},{c:"BMI",t:"BMI"},{c:"BMIG",t:"BMG"},{c:"BMJ",t:"BMJ"},{c:"BMP",t:"BMP"},{c:"BMSC",t:"BMS"},{c:"BNURENCO",t:"MBN"},{c:"BNWSSC",t:"BNW"},{c:"BOT",t:"BOT"},{c:"BPC",t:"BPC"},{c:"BRC",t:"BRC"},{c:"BRS",t:"BRS"},{c:"BRVT",t:"VTG"},{c:"BSC",t:"BSC"},{c:"BSGPT",t:"BSP"},{c:"BSHCO",t:"BHI"},{c:"BSI",t:"BSI"},{c:"BSRC",t:"BSR"},{c:"BST",t:"BST"},{c:"BT6",t:"BT6"},{c:"BTG",t:"BTG"},{c:"BTH",t:"BTH"},{c:"BTN",t:"BTN"},{c:"BTP",t:"BTP"},{c:"BTS",t:"BTS"},{c:"BTT",t:"BTT"},{c:"BTTD",t:"BTD"},{c:"BTTOUR",t:"BTV"},{c:"BTU",t:"BTU"},{c:"BTW",t:"BTW"},{c:"BUSLN",t:"BLN"},{c:"BVG",t:"BVG"},{c:"BVH",t:"BVH"},{c:"BVN",t:"BVN"},{c:"BVQTTN",t:"TNH"},{c:"BVS",t:"BVS"},{c:"BWA",t:"BWA"},{c:"BWAC",t:"BWS"},{c:"BXH",t:"BXH"},{c:"BXHN",t:"HNB"},{c:"C1369",t:"C69"},{c:"C21",t:"C21"},{c:"C22",t:"C22"},{c:"C32",t:"C32"},{c:"C47",t:"C47"},{c:"C532",t:"TS3"},{c:"C92",t:"C92"},{c:"CAD",t:"CAD"},{c:"CAFEPA",t:"CPA"},{c:"CAFETL",t:"CFV"},{c:"CAN",t:"CAN"},{c:"CANTHOP",t:"CCT"},{c:"CAP",t:"CAP"},{c:"CASEAMEX",t:"CCA"},{c:"CAUPHA",t:"HFB"},{c:"CAWASU",t:"CMW"},{c:"CBMC",t:"KCB"},{c:"CBSU",t:"CBS"},{c:"CCI",t:"CCI"},{c:"CCL",t:"CCL"},{c:"CCLTD",t:"VSM"},{c:"CCM",t:"CCM"},{c:"CCR",t:"CCR"},{c:"CDC",t:"CDC"},{c:"CDH",t:"CDH"},{c:"CDJC",t:"CDG"},{c:"CDO",t:"CDO"},{c:"CEN",t:"CEN"},{c:"CENLAND",t:"CRE"},{c:"CENTURY",t:"STK"},{c:"CEO",t:"CEO"},{c:"CETECO",t:"TW3"},{c:"CFM",t:"CFM"},{c:"CH5",t:"CH5"},{c:"CHFC",t:"CHC"},{c:"CHOLIMEX",t:"CLX"},{c:"CHP",t:"CHP"},{c:"CI5",t:"CI5"},{c:"CID",t:"CID"},{c:"CIEN4",t:"C4G"},{c:"CIENCO1",t:"C12"},{c:"CIG",t:"CIG"},{c:"CII",t:"CII"},{c:"CIIC",t:"CKG"},{c:"CIPC",t:"CIP"},{c:"CISCO",t:"CBI"},{c:"CJC",t:"CJC"},{c:"CK120",t:"CK8"},{c:"CKD",t:"CKD"},{c:"CKMK",t:"CMK"},{c:"CKV",t:"CKV"},{c:"CLC",t:"CLC"},{c:"CLEVERADS",t:"ADG"},{c:"CLG",t:"CLG"},{c:"CLL",t:"CLL"},{c:"CLMF",t:"CMF"},{c:"CLW",t:"CLW"},{c:"CMBVN",t:"TVH"},{c:"CMC",t:"CMC"},{c:"CMFC",t:"TIN"},{c:"CMG",t:"CMG"},{c:"CMI",t:"CMI"},{c:"CMID",t:"CMD"},{c:"CMP",t:"CMP"},{c:"CMS",t:"CMS"},{c:"CMSF",t:"CAT"},{c:"CMT",t:"CMT"},{c:"CMV",t:"CMV"},{c:"CMX",t:"CMX"},{c:"CNC",t:"CNC"},{c:"CNG",t:"CNG"},{c:"CNT",t:"CNT"},{c:"COC1",t:"CC1"},{c:"CODUPHA",t:"CDP"},{c:"COM",t:"COM"},{c:"COMA",t:"TCK"},{c:"COMIFOOD",t:"CMN"},{c:"CONAC",t:"ICN"},{c:"CONIN",t:"CNN"},{c:"CPC",t:"CPC"},{c:"CPC1",t:"DP1"},{c:"CPC1HN",t:"DTP"},{c:"CPH",t:"CPH"},{c:"CPI",t:"CPI"},{c:"CRAC",t:"CIA"},{c:"CREATEVN",t:"CRC"},{c:"CSC",t:"CSC"},{c:"CSGC",t:"SGP"},{c:"CSM",t:"CSM"},{c:"CSV",t:"CSV"},{c:"CT3",t:"CT3"},{c:"CT6",t:"CT6"},{c:"CTA",t:"CTA"},{c:"CTB",t:"CTB"},{c:"CTC",t:"CTC"},{c:"CTD",t:"CTD"},{c:"CTF",t:"CTF"},{c:"CTG",t:"CTG"},{c:"CTGTSG",t:"GTS"},{c:"CTI",t:"CTI"},{c:"CTIN",t:"ICT"},{c:"CTN",t:"CTN"},{c:"CTP",t:"CTP"},{c:"CTR",t:"CTR"},{c:"CTS",t:"CTS"},{c:"CTT",t:"CTT"},{c:"CTTR",t:"TTS"},{c:"CTW",t:"CTW"},{c:"CTX",t:"CTX"},{c:"CVN",t:"CVN"},{c:"CVT",t:"CVT"},{c:"CX8",t:"CX8"},{c:"CYC",t:"CYC"},{c:"D11",t:"D11"},{c:"D2D",t:"D2D"},{c:"DAC",t:"DAC"},{c:"DACERA",t:"DCR"},{c:"DAD",t:"DAD"},{c:"DAE",t:"DAE"},{c:"DAG",t:"DAG"},{c:"DAGAR",t:"DCG"},{c:"DAH",t:"DAH"},{c:"DAKLAKRU",t:"DRG"},{c:"DAKRUCO",t:"DRI"},{c:"DAKURENCO",t:"UDL"},{c:"DAKWACO",t:"DWC"},{c:"DAMHB",t:"DHB"},{c:"DAMSAN",t:"ADS"},{c:"DANAPHA",t:"DAN"},{c:"DANURENCO",t:"DNE"},{c:"DAS",t:"DAS"},{c:"DATPHUONG",t:"DPG"},{c:"DBC",t:"DBC"},{c:"DBHP",t:"TDB"},{c:"DBM",t:"DBM"},{c:"DBT",t:"DBT"},{c:"DC2",t:"DC2"},{c:"DC4",t:"DC4"},{c:"DCL",t:"DCL"},{c:"DCM",t:"DCM"},{c:"DCS",t:"DCS"},{c:"DCT",t:"DCT"},{c:"DCVBTKV",t:"VBG"},{c:"DDM",t:"DDM"},{c:"DDN",t:"DDN"},{c:"DDV",t:"DDV"},{c:"DECOFI",t:"DCF"},{c:"DETMAY7",t:"DM7"},{c:"DFF",t:"DFF"},{c:"DGC",t:"DGC"},{c:"DGT",t:"DGT"},{c:"DGW",t:"DGW"},{c:"DHA",t:"DHA"},{c:"DHC",t:"DHC"},{c:"DHG",t:"DHG"},{c:"DHM",t:"DHM"},{c:"DHP",t:"DHP"},{c:"DHT",t:"DHT"},{c:"DIC",t:"DIC"},{c:"DIC1",t:"DC1"},{c:"DID",t:"DID"},{c:"DIENTRUONGTHINH",t:"TTE"},{c:"DIG",t:"DIG"},{c:"DIH",t:"DIH"},{c:"DL1",t:"DL1"},{c:"DLD",t:"DLD"},{c:"DLG",t:"DLG"},{c:"DLR",t:"DLR"},{c:"DLURBAN",t:"DUS"},{c:"DMC",t:"DMC"},{c:"DMCS",t:"DMS"},{c:"DNALP",t:"NSS"},{c:"DNC",t:"DNC"},{c:"DNCWS",t:"DNW"},{c:"DNH",t:"DNH"},{c:"DNL",t:"DNL"},{c:"DNM",t:"DNM"},{c:"DNMB",t:"DND"},{c:"DNN",t:"DNN"},{c:"DNP",t:"DNP"},{c:"DNPORT",t:"CDN"},{c:"DNSC",t:"DSC"},{c:"DNSE",t:"DSE"},{c:"DNT",t:"DNT"},{c:"DOCAM",t:"DOC"},{c:"DOLICO",t:"BSD"},{c:"DOMENAL",t:"DMN"},{c:"DOPET",t:"DOP"},{c:"DORUC",t:"CDR"},{c:"DOWASEN",t:"DWS"},{c:"DPC",t:"DPC"},{c:"DPM",t:"DPM"},{c:"DPP",t:"DPP"},{c:"DPR",t:"DPR"},{c:"DPS",t:"DPS"},{c:"DPTW2",t:"DP2"},{c:"DQC",t:"DQC"},{c:"DRC",t:"DRC"},{c:"DRH",t:"DRH"},{c:"DRL",t:"DRL"},{c:"DSINVEST",t:"DSH"},{c:"DSN",t:"DSN"},{c:"DST",t:"DST"},{c:"DTA",t:"DTA"},{c:"DTBMC",t:"BDT"},{c:"DTC",t:"DTC"},{c:"DTE",t:"DTE"},{c:"DTI",t:"DTI"},{c:"DTL",t:"DTL"},{c:"DTT",t:"DTT"},{c:"DTVT",t:"MTV"},{c:"DUGRACO",t:"MGG"},{c:"DVC",t:"DVC"},{c:"DVG",t:"DVG"},{c:"DVP",t:"DVP"},{c:"DVSG",t:"DSG"},{c:"DVW",t:"DVW"},{c:"DXG",t:"DXG"},{c:"DXL",t:"DXL"},{c:"DXP",t:"DXP"},{c:"DXRES",t:"DXS"},{c:"DXV",t:"DXV"},{c:"DZM",t:"DZM"},{c:"E1SSHN30",t:"FUESSV50"},{c:"E1VFVN30",t:"E1VFVN30"},{c:"EBS",t:"EBS"},{c:"EC29",t:"E29"},{c:"ECI",t:"ECI"},{c:"EFI",t:"EFI"},{c:"EIB",t:"EIB"},{c:"EID",t:"EID"},{c:"ELC",t:"ELC"},{c:"EMEC",t:"EME"},{c:"EMESCO",t:"EMG"},{c:"EMSP",t:"EMS"},{c:"EPOCO",t:"EPC"},{c:"ETFSSIAM",t:"FUESSVFL"},{c:"EVE",t:"EVE"},{c:"EVGC",t:"EVG"},{c:"EVNF",t:"EVF"},{c:"EVNI",t:"EIC"},{c:"EVNLC",t:"LEC"},{c:"FAHASA",t:"FHS"},{c:"FAROS",t:"ROS"},{c:"FBA",t:"FBA"},{c:"FCM",t:"FCM"},{c:"FCN",t:"FCN"},{c:"FDC",t:"FDC"},{c:"FICO1",t:"FIC"},{c:"FID",t:"FID"},{c:"FIRSTREAL",t:"FIR"},{c:"FISHIPCO",t:"FSO"},{c:"FIT",t:"FIT"},{c:"FLC",t:"FLC"},{c:"FLCS",t:"ART"},{c:"FMC",t:"FMC"},{c:"FOCC",t:"FOC"},{c:"FOMECO",t:"FBC"},{c:"FOODCOSA",t:"FCS"},{c:"FORIMEX",t:"FRM"},{c:"FORIP",t:"DP3"},{c:"FORTEX",t:"FTM"},{c:"FPT",t:"FPT"},{c:"FPTR",t:"FRT"},{c:"FPTS",t:"FTS"},{c:"FRC",t:"FRC"},{c:"FT1",t:"FT1"},{c:"FTEL",t:"FOX"},{c:"FTI",t:"FTI"},{c:"FUEMAV30",t:"FUEMAV30"},{c:"FUESSV30",t:"FUESSV30"},{c:"FUEVFVND",t:"FUEVFVND"},{c:"FUEVN100",t:"FUEVN100"},{c:"G20",t:"G20"},{c:"GABJSC",t:"GAB"},{c:"GAR10",t:"M10"},{c:"GAS",t:"GAS"},{c:"GDB",t:"BVB"},{c:"GDT",t:"GDT"},{c:"GDW",t:"GDW"},{c:"GELEX",t:"GEX"},{c:"GELEXTBD",t:"GEE"},{c:"GEN3",t:"PGV"},{c:"GER",t:"GER"},{c:"GGG",t:"GGG"},{c:"GHC",t:"GHC"},{c:"GIALAICOFFEE",t:"FGL"},{c:"GIALAIWACO",t:"GLW"},{c:"GIL",t:"GIL"},{c:"GLC",t:"GLC"},{c:"GLEC",t:"GEG"},{c:"GLT",t:"GLT"},{c:"GMA",t:"GMA"},{c:"GMC",t:"GMC"},{c:"GMD",t:"GMD"},{c:"GMX",t:"GMX"},{c:"GOCONGUP",t:"MTX"},{c:"GREENDI",t:"GIC"},{c:"GSM",t:"GSM"},{c:"GSP",t:"GSP"},{c:"GTA",t:"GTA"},{c:"GTDTHP",t:"DDH"},{c:"GTT",t:"GTT"},{c:"H11",t:"H11"},{c:"HABACO",t:"PHN"},{c:"HACC1",t:"HC1"},{c:"HACO3",t:"HC3"},{c:"HAD",t:"HAD"},{c:"HADIPHAR",t:"HDP"},{c:"HAG",t:"HAG"},{c:"HAH",t:"HAH"},{c:"HAI",t:"HAI"},{c:"HAIPHATGROUP",t:"HPX"},{c:"HALCOM",t:"HID"},{c:"HALICO",t:"HNR"},{c:"HALOBECO",t:"HLB"},{c:"HALOTEX",t:"HLT"},{c:"HAMACO",t:"HAM"},{c:"HAMADECO",t:"HHV"},{c:"HAMIS",t:"AAS"},{c:"HANABECO",t:"BBM"},{c:"HANCO",t:"HAN"},{c:"HANDI6",t:"HD6"},{c:"HANELP",t:"HNP"},{c:"HANOSIMEX",t:"HSM"},{c:"HAP",t:"HAP"},{c:"HAPRO",t:"HTM"},{c:"HAR",t:"HAR"},{c:"HAS",t:"HAS"},{c:"HASECO",t:"HES"},{c:"HAT",t:"HAT"},{c:"HATOS",t:"GH3"},{c:"HAV",t:"HAV"},{c:"HAX",t:"HAX"},{c:"HBC",t:"HBC"},{c:"HBD",t:"HBD"},{c:"HBHP",t:"HBH"},{c:"HBS",t:"HBS"},{c:"HCC",t:"HCC"},{c:"HCCI",t:"XDH"},{c:"HCDG",t:"HCD"},{c:"HCI",t:"HCI"},{c:"HCM",t:"HCM"},{c:"HCMPC",t:"HTE"},{c:"HCT",t:"HCT"},{c:"HDA",t:"HDA"},{c:"HDB",t:"HDB"},{c:"HDC",t:"HDC"},{c:"HDG",t:"HDG"},{c:"HDM",t:"HDM"},{c:"HDO",t:"HDO"},{c:"HDPHAR",t:"DHD"},{c:"HDWACO",t:"HDW"},{c:"HEC2",t:"HEC"},{c:"HEJ",t:"HEJ"},{c:"HEP",t:"HEP"},{c:"HEV",t:"HEV"},{c:"HFC",t:"HFC"},{c:"HFX",t:"HFX"},{c:"HGM",t:"HGM"},{c:"HGTC",t:"HGT"},{c:"HHC",t:"HHC"},{c:"HHG",t:"HHG"},{c:"HHN",t:"HHN"},{c:"HHPPAPER",t:"HHP"},{c:"HHS",t:"HHS"},{c:"HHSF",t:"TCH"},{c:"HHSLAGRI",t:"HSL"},{c:"HIG",t:"HIG"},{c:"HIPC",t:"HPI"},{c:"HJS",t:"HJS"},{c:"HKB",t:"HKB"},{c:"HKT",t:"HKT"},{c:"HLA",t:"HLA"},{c:"HLC",t:"HLC"},{c:"HLD",t:"HLD"},{c:"HLSC",t:"HLS"},{c:"HLY",t:"HLY"},{c:"HMC",t:"HMC"},{c:"HMCC",t:"HMS"},{c:"HMG",t:"HMG"},{c:"HMH",t:"HMH"},{c:"HNCADAS",t:"DCH"},{c:"HNFOOD",t:"HAF"},{c:"HNG",t:"HNG"},{c:"HNHC",t:"HNA"},{c:"HNM",t:"HNM"},{c:"HNPHARM",t:"DHN"},{c:"HNTOR",t:"TSJ"},{c:"HOAVIET",t:"HJC"},{c:"HOM",t:"HOM"},{c:"HOT",t:"HOT"},{c:"HPB",t:"HPB"},{c:"HPC",t:"HAC"},{c:"HPCC",t:"CCP"},{c:"HPD",t:"HPD"},{c:"HPG",t:"HPG"},{c:"HPH",t:"HPH"},{c:"HPMC",t:"HPM"},{c:"HPP",t:"HPP"},{c:"HPPHARM",t:"DPH"},{c:"HPT",t:"HPT"},{c:"HPTT",t:"TUG"},{c:"HPWC",t:"HPW"},{c:"HQC",t:"HQC"},{c:"HRB",t:"HRB"},{c:"HRC",t:"HRC"},{c:"HSA",t:"HSA"},{c:"HSG",t:"HSG"},{c:"HSI",t:"HSI"},{c:"HSPC",t:"HSP"},{c:"HT1",t:"HT1"},{c:"HTC",t:"HTC"},{c:"HTG",t:"HTG"},{c:"HTI",t:"HTI"},{c:"HTINCONS",t:"HTN"},{c:"HTL",t:"HTL"},{c:"HTP",t:"HTP"},{c:"HTT",t:"HTT"},{c:"HTV",t:"HTV"},{c:"HU1",t:"HU1"},{c:"HU3",t:"HU3"},{c:"HU4",t:"HU4"},{c:"HUD2",t:"HD2"},{c:"HUD6",t:"HU6"},{c:"HUD8",t:"HD8"},{c:"HUEWACO",t:"HWS"},{c:"HUGA",t:"HNI"},{c:"HUGACO",t:"HUG"},{c:"HUT",t:"HUT"},{c:"HUUNGHI",t:"HNF"},{c:"HVA",t:"HVA"},{c:"HVCIT",t:"HVH"},{c:"HVG",t:"HVG"},{c:"HVT",t:"HVT"},{c:"HVX",t:"HVX"},{c:"I40",t:"L40"},{c:"IBC",t:"IBC"},{c:"ICC",t:"ICC"},{c:"ICDLB",t:"ILB"},{c:"ICF",t:"ICF"},{c:"ICG",t:"ICG"},{c:"ICI",t:"ICI"},{c:"IDI",t:"IDI"},{c:"IDICO",t:"IDC"},{c:"IDJ",t:"IDJ"},{c:"IDP",t:"IDP"},{c:"IDV",t:"IDV"},{c:"IFS",t:"IFS"},{c:"IHK",t:"IHK"},{c:"IJC",t:"IJC"},{c:"ILA",t:"ILA"},{c:"ILC",t:"ILC"},{c:"IME",t:"IME"},{c:"IMP",t:"IMP"},{c:"IN4",t:"IN4"},{c:"INBID",t:"IBD"},{c:"INC",t:"INC"},{c:"INDOCHINEINMEX",t:"DDG"},{c:"INN",t:"INN"},{c:"INRUCO",t:"IRC"},{c:"INTERSERCO",t:"ILS"},{c:"INVESTCO",t:"ING"},{c:"IPAG",t:"IPA"},{c:"ISLC",t:"ISG"},{c:"IST",t:"IST"},{c:"ITA",t:"ITA"},{c:"ITASCO",t:"ITS"},{c:"ITC",t:"ITC"},{c:"ITD",t:"ITD"},{c:"ITQ",t:"ITQ"},{c:"IVS",t:"IVS"},{c:"JVC",t:"JVC"},{c:"KAC",t:"KAC"},{c:"KBC",t:"KBC"},{c:"KDC",t:"KDC"},{c:"KDH",t:"KDH"},{c:"KDM",t:"KDM"},{c:"KGTTC",t:"KTC"},{c:"KHAIHOANLAND",t:"KHG"},{c:"KHAWASSCO",t:"KHW"},{c:"KHL",t:"KHL"},{c:"KHP",t:"KHP"},{c:"KIENTUONG",t:"KWA"},{c:"KIGIMEX",t:"KGM"},{c:"KIHUSEA",t:"KHS"},{c:"KKC",t:"KKC"},{c:"KLB",t:"KLB"},{c:"KLF",t:"KLF"},{c:"KMBC",t:"GKM"},{c:"KMR",t:"KMR"},{c:"KMT",t:"KMT"},{c:"KOSY",t:"KOS"},{c:"KPF",t:"KPF"},{c:"KSB",t:"KSB"},{c:"KSD",t:"KSD"},{c:"KSH",t:"KSH"},{c:"KSHD",t:"KHD"},{c:"KSLATCA",t:"LMC"},{c:"KSQ",t:"KSQ"},{c:"KSS",t:"KSS"},{c:"KST",t:"KST"},{c:"KSV",t:"KSV"},{c:"KTL",t:"KTL"},{c:"KTS",t:"KTS"},{c:"KTT",t:"KTT"},{c:"KVC",t:"KVC"},{c:"L10",t:"L10"},{c:"L14",t:"L14"},{c:"L18",t:"L18"},{c:"L35",t:"L35"},{c:"L43",t:"L43"},{c:"L44",t:"L44"},{c:"L451",t:"L45"},{c:"L61",t:"L61"},{c:"L62",t:"L62"},{c:"L693",t:"L63"},{c:"LAF",t:"LAF"},{c:"LAMA",t:"LMI"},{c:"LAMCO",t:"DKC"},{c:"LANDSG",t:"LSG"},{c:"LAS",t:"LAS"},{c:"LAW",t:"LAW"},{c:"LBE",t:"LBE"},{c:"LBM",t:"LBM"},{c:"LCC",t:"LCC"},{c:"LCD",t:"LCD"},{c:"LCG",t:"LCG"},{c:"LCGQN",t:"LQN"},{c:"LCM",t:"LCM"},{c:"LCS",t:"LCS"},{c:"LDGROUP",t:"LDG"},{c:"LDP",t:"LDP"},{c:"LDWSS",t:"LDW"},{c:"LEGAMEX",t:"LGM"},{c:"LGC",t:"LGC"},{c:"LGL",t:"LGL"},{c:"LHC",t:"LHC"},{c:"LHG",t:"LHG"},{c:"LICOGI",t:"LIC"},{c:"LICOGI12",t:"L12"},{c:"LICOGI9",t:"LG9"},{c:"LIG",t:"LIG"},{c:"LILAMA",t:"LLM"},{c:"LINCO",t:"LAI"},{c:"LISEM2",t:"AMS"},{c:"LIX",t:"LIX"},{c:"LKW",t:"LKW"},{c:"LM3",t:"LM3"},{c:"LM7",t:"LM7"},{c:"LM8",t:"LM8"},{c:"LMH",t:"LMH"},{c:"LNQB",t:"LNC"},{c:"LO5",t:"LO5"},{c:"LSS",t:"LSS"},{c:"LTC",t:"LTC"},{c:"LUT",t:"LUT"},{c:"LVB",t:"LPB"},{c:"MAC",t:"MAC"},{c:"MACHIN1",t:"MA1"},{c:"MAS",t:"MAS"},{c:"MBB",t:"MBB"},{c:"MCC",t:"MCC"},{c:"MCF",t:"MCF"},{c:"MCG",t:"MCG"},{c:"MCMILK",t:"MCM"},{c:"MCO",t:"MCO"},{c:"MCP",t:"MCP"},{c:"MDA",t:"MDA"},{c:"MDC",t:"MDC"},{c:"MDCHE",t:"HMD"},{c:"MDF",t:"MDF"},{c:"MDG",t:"MDG"},{c:"MEC",t:"MEC"},{c:"MED",t:"MED"},{c:"MEF",t:"MEF"},{c:"MELIN",t:"MEL"},{c:"MERUFA",t:"MRF"},{c:"MESCVN",t:"MES"},{c:"MFS",t:"MFS"},{c:"MHC",t:"MHC"},{c:"MHJC",t:"JOS"},{c:"MHL",t:"MHL"},{c:"MIC",t:"MIC"},{c:"MIEC",t:"MIE"},{c:"MIM",t:"MIM"},{c:"MINC",t:"MIG"},{c:"MINHBAOTIN",t:"MBT"},{c:"MITRA",t:"MTA"},{c:"MITRACO",t:"MLS"},{c:"MIZA",t:"MZG"},{c:"MKP",t:"MKP"},{c:"MKV",t:"MKV"},{c:"MLC",t:"MLC"},{c:"MNSCORP",t:"MML"},{c:"MPC",t:"MPC"},{c:"MPT",t:"MPT"},{c:"MPY",t:"MPY"},{c:"MQB",t:"MQB"},{c:"MSB",t:"MSB"},{c:"MSCC",t:"MCH"},{c:"MSN",t:"MSN"},{c:"MSRC",t:"MSR"},{c:"MST",t:"MST"},{c:"MTG",t:"MTG"},{c:"MTH",t:"MTH"},{c:"MTL",t:"MTL"},{c:"MTNGHEAN",t:"NAU"},{c:"MTP",t:"MTP"},{c:"MWG",t:"MWG"},{c:"NAB",t:"NAB"},{c:"NADY",t:"NDP"},{c:"NAF",t:"NAF"},{c:"NAG",t:"NAG"},{c:"NAGA",t:"NJC"},{c:"NAGECO",t:"NAC"},{c:"NAMDO",t:"FHN"},{c:"NAP",t:"NAP"},{c:"NAPHARM",t:"NTF"},{c:"NASB",t:"BAB"},{c:"NASCO",t:"NAS"},{c:"NAV",t:"NAV"},{c:"NAVET",t:"VET"},{c:"NAWASCO",t:"NAW"},{c:"NBB",t:"NBB"},{c:"NBC",t:"NBC"},{c:"NBEE",t:"NBE"},{c:"NBP",t:"NBP"},{c:"NBW",t:"NBW"},{c:"NCS",t:"NCS"},{c:"NCT",t:"NCT"},{c:"ND2",t:"ND2"},{c:"NDC",t:"NDC"},{c:"NDEC",t:"MND"},{c:"NDF",t:"NDF"},{c:"NDHP",t:"HND"},{c:"NDN",t:"NDN"},{c:"NDWATER",t:"NDW"},{c:"NDX",t:"NDX"},{c:"NEED",t:"NED"},{c:"NEEM",t:"NEM"},{c:"NET",t:"NET"},{c:"NETLAND",t:"NRC"},{c:"NFC",t:"NFC"},{c:"NGC",t:"NGC"},{c:"NHA",t:"NHA"},{c:"NHABE",t:"MNB"},{c:"NHANCO",t:"VCE"},{c:"NHC",t:"NHC"},{c:"NHH",t:"NHH"},{c:"NHN",t:"VHM"},{c:"NHP",t:"NHP"},{c:"NHTOYS",t:"NHT"},{c:"NHVT",t:"NHV"},{c:"NKG",t:"NKG"},{c:"NLG",t:"NLG"},{c:"NLS",t:"NLS"},{c:"NNC",t:"NNC"},{c:"NNT",t:"NNT"},{c:"NOS",t:"NOS"},{c:"NOVALAND",t:"NVL"},{c:"NPFC",t:"PMB"},{c:"NQB",t:"NQB"},{c:"NS2",t:"NS2"},{c:"NSC",t:"NSC"},{c:"NSHPETRO",t:"PSH"},{c:"NST",t:"NST"},{c:"NT2",t:"NT2"},{c:"NTB",t:"NTB"},{c:"NTC",t:"NTC"},{c:"NTGATEX",t:"NTT"},{c:"NTL",t:"NTL"},{c:"NTP",t:"NTP"},{c:"NTUREN",t:"NUE"},{c:"NTW",t:"NTW"},{c:"NVB",t:"NVB"},{c:"NVT",t:"NVT"},{c:"NWT",t:"NWT"},{c:"NXT",t:"NXT"},{c:"OCB",t:"OCB"},{c:"OCH",t:"OCH"},{c:"OCSC",t:"EVS"},{c:"OGC",t:"OGC"},{c:"OMONWACO",t:"TOW"},{c:"ONE",t:"ONE"},{c:"ONW",t:"ONW"},{c:"OPC",t:"OPC"},{c:"ORS",t:"ORS"},{c:"PAC",t:"PAC"},{c:"PAIC",t:"PAI"},{c:"PAN",t:"PAN"},{c:"PAPC",t:"PAP"},{c:"PAS",t:"PAS"},{c:"PBP",t:"PBP"},{c:"PCC1",t:"PC1"},{c:"PCC1P",t:"PCC"},{c:"PCG",t:"PCG"},{c:"PCM",t:"PCM"},{c:"PCSC",t:"CSI"},{c:"PCT",t:"PCT"},{c:"PDB",t:"PDB"},{c:"PDC",t:"PDC"},{c:"PDN",t:"PDN"},{c:"PDR",t:"PDR"},{c:"PDVC",t:"PDV"},{c:"PEC",t:"PEC"},{c:"PECO",t:"PEQ"},{c:"PEN",t:"PEN"},{c:"PET",t:"PET"},{c:"PETEC",t:"PCF"},{c:"PETECC",t:"PEG"},{c:"PETECHIM",t:"PTV"},{c:"PETRO",t:"PLX"},{c:"PFL",t:"PFL"},{c:"PGB",t:"PGB"},{c:"PGC",t:"PGC"},{c:"PGD",t:"PGD"},{c:"PGI",t:"PGI"},{c:"PGN",t:"PGN"},{c:"PGS",t:"PGS"},{c:"PGT",t:"PGT"},{c:"PHALE",t:"PLP"},{c:"PHARBACO",t:"PBC"},{c:"PHC",t:"PHC"},{c:"PHH",t:"PHH"},{c:"PHP",t:"PHP"},{c:"PHR",t:"PHR"},{c:"PHS",t:"PHS"},{c:"PIACOM",t:"PIA"},{c:"PIC",t:"PIC"},{c:"PID",t:"PID"},{c:"PISIC",t:"PIS"},{c:"PIST",t:"EIN"},{c:"PIT",t:"PIT"},{c:"PIV",t:"PIV"},{c:"PJC",t:"PJC"},{c:"PJS",t:"PJS"},{c:"PJT",t:"PJT"},{c:"PLAND",t:"PLA"},{c:"PLC",t:"PLC"},{c:"PLCO",t:"PLO"},{c:"PLE",t:"PLE"},{c:"PMC",t:"PMC"},{c:"PMGAS",t:"PMG"},{c:"PMJ",t:"PMJ"},{c:"PMPACK",t:"PMP"},{c:"PMS",t:"PMS"},{c:"PMT",t:"PMT"},{c:"PMWC",t:"PMW"},{c:"PNC",t:"PNC"},{c:"PNCO",t:"PNG"},{c:"PND",t:"PND"},{c:"PNJ",t:"PNJ"},{c:"PNP",t:"PNP"},{c:"PNTECHCONS",t:"PNT"},{c:"POB",t:"POB"},{c:"POM",t:"POM"},{c:"POT",t:"POT"},{c:"POV",t:"POV"},{c:"POWACO",t:"DNA"},{c:"PPC",t:"PPC"},{c:"PPE",t:"PPE"},{c:"PPHC",t:"PPH"},{c:"PPI",t:"PPI"},{c:"PPP",t:"PPP"},{c:"PPS",t:"PPS"},{c:"PRC",t:"PRC"},{c:"PRO",t:"PRO"},{c:"PSB",t:"PSB"},{c:"PSC",t:"PSC"},{c:"PSC1",t:"BT1"},{c:"PSD",t:"PSD"},{c:"PSE",t:"PSE"},{c:"PSG",t:"PSG"},{c:"PSI",t:"PSI"},{c:"PSL",t:"PSL"},{c:"PSP",t:"PSP"},{c:"PTB",t:"PTB"},{c:"PTBD",t:"GCB"},{c:"PTC",t:"PTC"},{c:"PTCM",t:"PTE"},{c:"PTCO",t:"PTO"},{c:"PTCOIN",t:"KSF"},{c:"PTD",t:"PTD"},{c:"PTG",t:"PTG"},{c:"PTH",t:"PTH"},{c:"PTI",t:"PTI"},{c:"PTL",t:"PTL"},{c:"PTP",t:"PTP"},{c:"PTS",t:"PTS"},{c:"PTSC",t:"POS"},{c:"PTSCTH",t:"PSN"},{c:"PTSNT",t:"PTX"},{c:"PTT",t:"PTT"},{c:"PTTC",t:"DSP"},{c:"PTTD",t:"DTD"},{c:"PTTHUYSAN",t:"DAT"},{c:"PV2",t:"PV2"},{c:"PVA",t:"PVA"},{c:"PVB",t:"PVB"},{c:"PVBUILDING",t:"PBT"},{c:"PVC",t:"PVC"},{c:"PVCE",t:"PCE"},{c:"PVCMC",t:"PVM"},{c:"PVCMK",t:"PXC"},{c:"PVCTH",t:"PVH"},{c:"PVD",t:"PVD"},{c:"PVE",t:"PVE"},{c:"PVFCSW",t:"PSW"},{c:"PVG",t:"PVG"},{c:"PVI",t:"PVI"},{c:"PVIRE",t:"PRE"},{c:"PVL",t:"PVL"},{c:"PVOIL",t:"OIL"},{c:"PVOPY",t:"PPY"},{c:"PVPOWER",t:"POW"},{c:"PVR",t:"PVR"},{c:"PVS",t:"PVS"},{c:"PVSY",t:"PVY"},{c:"PVT",t:"PVT"},{c:"PVTRANS",t:"PVP"},{c:"PVV",t:"PVV"},{c:"PVX",t:"PVX"},{c:"PWACO",t:"PWA"},{c:"PX1",t:"PX1"},{c:"PXA",t:"PXA"},{c:"PXI",t:"PXI"},{c:"PXL",t:"PXL"},{c:"PXM",t:"PXM"},{c:"PXS",t:"PXS"},{c:"PXT",t:"PXT"},{c:"PYWS",t:"PWS"},{c:"QBBECO",t:"BQB"},{c:"QBS",t:"QBS"},{c:"QCC",t:"QCC"},{c:"QCG",t:"QCG"},{c:"QHD",t:"QHD"},{c:"QHW",t:"QHW"},{c:"QNC",t:"QNC"},{c:"QNGURENCO",t:"MQN"},{c:"QNNP",t:"QSP"},{c:"QNNPORT",t:"QNP"},{c:"QNPORT",t:"CQN"},{c:"QNPS",t:"PQN"},{c:"QNSC",t:"QNS"},{c:"QNT",t:"QNT"},{c:"QNTPC",t:"QTP"},{c:"QNU",t:"QNU"},{c:"QNWASC",t:"QNW"},{c:"QPH",t:"QPH"},{c:"QST",t:"QST"},{c:"QTC",t:"QTC"},{c:"QUAWACO",t:"NQN"},{c:"RAL",t:"RAL"},{c:"RATRACO",t:"RAT"},{c:"RCC",t:"RCC"},{c:"RCD",t:"RCD"},{c:"RCL",t:"RCL"},{c:"RDP",t:"RDP"},{c:"REE",t:"REE"},{c:"RESCO",t:"TBR"},{c:"RIC",t:"RIC"},{c:"RIMACO3",t:"DS3"},{c:"RUBICO",t:"RBC"},{c:"S12",t:"S12"},{c:"S27",t:"S27"},{c:"S55",t:"S55"},{c:"S702",t:"S72"},{c:"S74",t:"S74"},{c:"S96",t:"S96"},{c:"S99",t:"S99"},{c:"SABECOHN",t:"BSH"},{c:"SABEQN",t:"BSQ"},{c:"SAF",t:"SAF"},{c:"SAGS",t:"SGN"},{c:"SAL",t:"SAL"},{c:"SAM",t:"SAM"},{c:"SANESTDK",t:"SKV"},{c:"SANESTKH",t:"SKH"},{c:"SAP",t:"SAP"},{c:"SAPT",t:"APT"},{c:"SAPULICO",t:"CHS"},{c:"SAS",t:"SAS"},{c:"SASO",t:"BSL"},{c:"SASTECO",t:"SAC"},{c:"SAV",t:"SAV"},{c:"SAVINA",t:"VNB"},{c:"SBA",t:"SBA"},{c:"SBCO",t:"SAB"},{c:"SBDC",t:"SBD"},{c:"SBHEVN",t:"SBH"},{c:"SBL",t:"SBL"},{c:"SBMC",t:"SBM"},{c:"SBS",t:"SBS"},{c:"SBT",t:"SBT"},{c:"SC5",t:"SC5"},{c:"SCC",t:"SCC"},{c:"SCD",t:"SCD"},{c:"SCG",t:"SCG"},{c:"SCI",t:"SCI"},{c:"SCID",t:"SID"},{c:"SCJ",t:"SCJ"},{c:"SCL",t:"SCL"},{c:"SCO",t:"SCO"},{c:"SCR",t:"SCR"},{c:"SCSC",t:"SCS"},{c:"SD1",t:"SD1"},{c:"SD2",t:"SD2"},{c:"SD3",t:"SD3"},{c:"SD4",t:"SD4"},{c:"SD5",t:"SD5"},{c:"SD6",t:"SD6"},{c:"SD7",t:"SD7"},{c:"SD8",t:"SD8"},{c:"SD9",t:"SD9"},{c:"SDA",t:"SDA"},{c:"SDB",t:"SDB"},{c:"SDC",t:"SDC"},{c:"SDD",t:"SDD"},{c:"SDG",t:"SDG"},{c:"SDK",t:"SDK"},{c:"SDN",t:"SDN"},{c:"SDP",t:"SDP"},{c:"SDSEC",t:"XLV"},{c:"SDT",t:"SDT"},{c:"SDU",t:"SDU"},{c:"SDV",t:"SDV"},{c:"SDX",t:"SDX"},{c:"SDY",t:"SDY"},{c:"SEAB",t:"SSB"},{c:"SEAPRODEX",t:"SEA"},{c:"SEAS",t:"SPV"},{c:"SEB",t:"SEB"},{c:"SED",t:"SED"},{c:"SEP",t:"SEP"},{c:"SFC",t:"SFC"},{c:"SFG",t:"SFG"},{c:"SFI",t:"SFI"},{c:"SFN",t:"SFN"},{c:"SGB",t:"SGB"},{c:"SGBTB",t:"SBB"},{c:"SGBUS",t:"BSG"},{c:"SGC",t:"SGC"},{c:"SGD",t:"SGD"},{c:"SGH",t:"SGH"},{c:"SGPLAS",t:"NSG"},{c:"SGR",t:"SGR"},{c:"SGS",t:"SGS"},{c:"SGT",t:"SGT"},{c:"SGVRG",t:"SIP"},{c:"SGYT",t:"TPS"},{c:"SHA",t:"SHA"},{c:"SHAL",t:"NSH"},{c:"SHB",t:"SHB"},{c:"SHC",t:"SHC"},{c:"SHG",t:"SHG"},{c:"SHGC",t:"MSH"},{c:"SHI",t:"SHI"},{c:"SHN",t:"SHN"},{c:"SHP",t:"SHP"},{c:"SHS",t:"SHS"},{c:"SIAMB",t:"SBV"},{c:"SIDC",t:"SZC"},{c:"SII",t:"SII"},{c:"SIVICO",t:"SIV"},{c:"SJ1",t:"SJ1"},{c:"SJC",t:"SJC"},{c:"SJD",t:"SJD"},{c:"SJE",t:"SJE"},{c:"SJF",t:"SJF"},{c:"SJM",t:"SJM"},{c:"SJS",t:"SJS"},{c:"SKG",t:"SKG"},{c:"SKN",t:"SKN"},{c:"SLS",t:"SLS"},{c:"SMA",t:"SMA"},{c:"SMB",t:"SMB"},{c:"SMC",t:"SMC"},{c:"SMT",t:"SMT"},{c:"SNC",t:"SNC"},{c:"SOBEE",t:"SMN"},{c:"SODIC",t:"SIG"},{c:"SONA",t:"SNZ"},{c:"SONADEZIGD",t:"SZG"},{c:"SONGDA",t:"SJG"},{c:"SONHADRE",t:"SHE"},{c:"SORUCO",t:"SBR"},{c:"SOWASUCO",t:"NSL"},{c:"SPB",t:"SPB"},{c:"SPC",t:"SPC"},{c:"SPD",t:"SPD"},{c:"SPH",t:"SPH"},{c:"SPH2",t:"SP2"},{c:"SPI",t:"SPI"},{c:"SPM",t:"SPM"},{c:"SPMI",t:"ISH"},{c:"SQC",t:"SQC"},{c:"SRA",t:"SRA"},{c:"SRB",t:"SRB"},{c:"SRC",t:"SRC"},{c:"SRF",t:"SRF"},{c:"SRTS",t:"TSG"},{c:"SS4A",t:"S4A"},{c:"SSC",t:"SSC"},{c:"SSF",t:"SSF"},{c:"SSG",t:"SSG"},{c:"SSI",t:"SSI"},{c:"SSM",t:"SSM"},{c:"SSN",t:"SSN"},{c:"ST8",t:"ST8"},{c:"STB",t:"STB"},{c:"STC",t:"STC"},{c:"STG",t:"STG"},{c:"STL",t:"STL"},{c:"STP",t:"STP"},{c:"STS",t:"STS"},{c:"STT",t:"STT"},{c:"STWACO",t:"STW"},{c:"SVC",t:"SVC"},{c:"SVD",t:"SVD"},{c:"SVG",t:"SVG"},{c:"SVH",t:"SVH"},{c:"SVI",t:"SVI"},{c:"SVN",t:"SVN"},{c:"SVT",t:"SVT"},{c:"SWC",t:"SWC"},{c:"SZE",t:"SZE"},{c:"SZL",t:"SZL"},{c:"SZLB",t:"SZB"},{c:"TA6",t:"TA6"},{c:"TA96",t:"TA9"},{c:"TANKHANHAN",t:"TKA"},{c:"TASECOAIRS",t:"AST"},{c:"TASECOLAND",t:"TAL"},{c:"TAW",t:"TAW"},{c:"TB8",t:"TB8"},{c:"TBC",t:"TBC"},{c:"TBD",t:"TBD"},{c:"TBHC",t:"TBH"},{c:"TBRC",t:"RTB"},{c:"TBWATER",t:"TBW"},{c:"TBX",t:"TBX"},{c:"TCB",t:"TCB"},{c:"TCL",t:"TCL"},{c:"TCM",t:"TCM"},{c:"TCO",t:"TCO"},{c:"TCR",t:"TCR"},{c:"TCREIT",t:"FUCVREIT"},{c:"TCSC",t:"TCI"},{c:"TCT",t:"TCT"},{c:"TCT36",t:"G36"},{c:"TCWC",t:"TCW"},{c:"TDC",t:"TDC"},{c:"TDCD",t:"VCP"},{c:"TDFW",t:"GTD"},{c:"TDGAS",t:"TDG"},{c:"TDH",t:"TDH"},{c:"TDHC",t:"TTD"},{c:"TDMWATER",t:"TDM"},{c:"TDNT",t:"NTH"},{c:"TDP",t:"TDP"},{c:"TDS",t:"TDS"},{c:"TDTGROUP",t:"TDT"},{c:"TDW",t:"TDW"},{c:"TECHVINA",t:"CET"},{c:"TEDIN",t:"TED"},{c:"TEG",t:"TEG"},{c:"TELCOM",t:"TEL"},{c:"TET",t:"TET"},{c:"TFC",t:"TFC"},{c:"TGIC",t:"TGG"},{c:"TGP",t:"TGP"},{c:"TH1",t:"TH1"},{c:"THAIBINHEUP",t:"MTB"},{c:"THALEXIM",t:"TLP"},{c:"THANHHOAWATER",t:"THN"},{c:"THB",t:"THB"},{c:"THBECO",t:"BTB"},{c:"THD",t:"THD"},{c:"THEPHA",t:"DTH"},{c:"THG",t:"THG"},{c:"THONGNHAT",t:"TNV"},{c:"THQN",t:"TQN"},{c:"THS",t:"THS"},{c:"THT",t:"THT"},{c:"THU",t:"THU"},{c:"THUANAN",t:"TAN"},{c:"THW",t:"THW"},{c:"TIE",t:"TIE"},{c:"TIENTHANH",t:"TTH"},{c:"TIG",t:"TIG"},{c:"TINN",t:"TID"},{c:"TIP",t:"TIP"},{c:"TIPHAR",t:"DTG"},{c:"TIS",t:"TIS"},{c:"TIX",t:"TIX"},{c:"TJC",t:"TJC"},{c:"TKC",t:"TKC"},{c:"TKG",t:"TKG"},{c:"TKU",t:"TKU"},{c:"TL4",t:"TL4"},{c:"TLDECO",t:"TLD"},{c:"TLG",t:"TLG"},{c:"TLGROUP",t:"TTL"},{c:"TLH",t:"TLH"},{c:"TLIG",t:"TLI"},{c:"TLSC",t:"MBS"},{c:"TLT",t:"TLT"},{c:"TMC",t:"TMC"},{c:"TMP",t:"TMP"},{c:"TMS",t:"TMS"},{c:"TMT",t:"TMT"},{c:"TMW",t:"TMW"},{c:"TMX",t:"TMX"},{c:"TN1",t:"TN1"},{c:"TNA",t:"TNA"},{c:"TNB",t:"TNB"},{c:"TNBOOK",t:"STH"},{c:"TNC",t:"TNC"},{c:"TNC1",t:"BAX"},{c:"TNFS",t:"TNS"},{c:"TNG",t:"TNG"},{c:"TNGROUP",t:"TNI"},{c:"TNM",t:"TNM"},{c:"TNPORT",t:"TNP"},{c:"TNT",t:"TNT"},{c:"TOCHAU",t:"TCJ"},{c:"TONDA",t:"GDA"},{c:"TOP",t:"TOP"},{c:"TOT",t:"TOT"},{c:"TPB",t:"TPB"},{c:"TPBC",t:"BCF"},{c:"TPC",t:"TPC"},{c:"TPH",t:"TPH"},{c:"TPP",t:"TPP"},{c:"TPST",t:"THP"},{c:"TRA",t:"TRA"},{c:"TRACO1",t:"TR1"},{c:"TRACODI",t:"TCD"},{c:"TRC",t:"TRC"},{c:"TRS",t:"TRS"},{c:"TRUNGANRICE",t:"TAR"},{c:"TRUNGDO",t:"TDF"},{c:"TRVS",t:"TVB"},{c:"TS4",t:"TS4"},{c:"TSB",t:"TSB"},{c:"TSC",t:"TSC"},{c:"TSCOECCO",t:"TSD"},{c:"TST",t:"TST"},{c:"TTA",t:"TTA"},{c:"TTB",t:"TTB"},{c:"TTC",t:"TTC"},{c:"TTCO",t:"TTT"},{c:"TTF",t:"TTF"},{c:"TTG",t:"TTG"},{c:"TTHC",t:"HUB"},{c:"TTJC",t:"TRT"},{c:"TTN",t:"TTN"},{c:"TTZ",t:"TTZ"},{c:"TUILDONAI",t:"GND"},{c:"TUWASE",t:"TQW"},{c:"TV1",t:"TV1"},{c:"TV2",t:"TV2"},{c:"TV3",t:"TV3"},{c:"TV4",t:"TV4"},{c:"TV6",t:"TV6"},{c:"TVA",t:"TVA"},{c:"TVC",t:"TVC"},{c:"TVD",t:"TVD"},{c:"TVG",t:"TVG"},{c:"TVS",t:"TVS"},{c:"TWACO",t:"TNW"},{c:"TXM",t:"TXM"},{c:"TYA",t:"TYA"},{c:"UCT",t:"UCT"},{c:"UDC",t:"UDC"},{c:"UDJ",t:"UDJ"},{c:"UEMC",t:"UEM"},{c:"UFC",t:"FCC"},{c:"UIC",t:"UIC"},{c:"UMC",t:"UMC"},{c:"UNI",t:"UNI"},{c:"UPC",t:"UPC"},{c:"UPHACE",t:"UPH"},{c:"USC",t:"USC"},{c:"USD",t:"USD"},{c:"UTXI",t:"UXC"},{c:"V12",t:"V12"},{c:"V15",t:"V15"},{c:"V21",t:"V21"},{c:"VAB",t:"VAB"},{c:"VAF",t:"VAF"},{c:"VAPAC",t:"PAT"},{c:"VAV",t:"VAV"},{c:"VBC",t:"VBC"},{c:"VBH",t:"VBH"},{c:"VC1",t:"VC1"},{c:"VC2",t:"VC2"},{c:"VC3",t:"VC3"},{c:"VC5",t:"VC5"},{c:"VC6",t:"VC6"},{c:"VC7",t:"VC7"},{c:"VC9",t:"VC9"},{c:"VCA",t:"VCA"},{c:"VCB",t:"VCB"},{c:"VCC",t:"VCC"},{c:"VCCEC",t:"CCV"},{c:"VCF",t:"VCF"},{c:"VCG",t:"VCG"},{c:"VCGHN",t:"VIH"},{c:"VCIE",t:"CLM"},{c:"VCM",t:"VCM"},{c:"VCR",t:"VCR"},{c:"VCS",t:"VCS"},{c:"VCSC",t:"VCI"},{c:"VCT",t:"VCT"},{c:"VCX",t:"VCX"},{c:"VDB",t:"VDB"},{c:"VDL",t:"VDL"},{c:"VDN",t:"VDN"},{c:"VDS",t:"VDS"},{c:"VDT",t:"VDT"},{c:"VE1",t:"VE1"},{c:"VE2",t:"VE2"},{c:"VE3",t:"VE3"},{c:"VE4",t:"VE4"},{c:"VE8",t:"VE8"},{c:"VE9",t:"VE9"},{c:"VEAM",t:"VEA"},{c:"VEF",t:"VEF"},{c:"VEIC",t:"VEC"},{c:"VES",t:"VES"},{c:"VFC",t:"VFC"},{c:"VFG",t:"VFG"},{c:"VFR",t:"VFR"},{c:"VFSC",t:"VFS"},{c:"VGC",t:"VGC"},{c:"VGP",t:"VGP"},{c:"VGS",t:"VGS"},{c:"VGSC",t:"VUA"},{c:"VGTND",t:"NDT"},{c:"VHC",t:"VHC"},{c:"VHF",t:"VHF"},{c:"VHG",t:"VHG"},{c:"VHH",t:"VHH"},{c:"VHL",t:"VHL"},{c:"VIB",t:"VIB"},{c:"VIC",t:"VIC"},{c:"VICOTEX",t:"TVT"},{c:"VID",t:"VID"},{c:"VIDA",t:"SB1"},{c:"VIDAMO",t:"PVO"},{c:"VIDIC",t:"MBG"},{c:"VIDIPHA",t:"VDP"},{c:"VIE",t:"VIE"},{c:"VIETBAC",t:"MVB"},{c:"VIETJET",t:"VJC"},{c:"VIETMEC",t:"DVM"},{c:"VIETOURIST",t:"VTD"},{c:"VIETRA",t:"VTR"},{c:"VIG",t:"VIG"},{c:"VILICO",t:"VLC"},{c:"VIMC",t:"VIM"},{c:"VIMCC",t:"TVM"},{c:"VIMICO",t:"TMG"},{c:"VIN",t:"VIN"},{c:"VINACOMINPOWER",t:"DTK"},{c:"VINAFOR",t:"VIF"},{c:"VINAHERB",t:"VHE"},{c:"VINAHUD",t:"VHD"},{c:"VINAINCON",t:"VVN"},{c:"VINAKIP",t:"KIP"},{c:"VINATEX",t:"VGT"},{c:"VINATRANSDN",t:"VMT"},{c:"VINGAL",t:"VGL"},{c:"VIP",t:"VIP"},{c:"VIPC",t:"GVT"},{c:"VIPES",t:"VPS"},{c:"VIPGP",t:"VGR"},{c:"VIPUCO",t:"VLP"},{c:"VIR",t:"VIR"},{c:"VISSAN",t:"VSN"},{c:"VIT",t:"VIT"},{c:"VIWASE",t:"VWS"},{c:"VIWASEEN",t:"VIW"},{c:"VIX",t:"VIX"},{c:"VKC",t:"VKC"},{c:"VKP",t:"VKP"},{c:"VLA",t:"VLA"},{c:"VLF",t:"VLF"},{c:"VMC",t:"VMC"},{c:"VMD",t:"VMD"},{c:"VMDCO",t:"VMS"},{c:"VMG",t:"VMG"},{c:"VMGC",t:"ABC"},{c:"VMGEO",t:"MGC"},{c:"VMIC",t:"VMA"},{c:"VMTS",t:"MTS"},{c:"VNA",t:"VNA"},{c:"VNAI",t:"AIC"},{c:"VNAIR",t:"HVN"},{c:"VNC",t:"VNC"},{c:"VNCC",t:"VGV"},{c:"VNCG",t:"CGV"},{c:"VNCT",t:"TMB"},{c:"VND",t:"VND"},{c:"VNE",t:"VNE"},{c:"VNECO12",t:"E12"},{c:"VNF",t:"VNF"},{c:"VNF1F",t:"BMV"},{c:"VNF2",t:"VSF"},{c:"VNG",t:"VNG"},{c:"VNGC",t:"VNZ"},{c:"VNH",t:"VNH"},{c:"VNI",t:"VNI"},{c:"VNL",t:"VNL"},{c:"VNLINES",t:"MVN"},{c:"VNLOGISTIC",t:"VLG"},{c:"VNM",t:"VNM"},{c:"VNPD",t:"VPD"},{c:"VNPHARM",t:"DVN"},{c:"VNPLAST",t:"VNP"},{c:"VNR",t:"VNR"},{c:"VNRG",t:"GVR"},{c:"VNS",t:"VNS"},{c:"VNSTEEL",t:"TVN"},{c:"VNT",t:"VNT"},{c:"VNTRAN",t:"VXT"},{c:"VNVETCO",t:"VNY"},{c:"VNX",t:"VNX"},{c:"VOCA",t:"VOC"},{c:"VOS",t:"VOS"},{c:"VOSA",t:"VSA"},{c:"VPB",t:"VPB"},{c:"VPC",t:"VPC"},{c:"VPG",t:"VPG"},{c:"VPH",t:"VPH"},{c:"VPL",t:"VPL"},{c:"VPR",t:"VPR"},{c:"VPTJ",t:"VPA"},{c:"VPVICTO",t:"VPI"},{c:"VPW",t:"VPW"},{c:"VPWATER",t:"NVP"},{c:"VQC",t:"VQC"},{c:"VRC",t:"VRC"},{c:"VRG",t:"VRG"},{c:"VRJSC",t:"VRE"},{c:"VSC",t:"VSC"},{c:"VSE",t:"VSE"},{c:"VSG",t:"VSG"},{c:"VSH",t:"VSH"},{c:"VSI",t:"VSI"},{c:"VST",t:"VST"},{c:"VTA",t:"VTA"},{c:"VTB",t:"VTB"},{c:"VTC",t:"VTC"},{c:"VTE",t:"VTE"},{c:"VTEC",t:"VGG"},{c:"VTGI",t:"VGI"},{c:"VTH",t:"VTH"},{c:"VTI",t:"VTI"},{c:"VTJ",t:"VTJ"},{c:"VTK",t:"VTK"},{c:"VTL",t:"VTL"},{c:"VTM",t:"VTM"},{c:"VTO",t:"VTO"},{c:"VTPO",t:"VTP"},{c:"VTQB",t:"VTQ"},{c:"VTS",t:"VTS"},{c:"VTTB",t:"VBB"},{c:"VTTC",t:"DLT"},{c:"VTV",t:"VTV"},{c:"VTX",t:"VTX"},{c:"VVMI",t:"CLH"},{c:"VWACO",t:"VLW"},{c:"VWS3",t:"VW3"},{c:"VWSC",t:"VCW"},{c:"VXB",t:"VXB"},{c:"VXP",t:"VXP"},{c:"WCS",t:"WCS"},{c:"WSB",t:"WSB"},{c:"WSS",t:"WSS"},{c:"WTC",t:"WTC"},{c:"X20",t:"X20"},{c:"X26",t:"X26"},{c:"X77",t:"X77"},{c:"XLDA",t:"DFC"},{c:"XMC",t:"XMC"},{c:"XMD",t:"XMD"},{c:"XMQT",t:"CQT"},{c:"XPH",t:"XPH"},{c:"XUANHOA",t:"XHC"},{c:"XUANMINHHP",t:"XMP"},{c:"YBC",t:"YBC"},{c:"YBMC",t:"YBM"},{c:"YEGCORP",t:"YEG"},{c:"YTECO",t:"YTC"}];
+
+        function loading(i = !0) {
+            document.getElementById("load").innerHTML = i ? `<div class="loading-container"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>` : ""
+        }
+        loading();
+        const inputF = document.getElementById('inputField');
+        const ams = new URLSearchParams(window.location.search);
+        let mack = ams.get("code") || inputF.value;
+	inputF.value = mack;
+        let jsonData = {};
+        let lastPrice = 0;
+   	
+        document.getElementById('inputField').addEventListener('input', function(event) {
+            let inputValue = event.target.value.toUpperCase();
+            event.target.value = inputValue;
+        });
+        document.getElementById('inputField').addEventListener('keydown', async function(event) {
+            if (event.key === 'Enter') {
+                mack = document.getElementById('inputField').value;
+                loading(1);
+                await getBaocao(mack);
+            }
+        });
+
+        function OptionChange(value) {
+            if (value === "PE") {
+                drawchart(jsonData, "P/E", mack)
+            } else if (value === "PB") {
+                drawchart(jsonData, "P/B", mack)
+            }
+        }
+        function OptionChange2(value) {
+	    let pe = document.getElementById('opt').value;
+		if(pe !=="PE" && pe !== "PB") {pe="PB"}
+	    if(value !==90 && value !==180) {value= 90}
+  		daysLimit = value;
+            if (pe === "PE") {
+                drawchart(jsonData, "P/E", mack)
+            } else if (pe === "PB") {
+                drawchart(jsonData, "P/B", mack)
+            }
+        }
+        getBaocao(mack);
+
+        function percentDifference(a, b) {
+            if (a === 0) {
+                return 'Không thể chia cho 0';
+            }
+            const difference = ((b - a) / a) * 100;
+            return difference.toFixed(2) + '%';
+        }
+        async function showInfo(dataBaocao) {
+            const title = document.getElementById('title');
+            if (dataBaocao) {
+const now = new Date(); // Ngày hiện tại
+const daysLimit = 90;
+
+const data = dataBaocao.filter(item => {
+  const [day, month, year] = item.date.split('/');
+  const itemDate = new Date(`${year}-${month}-${day}`);
+  // Tính số ngày chênh lệch
+  const diffTime = Math.abs(now - itemDate);
+  const diffDays = diffTime / (1000 * 60 * 60 * 24);
+  // Giữ nếu trong vòng 90 ngày
+  return diffDays <= daysLimit;
+});
+	if(data.length) {await vechart(data, mack);}
+            }
+            loading(0);
+        }
+
+        function vechart(data, symbol) {
+            let dataPrice = data.map(report => report.target);
+            let cate = data.map(report => report.date);
+            // Tính giá trị trung bình
+            var sum = dataPrice.reduce(function(a, b) {
+                return a + b;
+            }, 0);
+            var average = Math.ceil(sum / dataPrice.length / 100) * 100
+            var chart = Highcharts.chart('bieudo', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Dự phóng ' + mack
+                },
+                subtitle: {
+                    text: 'Trung bình: ' + average + ' (Upside: '+percentDifference(lastPrice, average)+')',
+                    align: 'center', // Căn giữa
+                    style: {
+                        fontSize: '12px', // Kích thước chữ
+                        color: '#666666' // Màu chữ (xám nhạt)
+                    }
+                },
+                credits: {
+                    enabled: false // Tắt hiển thị credits
+                },
+                legend: {
+                    enabled: false // Tắt hiển thị legend
+                },
+                xAxis: {
+                    categories: cate,
+                    reversed: true // Đảo ngược trục x
+                },
+                tooltip: {
+                    useHTML: true,
+                    shared: true,
+                    zIndex: 110,
+                    formatter: function() {
+                        let point = this.points[0];
+                        return `<b>${point.key}</b><br>` + `${point.series.name}: ${point.y.toFixed(0)}<br>` +
+                            `Upside hiện tại: ${data[point.x].upside.toFixed(2)} (%)<br/>` +
+                            `LNDP: ${data[point.x].profit} (tỷ)<br/>` +
+                            `Nguồn: ${data[point.x].source} `;
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: ''
+                    },
+                    plotLines: [{
+                        color: 'black',
+                        width: 1,
+                        value: lastPrice, // Giá trị tham chiếu
+                        zIndex: 10,
+                        label: {
+                            text: 'Hôm nay: ' + lastPrice.toFixed(0),
+                            align: 'left',
+                            style: {
+                                color: 'black'
+                            }
+                        }
+                    }]
+                },
+                series: [{
+                    name: 'Dự phóng',
+                    data: dataPrice
+                }],
+                plotOptions: {
+                    series: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        cursor: 'pointer',
+                        events: {
+                            click: function(event) {
+                                handleClick(event.point);
+                            }
+                        }
+                    }
+                }
+            });
+
+            function handleClick(point) {
+                window.open(data[point.x].file, '_blank').focus();
+            }
+
+            // Thêm đường ngang qua giá trị trung bình
+            chart.yAxis[0].addPlotLine({
+                color: 'gray',
+                width: 1,
+                value: average,
+                dashStyle: 'dash',
+                zIndex: 9,
+                label: {
+                    text: 'Trung bình: ' + average.toFixed(0),
+                    align: 'left',
+                    style: {
+                        color: 'grey'
+                    }
+                }
+            });
+        }
+
+
+        // tải báo cáo theo định giá
+        async function getBaocao(symbol) {
+            await fetchChartAndIndicatorData(symbol);
+            try {
+                const response = await fetch("https://api.alphastock.vn/api/report")
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const json = await response.json()
+                const allData = Object.values(json).flat()
+  		dataBaocao = allData.filter(item => item.type === 1 && item.code === symbol && item.target !== null)
+		//console.log(dataBaocao)
+                await showInfo(dataBaocao)
+            } catch (error) {
+                console.error('There was a problem with the fetch operation:', error);
+                loading(0)
+            }
+        }
+
+
+
+
+        // vẽ biểu đồ
+
+        function convertDateFormat(dateStr) {
+            const [month, day, year] = dateStr.split('/');
+            return `${day.padStart(2, '0')}/${month.padStart(2, '0')}/${year}`;
+        }
+
+
+        function drawchart(data, type, symbol) {
+            // Chuẩn bị dữ liệu cho biểu đồ
+            const vnindexData = data.map(item => [new Date(item.Date).getTime(), item.VNINDEX]);
+            let PlusRangeData, MinusRangeData;
+            if (type == "P/B") {
+                PlusRangeData = data.map(item => [new Date(item.Date).getTime(), item.PBplus1std, item.PBplus2std]);
+                MinusRangeData = data.map(item => [new Date(item.Date).getTime(), item.PBminus2std, item.PBminus1std]);
+            } else {
+                PlusRangeData = data.map(item => [new Date(item.Date).getTime(), item.PEplus1std, item.PEplus2std]);
+                MinusRangeData = data.map(item => [new Date(item.Date).getTime(), item.PEminus2std, item.PEminus1std]);
+            }
+            // Tạo biểu đồ Highcharts
+            Highcharts.chart('container', {
+                chart: {
+                    zoomType: 'x' // Cho phép zoom trục X
+                },
+                title: {
+                    text: symbol + ' với định giá ' + type
+                },
+                subtitle: {
+                    text: 'Updated: ' + convertDateFormat(data[data.length - 1].Date),
+                    align: 'center', // Căn giữa
+                    style: {
+                        fontSize: '12px', // Kích thước chữ
+                        color: '#666666' // Màu chữ (xám nhạt)
+                    }
+                },
+                xAxis: {
+                    type: 'datetime',
+                    title: {
+                        text: 'Ngày'
+                    },
+                    crosshair: {
+                        enabled: true, // Bật crosshair
+                        color: '#666666', // Màu của đường kẻ dọc (xám nhạt, bạn có thể đổi)
+                        width: 1, // Độ dày của đường kẻ
+                        dashStyle: 'Solid' // Kiểu đường (Solid, Dash, Dot, v.v.)
+                    }
+                },
+
+                yAxis: {
+                    title: {
+                        text: ''
+                    }
+                },
+                legend: {
+                    enabled: true
+                },
+                // Ẩn credit
+                credits: {
+                    enabled: false
+                },
+
+                tooltip: {
+                    shared: true,
+                    valueDecimals: 2, // Hiển thị 2 chữ số thập phân cho giá trị
+                    formatter: function() {
+                        // Lấy thời gian từ trục X và định dạng thành ngày/tháng/năm
+                        const date = Highcharts.dateFormat('%d/%m/%Y', this.x);
+                        let s = `<b>${date}</b><br/>`; // Hiển thị ngày tháng năm in đậm
+
+                        // Lặp qua các điểm dữ liệu để hiển thị giá trị
+                        this.points.forEach(point => {
+                            if (point.series.type === 'line') {
+                                s += `${point.series.name}: ${point.y.toFixed(2)}<br/>`;
+                            } else if (point.series.type === 'arearange') {
+                                s += `${point.series.name}: <b>${point.low.toFixed(2)} - ${point.high.toFixed(2)}</b><br/>`;
+                            }
+                        });
+
+                        return s;
+                    }
+                },
+                plotOptions: {
+                    arearange: {
+                        fillOpacity: 0.3,
+                        lineWidth: 1,
+                        marker: {
+                            enabled: false
+                        }
+                    },
+                    line: {
+                        lineWidth: 1,
+                        marker: {
+                            enabled: true
+                        }
+                    }
+                },
+                // Thêm cấu hình exporting
+                exporting: {
+                    enabled: true, // Bật tính năng xuất dữ liệu
+                    buttons: {
+                        contextButton: {
+                            menuItems: [
+                                'viewFullscreen', // Xem toàn màn hình
+                                'separator', // Dòng phân cách
+                                'downloadPNG', // Tải xuống PNG
+                                'downloadJPEG', // Tải xuống JPEG
+                                'downloadPDF', // Tải xuống PDF
+                                'separator', // Dòng phân cách
+                                'downloadCSV', // Tải xuống CSV
+                                'downloadXLS', // Tải xuống XLS
+                            ]
+                        }
+                    }
+                },
+                series: [{
+                        type: 'spline',
+                        name: symbol,
+                        data: vnindexData,
+                        color: 'blue' // Màu đen cho VNINDEX
+
+                    },
+                    {
+                        type: 'arearange',
+                        name: 'Vùng đắt theo ' + type,
+                        data: PlusRangeData,
+                        color: '#FF0000', // Màu đỏ cho dải PBplus
+                        fillOpacity: 0.3
+                    },
+                    {
+                        type: 'arearange',
+                        name: 'Vùng rẻ theo ' + type,
+                        data: MinusRangeData,
+                        color: '#00FF00', // Màu xanh lá cho dải PBminus
+                        fillOpacity: 0.3
+                    }
+                ]
+            });
+        }
+
+        function formatCustomDate(isoString) {
+            const date = new Date(isoString);
+            const day = date.getUTCDate();
+            const month = date.getUTCMonth() + 1; // Tháng bắt đầu từ 0
+            const year = date.getUTCFullYear();
+            return `${month}/${day}/${year}`;
+        }
+
+        async function fetchChartAndIndicatorData(symbol) {
+	    const organCode = AllCompany.find(item => item.t === symbol)?.c;
+            const toDate = new Date().toISOString().split('T')[0]; // 'YYYY-MM-DD'
+            const vnindexURL = `https://lite-api.fiintrade.vn/technical/TradingView/GetStockChartData?Code=${organCode}&DerivativeCode=&Frequency=Daily&From=2012-01-01T00%3A00%3A00.000Z&To=${toDate}T00%3A00%3A00.000Z&Type=Stock`;
+            const peURL = `https://lite-api.fiintrade.vn/technical/TradingView/GetIndicators?OrganCode=${organCode}&Code=PE&Frequency=Daily&From=2012-01-01T00%3A00%3A00.000Z&To=${toDate}T00%3A00%3A00.000Z&Type=Stock`;
+            const pbURL = `https://lite-api.fiintrade.vn/technical/TradingView/GetIndicators?OrganCode=${organCode}&Code=PB&Frequency=Daily&From=2012-01-01T00%3A00%3A00.000Z&To=${toDate}T00%3A00%3A00.000Z&Type=Stock`;
+
+            try {
+                const [vnindexRes, peRes, pbRes] = await Promise.all([
+                    fetch(vnindexURL),
+                    fetch(peURL),
+                    fetch(pbURL),
+                ]);
+
+                if (!vnindexRes.ok || !peRes.ok || !pbRes.ok) {
+                    throw new Error('Không thể lấy dữ liệu từ một hoặc cả ba API');
+                }
+
+                const [Vnindex, PE, PB] = await Promise.all([
+                    vnindexRes.json(),
+                    peRes.json(),
+                    pbRes.json(),
+                ]);
+                // tính toán
+                // sửa ngày vnindẽ
+                const VNINDEX = Vnindex.data.map(item => {
+                    const originalDate = new Date(item.tradingDate);
+                    originalDate.setUTCDate(originalDate.getUTCDate() + 1); // dịch sang ngày kế tiếp
+                    return {
+                        ...item,
+                        tradingDate: originalDate.toISOString()
+                    };
+                });
+
+                lastPrice = VNINDEX[VNINDEX.length - 1].closePrice;
+
+                function mergeVnindexPEPB(vni, pe, pb) {
+                    // Tạo bản đồ tra cứu cho PE và PB theo ngày
+                    const mapPE = pe.reduce((acc, item) => {
+                        const date = new Date(item.tradingDate).toISOString().split('T')[0];
+                        acc[date] = item.value;
+                        return acc;
+                    }, {});
+
+                    const mapPB = pb.reduce((acc, item) => {
+                        const date = new Date(item.tradingDate).toISOString().split('T')[0];
+                        acc[date] = item.value;
+                        return acc;
+                    }, {});
+
+                    // Gộp dữ liệu từ vnindex
+                    const jsondata = vni.map(item => {
+                        const date = new Date(item.tradingDate).toISOString().split('T')[0];
+                        return {
+                            Date: formatCustomDate(date),
+                            VNINDEX: item.closePrice,
+                            PE: mapPE[date] ?? null,
+                            PB: mapPB[date] ?? null
+                        };
+                    });
+
+                    return jsondata;
+                }
+
+                jsonData = mergeVnindexPEPB(VNINDEX, PE.data, PB.data);
+
+                // tính trung bình
+                var peCal = calculateStats(jsonData.map(d => d.PE))
+                var pbCal = calculateStats(jsonData.map(d => d.PB))
+
+                for (var i = 0; i < jsonData.length; i++) {
+                    jsonData[i].PEplus1std = peCal.meanPlusStd / jsonData[i].PE * jsonData[i].VNINDEX
+                    jsonData[i].PEplus2std = peCal.meanPlus2Std / jsonData[i].PE * jsonData[i].VNINDEX
+                    jsonData[i].PEminus1std = peCal.meanMinusStd / jsonData[i].PE * jsonData[i].VNINDEX
+                    jsonData[i].PEminus2std = peCal.meanMinus2Std / jsonData[i].PE * jsonData[i].VNINDEX
+
+                    jsonData[i].PBplus1std = pbCal.meanPlusStd / jsonData[i].PB * jsonData[i].VNINDEX
+                    jsonData[i].PBplus2std = pbCal.meanPlus2Std / jsonData[i].PB * jsonData[i].VNINDEX
+                    jsonData[i].PBminus1std = pbCal.meanMinusStd / jsonData[i].PB * jsonData[i].VNINDEX
+                    jsonData[i].PBminus2std = pbCal.meanMinus2Std / jsonData[i].PB * jsonData[i].VNINDEX
+                }
+
+                //console.log('Data:', jsonData);
+                let type = document.getElementById('opt').value;
+		type = type == "PE"? "P/E": "P/B";
+                drawchart(jsonData, type, symbol)
+
+            } catch (error) {
+		alert("Không tải được dữ liệu!");
+		jsonData = {}
+                drawchart(jsonData, 'P/B', symbol)
+		loading(0)
+                console.log('Lỗi khi gọi API:', error);
+            }
+        }
+
+
+        // hàm tính mean và STD
+        function calculateStats(arr) {
+            const mean = arr.reduce((sum, val) => sum + val, 0) / arr.length;
+            const variance = arr.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / arr.length;
+            const stdDev = Math.sqrt(variance);
+
+            return {
+                mean: mean,
+                meanPlusStd: mean + stdDev,
+                meanMinusStd: mean - stdDev,
+                meanPlus2Std: mean + 2 * stdDev,
+                meanMinus2Std: mean - 2 * stdDev
+            };
+        }
+    </script>
+</body>
+
+</html>

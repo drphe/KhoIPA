@@ -15,6 +15,40 @@
   "apps": [
     {
       "beta": false,
+      "name": "Stremio-1.3.6",
+      "type": 1,
+      "bundleIdentifier": "com.stremio.ios",
+      "developerName": "Stremio-1.3.6 x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Watch videos, movies, TV series and TV channels instantly.",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Stremio-1.3.6.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Stremio-1.3.6/Stremio-1.3.6-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 79429632,
+      "version": "1.3.6",
+      "versions": [
+        {
+          "version": "1.3.6",
+          "date": "2026-02-24",
+          "size": 79429632,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Stremio-1.3.6.ipa",
+          "localizedDescription": "Watch videos, movies, TV series and TV channels instantly."
+        }
+      ],
+      "versionDate": "2026-02-24",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Stremio-1.3.6.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Vesc_Tool_6.06.2",
       "type": 1,
       "bundleIdentifier": "com.vesc-project.vesc-tool",
@@ -160,55 +194,6 @@
       ],
       "versionDate": "2026-01-12",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/Violyn_1_4_4-2.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Discord_BTLoader_Kettu",
-      "type": 1,
-      "bundleIdentifier": "com.hammerandchisel.discord",
-      "developerName": "Discord_BTLoader_Kettu x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "BTLoader + Kettu (plugin/theme)",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Discord_BTLoader_Kettu/discord-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/Discord_BTLoader_Kettu/discord-1.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 99205775,
-      "version": "305.1",
-      "versions": [
-        {
-          "version": "305.1",
-          "date": "2026-01-02",
-          "size": 99205775,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
-          "localizedDescription": "BTLoader + Kettu (plugin/theme)"
-        },
-        {
-          "version": "228.1",
-          "date": "2024-05-10",
-          "size": 99425976,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
-          "localizedDescription": "Discord mod."
-        },
-        {
-          "version": "224.0",
-          "date": "2024-04-10",
-          "size": 96856965,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
-          "localizedDescription": "Another one! Bestest Discord client"
-        }
-      ],
-      "versionDate": "2026-01-02",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/discord.ipa",
       "patreon": {}
     },
     {
@@ -3203,6 +3188,47 @@
       ],
       "versionDate": "2024-05-10",
       "downloadURL": "https://ipa.cypwn.xyz/ipas/Mimo_6.48.0_Premium.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "Discord_228.1_Pyoncord",
+      "type": 1,
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "Discord_228.1_Pyoncord x CyPwn",
+      "subtitle": "",
+      "localizedDescription": "Discord mod.",
+      "versionDescription": "",
+      "tintColor": "FFC300",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Discord_228.1_Pyoncord_DiscordNoTrack.png",
+      "screenshotURLs": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Discord_228.1_Pyoncord/Discord_228.1_Pyoncord_DiscordNoTrack-0.png"
+      ],
+      "screenshots": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 99425976,
+      "version": "228.1",
+      "versions": [
+        {
+          "version": "228.1",
+          "date": "2024-05-10",
+          "size": 99425976,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
+          "localizedDescription": "Discord mod."
+        },
+        {
+          "version": "224.0",
+          "date": "2024-04-10",
+          "size": 96856965,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/Bunny_Pyoncord_224.0.ipa",
+          "localizedDescription": "Another one! Bestest Discord client"
+        }
+      ],
+      "versionDate": "2024-05-10",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/Discord_228.1_Pyoncord_DiscordNoTrack.ipa",
       "patreon": {}
     },
     {
@@ -6371,6 +6397,16 @@
   ],
   "news": [
     {
+      "title": "Stremio-1.3.6 now available!",
+      "identifier": "cypwn.Stremio-1.3.6.1.3.6",
+      "caption": "Stremio-1.3.6 added to the CyPwn Library",
+      "tintColor": "FFC300",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Stremio-1.3.6.png",
+      "date": "2026-02-24",
+      "url": "https://ipa.cypwn.xyz",
+      "notify": true
+    },
+    {
       "title": "Vesc_Tool_6.06.2 now available!",
       "identifier": "cypwn.Vesc_Tool_6.06.2.6.06.2",
       "caption": "Vesc_Tool_6.06.2 added to the CyPwn Library",
@@ -6407,16 +6443,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/Violyn_1_4_4-2.png",
       "date": "2026-01-12",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Discord_BTLoader_Kettu now available!",
-      "identifier": "cypwn.Discord_BTLoader_Kettu.305.1",
-      "caption": "Discord_BTLoader_Kettu added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/discord.png",
-      "date": "2026-01-02",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },

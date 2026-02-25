@@ -125,40 +125,6 @@
     },
     {
       "beta": false,
-      "name": "Troll_SIM_Switcher_1.1",
-      "type": 1,
-      "bundleIdentifier": "com.developlab.TrollSIMSwitcher",
-      "developerName": "Troll_SIM_Switcher_1.1 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "TrollStore App SIM data and type sw",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Troll_SIM_Switcher_1.1.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Troll_SIM_Switcher_1.1/Troll_SIM_Switcher_1.1-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 213370,
-      "version": "1.1",
-      "versions": [
-        {
-          "version": "1.1",
-          "date": "2026-01-02",
-          "size": 213370,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Troll_SIM_Switcher_1.1.ipa",
-          "localizedDescription": "TrollStore App SIM data and type sw"
-        }
-      ],
-      "versionDate": "2026-01-02",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Troll_SIM_Switcher_1.1.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "OtoolsGG_1.3",
       "type": 1,
       "bundleIdentifier": "mumu.ProcFlowGG.OtoolsGG",
@@ -4199,16 +4165,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/VansonMod_2.3.png",
       "date": "2026-01-13",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Troll_SIM_Switcher_1.1, Ver: 1.1 now available!",
-      "identifier": "cypwn.Troll_SIM_Switcher_1.1.1.1",
-      "caption": "Troll_SIM_Switcher_1.1 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Troll_SIM_Switcher_1.1.png",
-      "date": "2026-01-02",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
