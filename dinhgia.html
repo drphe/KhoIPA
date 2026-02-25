@@ -122,8 +122,6 @@ const AllCompany = [{c:"0101264009",t:"DDB"},{c:"0104498100",t:"VVS"},{c:"010528
             const title = document.getElementById('title');
             if (dataBaocao) {
 const now = new Date(); // Ngày hiện tại
-const daysLimit = 90;
-
 const data = dataBaocao.filter(item => {
   const [day, month, year] = item.date.split('/');
   const itemDate = new Date(`${year}-${month}-${day}`);
