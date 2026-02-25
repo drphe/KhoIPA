@@ -78,7 +78,7 @@ const AllCompany = [{c:"0101264009",t:"DDB"},{c:"0104498100",t:"VVS"},{c:"010528
 	inputF.value = mack;
         let jsonData = {};
         let lastPrice = 0;
-   	
+   	let daysLimit = 90;
         document.getElementById('inputField').addEventListener('input', function(event) {
             let inputValue = event.target.value.toUpperCase();
             event.target.value = inputValue;
