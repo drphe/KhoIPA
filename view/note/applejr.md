@@ -3,100 +3,133 @@ Nguồn : https://applejr.net/
 https://github.com/applejr12/signer/
 https://youtu.be/TFyXj1UfVKQ?si=vHgWPxXZlJMPZht1
 
-Nếu bạn chưa từng Freesidloading thì đọc 2 bài viết sau trước nhé :
-
-- <a href="#" data-url="khoivn.md" class="news-item-link">Free sideloading bằng DNS - Khoindvn</a> cách thực hiện, có hướng dẫn từng bước và giải thích về sự cố rò rỉ DNS 
-- <a href="#" data-url="freesideloading.md" class="news-item-link">Free sideloading bằng DNS - PuReEnVyUs</a>
-
-
-## 1. DNS Anti-Revoke
-### AppleJr DNS  
-- [Anti-Revoke](https://d1yei2z3i6k35z.cloudfront.net/14890634/68f7bbc35c7c2_signed_AppleJrV22.mobileconfig)
+## AppleJr DNS Anti-Revoke
+- [Anti-Revoke](https://d1yei2z3i6k35z.cloudfront.net/14890634/68f7bbc35c7c2_signed_AppleJrV22.mobileconfig) hoặc [Link dự phòng](https://drphe.github.io/KhoIPA/upload/signed_AppleJrV22.mobileconfig)
     *Required to Install Esign*
-### Nezushub DNS
-- [DNS Revoke Blocker](https://sub4unlock.io/GBJZW) 
-    *Required to Install Esign*
----
 
-## 2. Esign
-- Heavy Duty Truck   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Truck.plist)
+## 1. Esign 
 
-- Guangzhou Huahan   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Guangzhou.plist)
+[AppleJr DNS - • Anti-Revoke](https://d1yei2z3i6k35z.cloudfront.net/14890634/68f7bbc35c7c2_signed_AppleJrV22.mobileconfig)
 
-- China Telecom   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_ChinaTelecom.plist)
+[Esign - Signed • National Oilwell](itms-services://?action=download-manifest&url=https://applejr.net/post/oilesign.plist)
 
-- EEO Certs   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Education.plist)
+[Esign - • VIETNAM AIRLINES](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_VietnamAirlines.plist)
 
-- Chiba Tech   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Chiba.plist)
+[Esign - • ForeverMark](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Forevermark.plist)
 
-- Tianjin University   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Atianjin.plist)
+[Esign - • PowerChina](itms-services://?action=download-manifest&url=https://applejr.net/post/esignpwerchina.plist)
 
-- Zeshang  [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Zheshang.plist)
+[Esign - • China Academy](itms-services://?action=download-manifest&url=https://applejr.net/post/esignacademy.plist)
 
-- Central P12   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Central.plist)
+[Esign - • Qingdao Rural](itms-services://?action=download-manifest&url=https://applejr.net/post/qingdao%20esign.plist)
 
-- TakeOff MP1   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Takeoff.plist)
+[Esign - • Election United](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_United.plist)
 
-- Power Corp   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Wuling.plist)
+[Esign - • VientinBank](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Vietinbank.plist)
 
-- Eryuan Cert   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Eryuan.plist)
+[Esign - • Luoyang Postal](https://api.khoindvn.io.vn/CGMj7s)
 
-- New Estate   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Estate.plist)
+[Esign - • Wasu Media](https://api.khoindvn.io.vn/PKTWlR)
 
-- TechcomBank   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_VietnamTech.plist)
+[Esign - • Etisalat Emirates](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/7c823.plist)
 
-- TCL AC   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_TCL.plist)
+[Esign - • Heavy Duty Truck](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Truck.plist)
 
-- Toyota GAC   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Toyota.plist)
+[Esign - • Guangzhou Huahan](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Guangzhou.plist)
 
----
+[Esign - • China Telecom](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_ChinaTelecom.plist)
 
-## 3. Ksign
-- Heavy Duty Truck Group Co., Ltd  [Install](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/vhp7k.plist)
+[Esign - • EEO Certs](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Education.plist)
 
-- TechTree IT Systems [Install](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/z1ut9.plist)
+[Esign - • Chiba Tech](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Chiba.plist)
 
-- Guangzhou Huahan Educational  [Install](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/hab4q.plist)
+[Esign - • Tianjin University](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Atianjin.plist)
 
-- China Central   [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_Central.plist)
+[Esign - • Central P12](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Central.plist)
 
-- Chiba Certificate  [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_Chiba.plist)
+[Esign - • TakeOff MP1](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Takeoff.plist)
 
-- Education Certificate  [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_Education.plist)
+[Esign - • Power Corp](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_Wuling.plist)
 
-- National  [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_National.plist)
+[Esign - • TCL AC](itms-services://?action=download-manifest&url=https://applejr.net/post/Esign_TCL.plist)
 
-- Vietnam Bank  [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_VietnamBank.plist)
+## 2. K-sign
 
----
+[AppleJr DNS - • Anti-Revoke](https://d1yei2z3i6k35z.cloudfront.net/14890634/68f7bbc35c7c2_signed_AppleJrV22.mobileconfig)
 
-## 4. Scarlet
+[Ksign - Signed • National Oilwell Varco](itms-services://?action=download-manifest&url=https://applejr.net/post/ksignoil.plist)
 
-- Guangzhou Huahan Educational & Technology Co.,Ltd.   [Install](itms-services://?action=download-manifest&url=https://applejr.net/post/Scarlet_Guangzhou.plist)
+[Ksign - Signed •  VIETNAM AIRLINES JSC](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/qhjns.plist)
 
-- Tianjin University  [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed/Scarlet_Tianjin.plist)
+[Ksign - • PowerChina](itms-services://?action=download-manifest&url=https://applejr.net/post/ksignpower.plist)
 
-- Education Certs   [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed/Scarlet_Education.plist)
+[Ksign - • China Academy](https://api.khoindvn.io.vn/03zH0o)
 
-- Viet Telecom [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed/Scarlet_Viettel.plist)
+[Ksign - • Qingdao Rural](itms-services://?action=download-manifest&url=https://applejr.net/post/qingdao%20ksign.plist)
 
-- HDFC   [Install](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed/Scarlet_HDFC.plist)
+[Ksign - • Elections Cert](itms-services://?action=download-manifest&url=https://applejr.net/post/ksign_signed.plist)
 
----
+[Ksign - • Luoyang Postal✅](https://api.khoindvn.io.vn/CGMj7s)
 
-## 5. Certificates (ZIP)
+[Ksign - • Etisalat](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/11svp.plist)
 
-- Heavy Duty Truck  
-  • Import & Export Certs  
-  • Esign/Ksign/Scarlet  
-  [Download](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Truck.zip)
+[Ksign - • Heavy Duty Truck Group Co., Ltd](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/vhp7k.plist)
 
-- Guangzhou Huahan Educational  
-  • Import & Export Certs  
-  • Esign/Ksign/Scarlet  
-  [Download](https://github.com/applejr12/signer/raw/refs/heads/main/Guangzhou%20Huahan%20Educational%20&%20Technology%20Co.,Ltd..zip)
+[Ksign - • TechTree IT Systems](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/z1ut9.plist)
 
-- Certificate ZIP  
-  • Import & Export Certs  
-  • Esign/Ksign/Scarlet  
-  [Download](https://github.com/applejr12/signer/raw/refs/heads/main/Cert%20AppleJr.zip)
+[Ksign - • Guangzhou Huahan Educational](itms-services://?action=download-manifest&url=https://download.khoindvn.io.vn/Plist/hab4q.plist)
+
+[Ksign - • China Central](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_Central.plist)
+
+[Ksign - • Chiba Certificate](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_Chiba.plist)
+
+[Ksign - • Education Certificate](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_Education.plist)
+
+[Ksign - • National](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_National.plist)
+
+[Ksign - • Vietnam Bank](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed_ksign/Ksign_VietnamBank.plist)
+
+## 3. Scalert
+
+[AppleJr DNS - • Anti-Revoke](https://d1yei2z3i6k35z.cloudfront.net/14890634/68f7bbc35c7c2_signed_AppleJrV22.mobileconfig)
+
+[Scarlet - Signed • Elections Cert](https://applejr.net/post/download/gate.html?t=eyJ5IjoiaHR0cHM6Ly93d3cueW91dHViZS5jb20vQGlTb2x1dGlvbmFsL3ZpZGVvcyIsImQiOiJpdG1zLXNlcnZpY2VzOi8vP2FjdGlvbj1kb3dubG9hZC1tYW5pZmVzdCZ1cmw9aHR0cHM6Ly9hcHBsZWpyLm5ldC9wb3N0L1NjYXJsZXRfQ09NRUxFQy5wbGlzdCJ9)
+
+[Scarlet - • Tianjin University](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed/Scarlet_Tianjin.plist)
+
+[Scarlet - • Education Certs](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed/Scarlet_Education.plist)
+
+[Scarlet - • Viet Telecom](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed/Scarlet_Viettel.plist)
+
+[Scarlet - • HDFC](itms-services://?action=download-manifest&url=https://applejr.cloud/manual/signed/Scarlet_HDFC.plist)
+
+## 4. Cert
+
+[National Oilwell Varco - Signed • Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/National%20Oilwell%20Varco,%20Inc.zip)
+
+[VIETNAM AIRLINES - Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/VIETNAM%20AIRLINES%20JSC.zip)
+
+[ForeverMark Marketing - Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Forevermark%20%20Marketing(Shanghai%20)%20Limited.zip)
+
+[PowerChina International - Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/PowerChina%20International%20Group%20Limited.zip)
+
+[China Academy - Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/China%20Academy.zip)
+
+[Qingdao Rural Commercial - Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Qingdao%20Rural%20Commercial%20Bank%20Co.,%20Ltd.zip)
+
+[Luoyang Postal Administration.zip - Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Luoyang%20Postal%20Administration.zip)
+
+[Commission on Election - Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Commission%20on%20Elections.zip)
+
+[VietinBank - Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Vietinbank.zip)
+
+[Wasu Media - • Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/wasu.zip)
+
+[Etisalat Emirates - • Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Etisalat.zip)
+
+[Certificate ZIP - • Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Cert%20AppleJr%203.zip)
+
+[Heavy Duty Truck - • Import & Export Certs](https://github.com/royilkom-alt/cert/raw/refs/heads/main/Truck.zip)
+
+[Guangzhou Huahan Educational - • Import & Export Certs](https://github.com/applejr12/signer/raw/refs/heads/main/Guangzhou%20Huahan%20Educational%20&%20Technology%20Co.,Ltd..zip)
+

@@ -111,12 +111,12 @@
       "version": "1.1.0",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.0/DLiPA_v1.1.ipa",
-          "size": 500000,
           "version": "1.1.0",
-          "buildVersion": null,
           "date": "2026-02-10T00:42:00+07:00",
           "localizedDescription": "⚠️Lưu Ý:\nCài đặt ứng dụng trực tiếp bên trong DLiPA có thể gây ra các vấn đề như thiếu tự động cập nhật.\n✅Phương pháp đề xuất:\nĐể có kết quả tốt nhất, hãy sử dụng AirDrop để chia sẻ và cài đặt IPA từ một thiết bị khác.",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.1.0/DLiPA_v1.1.ipa",
+          "size": 500000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
@@ -5701,7 +5701,7 @@
       "title": " Free Sideloading bằng DNS - AppleJR",
       "identifier": "news-applejr",
       "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
-      "date": "2025-11-16",
+      "date": "2026-03-10",
       "tintColor": "#8525d0",
       "imageURL": "https://i.ibb.co/RJ8dWxb/bOMvrzbm.jpg",
       "notify": true,
