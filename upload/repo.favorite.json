@@ -23,6 +23,39 @@
   "apps": [
     {
       "beta": false,
+      "name": "Unzip Fast",
+      "type": 4,
+      "bundleIdentifier": "com.unziparchive.zipunzip",
+      "developerName": "Phê tít",
+      "subtitle": "Paid App",
+      "localizedDescription": "Ứng dụng giúp giải nén file Zip, Rar",
+      "versionDescription": "",
+      "tintColor": "#7f7f7f",
+      "iconURL": "https://i.ibb.co/5WFDLdJ2/aa9db764092a.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 7100000,
+      "version": "1.0.3",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.03/_Unzip.Fast.-.ZIP.RAR.7Z_v1.0.3-AppAssassin_patched.ipa",
+          "size": 7100000,
+          "version": "1.0.3",
+          "buildVersion": null,
+          "date": "2026-03-11T03:41:00+07:00",
+          "localizedDescription": "https://apps.apple.com/app/id6752353634",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-03-11T03:41:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.03/_Unzip.Fast.-.ZIP.RAR.7Z_v1.0.3-AppAssassin_patched.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Terraria",
       "type": 2,
       "bundleIdentifier": "com.505games.terraria",
@@ -5654,6 +5687,17 @@
       "appID": ""
     },
     {
+      "title": " Free Sideloading bằng DNS - AppleJR",
+      "identifier": "news-applejr",
+      "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
+      "date": "2026-03-10",
+      "tintColor": "#8525d0",
+      "imageURL": "https://i.ibb.co/RJ8dWxb/bOMvrzbm.jpg",
+      "notify": true,
+      "url": "https://drphe.github.io/KhoIPA/view/?note=applejr.md",
+      "appID": ""
+    },
+    {
       "title": "Chặn ứng dụng ngân hàng",
       "identifier": "news-0j8ivbmdfb",
       "caption": "Không cung cấp dịch vụ ngân hàng trên thiết bị có cài app bên thứ 3.",
@@ -5696,17 +5740,6 @@
       "notify": true,
       "url": "https://drphe.github.io/KhoIPA/view/?note=ipamod.md",
       "appID": "wiki.qaq.Asspp"
-    },
-    {
-      "title": " Free Sideloading bằng DNS - AppleJR",
-      "identifier": "news-applejr",
-      "caption": "Bài hướng dẫn sử dụng cert đã revoke và DNS để free sideloading IPA",
-      "date": "2026-03-10",
-      "tintColor": "#8525d0",
-      "imageURL": "https://i.ibb.co/RJ8dWxb/bOMvrzbm.jpg",
-      "notify": true,
-      "url": "https://drphe.github.io/KhoIPA/view/?note=applejr.md",
-      "appID": ""
     },
     {
       "title": "Free Sideloading bằng DNS - Khoindvn",
