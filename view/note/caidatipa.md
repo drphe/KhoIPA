@@ -1,35 +1,60 @@
-# 💡 Phương Pháp Cài File IPA lên iPhone (Không Cần Jailbreak) - Mới Nhất 2025
+# 💡 Phương Pháp Cài File IPA lên iPhone (Không Cần Jailbreak) - Mới Nhất 2026
+**Chế độ Nhà phát triển (Developer Mode):** Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.
+=> <a href="#" data-url="developermod.md" class="news-item-link"> Xem bài hướng dẫn ở đây </a>
 
 ## 1. Phương Pháp Cài IPA Có Dùng PC 💻
+Các phương pháp này tận dụng máy tính (Windows/macOS) để ký và cài đặt file IPA lên thiết bị. Dưới đây là 3 cách mà ad sử dụng để cài đặt cho Iphone.
 
-Các phương pháp này tận dụng máy tính (Windows/macOS) để ký và cài đặt file IPA lên thiết bị.
+- Với tài khoản developer miễn phí, Apple giới hạn chỉ được tạo 10 App IDs mỗi tuần.
+- Với IPA có App Extensions (các phần mở rộng đi kèm ứng dụng).Nếu giữ nguyên các extensions, chúng sẽ tính vào giới hạn 10 App IDs.
 
-### 1.1. AltStore \& AltServer (Cert Miễn Phí)
-
+### 1.1. AltStore \& AltServer
 * **Cách thức:** Cài **AltServer** trên máy tính, đăng nhập **Apple ID miễn phí**. AltServer giúp cài đặt ứng dụng **AltStore** lên iPhone. Sau đó, dùng AltStore trên iPhone để cài các file IPA.
 * **Hiệu lực:** Mỗi app hiệu lực **7 ngày**, cần kết nối với AltServer (trên PC) hoặc nhấn **“Refresh”** trong AltStore (khi PC và iPhone cùng mạng) để gia hạn.
-* **Hạn chế:** Giới hạn **3 ứng dụng** ngoài cùng lúc.
+* **Hạn chế:** Giới hạn **3 ứng dụng** ngoài cùng lúc. Cần máy tính hoạt động duy trì AltServer chạy ngầm. Cùng kết nối wifi (hoặc kết nối cáp USB) với Điện thoại để có thể refresh qua Altstore sau 7 ngày.
+* [HD cài IPA bằng AltStore](https://ios.codevn.net/huong-dan-cai-ipa-bang-altstore-windows/)
 
-    [HD cài IPA bằng AltStore](https://ios.codevn.net/huong-dan-cai-ipa-bang-altstore-windows/)
+### 1.2. AltStore và PlumeImpactor
 
+Tóm tắt cách thực hiện: 
+- Tải về tài nguyên: 
+[(1) PlumeImpactor](https://github.com/claration/Impactor/releases),
+[(2) LiveContaier + Sidestore](https://github.com/LiveContainer/LiveContainer/releases), 
+[(3)Apple Device](https://apps.microsoft.com/detail/9np83lwlpz9k?hl=en-US&gl=ID), 
+[(4) LocaldevVPN](https://apps.apple.com/us/app/localdevvpn/id6755608044)
+- Cài đặt AppleDevices để kết nối với điện thoại lần đầu
+- Kết nối điện thoại và pc bằng cáp USB
+- Cài đặt và dùng PlumeImpactor để cài live container + sidestore
+- Tin cậy chứng chỉ trên điện thoại
+- Rút cáp, login vào live container, cài sidestore
+- Cài VPN local để refresh sau mỗi 7 ngày
+- Cài ứng dụng từ sidestore qua livecontainer và vào livecontainer refresh from alt store
 
+[Xem video hướng dẫn](https://youtu.be/VIeTDm_YQvI?si=fen6NK0Ga-LVq4ad)
 
-### 1.2. Sideloadly (Cert Miễn Phí/Có Phí)
+=> Cách này khắc phục hạn chế phải duy trì AltServer trên PC, thay vào đó sẽ refresh qua app Sidestore - Livecontainer online mỗi 7 ngày, nhưng cần cài đặt VPN liên lục để có thể refresh.
+(Bản chất là Dùng VPN thay Alterserver)
 
-* **Cách thức:** Tải và cài đặt **Sideloadly** trên PC. Đăng nhập Apple ID. Nhập file IPA và cài đặt qua kết nối USB/WiFi.
-* **Phân loại:**
+### 1.3. Sideloadly (Cert Miễn Phí/Có Phí)
+Tóm tắt cách thực hiện: 
+- Tải tài nguyên: https://sideloadly.io/
+- Cài đặt Itunes và Icloud để kết nối với điện thoại qua cáp USB
+- Bật tính năng tự refresh (auto refresh)
+  - Mở itunes > login> cài đặt thiết bị> tự đồng bộ qua internet
+Sau mỗi 7 ngày sidestore tự refresh khi Iphone và PC (kiểm tra sideloaly chạy nền trên máy) bắt chung 1 mạng hoặc kết nối cap UsB
+  - Windows: Open iTunes > Connected Device > Summary > Options > Enable "Sync with this iDevice over Wi-Fi" > Sync & Done.
 
-  * **Cert Miễn Phí:** App tồn tại **7 ngày**, sau đó phải cài lại.
-  * **Cert Có Phí:** Dùng tài khoản **Apple Developer Program** ($99/năm), app duy trì lâu dài, **không giới hạn** số lượng app.
+- Cài đặt dùng sideloadly để cài app IPA qua cáp (Đăng nhập trùng tên tài khoản cloud điện thoại)
 
-* [https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html](https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html)
-* [https://thuthuatjb.com/huong-dan-su-dung-sideloadly-de-cai-ipa-vao-thiet-bi-ios-ipados/](https://thuthuatjb.com/huong-dan-su-dung-sideloadly-de-cai-ipa-vao-thiet-bi-ios-ipados/)
-
-### 1.3. 3uTools (Chỉ Có Phí - Ít Phổ Biến Sau 2024)
-
-* **Cách thức:** Cài 3uTools, kết nối iPhone, nhập IPA và cài đặt thẳng lên máy.
-* **Lưu ý:** Thường yêu cầu chứng chỉ của tài khoản dev trả phí hoặc dịch vụ ủy quyền cert (dịch vụ này đang bị Apple siết chặt hơn).
-* [https://thuthuat.taimienphi.vn/cai-3utools-su-dung-3utools-ket-noi-iphone-voi-may-tinh-12299n.aspx](https://thuthuat.taimienphi.vn/cai-3utools-su-dung-3utools-ket-noi-iphone-voi-may-tinh-12299n.aspx)
+=> Cài IPA bằng sideloady qua cáp USB hoặc dùng Iphone bật điểm truy cập, PC bắt điểm truy cập đó là cài đc mà không dùng dây. 
+Nếu AppleID development thì không giới hạn số app, còn AppleID miễn phí giới hạn 10 app/tuần, và 7 ngày phải refresh. Nếu cài bằng Sideloady có cũng tương tự như Altstore/Altserver, nhưng Sideloady sử dụng Daemon làm server giúp tự động refresh chứng chỉ mỗi 7 ngày, nên không cần cài Altstore trung gian như mục 1.1 mà cài trực tiếp IPA.
+(Bản chất giống cách 1.1 nhưng tự động refresh)
+* Xem video hướng dẫn 
+  - https://youtu.be/r5UW4oY0Sx4?si=SEoew_4dGOVJnORI
+  - https://youtu.be/vqTsavQc3lQ?si=2XviK5E6kRS9LvC-
+* Đọc bài hướng dẫn 
+  * [https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html](https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html)
+  * [https://thuthuatjb.com/huong-dan-su-dung-sideloadly-de-cai-ipa-vao-thiet-bi-ios-ipados/](https://thuthuatjb.com/huong-dan-su-dung-sideloadly-de-cai-ipa-vao-thiet-bi-ios-ipados/)
 
 ---
 
@@ -50,8 +75,6 @@ Các phương pháp này cho phép cài đặt trực tiếp trên iPhone, đa s
 * **Nhược điểm:** **Giới hạn nghiêm ngặt** về phiên bản iOS và thiết bị tương thích.
 * <a href="#" data-url="trollstore.md" class="news-item-link"> Hướng dẫn cài IPA bằng TrollStore </a>
 * [Cài đặt IPA vĩnh viễn bằng TrollStore](https://thuthuatjb.com/huong-dan-su-dung-trollstore-de-cai-file-ipa-vinh-vien-tren-ios-ipados/)
-
-
 
 ### 2.2. TestFlight (Beta Testing)
 
@@ -108,9 +131,5 @@ Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng du
 * Scarlet là lựa chọn “đầy đủ” nếu bạn muốn một installer + signer + repo tích hợp — nhưng bệnh của nó là một vài tính năng ít minh bạch và khả năng revoke vẫn còn là vấn đề.
 * GBox: mình khuyên bạn nên cẩn trọng, vì cộng đồng ít sử dụng, ít đánh giá, và có cảnh báo về rủi ro về dữ liệu.
 
-
-
-**Chế độ Nhà phát triển (Developer Mode):** Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.
-=> <a href="#" data-url="developermod.md" class="news-item-link"> Xem bài hướng dẫn ở đây </a>
 
 

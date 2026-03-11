@@ -1,9 +1,10 @@
 # 👉🏻 Hướng dẫn sử dụng 
 
-Để cài đặt được IPA không cần jailbreak bạn <a href="#" data-url="caidatipa.md" class="news-item-link">đọc bài này</a>.
-**Chế độ Nhà phát triển (Developer Mode):** Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.
+- **Chế độ Nhà phát triển (Developer Mode):** Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.
 => <a href="#" data-url="developermod.md" class="news-item-link"> Xem bài hướng dẫn ở đây </a>
+- Nếu bạn có PC hãy đọc bài: <a href="#" data-url="pc.md" class="news-item-link"> Cài đặt được IPA không cần jailbreak </a> qua PC, autorefresh không lo revoke (dành cho người dùng nâng cao).
 
+Ở đây tôi tập trung hướng về cách cài IPA trên Iphone/Ipad thông qua Cert mà không sử dụng máy tính, phù hợp với mục đích cá nhân (dành cho người dùng phổ thông).
 ## 1. Sử dụng Live Certificates
 Nếu bạn bạn đã mua chứng chỉ, sau khi nhận được tệp cert.zip thì upload chứng chỉ và file IPA cần cài lên một các trang sau để nhận link cài trực tiếp:
 
@@ -37,6 +38,7 @@ Có nhiều trang chia sẻ về cách này, khác nhau ở bộ lọc DNS còn 
 - hoặc bài <a href="#" data-url="freesideloading.md" class="news-item-link">Free sideloading bằng DNS - PuReEnVyUs</a> 
 - hoặc <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoked bằng DNS WFS</a>.
 - hoặc vào trực tiếp đây cho nhanh, chia sẻ các chứng chỉ doanh nghiệp và Esign/Trollstore đã được ký sẵn, nhớ cài DNS để tránh bị revoke. => https://certvn.com/dns
+- hay sử dụng <a href="#" data-url="applejr.md" class="news-item-link">DNS của AppleJr.net</a> (update 1/2026).
 
 - Việc tạo DNS thủ công đã lỗi thời, thay vào đó sử dụng các DNS sẵn có, tránh rò rỉ DNS giúp xài Cert revoked đc lâu hơn, nhưng ko có gì đảm bảo mọi thứ suôn sẻ. Nên lưu ý: tốt nhất làm theo hướng dẫn trong các bài  (đọc kỹ trước làm sau), kiên nhẫn (có thể chứng chỉ nào đó ko sử dụng đc với thiết bị của bạn), và ko nên update IOS, các bản cập nhật mới vá lỗi bảo mật dễ  rò rỉ DNS và khiến các chứng chỉ bị blacklist.
 
