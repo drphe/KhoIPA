@@ -52,7 +52,7 @@ Nếu AppleID development thì không giới hạn số app, còn AppleID miễn
 
 - Nếu bị lỗi "Installation failed: 0 DeviceFamilyNotSupported " này là do IPA chỉ dành cho IPad nhé, Tick Remove limitation on devices thử lại xem.
 
-+ Nếu vì lý do nào đó mà Sideloadly không phát hiện thiết bị của bạn, vui lòng kết nối qua USB và nhấp vào tùy chọn Sửa chữa (biểu tượng xích) trong Sideloadly vì điều đó sẽ giúp phát hiện Wi-Fi. Ngoài ra, hãy đảm bảo rằng Windows / macOS và iPhone / iPad của bạn được kết nối với cùng một mạng Wi-Fi / LAN nếu không chúng không thể nhìn thấy nhau. Màn hình thiết bị của bạn cần SÁNG và MỞ KHÓA để phát hiện qua Wi-Fi.
++ Nếu vì lý do nào đó mà Sideloadly không phát hiện thiết bị của bạn, vui lòng kết nối qua USB và nhấp vào tùy chọn Sửa chữa (biểu tượng xích) trong Sideloadly vì điều đó sẽ giúp phát hiện Wi-Fi. Ngoài ra, hãy đảm bảo rằng Windows / macOS và iPhone / iPad của bạn được kết nối với cùng một mạng Wi-Fi / LAN nếu không chúng không thể nhìn thấy nhau. Màn hình thiết bị của bạn cần LUÔN SÁNG và MỞ KHÓA để phát hiện qua Wi-Fi cũng như cài đặt IPA qua wifi.
 
 
 * Xem video hướng dẫn 
