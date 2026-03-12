@@ -48,10 +48,13 @@ Sau mỗi 7 ngày sidestore tự refresh khi Iphone và PC (kiểm tra sideloaly
 
 => Cài IPA bằng sideloady qua cáp USB hoặc dùng Iphone bật điểm truy cập, PC bắt điểm truy cập đó là cài đc mà không dùng dây. 
 Nếu AppleID development thì không giới hạn số app, còn AppleID miễn phí giới hạn 10 app/tuần, và 7 ngày phải refresh. Nếu cài bằng Sideloady có cũng tương tự như Altstore/Altserver, nhưng Sideloady sử dụng Daemon làm server giúp tự động refresh chứng chỉ mỗi 7 ngày, nên không cần cài Altstore trung gian như mục 1.1 mà cài trực tiếp IPA.
-
-Nếu bị lỗi "Installation failed: 0 DeviceFamilyNotSupported " này là do IPA chỉ dành cho IPad nhé, Tick Remove limitation on devices thử lại xem.
-
 (Bản chất giống cách 1.1 nhưng tự động refresh)
+
+- Nếu bị lỗi "Installation failed: 0 DeviceFamilyNotSupported " này là do IPA chỉ dành cho IPad nhé, Tick Remove limitation on devices thử lại xem.
+
++ Nếu vì lý do nào đó mà Sideloadly không phát hiện thiết bị của bạn, vui lòng kết nối qua USB và nhấp vào tùy chọn Sửa chữa (biểu tượng xích) trong Sideloadly vì điều đó sẽ giúp phát hiện Wi-Fi. Ngoài ra, hãy đảm bảo rằng Windows / macOS và iPhone / iPad của bạn được kết nối với cùng một mạng Wi-Fi / LAN nếu không chúng không thể nhìn thấy nhau. Màn hình thiết bị của bạn cần SÁNG và MỞ KHÓA để phát hiện qua Wi-Fi.
+
+
 * Xem video hướng dẫn 
   - https://youtu.be/r5UW4oY0Sx4?si=SEoew_4dGOVJnORI
   - https://youtu.be/vqTsavQc3lQ?si=2XviK5E6kRS9LvC-
