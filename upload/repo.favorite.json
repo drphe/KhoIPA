@@ -41,12 +41,12 @@
       "version": "1.0.3",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.03/_Unzip.Fast.-.ZIP.RAR.7Z_v1.0.3-AppAssassin_patched.ipa",
-          "size": 7100000,
           "version": "1.0.3",
-          "buildVersion": null,
           "date": "2026-03-11T03:41:00+07:00",
           "localizedDescription": "https://apps.apple.com/app/id6752353634",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v1.03/_Unzip.Fast.-.ZIP.RAR.7Z_v1.0.3-AppAssassin_patched.ipa",
+          "size": 7100000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -5470,9 +5470,18 @@
           "NSPhotoLibraryUsageDescription": "This lets you send photos and videos from library and save those you capture."
         }
       },
-      "size": 117400000,
-      "version": "251002",
+      "size": 122800000,
+      "version": "260201",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20260201/Zalo.-.DVC.iOS_260201.ipa",
+          "size": 122800000,
+          "version": "260201",
+          "buildVersion": null,
+          "date": "2026-03-12T02:44:00+07:00",
+          "localizedDescription": "ZALO Trắng Có Thể Nhân Bản Ra nhiều Zalo",
+          "minOSVersion": null
+        },
         {
           "version": "251002",
           "date": "2025-11-09T18:07:00+07:00",
@@ -5510,8 +5519,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2025-11-09T18:07:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v251002/Zalo2_251002.ipa",
+      "versionDate": "2026-03-12T02:44:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20260201/Zalo.-.DVC.iOS_260201.ipa",
       "patreon": {}
     },
     {
