@@ -2,7 +2,7 @@
 
 - **Chế độ Nhà phát triển (Developer Mode):** Là yêu cầu bắt buộc khi muốn cài đặt các ứng dụng ngoài AppleStore.
 => <a href="#" data-url="developermod.md" class="news-item-link"> Xem bài hướng dẫn ở đây </a>
-- Nếu bạn có PC hãy đọc bài: <a href="#" data-url="pc.md" class="news-item-link"> Cài đặt được IPA không cần jailbreak </a> qua PC, autorefresh không lo revoke (dành cho người dùng nâng cao).
+- Nếu bạn có PC hãy đọc bài: <a href="#" data-url="caidatipa.md" class="news-item-link"> Cài đặt được IPA không cần jailbreak </a> qua PC, autorefresh không lo revoke (dành cho người dùng nâng cao).
 
 Ở đây tôi tập trung hướng về cách cài IPA trên Iphone/Ipad thông qua Cert mà không sử dụng máy tính, phù hợp với mục đích cá nhân (dành cho người dùng phổ thông).
 ## 1. Sử dụng Live Certificates
