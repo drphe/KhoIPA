@@ -23,7 +23,7 @@ Tóm tắt cách thực hiện:
 [(3)Apple Device](https://apps.microsoft.com/detail/9np83lwlpz9k?hl=en-US&gl=ID), 
 [(4) LocaldevVPN](https://apps.apple.com/us/app/localdevvpn/id6755608044)
 - Cài đặt AppleDevices để kết nối với điện thoại lần đầu
-- Kết nối điện thoại và pc bằng cáp USB
+- Kết nối điện thoại và pc bằng cáp USB (phải dùng cáp mới tự động chèn file paring cho sidestore)
 - Cài đặt và dùng PlumeImpactor để cài live container + sidestore
 - Tin cậy chứng chỉ trên điện thoại
 - Rút cáp, login vào live container, cài sidestore
@@ -32,16 +32,22 @@ Tóm tắt cách thực hiện:
 
 [Xem video hướng dẫn](https://youtu.be/VIeTDm_YQvI?si=fen6NK0Ga-LVq4ad)
 
-=> Cách này khắc phục hạn chế phải duy trì AltServer trên PC, thay vào đó sẽ refresh qua app Sidestore - Livecontainer online mỗi 7 ngày, nhưng cần cài đặt VPN liên lục để có thể refresh.
-(Bản chất là Dùng VPN thay Alterserver)
+=> Cách này khắc phục hạn chế phải duy trì AltServer trên PC, thay vào đó sẽ refresh qua app Sidestore - Livecontainer online mỗi 7 ngày, nhưng cần cài đặt VPN liên lục để có thể refresh (Bản chất là Dùng VPN thay Alterserver nhưng mà tiện hơn, không cần PC). Cài được thêm 2 app nữa qua sidestore (do giới hạn 3 App/ thiết bị), và chỉ có 10 AppId cùng hoạt động (mỗi lần cài đặt APPID sẽ duy trì 7 ngày, không xóa được). So với Sideloadly ở dưới tiện hơn vì không cần PC nữa, chỉ là muốn refresh 3 app cài qua sidestore phải bật VPN, và làm thủ công. chứ để VPN liên tục không an toàn.
+
+=> Bản thân mình dùng cách này và cert. Cài LiveContainer + sidestore => Cài facebook và duolingo trong side store => cài Esign/Feather/Ksign trong Livecontainer=> Cài DNS Anti revoke và Nhập Cert vào Esign/Feather/Ksign để dùng. Định kỳ refresh Sidestore (mở LocalDevVPN khi refresh). Tại sao phải dùng cả 2 trong khi dùng Cert ngon rồi. Vì đôi khi cert bị revoke. Dùng Esign/Feather/Ksign này chữa cháy luôn (nhập cert mới, và cài đè lên sẽ không mất dữ liệu app).
 
 ### 1.3. Sideloadly (Cert Miễn Phí/Có Phí)
 Tóm tắt cách thực hiện: 
 - Tải tài nguyên: https://sideloadly.io/
-- Cài đặt Itunes và Icloud để kết nối với điện thoại qua cáp USB
+[Sideloadly x64](https://sideloadly.io/SideloadlySetup64.exe)
+[Sideloadly x86](https://sideloadly.io/SideloadlySetup32.exe)
+[Sideloadly macOs](https://sideloadly.io/SideloadlySetup.dmg)
+
+- Cài đặt Itunes và Icloud web
+- Ngoài cài Itunes, cần cài Apple Devices support , đây là phần mềm giúp giao tiếp giữa Iphone và PC, sau khi cài đặt, cắm cáp USB và bật cho phép hiện thị trên WIFI là được.
 - Bật tính năng tự refresh (auto refresh)
-  - Mở itunes > login> cài đặt thiết bị> tự đồng bộ qua internet
-Sau mỗi 7 ngày sidestore tự refresh khi Iphone và PC (kiểm tra sideloaly chạy nền trên máy) bắt chung 1 mạng hoặc kết nối cap UsB
+  - Mở Apple Devices > cài đặt chung> Hiển thị thiết bị trên WIFI
+Sau mỗi 7 ngày Sideloadly sẽ tự refresh (signing và install lại ipa) nếu Sidloadly Demorae chạy nền trên máy, và Iphone có kết nối với PC khi bắt chung 1 mạng hoặc kết nối cáp UsB (kiểm tra bằng cách mở Sideloadly lên, thấy hiện thị tên Iphone chỗ thiết bị là được)
   - Windows: Open iTunes > Connected Device > Summary > Options > Enable "Sync with this iDevice over Wi-Fi" > Sync & Done.
 
 - Cài đặt dùng sideloadly để cài app IPA qua cáp (Đăng nhập trùng tên tài khoản cloud điện thoại)
@@ -50,10 +56,9 @@ Sau mỗi 7 ngày sidestore tự refresh khi Iphone và PC (kiểm tra sideloaly
 Nếu AppleID development thì không giới hạn số app, còn AppleID miễn phí giới hạn 10 app/tuần, và 7 ngày phải refresh. Nếu cài bằng Sideloady có cũng tương tự như Altstore/Altserver, nhưng Sideloady sử dụng Daemon làm server giúp tự động refresh chứng chỉ mỗi 7 ngày, nên không cần cài Altstore trung gian như mục 1.1 mà cài trực tiếp IPA.
 (Bản chất giống cách 1.1 nhưng tự động refresh)
 
-- Nếu bị lỗi "Installation failed: 0 DeviceFamilyNotSupported " này là do IPA chỉ dành cho IPad nhé, Tick Remove limitation on devices thử lại xem.
++  Nếu bị lỗi "Installation failed: 0 DeviceFamilyNotSupported " này là do IPA chỉ dành cho IPad nhé, Tick Remove limitation on devices thử lại xem.
 
-+ Nếu vì lý do nào đó mà Sideloadly không phát hiện thiết bị của bạn, vui lòng kết nối qua USB và nhấp vào tùy chọn Sửa chữa (biểu tượng xích) trong Sideloadly vì điều đó sẽ giúp phát hiện Wi-Fi. Ngoài ra, hãy đảm bảo rằng Windows / macOS và iPhone / iPad của bạn được kết nối với cùng một mạng Wi-Fi / LAN nếu không chúng không thể nhìn thấy nhau. Màn hình thiết bị của bạn cần LUÔN SÁNG và MỞ KHÓA để phát hiện qua Wi-Fi cũng như cài đặt IPA qua wifi.
-
++ Nếu vì lý do nào đó mà Sideloadly không phát hiện thiết bị của bạn, vui lòng kết nối qua USB và nhấp vào tùy chọn Sửa chữa (biểu tượng xích) trong Sideloadly vì điều đó sẽ giúp phát hiện Wi-Fi. Ngoài ra, hãy đảm bảo rằng Windows / macOS và iPhone / iPad của bạn được kết nối với cùng một mạng Wi-Fi / LAN nếu không chúng không thể nhìn thấy nhau. Màn hình thiết bị của bạn cần LUÔN SÁNG và MỞ KHÓA để phát hiện qua Wi-Fi cũng như cài đặt IPA qua wifi. Nếu không được thì khởi động lại máy tính.
 
 * Xem video hướng dẫn 
   - https://youtu.be/r5UW4oY0Sx4?si=SEoew_4dGOVJnORI
