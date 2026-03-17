@@ -256,7 +256,7 @@ export async function openCachedUrl(url, onUpdate = null) {
                     const newData = await networkResponse.clone().json();
                     onUpdate(oldData, newData);
 		    if(!updateListCache[url]){
-		    	updateListCache[url] = setInterval(() => openCachedUrl(url, onUpdate), 60 * 60 * 1000);
+		    	updateListCache[url] = setTimeout(() => openCachedUrl(url, onUpdate), 60 * 60 * 1000);
 		    }
                 }
                 await cache.put(url, networkResponse.clone());
