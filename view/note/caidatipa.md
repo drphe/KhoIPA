@@ -6,7 +6,7 @@
 Các phương pháp này tận dụng máy tính (Windows/macOS) để ký và cài đặt file IPA lên thiết bị. Dưới đây là 3 cách mà ad sử dụng để cài đặt cho Iphone.
 
 - Với tài khoản developer miễn phí, Apple giới hạn chỉ được tạo 10 App IDs mỗi tuần.
-- Với IPA có App Extensions (các phần mở rộng đi kèm ứng dụng).Nếu giữ nguyên các extensions, chúng sẽ tính vào giới hạn 10 App IDs.
+- Với IPA có App Extensions (các phần mở rộng đi kèm ứng dụng). Nếu giữ nguyên các extensions, chúng sẽ tính vào giới hạn 10 App IDs.
 
 ### 1.1. AltStore \& AltServer
 * **Cách thức:** Cài **AltServer** trên máy tính, đăng nhập **Apple ID miễn phí**. AltServer giúp cài đặt ứng dụng **AltStore** lên iPhone. Sau đó, dùng AltStore trên iPhone để cài các file IPA.
@@ -14,29 +14,8 @@ Các phương pháp này tận dụng máy tính (Windows/macOS) để ký và c
 * **Hạn chế:** Giới hạn **3 ứng dụng** ngoài cùng lúc. Cần máy tính hoạt động duy trì AltServer chạy ngầm. Cùng kết nối wifi (hoặc kết nối cáp USB) với Điện thoại để có thể refresh qua Altstore sau 7 ngày.
 * [HD cài IPA bằng AltStore](https://ios.codevn.net/huong-dan-cai-ipa-bang-altstore-windows/)
 
-### 1.2. AltStore và PlumeImpactor
 
-Tóm tắt cách thực hiện: 
-- Tải về tài nguyên: 
-[(1) PlumeImpactor](https://github.com/claration/Impactor/releases),
-[(2) LiveContaier + Sidestore](https://github.com/LiveContainer/LiveContainer/releases), 
-[(3)Apple Device](https://apps.microsoft.com/detail/9np83lwlpz9k?hl=en-US&gl=ID), 
-[(4) LocaldevVPN](https://apps.apple.com/us/app/localdevvpn/id6755608044)
-- Cài đặt AppleDevices để kết nối với điện thoại lần đầu
-- Kết nối điện thoại và pc bằng cáp USB (phải dùng cáp mới tự động chèn file paring cho sidestore)
-- Cài đặt và dùng PlumeImpactor để cài live container + sidestore
-- Tin cậy chứng chỉ trên điện thoại
-- Rút cáp, login vào live container, cài sidestore
-- Cài VPN local để refresh sau mỗi 7 ngày
-- Cài ứng dụng từ sidestore qua livecontainer và vào livecontainer refresh from alt store
-
-[Xem video hướng dẫn](https://youtu.be/VIeTDm_YQvI?si=fen6NK0Ga-LVq4ad)
-
-=> Cách này khắc phục hạn chế phải duy trì AltServer trên PC, thay vào đó sẽ refresh qua app Sidestore - Livecontainer online mỗi 7 ngày, nhưng cần cài đặt VPN liên lục để có thể refresh (Bản chất là Dùng VPN thay Alterserver nhưng mà tiện hơn, không cần PC). Cài được thêm 2 app nữa qua sidestore (do giới hạn 3 App/ thiết bị), và chỉ có 10 AppId cùng hoạt động (mỗi lần cài đặt APPID sẽ duy trì 7 ngày, không xóa được). So với Sideloadly ở dưới tiện hơn vì không cần PC nữa, chỉ là muốn refresh 3 app cài qua sidestore phải bật VPN, và làm thủ công. chứ để VPN liên tục không an toàn.
-
-=> Bản thân mình dùng cách này và cert. Cài LiveContainer + sidestore => Cài facebook và duolingo trong side store => cài Esign/Feather/Ksign trong Livecontainer=> Cài DNS Anti revoke và Nhập Cert vào Esign/Feather/Ksign để dùng. Định kỳ refresh Sidestore (mở LocalDevVPN khi refresh). Tại sao phải dùng cả 2 trong khi dùng Cert ngon rồi. Vì đôi khi cert bị revoke. Dùng Esign/Feather/Ksign này chữa cháy luôn (nhập cert mới, và cài đè lên sẽ không mất dữ liệu app).
-
-### 1.3. Sideloadly (Cert Miễn Phí/Có Phí)
+### 1.2. Sideloadly (Cert Miễn Phí/Có Phí)
 Tóm tắt cách thực hiện: 
 - Tải tài nguyên: https://sideloadly.io/
 [Sideloadly x64](https://sideloadly.io/SideloadlySetup64.exe)
@@ -66,6 +45,30 @@ Nếu AppleID development thì không giới hạn số app, còn AppleID miễn
 * Đọc bài hướng dẫn 
   * [https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html](https://thanhtrungmobile.vn/cai-ipa-qua-sideloadly-don-gian-de-hieu-huong-dan-chi-tiet-p28779.html)
   * [https://thuthuatjb.com/huong-dan-su-dung-sideloadly-de-cai-ipa-vao-thiet-bi-ios-ipados/](https://thuthuatjb.com/huong-dan-su-dung-sideloadly-de-cai-ipa-vao-thiet-bi-ios-ipados/)
+
+### 1.3. PlumeImpactor
+
+Tóm tắt cách thực hiện: 
+- Tải về tài nguyên: 
+[(1) PlumeImpactor](https://github.com/claration/Impactor/releases),
+[(2) LiveContaier + Sidestore](https://github.com/LiveContainer/LiveContainer/releases), 
+[(3)Apple Device](https://apps.microsoft.com/detail/9np83lwlpz9k?hl=en-US&gl=ID), 
+[(4) LocaldevVPN](https://apps.apple.com/us/app/localdevvpn/id6755608044)
+
+- Cài đặt AppleDevices để kết nối với điện thoại lần đầu
+- Kết nối điện thoại và pc bằng cáp USB (phải dùng cáp mới tự động chèn file paring cho sidestore)
+- Cài đặt và dùng PlumeImpactor để cài live container + sidestore
+- Tin cậy chứng chỉ trên điện thoại
+- Rút cáp, mở live container, chuyển qua sidestore, login vào sidestore
+- Cài LocaldevVPN, bật local VPN để cài đặt app qua sidestore (cài thêm 2 app nữa, với livecontainer đã cài sẵn) và refresh chứng chỉ sau mỗi 7 ngày
+- Cài ứng dụng và chạy bằng livecontainer không giới hạn.
+
+[Xem video hướng dẫn](https://youtu.be/VIeTDm_YQvI?si=fen6NK0Ga-LVq4ad)
+
+=> Cách này khắc phục hạn chế phải duy trì AltServer trên PC hay sideloadly phải có kết nối PC để duy trì, thay vào đó sẽ refresh qua app Sidestore (ẩn trong Livecontainer) sau mỗi 7 ngày. Cần cài đặt Local VPN để có thể refresh chứng chỉ(Bản chất là Dùng VPN thay Alterserver nhưng mà tiện hơn, không cần PC). 
+=> Cài được thêm 2 app nữa qua sidestore (do giới hạn 3 App/ thiết bị), và chỉ có 10 AppId cùng hoạt động (mỗi lần cài đặt APPID sẽ duy trì 7 ngày, không xóa được). 
+=> Bản thân tôi dùng cách này và cert free kèm DNS. (1) Cài LiveContainer + sidestore => Cài facebook và Ksign trong sidestore (bật local VPN)=> Cài DNS Anti revoke và Nhập Cert vào Ksign để dùng. Định kỳ refresh Sidestore (mở LocalDevVPN khi refresh và kết nối wifi). 
+Tại sao phải dùng cả 2 trong khi dùng Cert ngon rồi. Vì đôi khi cert bị revoke. Dùng Ksign này chữa cháy luôn (nhập cert mới, và cài đè lên sẽ không mất dữ liệu app). Vì định kỳ refresh sidestore nên coi như dùng mãi mãi luôn. Nếu quên mà để sidestore hết hạn chứng chỉ, lúc này cắm cáp USB, dùng Plumimpactor cài lại.
 
 ---
 
