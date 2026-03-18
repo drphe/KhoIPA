@@ -62,7 +62,7 @@ Tóm tắt cách thực hiện:
 - Rút cáp, mở live container, chuyển qua sidestore, login vào sidestore
 - Cài LocaldevVPN, bật local VPN để cài đặt app qua sidestore (cài thêm 2 app nữa, với livecontainer đã cài sẵn) và refresh chứng chỉ sau mỗi 7 ngày
 - Cài ứng dụng và chạy bằng livecontainer không giới hạn.
-
+- Cài shortcut để [Refresh App](https://www.icloud.com/shortcuts/532d7e87144048f8b46561a93b6ba25b)
 [Xem video hướng dẫn](https://youtu.be/VIeTDm_YQvI?si=fen6NK0Ga-LVq4ad)
 
 => Cách này khắc phục hạn chế phải duy trì AltServer trên PC hay sideloadly phải có kết nối PC để duy trì, thay vào đó sẽ refresh qua app Sidestore (ẩn trong Livecontainer) sau mỗi 7 ngày. Cần cài đặt Local VPN để có thể refresh chứng chỉ(Bản chất là Dùng VPN thay Alterserver nhưng mà tiện hơn, không cần PC). 
