@@ -66,7 +66,9 @@ Tóm tắt cách thực hiện:
 [Xem video hướng dẫn](https://youtu.be/VIeTDm_YQvI?si=fen6NK0Ga-LVq4ad)
 
 => Cách này khắc phục hạn chế phải duy trì AltServer trên PC hay sideloadly phải có kết nối PC để duy trì, thay vào đó sẽ refresh qua app Sidestore (ẩn trong Livecontainer) sau mỗi 7 ngày. Cần cài đặt Local VPN để có thể refresh chứng chỉ(Bản chất là Dùng VPN thay Alterserver nhưng mà tiện hơn, không cần PC). 
+
 => Cài được thêm 2 app nữa qua sidestore (do giới hạn 3 App/ thiết bị), và chỉ có 10 AppId cùng hoạt động (mỗi lần cài đặt APPID sẽ duy trì 7 ngày, không xóa được). 
+
 => Bản thân tôi dùng cách này và cert free kèm DNS. (1) Cài LiveContainer + sidestore => Cài facebook và Ksign trong sidestore (bật local VPN)=> Cài DNS Anti revoke và Nhập Cert vào Ksign để dùng. Định kỳ refresh Sidestore (mở LocalDevVPN khi refresh và kết nối wifi). 
 Tại sao phải dùng cả 2 trong khi dùng Cert ngon rồi. Vì đôi khi cert bị revoke. Dùng Ksign này chữa cháy luôn (nhập cert mới, và cài đè lên sẽ không mất dữ liệu app). Vì định kỳ refresh sidestore nên coi như dùng mãi mãi luôn. Nếu quên mà để sidestore hết hạn chứng chỉ, lúc này cắm cáp USB, dùng Plumimpactor cài lại.
 
