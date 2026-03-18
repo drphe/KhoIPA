@@ -198,74 +198,6 @@
     },
     {
       "beta": false,
-      "name": "ReDyne_1.2",
-      "type": 1,
-      "bundleIdentifier": "com.jian.ReDyne",
-      "developerName": "ReDyne_1.2 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "A native decompiler app for iOS!",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/ReDyne_1.2.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/ReDyne_1.2/ReDyne_1.2-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 9856614,
-      "version": "1.2",
-      "versions": [
-        {
-          "version": "1.2",
-          "date": "2025-12-27",
-          "size": 9856614,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/ReDyne_1.2.ipa",
-          "localizedDescription": "A native decompiler app for iOS!"
-        }
-      ],
-      "versionDate": "2025-12-27",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/ReDyne_1.2.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
-      "name": "Flappy_Bird_4.3",
-      "type": 1,
-      "bundleIdentifier": "org.brandonplank.flappybird",
-      "developerName": "Flappy_Bird_4.3 x CyPwn",
-      "subtitle": "",
-      "localizedDescription": "Flappy Bird",
-      "versionDescription": "",
-      "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Flappy_Bird_4.3.png",
-      "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Flappy_Bird_4.3/Flappy_Bird_4.3-0.png"
-      ],
-      "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "size": 2107637,
-      "version": "4.3",
-      "versions": [
-        {
-          "version": "4.3",
-          "date": "2025-12-26",
-          "size": 2107637,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/Flappy_Bird_4.3.ipa",
-          "localizedDescription": "Flappy Bird"
-        }
-      ],
-      "versionDate": "2025-12-26",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/Flappy_Bird_4.3.ipa",
-      "patreon": {}
-    },
-    {
-      "beta": false,
       "name": "iTorrent",
       "type": 1,
       "bundleIdentifier": "com.xitrix.iTorrent2",
@@ -6443,26 +6375,6 @@
       "tintColor": "FFC300",
       "imageURL": "https://ipa.cypwn.xyz/serve/icons/Violyn_1_4_4-2.png",
       "date": "2026-01-12",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "ReDyne_1.2 now available!",
-      "identifier": "cypwn.ReDyne_1.2.1.2",
-      "caption": "ReDyne_1.2 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/ReDyne_1.2.png",
-      "date": "2025-12-27",
-      "url": "https://ipa.cypwn.xyz",
-      "notify": true
-    },
-    {
-      "title": "Flappy_Bird_4.3 now available!",
-      "identifier": "cypwn.Flappy_Bird_4.3.4.3",
-      "caption": "Flappy_Bird_4.3 added to the CyPwn Library",
-      "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/Flappy_Bird_4.3.png",
-      "date": "2025-12-26",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
