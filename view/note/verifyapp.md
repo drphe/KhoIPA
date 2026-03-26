@@ -17,6 +17,8 @@ Bạn là người mới, có thể <a href="#" data-url="freesideloading.md" cl
 
 DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài đặt IPA** bằng các công cụ như **eSign**, **kSign**, và **Feather** — ngay cả khi dùng **chứng chỉ đã bị thu hồi**. 
 
+[Michelle DNS V2 - Update](https://cloud.kamikami.eu/s/michelledns)
+
 [WSF CFDNS](https://wsfteam.xyz/files/configurationprofiles/CFDNS-CP144.mobileconfig) hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/CFDNS-CP144.mobileconfig)
 
 [WSF madNS](https://wsfteam.xyz/files/configurationprofiles/madNS-CP144.mobileconfig) hoặc [link dự phòng](https://drphe.github.io/KhoIPA/upload/madNS-CP144.mobileconfig)
@@ -30,6 +32,7 @@ DNS này cho phép bạn **vượt qua lỗi xác minh ứng dụng** và **cài
 * **Không bị chặn**, **không giới hạn 7 ngày** — chỉ cần cài IPA!
 * Tối ưu cho các ứng dụng **offline**
 * Hoạt động trên **iOS 18**
+* 3 chế độ DNS hoạt động riêng: Install Only giúp chặn 7 host kiểm tra Cert, DNS Keep after Install giúp chặn cơ chế PPQ
 
 ---
 
