@@ -23,6 +23,39 @@
   "apps": [
     {
       "beta": false,
+      "name": "iPSX2",
+      "type": 4,
+      "bundleIdentifier": "com.otti83.iPSX2",
+      "developerName": "Unknow",
+      "subtitle": "Giả lập PS2",
+      "localizedDescription": "Giả lập PlayStation 2 Emulator iOS 2026\nMuốn chơi game PlayStation 2 trực tiếp trên IPhone thì cài đặt ứng dụng này.\nBước 1: Cài IPSX2 (copy hết các file từ thư mục PS2 Bios ở dưới vào thư mục bios của IPX2)\nBước 2: Cài Stikdebug (xem hướng dẫn trên trang web, nếu có sidestore rồi thì copy file paring của sidestore cho nhanh)\nBước 3: Copy game và chơi.\n\nXem video để biết chi tiết: https://youtu.be/yHTRUKp7Y90?si=LyolNEmPcOY9M4sW\n📌iPSX2 PS2 Emulator for iPhone/iPad : https://github.com/otti83/iPSX2/releases\n📌StikDebug : https://stikdebug.xyz/\n📌PS 2 Bios (All in One) : https://drive.google.com/file/d/1dVIeVrnov3dQvzu0y55Y7xG-qNV_uFzf/view",
+      "versionDescription": "",
+      "tintColor": "#34346c",
+      "iconURL": "https://i.ibb.co/HTPWtQjr/917635e6c72a.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "size": 11200000,
+      "version": "0.1.2",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.2.0/iPSX2.v0.1.2.ipa",
+          "size": 11200000,
+          "version": "0.1.2",
+          "buildVersion": null,
+          "date": "2026-03-27T05:12:00+07:00",
+          "localizedDescription": "Expanding ps2autotests coverage (mainly GS tests)\nBug fixed setting parameters (e.g., High resolution)\nBug fixed UI (e.g., Virtual pad)",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-03-27T05:12:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.2.0/iPSX2.v0.1.2.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "Unzip Fast",
       "type": 4,
       "bundleIdentifier": "com.unziparchive.zipunzip",
@@ -5474,12 +5507,12 @@
       "version": "260201",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20260201/Zalo.-.DVC.iOS_260201.ipa",
-          "size": 122800000,
           "version": "260201",
-          "buildVersion": null,
           "date": "2026-03-12T02:44:00+07:00",
           "localizedDescription": "ZALO Trắng Có Thể Nhân Bản Ra nhiều Zalo",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20260201/Zalo.-.DVC.iOS_260201.ipa",
+          "size": 122800000,
+          "buildVersion": null,
           "minOSVersion": null
         },
         {
