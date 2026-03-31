@@ -263,6 +263,7 @@ export async function openCachedUrl(url, onUpdate = null) {
             }
         } catch (error) {
             console.log("Background fetch failed:", url);
+	    alert(error)
         }
     };
 
