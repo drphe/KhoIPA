@@ -51,7 +51,7 @@
           "keychain-access-groups"
         ],
         "privacy": {
-          "NSAccentColorName": "AccentColor",
+          "NSAccentColorNameUsageDescription": "AccentColor",
           "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
           "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
           "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
