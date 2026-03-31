@@ -30,7 +30,7 @@
       "subtitle": "Run iOS app without actually installing it!",
       "localizedDescription": "### Hướng dẫn cài đặt Livecontainer+sidestore bằng Impactor\n\n- **Impactor** (trước đây gọi là *Plume Impactor*) là một công cụ sideloader hiện đại, đa nền tảng, được phát triển bởi **khcrysalis**. Impactor sẽ tự động thêm các entitlement liên quan đến *increased-memory-limit* và *HealthKit* cho **LiveContainer**.\n\n#### Các bước thực hiện trên PC:\n\n1. Tải đúng phiên bản **Impactor**(https://github.com/khcrysalis/Impactor) từ GitHub dựa trên hệ điều hành và kiến trúc máy của bạn.  \n   > Lưu ý: chúng ta tải **Impactor**, không phải **plumesign**.\n\n2. Cài đặt và mở **Impactor**.\n\n3. Đảm bảo thiết bị của bạn xuất hiện ở góc trên bên phải. Nếu không thấy, hãy kiểm tra ghi chú phía trên hoặc thử dùng cổng USB/dây cáp khác.\n\n4. Nhấn vào biểu tượng **cài đặt (hình bánh răng)** → chọn **Add Account** để đăng nhập bằng Apple ID.  \n   > Nếu gặp sự cố đăng nhập, hãy tham khảo hướng dẫn hoặc liên hệ nhà phát triển Impactor.\n\n5. Nhấn nút **Back** để quay lại.\n\n6. Kéo và thả file **LiveContainer + SideStore .ipa** vào cửa sổ Impactor.\n\n7. Đảm bảo tùy chọn **Only Register Main Bundle** đã được chọn.\n\n8. Nhấn **Install**.\n\n9. Trên iPhone/iPad, vào **Cài đặt (Settings)** → **Cài đặt chung (General)** → **VPN & Quản lý thiết bị (Device Management)** và xác minh **LiveContainer**.\n\n10. Sau đó, tiếp tục phần **Setup after Installing** để hoàn tất cài đặt **LiveContainer** và **SideStore**.\n\n### Thiết lập sau khi cài đặt trên IPhone/Ipad\n\nSau khi đã cài đặt **LiveContainer + SideStore**, bạn cần nhập chứng chỉ từ SideStore để LiveContainer có thể ký ứng dụng.\n\n#### Các bước thực hiện:\n\n1. Mở **SideStore** bằng cách nhấn nút **SideStore** ở góc trên bên trái của trang \"Apps\".\n\n2. Vào phần **cài đặt của SideStore** và đăng nhập.  \n   - Nếu trước đó bạn đã cài SideStore, có thể bạn vẫn đang đăng nhập.  \n   - Tuy nhiên, vì SideStore tích hợp sẵn không thể lấy lại thông tin đăng nhập của bạn, hãy **đăng xuất và đăng nhập lại**.\n\n3. Kết nối với **LocalDevVPN**, sau đó vào trang **My apps** và nhấn **Refresh All**.\n\n4. Thoát SideStore và mở **LiveContainer**.  \n   - Bạn có thể làm điều này bằng cách nhấn biểu tượng **quit** trong trang Apps của SideStore hoặc dùng **app switcher**.\n\n5. Vào phần **cài đặt của LiveContainer**, chọn **Import Certificate from SideStore**, rồi nhấn **OK**.\n\n6. Nếu nút **Import Certificate** chuyển thành **Remove Certificate**, nghĩa là chứng chỉ đã được nhập thành công.  \n   - Bạn có thể kiểm tra lại trong trang **JIT-Less Mode Diagnose** để xác nhận mọi thứ đã được cấu hình đúng.",
       "versionDescription": "",
-      "tintColor": "#0784FC",
+      "tintColor": "#04d4f9",
       "iconURL": "https://livecontainer.github.io/img/logo.png",
       "screenshotURLs": [
         "https://livecontainer.github.io/img/lc_sidestore/1.jpg",
@@ -51,8 +51,7 @@
           "keychain-access-groups"
         ],
         "privacy": {
-          "LSRequiresIPhoneOS": "The guest app is requesting for this permission.",
-          "NFCReaderUsageDescription": "The guest app is requesting for this permission.",
+          "NSAccentColorName": "AccentColor",
           "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
           "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
           "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
@@ -64,11 +63,12 @@
           "NSFallDetectionUsageDescription": "The guest app is requesting for this permission.",
           "NSGKFriendListUsageDescription": "The guest app is requesting for this permission.",
           "NSHealthClinicalHealthRecordsShareUsageDescription": "The guest app is requesting for this permission.",
-          "NSHealthRequiredReadAuthorizationTypeIdentifiers": "The guest app is requesting for this permission.",
+          "NSHealthShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthUpdateUsageDescription": "The guest app is requesting for this permission.",
           "NSHomeKitUsageDescription": "The guest app is requesting for this permission.",
           "NSIdentityUsageDescription": "The guest app is requesting for this permission.",
           "NSLocalNetworkUsageDescription": "The guest app is requesting for this permission.",
-          "NSLocationDefaultAccuracyReduced": "The guest app is requesting for this permission.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "The guest app is requesting for this permission.",
           "NSLocationTemporaryUsageDescriptionDictionary": "The guest app is requesting for this permission.",
           "NSLocationUsageDescription": "The guest app is requesting for this permission.",
           "NSLocationWhenInUseUsageDescription": "The guest app is requesting for this permission.",
@@ -82,9 +82,7 @@
           "NSSensorKitUsageDescription": "The guest app is requesting for this permission.",
           "NSSiriUsageDescription": "The guest app is requesting for this permission.",
           "NSSpeechRecognitionUsageDescription": "The guest app is requesting for this permission.",
-          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission.",
-          "SBAppUsesLocalNotifications": "The guest app is requesting for this permission.",
-          "UIApplicationSceneManifest": "The guest app is requesting for this permission."
+          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission."
         }
       },
       "size": 4523042,
