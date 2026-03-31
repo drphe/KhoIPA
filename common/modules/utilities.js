@@ -263,7 +263,6 @@ export async function openCachedUrl(url, onUpdate = null) {
             }
         } catch (error) {
             console.log("Background fetch failed:", url);
-	    alert(error)
         }
     };
 
@@ -486,7 +485,7 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
         bundleIdentifier: app.bundleIdentifier
     }));
     //send notification
-    if (!newApps.length && !removedApps.length && !updatedApps.length || !Notification in window) return;
+    if (!newApps.length && !removedApps.length && !updatedApps.length || !(Notification in window)) return;
     let parts = [];
     if (newApps.length) parts.push(newApps.length + langText["newapps"]);
     if (updatedApps.length) parts.push(updatedApps.length + langText["updatedapps"]);
