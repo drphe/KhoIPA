@@ -425,7 +425,7 @@ export async function translateTo(text) {
 }
 
 export async function enableNotifications() {
-    if(!Notification in window) return;
+    if(!(Notification in window)) return;
     if(Notification.permission ==="denied"){
 	showUIAlert(langText['statusTitle'],langText['statusTextNo']);
 	return;
