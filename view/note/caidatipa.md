@@ -72,6 +72,30 @@ Tóm tắt cách thực hiện:
 => Bản thân tôi dùng cách này và cert free kèm DNS. (1) Cài LiveContainer + sidestore => Cài facebook và Ksign trong sidestore (bật local VPN)=> Cài DNS Anti revoke và Nhập Cert vào Ksign để dùng. Định kỳ refresh Sidestore (mở LocalDevVPN khi refresh và kết nối wifi). 
 Tại sao phải dùng cả 2 trong khi dùng Cert ngon rồi. Vì đôi khi cert bị revoke. Dùng Ksign này chữa cháy luôn (nhập cert mới, và cài đè lên sẽ không mất dữ liệu app). Vì định kỳ refresh sidestore nên coi như dùng mãi mãi luôn. Nếu quên mà để sidestore hết hạn chứng chỉ, lúc này cắm cáp USB, dùng Plumimpactor cài lại.
 
++ *UPDATE LỖI LIVECONTAINER+SIDESTORE không hoạt động được sau 7 ngày*
+kèmm với đó là extension không hoạt động được.
+![image](https://i.ibb.co/S7cSLMfX/99b01c4b166c.jpg)
+Kiểm tra bằng Stikdebug => App Expiry. Chứng chỉ lúc 15:22:31 báo không Missing entitlements: .... => lỗi không hoạt động. Thấy rằng chứng chỉ Cài lúc 15:21:27 thì hoạt động (đây là chứng chỉ lúc cài livecontainer+sidestore) bằng PC. Cho thấy livecontainer+sidestore không nhận được chứng chỉ mới sau refresh như các app khác.
+
++ Cách khắc phục 1: Cài lại bằng PlumImpactor
++ Cách khắc phục 2: Vào sidestore (build-in livecontainer) và cài đặt lại chính file livecontainer+sidestore.(Tải file .ipa ở trên về điện thoại).
+![image](https://i.ibb.co/LX9VjNhd/78013a16d46b.jpg)
+
+Như trong hình là tôi cài đặt livecontainer+side ver 3.7.2 => update lên ver 3.7.3; Nếu không có bản update cài đặt lại bằng file IPA cũng tương tự.
+
+Nhớ chọn Keep App Extensions (Use Main Profile) => tiếp tục.
+![Sau đó Sidestore sẽ thoát ra và cài đặt tiếp tục](https://i.ibb.co/KjYQrj8P/c84906390fd4.jpg)
+
+Sau đó Sidestore sẽ thoát ra và cài đặt tiếp tục
+![image](https://i.ibb.co/wrJbJqyd/fb41ffb13bc6.jpg)
+
+Kết quả kiểm tra lại App Expiry đã cập nhật, chứng chỉ mới đã hoạt động, không lo livecontainer bị crash sau 7 ngày mà không rõ lý do.
+
+và extension cũng hoạt động lại:
+
+![image](https://i.ibb.co/mVfTnd3M/8324dab237c4.jpg)
+
+
 ---
 
 ## 2. Phương Pháp Cài IPA Không Dùng PC 📲
@@ -146,6 +170,5 @@ Ngoài ra một số dịch vụ bán chứng chỉ (cert) có kèm kho ứng du
 * Nếu bạn cần ứng dụng đã được sử dụng rộng rãi, dễ tìm hướng dẫn \& certificate — eSign vẫn là lựa chọn phổ biến.
 * Scarlet là lựa chọn “đầy đủ” nếu bạn muốn một installer + signer + repo tích hợp — nhưng bệnh của nó là một vài tính năng ít minh bạch và khả năng revoke vẫn còn là vấn đề.
 * GBox: mình khuyên bạn nên cẩn trọng, vì cộng đồng ít sử dụng, ít đánh giá, và có cảnh báo về rủi ro về dữ liệu.
-
 
 
