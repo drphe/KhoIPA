@@ -23,6 +23,116 @@
   "apps": [
     {
       "beta": false,
+      "name": "LiveContainer+Sidestore",
+      "type": 4,
+      "bundleIdentifier": "com.kdt.livecontainer",
+      "developerName": "khanhduytran0",
+      "subtitle": "Run iOS app without actually installing it!",
+      "localizedDescription": "### Hướng dẫn cài đặt Livecontainer+sidestore bằng Impactor\n\n- **Impactor** (trước đây gọi là *Plume Impactor*) là một công cụ sideloader hiện đại, đa nền tảng, được phát triển bởi **khcrysalis**. Impactor sẽ tự động thêm các entitlement liên quan đến *increased-memory-limit* và *HealthKit* cho **LiveContainer**.\n\n#### Các bước thực hiện trên PC:\n\n1. Tải đúng phiên bản **Impactor**(https://github.com/khcrysalis/Impactor) từ GitHub dựa trên hệ điều hành và kiến trúc máy của bạn.  \n   > Lưu ý: chúng ta tải **Impactor**, không phải **plumesign**.\n\n2. Cài đặt và mở **Impactor**.\n\n3. Đảm bảo thiết bị của bạn xuất hiện ở góc trên bên phải. Nếu không thấy, hãy kiểm tra ghi chú phía trên hoặc thử dùng cổng USB/dây cáp khác.\n\n4. Nhấn vào biểu tượng **cài đặt (hình bánh răng)** → chọn **Add Account** để đăng nhập bằng Apple ID.  \n   > Nếu gặp sự cố đăng nhập, hãy tham khảo hướng dẫn hoặc liên hệ nhà phát triển Impactor.\n\n5. Nhấn nút **Back** để quay lại.\n\n6. Kéo và thả file **LiveContainer + SideStore .ipa** vào cửa sổ Impactor.\n\n7. Đảm bảo tùy chọn **Only Register Main Bundle** đã được chọn.\n\n8. Nhấn **Install**.\n\n9. Trên iPhone/iPad, vào **Cài đặt (Settings)** → **Cài đặt chung (General)** → **VPN & Quản lý thiết bị (Device Management)** và xác minh **LiveContainer**.\n\n10. Sau đó, tiếp tục phần **Setup after Installing** để hoàn tất cài đặt **LiveContainer** và **SideStore**.\n\n### Thiết lập sau khi cài đặt trên IPhone/Ipad\n\nSau khi đã cài đặt **LiveContainer + SideStore**, bạn cần nhập chứng chỉ từ SideStore để LiveContainer có thể ký ứng dụng.\n\n#### Các bước thực hiện:\n\n1. Mở **SideStore** bằng cách nhấn nút **SideStore** ở góc trên bên trái của trang \"Apps\".\n\n2. Vào phần **cài đặt của SideStore** và đăng nhập.  \n   - Nếu trước đó bạn đã cài SideStore, có thể bạn vẫn đang đăng nhập.  \n   - Tuy nhiên, vì SideStore tích hợp sẵn không thể lấy lại thông tin đăng nhập của bạn, hãy **đăng xuất và đăng nhập lại**.\n\n3. Kết nối với **LocalDevVPN**, sau đó vào trang **My apps** và nhấn **Refresh All**.\n\n4. Thoát SideStore và mở **LiveContainer**.  \n   - Bạn có thể làm điều này bằng cách nhấn biểu tượng **quit** trong trang Apps của SideStore hoặc dùng **app switcher**.\n\n5. Vào phần **cài đặt của LiveContainer**, chọn **Import Certificate from SideStore**, rồi nhấn **OK**.\n\n6. Nếu nút **Import Certificate** chuyển thành **Remove Certificate**, nghĩa là chứng chỉ đã được nhập thành công.  \n   - Bạn có thể kiểm tra lại trong trang **JIT-Less Mode Diagnose** để xác nhận mọi thứ đã được cấu hình đúng.",
+      "versionDescription": "",
+      "tintColor": "#0784FC",
+      "iconURL": "https://livecontainer.github.io/img/logo.png",
+      "screenshotURLs": [
+        "https://livecontainer.github.io/img/lc_sidestore/1.jpg",
+        "https://livecontainer.github.io/img/lc_sidestore/2.jpg",
+        "https://livecontainer.github.io/img/lc_sidestore/3.jpg",
+        "https://livecontainer.github.io/img/lc_sidestore/4.jpg",
+        "https://livecontainer.github.io/img/lc_sidestore/5.jpg",
+        "https://livecontainer.github.io/img/lc_sidestore/6.jpg",
+        "https://livecontainer.github.io/img/lc_sidestore/7.jpg",
+        "https://livecontainer.github.io/img/jit-less-diagnose/1.png",
+        "https://livecontainer.github.io/img/jit-less-diagnose/2.jpg"
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "application-identifier",
+          "com.apple.security.application-groups",
+          "get-task-allow",
+          "keychain-access-groups"
+        ],
+        "privacy": {
+          "LSRequiresIPhoneOS": "The guest app is requesting for this permission.",
+          "NFCReaderUsageDescription": "The guest app is requesting for this permission.",
+          "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
+          "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCalendarsWriteOnlyAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSCameraUsageDescription": "The guest app is requesting for this permission.",
+          "NSContactsUsageDescription": "The guest app is requesting for this permission.",
+          "NSFaceIDUsageDescription": "The guest app is requesting for this permission.",
+          "NSFallDetectionUsageDescription": "The guest app is requesting for this permission.",
+          "NSGKFriendListUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthClinicalHealthRecordsShareUsageDescription": "The guest app is requesting for this permission.",
+          "NSHealthRequiredReadAuthorizationTypeIdentifiers": "The guest app is requesting for this permission.",
+          "NSHomeKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSIdentityUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocalNetworkUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationDefaultAccuracyReduced": "The guest app is requesting for this permission.",
+          "NSLocationTemporaryUsageDescriptionDictionary": "The guest app is requesting for this permission.",
+          "NSLocationUsageDescription": "The guest app is requesting for this permission.",
+          "NSLocationWhenInUseUsageDescription": "The guest app is requesting for this permission.",
+          "NSMicrophoneUsageDescription": "The guest app is requesting for this permission.",
+          "NSMotionUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionAllowOnceUsageDescription": "The guest app is requesting for this permission.",
+          "NSNearbyInteractionUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryAddUsageDescription": "The guest app is requesting for this permission.",
+          "NSPhotoLibraryUsageDescription": "The guest app is requesting for this permission.",
+          "NSRemindersFullAccessUsageDescription": "The guest app is requesting for this permission.",
+          "NSSensorKitUsageDescription": "The guest app is requesting for this permission.",
+          "NSSiriUsageDescription": "The guest app is requesting for this permission.",
+          "NSSpeechRecognitionUsageDescription": "The guest app is requesting for this permission.",
+          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission.",
+          "SBAppUsesLocalNotifications": "The guest app is requesting for this permission.",
+          "UIApplicationSceneManifest": "The guest app is requesting for this permission."
+        }
+      },
+      "size": 4523042,
+      "version": "3.7.3",
+      "versions": [
+        {
+          "version": "3.7.3",
+          "date": "2026-03-28T05:22:52Z",
+          "localizedDescription": "Nightly build from [1e14014](https://github.com/LiveContainer/LiveContainer/commit/1e14014): Fix 1250 and remove some AI slop\n\nThis is a nightly release [created automatically with GitHub Actions workflow](https://github.com/LiveContainer/LiveContainer/actions/runs/23678309767/attempts/2).\n",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer.ipa",
+          "size": 4523042,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "3.1.0",
+          "date": "2024-12-16",
+          "localizedDescription": "New Features\r\nNew Signer: ZSign\r\nZSign is now added as one of LiveContainer's signers.\r\n• ZSign has less format check comparing to AltSign, the signer used by SideStore/AltStore/LiveContainer, so it potentially signs apps then AltSign, solving issues like 222 and 134. \r\n• Its caching feature allows it to sign faster than AltSign.\r \nAltSign remains the default signer for competibility reasons. You can switch signer in Settings and app-specific settings for one specific app.\r \nRe-Sign Only on Expiration\r\nLiveContainer now keeps track of the date of expiration of each app's code signature and only signs when its signature is expired. So re-signing happens less frequent than before.\r \nAutomatic Tweak Re-Sign\r\nLiveContainer now keeps track of the tweaks you added and re-signs it if it is changed or its code signature expires, which makes tweak development with LiveContainer more convenient.\r \nImplement 175.\r \nMultiple Container Support\r\nYou can now create up to 3 containers for each app, so you can log in multiple accounts in different containers(data folders).\r \nKeychains are now semi-separated between app containers. Note that keychains will be removed if you delete a container in LiveContainer.\r \nkeychains created in older version will remain untouched so you can continue using your apps like before. To use this feature, clean up your keychain in LiveContainer settings.\r \nThis feature, along with the following fix of NSUserDefault leak impelements 218 176.\r \nLanguage Selection for Each App\r\nYou can now choose an language for an app in app-specific settings.\r \nImplement 171\r \nApp Preferences\r\nYou can now modify app preferences in LiveContainer like in iOS Settings. To change app preferences, go to app-specific settings -> (container name) -> Container Preferences\r \nImplement 252\r \nForce Orientation Lock\r\nThis option can be used to solve some game having stretched/mal-functioning UI when launched in portrait mode\r \nImplement 251\r \nJITLess Support for Multiple SideStores\r\nIf you use Multiple SideStores with SparseRestore, you can now export the tweaked SideStore IPA and install it manually to enable JITLess mode.\r \nImplement 219\r \nBug Fixes\r\n• NSUserDefault Leak & Random Signing out: NSUserDefault(app preferences) are now *almost* separated and properly placed in app's data folder. Solve 149 163 215\r\n• Game Controller Support: You can now use game controllers in LiveContainer\r\n• Hook \"-[VSSubscriptionRegistrationCenter setCurrentSubscription:]\": Solve 227\r\n• New file picker & local notification fix\r\n• App receiving LiveContainer's launch URL after launch: Solve 243\r\n",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
+          "size": 2899038,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "3.0.0",
+          "date": "2024-12-16",
+          "localizedDescription": "Features\r\niOS 18.2+ Support\r \nSwiftUI rewrite (153)\r\nLiveContainer now has a AltStore-like UI. \r\n• Main page is colorful now (192) by @slds1 \r\n• SideJITServer/JITStreamer 2.0 support\r\n• AltStore support\r\n• New JITLess mode that patch your store, so no jitless renew is required\r\n• Locking(164) apps by @fkunn1326 & hiding apps\r \nMultiple LiveContainer (153)\r\nNow you can install 2 LiveContainers to run 2 apps at the same time. App and their data, Keychains and most preferences can be shared between these two. If user open an app via URL Scheme or from My Apps screen, the LiveContainer that last ran that app will be switched to.\r \nBetter Open in App Support (153)\r\nIt turns out that some apps don't rely on URL Schemes and use Universal Links instead. In this update, the web page's \"apple-app-site-association\" will be checked and LiveContainer will launch app based on it.\r \nLocalization (153)\r\nLocalization is now supported. You can add a language in LiveContainerSwiftUI project and add your translation in \"Localizable.xcstrings\", then submit your translation as PR. We may consider adding something like a Crowdin page if it’s large enough (?)\r \nDedicated AltStore/SideStore source (156)\r \nFixes\r\niOS file picker issue (153): 68, 123, 142\r \nDuplicated Flutter-based app bundle name (153): 112\r\n",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa",
+          "size": 905495,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
+        {
+          "version": "2.1.2",
+          "date": "2024-08-15",
+          "localizedDescription": "Feature: AltStore support\r\n(untested)\r \nBug fixes\r\n• JIT-less setup may fail to find the signing certificate. This is worked around by re-adding the glob keychain group entitlement. (not guaranteed to work, as I couldn’t reproduce the issue in the first place)\r\n• Switches in settings not working. Apparently using the private Preference framework causing changes to be saved to the wrong preference file.\r\n• Some apps may get stuck on a black screen caused by an unknown deadlock. This is worked around by pre-initializing \"UIScreen\".\r\n• Some apps may fail to create temporary files. This is fixed by redirecting guest app’s temporary directory to that of LiveContainer using symlink instead of creating its own. (thanks @hugeBlack for hinting me the issue)",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa",
+          "size": 194586,
+          "buildVersion": null,
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-03-28T05:22:52Z",
+      "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
       "name": "iPSX2",
       "type": 4,
       "bundleIdentifier": "com.otti83.iPSX2",
@@ -41,12 +151,12 @@
       "version": "0.1.2",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.2.0/iPSX2.v0.1.2.ipa",
-          "size": 11200000,
           "version": "0.1.2",
-          "buildVersion": null,
           "date": "2026-03-27T05:12:00+07:00",
           "localizedDescription": "Expanding ps2autotests coverage (mainly GS tests)\nBug fixed setting parameters (e.g., High resolution)\nBug fixed UI (e.g., Virtual pad)",
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v0.1.2.0/iPSX2.v0.1.2.ipa",
+          "size": 11200000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
