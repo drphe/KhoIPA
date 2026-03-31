@@ -425,7 +425,7 @@ export async function translateTo(text) {
 }
 
 export async function enableNotifications() {
-    if(!(Notification in window)) return;
+    if(!("Notification" in window)) return;
     if(Notification.permission ==="denied"){
 	showUIAlert(langText['statusTitle'],langText['statusTextNo']);
 	return;
@@ -485,7 +485,7 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
         bundleIdentifier: app.bundleIdentifier
     }));
     //send notification
-    if (!newApps.length && !removedApps.length && !updatedApps.length || !(Notification in window)) return;
+    if (!newApps.length && !removedApps.length && !updatedApps.length || !("Notification" in window)) return;
     let parts = [];
     if (newApps.length) parts.push(newApps.length + langText["newapps"]);
     if (updatedApps.length) parts.push(updatedApps.length + langText["updatedapps"]);
