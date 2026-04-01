@@ -701,15 +701,6 @@
           "minOSVersion": null
         },
         {
-          "version": "3.6.0",
-          "date": "2025-12-11",
-          "localizedDescription": "New release!",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/VDIT_3.6.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-          "size": 229648539,
-          "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
           "version": "3.5.4",
           "date": "2025-12-01",
           "localizedDescription": "New release!",
