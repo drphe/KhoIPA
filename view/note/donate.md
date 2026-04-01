@@ -43,6 +43,7 @@ Một số điểm cần lưu ý: (1) Khi bạn cài đặt một chứng chỉ 
 - hoặc <a href="#" data-url="verifyapp.md" class="news-item-link">Sử dụng cert revoked bằng DNS WFS</a>.
 - hoặc vào trực tiếp đây cho nhanh, chia sẻ các chứng chỉ doanh nghiệp và Esign/Trollstore đã được ký sẵn, nhớ cài DNS để tránh bị revoke. => https://certvn.com/dns
 - hay sử dụng <a href="#" data-url="applejr.md" class="news-item-link">DNS của AppleJr.net</a> (update 1/2026).
+- hay sử dụng https://wezlemin.github.io/ksignz/ (trang này lấy nguồn từ khoindvn.io, nhưng không có quảng cáo thôi).
 
 - Việc tạo DNS thủ công đã lỗi thời, thay vào đó sử dụng các DNS sẵn có, tránh rò rỉ DNS giúp xài Cert revoked đc lâu hơn, nhưng ko có gì đảm bảo mọi thứ suôn sẻ. Nên lưu ý: tốt nhất làm theo hướng dẫn trong các bài  (đọc kỹ trước làm sau), kiên nhẫn (có thể chứng chỉ nào đó ko sử dụng đc với thiết bị của bạn), và ko nên update IOS, các bản cập nhật mới vá lỗi bảo mật dễ  rò rỉ DNS và khiến các chứng chỉ bị blacklist.
 
