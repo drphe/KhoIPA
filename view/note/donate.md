@@ -45,6 +45,8 @@ Một số điểm cần lưu ý: (1) Khi bạn cài đặt một chứng chỉ 
 - hay sử dụng <a href="#" data-url="applejr.md" class="news-item-link">DNS của AppleJr.net</a> (update 1/2026).
 - hay sử dụng https://wezlemin.github.io/ksignz/ (trang này lấy nguồn từ khoindvn.io, nhưng không có quảng cáo thôi).
 
+- Hiện tại một số ứng dụng Ksign, Esign đã cải tiến, dùng ngon hơn, cài đặt trực tiếp đã có sẵn cert, không phải import cert thủ công, nhưng do lý do nào đó mà bạn sẽ chỉ sử dụng được một vài cert phù hợp, vì vậy muốn xài free hãy thật kiên nhẫn thử nhé. Click cài đặt và chờ, nếu Esign/Ksign hoạt động là ok rồi. Có thể cài đặt IPA khác bằng Esign/Ksign vừa cài đặt xong. (Nếu cài đặt được Esign mà muốn dùng Ksign thì tìm IPA Ksign và cài bằng Esign, nhớ bỏ tick "remove mobileprovision after sign" để Ksign có cert nhé)
+
 - Việc tạo DNS thủ công đã lỗi thời, thay vào đó sử dụng các DNS sẵn có, tránh rò rỉ DNS giúp xài Cert revoked đc lâu hơn, nhưng ko có gì đảm bảo mọi thứ suôn sẻ. Nên lưu ý: tốt nhất làm theo hướng dẫn trong các bài  (đọc kỹ trước làm sau), kiên nhẫn (có thể chứng chỉ nào đó ko sử dụng đc với thiết bị của bạn), và ko nên update IOS, các bản cập nhật mới vá lỗi bảo mật dễ  rò rỉ DNS và khiến các chứng chỉ bị blacklist.
 
 ---
