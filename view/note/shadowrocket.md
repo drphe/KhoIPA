@@ -17,6 +17,6 @@ Vấn đề duy nhất ở đây là VPN mà thôi. Khi sử dụng VPN có cả
 ## 3. Unlock App Premium
 Bài hướng dẫn sau rất chi tiết về cách dùng ShadowRocket để unlock premium một số app như Wink, locket Gold...
 
-[Xem ở đây](https://module-ios.vercel.app/)
+[Xem ở đây](https://module-ios.netlify.app)
 
 

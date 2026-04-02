@@ -12,6 +12,7 @@ Nếu bạn bạn đã mua chứng chỉ, sau khi nhận được tệp cert.zip
 - https://sign.ipasign.cc/
 - https://sign.kravasign.com/
 - https://wsfteam.xyz/
+- https://daisign.lol/
 
 Bạn hãy cài Esign/Feather... là những ứng dụng hỗ trợ ký Cert và cài IPA ngoài Store mà ko cần jailbreak máy.
 
