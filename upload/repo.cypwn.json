@@ -15,40 +15,40 @@
   "apps": [
     {
       "beta": false,
-      "name": "CloverPit-1.3.8",
+      "name": "CloverPit-1.4.3",
       "type": 1,
       "bundleIdentifier": "com.PanikArcade.CloverPit",
-      "developerName": "CloverPit-1.3.8 x CyPwn",
+      "developerName": "CloverPit-1.4.3 x CyPwn",
       "subtitle": "",
-      "localizedDescription": "A rogue-lite slot machine nightmare.",
+      "localizedDescription": "A rogue-lite slot machine nightmare",
       "versionDescription": "",
       "tintColor": "FFC300",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.3.8.png",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.4.3.png",
       "screenshotURLs": [
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.8/CloverPit-1.3.8-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.8/CloverPit-1.3.8-1.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.8/CloverPit-1.3.8-2.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.8/CloverPit-1.3.8-3.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.3.8/CloverPit-1.3.8-4.png"
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-3.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/CloverPit-1.4.3/CloverPit-1.4.3-4.png"
       ],
       "screenshots": [],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
       },
-      "size": 115112673,
-      "version": "1.3.8",
+      "size": 145888378,
+      "version": "1.4.3",
       "versions": [
         {
-          "version": "1.3.8",
-          "date": "2026-03-05",
-          "size": 115112673,
-          "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.3.8.ipa",
-          "localizedDescription": "A rogue-lite slot machine nightmare."
+          "version": "1.4.3",
+          "date": "2026-04-17",
+          "size": 145888378,
+          "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.4.3.ipa",
+          "localizedDescription": "A rogue-lite slot machine nightmare"
         }
       ],
-      "versionDate": "2026-03-05",
-      "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.3.8.ipa",
+      "versionDate": "2026-04-17",
+      "downloadURL": "https://ipa.cypwn.xyz/ipas/CloverPit-1.4.3.ipa",
       "patreon": {}
     },
     {
@@ -6329,12 +6329,12 @@
   ],
   "news": [
     {
-      "title": "CloverPit-1.3.8 now available!",
-      "identifier": "cypwn.CloverPit-1.3.8.1.3.8",
-      "caption": "CloverPit-1.3.8 added to the CyPwn Library",
+      "title": "CloverPit-1.4.3 now available!",
+      "identifier": "cypwn.CloverPit-1.4.3.1.4.3",
+      "caption": "CloverPit-1.4.3 added to the CyPwn Library",
       "tintColor": "FFC300",
-      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.3.8.png",
-      "date": "2026-03-05",
+      "imageURL": "https://ipa.cypwn.xyz/serve/icons/CloverPit-1.4.3.png",
+      "date": "2026-04-17",
       "url": "https://ipa.cypwn.xyz",
       "notify": true
     },
