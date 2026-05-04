@@ -50,87 +50,67 @@ https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.favorite.json
 
 > ⚠️ Một số link không load được bằng AltStore Viewer do lỗi CORS. Vui lòng sử dụng Feather hoặc ESign để xem.
 
+https://fastsign.dev/repo.json
 
-https://drphe.github.io/KhoIPA/upload/repo.favorite.json
+https://fastsign.dev/repo.lite.altstore.json  
 
-https://ipa.thuthuatjb.com/repo
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.favorite.json
+
+https://repository.apptesters.org  
+
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.buildstore.json  
+
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.thuthuatjb.json  
+
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game.json  
+
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game2.json 
+ 
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.tiptip.json
+
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.unkeyapp.json
+
+https://stikdebug.xyz/index.json
+
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/EpicGamesIPASource.json
+
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.cypwn.json
+
+https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.cypwn_ts.json
 
 https://alt.getutm.app
-
-https://flyinghead.github.io/flycast-builds/altstore.json
 
 https://quarksources.github.io/dist/quantumsource.min.json
 
 https://quarksources.github.io/dist/quantumsource%2B%2B.min.json
 
-https://repository.apptesters.org
-
-https://ipa.cypwn.xyz/cypwn.json
-
-https://ipa.cypwn.xyz/cypwn_ts.json
-
-https://raw.githubusercontent.com/vizunchik/AltStoreRus/master/apps.json
-
-https://randomblock1.com/altstore/apps.json
-
 https://community-apps.sidestore.io/sidecommunity.json
-
-https://wuxu1.github.io/wuxu-complete.json
-
-https://bit.ly/wuxuslibraryplus
 
 https://driftywinds.github.io/AltStore/apps.json
 
-https://aio.zxcvbn.fyi/r/repo.feather.json
+https://wuxu1.github.io/wuxu-complete-plus.json
+
+https://wuxu1.github.io/wuxu-complete.json
 
 https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/refs/heads/main/raw-files/app-repo.json
 
-https://qnblackcat.github.io/AltStore/apps.json
+https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/apps_esign.json?moduleError=1
 
-https://wuxu1.github.io/wuxu-complete-plus.json
+https://cdn.dbservices.to/repo-jsons/2c61e8984f400fbe2c28d620494b9efee8621930.json
 
-https://raw.githubusercontent.com/TheNightmanCodeth/chromium-ios/master/altstore-source.json
+https://cdn.dbservices.to/repo-jsons/0852d7254534240c8fa12f3ed082c44c0023ad08.json
 
-https://raw.githubusercontent.com/arichornloverALT/arichornloveralt.github.io/main/apps2.json
+https://cdn.dbservices.to/repo-jsons/1ae857434ef5533ecf3a5ed64c3a8a7096dc3573.json
 
-https://raw.githubusercontent.com/arichornloveralt/arichornloveralt.github.io/main/apps.json
+https://repo.owo.network
 
-https://raw.githubusercontent.com/lo-cafe/winston-altstore/main/apps.json
+https://altstore.fouadraheb.com/
 
-https://qingsongqian.github.io/all.html
-
-https://tiny.one/SpotC
-
-https://theodyssey.dev/altstore/odysseysource.json
-
-https://provenance-emu.com/apps.json
-
-https://ish.app/altstore.json
-
-https://raw.githubusercontent.com/Balackburn/YTLitePlusAltstore/main/apps.json
-
-https://raw.githubusercontent.com/whoeevee/EeveeSpotify/swift/repo.json
-
-https://altstore.oatmealdome.me/
-
-https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json
-
-https://xitrix.github.io/iTorrent/AltStore.json
-
-https://driftywinds.github.io/repos/esign.json
-
-https://github.com/khcrysalis/Feather/raw/main/app-repo.json
-
-https://apps.nabzclan.vip/repos/altstore.php
-
-https://alt.crystall1ne.dev/
+https://raw.githubusercontent.com/yodaluca23/SpotC-AltStore-Repo/main/AltStore%20Repo.json
 
 https://apps.sidestore.io/
 
-https://repos.yattee.stream/alt/apps.json
-
-https://alt.thatstel.la/
-
+https://raw.githubusercontent.com/royilkom-alt/EthSign/refs/heads/main/EthSign.json
 
 ---
 
