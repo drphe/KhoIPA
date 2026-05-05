@@ -45,12 +45,12 @@
       "version": "3.0.1",
       "versions": [
         {
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0.1/StikDebug-3.0.1.ipa",
-          "size": 10500000,
           "version": "3.0.1",
-          "buildVersion": null,
           "date": "2026-05-03T12:50:00+07:00",
           "localizedDescription": null,
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v3.0.1/StikDebug-3.0.1.ipa",
+          "size": 10500000,
+          "buildVersion": null,
           "minOSVersion": null
         }
       ],
@@ -122,9 +122,18 @@
           "NSUserTrackingUsageDescription": "The guest app is requesting for this permission."
         }
       },
-      "size": 33000000,
-      "version": "3.7.3",
+      "size": 34800000,
+      "version": "3.7.2",
       "versions": [
+        {
+          "version": "3.7.2",
+          "date": "2026-05-03T12:38:00+07:00",
+          "localizedDescription": "Warning\nThe standalone version requires SideStore 0.6.2+ or AltStore 2.2.1+ for installation.\nTo install LiveContainer with built-in SideStore (LiveContainer+SideStore.ipa), please use Impactor or iloader. See our installation guide for details.\n\nNote\n\nThis a minor release that solves the following issues in version 3.7.0 and adds the following features. For more information, please see 3.7.0 release note.\n\nBug Fixes\nFix an issue where built-in SideStore may freeze on launch (#1158)\nFix the ipa of another LiveContainer not generating in LiveContainer+SideStore builds after SideStore's massive codebase change (#1184)\nFix the new Launch App Shortcut does not work below iOS 18 (#1159)\nThe Launch App Shortcut now reports meaningful errors\nFix crash when using external container in multitasking mode\nFix process hangs when debugging multitask private apps\nNew Features\nThe \"Tap top of the view to scroll to top\" action can be passed through to multitasking guest apps.",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.7.2/LiveContainer+SideStore.ipa",
+          "size": 34800000,
+          "buildVersion": null,
+          "minOSVersion": null
+        },
         {
           "version": "3.7.3",
           "date": "2026-03-28T05:22:00+07:00",
@@ -132,15 +141,6 @@
           "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer+SideStore.ipa",
           "size": 33000000,
           "buildVersion": null,
-          "minOSVersion": null
-        },
-        {
-          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.7.2/LiveContainer+SideStore.ipa",
-          "size": 34800000,
-          "version": "3.7.2",
-          "buildVersion": null,
-          "date": "2026-05-03T12:38:00+07:00",
-          "localizedDescription": "Warning\nThe standalone version requires SideStore 0.6.2+ or AltStore 2.2.1+ for installation.\nTo install LiveContainer with built-in SideStore (LiveContainer+SideStore.ipa), please use Impactor or iloader. See our installation guide for details.\n\nNote\n\nThis a minor release that solves the following issues in version 3.7.0 and adds the following features. For more information, please see 3.7.0 release note.\n\nBug Fixes\nFix an issue where built-in SideStore may freeze on launch (#1158)\nFix the ipa of another LiveContainer not generating in LiveContainer+SideStore builds after SideStore's massive codebase change (#1184)\nFix the new Launch App Shortcut does not work below iOS 18 (#1159)\nThe Launch App Shortcut now reports meaningful errors\nFix crash when using external container in multitasking mode\nFix process hangs when debugging multitask private apps\nNew Features\nThe \"Tap top of the view to scroll to top\" action can be passed through to multitasking guest apps.",
           "minOSVersion": null
         },
         {
@@ -162,8 +162,8 @@
           "minOSVersion": null
         }
       ],
-      "versionDate": "2026-03-28T05:22:00+07:00",
-      "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer+SideStore.ipa",
+      "versionDate": "2026-05-03T12:38:00+07:00",
+      "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.7.2/LiveContainer+SideStore.ipa",
       "patreon": {}
     },
     {
@@ -5419,9 +5419,9 @@
       "bundleIdentifier": "com.atebits.Tweetie2",
       "developerName": "X Corp.",
       "subtitle": "X (Twitter) mod premium",
-      "localizedDescription": "Phiên bản X++ mod không quảng cáo",
+      "localizedDescription": "Phiên bản X++ mod không quảng cáo. Nếu bị lỗi đăng nhập thì tải bản BHTwitter Login_10.16 để đăng nhập (bấm nút tròn đỏ trên màn hình > enable login), sau đó mới cài đè bản mới nhất lên. \nLink: https://github.com/drphe/KhoIPA/releases/download/v10.16/BHTwitter.Login_10.16.ipa",
       "versionDescription": "",
-      "tintColor": "#3A3636",
+      "tintColor": "#7f7f7f",
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4b/23/85/4b238571-7615-42f7-8e41-a5d05e08d8b9/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/100x100bb.jpg",
       "screenshotURLs": [
         "https://onejailbreak.com/site/assets/files/1481/bhtwitter-ios.766x0.webp",
@@ -5429,7 +5429,20 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://singular-bi.net",
+          "NSCalendarsUsageDescription": "Add events to your calendar from X.",
+          "NSCameraUsageDescription": "Capture and post photos and videos from X.",
+          "NSContactsUsageDescription": "We will securely upload your contacts to our servers to help you connect with friends and suggest users to follow on X.",
+          "NSFaceIDUsageDescription": "Twitter uses Face ID to unlock the app",
+          "NSLocationUsageDescription-macos": "Enjoy the X experience tailored to your location.",
+          "NSLocationWhenInUseUsageDescription-iphoneos": "Enjoy the X experience tailored to your location.",
+          "NSMicrophoneUsageDescription": "Capture and post videos with sound from X.",
+          "NSPhotoLibraryAddUsageDescription": "This lets you download photos and videos to your Photos.",
+          "NSPhotoLibraryUsageDescription": "Easily add photos on X.",
+          "NSSpeechRecognitionUsageDescription": "Going forward, whenever you choose to share captions on this device, Apple will provide the service. Doing so helps make sure people of all hearing abilities can access your content.",
+          "NSUserTrackingUsageDescription": "This helps X show you more relevant ads."
+        }
       },
       "size": 158800000,
       "version": "11.38",
