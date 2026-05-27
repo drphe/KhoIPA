@@ -11,7 +11,10 @@
 👉 [Xem chi tiết](view/note/Khodylib.md)
 
 ## 📚Web deploy
-👉 [Kho IPA mod](https://kho-ipa.vercel.app)
+👉 [Kho-ipa.vercel.app](https://kho-ipa.vercel.app)
+
+Trong trường hợp link ở trên die thì truy cập link dưới.
+👉 [booster.qzz.io](https://kho-ipa.vercel.app)
 ---
 
 ## 🧭 Hướng dẫn thêm nguồn KhoIPA
