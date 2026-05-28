@@ -23,12 +23,57 @@
   "apps": [
     {
       "beta": false,
-      "name": "StikDebug",
+      "name": "FireAnt",
       "type": 1,
+      "bundleIdentifier": "vn.fireant.mobile",
+      "developerName": "Unknow",
+      "subtitle": "Old version",
+      "localizedDescription": "Phiên bản này không phải bản mới nhất, đơn giản là phiên bản theo dõi cổ phiếu, cho phép bật mức cảnh báo giá mà thôi.",
+      "versionDescription": "",
+      "tintColor": "#1490fc",
+      "iconURL": "https://i.ibb.co/kgZhm7PQ/480a13a02b9a.png",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "FireAnt cần truy cập Media Library để giúp bạn chọn nguyên liệu chia sẻ lên cộng đồng.",
+          "NSBluetoothAlwaysUsageDescription": "FireAnt cần sử dụng chức năng Bluetooth để hỗ trợ bạn khi học tập trực tuyến trên phần mềm.",
+          "NSBluetoothPeripheralUsageDescription": "Chúng tôi sử dụng Bluetooth để truy cập tai nghe Bluetooth của bạn.",
+          "NSCameraUsageDescription": "FireAnt cần sử dụng camera để chụp ảnh dùng làm ảnh đại diện trong hồ sơ của bạn.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Thông tin vị trí của bạn giúp cho FireAnt hiển thị thông tin phù hợp hơn.",
+          "NSLocationAlwaysUsageDescription": "Thông tin vị trí của bạn giúp cho FireAnt hiển thị thông tin phù hợp hơn.",
+          "NSLocationWhenInUseUsageDescription": "Thông tin vị trí của bạn giúp cho FireAnt hiển thị thông tin phù hợp hơn.",
+          "NSMicrophoneUsageDescription": "Để mọi người nghe được bạn trong khi hội thảo trực tuyến, chúng tôi cần truy cập microphone của bạn.",
+          "NSPhotoLibraryUsageDescription": "FireAnt cần sử dụng thư viện ảnh để giúp bạn chọn hình ảnh chia sẻ trên cộng đồng.",
+          "NSSpeechRecognitionUsageDescription": "Cho phép FireAnt ghi âm giọng nói của bạn để giúp bạn dễ dàng tìm kiếm thông tin nhanh chóng.",
+          "NSUserTrackingUsageDescription": "FireAnt cần quyền này để cung cấp thông tin hay các quảng cáo được cá nhân hóa cho bạn."
+        }
+      },
+      "size": 86400000,
+      "version": "5.1.97",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.1.97/vn.fireant.mobile_5.1.97_decrypted_@iosdecrypted_injected.ipa",
+          "size": 86400000,
+          "version": "5.1.97",
+          "buildVersion": null,
+          "date": "2026-05-28T10:45:00+07:00",
+          "localizedDescription": "Phiên bản 5.1.97 không bắt nâng cấp khi bật thông báo giá. Tuy nhiên bị lỗi Widget khi cài bằng cert. Cài bằng Trollstore đề lên bản gốc thì ko sao.",
+          "minOSVersion": null
+        }
+      ],
+      "versionDate": "2026-05-28T10:45:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v5.1.97/vn.fireant.mobile_5.1.97_decrypted_@iosdecrypted_injected.ipa",
+      "patreon": {}
+    },
+    {
+      "beta": false,
+      "name": "StikDebug",
+      "type": 4,
       "bundleIdentifier": "com.stik.stikdebug",
       "developerName": "Unknow Developer",
       "subtitle": "An awesome app.",
-      "localizedDescription": "This great app is distributed beyond the Apple Store.",
+      "localizedDescription": "Link nguồn : https://stikdebug.xyz/",
       "versionDescription": "",
       "tintColor": "#24ccfc",
       "iconURL": "https://i.ibb.co/YFg3C6QJ/2e8778a02f20.png",
@@ -5661,9 +5706,18 @@
           "NSPhotoLibraryUsageDescription": "This lets you send photos and videos from library and save those you capture."
         }
       },
-      "size": 122800000,
-      "version": "260201",
+      "size": 119700000,
+      "version": "260501",
       "versions": [
+        {
+          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v26.05.1/vn.com.vng.zingalo-26.05.01_@iosdecrypted_injected.ipa",
+          "size": 119700000,
+          "version": "260501",
+          "buildVersion": null,
+          "date": "2026-05-28T10:41:00+07:00",
+          "localizedDescription": "Zalo 2, vui lòng đổi bundleID khi cài đặt để nhân đôi app.",
+          "minOSVersion": null
+        },
         {
           "version": "260201",
           "date": "2026-03-12T02:44:00+07:00",
@@ -5699,19 +5753,10 @@
           "size": 149297453,
           "buildVersion": null,
           "minOSVersion": null
-        },
-        {
-          "version": "20.07.02",
-          "date": "2025-04-01T15:34:00Z",
-          "localizedDescription": "Phiên bản này mod lại từ zalo 20.07.02, có thể quá cũ rồi, hãy đợi phiên bản mới nhất nhé.",
-          "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/zalo/Zalo2_200702_LeTi.ipa",
-          "size": 167645264,
-          "buildVersion": null,
-          "minOSVersion": null
         }
       ],
-      "versionDate": "2026-03-12T02:44:00+07:00",
-      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v20260201/Zalo.-.DVC.iOS_260201.ipa",
+      "versionDate": "2026-05-28T10:41:00+07:00",
+      "downloadURL": "https://github.com/drphe/KhoIPA/releases/download/v26.05.1/vn.com.vng.zingalo-26.05.01_@iosdecrypted_injected.ipa",
       "patreon": {}
     },
     {
