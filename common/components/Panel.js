@@ -686,7 +686,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollT
     totalAppsCount.innerText = `${langText['total']} ${allApps.length} apps `;
     // tạo filter
     const filter = document.createElement("span");
-    filter.innerHTML = ` <a class="category active">All</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
+    filter.innerHTML = ` <a class="category active">Updated</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
     filter.style.cssText = "display: flex;justify-content: center;";
     filter.querySelectorAll('.category').forEach((el, index) => {
 	if(index == filterType) el.classList.add('active');
@@ -737,7 +737,7 @@ searchBox.addEventListener("input", () => {
             filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
             el.classList.add('active');
             filterType = index;
-            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated");
             totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
             currentIndex = 0;
             appsContainer.innerHTML = "";
@@ -762,7 +762,7 @@ searchBox.addEventListener("input", () => {
     }
     //with screenshot
     function loadMoreApps() {
-        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
+        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated");
         if (!dataApps.length) {
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
             appsContainer.innerHTML = `

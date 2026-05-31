@@ -152,13 +152,13 @@ if ('serviceWorker' in navigator) {
     // insert newest app
     let count = 1,
         maxapps = 30;
-    let allAppsView = allApps.filter(s => s.type == 1);
+    let allAppsView = allApps.filter(s => s.type == 1 && s.beta == "updated");
     allAppsView.forEach(app => {
         if (count > maxapps) return;
         $("#suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
         count++;
     });
-    count = 1, allAppsView = allApps.filter(s => s.type == 2);
+    count = 1, allAppsView = allApps.filter(s => s.type == 2 && s.beta == "updated");
     allAppsView.forEach(app => {
         if (count > maxapps) return;
         $("#suggestions2").insertAdjacentHTML("beforeend", AppHeader(app));
