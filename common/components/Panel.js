@@ -300,10 +300,10 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         });
         // Discorver more
 	const moreApps =findAppByName(window.allApps, app.name.split(" ")[0]).slice(0, 30);
-	moreApps.length >1 && bottomPanel.querySelector(".discovermore").classList.remove("hidden");
+	moreApps.length >1 && app.name !== "" && bottomPanel.querySelector(".discovermore").classList.remove("hidden");
 
         bottomPanel.querySelector("#discovermore").addEventListener("click", async (event) => {
-		if(moreApps.length <2 ) return;
+		if(moreApps.length <2) return;
         	await openPanel('<div id="more-apps-list"></div>', `<p>${langText['discovermore']} (${moreApps.length-1})</p>`, '.', "side", "more-apps-popup");
 		moreApps.forEach(ap => {
 			if(ap.bundleIdentifier !== app.bundleIdentifier) $("#more-apps-list").insertAdjacentHTML("beforeend", AppHeader(ap));
