@@ -1,7 +1,7 @@
 {
   "name": "Favorite apps",
   "identifier": "repo.drphe.kh0ipa",
-  "sourceURL": "https://drphe.github.io/KhoIPA/upload/repo.favorite.altstore.json",
+  "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.favorite.altstore.json",
   "iconURL": "https://raw.githubusercontent.com/drphe/KhoIPA/refs/heads/main/icon/favor.png",
   "website": "https://github.com/drphe/KhoIPA/",
   "ipawebsite": "https://kho-ipa.vercel.app",

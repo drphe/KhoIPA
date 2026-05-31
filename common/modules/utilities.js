@@ -390,11 +390,15 @@ export function waitForAllImagesToLoad(container) {
 }
 
 export const findAppByName = (data, searchName) => {
-    if (!data)
+    if (!data || !Array.isArray(data)) {
         return [];
+    }
+    if (!searchName) {
+        return [];
+    }
     const result = [];
     for (const app of data) {
-        if (app.name.includes(searchName)) {
+        if (app && app.name && app.name.includes(searchName)) {
             result.push(app);
         }
     }
