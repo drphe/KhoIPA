@@ -108,6 +108,7 @@ if ('serviceWorker' in navigator) {
     }
     const allSources = [...featuredSources, ...otherSources]; // chuẩn bị danh sách app
     window.allApps = [];
+    let countAllRepo = 0;
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
         for (const app of source.apps) {
@@ -120,6 +121,7 @@ if ('serviceWorker' in navigator) {
         }
         //const nonBetaApps = source.apps.filter(app => !app.beta);
         allApps.push(...source.apps);
+	countAllRepo++;
     }
     // insert editor's source choice
     for (const source of featuredSources) {
@@ -315,7 +317,7 @@ if ('serviceWorker' in navigator) {
     // view all source
    $('#all-source')?.addEventListener("click", async (e) => {
         e.preventDefault();
-        await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
+        await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} (${countAllRepo})</p>`, '.', "side", "sources-popup-all");
         for (const source of featuredSources) {
             await insertSource(source);
         }
@@ -371,7 +373,7 @@ if ('serviceWorker' in navigator) {
             if (target == window.oldTargetPage) return;
             window.oldTargetPage = target
             if (target == 'page-source') {
-                await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
+                await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} (${countAllRepo})</p>`, '.', "side", "sources-popup-all");
                 for (const source of featuredSources) {
                     await insertSource(source);
                 }
@@ -387,7 +389,7 @@ if ('serviceWorker' in navigator) {
             }
             else if (target == 'page-news') {
                 const html = `<div id="news" class="section grid_news">${jsonNews.map(item =>NewsItem(item, true)).join('')}</div>`;
-                openPanel(html, `<p>${langText["allnews"]}</p>`, '.', "side", "popup-all-news");
+                openPanel(html, `<p>${langText["allnews"]} (${jsonNews.length})</p>`, '.', "side", "popup-all-news");
             }
             else {
                 document.querySelectorAll(".panel.show").forEach(l => l.classList.remove("show"));
