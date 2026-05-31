@@ -54,15 +54,17 @@ export function main(callback, fallbackURL = "../../") {
 	    		handler: () => checkScheme(`feather://source/${sourceURL}`)
         	});
 	}
+	let othertext = "";
 if(sourceURL.includes("KhoIPA/main/upload/repo")){
         installSourceAlert.addAction({
             	title: langText['copylink'] + ` (Altstore)`,
             	style: 'default',
 	    	handler: () => {navigator.clipboard.writeText(sourceURL.replace(/\.json$/, '.altstore.json')); showUIAlert(langText['success'], "Link source copied!");}
         });
+	othertext = " (Esign/Feather)"
 }
         installSourceAlert.addAction({
-            	title: langText['copylink'] + ` (Others)`,
+            	title: langText['copylink'] + othertext,
             	style: 'default',
 	    	handler: () => {navigator.clipboard.writeText(sourceURL); showUIAlert(langText['success'], "Link source copied!");}
         });
