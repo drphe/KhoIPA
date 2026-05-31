@@ -299,7 +299,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             }
         });
         // Discorver more
-	const moreApps =findAppByName(window.allApps, app.name.split(" ")[0]);
+	const moreApps =findAppByName(window.allApps, app.name.split(" ")[0]).slice(0, 30);
 	moreApps.length >1 && bottomPanel.querySelector(".discovermore").classList.remove("hidden");
 
         bottomPanel.querySelector("#discovermore").addEventListener("click", async (event) => {
