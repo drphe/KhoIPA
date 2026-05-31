@@ -1,5 +1,7 @@
 const translations = {
     vi: {
+        viewdetail: "Xem chi tiết...",
+        quicksearch: "Tìm kiếm nhanh",
   	checknoti: "Cho phép Thông báo",
 	checknotiText: "để biết khi kho lưu trữ có cập nhật ứng dụng.",
         continu: "Tiếp tục",
@@ -25,7 +27,7 @@ const translations = {
         copylink: "Sao chép link",
         cancel: "Hủy",
         version: "Phiên bản",
-        copysuccess: "Đã sao chép link vào bộ nhớ đệm!\nDán link vào safari hoặc Esign \nTải xuống ⇒ URL ⇒ OK",
+        copysuccess: "Đã sao chép link vào bộ nhớ đệm!\nDán link vào safari hoặc Esign/Feather/Ksign...",
         copyfailed: "Không thể sao chép đường dẫn tệp IPA!",
         addtoesign: "Thêm vào Esign",
         addtoesignText: "Nếu bạn có Esign, thêm kho lưu trữ này vào bạn có thể tải các bản cập nhật mới nhất ngay khi có.",
@@ -225,6 +227,8 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+        viewdetail: "View detail...",
+        quicksearch: "Quick search",
   	checknoti: "Enable Notification",
 	checknotiText: "to recive newest update information.",
         continu: "Continue",
@@ -250,7 +254,7 @@ const translations = {
         copylink: "Copy Link IPA",
         cancel: "Cancel",
         version: "Version",
-        copysuccess: "Copied to clipboard! \nPaste the link into Safari or Esign \nDownload ⇒ URL ⇒ OK",
+        copysuccess: "Copied to clipboard! \nPaste the link into Safari or Esign/Feather/Ksign...",
         copyfailed: "Unable to copy the IPA download link!",
         addtoesign: "Add to Esign",
         addtoesignText: "If you have Esign, add this source so you'll receive notifications when app updates are available.",

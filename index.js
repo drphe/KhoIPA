@@ -266,7 +266,7 @@ if ('serviceWorker' in navigator) {
 					<div class="text" style="position: relative;color:white;"><p>${source.subtitle ?? ""}</p></div>
 					</div> 
 				</div>
-				<a href="./view/?source=${base64Convert(source.url)}" class="source-link">
+				<a href="./view/?source=${base64Convert(source.url)}" data-identifier="${source.identifier}" class="source-link">
                     <div class="source" style="background-color: #${source.tintColor.replaceAll("#", "")};
 				margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : ""} 1.5rem 1.5rem;">
                         <img src="${source.iconURL}" class="skeleton-effect-blink skeleton-block" onload="this.classList.remove('skeleton-effect-blink', 'skeleton-block');" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
@@ -332,6 +332,44 @@ if ('serviceWorker' in navigator) {
         const targetInstall = event.target.closest("a.install-app");
         const targetNews = event.target.closest("a.news-item-header");
         const targetNewsLink = event.target.closest("a.news-item-link");
+	const sourceLink = event.target.closest("a.source-link");
+        if (sourceLink) { /////
+            event.preventDefault(); //identifier
+            const identifier = sourceLink.getAttribute("data-identifier");
+            let so = allSources.find(s => s.identifier == identifier) ?? undefined;
+            if (so) {
+                const repoAlert = new UIAlert({
+                    title: so.name,
+                    message: ""
+                });
+                repoAlert.addAction({
+                    title: langText['viewdetail'],
+                    style: "default",
+                    handler: () => window.location.href = sourceLink.href
+                });
+                repoAlert.addAction({
+                    title: langText["quicksearch"],
+                    style: "default",
+                    handler: async () => {
+                        await openPanel('<div id="apps-list"></div>', `<p>${so.name} (${so.apps.length})</p>`, '.', "side", "apps-popup-all");
+                        addAppList({
+                            apps: so.apps
+                        }, 20, 1);
+                        activateNavLink("page-library");
+                    }
+                });
+                repoAlert.addAction({
+                    title: langText['copylink'],
+                    style: "default",
+                    handler: () => copyLinkIPA(so.sourceURL)
+                });
+                repoAlert.addAction({
+                    title: langText['cancel'],
+                    style: "cancel",
+                });
+                repoAlert.present();
+            }
+        } 
         if (targetInstall) {
             event.preventDefault();
      	    if(window.isReload){
