@@ -737,7 +737,7 @@ searchBox.addEventListener("input", () => {
             filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
             el.classList.add('active');
             filterType = index;
-            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated");
+            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated" || app.beta === "new");
             totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
             currentIndex = 0;
             appsContainer.innerHTML = "";
@@ -762,7 +762,7 @@ searchBox.addEventListener("input", () => {
     }
     //with screenshot
     function loadMoreApps() {
-        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated");
+        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated" || app.beta === "new");
         if (!dataApps.length) {
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
             appsContainer.innerHTML = `

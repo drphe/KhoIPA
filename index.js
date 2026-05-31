@@ -354,7 +354,7 @@ if ('serviceWorker' in navigator) {
                         await openPanel('<div id="apps-list"></div>', `<p>${so.name} (${so.apps.length})</p>`, '.', "side", "apps-popup-all");
                         addAppList({
                             apps: so.apps
-                        }, 20, 1);
+                        }, 20, 0);
                         activateNavLink("page-library");
                     }
                 });
