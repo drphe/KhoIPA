@@ -5,14 +5,14 @@
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.flekstore.json",
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.buildstore.json",
 	"https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.lite.json",
-        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.game.json",
-        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.tiptip.json",
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.unkeyapp.json"
+        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/game.json",
+        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/tiptip.json",
     ],
     "other": [
  	"https://stikdebug.xyz/index.json",
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/EpicGamesIPASource.json",
-        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.fouadraheb.json",
+        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/fouadraheb.json",
         "https://alt.getutm.app",
         "https://quarksources.github.io/dist/quantumsource.min.json",
         "https://quarksources.github.io/dist/quantumsource%2B%2B.min.json",

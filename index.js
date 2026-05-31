@@ -358,11 +358,19 @@ if ('serviceWorker' in navigator) {
                         activateNavLink("page-library");
                     }
                 });
+		if(so.sourceURL.includes("KhoIPA/main/upload/repo")){
+                   repoAlert.addAction({
+                    title: langText['copylink']+ ` (Altstore)`,
+                    style: "default",
+                    handler: () => copyLinkIPA(so.sourceURL.replace(/\.json$/, '.altstore.json'))
+                   });
+		}
                 repoAlert.addAction({
-                    title: langText['copylink'],
+                    title: langText['copylink']+ ` (Others)`,//Esign, Feather, Ksign
                     style: "default",
                     handler: () => copyLinkIPA(so.sourceURL)
                 });
+
                 repoAlert.addAction({
                     title: langText['cancel'],
                     style: "cancel",
