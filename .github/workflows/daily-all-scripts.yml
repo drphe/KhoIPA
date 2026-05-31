@@ -1,0 +1,95 @@
+name: Daily Update All IPA Sources (Parallel)
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-fouad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - run: python fouad.py
+        working-directory: ./studio
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fouad-output
+          path: ./upload/fouadraheb.json
+
+  run-fastsign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - run: python fastsign.py
+        working-directory: ./studio
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fastsign-output
+          path: |
+            ./upload/repo.lite.json
+            ./upload/repo.lite.altstore.json
+
+  run-flekstore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - run: python flekstore.py
+        working-directory: ./studio
+      - uses: actions/upload-artifact@v4
+        with:
+          name: flekstore-output
+          path: |
+            ./upload/repo.flekstore.json
+            ./upload/repo.flekstore.altstore.json
+
+  run-unkeyapp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - run: python unkeyapp.py
+        working-directory: ./studio
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unkeyapp-output
+          path: |
+            ./upload/repo.unkeyapp.json
+            ./upload/repo.unkeyapp.altstore.json
+
+  commit-all:
+    needs: [run-fouad, run-fastsign, run-flekstore, run-unkeyapp]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: ./downloaded-artifacts
+      - name: Combine all outputs
+        run: |
+          # Copy tất cả output vào thư mục upload/
+          mkdir -p upload/
+          find ./downloaded-artifacts -type f -name "*.json" -exec cp {} ./upload/ \;
+      - name: Commit and push
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add ./upload/
+          git diff --staged --quiet || git commit -m "Auto-update all sources: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
