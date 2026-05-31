@@ -362,13 +362,13 @@ if ('serviceWorker' in navigator) {
                    repoAlert.addAction({
                     title: langText['copylink']+ ` (Altstore)`,
                     style: "default",
-                    handler: () => copyLinkIPA(so.sourceURL.replace(/\.json$/, '.altstore.json'))
+                    handler: () => {navigator.clipboard.writeText(so.sourceURL.replace(/\.json$/, '.altstore.json')); showUIAlert(langText['success'], "Link source copied!");}
                    });
 		}
                 repoAlert.addAction({
                     title: langText['copylink']+ ` (Others)`,//Esign, Feather, Ksign
                     style: "default",
-                    handler: () => copyLinkIPA(so.sourceURL)
+                    handler: () => {navigator.clipboard.writeText(so.sourceURL); showUIAlert(langText['success'], "Link source copied!");}
                 });
 
                 repoAlert.addAction({
