@@ -9,12 +9,12 @@
   "theme_color": "#EE350F",
   "icons": [
     {
-      "src": "/KhoIPA/icon/logo.png",
+      "src": "/icon/logo.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "/KhoIPA/icon/logo.png",
+      "src": "/icon/logo.png",
       "sizes": "144x144",
       "type": "image/png"
     }
