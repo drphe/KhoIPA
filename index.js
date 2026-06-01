@@ -222,9 +222,6 @@ if ('serviceWorker' in navigator) {
         for (const app of source.apps) {
             if (app.patreon?.hidden) continue;
             let appVersionDate = new Date(app.versions?.[0]?.date ?? app.versionDate);
-		try{
-		if(!app.versions[0].date) console.log('ok');
-		}catch(e){console.log(e, app)}
             if (appVersionDate > source.lastUpdated) {
                 source.lastUpdated = appVersionDate;
                 if (!source.iconURL) source.iconURL = app.iconURL;
