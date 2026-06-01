@@ -352,11 +352,11 @@ async function mainBuildStore(progressCallback) {
         console.log(`💾 Đã lưu danh sách chi tiết để kiểm tra sau`);
         
         // Lưu danh sách này ra file để tiện theo dõi
-        const uploadDir = path.join(__dirname, '..', 'upload');
-        await fs.mkdir(uploadDir, { recursive: true });
-        const reportPath = path.join(uploadDir, 'apps_without_download.json');
-        await fs.writeFile(reportPath, JSON.stringify(appsWithoutDownloadURL, null, 2));
-        console.log(`📄 Xem chi tiết tại: ${reportPath}`);
+        //const uploadDir = path.join(__dirname, '..', 'upload');
+        //await fs.mkdir(uploadDir, { recursive: true });
+        //const reportPath = path.join(uploadDir, 'apps_without_download.json');
+        //await fs.writeFile(reportPath, JSON.stringify(appsWithoutDownloadURL, null, 2));
+        ///console.log(`📄 Xem chi tiết tại: ${reportPath}`);
     } else {
         console.log(`\n🎉 Tuyệt vời! Tất cả app đều có link tải IPA!`);
     }
