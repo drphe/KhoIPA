@@ -432,7 +432,8 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         bottomPanel.querySelectorAll("a.install").forEach(button => {
             button.addEventListener("click", event => {
                 event.preventDefault();
-                installAppAlert.present();
+		if(app.sourceName === "AppleJr Repo") window.open(app.downloadURL, "_blank");
+                else installAppAlert.present();
             });
         });
         // scroll down to close

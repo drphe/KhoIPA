@@ -7,6 +7,11 @@
     "start": "node buildstore.js"
   },
   "dependencies": {
+    "jsdom": "^29.1.1",
     "node-fetch": "^3.3.2"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }

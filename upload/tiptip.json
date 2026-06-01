@@ -1,11 +1,11 @@
 {
   "name": "TiptipIOS Repo",
   "identifier": "ios.tiptip.repo",
-  "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.tiptip.json",
+  "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/tiptip.json",
   "iconURL": "https://i.ibb.co/1tqp6D92/IMG-3612.jpg",
   "website": "https://tiptipios.github.io/tiptip/gamehack",
   "ipawebsite": "https://kho-ipa.vercel.app",
-  "subtitle": "Page Share Game,App Hack Free Cho ios \nTất cả đều miễn phí cho ae hết",
+  "subtitle": "Page Share Game,App Hack Free Cho ios (Drive Link) \nTất cả đều miễn phí cho ae hết",
   "apps": [
     {
       "name": "Youtube ",
@@ -226,7 +226,7 @@
     {
       "name": "Back Up GTA ( dân tổ,naruto )",
       "type": 2,
-      "bundleIdentifier": "back-up-gta-(-dân-tổ,naruto-)",
+      "bundleIdentifier": "back-up-gta--dn-tnaruto-",
       "version": "1.0",
       "versionDate": "2025-05-17",
       "size": 62915,
@@ -238,7 +238,7 @@
     {
       "name": "Back Up GTA ( boy phố )",
       "type": 2,
-      "bundleIdentifier": "back-up-gta-(-boy-phố-)",
+      "bundleIdentifier": "back-up-gta--boy-ph-",
       "version": "1.0",
       "versionDate": "2025-05-17",
       "size": 62915,
@@ -274,7 +274,7 @@
     {
       "name": "GTA: SAN V2.2",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v2.2",
+      "bundleIdentifier": "gta-san-v22",
       "version": "2.02.07",
       "versionDate": "2025-05-15",
       "size": 2029372047,
@@ -310,7 +310,7 @@
     {
       "name": "GTA: SAN V2.1",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v2.1",
+      "bundleIdentifier": "gta-san-v21",
       "version": "2.02.07",
       "versionDate": "2025-05-15",
       "size": 2029372047,
@@ -406,7 +406,7 @@
     {
       "name": "GTA: SAN V9",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v9",
+      "bundleIdentifier": "gta-san-v9",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 1997159793,
@@ -418,7 +418,7 @@
     {
       "name": "GTA: SAN V8",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v8",
+      "bundleIdentifier": "gta-san-v8",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 1997159793,
@@ -430,7 +430,7 @@
     {
       "name": "GTA: SAN V7",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v7",
+      "bundleIdentifier": "gta-san-v7",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 1997159793,
@@ -442,7 +442,7 @@
     {
       "name": "GTA: SAN V6",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v6",
+      "bundleIdentifier": "gta-san-v6",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 1739461755,
@@ -454,7 +454,7 @@
     {
       "name": "GTA: SAN V5",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v5",
+      "bundleIdentifier": "gta-san-v5",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 1825361101,
@@ -466,7 +466,7 @@
     {
       "name": "GTA: SAN V4",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v4",
+      "bundleIdentifier": "gta-san-v4",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 1803886264,
@@ -478,7 +478,7 @@
     {
       "name": "GTA: SAN V3",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v3",
+      "bundleIdentifier": "gta-san-v3",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 2158221066,
@@ -490,7 +490,7 @@
     {
       "name": "GTA: SAN V2",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v2",
+      "bundleIdentifier": "gta-san-v2",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 2093796557,
@@ -502,7 +502,7 @@
     {
       "name": "GTA: SAN V1",
       "type": 2,
-      "bundleIdentifier": "gta:-san-v1",
+      "bundleIdentifier": "gta-san-v1",
       "version": "2.02.11",
       "versionDate": "2025-05-15",
       "size": 2093796557,
@@ -574,7 +574,7 @@
     {
       "name": "GTA: SAN F6",
       "type": 2,
-      "bundleIdentifier": "gta:-san-f6",
+      "bundleIdentifier": "gta-san-f6",
       "version": "2.02.11",
       "versionDate": "2024-08-14",
       "size": 1921997865,
@@ -586,7 +586,7 @@
     {
       "name": "GTA: SAN F5",
       "type": 2,
-      "bundleIdentifier": "gta:-san-f5",
+      "bundleIdentifier": "gta-san-f5",
       "version": "2.02.11",
       "versionDate": "2024-08-14",
       "size": 2007897211,
@@ -598,7 +598,7 @@
     {
       "name": "GTA: SAN F4",
       "type": 2,
-      "bundleIdentifier": "gta:-san-f4",
+      "bundleIdentifier": "gta-san-f4",
       "version": "2.02.11",
       "versionDate": "2024-08-14",
       "size": 1986422374,
@@ -670,7 +670,7 @@
     {
       "name": "Liên Quân Mobile",
       "type": 2,
-      "bundleIdentifier": "liên-quân-mobile",
+      "bundleIdentifier": "lin-qun-mobile",
       "version": "1.62.116",
       "versionDate": "2026-04-26",
       "size": 178257920,
@@ -694,7 +694,7 @@
     {
       "name": "Builda ( Câu Cá Vạn cân ) ",
       "type": 2,
-      "bundleIdentifier": "builda-(-câu-cá-vạn-cân-)",
+      "bundleIdentifier": "builda--cu-c-vn-cn-",
       "version": "1.62.2",
       "versionDate": "2025-11-28",
       "size": 178257920,
@@ -706,7 +706,7 @@
     {
       "name": "Trường Sinh Pháp",
       "type": 2,
-      "bundleIdentifier": "trường-sinh-pháp",
+      "bundleIdentifier": "trng-sinh-php",
       "version": "1.7.3",
       "versionDate": "2025-07-07",
       "size": 197310546,
@@ -742,7 +742,7 @@
     {
       "name": "Snake.io ",
       "type": 2,
-      "bundleIdentifier": "snake.io",
+      "bundleIdentifier": "snakeio",
       "version": "1.21.6",
       "versionDate": "2025-06-17",
       "size": 103567852,
@@ -766,7 +766,7 @@
     {
       "name": "Cats & Soup",
       "type": 2,
-      "bundleIdentifier": "cats-&-soup",
+      "bundleIdentifier": "cats--soup",
       "version": "2.70.1",
       "versionDate": "2025-06-10",
       "size": 339130450,
@@ -790,7 +790,7 @@
     {
       "name": "Nighty Knight: Frontier War TD",
       "type": 2,
-      "bundleIdentifier": "nighty-knight:-frontier-war-td",
+      "bundleIdentifier": "nighty-knight-frontier-war-td",
       "version": "1.0.61",
       "versionDate": "2025-06-04",
       "size": 241224909,
@@ -958,7 +958,7 @@
     {
       "name": "Arcana Blade : Idle RPG",
       "type": 2,
-      "bundleIdentifier": "arcana-blade-:-idle-rpg",
+      "bundleIdentifier": "arcana-blade--idle-rpg",
       "version": "1.7.21",
       "versionDate": "2025-06-02",
       "size": 491991859,
@@ -1018,7 +1018,7 @@
     {
       "name": "Fortias Saga_ Action Adventure",
       "type": 2,
-      "bundleIdentifier": "fortias-saga_-action-adventure",
+      "bundleIdentifier": "fortias-saga-action-adventure",
       "version": "1.0.81",
       "versionDate": "2025-05-31",
       "size": 351210045,
@@ -1090,7 +1090,7 @@
     {
       "name": "Stick War: Saga",
       "type": 2,
-      "bundleIdentifier": "stick-war:-saga",
+      "bundleIdentifier": "stick-war-saga",
       "version": "2025.4.1331",
       "versionDate": "2025-05-26",
       "size": 333415711,
@@ -1126,7 +1126,7 @@
     {
       "name": "Hunter Raid _ Idle RPG",
       "type": 2,
-      "bundleIdentifier": "hunter-raid-_-idle-rpg",
+      "bundleIdentifier": "hunter-raid--idle-rpg",
       "version": "2.1.2",
       "versionDate": "2025-05-26",
       "size": 199984415,
@@ -1174,7 +1174,7 @@
     {
       "name": "Survivor.io",
       "type": 2,
-      "bundleIdentifier": "survivor.io",
+      "bundleIdentifier": "survivorio",
       "version": "3.9.4",
       "versionDate": "2025-05-22",
       "size": 578677637,
@@ -1246,7 +1246,7 @@
     {
       "name": "Magic Tiles 3_ Piano Game",
       "type": 2,
-      "bundleIdentifier": "magic-tiles-3_-piano-game",
+      "bundleIdentifier": "magic-tiles-3-piano-game",
       "version": "12.053.021",
       "versionDate": "2025-05-22",
       "size": 256953549,
@@ -1294,7 +1294,7 @@
     {
       "name": "Dragons_ Rise of Berk",
       "type": 2,
-      "bundleIdentifier": "dragons_-rise-of-berk",
+      "bundleIdentifier": "dragons-rise-of-berk",
       "version": "1.96.7",
       "versionDate": "2025-05-20",
       "size": 647254508,
@@ -1330,7 +1330,7 @@
     {
       "name": "Rogue with the Dead_ Idle RPG",
       "type": 2,
-      "bundleIdentifier": "rogue-with-the-dead_-idle-rpg",
+      "bundleIdentifier": "rogue-with-the-dead-idle-rpg",
       "version": "2.15.2",
       "versionDate": "2025-05-19",
       "size": 372401766,
@@ -1342,7 +1342,7 @@
     {
       "name": "Crown Rumble_ Idle Kingdoms",
       "type": 2,
-      "bundleIdentifier": "crown-rumble_-idle-kingdoms",
+      "bundleIdentifier": "crown-rumble-idle-kingdoms",
       "version": "1.16.0",
       "versionDate": "2025-05-19",
       "size": 201274163,
@@ -1390,7 +1390,7 @@
     {
       "name": "Left to Survive: Zombie",
       "type": 2,
-      "bundleIdentifier": "left-to-survive:-zombie",
+      "bundleIdentifier": "left-to-survive-zombie",
       "version": "7.5.3",
       "versionDate": "2025-05-18",
       "size": 908570132,
@@ -1402,7 +1402,7 @@
     {
       "name": "Heroes vs. Hordes_ Survivor",
       "type": 2,
-      "bundleIdentifier": "heroes-vs.-hordes_-survivor",
+      "bundleIdentifier": "heroes-vs-hordes-survivor",
       "version": "3.9.0",
       "versionDate": "2025-05-18",
       "size": 522473964,
@@ -1426,7 +1426,7 @@
     {
       "name": "Plant Survivor:Bang Bang",
       "type": 2,
-      "bundleIdentifier": "plant-survivor:bang-bang",
+      "bundleIdentifier": "plant-survivorbang-bang",
       "version": "3.4.1",
       "versionDate": "2025-05-17",
       "size": 207125217,
@@ -1438,7 +1438,7 @@
     {
       "name": "Skullgirls_ Fighting RPG",
       "type": 2,
-      "bundleIdentifier": "skullgirls_-fighting-rpg",
+      "bundleIdentifier": "skullgirls-fighting-rpg",
       "version": "7.2.2",
       "versionDate": "2025-05-17",
       "size": 127884329,
@@ -1474,7 +1474,7 @@
     {
       "name": "AdVenture Ages_ Idle Clicker",
       "type": 2,
-      "bundleIdentifier": "adventure-ages_-idle-clicker",
+      "bundleIdentifier": "adventure-ages-idle-clicker",
       "version": "1.30.0",
       "versionDate": "2025-05-17",
       "size": 121404129,
@@ -1498,7 +1498,7 @@
     {
       "name": "Idle Factory Tycoon_ Business",
       "type": 2,
-      "bundleIdentifier": "idle-factory-tycoon_-business",
+      "bundleIdentifier": "idle-factory-tycoon-business",
       "version": "2.21.0",
       "versionDate": "2025-05-17",
       "size": 105539174,
@@ -1510,7 +1510,7 @@
     {
       "name": "Idle Taxi Tycoon_ Empire",
       "type": 2,
-      "bundleIdentifier": "idle-taxi-tycoon_-empire",
+      "bundleIdentifier": "idle-taxi-tycoon-empire",
       "version": "1.20.0",
       "versionDate": "2025-05-17",
       "size": 111925002,
@@ -1570,7 +1570,7 @@
     {
       "name": "Great Conqueror 2: Shogun",
       "type": 2,
-      "bundleIdentifier": "great-conqueror-2:-shogun",
+      "bundleIdentifier": "great-conqueror-2-shogun",
       "version": "2.4.2",
       "versionDate": "2025-05-13",
       "size": 534784246,
@@ -1690,7 +1690,7 @@
     {
       "name": "Bus Simulator : Ultimate",
       "type": 2,
-      "bundleIdentifier": "bus-simulator-:-ultimate",
+      "bundleIdentifier": "bus-simulator--ultimate",
       "version": "2.2.4",
       "versionDate": "2025-05-10",
       "size": 1228186583,
@@ -1942,7 +1942,7 @@
     {
       "name": "Heroes Slime: Castle Defenders",
       "type": 2,
-      "bundleIdentifier": "heroes-slime:-castle-defenders",
+      "bundleIdentifier": "heroes-slime-castle-defenders",
       "version": "1.4",
       "versionDate": "2025-05-03",
       "size": 61750641,
@@ -2038,7 +2038,7 @@
     {
       "name": "Stick War: Legacy",
       "type": 2,
-      "bundleIdentifier": "stick-war:-legacy",
+      "bundleIdentifier": "stick-war-legacy",
       "version": "2023.5.907.",
       "versionDate": "2025-04-22",
       "size": 92169830,
@@ -2134,7 +2134,7 @@
     {
       "name": "Zooba_",
       "type": 2,
-      "bundleIdentifier": "zooba_",
+      "bundleIdentifier": "zooba",
       "version": "5.5.0.",
       "versionDate": "2025-04-18",
       "size": 195632824,
@@ -2158,7 +2158,7 @@
     {
       "name": "NinjaMustDie_",
       "type": 2,
-      "bundleIdentifier": "ninjamustdie_",
+      "bundleIdentifier": "ninjamustdie",
       "version": "1.0.84.",
       "versionDate": "2025-04-18",
       "size": 2392756060,
@@ -2182,7 +2182,7 @@
     {
       "name": "FC Mobile_",
       "type": 2,
-      "bundleIdentifier": "fc-mobile_",
+      "bundleIdentifier": "fc-mobile",
       "version": "24.0.04.",
       "versionDate": "2025-04-17",
       "size": 122075218,
@@ -2194,7 +2194,7 @@
     {
       "name": "Prison Break Idle_",
       "type": 2,
-      "bundleIdentifier": "prison-break-idle_",
+      "bundleIdentifier": "prison-break-idle",
       "version": "0.1.2.",
       "versionDate": "2025-04-17",
       "size": 141180273,
@@ -2206,7 +2206,7 @@
     {
       "name": "Mighty Party_ Battle Heroes",
       "type": 2,
-      "bundleIdentifier": "mighty-party_-battle-heroes",
+      "bundleIdentifier": "mighty-party-battle-heroes",
       "version": "46.1.1",
       "versionDate": "2025-04-16",
       "size": 191186862,
@@ -2242,7 +2242,7 @@
     {
       "name": "Alien Invasion_",
       "type": 2,
-      "bundleIdentifier": "alien-invasion_",
+      "bundleIdentifier": "alien-invasion",
       "version": "4.12.00.",
       "versionDate": "2025-04-16",
       "size": 185000264,
@@ -2290,7 +2290,7 @@
     {
       "name": "Fruit Ninja_",
       "type": 2,
-      "bundleIdentifier": "fruit-ninja_",
+      "bundleIdentifier": "fruit-ninja",
       "version": "3.80.0.",
       "versionDate": "2025-04-15",
       "size": 199365755,
@@ -2362,7 +2362,7 @@
     {
       "name": "My Angela 2_",
       "type": 2,
-      "bundleIdentifier": "my-angela-2_",
+      "bundleIdentifier": "my-angela-2",
       "version": "25.1.1.",
       "versionDate": "2025-04-13",
       "size": 213867561,
@@ -2374,7 +2374,7 @@
     {
       "name": "Stickman vs Monster: Idle Game",
       "type": 2,
-      "bundleIdentifier": "stickman-vs-monster:-idle-game",
+      "bundleIdentifier": "stickman-vs-monster-idle-game",
       "version": "2.0.03",
       "versionDate": "2025-04-13",
       "size": 171284890,
@@ -2398,7 +2398,7 @@
     {
       "name": "Alien Survivor: Survival",
       "type": 2,
-      "bundleIdentifier": "alien-survivor:-survival",
+      "bundleIdentifier": "alien-survivor-survival",
       "version": "1.33.0",
       "versionDate": "2025-04-09",
       "size": 175909110,
@@ -2422,7 +2422,7 @@
     {
       "name": "Gossip Street: Merge & Story",
       "type": 2,
-      "bundleIdentifier": "gossip-street:-merge-&-story",
+      "bundleIdentifier": "gossip-street-merge--story",
       "version": "2.4.1.",
       "versionDate": "2025-04-09",
       "size": 166555812,
@@ -2554,7 +2554,7 @@
     {
       "name": "Merge Manor : Sunny House",
       "type": 2,
-      "bundleIdentifier": "merge-manor-:-sunny-house",
+      "bundleIdentifier": "merge-manor--sunny-house",
       "version": "1.3.31",
       "versionDate": "2025-04-02",
       "size": 424778138,
@@ -2602,7 +2602,7 @@
     {
       "name": "Shadow Hunter: Premium",
       "type": 2,
-      "bundleIdentifier": "shadow-hunter:-premium",
+      "bundleIdentifier": "shadow-hunter-premium",
       "version": "11.121.3",
       "versionDate": "2025-03-31",
       "size": 1057121894,
@@ -2698,7 +2698,7 @@
     {
       "name": "Turret Defense King_",
       "type": 2,
-      "bundleIdentifier": "turret-defense-king_",
+      "bundleIdentifier": "turret-defense-king",
       "version": "1.2.11.",
       "versionDate": "2025-03-30",
       "size": 87765811,
@@ -2734,7 +2734,7 @@
     {
       "name": "Chillybash: Gang Battle Party",
       "type": 2,
-      "bundleIdentifier": "chillybash:-gang-battle-party",
+      "bundleIdentifier": "chillybash-gang-battle-party",
       "version": "2.0.12",
       "versionDate": "2025-03-29",
       "size": 141736018,
@@ -2962,7 +2962,7 @@
     {
       "name": "Pocket Merge: Last Survivor",
       "type": 2,
-      "bundleIdentifier": "pocket-merge:-last-survivor",
+      "bundleIdentifier": "pocket-merge-last-survivor",
       "version": "1.0.9",
       "versionDate": "2025-03-22",
       "size": 128859505,
@@ -2974,7 +2974,7 @@
     {
       "name": "Idle Monkey: Bagpack War",
       "type": 2,
-      "bundleIdentifier": "idle-monkey:-bagpack-war",
+      "bundleIdentifier": "idle-monkey-bagpack-war",
       "version": "1.0.8",
       "versionDate": "2025-03-22",
       "size": 62222500,
@@ -3130,7 +3130,7 @@
     {
       "name": "Rent Please! Landlord Sim",
       "type": 2,
-      "bundleIdentifier": "rent-please!-landlord-sim",
+      "bundleIdentifier": "rent-please-landlord-sim",
       "version": "1.60.2",
       "versionDate": "2025-03-19",
       "size": 448129925,
@@ -3142,7 +3142,7 @@
     {
       "name": "Apocalypse Worm: Zombie Strike",
       "type": 2,
-      "bundleIdentifier": "apocalypse-worm:-zombie-strike",
+      "bundleIdentifier": "apocalypse-worm-zombie-strike",
       "version": "0.1.3",
       "versionDate": "2025-03-18",
       "size": 46756004,
@@ -3250,7 +3250,7 @@
     {
       "name": "PackMon Idle:Trainer Simulator",
       "type": 2,
-      "bundleIdentifier": "packmon-idle:trainer-simulator",
+      "bundleIdentifier": "packmon-idletrainer-simulator",
       "version": "1.1.6",
       "versionDate": "2025-03-15",
       "size": 136671396,
@@ -3274,7 +3274,7 @@
     {
       "name": "Cafeland_",
       "type": 2,
-      "bundleIdentifier": "cafeland_",
+      "bundleIdentifier": "cafeland",
       "version": "2.43.6.",
       "versionDate": "2025-03-12",
       "size": 185556009,
@@ -3310,7 +3310,7 @@
     {
       "name": "Into the Dead 2_",
       "type": 2,
-      "bundleIdentifier": "into-the-dead-2_",
+      "bundleIdentifier": "into-the-dead-2",
       "version": "1.76.0.",
       "versionDate": "2025-03-10",
       "size": 2108633907,
@@ -3382,7 +3382,7 @@
     {
       "name": "Monster Slayer_",
       "type": 2,
-      "bundleIdentifier": "monster-slayer_",
+      "bundleIdentifier": "monster-slayer",
       "version": "3.0.23.",
       "versionDate": "2025-03-05",
       "size": 159498895,
@@ -3562,7 +3562,7 @@
     {
       "name": "CapybaraGo!",
       "type": 2,
-      "bundleIdentifier": "capybarago!",
+      "bundleIdentifier": "capybarago",
       "version": "1.5.4.",
       "versionDate": "2025-02-26",
       "size": 224426721,
@@ -3622,7 +3622,7 @@
     {
       "name": "Galaxy Attack: Space Shooter",
       "type": 2,
-      "bundleIdentifier": "galaxy-attack:-space-shooter",
+      "bundleIdentifier": "galaxy-attack-space-shooter",
       "version": "1.874",
       "versionDate": "2025-02-25",
       "size": 222172283,
@@ -3730,7 +3730,7 @@
     {
       "name": "The Spike New  ( TSC•AutoWin)",
       "type": 2,
-      "bundleIdentifier": "the-spike-new-(-tsc•autowin)",
+      "bundleIdentifier": "the-spike-new--tscautowin",
       "version": "7.1.104",
       "versionDate": "2026-05-04",
       "size": 460125635,
@@ -3742,7 +3742,7 @@
     {
       "name": "The Spike New ( TSC•Tip Tip)",
       "type": 2,
-      "bundleIdentifier": "the-spike-new-(-tsc•tip-tip)",
+      "bundleIdentifier": "the-spike-new--tsctip-tip",
       "version": "7.1.102",
       "versionDate": "2026-04-28",
       "size": 460125635,
@@ -3754,7 +3754,7 @@
     {
       "name": "Liên Quân Mobile",
       "type": 1,
-      "bundleIdentifier": "liên-quân-mobile",
+      "bundleIdentifier": "lin-qun-mobile",
       "version": "1.62.116",
       "versionDate": "2026-04-26",
       "size": 178257920,
@@ -3790,7 +3790,7 @@
     {
       "name": "Bus Simulator : Ultimate",
       "type": 1,
-      "bundleIdentifier": "bus-simulator-:-ultimate",
+      "bundleIdentifier": "bus-simulator--ultimate",
       "version": "2.2.4",
       "versionDate": "2025-05-10",
       "size": 1228186583,
