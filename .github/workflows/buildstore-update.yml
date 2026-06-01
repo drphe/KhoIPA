@@ -1,4 +1,4 @@
-name: Auto Update BuildStore Repo
+name: Auto Update BuildStore & Tiptip Repo
 
 on:
   schedule:
@@ -30,7 +30,7 @@ jobs:
       run: |
         # Tạo package.json nếu chưa có
         if [ ! -f package.json ]; then
-          echo '{"dependencies": {"node-fetch": "^3.3.2"}}' > package.json
+          echo '{"dependencies": {"node-fetch": "^3.3.2", "jsdom": "^23.0.1"}}' > package.json
         fi
         npm install
     
@@ -39,6 +39,12 @@ jobs:
       run: node buildstore.js
       env:
         # Có thể thêm các biến môi trường nếu cần
+        NODE_NO_WARNINGS: 1
+    
+    - name: Run tiptip.js
+      working-directory: ./studio
+      run: node tiptip.js
+      env:
         NODE_NO_WARNINGS: 1
     
     - name: Check for changes
@@ -52,7 +58,7 @@ jobs:
     - name: Commit and push changes
       if: steps.git-check.outputs.changes == 'true'
       run: |
-        git commit -m "Auto-update BuildStore repo - $(date +'%Y-%m-%d %H:%M:%S')"
+        git commit -m "Auto-update repos - $(date +'%Y-%m-%d %H:%M:%S')"
         git push origin main
       env:
         # GitHub Actions tự động có token
@@ -62,7 +68,7 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: buildstore-output
+        name: repos-output
         path: |
           upload/*.json
         retention-days: 7
