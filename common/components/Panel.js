@@ -742,7 +742,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollT
             el.classList.add('active');
             filterType = index;
             let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated" || app.beta === "new");
-            totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
+	    totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
             currentIndex = 0;
             appsContainer.innerHTML = "";
             loadMoreApps();
