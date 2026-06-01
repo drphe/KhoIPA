@@ -44,7 +44,7 @@ if ('serviceWorker' in navigator) {
         try {
             return await fetchSource(url);
         }
-        catch {
+        catch (e){
             return null;
         }
     }))).filter(Boolean);
@@ -221,7 +221,10 @@ if ('serviceWorker' in navigator) {
         source.appCount = 0;
         for (const app of source.apps) {
             if (app.patreon?.hidden) continue;
-            let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
+            let appVersionDate = new Date(app.versions?.[0]?.date ?? app.versionDate);
+		try{
+		if(!app.versions[0].date) console.log('ok');
+		}catch(e){console.log(e, app)}
             if (appVersionDate > source.lastUpdated) {
                 source.lastUpdated = appVersionDate;
                 if (!source.iconURL) source.iconURL = app.iconURL;

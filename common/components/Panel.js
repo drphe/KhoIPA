@@ -393,7 +393,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         let altSourceTintColor = "var(--tint-color);";
         for (const app of jsons.apps) {
             if (app.patreon?.hidden) continue;
-            let appVersionDate = new Date(app.versions ? app.versions[0].date : app.versionDate);
+            let appVersionDate = new Date(app.versions?.[0]?.date ?? app.versionDate);
             if (appVersionDate > lastUpdated) {
                 lastUpdated = appVersionDate;
                 altSourceIcon = app.iconURL;

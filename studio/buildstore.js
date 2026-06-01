@@ -326,18 +326,19 @@ async function mainBuildStore(progressCallback) {
     await processAppsInBatches(allApp);
     console.log(`✅ App lấy thành công: ${successCount} \n ❌ App không lấy được: ${failureCount}`);
     
-    // Kiểm tra và lọc app có link tải
+
+    // Kiểm tra toàn diện hơn
     const appsWithDownload = allApp.filter(app => {
-        const hasDownload = app.downloadURL !== "";
-        if (!hasDownload && app.name) {
-            appsWithoutDownloadURL.push({
-                name: app.name,
-                bundleIdentifier: app.bundleIdentifier
-            });
-        }
-        return hasDownload;
-    });
+    const hasDownload = app.versions.length == 0 || app.downloadURL && app.downloadURL.trim() !== "";
     
+    if (!hasDownload && app.name) {
+        appsWithoutDownloadURL.push({
+            name: app.name,
+            bundleIdentifier: app.bundleIdentifier || "N/A"
+        });
+    }
+    return hasDownload;
+});
     jsonFile.apps = appsWithDownload;
     
     console.log(`\n📊 TỔNG KẾT:`);
