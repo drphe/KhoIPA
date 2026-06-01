@@ -349,7 +349,7 @@ async function mainBuildStore(progressCallback) {
     
     if (appsWithoutDownloadURL.length > 0) {
         console.log(`\n⚠️ Có ${appsWithoutDownloadURL.length} app không có link tải IPA`);
-        console.log(`💾 Đã lưu danh sách chi tiết để kiểm tra sau`);
+        //console.log(`💾 Đã lưu danh sách chi tiết để kiểm tra sau`);
         
         // Lưu danh sách này ra file để tiện theo dõi
         //const uploadDir = path.join(__dirname, '..', 'upload');
