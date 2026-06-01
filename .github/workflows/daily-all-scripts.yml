@@ -2,7 +2,7 @@ name: Daily Update All IPA Sources (Parallel)
 
 on:
   schedule:
-    - cron: '0 20 * * *'  # 8:00 PM hàng ngày
+    - cron: '0 8 * * *'  # 8:00 AM hàng ngày
   workflow_dispatch:
 
 permissions:
