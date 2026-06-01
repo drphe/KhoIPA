@@ -2,8 +2,8 @@ name: Auto Update BuildStore Repo
 
 on:
   schedule:
-    # Chạy lúc 12:00 UTC mỗi ngày (có thể điều chỉnh theo múi giờ của bạn)
-    - cron: '0 12 * * *'
+    # Chạy lúc 8:00 UTC mỗi ngày (có thể điều chỉnh theo múi giờ của bạn)
+    - cron: '0 8 * * *'
   # Cho phép chạy thủ công từ GitHub UI
   workflow_dispatch:
 
