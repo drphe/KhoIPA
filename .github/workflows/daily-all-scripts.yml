@@ -2,7 +2,8 @@ name: Daily Update All IPA Sources (Parallel)
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # 8:00 AM hàng ngày
+    # 12:00 GMT+7 = 20:00 UTC
+    - cron: '0 12 * * *'
   workflow_dispatch:
 
 permissions:
@@ -14,7 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: '3.11' }
+        with: 
+          python-version: '3.11'
       - run: pip install requests
       - run: python fouad.py
         working-directory: ./studio
@@ -28,7 +30,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: '3.11' }
+        with: 
+          python-version: '3.11'
       - run: pip install requests
       - run: python fastsign.py
         working-directory: ./studio
@@ -44,7 +47,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: '3.11' }
+        with: 
+          python-version: '3.11'
       - run: pip install requests
       - run: python flekstore.py
         working-directory: ./studio
@@ -60,7 +64,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: '3.11' }
+        with: 
+          python-version: '3.11'
       - run: pip install requests
       - run: python unkeyapp.py
         working-directory: ./studio
@@ -78,18 +83,30 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
         with:
           path: ./downloaded-artifacts
+      
       - name: Combine all outputs
         run: |
           # Copy tất cả output vào thư mục upload/
           mkdir -p upload/
-          find ./downloaded-artifacts -type f -name "*.json" -exec cp {} ./upload/ \;
-      - name: Commit and push
+          find ./downloaded-artifacts -type f -name "*.json" -exec cp -v {} ./upload/ \;
+          echo "Files copied:"
+          ls -la ./upload/
+      
+      - name: Commit and push with GMT+7 time
+        env:
+          TZ: 'Asia/Ho_Chi_Minh'
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add ./upload/
-          git diff --staged --quiet || git commit -m "Auto-update all sources: $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-update all sources: $(date '+%Y-%m-%d %H:%M:%S') GMT+7"
+            git push
+          else
+            echo "No changes to commit"
+          fi
