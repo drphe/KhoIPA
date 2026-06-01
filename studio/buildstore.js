@@ -329,7 +329,7 @@ async function mainBuildStore(progressCallback) {
 
     // Kiểm tra toàn diện hơn
     const appsWithDownload = allApp.filter(app => {
-    const hasDownload = app.versions.length == 0 || app.downloadURL && app.downloadURL.trim() !== "";
+    const hasDownload = app.versions.length > 0 || app.downloadURL && app.downloadURL.trim() !== "";
     
     if (!hasDownload && app.name) {
         appsWithoutDownloadURL.push({
