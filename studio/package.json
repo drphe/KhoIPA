@@ -1,0 +1,12 @@
+{
+  "name": "buildstore-updater",
+  "version": "1.0.0",
+  "description": "Auto update BuildStore repo",
+  "main": "buildstore.js",
+  "scripts": {
+    "start": "node buildstore.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
