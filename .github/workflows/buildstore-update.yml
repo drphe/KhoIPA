@@ -1,0 +1,68 @@
+name: Auto Update BuildStore Repo
+
+on:
+  schedule:
+    # Chạy lúc 12:00 UTC mỗi ngày (có thể điều chỉnh theo múi giờ của bạn)
+    - cron: '0 12 * * *'
+  # Cho phép chạy thủ công từ GitHub UI
+  workflow_dispatch:
+
+jobs:
+  update-repo:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        # Lấy toàn bộ lịch sử để commit
+        fetch-depth: 0
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: './studio/package.json'
+    
+    - name: Install dependencies
+      working-directory: ./studio
+      run: |
+        # Tạo package.json nếu chưa có
+        if [ ! -f package.json ]; then
+          echo '{"dependencies": {"node-fetch": "^3.3.2"}}' > package.json
+        fi
+        npm install
+    
+    - name: Run buildstore.js
+      working-directory: ./studio
+      run: node buildstore.js
+      env:
+        # Có thể thêm các biến môi trường nếu cần
+        NODE_NO_WARNINGS: 1
+    
+    - name: Check for changes
+      id: git-check
+      run: |
+        git config --global user.name 'GitHub Actions Bot'
+        git config --global user.email 'actions@github.com'
+        git add -A
+        git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+    
+    - name: Commit and push changes
+      if: steps.git-check.outputs.changes == 'true'
+      run: |
+        git commit -m "Auto-update BuildStore repo - $(date +'%Y-%m-%d %H:%M:%S')"
+        git push origin main
+      env:
+        # GitHub Actions tự động có token
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Upload artifacts (optional)
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: buildstore-output
+        path: |
+          upload/*.json
+        retention-days: 7
