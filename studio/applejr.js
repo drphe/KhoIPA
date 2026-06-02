@@ -44,10 +44,10 @@ function extract(id, doc) {
             "bundleIdentifier": `dns.${bundle}.${count}`,
             "version": version,
             "versionDate": getCurrentDate(),
-            "size": 56524000,
+            "size": 5652400,
             "downloadURL": link,
             "developerName": "Unknow",
-            "localizedDescription": `DNS Required ${bundle === 'certificate'? "Download Only": "Direct install only."}`,
+            "localizedDescription": `DNS Required - ${bundle === 'certificate'? "Download Only": "Direct install only."}`,
             "iconURL": iconUrl
         });
     });
