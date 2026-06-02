@@ -43,8 +43,14 @@ jobs:
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
         
-        # Pull latest changes first (with rebase)
+        # Stash any local changes
+        git stash push --include-untracked -m "auto-stash"
+        
+        # Pull latest changes with rebase
         git pull origin main --rebase
+        
+        # Restore stashed changes
+        git stash pop || true
         
         # Add all changes
         git add -A
