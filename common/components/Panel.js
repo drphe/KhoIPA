@@ -783,6 +783,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollT
     }
     //with screenshot
     function loadMoreApps(isUpdate = true) {
+	searchBox.value && (isUpdate = false)
         let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : (isUpdate ? filteredApps.filter(app => app.beta === "updated" || app.beta === "new"): filteredApps);
         if (!dataApps.length) {
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
