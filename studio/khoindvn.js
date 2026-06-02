@@ -124,7 +124,7 @@ function changed(data) {
         data.ksign.forEach(e => {
             count++;
             repo.apps.push({
-                "name": `${e.name} with Cert`,
+                 "name": `${e.name} ${e.descriptions ? '• '+e.descriptions:''})`,
                 "type": 4,
                 "bundleIdentifier": `khoidns.ksign.${count}`,
                 "version": '1.5.1',
