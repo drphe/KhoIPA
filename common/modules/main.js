@@ -75,6 +75,10 @@ if(sourceURL.includes("KhoIPA/main/upload/repo")){
         document.getElementById('add-to-altstore').addEventListener('click', function(event) {
            installSourceAlert.present();
         });
+        for (const app of json.apps) {
+            app.sourceURL = json.sourceURL;
+            app.sourceName = json.name;
+        }
 	json.sourceURL ??= sourceURL;
         setApps(json.apps);
         callback(json);

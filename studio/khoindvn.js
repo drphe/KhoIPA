@@ -106,7 +106,7 @@ function changed(data) {
         data.esign.forEach(e => {
             count++;
             repo.apps.push({
-                "name": `${e.name} with Cert`,
+                "name": `${e.name} ${e.descriptions ? '• '+e.descriptions:''})`,
                 "type": 4,
                 "bundleIdentifier": `khoidns.esign.${count}`,
                 "version": '5.0.2',

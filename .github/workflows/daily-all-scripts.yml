@@ -1,4 +1,4 @@
-name: Daily Update All IPA Sources (Parallel)
+name: Daily Update All Repo (Fouad, Fastsign,Flekstore,Unkeyapp)
 
 on:
   schedule:

@@ -434,7 +434,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 event.preventDefault();
 		if(app.sourceName === "AppleJr Repo" || app.sourceName === "Khoindvn Repo") {
         const installDirectAlert = new UIAlert({
-            title: `${langText['get']} "${app.name}"`
+            title: `${langText['get']} "${app.name.trim()}"`
         });
         installDirectAlert.addAction({
             title: langText['directinstall'],
@@ -452,7 +452,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             style: 'cancel',
         });
 	installDirectAlert.present();
-
 		}
                 else installAppAlert.present();
             });
