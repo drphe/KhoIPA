@@ -285,151 +285,6 @@
             statusEl.textContent = text;
         }
     </script>
-
-
-    <script>
-        // trả về ngày hiện tại
-        function getCurrentDate() {
-            const today = new Date();
-            const year = today.getFullYear();
-            const month = String(today.getMonth() + 1).padStart(2, '0');
-            const day = String(today.getDate()).padStart(2, '0');
-            return `${year}-${month}-${day}`;
-        }
-        const url = 'https://khoindvn.io.vn/_astro/hoisted.CrTJNMJJ.js';
-        async function processAndRunScript() {
-            try {
-                // 1. Tải file JS về dưới dạng Text
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error(`Không thể fetch file. HTTP Status: ${response.status}`);
-                }
-                const fullText = await response.text();
-
-                console.log("[Hệ thống] Đã tải xong toàn bộ file JS.");
-
-                // 2. Dùng RegEx để cắt đoạn từ 'const V' đến trước 'const K'
-                // Biểu thức này tìm từ 'const V' cho đến khi gặp 'const K' (không nuốt 'const K')
-                const regex = /(const V[\s\S]*?)(?=const K)/;
-                const match = fullText.match(regex);
-
-                if (!match || !match[1]) {
-                    throw new Error("Không tìm thấy đoạn cấu trúc 'const V' hoặc 'const K' trong file.");
-                }
-
-                const extractedCode = match[1].trim().replace("window.location.hostname", "'khoindvn.io.vn'");
-                //console.log("[Hệ thống] Đoạn code cắt được:\n", extractedCode);
-
-                // 3. Tạo thẻ script mới để thực thi đoạn code vừa cắt
-                const dynamicScript = document.createElement('script');
-                dynamicScript.type = 'text/javascript';
-
-                // Đưa đoạn code cắt được vào trong thẻ script
-                dynamicScript.text = `
-                    (function() {
-                        try {
-                            // Thực thi đoạn code đã cắt
-                            ${extractedCode}
-
-                            // Sau khi chạy xong đoạn code đó, kiểm tra và chạy logic của bạn
-                            if (typeof J === 'function' && typeof V !== 'undefined') {
-                                //console.log('%c[Kết quả J(V)]:', 'color: #00ff00; font-weight: bold;');
-                                const data = J(V);
-				console.log(data)
-				changed(data)
-
-
-                            } else {
-                                console.warn("⚠️ Đã chạy đoạn code cắt được nhưng không tìm thấy hàm J hoặc biến V ở scope này.");
-                            }
-                        } catch (e) {
-                            console.error("Lỗi khi thực thi đoạn code cắt được:", e);
-                        }
-                    })();
-                `;
-
-                // Chèn thẻ script vào body để trình duyệt kích hoạt chạy code
-                document.body.appendChild(dynamicScript);
-
-            } catch (error) {
-                console.error("[Lỗi]:", error);
-            }
-        }
-
-        function changed(data) {
-            // Xây dựng repo
-            const repo = {
-                name: "Khoindvn Repo",
-                identifier: "ios.khoindvn.repo",
-                sourceURL: "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/khoindvn.json",
-                iconURL: "https://i.ibb.co/nMt26Lf5/033502f1e155.png",
-                website: "https://khoindvn.io.vn",
-                ipawebsite: "https://kho-ipa.vercel.app",
-                subtitle: "Sideloadly free with DNS and Revoked Cert",
-                apps: [{
-                    "name": "Khoindvn DNS Anti-Revoke ",
-                    "type": 0,
-                    "bundleIdentifier": "khoidns.dns.1",
-                    "version": "5.0.2",
-                    "versionDate": "2026-06-02",
-                    "size": 652400,
-                    "downloadURL": "https://github.com/dns-khoindvn/oci-auto-vm/releases/download/DNS/khoindvn.mobileconfig",
-                    "developerName": "Khoindvn",
-                    "localizedDescription": "DNS Required - Direct install only.",
-                    "iconURL": "https://i.ibb.co/xKm401bg/385e479e7b62.png"
-                }]
-            };
-            count = 0;
-            data.esign.forEach(e => {
-                count++
-                repo.apps.push({
-                    "name": `${e.name} with Cert`,
-                    "type": 4,
-                    "bundleIdentifier": `khoidns.esign.${count}`,
-                    "version": '5.0.2',
-                    "versionDate": getCurrentDate(),
-                    "size": 12652400,
-                    "downloadURL": e.url,
-                    "developerName": "Khoindvn",
-                    "localizedDescription": `${e.descriptions} - Direct install only.`,
-                    "iconURL":"https://i.ibb.co/nMt26Lf5/033502f1e155.png"
-                });
-
-            })
-            data.ksign.forEach(e => {
-                count++;
-                repo.apps.push({
-                    "name": `${e.name} with Cert`,
-                    "type": 4,
-                    "bundleIdentifier": `khoidns.ksign.${count}`,
-                    "version": '1.5.1',
-                    "versionDate": getCurrentDate(),
-                    "size": 8652400,
-                    "downloadURL": e.url,
-                    "developerName": "Khoindvn",
-                    "localizedDescription": `${e.descriptions} - Direct install only.`,
-                    "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlk6oHRX_isIEsA0183yypCcVuMNaseuGzSymQIUY1g&s"
-                });
-
-            })
-            downloadFile(repo, "khoindvn.json");
-        }
-        // Chạy hàm
-        processAndRunScript();
-            function downloadFile(data, filename) {
-                let jsonStr = JSON.stringify(data, null, 2);
-                const blob = new Blob([jsonStr], {
-                    type: 'application/json'
-                });
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(blob);
-                link.download = filename;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                URL.revokeObjectURL(link.href);
-            }
-    </script>
 <script>
 //code javascript lấy nội dung trang https://applejr.net/
 //sau đó áp dụng các hàm sau với html vừa lấy được
@@ -449,6 +304,7 @@ const repo = {
 // trả về ngày hiện tại
 function getCurrentDate() {
     const today = new Date();
+    today.setDate(today.getDate() - 1);
     const year = today.getFullYear();
     const month = String(today.getMonth() + 1).padStart(2, '0');
     const day = String(today.getDate()).padStart(2, '0');
@@ -483,7 +339,7 @@ function extract(id, doc) {
             "version": version,
             "versionDate": getCurrentDate(),
             "size": 5652400,
-            "downloadURL": link,
+            "downloadURL": checkurl(link),
             "developerName": "Unknow",
             "localizedDescription": `DNS Required - ${bundle === 'certificate' ? "Download Only" : "Direct install only."}`,
             "iconURL": iconUrl
@@ -517,6 +373,29 @@ function extract(id, doc) {
         console.log(e);
     }
 })();
+// Hàm decode của bạn
+function b64urlDecode(b64url) {
+  const b64 = b64url.replace(/-/g, '+').replace(/_/g, '/');
+  const pad = b64.length % 4 ? '='.repeat(4 - (b64.length % 4)) : '';
+  const str = atob(b64 + pad);
+  return decodeURIComponent(escape(str));
+}
+
+function checkurl(u) {
+  if (!u.includes("download/gate.html")) return u;
+
+  try {
+    const urlObj = new URL(u);
+    const tValue = urlObj.searchParams.get("t");
+    
+    if (!tValue) return u;
+
+    const p = JSON.parse(b64urlDecode(tValue));
+    return p.d || u; // Trả về p.y, nếu p.y không tồn tại thì trả về u
+  } catch (error) {
+    return u;
+  }
+}
 </script>
 
 </body>

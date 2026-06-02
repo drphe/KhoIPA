@@ -3,11 +3,6 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-// Khai báo fetch cho Node.js cũ
-if (!globalThis.fetch) {
-    globalThis.fetch = require('node-fetch');
-}
-
 const jsonFile = {
     "name": "Build Store",
     "identifier": "io.build.store",
@@ -406,7 +401,6 @@ async function mainBuildStore(progressCallback) {
                 if (app.versions.length > 5) {
                     app.versions = app.versions.slice(0, 5);
                 }
-		if(app.versions[0].downloadURL == "") console.log("Không có link!");
                 const progressPercentage = Math.min(100, Math.round((processedCount / totalApps) * 100));
                 if (progressCallback) progressCallback(progressPercentage);
                 if (processedCount % 50 === 0 || processedCount === totalApps) {

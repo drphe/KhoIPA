@@ -1,4 +1,4 @@
-name: Auto Update Tiptip Repo
+name: Auto Update Repos (Tiptip & Khoindvn)
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-tiptip:
+  update-repos:
     runs-on: ubuntu-latest
     
     steps:
@@ -30,9 +30,17 @@ jobs:
         fi
         npm install
     
+    # 1. Chạy file tiptip.js trước
     - name: Run tiptip.js
       working-directory: ./studio
       run: node tiptip.js
+      env:
+        NODE_NO_WARNINGS: 1
+    
+    # 2. Chạy tiếp file khoindvn.js sau khi tiptip.js hoàn thành
+    - name: Run khoindvn.js
+      working-directory: ./studio
+      run: node khoindvn.js
       env:
         NODE_NO_WARNINGS: 1
     
@@ -51,13 +59,19 @@ jobs:
       run: |
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
-        git commit -m "Auto-update Tiptip - $(date +'%Y-%m-%d %H:%M:%S') GMT+7"
+        git commit -m "Auto-update Repos (Tiptip & Khoindvn) - $(date +'%Y-%m-%d %H:%M:%S') GMT+7"
+        
+        # Đồng bộ lịch sử mới nhất từ GitHub về trước khi đẩy để tránh lỗi xung đột (rejected)
+        git pull --rebase origin main
         git push origin main
     
+    # Gom cả 2 file JSON lưu trữ lại làm Artifact nếu bạn cần tải về kiểm tra
     - name: Upload artifacts
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: tiptip-output
-        path: upload/tiptip.json
+        name: scraper-outputs
+        path: |
+          upload/tiptip.json
+          upload/khoindvn.json
         retention-days: 7
