@@ -1,5 +1,6 @@
 const translations = {
     vi: {
+	entersource: "Nhập tên kho lưu trữ...",
 	directinstall: "Tiếp tục ...",
         viewdetail: "Xem chi tiết...",
         quicksearch: "Tìm kiếm nhanh",
@@ -228,6 +229,7 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+	entersource: "Enter Repo's name...",
 	directinstall: "Continue ...",
         viewdetail: "View detail...",
         quicksearch: "Quick search",

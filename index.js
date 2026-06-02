@@ -314,14 +314,93 @@ if ('serviceWorker' in navigator) {
         activateNavLink("page-library");
     });
     //
+
+    function filterSourcesByTitle(keyword) {
+        // Lấy tất cả các source-container
+        const containers = document.querySelectorAll('#sources-list .source-container');
+
+        // Chuyển keyword về chữ thường để so sánh không phân biệt hoa/thường
+        const searchTerm = keyword.toLowerCase();
+
+        let visibleCount = 0;
+
+        containers.forEach(container => {
+            // Tìm thẻ p.title bên trong container
+            const titleElement = container.querySelector('.source .title');
+
+            if (titleElement) {
+                const titleText = titleElement.textContent.toLowerCase();
+
+                // Kiểm tra nếu title chứa keyword
+                if (titleText.includes(searchTerm)) {
+                    container.style.display = ''; // Hiện
+                    visibleCount++;
+                } else {
+                    container.style.display = 'none'; // Ẩn
+                }
+            } else {
+                // Nếu không tìm thấy title, có thể ẩn hoặc giữ nguyên tùy logic
+                container.style.display = 'none';
+            }
+        });
+        return visibleCount;
+    }
+
+    function insertSearchBox() {
+        const sContainer = $('#sources-list');
+        let fillSources = [...allSources];
+
+        // Tạo wrapper chứa input và icon
+        const searchWrapper = document.createElement("div");
+        searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top:0;padding:0 1rem;"
+        searchWrapper.classList.add("search-wrapper")
+        // Tạo icon kính lúp
+        const searchIcon = document.createElement("span");
+        searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
+        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
+        // Tạo ô tìm kiếm
+        const searchBox = document.createElement("input");
+        searchBox.type = "text";
+        searchBox.placeholder = langText['entersource'];
+        searchBox.className = "form-control mb-3";
+        searchBox.style.cssText = "width: 100%; padding-left: 35px; box-sizing: border-box; border-radius: 20px;backdrop-filter: blur(4px); margin-top: 0.5rem;"
+        // Tạo icon x
+        const xIcon = document.createElement("span");
+        xIcon.innerHTML = ` <span class="totalSearch"></span><i class="bi bi-x-circle-fill"></i>`;
+        xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+        // Tạo total app
+        const totalSCount = xIcon.querySelector(".totalSearch");
+        totalSCount.innerText = `${langText['total']} ${allSources.length} repos `;
+        xIcon.addEventListener('click', () => {
+            searchBox.value = '';
+            xIcon.style.display = 'none';
+            searchBox.focus();
+            let tota = filterSourcesByTitle(searchBox.value);
+            totalSCount.innerText = `${langText['total']} ${tota} repos `;
+            sContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+            window.scrollTo({
+                top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
+                behavior: "smooth"
+            });
+        });
+        searchBox.addEventListener('input', () => {
+            xIcon.style.display = searchBox.value ? 'block' : 'none';
+            let tota = filterSourcesByTitle(searchBox.value);
+            totalSCount.innerText = `${langText['total']} ${tota} repos `;
+
+        });
+        // Gắn các phần tử
+        searchWrapper.appendChild(searchIcon);
+        searchWrapper.appendChild(searchBox);
+        searchWrapper.appendChild(xIcon);
+        sContainer.before(searchWrapper);
+    }
     // view all source
    $('#all-source')?.addEventListener("click", async (e) => {
         e.preventDefault();
-        await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} (${countAllRepo})</p>`, '.', "side", "sources-popup-all");
-        for (const source of featuredSources) {
-            await insertSource(source);
-        }
-        for (const source of otherSources) {
+        await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} </p>`, '.', "side", "sources-popup-all");
+	insertSearchBox();
+        for (const source of allSources) {
             await insertSource(source);
         }
         activateNavLink("page-source");
@@ -421,11 +500,9 @@ if ('serviceWorker' in navigator) {
             if (target == window.oldTargetPage) return;
             window.oldTargetPage = target
             if (target == 'page-source') {
-                await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} (${countAllRepo})</p>`, '.', "side", "sources-popup-all");
-                for (const source of featuredSources) {
-                    await insertSource(source);
-                }
-                for (const source of otherSources) {
+                await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
+		insertSearchBox();
+                for (const source of allSources) {
                     await insertSource(source);
                 }
             }
