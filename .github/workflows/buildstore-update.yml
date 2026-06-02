@@ -1,4 +1,5 @@
 name: Auto Update BuildStore Repo
+
 on:
   schedule:
     - cron: '0 13 * * *'   # 13:00 UTC = 20:00 GMT+7
@@ -50,6 +51,7 @@ jobs:
       run: |
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
+        git pull origin main --rebase
         git commit -m "Auto-update BuildStore - $(date +'%Y-%m-%d %H:%M:%S') GMT+7"
         git push origin main
     
