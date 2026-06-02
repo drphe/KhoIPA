@@ -14,7 +14,7 @@ https://youtu.be/TFyXj1UfVKQ?si=vHgWPxXZlJMPZht1
 
 
 ## Bước 2: Cài Esign/Ksign
-Tìm AppleJr Repo , nhấn vào 1 app Esign, Ksign, Scarlet để cài đặt trực tiếp. 
+Mở [AppleJr Repo](https://kho-ipa.vercel.app/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGYXBwbGVqci5qc29u), nhấn vào 1 app Esign, Ksign, Scarlet để cài đặt trực tiếp. 
 ![image](https://i.ibb.co/S4kfTmkg/bcc56bbd1c26.jpg)
 ![image](https://i.ibb.co/nNpc53K5/3abc0fdd6ad0.jpg)
 
