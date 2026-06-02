@@ -1,5 +1,6 @@
 const translations = {
     vi: {
+	directinstall: "Tiếp tục ...",
         viewdetail: "Xem chi tiết...",
         quicksearch: "Tìm kiếm nhanh",
   	checknoti: "Cho phép Thông báo",
@@ -227,6 +228,7 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+	directinstall: "Continue ...",
         viewdetail: "View detail...",
         quicksearch: "Quick search",
   	checknoti: "Enable Notification",

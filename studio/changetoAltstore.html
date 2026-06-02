@@ -412,7 +412,10 @@
                 });
 
             })
-
+            downloadFile(repo, "khoindvn.json");
+        }
+        // Chạy hàm
+        processAndRunScript();
             function downloadFile(data, filename) {
                 let jsonStr = JSON.stringify(data, null, 2);
                 const blob = new Blob([jsonStr], {
@@ -426,16 +429,11 @@
                 document.body.removeChild(link);
                 URL.revokeObjectURL(link.href);
             }
-            downloadFile(repo, "khoindvn.json");
-
-        }
-        // Chạy hàm
-        processAndRunScript();
     </script>
 <script>
 //code javascript lấy nội dung trang https://applejr.net/
 //sau đó áp dụng các hàm sau với html vừa lấy được
-
+    let addedAppleJrDNS = false;
 // Xây dựng repo
 const repo = {
     name: "AppleJr Repo",
@@ -457,50 +455,46 @@ function getCurrentDate() {
 
     return `${year}-${month}-${day}`;
 }
-// số ngẫu nhiên
-function getRandom3Digits() {
-    return Math.floor(Math.random() * 1000).toString().padStart(3, '0');
-}
 
 function extract(id, doc) {
     let count = 0;
     let bundle = id == 'cat-esign' ? 'esign' : id == 'cat-zsign' ? 'ksign' : id == 'cat-scarlet' ? 'scarlet' : 'certificate';
     let version = bundle == "esign" ? '5.0.2' : bundle == 'ksign' ? '1.5.1' : '1.0';
+    
     const cards = doc.querySelectorAll(`#${id} .card`);
     cards.forEach(card => {
         const name = card.querySelector("h3")?.innerText.trim() || "";
-        const description = card.querySelector('.left small').textContent.trim();
+        const description = card.querySelector('.left small')?.textContent.trim() || "";
         const link = card.querySelector("a.badge")?.href || "";
         const iconUrl = card.querySelector("img")?.src || "";
+        
+        // Nếu là AppleJr DNS và đã thêm rồi thì bỏ qua
+        if (name === "AppleJr DNS" && addedAppleJrDNS) {
+            console.log(`⏭ Bỏ qua ${name} (đã thêm rồi)`);
+            return;
+        }
+        
+        // Thêm app (cả AppleJr DNS lần đầu và các app khác)
         count++;
         repo.apps.push({
             "name": `${name} ${description.replace("DNS Required","")} `,
-            "type": 4,
+            "type": bundle === 'certificate'?4: 0,
             "bundleIdentifier": `dns.${bundle}.${count}`,
             "version": version,
             "versionDate": getCurrentDate(),
             "size": 5652400,
             "downloadURL": link,
             "developerName": "Unknow",
-            "localizedDescription": `DNS Required - ${bundle === 'certificate'? "Download Only": "Direct install only."}`,
+            "localizedDescription": `DNS Required - ${bundle === 'certificate' ? "Download Only" : "Direct install only."}`,
             "iconURL": iconUrl
         });
+        
+        // Nếu vừa thêm AppleJr DNS thì đánh dấu
+        if (name === "AppleJr DNS") {
+            addedAppleJrDNS = true;
+            console.log(`✓ Đã thêm app: ${name}`);
+        }
     });
-}
-
-
-function downloadFile(data, filename) {
-    let jsonStr = JSON.stringify(data, null, 2);
-    const blob = new Blob([jsonStr], {
-        type: 'application/json'
-    });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(link.href);
 }
 
 (async () => {

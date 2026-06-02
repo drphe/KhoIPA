@@ -9,7 +9,7 @@
   "apps": [
     {
       "name": "AppleJr DNS Anti-Revoke ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.1",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -21,7 +21,7 @@
     },
     {
       "name": "Esign  • Beijing Xibei 1 ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.2",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -33,7 +33,7 @@
     },
     {
       "name": "NEW Esign  • Beijing Xibei 2 ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.3",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -45,7 +45,7 @@
     },
     {
       "name": "Esign  • BIC Limited ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.4",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -57,7 +57,7 @@
     },
     {
       "name": "Esign  • BZI ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.5",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -69,7 +69,7 @@
     },
     {
       "name": "Esign  • Aramco Services ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.6",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -81,7 +81,7 @@
     },
     {
       "name": "Esign  • PowerChin ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.7",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -93,7 +93,7 @@
     },
     {
       "name": "Esign  • Luoyang ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.8",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -105,7 +105,7 @@
     },
     {
       "name": "NEW Esign  • Aramco Services ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.9",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -117,7 +117,7 @@
     },
     {
       "name": "Esign  • Qingdao ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.10",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -129,7 +129,7 @@
     },
     {
       "name": "ESign • XL Axiata ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.11",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -141,7 +141,7 @@
     },
     {
       "name": "ESign • Oilwell Provision 2 ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.12",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -153,7 +153,7 @@
     },
     {
       "name": "ESign • VIETNAM AIRLINES ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.13",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -165,7 +165,7 @@
     },
     {
       "name": "ESign • ForeverMark ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.14",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -177,7 +177,7 @@
     },
     {
       "name": "Esign • Election United ",
-      "type": 4,
+      "type": 0,
       "bundleIdentifier": "dns.esign.15",
       "version": "5.0.2",
       "versionDate": "2026-06-02",
@@ -188,21 +188,9 @@
       "iconURL": "https://i.imgur.com/o8HGFP6m.png"
     },
     {
-      "name": "AppleJr DNS Anti-Revoke ",
-      "type": 4,
-      "bundleIdentifier": "dns.ksign.1",
-      "version": "1.5.1",
-      "versionDate": "2026-06-02",
-      "size": 5652400,
-      "downloadURL": "https://d1yei2z3i6k35z.cloudfront.net/12011129/6a11ed7c39f438.33446416_signed_applejr.net.mobileconfig",
-      "developerName": "Unknow",
-      "localizedDescription": "DNS Required - Direct install only.",
-      "iconURL": "https://i.imgur.com/QQ563esm.png"
-    },
-    {
       "name": "Ksign  • Xibei ",
-      "type": 4,
-      "bundleIdentifier": "dns.ksign.2",
+      "type": 0,
+      "bundleIdentifier": "dns.ksign.1",
       "version": "1.5.1",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -213,8 +201,8 @@
     },
     {
       "name": "Ksign  • Luoyang ",
-      "type": 4,
-      "bundleIdentifier": "dns.ksign.3",
+      "type": 0,
+      "bundleIdentifier": "dns.ksign.2",
       "version": "1.5.1",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -225,8 +213,8 @@
     },
     {
       "name": "Ksign • Aramco Services ",
-      "type": 4,
-      "bundleIdentifier": "dns.ksign.4",
+      "type": 0,
+      "bundleIdentifier": "dns.ksign.3",
       "version": "1.5.1",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -237,8 +225,8 @@
     },
     {
       "name": "Ksign • Beijing Zhizhangyi Inc. ",
-      "type": 4,
-      "bundleIdentifier": "dns.ksign.5",
+      "type": 0,
+      "bundleIdentifier": "dns.ksign.4",
       "version": "1.5.1",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -249,8 +237,8 @@
     },
     {
       "name": "Ksign • XL AXIATA ",
-      "type": 4,
-      "bundleIdentifier": "dns.ksign.6",
+      "type": 0,
+      "bundleIdentifier": "dns.ksign.5",
       "version": "1.5.1",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -260,21 +248,9 @@
       "iconURL": "https://i.imgur.com/347Q9VHm.png"
     },
     {
-      "name": "AppleJr DNS Anti-Revoke ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.1",
-      "version": "1.0",
-      "versionDate": "2026-06-02",
-      "size": 5652400,
-      "downloadURL": "https://d1yei2z3i6k35z.cloudfront.net/12011129/6a11ed7c39f438.33446416_signed_applejr.net.mobileconfig",
-      "developerName": "Unknow",
-      "localizedDescription": "DNS Required - Direct install only.",
-      "iconURL": "https://i.imgur.com/QQ563esm.png"
-    },
-    {
       "name": "Scarlet  • Xibei ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.2",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.1",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -285,8 +261,8 @@
     },
     {
       "name": "Scarlet  • Luoyang ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.3",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.2",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -297,8 +273,8 @@
     },
     {
       "name": "Scarlet V2 • Aramco Services ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.4",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.3",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -309,8 +285,8 @@
     },
     {
       "name": "Scarlet V2 • XL AXIATA ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.5",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.4",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -321,8 +297,8 @@
     },
     {
       "name": "Scarlet V2 • Updated National Oilwel ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.6",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.5",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -333,8 +309,8 @@
     },
     {
       "name": "Scarlet V1 • Updated National Oilwel ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.7",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.6",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -345,8 +321,8 @@
     },
     {
       "name": "Scarlet • Tianjin University ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.8",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.7",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -357,8 +333,8 @@
     },
     {
       "name": "Scarlet • Education Certs ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.9",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.8",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -369,8 +345,8 @@
     },
     {
       "name": "Scarlet • Viet Telecom ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.10",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.9",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,
@@ -381,8 +357,8 @@
     },
     {
       "name": "Scarlet • HDFC ",
-      "type": 4,
-      "bundleIdentifier": "dns.scarlet.11",
+      "type": 0,
+      "bundleIdentifier": "dns.scarlet.10",
       "version": "1.0",
       "versionDate": "2026-06-02",
       "size": 5652400,

@@ -432,9 +432,27 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         bottomPanel.querySelectorAll("a.install").forEach(button => {
             button.addEventListener("click", event => {
                 event.preventDefault();
-		if(app.sourceName === "AppleJr Repo") {
-			location.href = app.downloadURL;
-			copyLinkIPA(app.downloadURL); 
+		if(app.sourceName === "AppleJr Repo" || app.sourceName === "Khoindvn Repo") {
+        const installDirectAlert = new UIAlert({
+            title: `${langText['get']} "${app.name}"`
+        });
+        installDirectAlert.addAction({
+            title: langText['directinstall'],
+            style: 'default',
+            handler: () => open(`${app.downloadURL}`)
+        });
+
+        installDirectAlert.addAction({
+            title: langText['copylink'],
+            style: 'default',
+            handler: () => copyLinkIPA(app.downloadURL)
+        });
+        installDirectAlert.addAction({
+            title: langText['cancel'],
+            style: 'cancel',
+        });
+	installDirectAlert.present();
+
 		}
                 else installAppAlert.present();
             });
