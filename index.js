@@ -111,7 +111,10 @@ if ('serviceWorker' in navigator) {
     let countAllRepo = 0;
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
+
         for (const app of source.apps) {
+	    if(source.featuredApps?.length) 
+	    app.isFeatured = source.featuredApps?.includes(app.bundleIdentifier)??false;
             app.sourceURL = source.sourceURL;
             app.sourceName = source.name;
             app.sourceIconURL = source.iconURL;
@@ -164,8 +167,14 @@ if ('serviceWorker' in navigator) {
         $("#suggestions2").insertAdjacentHTML("beforeend", AppHeader(app));
         count++;
     });
+    count = 1, allAppsView = allApps.filter(s => s.isFeatured);
+    allAppsView.forEach(app => {
+        if (count > maxapps) return;
+        $("#suggestions3").insertAdjacentHTML("beforeend", AppHeader(app));
+        count++;
+    });
     // cuộn ngang
-    const sliders = document.querySelectorAll('#suggestions, #suggestions2');
+    const sliders = document.querySelectorAll('#suggestions, #suggestions2,#suggestions3');
     sliders.forEach(slider => {
         let isDown = false;
         let startX;
@@ -311,6 +320,15 @@ if ('serviceWorker' in navigator) {
         addAppList({
             apps: allApps
         }, 20, 2);
+        activateNavLink("page-library");
+    });
+    $('#search3')?.addEventListener("click", async (e) => {
+        e.preventDefault();
+        await openPanel('<div id="apps-list"></div>', `<p>${langText['featuredapps']}</p>`, '.', "side", "apps-popup-all");
+	let allAppsView = allApps.filter(s => s.isFeatured);
+        addAppList({
+            apps: allAppsView// thay danh sách featured
+        }, 20, 0);
         activateNavLink("page-library");
     });
     //

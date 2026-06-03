@@ -276,6 +276,7 @@ const translations = {
         allrepo: "All Repositories",
         allapps: "All Apps",
         featuredapps: "Featured Apps",
+        featuredrepo: "Featured Repo",
         allnews: "All News",
         news: "News",
         contents: "CONTENTS",
