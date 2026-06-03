@@ -2,7 +2,7 @@ name: Auto Update Repos (Tiptip & Khoindvn)
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # 12:00 UTC = 20:00 GMT+7
+    - cron: '0 3 * * *'  # 3:00 UTC = 10:00 GMT+7
   workflow_dispatch:
 
 jobs:
