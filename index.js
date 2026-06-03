@@ -37,7 +37,53 @@ if ('serviceWorker' in navigator) {
     });
 }
 (async () => {
+    // chèn và tắt quảng cáo
     $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
+    const hideAds = localStorage.getItem('hideAds');
+    const currentTime = new Date().getTime();
+    if (hideAds && currentTime < parseInt(hideAds) || isPWA) {
+        $(".uibanner").style.display="none";
+ 	$("#main").style.top="2.5rem";
+    }
+    const anAds = new UIAlert({
+        title: langText['tbao'],
+        message:langText['hideads7']
+    });
+    anAds.addAction({
+        title: langText['yesb'],
+        style: "default",
+        handler: ()=> anAdsUntil(7)
+    });
+    anAds.addAction({
+        title: langText['cancel'],
+        style: "cancel",
+    });
+    $("#close-btn").addEventListener('click', function() {
+	anAds.present(); 
+    });
+    function anAdsUntil(t){
+       const oneWeekInMilliseconds = t * 24 * 60 * 60 * 1000;
+        const expiryTime = new Date().getTime() + oneWeekInMilliseconds;
+        localStorage.setItem('hideAds', expiryTime);
+        $(".uibanner").style.display="none";
+ 	$("#main").style.top="2.5rem";
+    }
+    // bật tính năng thông báo trên app
+    const checkNoti = new UIAlert({
+        title: langText['checknoti'],
+        message:langText['checknotiText']
+    });
+    checkNoti.addAction({
+        title: langText['continu'],
+        style: "default",
+        handler: enableNotifications
+    });
+    checkNoti.addAction({
+        title: langText['cancel'],
+        style: "cancel",
+    });
+    isPWA &&"Notification" in window && Notification.permission === "default" && checkNoti.present() ;// nếu đang trên PWA thì kiểm tra thống báo
+
     // fetch Data
     const sources = await json("./common/assets/json/sources.json");
     const featuredSources = (await Promise.all(sources.featured.map(async url => {
@@ -462,7 +508,7 @@ if ('serviceWorker' in navigator) {
                     style: "default",
                     handler: () => {
 			navigator.clipboard.writeText(so.sourceURL.replace(/\.json$/, '.altstore.json')); 
-			showUIAlert(langText['success'], "Link source copied!");
+			//showUIAlert(langText['success'], "Link source copied!");
 		    }
                    });
 		   othertext = " (Esign/Feather)"
@@ -470,7 +516,7 @@ if ('serviceWorker' in navigator) {
                 repoAlert.addAction({
                     title: langText['copylink']+ othertext,//Esign, Feather, Ksign
                     style: "default",
-                    handler: () => {navigator.clipboard.writeText(so.sourceURL); showUIAlert(langText['success'], "Link source copied!");}
+                    handler: () => {navigator.clipboard.writeText(so.sourceURL);}
                 });
 
                 repoAlert.addAction({
@@ -593,20 +639,6 @@ if ('serviceWorker' in navigator) {
         });
     }
 
-    const checkNoti = new UIAlert({
-        title: langText['checknoti'],
-        message:langText['checknotiText']
-    });
-    checkNoti.addAction({
-        title: langText['continu'],
-        style: "default",
-        handler: enableNotifications
-    });
-    checkNoti.addAction({
-        title: langText['cancel'],
-        style: "cancel",
-    });
-    isPWA &&"Notification" in window && Notification.permission === "default" && checkNoti.present();
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");

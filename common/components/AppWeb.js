@@ -30,8 +30,13 @@ export const AppBanner = (name) => `
                 </p>
             </div>
         </div>
+	<div style="display: flex;">
         <a href="" class="install-app">
             <button id="add-to-altstore">${isPWA ? btnText(): "Add"}</button>
         </a>
+        <button id="close-btn" aria-label="Close" style="">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="8" x2="16" y2="16"></line><line x1="16" y1="8" x2="8" y2="16"></line>
+</svg></button>
+    	</div>
     </div>
 </div>`;

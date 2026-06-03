@@ -1,5 +1,9 @@
 const translations = {
     vi: {
+	yesb:"Đồng ý",
+	tbao:"Thông báo",
+	hideads7: "Ẩn quảng cáo 7 ngày",
+        signer:"Nhập vào...",
 	entersource: "Nhập tên kho lưu trữ...",
 	directinstall: "Tiếp tục ...",
         viewdetail: "Xem chi tiết...",
@@ -26,10 +30,10 @@ const translations = {
         installviaesign: "Cài đặt qua Esign",
         downloadipa: "Tải xuống IPA",
         installapp: "Cài đặt ngay",
-        copylink: "Sao chép link",
+        copylink: "Sao chép đường dẫn",
         cancel: "Hủy",
         version: "Phiên bản",
-        copysuccess: "Đã sao chép link vào bộ nhớ đệm!\nDán link vào safari hoặc Esign/Feather/Ksign...",
+        copysuccess: "Đã sao chép đường dẫn vào bộ nhớ đệm!\nDán vào safari hoặc Esign/Feather/Ksign...",
         copyfailed: "Không thể sao chép đường dẫn tệp IPA!",
         addtoesign: "Thêm vào Esign",
         addtoesignText: "Nếu bạn có Esign, thêm kho lưu trữ này vào bạn có thể tải các bản cập nhật mới nhất ngay khi có.",
@@ -229,6 +233,10 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+	yesb:"Yes", 
+	tbao:"Hide Ads",
+	hideads7: "for 7 days",
+        signer:"Signer...",
 	entersource: "Enter Repo's name...",
 	directinstall: "Continue ...",
         viewdetail: "View detail...",
