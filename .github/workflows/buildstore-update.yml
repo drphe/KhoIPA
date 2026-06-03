@@ -2,9 +2,8 @@ name: Auto Update BuildStore Repo
 
 on:
   schedule:
-    # 20:00 GMT+7 = 12:00 UTC
-    - cron: '0 12 * * *'
-  workflow_dispatch:
+    - cron: '0 13 * * *'   # 13:00 UTC = 20:00 GMT+7
+  workflow_dispatch:        # giữ lại để vẫn có thể chạy thủ công
 
 jobs:
   update-buildstore:
@@ -37,23 +36,32 @@ jobs:
       env:
         NODE_NO_WARNINGS: 1
     
-    - name: Check for changes
-      id: git-check
-      run: |
-        git config --global user.name 'GitHub Actions Bot'
-        git config --global user.email 'actions@github.com'
-        git add -A
-        git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
-    
     - name: Commit and push changes
-      if: steps.git-check.outputs.changes == 'true'
       env:
         TZ: 'Asia/Ho_Chi_Minh'
       run: |
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
-        git commit -m "Auto-update BuildStore - $(date +'%Y-%m-%d %H:%M:%S') GMT+7"
-        git push origin main
+        
+        # Stash any local changes
+        git stash push --include-untracked -m "auto-stash"
+        
+        # Pull latest changes with rebase
+        git pull origin main --rebase
+        
+        # Restore stashed changes
+        git stash pop || true
+        
+        # Add all changes
+        git add -A
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-update BuildStore - $(date +'%Y-%m-%d %H:%M:%S') GMT+7"
+          git push origin main
+        fi
     
     - name: Upload artifacts
       if: always()
