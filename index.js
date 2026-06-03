@@ -424,15 +424,21 @@ if ('serviceWorker' in navigator) {
         activateNavLink("page-source");
     });
     // open app
-    document.addEventListener("click", event => {
+    document.addEventListener("click", (event) => {
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install-app");
         const targetNews = event.target.closest("a.news-item-header");
         const targetNewsLink = event.target.closest("a.news-item-link");
 	const sourceLink = event.target.closest("a.source-link");
-        if (sourceLink) { /////
-            event.preventDefault(); //identifier
+	const showAppPanel = async (so) => {
+            await openPanel('<div id="apps-list"></div>', `<p>${so.name} (${so.apps.length})</p>`, '.', "side", "apps-popup-all");
+            addAppList({ apps: so.apps }, 20, 0);
+            activateNavLink("page-library");
+        };
+        if (sourceLink) {
+            event.preventDefault(); 
             const identifier = sourceLink.getAttribute("data-identifier");
+            let act = sourceLink.getAttribute("data-action");
             let so = allSources.find(s => s.identifier == identifier) ?? undefined;
             if (so) {
                 const repoAlert = new UIAlert({
@@ -447,22 +453,19 @@ if ('serviceWorker' in navigator) {
                 repoAlert.addAction({
                     title: langText["quicksearch"],
                     style: "default",
-                    handler: async () => {
-                        await openPanel('<div id="apps-list"></div>', `<p>${so.name} (${so.apps.length})</p>`, '.', "side", "apps-popup-all");
-                        addAppList({
-                            apps: so.apps
-                        }, 20, 0);
-                        activateNavLink("page-library");
-                    }
+                    handler: ()=>showAppPanel(so)
                 });
 		let othertext = "";
 		if(so.sourceURL.includes("KhoIPA/main/upload/repo")){
                    repoAlert.addAction({
                     title: langText['copylink']+ ` (Altstore)`,
                     style: "default",
-                    handler: () => {navigator.clipboard.writeText(so.sourceURL.replace(/\.json$/, '.altstore.json')); showUIAlert(langText['success'], "Link source copied!");}
+                    handler: () => {
+			navigator.clipboard.writeText(so.sourceURL.replace(/\.json$/, '.altstore.json')); 
+			showUIAlert(langText['success'], "Link source copied!");
+		    }
                    });
-		othertext = " (Esign/Feather)"
+		   othertext = " (Esign/Feather)"
 		}
                 repoAlert.addAction({
                     title: langText['copylink']+ othertext,//Esign, Feather, Ksign
@@ -474,7 +477,7 @@ if ('serviceWorker' in navigator) {
                     title: langText['cancel'],
                     style: "cancel",
                 });
-                repoAlert.present();
+                act ? repoAlert.present():showAppPanel(so);
             }
         } 
         if (targetInstall) {
