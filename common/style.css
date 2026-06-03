@@ -1804,3 +1804,9 @@ pre {
 .bi-chevron-right {
     height: 1.2rem;
 }
+    @keyframes springBounce {
+        0% { transform: scale(1); }
+        40% { transform: scale(1.08); }
+        70% { transform: scale(0.98); }
+        100% { transform: scale(1); }
+    }

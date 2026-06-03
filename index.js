@@ -515,8 +515,21 @@ if ('serviceWorker' in navigator) {
     });
     document.querySelectorAll(".nav-link").forEach(link => {
         link.addEventListener("click", async () => {
-            document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
+        // Thêm hiệu ứng haptic nhẹ (nếu được hỗ trợ)
+        if (window.navigator && window.navigator.vibrate) {
+            window.navigator.vibrate(10);
+        }
+        document.querySelectorAll('.nav-link').forEach(nav => {
+            nav.classList.remove('active');
+            nav.style.transform = 'scale(1)';
+        });
             link.classList.add("active");
+        // Animation bounce nhẹ
+        link.style.animation = 'springBounce 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
+        setTimeout(() => {
+            link.style.animation = '';
+        }, 400);
+
             const target = link.dataset.target;
             if (target == window.oldTargetPage) return;
             window.oldTargetPage = target
