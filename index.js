@@ -328,7 +328,7 @@ if ('serviceWorker' in navigator) {
 	let allAppsView = allApps.filter(s => s.isFeatured);
         addAppList({
             apps: allAppsView// thay danh sách featured
-        }, 20, 0);
+        }, 20, 0, false);
         activateNavLink("page-library");
     });
     //
