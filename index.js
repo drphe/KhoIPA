@@ -308,18 +308,18 @@ if ('serviceWorker' in navigator) {
     else openPanel({}, ""); // preload panel
     $('#search')?.addEventListener("click", async (e) => {
         e.preventDefault();
-        await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
+        await openPanel('<div id="apps-list"></div>', `<p>${langText['updateapp']}</p>`, '.', "side", "apps-popup-all");
         addAppList({
             apps: allApps
-        }, 20, 1);
+        }, 20, 1, false);// ko lọc
         activateNavLink("page-library");
     });
     $('#search2')?.addEventListener("click", async (e) => {
         e.preventDefault();
-        await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
+        await openPanel('<div id="apps-list"></div>', `<p>${langText['updategame']}</p>`, '.', "side", "apps-popup-all");
         addAppList({
             apps: allApps
-        }, 20, 2);
+        }, 20, 2, false);
         activateNavLink("page-library");
     });
     $('#search3')?.addEventListener("click", async (e) => {

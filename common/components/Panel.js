@@ -679,7 +679,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         }
     });
 }
-export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollTarget) {
+export async function addAppList(source, appsPerLoad = 20, filterType=0, enableFiller = true,scrollTarget) {
     const appsContainer = $('#apps-list');
     if (!appsContainer) return;
     const allApps = source.apps;
@@ -769,7 +769,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, scrollT
     searchWrapper.appendChild(searchIcon);
     searchWrapper.appendChild(searchBox);
     searchWrapper.appendChild(xIcon);
-    searchWrapper.appendChild(filter);
+    enableFiller && searchWrapper.appendChild(filter);
     appsContainer.before(searchWrapper);
     searchBox.focus();// focus
     async function run() {
