@@ -429,30 +429,31 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         }
         // listen install button
         bottomPanel.querySelectorAll("a.install").forEach(button => {
-            button.addEventListener("click", event => {
+            button.addEventListener("click", async(event) => {
                 event.preventDefault();
-		if(app.sourceName === "AppleJr Repo" || app.sourceName === "Khoindvn Repo") {
-        const installDirectAlert = new UIAlert({
-            title: `${langText['get']} "${app.name.trim()}"`
-        });
-        installDirectAlert.addAction({
-            title: langText['directinstall'],
-            style: 'default',
-            handler: () => open(`${app.downloadURL}`)
-        });
+                if (app.sourceName === "AppleJr Repo" || app.sourceName === "Khoindvn Repo") {
+                    const installDirectAlert = new UIAlert({
+                        title: `${langText['get']} "${app.name.trim()}"`
+                    });
+                    installDirectAlert.addAction({
+                        title: langText['directinstall'],
+                        style: 'default',
+                        handler: () => open(`${app.downloadURL}`)
+                    });
 
-        installDirectAlert.addAction({
-            title: langText['copylink'],
-            style: 'default',
-            handler: () => copyLinkIPA(app.downloadURL)
-        });
-        installDirectAlert.addAction({
-            title: langText['cancel'],
-            style: 'cancel',
-        });
-	installDirectAlert.present();
-		}
-                else installAppAlert.present();
+                    installDirectAlert.addAction({
+                        title: langText['copylink'],
+                        style: 'default',
+                        handler: () => copyLinkIPA(app.downloadURL)
+                    });
+                    installDirectAlert.addAction({
+                        title: langText['cancel'],
+                        style: 'cancel',
+                    });
+                    await installDirectAlert.present();
+                } else {
+                    await installAppAlert.present();
+                }
             });
         });
         // scroll down to close
@@ -557,7 +558,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 bottomPanel.style.transform = "";
             }
         });
-
     } else {
         console.log("Preload Panel.")
         return;
@@ -641,18 +641,21 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
 	 if (remainingOpenPanels.length === 0) {
-            activateNavLink("page-home");
+	    oldTargetPage = ["page-home"];
+	    activateNavLink(oldTargetPage[oldTargetPage.length-1]);
             document.body.classList.remove('no-scroll');
-        }else if (bottomPanel.id === 'apps-popup-all' || bottomPanel.id === 'popup-all-news') {
-            remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
-            document.body.classList.remove('no-scroll');
-	    activateNavLink("page-home");
-            refresher = PullToRefresh.init(refreshConfig);
+        }else if (bottomPanel.id === 'apps-popup-all' || bottomPanel.id === 'popup-all-news' ||bottomPanel.id === 'sources-popup-all') {
+            //remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
+            //document.body.classList.remove('no-scroll');
+
+            //isPWA && (refresher = PullToRefresh.init(refreshConfig));
+	    oldTargetPage.pop();
+	    activateNavLink(oldTargetPage[oldTargetPage.length-1]);
   	    document.querySelectorAll('div[data-type="news"]').forEach(div =>div.remove());
         } 
     }
     // show popup
-   setTimeout(() => bottomPanel.classList.add("show"), 10);//show when everything ready
+    setTimeout(() => bottomPanel.classList.add("show"), 10);//show when everything ready
     waitForAllImagesToLoad(bottomPanel);
     document.body.classList.add('no-scroll');
     refresher.destroy();
@@ -661,25 +664,30 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     // control popup
     const closeBottom = bottomPanel.querySelector("#back-container");
     closeBottom.addEventListener("click",closePanel);
-    document.addEventListener("click", ({
-        target
-    }) => { // logic đóng panel
-        const uialert = document.querySelector("#uialert-container");
-        const trans = document.querySelector("#translateBtn");
-        const fslight = document.querySelector(".fslightbox-container");
-        const navglass = document.querySelector(".bottom-nav-glass");
-        const panels = document.querySelectorAll(".panel");
-        const isInsidePanel = [...panels].some(panel => panel.contains(target));
-        const isOutsideBottomPanel = !bottomPanel.contains(target);
-        const isOutsideUIAlert = !uialert?.contains(target);
-        const isOutsideFsLight = !fslight?.contains(target);
-        const isOutsideNav = !navglass?.contains(target);
-        const isOutsideTrans = !trans?.contains(target);
 
-        if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight && isOutsideNav && isOutsideTrans) {
-            closePanel();
-        }
-    });
+// kiểm tra khi click ngoài bottom
+function handleGlobalClick({ target }) {
+    const uialert = document.querySelector("#uialert-container");
+    const trans = document.querySelector("#translateBtn");
+    const fslight = document.querySelector(".fslightbox-container");
+    const navglass = document.querySelector(".bottom-nav-glass");
+    const panels = document.querySelectorAll(".panel");
+    const isInsidePanel = [...panels].some(panel => panel.contains(target));
+    const isOutsideBottomPanel = !bottomPanel.contains(target);
+    const isOutsideUIAlert = !uialert?.contains(target);
+    const isOutsideFsLight = !fslight?.contains(target);
+    const isOutsideNav = !navglass?.contains(target);
+    const isOutsideTrans = !trans?.contains(target);
+    if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight && isOutsideNav && isOutsideTrans) {
+        closePanel();
+    }
+}
+    if (window._currentClickHandler) {
+        document.removeEventListener("click", window._currentClickHandler);
+    }
+    window._currentClickHandler = handleGlobalClick;
+    document.addEventListener("click", window._currentClickHandler);
+
 }
 export async function addAppList(source, appsPerLoad = 20, filterType=0, enableFiller = true,scrollTarget) {
     const appsContainer = $('#apps-list');

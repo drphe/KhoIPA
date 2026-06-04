@@ -470,7 +470,7 @@ if ('serviceWorker' in navigator) {
         activateNavLink("page-source");
     });
     // open app
-    document.addEventListener("click", (event) => {
+    document.addEventListener("click", async(event) => {
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install-app");
         const targetNews = event.target.closest("a.news-item-header");
@@ -523,7 +523,7 @@ if ('serviceWorker' in navigator) {
                     title: langText['cancel'],
                     style: "cancel",
                 });
-                act ? repoAlert.present():showAppPanel(so);
+                act ? (await repoAlert.present()):showAppPanel(so);
             }
         } 
         if (targetInstall) {
@@ -532,12 +532,14 @@ if ('serviceWorker' in navigator) {
 		window.isReload = false;
 		location.reload();
 	    }else if (!isPWA) showUIAlert(langText['howtoinstall'], langText['howtoinstallText']);
-            else enableNotifications();
+            else {
+		await enableNotifications();
+	    }
         }
         if (targetNewsLink) {
             event.preventDefault();
             const url = targetNewsLink.getAttribute("data-url");
-            executeNews('./view/note/' + url, langText['contents'], "news-popup-link");
+            await executeNews('./view/note/' + url, langText['contents'], "news-popup-link");
         }
         if (targetNews) {
             event.preventDefault();
@@ -547,7 +549,7 @@ if ('serviceWorker' in navigator) {
                 window.open(url, "_blank");
                 return;
             }
-            executeNews('./view/note/' + url, title);
+            await executeNews('./view/note/' + url, title);
         }
         if (targetLink){
         	event.preventDefault();
@@ -557,45 +559,41 @@ if ('serviceWorker' in navigator) {
             		console.warn(`Source not found for bundleId: ${bundleId}`);
             	return;
         	}
-        	openPanel(sourceTarget, bundleId, ".", "bottom");
+        	await openPanel(sourceTarget, bundleId, ".", "bottom");
 	}
     });
     document.querySelectorAll(".nav-link").forEach(link => {
         link.addEventListener("click", async () => {
-        // Thêm hiệu ứng haptic nhẹ (nếu được hỗ trợ)
-        if (window.navigator && window.navigator.vibrate) {
-            window.navigator.vibrate(10);
-        }
-        // Animation bounce nhẹ
-        link.style.animation = 'springBounce 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
-        setTimeout(() => {link.style.animation = '';}, 400);
+            if (window.navigator && window.navigator.vibrate) {
+                window.navigator.vibrate(10);
+            }
+            link.style.animation = 'springBounce 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
+            setTimeout(() => {
+                link.style.animation = '';
+            }, 400);
 
             const target = link.dataset.target;
-            if (target == window.oldTargetPage) return;
-            window.oldTargetPage = target
-	    activateNavLink(target); 
+            if (target == window.oldTargetPage[oldTargetPage.length-1]) return;
+            activateNavLink(target);
             if (target == 'page-source') {
                 await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
-		insertSearchBox();
+                insertSearchBox();
                 for (const source of allSources) {
                     await insertSource(source);
                 }
-            }
-            else if (target == 'page-library') {
+            } else if (target == 'page-library') {
                 await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
                 addAppList({
                     apps: allApps
                 }, 20);
-            }
-            else if (target == 'page-news') {
+            } else if (target == 'page-news') {
                 const html = `<div id="news" class="section grid_news">${jsonNews.map(item =>NewsItem(item, true)).join('')}</div>`;
                 openPanel(html, `<p>${langText["allnews"]} (${jsonNews.length})</p>`, '.', "side", "popup-all-news");
-            }
-            else {
+            } else {
                 document.querySelectorAll(".panel.show").forEach(l => l.classList.remove("show"));
                 document.body.classList.remove('no-scroll');
-        	refresher = PullToRefresh.init(refreshConfig);
-		
+                isPWA && (refresher = PullToRefresh.init(refreshConfig));
+
             }
         });
     });

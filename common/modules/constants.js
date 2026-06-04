@@ -321,7 +321,7 @@ window.isPWA = window.matchMedia('(display-mode: standalone)').matches || window
 window.langCode = getAppLanguage();
 window.langText = translations[langCode] || translations['en'];
 window.isReload = false;
-window.oldTargetPage = "page-home";
+window.oldTargetPage = ["page-home"];
 
 window.refreshConfig = {
         mainElement: 'body',
@@ -335,7 +335,8 @@ window.refreshConfig = {
         instructionsReleaseToRefresh: langText["releasetore"],
         instructionsRefreshing: langText["loading"]
     }
- window.refresher = PullToRefresh.init(refreshConfig); console.log('batcc')
+window.refresher = PullToRefresh.init(refreshConfig) ;
+                isPWA && refresher.destroy();
 document.querySelector('meta[property="og:url"]')?.setAttribute("content", window.location.origin);
 document.documentElement.lang = langCode;
 document.querySelectorAll('span[data-text]').forEach(

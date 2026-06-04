@@ -214,12 +214,12 @@ main(json => {
             link.style.animation = '';
         }, 400);
             const target = link.dataset.target;
-            if (target == window.oldTargetPage) return;
-            window.oldTargetPage = target
+            if (target == window.oldTargetPage[oldTargetPage.length-1]) return;
 	    activateNavLink(target); 
             if (target == 'page-source') {
                 await installSourceAlert.present();
-	        activateNavLink("page-home"); 
+		oldTargetPage.pop();
+	        activateNavLink(oldTargetPage[oldTargetPage.length-1]);
             }
             else if (target == 'page-library') {
                 await openPanel('<div id="apps-list"></div>', `<p>${json.name}</p>`, '..', "side", "apps-popup-all");
@@ -232,7 +232,7 @@ main(json => {
             else {
                 document.querySelectorAll(".panel.show").forEach(l => l.classList.remove("show"));
                 document.body.classList.remove('no-scroll');
-        	refresher = PullToRefresh.init(refreshConfig);
+                isPWA && (refresher = PullToRefresh.init(refreshConfig));
             }
         });
     });

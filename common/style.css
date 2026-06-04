@@ -1540,7 +1540,12 @@ hr {
 #news .app-header-container {
     padding: 0;
 }
-
+.app-header-container a,
+.app-header-container a:hover,
+.app-header-container a:active,
+.app-header-container a:visited {
+    text-decoration: none!important;
+}
 .two-column-layout {
     display: flex;
     height: 100%;

@@ -347,13 +347,16 @@ export function activateNavLink(e) {
         else
             l.classList.remove("active");
     });
-    window.oldTargetPage = e;
-    if (e == "page-home") {
+    const remainSide = document.querySelectorAll(".panel.side.show");
+    if (remainSide.length === 0||e == "page-home") {
+	oldTargetPage = ["page-home"];
+	document.querySelectorAll(".panel.bottom.show").forEach(panel => panel.classList.remove("show"));
+    }
+    if (e !== window.oldTargetPage[oldTargetPage.length-1]) oldTargetPage.push(e);
         const urlView = new URL(window.location.href);
         urlView.searchParams.delete('note');
         urlView.searchParams.delete('bundleID');
         history.replaceState({}, '', urlView);
-    }
 }
 
 export function waitForAllImagesToLoad(container) {
