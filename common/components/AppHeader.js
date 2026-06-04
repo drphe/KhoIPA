@@ -72,3 +72,28 @@ export const AppLoading = (id = "apps-list", position = "beforeend") => {
       </div>
     </div>`);
 };
+
+export const appHeaderLine = (source, app)=> {
+	return app? `
+	<a href="#" data-bundleid="${app.bundleIdentifier}" class="app-header-link" style="">
+	    <div class="app-header-inner-container" style="">
+	        <div class="app-header">
+	            <div class="content" style="padding: 0.4rem 1rem;">
+	                <div class="app-icon-wrapper">
+	                    <span class="small ${checkBeta(app.beta)} badge" style="opacity: 1; position: absolute; top: -4px;"></span>
+	                    <img id="app-icon" class="" src="${app.iconURL}" onerror="this.onerror=null; this.src='https://drphe.github.io/KhoIPA/common/assets/img/generic_app.jpeg';" onload="this.previousElementSibling?.style.setProperty('opacity', '1');this.classList.remove('skeleton-effect-blink', 'skeleton-block');" alt="">
+	                    <img class="developer-icon" src="${source.iconURL}" onerror="this.onerror=null; this.src='https://placehold.co/25x25/${source.tintColor.replaceAll("#","")}/FFFFFF?text=${source.name.charAt(0).toUpperCase()}';" alt="">
+	                </div>
+	                <div class="right">
+	                    <div class="text">
+	                        <p class="title">${app.name}</p>
+	                        <p class="subtitle">${app.version ? app.version + ' &middot; ': ''}${app.size ? AppSize(app) + ' &middot; ': ''}${app.versionDate ? formatVersionDate(app.versionDate): formatVersionDate(app.versions[0].date)}</p>
+	                    </div>
+	                    <button class="uibutton" style="background-color: ${app.tintColor ? " #" + app.tintColor.replaceAll("#", "" ) : "var(--tint-color);" };">${langText['view']}</button>
+	                </div>
+	            </div>
+	            <div class="background" style="background-color: transparent;margin: 0px;padding: 0px;"></div>
+	        </div>
+	    </div>
+	</a>`:''; 
+    }

@@ -22,7 +22,7 @@ import {
     enableNotifications
 } from "./common/modules/utilities.js";
 import {AppBanner}from "./common/components/AppWeb.js";
-import {AppHeader}from "./common/components/AppHeader.js";
+import {AppHeader, appHeaderLine, checkBeta}from "./common/components/AppHeader.js";
 import {NewsItem}from "./common/components/NewsItem.js";
 import {openPanel,addAppList}from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
@@ -289,18 +289,10 @@ if ('serviceWorker' in navigator) {
         source.url = url;
         return source;
     }
+
     async function insertSource(source, id = "sources-list", position = "beforeend", flag = true) {
-        let imgApps = "";
+        let imgApps = "", featuredApp = `<div class="source-container swiper-slide" data-identifier="${source.identifier}">`;
         let count = 1;
-        const checkBeta = (inputValue) => {
-            if (typeof inputValue === 'boolean') {
-                return inputValue === true ? "beta" : undefined;
-            }
-            else if (typeof inputValue === 'string') {
-                return inputValue;
-            }
-            return undefined;
-        }
         source.apps.forEach(app => {
             if (count > 4) return;
             if (isValidHTTPURL(app.iconURL)) {
@@ -311,19 +303,30 @@ if ('serviceWorker' in navigator) {
                 count++;
             }
         });
+	count =1;
+	source.featuredApps?.forEach(appId => {
+	    const app = source.apps.find(s => s.bundleIdentifier == `${appId}@${source.identifier}`);
+            if (!app || count > 3) return;
+	    let appHtml = appHeaderLine(source, app);
+	    featuredApp +=appHtml;
+	    count++;
+	});
+	featuredApp +=`</div>`;
+	let useFeaturedapp = id !== "source-items" && source.featuredApps?.length > 3;
         $(`#${id}`).insertAdjacentHTML(position, `
-            <div class="source-container swiper-slide">
-				<div class="item" style="height:150px;padding:0px;opacity:1;background-color: #${source.tintColor.replaceAll("#", "")};
-				margin: 0px;border-radius: 1.5rem 1.5rem 0 0;background-image: url(${source.iconURL});background-repeat: no-repeat;background-position: center;background-size: 100px;">
-					<div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 0%, rgba(0, 0, 0, 0));
+            <div class="source-container swiper-slide" data-identifier="${source.identifier}">
+                <div class="item" style="height:150px;padding:0px;opacity:1;background-color: #${source.tintColor.replaceAll("#", "" )};margin: 0px;border-radius: 1.5rem 1.5rem 0 0;background-image: url(${source.iconURL});background-repeat: no-repeat;background-position: center;background-size: 100px;">
+                    <div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 0%, rgba(0, 0, 0, 0));
 				padding: 1em;height: 80%;text-align: center;">
-					${imgApps}
-					<div class="text" style="position: relative;color:white;"><p>${source.subtitle ?? ""}</p></div>
-					</div> 
-				</div>
-				<a href="./view/?source=${base64Convert(source.url)}" data-identifier="${source.identifier}" class="source-link">
-                    <div class="source" style="background-color: #${source.tintColor.replaceAll("#", "")};
-				margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : ""} 1.5rem 1.5rem;">
+                        ${useFeaturedapp? "": imgApps}
+
+                        <div class="text" style="position: relative;color:white; ${useFeaturedapp? "margin-top: 5rem;text-align: left;":""}">
+                            <p>${source.subtitle ?? ""}</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="./view/?source=${base64Convert(source.url)}" data-identifier="${source.identifier}" class="source-link">
+                    <div class="source" style="background-color: #${source.tintColor.replaceAll("#", "" )}; margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : "" } 1.5rem 1.5rem;">
                         <img src="${source.iconURL}" class="skeleton-effect-blink skeleton-block" onload="this.classList.remove('skeleton-effect-blink', 'skeleton-block');" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
                         <div class="right">
                             <div class="text">
@@ -337,6 +340,7 @@ if ('serviceWorker' in navigator) {
                     </div>
                 </a>
             </div>
+	    ${useFeaturedapp? featuredApp:""}
         `);
     }
     // 
@@ -380,30 +384,26 @@ if ('serviceWorker' in navigator) {
     //
 
     function filterSourcesByTitle(keyword) {
-        // Lấy tất cả các source-container
         const containers = document.querySelectorAll('#sources-list .source-container');
-
-        // Chuyển keyword về chữ thường để so sánh không phân biệt hoa/thường
         const searchTerm = keyword.toLowerCase();
-
         let visibleCount = 0;
-
+	let listView = [];
         containers.forEach(container => {
-            // Tìm thẻ p.title bên trong container
             const titleElement = container.querySelector('.source .title');
-
+	    const bundleId = container.getAttribute("data-identifier");
             if (titleElement) {
                 const titleText = titleElement.textContent.toLowerCase();
-
-                // Kiểm tra nếu title chứa keyword
                 if (titleText.includes(searchTerm)) {
-                    container.style.display = ''; // Hiện
+                    container.style.display = ''; 
+		    listView.push(bundleId)
                     visibleCount++;
                 } else {
-                    container.style.display = 'none'; // Ẩn
+                    container.style.display = 'none'; 
                 }
-            } else {
-                // Nếu không tìm thấy title, có thể ẩn hoặc giữ nguyên tùy logic
+            } else if(listView.includes(bundleId)) {
+                    container.style.display = ''; 
+	    }
+	    else {
                 container.style.display = 'none';
             }
         });
