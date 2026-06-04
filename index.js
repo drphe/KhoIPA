@@ -549,15 +549,16 @@ if ('serviceWorker' in navigator) {
             }
             executeNews('./view/note/' + url, title);
         }
-        if (!targetLink) return;
-        event.preventDefault();
-        const bundleId = targetLink.getAttribute("data-bundleid");
-        const sourceTarget = bundleIdToSourceMap.get(bundleId);
-        if (!sourceTarget) {
-            console.warn(`Source not found for bundleId: ${bundleId}`);
-            return;
-        }
-        openPanel(sourceTarget, bundleId, ".", "bottom");
+        if (targetLink){
+        	event.preventDefault();
+	        const bundleId = targetLink.getAttribute("data-bundleid");
+        	const sourceTarget = bundleIdToSourceMap.get(bundleId);
+        	if (!sourceTarget) {
+            		console.warn(`Source not found for bundleId: ${bundleId}`);
+            	return;
+        	}
+        	openPanel(sourceTarget, bundleId, ".", "bottom");
+	}
     });
     document.querySelectorAll(".nav-link").forEach(link => {
         link.addEventListener("click", async () => {
@@ -565,20 +566,14 @@ if ('serviceWorker' in navigator) {
         if (window.navigator && window.navigator.vibrate) {
             window.navigator.vibrate(10);
         }
-        document.querySelectorAll('.nav-link').forEach(nav => {
-            nav.classList.remove('active');
-            nav.style.transform = 'scale(1)';
-        });
-            link.classList.add("active");
         // Animation bounce nhẹ
         link.style.animation = 'springBounce 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
-        setTimeout(() => {
-            link.style.animation = '';
-        }, 400);
+        setTimeout(() => {link.style.animation = '';}, 400);
 
             const target = link.dataset.target;
             if (target == window.oldTargetPage) return;
             window.oldTargetPage = target
+	    activateNavLink(target); 
             if (target == 'page-source') {
                 await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
 		insertSearchBox();
@@ -599,6 +594,8 @@ if ('serviceWorker' in navigator) {
             else {
                 document.querySelectorAll(".panel.show").forEach(l => l.classList.remove("show"));
                 document.body.classList.remove('no-scroll');
+        	refresher = PullToRefresh.init(refreshConfig);
+		
             }
         });
     });
@@ -656,4 +653,5 @@ if ('serviceWorker' in navigator) {
             isScrolling = true;
         }
     });
+
 })();

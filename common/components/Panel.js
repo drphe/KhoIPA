@@ -40,7 +40,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
             showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
             return;
         }
-
         // If has multiple versions, show the latest one
         if (app.versions) {
             const latestVersion = app.versions[0];
@@ -641,20 +640,22 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
-        if (bottomPanel.id === 'apps-popup-all' || bottomPanel.id === 'popup-all-news') {
+	 if (remainingOpenPanels.length === 0) {
+            activateNavLink("page-home");
+            document.body.classList.remove('no-scroll');
+        }else if (bottomPanel.id === 'apps-popup-all' || bottomPanel.id === 'popup-all-news') {
             remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
             document.body.classList.remove('no-scroll');
 	    activateNavLink("page-home");
+            refresher = PullToRefresh.init(refreshConfig);
   	    document.querySelectorAll('div[data-type="news"]').forEach(div =>div.remove());
-        } else if (remainingOpenPanels.length === 0) {
-            activateNavLink("page-home");
-            document.body.classList.remove('no-scroll');
-        } else document.body.classList.add('no-scroll');
+        } 
     }
     // show popup
    setTimeout(() => bottomPanel.classList.add("show"), 10);//show when everything ready
     waitForAllImagesToLoad(bottomPanel);
     document.body.classList.add('no-scroll');
+    refresher.destroy();
     await getPreview();
     refreshFsLightbox();
     // control popup
@@ -674,6 +675,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         const isOutsideFsLight = !fslight?.contains(target);
         const isOutsideNav = !navglass?.contains(target);
         const isOutsideTrans = !trans?.contains(target);
+
         if (isOutsideBottomPanel && !isInsidePanel && isOutsideUIAlert && isOutsideFsLight && isOutsideNav && isOutsideTrans) {
             closePanel();
         }

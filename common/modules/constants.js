@@ -1,5 +1,8 @@
 const translations = {
     vi: {
+	loading:"Đang tải...",
+	pulltore:"Kéo xuống để tải lại",
+	releasetore:"Thả tay để tải lại",
 	yesb:"Đồng ý",
 	tbao:"Thông báo",
 	hideads7: "Ẩn quảng cáo 7 ngày",
@@ -233,6 +236,9 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+	loading:"Loading...",
+	pulltore:"Pull to refresh",
+	releasetore:"Release to refresh",
 	yesb:"Yes", 
 	tbao:"Hide Ads",
 	hideads7: "for 7 days",
@@ -310,12 +316,26 @@ const translations = {
         entilementText: "Entitlements are additional permissions that grant access to certain system services, including potentially sensitive information."
     }
 };
+
 window.isPWA = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 window.langCode = getAppLanguage();
 window.langText = translations[langCode] || translations['en'];
 window.isReload = false;
 window.oldTargetPage = "page-home";
 
+window.refreshConfig = {
+        mainElement: 'body',
+        threshold: 500,
+        onRefresh: function() {
+            window.location.reload();
+        },
+        iconArrow: '👇',
+        iconRefreshing: '⏳',
+        instructionsPullToRefresh: langText["pulltore"],
+        instructionsReleaseToRefresh: langText["releasetore"],
+        instructionsRefreshing: langText["loading"]
+    }
+ window.refresher = PullToRefresh.init(refreshConfig); console.log('batcc')
 document.querySelector('meta[property="og:url"]')?.setAttribute("content", window.location.origin);
 document.documentElement.lang = langCode;
 document.querySelectorAll('span[data-text]').forEach(

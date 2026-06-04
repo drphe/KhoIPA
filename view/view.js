@@ -234,6 +234,7 @@ main(json => {
             else {
                 document.querySelectorAll(".panel.show").forEach(l => l.classList.remove("show"));
                 document.body.classList.remove('no-scroll');
+        	refresher = PullToRefresh.init(refreshConfig);
             }
         });
     });

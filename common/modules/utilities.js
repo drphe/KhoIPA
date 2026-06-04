@@ -2,6 +2,7 @@ import { AltStoreBanner } from "../components/AltStoreBanner.js";
 import { NavigationBar } from "../components/NavigationBar.js";
 import { urlRegex, sourceURL } from "./constants.js";
 import UIAlert from "../vendor/uialert.js/uialert.js";
+
 const CACHE_NAME = 'kh0ipa-data-cache-v1';
 
 export const $ = selector => selector.startsWith("#") && !selector.includes(".") && !selector.includes(" ")
@@ -352,7 +353,6 @@ export function activateNavLink(e) {
         urlView.searchParams.delete('note');
         urlView.searchParams.delete('bundleID');
         history.replaceState({}, '', urlView);
-
     }
 }
 
