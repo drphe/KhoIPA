@@ -62,12 +62,11 @@
     body,
     .uibanner,
     #loading,
-    .ptr--ptr .ptr--text,/*pull to refresh*/
     .panel,
     .uibanner>.content>div>.text-container {
         background-color: var(--color-bg-dark) !important;
     }
-
+    .ptr--ptr .ptr--text,/*pull to refresh*/
     .nav-link,
     h2 button,
     p,

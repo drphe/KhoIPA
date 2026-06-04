@@ -330,7 +330,7 @@ window.refreshConfig = {
             window.location.reload();
         },
         iconArrow: '👇',
-        iconRefreshing: '⏳',
+        iconRefreshing: '<img src="./common/assets/img/loading.gif" alt="loading" style="width:24px;opacity:0.5">',
         instructionsPullToRefresh: langText["pulltore"],
         instructionsReleaseToRefresh: langText["releasetore"],
         instructionsRefreshing: langText["loading"]
