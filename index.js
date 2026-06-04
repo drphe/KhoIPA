@@ -313,8 +313,8 @@ if ('serviceWorker' in navigator) {
         });
         $(`#${id}`).insertAdjacentHTML(position, `
             <div class="source-container swiper-slide">
-				<div class="item" style="height:150px;padding:0px;opacity:0.9;background-color: #${source.tintColor.replaceAll("#", "")};
-				margin: 0px;border-radius: 1.5rem 1.5rem 0 0;">
+				<div class="item" style="height:150px;padding:0px;opacity:1;background-color: #${source.tintColor.replaceAll("#", "")};
+				margin: 0px;border-radius: 1.5rem 1.5rem 0 0;background-image: url(${source.iconURL});background-repeat: no-repeat;background-position: center;background-size: 100px;">
 					<div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 50%, rgba(0, 0, 0, 0));
 				padding: 1em;height: 80%;text-align: center;">
 					${imgApps}
@@ -523,7 +523,7 @@ if ('serviceWorker' in navigator) {
                     title: langText['cancel'],
                     style: "cancel",
                 });
-                act ? (await repoAlert.present()):showAppPanel(so);
+                act ? (await repoAlert.present()):(await showAppPanel(so));
             }
         } 
         if (targetInstall) {

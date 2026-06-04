@@ -519,10 +519,11 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         let startX;
         let currentX;
         let isDragging = false;
+	let hasProcessed = false;
         const dragThreshold = 50; 
         bottomPanel.addEventListener("touchstart", e => {
             startX = e.touches[0].clientX;
-            isDragging = true;
+            isDragging = true; 
             bottomPanel.style.transition = "none"; // Tắt hiệu ứng khi kéo
         });
         bottomPanel.addEventListener("touchmove", e => {
@@ -540,22 +541,27 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
                 }
             }
         });
+	
         bottomPanel.addEventListener("touchend", e => {
+	    if (!isDragging || hasProcessed) return;
             isDragging = false;
+	    hasProcessed = true;
             let endX = e.changedTouches[0].clientX;
-            // Tính deltaX cuối cùng, bao gồm cả phần kéo dưới ngưỡng
             let deltaX = endX - startX;
             bottomPanel.style.transition = "transform 0.3s ease";
-            // So sánh deltaX với ngưỡng trượt cuối (100px)
             if (deltaX > 100) {
-                // Trượt đi
                 bottomPanel.style.transform = `translateX(100%)`;
                 setTimeout(() => {
                     bottomPanel.style.transform = "";
+		    oldTargetPage = [];
 		    closePanel();
-                }, 100);
+		    hasProcessed = false;
+                }, 500);
             } else {
                 bottomPanel.style.transform = "";
+                setTimeout(() => {
+		    hasProcessed = false;
+                }, 1000);
             }
         });
     } else {
@@ -637,6 +643,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	}
 
     }
+
     function closePanel() {
         bottomPanel.classList.remove("show");
         const remainingOpenPanels = document.querySelectorAll(".panel.show");
@@ -647,8 +654,6 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         }else if (bottomPanel.id === 'apps-popup-all' || bottomPanel.id === 'popup-all-news' ||bottomPanel.id === 'sources-popup-all') {
             //remainingOpenPanels.forEach(panel => panel.classList.remove("show"));
             //document.body.classList.remove('no-scroll');
-
-            //isPWA && (refresher = PullToRefresh.init(refreshConfig));
 	    oldTargetPage.pop();
 	    activateNavLink(oldTargetPage[oldTargetPage.length-1]);
   	    document.querySelectorAll('div[data-type="news"]').forEach(div =>div.remove());

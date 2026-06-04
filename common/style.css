@@ -217,7 +217,30 @@ a, img, span {
     cursor: grab;
 }
 
+.app-header .content,.source-container .source {
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    transition: all 0.2s ease;
+    position: relative;
+}
 
+/* Thêm viền sáng mỏng cho source */
+.app-header .content::after,.source-container .source::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+    pointer-events: none;
+}
+.source-container .source {
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    filter: blur(0) saturate(0.8);
+    transition: all 0.2s ease;
+    position: relative;
+    background: linear-gradient(to top, var(--color-transparent-dark) 100%, rgba(0, 0, 0, 0));
+}
 .swiper {
     width: 100%;
     padding-bottom: 30px;
