@@ -235,11 +235,15 @@ a, img, span {
     pointer-events: none;
 }
 .source-container .source {
-    -webkit-backdrop-filter: blur(16px) saturate(1.2);
-    filter: blur(0) saturate(0.8);
+    -webkit-backdrop-filter: saturate(1.2);
+    filter: saturate(1.2);
     transition: all 0.2s ease;
     position: relative;
     background: linear-gradient(to top, var(--color-transparent-dark) 100%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to top, var(--color-transparent-dark) 0%, 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 .swiper {
     width: 100%;
