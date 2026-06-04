@@ -556,12 +556,10 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 		    oldTargetPage = [];
 		    closePanel();
 		    hasProcessed = false;
-                }, 500);
+                }, 300);
             } else {
                 bottomPanel.style.transform = "";
-                setTimeout(() => {
-		    hasProcessed = false;
-                }, 1000);
+		hasProcessed = false;
             }
         });
     } else {
