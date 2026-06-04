@@ -13,8 +13,6 @@
 ## 📚Web deploy
 👉 [Kho-ipa.vercel.app](https://kho-ipa.vercel.app)
 
-Trong trường hợp link ở trên die thì truy cập link dưới.
-👉 [booster.qzz.io](https://kho-ipa.vercel.app)
 ---
 
 ## 🧭 Hướng dẫn thêm nguồn KhoIPA
