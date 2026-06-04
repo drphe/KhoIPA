@@ -336,7 +336,7 @@ window.refreshConfig = {
         instructionsRefreshing: langText["loading"]
     }
 window.refresher = PullToRefresh.init(refreshConfig) ;
-                isPWA && refresher.destroy();
+                !isPWA && refresher.destroy();
 document.querySelector('meta[property="og:url"]')?.setAttribute("content", window.location.origin);
 document.documentElement.lang = langCode;
 document.querySelectorAll('span[data-text]').forEach(
