@@ -1,6 +1,6 @@
 const translations = {
     vi: {
-	loading:"Đang tải...",
+	loading:"Loading...",
 	pulltore:"Kéo xuống để tải lại",
 	releasetore:"Thả tay để tải lại",
 	yesb:"Đồng ý",
