@@ -522,6 +522,8 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	let hasProcessed = false;
         const dragThreshold = 50; 
         bottomPanel.addEventListener("touchstart", e => {
+	    const loc = bottomPanel.querySelector("#loc");
+	    if(loc && loc.contains(e.target)) return;
             startX = e.touches[0].clientX;
             isDragging = true; 
             bottomPanel.style.transition = "none"; // Tắt hiệu ứng khi kéo
