@@ -199,7 +199,8 @@ body {
     }
 
     .app-header-container,
-    #suggestions.source-container, #suggestions2.source-container,#suggestions3.source-container {
+    #suggestions.source-container, #suggestions2.source-container,
+   #suggestions3.source-container,#suggestions4.source-container {
         min-width: 365px !important;
     }
 

@@ -1,5 +1,6 @@
 const translations = {
     vi: {
+	recentapp:"Đã xem",
 	loading:"Loading...",
 	pulltore:"Kéo xuống để tải lại",
 	releasetore:"Thả tay để tải lại",
@@ -238,6 +239,7 @@ const translations = {
         entilementText: "追加の権限とは、アプリが機密情報を含む特定のシステムサービスにアクセスすることを許可するものです。"
     },
     en: {
+	recentapp:"Recent Apps",
 	loading:"Loading...",
 	pulltore:"Pull to refresh",
 	releasetore:"Release to refresh",

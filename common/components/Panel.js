@@ -35,11 +35,13 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         bottomPanel.classList.add("panel", "bottom");
         //bundleId = bundleId.split("@")[0];
         let app = jsons.apps?.find(app => app.bundleIdentifier == bundleId) ?? undefined;
-		updateBundleID(bundleId);
+
         if(!app) {
             showUIAlert("❌ Error", "Không tìm thấy thông tin app!");
             return;
         }
+	updateBundleID(bundleId);
+
         // If has multiple versions, show the latest one
         if (app.versions) {
             const latestVersion = app.versions[0];

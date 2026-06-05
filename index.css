@@ -48,7 +48,8 @@
 
 #suggestions,
 #suggestions2,
-#suggestions3 {
+#suggestions3,
+#suggestions4 {
     display: grid;
     max-width: 768px;
     overflow-x: scroll;
@@ -62,13 +63,14 @@
 }
 #suggestions .active,
 #suggestions2 .active,
-#suggestions3 .active{
+#suggestions3 .active,
+#suggestions4 .active{
 	cursor: grabbing;
 } 
-#suggestions>div,#suggestions2>div, #suggestions3>div {
+#suggestions>div,#suggestions2>div, #suggestions3>div,#suggestions4>div {
     scroll-snap-align: start;
 }
-#suggestions, #suggestions2, #suggestions3  {
+#suggestions, #suggestions2, #suggestions3, #suggestions4  {
   user-select: none; 
   -webkit-user-drag: none;
 }

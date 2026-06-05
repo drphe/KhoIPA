@@ -232,6 +232,14 @@ if ('serviceWorker' in navigator) {
         $("#suggestions3").insertAdjacentHTML("beforeend", AppHeader(app));
         count++;
     });
+    count=1;
+    let recentapps = JSON.parse(localStorage.getItem('bundleHistory')) || [];
+    recentapps.reverse().forEach(r => {
+        if (count > maxapps) return;
+	const app = allApps.find(s => s.bundleIdentifier == r); 
+        app&&$("#suggestions4").insertAdjacentHTML("beforeend", AppHeader(app));
+	count++;
+    });
     // cuộn ngang
     const sliders = document.querySelectorAll('#suggestions, #suggestions2,#suggestions3, #loc');
     sliders.forEach(slider => {
@@ -310,9 +318,9 @@ if ('serviceWorker' in navigator) {
         return dateB - dateA;
     });
         let imgApps = "", featuredApp = `<div class="source-container swiper-slide" data-identifier="${source.identifier}">
-	<div class="header"><h2><span>${langText['featuredapps']}</span></h2></div>`,
+	<div class="header" style="${id=="source-items2" ?'display:none':''}"><h2><span>${langText['featuredapps']}</span></h2></div>`,
 	updatedApp = `<div class="source-container swiper-slide" data-identifier="${source.identifier}">
-	<div class="header"><h2><span>${langText['updateapp']}</span></h2></div>`;
+	<div class="header" style="${id=="source-items2" ?'display:none':''}"><h2><span>${langText['updateapp']}</span></h2></div>`;
         let countA = 1; // quick app
         source.apps.forEach(app => {
             if (countA > 4) return;
@@ -346,7 +354,7 @@ if ('serviceWorker' in navigator) {
 	featuredApp +=`</div>`;
 
 	let headerSource = `
-		    <div class="header">
+		    <div class="header" style="${id=="source-items2" ?'display:none':''}">
             		<a href="./view/?source=${base64Convert(source.url)}" data-identifier="${source.identifier}" class="source-link" data-action="act">
                 		<h2><span>${source.name}</span></h2> <i class="bi bi-chevron-right"></i>
             		</a>
@@ -393,7 +401,10 @@ if ('serviceWorker' in navigator) {
         if (!sTarget) {
             console.warn(`Source not found for bundleId: ${bundleID}`);
         }
-        else openPanel(sTarget, bundleID, ".", "bottom");
+        else {
+	    addHistory(bundleID);
+	    openPanel(sTarget, bundleID, ".", "bottom");
+	}
     }
     else openPanel({}, ""); // preload panel
     $('#search')?.addEventListener("click", async (e) => {
@@ -422,7 +433,16 @@ if ('serviceWorker' in navigator) {
         activateNavLink("page-library");
     });
     //
-
+    $('#search4')?.addEventListener("click", async (e) => {
+        e.preventDefault();
+        await openPanel('<div id="apps-list"></div>', `<p>${langText['recentapp']}</p>`, '.', "side", "apps-popup-all");
+	let h = JSON.parse(localStorage.getItem('bundleHistory')) || [];
+	let allAppsView = allApps.filter(s => h.includes(s.bundleIdentifier));
+        addAppList({
+            apps: allAppsView
+        }, 20, 0);
+        activateNavLink("page-library");
+    });
     let currentIndex = 0;
     const ITEMS_PER_PAGE = 3;
     let currentData = []; 
@@ -537,6 +557,7 @@ if ('serviceWorker' in navigator) {
             		console.warn(`Source not found for bundleId: ${bundleId}`);
             	return;
         	}
+		addHistory(bundleId);
         	await openPanel(sourceTarget, bundleId, ".", "bottom");
 	}
     });
@@ -709,6 +730,16 @@ if ('serviceWorker' in navigator) {
             insertSource(source);
         }
         currentIndex += nextBatch.length;
+    }
+    function addHistory(bundleId){
+	const app = allApps.find(s => s.bundleIdentifier === bundleId); 
+	if(!app) return;
+	let h = JSON.parse(localStorage.getItem('bundleHistory')) || [];
+	h = h.filter(item => item !== bundleId);
+	h.push(bundleId);
+	localStorage.setItem('bundleHistory', JSON.stringify(h));
+	$("#suggestions4")?.insertAdjacentHTML("afterbegin", AppHeader(app));
+
     }
     let isScrolling = false;
     const title = $("h1");

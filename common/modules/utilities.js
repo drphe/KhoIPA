@@ -507,7 +507,7 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
 let data = JSON.parse(localStorage.getItem('updatedRepo')) || [];
 data = data.filter(item => item !== newData.identifier);
 data.push(newData.identifier);
-if (data.length > 4) data.shift();
+if (data.length > 5) data.shift();
 localStorage.setItem('updatedRepo', JSON.stringify(data));
 
     const updatedRepo = localStorage.getItem('updatedRepo');
