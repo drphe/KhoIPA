@@ -608,15 +608,22 @@ if ('serviceWorker' in navigator) {
     }
 
     function filterSourcesByTitle(keyword) {
-        let filtersource = allSources.filter(s => (s.name?.toLowerCase() + s.subtitle?.toLowerCase()).includes(keyword.trim()));
+	let filtersource = allSources.filter(function(s) {
+    	    var name = s.name ? s.name.toLowerCase() : '';
+	    var subtitle = s.subtitle ? s.subtitle.toLowerCase() : '';
+	    var searchText = name + subtitle;
+	    var searchKeyword = (keyword || '').trim().toLowerCase();
+    
+	    return searchText.indexOf(searchKeyword) !== -1;
+	});
         const list = $('#sources-list');
         while (list.firstChild) list.removeChild(list.firstChild);
+
         if (filtersource.length) {
             currentIndex = 0;
             insertNextBatch(filtersource);
             insertScrollButton($("#sources-list"), () => insertNextBatch(filtersource))
         } else {
-            list.classList.remove("skeleton-text", "skeleton-effect-wave");
             list.innerHTML = `
     <div class="app-container" style="grid-column: 1 / -1;grid-row: 1 / -1;height: 100%;max-width: none !important; ">
       <div class="app-header-container" style="max-width:730px;min-width:auto;">
