@@ -220,7 +220,7 @@ if ('serviceWorker' in navigator) {
         count++;
     });
     // cuộn ngang
-    const sliders = document.querySelectorAll('#suggestions, #suggestions2,#suggestions3');
+    const sliders = document.querySelectorAll('#suggestions, #suggestions2,#suggestions3, #loc');
     sliders.forEach(slider => {
         let isDown = false;
         let startX;
@@ -338,7 +338,7 @@ if ('serviceWorker' in navigator) {
         $(`#${id}`).insertAdjacentHTML(position, `
             <div class="source-container swiper-slide" data-identifier="${source.identifier}">${id !== "source-items"? headerSource:""}
                 <div class="item" style="height:150px;padding:0px;opacity:1;background-color: #${source.tintColor.replaceAll("#", "" )};margin: 0px;border-radius: 1.5rem 1.5rem 0 0;background-image: url(${source.iconURL});background-repeat: no-repeat;background-position: center;background-size: 100px;">
-                    <div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 0%, rgba(0, 0, 0, 0));
+                    <div class="text" style="margin: 0em;background: linear-gradient(to top, #${source.tintColor.replaceAll("#", "" )} 0%, rgba(0, 0, 0, 0));
 				padding: 1em;height: 80%;text-align: center;">
                         ${useFeaturedapp? "": id == "source-items"? imgApps: countA <4?imgApps: ""}
 
@@ -348,7 +348,7 @@ if ('serviceWorker' in navigator) {
                     </div>
                 </div>
                 <a href="./view/?source=${base64Convert(source.url)}" data-identifier="${source.identifier}" class="source-link">
-                    <div class="source" style="background-color: #${source.tintColor.replaceAll("#", "" )}; margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : "" } 1.5rem 1.5rem;">
+                    <div class="source" style="background-color: #${source.tintColor.replaceAll("#", "" )}!important; margin-bottom: 0.75rem;border-radius:${flag ? "0 0 " : "" } 1.5rem 1.5rem;">
                         <img src="${source.iconURL}" class="skeleton-effect-blink skeleton-block" onload="this.classList.remove('skeleton-effect-blink', 'skeleton-block');" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/no-img.png';">
                         <div class="right">
                             <div class="text">

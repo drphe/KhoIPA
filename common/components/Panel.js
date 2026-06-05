@@ -721,8 +721,11 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
     totalAppsCount.innerText = `${langText['total']} ${allApps.length} apps `;
     // tạo filter
     const filter = document.createElement("span");
-    filter.innerHTML = ` <a class="category active">Updated</a><a class="category ">Apps</a><a class="category ">Games</a><a class="category ">Audio</a><a class="category ">Tool</a><a class="category">Dylib</a>`;
-    filter.style.cssText = "display: flex;justify-content: center;";
+	filter.id="loc";
+	filter.setAttribute("id","loc");
+	filter.setAttribute("class","horizontal-scroll");
+	filter.setAttribute("style","display: flex;");
+    filter.innerHTML = ` <a class="category active"><span>Updated</span></a><a class="category "><span>Apps</span></a><a class="category "><span>Games</span></a><a class="category "><span>Audio</span></a><a class="category "><span>Tool</span></a><a class="category"><span>Dylib</span></a>`;
     filter.querySelectorAll('.category').forEach((el, index) => {
 	if(index == filterType) el.classList.add('active');
 	else el.classList.remove('active');

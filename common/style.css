@@ -67,7 +67,7 @@
         background-color: var(--color-bg-dark) !important;
     }
     .ptr--ptr .ptr--text,/*pull to refresh*/
-    .nav-link,
+    .nav-link, .category,
     h2 button,
     p,
     tr,
@@ -111,6 +111,14 @@
     .secondary-bg {
         background-color: var(--color-bg-dark-secondary) !important;
     }
+    .source-container>.item>.text {
+	background: linear-gradient(to top, var(--color-transparent-dark) 0%, rgba(0, 0, 0, 0))!important;
+    }
+.source-container .source {
+    background: linear-gradient(to top, var(--color-transparent-dark) 100%, rgba(0, 0, 0, 0))!important;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%)!important;
+    -webkit-mask-image: linear-gradient(to top, var(--color-transparent-dark) 0%, 100%)!important;
+}
 }
 
 body.loading {
@@ -218,13 +226,13 @@ a, img, span {
     cursor: grab;
 }
 
+/* Thêm viền sáng mỏng cho source */
 .app-header .content,.source-container .source {
     -webkit-backdrop-filter: blur(16px) saturate(1.2);
     transition: all 0.2s ease;
     position: relative;
 }
 
-/* Thêm viền sáng mỏng cho source */
 .app-header .content::after,.source-container .source::after {
     content: '';
     position: absolute;
@@ -235,15 +243,15 @@ a, img, span {
     background: linear-gradient(90deg, #29232300, rgb(109 28 28 / 50%), transparent);
     pointer-events: none;
 }
-
+/*lớp phủ mờ*/
 .source-container .source {
     -webkit-backdrop-filter: saturate(1.2);
     filter: saturate(1.2);
     transition: all 0.2s ease;
     position: relative;
-    background: linear-gradient(to top, var(--color-transparent-dark) 100%, rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, var(--color) 100%, rgba(0, 0, 0, 0));
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%);
-    -webkit-mask-image: linear-gradient(to top, var(--color-transparent-dark) 0%, 100%);
+    -webkit-mask-image: linear-gradient(to top, var(--color-transparent) 0%, 100%);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
@@ -1789,20 +1797,47 @@ pre {
 
 .category {
     align-items: center;
+    justify-content: center;
     background: var(--uialert-background-color);
     display: flex;
-    flex-shrink: 0;
-    gap: 4px;
-    padding: 6px 12px;
+    padding: 0.5rem 1rem;
     position: relative;
+    width: fit-content;
+    min-width: 60px;
+    margin: 0 4px;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+     text-decoration:none!important;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-
+.category:hover {
+    background: var(--uialert-background-color);
+    transform: scale(1.02);
+}
+.category.active {
+    background: var(--color-separator);
+    backdrop-filter: blur(24px);
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: 600;
+}
+.category:active {
+    transform: scale(0.98);
+    transition: transform 0.05s;
+}
 .category:first-child {
-    border-radius: 10px 0 0 10px;
+    /*border-radius: 10px 0 0 10px;*/
 }
 
 .category:last-child {
-    border-radius: 0 10px 10px 0;
+    /*border-radius: 0 10px 10px 0;*/
 }
 
 .app-panel-icon {
@@ -1845,3 +1880,14 @@ pre {
         70% { transform: scale(0.98); }
         100% { transform: scale(1); }
     }
+
+.horizontal-scroll {
+    margin-top: 6px;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge cũ */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none; 
+}
