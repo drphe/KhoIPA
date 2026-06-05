@@ -83,6 +83,8 @@ if ('serviceWorker' in navigator) {
         style: "cancel",
     });
     isPWA &&"Notification" in window && Notification.permission === "default" && checkNoti.present() ;// nếu đang trên PWA thì kiểm tra thống báo
+    let spanLoading = document.querySelectorAll('span[data-text="loading"]');
+    spanLoading.forEach(span => span.textContent = langText["loading"] + "10%");
 
     // fetch Data
     const sources = await json("./common/assets/json/sources.json");
@@ -94,8 +96,7 @@ if ('serviceWorker' in navigator) {
             return null;
         }
     }))).filter(Boolean);
-    let spanLoading = document.querySelectorAll('span[data-text="loading"]');
-    spanLoading.forEach(span => span.textContent = langText["loading"] + "60%");
+    spanLoading.forEach(span => span.textContent = langText["loading"] + "80%");
     const randCode = (e) => {
         const b64 = base64Convert(e);
         const mid = Math.floor(b64.length / 2);
