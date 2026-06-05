@@ -566,6 +566,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         });
     } else {
         console.log("Preload Panel.")
+	console.clear();
         return;
     }
     let isOriginalDescription = true;
@@ -741,7 +742,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
         filteredApps = [...allApps];
         appsContainer.innerHTML = "";
         totalAppsCount.innerText = `${langText['total']} ${allApps.length} apps `;
-        loadMoreApps(false);
+        loadMoreApps();
         appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
         window.scrollTo({
             top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
@@ -869,6 +870,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
         waitForAllImagesToLoad(appsContainer);
     }
     loadMoreApps();
+    insertScrollButton(appsContainer, ()=>loadMoreApps())
     appsContainer.addEventListener("click", event => {
         const nothing = event.target.closest("a.nothing");
         if (nothing) {
@@ -887,6 +889,9 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
             });
         }
     });
+}
+
+export function insertScrollButton(appsContainer, func, scrollTarget){
     // scroll
     const scrollToTop = (target) => {
         if (target === window) {
@@ -938,7 +943,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
         const scrollHeight = scrollTarget === window ? document.documentElement.scrollHeight || document.body.scrollHeight : scrollTarget.scrollHeight;
         const clientHeight = scrollTarget === window ? document.documentElement.clientHeight || window.innerHeight : scrollTarget.clientHeight;
         buttonScroll.style.display = scrollTop > scrollThreshold ? 'block' : 'none';
-        if (scrollTop + clientHeight >= scrollHeight - 50) loadMoreApps();
+        if (scrollTop + clientHeight >= scrollHeight - 50) func();
     });
 }
 

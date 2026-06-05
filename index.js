@@ -24,7 +24,7 @@ import {
 import {AppBanner}from "./common/components/AppWeb.js";
 import {AppHeader, appHeaderLine, checkBeta}from "./common/components/AppHeader.js";
 import {NewsItem}from "./common/components/NewsItem.js";
-import {openPanel,addAppList}from "./common/components/Panel.js";
+import {openPanel,addAppList, insertScrollButton}from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
 
 if ('serviceWorker' in navigator) {
@@ -418,90 +418,17 @@ if ('serviceWorker' in navigator) {
     });
     //
 
-    function filterSourcesByTitle(keyword) {
-        const containers = document.querySelectorAll('#sources-list .source-container');
-        const searchTerm = keyword.toLowerCase();
-        let visibleCount = 0;
-	let listView = [];
-        containers.forEach(container => {
-            const titleElement = container.querySelector('.source .title');
-	    const bundleId = container.getAttribute("data-identifier");
-            if (titleElement) {
-                const titleText = titleElement.textContent.toLowerCase();
-                if (titleText.includes(searchTerm)) {
-                    container.style.display = ''; 
-		    listView.push(bundleId)
-                    visibleCount++;
-                } else {
-                    container.style.display = 'none'; 
-                }
-            } else if(listView.includes(bundleId)) {
-                    container.style.display = ''; 
-	    }
-	    else {
-                container.style.display = 'none';
-            }
-        });
-        return visibleCount;
-    }
-
-    function insertSearchBox() {
-        const sContainer = $('#sources-list');
-        let fillSources = [...allSources];
-
-        // Tạo wrapper chứa input và icon
-        const searchWrapper = document.createElement("div");
-        searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top:0;padding:0 1rem;"
-        searchWrapper.classList.add("search-wrapper")
-        // Tạo icon kính lúp
-        const searchIcon = document.createElement("span");
-        searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
-        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
-        // Tạo ô tìm kiếm
-        const searchBox = document.createElement("input");
-        searchBox.type = "text";
-        searchBox.placeholder = langText['entersource'];
-        searchBox.className = "form-control mb-3";
-        searchBox.style.cssText = "width: 100%; padding-left: 35px; box-sizing: border-box; border-radius: 20px;backdrop-filter: blur(4px); margin-top: 0.5rem;"
-        // Tạo icon x
-        const xIcon = document.createElement("span");
-        xIcon.innerHTML = ` <span class="totalSearch"></span><i class="bi bi-x-circle-fill"></i>`;
-        xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
-        // Tạo total app
-        const totalSCount = xIcon.querySelector(".totalSearch");
-        totalSCount.innerText = `${langText['total']} ${allSources.length} repos `;
-        xIcon.addEventListener('click', () => {
-            searchBox.value = '';
-            xIcon.style.display = 'none';
-            searchBox.focus();
-            let tota = filterSourcesByTitle(searchBox.value);
-            totalSCount.innerText = `${langText['total']} ${tota} repos `;
-            sContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
-            window.scrollTo({
-                top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
-                behavior: "smooth"
-            });
-        });
-        searchBox.addEventListener('input', () => {
-            xIcon.style.display = searchBox.value ? 'block' : 'none';
-            let tota = filterSourcesByTitle(searchBox.value);
-            totalSCount.innerText = `${langText['total']} ${tota} repos `;
-
-        });
-        // Gắn các phần tử
-        searchWrapper.appendChild(searchIcon);
-        searchWrapper.appendChild(searchBox);
-        searchWrapper.appendChild(xIcon);
-        sContainer.before(searchWrapper);
-    }
+    let currentIndex = 0;
+    const ITEMS_PER_PAGE = 3;
+    let currentData = []; 
     // view all source
    $('#all-source')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} </p>`, '.', "side", "sources-popup-all");
 	await insertSearchBox();
-        for (const source of allSources) {
-            insertSource(source);
-        }
+	currentIndex = 0;
+	insertNextBatch();
+	insertScrollButton($("#sources-list"), ()=>insertNextBatch())
         activateNavLink("page-source");
     });
     // view all source
@@ -509,9 +436,9 @@ if ('serviceWorker' in navigator) {
         e.preventDefault();
         await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} </p>`, '.', "side", "sources-popup-all");
 	await insertSearchBox();
-        for (const source of allSources) {
-            insertSource(source);
-        }
+	currentIndex = 0;
+	insertNextBatch();
+	insertScrollButton($("#sources-list"), ()=>insertNextBatch());
         activateNavLink("page-source");
     });
     // open app
@@ -618,14 +545,14 @@ if ('serviceWorker' in navigator) {
             }, 400);
 
             const target = link.dataset.target;
-            if (target == window.oldTargetPage[oldTargetPage.length-1]) return;
+            if (target == window.oldTargetPage[oldTargetPage.length - 1]) return;
             activateNavLink(target);
             if (target == 'page-source') {
                 await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
                 await insertSearchBox();
-                for (const source of allSources) {
-                    insertSource(source);
-                }
+                currentIndex = 0;
+                insertNextBatch();
+                insertScrollButton($("#sources-list"), () => insertNextBatch());
             } else if (target == 'page-library') {
                 await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
                 addAppList({
@@ -679,6 +606,96 @@ if ('serviceWorker' in navigator) {
         });
     }
 
+    function filterSourcesByTitle(keyword) {
+        let filtersource = allSources.filter(s => (s.name?.toLowerCase() + s.subtitle?.toLowerCase()).includes(keyword.trim()));
+        const list = $('#sources-list');
+        while (list.firstChild) list.removeChild(list.firstChild);
+        if (!filtersource.length) {
+            currentIndex = 0;
+            insertNextBatch(filtersource);
+            insertScrollButton($("#sources-list"), () => insertNextBatch(filtersource))
+        } else {
+            list.classList.remove("skeleton-text", "skeleton-effect-wave");
+            list.innerHTML = `
+    <div class="app-container" style="grid-column: 1 / -1;grid-row: 1 / -1;height: 100%;max-width: none !important; ">
+      <div class="app-header-container" style="max-width:730px;">
+        <a href="#" class="nothing">
+          <div class="app-header-inner-container">
+            <div class="app-header">
+              <div class="content" style="height: 30px;margin: auto;display: flex;justify-content: space-around;"><p>ⓧ ${langText['nothingfoundrepo']}</p></div>
+              <div class="background" style="background-color: var(--color-bg-dark-secondary);"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>`;
+        }
+        return filtersource.length;
+    }
+
+    function insertSearchBox() {
+        const sContainer = $('#sources-list');
+        let fillSources = [...allSources];
+
+        // Tạo wrapper chứa input và icon
+        const searchWrapper = document.createElement("div");
+        searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top:0;padding:0 1rem;"
+        searchWrapper.classList.add("search-wrapper")
+        // Tạo icon kính lúp
+        const searchIcon = document.createElement("span");
+        searchIcon.innerHTML = ` <i class="bi bi-search"></i>`
+        searchIcon.style.cssText = "position: absolute;left: 1.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);z-index:2;";
+        // Tạo ô tìm kiếm
+        const searchBox = document.createElement("input");
+        searchBox.type = "text";
+        searchBox.placeholder = langText['entersource'];
+        searchBox.className = "form-control mb-3";
+        searchBox.style.cssText = "width: 100%; padding-left: 35px; box-sizing: border-box; border-radius: 20px;backdrop-filter: blur(4px); margin-top: 0.5rem;"
+        // Tạo icon x
+        const xIcon = document.createElement("span");
+        xIcon.innerHTML = ` <span class="totalSearch"></span><i class="bi bi-x-circle-fill"></i>`;
+        xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
+        // Tạo total app
+        const totalSCount = xIcon.querySelector(".totalSearch");
+        totalSCount.innerText = `${langText['total']} ${allSources.length} repos `;
+        xIcon.addEventListener('click', () => {
+            searchBox.value = '';
+            xIcon.style.display = 'none';
+            searchBox.focus();
+            let tota = filterSourcesByTitle(searchBox.value);
+            totalSCount.innerText = `${langText['total']} ${tota} repos `;
+            sContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
+            window.scrollTo({
+                top: Math.max(0, sContainer.parentElement.offsetTop - 100),
+                behavior: "smooth"
+            });
+        });
+        searchBox.addEventListener('input', () => {
+            xIcon.style.display = searchBox.value ? 'block' : 'none';
+            let tota = filterSourcesByTitle(searchBox.value);
+            totalSCount.innerText = `${langText['total']} ${tota} repos `;
+
+        });
+        // Gắn các phần tử
+        searchWrapper.appendChild(searchIcon);
+        searchWrapper.appendChild(searchBox);
+        searchWrapper.appendChild(xIcon);
+        sContainer.before(searchWrapper);
+    }
+
+    function insertNextBatch(filters) {
+        if (filters !== undefined) {
+            currentData = filters ?? allSources;
+            currentIndex = 0;
+        } else if (currentData.length === 0) {
+            currentData = allSources;
+        }
+        const nextBatch = currentData.slice(currentIndex, currentIndex + ITEMS_PER_PAGE);
+        for (const source of nextBatch) {
+            insertSource(source);
+        }
+        currentIndex += nextBatch.length;
+    }
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");
