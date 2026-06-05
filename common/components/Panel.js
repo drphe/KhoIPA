@@ -566,7 +566,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         });
     } else {
         console.log("Preload Panel.")
-	console.clear();
+	//console.clear();
         return;
     }
     let isOriginalDescription = true;

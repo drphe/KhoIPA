@@ -448,6 +448,7 @@ if ('serviceWorker' in navigator) {
         const targetNews = event.target.closest("a.news-item-header");
         const targetNewsLink = event.target.closest("a.news-item-link");
 	const sourceLink = event.target.closest("a.source-link");
+
 	const showAppPanel = async (so) => {
             await openPanel('<div id="apps-list"></div>', `<p>${so.name} (${so.apps.length})</p>`, '.', "side", "apps-popup-all");
             addAppList({ apps: so.apps }, 20, 0);
@@ -610,7 +611,7 @@ if ('serviceWorker' in navigator) {
         let filtersource = allSources.filter(s => (s.name?.toLowerCase() + s.subtitle?.toLowerCase()).includes(keyword.trim()));
         const list = $('#sources-list');
         while (list.firstChild) list.removeChild(list.firstChild);
-        if (!filtersource.length) {
+        if (filtersource.length) {
             currentIndex = 0;
             insertNextBatch(filtersource);
             insertScrollButton($("#sources-list"), () => insertNextBatch(filtersource))
@@ -618,7 +619,7 @@ if ('serviceWorker' in navigator) {
             list.classList.remove("skeleton-text", "skeleton-effect-wave");
             list.innerHTML = `
     <div class="app-container" style="grid-column: 1 / -1;grid-row: 1 / -1;height: 100%;max-width: none !important; ">
-      <div class="app-header-container" style="max-width:730px;">
+      <div class="app-header-container" style="max-width:730px;min-width:auto;">
         <a href="#" class="nothing">
           <div class="app-header-inner-container">
             <div class="app-header">
@@ -670,6 +671,7 @@ if ('serviceWorker' in navigator) {
                 behavior: "smooth"
             });
         });
+
         searchBox.addEventListener('input', () => {
             xIcon.style.display = searchBox.value ? 'block' : 'none';
             let tota = filterSourcesByTitle(searchBox.value);
