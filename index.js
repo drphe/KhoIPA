@@ -741,10 +741,12 @@ if ('serviceWorker' in navigator) {
 	$("#suggestions4")?.insertAdjacentHTML("afterbegin", AppHeader(app));
 
     }
+    insertScrollButton($("#main"), ()=>{}, window)
     let isScrolling = false;
     const title = $("h1");
     const navBar = $("#nav-bar");
     const navBarTitle = navBar.querySelector("#title");
+
     window.addEventListener('scroll', () => {
         if (!isScrolling) {
             window.requestAnimationFrame(() => {
@@ -752,6 +754,7 @@ if ('serviceWorker' in navigator) {
                     const showItem = title.getBoundingClientRect().y < 30;
                     navBar.classList.toggle("hide-border", !showItem);
                     navBarTitle.classList.toggle("hidden", !showItem);
+        	    //$("body > button").style.display = showItem ? "block" : "none";
                 }
                 isScrolling = false;
             });

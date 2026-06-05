@@ -911,7 +911,7 @@ export function insertScrollButton(appsContainer, func, scrollTarget){
     const scrollThreshold = 150;
     scrollTarget ??= appsContainer.parentElement;
     const buttonScroll = document.createElement('button');
-    buttonScroll.id = 'scrollToTopBtn';
+    //buttonScroll.id = 'scrollToTopBtn';
     buttonScroll.title = 'Scroll To Top';
     const iconBtn = document.createElement('i');
     iconBtn.className = 'bi bi-chevron-up';
