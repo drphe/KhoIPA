@@ -53,7 +53,7 @@ const translations = {
         more: "xem thêm",
         allrepo: "Tất cả kho lưu trữ",
         allapps: "Tất cả ứng dụng",
-        featuredapps: "Ứng dụng nổi bật",
+        featuredapps: "Ứng dụng yêu thích",
         allnews: "Tất cả tin tức",
         news: "Tin tức",
         contents: "NỘI DUNG",
@@ -73,11 +73,12 @@ const translations = {
         errorapp: "Không có app tương ứng.",
         error: "Lỗi",
         about: "Giới thiệu",
-        featuredrepo: "Kho lưu trữ nổi bật",
+        featuredrepo: "Kho lưu trữ gợi ý",
         disclaimer: "Tuyên bố miễn trừ trách nhiệm",
         disclaimerText: "Mọi nội dung gốc đều thuộc quyền sở hữu của các tác giả hợp pháp.\nCác tệp IPA đã chỉnh sửa chỉ được cung cấp nhằm mục đích sử dụng cá nhân và học tập.\nTrang này không có bất kỳ mục đích thương mại nào.",
         updategame: "Trò chơi mới cập nhật",
         updateapp: "Ứng dụng mới cập nhật",
+	updatedrepo: "Kho ứng dụng mới cập nhật",
         home: "Trang chủ",
         search: "Tìm kiếm",
         source: "Nguồn",
@@ -313,7 +314,13 @@ const translations = {
         entilement: "Entitlements",
         privacy: "Privacy",
         privacyText: "may request to access the following",
-        entilementText: "Entitlements are additional permissions that grant access to certain system services, including potentially sensitive information."
+        entilementText: "Entitlements are additional permissions that grant access to certain system services, including potentially sensitive information.",
+        updategame: "Updated Games",
+        updateapp: "Updated Apps",
+	updaterepo: "Updated Repos",
+        home: "Home",
+        search: "Search",
+        source: "Source",
     }
 };
 

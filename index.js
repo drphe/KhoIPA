@@ -176,10 +176,19 @@ if ('serviceWorker' in navigator) {
         allApps.push(...source.apps);
 	countAllRepo++;
     }
+
     // insert editor's source choice
     for (const source of featuredSources) {
-        await insertSource(source, "source-items");
+        insertSource(source, "source-items");
+
     }
+
+    let dataUpdate = JSON.parse(localStorage.getItem('updatedRepo')) || ["org.apptesters.repo","ios.flekstore.repo","io.build.store"];
+     [...dataUpdate].reverse().forEach(bu => {
+	const r = allSources.find(s => s.identifier == bu); 
+	r && insertSource(r, "source-items2");
+    });
+
     // cuộn ngang
     var swiper = new Swiper(".mySwiperSources", {
         slidesPerView: "auto",
@@ -337,7 +346,7 @@ if ('serviceWorker' in navigator) {
                 		<h2><span>${source.name}</span></h2> <i class="bi bi-chevron-right"></i>
             		</a>
        		    </div>`;
-	let useFeaturedapp = id !== "source-items" && source.featuredApps?.length > 2;
+	let useFeaturedapp = id !== "source-items" &&id !== "source-items2" && source.featuredApps?.length > 2;
 	let useUpdateapp = id !== "source-items" && countUpdate?.length > 3;
         $(`#${id}`).insertAdjacentHTML(position, `
             <div class="source-container swiper-slide" data-identifier="${source.identifier}">${id !== "source-items"? headerSource:""}
@@ -366,7 +375,7 @@ if ('serviceWorker' in navigator) {
                     </div>
                 </a>
             </div>
-	    ${useFeaturedapp? featuredApp: "" } ${useUpdateapp ?updatedApp: ""}
+	    ${useFeaturedapp? featuredApp:useUpdateapp ?updatedApp: "" }
         `);
     }
     // 
@@ -489,9 +498,19 @@ if ('serviceWorker' in navigator) {
    $('#all-source')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} </p>`, '.', "side", "sources-popup-all");
-	insertSearchBox();
+	await insertSearchBox();
         for (const source of allSources) {
-            await insertSource(source);
+            insertSource(source);
+        }
+        activateNavLink("page-source");
+    });
+    // view all source
+   $('#all-source2')?.addEventListener("click", async (e) => {
+        e.preventDefault();
+        await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} </p>`, '.', "side", "sources-popup-all");
+	await insertSearchBox();
+        for (const source of allSources) {
+            insertSource(source);
         }
         activateNavLink("page-source");
     });
@@ -603,9 +622,9 @@ if ('serviceWorker' in navigator) {
             activateNavLink(target);
             if (target == 'page-source') {
                 await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
-                insertSearchBox();
+                await insertSearchBox();
                 for (const source of allSources) {
-                    await insertSource(source);
+                    insertSource(source);
                 }
             } else if (target == 'page-library') {
                 await openPanel('<div id="apps-list"></div>', `<p>${langText['allapps']}</p>`, '.', "side", "apps-popup-all");
