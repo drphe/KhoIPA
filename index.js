@@ -94,6 +94,8 @@ if ('serviceWorker' in navigator) {
             return null;
         }
     }))).filter(Boolean);
+    let spanLoading = document.querySelectorAll('span[data-text="loading"]');
+    spanLoading.forEach(span => span.textContent = langText["loading"] + "60%");
     const randCode = (e) => {
         const b64 = base64Convert(e);
         const mid = Math.floor(b64.length / 2);
@@ -145,6 +147,7 @@ if ('serviceWorker' in navigator) {
             return null;
         }
     }))).filter(Boolean);
+    spanLoading.forEach(span => span.textContent = langText["loading"] + "99%");
     // Sort sources by last updated
     otherSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
     const fixYear = (d) => {
