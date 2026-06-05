@@ -727,8 +727,10 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
 	if(index == filterType) el.classList.add('active');
 	else el.classList.remove('active');
     });
+    let isUpdate= true;
     xIcon.addEventListener('click', () => {
         searchBox.value = '';
+ 	isUpdate = true;
         xIcon.style.display = 'none';
         searchBox.focus();
         filteredApps = [...allApps];
@@ -755,10 +757,10 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
             let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
             totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
             currentIndex = 0;
-
+	    isUpdate = false;
             // Xử lý hiển thị
             appsContainer.innerHTML = "";
-            loadMoreApps(false);
+            loadMoreApps();
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
             window.scrollTo({
                 top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
@@ -771,6 +773,7 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
             filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
             el.classList.add('active');
             filterType = index;
+	    isUpdate= false;
             let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated" || app.beta === "new");
 	    totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
             currentIndex = 0;
@@ -795,9 +798,10 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
         await Promise.all(tasks); // Chờ tất cả hoàn tất
     }
     //with screenshot
-    function loadMoreApps(isUpdate = true) {
-	searchBox.value && (isUpdate = false)
+    
+    function loadMoreApps() {
         let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : (isUpdate ? filteredApps.filter(app => app.beta === "updated" || app.beta === "new"): filteredApps);
+	if(!dataApps.length && isUpdate) {dataApps = filteredApps}
         if (!dataApps.length) {
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
             appsContainer.innerHTML = `

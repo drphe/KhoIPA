@@ -291,19 +291,32 @@ if ('serviceWorker' in navigator) {
     }
 
     async function insertSource(source, id = "sources-list", position = "beforeend", flag = true) {
-        let imgApps = "", featuredApp = `<div class="source-container swiper-slide" data-identifier="${source.identifier}">`;
-        let count = 1;
+        let imgApps = "", featuredApp = `<div class="source-container swiper-slide" data-identifier="${source.identifier}">
+	<div class="header"><h2><span>${langText['featuredapps']}</span></h2></div>`,
+	updatedApp = `<div class="source-container swiper-slide" data-identifier="${source.identifier}">
+	<div class="header"><h2><span>${langText['updateapp']}</span></h2></div>`;
+        let countA = 1; // quick app
         source.apps.forEach(app => {
-            if (count > 4) return;
+            if (countA > 4) return;
             if (isValidHTTPURL(app.iconURL)) {
                 imgApps += `<a href="#" data-bundleid = "${app.bundleIdentifier}"  class="app-header-link" style="display: inline-grid;justify-items: center;">
 				<img class="app-panel-icon  skeleton-effect-blink skeleton-block" src="${app.iconURL}" alt="source-icon" onerror="this.onerror=null; this.src='./common/assets/img/generic_app.jpeg';" onload="this.nextElementSibling.style.opacity='1';this.classList.remove('skeleton-effect-blink', 'skeleton-block');">
 				<span class="small ${checkBeta(app.beta)} badge" style="position: sticky;opacity:0;transform: translate(0px, -75px);"></span>
 				</a>`;
-                count++;
+                countA++;
             }
         });
-	count =1;
+
+	let count =1;// update app
+	let countUpdate = source.apps.filter(s => s.beta == "updated" || s.beta == "new");
+	countUpdate?.forEach(app => {
+            if (!app || count > 3) return;
+	    let appHtml = appHeaderLine(source, app);
+	    updatedApp +=appHtml;
+	    count++;
+	});
+
+	count =1;// featured app
 	source.featuredApps?.forEach(appId => {
 	    const app = source.apps.find(s => s.bundleIdentifier == `${appId}@${source.identifier}`);
             if (!app || count > 3) return;
@@ -311,16 +324,25 @@ if ('serviceWorker' in navigator) {
 	    featuredApp +=appHtml;
 	    count++;
 	});
+	updatedApp +=`</div>`;
 	featuredApp +=`</div>`;
-	let useFeaturedapp = id !== "source-items" && source.featuredApps?.length > 3;
+
+	let headerSource = `
+		    <div class="header">
+            		<a href="./view/?source=${base64Convert(source.url)}" data-identifier="${source.identifier}" class="source-link" data-action="act">
+                		<h2><span>${source.name}</span></h2> <i class="bi bi-chevron-right"></i>
+            		</a>
+       		    </div>`;
+	let useFeaturedapp = id !== "source-items" && source.featuredApps?.length > 2;
+	let useUpdateapp = id !== "source-items" && countUpdate?.length > 3;
         $(`#${id}`).insertAdjacentHTML(position, `
-            <div class="source-container swiper-slide" data-identifier="${source.identifier}">
+            <div class="source-container swiper-slide" data-identifier="${source.identifier}">${id !== "source-items"? headerSource:""}
                 <div class="item" style="height:150px;padding:0px;opacity:1;background-color: #${source.tintColor.replaceAll("#", "" )};margin: 0px;border-radius: 1.5rem 1.5rem 0 0;background-image: url(${source.iconURL});background-repeat: no-repeat;background-position: center;background-size: 100px;">
                     <div class="text" style="margin: 0em;background: linear-gradient(to top, var(--color-transparent-dark) 0%, rgba(0, 0, 0, 0));
 				padding: 1em;height: 80%;text-align: center;">
-                        ${useFeaturedapp? "": imgApps}
+                        ${useFeaturedapp? "": id == "source-items"? imgApps: countA <4?imgApps: ""}
 
-                        <div class="text" style="position: relative;color:white; ${useFeaturedapp? "margin-top: 5rem;text-align: left;":""}">
+                        <div class="text" style="position: relative;color:white; ${(useFeaturedapp|| useUpdateapp || id !== "source-items" && countA >=4)? "margin-top: 5rem;text-align: left;":""}">
                             <p>${source.subtitle ?? ""}</p>
                         </div>
                     </div>
@@ -340,7 +362,7 @@ if ('serviceWorker' in navigator) {
                     </div>
                 </a>
             </div>
-	    ${useFeaturedapp? featuredApp:""}
+	    ${useFeaturedapp? featuredApp: "" } ${useUpdateapp ?updatedApp: ""}
         `);
     }
     // 

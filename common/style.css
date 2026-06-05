@@ -105,7 +105,9 @@
     .screenshot {
         border-color: rgba(255, 255, 255, 0.2) !important;
     }
-
+    .app-header .content::after,.source-container .source::after {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent)!important;
+   }
     .secondary-bg {
         background-color: var(--color-bg-dark-secondary) !important;
     }
@@ -230,9 +232,10 @@ a, img, span {
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+    background: linear-gradient(90deg, #29232300, rgb(109 28 28 / 50%), transparent);
     pointer-events: none;
 }
+
 .source-container .source {
     -webkit-backdrop-filter: saturate(1.2);
     filter: saturate(1.2);
