@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPASign - sign ipa files online </title>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/axios.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/qrcode.min.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+
+    <style>
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.3s
+        }
+        .fade-enter, .fade-leave-to /* .fade-leave-active, 2.1.8 版本以下 */ {
+            opacity: 0
+        }
+    </style>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <div id="app">
+        <div class="p-0 container-fluid">
+            <nav class="navbar navbar-dark bg-info navbar-expand-lg"><a href="#" target="_self" class="navbar-brand">IPASign</a></nav>
+            <div class="row mt-5">
+                <div class="col-sm-12 col-md-10 offset-md-1">
+                    <transition name = "fade">
+                        <div v-show="show" role="alert" aria-live="polite" aria-atomic="true" class="alert alert-dismissible alert-info">
+                            <button @click="close" type="button" aria-label="Close" class="close">×</button>
+                            <h4 class="alert-heading">This service allow you sign IPA files online without macOS for beta-testing.</h4>
+                            <p>By selecting files and pressing <span class="badge badge-secondary">Sign it now!</span> button you are confirming that:</p>
+                            <ul>
+                                <li>You have rights to use this IPA file;</li>
+                                <li>You have rights to use this p12 certificate;</li>
+                                <li>You will not use this service for piracy and other illegal purposes.</li>
+                            </ul>
+                            <p>This service will not save, use or distribute your files after signing process.</p>
+                            <p>IPA signature discussion group telegram: <span class="badge badge-secondary"> https://t.me/ipasigns </span>  </p>
+                        </div>
+                    </transition>
+
+                    <div class="card">
+                        <div class="card-body" v-show="showStep1">
+                            <h4 class="card-title">Step 1: Select your files</h4>
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <div class="custom-file b-form-file is-invalid" v-bind:class="ipaCss">
+                                        <input type="file" @change="getFile($event)" ref="ipa" required="required" accept=".ipa" aria-required="true" class="custom-file-input" v-bind:class="ipaCss" id="ipa" style="z-index: -5;">
+                                        <label data-browse="Browse" class="custom-file-label" for="ipa">
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ ipaText }}</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <div class="custom-file b-form-file is-invalid" v-bind:class="p12Css">
+                                        <input type="file" @change="getFile($event)" ref="p12" required="required" accept=".p12" aria-required="true" class="custom-file-input" v-bind:class="p12Css" id="p12" style="z-index: -5;">
+                                        <label data-browse="Browse" class="custom-file-label" for="p12">
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ p12Text }}</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" v-model="password" ref="pwd" placeholder="Enter .p12 password" required="required" aria-required="true" aria-invalid="true" class="form-control" v-bind:class="pwdCss" id="password">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <div class="custom-file b-form-file" v-bind:class="mobCss">
+                                        <input type="file" ref="mob" @change="getFile($event)" required="required" accept=".mobileprovision" aria-required="true" class="custom-file-input" v-bind:class="mobCss" id="mobileprovision" style="z-index: -5;">
+                                        <label data-browse="Browse" class="custom-file-label" for="mobileprovision">
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ mobText }}</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <input type="text" v-model="identifier" ref="identifier" placeholder="Enter new bundle identifier" class="form-control" id="identifier">
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <input type="text" v-model="name" ref="name" placeholder="Enter new bundle name" class="form-control" id="name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <label class="form-control">
+                                        <span>Delete dynamic library</span>
+                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="1" v-model="unlockValue"> Yes</div>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-control">
+                                        <span>Delete dynamic library</span>
+                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="0" v-model="unlockValue"> No</div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary btn-block" @click="upload">
+                                <svg style="height: 20px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="signature" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="">
+                                    <path fill="currentColor" d="M623.2 192c-51.8 3.5-125.7 54.7-163.1 71.5-29.1 13.1-54.2 24.4-76.1 24.4-22.6 0-26-16.2-21.3-51.9 1.1-8 11.7-79.2-42.7-76.1-25.1 1.5-64.3 24.8-169.5 126L192 182.2c30.4-75.9-53.2-151.5-129.7-102.8L7.4 116.3C0 121-2.2 130.9 2.5 138.4l17.2 27c4.7 7.5 14.6 9.7 22.1 4.9l58-38.9c18.4-11.7 40.7 7.2 32.7 27.1L34.3 404.1C27.5 421 37 448 64 448c8.3 0 16.5-3.2 22.6-9.4 42.2-42.2 154.7-150.7 211.2-195.8-2.2 28.5-2.1 58.9 20.6 83.8 15.3 16.8 37.3 25.3 65.5 25.3 35.6 0 68-14.6 102.3-30 33-14.8 99-62.6 138.4-65.8 8.5-.7 15.2-7.3 15.2-15.8v-32.1c.2-9.1-7.5-16.8-16.6-16.2z" class=""></path>
+                                </svg>Sign it now !
+                            </button>
+                        </div>
+
+                        <div class="card-body" v-show="showStep2">
+                            <h4 class="card-title">Step 2: Uploading</h4>
+                            <div class="progress">
+                                <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ progressBar }}" class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                     v-bind:style="{'width': progressBar + '%'}"><strong>{{ progressBar }}%</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body" v-show="showStep3">
+                            <h4 class="card-title">Step 3: Processing</h4>
+                            <svg style="height: 20px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 fa-spin">
+                                    <path fill="currentColor" d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" class=""></path>
+                            </svg> We are processing your files, please wait...
+                        </div>
+
+                        <div class="card-body" v-show="showStep4">
+                            <h4 class="card-title">Step 4: Install application</h4>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h6>Scan this code with camera</h6>
+                                    <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h6>Copy &amp; send link to your testers</h6>
+                                    <a :href="download"
+                                       target="_self" class="d-block mx-auto">{{download}}</a>
+                                    <div style="margin-top: 48px;"><a :href="download_ipa">Download IPA</a></div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn mt-3 btn-primary btn-block" @click="index">Start over</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true,
+                showStep1: true,
+                showStep2: false,
+                showStep3: false,
+                showStep4: false,
+                progressBar: 0,
+                ipaCss: 'is-invalid',
+                ipaText: 'Choose an .ipa file or drop it here...',
+                p12Css: 'is-invalid',
+                p12Text: 'Choose an .p12 file or drop it here...',
+                pwdCss: 'is-invalid',
+                pwdText: 'Enter .p12 password',
+                mobCss: 'is-invalid',
+                mobText: 'Choose an .mobileprovision file or drop it here...',
+                download: '',
+                download_ipa: '',
+                ipa: '',
+                p12: '',
+                password: '',
+                mobileprovision: '',
+                name: '',
+                identifier: '',
+                unlockValue: 0,
+            },
+            methods: {
+                getFile: function (params) {
+                    console.info(params);
+                    switch (params.srcElement.accept) {
+                        case '.ipa':
+                            if (params.target.files.length > 0) {
+                                this.ipaCss = 'is-valid';
+                                this.ipaText = params.target.files[0].name;
+                                this.ipa = params.target.files[0];
+                            } else {
+                                this.ipaCss = 'is-invalid';
+                                this.ipaText = 'Choose an .ipa file or drop it here...';
+                                this.ipa = '';
+                            }
+                            break;
+                        case '.p12':
+                            if (params.target.files.length > 0) {
+                                this.p12Css = 'is-valid';
+                                this.p12Text = params.target.files[0].name;
+                                this.p12 = params.target.files[0];
+                            } else {
+                                this.p12Css = 'is-invalid';
+                                this.p12Text = 'Choose an .ipa file or drop it here...';
+                                this.p12 = '';
+                            }
+                            break;
+                        case '.mobileprovision':
+                            if (params.target.files.length > 0) {
+                                this.mobCss = 'is-valid';
+                                this.mobText = params.target.files[0].name;
+                                this.mobileprovision = params.target.files[0];
+                            } else {
+                                this.mobCss = 'is-invalid';
+                                this.mobText = 'Choose an .mobileprovision file or drop it here...';
+                                this.mobileprovision = '';
+                            }
+                            break;
+                    }
+                },
+                upload: function () {
+                    let that = this;
+                    var refs = this.$refs;
+                    var keys = Object.keys(refs);
+
+                    for (var i = 0; i < Object.keys(refs).length; i++) {
+                        if (refs[keys[i]].ariaRequired && !refs[keys[i]].value) {
+                            refs[keys[i]].focus();
+                            return false;
+                        }
+                    }
+
+                    // 文件上传
+                    this.showStep1 = false;
+                    this.showStep2 = true;
+                    var formData = new FormData();
+                    formData.append("ipa", this.ipa);
+                    formData.append("p12", this.p12);
+                    formData.append("password", this.password);
+                    formData.append("mobileprovision", this.mobileprovision);
+                    let config = {
+                        headers: {
+                            'Content-Type': 'multipart/form-data'
+                        },
+                        onUploadProgress: (progressEvent) => {
+                            // 使用本地 progress 事件
+                            if (progressEvent.lengthComputable) {
+                                let num = Math.round((progressEvent.loaded / progressEvent.total) * 100)
+                                this.progressBar = num // 使用某种 UI 进度条组件会用到的百分比
+                            }
+                        }
+                    }
+
+                    axios.post(uploadUrl, formData, config).then((response) => {
+                        if(response.data.code==0){
+                            // 上传完成，开始签名
+                            that.showStep2 = false;
+                            that.showStep3 = true;
+                            let data = response.data.data;
+
+                            let headers = {
+                                headers: {
+                                    'Content-Type': 'multipart/form-data'
+                                }
+                            }
+                            var signData = new FormData();
+                            signData.append("name", this.name);
+                            signData.append("uuid", data.uuid);
+                            signData.append("time", data.time);
+                            signData.append("unlock", this.unlockValue);
+                            signData.append("identifier", this.identifier);
+
+                            axios.post(signUrl, signData, headers).then((response) => {
+                                if(response.data.code==0){
+
+                                    axios.post(checkUrl, signData, headers).then((response) => {
+                                        if (response.data.code == 0) {
+                                            // 签名成功
+                                            this.showStep3 = false;
+                                            this.showStep4 = true;
+
+                                            that.download = downloadUrl + '/' + data.uuid + '/' + data.time;
+                                            that.download_ipa = storageUrl + '/' + data.time + '/' + data.uuid + '/' + 'resign_' + data.time + '.ipa'
+                                            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                                                width : 100,
+                                                height : 100
+                                            });
+                                            qrcode.makeCode(that.download);
+                                        } else if (response.data.code == 1) {
+                                            console.info("签名中");
+                                        } else {
+                                            alert("Signature failed");
+                                            return;
+                                        }
+                                    });
+
+                                    // window.setInterval(function () {
+                                    // }, 3000);
+                                } else {
+                                    alert(response.data.msg);
+                                    return;
+                                }
+                            });
+                        } else {
+                            alert('Please check the certificate password');
+                        }
+                    }).catch(function (error) {
+                        alert(error);
+                    });
+                },
+                close: function () {
+                    this.show = false;
+                },
+                index: function () {
+                    location.reload();
+                }
+            },
+            watch: {
+                password: function (params) {
+                    if (params.length > 0) {
+                        this.pwdCss = 'is-valid';
+                    } else {
+                        this.pwdCss = 'is-invalid';
+                    }
+                },
+            },
+        })
+    </script>
+</body>
+

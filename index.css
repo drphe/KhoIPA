@@ -81,24 +81,23 @@
 }
 
 
-#close-btn {
+.uibanner>.content .close-btn {
     min-width: 0.5rem!important;
     background: transparent;
     border-radius: 3rem;
-    margin: 0 0.5rem;
-    padding: 0.2rem 0;
+    padding: 0.2rem 0.1rem;
     scale: 0.9;
     color: var(--altstore-tint-color);
     transition: all 0.2s ease; 
     user-select: none; 
 }
 
-#close-btn:hover {
+.uibanner>.content .close-btn:hover {
     color: #333;           /* Chuyển sang màu xám đậm/đen */
     transform: scale(1.15); /* Phóng to lên một chút (15%) tạo điểm nhấn */
 }
 
-#close-btn:active {
+.uibanner>.content .close-btn:active {
     transform: scale(0.9);  /* Co nhỏ lại một chút (90%) tạo cảm giác nút bị lún xuống */
     opacity: 0.6;           /* Làm mờ đi một chút khi đang bấm */
     transition: transform 0.05s ease; /* Phản hồi cực nhanh khi bấm xuống */

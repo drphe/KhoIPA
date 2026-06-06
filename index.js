@@ -39,34 +39,33 @@ if ('serviceWorker' in navigator) {
 (async () => {
     // chèn và tắt quảng cáo
     $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
-    const hideAds = localStorage.getItem('hideAds');
-    const currentTime = new Date().getTime();
-    if (hideAds && currentTime < parseInt(hideAds) || isPWA) {
-        $(".uibanner").style.display="none";
- 	$("#main").style.top="2.5rem";
-    }
-    const anAds = new UIAlert({
-        title: langText['tbao'],
-        message:langText['hideads7']
-    });
-    anAds.addAction({
-        title: langText['yesb'],
-        style: "default",
-        handler: ()=> anAdsUntil(7)
-    });
-    anAds.addAction({
-        title: langText['cancel'],
-        style: "cancel",
-    });
-    $("#close-btn").addEventListener('click', function() {
-	anAds.present(); 
-    });
-    function anAdsUntil(t){
-       const oneWeekInMilliseconds = t * 24 * 60 * 60 * 1000;
+    if (isPWA) anAdsUntil('khoipa', 10000000);
+    function anAdsUntil(id, t) {
+        const oneWeekInMilliseconds = t * 24 * 60 * 60 * 1000;
         const expiryTime = new Date().getTime() + oneWeekInMilliseconds;
-        localStorage.setItem('hideAds', expiryTime);
-        $(".uibanner").style.display="none";
- 	$("#main").style.top="2.5rem";
+
+        let data = [];
+        try {
+            data = JSON.parse(localStorage.getItem('hideAds') || '[]');
+	   if(!Array.isArray(data)) {data = []};
+        } catch (e) {
+            console.error('Error parsing hideAds:', e);
+            data = [];
+        }
+
+        let findId = data.find(s => s.id == id);
+        if (findId) {
+            findId.expired = expiryTime;
+        } else {
+            data.push({
+                id: id,
+                expired: expiryTime
+            });
+        }
+
+        localStorage.setItem('hideAds', JSON.stringify(data));
+        $(".uibanner")?.remove();
+        $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
     }
     // bật tính năng thông báo trên app
     const checkNoti = new UIAlert({
@@ -470,10 +469,11 @@ if ('serviceWorker' in navigator) {
     document.addEventListener("click", async(event) => {
         const targetLink = event.target.closest("a.app-header-link");
         const targetInstall = event.target.closest("a.install-app");
+        const targetClose = event.target.closest("a.close-btn");
         const targetNews = event.target.closest("a.news-item-header");
         const targetNewsLink = event.target.closest("a.news-item-link");
 	const sourceLink = event.target.closest("a.source-link");
-
+	// xử lý source repo
 	const showAppPanel = async (so) => {
             await openPanel('<div id="apps-list"></div>', `<p>${so.name} (${so.apps.length})</p>`, '.', "side", "apps-popup-all");
             addAppList({ apps: so.apps }, 20, 0);
@@ -524,16 +524,34 @@ if ('serviceWorker' in navigator) {
                 act ? (await repoAlert.present()):(await showAppPanel(so));
             }
         } 
-        if (targetInstall) {
+	// xử lý quảng cáo
+        if (targetInstall && window.isReload) {
             event.preventDefault();
-     	    if(window.isReload){
 		window.isReload = false;
 		location.reload();
-	    }else if (!isPWA) showUIAlert(langText['howtoinstall'], langText['howtoinstallText']);
-            else {
-		await enableNotifications();
-	    }
+		return;
         }
+        if (targetClose) {
+            event.preventDefault(); 
+            let idAds = targetClose.getAttribute("data-id");
+            if (idAds) {
+                const anAds = new UIAlert({
+                    title: langText['tbao'],
+                    message: langText['hideads7']
+                });
+                anAds.addAction({
+                    title: langText['yesb'],
+                    style: "default",
+                    handler: () => anAdsUntil(idAds, 7) //7 days
+                });
+                anAds.addAction({
+                    title: langText['cancel'],
+                    style: "cancel",
+                });
+                anAds.present();
+            }
+        }
+
         if (targetNewsLink) {
             event.preventDefault();
             const url = targetNewsLink.getAttribute("data-url");
@@ -634,7 +652,7 @@ if ('serviceWorker' in navigator) {
     }
 
     function filterSourcesByTitle(keyword) {
-	let filtersource = allSources.filter(function(s) {
+	    currentData = allSources.filter(function(s) {
     	    var name = s.name ? s.name.toLowerCase() : '';
 	    var subtitle = s.subtitle ? s.subtitle.toLowerCase() : '';
 	    var searchText = name + subtitle;
@@ -645,10 +663,10 @@ if ('serviceWorker' in navigator) {
         const list = $('#sources-list');
         while (list.firstChild) list.removeChild(list.firstChild);
 
-        if (filtersource.length) {
+        if (currentData.length) {
             currentIndex = 0;
-            insertNextBatch(filtersource);
-            insertScrollButton($("#sources-list"), () => insertNextBatch(filtersource))
+            insertNextBatch();
+            insertScrollButton($("#sources-list"), () => insertNextBatch())
         } else {
             list.innerHTML = `
     <div class="app-container" style="grid-column: 1 / -1;grid-row: 1 / -1;height: 100%;max-width: none !important; ">
@@ -664,7 +682,7 @@ if ('serviceWorker' in navigator) {
       </div>
     </div>`;
         }
-        return filtersource.length;
+        return currentData.length;
     }
 
     function insertSearchBox() {
@@ -718,11 +736,8 @@ if ('serviceWorker' in navigator) {
         sContainer.before(searchWrapper);
     }
 
-    function insertNextBatch(filters) {
-        if (filters !== undefined) {
-            currentData = filters ?? allSources;
-            currentIndex = 0;
-        } else if (currentData.length === 0) {
+    function insertNextBatch() {
+        if (currentData.length === 0) {
             currentData = allSources;
         }
         const nextBatch = currentData.slice(currentIndex, currentIndex + ITEMS_PER_PAGE);

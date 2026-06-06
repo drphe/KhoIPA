@@ -875,16 +875,15 @@ a>button {
 }
 
 @keyframes fade {
-
     0%,
     40%,
     100% {
-        opacity: 1;
+        opacity: 1;pointer-events: auto;
     }
 
     50%,
     90% {
-        opacity: 0;
+        opacity: 0;pointer-events: none;
     }
 }
 
@@ -930,6 +929,7 @@ a>button {
 
 .uibanner>.content .text-container:last-of-type {
     animation: fade 12s infinite;
+     transition: opacity 0.3s;
 }
 
 .uibanner>.content .text-container>.title-text {
