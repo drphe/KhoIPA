@@ -21,7 +21,7 @@ const configADS = [{
     title: "SignIPA",
     "detail-text": "Sign & Install IPA online. ",
     "button-text": "View",
-   "onclick": "window.open('/signipa/index.html', '_blank')"
+   "onclick": "window.open('https://drphe.github.io/KhoIPA/signipa/index.html', '_blank')"
 }
 ,{
     id: "telegram",
