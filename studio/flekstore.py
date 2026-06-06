@@ -63,10 +63,10 @@ def get_all_apps():
     """Lấy toàn bộ danh sách app từ các trang"""
     all_apps = []
     page = 0
-    
+    base_url = '\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x65\x73\x74\x61\x70\x69\x2e\x66\x6c\x65\x6b\x73\x74\x6f\x72\x65\x2e\x63\x6f\x6d\x2f\x61\x70\x70'
     while True:
         try:
-            url = f"https://nestapi.flekstore.com/app?page={page}&search=&filter="
+            url = f"{base_url}?page={page}&search=&filter="
             print(f"Đang lấy danh sách từ page {page}...")
             response = requests.get(url, timeout=30)
             response.raise_for_status()
@@ -88,13 +88,13 @@ def transform_app_list(apps_array, progress_callback=None):
     """Chuyển đổi danh sách app sang cấu trúc mới"""
     final_mapped_apps = []
     total_apps = len(apps_array)
-    
+    base_url = '\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x65\x73\x74\x61\x70\x69\x2e\x66\x6c\x65\x6b\x73\x74\x6f\x72\x65\x2e\x63\x6f\x6d\x2f\x61\x70\x70\x2f'
     for idx, minimal_app in enumerate(apps_array):
         app_id = minimal_app.get('id')
         
         try:
             # Lấy chi tiết từng app
-            url = f"https://nestapi.flekstore.com/app/{app_id}"
+            url = f"{base_url}{app_id}"
             response = requests.get(url, timeout=30)
             response.raise_for_status()
             detail_data = response.json()

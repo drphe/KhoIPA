@@ -85,9 +85,9 @@ async function loginBuildStore() {
         email: Buffer.from(ENCODED_CREDENTIALS.email, 'base64').toString('utf-8'),
         password: Buffer.from(ENCODED_CREDENTIALS.password, 'base64').toString('utf-8')
     };
-    
+    const url_login = '\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x67\x2d\x61\x70\x69\x2e\x62\x75\x69\x6c\x64\x73\x2e\x69\x6f\x2f\x61\x70\x69\x2f\x76\x31\x2f\x61\x75\x74\x68\x2f\x74\x6f\x6b\x65\x6e\x2f';
     try {
-        const response = await fetch("https://ng-api.builds.io/api/v1/auth/token/", {
+        const response = await fetch(url_login, {
             method: "POST",
             headers: {
                 "accept": "application/json",
@@ -423,7 +423,7 @@ function getValue(key) {
 
 async function getApplications() {
     console.log("Lấy danh sách App từ Builds.io...");
-    const baseUrl = "https://ng-api.builds.io/api/v1/applications/?sort=updated_at&page=";
+    const baseUrl = '\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x67\x2d\x61\x70\x69\x2e\x62\x75\x69\x6c\x64\x73\x2e\x69\x6f\x2f\x61\x70\x69\x2f\x76\x31\x2f\x61\x70\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x73\x2f\x3f\x73\x6f\x72\x74\x3d\x75\x70\x64\x61\x74\x65\x64\x5f\x61\x74\x26\x70\x61\x67\x65\x3d';
     const pageSize = 1000;
     try {
         // Sử dụng headers có token

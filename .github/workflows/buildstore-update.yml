@@ -2,7 +2,8 @@ name: Auto Update BuildStore Repo
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # 13:00 UTC = 20:00 GMT+7
+    - cron: '0 9 * * *' 
+    - cron: '0 21 * * *' 
   workflow_dispatch:        # giữ lại để vẫn có thể chạy thủ công
 
 jobs:

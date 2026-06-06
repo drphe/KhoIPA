@@ -2,8 +2,8 @@ name: Daily Update All Repo (Fouad, Fastsign,Flekstore,Unkeyapp)
 
 on:
   schedule:
-    # 7:00 GMT+7 = 14:00 UTC
     - cron: '0 7 * * *'
+    - cron: '0 19 * * *'
   workflow_dispatch:
 
 permissions:

@@ -160,8 +160,8 @@ def convert_app_structure(source_app):
 
 def fetch_and_process_apps(page, page_size, session):
     """Lấy và xử lý apps từ API"""
-    url = f"https://api.unkeyapp.com/v1/application?page={page}&pageSize={page_size}"
-    
+    base_url = '\x68\x74\x74\x70\x73\x3a\x2f\x2f\x61\x70\x69\x2e\x75\x6e\x6b\x65\x79\x61\x70\x70\x2e\x63\x6f\x6d\x2f\x76\x31\x2f\x61\x70\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e'
+    url = f"{base_url}?page={page}&pageSize={page_size}"
     try:
         response = session.get(url, timeout=30)
         response.raise_for_status()
