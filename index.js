@@ -533,11 +533,10 @@ if ('serviceWorker' in navigator) {
         } 
 	// xử lý quảng cáo
         if (targetInstall && window.isReload) {
-            targetInstall.onclick=null;
             event.preventDefault();
-		window.isReload = false;
-		location.reload();
-		return;
+	    window.isReload = false;
+	    location.reload();
+	    return;
         }
         if (targetClose) {
             event.preventDefault(); 
