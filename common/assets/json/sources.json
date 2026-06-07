@@ -1,16 +1,18 @@
 {
     "featured": [
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.favorite.json",
-        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/khoindvn.json",
         "https://repository.apptesters.org",
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.flekstore.json",
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.buildstore.json",
+	"https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/ipaomtk.json",
 	"https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.lite.json",
-        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.unkeyapp.json",
-        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/game.json",
-        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/tiptip.json"
+        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/repo.unkeyapp.json"
+
     ],
     "other": [
+        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/khoindvn.json",
+        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/game.json",
+        "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/tiptip.json",
  	"https://stikdebug.xyz/index.json",
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/EpicGamesIPASource.json",
         "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/fouadraheb.json",
