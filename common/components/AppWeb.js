@@ -103,7 +103,7 @@ export const AppBanner = (name) => {
     const renderAdBtn = (ad, index) => `
         <div class="text-container" style="display: flex;align-items: center;justify-content: center;">
 	    <a href="#" class="install-app" data-id="${ad.id}" onclick="${ad.onclick}">
-                <button id="add-to-altstore">${ad["button-text"]}</button>
+                <button class="add-to-altstore">${ad["button-text"]}</button>
             </a>
             <a href="#" class="close-btn" aria-label="Close" data-id="${ad.id}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="8" x2="16" y2="16"></line><line x1="16" y1="8" x2="8" y2="16"></line>

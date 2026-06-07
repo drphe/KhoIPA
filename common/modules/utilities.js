@@ -504,14 +504,17 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
             body: parts.join(", ")
      };
 
-let data = JSON.parse(localStorage.getItem('updatedRepo')) || [];
-data = data.filter(item => item !== newData.identifier);
-data.push(newData.identifier);
-if (data.length > 5) data.shift();
-localStorage.setItem('updatedRepo', JSON.stringify(data));
+    let data = JSON.parse(localStorage.getItem('updatedRepo')) || [];
+    data = data.filter(item => item !== newData.identifier);
+    data.push(newData.identifier);
+    if (data.length > 5) data.shift();
+    localStorage.setItem('updatedRepo', JSON.stringify(data));
 
     const updatedRepo = localStorage.getItem('updatedRepo');
     window.isReload = true;
-	$("#add-to-altstore") && ($("#add-to-altstore").innerHTML = "Refresh", $("#add-to-altstore").classList.add("skeleton-effect-fade"));
+    document.querySelectorAll(".add-to-altstore").forEach(function(el) {
+        el.innerHTML = "Refresh";
+        el.classList.add("skeleton-effect-fade");
+    });
      navigator.serviceWorker?.controller?.postMessage(noti);
 }

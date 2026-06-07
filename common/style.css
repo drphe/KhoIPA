@@ -676,7 +676,7 @@ a>button {
     }
 
     button.uibutton:hover,
-    button#add-to-altstore:hover,
+    button.add-to-altstore:hover,
     div.news-item-wrapper a>div:hover,
     div.news-item-wrapper a:hover,
     a#edit:hover,

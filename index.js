@@ -101,11 +101,6 @@ if ('serviceWorker' in navigator) {
         }
     }))).filter(Boolean);
 
-    const randCode = (e) => {
-        const b64 = base64Convert(e);
-        const mid = Math.floor(b64.length / 2);
-        return b64.slice(0, 2) + b64.slice(mid - 1, mid + 1) + b64.slice(-2);
-    }
     // Set News
     const jsonNews = featuredSources[0].news;
     let jsonNewsUrl = [];
@@ -150,8 +145,9 @@ if ('serviceWorker' in navigator) {
 		countSourceRepo.count ++;
 		countSourceRepo.size += getJsonSizeInMemory(dataRepo);
 	        spanLoading.forEach(span => span.textContent = langText["loading"] + `${tinhPhanTram(countSourceRepo.count,countSourceRepo.all)}% (${AppSize(countSourceRepo)})`);
+		return dataRepo;
         }
-        catch {
+        catch { console.error();
             return null;
         }
     }))).filter(Boolean);
@@ -162,6 +158,7 @@ if ('serviceWorker' in navigator) {
         return x.getFullYear() > y + 10 ? (x.setFullYear(y - 1), x.toISOString().split("T")[0]) : d
     }
     const allSources = [...featuredSources, ...otherSources]; // chuẩn bị danh sách app
+
     allSources.sort((a, b) => b.lastUpdated - a.lastUpdated);    // Sort sources by last updated
     window.allApps = [];
     let countAllRepo = 0;
@@ -456,9 +453,9 @@ if ('serviceWorker' in navigator) {
    $('#all-source')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="sources-list"></div>', `<p>${langText['featuredrepo']} </p>`, '.', "side", "sources-popup-all");
-	await insertSearchBox();
 	currentIndex = 0;
-    currentData=featuredSources;
+        currentData=featuredSources;
+	await insertSearchBox();
 	insertNextBatch();
 	insertScrollButton($("#sources-list"), ()=>insertNextBatch())
         activateNavLink("page-source");
@@ -467,9 +464,9 @@ if ('serviceWorker' in navigator) {
    $('#all-source2')?.addEventListener("click", async (e) => {
         e.preventDefault();
         await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} </p>`, '.', "side", "sources-popup-all");
-	await insertSearchBox();
 	currentIndex = 0;
-    currentData=allSources;
+        currentData=allSources;
+	await insertSearchBox();
 	insertNextBatch();
 	insertScrollButton($("#sources-list"), ()=>insertNextBatch());
         activateNavLink("page-source");
@@ -603,9 +600,9 @@ if ('serviceWorker' in navigator) {
             activateNavLink(target);
             if (target == 'page-source') {
                 await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
-                await insertSearchBox();
                 currentIndex = 0;
                 currentData=allSources;
+                await insertSearchBox();
                 insertNextBatch();
                 insertScrollButton($("#sources-list"), () => insertNextBatch());
             } else if (target == 'page-library') {
@@ -697,8 +694,6 @@ if ('serviceWorker' in navigator) {
 
     function insertSearchBox() {
         const sContainer = $('#sources-list');
-        let fillSources = [...allSources];
-
         // Tạo wrapper chứa input và icon
         const searchWrapper = document.createElement("div");
         searchWrapper.style.cssText = "z-index: 200;align-items: center;justify-content: center;gap: 0.85rem;position: sticky;top:0;padding:0 1rem;"
@@ -719,7 +714,7 @@ if ('serviceWorker' in navigator) {
         xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
         // Tạo total app
         const totalSCount = xIcon.querySelector(".totalSearch");
-        totalSCount.innerText = `${langText['total']} ${allSources.length} repos `;
+        totalSCount.innerText = `${langText['total']} ${currentData.length} repos `;
         xIcon.addEventListener('click', () => {
             searchBox.value = '';
             xIcon.style.display = 'none';
