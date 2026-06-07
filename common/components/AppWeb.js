@@ -35,7 +35,15 @@ const configADS = [{
     id: "ipaomtk",
     icon: "https://ipaomtk.com/wp-content/themes/IPAOMTK/assets/img/ipaomtk-brand-icon.png",
     beta: false,
-    title: "Newest's Repo",
+    title: "Newest's Games Repo",
+    "detail-text": "Download IOS IPA files & Tweaks Apps",
+    "button-text": "View",
+   "onclick": "window.open(window.location.href+'/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhbW90a2cuanNvbg', '_blank')"
+},{
+    id: "ipaomtk",
+    icon: "https://ipaomtk.com/wp-content/themes/IPAOMTK/assets/img/ipaomtk-brand-icon.png",
+    beta: false,
+    title: "Newest's Apps Repo",
     "detail-text": "Download IOS IPA files & Tweaks Apps",
     "button-text": "View",
    "onclick": "window.open(window.location.href+'/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhb210ay5qc29u', '_blank')"
