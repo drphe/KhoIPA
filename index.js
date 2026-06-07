@@ -22,7 +22,7 @@ import {
     enableNotifications
 } from "./common/modules/utilities.js";
 import {AppBanner}from "./common/components/AppWeb.js";
-import {AppHeader, appHeaderLine, checkBeta}from "./common/components/AppHeader.js";
+import {AppHeader, appHeaderLine, checkBeta, AppSize}from "./common/components/AppHeader.js";
 import {NewsItem}from "./common/components/NewsItem.js";
 import {openPanel,addAppList, insertScrollButton}from "./common/components/Panel.js";
 import UIAlert from "./common/vendor/uialert.js/uialert.js";
@@ -38,6 +38,7 @@ if ('serviceWorker' in navigator) {
 }
 (async () => {
     // chèn và tắt quảng cáo
+    let spanLoading = document.querySelectorAll('span[data-text="loading"]');
     $("#top")?.insertAdjacentHTML("afterbegin", AppBanner("Kho IPA Mod"));
     if (isPWA) anAdsUntil('khoipa', 10000000);
     function anAdsUntil(id, t) {
@@ -82,20 +83,24 @@ if ('serviceWorker' in navigator) {
         style: "cancel",
     });
     isPWA &&"Notification" in window && Notification.permission === "default" && checkNoti.present() ;// nếu đang trên PWA thì kiểm tra thống báo
-    let spanLoading = document.querySelectorAll('span[data-text="loading"]');
-    spanLoading.forEach(span => span.textContent = langText["loading"] + "10%");
 
+    const tinhPhanTram = (soDem, tong) => tong === 0 ? 0 : Math.round((soDem / tong) * 100);
     // fetch Data
     const sources = await json("./common/assets/json/sources.json");
+    let countSourceRepo = {count: 0, size: 0, all:sources?.featured.length +  sources?.other.length }
     const featuredSources = (await Promise.all(sources.featured.map(async url => {
         try {
-            return await fetchSource(url);
+            const dataRepo =  await fetchSource(url);
+		countSourceRepo.count ++;
+		countSourceRepo.size += getJsonSizeInMemory(dataRepo);
+	        spanLoading.forEach(span => span.textContent = langText["loading"] + `${tinhPhanTram(countSourceRepo.count,countSourceRepo.all)}% (${AppSize(countSourceRepo)})`);
+	    return dataRepo;
         }
         catch (e){
             return null;
         }
     }))).filter(Boolean);
-    spanLoading.forEach(span => span.textContent = langText["loading"] + "80%");
+
     const randCode = (e) => {
         const b64 = base64Convert(e);
         const mid = Math.floor(b64.length / 2);
@@ -141,26 +146,27 @@ if ('serviceWorker' in navigator) {
     else $("#news").remove();
     const otherSources = (await Promise.all(sources.other.map(async url => {
         try {
-            return await fetchSource(url);
+            const dataRepo =  await fetchSource(url);
+		countSourceRepo.count ++;
+		countSourceRepo.size += getJsonSizeInMemory(dataRepo);
+	        spanLoading.forEach(span => span.textContent = langText["loading"] + `${tinhPhanTram(countSourceRepo.count,countSourceRepo.all)}% (${AppSize(countSourceRepo)})`);
         }
         catch {
             return null;
         }
     }))).filter(Boolean);
-    spanLoading.forEach(span => span.textContent = langText["loading"] + "99%");
-    // Sort sources by last updated
-    otherSources.sort((a, b) => b.lastUpdated - a.lastUpdated);
+    spanLoading.forEach(span => span.textContent = langText["loading"] + `99% (${AppSize(countSourceRepo)})`);
     const fixYear = (d) => {
         let x = new Date(d),
             y = new Date().getFullYear();
         return x.getFullYear() > y + 10 ? (x.setFullYear(y - 1), x.toISOString().split("T")[0]) : d
     }
     const allSources = [...featuredSources, ...otherSources]; // chuẩn bị danh sách app
+    allSources.sort((a, b) => b.lastUpdated - a.lastUpdated);    // Sort sources by last updated
     window.allApps = [];
     let countAllRepo = 0;
     for (const source of allSources) {
         if (!source || !Array.isArray(source.apps)) continue;
-
         for (const app of source.apps) {
 	    if(source.featuredApps?.length) 
 	    app.isFeatured = source.featuredApps?.includes(app.bundleIdentifier)??false;
@@ -755,6 +761,10 @@ if ('serviceWorker' in navigator) {
 	localStorage.setItem('bundleHistory', JSON.stringify(h));
 	$("#suggestions4")?.insertAdjacentHTML("afterbegin", AppHeader(app));
 
+    }
+    function getJsonSizeInMemory(obj) {
+       const jsonString = JSON.stringify(obj);
+      return new Blob([jsonString]).size;
     }
     insertScrollButton($("#main"), ()=>{}, window)
     let isScrolling = false;

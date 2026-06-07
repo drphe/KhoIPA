@@ -21,7 +21,7 @@ const configADS = [{
     title: "SignIPA",
     "detail-text": "Sign & Install IPA online. ",
     "button-text": "View",
-   "onclick": "window.open('https://kho-ipa.vercel.app/signipa/index.html', '_blank')"
+   "onclick": "window.open(window.location.href+'/signipa/index.html', '_blank')"
 }
 ,{
     id: "khoindvn",
@@ -30,7 +30,7 @@ const configADS = [{
     title: "FreeSideloading",
     "detail-text": "Sideloadly free with DNS & Revoked Cert",
     "button-text": "View",
-   "onclick": "window.open('https://kho-ipa.vercel.app/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGa2hvaW5kdm4uanNvbg==', '_blank')"
+   "onclick": "window.open(window.location.href+'/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGa2hvaW5kdm4uanNvbg==', '_blank')"
 },{
     id: "ipaomtk",
     icon: "https://ipaomtk.com/wp-content/themes/IPAOMTK/assets/img/ipaomtk-brand-icon.png",
@@ -38,7 +38,7 @@ const configADS = [{
     title: "Newest's Repo",
     "detail-text": "Download IOS IPA files & Tweaks Apps",
     "button-text": "View",
-   "onclick": "window.open('https://kho-ipa.vercel.app/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhb210ay5qc29u', '_blank')"
+   "onclick": "window.open(window.location.href+'/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhb210ay5qc29u', '_blank')"
 },{
     id: "telegram",
     icon: "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
