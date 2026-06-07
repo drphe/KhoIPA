@@ -455,9 +455,10 @@ if ('serviceWorker' in navigator) {
     // view all source
    $('#all-source')?.addEventListener("click", async (e) => {
         e.preventDefault();
-        await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} </p>`, '.', "side", "sources-popup-all");
+        await openPanel('<div id="sources-list"></div>', `<p>${langText['featuredrepo']} </p>`, '.', "side", "sources-popup-all");
 	await insertSearchBox();
 	currentIndex = 0;
+    currentData=featuredSources;
 	insertNextBatch();
 	insertScrollButton($("#sources-list"), ()=>insertNextBatch())
         activateNavLink("page-source");
@@ -468,6 +469,7 @@ if ('serviceWorker' in navigator) {
         await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']} </p>`, '.', "side", "sources-popup-all");
 	await insertSearchBox();
 	currentIndex = 0;
+    currentData=allSources;
 	insertNextBatch();
 	insertScrollButton($("#sources-list"), ()=>insertNextBatch());
         activateNavLink("page-source");
@@ -603,6 +605,7 @@ if ('serviceWorker' in navigator) {
                 await openPanel('<div id="sources-list"></div>', `<p>${langText['allrepo']}</p>`, '.', "side", "sources-popup-all");
                 await insertSearchBox();
                 currentIndex = 0;
+                currentData=allSources;
                 insertNextBatch();
                 insertScrollButton($("#sources-list"), () => insertNextBatch());
             } else if (target == 'page-library') {
