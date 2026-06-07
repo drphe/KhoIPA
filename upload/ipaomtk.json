@@ -3,6 +3,7 @@
   "identifier": "com.ipaomtk.repo",
   "sourceURL": "https://raw.githubusercontent.com/drphe/KhoIPA/main/upload/ipaomtk.altstore.json",
   "iconURL": "https://ipaomtk.com/wp-content/themes/IPAOMTK/assets/img/ipaomtk-brand-icon.png",
+    "tintColor": "ac1324",
   "website": "https://ipaomtk.com/",
   "ipawebsite": "https://kho-ipa.vercel.app",
   "subtitle": "IPAOMTK Download iOS IPA Files &amp; Tweaked Apps",
