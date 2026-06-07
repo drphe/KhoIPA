@@ -514,6 +514,7 @@ export function onUpdateRepo(oldDataInput, newDataInput) {
     window.isReload = true;
     document.querySelectorAll(".add-to-altstore").forEach(function(el) {
         el.innerHTML = "Refresh";
+        el.parentElement.onclick = null
         el.classList.add("skeleton-effect-fade");
     });
      navigator.serviceWorker?.controller?.postMessage(noti);
