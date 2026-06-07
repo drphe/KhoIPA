@@ -38,7 +38,7 @@ const configADS = [{
     title: "Newest's Repo",
     "detail-text": "Download IOS IPA files & Tweaks Apps",
     "button-text": "View",
-   "onclick": "https://kho-ipa.vercel.app/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhb210ay5qc29u', '_blank')"
+   "onclick": "window.open('https://kho-ipa.vercel.app/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhb210ay5qc29u', '_blank')"
 },{
     id: "telegram",
     icon: "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
