@@ -21,14 +21,14 @@ const configADS = [{
     title: "SignIPA",
     "detail-text": "Sign & Install IPA online. ",
     "button-text": "View",
-   "onclick": "window.open('https://drphe.github.io/KhoIPA/signipa/index.html', '_blank')"
+   "onclick": "window.open('https://kho-ipa.vercel.app/signipa/index.html', '_blank')"
 }
 ,{
     id: "khoindvn",
     icon: "https://i.ibb.co/nMt26Lf5/033502f1e155.png",
     beta: false,
     title: "FreeSideloading",
-    "detail-text": "Sideloadly free with DNS and Revoked Cert. ",
+    "detail-text": "Sideloadly free with DNS & Revoked Cert",
     "button-text": "View",
    "onclick": "window.open('https://kho-ipa.vercel.app/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGa2hvaW5kdm4uanNvbg==', '_blank')"
 },{
@@ -36,7 +36,7 @@ const configADS = [{
     icon: "https://ipaomtk.com/wp-content/themes/IPAOMTK/assets/img/ipaomtk-brand-icon.png",
     beta: false,
     title: "Newest's Repo",
-    "detail-text": "Download IOS IPA files & Tweaks Apps ",
+    "detail-text": "Download IOS IPA files & Tweaks Apps",
     "button-text": "View",
    "onclick": "https://kho-ipa.vercel.app/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhb210ay5qc29u', '_blank')"
 },{
@@ -44,7 +44,7 @@ const configADS = [{
     icon: "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
     beta: false,
     title: "ContactMe",
-    "detail-text": "Found a problem? Send me a message on Telegram. ",
+    "detail-text": "Found problems? Send me a message.",
     "button-text": "Send",
    "onclick": "window.open('https://t.me/phetit', '_blank')"
 }];
