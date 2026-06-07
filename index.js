@@ -286,6 +286,7 @@ if ('serviceWorker' in navigator) {
 
     document.body.classList.remove("loading"); // kết thúc load dữ liệu
     $("#loading")?.remove();
+    $("#main").style.display = "";
 
     const bundleIdToSourceMap = new Map();
     allSources.forEach(sourceTarget => {
