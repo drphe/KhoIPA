@@ -87,7 +87,7 @@ if ('serviceWorker' in navigator) {
     const tinhPhanTram = (soDem, tong) => tong === 0 ? 0 : Math.round((soDem / tong) * 100);
     // fetch Data
     const sources = await json("./common/assets/json/sources.json");
-    let countSourceRepo = {count: 0, size: 0, all:sources?.featured.length +  sources?.other.length }
+    let countSourceRepo = {count: 0, size: 4202000, all:sources?.featured.length +  sources?.other.length }
     const featuredSources = (await Promise.all(sources.featured.map(async url => {
         try {
             const dataRepo =  await fetchSource(url);
@@ -301,7 +301,7 @@ if ('serviceWorker' in navigator) {
         for (const app of source.apps) {
             if (app.patreon?.hidden) continue;
             let appVersionDate = new Date(app.versions?.[0]?.date ?? app.versionDate);
-            if (appVersionDate > source.lastUpdated) {
+            if (appVersionDate > source.lastUpdated && appVersionDate <= new Date()) {
                 source.lastUpdated = appVersionDate;
                 if (!source.iconURL) source.iconURL = app.iconURL;
                 if (!source.tintColor) source.tintColor = app.tintColor;
@@ -582,7 +582,7 @@ if ('serviceWorker' in navigator) {
             	return;
         	}
 		addHistory(bundleId);
-        	await openPanel(sourceTarget, bundleId, ".", "bottom");
+        	openPanel(sourceTarget, bundleId, ".", "bottom");
 	}
     });
     document.querySelectorAll(".nav-link").forEach(link => {

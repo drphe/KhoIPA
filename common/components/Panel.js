@@ -21,14 +21,14 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
     let altSourceIcon = dir + "/common/assets/img/generic_app.jpeg";
     let hasScreenshot= true, needPreview = false, tintColor ="000";
     let bottomPanel = document.querySelector(`#${ID}`);
-    if (bottomPanel) {
-        bottomPanel.innerHTML = "";
-        bottomPanel.classList.remove("show");
-    } else {
-        // nếu chưa có thì tạo mới
-        bottomPanel = document.createElement("div");
-        bottomPanel.id = ID;
-    }
+
+if (bottomPanel) {
+    bottomPanel.remove(); 
+}
+
+bottomPanel = document.createElement("div");
+bottomPanel.id = ID;
+
     bottomPanel.setAttribute("data-type", dataset);
     document.body.append(bottomPanel);
     if (direction == "bottom") {
@@ -225,7 +225,7 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
         // 
         // Subtitle
         const previewSubtitle = preview.querySelector("#subtitle");
-        previewSubtitle.textContent = app.subtitle;
+        previewSubtitle.textContent = app.subtitle?.includes("www.apptesters.org") ? "IPA Archive": (app.subtitle??"");
         if (previewSubtitle.scrollHeight > previewSubtitle.clientHeight) previewSubtitle.insertAdjacentHTML("beforeend", MoreButton(tintColor));
         // Screenshots
         // New
@@ -660,7 +660,12 @@ export const openPanel = async(jsons, bundleId, dir = '.', direction = "", ID = 
 	    oldTargetPage.pop();
 	    activateNavLink(oldTargetPage[oldTargetPage.length-1]);
   	    document.querySelectorAll('div[data-type="news"]').forEach(div =>div.remove());
-        } 
+        } else if (bottomPanel.id === 'modal-popup') {
+	    const urlView = new URL(window.location.href);
+            urlView.searchParams.delete('note');
+            urlView.searchParams.delete('bundleID');
+            history.replaceState({}, '', urlView);
+	}
     }
     // show popup
     setTimeout(() => bottomPanel.classList.add("show"), 10);//show when everything ready
@@ -830,7 +835,7 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
             let html = `
             <div class="app-container">
                 ${AppHeader(app, ".")}
-                <p class="list-subtitle">${app.subtitle ?? ""}</p>`;
+                <p class="list-subtitle">${app.subtitle?.includes("www.apptesters.org") ? "IPA Archive": (app.subtitle??"")}</p>`;
             if (checkArray(app.screenshots) && isScreenshot) {
                 html += `<div class="screenshots">`;
                 for (let i = 0; i < app.screenshots.length && i < 2; i++) {
@@ -874,6 +879,7 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
             filterType = ftype;
             appsContainer.innerHTML = "";
             filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));// xóa lọc
+	    filter.querySelector('.category').classList.add('active');//chuyển về tab đầu tiên.
             loadMoreApps();
             window.scrollTo({
                 top: Math.max(0, appsContainer.parentElement.offsetTop - 100),

@@ -153,5 +153,6 @@ function checkScheme(urlScheme) {
     function loaded() {
         document.body.classList.remove("loading");
         document.getElementById("loading")?.remove();
+	document.getElementById("main").style.display = "";
     }
 }

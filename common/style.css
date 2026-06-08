@@ -1264,6 +1264,7 @@ overflow-x: hidden;
     overflow: hidden;
     position: relative;
     word-wrap: break-word;
+    padding: 0 1rem;
 }
 
 #preview .header {
@@ -1571,7 +1572,6 @@ hr {
 #news .item>.text {
     margin: 1.5em;
     color: #fff;
-    /* Remove line limit */
     display: block;
 }
 
