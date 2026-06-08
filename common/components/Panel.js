@@ -708,6 +708,7 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
     const allApps = ftype ? source.apps.filter(app => app.type === ftype): [...source.apps];
     let filteredApps = allApps;
     let filterType = ftype;
+    let isSearch = false;
     let currentIndex = 0;
     // Tạo wrapper chứa input và icon
     const searchWrapper = document.createElement("div");
@@ -758,12 +759,12 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
         xIcon.style.display = searchBox.value ? 'block' : 'none';
         filteredApps = [];
         run();
-
+	isSearch = true;
         clearTimeout(searchTimer);
         searchTimer = setTimeout(() => {
             appsContainer.innerHTML = "";
             currentIndex = 0;
-            const keyword = searchBox.value.toLowerCase();
+            const keyword = searchBox.value.toLowerCase().trim();
             filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
             loadMoreApps();
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
@@ -779,6 +780,7 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
             el.classList.add('active');
             appsContainer.innerHTML = "";
             filterType = index;
+	    isSearch = false;
             currentIndex = 0;
             loadMoreApps();
         });
@@ -799,9 +801,9 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
         }
         await Promise.all(tasks); // Chờ tất cả hoàn tất
     }
-    
+
     function loadMoreApps() {
-        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated" || app.beta === "new");
+        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : (isSearch?filteredApps: filteredApps.filter(app => app.beta === "updated" || app.beta === "new"));
 	if(!dataApps.length && !filterType) {
 		dataApps = allApps;
 	}
@@ -875,6 +877,7 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
             event.stopPropagation();
             filteredApps = allApps;
             searchBox.value = '';
+	    isSearch = true;
             currentIndex = 0;
             filterType = ftype;
             appsContainer.innerHTML = "";
