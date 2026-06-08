@@ -700,8 +700,8 @@ function handleGlobalClick({ target }) {
 export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller = true,scrollTarget) {
     const appsContainer = $('#apps-list');
     if (!appsContainer) return;
-    const allApps = source.apps;
-    let filteredApps = [...allApps];
+    const allApps = ftype ? source.apps.filter(app => app.type === ftype): [...source.apps];
+    let filteredApps = allApps;
     let filterType = ftype;
     let currentIndex = 0;
     // Tạo wrapper chứa input và icon
@@ -797,7 +797,9 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
     
     function loadMoreApps() {
         let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated" || app.beta === "new");
-	if(!dataApps.length && !filterType) {dataApps = filteredApps}
+	if(!dataApps.length && !filterType) {
+		dataApps = allApps;
+	}
 	totalAppsCount.innerText = `${langText['total']} ${dataApps.length} apps `;
         if (!dataApps.length) {
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
@@ -866,12 +868,12 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
         const nothing = event.target.closest("a.nothing");
         if (nothing) {
             event.stopPropagation();
-            filteredApps = allApps
+            filteredApps = allApps;
             searchBox.value = '';
             currentIndex = 0;
             filterType = ftype;
             appsContainer.innerHTML = "";
-            filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
+            filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));// xóa lọc
             loadMoreApps();
             window.scrollTo({
                 top: Math.max(0, appsContainer.parentElement.offsetTop - 100),
