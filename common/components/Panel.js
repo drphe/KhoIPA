@@ -697,11 +697,12 @@ function handleGlobalClick({ target }) {
     document.addEventListener("click", window._currentClickHandler);
 
 }
-export async function addAppList(source, appsPerLoad = 20, filterType=0, enableFiller = true,scrollTarget) {
+export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller = true,scrollTarget) {
     const appsContainer = $('#apps-list');
     if (!appsContainer) return;
     const allApps = source.apps;
     let filteredApps = [...allApps];
+    let filterType = ftype;
     let currentIndex = 0;
     // Tạo wrapper chứa input và icon
     const searchWrapper = document.createElement("div");
@@ -723,8 +724,6 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
     xIcon.style.cssText = "display:block;position: absolute;right: 0.7rem;top: 1.7rem;transform: translateY(-50%);cursor: pointer;color: rgb(136, 136, 136);scale: 0.7;";
     // Tạo total app
     const totalAppsCount = xIcon.querySelector(".totalSearch");
-    totalAppsCount.innerText = `${langText['total']} ${allApps.length} apps `;
-    // tạo filter
     const filter = document.createElement("span");
 	filter.id="loc";
 	filter.setAttribute("id","loc");
@@ -735,15 +734,13 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
 	if(index == filterType) el.classList.add('active');
 	else el.classList.remove('active');
     });
-    let isUpdate= true;
     xIcon.addEventListener('click', () => {
-        searchBox.value = '';
- 	isUpdate = true;
-        xIcon.style.display = 'none';
         searchBox.focus();
-        filteredApps = [...allApps];
+        searchBox.value = '';
+        xIcon.style.display = 'none';
         appsContainer.innerHTML = "";
-        totalAppsCount.innerText = `${langText['total']} ${allApps.length} apps `;
+        currentIndex = 0;
+        filteredApps = [...allApps];
         loadMoreApps();
         appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
         window.scrollTo({
@@ -754,20 +751,15 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
     let searchTimer;
     searchBox.addEventListener('input', () => {
         xIcon.style.display = searchBox.value ? 'block' : 'none';
-        appsContainer.innerHTML = "";
         filteredApps = [];
         run();
 
         clearTimeout(searchTimer);
         searchTimer = setTimeout(() => {
+            appsContainer.innerHTML = "";
+            currentIndex = 0;
             const keyword = searchBox.value.toLowerCase();
             filteredApps = allApps.filter(app => app.name?.toLowerCase().includes(keyword));
-            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps;
-            totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
-            currentIndex = 0;
-	    isUpdate = false;
-            // Xử lý hiển thị
-            appsContainer.innerHTML = "";
             loadMoreApps();
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
             window.scrollTo({
@@ -780,12 +772,9 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
         el.addEventListener('click', () => {
             filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
             el.classList.add('active');
-            filterType = index;
-	    isUpdate= false;
-            let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated" || app.beta === "new");
-	    totalAppsCount.innerText = `${langText['found']} ${dataApps.length} apps `;
-            currentIndex = 0;
             appsContainer.innerHTML = "";
+            filterType = index;
+            currentIndex = 0;
             loadMoreApps();
         });
     });
@@ -805,11 +794,11 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
         }
         await Promise.all(tasks); // Chờ tất cả hoàn tất
     }
-    //with screenshot
     
     function loadMoreApps() {
-        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : (isUpdate ? filteredApps.filter(app => app.beta === "updated" || app.beta === "new"): filteredApps);
-	if(!dataApps.length && isUpdate) {dataApps = filteredApps}
+        let dataApps = filterType ? filteredApps.filter(app => app.type === filterType) : filteredApps.filter(app => app.beta === "updated" || app.beta === "new");
+	if(!dataApps.length && !filterType) {dataApps = filteredApps}
+	totalAppsCount.innerText = `${langText['total']} ${dataApps.length} apps `;
         if (!dataApps.length) {
             appsContainer.classList.remove("skeleton-text", "skeleton-effect-wave");
             appsContainer.innerHTML = `
@@ -878,10 +867,9 @@ export async function addAppList(source, appsPerLoad = 20, filterType=0, enableF
         if (nothing) {
             event.stopPropagation();
             filteredApps = allApps
-            totalAppsCount.innerText = `${langText['total']} ${filteredApps.length} apps `;
             searchBox.value = '';
             currentIndex = 0;
-            filterType = 0;
+            filterType = ftype;
             appsContainer.innerHTML = "";
             filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
             loadMoreApps();
