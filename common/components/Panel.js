@@ -778,6 +778,7 @@ export async function addAppList(source, appsPerLoad = 20, ftype=0, enableFiller
         el.addEventListener('click', () => {
             filter.querySelectorAll('.category').forEach(item => item.classList.remove('active'));
             el.classList.add('active');
+            xIcon.style.display = 'block';
             appsContainer.innerHTML = "";
             filterType = index;
 	    isSearch = false;
