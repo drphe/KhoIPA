@@ -8,7 +8,7 @@ function getCurrentDate() {
     return today.toLocaleDateString('sv-SE');
 }
 
-const url = '\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6b\x68\x6f\x69\x6e\x64\x76\x6e\x2e\x69\x6f\x2e\x76\x6e\x2f\x5f\x61\x73\x74\x72\x6f\x2f\x68\x6f\x69\x73\x74\x65\x64\x2e\x43\x72\x54\x4a\x4e\x4d\x4a\x4a\x2e\x6a\x73';
+const url = 'https://khoindvn.io.vn/_astro/hoisted.BBf7Jbbt.js';
 
 async function processAndRunScript() {
     try {
@@ -21,20 +21,19 @@ async function processAndRunScript() {
         const fullText = await response.text();
         console.log("[Hệ thống] Đã tải xong toàn bộ file JS.");
 
-        // 2. Dùng RegEx cắt đoạn từ 'const V' đến trước 'const K'
-        const regex = /(const V[\s\S]*?)(?=const K)/;
+
+        const regex = /(const a[\s\S]*?)(?=,K=())/;
         const match = fullText.match(regex);
 
         if (!match || !match[1]) {
-            throw new Error("Không tìm thấy đoạn cấu trúc 'const V' hoặc 'const K' trong file.");
+            throw new Error("Không tìm thấy đoạn cấu trúc 'const a' hoặc 'K=()' trong file.");
         }
 
         let extractedCode = match[1].trim();
 
-        // Export hai thành phần J và V ra ngoài môi trường Node.js
         extractedCode = `
             ${extractedCode}
-            return { J, V };
+            return { a, f };
         `;
 
         console.log("[Hệ thống] Đang khởi tạo môi trường giả lập trình duyệt và giải mã...");
@@ -55,20 +54,20 @@ async function processAndRunScript() {
 
         // Thực thi đoạn mã trong môi trường giả lập bằng cách truyền sandbox làm tham số đầu vào
         const executeDynamicCode = new Function('window', 'atob', 'console', extractedCode);
-        const { J, V } = executeDynamicCode(sandbox.window, sandbox.atob, sandbox.console);
+        const { a, f } = executeDynamicCode(sandbox.window, sandbox.atob, sandbox.console);
 
         // Tiến hành giải mã dữ liệu
-        if (typeof J === 'function' && typeof V !== 'undefined') {
-            const data = J(V);
+        if (typeof f === 'function' && typeof a !== 'undefined') {
+            const data = f(a);
             
             if (data && (data.esign || data.ksign)) {
-                console.log(`[Hệ thống] 解码成功 (Giải mã thành công)! Tìm thấy ${data.esign?.length || 0} esign và ${data.ksign?.length || 0} ksign.`);
+                console.log(`[Hệ thống] (Giải mã thành công)! Tìm thấy ${data.esign?.length || 0} esign và ${data.ksign?.length || 0} ksign.`);
                 changed(data);
             } else {
                 throw new Error("Dữ liệu giải mã bị rỗng hoặc sai cấu trúc.");
             }
         } else {
-            console.warn("⚠️ Không tìm thấy hàm J hoặc biến V sau khi chạy code.");
+            console.warn("⚠️ Không tìm thấy hàm f hoặc biến a sau khi chạy code.");
         }
 
     } catch (error) {
