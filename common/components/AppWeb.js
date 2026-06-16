@@ -32,22 +32,6 @@ const configADS = [{
     "button-text": "View",
    "onclick": "window.open('/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGa2hvaW5kdm4uanNvbg==', '_blank')"
 },{
-    id: "ipaomtk",
-    icon: "https://ipaomtk.com/wp-content/themes/IPAOMTK/assets/img/ipaomtk-brand-icon.png",
-    beta: false,
-    title: "Newest's Games Repo",
-    "detail-text": "Download IOS IPA files & Tweaks Apps",
-    "button-text": "View",
-   "onclick": "window.open('/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhb210a2cuanNvbg==', '_blank')"
-},{
-    id: "ipaomtk",
-    icon: "https://ipaomtk.com/wp-content/themes/IPAOMTK/assets/img/ipaomtk-brand-icon.png",
-    beta: false,
-    title: "Newest's Apps Repo",
-    "detail-text": "Download IOS IPA files & Tweaks Apps",
-    "button-text": "View",
-   "onclick": "window.open('/view/?source=aHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGZHJwaGUlMkZLaG9JUEElMkZtYWluJTJGdXBsb2FkJTJGaXBhb210ay5qc29u', '_blank')"
-},{
     id: "telegram",
     icon: "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
     beta: false,
