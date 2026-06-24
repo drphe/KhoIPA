@@ -62,9 +62,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings."
         }
       },
-      "size": 264837351,
-      "version": "434.0.0",
+      "size": 266614759,
+      "version": "435.0.0",
       "versions": [
+        {
+          "version": "435.0.0",
+          "date": "2026-06-24T13:44:21+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 435.\n- Added Tab Bar editor — reorder Instagram's tab bar, show or hide individual tabs, and pick which tab opens on launch, all from one screen at the top of Interface settings.\n- Added a Regram settings button to Instagram's Report a Technical Problem menu (the one that appears when you shake your device).\n- Added a Silent (History Only) option to each Activity Notifications event — keep recording online, offline, typing, and seen activity to your history without getting a notification for it.\n- Added an Excluded Chats list for Activity Notifications — when an event is set to All Chats, chats you exclude are skipped entirely (no notification, nothing recorded). Exclude or re-include a chat straight from its + menu.\n- Added Export/Import for Chat Themes — share a theme (with its wallpaper) as a file and import themes others share with you.\n- Added a reset button in the Chat Themes color editor — clear any custom color back to Instagram's default from the color picker.\n- Fixed outgoing call (audio/video) message bubbles keeping Instagram's default gray instead of matching your Chat Theme's Outgoing Bubble color.\n- Fixed the Direct Messages mark-seen button missing from the chat nav bar for some accounts.\n- Fixed High quality video downloads sometimes skipping encoding, leaving a file that failed to save or wouldn't play.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782309120293-srv74/com.burbn.instagram_435.0.0_regram_5.1_sl_noplugs.ipa",
+          "size": 266614759
+        },
         {
           "version": "434.0.0",
           "date": "2026-06-18T17:26:00+00:00",
@@ -92,17 +99,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Fixed display of full last active date in direct message chats.\n- Fixed issue where excluded chats were not marked as seen in direct messages.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777707787645-02rj4/com.burbn.instagram_426.0.0_regram_3.0.1_sl_noplugs.ipa",
           "size": 251278634
-        },
-        {
-          "version": "424.1.0",
-          "date": "2026-04-10T14:20:08+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Compatibility with IG 424.1\n- Fixed an issue where the “Mark as Seen” button flickered in chats.\n- Fixed Regram icons not showing in the app icon selector.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1775832448355-ifiof/com.burbn.instagram_424.1.0_regram_2.8.1_sl_noplugs.ipa",
-          "size": 238226541
         }
       ],
-      "versionDate": "2026-06-18T17:26:00+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1781802873353-qt730/com.burbn.instagram_434.0.0_regram_5.0_sl_noplugs.ipa",
+      "versionDate": "2026-06-24T13:44:21+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782309120293-srv74/com.burbn.instagram_435.0.0_regram_5.1_sl_noplugs.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -148,9 +148,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings."
         }
       },
-      "size": 262553201,
-      "version": "434.0.0",
+      "size": 264308330,
+      "version": "435.0.0",
       "versions": [
+        {
+          "version": "435.0.0",
+          "date": "2026-06-24T13:44:21+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 435.\n- Added Tab Bar editor — reorder Instagram's tab bar, show or hide individual tabs, and pick which tab opens on launch, all from one screen at the top of Interface settings.\n- Added a Regram settings button to Instagram's Report a Technical Problem menu (the one that appears when you shake your device).\n- Added a Silent (History Only) option to each Activity Notifications event — keep recording online, offline, typing, and seen activity to your history without getting a notification for it.\n- Added an Excluded Chats list for Activity Notifications — when an event is set to All Chats, chats you exclude are skipped entirely (no notification, nothing recorded). Exclude or re-include a chat straight from its + menu.\n- Added Export/Import for Chat Themes — share a theme (with its wallpaper) as a file and import themes others share with you.\n- Added a reset button in the Chat Themes color editor — clear any custom color back to Instagram's default from the color picker.\n- Fixed outgoing call (audio/video) message bubbles keeping Instagram's default gray instead of matching your Chat Theme's Outgoing Bubble color.\n- Fixed the Direct Messages mark-seen button missing from the chat nav bar for some accounts.\n- Fixed High quality video downloads sometimes skipping encoding, leaving a file that failed to save or wouldn't play.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782309120293-eztbk/com.fouadraheb.regram_435.0.0_regram_5.1_sl.ipa",
+          "size": 264308330
+        },
         {
           "version": "434.0.0",
           "date": "2026-06-18T17:26:00+00:00",
@@ -178,17 +185,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Fixed display of full last active date in direct message chats.\n- Fixed issue where excluded chats were not marked as seen in direct messages.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777707787645-oguo3/com.fouadraheb.regram_426.0.0_regram_3.0.1_sl.ipa",
           "size": 249121077
-        },
-        {
-          "version": "424.1.0",
-          "date": "2026-04-10T14:20:08+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Compatibility with IG 424.1\n- Fixed an issue where the “Mark as Seen” button flickered in chats.\n- Fixed Regram icons not showing in the app icon selector.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1775832448354-rpzx7/com.fouadraheb.regram_424.1.0_regram_2.8.1_sl.ipa",
-          "size": 236174199
         }
       ],
-      "versionDate": "2026-06-18T17:26:00+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1781802873353-2puwl/com.fouadraheb.regram_434.0.0_regram_5.0_sl.ipa",
+      "versionDate": "2026-06-24T13:44:21+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782309120293-eztbk/com.fouadraheb.regram_435.0.0_regram_5.1_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -230,9 +230,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 155204804,
-      "version": "26.21.74",
+      "size": 154698517,
+      "version": "26.24.72",
       "versions": [
+        {
+          "version": "26.24.72",
+          "date": "2026-06-24T11:09:26+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.24.X\n- Added an option to share live location from linked devices, which WhatsApp normally disables. (Chats Settings)\n- Attempted to fix the view-once controls (mark as seen / download) not appearing for some users.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331948-boq8f/net.whatsapp.WhatsApp_26.24.72_watusi3_1.3.17_sl.ipa",
+          "size": 154698517
+        },
         {
           "version": "26.21.74",
           "date": "2026-06-02T22:55:32+00:00",
@@ -260,17 +267,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.16.X\n- Fixed an issue where status contact groups were not properly deselected, preventing selected contacts from being removed.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777536127893-18hls/net.whatsapp.WhatsApp_26.16.74_watusi3_1.3.10_sl.ipa",
           "size": 145255474
-        },
-        {
-          "version": "26.14.73",
-          "date": "2026-04-14T08:27:35+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Rewrote the unlimited pinned chats feature so it now works properly and no longer unpins when syncing with a linked device.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1776162732864-behhy/net.whatsapp.WhatsApp_26.14.73_watusi3_1.3.9_sl.ipa",
-          "size": 141628163
         }
       ],
-      "versionDate": "2026-06-02T22:55:32+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1780485135811-sancz/net.whatsapp.WhatsApp_26.21.74_watusi3_1.3.15_sl.ipa",
+      "versionDate": "2026-06-24T11:09:26+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331948-boq8f/net.whatsapp.WhatsApp_26.24.72_watusi3_1.3.17_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -312,9 +312,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 151564610,
-      "version": "26.21.74",
+      "size": 151053793,
+      "version": "26.24.72",
       "versions": [
+        {
+          "version": "26.24.72",
+          "date": "2026-06-24T11:09:26+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.24.X\n- Added an option to share live location from linked devices, which WhatsApp normally disables. (Chats Settings)\n- Attempted to fix the view-once controls (mark as seen / download) not appearing for some users.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331948-istv3/com.fouadraheb.watusi_26.24.72_watusi3_1.3.17_sl.ipa",
+          "size": 151053793
+        },
         {
           "version": "26.21.74",
           "date": "2026-06-02T22:55:32+00:00",
@@ -342,17 +349,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.16.X\n- Fixed an issue where status contact groups were not properly deselected, preventing selected contacts from being removed.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777536127893-803o1/com.fouadraheb.watusi_26.16.74_watusi3_1.3.10_sl.ipa",
           "size": 142096770
-        },
-        {
-          "version": "26.14.73",
-          "date": "2026-04-14T08:27:35+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Rewrote the unlimited pinned chats feature so it now works properly and no longer unpins when syncing with a linked device.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1776162732863-hg4nm/com.fouadraheb.watusi_26.14.73_watusi3_1.3.9_sl.ipa",
-          "size": 138760363
         }
       ],
-      "versionDate": "2026-06-02T22:55:32+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1780485135810-zsfkm/com.fouadraheb.watusi_26.21.74_watusi3_1.3.15_sl.ipa",
+      "versionDate": "2026-06-24T11:09:26+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331948-istv3/com.fouadraheb.watusi_26.24.72_watusi3_1.3.17_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -394,9 +394,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 163548619,
-      "version": "26.21.74",
+      "size": 163493227,
+      "version": "26.24.72",
       "versions": [
+        {
+          "version": "26.24.72",
+          "date": "2026-06-24T11:09:26+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.24.X\n- Added an option to share live location from linked devices, which WhatsApp normally disables. (Chats Settings)\n- Attempted to fix the view-once controls (mark as seen / download) not appearing for some users.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331947-gpxhe/net.whatsapp.WhatsAppSMB_26.24.72_watusi3_1.3.17_sl.ipa",
+          "size": 163493227
+        },
         {
           "version": "26.21.74",
           "date": "2026-06-02T22:55:32+00:00",
@@ -424,17 +431,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.16.X\n- Fixed an issue where status contact groups were not properly deselected, preventing selected contacts from being removed.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777536127893-04snc/net.whatsapp.WhatsAppSMB_26.16.74_watusi3_1.3.10_sl.ipa",
           "size": 153588256
-        },
-        {
-          "version": "26.14.73",
-          "date": "2026-04-14T08:27:35+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Rewrote the unlimited pinned chats feature so it now works properly and no longer unpins when syncing with a linked device.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1776162732862-32s25/net.whatsapp.WhatsAppSMB_26.14.73_watusi3_1.3.9_sl.ipa",
-          "size": 149897591
         }
       ],
-      "versionDate": "2026-06-02T22:55:32+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1780485135810-1r0ga/net.whatsapp.WhatsAppSMB_26.21.74_watusi3_1.3.15_sl.ipa",
+      "versionDate": "2026-06-24T11:09:26+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331947-gpxhe/net.whatsapp.WhatsAppSMB_26.24.72_watusi3_1.3.17_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -476,9 +476,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 159899940,
-      "version": "26.21.74",
+      "size": 159842393,
+      "version": "26.24.72",
       "versions": [
+        {
+          "version": "26.24.72",
+          "date": "2026-06-24T11:09:26+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.24.X\n- Added an option to share live location from linked devices, which WhatsApp normally disables. (Chats Settings)\n- Attempted to fix the view-once controls (mark as seen / download) not appearing for some users.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331947-qxr92/com.fouadraheb.watusiSMB_26.24.72_watusi3_1.3.17_sl.ipa",
+          "size": 159842393
+        },
         {
           "version": "26.21.74",
           "date": "2026-06-02T22:55:32+00:00",
@@ -506,17 +513,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.16.X\n- Fixed an issue where status contact groups were not properly deselected, preventing selected contacts from being removed.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777536127892-wyksx/com.fouadraheb.watusiSMB_26.16.74_watusi3_1.3.10_sl.ipa",
           "size": 150421222
-        },
-        {
-          "version": "26.14.73",
-          "date": "2026-04-14T08:27:35+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Rewrote the unlimited pinned chats feature so it now works properly and no longer unpins when syncing with a linked device.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1776162732862-cmpfj/com.fouadraheb.watusiSMB_26.14.73_watusi3_1.3.9_sl.ipa",
-          "size": 147022568
         }
       ],
-      "versionDate": "2026-06-02T22:55:32+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1780485135810-z7etc/com.fouadraheb.watusiSMB_26.21.74_watusi3_1.3.15_sl.ipa",
+      "versionDate": "2026-06-24T11:09:26+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331947-qxr92/com.fouadraheb.watusiSMB_26.24.72_watusi3_1.3.17_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
