@@ -1690,6 +1690,10 @@ pre {
     overflow: hidden;
     transition: background 0.4s ease, transform 0.3s ease;
     z-index: 1000;
+    will-change: transform;
+    transform: translateX(-50%) translateZ(0); /* Thêm translateZ(0) để ép lên GPU */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 /* slight glossy reflection line */

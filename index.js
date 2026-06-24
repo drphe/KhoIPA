@@ -217,31 +217,40 @@ if ('serviceWorker' in navigator) {
     let count = 1,
         maxapps = 30;
     let allAppsView = allApps.filter(s => s.type == 1 && s.beta == "updated");
-    allAppsView.forEach(app => {
-        if (count > maxapps) return;
-        $("#suggestions").insertAdjacentHTML("beforeend", AppHeader(app));
-        count++;
-    });
-    count = 1, allAppsView = allApps.filter(s => s.type == 2 && s.beta == "updated");
-    allAppsView.forEach(app => {
-        if (count > maxapps) return;
-        $("#suggestions2").insertAdjacentHTML("beforeend", AppHeader(app));
-        count++;
-    });
-    count = 1, allAppsView = allApps.filter(s => s.isFeatured);
-    allAppsView.forEach(app => {
-        if (count > maxapps) return;
-        $("#suggestions3").insertAdjacentHTML("beforeend", AppHeader(app));
-        count++;
-    });
-    count=1;
+    let suggestionsHTML = "";
+
+allAppsView.forEach(app => {
+    if (count > maxapps) return;
+    suggestionsHTML += AppHeader(app);
+    count++;
+});
+$("#suggestions").insertAdjacentHTML("beforeend", suggestionsHTML);
+
+    count = 1, suggestionsHTML = "", allAppsView = allApps.filter(s => s.type == 2 && s.beta == "updated");
+allAppsView.forEach(app => {
+    if (count > maxapps) return;
+    suggestionsHTML += AppHeader(app);
+    count++;
+});
+$("#suggestions2").insertAdjacentHTML("beforeend", suggestionsHTML);
+
+    count = 1, suggestionsHTML = "", allAppsView = allApps.filter(s => s.isFeatured);
+allAppsView.forEach(app => {
+    if (count > maxapps) return;
+    suggestionsHTML += AppHeader(app);
+    count++;
+});
+$("#suggestions3").insertAdjacentHTML("beforeend", suggestionsHTML);
+    count= 1,suggestionsHTML = "";
     let recentapps = JSON.parse(localStorage.getItem('bundleHistory')) || [];
     recentapps.reverse().forEach(r => {
         if (count > maxapps) return;
 	const app = allApps.find(s => s.bundleIdentifier == r); 
-        app&&$("#suggestions4").insertAdjacentHTML("beforeend", AppHeader(app));
+	if(app){suggestionsHTML += AppHeader(app);}
 	count++;
     });
+
+$("#suggestions4").insertAdjacentHTML("beforeend", suggestionsHTML);
     // cuộn ngang
     const sliders = document.querySelectorAll('#suggestions, #suggestions2,#suggestions3, #loc');
     sliders.forEach(slider => {
@@ -771,7 +780,8 @@ if ('serviceWorker' in navigator) {
     const navBar = $("#nav-bar");
     const navBarTitle = navBar.querySelector("#title");
 
-    window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
+    
         if (!isScrolling) {
             window.requestAnimationFrame(() => {
                 if (title && navBar && navBarTitle) {

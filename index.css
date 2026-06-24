@@ -61,6 +61,10 @@
     cursor: grab;
     grid-auto-flow: column;
 }
+.section, #suggestions, #suggestions2, #suggestions3, #suggestions4 {
+    content-visibility: auto;
+    contain-intrinsic-size: 200px; /* Chiều cao dự kiến để tránh nhảy thanh cuộn */
+}
 #suggestions .active,
 #suggestions2 .active,
 #suggestions3 .active,
@@ -74,7 +78,17 @@
   user-select: none; 
   -webkit-user-drag: none;
 }
-
+/* Tối ưu các slider cuộn ngang (#suggestions, swiper) */
+#suggestions, #suggestions2, #suggestions3, #suggestions4, .swiper-wrapper {
+    will-change: scroll-position, transform;
+    transform: translateZ(0);
+    -webkit-overflow-scrolling: touch; /* Bắt buộc để cuộn mượt trên iOS */
+}
+/* Tối ưu các nút nav-link có animation */
+.nav-link {
+    will-change: transform, color;
+    transform: translateZ(0);
+}
 
 .app-header-container {
     min-width: calc(100vw - 1rem);
