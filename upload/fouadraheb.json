@@ -230,9 +230,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 154698517,
-      "version": "26.24.72",
+      "size": 154678090,
+      "version": "26.25.77",
       "versions": [
+        {
+          "version": "26.25.77",
+          "date": "2026-07-06T12:05:00+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.25.X\n- Fixed the view-once controls (mark as seen / download) not appearing for some users.\n- Removed the option to share live location from linked devices, as the server rejects the live location message.\n- Hid the mark as seen & download status buttons on your own statuses, as WhatsApp uses a different layout for them.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-xzf71/net.whatsapp.WhatsApp_26.25.77_watusi3_1.3.18_sl.ipa",
+          "size": 154678090
+        },
         {
           "version": "26.24.72",
           "date": "2026-06-24T11:09:26+00:00",
@@ -260,17 +267,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.18.X\n- Force enable custom chat list filters on companion devices since WhatsApp disabled it in one of their recent updates.\n- Fixed a crash on launch caused by the contact spoofing feature when enabled with statuses bar on chats due to a wrong user identifier.\n- Fixed statuses bar on the chats list not showing correct contact name and profile picture for some contacts with a wrong identifier.\n- Fixed various share sheet actions not working, and updated others to present proper controllers similar to the default WhatsApp actions.\n- Fixed status contact groups not deselecting some contacts whose chat session uses a different ID.\n- Fixed Hide Frequently Contacted not working in some new chat picker and forward picker.\n- Fixed Hide Call Buttons hiding the Cancel button in select messages mode, preventing users from exiting the selection.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778661488654-5a8lw/net.whatsapp.WhatsApp_26.17.76_watusi3_1.3.12_sl.ipa",
           "size": 147134376
-        },
-        {
-          "version": "26.16.74",
-          "date": "2026-04-30T08:03:00+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.16.X\n- Fixed an issue where status contact groups were not properly deselected, preventing selected contacts from being removed.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777536127893-18hls/net.whatsapp.WhatsApp_26.16.74_watusi3_1.3.10_sl.ipa",
-          "size": 145255474
         }
       ],
-      "versionDate": "2026-06-24T11:09:26+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331948-boq8f/net.whatsapp.WhatsApp_26.24.72_watusi3_1.3.17_sl.ipa",
+      "versionDate": "2026-07-06T12:05:00+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-xzf71/net.whatsapp.WhatsApp_26.25.77_watusi3_1.3.18_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -312,9 +312,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 151053793,
-      "version": "26.24.72",
+      "size": 151054382,
+      "version": "26.25.77",
       "versions": [
+        {
+          "version": "26.25.77",
+          "date": "2026-07-06T12:05:00+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.25.X\n- Fixed the view-once controls (mark as seen / download) not appearing for some users.\n- Removed the option to share live location from linked devices, as the server rejects the live location message.\n- Hid the mark as seen & download status buttons on your own statuses, as WhatsApp uses a different layout for them.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-2dvj3/com.fouadraheb.watusi_26.25.77_watusi3_1.3.18_sl.ipa",
+          "size": 151054382
+        },
         {
           "version": "26.24.72",
           "date": "2026-06-24T11:09:26+00:00",
@@ -342,17 +349,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.18.X\n- Force enable custom chat list filters on companion devices since WhatsApp disabled it in one of their recent updates.\n- Fixed a crash on launch caused by the contact spoofing feature when enabled with statuses bar on chats due to a wrong user identifier.\n- Fixed statuses bar on the chats list not showing correct contact name and profile picture for some contacts with a wrong identifier.\n- Fixed various share sheet actions not working, and updated others to present proper controllers similar to the default WhatsApp actions.\n- Fixed status contact groups not deselecting some contacts whose chat session uses a different ID.\n- Fixed Hide Frequently Contacted not working in some new chat picker and forward picker.\n- Fixed Hide Call Buttons hiding the Cancel button in select messages mode, preventing users from exiting the selection.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778661488653-s2p19/com.fouadraheb.watusi_26.17.76_watusi3_1.3.12_sl.ipa",
           "size": 143787216
-        },
-        {
-          "version": "26.16.74",
-          "date": "2026-04-30T08:03:00+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.16.X\n- Fixed an issue where status contact groups were not properly deselected, preventing selected contacts from being removed.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777536127893-803o1/com.fouadraheb.watusi_26.16.74_watusi3_1.3.10_sl.ipa",
-          "size": 142096770
         }
       ],
-      "versionDate": "2026-06-24T11:09:26+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331948-istv3/com.fouadraheb.watusi_26.24.72_watusi3_1.3.17_sl.ipa",
+      "versionDate": "2026-07-06T12:05:00+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-2dvj3/com.fouadraheb.watusi_26.25.77_watusi3_1.3.18_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -394,9 +394,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 163493227,
-      "version": "26.24.72",
+      "size": 163537924,
+      "version": "26.25.77",
       "versions": [
+        {
+          "version": "26.25.77",
+          "date": "2026-07-06T12:05:00+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.25.X\n- Fixed the view-once controls (mark as seen / download) not appearing for some users.\n- Removed the option to share live location from linked devices, as the server rejects the live location message.\n- Hid the mark as seen & download status buttons on your own statuses, as WhatsApp uses a different layout for them.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-qu4d6/net.whatsapp.WhatsAppSMB_26.25.77_watusi3_1.3.18_sl.ipa",
+          "size": 163537924
+        },
         {
           "version": "26.24.72",
           "date": "2026-06-24T11:09:26+00:00",
@@ -424,17 +431,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.18.X\n- Force enable custom chat list filters on companion devices since WhatsApp disabled it in one of their recent updates.\n- Fixed a crash on launch caused by the contact spoofing feature when enabled with statuses bar on chats due to a wrong user identifier.\n- Fixed statuses bar on the chats list not showing correct contact name and profile picture for some contacts with a wrong identifier.\n- Fixed various share sheet actions not working, and updated others to present proper controllers similar to the default WhatsApp actions.\n- Fixed status contact groups not deselecting some contacts whose chat session uses a different ID.\n- Fixed Hide Frequently Contacted not working in some new chat picker and forward picker.\n- Fixed Hide Call Buttons hiding the Cancel button in select messages mode, preventing users from exiting the selection.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778661488653-w9w28/net.whatsapp.WhatsAppSMB_26.17.77_watusi3_1.3.12_sl.ipa",
           "size": 155533476
-        },
-        {
-          "version": "26.16.74",
-          "date": "2026-04-30T08:03:00+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.16.X\n- Fixed an issue where status contact groups were not properly deselected, preventing selected contacts from being removed.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777536127893-04snc/net.whatsapp.WhatsAppSMB_26.16.74_watusi3_1.3.10_sl.ipa",
-          "size": 153588256
         }
       ],
-      "versionDate": "2026-06-24T11:09:26+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331947-gpxhe/net.whatsapp.WhatsAppSMB_26.24.72_watusi3_1.3.17_sl.ipa",
+      "versionDate": "2026-07-06T12:05:00+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-qu4d6/net.whatsapp.WhatsAppSMB_26.25.77_watusi3_1.3.18_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -476,9 +476,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 159842393,
-      "version": "26.24.72",
+      "size": 159909103,
+      "version": "26.25.77",
       "versions": [
+        {
+          "version": "26.25.77",
+          "date": "2026-07-06T12:05:00+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.25.X\n- Fixed the view-once controls (mark as seen / download) not appearing for some users.\n- Removed the option to share live location from linked devices, as the server rejects the live location message.\n- Hid the mark as seen & download status buttons on your own statuses, as WhatsApp uses a different layout for them.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-195ue/com.fouadraheb.watusiSMB_26.25.77_watusi3_1.3.18_sl.ipa",
+          "size": 159909103
+        },
         {
           "version": "26.24.72",
           "date": "2026-06-24T11:09:26+00:00",
@@ -506,17 +513,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.18.X\n- Force enable custom chat list filters on companion devices since WhatsApp disabled it in one of their recent updates.\n- Fixed a crash on launch caused by the contact spoofing feature when enabled with statuses bar on chats due to a wrong user identifier.\n- Fixed statuses bar on the chats list not showing correct contact name and profile picture for some contacts with a wrong identifier.\n- Fixed various share sheet actions not working, and updated others to present proper controllers similar to the default WhatsApp actions.\n- Fixed status contact groups not deselecting some contacts whose chat session uses a different ID.\n- Fixed Hide Frequently Contacted not working in some new chat picker and forward picker.\n- Fixed Hide Call Buttons hiding the Cancel button in select messages mode, preventing users from exiting the selection.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778661488652-872o9/com.fouadraheb.watusiSMB_26.17.77_watusi3_1.3.12_sl.ipa",
           "size": 152177944
-        },
-        {
-          "version": "26.16.74",
-          "date": "2026-04-30T08:03:00+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.16.X\n- Fixed an issue where status contact groups were not properly deselected, preventing selected contacts from being removed.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777536127892-wyksx/com.fouadraheb.watusiSMB_26.16.74_watusi3_1.3.10_sl.ipa",
-          "size": 150421222
         }
       ],
-      "versionDate": "2026-06-24T11:09:26+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331947-qxr92/com.fouadraheb.watusiSMB_26.24.72_watusi3_1.3.17_sl.ipa",
+      "versionDate": "2026-07-06T12:05:00+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-195ue/com.fouadraheb.watusiSMB_26.25.77_watusi3_1.3.18_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
