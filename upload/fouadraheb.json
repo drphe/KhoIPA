@@ -27,7 +27,7 @@
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "Fouad Raheb",
       "subtitle": "The all-in-one tweak for Instagram",
-      "localizedDescription": "This is an original version, it has original Instagram bundle ID. You need to delete original Instagram before installing. It has Plugins/Extensions removed so it can be signed with free Apple IDs.\n\nRegram is your all-in-one tweak for Instagram. Currently in beta and available only to Patreon subscribers.\nActivate license by connecting your Patren account from inside Regram Settings.\n\nAccess Regram settings by long-pressing on Home tab bar button or from Instagram settings.",
+      "localizedDescription": "This is an original version, it has original Instagram bundle ID. You need to delete original Instagram before installing. It has Plugins/Extensions removed so it can be signed with free Apple IDs.\n\nRegram is your all-in-one tweak for Instagram.\n\nCurrently available only to Patreon subscribers. Activate license by connecting your Patreon account from inside Regram Settings.\n\nAccess Regram settings by long-pressing on Home tab bar button or from Instagram settings.",
       "versionDescription": "",
       "tintColor": "#E1306C",
       "iconURL": "https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/master/altstore/regram/ig.png",
@@ -62,9 +62,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings."
         }
       },
-      "size": 266614759,
-      "version": "435.0.0",
+      "size": 269483990,
+      "version": "438.0.0",
       "versions": [
+        {
+          "version": "438.0.0",
+          "date": "2026-07-18T14:01:21+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 438.\n- Added Call Recording — record Instagram audio and video calls. Auto-record all calls, only selected users, or record manually from a draggable floating button on the call screen. Browse, search, play, trim, share and delete recordings in a new settings section, or open a specific user's recordings from their profile action button.\n- Profile Follow Status now has a Label Style creator — a live preview with controls to fully customize the badge.\n- Instants download now supports the new video instants.\n- Instants Upload from Gallery now supports videos — trim to 6 seconds and position/crop into the Instant frame before sending.\n- Removed Instants Capture Confirmation — Instagram's new video-capable shutter records on press and auto-sends, so a pre-send confirmation could no longer work without breaking video capture. Instagram now shows an Undo option right after an instant is sent.\n- Added Import to Media Vault — add photos and videos from your Photos library or Files.\n- Added Pin Starred Viewers to Stories Archive — starred users show in a pinned section on top of the viewers list, marking who saw the story and who didn't. On by default; toggle in settings.\n- Stories Archive viewers list no longer auto-opens the keyboard, and hides the Recent Viewers section for stories older than 24h.\n- Added a Settings shortcut to the Stories Archive list's and viewers list's ⋯ menus to jump straight to Stories Archive settings.\n- Added Notify Starred Viewers to Stories Archive — get a notification when a starred user views or likes your story. Fires when the viewers list is fetched (manual refresh or the post-expiration auto-fetch). Off by default; requires Auto-Save Viewers.\n- Fixed the Tab Bar editor not reordering tabs on the older (non–Liquid Glass) tab bar.\n- Fixed the Direct Messages mark-seen button missing from the chat nav bar on older Instagram versions (410 and earlier).\n- The Direct Messages mark-seen button now matches your Chat Theme's nav-bar icon color.\n- Fixed Locally Mark Stories Seen — reopening someone's story now resumes from their first new story instead of starting over, and viewed reels dim in the tray right after you exit.\n- Added a Fix Pop-ups & Emoji toggle under Settings > App Utilities (sideloaded installs only). This fix — which stops onboarding pop-ups from reappearing and DM emoji from resetting after relaunch — has always been on; the new toggle lets you turn it off to check whether it's behind notifications showing \"You have a pending notification\" instead of their actual content.\n- Added App Appearance under Settings > App Utilities — force Instagram to always use Light or Dark mode regardless of your system setting.\n- Fixed queued downloads not auto-resuming after a crash — previously only the download active at crash time restarted, leaving queued items stuck until manually restarted.\n- Fixed some finished downloads (reels/audio needing post-processing) lingering under the Active filter after completing.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784382554803-i49ae/com.burbn.instagram_438.0.0_regram_5.2_sl_noplugs.ipa",
+          "size": 269483990
+        },
         {
           "version": "435.0.0",
           "date": "2026-06-24T13:44:21+00:00",
@@ -92,17 +99,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Fixed manually mark as seen sometimes marking the wrong (previous) chat as seen when sending in another chat.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778865179230-j5o3n/com.burbn.instagram_429.0.0_regram_4.0.1_sl_noplugs.ipa",
           "size": 259705839
-        },
-        {
-          "version": "426.0.0",
-          "date": "2026-05-02T07:40:49+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Fixed display of full last active date in direct message chats.\n- Fixed issue where excluded chats were not marked as seen in direct messages.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777707787645-02rj4/com.burbn.instagram_426.0.0_regram_3.0.1_sl_noplugs.ipa",
-          "size": 251278634
         }
       ],
-      "versionDate": "2026-06-24T13:44:21+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782309120293-srv74/com.burbn.instagram_435.0.0_regram_5.1_sl_noplugs.ipa",
+      "versionDate": "2026-07-18T14:01:21+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784382554803-i49ae/com.burbn.instagram_438.0.0_regram_5.2_sl_noplugs.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -113,7 +113,7 @@
       "bundleIdentifier": "com.fouadraheb.regram",
       "developerName": "Fouad Raheb",
       "subtitle": "The all-in-one tweak for Instagram",
-      "localizedDescription": "This is a duplicated app, it can be installed alongside original Instagram (Bundle ID com.fouadraheb.regram).\n\nRegram is your all-in-one tweak for Instagram. Currently in beta and available only to Patreon subscribers.\nActivate license by connecting your Patren account from inside Regram Settings.\n\nAccess Regram settings by long-pressing on Home tab bar button or from Instagram settings.",
+      "localizedDescription": "This is a duplicated app, it can be installed alongside original Instagram (Bundle ID com.fouadraheb.regram).\n\nRegram is your all-in-one tweak for Instagram.\n\nCurrently available only to Patreon subscribers. Activate license by connecting your Patreon account from inside Regram Settings.\n\nAccess Regram settings by long-pressing on Home tab bar button or from Instagram settings.",
       "versionDescription": "",
       "tintColor": "#E1306C",
       "iconURL": "https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/master/altstore/regram/ig.png",
@@ -148,9 +148,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings."
         }
       },
-      "size": 264308330,
-      "version": "435.0.0",
+      "size": 267143317,
+      "version": "438.0.0",
       "versions": [
+        {
+          "version": "438.0.0",
+          "date": "2026-07-18T14:01:21+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 438.\n- Added Call Recording — record Instagram audio and video calls. Auto-record all calls, only selected users, or record manually from a draggable floating button on the call screen. Browse, search, play, trim, share and delete recordings in a new settings section, or open a specific user's recordings from their profile action button.\n- Profile Follow Status now has a Label Style creator — a live preview with controls to fully customize the badge.\n- Instants download now supports the new video instants.\n- Instants Upload from Gallery now supports videos — trim to 6 seconds and position/crop into the Instant frame before sending.\n- Removed Instants Capture Confirmation — Instagram's new video-capable shutter records on press and auto-sends, so a pre-send confirmation could no longer work without breaking video capture. Instagram now shows an Undo option right after an instant is sent.\n- Added Import to Media Vault — add photos and videos from your Photos library or Files.\n- Added Pin Starred Viewers to Stories Archive — starred users show in a pinned section on top of the viewers list, marking who saw the story and who didn't. On by default; toggle in settings.\n- Stories Archive viewers list no longer auto-opens the keyboard, and hides the Recent Viewers section for stories older than 24h.\n- Added a Settings shortcut to the Stories Archive list's and viewers list's ⋯ menus to jump straight to Stories Archive settings.\n- Added Notify Starred Viewers to Stories Archive — get a notification when a starred user views or likes your story. Fires when the viewers list is fetched (manual refresh or the post-expiration auto-fetch). Off by default; requires Auto-Save Viewers.\n- Fixed the Tab Bar editor not reordering tabs on the older (non–Liquid Glass) tab bar.\n- Fixed the Direct Messages mark-seen button missing from the chat nav bar on older Instagram versions (410 and earlier).\n- The Direct Messages mark-seen button now matches your Chat Theme's nav-bar icon color.\n- Fixed Locally Mark Stories Seen — reopening someone's story now resumes from their first new story instead of starting over, and viewed reels dim in the tray right after you exit.\n- Added a Fix Pop-ups & Emoji toggle under Settings > App Utilities (sideloaded installs only). This fix — which stops onboarding pop-ups from reappearing and DM emoji from resetting after relaunch — has always been on; the new toggle lets you turn it off to check whether it's behind notifications showing \"You have a pending notification\" instead of their actual content.\n- Added App Appearance under Settings > App Utilities — force Instagram to always use Light or Dark mode regardless of your system setting.\n- Fixed queued downloads not auto-resuming after a crash — previously only the download active at crash time restarted, leaving queued items stuck until manually restarted.\n- Fixed some finished downloads (reels/audio needing post-processing) lingering under the Active filter after completing.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784382554803-qkrqz/com.fouadraheb.regram_438.0.0_regram_5.2_sl.ipa",
+          "size": 267143317
+        },
         {
           "version": "435.0.0",
           "date": "2026-06-24T13:44:21+00:00",
@@ -178,17 +185,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Fixed manually mark as seen sometimes marking the wrong (previous) chat as seen when sending in another chat.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778865179230-wr0wj/com.fouadraheb.regram_429.0.0_regram_4.0.1_sl.ipa",
           "size": 257449324
-        },
-        {
-          "version": "426.0.0",
-          "date": "2026-05-02T07:40:49+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Fixed display of full last active date in direct message chats.\n- Fixed issue where excluded chats were not marked as seen in direct messages.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1777707787645-oguo3/com.fouadraheb.regram_426.0.0_regram_3.0.1_sl.ipa",
-          "size": 249121077
         }
       ],
-      "versionDate": "2026-06-24T13:44:21+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782309120293-eztbk/com.fouadraheb.regram_435.0.0_regram_5.1_sl.ipa",
+      "versionDate": "2026-07-18T14:01:21+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784382554803-qkrqz/com.fouadraheb.regram_438.0.0_regram_5.2_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -230,9 +230,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 154678090,
-      "version": "26.25.77",
+      "size": 155011281,
+      "version": "26.27.74",
       "versions": [
+        {
+          "version": "26.27.74",
+          "date": "2026-07-18T13:27:40+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.27.X",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784365943210-da6bw/net.whatsapp.WhatsApp_26.27.74_watusi3_1.3.19_sl.ipa",
+          "size": 155011281
+        },
         {
           "version": "26.25.77",
           "date": "2026-07-06T12:05:00+00:00",
@@ -260,17 +267,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.20.X\n- Fixed the status video auto-split feature\n- Fixed the Groups button in the chats list navigation bar sometimes not appearing.\n- Fixed long-pressing the Compose button to access the hidden chats list.\n- Fixed the Stalky updates list bar button count on iOS 26 Liquid Glass.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1779920127906-13jzy/net.whatsapp.WhatsApp_26.20.72_watusi3_1.3.14_sl.ipa",
           "size": 153546300
-        },
-        {
-          "version": "26.17.76",
-          "date": "2026-05-12T11:05:31+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.18.X\n- Force enable custom chat list filters on companion devices since WhatsApp disabled it in one of their recent updates.\n- Fixed a crash on launch caused by the contact spoofing feature when enabled with statuses bar on chats due to a wrong user identifier.\n- Fixed statuses bar on the chats list not showing correct contact name and profile picture for some contacts with a wrong identifier.\n- Fixed various share sheet actions not working, and updated others to present proper controllers similar to the default WhatsApp actions.\n- Fixed status contact groups not deselecting some contacts whose chat session uses a different ID.\n- Fixed Hide Frequently Contacted not working in some new chat picker and forward picker.\n- Fixed Hide Call Buttons hiding the Cancel button in select messages mode, preventing users from exiting the selection.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778661488654-5a8lw/net.whatsapp.WhatsApp_26.17.76_watusi3_1.3.12_sl.ipa",
-          "size": 147134376
         }
       ],
-      "versionDate": "2026-07-06T12:05:00+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-xzf71/net.whatsapp.WhatsApp_26.25.77_watusi3_1.3.18_sl.ipa",
+      "versionDate": "2026-07-18T13:27:40+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784365943210-da6bw/net.whatsapp.WhatsApp_26.27.74_watusi3_1.3.19_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -312,9 +312,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 151054382,
-      "version": "26.25.77",
+      "size": 151277970,
+      "version": "26.27.74",
       "versions": [
+        {
+          "version": "26.27.74",
+          "date": "2026-07-18T13:27:40+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.27.X",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784365943209-x8966/com.fouadraheb.watusi_26.27.74_watusi3_1.3.19_sl.ipa",
+          "size": 151277970
+        },
         {
           "version": "26.25.77",
           "date": "2026-07-06T12:05:00+00:00",
@@ -342,17 +349,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.20.X\n- Fixed the status video auto-split feature\n- Fixed the Groups button in the chats list navigation bar sometimes not appearing.\n- Fixed long-pressing the Compose button to access the hidden chats list.\n- Fixed the Stalky updates list bar button count on iOS 26 Liquid Glass.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1779920127905-gt7fx/com.fouadraheb.watusi_26.20.72_watusi3_1.3.14_sl.ipa",
           "size": 150036209
-        },
-        {
-          "version": "26.17.76",
-          "date": "2026-05-12T11:05:31+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.18.X\n- Force enable custom chat list filters on companion devices since WhatsApp disabled it in one of their recent updates.\n- Fixed a crash on launch caused by the contact spoofing feature when enabled with statuses bar on chats due to a wrong user identifier.\n- Fixed statuses bar on the chats list not showing correct contact name and profile picture for some contacts with a wrong identifier.\n- Fixed various share sheet actions not working, and updated others to present proper controllers similar to the default WhatsApp actions.\n- Fixed status contact groups not deselecting some contacts whose chat session uses a different ID.\n- Fixed Hide Frequently Contacted not working in some new chat picker and forward picker.\n- Fixed Hide Call Buttons hiding the Cancel button in select messages mode, preventing users from exiting the selection.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778661488653-s2p19/com.fouadraheb.watusi_26.17.76_watusi3_1.3.12_sl.ipa",
-          "size": 143787216
         }
       ],
-      "versionDate": "2026-07-06T12:05:00+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-2dvj3/com.fouadraheb.watusi_26.25.77_watusi3_1.3.18_sl.ipa",
+      "versionDate": "2026-07-18T13:27:40+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784365943209-x8966/com.fouadraheb.watusi_26.27.74_watusi3_1.3.19_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -394,9 +394,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 163537924,
-      "version": "26.25.77",
+      "size": 163828898,
+      "version": "26.27.73",
       "versions": [
+        {
+          "version": "26.27.73",
+          "date": "2026-07-18T13:27:40+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.27.X",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784365943209-0h0b0/net.whatsapp.WhatsAppSMB_26.27.73_watusi3_1.3.19_sl.ipa",
+          "size": 163828898
+        },
         {
           "version": "26.25.77",
           "date": "2026-07-06T12:05:00+00:00",
@@ -424,17 +431,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.20.X\n- Fixed the status video auto-split feature\n- Fixed the Groups button in the chats list navigation bar sometimes not appearing.\n- Fixed long-pressing the Compose button to access the hidden chats list.\n- Fixed the Stalky updates list bar button count on iOS 26 Liquid Glass.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1779920127905-5p1xn/net.whatsapp.WhatsAppSMB_26.20.72_watusi3_1.3.14_sl.ipa",
           "size": 161765592
-        },
-        {
-          "version": "26.17.77",
-          "date": "2026-05-12T11:05:31+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.18.X\n- Force enable custom chat list filters on companion devices since WhatsApp disabled it in one of their recent updates.\n- Fixed a crash on launch caused by the contact spoofing feature when enabled with statuses bar on chats due to a wrong user identifier.\n- Fixed statuses bar on the chats list not showing correct contact name and profile picture for some contacts with a wrong identifier.\n- Fixed various share sheet actions not working, and updated others to present proper controllers similar to the default WhatsApp actions.\n- Fixed status contact groups not deselecting some contacts whose chat session uses a different ID.\n- Fixed Hide Frequently Contacted not working in some new chat picker and forward picker.\n- Fixed Hide Call Buttons hiding the Cancel button in select messages mode, preventing users from exiting the selection.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778661488653-w9w28/net.whatsapp.WhatsAppSMB_26.17.77_watusi3_1.3.12_sl.ipa",
-          "size": 155533476
         }
       ],
-      "versionDate": "2026-07-06T12:05:00+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-qu4d6/net.whatsapp.WhatsAppSMB_26.25.77_watusi3_1.3.18_sl.ipa",
+      "versionDate": "2026-07-18T13:27:40+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784365943209-0h0b0/net.whatsapp.WhatsAppSMB_26.27.73_watusi3_1.3.19_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -476,9 +476,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 159909103,
-      "version": "26.25.77",
+      "size": 160080116,
+      "version": "26.27.73",
       "versions": [
+        {
+          "version": "26.27.73",
+          "date": "2026-07-18T13:27:40+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.27.X",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784365943209-nc41j/com.fouadraheb.watusiSMB_26.27.73_watusi3_1.3.19_sl.ipa",
+          "size": 160080116
+        },
         {
           "version": "26.25.77",
           "date": "2026-07-06T12:05:00+00:00",
@@ -506,17 +513,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.20.X\n- Fixed the status video auto-split feature\n- Fixed the Groups button in the chats list navigation bar sometimes not appearing.\n- Fixed long-pressing the Compose button to access the hidden chats list.\n- Fixed the Stalky updates list bar button count on iOS 26 Liquid Glass.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1779920127905-whwnd/com.fouadraheb.watusiSMB_26.20.72_watusi3_1.3.14_sl.ipa",
           "size": 158247753
-        },
-        {
-          "version": "26.17.77",
-          "date": "2026-05-12T11:05:31+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.18.X\n- Force enable custom chat list filters on companion devices since WhatsApp disabled it in one of their recent updates.\n- Fixed a crash on launch caused by the contact spoofing feature when enabled with statuses bar on chats due to a wrong user identifier.\n- Fixed statuses bar on the chats list not showing correct contact name and profile picture for some contacts with a wrong identifier.\n- Fixed various share sheet actions not working, and updated others to present proper controllers similar to the default WhatsApp actions.\n- Fixed status contact groups not deselecting some contacts whose chat session uses a different ID.\n- Fixed Hide Frequently Contacted not working in some new chat picker and forward picker.\n- Fixed Hide Call Buttons hiding the Cancel button in select messages mode, preventing users from exiting the selection.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778661488652-872o9/com.fouadraheb.watusiSMB_26.17.77_watusi3_1.3.12_sl.ipa",
-          "size": 152177944
         }
       ],
-      "versionDate": "2026-07-06T12:05:00+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-195ue/com.fouadraheb.watusiSMB_26.25.77_watusi3_1.3.18_sl.ipa",
+      "versionDate": "2026-07-18T13:27:40+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784365943209-nc41j/com.fouadraheb.watusiSMB_26.27.73_watusi3_1.3.19_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
