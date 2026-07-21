@@ -62,9 +62,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings."
         }
       },
-      "size": 269483990,
-      "version": "438.0.0",
+      "size": 271399109,
+      "version": "439.0.0",
       "versions": [
+        {
+          "version": "439.0.0",
+          "date": "2026-07-21T19:48:57+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 439.\n- Fixed Profile Follow Status badge sometimes stretching into an ellipse after scrolling a profile.\n- Fixed App Appearance not applying inside chats, which previously kept the device's Light/Dark mode.\n- Fixed the Stories Archive search button overlapping the story viewers bar when Instagram Plus is active.\n- Fixed Hide Flag Button in chats not working.\n- Fixed Hide Active Bar not hiding the DM notes/active-now tray.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784664131112-fnmd3/com.burbn.instagram_439.0.0_regram_5.2.1_sl_noplugs.ipa",
+          "size": 271399109
+        },
         {
           "version": "438.0.0",
           "date": "2026-07-18T14:01:21+00:00",
@@ -92,17 +99,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 431.\n- Added Image Comment Actions — long-pressing an image comment now offers an Image submenu with Save to Vault, Save to Photos, and Share (Feed > Comments settings).\n- Moved Instants out of Messages into its own top-level Settings section.\n- Added Auto-Save Instants to Vault — automatically saves every Instant to the Media Vault as Instagram loads it into the viewer (Instants settings).\n- Added Browse Saved Instants — open a searchable list of users with saved Instants from the Instants action button or a folder button on the camera header, or jump straight to a single user's saved Instants from their profile action button.\n- Instants Upload from Gallery now lets you pick from Photos Library or Media Vault.\n- Added Instants Capture Confirmation — shows a confirmation alert when tapping the capture button on the Instants camera so the photo isn't sent immediately (Instants settings).\n- Added Hidden Sources in Vault settings — pick which sources to hide from the main Media Vault viewer.\n- Added Open Post and Open Profile actions to the Media Vault long-press menu — jump directly to the original Instagram post or user's profile from any saved file.\n- Added Custom Note Themes — fully customize the background and text color of your direct notes with a built-in Regram color picker featuring, recent colors, saved favorites. The last theme you used is restored automatically on the next note (Messages > Note Themes settings).\n- Added option to hide Join Trending stories — filters out the Add Yours promo that appears between stories in the viewer (Interface Settings).\n- Expanded DM Note Actions for GIF notes — long-pressing a GIF note now offers Save GIF to Photos, Save GIF to Vault, Copy GIF Link, and Open GIF Page.\n- Fixed follow request accepted/rejected notifications and list cells sometimes showing the user's numeric ID instead of their username.\n- Fixed an Unsent Messages Logs crash on launch caused by a Core Data deadlock under burst writes.\n- Fixed hiding flag button from chats navigation bar.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1779818416565-2rpft/com.burbn.instagram_431.0.0_regram_4.1_sl_noplugs.ipa",
           "size": 259791411
-        },
-        {
-          "version": "429.0.0",
-          "date": "2026-05-15T17:06:30+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Fixed manually mark as seen sometimes marking the wrong (previous) chat as seen when sending in another chat.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778865179230-j5o3n/com.burbn.instagram_429.0.0_regram_4.0.1_sl_noplugs.ipa",
-          "size": 259705839
         }
       ],
-      "versionDate": "2026-07-18T14:01:21+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784382554803-i49ae/com.burbn.instagram_438.0.0_regram_5.2_sl_noplugs.ipa",
+      "versionDate": "2026-07-21T19:48:57+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784664131112-fnmd3/com.burbn.instagram_439.0.0_regram_5.2.1_sl_noplugs.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -148,9 +148,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings."
         }
       },
-      "size": 267143317,
-      "version": "438.0.0",
+      "size": 269010147,
+      "version": "439.0.0",
       "versions": [
+        {
+          "version": "439.0.0",
+          "date": "2026-07-21T19:48:57+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 439.\n- Fixed Profile Follow Status badge sometimes stretching into an ellipse after scrolling a profile.\n- Fixed App Appearance not applying inside chats, which previously kept the device's Light/Dark mode.\n- Fixed the Stories Archive search button overlapping the story viewers bar when Instagram Plus is active.\n- Fixed Hide Flag Button in chats not working.\n- Fixed Hide Active Bar not hiding the DM notes/active-now tray.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784664131112-9uylf/com.fouadraheb.regram_439.0.0_regram_5.2.1_sl.ipa",
+          "size": 269010147
+        },
         {
           "version": "438.0.0",
           "date": "2026-07-18T14:01:21+00:00",
@@ -178,17 +185,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 431.\n- Added Image Comment Actions — long-pressing an image comment now offers an Image submenu with Save to Vault, Save to Photos, and Share (Feed > Comments settings).\n- Moved Instants out of Messages into its own top-level Settings section.\n- Added Auto-Save Instants to Vault — automatically saves every Instant to the Media Vault as Instagram loads it into the viewer (Instants settings).\n- Added Browse Saved Instants — open a searchable list of users with saved Instants from the Instants action button or a folder button on the camera header, or jump straight to a single user's saved Instants from their profile action button.\n- Instants Upload from Gallery now lets you pick from Photos Library or Media Vault.\n- Added Instants Capture Confirmation — shows a confirmation alert when tapping the capture button on the Instants camera so the photo isn't sent immediately (Instants settings).\n- Added Hidden Sources in Vault settings — pick which sources to hide from the main Media Vault viewer.\n- Added Open Post and Open Profile actions to the Media Vault long-press menu — jump directly to the original Instagram post or user's profile from any saved file.\n- Added Custom Note Themes — fully customize the background and text color of your direct notes with a built-in Regram color picker featuring, recent colors, saved favorites. The last theme you used is restored automatically on the next note (Messages > Note Themes settings).\n- Added option to hide Join Trending stories — filters out the Add Yours promo that appears between stories in the viewer (Interface Settings).\n- Expanded DM Note Actions for GIF notes — long-pressing a GIF note now offers Save GIF to Photos, Save GIF to Vault, Copy GIF Link, and Open GIF Page.\n- Fixed follow request accepted/rejected notifications and list cells sometimes showing the user's numeric ID instead of their username.\n- Fixed an Unsent Messages Logs crash on launch caused by a Core Data deadlock under burst writes.\n- Fixed hiding flag button from chats navigation bar.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1779818416565-0c469/com.fouadraheb.regram_431.0.0_regram_4.1_sl.ipa",
           "size": 257561654
-        },
-        {
-          "version": "429.0.0",
-          "date": "2026-05-15T17:06:30+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Fixed manually mark as seen sometimes marking the wrong (previous) chat as seen when sending in another chat.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1778865179230-wr0wj/com.fouadraheb.regram_429.0.0_regram_4.0.1_sl.ipa",
-          "size": 257449324
         }
       ],
-      "versionDate": "2026-07-18T14:01:21+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784382554803-qkrqz/com.fouadraheb.regram_438.0.0_regram_5.2_sl.ipa",
+      "versionDate": "2026-07-21T19:48:57+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784664131112-9uylf/com.fouadraheb.regram_439.0.0_regram_5.2.1_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
