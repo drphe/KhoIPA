@@ -68,7 +68,7 @@
         {
           "version": "439.0.0",
           "date": "2026-07-21T19:48:57+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 439.\n- Fixed Profile Follow Status badge sometimes stretching into an ellipse after scrolling a profile.\n- Fixed App Appearance not applying inside chats, which previously kept the device's Light/Dark mode.\n- Fixed the Stories Archive search button overlapping the story viewers bar when Instagram Plus is active.\n- Fixed Hide Flag Button in chats not working.\n- Fixed Hide Active Bar not hiding the DM notes/active-now tray.",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 439.\n- Fixed Profile Follow Status badge sometimes stretching after scrolling a profile.\n- Fixed App Appearance not applying inside chats, which previously kept the device's Light/Dark mode.\n- Fixed the Stories Archive search button overlapping the story viewers bar when Instagram Plus is active.\n- Fixed Hide Flag Button in chats not working.\n- Fixed Hide Active Bar not hiding the DM notes/active-now tray.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784664131112-fnmd3/com.burbn.instagram_439.0.0_regram_5.2.1_sl_noplugs.ipa",
           "size": 271399109
         },
@@ -154,7 +154,7 @@
         {
           "version": "439.0.0",
           "date": "2026-07-21T19:48:57+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 439.\n- Fixed Profile Follow Status badge sometimes stretching into an ellipse after scrolling a profile.\n- Fixed App Appearance not applying inside chats, which previously kept the device's Light/Dark mode.\n- Fixed the Stories Archive search button overlapping the story viewers bar when Instagram Plus is active.\n- Fixed Hide Flag Button in chats not working.\n- Fixed Hide Active Bar not hiding the DM notes/active-now tray.",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 439.\n- Fixed Profile Follow Status badge sometimes stretching after scrolling a profile.\n- Fixed App Appearance not applying inside chats, which previously kept the device's Light/Dark mode.\n- Fixed the Stories Archive search button overlapping the story viewers bar when Instagram Plus is active.\n- Fixed Hide Flag Button in chats not working.\n- Fixed Hide Active Bar not hiding the DM notes/active-now tray.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784664131112-9uylf/com.fouadraheb.regram_439.0.0_regram_5.2.1_sl.ipa",
           "size": 269010147
         },
