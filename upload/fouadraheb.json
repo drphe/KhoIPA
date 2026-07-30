@@ -230,15 +230,15 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 155162308,
+      "size": 155034800,
       "version": "26.29.73",
       "versions": [
         {
           "version": "26.29.73",
           "date": "2026-07-28T08:17:15+00:00",
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.29.X\n- Fixed video & GIF statuses not downloading unless played to the end.\n- Fixed the message forward button in the chat toolbar staying disabled.\n- Fixed being unable to unpin chats from the chats list while Unlimited Pinned Chats was enabled.\n- Fixed Stalky's automatic status video downloads, which broke after WhatsApp switched to streaming status media.\n- Fixed OnlineNotify's status view notifications not firing after recent WhatsApp changes.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1785226547466-xun9l/net.whatsapp.WhatsApp_26.29.73_watusi3_1.3.20_sl.ipa",
-          "size": 155162308
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1785397478772-jrtsy/net.whatsapp.WhatsApp_26.29.73_watusi3_1.3.20_sl.ipa",
+          "size": 155034800
         },
         {
           "version": "26.27.74",
@@ -270,7 +270,7 @@
         }
       ],
       "versionDate": "2026-07-28T08:17:15+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1785226547466-xun9l/net.whatsapp.WhatsApp_26.29.73_watusi3_1.3.20_sl.ipa",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1785397478772-jrtsy/net.whatsapp.WhatsApp_26.29.73_watusi3_1.3.20_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -394,15 +394,15 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 164023359,
+      "size": 163895846,
       "version": "26.29.73",
       "versions": [
         {
           "version": "26.29.73",
           "date": "2026-07-28T08:17:15+00:00",
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.29.X\n- Fixed video & GIF statuses not downloading unless played to the end.\n- Fixed the message forward button in the chat toolbar staying disabled.\n- Fixed being unable to unpin chats from the chats list while Unlimited Pinned Chats was enabled.\n- Fixed Stalky's automatic status video downloads, which broke after WhatsApp switched to streaming status media.\n- Fixed OnlineNotify's status view notifications not firing after recent WhatsApp changes.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1785226547465-5dc9z/net.whatsapp.WhatsAppSMB_26.29.73_watusi3_1.3.20_sl.ipa",
-          "size": 164023359
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1785401520045-ghd8g/net.whatsapp.WhatsAppSMB_26.29.73_watusi3_1.3.20_sl.ipa",
+          "size": 163895846
         },
         {
           "version": "26.27.73",
@@ -434,7 +434,7 @@
         }
       ],
       "versionDate": "2026-07-28T08:17:15+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1785226547465-5dc9z/net.whatsapp.WhatsAppSMB_26.29.73_watusi3_1.3.20_sl.ipa",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1785401520045-ghd8g/net.whatsapp.WhatsAppSMB_26.29.73_watusi3_1.3.20_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
