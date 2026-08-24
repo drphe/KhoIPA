@@ -68,7 +68,7 @@
         {
           "version": "443.1.0",
           "date": "2026-08-23T12:48:20+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 444.\n- Fixed Reels auto advance not advancing when a reel ends.\n- Fixed DM Activity Tracking missing seen receipts and view-once opens on IG 442+.\n- Fixed DM Activity Tracking notifications and history entries showing \"Someone\" instead of the username when launching the app.\n- Fixed DM mark-seen eye button not showing on older IG versions (313 and older).\n- Fixed action button menus appearing away from the button on iOS 14/15.",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 443.1.\n- Fixed Reels auto advance not advancing when a reel ends.\n- Fixed DM Activity Tracking missing seen receipts and view-once opens on IG 442+.\n- Fixed DM Activity Tracking notifications and history entries showing \"Someone\" instead of the username when launching the app.\n- Fixed DM mark-seen eye button not showing on older IG versions (313 and older).\n- Fixed action button menus appearing away from the button on iOS 14/15.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787487946004-tz5lk/com.burbn.instagram_443.1.0_regram_6.0.1_sl_noplugs.ipa",
           "size": 268957242
         },
@@ -154,7 +154,7 @@
         {
           "version": "443.1.0",
           "date": "2026-08-23T12:48:20+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 444.\n- Fixed Reels auto advance not advancing when a reel ends.\n- Fixed DM Activity Tracking missing seen receipts and view-once opens on IG 442+.\n- Fixed DM Activity Tracking notifications and history entries showing \"Someone\" instead of the username when launching the app.\n- Fixed DM mark-seen eye button not showing on older IG versions (313 and older).\n- Fixed action button menus appearing away from the button on iOS 14/15.",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 443.1.\n- Fixed Reels auto advance not advancing when a reel ends.\n- Fixed DM Activity Tracking missing seen receipts and view-once opens on IG 442+.\n- Fixed DM Activity Tracking notifications and history entries showing \"Someone\" instead of the username when launching the app.\n- Fixed DM mark-seen eye button not showing on older IG versions (313 and older).\n- Fixed action button menus appearing away from the button on iOS 14/15.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787487946004-6r46a/com.fouadraheb.regram_443.1.0_regram_6.0.1_sl.ipa",
           "size": 266508593
         },
@@ -230,9 +230,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 156525387,
-      "version": "26.30.78",
+      "size": 161348749,
+      "version": "26.32.75",
       "versions": [
+        {
+          "version": "26.32.75",
+          "date": "2026-08-24T09:40:05+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.32.X\n- Fixed Unlimited Photos Selection in chats.\n- Fixed a crash when picking media in chats.\n- Fixed Hide Mic Button not working.\n- Fixed keep deleted messages and statuses not working.\n- Fixed Split Long Videos in statuses not working.\n- Fixed Custom Tones: a custom tone picked for a specific chat was not saved and fell back to the default tone.\n- Fixed status features (Mark as Seen, Keep Deleted Statuses, download button) breaking on WhatsApp's new internal status storage, currently rolling out to some users.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192521-j82eo/net.whatsapp.WhatsApp_26.32.75_watusi3_1.3.22_sl.ipa",
+          "size": 161348749
+        },
         {
           "version": "26.30.78",
           "date": "2026-08-05T22:22:07+00:00",
@@ -260,17 +267,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.25.X\n- Fixed the view-once controls (mark as seen / download) not appearing for some users.\n- Removed the option to share live location from linked devices, as the server rejects the live location message.\n- Hid the mark as seen & download status buttons on your own statuses, as WhatsApp uses a different layout for them.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-xzf71/net.whatsapp.WhatsApp_26.25.77_watusi3_1.3.18_sl.ipa",
           "size": 154678090
-        },
-        {
-          "version": "26.24.72",
-          "date": "2026-06-24T11:09:26+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.24.X\n- Added an option to share live location from linked devices, which WhatsApp normally disables. (Chats Settings)\n- Attempted to fix the view-once controls (mark as seen / download) not appearing for some users.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331948-boq8f/net.whatsapp.WhatsApp_26.24.72_watusi3_1.3.17_sl.ipa",
-          "size": 154698517
         }
       ],
-      "versionDate": "2026-08-05T22:22:07+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1786012073110-7o7k6/net.whatsapp.WhatsApp_26.30.78_watusi3_1.3.21_sl.ipa",
+      "versionDate": "2026-08-24T09:40:05+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192521-j82eo/net.whatsapp.WhatsApp_26.32.75_watusi3_1.3.22_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -312,9 +312,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 154221134,
-      "version": "26.30.78",
+      "size": 159027667,
+      "version": "26.32.75",
       "versions": [
+        {
+          "version": "26.32.75",
+          "date": "2026-08-24T09:40:05+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.32.X\n- Fixed Unlimited Photos Selection in chats.\n- Fixed a crash when picking media in chats.\n- Fixed Hide Mic Button not working.\n- Fixed keep deleted messages and statuses not working.\n- Fixed Split Long Videos in statuses not working.\n- Fixed Custom Tones: a custom tone picked for a specific chat was not saved and fell back to the default tone.\n- Fixed status features (Mark as Seen, Keep Deleted Statuses, download button) breaking on WhatsApp's new internal status storage, currently rolling out to some users.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192521-gt7w7/com.fouadraheb.watusi_26.32.75_watusi3_1.3.22_sl.ipa",
+          "size": 159027667
+        },
         {
           "version": "26.30.78",
           "date": "2026-08-05T22:22:07+00:00",
@@ -342,17 +349,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.25.X\n- Fixed the view-once controls (mark as seen / download) not appearing for some users.\n- Removed the option to share live location from linked devices, as the server rejects the live location message.\n- Hid the mark as seen & download status buttons on your own statuses, as WhatsApp uses a different layout for them.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-2dvj3/com.fouadraheb.watusi_26.25.77_watusi3_1.3.18_sl.ipa",
           "size": 151054382
-        },
-        {
-          "version": "26.24.72",
-          "date": "2026-06-24T11:09:26+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.24.X\n- Added an option to share live location from linked devices, which WhatsApp normally disables. (Chats Settings)\n- Attempted to fix the view-once controls (mark as seen / download) not appearing for some users.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331948-istv3/com.fouadraheb.watusi_26.24.72_watusi3_1.3.17_sl.ipa",
-          "size": 151053793
         }
       ],
-      "versionDate": "2026-08-05T22:22:07+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1786012073110-ujq9m/com.fouadraheb.watusi_26.30.78_watusi3_1.3.21_sl.ipa",
+      "versionDate": "2026-08-24T09:40:05+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192521-gt7w7/com.fouadraheb.watusi_26.32.75_watusi3_1.3.22_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -394,9 +394,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 165082189,
-      "version": "26.30.78",
+      "size": 167625646,
+      "version": "26.32.75",
       "versions": [
+        {
+          "version": "26.32.75",
+          "date": "2026-08-24T09:40:05+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.32.X\n- Fixed Unlimited Photos Selection in chats.\n- Fixed a crash when picking media in chats.\n- Fixed Hide Mic Button not working.\n- Fixed keep deleted messages and statuses not working.\n- Fixed Split Long Videos in statuses not working.\n- Fixed Custom Tones: a custom tone picked for a specific chat was not saved and fell back to the default tone.\n- Fixed status features (Mark as Seen, Keep Deleted Statuses, download button) breaking on WhatsApp's new internal status storage, currently rolling out to some users.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192520-fsimp/net.whatsapp.WhatsAppSMB_26.32.75_watusi3_1.3.22_sl.ipa",
+          "size": 167625646
+        },
         {
           "version": "26.30.78",
           "date": "2026-08-05T22:22:07+00:00",
@@ -424,17 +431,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.25.X\n- Fixed the view-once controls (mark as seen / download) not appearing for some users.\n- Removed the option to share live location from linked devices, as the server rejects the live location message.\n- Hid the mark as seen & download status buttons on your own statuses, as WhatsApp uses a different layout for them.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-qu4d6/net.whatsapp.WhatsAppSMB_26.25.77_watusi3_1.3.18_sl.ipa",
           "size": 163537924
-        },
-        {
-          "version": "26.24.72",
-          "date": "2026-06-24T11:09:26+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.24.X\n- Added an option to share live location from linked devices, which WhatsApp normally disables. (Chats Settings)\n- Attempted to fix the view-once controls (mark as seen / download) not appearing for some users.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331947-gpxhe/net.whatsapp.WhatsAppSMB_26.24.72_watusi3_1.3.17_sl.ipa",
-          "size": 163493227
         }
       ],
-      "versionDate": "2026-08-05T22:22:07+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1786012073110-50bk3/net.whatsapp.WhatsAppSMB_26.30.78_watusi3_1.3.21_sl.ipa",
+      "versionDate": "2026-08-24T09:40:05+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192520-fsimp/net.whatsapp.WhatsAppSMB_26.32.75_watusi3_1.3.22_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -476,9 +476,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 162732209,
-      "version": "26.30.78",
+      "size": 165257176,
+      "version": "26.32.75",
       "versions": [
+        {
+          "version": "26.32.75",
+          "date": "2026-08-24T09:40:05+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.32.X\n- Fixed Unlimited Photos Selection in chats.\n- Fixed a crash when picking media in chats.\n- Fixed Hide Mic Button not working.\n- Fixed keep deleted messages and statuses not working.\n- Fixed Split Long Videos in statuses not working.\n- Fixed Custom Tones: a custom tone picked for a specific chat was not saved and fell back to the default tone.\n- Fixed status features (Mark as Seen, Keep Deleted Statuses, download button) breaking on WhatsApp's new internal status storage, currently rolling out to some users.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192520-lpiyp/com.fouadraheb.watusiSMB_26.32.75_watusi3_1.3.22_sl.ipa",
+          "size": 165257176
+        },
         {
           "version": "26.30.78",
           "date": "2026-08-05T22:22:07+00:00",
@@ -506,17 +513,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.25.X\n- Fixed the view-once controls (mark as seen / download) not appearing for some users.\n- Removed the option to share live location from linked devices, as the server rejects the live location message.\n- Hid the mark as seen & download status buttons on your own statuses, as WhatsApp uses a different layout for them.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1783339719092-195ue/com.fouadraheb.watusiSMB_26.25.77_watusi3_1.3.18_sl.ipa",
           "size": 159909103
-        },
-        {
-          "version": "26.24.72",
-          "date": "2026-06-24T11:09:26+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.24.X\n- Added an option to share live location from linked devices, which WhatsApp normally disables. (Chats Settings)\n- Attempted to fix the view-once controls (mark as seen / download) not appearing for some users.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782288331947-qxr92/com.fouadraheb.watusiSMB_26.24.72_watusi3_1.3.17_sl.ipa",
-          "size": 159842393
         }
       ],
-      "versionDate": "2026-08-05T22:22:07+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1786012073109-rwea7/com.fouadraheb.watusiSMB_26.30.78_watusi3_1.3.21_sl.ipa",
+      "versionDate": "2026-08-24T09:40:05+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192520-lpiyp/com.fouadraheb.watusiSMB_26.32.75_watusi3_1.3.22_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
