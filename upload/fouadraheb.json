@@ -62,9 +62,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings."
         }
       },
-      "size": 268957242,
-      "version": "443.1.0",
+      "size": 268204223,
+      "version": "445.0.0",
       "versions": [
+        {
+          "version": "445.0.0",
+          "date": "2026-09-02T08:44:35+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 445.\n- Photo downloads can now fetch the original full-resolution photo, often much larger than the version IG gives the app. Toggle it under Download Manager settings.\n- The download version picker now names each photo size (Highest, Medium, Lowest), tags the full-resolution one as Original, and shows its estimated file size, aspect ratio and format.\n- Added Confirm Pull to Refresh — two separate switches, one in Feed settings and one in Reels settings. A pull now asks first, so an accidental one doesn't throw away what you were reading or watching.\n- Added Confirm Scroll to Top under General settings — tapping the status bar on the feed, Reels or Explore now asks first, so you don't lose your place by accident.\n- Call recordings list: Select All plus bulk actions on the selected recordings — export them to the Media Vault, share them, share video calls as audio only, or delete them at once.\n- Opening a download from the Download Manager now lets you swipe through the other downloads in the list.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1788339843573-4m0ux/com.burbn.instagram_445.0.0_regram_6.1_sl_noplugs.ipa",
+          "size": 268204223
+        },
         {
           "version": "443.1.0",
           "date": "2026-08-23T12:48:20+00:00",
@@ -92,17 +99,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 438.\n- Added Call Recording — record Instagram audio and video calls. Auto-record all calls, only selected users, or record manually from a draggable floating button on the call screen. Browse, search, play, trim, share and delete recordings in a new settings section, or open a specific user's recordings from their profile action button.\n- Profile Follow Status now has a Label Style creator — a live preview with controls to fully customize the badge.\n- Instants download now supports the new video instants.\n- Instants Upload from Gallery now supports videos — trim to 6 seconds and position/crop into the Instant frame before sending.\n- Removed Instants Capture Confirmation — Instagram's new video-capable shutter records on press and auto-sends, so a pre-send confirmation could no longer work without breaking video capture. Instagram now shows an Undo option right after an instant is sent.\n- Added Import to Media Vault — add photos and videos from your Photos library or Files.\n- Added Pin Starred Viewers to Stories Archive — starred users show in a pinned section on top of the viewers list, marking who saw the story and who didn't. On by default; toggle in settings.\n- Stories Archive viewers list no longer auto-opens the keyboard, and hides the Recent Viewers section for stories older than 24h.\n- Added a Settings shortcut to the Stories Archive list's and viewers list's ⋯ menus to jump straight to Stories Archive settings.\n- Added Notify Starred Viewers to Stories Archive — get a notification when a starred user views or likes your story. Fires when the viewers list is fetched (manual refresh or the post-expiration auto-fetch). Off by default; requires Auto-Save Viewers.\n- Fixed the Tab Bar editor not reordering tabs on the older (non–Liquid Glass) tab bar.\n- Fixed the Direct Messages mark-seen button missing from the chat nav bar on older Instagram versions (410 and earlier).\n- The Direct Messages mark-seen button now matches your Chat Theme's nav-bar icon color.\n- Fixed Locally Mark Stories Seen — reopening someone's story now resumes from their first new story instead of starting over, and viewed reels dim in the tray right after you exit.\n- Added a Fix Pop-ups & Emoji toggle under Settings > App Utilities (sideloaded installs only). This fix — which stops onboarding pop-ups from reappearing and DM emoji from resetting after relaunch — has always been on; the new toggle lets you turn it off to check whether it's behind notifications showing \"You have a pending notification\" instead of their actual content.\n- Added App Appearance under Settings > App Utilities — force Instagram to always use Light or Dark mode regardless of your system setting.\n- Fixed queued downloads not auto-resuming after a crash — previously only the download active at crash time restarted, leaving queued items stuck until manually restarted.\n- Fixed some finished downloads (reels/audio needing post-processing) lingering under the Active filter after completing.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784382554803-i49ae/com.burbn.instagram_438.0.0_regram_5.2_sl_noplugs.ipa",
           "size": 269483990
-        },
-        {
-          "version": "435.0.0",
-          "date": "2026-06-24T13:44:21+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 435.\n- Added Tab Bar editor — reorder Instagram's tab bar, show or hide individual tabs, and pick which tab opens on launch, all from one screen at the top of Interface settings.\n- Added a Regram settings button to Instagram's Report a Technical Problem menu (the one that appears when you shake your device).\n- Added a Silent (History Only) option to each Activity Notifications event — keep recording online, offline, typing, and seen activity to your history without getting a notification for it.\n- Added an Excluded Chats list for Activity Notifications — when an event is set to All Chats, chats you exclude are skipped entirely (no notification, nothing recorded). Exclude or re-include a chat straight from its + menu.\n- Added Export/Import for Chat Themes — share a theme (with its wallpaper) as a file and import themes others share with you.\n- Added a reset button in the Chat Themes color editor — clear any custom color back to Instagram's default from the color picker.\n- Fixed outgoing call (audio/video) message bubbles keeping Instagram's default gray instead of matching your Chat Theme's Outgoing Bubble color.\n- Fixed the Direct Messages mark-seen button missing from the chat nav bar for some accounts.\n- Fixed High quality video downloads sometimes skipping encoding, leaving a file that failed to save or wouldn't play.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782309120293-srv74/com.burbn.instagram_435.0.0_regram_5.1_sl_noplugs.ipa",
-          "size": 266614759
         }
       ],
-      "versionDate": "2026-08-23T12:48:20+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787487946004-tz5lk/com.burbn.instagram_443.1.0_regram_6.0.1_sl_noplugs.ipa",
+      "versionDate": "2026-09-02T08:44:35+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1788339843573-4m0ux/com.burbn.instagram_445.0.0_regram_6.1_sl_noplugs.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -148,9 +148,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Instagram uses this to make some features work, personalize content and help people find places. You can change your preferences at any time in your device settings."
         }
       },
-      "size": 266508593,
-      "version": "443.1.0",
+      "size": 265677022,
+      "version": "445.0.0",
       "versions": [
+        {
+          "version": "445.0.0",
+          "date": "2026-09-02T08:44:35+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 445.\n- Photo downloads can now fetch the original full-resolution photo, often much larger than the version IG gives the app. Toggle it under Download Manager settings.\n- The download version picker now names each photo size (Highest, Medium, Lowest), tags the full-resolution one as Original, and shows its estimated file size, aspect ratio and format.\n- Added Confirm Pull to Refresh — two separate switches, one in Feed settings and one in Reels settings. A pull now asks first, so an accidental one doesn't throw away what you were reading or watching.\n- Added Confirm Scroll to Top under General settings — tapping the status bar on the feed, Reels or Explore now asks first, so you don't lose your place by accident.\n- Call recordings list: Select All plus bulk actions on the selected recordings — export them to the Media Vault, share them, share video calls as audio only, or delete them at once.\n- Opening a download from the Download Manager now lets you swipe through the other downloads in the list.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1788339843572-m5b7s/com.fouadraheb.regram_445.0.0_regram_6.1_sl.ipa",
+          "size": 265677022
+        },
         {
           "version": "443.1.0",
           "date": "2026-08-23T12:48:20+00:00",
@@ -178,17 +185,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 438.\n- Added Call Recording — record Instagram audio and video calls. Auto-record all calls, only selected users, or record manually from a draggable floating button on the call screen. Browse, search, play, trim, share and delete recordings in a new settings section, or open a specific user's recordings from their profile action button.\n- Profile Follow Status now has a Label Style creator — a live preview with controls to fully customize the badge.\n- Instants download now supports the new video instants.\n- Instants Upload from Gallery now supports videos — trim to 6 seconds and position/crop into the Instant frame before sending.\n- Removed Instants Capture Confirmation — Instagram's new video-capable shutter records on press and auto-sends, so a pre-send confirmation could no longer work without breaking video capture. Instagram now shows an Undo option right after an instant is sent.\n- Added Import to Media Vault — add photos and videos from your Photos library or Files.\n- Added Pin Starred Viewers to Stories Archive — starred users show in a pinned section on top of the viewers list, marking who saw the story and who didn't. On by default; toggle in settings.\n- Stories Archive viewers list no longer auto-opens the keyboard, and hides the Recent Viewers section for stories older than 24h.\n- Added a Settings shortcut to the Stories Archive list's and viewers list's ⋯ menus to jump straight to Stories Archive settings.\n- Added Notify Starred Viewers to Stories Archive — get a notification when a starred user views or likes your story. Fires when the viewers list is fetched (manual refresh or the post-expiration auto-fetch). Off by default; requires Auto-Save Viewers.\n- Fixed the Tab Bar editor not reordering tabs on the older (non–Liquid Glass) tab bar.\n- Fixed the Direct Messages mark-seen button missing from the chat nav bar on older Instagram versions (410 and earlier).\n- The Direct Messages mark-seen button now matches your Chat Theme's nav-bar icon color.\n- Fixed Locally Mark Stories Seen — reopening someone's story now resumes from their first new story instead of starting over, and viewed reels dim in the tray right after you exit.\n- Added a Fix Pop-ups & Emoji toggle under Settings > App Utilities (sideloaded installs only). This fix — which stops onboarding pop-ups from reappearing and DM emoji from resetting after relaunch — has always been on; the new toggle lets you turn it off to check whether it's behind notifications showing \"You have a pending notification\" instead of their actual content.\n- Added App Appearance under Settings > App Utilities — force Instagram to always use Light or Dark mode regardless of your system setting.\n- Fixed queued downloads not auto-resuming after a crash — previously only the download active at crash time restarted, leaving queued items stuck until manually restarted.\n- Fixed some finished downloads (reels/audio needing post-processing) lingering under the Active filter after completing.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1784382554803-qkrqz/com.fouadraheb.regram_438.0.0_regram_5.2_sl.ipa",
           "size": 267143317
-        },
-        {
-          "version": "435.0.0",
-          "date": "2026-06-24T13:44:21+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for IG 435.\n- Added Tab Bar editor — reorder Instagram's tab bar, show or hide individual tabs, and pick which tab opens on launch, all from one screen at the top of Interface settings.\n- Added a Regram settings button to Instagram's Report a Technical Problem menu (the one that appears when you shake your device).\n- Added a Silent (History Only) option to each Activity Notifications event — keep recording online, offline, typing, and seen activity to your history without getting a notification for it.\n- Added an Excluded Chats list for Activity Notifications — when an event is set to All Chats, chats you exclude are skipped entirely (no notification, nothing recorded). Exclude or re-include a chat straight from its + menu.\n- Added Export/Import for Chat Themes — share a theme (with its wallpaper) as a file and import themes others share with you.\n- Added a reset button in the Chat Themes color editor — clear any custom color back to Instagram's default from the color picker.\n- Fixed outgoing call (audio/video) message bubbles keeping Instagram's default gray instead of matching your Chat Theme's Outgoing Bubble color.\n- Fixed the Direct Messages mark-seen button missing from the chat nav bar for some accounts.\n- Fixed High quality video downloads sometimes skipping encoding, leaving a file that failed to save or wouldn't play.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1782309120293-eztbk/com.fouadraheb.regram_435.0.0_regram_5.1_sl.ipa",
-          "size": 264308330
         }
       ],
-      "versionDate": "2026-08-23T12:48:20+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787487946004-6r46a/com.fouadraheb.regram_443.1.0_regram_6.0.1_sl.ipa",
+      "versionDate": "2026-09-02T08:44:35+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1788339843572-m5b7s/com.fouadraheb.regram_445.0.0_regram_6.1_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
