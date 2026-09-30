@@ -230,9 +230,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 165394634,
-      "version": "26.37.76",
+      "size": 167510862,
+      "version": "26.38.74",
       "versions": [
+        {
+          "version": "26.38.74",
+          "date": "2026-09-30T21:15:48+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.38.X\n- Fixed voice notes not playing or recording on sideloaded installs missing WhatsApp's extended-virtual-addressing entitlement.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804508-wz7w3/net.whatsapp.WhatsApp_26.38.74_watusi3_1.3.26_sl.ipa",
+          "size": 167510862
+        },
         {
           "version": "26.37.76",
           "date": "2026-09-27T08:27:42+00:00",
@@ -260,17 +267,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.32.X\n- Fixed Unlimited Photos Selection in chats.\n- Fixed a crash when picking media in chats.\n- Fixed Hide Mic Button not working.\n- Fixed keep deleted messages and statuses not working.\n- Fixed Split Long Videos in statuses not working.\n- Fixed Custom Tones: a custom tone picked for a specific chat was not saved and fell back to the default tone.\n- Fixed status features (Mark as Seen, Keep Deleted Statuses, download button) breaking on WhatsApp's new internal status storage, currently rolling out to some users.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192521-j82eo/net.whatsapp.WhatsApp_26.32.75_watusi3_1.3.22_sl.ipa",
           "size": 161348749
-        },
-        {
-          "version": "26.30.78",
-          "date": "2026-08-05T22:22:07+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.30.X\n- Fixed the view-once controls (mark as seen / download) not appearing on the new view-once screen.\n- Fixed Disable Continuous Playback not working on WhatsApp 26.30.X\n- Fixed Continued Audio Messages' player bar not showing on WhatsApp 26.30.X\n- Fixed Hide Chats' hide statuses option not hiding the statuses of hidden chats.\n- Fixed Increase Forward Contacts Limit not working.\n- Fixed the keyboard not showing automatically when opening a chat.\n- Fixed Hide Camera/Mic Button and Hide Stickers Button not working on WhatsApp 26.30.\n- Fixed a crash when opening a chat on WhatsApp 26.30.X while a theme with a custom date bubble background color was applied.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1786012073110-7o7k6/net.whatsapp.WhatsApp_26.30.78_watusi3_1.3.21_sl.ipa",
-          "size": 156525387
         }
       ],
-      "versionDate": "2026-09-27T08:27:42+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-mz0m0/net.whatsapp.WhatsApp_26.37.76_watusi3_1.3.25_sl.ipa",
+      "versionDate": "2026-09-30T21:15:48+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804508-wz7w3/net.whatsapp.WhatsApp_26.38.74_watusi3_1.3.26_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -312,9 +312,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 162977543,
-      "version": "26.37.76",
+      "size": 165078214,
+      "version": "26.38.74",
       "versions": [
+        {
+          "version": "26.38.74",
+          "date": "2026-09-30T21:15:48+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.38.X\n- Fixed voice notes not playing or recording on sideloaded installs missing WhatsApp's extended-virtual-addressing entitlement.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804508-0ywta/com.fouadraheb.watusi_26.38.74_watusi3_1.3.26_sl.ipa",
+          "size": 165078214
+        },
         {
           "version": "26.37.76",
           "date": "2026-09-27T08:27:42+00:00",
@@ -342,17 +349,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.32.X\n- Fixed Unlimited Photos Selection in chats.\n- Fixed a crash when picking media in chats.\n- Fixed Hide Mic Button not working.\n- Fixed keep deleted messages and statuses not working.\n- Fixed Split Long Videos in statuses not working.\n- Fixed Custom Tones: a custom tone picked for a specific chat was not saved and fell back to the default tone.\n- Fixed status features (Mark as Seen, Keep Deleted Statuses, download button) breaking on WhatsApp's new internal status storage, currently rolling out to some users.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192521-gt7w7/com.fouadraheb.watusi_26.32.75_watusi3_1.3.22_sl.ipa",
           "size": 159027667
-        },
-        {
-          "version": "26.30.78",
-          "date": "2026-08-05T22:22:07+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.30.X\n- Fixed the view-once controls (mark as seen / download) not appearing on the new view-once screen.\n- Fixed Disable Continuous Playback not working on WhatsApp 26.30.X\n- Fixed Continued Audio Messages' player bar not showing on WhatsApp 26.30.X\n- Fixed Hide Chats' hide statuses option not hiding the statuses of hidden chats.\n- Fixed Increase Forward Contacts Limit not working.\n- Fixed the keyboard not showing automatically when opening a chat.\n- Fixed Hide Camera/Mic Button and Hide Stickers Button not working on WhatsApp 26.30.\n- Fixed a crash when opening a chat on WhatsApp 26.30.X while a theme with a custom date bubble background color was applied.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1786012073110-ujq9m/com.fouadraheb.watusi_26.30.78_watusi3_1.3.21_sl.ipa",
-          "size": 154221134
         }
       ],
-      "versionDate": "2026-09-27T08:27:42+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-nr5ug/com.fouadraheb.watusi_26.37.76_watusi3_1.3.25_sl.ipa",
+      "versionDate": "2026-09-30T21:15:48+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804508-0ywta/com.fouadraheb.watusi_26.38.74_watusi3_1.3.26_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -394,9 +394,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 172094487,
-      "version": "26.37.76",
+      "size": 174257519,
+      "version": "26.38.74",
       "versions": [
+        {
+          "version": "26.38.74",
+          "date": "2026-09-30T21:15:48+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.38.X\n- Fixed voice notes not playing or recording on sideloaded installs missing WhatsApp's extended-virtual-addressing entitlement.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804507-ixhbd/net.whatsapp.WhatsAppSMB_26.38.74_watusi3_1.3.26_sl.ipa",
+          "size": 174257519
+        },
         {
           "version": "26.37.76",
           "date": "2026-09-27T08:27:42+00:00",
@@ -424,17 +431,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.32.X\n- Fixed Unlimited Photos Selection in chats.\n- Fixed a crash when picking media in chats.\n- Fixed Hide Mic Button not working.\n- Fixed keep deleted messages and statuses not working.\n- Fixed Split Long Videos in statuses not working.\n- Fixed Custom Tones: a custom tone picked for a specific chat was not saved and fell back to the default tone.\n- Fixed status features (Mark as Seen, Keep Deleted Statuses, download button) breaking on WhatsApp's new internal status storage, currently rolling out to some users.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192520-fsimp/net.whatsapp.WhatsAppSMB_26.32.75_watusi3_1.3.22_sl.ipa",
           "size": 167625646
-        },
-        {
-          "version": "26.30.78",
-          "date": "2026-08-05T22:22:07+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.30.X\n- Fixed the view-once controls (mark as seen / download) not appearing on the new view-once screen.\n- Fixed Disable Continuous Playback not working on WhatsApp 26.30.X\n- Fixed Continued Audio Messages' player bar not showing on WhatsApp 26.30.X\n- Fixed Hide Chats' hide statuses option not hiding the statuses of hidden chats.\n- Fixed Increase Forward Contacts Limit not working.\n- Fixed the keyboard not showing automatically when opening a chat.\n- Fixed Hide Camera/Mic Button and Hide Stickers Button not working on WhatsApp 26.30.\n- Fixed a crash when opening a chat on WhatsApp 26.30.X while a theme with a custom date bubble background color was applied.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1786012073110-50bk3/net.whatsapp.WhatsAppSMB_26.30.78_watusi3_1.3.21_sl.ipa",
-          "size": 165082189
         }
       ],
-      "versionDate": "2026-09-27T08:27:42+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-1sado/net.whatsapp.WhatsAppSMB_26.37.76_watusi3_1.3.25_sl.ipa",
+      "versionDate": "2026-09-30T21:15:48+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804507-ixhbd/net.whatsapp.WhatsAppSMB_26.38.74_watusi3_1.3.26_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -476,9 +476,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 169631035,
-      "version": "26.37.76",
+      "size": 171780619,
+      "version": "26.38.74",
       "versions": [
+        {
+          "version": "26.38.74",
+          "date": "2026-09-30T21:15:48+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.38.X\n- Fixed voice notes not playing or recording on sideloaded installs missing WhatsApp's extended-virtual-addressing entitlement.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804507-s1n5i/com.fouadraheb.watusiSMB_26.38.74_watusi3_1.3.26_sl.ipa",
+          "size": 171780619
+        },
         {
           "version": "26.37.76",
           "date": "2026-09-27T08:27:42+00:00",
@@ -506,17 +513,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.32.X\n- Fixed Unlimited Photos Selection in chats.\n- Fixed a crash when picking media in chats.\n- Fixed Hide Mic Button not working.\n- Fixed keep deleted messages and statuses not working.\n- Fixed Split Long Videos in statuses not working.\n- Fixed Custom Tones: a custom tone picked for a specific chat was not saved and fell back to the default tone.\n- Fixed status features (Mark as Seen, Keep Deleted Statuses, download button) breaking on WhatsApp's new internal status storage, currently rolling out to some users.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1787566192520-lpiyp/com.fouadraheb.watusiSMB_26.32.75_watusi3_1.3.22_sl.ipa",
           "size": 165257176
-        },
-        {
-          "version": "26.30.78",
-          "date": "2026-08-05T22:22:07+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.30.X\n- Fixed the view-once controls (mark as seen / download) not appearing on the new view-once screen.\n- Fixed Disable Continuous Playback not working on WhatsApp 26.30.X\n- Fixed Continued Audio Messages' player bar not showing on WhatsApp 26.30.X\n- Fixed Hide Chats' hide statuses option not hiding the statuses of hidden chats.\n- Fixed Increase Forward Contacts Limit not working.\n- Fixed the keyboard not showing automatically when opening a chat.\n- Fixed Hide Camera/Mic Button and Hide Stickers Button not working on WhatsApp 26.30.\n- Fixed a crash when opening a chat on WhatsApp 26.30.X while a theme with a custom date bubble background color was applied.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1786012073109-rwea7/com.fouadraheb.watusiSMB_26.30.78_watusi3_1.3.21_sl.ipa",
-          "size": 162732209
         }
       ],
-      "versionDate": "2026-09-27T08:27:42+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201794-cpbzq/com.fouadraheb.watusiSMB_26.37.76_watusi3_1.3.25_sl.ipa",
+      "versionDate": "2026-09-30T21:15:48+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804507-s1n5i/com.fouadraheb.watusiSMB_26.38.74_watusi3_1.3.26_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
