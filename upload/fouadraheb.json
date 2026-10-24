@@ -230,9 +230,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 179806859,
-      "version": "26.41.74",
+      "size": 180005083,
+      "version": "26.41.75",
       "versions": [
+        {
+          "version": "26.41.75",
+          "date": "2026-10-24T08:05:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41\n- Fixed viewed statuses being marked as seen for their sender after relaunching WhatsApp with Mark as Viewed enabled.\n- Fixed a crash when viewing some statuses with the Download or Mark as Viewed buttons enabled.\n- Fixed Allow View Once Screenshot/Recording not working on newer WhatsApp versions.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-as7xg/net.whatsapp.WhatsApp_26.41.75_watusi3_1.3.28_sl.ipa",
+          "size": 180005083
+        },
         {
           "version": "26.41.74",
           "date": "2026-10-20T06:32:12+00:00",
@@ -260,17 +267,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed notifications reappearing after being cleared.\n- Fixed Split Long Videos not splitting status videos on newer WhatsApp versions.\n- Fixed the chat bar mic button not picking up the theme's tint color on WhatsApp's new circular mic button.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789385254543-a770n/net.whatsapp.WhatsApp_26.36.74_watusi3_1.3.24_sl.ipa",
           "size": 163125151
-        },
-        {
-          "version": "26.35.74",
-          "date": "2026-09-11T11:40:40+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed a crash when opening a link with In-App Browser enabled.\n- Fixed the statuses bar on the chats list showing no statuses on WhatsApp's new internal status storage, now rolling out to more users.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789141269274-cu5dw/net.whatsapp.WhatsApp_26.35.74_watusi3_1.3.23_sl.ipa",
-          "size": 169666675
         }
       ],
-      "versionDate": "2026-10-20T06:32:12+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430260-ebhzr/net.whatsapp.WhatsApp_26.41.74_watusi3_1.3.27_sl.ipa",
+      "versionDate": "2026-10-24T08:05:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-as7xg/net.whatsapp.WhatsApp_26.41.75_watusi3_1.3.28_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -312,9 +312,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 177140855,
-      "version": "26.41.74",
+      "size": 177339052,
+      "version": "26.41.75",
       "versions": [
+        {
+          "version": "26.41.75",
+          "date": "2026-10-24T08:05:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41\n- Fixed viewed statuses being marked as seen for their sender after relaunching WhatsApp with Mark as Viewed enabled.\n- Fixed a crash when viewing some statuses with the Download or Mark as Viewed buttons enabled.\n- Fixed Allow View Once Screenshot/Recording not working on newer WhatsApp versions.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-z1lbl/com.fouadraheb.watusi_26.41.75_watusi3_1.3.28_sl.ipa",
+          "size": 177339052
+        },
         {
           "version": "26.41.74",
           "date": "2026-10-20T06:32:12+00:00",
@@ -342,17 +349,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed notifications reappearing after being cleared.\n- Fixed Split Long Videos not splitting status videos on newer WhatsApp versions.\n- Fixed the chat bar mic button not picking up the theme's tint color on WhatsApp's new circular mic button.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789385254542-0emm6/com.fouadraheb.watusi_26.36.74_watusi3_1.3.24_sl.ipa",
           "size": 160720180
-        },
-        {
-          "version": "26.35.74",
-          "date": "2026-09-11T11:40:40+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed a crash when opening a link with In-App Browser enabled.\n- Fixed the statuses bar on the chats list showing no statuses on WhatsApp's new internal status storage, now rolling out to more users.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789141269274-50xqy/com.fouadraheb.watusi_26.35.74_watusi3_1.3.23_sl.ipa",
-          "size": 167399530
         }
       ],
-      "versionDate": "2026-10-20T06:32:12+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430260-mwf9q/com.fouadraheb.watusi_26.41.74_watusi3_1.3.27_sl.ipa",
+      "versionDate": "2026-10-24T08:05:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-z1lbl/com.fouadraheb.watusi_26.41.75_watusi3_1.3.28_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -394,9 +394,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 186824364,
-      "version": "26.41.74",
+      "size": 187050481,
+      "version": "26.41.75",
       "versions": [
+        {
+          "version": "26.41.75",
+          "date": "2026-10-24T08:05:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41\n- Fixed viewed statuses being marked as seen for their sender after relaunching WhatsApp with Mark as Viewed enabled.\n- Fixed a crash when viewing some statuses with the Download or Mark as Viewed buttons enabled.\n- Fixed Allow View Once Screenshot/Recording not working on newer WhatsApp versions.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196679-8ueg6/net.whatsapp.WhatsAppSMB_26.41.75_watusi3_1.3.28_sl.ipa",
+          "size": 187050481
+        },
         {
           "version": "26.41.74",
           "date": "2026-10-20T06:32:12+00:00",
@@ -424,17 +431,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed notifications reappearing after being cleared.\n- Fixed Split Long Videos not splitting status videos on newer WhatsApp versions.\n- Fixed the chat bar mic button not picking up the theme's tint color on WhatsApp's new circular mic button.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789385254542-4tn0i/net.whatsapp.WhatsAppSMB_26.36.74_watusi3_1.3.24_sl.ipa",
           "size": 169697185
-        },
-        {
-          "version": "26.35.74",
-          "date": "2026-09-11T11:40:40+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed a crash when opening a link with In-App Browser enabled.\n- Fixed the statuses bar on the chats list showing no statuses on WhatsApp's new internal status storage, now rolling out to more users.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789141269274-a3i64/net.whatsapp.WhatsAppSMB_26.35.74_watusi3_1.3.23_sl.ipa",
-          "size": 178266116
         }
       ],
-      "versionDate": "2026-10-20T06:32:12+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430259-1xo13/net.whatsapp.WhatsAppSMB_26.41.74_watusi3_1.3.27_sl.ipa",
+      "versionDate": "2026-10-24T08:05:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196679-8ueg6/net.whatsapp.WhatsAppSMB_26.41.75_watusi3_1.3.28_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -476,9 +476,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 184118221,
-      "version": "26.41.74",
+      "size": 184344337,
+      "version": "26.41.75",
       "versions": [
+        {
+          "version": "26.41.75",
+          "date": "2026-10-24T08:05:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41\n- Fixed viewed statuses being marked as seen for their sender after relaunching WhatsApp with Mark as Viewed enabled.\n- Fixed a crash when viewing some statuses with the Download or Mark as Viewed buttons enabled.\n- Fixed Allow View Once Screenshot/Recording not working on newer WhatsApp versions.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196678-mkeh3/com.fouadraheb.watusiSMB_26.41.75_watusi3_1.3.28_sl.ipa",
+          "size": 184344337
+        },
         {
           "version": "26.41.74",
           "date": "2026-10-20T06:32:12+00:00",
@@ -506,17 +513,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed notifications reappearing after being cleared.\n- Fixed Split Long Videos not splitting status videos on newer WhatsApp versions.\n- Fixed the chat bar mic button not picking up the theme's tint color on WhatsApp's new circular mic button.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789385254542-021al/com.fouadraheb.watusiSMB_26.36.74_watusi3_1.3.24_sl.ipa",
           "size": 167253084
-        },
-        {
-          "version": "26.35.74",
-          "date": "2026-09-11T11:40:40+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed a crash when opening a link with In-App Browser enabled.\n- Fixed the statuses bar on the chats list showing no statuses on WhatsApp's new internal status storage, now rolling out to more users.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789141269273-ad6fj/com.fouadraheb.watusiSMB_26.35.74_watusi3_1.3.23_sl.ipa",
-          "size": 175958294
         }
       ],
-      "versionDate": "2026-10-20T06:32:12+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430259-at6vj/com.fouadraheb.watusiSMB_26.41.74_watusi3_1.3.27_sl.ipa",
+      "versionDate": "2026-10-24T08:05:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196678-mkeh3/com.fouadraheb.watusiSMB_26.41.75_watusi3_1.3.28_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
