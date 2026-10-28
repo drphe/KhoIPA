@@ -276,7 +276,7 @@
     },
     {
       "beta": false,
-      "name": "Watusi (Duplicate)",
+      "name": "Watusi · Duplicate",
       "type": 1,
       "bundleIdentifier": "com.fouadraheb.watusi",
       "developerName": "Fouad Raheb",
@@ -358,7 +358,7 @@
     },
     {
       "beta": false,
-      "name": "Watusi (Business)",
+      "name": "Watusi Business",
       "type": 1,
       "bundleIdentifier": "net.whatsapp.WhatsAppSMB",
       "developerName": "Fouad Raheb",
@@ -440,7 +440,7 @@
     },
     {
       "beta": false,
-      "name": "Watusi (Business Duplicate)",
+      "name": "Watusi Business · Duplicate",
       "type": 1,
       "bundleIdentifier": "com.fouadraheb.watusiSMB",
       "developerName": "Fouad Raheb",
