@@ -230,9 +230,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 180005083,
-      "version": "26.41.75",
+      "size": 183252937,
+      "version": "26.42.77",
       "versions": [
+        {
+          "version": "26.42.77",
+          "date": "2026-11-02T09:51:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.42",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793613547742-iq3pb/net.whatsapp.WhatsApp_26.42.77_watusi3_1.3.29_sl.ipa",
+          "size": 183252937
+        },
         {
           "version": "26.41.75",
           "date": "2026-10-24T08:05:12+00:00",
@@ -260,17 +267,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.37.X\n- Fixed Unlimited Pinned Chats blocking pinned chats from being unpinned.\n- Fixed Keep Edited Messages History showing the edited text in place of the original message.\n- Keep Edited Messages History now also records edits made in disappearing chats, edits made from a linked device, and edited media captions.\n- Fixed the statuses bar on the chats list not appearing at all for some accounts on WhatsApp's new internal status storage.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-mz0m0/net.whatsapp.WhatsApp_26.37.76_watusi3_1.3.25_sl.ipa",
           "size": 165394634
-        },
-        {
-          "version": "26.36.74",
-          "date": "2026-09-14T08:10:31+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed notifications reappearing after being cleared.\n- Fixed Split Long Videos not splitting status videos on newer WhatsApp versions.\n- Fixed the chat bar mic button not picking up the theme's tint color on WhatsApp's new circular mic button.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789385254543-a770n/net.whatsapp.WhatsApp_26.36.74_watusi3_1.3.24_sl.ipa",
-          "size": 163125151
         }
       ],
-      "versionDate": "2026-10-24T08:05:12+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-as7xg/net.whatsapp.WhatsApp_26.41.75_watusi3_1.3.28_sl.ipa",
+      "versionDate": "2026-11-02T09:51:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793613547742-iq3pb/net.whatsapp.WhatsApp_26.42.77_watusi3_1.3.29_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -312,9 +312,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 177339052,
-      "version": "26.41.75",
+      "size": 180526473,
+      "version": "26.42.77",
       "versions": [
+        {
+          "version": "26.42.77",
+          "date": "2026-11-02T09:51:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.42",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793613547742-vi5hn/com.fouadraheb.watusi_26.42.77_watusi3_1.3.29_sl.ipa",
+          "size": 180526473
+        },
         {
           "version": "26.41.75",
           "date": "2026-10-24T08:05:12+00:00",
@@ -342,17 +349,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.37.X\n- Fixed Unlimited Pinned Chats blocking pinned chats from being unpinned.\n- Fixed Keep Edited Messages History showing the edited text in place of the original message.\n- Keep Edited Messages History now also records edits made in disappearing chats, edits made from a linked device, and edited media captions.\n- Fixed the statuses bar on the chats list not appearing at all for some accounts on WhatsApp's new internal status storage.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-nr5ug/com.fouadraheb.watusi_26.37.76_watusi3_1.3.25_sl.ipa",
           "size": 162977543
-        },
-        {
-          "version": "26.36.74",
-          "date": "2026-09-14T08:10:31+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed notifications reappearing after being cleared.\n- Fixed Split Long Videos not splitting status videos on newer WhatsApp versions.\n- Fixed the chat bar mic button not picking up the theme's tint color on WhatsApp's new circular mic button.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789385254542-0emm6/com.fouadraheb.watusi_26.36.74_watusi3_1.3.24_sl.ipa",
-          "size": 160720180
         }
       ],
-      "versionDate": "2026-10-24T08:05:12+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-z1lbl/com.fouadraheb.watusi_26.41.75_watusi3_1.3.28_sl.ipa",
+      "versionDate": "2026-11-02T09:51:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793613547742-vi5hn/com.fouadraheb.watusi_26.42.77_watusi3_1.3.29_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -394,9 +394,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 187050481,
-      "version": "26.41.75",
+      "size": 190347952,
+      "version": "26.42.77",
       "versions": [
+        {
+          "version": "26.42.77",
+          "date": "2026-11-02T09:51:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.42",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793613547742-r26ig/net.whatsapp.WhatsAppSMB_26.42.77_watusi3_1.3.29_sl.ipa",
+          "size": 190347952
+        },
         {
           "version": "26.41.75",
           "date": "2026-10-24T08:05:12+00:00",
@@ -424,17 +431,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.37.X\n- Fixed Unlimited Pinned Chats blocking pinned chats from being unpinned.\n- Fixed Keep Edited Messages History showing the edited text in place of the original message.\n- Keep Edited Messages History now also records edits made in disappearing chats, edits made from a linked device, and edited media captions.\n- Fixed the statuses bar on the chats list not appearing at all for some accounts on WhatsApp's new internal status storage.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-1sado/net.whatsapp.WhatsAppSMB_26.37.76_watusi3_1.3.25_sl.ipa",
           "size": 172094487
-        },
-        {
-          "version": "26.36.74",
-          "date": "2026-09-14T08:10:31+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed notifications reappearing after being cleared.\n- Fixed Split Long Videos not splitting status videos on newer WhatsApp versions.\n- Fixed the chat bar mic button not picking up the theme's tint color on WhatsApp's new circular mic button.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789385254542-4tn0i/net.whatsapp.WhatsAppSMB_26.36.74_watusi3_1.3.24_sl.ipa",
-          "size": 169697185
         }
       ],
-      "versionDate": "2026-10-24T08:05:12+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196679-8ueg6/net.whatsapp.WhatsAppSMB_26.41.75_watusi3_1.3.28_sl.ipa",
+      "versionDate": "2026-11-02T09:51:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793613547742-r26ig/net.whatsapp.WhatsAppSMB_26.42.77_watusi3_1.3.29_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -476,9 +476,16 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 184344337,
-      "version": "26.41.75",
+      "size": 187563241,
+      "version": "26.42.77",
       "versions": [
+        {
+          "version": "26.42.77",
+          "date": "2026-11-02T09:51:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.42",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793613547741-mraoy/com.fouadraheb.watusiSMB_26.42.77_watusi3_1.3.29_sl.ipa",
+          "size": 187563241
+        },
         {
           "version": "26.41.75",
           "date": "2026-10-24T08:05:12+00:00",
@@ -506,17 +513,10 @@
           "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.37.X\n- Fixed Unlimited Pinned Chats blocking pinned chats from being unpinned.\n- Fixed Keep Edited Messages History showing the edited text in place of the original message.\n- Keep Edited Messages History now also records edits made in disappearing chats, edits made from a linked device, and edited media captions.\n- Fixed the statuses bar on the chats list not appearing at all for some accounts on WhatsApp's new internal status storage.",
           "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201794-cpbzq/com.fouadraheb.watusiSMB_26.37.76_watusi3_1.3.25_sl.ipa",
           "size": 169631035
-        },
-        {
-          "version": "26.36.74",
-          "date": "2026-09-14T08:10:31+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.36.X\n- Fixed notifications reappearing after being cleared.\n- Fixed Split Long Videos not splitting status videos on newer WhatsApp versions.\n- Fixed the chat bar mic button not picking up the theme's tint color on WhatsApp's new circular mic button.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1789385254542-021al/com.fouadraheb.watusiSMB_26.36.74_watusi3_1.3.24_sl.ipa",
-          "size": 167253084
         }
       ],
-      "versionDate": "2026-10-24T08:05:12+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196678-mkeh3/com.fouadraheb.watusiSMB_26.41.75_watusi3_1.3.28_sl.ipa",
+      "versionDate": "2026-11-02T09:51:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793613547741-mraoy/com.fouadraheb.watusiSMB_26.42.77_watusi3_1.3.29_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
