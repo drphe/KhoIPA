@@ -41,7 +41,16 @@
         "https://fouadraheb.com/images/landing/regram/05a-follow-requests-sent.webp",
         "https://fouadraheb.com/images/landing/regram/16a-reels-limit-usage.webp"
       ],
-      "screenshots": [],
+      "screenshots": [
+        "https://fouadraheb.com/images/landing/regram/01a-profile-analyzer-dashboard.webp",
+        "https://fouadraheb.com/images/landing/regram/02b-stories-archive-insights.webp",
+        "https://fouadraheb.com/images/landing/regram/03b-profile-tracking-changes.webp",
+        "https://fouadraheb.com/images/landing/regram/09e-media-vault-list.webp",
+        "https://fouadraheb.com/images/landing/regram/11a-downloads-list.webp",
+        "https://fouadraheb.com/images/landing/regram/07b-activity-history-timeline.webp",
+        "https://fouadraheb.com/images/landing/regram/05a-follow-requests-sent.webp",
+        "https://fouadraheb.com/images/landing/regram/16a-reels-limit-usage.webp"
+      ],
       "appPermissions": {
         "entitlements": [
           "get-task-allow"
@@ -132,7 +141,16 @@
         "https://fouadraheb.com/images/landing/regram/05a-follow-requests-sent.webp",
         "https://fouadraheb.com/images/landing/regram/16a-reels-limit-usage.webp"
       ],
-      "screenshots": [],
+      "screenshots": [
+        "https://fouadraheb.com/images/landing/regram/01a-profile-analyzer-dashboard.webp",
+        "https://fouadraheb.com/images/landing/regram/02b-stories-archive-insights.webp",
+        "https://fouadraheb.com/images/landing/regram/03b-profile-tracking-changes.webp",
+        "https://fouadraheb.com/images/landing/regram/09e-media-vault-list.webp",
+        "https://fouadraheb.com/images/landing/regram/11a-downloads-list.webp",
+        "https://fouadraheb.com/images/landing/regram/07b-activity-history-timeline.webp",
+        "https://fouadraheb.com/images/landing/regram/05a-follow-requests-sent.webp",
+        "https://fouadraheb.com/images/landing/regram/16a-reels-limit-usage.webp"
+      ],
       "appPermissions": {
         "entitlements": [
           "get-task-allow"
