@@ -10,9 +10,9 @@
   "tintColor": "#5c687f",
   "featuredApps": [
     "com.burbn.instagram",
+    "com.fouadraheb.regram",
     "net.whatsapp.WhatsApp",
-    "com.fouadraheb.watusi",
-    "net.whatsapp.WhatsAppSMB"
+    "com.fouadraheb.watusi"
   ],
   "META": {
     "repoName": "Fouad's Source",
