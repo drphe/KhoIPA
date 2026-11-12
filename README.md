@@ -11,7 +11,7 @@
 👉 [Xem chi tiết](view/note/Khodylib.md)
 
 ## 📚Web deploy
-👉 [Kho-ipa.vercel.app](https://kho-ipa.vercel.app)
+👉 [Kho-ipa](https://drphe.github.io/KhoIPA/)
 
 ---
 
