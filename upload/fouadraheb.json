@@ -229,13 +229,28 @@
       "subtitle": "The all-in-one tweak for WhatsApp",
       "localizedDescription": "Watusi is your all-in-one tweak for WhatsApp Messenger.\n\nThis is an original version, it has original WhatsApp bundle ID, you need to delete original WhatsApp before installing.",
       "versionDescription": "",
-      "tintColor": "#075e54",
+      "tintColor": "#1a8be1",
       "iconURL": "https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/master/altstore/watusi/wa.png",
       "screenshotURLs": [
-        "https://fouadraheb.com/images/screenshots/watusi/s1.png",
-        "https://fouadraheb.com/images/screenshots/watusi/s2.png"
+        "https://fouadraheb.com/images/landing/watusi/02b-studio-cutout.webp",
+        "https://fouadraheb.com/images/landing/watusi/05b-call-editor.webp",
+        "https://fouadraheb.com/images/landing/watusi/07a-status-insights.webp",
+        "https://fouadraheb.com/images/landing/watusi/06-message-history.webp",
+        "https://fouadraheb.com/images/landing/watusi/04a-vault-home.webp",
+        "https://fouadraheb.com/images/landing/watusi/08b-online-timeline.webp",
+        "https://fouadraheb.com/images/landing/watusi/11a-quick-controls.webp",
+        "https://fouadraheb.com/images/landing/watusi/12a-updates-list.webp"
       ],
-      "screenshots": [],
+      "screenshots": [
+        "https://fouadraheb.com/images/landing/watusi/02b-studio-cutout.webp",
+        "https://fouadraheb.com/images/landing/watusi/05b-call-editor.webp",
+        "https://fouadraheb.com/images/landing/watusi/07a-status-insights.webp",
+        "https://fouadraheb.com/images/landing/watusi/06-message-history.webp",
+        "https://fouadraheb.com/images/landing/watusi/04a-vault-home.webp",
+        "https://fouadraheb.com/images/landing/watusi/08b-online-timeline.webp",
+        "https://fouadraheb.com/images/landing/watusi/11a-quick-controls.webp",
+        "https://fouadraheb.com/images/landing/watusi/12a-updates-list.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
@@ -258,52 +273,20 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 183329997,
-      "version": "26.42.77",
+      "size": 181517277,
+      "version": "26.44.72",
       "versions": [
         {
-          "version": "26.42.77",
-          "marketingVersion": "1.3.30",
-          "date": "2026-11-03T10:55:28+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.42\n- Fixed photos, videos, documents, camera captures, contacts & locations not sending from the Share Sheet.\n- Fixed Watusi not loading on RootHide after converting with RootHide Patcher.\n\nBased on WhatsApp 26.42.77.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793703806341-8o8to/net.whatsapp.WhatsApp_26.42.77_watusi3_1.3.30_sl.ipa",
-          "size": 183329997
-        },
-        {
-          "version": "26.41.75",
-          "marketingVersion": "1.3.28",
-          "date": "2026-10-24T08:05:12+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41\n- Fixed viewed statuses being marked as seen for their sender after relaunching WhatsApp with Mark as Viewed enabled.\n- Fixed a crash when viewing some statuses with the Download or Mark as Viewed buttons enabled.\n- Fixed Allow View Once Screenshot/Recording not working on newer WhatsApp versions.\n\nBased on WhatsApp 26.41.75.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-as7xg/net.whatsapp.WhatsApp_26.41.75_watusi3_1.3.28_sl.ipa",
-          "size": 180005083
-        },
-        {
-          "version": "26.41.74",
-          "marketingVersion": "1.3.27",
-          "date": "2026-10-20T06:32:12+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41.X\n- Fixed Status Archive not saving your statuses or their viewers on WhatsApp's new internal status storage.\n- Fixed a crash when viewing a status from the Statuses Bar.\n\nBased on WhatsApp 26.41.74.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430260-ebhzr/net.whatsapp.WhatsApp_26.41.74_watusi3_1.3.27_sl.ipa",
-          "size": 179806859
-        },
-        {
-          "version": "26.38.74",
-          "marketingVersion": "1.3.26",
-          "date": "2026-09-30T21:15:48+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.38.X\n- Fixed voice notes not playing or recording on sideloaded installs missing WhatsApp's extended-virtual-addressing entitlement.\n\nBased on WhatsApp 26.38.74.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804508-wz7w3/net.whatsapp.WhatsApp_26.38.74_watusi3_1.3.26_sl.ipa",
-          "size": 167510862
-        },
-        {
-          "version": "26.37.76",
-          "marketingVersion": "1.3.25",
-          "date": "2026-09-27T08:27:42+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.37.X\n- Fixed Unlimited Pinned Chats blocking pinned chats from being unpinned.\n- Fixed Keep Edited Messages History showing the edited text in place of the original message.\n- Keep Edited Messages History now also records edits made in disappearing chats, edits made from a linked device, and edited media captions.\n- Fixed the statuses bar on the chats list not appearing at all for some accounts on WhatsApp's new internal status storage.\n\nBased on WhatsApp 26.37.76.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-mz0m0/net.whatsapp.WhatsApp_26.37.76_watusi3_1.3.25_sl.ipa",
-          "size": 165394634
+          "version": "26.44.72",
+          "marketingVersion": "1.0",
+          "date": "2026-11-11T10:00:00+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- The new Watusi: rebuilt from scratch, with Stalky (Updates Tracking), OnlineNotify (Online Activity) and ContactSync (Contact Photos Sync) now included\n- Supports WhatsApp 26.44 and WhatsApp Business, with multiple accounts: every feature keeps its data per account\n- Call Recording: now records video calls too; keeps you and the other side apart, with a new player, editor and export\n- New Sticker Studio: make stickers and animated stickers from photos, videos, GIFs, text or drawings, remove backgrounds, build packs that stay in sync with WhatsApp\n- New Sticker Gallery: every sticker you sent or received, with search, favorites and collections\n- New Message History: deleted and edited messages, with their media, kept by Watusi itself, so they survive relinking or restoring WhatsApp\n- New Storage: see what takes space across all of WhatsApp, Largest Files, a file browser, Clean Up and Auto Clear\n- New Media Vault: keep photos, videos and audio from your chats in one private place, with folders, smart and locked folders, import from Photos or Files, a photo, video and audio editor, and file info\n- New Quick Controls, Message Info, Keep Disappearing Messages, Filter Statuses, Hide Last Seen When Closed and Forwarded Label Button\n- Send Audio: send an audio file from Files or the Media Vault, or the sound of a video from Photos\n- Upload to Video Note: send a video from Photos or the Media Vault as a video note, with trim and framing\n- Last Seen under each chat in the chats list, in 3 formats\n- Background Mode: pick how WhatsApp stays alive (System, Audio or Location)\n- Message Info: Send Receipts Now sends the read receipt for one message\n- Custom Tones: Tone Library, trim editor, record a tone or take it from a video\n- Crash Logs: readable reports you can send to support in one tap, and Safe Mode after repeated crashes\n- New Shortcuts & Links: open any Watusi screen or turn settings on and off from the Shortcuts app\n- New libraries: install ready-made themes, tones and sticker packs in one tap\n- New Polls: Poll Insights, who hasn't voted with a Remind button, full vote log, templates and sharing results\n- Rebuilt Themes: apply instantly, per account, per chat or on a schedule; custom fonts, wallpapers, Pure Black and a theme library\n- Rebuilt Hide Chats, Passcode Lock, Message Scheduler, Auto Reply, Chat List Filters and Contacts Spoofing\n- Rebuilt My Status Archive with Insights and People, Updates Tracking and Contact Photos Sync (works on linked devices)\n- Rebuilt Settings: new layout, search, settings profiles per account, Backup Center with Google Drive, and a Tab Bar editor with a live preview\n- Every Watusi screen now uses WhatsApp's own look and your theme, in light and dark mode\n- New video player, Contacts screen, welcome tour, in-app update check and 14 new languages\n- Much faster app launch, no more freezes on big lists or updates\n- Fixed Backup listing and uploading your WhatsApp data several times, and showing codes instead of your phone number\n\nBased on WhatsApp 26.44.72.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794443507727-4w53k/net.whatsapp.WhatsApp_26.44.72_watusi_1.0_sl.ipa",
+          "size": 181517277
         }
       ],
-      "versionDate": "2026-11-03T10:55:28+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793703806341-8o8to/net.whatsapp.WhatsApp_26.42.77_watusi3_1.3.30_sl.ipa",
+      "versionDate": "2026-11-11T10:00:00+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794443507727-4w53k/net.whatsapp.WhatsApp_26.44.72_watusi_1.0_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -316,13 +299,28 @@
       "subtitle": "The all-in-one tweak for WhatsApp",
       "localizedDescription": "Watusi is your all-in-one tweak for WhatsApp Messenger.\n\nThis is a duplicated app, it can be installed alongside original WhatsApp (Bundle ID com.fouadraheb.watusi).",
       "versionDescription": "",
-      "tintColor": "#075e54",
+      "tintColor": "#1a8be1",
       "iconURL": "https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/master/altstore/watusi/wa.png",
       "screenshotURLs": [
-        "https://fouadraheb.com/images/screenshots/watusi/s1.png",
-        "https://fouadraheb.com/images/screenshots/watusi/s2.png"
+        "https://fouadraheb.com/images/landing/watusi/02b-studio-cutout.webp",
+        "https://fouadraheb.com/images/landing/watusi/05b-call-editor.webp",
+        "https://fouadraheb.com/images/landing/watusi/07a-status-insights.webp",
+        "https://fouadraheb.com/images/landing/watusi/06-message-history.webp",
+        "https://fouadraheb.com/images/landing/watusi/04a-vault-home.webp",
+        "https://fouadraheb.com/images/landing/watusi/08b-online-timeline.webp",
+        "https://fouadraheb.com/images/landing/watusi/11a-quick-controls.webp",
+        "https://fouadraheb.com/images/landing/watusi/12a-updates-list.webp"
       ],
-      "screenshots": [],
+      "screenshots": [
+        "https://fouadraheb.com/images/landing/watusi/02b-studio-cutout.webp",
+        "https://fouadraheb.com/images/landing/watusi/05b-call-editor.webp",
+        "https://fouadraheb.com/images/landing/watusi/07a-status-insights.webp",
+        "https://fouadraheb.com/images/landing/watusi/06-message-history.webp",
+        "https://fouadraheb.com/images/landing/watusi/04a-vault-home.webp",
+        "https://fouadraheb.com/images/landing/watusi/08b-online-timeline.webp",
+        "https://fouadraheb.com/images/landing/watusi/11a-quick-controls.webp",
+        "https://fouadraheb.com/images/landing/watusi/12a-updates-list.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
@@ -345,52 +343,20 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 180603533,
-      "version": "26.42.77",
+      "size": 178687775,
+      "version": "26.44.72",
       "versions": [
         {
-          "version": "26.42.77",
-          "marketingVersion": "1.3.30",
-          "date": "2026-11-03T10:55:28+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.42\n- Fixed photos, videos, documents, camera captures, contacts & locations not sending from the Share Sheet.\n- Fixed Watusi not loading on RootHide after converting with RootHide Patcher.\n\nBased on base app 26.42.77.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793703806341-fpp9i/com.fouadraheb.watusi_26.42.77_watusi3_1.3.30_sl.ipa",
-          "size": 180603533
-        },
-        {
-          "version": "26.41.75",
-          "marketingVersion": "1.3.28",
-          "date": "2026-10-24T08:05:12+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41\n- Fixed viewed statuses being marked as seen for their sender after relaunching WhatsApp with Mark as Viewed enabled.\n- Fixed a crash when viewing some statuses with the Download or Mark as Viewed buttons enabled.\n- Fixed Allow View Once Screenshot/Recording not working on newer WhatsApp versions.\n\nBased on base app 26.41.75.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196680-z1lbl/com.fouadraheb.watusi_26.41.75_watusi3_1.3.28_sl.ipa",
-          "size": 177339052
-        },
-        {
-          "version": "26.41.74",
-          "marketingVersion": "1.3.27",
-          "date": "2026-10-20T06:32:12+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41.X\n- Fixed Status Archive not saving your statuses or their viewers on WhatsApp's new internal status storage.\n- Fixed a crash when viewing a status from the Statuses Bar.\n\nBased on base app 26.41.74.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430260-mwf9q/com.fouadraheb.watusi_26.41.74_watusi3_1.3.27_sl.ipa",
-          "size": 177140855
-        },
-        {
-          "version": "26.38.74",
-          "marketingVersion": "1.3.26",
-          "date": "2026-09-30T21:15:48+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.38.X\n- Fixed voice notes not playing or recording on sideloaded installs missing WhatsApp's extended-virtual-addressing entitlement.\n\nBased on base app 26.38.74.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804508-0ywta/com.fouadraheb.watusi_26.38.74_watusi3_1.3.26_sl.ipa",
-          "size": 165078214
-        },
-        {
-          "version": "26.37.76",
-          "marketingVersion": "1.3.25",
-          "date": "2026-09-27T08:27:42+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.37.X\n- Fixed Unlimited Pinned Chats blocking pinned chats from being unpinned.\n- Fixed Keep Edited Messages History showing the edited text in place of the original message.\n- Keep Edited Messages History now also records edits made in disappearing chats, edits made from a linked device, and edited media captions.\n- Fixed the statuses bar on the chats list not appearing at all for some accounts on WhatsApp's new internal status storage.\n\nBased on base app 26.37.76.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-nr5ug/com.fouadraheb.watusi_26.37.76_watusi3_1.3.25_sl.ipa",
-          "size": 162977543
+          "version": "26.44.72",
+          "marketingVersion": "1.0",
+          "date": "2026-11-11T10:00:00+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- The new Watusi: rebuilt from scratch, with Stalky (Updates Tracking), OnlineNotify (Online Activity) and ContactSync (Contact Photos Sync) now included\n- Supports WhatsApp 26.44 and WhatsApp Business, with multiple accounts: every feature keeps its data per account\n- Call Recording: now records video calls too; keeps you and the other side apart, with a new player, editor and export\n- New Sticker Studio: make stickers and animated stickers from photos, videos, GIFs, text or drawings, remove backgrounds, build packs that stay in sync with WhatsApp\n- New Sticker Gallery: every sticker you sent or received, with search, favorites and collections\n- New Message History: deleted and edited messages, with their media, kept by Watusi itself, so they survive relinking or restoring WhatsApp\n- New Storage: see what takes space across all of WhatsApp, Largest Files, a file browser, Clean Up and Auto Clear\n- New Media Vault: keep photos, videos and audio from your chats in one private place, with folders, smart and locked folders, import from Photos or Files, a photo, video and audio editor, and file info\n- New Quick Controls, Message Info, Keep Disappearing Messages, Filter Statuses, Hide Last Seen When Closed and Forwarded Label Button\n- Send Audio: send an audio file from Files or the Media Vault, or the sound of a video from Photos\n- Upload to Video Note: send a video from Photos or the Media Vault as a video note, with trim and framing\n- Last Seen under each chat in the chats list, in 3 formats\n- Background Mode: pick how WhatsApp stays alive (System, Audio or Location)\n- Message Info: Send Receipts Now sends the read receipt for one message\n- Custom Tones: Tone Library, trim editor, record a tone or take it from a video\n- Crash Logs: readable reports you can send to support in one tap, and Safe Mode after repeated crashes\n- New Shortcuts & Links: open any Watusi screen or turn settings on and off from the Shortcuts app\n- New libraries: install ready-made themes, tones and sticker packs in one tap\n- New Polls: Poll Insights, who hasn't voted with a Remind button, full vote log, templates and sharing results\n- Rebuilt Themes: apply instantly, per account, per chat or on a schedule; custom fonts, wallpapers, Pure Black and a theme library\n- Rebuilt Hide Chats, Passcode Lock, Message Scheduler, Auto Reply, Chat List Filters and Contacts Spoofing\n- Rebuilt My Status Archive with Insights and People, Updates Tracking and Contact Photos Sync (works on linked devices)\n- Rebuilt Settings: new layout, search, settings profiles per account, Backup Center with Google Drive, and a Tab Bar editor with a live preview\n- Every Watusi screen now uses WhatsApp's own look and your theme, in light and dark mode\n- New video player, Contacts screen, welcome tour, in-app update check and 14 new languages\n- Much faster app launch, no more freezes on big lists or updates\n- Fixed Backup listing and uploading your WhatsApp data several times, and showing codes instead of your phone number\n\nBased on base app 26.44.72.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794443507727-zmckb/com.fouadraheb.watusi_26.44.72_watusi_1.0_sl.ipa",
+          "size": 178687775
         }
       ],
-      "versionDate": "2026-11-03T10:55:28+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793703806341-fpp9i/com.fouadraheb.watusi_26.42.77_watusi3_1.3.30_sl.ipa",
+      "versionDate": "2026-11-11T10:00:00+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794443507727-zmckb/com.fouadraheb.watusi_26.44.72_watusi_1.0_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -403,13 +369,28 @@
       "subtitle": "The all-in-one tweak for WhatsApp",
       "localizedDescription": "This version has original WhatsApp Business bundle ID.\n\nWatusi is your all-in-one tweak for WhatsApp Messenger.",
       "versionDescription": "",
-      "tintColor": "#075e54",
+      "tintColor": "#1a8be1",
       "iconURL": "https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/master/altstore/watusi/business.png",
       "screenshotURLs": [
-        "https://fouadraheb.com/images/screenshots/watusi/s1.png",
-        "https://fouadraheb.com/images/screenshots/watusi/s2.png"
+        "https://fouadraheb.com/images/landing/watusi/02b-studio-cutout.webp",
+        "https://fouadraheb.com/images/landing/watusi/05b-call-editor.webp",
+        "https://fouadraheb.com/images/landing/watusi/07a-status-insights.webp",
+        "https://fouadraheb.com/images/landing/watusi/06-message-history.webp",
+        "https://fouadraheb.com/images/landing/watusi/04a-vault-home.webp",
+        "https://fouadraheb.com/images/landing/watusi/08b-online-timeline.webp",
+        "https://fouadraheb.com/images/landing/watusi/11a-quick-controls.webp",
+        "https://fouadraheb.com/images/landing/watusi/12a-updates-list.webp"
       ],
-      "screenshots": [],
+      "screenshots": [
+        "https://fouadraheb.com/images/landing/watusi/02b-studio-cutout.webp",
+        "https://fouadraheb.com/images/landing/watusi/05b-call-editor.webp",
+        "https://fouadraheb.com/images/landing/watusi/07a-status-insights.webp",
+        "https://fouadraheb.com/images/landing/watusi/06-message-history.webp",
+        "https://fouadraheb.com/images/landing/watusi/04a-vault-home.webp",
+        "https://fouadraheb.com/images/landing/watusi/08b-online-timeline.webp",
+        "https://fouadraheb.com/images/landing/watusi/11a-quick-controls.webp",
+        "https://fouadraheb.com/images/landing/watusi/12a-updates-list.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
@@ -432,52 +413,20 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 190425012,
-      "version": "26.42.77",
+      "size": 188082892,
+      "version": "26.44.72",
       "versions": [
         {
-          "version": "26.42.77",
-          "marketingVersion": "1.3.30",
-          "date": "2026-11-03T10:55:28+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.42\n- Fixed photos, videos, documents, camera captures, contacts & locations not sending from the Share Sheet.\n- Fixed Watusi not loading on RootHide after converting with RootHide Patcher.\n\nBased on WhatsApp Business 26.42.77.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793703806341-rh4x7/net.whatsapp.WhatsAppSMB_26.42.77_watusi3_1.3.30_sl.ipa",
-          "size": 190425012
-        },
-        {
-          "version": "26.41.75",
-          "marketingVersion": "1.3.28",
-          "date": "2026-10-24T08:05:12+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41\n- Fixed viewed statuses being marked as seen for their sender after relaunching WhatsApp with Mark as Viewed enabled.\n- Fixed a crash when viewing some statuses with the Download or Mark as Viewed buttons enabled.\n- Fixed Allow View Once Screenshot/Recording not working on newer WhatsApp versions.\n\nBased on WhatsApp Business 26.41.75.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196679-8ueg6/net.whatsapp.WhatsAppSMB_26.41.75_watusi3_1.3.28_sl.ipa",
-          "size": 187050481
-        },
-        {
-          "version": "26.41.74",
-          "marketingVersion": "1.3.27",
-          "date": "2026-10-20T06:32:12+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41.X\n- Fixed Status Archive not saving your statuses or their viewers on WhatsApp's new internal status storage.\n- Fixed a crash when viewing a status from the Statuses Bar.\n\nBased on WhatsApp Business 26.41.74.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430259-1xo13/net.whatsapp.WhatsAppSMB_26.41.74_watusi3_1.3.27_sl.ipa",
-          "size": 186824364
-        },
-        {
-          "version": "26.38.74",
-          "marketingVersion": "1.3.26",
-          "date": "2026-09-30T21:15:48+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.38.X\n- Fixed voice notes not playing or recording on sideloaded installs missing WhatsApp's extended-virtual-addressing entitlement.\n\nBased on WhatsApp Business 26.38.74.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804507-ixhbd/net.whatsapp.WhatsAppSMB_26.38.74_watusi3_1.3.26_sl.ipa",
-          "size": 174257519
-        },
-        {
-          "version": "26.37.76",
-          "marketingVersion": "1.3.25",
-          "date": "2026-09-27T08:27:42+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.37.X\n- Fixed Unlimited Pinned Chats blocking pinned chats from being unpinned.\n- Fixed Keep Edited Messages History showing the edited text in place of the original message.\n- Keep Edited Messages History now also records edits made in disappearing chats, edits made from a linked device, and edited media captions.\n- Fixed the statuses bar on the chats list not appearing at all for some accounts on WhatsApp's new internal status storage.\n\nBased on WhatsApp Business 26.37.76.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201795-1sado/net.whatsapp.WhatsAppSMB_26.37.76_watusi3_1.3.25_sl.ipa",
-          "size": 172094487
+          "version": "26.44.72",
+          "marketingVersion": "1.0",
+          "date": "2026-11-11T10:00:00+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- The new Watusi: rebuilt from scratch, with Stalky (Updates Tracking), OnlineNotify (Online Activity) and ContactSync (Contact Photos Sync) now included\n- Supports WhatsApp 26.44 and WhatsApp Business, with multiple accounts: every feature keeps its data per account\n- Call Recording: now records video calls too; keeps you and the other side apart, with a new player, editor and export\n- New Sticker Studio: make stickers and animated stickers from photos, videos, GIFs, text or drawings, remove backgrounds, build packs that stay in sync with WhatsApp\n- New Sticker Gallery: every sticker you sent or received, with search, favorites and collections\n- New Message History: deleted and edited messages, with their media, kept by Watusi itself, so they survive relinking or restoring WhatsApp\n- New Storage: see what takes space across all of WhatsApp, Largest Files, a file browser, Clean Up and Auto Clear\n- New Media Vault: keep photos, videos and audio from your chats in one private place, with folders, smart and locked folders, import from Photos or Files, a photo, video and audio editor, and file info\n- New Quick Controls, Message Info, Keep Disappearing Messages, Filter Statuses, Hide Last Seen When Closed and Forwarded Label Button\n- Send Audio: send an audio file from Files or the Media Vault, or the sound of a video from Photos\n- Upload to Video Note: send a video from Photos or the Media Vault as a video note, with trim and framing\n- Last Seen under each chat in the chats list, in 3 formats\n- Background Mode: pick how WhatsApp stays alive (System, Audio or Location)\n- Message Info: Send Receipts Now sends the read receipt for one message\n- Custom Tones: Tone Library, trim editor, record a tone or take it from a video\n- Crash Logs: readable reports you can send to support in one tap, and Safe Mode after repeated crashes\n- New Shortcuts & Links: open any Watusi screen or turn settings on and off from the Shortcuts app\n- New libraries: install ready-made themes, tones and sticker packs in one tap\n- New Polls: Poll Insights, who hasn't voted with a Remind button, full vote log, templates and sharing results\n- Rebuilt Themes: apply instantly, per account, per chat or on a schedule; custom fonts, wallpapers, Pure Black and a theme library\n- Rebuilt Hide Chats, Passcode Lock, Message Scheduler, Auto Reply, Chat List Filters and Contacts Spoofing\n- Rebuilt My Status Archive with Insights and People, Updates Tracking and Contact Photos Sync (works on linked devices)\n- Rebuilt Settings: new layout, search, settings profiles per account, Backup Center with Google Drive, and a Tab Bar editor with a live preview\n- Every Watusi screen now uses WhatsApp's own look and your theme, in light and dark mode\n- New video player, Contacts screen, welcome tour, in-app update check and 14 new languages\n- Much faster app launch, no more freezes on big lists or updates\n- Fixed Backup listing and uploading your WhatsApp data several times, and showing codes instead of your phone number\n\nBased on WhatsApp Business 26.44.72.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794443507726-q5kzp/net.whatsapp.WhatsAppSMB_26.44.72_watusi_1.0_sl.ipa",
+          "size": 188082892
         }
       ],
-      "versionDate": "2026-11-03T10:55:28+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793703806341-rh4x7/net.whatsapp.WhatsAppSMB_26.42.77_watusi3_1.3.30_sl.ipa",
+      "versionDate": "2026-11-11T10:00:00+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794443507726-q5kzp/net.whatsapp.WhatsAppSMB_26.44.72_watusi_1.0_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -490,13 +439,28 @@
       "subtitle": "The all-in-one tweak for WhatsApp",
       "localizedDescription": "This is a duplicated app, it can be installed alongside original WhatsApp Business. (Bundle ID com.fouadraheb.watusiSMB) \n\nWatusi is your all-in-one tweak for WhatsApp Messenger.",
       "versionDescription": "",
-      "tintColor": "#075e54",
+      "tintColor": "#1a8be1",
       "iconURL": "https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/master/altstore/watusi/business.png",
       "screenshotURLs": [
-        "https://fouadraheb.com/images/screenshots/watusi/s1.png",
-        "https://fouadraheb.com/images/screenshots/watusi/s2.png"
+        "https://fouadraheb.com/images/landing/watusi/02b-studio-cutout.webp",
+        "https://fouadraheb.com/images/landing/watusi/05b-call-editor.webp",
+        "https://fouadraheb.com/images/landing/watusi/07a-status-insights.webp",
+        "https://fouadraheb.com/images/landing/watusi/06-message-history.webp",
+        "https://fouadraheb.com/images/landing/watusi/04a-vault-home.webp",
+        "https://fouadraheb.com/images/landing/watusi/08b-online-timeline.webp",
+        "https://fouadraheb.com/images/landing/watusi/11a-quick-controls.webp",
+        "https://fouadraheb.com/images/landing/watusi/12a-updates-list.webp"
       ],
-      "screenshots": [],
+      "screenshots": [
+        "https://fouadraheb.com/images/landing/watusi/02b-studio-cutout.webp",
+        "https://fouadraheb.com/images/landing/watusi/05b-call-editor.webp",
+        "https://fouadraheb.com/images/landing/watusi/07a-status-insights.webp",
+        "https://fouadraheb.com/images/landing/watusi/06-message-history.webp",
+        "https://fouadraheb.com/images/landing/watusi/04a-vault-home.webp",
+        "https://fouadraheb.com/images/landing/watusi/08b-online-timeline.webp",
+        "https://fouadraheb.com/images/landing/watusi/11a-quick-controls.webp",
+        "https://fouadraheb.com/images/landing/watusi/12a-updates-list.webp"
+      ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
@@ -519,52 +483,20 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 187640301,
-      "version": "26.42.77",
+      "size": 185217779,
+      "version": "26.44.72",
       "versions": [
         {
-          "version": "26.42.77",
-          "marketingVersion": "1.3.30",
-          "date": "2026-11-03T10:55:28+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.42\n- Fixed photos, videos, documents, camera captures, contacts & locations not sending from the Share Sheet.\n- Fixed Watusi not loading on RootHide after converting with RootHide Patcher.\n\nBased on base app 26.42.77.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793703806340-lg0ok/com.fouadraheb.watusiSMB_26.42.77_watusi3_1.3.30_sl.ipa",
-          "size": 187640301
-        },
-        {
-          "version": "26.41.75",
-          "marketingVersion": "1.3.28",
-          "date": "2026-10-24T08:05:12+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41\n- Fixed viewed statuses being marked as seen for their sender after relaunching WhatsApp with Mark as Viewed enabled.\n- Fixed a crash when viewing some statuses with the Download or Mark as Viewed buttons enabled.\n- Fixed Allow View Once Screenshot/Recording not working on newer WhatsApp versions.\n\nBased on base app 26.41.75.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792830196678-mkeh3/com.fouadraheb.watusiSMB_26.41.75_watusi3_1.3.28_sl.ipa",
-          "size": 184344337
-        },
-        {
-          "version": "26.41.74",
-          "marketingVersion": "1.3.27",
-          "date": "2026-10-20T06:32:12+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.41.X\n- Fixed Status Archive not saving your statuses or their viewers on WhatsApp's new internal status storage.\n- Fixed a crash when viewing a status from the Statuses Bar.\n\nBased on base app 26.41.74.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1792478430259-at6vj/com.fouadraheb.watusiSMB_26.41.74_watusi3_1.3.27_sl.ipa",
-          "size": 184118221
-        },
-        {
-          "version": "26.38.74",
-          "marketingVersion": "1.3.26",
-          "date": "2026-09-30T21:15:48+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.38.X\n- Fixed voice notes not playing or recording on sideloaded installs missing WhatsApp's extended-virtual-addressing entitlement.\n\nBased on base app 26.38.74.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790803804507-s1n5i/com.fouadraheb.watusiSMB_26.38.74_watusi3_1.3.26_sl.ipa",
-          "size": 171780619
-        },
-        {
-          "version": "26.37.76",
-          "marketingVersion": "1.3.25",
-          "date": "2026-09-27T08:27:42+00:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes & support for WhatsApp 26.37.X\n- Fixed Unlimited Pinned Chats blocking pinned chats from being unpinned.\n- Fixed Keep Edited Messages History showing the edited text in place of the original message.\n- Keep Edited Messages History now also records edits made in disappearing chats, edits made from a linked device, and edited media captions.\n- Fixed the statuses bar on the chats list not appearing at all for some accounts on WhatsApp's new internal status storage.\n\nBased on base app 26.37.76.",
-          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1790498201794-cpbzq/com.fouadraheb.watusiSMB_26.37.76_watusi3_1.3.25_sl.ipa",
-          "size": 169631035
+          "version": "26.44.72",
+          "marketingVersion": "1.0",
+          "date": "2026-11-11T10:00:00+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- The new Watusi: rebuilt from scratch, with Stalky (Updates Tracking), OnlineNotify (Online Activity) and ContactSync (Contact Photos Sync) now included\n- Supports WhatsApp 26.44 and WhatsApp Business, with multiple accounts: every feature keeps its data per account\n- Call Recording: now records video calls too; keeps you and the other side apart, with a new player, editor and export\n- New Sticker Studio: make stickers and animated stickers from photos, videos, GIFs, text or drawings, remove backgrounds, build packs that stay in sync with WhatsApp\n- New Sticker Gallery: every sticker you sent or received, with search, favorites and collections\n- New Message History: deleted and edited messages, with their media, kept by Watusi itself, so they survive relinking or restoring WhatsApp\n- New Storage: see what takes space across all of WhatsApp, Largest Files, a file browser, Clean Up and Auto Clear\n- New Media Vault: keep photos, videos and audio from your chats in one private place, with folders, smart and locked folders, import from Photos or Files, a photo, video and audio editor, and file info\n- New Quick Controls, Message Info, Keep Disappearing Messages, Filter Statuses, Hide Last Seen When Closed and Forwarded Label Button\n- Send Audio: send an audio file from Files or the Media Vault, or the sound of a video from Photos\n- Upload to Video Note: send a video from Photos or the Media Vault as a video note, with trim and framing\n- Last Seen under each chat in the chats list, in 3 formats\n- Background Mode: pick how WhatsApp stays alive (System, Audio or Location)\n- Message Info: Send Receipts Now sends the read receipt for one message\n- Custom Tones: Tone Library, trim editor, record a tone or take it from a video\n- Crash Logs: readable reports you can send to support in one tap, and Safe Mode after repeated crashes\n- New Shortcuts & Links: open any Watusi screen or turn settings on and off from the Shortcuts app\n- New libraries: install ready-made themes, tones and sticker packs in one tap\n- New Polls: Poll Insights, who hasn't voted with a Remind button, full vote log, templates and sharing results\n- Rebuilt Themes: apply instantly, per account, per chat or on a schedule; custom fonts, wallpapers, Pure Black and a theme library\n- Rebuilt Hide Chats, Passcode Lock, Message Scheduler, Auto Reply, Chat List Filters and Contacts Spoofing\n- Rebuilt My Status Archive with Insights and People, Updates Tracking and Contact Photos Sync (works on linked devices)\n- Rebuilt Settings: new layout, search, settings profiles per account, Backup Center with Google Drive, and a Tab Bar editor with a live preview\n- Every Watusi screen now uses WhatsApp's own look and your theme, in light and dark mode\n- New video player, Contacts screen, welcome tour, in-app update check and 14 new languages\n- Much faster app launch, no more freezes on big lists or updates\n- Fixed Backup listing and uploading your WhatsApp data several times, and showing codes instead of your phone number\n\nBased on base app 26.44.72.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794443507726-hykuj/com.fouadraheb.watusiSMB_26.44.72_watusi_1.0_sl.ipa",
+          "size": 185217779
         }
       ],
-      "versionDate": "2026-11-03T10:55:28+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1793703806340-lg0ok/com.fouadraheb.watusiSMB_26.42.77_watusi3_1.3.30_sl.ipa",
+      "versionDate": "2026-11-11T10:00:00+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794443507726-hykuj/com.fouadraheb.watusiSMB_26.44.72_watusi_1.0_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
