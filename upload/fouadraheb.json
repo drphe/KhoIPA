@@ -273,9 +273,17 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 181648405,
-      "version": "26.44.74",
+      "size": 188823719,
+      "version": "26.46.72",
       "versions": [
+        {
+          "version": "26.46.72",
+          "marketingVersion": "1.0.2",
+          "date": "2026-11-22T11:29:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for 26.45 and 26.46.\n- Updates Tracking: a contact's saved media can be filtered to only profile pictures or only statuses, sorted by newest, oldest or largest, and selected to share or delete (or delete all at once). The full-screen viewer shows whether each one is a profile picture or a status\n- Updates Tracking: photo and video statuses keep their caption, and it shows in the full-screen viewer, also after the status is deleted\n- Statuses Bar: long press a contact's status and choose View Saved Statuses to see everything Updates Tracking saved from them\n- Statuses Bar: new Show Views Count switch to hide how many people viewed your statuses on My Status\n- Statuses Bar: fixed a contact sometimes showing twice while someone else's status was missing\n- Contact Photos Sync: tap Synced, To Update or No Photo to see those contacts, and long press a contact to exclude it from syncing\n- Upload to Video Note: send a video from Photos or Media Vault as a video note right from the camera's Video Note mode\n- Backups: Back Up All lets you choose what to upload and what may use cellular data, showing sizes and free Google Drive space; fixed cellular failures and unchanged items uploading again\n- Backups: Restore Backup now shows which device each backup came from\n- Backups: Export to Files can now include only some parts of Watusi Settings & Data, such as just your settings\n- Message Scheduler: long press on the send button opens the scheduler again on the latest version\n- Profiles: Share Settings makes a small file with a profile's switches and choices to send to someone, without chats, contacts or saved data. Import Settings adds it as a new profile or replaces your current one\n- Background Mode and Always Online are now unlocked, so you can keep WhatsApp running and link your devices before activating your license\n- Fixed WhatsApp sometimes closing when a message arrives or a chat changes while the Statuses bar or the Online List row is in the chats list\n- Fixed Watusi not loading on RootHide after converting with RootHide Patcher\n\nBased on WhatsApp 26.46.72.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1795347552384-ue65s/net.whatsapp.WhatsApp_26.46.72_watusi_1.0.2_sl.ipa",
+          "size": 188823719
+        },
         {
           "version": "26.44.74",
           "marketingVersion": "1.0.1",
@@ -293,8 +301,8 @@
           "size": 181517277
         }
       ],
-      "versionDate": "2026-11-13T21:07:48+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794604781271-xto3e/net.whatsapp.WhatsApp_26.44.74_watusi_1.0.1_sl.ipa",
+      "versionDate": "2026-11-22T11:29:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1795347552384-ue65s/net.whatsapp.WhatsApp_26.46.72_watusi_1.0.2_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -351,9 +359,17 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 178820103,
-      "version": "26.44.74",
+      "size": 185858031,
+      "version": "26.46.72",
       "versions": [
+        {
+          "version": "26.46.72",
+          "marketingVersion": "1.0.2",
+          "date": "2026-11-22T11:29:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for 26.45 and 26.46.\n- Updates Tracking: a contact's saved media can be filtered to only profile pictures or only statuses, sorted by newest, oldest or largest, and selected to share or delete (or delete all at once). The full-screen viewer shows whether each one is a profile picture or a status\n- Updates Tracking: photo and video statuses keep their caption, and it shows in the full-screen viewer, also after the status is deleted\n- Statuses Bar: long press a contact's status and choose View Saved Statuses to see everything Updates Tracking saved from them\n- Statuses Bar: new Show Views Count switch to hide how many people viewed your statuses on My Status\n- Statuses Bar: fixed a contact sometimes showing twice while someone else's status was missing\n- Contact Photos Sync: tap Synced, To Update or No Photo to see those contacts, and long press a contact to exclude it from syncing\n- Upload to Video Note: send a video from Photos or Media Vault as a video note right from the camera's Video Note mode\n- Backups: Back Up All lets you choose what to upload and what may use cellular data, showing sizes and free Google Drive space; fixed cellular failures and unchanged items uploading again\n- Backups: Restore Backup now shows which device each backup came from\n- Backups: Export to Files can now include only some parts of Watusi Settings & Data, such as just your settings\n- Message Scheduler: long press on the send button opens the scheduler again on the latest version\n- Profiles: Share Settings makes a small file with a profile's switches and choices to send to someone, without chats, contacts or saved data. Import Settings adds it as a new profile or replaces your current one\n- Background Mode and Always Online are now unlocked, so you can keep WhatsApp running and link your devices before activating your license\n- Fixed WhatsApp sometimes closing when a message arrives or a chat changes while the Statuses bar or the Online List row is in the chats list\n- Fixed Watusi not loading on RootHide after converting with RootHide Patcher\n\nBased on base app 26.46.72.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1795347552384-0atpo/com.fouadraheb.watusi_26.46.72_watusi_1.0.2_sl.ipa",
+          "size": 185858031
+        },
         {
           "version": "26.44.74",
           "marketingVersion": "1.0.1",
@@ -371,8 +387,8 @@
           "size": 178687775
         }
       ],
-      "versionDate": "2026-11-13T21:07:48+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794604781271-wcdw2/com.fouadraheb.watusi_26.44.74_watusi_1.0.1_sl.ipa",
+      "versionDate": "2026-11-22T11:29:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1795347552384-0atpo/com.fouadraheb.watusi_26.46.72_watusi_1.0.2_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -429,9 +445,17 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 188212643,
-      "version": "26.44.74",
+      "size": 197777768,
+      "version": "26.46.72",
       "versions": [
+        {
+          "version": "26.46.72",
+          "marketingVersion": "1.0.2",
+          "date": "2026-11-22T11:29:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for 26.45 and 26.46.\n- Updates Tracking: a contact's saved media can be filtered to only profile pictures or only statuses, sorted by newest, oldest or largest, and selected to share or delete (or delete all at once). The full-screen viewer shows whether each one is a profile picture or a status\n- Updates Tracking: photo and video statuses keep their caption, and it shows in the full-screen viewer, also after the status is deleted\n- Statuses Bar: long press a contact's status and choose View Saved Statuses to see everything Updates Tracking saved from them\n- Statuses Bar: new Show Views Count switch to hide how many people viewed your statuses on My Status\n- Statuses Bar: fixed a contact sometimes showing twice while someone else's status was missing\n- Contact Photos Sync: tap Synced, To Update or No Photo to see those contacts, and long press a contact to exclude it from syncing\n- Upload to Video Note: send a video from Photos or Media Vault as a video note right from the camera's Video Note mode\n- Backups: Back Up All lets you choose what to upload and what may use cellular data, showing sizes and free Google Drive space; fixed cellular failures and unchanged items uploading again\n- Backups: Restore Backup now shows which device each backup came from\n- Backups: Export to Files can now include only some parts of Watusi Settings & Data, such as just your settings\n- Message Scheduler: long press on the send button opens the scheduler again on the latest version\n- Profiles: Share Settings makes a small file with a profile's switches and choices to send to someone, without chats, contacts or saved data. Import Settings adds it as a new profile or replaces your current one\n- Background Mode and Always Online are now unlocked, so you can keep WhatsApp running and link your devices before activating your license\n- Fixed WhatsApp sometimes closing when a message arrives or a chat changes while the Statuses bar or the Online List row is in the chats list\n- Fixed Watusi not loading on RootHide after converting with RootHide Patcher\n\nBased on WhatsApp Business 26.46.72.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1795347552384-vvqru/net.whatsapp.WhatsAppSMB_26.46.72_watusi_1.0.2_sl.ipa",
+          "size": 197777768
+        },
         {
           "version": "26.44.74",
           "marketingVersion": "1.0.1",
@@ -449,8 +473,8 @@
           "size": 188082892
         }
       ],
-      "versionDate": "2026-11-13T21:07:48+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794604781270-slg19/net.whatsapp.WhatsAppSMB_26.44.74_watusi_1.0.1_sl.ipa",
+      "versionDate": "2026-11-22T11:29:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1795347552384-vvqru/net.whatsapp.WhatsAppSMB_26.46.72_watusi_1.0.2_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     },
@@ -507,9 +531,17 @@
           "NSLocationAlwaysAndWhenInUseUsageDescription": "If you always allow access to your location, you can choose to share your live location, and it will update even when you're not using the app. If you only allow access while using the app, you can only send your current location or a nearby place."
         }
       },
-      "size": 185348470,
-      "version": "26.44.74",
+      "size": 194778994,
+      "version": "26.46.72",
       "versions": [
+        {
+          "version": "26.46.72",
+          "marketingVersion": "1.0.2",
+          "date": "2026-11-22T11:29:12+00:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Bug fixes and compatibility updates for 26.45 and 26.46.\n- Updates Tracking: a contact's saved media can be filtered to only profile pictures or only statuses, sorted by newest, oldest or largest, and selected to share or delete (or delete all at once). The full-screen viewer shows whether each one is a profile picture or a status\n- Updates Tracking: photo and video statuses keep their caption, and it shows in the full-screen viewer, also after the status is deleted\n- Statuses Bar: long press a contact's status and choose View Saved Statuses to see everything Updates Tracking saved from them\n- Statuses Bar: new Show Views Count switch to hide how many people viewed your statuses on My Status\n- Statuses Bar: fixed a contact sometimes showing twice while someone else's status was missing\n- Contact Photos Sync: tap Synced, To Update or No Photo to see those contacts, and long press a contact to exclude it from syncing\n- Upload to Video Note: send a video from Photos or Media Vault as a video note right from the camera's Video Note mode\n- Backups: Back Up All lets you choose what to upload and what may use cellular data, showing sizes and free Google Drive space; fixed cellular failures and unchanged items uploading again\n- Backups: Restore Backup now shows which device each backup came from\n- Backups: Export to Files can now include only some parts of Watusi Settings & Data, such as just your settings\n- Message Scheduler: long press on the send button opens the scheduler again on the latest version\n- Profiles: Share Settings makes a small file with a profile's switches and choices to send to someone, without chats, contacts or saved data. Import Settings adds it as a new profile or replaces your current one\n- Background Mode and Always Online are now unlocked, so you can keep WhatsApp running and link your devices before activating your license\n- Fixed WhatsApp sometimes closing when a message arrives or a chat changes while the Statuses bar or the Online List row is in the chats list\n- Fixed Watusi not loading on RootHide after converting with RootHide Patcher\n\nBased on base app 26.46.72.",
+          "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1795347552384-5nbdc/com.fouadraheb.watusiSMB_26.46.72_watusi_1.0.2_sl.ipa",
+          "size": 194778994
+        },
         {
           "version": "26.44.74",
           "marketingVersion": "1.0.1",
@@ -527,8 +559,8 @@
           "size": 185217779
         }
       ],
-      "versionDate": "2026-11-13T21:07:48+00:00",
-      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1794604781270-80o33/com.fouadraheb.watusiSMB_26.44.74_watusi_1.0.1_sl.ipa",
+      "versionDate": "2026-11-22T11:29:12+00:00",
+      "downloadURL": "https://fouadraheb.com/dl/storage/ipa/1795347552384-5nbdc/com.fouadraheb.watusiSMB_26.46.72_watusi_1.0.2_sl.ipa",
       "patreon": {},
       "download_page_url": ""
     }
